@@ -81,17 +81,19 @@ export function planStage(
   const rand = rng(opts.seed ?? 1);
   const recent = opts.recentIds ?? new Set<string>();
 
+  // Recent questions are a preference, not a hard exclusion: small stages must remain playable.
   const fresh = stageQuestions.filter((q) => !recent.has(q.id));
+  const candidates = fresh.length > 0 ? fresh : stageQuestions;
   const reviewN = Math.min(Math.round(size * ratio), reviewPool.length);
-  const mainN = size - reviewN;
+  const mainN = Math.min(size - reviewN, candidates.length);
 
   let main: PlannerQuestion[];
 
   // برنامه‌ریزی ویژه مرحله ۱: مواجهه ۳باره با هر واژه در شکاف‌های ۱، ۴ و ۹
-  const isStage1 = fresh.length > 0 && fresh[0].stage === 1;
+  const isStage1 = candidates.length > 0 && candidates[0].stage === 1;
   if (isStage1) {
     const wordGroups = new Map<string, PlannerQuestion[]>();
-    for (const q of shuffle(fresh, rand)) {
+    for (const q of shuffle(candidates, rand)) {
       const wTarget = q.targets.find((t) => t.startsWith("w:")) || q.targets[0] || "w:default";
       if (!wordGroups.has(wTarget)) wordGroups.set(wTarget, []);
       wordGroups.get(wTarget)!.push(q);
@@ -143,20 +145,20 @@ export function planStage(
     }
 
     // پرکردن خانه‌های خالی احتمالی با بقیه سوال‌ها
-    const remaining = shuffle(fresh.filter((q) => !scheduled.includes(q)), rand);
+    const remaining = shuffle(candidates.filter((q) => !scheduled.includes(q)), rand);
     for (let i = 0; i < mainN; i++) {
       if (!scheduled[i]) {
-        scheduled[i] = remaining.pop() || fresh[i % fresh.length];
+        scheduled[i] = remaining.pop() || candidates[i % candidates.length];
       }
     }
     main = spreadByType(scheduled.filter(Boolean) as PlannerQuestion[]);
   } else {
     // نردبان: ابتدا ساده‌ترها (کمترین فاصله از سطح)، داخل هر سطح مرتب‌سازی تصادفی
-    const byDifficulty = shuffle(fresh, rand).sort((a, b) => a.difficulty - b.difficulty);
+    const byDifficulty = shuffle(candidates, rand).sort((a, b) => a.difficulty - b.difficulty);
     main = spreadByType(byDifficulty.slice(0, mainN));
   }
 
-  const rev = shuffle(dueQuestions(reviewPool, cards, now).length ? dueQuestions(reviewPool, cards, now) : reviewPool, rand).slice(0, reviewN);
+  const rev = shuffle(dueQuestions(reviewPool, cards, now).length ? dueQuestions(reviewPool, cards, now) : reviewPool, rand).slice(0, Math.min(reviewN, size - main.length));
 
   // درج مرور در موقعیت‌های تقریباً هم‌فاصله، نه در ابتدا
   const out = main.slice();

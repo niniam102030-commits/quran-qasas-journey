@@ -9,6 +9,8 @@ interface Item {
   ar?: string;
   fa?: string;
   num?: number;
+  words?: string[];
+  wordRange?: { verse: number; from: number; to: number };
 }
 
 export type RenderableQuestion = QuestionRow & {
@@ -47,13 +49,16 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-const label = (o: Item) => (
-  o.ar ? (
-    <span style={arStyle} className="text-slate-900 dark:text-slate-100">{o.ar}</span>
+const label = (o: Item) => {
+  const text = o.ar ?? o.fa ?? (o.num !== undefined ? toFarsiNum(o.num) : undefined) ??
+    (o.words?.length ? o.words.join(" ") : undefined) ??
+    (o.wordRange ? `آیه ${toFarsiNum(o.wordRange.verse)}، واژه‌های ${toFarsiNum(o.wordRange.from)} تا ${toFarsiNum(o.wordRange.to)}` : "");
+  return o.ar ? (
+    <span style={arStyle} className="text-slate-900 dark:text-slate-100">{text}</span>
   ) : (
-    <span className="text-sm font-semibold">{o.fa ?? (o.num !== undefined ? toFarsiNum(o.num) : "")}</span>
-  )
-);
+    <span className="text-sm font-semibold">{text}</span>
+  );
+};
 
 export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
   const t0 = useRef(Date.now());

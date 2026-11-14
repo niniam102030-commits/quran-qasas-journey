@@ -77,6 +77,10 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const cards = await loadCards(allTargets);
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(stageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
+    if (!stageQs.length) {
+      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
+      return;
+    }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
     set({
       status: plan.length ? "running" : "finished",
@@ -203,9 +207,24 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         p.updatedAt = Date.now();
         await ldb.unitProgress.put(p);
         if (passed && s.stage === 8 && canUnlockNext(true, debt)) {
-          const units = await ldb.unitProgress.toArray();
-          const order = units.map((u) => u.unitId).sort();
-          const nextId = order[order.indexOf(s.unitId) + 1];
+          let orderedIds: string[] = [];
+          try {
+            const manifestUrl = typeof window !== "undefined"
+              ? `${import.meta.env.BASE_URL || "/"}content/manifest.json`
+              : "http://localhost/content/manifest.json";
+            const manifestResponse = await fetch(manifestUrl);
+            if (manifestResponse.ok) {
+              const manifest = await manifestResponse.json() as { units: { id: string; order: number }[] };
+              orderedIds = manifest.units.slice().sort((a, b) => a.order - b.order).map((u) => u.id);
+            }
+          } catch {
+            // fallback
+          }
+          if (!orderedIds.length) {
+            const units = await ldb.unitProgress.toArray();
+            orderedIds = units.map((u) => u.unitId).sort();
+          }
+          const nextId = orderedIds[orderedIds.indexOf(s.unitId) + 1];
           const nxt = nextId ? await ldb.unitProgress.get(nextId) : undefined;
           if (nxt && !nxt.unlocked) {
             await ldb.unitProgress.put({ ...nxt, unlocked: true, updatedAt: Date.now() });

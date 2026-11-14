@@ -17,24 +17,17 @@ function toFarsiNum(n: number | string): string {
 
 export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
   const s = useLearningStore();
+  const startReview = useLearningStore((state) => state.startReview);
+  const startStage = useLearningStore((state) => state.startStage);
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
 
   useEffect(() => {
-    if (stage === 0) void s.startReview();
-    else void s.startStage(unitId, stage);
-  }, [unitId, stage]);
+    if (stage === 0) void startReview();
+    else void startStage(unitId, stage);
+  }, [unitId, stage, startReview, startStage]);
 
-  // Handle Enter key for advancing
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Enter" && s.lastResult !== null) {
-        void s.next();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [s.lastResult, s]);
+  // Keep keyboard advancement on the explicit button to prevent duplicate submits.
 
   if (s.status === "loading" || s.status === "idle") {
     return (

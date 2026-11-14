@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye } from "lucide-react";
 import { ldb, type UnitProgressRow } from "../db/learningDb";
+import { useLearningStore } from "../store/useLearningStore";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel } from "../learning/mastery";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
@@ -28,6 +29,7 @@ function toFarsiNum(n: number | string): string {
 }
 
 export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) {
+  const startReview = useLearningStore((state) => state.startReview);
   const [units, setUnits] = useState<UnitInfo[]>([]);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
@@ -160,7 +162,7 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
               </div>
 
               <button
-                onClick={() => onStartStage("", 0)}
+                onClick={() => { void startReview(); onStartStage("", 0); }}
                 className="py-2.5 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold text-xs shadow-md shadow-amber-900/10 shrink-0 transition-all flex items-center gap-1.5"
               >
                 <Play className="w-3.5 h-3.5 fill-white" />

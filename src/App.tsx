@@ -17,20 +17,26 @@ export default function App() {
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncProgress, setSyncProgress] = useState<{ done: number; total: number } | null>(null);
   const [syncVersion, setSyncVersion] = useState<number>(0);
+  const [syncing, setSyncing] = useState(true);
 
-  // همگام‌سازی محتوای واقعی (manifest) با IndexedDB جدید
-  useEffect(() => {
-    syncContent((done, total) => {
-      setSyncProgress({ done, total });
-    })
+  const runContentSync = () => {
+    setSyncing(true);
+    setSyncError(null);
+    setSyncProgress(null);
+    return syncContent((done, total) => setSyncProgress({ done, total }))
       .then(() => {
-        setSyncProgress(null);
         setSyncVersion((v) => v + 1);
+        setSyncError(null);
       })
-      .catch((e) => {
+      .catch((e) => setSyncError(e instanceof Error ? e.message : String(e)))
+      .finally(() => {
+        setSyncing(false);
         setSyncProgress(null);
-        setSyncError(e instanceof Error ? e.message : String(e));
       });
+  };
+
+  useEffect(() => {
+    void runContentSync();
   }, []);
 
   const initApp = useAppStore((s) => s.initApp);
@@ -67,8 +73,18 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 transition-colors">
       {syncError && (
-        <div className="bg-rose-500 text-white text-xs p-2 text-center font-bold">
-          خطا در بارگذاری اولیه محتوا: {syncError}
+        <div role="alert" dir="rtl" className="bg-rose-50 text-rose-900 border-b border-rose-200 p-3 text-center text-sm">
+          <p className="font-bold">بارگذاری محتوای آموزشی انجام نشد: {syncError}</p>
+          <button type="button" onClick={() => void runContentSync()} disabled={syncing} className="mt-2 rounded-md bg-rose-700 px-4 py-2 font-bold text-white disabled:opacity-60">
+            تلاش دوباره
+          </button>
+        </div>
+      )}
+      {syncing && !syncError && (
+        <div role="status" aria-live="polite" dir="rtl" className="min-h-[55vh] flex flex-col items-center justify-center gap-3 p-6 text-center">
+          <span className="h-8 w-8 animate-spin rounded-full border-4 border-amber-600 border-t-transparent" />
+          <p className="font-bold">در حال آماده‌سازی محتوای آموزشی…</p>
+          {syncProgress && syncProgress.total > 0 && <p className="text-sm text-slate-600">{syncProgress.done} از {syncProgress.total} فایل</p>}
         </div>
       )}
 
@@ -84,7 +100,7 @@ export default function App() {
         </div>
       )}
 
-      {currentView === "units" && (
+      {!syncing && !syncError && currentView === "units" && (
         <UnitsPage
           key={syncVersion}
           syncVersion={syncVersion}
@@ -93,28 +109,28 @@ export default function App() {
         />
       )}
 
-      {currentView === "mastery" && (
+      {!syncing && !syncError && currentView === "mastery" && (
         <MasteryPage
           onBack={() => setCurrentView("units")}
           onSelectUnit={(uid) => handleStartStage(uid, 1)}
         />
       )}
 
-      {currentView === "profile" && (
+      {!syncing && !syncError && currentView === "profile" && (
         <div className="pb-16">
           <ChillehProfilePage />
         </div>
       )}
 
-      {currentView === "settings" && (
+      {!syncing && !syncError && currentView === "settings" && (
         <SettingsPage onBack={() => setCurrentView("units")} />
       )}
 
       {/* منوی دسترسی سریع پایین */}
-      <BottomNav
+      {!syncing && !syncError && <BottomNav
         activeTab={currentView === "session" ? "units" : currentView}
         onSelectTab={handleSelectNavTab}
-      />
+      />}
     </div>
   );
 }
