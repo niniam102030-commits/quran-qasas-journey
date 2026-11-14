@@ -1,0 +1,957 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p388b_A_0701",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "معنای «أَشُقَّ» چیست؟",
+      "stem": {
+        "wordId": "w28_027_022",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "o2",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "o3",
+          "fa": "شکافم و پاره کنم"
+        },
+        {
+          "id": "o4",
+          "fa": "اجیر تو شوم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أشقّ» از ریشه‌ی «ش ق ق» است و با «مشقت» هم‌ریشه است؛ «أشقّ علیک» یعنی «بر تو سخت گیرم»."
+    },
+    {
+      "id": "q_u_p388b_A_0702",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "کدام گزینه معنای «أَشُقَّ» را درست بیان می‌کند؟",
+      "stem": {
+        "wordId": "w28_027_022",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اختیارش با خود توست"
+        },
+        {
+          "id": "o2",
+          "fa": "ده سال را تمام کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "به مشقت و سختی اندازم"
+        },
+        {
+          "id": "o4",
+          "fa": "مزدی به تو بدهم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«أشقّ» یعنی کسی را به مشقت و سختی انداختن و با «مشقت» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p388b_A_0703",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "در این آیه، «أَشُقَّ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_027_022",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر تو شرط بگذارم"
+        },
+        {
+          "id": "o2",
+          "fa": "از تو جدا شوم"
+        },
+        {
+          "id": "o3",
+          "fa": "تو را اجیر کنم"
+        },
+        {
+          "id": "o4",
+          "fa": "بر تو سخت گیرم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «وَمَا أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ» یعنی «نمی‌خواهم بر تو سخت گیرم»."
+    },
+    {
+      "id": "q_u_p388b_A_0704",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "با توجه به آیه، «أَشُقَّ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_027_022",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "o2",
+          "fa": "بشکافم"
+        },
+        {
+          "id": "o3",
+          "fa": "پیمان ببندم"
+        },
+        {
+          "id": "o4",
+          "fa": "اختیار دهم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "با «شق» به معنای شکافتن اشتباه نگیرید؛ در این آیه «أشقّ» به معنای «سخت بگیرم» است و با «مشقت» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p388b_A_0705",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "معنای «ٱلْأَجَلَيْنِ» چیست؟",
+      "stem": {
+        "wordId": "w28_028_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو دختر من"
+        },
+        {
+          "id": "o2",
+          "fa": "دو مرگ"
+        },
+        {
+          "id": "o3",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "o4",
+          "fa": "دو بار"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«أجل» یعنی مدتِ معین و «الأجلین» یعنی «دو مدت». در فارسی «اجل» بیشتر به معنای مرگ است و این دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388b_A_0706",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "کدام گزینه معنای «ٱلْأَجَلَيْنِ» را درست بیان می‌کند؟",
+      "stem": {
+        "wordId": "w28_028_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پایان زندگی و مرگ"
+        },
+        {
+          "id": "o2",
+          "fa": "دو قرارداد و پیمان"
+        },
+        {
+          "id": "o3",
+          "fa": "دو نگهبان"
+        },
+        {
+          "id": "o4",
+          "fa": "دو زمان مقرر و سررسید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أجل» به معنای زمان مقرر و سررسید است، نه لزوماً مرگ."
+    },
+    {
+      "id": "q_u_p388b_A_0707",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "در این آیه، «ٱلْأَجَلَيْنِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_028_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو تعدی"
+        },
+        {
+          "id": "o2",
+          "fa": "دو مرگ"
+        },
+        {
+          "id": "o3",
+          "fa": "دو وکیل"
+        },
+        {
+          "id": "o4",
+          "fa": "دو مدت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در «أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ» یعنی «هر یک از این دو مدت را به پایان برم»."
+    },
+    {
+      "id": "q_u_p388b_A_0708",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "با توجه به آیه، «ٱلْأَجَلَيْنِ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_028_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو دختر"
+        },
+        {
+          "id": "o2",
+          "fa": "دو مرگ حتمی"
+        },
+        {
+          "id": "o3",
+          "fa": "دو شاهد"
+        },
+        {
+          "id": "o4",
+          "fa": "دو زمان مقرر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«أجل» در اینجا مدت معین قرارداد است، نه مرگ؛ سیاق آیه (قضیتُ = به پایان بردم) این را روشن می‌کند."
+    },
+    {
+      "id": "q_u_p388b_A_0709",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «سخت بگیرم» است؟",
+      "stem": {
+        "fa": "سخت بگیرم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَتْمَمْتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُرِيدُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَشُقَّ» از ریشه‌ی «ش ق ق» به معنای «سخت بگیرم» است و با «مشقت» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p388b_A_0710",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «به مشقت و سختی اندازم» است؟",
+      "stem": {
+        "fa": "به مشقت و سختی اندازم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "عَشْرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "أَتْمَمْتَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَشُقَّ» یعنی به مشقت انداختن؛ در این آیه «بر تو سخت گیرم» معنا می‌شود."
+    },
+    {
+      "id": "q_u_p388b_A_0711",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022"
+      ],
+      "promptFa": "در عبارت «من نمی خواهم بر تو سخت گیرم»، کدام کلمه‌ی عربی برابر «سخت گیرم» است؟",
+      "stem": {
+        "fa": "بر تو سخت گیرم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُرِيدُ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَشُقَّ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أَشُقَّ عَلَيْكَ» یعنی «بر تو سخت گیرم»؛ «أُرِيدُ» به معنای «می‌خواهم» است."
+    },
+    {
+      "id": "q_u_p388b_A_0712",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «دو مدت» است؟",
+      "stem": {
+        "fa": "دو مدت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَـٰتَيْنِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ثَمَـٰنِىَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَضَيْتُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْأَجَلَيْنِ» مثنای «أجل» به معنای مدتِ معین است. «هَـٰتَيْنِ» هم‌شکل است اما یعنی «این دو (مؤنث)»."
+    },
+    {
+      "id": "q_u_p388b_A_0713",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «دو زمان مقرر و سررسید» است؟",
+      "stem": {
+        "fa": "دو زمان مقرر و سررسید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "هَـٰتَيْنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَجَلَيْنِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أجل» یعنی مدتِ معین و سررسید؛ «ٱبْنَتَىَّ» و «هَـٰتَيْنِ» نیز مثنی‌اند ولی معنای دیگری دارند."
+    },
+    {
+      "id": "q_u_p388b_A_0714",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_006"
+      ],
+      "promptFa": "در عبارت «هر یک از این دو مدت را به پایان برم»، کدام کلمه‌ی عربی برابر «این دو مدت» است؟",
+      "stem": {
+        "fa": "این دو مدت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "o2",
+          "ar": "هَـٰتَيْنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَضَيْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "عُدْوَٰنَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْأَجَلَيْنِ» یعنی «دو مدت»؛ «قَضَيْتُ» یعنی «به پایان بردم»."
+    },
+    {
+      "id": "q_u_p388b_A_0715",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022",
+        "w:w28_028_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "l5",
+          "ar": "أُرِيدُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اجیر من باشی"
+        },
+        {
+          "id": "r2",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "r3",
+          "fa": "می‌خواهم"
+        },
+        {
+          "id": "r4",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r5",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r6",
+          "fa": "تمام کردی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أشقّ» با «مشقت» هم‌ریشه است و «الأجلین» یعنی دو مدت معین، نه دو مرگ."
+    },
+    {
+      "id": "q_u_p388b_A_0716",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_027_022",
+        "w:w28_028_006"
+      ],
+      "promptFa": "کلمات عربی را با معنای درستشان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "l2",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَكِيلٌۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَضَيْتُ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَشُقَّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نگهبان و وکیل"
+        },
+        {
+          "id": "r2",
+          "fa": "به پایان بردم"
+        },
+        {
+          "id": "r3",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "r4",
+          "fa": "تعدّی و ستم"
+        },
+        {
+          "id": "r5",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r6",
+          "fa": "مرگ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«مرگ» دوست فریبنده‌ی «أجل» است؛ «أجل» در این آیه یعنی مدت معین."
+    },
+    {
+      "id": "q_u_p388b_A_0717",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_022",
+        "w:w28_028_006"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کنید؛ یک گزینه‌ی فارسی اضافه است.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَتْمَمْتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "عَشْرًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "ثَمَـٰنِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَجَلَيْنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r2",
+          "fa": "هشت"
+        },
+        {
+          "id": "r3",
+          "fa": "ده"
+        },
+        {
+          "id": "r4",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "r5",
+          "fa": "تمام کردی"
+        },
+        {
+          "id": "r6",
+          "fa": "دو"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«ثَمَـٰنِىَ» یعنی هشت و «عَشْرًا» یعنی ده؛ «أشقّ» هم‌ریشه با «مشقت» است."
+    },
+    {
+      "id": "q_u_p388b_A_0718",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_027_022",
+        "w:w28_028_006"
+      ],
+      "promptFa": "جفت‌های عربی و فارسی را درست کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَضَيْتُ"
+        },
+        {
+          "id": "l5",
+          "ar": "أُرِيدُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می‌خواهم"
+        },
+        {
+          "id": "r2",
+          "fa": "دو دخترم"
+        },
+        {
+          "id": "r3",
+          "fa": "به پایان بردم"
+        },
+        {
+          "id": "r4",
+          "fa": "سخت بگیرم"
+        },
+        {
+          "id": "r5",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r6",
+          "fa": "دو شایسته"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«ٱبْنَتَىَّ» مثنای «ابنة» است و «الأجلین» مثنای «أجل»؛ هر دو «دو» معنا می‌دهند ولی مدلولشان فرق دارد."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ برای مرور از کلمات غیرسخت همین برش استفاده شد."
+  ]
+}

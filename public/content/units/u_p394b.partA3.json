@@ -1,0 +1,2805 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394b_A_0581",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معنای کلمه «لَتَنُوٓأُ» چیست؟",
+      "stem": {
+        "wordId": "w28_076_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "ناله می‌کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "تجاوز کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "حمل می‌کرد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«تنوء» از ریشه (ن و أ) به معنای سنگینی کردن است. ناله می‌کرد تله‌ی معنایی (دوست فریبنده) است."
+    },
+    {
+      "id": "q_u_p394b_A_0582",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معنای کلمه «لَتَنُوٓأُ» کدام است؟",
+      "stem": {
+        "wordId": "w28_076_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روشن می‌کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "شادی می‌کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "ناله می‌کرد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این کلمه به بار سنگینی اشاره دارد که حمل آن گران و دشوار است."
+    },
+    {
+      "id": "q_u_p394b_A_0583",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "در این آیه، «لَتَنُوٓأُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ناله می‌کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "o3",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "o4",
+          "fa": "نیرومند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "به سنگینی کلیدهای گنجینه‌های قارون اشاره دارد که حملشان بر گروهی نیرومند گران می‌آمد."
+    },
+    {
+      "id": "q_u_p394b_A_0584",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معنای دقیق «لَتَنُوٓأُ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ناله می‌کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "تعدی کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "پنهان می‌کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "سنگینی می‌کرد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«تنوء» یعنی سنگینی می‌کرد. دقت کنید که با ناله کردن اشتباه گرفته نشود."
+    },
+    {
+      "id": "q_u_p394b_A_0585",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معادل عربی «گران و دشوار می‌آمد» کدام است؟",
+      "stem": {
+        "fa": "گران و دشوار می‌آمد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَفْرَحْ ۖ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَتَنُوٓأُ» به معنای گران و دشوار آمدن و سنگینی کردن است."
+    },
+    {
+      "id": "q_u_p394b_A_0586",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معادل عربی «سنگینی می‌کرد» چیست؟",
+      "stem": {
+        "fa": "سنگینی می‌کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُو۟لِى"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "واژه «لَتَنُوٓأُ» یعنی سنگینی می‌کرد."
+    },
+    {
+      "id": "q_u_p394b_A_0587",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "کدام کلمه به معنای «گران و دشوار می‌آمد» است؟",
+      "stem": {
+        "fa": "گران و دشوار می‌آمد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَنسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَا"
+        },
+        {
+          "id": "o4",
+          "ar": "لَتَنُوٓأُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_verse",
+        "o3": "random"
+      },
+      "explanationFa": "«تنوء» از ریشه (ن و أ) سنگینی بار را توصیف می‌کند."
+    },
+    {
+      "id": "q_u_p394b_A_0588",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "معنای کلمه «بِٱلْعُصْبَةِ» چیست؟",
+      "stem": {
+        "wordId": "w28_076_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "o2",
+          "fa": "با عصبانیت"
+        },
+        {
+          "id": "o3",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "o4",
+          "fa": "گنجینه‌ها"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُصبه» به گروهی منسجم و نیرومند گفته می‌شود. با عصبانیت اشتباه نشود."
+    },
+    {
+      "id": "q_u_p394b_A_0589",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "معنای کلمه «بِٱلْعُصْبَةِ» کدام است؟",
+      "stem": {
+        "wordId": "w28_076_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گروهی متشکل و نیرومند"
+        },
+        {
+          "id": "o2",
+          "fa": "با عصبانیت"
+        },
+        {
+          "id": "o3",
+          "fa": "خاندان"
+        },
+        {
+          "id": "o4",
+          "fa": "ثروت"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "اشاره به گروهی متحد و نیرومند دارد که حتی آن‌ها هم از حمل کلیدها عاجز بودند."
+    },
+    {
+      "id": "q_u_p394b_A_0590",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "در این آیه، «بِٱلْعُصْبَةِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نیرومندی"
+        },
+        {
+          "id": "o2",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "o3",
+          "fa": "عصبانیت"
+        },
+        {
+          "id": "o4",
+          "fa": "شادمانان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُصبه» یعنی گروه. ترجمه دقیق بِٱلْعُصْبَةِ «بر گروهی» است."
+    },
+    {
+      "id": "q_u_p394b_A_0591",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "معنای دقیق «بِٱلْعُصْبَةِ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عصبانیت"
+        },
+        {
+          "id": "o2",
+          "fa": "تعدی"
+        },
+        {
+          "id": "o3",
+          "fa": "گروهی متشکل و نیرومند"
+        },
+        {
+          "id": "o4",
+          "fa": "قارون"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این واژه دوست فریبنده است و ربطی به خشم و عصبانیت ندارد، بلکه به معنای گروه منسجم است."
+    },
+    {
+      "id": "q_u_p394b_A_0592",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "معادل عربی «بر گروهی» کدام است؟",
+      "stem": {
+        "fa": "بر گروهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَوْمِ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُو۟لِى"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقُوَّةِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُصبه» در عربی به گروه متشکل گفته می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0593",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "معادل عربی «گروهی متشکل و نیرومند» چیست؟",
+      "stem": {
+        "fa": "گروهی متشکل و نیرومند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقُوَّةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "واژه «بِٱلْعُصْبَةِ» معادل گروهی منسجم و نیرومند است."
+    },
+    {
+      "id": "q_u_p394b_A_0594",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "کدام کلمه به معنای «بر گروهی» است؟",
+      "stem": {
+        "fa": "بر گروهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَوْمُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَلَيْهِمْ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَهُۥ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "بِٱلْعُصْبَةِ متشکل از حرف جر (بِـ) و (العُصبة) است."
+    },
+    {
+      "id": "q_u_p394b_A_0595",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "معنای کلمه «تَفْرَحْ» چیست؟ (با توجه به لا قبل از آن)",
+      "stem": {
+        "wordId": "w28_076_024",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "تفریح مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "نیکی مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "تجاوز مکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فرح» در اینجا به معنای شادی مغرورانه است. تفریح مکن تله معنایی است."
+    },
+    {
+      "id": "q_u_p394b_A_0596",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "معنای کلمه «تَفْرَحْ» کدام است؟",
+      "stem": {
+        "wordId": "w28_076_024",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شادی مغرورانه مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "تفریح مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "فراموش مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "فساد مکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در قرآن معمولاً این ریشه برای شادی همراه با سرمستی و تکبر به کار می‌رود."
+    },
+    {
+      "id": "q_u_p394b_A_0597",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "در این آیه، «تَفْرَحْ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تفریح مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "o4",
+          "fa": "دوست ندارد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "قوم قارون به او گفتند مغرورانه شادی مکن (لَا تَفْرَحْ)."
+    },
+    {
+      "id": "q_u_p394b_A_0598",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "معنای دقیق «تَفْرَحْ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شادی مغرورانه مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "مغرور نشو"
+        },
+        {
+          "id": "o3",
+          "fa": "تفریح مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "ستم مکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فرح به معنای سرمستی است و با تفریح رایج در فارسی متفاوت است."
+    },
+    {
+      "id": "q_u_p394b_A_0599",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "معادل عربی «شادی مکن» کدام است؟",
+      "stem": {
+        "fa": "شادی مکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَنسَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَبْغِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«لَا تَفْرَحْ» یعنی شادی مکن."
+    },
+    {
+      "id": "q_u_p394b_A_0600",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "معادل عربی «شادی مغرورانه مکن» چیست؟",
+      "stem": {
+        "fa": "شادی مغرورانه مکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَحْسَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْفَرِحِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "same_root"
+      },
+      "explanationFa": "فرح به شادی ناشی از تکبر اشاره دارد."
+    },
+    {
+      "id": "q_u_p394b_A_0601",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024"
+      ],
+      "promptFa": "کدام کلمه به معنای «شادی مکن» است؟",
+      "stem": {
+        "fa": "شادی مکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَنسَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَا"
+        },
+        {
+          "id": "o3",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَفْرَحْ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "تَفْرَحْ فعل مضارع از ریشه فرح است و با لای ناهیه معنای شادی مکن می‌دهد."
+    },
+    {
+      "id": "q_u_p394b_A_0602",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "معنای کلمه «ٱلْفَرِحِينَ» چیست؟",
+      "stem": {
+        "wordId": "w28_076_029",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "o2",
+          "fa": "فرح‌بخشان"
+        },
+        {
+          "id": "o3",
+          "fa": "نیرومندان"
+        },
+        {
+          "id": "o4",
+          "fa": "مفسدان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ٱلْفَرِحِينَ جمع فرح، به معنای شادمانان (مغرور) است و فرح‌بخش معنا نمی‌دهد."
+    },
+    {
+      "id": "q_u_p394b_A_0603",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "معنای کلمه «ٱلْفَرِحِينَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_076_029",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شادمانان متکبر و مغرور"
+        },
+        {
+          "id": "o2",
+          "fa": "فرح‌بخشان"
+        },
+        {
+          "id": "o3",
+          "fa": "متجاوزان"
+        },
+        {
+          "id": "o4",
+          "fa": "نیکوکاران"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "خداوند شادمانانی که سرمست از غرور ثروت هستند را دوست ندارد."
+    },
+    {
+      "id": "q_u_p394b_A_0604",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "در این آیه، «ٱلْفَرِحِينَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_029",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرح‌بخشان"
+        },
+        {
+          "id": "o2",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "o3",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "متکبران"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "خداوند شادمانان (ٱلْفَرِحِينَ) را دوست ندارد."
+    },
+    {
+      "id": "q_u_p394b_A_0605",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "معنای دقیق «ٱلْفَرِحِينَ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_029",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرح‌بخشان"
+        },
+        {
+          "id": "o2",
+          "fa": "ثروتمندان"
+        },
+        {
+          "id": "o3",
+          "fa": "شادمانان متکبر و مغرور"
+        },
+        {
+          "id": "o4",
+          "fa": "قوم موسی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "اشاره به افرادی دارد که به خاطر مال دنیا مغرور و سرمست شده‌اند."
+    },
+    {
+      "id": "q_u_p394b_A_0606",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "معادل عربی «شادمانان» کدام است؟",
+      "stem": {
+        "fa": "شادمانان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْكُنُوزِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْفَرِحِينَ» جمع فرح و به معنای شادمانان است."
+    },
+    {
+      "id": "q_u_p394b_A_0607",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "معادل عربی «شادمانان متکبر و مغرور» چیست؟",
+      "stem": {
+        "fa": "شادمانان متکبر و مغرور"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقُوَّةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "بِٱلْعُصْبَةِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این واژه به افراد سرمست از غرور اشاره دارد."
+    },
+    {
+      "id": "q_u_p394b_A_0608",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029"
+      ],
+      "promptFa": "کدام کلمه به معنای «شادمانان» است؟",
+      "stem": {
+        "fa": "شادمانان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَوْمُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُو۟لِى"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْفَرِحِينَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "فرحین اسم فاعل از فرح است و معنای شادمانان دارد."
+    },
+    {
+      "id": "q_u_p394b_A_0609",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "معنای کلمه «وَٱبْتَغِ» چیست؟",
+      "stem": {
+        "wordId": "w28_077_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "o2",
+          "fa": "و باغ بساز"
+        },
+        {
+          "id": "o3",
+          "fa": "و نیکی کن"
+        },
+        {
+          "id": "o4",
+          "fa": "و فراموش مکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ابتغاء از ریشه (ب غ ی) به معنای طلب کردن و جستن است و با باغ ساختن ارتباطی ندارد."
+    },
+    {
+      "id": "q_u_p394b_A_0610",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "معنای کلمه «وَٱبْتَغِ» کدام است؟",
+      "stem": {
+        "wordId": "w28_077_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "o2",
+          "fa": "و باغ بساز"
+        },
+        {
+          "id": "o3",
+          "fa": "احسان کن"
+        },
+        {
+          "id": "o4",
+          "fa": "خواهان مباش"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "این فعل امر است و به معنای طلب کن و بجوی است."
+    },
+    {
+      "id": "q_u_p394b_A_0611",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 77,
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "در این آیه، «وَٱبْتَغِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_077_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و باغ بساز"
+        },
+        {
+          "id": "o2",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "o3",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "o4",
+          "fa": "عطا کرده"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در اینجا خداوند می‌فرماید با ثروتت سرای آخرت را بجوی."
+    },
+    {
+      "id": "q_u_p394b_A_0612",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 77,
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "معنای دقیق «وَٱبْتَغِ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_077_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و باغ بساز"
+        },
+        {
+          "id": "o2",
+          "fa": "ببخش"
+        },
+        {
+          "id": "o3",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "o4",
+          "fa": "و نیکی کن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل امر «ابتغ» یعنی بجوی و طلب کن."
+    },
+    {
+      "id": "q_u_p394b_A_0613",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "معادل عربی «و بجوی» کدام است؟",
+      "stem": {
+        "fa": "و بجوی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَأَحْسِن"
+        },
+        {
+          "id": "o4",
+          "ar": "تَنسَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "حرف واو به همراه فعل امر ابتغ، کلمه وَٱبْتَغِ را می‌سازد."
+    },
+    {
+      "id": "q_u_p394b_A_0614",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "معادل عربی «طلب کن» چیست؟",
+      "stem": {
+        "fa": "طلب کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَاتَىٰكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَحْسَنَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "طلب کن و بجوی هر دو ترجمه وَٱبْتَغِ هستند."
+    },
+    {
+      "id": "q_u_p394b_A_0615",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001"
+      ],
+      "promptFa": "کدام کلمه به معنای «و بجوی» است؟",
+      "stem": {
+        "fa": "و بجوی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَأَحْسِن"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَاتَيْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱبْتَغِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ابتغاء در عربی طلب و جستجو را می‌رساند."
+    },
+    {
+      "id": "q_u_p394b_A_0616",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "معنای کلمه «تَبْغِ» چیست؟ (با توجه به لا قبل از آن)",
+      "stem": {
+        "wordId": "w28_077_018",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "o2",
+          "fa": "ستم مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "نیکی مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "فراموش مکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه آن با فبغی یکسان است اما در اینجا به معنای طلب کردن و خواهان بودن است، پس با ستم کردن متفاوت است."
+    },
+    {
+      "id": "q_u_p394b_A_0617",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "معنای کلمه «تَبْغِ» کدام است؟",
+      "stem": {
+        "wordId": "w28_077_018",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "ستم مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "فساد مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "و بجوی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "same_root"
+      },
+      "explanationFa": "«لَا تَبْغِ» یعنی طلب مکن و مجوی."
+    },
+    {
+      "id": "q_u_p394b_A_0618",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 77,
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "در این آیه، «تَبْغِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_077_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستم مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "o3",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "o4",
+          "fa": "دوست ندارد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "اشاره به این دارد که در زمین خواهان و طالب فساد مباش."
+    },
+    {
+      "id": "q_u_p394b_A_0619",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 77,
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "معنای دقیق «تَبْغِ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_077_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستم مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "فراموش مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "فساد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل تَبْغِ به معنای جستن و طلب کردن است."
+    },
+    {
+      "id": "q_u_p394b_A_0620",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "معادل عربی «خواهان مباش» کدام است؟",
+      "stem": {
+        "fa": "خواهان مباش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَنسَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَا تَبْغِ» به معنای خواهان مباش است."
+    },
+    {
+      "id": "q_u_p394b_A_0621",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "معادل عربی «طلب مکن» چیست؟",
+      "stem": {
+        "fa": "طلب مکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَنسَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُحِبُّ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "واژه تَبْغِ در اینجا با لای ناهیه به معنای طلب مکن است."
+    },
+    {
+      "id": "q_u_p394b_A_0622",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018"
+      ],
+      "promptFa": "کدام کلمه به معنای «خواهان مباش» است؟",
+      "stem": {
+        "fa": "خواهان مباش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَنسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَحْسَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَبْغِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "این فعل مضارع مجزوم از ریشه (ب غ ی) به معنای خواهان بودن است."
+    },
+    {
+      "id": "q_u_p394b_A_0623",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015",
+        "w:w28_076_016",
+        "w:w28_076_024",
+        "w:w28_076_029",
+        "w:w28_077_001"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱبْتَغِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "r2",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r3",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r4",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r5",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r6",
+          "fa": "ستم مکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که «تَفْرَحْ» به شادی مغرورانه اشاره دارد و «لَتَنُوٓأُ» یعنی سنگینی می‌کرد."
+    },
+    {
+      "id": "q_u_p394b_A_0624",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016",
+        "w:w28_076_024",
+        "w:w28_076_029",
+        "w:w28_077_001",
+        "w:w28_077_018"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَبْغِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r2",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "r3",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r4",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r5",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r6",
+          "fa": "ناله می‌کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "explanationFa": "«عُصبه» به گروه متشکل و «تَبْغِ» به معنای طلب کردن است."
+    },
+    {
+      "id": "q_u_p394b_A_0625",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024",
+        "w:w28_076_029",
+        "w:w28_077_001",
+        "w:w28_077_018",
+        "w:w28_076_015"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَتَنُوٓأُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r2",
+          "fa": "شادمانان متکبر"
+        },
+        {
+          "id": "r3",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "r4",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "r5",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "r6",
+          "fa": "تفریح مکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمات ریشه (فرح) دوست فریبنده هستند و با تفریح اشتباه نشوند."
+    },
+    {
+      "id": "q_u_p394b_A_0626",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_029",
+        "w:w28_077_001",
+        "w:w28_077_018",
+        "w:w28_076_015",
+        "w:w28_076_016"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l5",
+          "ar": "بِٱلْعُصْبَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گروهی متشکل"
+        },
+        {
+          "id": "r2",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "r4",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r5",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r6",
+          "fa": "با عصبانیت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "explanationFa": "واژه «تنوء» یعنی گران و دشوار می‌آمد و «عُصبه» گروه نیرومند است."
+    },
+    {
+      "id": "q_u_p394b_A_0627",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_001",
+        "w:w28_077_018",
+        "w:w28_076_015",
+        "w:w28_076_016",
+        "w:w28_076_024"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l4",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَفْرَحْ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r2",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "r3",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "r4",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r5",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r6",
+          "fa": "فرح‌بخشان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "فعل «ابتغ» و «تبغ» از یک ریشه‌اند و به معنای طلب کردن می‌باشند."
+    },
+    {
+      "id": "q_u_p394b_A_0628",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_077_018",
+        "w:w28_076_015",
+        "w:w28_076_016",
+        "w:w28_076_024",
+        "w:w28_076_029"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْفَرِحِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "r2",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r4",
+          "fa": "شادی مغرورانه مکن"
+        },
+        {
+          "id": "r5",
+          "fa": "شادمانان متکبر"
+        },
+        {
+          "id": "r6",
+          "fa": "و باغ بساز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "با دقت در ریشه‌ها، لَتَنُوٓأُ سنگینی و تَبْغِ طلب کردن را می‌رساند."
+    },
+    {
+      "id": "q_u_p394b_A_0629",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015",
+        "w:w28_076_024",
+        "w:w28_077_001",
+        "w:w28_076_016",
+        "w:w28_076_029"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l4",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْفَرِحِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "r2",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r3",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "r4",
+          "fa": "گروهی متشکل"
+        },
+        {
+          "id": "r5",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r6",
+          "fa": "ناله می‌کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمه لَتَنُوٓأُ دوست فریبنده است و ربطی به ناله ندارد."
+    },
+    {
+      "id": "q_u_p394b_A_0630",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016",
+        "w:w28_076_029",
+        "w:w28_077_018",
+        "w:w28_076_015",
+        "w:w28_076_024"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَفْرَحْ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r2",
+          "fa": "شادمانان متکبر"
+        },
+        {
+          "id": "r3",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "r4",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r6",
+          "fa": "ستم مکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که تَبْغِ به معنای جستن و طلب کردن است، نه ستم کردن."
+    },
+    {
+      "id": "q_u_p394b_A_0631",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015",
+        "w:w28_076_029",
+        "w:w28_077_001",
+        "w:w28_077_018",
+        "w:w28_076_016"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l5",
+          "ar": "بِٱلْعُصْبَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "r2",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r3",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r4",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "r5",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r6",
+          "fa": "با عصبانیت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "«بِٱلْعُصْبَةِ» یعنی گروه، و «ٱلْفَرِحِينَ» یعنی شادمانان."
+    },
+    {
+      "id": "q_u_p394b_A_0632",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_016",
+        "w:w28_077_001",
+        "w:w28_076_015",
+        "w:w28_076_024",
+        "w:w28_077_018"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَبْغِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گروهی متشکل"
+        },
+        {
+          "id": "r2",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "r3",
+          "fa": "سنگینی می‌کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "شادی مغرورانه مکن"
+        },
+        {
+          "id": "r5",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "r6",
+          "fa": "تفریح مکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "«لَتَنُوٓأُ» از ن و أ می‌آید و «تَفْرَحْ» به شادی مغرورانه دلالت دارد."
+    },
+    {
+      "id": "q_u_p394b_A_0633",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_024",
+        "w:w28_077_018",
+        "w:w28_076_016",
+        "w:w28_076_029",
+        "w:w28_077_001"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبْغِ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱبْتَغِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r2",
+          "fa": "خواهان مباش"
+        },
+        {
+          "id": "r3",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r4",
+          "fa": "شادمانان"
+        },
+        {
+          "id": "r5",
+          "fa": "و بجوی"
+        },
+        {
+          "id": "r6",
+          "fa": "فرح‌بخشان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "فرحین شادمانان متکبر و عُصبه گروهی منسجم است."
+    },
+    {
+      "id": "q_u_p394b_A_0634",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_015",
+        "w:w28_076_016",
+        "w:w28_076_024",
+        "w:w28_077_001",
+        "w:w28_077_018"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَفْرَحْ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱبْتَغِ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَبْغِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گران و دشوار می‌آمد"
+        },
+        {
+          "id": "r2",
+          "fa": "بر گروهی"
+        },
+        {
+          "id": "r3",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "r4",
+          "fa": "طلب کن"
+        },
+        {
+          "id": "r5",
+          "fa": "طلب مکن"
+        },
+        {
+          "id": "r6",
+          "fa": "با عصبانیت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور نهایی کلمات سخت این بخش: لَتَنُوٓأُ (سنگینی)، بِٱلْعُصْبَةِ (گروه)."
+    }
+  ],
+  "issues": []
+}

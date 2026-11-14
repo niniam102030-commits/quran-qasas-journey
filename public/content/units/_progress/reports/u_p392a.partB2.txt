@@ -1,0 +1,45 @@
+[#1 q_u_p392a_B_0581 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p392a_B_0581 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p392a_B_0582 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p392a_B_0582 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p392a_B_0583 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p392a_B_0584 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p392a_B_0584 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p392a_B_0585 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p392a_B_0586 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p392a_B_0587 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p392a_B_0590 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#11 q_u_p392a_B_0591 CLOZE_COMPLETE_REST] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: قَبْلِهِم
+[#12 q_u_p392a_B_0592 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p392a_B_0593 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#14 q_u_p392a_B_0594 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#14 q_u_p392a_B_0594 ENDING_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَهُم
+[#16 q_u_p392a_B_0596 MUTASHABIH_SPOT] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَٱلَّذِينَ
+[#16 q_u_p392a_B_0596 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: قَبْلِهِمْ
+[#16 q_u_p392a_B_0596 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: وَهُم
+[#17 q_u_p392a_B_0597 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: بَعْدِهِۦ
+[#18 q_u_p392a_B_0598 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#18 q_u_p392a_B_0598 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#19 q_u_p392a_B_0599 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#19 q_u_p392a_B_0599 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#20 q_u_p392a_B_0600 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#21 q_u_p392a_B_0601 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#21 q_u_p392a_B_0601 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#22 q_u_p392a_B_0602 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#23 q_u_p392a_B_0603 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#24 q_u_p392a_B_0604 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#25 q_u_p392a_B_0605 CLOZE_AR] بانک b7: کلمه(های) عربی خارج از متن سوره/بانک: إِنَّهَا
+[#26 q_u_p392a_B_0606 CLOZE_AR] بانک b10: کلمه(های) عربی خارج از متن سوره/بانک: مُؤْمِنِينَ
+[#27 q_u_p392a_B_0607 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#28 q_u_p392a_B_0608 CLOZE_COMPLETE_REST] بانک b6: کلمه(های) عربی خارج از متن سوره/بانک: قَبْلِهِم
+[#29 q_u_p392a_B_0609 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#30 q_u_p392a_B_0610 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#31 q_u_p392a_B_0611 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#31 q_u_p392a_B_0611 ENDING_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: مُؤْمِنِينَ
+[#31 q_u_p392a_B_0611 ENDING_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: قَبْلِهِم
+[#32 q_u_p392a_B_0612 ENDING_CHOICE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: قَبْلِهِم
+[#32 q_u_p392a_B_0612 ENDING_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: بَعْدِهِۦ
+[#32 q_u_p392a_B_0612 ENDING_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: صَـٰبِرِينَ
+[#34 q_u_p392a_B_0614 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: حَقٌّ
+[#34 q_u_p392a_B_0614 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: رَّبِّهِمْ
+[#34 q_u_p392a_B_0614 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: إِنَّهَا

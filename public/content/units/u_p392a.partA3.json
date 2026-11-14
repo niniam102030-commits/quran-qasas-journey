@@ -1,0 +1,2265 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p392a_A_0681",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معنای «وَيَدْرَءُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_054_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درک می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "و دفع می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "پنهان می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "یاری می‌رسانند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«درء» یعنی دفع کردن؛ کلمه‌ی «درگیری» نیز با این ریشه هم‌خانواده است. «درک می‌کنند» تله‌ی ترجمه است."
+    },
+    {
+      "id": "q_u_p392a_A_0682",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "ترجمه دقیق «وَيَدْرَءُونَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_054_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دور می‌کنند و دفع می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "مخالفت می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "درک می‌کنند و می‌فهمند"
+        },
+        {
+          "id": "o4",
+          "fa": "دعوت می‌کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "«درء» به معنای دفع کردن و دور کردن است. مراقب باشید با «درک» اشتباه نگیرید."
+    },
+    {
+      "id": "q_u_p392a_A_0683",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_054_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "صبر می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "درک می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "دفع می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "انفاق می‌کنند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه می‌فرماید بدی را با نیکی «دفع می‌کنند». «درء» به معنای دفع کردن است."
+    },
+    {
+      "id": "q_u_p392a_A_0684",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معنای «وَيَدْرَءُونَ» با توجه به آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_054_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و دور می‌کنند و می‌رانند"
+        },
+        {
+          "id": "o2",
+          "fa": "و درک می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "و بدی می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "و می‌پوشانند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه این کلمه به معنای دفع کردن و دور کردن (بدی‌ها به وسیله خوبی) است."
+    },
+    {
+      "id": "q_u_p392a_A_0685",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معادل عربی «و دفع می کنند» کدام کلمه است؟",
+      "stem": {
+        "fa": "و دفع می کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُنفِقُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَدْرَءُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«درء» به معنای دفع کردن است و با واو عطف در ابتدای آن به معنای «و دفع می‌کنند» در آیه آمده است."
+    },
+    {
+      "id": "q_u_p392a_A_0686",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معادل «دور می کنند و دفع می کنند» در آیه کدام است؟",
+      "stem": {
+        "fa": "دور می کنند و دفع می کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَيَدْرَءُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "رَزَقْنَـٰهُمْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «يَدْرَءُونَ» از ریشه «د ر أ» به معنای دور کردن و دفع کردن است."
+    },
+    {
+      "id": "q_u_p392a_A_0687",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "در آیه ۵۴، معادل «دفع می کنند» (بدون واو) کدام است؟",
+      "stem": {
+        "fa": "دفع می کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "يُنفِقُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُؤْتَوْنَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "بخش «يَدْرَءُونَ» به تنهایی معادل «دفع می‌کنند» است."
+    },
+    {
+      "id": "q_u_p392a_A_0688",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "معنای کلمه «ٱللَّغْوَ» چیست؟",
+      "stem": {
+        "wordId": "w28_055_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لغت"
+        },
+        {
+          "id": "o2",
+          "fa": "سخن بیهوده"
+        },
+        {
+          "id": "o3",
+          "fa": "دروغ"
+        },
+        {
+          "id": "o4",
+          "fa": "کلام نیکو"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«لغو» به هر سخن یا کار بی‌محتوا و بی‌فایده گفته می‌شود. معنای «لغت» در اینجا نادرست است."
+    },
+    {
+      "id": "q_u_p392a_A_0689",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "ترجمه دقیق «ٱللَّغْوَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_055_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کلام بیهوده و باطل"
+        },
+        {
+          "id": "o2",
+          "fa": "معنای کلمات"
+        },
+        {
+          "id": "o3",
+          "fa": "نادانی"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمگری"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "لغو یعنی کلام بیهوده و باطل که مؤمنان از آن اعراض می‌کنند."
+    },
+    {
+      "id": "q_u_p392a_A_0690",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_055_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "o2",
+          "fa": "لغت"
+        },
+        {
+          "id": "o3",
+          "fa": "اعمال"
+        },
+        {
+          "id": "o4",
+          "fa": "نادانان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه می‌خوانیم «و هنگامی که سخن بیهوده ای بشنوند...»، اللغو به معنای سخن بیهوده است."
+    },
+    {
+      "id": "q_u_p392a_A_0691",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "معنای «ٱللَّغْوَ» در متن آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_055_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کلام لغت و زبان"
+        },
+        {
+          "id": "o2",
+          "fa": "سخن بیهوده و باطل"
+        },
+        {
+          "id": "o3",
+          "fa": "صلح و سلام"
+        },
+        {
+          "id": "o4",
+          "fa": "اعمال نیک"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "لغو هر سخن یا کار بی‌محتوا است. مؤمنان با شنیدن لغو، از آن روی برمی‌گردانند."
+    },
+    {
+      "id": "q_u_p392a_A_0692",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "معادل عربی «سخن بیهوده» کدام کلمه است؟",
+      "stem": {
+        "fa": "سخن بیهوده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَعْمَـٰلُنَا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱللَّغْوَ» همان سخن بیهوده و باطل است."
+    },
+    {
+      "id": "q_u_p392a_A_0693",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "معادل «کلام بیهوده و باطل» کدام است؟",
+      "stem": {
+        "fa": "کلام بیهوده و باطل"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلسَّيِّئَةَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْحَسَنَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلام بیهوده در قرآن با واژه «لغو» بیان می‌شود."
+    },
+    {
+      "id": "q_u_p392a_A_0694",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "در آیه ۵۵، معادل «سخن بیهوده ای» کدام است؟",
+      "stem": {
+        "fa": "سخن بیهوده ای"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "o3",
+          "ar": "سَلَـٰمٌ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَعْرَضُوا۟"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "واژه «ٱللَّغْوَ» مستقیماً به معنای سخن بیهوده است که مؤمنان از آن اعراض می‌کنند."
+    },
+    {
+      "id": "q_u_p392a_A_0695",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "معنای «أَعْرَضُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_055_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روی برمی‌گردانند"
+        },
+        {
+          "id": "o2",
+          "fa": "عرضه می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌پذیرند"
+        },
+        {
+          "id": "o4",
+          "fa": "اعتراض می‌کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "از باب افعال و به معنای پشت کردن و فاصله گرفتن است. «عرضه می‌کنند» تله ترجمه است."
+    },
+    {
+      "id": "q_u_p392a_A_0696",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "ترجمه دقیق «أَعْرَضُوا۟» کدام است؟",
+      "stem": {
+        "wordId": "w28_055_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ارائه می‌دهند"
+        },
+        {
+          "id": "o2",
+          "fa": "اعراض می‌کنند و دوری می‌گزینند"
+        },
+        {
+          "id": "o3",
+          "fa": "اعتراض می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "گوش می‌دهند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "أَعْرَضُوا۟ از ریشه «ع ر ض» یعنی روی می‌گردانند و اعراض می‌کنند."
+    },
+    {
+      "id": "q_u_p392a_A_0697",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_055_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌شنوند"
+        },
+        {
+          "id": "o2",
+          "fa": "عرضه می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "روی برمی‌گردانند"
+        },
+        {
+          "id": "o4",
+          "fa": "می‌گویند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه می‌خوانیم «از آن روی برمی گردانند». اعراض به معنای روی برگرداندن است."
+    },
+    {
+      "id": "q_u_p392a_A_0698",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "معنای «أَعْرَضُوا۟» با توجه به آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_055_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اعراض می‌کنند و دوری می‌جویند"
+        },
+        {
+          "id": "o2",
+          "fa": "نشان می‌دهند و عرضه می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "مخالفت می‌ورزند"
+        },
+        {
+          "id": "o4",
+          "fa": "نادانی می‌کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از باب افعال به معنای اعراض و دوری کردن است نه عرضه کردن و نشان دادن."
+    },
+    {
+      "id": "q_u_p392a_A_0699",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "معادل عربی «روی برمی گردانند» کدام کلمه است؟",
+      "stem": {
+        "fa": "روی برمی گردانند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "نَبْتَغِى"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَعْرَضُوا۟» به معنای روی برگرداندن و اعراض است."
+    },
+    {
+      "id": "q_u_p392a_A_0700",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "معادل «اعراض می کنند و دوری می گزینند» در آیه کدام است؟",
+      "stem": {
+        "fa": "اعراض می کنند و دوری می گزینند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «أَعْرَضُوا۟» از ریشه عرض در باب افعال به این معناست."
+    },
+    {
+      "id": "q_u_p392a_A_0701",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_004"
+      ],
+      "promptFa": "در آیه ۵۵، معادل «دوری می گزینند» کدام است؟",
+      "stem": {
+        "fa": "دوری می گزینند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "نَبْتَغِى"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَعْرَضُوا۟» به معنای دوری گزیدن و روی برگرداندن از سخن لغو است."
+    },
+    {
+      "id": "q_u_p392a_A_0702",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "معنای «نَبْتَغِى» چیست؟",
+      "stem": {
+        "wordId": "w28_055_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بغض می‌ورزیم"
+        },
+        {
+          "id": "o2",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "o3",
+          "fa": "ستم می‌کنیم"
+        },
+        {
+          "id": "o4",
+          "fa": "دشمنی می‌کنیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "از ریشه‌ی «بغی» در قالب افتعال (ابتغاء) یعنی طلب کردن. «بغض می‌ورزیم» تله‌ی رایج این کلمه است."
+    },
+    {
+      "id": "q_u_p392a_A_0703",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "ترجمه دقیق «نَبْتَغِى» کدام است؟",
+      "stem": {
+        "wordId": "w28_055_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کینه می‌ورزیم"
+        },
+        {
+          "id": "o2",
+          "fa": "تجاوز می‌کنیم"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌طلبیم و جستجو می‌کنیم"
+        },
+        {
+          "id": "o4",
+          "fa": "دوری می‌کنیم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "نبتغی یعنی طلب می‌کنیم و می‌خواهیم. از ریشه بغی به معنای طلب."
+    },
+    {
+      "id": "q_u_p392a_A_0704",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_055_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بغض می‌ورزیم"
+        },
+        {
+          "id": "o2",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "o3",
+          "fa": "سلام می‌دهیم"
+        },
+        {
+          "id": "o4",
+          "fa": "دوری می‌کنیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«لا نبتغی» در آیه یعنی خواستار نیستیم. نبتغی به معنای طلب کردن است."
+    },
+    {
+      "id": "q_u_p392a_A_0705",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "معنای «نَبْتَغِى» با توجه به آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_055_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کینه می‌ورزیم"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌پذیریم"
+        },
+        {
+          "id": "o3",
+          "fa": "نادانی می‌کنیم"
+        },
+        {
+          "id": "o4",
+          "fa": "می‌طلبیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "نبتغی یعنی می‌طلبیم. در آیه می‌گویند ما همنشینی با نادانان را نمی‌طلبیم و خواستار آن نیستیم."
+    },
+    {
+      "id": "q_u_p392a_A_0706",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "معادل عربی «خواستاریم» کدام کلمه است؟",
+      "stem": {
+        "fa": "خواستاریم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "o2",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "o4",
+          "ar": "أَعْرَضُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نَبْتَغِى» از ریشه بغی به معنای جستجو کردن و طلبیدن است."
+    },
+    {
+      "id": "q_u_p392a_A_0707",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "معادل «می طلبیم و جستجو می کنیم» در آیه کدام است؟",
+      "stem": {
+        "fa": "می طلبیم و جستجو می کنیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يَشَآءُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ابتغاء در عربی به معنای جستجو کردن است که در فعل مضارع نبتغی آمده است."
+    },
+    {
+      "id": "q_u_p392a_A_0708",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_014"
+      ],
+      "promptFa": "در آیه ۵۵، معادل «خواستار» کدام است؟",
+      "stem": {
+        "fa": "خواستار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "سَلَـٰمٌ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "o4",
+          "ar": "أَعْمَـٰلُنَا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «نَبْتَغِى» در عبارت «لا نبتغی الجاهلین» به معنای خواستار بودن و طلب کردن به کار رفته است."
+    },
+    {
+      "id": "q_u_p392a_A_0709",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "معنای «بِٱلْمُهْتَدِينَ» چیست؟",
+      "stem": {
+        "wordId": "w28_056_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به هدایت‌کنندگان"
+        },
+        {
+          "id": "o2",
+          "fa": "به هدایت‌پذیران"
+        },
+        {
+          "id": "o3",
+          "fa": "به گمراهان"
+        },
+        {
+          "id": "o4",
+          "fa": "به مؤمنان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "اسم فاعل از اهتداء (پذیرش هدایت و راه‌یابی) است. با هدایت‌کنندگان اشتباه گرفته نشود."
+    },
+    {
+      "id": "q_u_p392a_A_0710",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "ترجمه دقیق «بِٱلْمُهْتَدِينَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_056_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کسانی که هدایت را می‌پذیرند"
+        },
+        {
+          "id": "o2",
+          "fa": "کسانی که هدایت می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "کسانی که می‌دانند"
+        },
+        {
+          "id": "o4",
+          "fa": "کسانی که ایمان آوردند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "مهتدین جمع مهتدی است یعنی کسی که هدایت را می‌پذیرد و راه را می‌یابد."
+    },
+    {
+      "id": "q_u_p392a_A_0711",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_056_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "o2",
+          "fa": "به هدایت کنندگان"
+        },
+        {
+          "id": "o3",
+          "fa": "به دانایان"
+        },
+        {
+          "id": "o4",
+          "fa": "به دوستداران"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در پایان آیه می‌فرماید خدا به «هدایت‌پذیران» داناتر است (وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ)."
+    },
+    {
+      "id": "q_u_p392a_A_0712",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "معنای «ٱلْمُهْتَدِينَ» با توجه به آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_056_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هدایت کنندگان"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت پذیران"
+        },
+        {
+          "id": "o3",
+          "fa": "کسانی که دوست دارند"
+        },
+        {
+          "id": "o4",
+          "fa": "دانایان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "المهتدین یعنی کسانی که هدایت را پذیرا هستند."
+    },
+    {
+      "id": "q_u_p392a_A_0713",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "معادل عربی «به هدایت پذیران» کدام کلمه است؟",
+      "stem": {
+        "fa": "به هدایت پذیران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَهْدِى"
+        },
+        {
+          "id": "o4",
+          "ar": "يَهْدِى"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بِٱلْمُهْتَدِينَ» به معنای به هدایت‌پذیران است و با باء جاره آمده است."
+    },
+    {
+      "id": "q_u_p392a_A_0714",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "معادل «کسانی که هدایت را می پذیرند» در آیه کدام است؟",
+      "stem": {
+        "fa": "کسانی که هدایت را می پذیرند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلسَّيِّئَةَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَحْبَبْتَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کسانی که هدایت را می‌پذیرند همان مهتدین هستند."
+    },
+    {
+      "id": "q_u_p392a_A_0715",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "w:w28_056_013"
+      ],
+      "promptFa": "در آیه ۵۶، معادل «هدایت پذیران» (بدون باء) کدام است؟",
+      "stem": {
+        "fa": "هدایت پذیران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "o2",
+          "ar": "تَهْدِى"
+        },
+        {
+          "id": "o3",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُهْتَدِينَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "بخش «ٱلْمُهْتَدِينَ» به تنهایی معادل هدایت‌پذیران است."
+    },
+    {
+      "id": "q_u_p392a_A_0716",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_054_007",
+        "w:w28_055_003",
+        "w:w28_055_004"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَيَدْرَءُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلسَّيِّئَةَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و دفع می کنند"
+        },
+        {
+          "id": "r2",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "r3",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r4",
+          "fa": "صبری که کردند"
+        },
+        {
+          "id": "r5",
+          "fa": "بدی"
+        },
+        {
+          "id": "r6",
+          "fa": "نیکی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَدْرَءُونَ یعنی دفع می‌کنند، اللغو سخن بیهوده و اعراض یعنی روی برگرداندن."
+    },
+    {
+      "id": "q_u_p392a_A_0717",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_055_014",
+        "w:w28_056_013",
+        "w:w28_054_007"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "l2",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَيَدْرَءُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَحْبَبْتَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَشَآءُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "r2",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "r3",
+          "fa": "و دفع می کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "دوست داری"
+        },
+        {
+          "id": "r5",
+          "fa": "بخواهد"
+        },
+        {
+          "id": "r6",
+          "fa": "نادانان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "نَبْتَغِى (می‌طلبیم و خواستاریم)، بِٱلْمُهْتَدِينَ (هدایت‌پذیران) و وَيَدْرَءُونَ (دفع می‌کنند) از کلمات مهم این آیات‌اند."
+    },
+    {
+      "id": "q_u_p392a_A_0718",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_055_003",
+        "w:w28_055_004",
+        "w:w28_055_014"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "l4",
+          "ar": "سَمِعُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "قَالُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سخن بیهوده"
+        },
+        {
+          "id": "r2",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r3",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "r4",
+          "fa": "بشنوند"
+        },
+        {
+          "id": "r5",
+          "fa": "می گویند"
+        },
+        {
+          "id": "r6",
+          "fa": "سلام"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "اللغو یعنی کلام باطل، اعراض یعنی دوری گزیدن و نبتغی یعنی جستجو می‌کنیم."
+    },
+    {
+      "id": "q_u_p392a_A_0719",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_056_013",
+        "w:w28_054_007",
+        "w:w28_055_003"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَزَقْنَـٰهُمْ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "r2",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r3",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "r4",
+          "fa": "روزی کرده ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "انفاق می نمایند"
+        },
+        {
+          "id": "r6",
+          "fa": "داناتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مهتدین یعنی هدایت‌پذیران و یَدرَءُونَ از ریشه درء به معنای دفع کردن است."
+    },
+    {
+      "id": "q_u_p392a_A_0720",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_055_004",
+        "w:w28_055_014",
+        "w:w28_056_013"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَهْدِى"
+        },
+        {
+          "id": "l5",
+          "ar": "أَعْلَمُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r2",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "r3",
+          "fa": "هدایت پذیران"
+        },
+        {
+          "id": "r4",
+          "fa": "هدایت کنی"
+        },
+        {
+          "id": "r5",
+          "fa": "داناتر است"
+        },
+        {
+          "id": "r6",
+          "fa": "نادانان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "أَعْرَضُوا یعنی دوری می‌گزینند، نَبْتَغِى یعنی می‌طلبیم و المُهتَدین به معنای هدایت‌پذیران است."
+    },
+    {
+      "id": "q_u_p392a_A_0721",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_054_007",
+        "w:w28_055_014",
+        "w:w28_055_003"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَجْرَهُم"
+        },
+        {
+          "id": "l5",
+          "ar": "مَّرَّتَيْنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r2",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "r3",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "r4",
+          "fa": "پاداششان"
+        },
+        {
+          "id": "r5",
+          "fa": "دوبار"
+        },
+        {
+          "id": "r6",
+          "fa": "صبر کردند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَدْرَءُونَ (دفع می‌کنند)، نَبْتَغِى (می‌طلبیم) و ٱللَّغْوَ (کلام بیهوده) از لغات سخت این صفحه هستند."
+    },
+    {
+      "id": "q_u_p392a_A_0722",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_055_004",
+        "w:w28_056_013",
+        "w:w28_054_007"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَيَدْرَءُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "سَلَـٰمٌ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r2",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "r3",
+          "fa": "و دفع می کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "نادانان"
+        },
+        {
+          "id": "r5",
+          "fa": "سلام"
+        },
+        {
+          "id": "r6",
+          "fa": "انفاق می کنند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "أَعْرَضُوا۟ (اعراض می‌کنند)، بِٱلْمُهْتَدِينَ (به پذیرندگان هدایت) و وَيَدْرَءُونَ (و دور می‌کنند)."
+    },
+    {
+      "id": "q_u_p392a_A_0723",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_055_003",
+        "w:w28_055_004",
+        "w:w28_056_013"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "l5",
+          "ar": "يَشَآءُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "r2",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r3",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "r4",
+          "fa": "هدایت می کند"
+        },
+        {
+          "id": "r5",
+          "fa": "بخواهد"
+        },
+        {
+          "id": "r6",
+          "fa": "داناتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "اللغو یعنی حرف باطل، اعراض یعنی دوری گزیدن و مهتدین یعنی هدایت پذیران."
+    },
+    {
+      "id": "q_u_p392a_A_0724",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": null,
+      "targets": [
+        "w:w28_054_007",
+        "w:w28_055_014",
+        "w:w28_055_003"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَبْتَغِى"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْحَسَنَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلسَّيِّئَةَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r2",
+          "fa": "خواستاریم"
+        },
+        {
+          "id": "r3",
+          "fa": "سخن بیهوده ای"
+        },
+        {
+          "id": "r4",
+          "fa": "نیکی و خوبی"
+        },
+        {
+          "id": "r5",
+          "fa": "بدی"
+        },
+        {
+          "id": "r6",
+          "fa": "صبر کردند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَدْرَءُونَ (دفع می‌کنند)، نَبْتَغِى (می‌طلبیم) و ٱللَّغْوَ (کلام بیهوده) کلمات کلیدی این آیات هستند."
+    }
+  ]
+}

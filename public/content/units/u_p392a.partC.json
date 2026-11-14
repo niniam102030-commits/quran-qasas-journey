@@ -1,0 +1,2790 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "C",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392a_C_0261",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "آیه‌ی بعد با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از بیان پیوسته بودن پیام الهی، در آیه‌ی بعد به ایمان اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) اشاره می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0262",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "آیه‌ی بعد با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از وصف ایمان اهل کتاب، در آیه بعد واکنش آنان هنگام تلاوت قرآن (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) بیان می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0263",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:53"
+      ],
+      "promptFa": "آیه‌ی بعد با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از تسلیم مؤمنان در برابر حق، خداوند پاداش مضاعف آنان را (أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم) وعده می‌دهد."
+    },
+    {
+      "id": "q_u_p392a_C_0264",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْحَقُّ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۲ با وصف اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0265",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُنفِقُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه‌ی ۵۲ بر ایمان آوردن اهل کتاب به قرآن تأکید دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0266",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَلَيْهِمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَالُوٓا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَمِعُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۳ با واکنش آنان هنگام شنیدن آیات الهی (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) شروع می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0267",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُهْتَدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "در انتهای آیه ۵۳، مؤمنان اهل کتاب بیان می‌کنند که پیش از نزول قرآن نیز تسلیم حق بوده‌اند."
+    },
+    {
+      "id": "q_u_p392a_C_0268",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:53"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 53
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُؤْتَوْنَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَجْرَهُم",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَّرَّتَيْنِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "رَّبِّنَآ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۴ پاداش مضاعف این گروه را با عبارت (أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ) بیان می‌کند."
+    },
+    {
+      "id": "q_u_p392a_C_0269",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:53"
+      ],
+      "promptFa": "بخش میانی آیه‌ی بعد را بسازید.",
+      "stem": {
+        "verse": 53
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِمَا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "صَبَرُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَدْرَءُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِٱلْحَسَنَةِ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱللَّغْوَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "پاداش مضاعف به سبب صبرشان و نیز دفع بدی‌ها به وسیله خوبی‌هاست."
+    },
+    {
+      "id": "q_u_p392a_C_0270",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:50"
+      ],
+      "promptFa": "آیه‌ی قبل با کدام کلمات آغاز شده بود؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_049_001",
+            "w28_049_002",
+            "w28_049_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پیش از بیان پیوستگی قرآن، سخن از کسانی بود که دعوت پیامبر را نمی‌پذیرفتند (فَإِن لَّمْ يَسْتَجِيبُوا۟)."
+    },
+    {
+      "id": "q_u_p392a_C_0271",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "آیه‌ی قبل با کدام کلمات آغاز شده بود؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پیش از بیان ایمان اهل کتاب، به پیوسته بودن آیات الهی (۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ) اشاره شده بود."
+    },
+    {
+      "id": "q_u_p392a_C_0272",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "آیه‌ی قبل با کدام کلمات آغاز شده بود؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل درباره ویژگی کسانی است که پیشتر کتاب آسمانی به آنها داده شده (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ)."
+    },
+    {
+      "id": "q_u_p392a_C_0273",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:50"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَإِن",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَّمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَكَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَالُوٓا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۰ با عدم پذیرش و پیروی از هوای نفس (فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ) شروع می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0274",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:50"
+      ],
+      "promptFa": "بخش میانی آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَٱعْلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنَّمَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتَّبِعُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَهْوَآءَهُمْ ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلظَّـٰلِمِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "در میانه آیه ۵۰ تأکید می‌شود که آنان تنها از هواهای نفسانی پیروی می‌کنند."
+    },
+    {
+      "id": "q_u_p392a_C_0275",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْكِتَـٰبَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۱ با عبارت (۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ) به پیوسته بودن آیات اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0276",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يُؤْمِنُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "هدف از پیوستگی نزول آیات، تذکر و هوشیاری مردم (لَعَلَّهُمْ يَتَذَكَّرُونَ) بیان شده است."
+    },
+    {
+      "id": "q_u_p392a_C_0277",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "بخش آغازین آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 53
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِكِتَـٰبٍۢ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۲ با معرفی اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0278",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی قبل را بسازید.",
+      "stem": {
+        "verse": 53
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُنفِقُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "انتهای آیه ۵۲ تأکید می‌کند که اهل کتاب پیش از آن به قرآن ایمان می‌آورند."
+    },
+    {
+      "id": "q_u_p392a_C_0279",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 51
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 50
+        },
+        {
+          "id": "o4",
+          "num": 49
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی پیوستگی قرآن (ولقد وصّلنا) آیه‌ی ۵۱ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0280",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 51
+        },
+        {
+          "id": "o2",
+          "num": 61
+        },
+        {
+          "id": "o3",
+          "num": 41
+        },
+        {
+          "id": "o4",
+          "num": 55
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی پیوستگی قرآن (ولقد وصّلنا) آیه‌ی ۵۱ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0281",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 51
+        },
+        {
+          "id": "o2",
+          "num": 50
+        },
+        {
+          "id": "o3",
+          "num": 61
+        },
+        {
+          "id": "o4",
+          "num": 53
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی پیوستگی قرآن (ولقد وصّلنا) آیه‌ی ۵۱ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0282",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 52
+        },
+        {
+          "id": "o2",
+          "num": 51
+        },
+        {
+          "id": "o3",
+          "num": 53
+        },
+        {
+          "id": "o4",
+          "num": 54
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی معرفی مؤمنان اهل کتاب آیه‌ی ۵۲ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0283",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 52
+        },
+        {
+          "id": "o2",
+          "num": 42
+        },
+        {
+          "id": "o3",
+          "num": 62
+        },
+        {
+          "id": "o4",
+          "num": 50
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی معرفی مؤمنان اهل کتاب آیه‌ی ۵۲ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0284",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 52
+        },
+        {
+          "id": "o2",
+          "num": 53
+        },
+        {
+          "id": "o3",
+          "num": 55
+        },
+        {
+          "id": "o4",
+          "num": 51
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "random",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی معرفی مؤمنان اهل کتاب آیه‌ی ۵۲ سوره است."
+    },
+    {
+      "id": "q_u_p392a_C_0285",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 53
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 54
+        },
+        {
+          "id": "o4",
+          "num": 55
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی واکنش مؤمنان هنگام تلاوت قرآن، آیه‌ی ۵۳ است."
+    },
+    {
+      "id": "q_u_p392a_C_0286",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 53
+        },
+        {
+          "id": "o2",
+          "num": 43
+        },
+        {
+          "id": "o3",
+          "num": 63
+        },
+        {
+          "id": "o4",
+          "num": 51
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "آیه‌ی واکنش مؤمنان هنگام تلاوت قرآن، آیه‌ی ۵۳ است."
+    },
+    {
+      "id": "q_u_p392a_C_0287",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 53
+        },
+        {
+          "id": "o2",
+          "num": 54
+        },
+        {
+          "id": "o3",
+          "num": 50
+        },
+        {
+          "id": "o4",
+          "num": 52
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "random",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی واکنش مؤمنان هنگام تلاوت قرآن، آیه‌ی ۵۳ است."
+    },
+    {
+      "id": "q_u_p392a_C_0288",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "آیه‌ی ۵۱ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۱ با تأکید بر پیوسته بودن پیام الهی (۞ وَلَقَدْ وَصَّلْنَا) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0289",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "آیه‌ی ۵۱ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_049_001",
+            "w28_049_002",
+            "w28_049_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۱ با تأکید بر پیوسته بودن پیام الهی (۞ وَلَقَدْ وَصَّلْنَا) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0290",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "آیه‌ی ۵۱ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۱ با تأکید بر پیوسته بودن پیام الهی (۞ وَلَقَدْ وَصَّلْنَا) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0291",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "آیه‌ی ۵۱ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۱ با تأکید بر پیوسته بودن پیام الهی (۞ وَلَقَدْ وَصَّلْنَا) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_0292",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "آیه‌ی ۵۲ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۲ با معرفی اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0293",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "آیه‌ی ۵۲ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_049_001",
+            "w28_049_002",
+            "w28_049_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۲ با معرفی اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0294",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "آیه‌ی ۵۲ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۲ با معرفی اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0295",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52"
+      ],
+      "promptFa": "آیه‌ی ۵۲ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۲ با معرفی اهل کتاب (ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ) آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0296",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "آیه‌ی ۵۳ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۳ به تلاوت قرآن بر آنان (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0297",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "آیه‌ی ۵۳ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۳ به تلاوت قرآن بر آنان (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0298",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "آیه‌ی ۵۳ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_049_001",
+            "w28_049_002",
+            "w28_049_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۳ به تلاوت قرآن بر آنان (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0299",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "آیه‌ی ۵۳ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۳ به تلاوت قرآن بر آنان (وَإِذَا يُتْلَىٰ عَلَيْهِمْ) اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0300",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "متن آیه‌ی ۵۱ را کامل بسازید.",
+      "stem": {
+        "num": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "این آیه به پیوستگی نزول قرآن برای تذکر مردم اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0301",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "متن آیه‌ی ۵۲ را کامل بسازید.",
+      "stem": {
+        "num": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {},
+      "explanationFa": "این آیه درباره مؤمنان اهل کتاب است که به قرآن نیز ایمان می‌آورند."
+    },
+    {
+      "id": "q_u_p392a_C_0302",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "متن آیه‌ی ۵۳ را کامل بسازید.",
+      "stem": {
+        "num": 53
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَلَيْهِمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَالُوٓا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ءَامَنَّا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "بِهِۦٓ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِنَّهُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "مِن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "رَّبِّنَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b14",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b15",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بیان تسلیم بودن آنان پیش از نزول قرآن و اعتراف به حقانیت آن."
+    },
+    {
+      "id": "q_u_p392a_C_0303",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست بچینید.",
+      "stem": {
+        "verses": [
+          51,
+          52,
+          53
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 51,
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ",
+          "verse": 51
+        },
+        {
+          "id": "b2",
+          "num": 52,
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ",
+          "verse": 52
+        },
+        {
+          "id": "b3",
+          "num": 53,
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا",
+          "verse": 53
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ابتدا پیوستگی آیات، سپس ایمان اهل کتاب، و بعد واکنش آنان هنگام تلاوت بیان می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0304",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست بچینید.",
+      "stem": {
+        "verses": [
+          52,
+          53,
+          54,
+          55
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 52,
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ",
+          "verse": 52
+        },
+        {
+          "id": "b2",
+          "num": 53,
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا",
+          "verse": 53
+        },
+        {
+          "id": "b3",
+          "num": 54,
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ",
+          "verse": 54
+        },
+        {
+          "id": "b4",
+          "num": 55,
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ",
+          "verse": 55
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پس از ایمان و تسلیم، خداوند به آنان اجر دوچندان وعده می‌دهد و رفتارشان در برابر بیهودگان را می‌ستاید."
+    },
+    {
+      "id": "q_u_p392a_C_0305",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "همه‌ی آیات این واحد را به ترتیب درست بچینید.",
+      "stem": {
+        "verses": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 51,
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ",
+          "verse": 51
+        },
+        {
+          "id": "b2",
+          "num": 52,
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ",
+          "verse": 52
+        },
+        {
+          "id": "b3",
+          "num": 53,
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا",
+          "verse": 53
+        },
+        {
+          "id": "b4",
+          "num": 54,
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ",
+          "verse": 54
+        },
+        {
+          "id": "b5",
+          "num": 55,
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ",
+          "verse": 55
+        },
+        {
+          "id": "b6",
+          "num": 56,
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ",
+          "verse": 56
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "زنجیره آیات از پیوستگی نزول شروع شده و با اشاره به تسلیم اهل کتاب تا هدایت به مشیت الهی ختم می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0306",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:50",
+        "vn:51",
+        "vn:52",
+        "vn:53",
+        "vn:54"
+      ],
+      "promptFa": "شماره‌ی هر آیه را به آغاز آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 50
+        },
+        {
+          "id": "l2",
+          "num": 51
+        },
+        {
+          "id": "l3",
+          "num": 52
+        },
+        {
+          "id": "l4",
+          "num": 53
+        },
+        {
+          "id": "l5",
+          "num": 54
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ"
+        },
+        {
+          "id": "r2",
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا لَهُمُ"
+        },
+        {
+          "id": "r3",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ"
+        },
+        {
+          "id": "r5",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم"
+        },
+        {
+          "id": "r6",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب آیات از برخورد با مستکبران تا پیوستگی قرآن و صفات مؤمنان اهل کتاب را نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p392a_C_0307",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:52",
+        "vn:53",
+        "vn:54",
+        "vn:55",
+        "vn:56"
+      ],
+      "promptFa": "شماره‌ی هر آیه را به آغاز آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 52
+        },
+        {
+          "id": "l2",
+          "num": 53
+        },
+        {
+          "id": "l3",
+          "num": 54
+        },
+        {
+          "id": "l4",
+          "num": 55
+        },
+        {
+          "id": "l5",
+          "num": 56
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ"
+        },
+        {
+          "id": "r3",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم"
+        },
+        {
+          "id": "r4",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ"
+        },
+        {
+          "id": "r5",
+          "ar": "إِنَّكَ لَا تَهْدِى"
+        },
+        {
+          "id": "r6",
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا لَهُمُ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_verse"
+      },
+      "explanationFa": "ایمان اهل کتاب، شنیدن آیات، پاداش دوچندان، رویگردانی از لغو و در نهایت هدایت به دست خدا."
+    }
+  ],
+  "issues": []
+}

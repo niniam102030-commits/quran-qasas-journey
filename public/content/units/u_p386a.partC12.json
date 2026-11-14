@@ -1,0 +1,238 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386a",
+  "part": "C12",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p386a_C_1857",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 9,
+      "targets": [
+        "vn:9"
+      ],
+      "promptFa": "ابتدای آیه ۹ سوره قصص کدام است؟",
+      "stem": {
+        "num": 9
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 9,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 7,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 8,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 10,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۹ با عبارت «وَقَالَتِ ٱمْرَأَتُ فِرْعَوْنَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p386a_C_1858",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 9,
+      "targets": [
+        "vr:9"
+      ],
+      "promptFa": "آیه ۹ را بر اساس شماره‌ی آن از کلمات زیر مرتب کنید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَتِ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱمْرَأَتُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فِرْعَوْنَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قُرَّتُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَيْنٍۢ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لِّى",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَلَكَ ۖ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "تَقْتُلُوهُ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "عَسَىٰٓ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "أَن",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "يَنفَعَنَآ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "أَوْ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b14",
+          "ar": "نَتَّخِذَهُۥ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b15",
+          "ar": "وَلَدًۭا",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b16",
+          "ar": "وَهُمْ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b17",
+          "ar": "لَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b18",
+          "ar": "يَشْعُرُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "d1",
+          "ar": "وَأَصْبَحَ",
+          "decoy": true
+        },
+        {
+          "id": "d2",
+          "ar": "فَـٰرِغًا ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18"
+      ],
+      "explanationFa": "ترتیب صحیح کلمات در آیه ۹ سوره قصص."
+    }
+  ],
+  "issues": []
+}

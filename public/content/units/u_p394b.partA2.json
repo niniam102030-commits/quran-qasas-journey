@@ -1,0 +1,2835 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394b_A_0421",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "معنای «وَنَزَعْنَا» چیست؟",
+      "stem": {
+        "wordId": "w28_075_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرود آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "o3",
+          "fa": "نزاع کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "پراکنده ساختیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "«نزع» به معنای بیرون کشیدن و جدا کردن است، نه نزاع و درگیری."
+    },
+    {
+      "id": "q_u_p394b_A_0422",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "معنای کلمه «وَنَزَعْنَا» کدام است؟",
+      "stem": {
+        "wordId": "w28_075_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "o2",
+          "fa": "دعوا کردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "دور کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "بازگرداندیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "نزع جان به معنای بیرون کشیدن آن است؛ در اینجا نیز به معنای بیرون کشیدن گواه است."
+    },
+    {
+      "id": "q_u_p394b_A_0423",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "با توجه به آیه، معنای «وَنَزَعْنَا» چیست؟",
+      "stem": {
+        "wordId": "w28_075_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاره کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پراکنده ساختیم"
+        },
+        {
+          "id": "o3",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "o4",
+          "fa": "نزاع کردیم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "در این آیه منظور بیرون کشیدن و جدا کردن گواه از هر امت است."
+    },
+    {
+      "id": "q_u_p394b_A_0424",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "ترجمه «وَنَزَعْنَا» در سیاق آیه چیست؟",
+      "stem": {
+        "wordId": "w28_075_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برگزیدیم"
+        },
+        {
+          "id": "o2",
+          "fa": "فرستادیم"
+        },
+        {
+          "id": "o3",
+          "fa": "دعوا کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "و بیرون می‌آوریم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      },
+      "explanationFa": "این کلمه از ریشه «نزع» به معنای بیرون آوردن است."
+    },
+    {
+      "id": "q_u_p394b_A_0425",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "کدام کلمه به معنای «و بیرون می‌آوریم» است؟",
+      "stem": {
+        "fa": "و بیرون می‌آوریم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَضَلَّ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "وَنَزَعْنَا یعنی بیرون می‌آوریم."
+    },
+    {
+      "id": "q_u_p394b_A_0426",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "«و جدا می‌کنیم، بیرون می‌کشیم» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "و جدا می‌کنیم، بیرون می‌کشیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَتَنُوٓأُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "نزع به معنای جدا کردن و بیرون کشیدن است."
+    },
+    {
+      "id": "q_u_p394b_A_0427",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_001"
+      ],
+      "promptFa": "معادل عربی «و بیرون می‌آوریم» در آیه چیست؟",
+      "stem": {
+        "fa": "و بیرون می‌آوریم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُمَّةٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "بُرْهَـٰنَكُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْكُنُوزِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "وَنَزَعْنَا از ریشه ن ز ع است."
+    },
+    {
+      "id": "q_u_p394b_A_0428",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "معنای «هَاتُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_075_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هدایت شوید"
+        },
+        {
+          "id": "o2",
+          "fa": "بپرهیزید"
+        },
+        {
+          "id": "o3",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "o4",
+          "fa": "گوش دهید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«هاتوا» اسم فعل امر و به معنای «بیاورید» است، نه هدایت شوید."
+    },
+    {
+      "id": "q_u_p394b_A_0429",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "کلمه «هَاتُوا۟» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_075_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رها کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت یافتند"
+        },
+        {
+          "id": "o3",
+          "fa": "برگردید"
+        },
+        {
+          "id": "o4",
+          "fa": "بیاورید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "هاتوا برای طلب آوردن چیزی استفاده می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0430",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "در این آیه، «هَاتُوا۟» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_075_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "o2",
+          "fa": "نگاه کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "هلاک شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "بیندیشید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در آیه می‌فرماید دلیل خود را بیاورید (هاتوا برهانکم)."
+    },
+    {
+      "id": "q_u_p394b_A_0431",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "معنای کلمه «هَاتُوا۟» با توجه به آیه چیست؟",
+      "stem": {
+        "wordId": "w28_075_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ساکت شوید"
+        },
+        {
+          "id": "o2",
+          "fa": "دور شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "o4",
+          "fa": "پند گیرید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "هاتوا اسم فعل امر به معنای بیاورید است."
+    },
+    {
+      "id": "q_u_p394b_A_0432",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "کدام کلمه به معنای «بیاورید» است؟",
+      "stem": {
+        "fa": "بیاورید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَبَغَىٰ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "هاتوا یعنی بیاورید."
+    },
+    {
+      "id": "q_u_p394b_A_0433",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "«بیاورید، ارائه دهید» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "بیاورید، ارائه دهید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "فَعَلِمُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَفْرَحْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "هاتوا برای آوردن برهان و دلیل به کار رفته است."
+    },
+    {
+      "id": "q_u_p394b_A_0434",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_007"
+      ],
+      "promptFa": "معادل عربی «بیاورید» کدام است؟",
+      "stem": {
+        "fa": "بیاورید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "هَاتُوا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "هاتوا به معنای بیاورید است."
+    },
+    {
+      "id": "q_u_p394b_A_0435",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "معنای «وَضَلَّ» چیست؟",
+      "stem": {
+        "wordId": "w28_075_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و گمراه شد"
+        },
+        {
+          "id": "o2",
+          "fa": "و باطل شد"
+        },
+        {
+          "id": "o3",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "و نابود گشت"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ضلالت» در اینجا به معنای گم‌شدن و از دست رفتن است، نه گمراه شدن."
+    },
+    {
+      "id": "q_u_p394b_A_0436",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "کلمه «وَضَلَّ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_075_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "و تاریک شد"
+        },
+        {
+          "id": "o3",
+          "fa": "و راه یافت"
+        },
+        {
+          "id": "o4",
+          "fa": "و گمراه کرد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "و ضل یعنی گم می‌شود و از دست می‌رود."
+    },
+    {
+      "id": "q_u_p394b_A_0437",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "در این آیه، «وَضَلَّ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_075_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پنهان شد"
+        },
+        {
+          "id": "o2",
+          "fa": "و گمراه شد"
+        },
+        {
+          "id": "o3",
+          "fa": "و آشکار گشت"
+        },
+        {
+          "id": "o4",
+          "fa": "و گم می‌شود"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "در قیامت آنچه به دروغ می‌ساختند گم می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0438",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "ترجمه «وَضَلَّ» در سیاق آیه چیست؟",
+      "stem": {
+        "wordId": "w28_075_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و فراموش کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "و ظلم کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "و از بین رفت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ضلالت در این کاربرد به معنای مفقود شدن است."
+    },
+    {
+      "id": "q_u_p394b_A_0439",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «و گم می‌شود» است؟",
+      "stem": {
+        "fa": "و گم می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَتَنُوٓأُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "و ضل یعنی گم می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0440",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "«ناپدید می‌شود، از دست می‌رود» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "ناپدید می‌شود، از دست می‌رود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَعَلِمُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "تَنُوٓأُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَضَلَّ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "و ضل عنهم یعنی از دستشان می‌رود و گم می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0441",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_013"
+      ],
+      "promptFa": "معادل عربی «و گم می‌شود» در آیه چیست؟",
+      "stem": {
+        "fa": "و گم می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "تَفْرَحْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "وَضَلَّ از ریشه ض ل ل است."
+    },
+    {
+      "id": "q_u_p394b_A_0442",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "معنای «يَفْتَرُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_075_017",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فریب می‌خورند"
+        },
+        {
+          "id": "o2",
+          "fa": "فرار می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "o4",
+          "fa": "پنهان می‌کردند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«یفترون» از ریشه افترا به معنای دروغ‌بافی است، نه فریب خوردن."
+    },
+    {
+      "id": "q_u_p394b_A_0443",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "کلمه «يَفْتَرُونَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_075_017",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فریب می‌دهند"
+        },
+        {
+          "id": "o2",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "o3",
+          "fa": "ظلم می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "آشکار می‌سازند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "یفترون یعنی افترا می‌زدند و به دروغ می‌ساختند."
+    },
+    {
+      "id": "q_u_p394b_A_0444",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "در این آیه، «يَفْتَرُونَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_075_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گمان می‌بردند"
+        },
+        {
+          "id": "o2",
+          "fa": "تکذیب می‌کردند"
+        },
+        {
+          "id": "o3",
+          "fa": "فریب می‌خورند"
+        },
+        {
+          "id": "o4",
+          "fa": "به دروغ می‌ساختند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      },
+      "explanationFa": "اشاره به شرکای دروغینی است که برای خدا می‌تراشیدند."
+    },
+    {
+      "id": "q_u_p394b_A_0445",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "ترجمه «يَفْتَرُونَ» در سیاق آیه چیست؟",
+      "stem": {
+        "wordId": "w28_075_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "o2",
+          "fa": "مسخره می‌کردند"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌ترسیدند"
+        },
+        {
+          "id": "o4",
+          "fa": "فریب می‌خوردند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "افترا به معنای ساختن دروغ است."
+    },
+    {
+      "id": "q_u_p394b_A_0446",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "کدام کلمه به معنای «به دروغ می‌ساختند» است؟",
+      "stem": {
+        "fa": "به دروغ می‌ساختند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَتَنُوٓأُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَعْلَمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَفْرَحُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَفْتَرُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "یفترون از ریشه ف ر ي است."
+    },
+    {
+      "id": "q_u_p394b_A_0447",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "«دروغ می‌بندند، افترا می‌زنند» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "دروغ می‌بندند، افترا می‌زنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَعَلِمُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَبَغَىٰ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "یفترون یعنی افترا می‌زنند."
+    },
+    {
+      "id": "q_u_p394b_A_0448",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_017"
+      ],
+      "promptFa": "معادل عربی «به دروغ می‌ساختند» در آیه چیست؟",
+      "stem": {
+        "fa": "به دروغ می‌ساختند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَعْمَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَفْرَحْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "یفترون به معنای دروغ ساختن است."
+    },
+    {
+      "id": "q_u_p394b_A_0449",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "معنای «فَبَغَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_076_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بغض کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "پس فرار کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "جستجو کرد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«بغی» به معنای ظلم و ستم است، نه بغض و کینه."
+    },
+    {
+      "id": "q_u_p394b_A_0450",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "کلمه «فَبَغَىٰ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کینه ورزید"
+        },
+        {
+          "id": "o2",
+          "fa": "پس پشیمان شد"
+        },
+        {
+          "id": "o3",
+          "fa": "طلب کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس تعدی کرد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o3": "near_miss"
+      },
+      "explanationFa": "فَبَغَىٰ یعنی پس ستم و تعدی کرد."
+    },
+    {
+      "id": "q_u_p394b_A_0451",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "در این آیه، «فَبَغَىٰ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_076_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس یاری کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "بغض ورزید"
+        },
+        {
+          "id": "o4",
+          "fa": "پس مسخره کرد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "قارون بر قوم موسی تعدی و تجاوز کرد."
+    },
+    {
+      "id": "q_u_p394b_A_0452",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "ترجمه «فَبَغَىٰ» در سیاق آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تکبر ورزید"
+        },
+        {
+          "id": "o2",
+          "fa": "غضب کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "پنهان شد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "فَبَغَىٰ به ستم و تجاوز قارون اشاره دارد."
+    },
+    {
+      "id": "q_u_p394b_A_0453",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "کدام کلمه به معنای «پس تعدی کرد» است؟",
+      "stem": {
+        "fa": "پس تعدی کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "فَبَغَىٰ یعنی پس تعدی کرد."
+    },
+    {
+      "id": "q_u_p394b_A_0454",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "«ستم کرد، تجاوز کرد» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "ستم کرد، تجاوز کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَعَلِمُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَنُوٓأُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَبَغَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فَبَغَىٰ از ریشه ب غ ي است."
+    },
+    {
+      "id": "q_u_p394b_A_0455",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007"
+      ],
+      "promptFa": "معادل عربی «پس تعدی کرد» در آیه چیست؟",
+      "stem": {
+        "fa": "پس تعدی کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كَانَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَاتَيْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُحِبُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَبَغَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "فَبَغَىٰ به معنای پس تعدی کرد است."
+    },
+    {
+      "id": "q_u_p394b_A_0456",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "معنای «مَفَاتِحَهُۥ» چیست؟",
+      "stem": {
+        "wordId": "w28_076_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مفاهیم او"
+        },
+        {
+          "id": "o2",
+          "fa": "گشایش‌های او"
+        },
+        {
+          "id": "o3",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "o4",
+          "fa": "پیروزی‌هایش"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "مفاتیح در اینجا جمع مِفتَح به معنای کلید است، نه مفاهیم."
+    },
+    {
+      "id": "q_u_p394b_A_0457",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمه «مَفَاتِحَهُۥ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_076_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازکننده‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "دروازه‌هایش"
+        },
+        {
+          "id": "o3",
+          "fa": "مفاهیم او"
+        },
+        {
+          "id": "o4",
+          "fa": "کلیدهایش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      },
+      "explanationFa": "مفَاتِحَهُۥ یعنی کلیدهای گنجینه‌های او."
+    },
+    {
+      "id": "q_u_p394b_A_0458",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "در این آیه، «مَفَاتِحَهُۥ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_076_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ثروت‌هایش"
+        },
+        {
+          "id": "o2",
+          "fa": "گنجینه‌هایش"
+        },
+        {
+          "id": "o3",
+          "fa": "اسرارش"
+        },
+        {
+          "id": "o4",
+          "fa": "کلیدهایش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "اشاره به کلیدهایی دارد که حملشان بر گروهی نیرومند گران می‌آمد."
+    },
+    {
+      "id": "q_u_p394b_A_0459",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "ترجمه «مَفَاتِحَهُۥ» در سیاق آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "صندوق‌هایش"
+        },
+        {
+          "id": "o2",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "o3",
+          "fa": "نگهبانانش"
+        },
+        {
+          "id": "o4",
+          "fa": "مفتونانش"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "کلیدهایش صحیح است."
+    },
+    {
+      "id": "q_u_p394b_A_0460",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "کدام کلمه به معنای «کلیدهایش» است؟",
+      "stem": {
+        "fa": "کلیدهایش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "بُرْهَـٰنَكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "مفاتیح جمع مفتاح یا مفتح به معنای کلید است."
+    },
+    {
+      "id": "q_u_p394b_A_0461",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "«کلیدهای گنجینه‌های او» معادل کدام کلمه است؟",
+      "stem": {
+        "fa": "کلیدهای گنجینه‌های او"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقُوَّةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْفَرِحِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "مفَاتِحَهُۥ یعنی کلیدهای او."
+    },
+    {
+      "id": "q_u_p394b_A_0462",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_014"
+      ],
+      "promptFa": "معادل عربی «کلیدهایش» در آیه چیست؟",
+      "stem": {
+        "fa": "کلیدهایش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَوْمُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُمَّةٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْعُصْبَةِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "مفَاتِحَهُۥ معادل کلیدهایش می‌باشد."
+    },
+    {
+      "id": "q_u_p394b_A_0463",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_013",
+        "w:w28_075_017",
+        "w:w28_076_007"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَبَغَىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r3",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r5",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r6",
+          "fa": "نزاع کردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که ونزعنا به معنای بیرون آوردن و فبغی به معنای تعدی کردن است."
+    },
+    {
+      "id": "q_u_p394b_A_0464",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_007",
+        "w:w28_075_013",
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r2",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r4",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "مفاهیم او"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مفاتیح جمع مفتح و به معنای کلید است."
+    },
+    {
+      "id": "q_u_p394b_A_0465",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_013",
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014",
+        "w:w28_075_001"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَنَزَعْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r2",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r3",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r5",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r6",
+          "fa": "و گمراه شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "ضل در اینجا به معنای گم‌شدن است، نه گمراه شدن."
+    },
+    {
+      "id": "q_u_p394b_A_0466",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014",
+        "w:w28_075_001",
+        "w:w28_075_007"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "هَاتُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r2",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r4",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r5",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r6",
+          "fa": "فریب می‌خورند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یفترون از ریشه افترا به معنای دروغ‌بافی است."
+    },
+    {
+      "id": "q_u_p394b_A_0467",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_007",
+        "w:w28_076_014",
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_013"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "وَضَلَّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r2",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r3",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r4",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r5",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r6",
+          "fa": "بغض کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "بغی به معنای ستم و تعدی است."
+    },
+    {
+      "id": "q_u_p394b_A_0468",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_076_014",
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_013",
+        "w:w28_075_017"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَفْتَرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r2",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r3",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r4",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r5",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r6",
+          "fa": "هدایت شوید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "هاتوا یعنی بیاورید."
+    },
+    {
+      "id": "q_u_p394b_A_0469",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_001",
+        "w:w28_075_013",
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r2",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r4",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "پنهان شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "با دقت در ریشه‌ها، معنای کلمات آشکار می‌شود."
+    },
+    {
+      "id": "q_u_p394b_A_0470",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r3",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r4",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "درگیری کردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "نزع به معنای بیرون کشیدن است."
+    },
+    {
+      "id": "q_u_p394b_A_0471",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_013",
+        "w:w28_076_007",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r3",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "افترا زدند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "ضلالت یعنی گم شدن."
+    },
+    {
+      "id": "q_u_p394b_A_0472",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_075_013",
+        "w:w28_075_017",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r3",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "کینه ورزید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یفترون از ریشه فری به معنای ساختن دروغ است."
+    },
+    {
+      "id": "q_u_p394b_A_0473",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_007",
+        "w:w28_075_017",
+        "w:w28_076_007",
+        "w:w28_076_014",
+        "w:w28_075_001"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "يَفْتَرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَنَزَعْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r2",
+          "fa": "به دروغ می‌ساختند"
+        },
+        {
+          "id": "r3",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r5",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r6",
+          "fa": "تاریک شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "هاتوا یعنی بیاورید و ارائه دهید."
+    },
+    {
+      "id": "q_u_p394b_A_0474",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_075_013",
+        "w:w28_076_007",
+        "w:w28_075_001",
+        "w:w28_075_007",
+        "w:w28_076_014"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید:",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَضَلَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَنَزَعْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "هَاتُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "مَفَاتِحَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و گم می‌شود"
+        },
+        {
+          "id": "r2",
+          "fa": "پس تعدی کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "و بیرون می‌آوریم"
+        },
+        {
+          "id": "r4",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r5",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r6",
+          "fa": "قفل‌هایش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مفاتیح جمع مِفتَح به معنای کلید است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,9 @@
+[#3 q_u_p392a_C_0903 MATCH_WORDS] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#6 q_u_p392a_C_0906 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#6 q_u_p392a_C_0906 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#6 q_u_p392a_C_0906 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#12 q_u_p392a_C_0912 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#15 q_u_p392a_C_0915 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#19 q_u_p392a_C_0919 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#20 q_u_p392a_C_0920 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#24 q_u_p392a_C_0924 CLOZE_AR] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: ۚ

@@ -1,0 +1,253 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "C6",
+  "generatedBy": "Gemini 2.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p392a_C_1221",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54"
+      ],
+      "promptFa": "آیه قبل از آیه زیر با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل (آیه ۵۴) در مورد پاداش مضاعف این گروه است و با «أُولَٰئِكَ يُؤْتَوْنَ أَجْرَهُم...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_1222",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54",
+        "vr:54"
+      ],
+      "promptFa": "با توجه به آیه زیر (آیه ۵۵)، کلمات آیه قبل (آیه ۵۴) را به ترتیب بچینید:",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَجْرَهُم مَّرَّتَيْنِ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِمَا صَبَرُوا۟",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَيَدْرَءُونَ بِٱلْحَسَنَةِ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَمِمَّا رَزَقْنَـٰهُمْ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يُنفِقُونَ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "إِنَّهُ ٱلْحَقُّ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "أَعْمَـٰلُنَا وَلَكُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۴ با اشاره به پاداش مضاعف و صفات نیکوکاران آغاز می‌شود و به «يُنفِقُونَ» ختم می‌گردد."
+    },
+    {
+      "id": "q_u_p392a_C_1223",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54",
+        "vr:54"
+      ],
+      "promptFa": "کلمات آیه قبل از این آیه (آیه ۵۴) را مرتب کنید:",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَّرَّتَيْنِ بِمَا صَبَرُوا۟",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَدْرَءُونَ بِٱلْحَسَنَةِ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمِمَّا رَزَقْنَـٰهُمْ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُنفِقُونَ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مِن قَبْلِهِۦ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "يَتَذَكَّرُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۴ بیانگر اعمال نیک مؤمنان اهل کتاب است که بدی را با نیکی دفع کرده و انفاق می‌کنند."
+    }
+  ],
+  "issues": []
+}

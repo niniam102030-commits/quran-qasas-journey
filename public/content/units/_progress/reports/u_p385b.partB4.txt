@@ -1,0 +1,4 @@
+[#1 q_u_p385b_B_0456 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p385b_B_0457 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p385b_B_0460 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p385b_B_0461 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

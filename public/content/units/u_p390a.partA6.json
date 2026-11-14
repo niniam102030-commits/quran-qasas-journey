@@ -1,0 +1,752 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A6",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390a_A_0901",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "معنای «صَرْحًۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_038_018",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گِل پخته"
+        },
+        {
+          "id": "o2",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "o3",
+          "fa": "آتش افروخته"
+        },
+        {
+          "id": "o4",
+          "fa": "معبود بزرگ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«صرح» از ریشه‌ی «ص ر ح» به معنای بنای بلند و برج‌مانند است."
+    },
+    {
+      "id": "q_u_p390a_A_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "«صَرْحًۭا» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_038_018",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دروغ بزرگ"
+        },
+        {
+          "id": "o2",
+          "fa": "چاه عمیق"
+        },
+        {
+          "id": "o3",
+          "fa": "ستون سنگی"
+        },
+        {
+          "id": "o4",
+          "fa": "بنای بلند و برج‌مانند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«صرح» یعنی بنای بلند و برج‌مانند، با ریشه‌ی «ص ر ح»."
+    },
+    {
+      "id": "q_u_p390a_A_0903",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "در این آیه، معنای «صَرْحًۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_038_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "o2",
+          "fa": "گِل"
+        },
+        {
+          "id": "o3",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "o4",
+          "fa": "اشراف و سران"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فرعون از هامان می‌خواهد «برجی بلند» بسازد؛ «صرح» همان برج بلند است."
+    },
+    {
+      "id": "q_u_p390a_A_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "فرعون می‌گوید «فَٱجْعَل لِّى صَرْحًۭا». «صَرْحًۭا» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_038_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آتش بیفروز"
+        },
+        {
+          "id": "o2",
+          "fa": "معبودی"
+        },
+        {
+          "id": "o3",
+          "fa": "چاه عمیق"
+        },
+        {
+          "id": "o4",
+          "fa": "برجی بلند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«اجعل لی صرحا» یعنی «برایم برجی بلند بساز»؛ ریشه‌ی «صرح»: ص ر ح."
+    },
+    {
+      "id": "q_u_p390a_A_0905",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «برج بلند» است؟",
+      "stem": {
+        "fa": "برج بلند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "o2",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَـٰهٍ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«صَرْحًا» به معنای برج بلند است و ریشه‌اش «ص ر ح» است."
+    },
+    {
+      "id": "q_u_p390a_A_0906",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "معادل عربی «برجی بلند» در این آیه کدام است؟",
+      "stem": {
+        "fa": "برجی بلند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَّعَلِّىٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "صَرْحًۭا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فرعون می‌گوید «فَٱجْعَل لِّى صَرْحًا»؛ «صرحا» همان «برجی بلند» است."
+    },
+    {
+      "id": "q_u_p390a_A_0907",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "کدام کلمه به معنای «بنای بلند و برج‌مانند» است؟",
+      "stem": {
+        "fa": "بنای بلند و برج‌مانند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "o4",
+          "ar": "صَرْحًۭا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«صَرْحًا» از ریشه‌ی «ص ر ح» است و به بنای بلند و برج‌مانند گفته می‌شود."
+    },
+    {
+      "id": "q_u_p390a_A_0908",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "r2",
+          "fa": "آتش بیفروز"
+        },
+        {
+          "id": "r3",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "r4",
+          "fa": "گِل"
+        },
+        {
+          "id": "r5",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "r6",
+          "fa": "ستون سنگی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«صرح» برج بلند است؛ بقیه کلمات هم‌جوار آن در همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p390a_A_0909",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای فارسی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "عَلِمْتُ"
+        },
+        {
+          "id": "l3",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "لَكُم"
+        },
+        {
+          "id": "l5",
+          "ar": "فَٱجْعَل"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برای شما"
+        },
+        {
+          "id": "r2",
+          "fa": "شناختم"
+        },
+        {
+          "id": "r3",
+          "fa": "بساز"
+        },
+        {
+          "id": "r4",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "r5",
+          "fa": "آگاهی و اطلاع یابم"
+        },
+        {
+          "id": "r6",
+          "fa": "گِل"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«صَرْحًا» برج بلند است و «فَٱجْعَل» یعنی «بساز»."
+    },
+    {
+      "id": "q_u_p390a_A_0910",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فِرْعَوْنُ"
+        },
+        {
+          "id": "l2",
+          "ar": "مُوسَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَـٰهَـٰمَـٰنُ"
+        },
+        {
+          "id": "l4",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "لَأَظُنُّهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "r2",
+          "fa": "هامان"
+        },
+        {
+          "id": "r3",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r4",
+          "fa": "موسی"
+        },
+        {
+          "id": "r5",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "r6",
+          "fa": "معبود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "نام‌ها و فعل «لَأَظُنُّهُ» در کنار «صَرْحًا» آمده‌اند."
+    },
+    {
+      "id": "q_u_p390a_A_0911",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "هر کلمه را با معنای آن جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَقَالَ"
+        },
+        {
+          "id": "l2",
+          "ar": "غَيْرِى"
+        },
+        {
+          "id": "l3",
+          "ar": "لَّعَلِّىٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلطِّينِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گِل"
+        },
+        {
+          "id": "r2",
+          "fa": "شاید من"
+        },
+        {
+          "id": "r3",
+          "fa": "و گفت"
+        },
+        {
+          "id": "r4",
+          "fa": "جز خود"
+        },
+        {
+          "id": "r5",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "r6",
+          "fa": "پلکان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«لَعَلِّی» یعنی «شاید من» و «صرح» یعنی برج بلند."
+    },
+    {
+      "id": "q_u_p390a_A_0912",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_018"
+      ],
+      "promptFa": "جفت‌های درست را وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰٓأَيُّهَا"
+        },
+        {
+          "id": "l2",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "إِلَـٰهٍ"
+        },
+        {
+          "id": "l4",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "فَٱجْعَل"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بساز"
+        },
+        {
+          "id": "r2",
+          "fa": "معبودی"
+        },
+        {
+          "id": "r3",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "r4",
+          "fa": "برج بلند"
+        },
+        {
+          "id": "r5",
+          "fa": "ای"
+        },
+        {
+          "id": "r6",
+          "fa": "آتش بیفروز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«صَرْحًا» همان برج بلندی است که فرعون می‌خواهد."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی فقط از کلمات همین آیه استفاده شد."
+  ]
+}

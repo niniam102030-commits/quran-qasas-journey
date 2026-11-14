@@ -1,0 +1,6 @@
+[#1 q_u_p391b_C_0701 VERSE_TO_TRANSLATION] choice باید حداقل ۴ گزینه داشته باشد.
+[#2 q_u_p391b_C_0702 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ۚ
+[#2 q_u_p391b_C_0702 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#3 q_u_p391b_C_0703 TRANSLATION_TO_VERSE] choice باید حداقل ۴ گزینه داشته باشد.
+[#7 q_u_p391b_C_0707 NEXT_VERSE_CHOICE] choice باید حداقل ۴ گزینه داشته باشد.
+[#13 q_u_p391b_C_0713 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.

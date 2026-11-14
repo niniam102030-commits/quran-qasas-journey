@@ -1,0 +1,5 @@
+[#3 q_u_p390b_B_1703 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p390b_B_1704 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p390b_B_1706 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p390b_B_1707 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p390b_B_1709 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

@@ -1,0 +1,4 @@
+[#1 q_u_p387a_C_0671 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p387a_C_0672 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p387a_C_0673 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p387a_C_0674 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.

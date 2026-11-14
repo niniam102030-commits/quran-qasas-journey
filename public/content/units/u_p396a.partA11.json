@@ -1,0 +1,326 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "A11",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p396a_A_2648",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 87,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 16
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 86,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 19
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_087_010",
+            "w28_087_011",
+            "w28_087_012",
+            "w28_087_013",
+            "w28_087_014",
+            "w28_087_015",
+            "w28_087_016"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این ترجمه کامل آیه ۸۷ است که به عدم انحراف از آیات الهی و دعوت به سوی پروردگار اشاره دارد."
+    },
+    {
+      "id": "q_u_p396a_A_2649",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "ترجمه «و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،» با کدام عبارت قرآنی تطابق دارد؟",
+      "stem": {
+        "fa": "و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 87,
+            "from": 10,
+            "to": 16
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 86,
+            "from": 12,
+            "to": 15
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "عبارت «وَٱدْعُ إِلَىٰ رَبِّكَ» به معنای دعوت به سوی پروردگار و «وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ» به معنای نهی از شرک است."
+    },
+    {
+      "id": "q_u_p396a_A_2650",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "ترجمه «و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،» به کدام بخش از آیات اشاره دارد؟",
+      "stem": {
+        "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 86,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 87,
+            "from": 10,
+            "to": 16
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 88,
+            "from": 11,
+            "to": 15
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "فعل «يَصُدُّنَّكَ» به معنای بازداشتن و منع کردن است که در ابتدای آیه ۸۷ و پیش از دستور به دعوت آمده است."
+    },
+    {
+      "id": "q_u_p396a_A_2651",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "قطعات ترجمه آیه ۸۷ را به ترتیب صحیح مرتب کنید:",
+      "stem": {
+        "verse": 87
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پس از آنکه به سوی تو نازل شد باز دارند،",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و به جانب پروردگارت دعوت کن،",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و هرگز از مشرکان مباش،",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "پس هرگز پشتیبان کافران مباش،",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۷ با نهی از رویگردانی از آیات آغاز شده، سپس دستور به دعوت به سوی خدا و در نهایت نهی از شرک می‌دهد."
+    },
+    {
+      "id": "q_u_p396a_A_2652",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "بخش‌های ترجمه زیر را بر اساس ترتیب آیه ۸۷ مرتب کنید:",
+      "stem": {
+        "verse": 87
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و به جانب پروردگارت دعوت کن،",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و هرگز از مشرکان مباش،",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و با خدا معبودی دیگر مخوان،",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ابتدا عدم انحراف از آیات مطرح شده و در دو بخش پایانی، دعوت به سوی پروردگار و دوری از مشرکان بیان می‌گردد."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,4 @@
+[#1 q_u_p396a_A_2643 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p396a_A_2644 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#3 q_u_p396a_A_2645 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p396a_A_2647 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 87 برابر نیست.

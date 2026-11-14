@@ -1,0 +1,70 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "C11",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p393a_C_2001",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62",
+        "vr:62"
+      ],
+      "promptFa": "آیه‌ی قبل از آیه‌ی ۶۳ با کدام عبارت پایان می‌یابد؟",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_064_010",
+            "w28_064_011",
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_062_005",
+            "w28_062_006",
+            "w28_062_007",
+            "w28_063_018"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 5,
+            "to": 8
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_063_015",
+            "w28_063_016",
+            "w28_063_017",
+            "w28_063_018"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۶۲ با «شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ» تمام می‌شود و بعد از آن آیه‌ی ۶۳ با «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ» می‌آید. «يَعْبُدُونَ» پایان آیه‌ی ۶۳ است، نه ۶۲."
+    }
+  ],
+  "issues": []
+}

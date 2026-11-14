@@ -1,0 +1,860 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A3",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_0401",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "معنای «جَيْبِكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کیسه‌ی دوخته‌شده روی لباس"
+        },
+        {
+          "id": "o2",
+          "fa": "گریبان، یقه‌ی لباس"
+        },
+        {
+          "id": "o3",
+          "fa": "بازو و بال"
+        },
+        {
+          "id": "o4",
+          "fa": "دست"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ج ي ب»؛ جَیب در این آیه یقه و گریبان است، نه جیب لباس."
+    },
+    {
+      "id": "q_u_p389b_A_0402",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "«جَيْبِكَ» در فارسی به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سینه‌ات"
+        },
+        {
+          "id": "o2",
+          "fa": "جیب شلوار"
+        },
+        {
+          "id": "o3",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "o4",
+          "fa": "دستت"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جَيْبِكَ» یعنی گریبانت. دوست فریبنده: جیب لباس معنای قرآنی آن نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0403",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "در آیه‌ی ۳۲، معنای «جَيْبِكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "o2",
+          "fa": "جیب لباست"
+        },
+        {
+          "id": "o3",
+          "fa": "بال‌هایت"
+        },
+        {
+          "id": "o4",
+          "fa": "ترس تو"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "آیه می‌فرماید «دستت را در گریبانت ببر». جَیب یعنی یقه و گریبان."
+    },
+    {
+      "id": "q_u_p389b_A_0404",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "با توجه به آیه‌ی نمایش‌داده‌شده، «جَيْبِكَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کیف پول تو"
+        },
+        {
+          "id": "o2",
+          "fa": "سینه‌ات"
+        },
+        {
+          "id": "o3",
+          "fa": "سرت"
+        },
+        {
+          "id": "o4",
+          "fa": "گریبانت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«جَيْبِكَ» از ریشه‌ی «ج ي ب» و به معنای گریبانت است. با «جیب» فارسی یکی نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0405",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "معنای «سُوٓءٍۢ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ترس"
+        },
+        {
+          "id": "o2",
+          "fa": "سفیدی"
+        },
+        {
+          "id": "o3",
+          "fa": "عیب و بیماری"
+        },
+        {
+          "id": "o4",
+          "fa": "نافرمانی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «س و ء»؛ در «مِن غیرِ سوء» یعنی بدون هیچ عیب."
+    },
+    {
+      "id": "q_u_p389b_A_0406",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "«سُوٓءٍۢ» یعنی:",
+      "stem": {
+        "wordId": "w28_032_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عیب"
+        },
+        {
+          "id": "o2",
+          "fa": "بدخواهی و دشمنی"
+        },
+        {
+          "id": "o3",
+          "fa": "گناه بزرگ"
+        },
+        {
+          "id": "o4",
+          "fa": "ترس و وحشت"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«سُوء» از ریشه‌ی «س و ء» و در این آیه به معنای عیب است."
+    },
+    {
+      "id": "q_u_p389b_A_0407",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "در آیه‌ی ۳۲، «سُوٓءٍۢ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_032_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "معجزه"
+        },
+        {
+          "id": "o2",
+          "fa": "عیب"
+        },
+        {
+          "id": "o3",
+          "fa": "دو دستت"
+        },
+        {
+          "id": "o4",
+          "fa": "سفید و درخشان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "آیه می‌فرماید «بدون هیچ عیبی» سفید و درخشان بیرون آید. «سُوء» همان عیب است."
+    },
+    {
+      "id": "q_u_p389b_A_0408",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "با توجه به آیه، «سُوٓءٍۢ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "o2",
+          "fa": "گریبان"
+        },
+        {
+          "id": "o3",
+          "fa": "بیرون آمدن"
+        },
+        {
+          "id": "o4",
+          "fa": "عیب"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«مِنْ غَيْرِ سُوءٍ» یعنی بدون هیچ عیب؛ «سوءِتغذیه» هم از همین ریشه است."
+    },
+    {
+      "id": "q_u_p389b_A_0409",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «گریبان» است؟",
+      "stem": {
+        "fa": "گریبان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جَيْبِكَ» از ریشه‌ی «ج ي ب» یعنی گریبانت؛ با جیب لباس اشتباه نشود."
+    },
+    {
+      "id": "q_u_p389b_A_0410",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "کدام کلمه به معنای «یقه‌ی لباس» است؟",
+      "stem": {
+        "fa": "یقه‌ی لباس"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "o4",
+          "ar": "بُرْهَـٰنَانِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "جَیب در این آیه یقه و گریبان است. «تَخْرُجْ» و «ٱسْلُكْ» فعل‌اند."
+    },
+    {
+      "id": "q_u_p389b_A_0411",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معادل «گریبانت» است؟",
+      "stem": {
+        "fa": "گریبانت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَيْبِكَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "هر چهار گزینه با «ـكَ» تمام می‌شوند. «جَيْبِكَ» یعنی گریبانت."
+    },
+    {
+      "id": "q_u_p389b_A_0412",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «عیب» است؟",
+      "stem": {
+        "fa": "عیب"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "غَيْرِ"
+        },
+        {
+          "id": "o3",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«سُوء» از ریشه‌ی «س و ء» یعنی عیب. «غَيْر» به معنای «غیر/بدون» است."
+    },
+    {
+      "id": "q_u_p389b_A_0413",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «عیب و بیماری» است؟",
+      "stem": {
+        "fa": "عیب و بیماری"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "غَيْرِ"
+        },
+        {
+          "id": "o2",
+          "ar": "مِنْ"
+        },
+        {
+          "id": "o3",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "بُرْهَـٰنَانِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«غَيْرِ سُوءٍ» یعنی بدون عیب؛ معنای عیب فقط در «سُوء» است."
+    },
+    {
+      "id": "q_u_p389b_A_0414",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_009"
+      ],
+      "promptFa": "در عبارت «بدون هیچ عیبی»، کدام کلمه‌ی عربی معنای «عیب» را می‌رساند؟",
+      "stem": {
+        "fa": "عیب (در «بدون هیچ عیبی»)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "غَيْرِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَخْرُجْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«غَيْر» یعنی بدون و «سُوء» یعنی عیب. «بَيْضَآءَ» یعنی سفید و درخشان."
+    },
+    {
+      "id": "q_u_p389b_A_0415",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004",
+        "w:w28_032_009"
+      ],
+      "promptFa": "هر کلمه را به معنای آن وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l4",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r2",
+          "fa": "عیب"
+        },
+        {
+          "id": "r3",
+          "fa": "جیب لباس"
+        },
+        {
+          "id": "r4",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "r5",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r6",
+          "fa": "ببر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "جَیب یعنی گریبان (نه جیب لباس) و سُوء یعنی عیب."
+    },
+    {
+      "id": "q_u_p389b_A_0416",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004",
+        "w:w28_032_009"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l5",
+          "ar": "فِرْعَوْنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r2",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r3",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r4",
+          "fa": "ترس"
+        },
+        {
+          "id": "r5",
+          "fa": "دستت"
+        },
+        {
+          "id": "r6",
+          "fa": "عیب"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "سُوء از ریشه‌ی «س و ء» به معنای عیب است و جَیب یعنی گریبان."
+    },
+    {
+      "id": "q_u_p389b_A_0417",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_004",
+        "w:w28_032_009"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درست آن وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l5",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "r2",
+          "fa": "عیب"
+        },
+        {
+          "id": "r3",
+          "fa": "بیرون آید"
+        },
+        {
+          "id": "r4",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r5",
+          "fa": "گریبانت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "جَیب یعنی گریبان و سُوء یعنی عیب؛ بقیه‌ی معانی از ترجمه‌ی همین آیه است."
+    }
+  ],
+  "issues": [
+    "لیست earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها کلمه‌ی مرور نیامده و از کلمات دیگر همین آیه استفاده شد."
+  ]
+}

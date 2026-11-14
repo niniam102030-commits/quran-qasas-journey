@@ -1,0 +1,554 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "B6",
+  "generatedBy": "Gemini 2.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p396a_B_1261",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "targets": [
+        "vt:85"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند. بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَرَآدُّكَ إِلَىٰ مَعَادٍۢ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قُل رَّبِّىٓ أَعْلَمُ مَن جَآءَ بِٱلْهُدَىٰ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1262",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "targets": [
+        "vt:85"
+      ],
+      "promptFa": "بخش اول آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِى",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَرَضَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَيْكَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْقُرْءَانَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَرَآدُّكَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِلَىٰ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "مَعَادٍۢ ۚ",
+          "wordIdx": [
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1263",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "targets": [
+        "vt:85"
+      ],
+      "promptFa": "بخش میانی آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "بگو: پروردگارم به کسی که هدایت را آورده است"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قُل",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَّبِّىٓ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَن",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "جَآءَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "بِٱلْهُدَىٰ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَمَنْ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "بِٱلْحَسَنَةِ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "إِلَيْكَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1264",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:85",
+        "vr:85"
+      ],
+      "promptFa": "آیه‌ی 85 را بسازید:",
+      "stem": {
+        "verse": 85
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَرَآدُّكَ إِلَىٰ مَعَادٍۢ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قُل رَّبِّىٓ أَعْلَمُ مَن جَآءَ بِٱلْهُدَىٰ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1265",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:85",
+        "vr:85"
+      ],
+      "promptFa": "بخش ابتدایی آیه‌ی 85 را بسازید:",
+      "stem": {
+        "verse": 85,
+        "hintFa": "شروع آیه"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِى",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَرَضَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَيْكَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْقُرْءَانَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَرَآدُّكَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَن",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "إِلَيْكَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1266",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:85",
+        "vr:85"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی 85 را بسازید:",
+      "stem": {
+        "verse": 85,
+        "hintFa": "پایان آیه"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَنْ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هُوَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فِى",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ضَلَـٰلٍۢ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُّبِينٍۢ",
+          "wordIdx": [
+            19
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَمَا",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْمُبِينِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    {
+      "id": "q_u_p396a_B_1267",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "targets": [
+        "vr:85"
+      ],
+      "promptFa": "کلمات پایانی آیه را انتخاب کنید:",
+      "stem": {
+        "verse": 85,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 85,
+            "from": 18,
+            "to": 19
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "مِّن رَّبِّكَ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَعْمَلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "خَـٰطِـِٔينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      }
+    },
+    {
+      "id": "q_u_p396a_B_1268",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "targets": [
+        "vr:85"
+      ],
+      "promptFa": "کلمات پایانی آیه را انتخاب کنید:",
+      "stem": {
+        "verse": 85,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 85,
+            "from": 16,
+            "to": 19
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "مَا كَانُوا۟ يَعْمَلُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ظَهِيرًۭا لِّلْكَـٰفِرِينَ"
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 11,
+            "to": 14
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      }
+    }
+  ],
+  "issues": []
+}

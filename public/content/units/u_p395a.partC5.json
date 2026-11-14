@@ -1,0 +1,217 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "C5",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p395a_C_1221",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78"
+      ],
+      "promptFa": "آیه قبل از این آیه با کدام کلمات پایان می‌یابد؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 78,
+            "from": 24,
+            "to": 28
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_077_024",
+            "w28_077_025",
+            "w28_077_026"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_076_027",
+            "w28_076_028",
+            "w28_076_029"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_080_013",
+            "w28_080_014",
+            "w28_080_015",
+            "w28_080_016"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل با جمله «وَلَا يُسْـَٔلُ عَن ذُنُوبِهِمُ ٱلْمُجْرِمُونَ» پایان می‌یابد و پس از آن قارون در میان قومش ظاهر می‌شود."
+    },
+    {
+      "id": "q_u_p395a_C_1222",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78",
+        "vr:78"
+      ],
+      "promptFa": "بخش پایانی آیه قبل از این آیه را به ترتیب درست بچینید:",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَنْ هُوَ أَشَدُّ مِنْهُ قُوَّةًۭ",
+          "wordIdx": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَأَكْثَرُ جَمْعًۭا ۚ",
+          "wordIdx": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَا يُسْـَٔلُ عَن",
+          "wordIdx": [
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ذُنُوبِهِمُ ٱلْمُجْرِمُونَ",
+          "wordIdx": [
+            27,
+            28
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَا يُلَقَّىٰهَآ",
+          "wordIdx": [
+            13,
+            14
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "خداوند در آیه قبل قدرت اقوامی را یادآور می‌شود که هلاک شدند و سپس به مجرمان اشاره می‌کند."
+    },
+    {
+      "id": "q_u_p395a_C_1223",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78",
+        "vr:78"
+      ],
+      "promptFa": "بخش آغازین آیه قبل از این آیه را بسازید:",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَىٰ عِلْمٍ عِندِىٓ ۚ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَدْ أَهْلَكَ مِن قَبْلِهِۦ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَالَ ٱلَّذِينَ",
+          "wordIdx": [
+            6,
+            7
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل با ادعای قارون مبنی بر اینکه ثروتش حاصل دانش خودش است آغاز می‌شود."
+    }
+  ],
+  "issues": []
+}

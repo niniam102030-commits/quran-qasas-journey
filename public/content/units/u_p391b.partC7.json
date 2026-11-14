@@ -1,0 +1,1185 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391b",
+  "part": "C7",
+  "generatedBy": "Gemini",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p391b_C_0801",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 47
+        },
+        {
+          "id": "o2",
+          "num": 46
+        },
+        {
+          "id": "o3",
+          "num": 48
+        },
+        {
+          "id": "o4",
+          "num": 45
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۴۷ سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0802",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 47
+        },
+        {
+          "id": "o3",
+          "num": 49
+        },
+        {
+          "id": "o4",
+          "num": 48
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره صحیح این آیه ۴۷ است."
+    },
+    {
+      "id": "q_u_p391b_C_0803",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 45
+        },
+        {
+          "id": "o2",
+          "num": 50
+        },
+        {
+          "id": "o3",
+          "num": 47
+        },
+        {
+          "id": "o4",
+          "num": 46
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شماره ۴۷ از سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0804",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "آیه ۴۷ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۷ با عبارت «وَلَوْلَآ أَن تُصِيبَهُم» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0805",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "آیه ۴۷ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه ۴۷ عبارت «وَلَوْلَآ أَن تُصِيبَهُم» است."
+    },
+    {
+      "id": "q_u_p391b_C_0806",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "آیه ۴۷ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۷ سوره قصص با کلمات «وَلَوْلَآ أَن تُصِيبَهُم» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p391b_C_0807",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 48
+        },
+        {
+          "id": "o2",
+          "num": 47
+        },
+        {
+          "id": "o3",
+          "num": 49
+        },
+        {
+          "id": "o4",
+          "num": 50
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۴۸ سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0808",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 46
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 51
+        },
+        {
+          "id": "o4",
+          "num": 49
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره صحیح این آیه ۴۸ است."
+    },
+    {
+      "id": "q_u_p391b_C_0809",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 45
+        },
+        {
+          "id": "o2",
+          "num": 47
+        },
+        {
+          "id": "o3",
+          "num": 48
+        },
+        {
+          "id": "o4",
+          "num": 44
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه شماره ۴۸ از سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0810",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "آیه ۴۸ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۸ با عبارت «فَلَمَّا جَآءَهُمُ ٱلْحَقُّ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0811",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "آیه ۴۸ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه ۴۸ عبارت «فَلَمَّا جَآءَهُمُ ٱلْحَقُّ» است."
+    },
+    {
+      "id": "q_u_p391b_C_0812",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "آیه ۴۸ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۸ سوره قصص با کلمات «فَلَمَّا جَآءَهُمُ ٱلْحَقُّ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p391b_C_0813",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 49
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 50
+        },
+        {
+          "id": "o4",
+          "num": 47
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۴۹ سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0814",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 51
+        },
+        {
+          "id": "o2",
+          "num": 49
+        },
+        {
+          "id": "o3",
+          "num": 46
+        },
+        {
+          "id": "o4",
+          "num": 50
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره صحیح این آیه ۴۹ است."
+    },
+    {
+      "id": "q_u_p391b_C_0815",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 45
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 49
+        },
+        {
+          "id": "o4",
+          "num": 52
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه شماره ۴۹ از سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0816",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "آیه ۴۹ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۹ با عبارت «قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0817",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "آیه ۴۹ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه ۴۹ عبارت «قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ» است."
+    },
+    {
+      "id": "q_u_p391b_C_0818",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 49,
+      "targets": [
+        "vn:49"
+      ],
+      "promptFa": "آیه ۴۹ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۹ سوره قصص با کلمات «قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p391b_C_0819",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 50
+        },
+        {
+          "id": "o2",
+          "num": 49
+        },
+        {
+          "id": "o3",
+          "num": 51
+        },
+        {
+          "id": "o4",
+          "num": 48
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۰ سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0820",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 47
+        },
+        {
+          "id": "o2",
+          "num": 50
+        },
+        {
+          "id": "o3",
+          "num": 52
+        },
+        {
+          "id": "o4",
+          "num": 49
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره صحیح این آیه ۵۰ است."
+    },
+    {
+      "id": "q_u_p391b_C_0821",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 46
+        },
+        {
+          "id": "o2",
+          "num": 51
+        },
+        {
+          "id": "o3",
+          "num": 50
+        },
+        {
+          "id": "o4",
+          "num": 48
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه شماره ۵۰ از سوره قصص است."
+    },
+    {
+      "id": "q_u_p391b_C_0822",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "آیه ۵۰ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۰ با عبارت «فَإِن لَّمْ يَسْتَجِيبُوا۟» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0823",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "آیه ۵۰ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه ۵۰ عبارت «فَإِن لَّمْ يَسْتَجِيبُوا۟» است."
+    },
+    {
+      "id": "q_u_p391b_C_0824",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 50,
+      "targets": [
+        "vn:50"
+      ],
+      "promptFa": "آیه ۵۰ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۰ سوره قصص با کلمات «فَإِن لَّمْ يَسْتَجِيبُوا۟» آغاز می‌گردد."
+    }
+  ]
+}

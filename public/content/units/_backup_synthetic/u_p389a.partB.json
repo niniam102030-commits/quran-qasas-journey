@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p389a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 29,
+      "targets": [
+        "vr:29"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «چون موسی آن مدت را به پایان برد و با خانواده اش رهسپار [مصر] شد، از جا...»، آیه 29 را مرتب کن:",
+      "stem": {
+        "verse": 29
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ وَسَارَ بِأَهْلِهِۦٓ ءَانَسَ مِن جَانِبِ",
+          "wordIdx": [
+            1,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ءَاتِيكُم مِّنْهَا بِخَبَرٍ أَوْ جَذْوَةٍۢ مِّنَ ٱلنَّارِ لَعَلَّكُمْ تَصْطَلُونَ",
+          "wordIdx": [
+            19,
+            27
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلطُّورِ نَارًۭا قَالَ لِأَهْلِهِ ٱمْكُثُوٓا۟ إِنِّىٓ ءَانَسْتُ نَارًۭا لَّعَلِّىٓ",
+          "wordIdx": [
+            10,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 29 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p389a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 29,
+      "targets": [
+        "vr:29"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 29 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 29,
+        "hiddenIdx": [
+          14
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱمْكُثُوٓا۟",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "14": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «ٱمْكُثُوٓا۟» در آیه 29 است."
+    }
+  ],
+  "issues": []
+}

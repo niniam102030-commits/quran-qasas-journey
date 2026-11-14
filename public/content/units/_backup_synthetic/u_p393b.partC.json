@@ -1,0 +1,91 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393b",
+  "part": "C",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p393b_C_0001",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "sq:65"
+      ],
+      "promptFa": "بلافاصله پس از آیه 65 سوره قصص («وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَب...»)، کدام آیه قرار دارد؟",
+      "stem": {
+        "verse": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ فَهُمْ لَا يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ فَهُمْ لَا يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟ فِي ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه 66 سوره قصص بلافاصله پس از آیه 65 قرار دارد."
+    },
+    {
+      "id": "q_u_p393b_C_0002",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 65,
+      "targets": [
+        "vn:65"
+      ],
+      "promptFa": "آیه مبارکه «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ»، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 65
+        },
+        {
+          "id": "o2",
+          "num": 66
+        },
+        {
+          "id": "o3",
+          "num": 64
+        },
+        {
+          "id": "o4",
+          "num": 67
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه، آیه شماره 65 از سوره مبارکه قصص است."
+    }
+  ],
+  "issues": []
+}

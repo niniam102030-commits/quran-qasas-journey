@@ -1,0 +1,1034 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391a",
+  "part": "A4",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p391a_A_0501",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "معنای «تَتْلُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_045_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ساکن می‌شوی"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌فرستی"
+        },
+        {
+          "id": "o4",
+          "fa": "می‌نویسی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«تَتْلُو» از ریشه‌ی «ت ل و» و هم‌ریشه با «تلاوت» است؛ یعنی می‌خوانی."
+    },
+    {
+      "id": "q_u_p391a_A_0502",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "کدام گزینه معنای «تَتْلُوا۟» است؟",
+      "stem": {
+        "wordId": "w28_045_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر کسی وحی فرستادن"
+        },
+        {
+          "id": "o2",
+          "fa": "در میان کسی ماندن"
+        },
+        {
+          "id": "o3",
+          "fa": "به کسی خبر دادن"
+        },
+        {
+          "id": "o4",
+          "fa": "بر کسی خواندن و تلاوت کردن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«تتلوا» یعنی بر کسی خواندن؛ هم‌ریشه با «تلاوت» که خواندن آیات است."
+    },
+    {
+      "id": "q_u_p391a_A_0503",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "معنای «تَتْلُوا۟» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_045_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌گذری"
+        },
+        {
+          "id": "o2",
+          "fa": "دراز می‌کشی"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "o4",
+          "fa": "پدید می‌آوری"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «تَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا» یعنی نشانه‌های ما را بر آنان می‌خوانی."
+    },
+    {
+      "id": "q_u_p391a_A_0504",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "«تَتْلُوا۟» در این آیه کدام معنا را دارد؟",
+      "stem": {
+        "wordId": "w28_045_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "(ما) می‌فرستیم"
+        },
+        {
+          "id": "o2",
+          "fa": "(تو) ساکنی"
+        },
+        {
+          "id": "o3",
+          "fa": "(آنان) می‌خوانند"
+        },
+        {
+          "id": "o4",
+          "fa": "(تو) می‌خوانی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "فعل برای مخاطب (تو) است، نه آنان؛ «تَتْلُو» یعنی می‌خوانی."
+    },
+    {
+      "id": "q_u_p391a_A_0505",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "معنای «ءَايَـٰتِنَا» چیست؟",
+      "stem": {
+        "wordId": "w28_045_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "o2",
+          "fa": "آیه‌های قرآن"
+        },
+        {
+          "id": "o3",
+          "fa": "ملت‌های ما"
+        },
+        {
+          "id": "o4",
+          "fa": "فرستادگان ما"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«آیات» در فارسی بیشتر آیه‌های قرآن است؛ اما در این آیه به معنای «نشانه‌ها» آمده است."
+    },
+    {
+      "id": "q_u_p391a_A_0506",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "کدام گزینه معنای «ءَايَـٰتِنَا» است؟",
+      "stem": {
+        "wordId": "w28_045_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مردم مدین"
+        },
+        {
+          "id": "o2",
+          "fa": "سوره‌های ما"
+        },
+        {
+          "id": "o3",
+          "fa": "روزگار دراز"
+        },
+        {
+          "id": "o4",
+          "fa": "نشانه‌ها و دلایل الهی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«آیات» یعنی نشانه‌ها و دلایل؛ ضمیر «نا» یعنی ما."
+    },
+    {
+      "id": "q_u_p391a_A_0507",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "معنای «ءَايَـٰتِنَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_045_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ملت‌هایی که پدید آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "آیه‌های قرآن"
+        },
+        {
+          "id": "o3",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "o4",
+          "fa": "اهل مدین"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در ترجمه‌ی این آیه «نشانه‌های [قدرت و خشم] ما» آمده است."
+    },
+    {
+      "id": "q_u_p391a_A_0508",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "«ءَايَـٰتِنَا» که تو بر آنان می‌خوانی، یعنی چه؟",
+      "stem": {
+        "wordId": "w28_045_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرستادگان ما"
+        },
+        {
+          "id": "o2",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "o3",
+          "fa": "آیه‌های شماره‌دار قرآن"
+        },
+        {
+          "id": "o4",
+          "fa": "سرگذشت‌های فراموش‌شده"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«آیات» اینجا یعنی نشانه‌ها؛ «نا» ضمیر متصل به معنای «ما» است."
+    },
+    {
+      "id": "q_u_p391a_A_0509",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «می‌خوانی» است؟",
+      "stem": {
+        "fa": "می‌خوانی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنتَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَتْلُوا۟» از ریشه‌ی «ت ل و» است و هم‌ریشه با «تلاوت»."
+    },
+    {
+      "id": "q_u_p391a_A_0510",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "بر کسی خواندن و تلاوت کردن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلَيْهِمْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تتلوا» فعل خواندن است؛ «عَلَيْهِمْ» فقط به معنای «بر آنان» است."
+    },
+    {
+      "id": "q_u_p391a_A_0511",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی با این معنا می‌آید؟",
+      "stem": {
+        "fa": "تو بر آنان می‌خوانی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "o2",
+          "ar": "كُنَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَتْلُوا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فعل خواندن برای مخاطب «تَتْلُوا۟» است؛ «كُنتَ» یعنی بودی."
+    },
+    {
+      "id": "q_u_p391a_A_0512",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «نشانه‌های ما» است؟",
+      "stem": {
+        "fa": "نشانه‌های ما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "o4",
+          "ar": "مُرْسِلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ءَايَـٰتِنَا» یعنی نشانه‌های ما، نه الزاماً آیه‌های قرآن."
+    },
+    {
+      "id": "q_u_p391a_A_0513",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "نشانه‌ها و دلایل الهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَايَـٰتِنَا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«آیات» جمع «آیه» به معنای نشانه‌هاست."
+    },
+    {
+      "id": "q_u_p391a_A_0514",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را می‌رساند؟",
+      "stem": {
+        "fa": "نشانه‌هایی از ما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَلَـٰكِنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "عَلَيْهِمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَايَـٰتِنَا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "پایان «نَا» یعنی «ما»؛ «ءَايَـٰت» یعنی نشانه‌ها."
+    },
+    {
+      "id": "q_u_p391a_A_0515",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013",
+        "w:w28_045_015"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ثَاوِيًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r2",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "r3",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r4",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "r5",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r6",
+          "fa": "گذشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«تتلوا» می‌خوانی و «آیات» نشانه‌هاست؛ سه کلمه‌ی دیگر از همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p391a_A_0516",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013",
+        "w:w28_045_015"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "كُنتَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بودی"
+        },
+        {
+          "id": "r2",
+          "fa": "فرستنده‌ها"
+        },
+        {
+          "id": "r3",
+          "fa": "مدین"
+        },
+        {
+          "id": "r4",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "r5",
+          "fa": "نشانه‌های ما"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«نشانه‌های ما» و «می‌خوانی» معنای دو کلمه‌ی سخت این آیه‌اند."
+    },
+    {
+      "id": "q_u_p391a_A_0517",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013",
+        "w:w28_045_015"
+      ],
+      "promptFa": "کلمه‌ها را به معنایشان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "عَلَيْهِمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "r2",
+          "fa": "بر آنان"
+        },
+        {
+          "id": "r3",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r4",
+          "fa": "مردم"
+        },
+        {
+          "id": "r5",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "r6",
+          "fa": "ساکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«ساکن» معنای «ثاویا» است و در این ردیف جفتی ندارد."
+    },
+    {
+      "id": "q_u_p391a_A_0518",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013",
+        "w:w28_045_015"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "تَتْلُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "r2",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r3",
+          "fa": "بودی"
+        },
+        {
+          "id": "r4",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "r5",
+          "fa": "ساکن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«ثاویا» یعنی ساکن؛ «تتلوا» می‌خوانی و «آیات» نشانه‌هاست."
+    },
+    {
+      "id": "q_u_p391a_A_0519",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_013",
+        "w:w28_045_015"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای فارسی وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "l4",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "تَتْلُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r2",
+          "fa": "می‌خوانی"
+        },
+        {
+          "id": "r3",
+          "fa": "فرستنده‌ها"
+        },
+        {
+          "id": "r4",
+          "fa": "مردم"
+        },
+        {
+          "id": "r5",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "r6",
+          "fa": "پدید آوردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«پدید آوردیم» معنای «أنشأنا» است و در این ردیف جفت ندارد."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,4 @@
+[#5 q_u_p385b_A_1105 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p385b_A_1108 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#15 q_u_p385b_A_1115 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p385b_A_1117 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.

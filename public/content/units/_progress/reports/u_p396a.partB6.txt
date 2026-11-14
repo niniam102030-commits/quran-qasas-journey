@@ -1,0 +1,18 @@
+[#1 q_u_p396a_B_1261 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p396a_B_1261 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#1 q_u_p396a_B_1261 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p396a_B_1262 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#2 q_u_p396a_B_1262 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p396a_B_1263 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#3 q_u_p396a_B_1263 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p396a_B_1264 BUILD_FROM_NUMBER] explanationFa خالی است.
+[#5 q_u_p396a_B_1265 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p396a_B_1265 BUILD_FROM_NUMBER] explanationFa خالی است.
+[#5 q_u_p396a_B_1265 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 85 را نمی‌پوشاند.
+[#6 q_u_p396a_B_1266 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p396a_B_1266 BUILD_FROM_NUMBER] explanationFa خالی است.
+[#6 q_u_p396a_B_1266 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 85 را نمی‌پوشاند.
+[#7 q_u_p396a_B_1267 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p396a_B_1267 ENDING_CHOICE] explanationFa خالی است.
+[#7 q_u_p396a_B_1267 ENDING_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#8 q_u_p396a_B_1268 ENDING_CHOICE] explanationFa خالی است.

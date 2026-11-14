@@ -1,0 +1,10050 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p396a",
+ "part": "A",
+ "generatedBy": "Gemini,claude,Claude,Gemini-1.5-Pro",
+ "lexicon": [
+  {
+   "wordId": "w28_085_001",
+   "gloss": "یقیناً",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_002",
+   "gloss": "کسی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_003",
+   "gloss": "واجب کرده است",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_004",
+   "gloss": "بر تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_005",
+   "gloss": "قرآن را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_006",
+   "gloss": "بازمی گرداند",
+   "hard": true,
+   "meaningFa": "قطعاً بازگرداننده توست",
+   "rootAr": "ر د د",
+   "trapFa": "رد کننده تو",
+   "tipFa": "از ریشه رد به معنای بازگرداندن است."
+  },
+  {
+   "wordId": "w28_085_007",
+   "gloss": "به",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_008",
+   "gloss": "بازگشت گاه",
+   "hard": true,
+   "meaningFa": "جایگاه بازگشت",
+   "rootAr": "ع و د",
+   "trapFa": "معمولی و عادی",
+   "tipFa": "از عود و معاد یعنی محل بازگشت."
+  },
+  {
+   "wordId": "w28_085_009",
+   "gloss": "بگو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_010",
+   "gloss": "پروردگارم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_011",
+   "gloss": "داناتر است",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_012",
+   "gloss": "به کسی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_013",
+   "gloss": "آورده است",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_014",
+   "gloss": "هدایت را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_015",
+   "gloss": "و به کسی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_016",
+   "gloss": "او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_017",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_018",
+   "gloss": "گمراهی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_085_019",
+   "gloss": "آشکاری است",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_001",
+   "gloss": "و نبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_002",
+   "gloss": "تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_003",
+   "gloss": "امید نداشتی",
+   "hard": true,
+   "meaningFa": "امید داشتی، انتظار داشتی",
+   "rootAr": "ر ج و",
+   "trapFa": "رجوع کنی",
+   "tipFa": "رجاء به معنای امیدواری است."
+  },
+  {
+   "wordId": "w28_086_004",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_005",
+   "gloss": "القا شود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_006",
+   "gloss": "بر تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_007",
+   "gloss": "این کتاب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_008",
+   "gloss": "لکن",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_009",
+   "gloss": "رحمتی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_010",
+   "gloss": "از سوی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_011",
+   "gloss": "پروردگارت بود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_012",
+   "gloss": "پس هرگز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_013",
+   "gloss": "مباش",
+   "hard": false
+  },
+  {
+   "wordId": "w28_086_014",
+   "gloss": "پشتیبان",
+   "hard": true,
+   "meaningFa": "پشتیبان، یاور",
+   "rootAr": "ظ ه ر",
+   "trapFa": "آشکار و نمایان",
+   "tipFa": "ظهیر از ریشه ظهر (پشت) به معنای پشتیبان است."
+  },
+  {
+   "wordId": "w28_086_015",
+   "gloss": "کافران",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_001",
+   "gloss": "و مبادا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_002",
+   "gloss": "باز دارند",
+   "hard": true,
+   "meaningFa": "تو را مانع شوند",
+   "rootAr": "ص د د",
+   "trapFa": "صدای تو را بشنوند",
+   "tipFa": "صد در عربی یعنی بازداشتن و جلوگیری."
+  },
+  {
+   "wordId": "w28_087_003",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_004",
+   "gloss": "آیات",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_005",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_006",
+   "gloss": "پس از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_007",
+   "gloss": "آنکه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_008",
+   "gloss": "نازل شد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_009",
+   "gloss": "به سوی تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_010",
+   "gloss": "و دعوت کن",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_011",
+   "gloss": "به جانب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_012",
+   "gloss": "پروردگارت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_013",
+   "gloss": "و هرگز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_014",
+   "gloss": "مباش",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_015",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_087_016",
+   "gloss": "مشرکان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_001",
+   "gloss": "و",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_002",
+   "gloss": "مخوان",
+   "hard": true,
+   "meaningFa": "نخوان، دعوت نکن",
+   "rootAr": "د ع و",
+   "trapFa": "ادعا نکن",
+   "tipFa": "از ریشه دعوت و دعا."
+  },
+  {
+   "wordId": "w28_088_003",
+   "gloss": "با",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_004",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_005",
+   "gloss": "معبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_006",
+   "gloss": "دیگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_007",
+   "gloss": "نیست",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_008",
+   "gloss": "معبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_009",
+   "gloss": "جز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_010",
+   "gloss": "او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_011",
+   "gloss": "هر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_012",
+   "gloss": "چیزی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_013",
+   "gloss": "هلاک شدنی است",
+   "hard": true,
+   "meaningFa": "نابودشونده",
+   "rootAr": "ه ل ک",
+   "trapFa": null,
+   "tipFa": "یعنی هر چیزی جز ذات او از بین می‌رود."
+  },
+  {
+   "wordId": "w28_088_014",
+   "gloss": "مگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_015",
+   "gloss": "ذات او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_016",
+   "gloss": "ویژه اوست",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_017",
+   "gloss": "فرمانروایی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_018",
+   "gloss": "و فقط به سوی او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_088_019",
+   "gloss": "بازگردانده می شوید",
+   "hard": true,
+   "meaningFa": "برگردانده می‌شوید",
+   "rootAr": "ر ج ع",
+   "trapFa": "رجوع می‌کنید (معلوم)",
+   "tipFa": "فعل مجهول است: بازگردانده می‌شوید."
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 85,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 5,
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است،"
+    },
+    {
+     "from": 6,
+     "to": 8,
+     "fa": "حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+    },
+    {
+     "from": 9,
+     "to": 10,
+     "fa": "بگو: پروردگارم"
+    },
+    {
+     "from": 12,
+     "to": 14,
+     "fa": "به کسی که هدایت را آورده است"
+    },
+    {
+     "from": 15,
+     "to": 19,
+     "fa": "و به کسی که در گمراهی آشکاری است،"
+    },
+    {
+     "from": 11,
+     "to": 11,
+     "fa": "داناتر است."
+    }
+   ],
+   "faSegments": [
+    "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، ",
+    "حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند. ",
+    "بگو: پروردگارم ",
+    "به کسی که هدایت را آورده است ",
+    "و به کسی که در گمراهی آشکاری است، ",
+    "داناتر است."
+   ]
+  },
+  {
+   "verse": 86,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 3,
+     "fa": "و تو امید و انتظار نداشتی"
+    },
+    {
+     "from": 4,
+     "to": 7,
+     "fa": "که این کتاب بر تو القا شود،"
+    },
+    {
+     "from": 8,
+     "to": 11,
+     "fa": "لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛"
+    },
+    {
+     "from": 12,
+     "to": 15,
+     "fa": "پس هرگز پشتیبان کافران مباش،"
+    }
+   ],
+   "faSegments": [
+    "و تو امید و انتظار نداشتی ",
+    "که این کتاب بر تو القا شود، ",
+    "لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛ ",
+    "پس هرگز پشتیبان کافران مباش،"
+   ]
+  },
+  {
+   "verse": 87,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 9,
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،"
+    },
+    {
+     "from": 10,
+     "to": 12,
+     "fa": "و به جانب پروردگارت دعوت کن،"
+    },
+    {
+     "from": 13,
+     "to": 16,
+     "fa": "و هرگز از مشرکان مباش،"
+    }
+   ],
+   "faSegments": [
+    "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، ",
+    "و به جانب پروردگارت دعوت کن، ",
+    "و هرگز از مشرکان مباش،"
+   ]
+  },
+  {
+   "verse": 88,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 6,
+     "fa": "و با خدا معبودی دیگر مخوان،"
+    },
+    {
+     "from": 7,
+     "to": 10,
+     "fa": "جز او معبودی نیست،"
+    },
+    {
+     "from": 11,
+     "to": 15,
+     "fa": "هر چیزی مگر ذات او هلاک شدنی است،"
+    },
+    {
+     "from": 16,
+     "to": 17,
+     "fa": "فرمانروایی [بر همه جهان هستی] ویژه اوست،"
+    },
+    {
+     "from": 18,
+     "to": 19,
+     "fa": "و فقط به سوی او بازگردانده می شوید."
+    }
+   ],
+   "faSegments": [
+    "و با خدا معبودی دیگر مخوان، ",
+    "جز او معبودی نیست، ",
+    "هر چیزی مگر ذات او هلاک شدنی است، ",
+    "فرمانروایی [بر همه جهان هستی] ویژه اوست، ",
+    "و فقط به سوی او بازگردانده می شوید."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p396a_A_0841",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معنای «لَرَآدُّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o3",
+     "fa": "واجب کرده است"
+    },
+    {
+     "id": "o4",
+     "fa": "بازگشت گاه"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی «ر د د» به معنای بازگرداندن است. «رد کننده» دوست فریبنده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0842",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "کدام گزینه معنای دقیق «لَرَآدُّكَ» است؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "امید و انتظار داشتی"
+    },
+    {
+     "id": "o2",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "o3",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "o4",
+     "fa": "قطعاً بازگرداننده توست"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "random"
+   },
+   "explanationFa": "«لَ» تأکید و «رَآدّ» اسم فاعل از ریشه‌ی «ر د د» است؛ یعنی قطعاً بازگرداننده‌ی توست.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0843",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "در این آیه، معنای «لَرَآدُّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o2",
+     "fa": "داناتر است"
+    },
+    {
+     "id": "o3",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "o4",
+     "fa": "آشکار می کند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "در آیه‌ی ۸۵ یعنی خدا تو را به بازگشت گاه بازمی گرداند. ریشه‌ی آن «ر د د» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0844",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "در آیه، «لَرَآدُّكَ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "واجب کرد"
+    },
+    {
+     "id": "o2",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعاً بازگرداننده توست"
+    },
+    {
+     "id": "o4",
+     "fa": "جایگاه بازگشت"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فاعل بازگرداندن خداست و مفعول، «تو». «جایگاه بازگشت» معنای کلمه‌ی بعدی است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0845",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+   "stem": {
+    "fa": "بازمی گرداند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "o2",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَعْلَمُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "«لَرَآدُّكَ» از ریشه‌ی «ر د د» و به معنای بازمی گرداند است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0846",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "کلمه‌ی عربی متناسب با این معنا کدام است؟",
+   "stem": {
+    "fa": "قطعاً بازگرداننده توست"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "إِلَىٰ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "مَعَادٍۢ ۚ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لَ» تأکید، «رَآدّ» بازگرداننده و «كَ» ضمیر تو است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0847",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "کدام کلمه یعنی «بازگرداننده‌ی تو» با تأکید؟",
+   "stem": {
+    "fa": "بازگرداننده تو"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَلَيْكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "o4",
+     "ar": "مُّبِينٍۢ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "«عَلَيْكَ» هم ضمیر «ك» دارد، اما معنایش «بر تو» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0848",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "معنای «مَعَادٍ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "معمولی و عادی"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراهی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی «ع و د» و به معنای محل بازگشت است. به «عادی» ربطی ندارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0849",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "کدام معنا برای «مَعَادٍ» درست است؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جایگاه بازگشت"
+    },
+    {
+     "id": "o2",
+     "fa": "معمولی و عادی"
+    },
+    {
+     "id": "o3",
+     "fa": "داناتر"
+    },
+    {
+     "id": "o4",
+     "fa": "قرآن"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مَعاد» اسم مکان از «ع و د» است؛ یعنی جایی که به آن بازمی گردند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0850",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "در این آیه «مَعَادٍ» به چه معنا است؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o2",
+     "fa": "معمولی و عادی"
+    },
+    {
+     "id": "o3",
+     "fa": "آشکار"
+    },
+    {
+     "id": "o4",
+     "fa": "بازگشت گاه"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "random"
+   },
+   "explanationFa": "در این آیه یعنی بازگشت گاه؛ «لَرَآدُّكَ» فعل و «مَعَاد» مقصد بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0851",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "در آیه، «إِلَىٰ مَعَادٍ» یعنی بازگرداندن به کجا؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "به رسم و عادت"
+    },
+    {
+     "id": "o2",
+     "fa": "به جایگاه بازگشت"
+    },
+    {
+     "id": "o3",
+     "fa": "به گمراهی آشکار"
+    },
+    {
+     "id": "o4",
+     "fa": "به قرآن"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مَعَاد» همان محل بازگشت است، نه عادت و رسم.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0852",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+   "stem": {
+    "fa": "بازگشت گاه"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَىٰ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مَعَاد» از «ع و د» به معنای محل بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0853",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "کلمه‌ی عربی متناسب با این معنا را بیابید.",
+   "stem": {
+    "fa": "جایگاه بازگشت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْقُرْءَانَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَعْلَمُ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "مَعَادٍۢ ۚ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَرَآدُّكَ» فعلِ بازگرداندن است و «مَعَاد» مکانِ بازگشت.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0854",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "کدام کلمه، محل بازگشت را می‌رساند؟",
+   "stem": {
+    "fa": "محل بازگشت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "إِلَىٰ"
+    },
+    {
+     "id": "o2",
+     "ar": "مُّبِينٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "o4",
+     "ar": "جَآءَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o4": "random"
+   },
+   "explanationFa": "«إِلَىٰ» حرف جر به معنای «به سوی» است و محل بازگشت را نمی‌رساند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0855",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کلمه‌ی «تَرْجُوٓا۟» (خودِ فعل، بدون «مَا») یعنی چه؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رجوع کنی"
+    },
+    {
+     "id": "o2",
+     "fa": "می ترسی"
+    },
+    {
+     "id": "o3",
+     "fa": "امید و انتظار داشتی"
+    },
+    {
+     "id": "o4",
+     "fa": "بازمی گردی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "random",
+    "o4": "same_root"
+   },
+   "explanationFa": "از ریشه‌ی «ر ج و» و به معنای امیدواری است، نه رجوع.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0856",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "«تَرْجُوٓا۟» از کدام معناست؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشتیبان بودن"
+    },
+    {
+     "id": "o2",
+     "fa": "رجوع کردن"
+    },
+    {
+     "id": "o3",
+     "fa": "القا شدن"
+    },
+    {
+     "id": "o4",
+     "fa": "امید داشتن"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«رجاء» یعنی امید. با «رجوع» که از «ر ج ع» است اشتباه نشود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0857",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "در «وَمَا كُنتَ تَرْجُوٓا۟»، معنای عبارت با نفی چیست؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رجوع نمی کردی"
+    },
+    {
+     "id": "o2",
+     "fa": "امید و انتظار نداشتی"
+    },
+    {
+     "id": "o3",
+     "fa": "نمی ترسیدی"
+    },
+    {
+     "id": "o4",
+     "fa": "پشتیبان نبودی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مَا كُنتَ تَرْجُو» یعنی امید و انتظار نداشتی که این کتاب بر تو القا شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0858",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "در آیه، «تَرْجُوٓا۟» همراه «كُنتَ» با کدام معنا می‌آید؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "امید و انتظار داشتی"
+    },
+    {
+     "id": "o2",
+     "fa": "بازگشت می کردی"
+    },
+    {
+     "id": "o3",
+     "fa": "ترسیدی"
+    },
+    {
+     "id": "o4",
+     "fa": "القا کردی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل از «ر ج و» است. نفی آن از «مَا» می‌آید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0859",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+   "stem": {
+    "fa": "امید داشتی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "o3",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o4",
+     "ar": "رَحْمَةًۭ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَرْجُو» از ریشه‌ی «ر ج و» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0860",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کلمه‌ی عربی متناسب با این معنا کدام است؟",
+   "stem": {
+    "fa": "انتظار داشتی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "إِلَيْكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "تَرْجُوٓا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«تَرْجُو» یعنی امید و انتظار داشتن.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0861",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کدام کلمه فعل «امیدواری» است؟",
+   "stem": {
+    "fa": "امید و انتظار داشتی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَرْجُوٓا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«رَحْمَةً» اسم است نه فعل، و «يُلْقَىٰ» به معنای القا می شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0862",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006",
+    "w:w28_085_008",
+    "w:w28_086_003"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ظَهِيرًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r2",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "r3",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "r4",
+     "fa": "امید و انتظار داشتی"
+    },
+    {
+     "id": "r5",
+     "fa": "واجب کرد"
+    },
+    {
+     "id": "r6",
+     "fa": "بازگشت گاه"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "false_friend"
+   },
+   "explanationFa": "«رد کننده» دوست فریبنده برای «لَرَآدُّكَ» است و معنای درست «بازمی گرداند» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0863",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006",
+    "w:w28_085_008",
+    "w:w28_086_003"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "l4",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "l5",
+     "ar": "رَحْمَةًۭ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "r2",
+     "fa": "معمولی و عادی"
+    },
+    {
+     "id": "r3",
+     "fa": "رحمت"
+    },
+    {
+     "id": "r4",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "r5",
+     "fa": "القا شود"
+    },
+    {
+     "id": "r6",
+     "fa": "امید و انتظار داشتی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "false_friend"
+   },
+   "explanationFa": "«مَعَاد» از «ع و د» محل بازگشت است و به «عادی» ربطی ندارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0864",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006",
+    "w:w28_085_008",
+    "w:w28_086_003"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَعْلَمُ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "l5",
+     "ar": "تَرْجُوٓا۟"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گمراهی"
+    },
+    {
+     "id": "r2",
+     "fa": "رجوع کنی"
+    },
+    {
+     "id": "r3",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "r4",
+     "fa": "امید و انتظار داشتی"
+    },
+    {
+     "id": "r5",
+     "fa": "داناتر"
+    },
+    {
+     "id": "r6",
+     "fa": "بازمی گرداند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "false_friend"
+   },
+   "explanationFa": "«تَرْجُو» از رجاء (امید) است، نه رجوع.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0865",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006",
+    "w:w28_085_008",
+    "w:w28_086_003"
+   ],
+   "promptFa": "کلمه‌های عربی را به معانی‌شان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "l5",
+     "ar": "مَعَادٍۢ ۚ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "r2",
+     "fa": "واجب کرد"
+    },
+    {
+     "id": "r3",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "r4",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r5",
+     "fa": "امید و انتظار داشتی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "سه کلمه‌ی سخت این برش (لَرَآدُّكَ، مَعَاد، تَرْجُو) را با دو کلمه‌ی همین آیات مرور کنید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0941",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معنای «ظَهِيرًۭا» چیست؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آشکار و نمایان"
+    },
+    {
+     "id": "o2",
+     "fa": "رحمت و مهربانی"
+    },
+    {
+     "id": "o3",
+     "fa": "پشتیبان، یاور"
+    },
+    {
+     "id": "o4",
+     "fa": "کافر و ناسپاس"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ظهیر» از ریشه‌ی «ظ ه ر» (پشت) است و یعنی پشتیبان. با «ظاهر» به معنای آشکار اشتباه نشود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0942",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "کدام گزینه معنای «ظَهِيرًۭا» است؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "o2",
+     "fa": "پشت‌کننده و رویگردان"
+    },
+    {
+     "id": "o3",
+     "fa": "پشته و بلندی"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستاده و پیام‌آور"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "«ظهیر» یعنی پشتیبان و یاور، کسی که پشت دیگری می‌ایستد. هم‌ریشه بودن با «پشت» به معنای رویگردانی نیست.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0943",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "در این آیه، معنای «ظَهِيرًۭا» چیست؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "همراه و هم‌سفر"
+    },
+    {
+     "id": "o2",
+     "fa": "آشکارکننده"
+    },
+    {
+     "id": "o3",
+     "fa": "امیدوار"
+    },
+    {
+     "id": "o4",
+     "fa": "پشتیبان"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در «فَلَا تَكُونَنَّ ظَهِيرًۭا لِّلْكَـٰفِرِينَ» یعنی پشتیبان کافران مباش. ریشه‌ی «ظ ه ر» به پشت برمی‌گردد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0944",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "«ظَهِيرًۭا» در این آیه به چه معناست؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نگهبان و زندانبان"
+    },
+    {
+     "id": "o2",
+     "fa": "پشتیبان، یاور"
+    },
+    {
+     "id": "o3",
+     "fa": "ظاهر و نمایان"
+    },
+    {
+     "id": "o4",
+     "fa": "دریافت‌کننده‌ی کتاب"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "نهی از پشتیبانی کافران است، پس «ظهیر» یعنی پشتیبان. «ظاهر» به معنای آشکار دوست فریبنده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0945",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «پشتیبان» است؟",
+   "stem": {
+    "fa": "پشتیبان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لِّلْكَـٰفِرِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَكُونَنَّ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«پشتیبان» در این آیه «ظَهِيرًۭا» است و از ریشه‌ی «ظ ه ر» (پشت) می‌آید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0946",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معادل عربی «یاور و پشتیبان» را انتخاب کن.",
+   "stem": {
+    "fa": "یاور و پشتیبان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْكِتَـٰبُ"
+    },
+    {
+     "id": "o4",
+     "ar": "ظَهِيرًۭا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ظَهِيرًۭا» یعنی یاور و پشتیبان. سه گزینه‌ی دیگر از همین آیه‌اند و معنای دیگری دارند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0947",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "کدام کلمه یعنی «کسی که از دیگری حمایت و پشتیبانی می‌کند»؟",
+   "stem": {
+    "fa": "پشتیبان؛ حمایت‌کننده"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "لِّلْكَـٰفِرِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَّا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ظَهِيرًۭا» به معنای پشتیبان است. «لِّلْكَـٰفِرِينَ» یعنی «برای کافران»، مفعول‌له‌ی پشتیبانی.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0948",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "معنای «يَصُدُّنَّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "صدای تو را بشنوند"
+    },
+    {
+     "id": "o2",
+     "fa": "تو را مانع شوند"
+    },
+    {
+     "id": "o3",
+     "fa": "تو را فراخوانند"
+    },
+    {
+     "id": "o4",
+     "fa": "بر تو نازل کنند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«صدّ» در عربی یعنی بازداشتن و جلوگیری، از ریشه‌ی «ص د د». ربطی به «صدا» ندارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0949",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "کدام گزینه معنای «يَصُدُّنَّكَ» است؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تو را راه نمایند"
+    },
+    {
+     "id": "o2",
+     "fa": "تو را بازگردانند"
+    },
+    {
+     "id": "o3",
+     "fa": "تو را صدا بزنند"
+    },
+    {
+     "id": "o4",
+     "fa": "تو را باز دارند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "near_miss",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«يَصُدُّنَّكَ» یعنی تو را باز دارند و مانع شوند. «صدا زدن» دوست فریبنده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0950",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "در این آیه، معنای «يَصُدُّنَّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تو را مانع شوند"
+    },
+    {
+     "id": "o2",
+     "fa": "تو را شریک گیرند"
+    },
+    {
+     "id": "o3",
+     "fa": "صدایت را بشنوند"
+    },
+    {
+     "id": "o4",
+     "fa": "تو را بخوانند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَلَا يَصُدُّنَّكَ عَنْ ءَايَـٰتِ ٱللَّهِ» یعنی مبادا تو را از آیات خدا باز دارند. «عَنْ» با «صدّ» معنای بازداشتن از چیزی را می‌دهد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0951",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "«يَصُدُّنَّكَ» در این آیه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بر تو بفرستند"
+    },
+    {
+     "id": "o2",
+     "fa": "صدای آیات را بشنوند"
+    },
+    {
+     "id": "o3",
+     "fa": "باز دارند"
+    },
+    {
+     "id": "o4",
+     "fa": "به تو بازگردند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این فعل یعنی تو را باز دارند و جلوگیری کنند. ریشه‌ی «ص د د» با «صدا» فرق دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0952",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «تو را مانع شوند» است؟",
+   "stem": {
+    "fa": "تو را مانع شوند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "أُنزِلَتْ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْمُشْرِكِينَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَصُدُّنَّكَ» از ریشه‌ی «ص د د» به معنای بازداشتن است. «وَٱدْعُ» یعنی «و دعوت کن».",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0953",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "معادل عربی «باز دارند» را انتخاب کن.",
+   "stem": {
+    "fa": "باز دارند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o3",
+     "ar": "ءَايَـٰتِ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَعْدَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«باز دارند» همان «يَصُدُّنَّكَ» است. «تَكُونَنَّ» فعل «باشی» با نون تأکید است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0954",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "کدام کلمه یعنی «بازداشتن و جلوگیری کنند»؟",
+   "stem": {
+    "fa": "بازداشتن و جلوگیری کنند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ءَايَـٰتِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْمُشْرِكِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَصُدُّنَّكَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«يَصُدُّنَّكَ» یعنی تو را باز دارند و مانع شوند. گزینه‌های دیگر معنای دعوت، نشانه‌ها و مشرکان را دارند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0955",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "معنای «تَدْعُ» در «وَلَا تَدْعُ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نخوان، دعوت نکن"
+    },
+    {
+     "id": "o2",
+     "fa": "ادعا نکن"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگردانده نشو"
+    },
+    {
+     "id": "o4",
+     "fa": "هلاک مشو"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَدْعُ» از ریشه‌ی «د ع و» به معنای خواندن و دعوت کردن است. با «ادعا» به معنای مدعی شدن اشتباه نشود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0956",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "کدام گزینه معنای «تَدْعُ» است؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "طلب حکم مکن"
+    },
+    {
+     "id": "o2",
+     "fa": "همراهی مکن"
+    },
+    {
+     "id": "o3",
+     "fa": "مخوان"
+    },
+    {
+     "id": "o4",
+     "fa": "او را رها مکن"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«وَلَا تَدْعُ» نهی است و یعنی مخوان. ریشه‌ی آن «د ع و» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0957",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "در این آیه، معنای «تَدْعُ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "معبود بگیر"
+    },
+    {
+     "id": "o2",
+     "fa": "نخوان، دعوت نکن"
+    },
+    {
+     "id": "o3",
+     "fa": "ادعا مکن"
+    },
+    {
+     "id": "o4",
+     "fa": "با او همراه شو"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ» یعنی با خدا معبودی دیگر مخوان. «لا» ی ناهیه معنا را منفی می‌کند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0958",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "«تَدْعُ» در این آیه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازگردانده می‌شوی"
+    },
+    {
+     "id": "o2",
+     "fa": "فرمان مده"
+    },
+    {
+     "id": "o3",
+     "fa": "ادعای معبود کن"
+    },
+    {
+     "id": "o4",
+     "fa": "مخوان"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«تَدْعُ» با «لا» یعنی مخوان. از ریشه‌ی «د ع و» است که در دعوت و دعا هم هست.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0959",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «مخوان» است؟",
+   "stem": {
+    "fa": "مخوان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o3",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَـٰهًا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَدْعُ» با «لا» می‌شود «مخوان». «تُرْجَعُونَ» یعنی بازگردانده می‌شوید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0960",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "معادل عربی «نخوان، دعوت نکن» را انتخاب کن.",
+   "stem": {
+    "fa": "نخوان، دعوت نکن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "تَدْعُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«تَدْعُ» (با «لا») نهی از خواندن است. «وَٱدْعُ» هم‌ریشه است ولی امر و یعنی «و دعوت کن».",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0961",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "کدام کلمه یعنی «مخوان؛ دعوت نکن»؟",
+   "stem": {
+    "fa": "مخوان؛ دعوت نکن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "o3",
+     "ar": "إِلَـٰهَ"
+    },
+    {
+     "id": "o4",
+     "ar": "هَالِكٌ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَدْعُ» یعنی مخوان. «إِلَـٰهَ» مفعول و به معنای «معبود» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0962",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 86,
+   "targets": [
+    "w:w28_086_014",
+    "w:w28_087_002",
+    "w:w28_088_002"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l4",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "l5",
+     "ar": "هَالِكٌ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هلاک شدنی"
+    },
+    {
+     "id": "r2",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r3",
+     "fa": "آشکار و نمایان"
+    },
+    {
+     "id": "r4",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r5",
+     "fa": "رحمت"
+    },
+    {
+     "id": "r6",
+     "fa": "تو را مانع شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "false_friend"
+   },
+   "explanationFa": "ظهیر از «ظ ه ر» پشتیبان است، یصدنّک از «صد» بازداشتن و تدع از «دعو» خواندن. «آشکار» دوست فریبنده‌ی ظهیر است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0963",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_086_014",
+    "w:w28_087_002",
+    "w:w28_088_002"
+   ],
+   "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l4",
+     "ar": "أُنزِلَتْ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْمُشْرِكِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مشرکان"
+    },
+    {
+     "id": "r2",
+     "fa": "نازل شد"
+    },
+    {
+     "id": "r3",
+     "fa": "تو را مانع شوند"
+    },
+    {
+     "id": "r4",
+     "fa": "صدای تو را بشنوند"
+    },
+    {
+     "id": "r5",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r6",
+     "fa": "پشتیبان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«يَصُدُّنَّكَ» بازداشتن است نه شنیدن صدا. «تَدْعُ» یعنی مخوان و «ظَهِيرًۭا» یعنی پشتیبان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0964",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_086_014",
+    "w:w28_087_002",
+    "w:w28_088_002"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ظَهِيرًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بازگردانده می‌شوید"
+    },
+    {
+     "id": "r2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r3",
+     "fa": "القا شود"
+    },
+    {
+     "id": "r4",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r5",
+     "fa": "تو را مانع شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r4"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«تَدْعُ» مخوان، «يَصُدُّنَّكَ» مانع شوند و «ظَهِيرًۭا» پشتیبان است. «يُلْقَىٰٓ» و «تُرْجَعُونَ» برای مرور آمده‌اند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_0965",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_086_014",
+    "w:w28_087_002",
+    "w:w28_088_002"
+   ],
+   "promptFa": "جفت‌های درست عربی و فارسی را بساز.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l3",
+     "ar": "لِّلْكَـٰفِرِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l5",
+     "ar": "ظَهِيرًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "فرمانروایی"
+    },
+    {
+     "id": "r2",
+     "fa": "کافران"
+    },
+    {
+     "id": "r3",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r4",
+     "fa": "تو را مانع شوند"
+    },
+    {
+     "id": "r5",
+     "fa": "مخوان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "سه کلمه‌ی سخت این برش: ظهیر پشتیبان، یصدنّک مانع شوند، تدع مخوان. «ٱلْحُكْمُ» و «لِّلْكَـٰفِرِينَ» برای تمایز آمده‌اند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1041",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "معنای «هَالِكٌ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هلاک‌کننده است"
+    },
+    {
+     "id": "o2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "o3",
+     "fa": "فرمانروا است"
+    },
+    {
+     "id": "o4",
+     "fa": "بازگردانده می شود"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«هالک» از ریشه‌ی «ه ل ک» است و اسم فاعل است؛ در این آیه یعنی چیزی که نابود می‌شود. معنای «هلاک‌کننده» دوست فریبنده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1042",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "معنای «هَالِكٌ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ماندگار و پایدار"
+    },
+    {
+     "id": "o2",
+     "fa": "ویژه اوست"
+    },
+    {
+     "id": "o3",
+     "fa": "نابودشونده"
+    },
+    {
+     "id": "o4",
+     "fa": "معبودی دیگر"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در «كُلُّ شَىْءٍ هَالِكٌ إِلَّا وَجْهَهُ» یعنی هر چیزی جز ذات او نابودشونده است. ریشه‌ی آن «ه ل ک» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1043",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "کدام معنا برای «هَالِكٌ» درست است؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مالک و صاحب"
+    },
+    {
+     "id": "o2",
+     "fa": "ذات او"
+    },
+    {
+     "id": "o3",
+     "fa": "هر چیزی"
+    },
+    {
+     "id": "o4",
+     "fa": "هلاک شدنی است"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«هالِک» شبیه «مالِک» است، اما از ریشه‌ی «ه ل ک» و به معنای هلاک شدنی و نابودشونده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1044",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "در این آیه «هَالِكٌ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "o2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o4",
+     "fa": "جاودانه است"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "اسم فاعل از ریشه‌ی «ه ل ک» است و به چیزی اشاره دارد که از بین می‌رود. جز ذات خدا همه چیز چنین است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1045",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "معنای «تُرْجَعُونَ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رجوع می‌کنید"
+    },
+    {
+     "id": "o2",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o3",
+     "fa": "مخوان"
+    },
+    {
+     "id": "o4",
+     "fa": "فرمانروایی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تُرْجَعُونَ» فعل مجهول از ریشه‌ی «ر ج ع» است، یعنی بازگردانده می‌شوید. «رجوع می‌کنید» معلوم است و غلط.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1046",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "معنای «تُرْجَعُونَ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی‌گردید"
+    },
+    {
+     "id": "o3",
+     "fa": "ذات او"
+    },
+    {
+     "id": "o4",
+     "fa": "برگردانده می‌شوید"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در «وَإِلَيْهِ تُرْجَعُونَ» فعل مجهول است: به سوی او برگردانده می‌شوید. «بازمی‌گردید» معلوم است و فاعل را عوض می‌کند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1047",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "کدام معنا برای «تُرْجَعُونَ» درست است؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "معبودی"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی‌گردانید"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o4",
+     "fa": "فرمانروایی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ر ج ع» و صیغه‌ی مجهول است. پس معنا «بازگردانده می‌شوید» است، نه «بازمی‌گردانید».",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1048",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "در این آیه «تُرْجَعُونَ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o2",
+     "fa": "رجوع می‌کنید"
+    },
+    {
+     "id": "o3",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "o4",
+     "fa": "مخوان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تُرْجَعُونَ» مجهول است و یعنی بازگردانده می‌شوید. ریشه‌ی آن «ر ج ع» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1049",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «هلاک شدنی است» است؟",
+   "stem": {
+    "fa": "هلاک شدنی است"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "كُلُّ"
+    },
+    {
+     "id": "o3",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o4",
+     "ar": "شَىْءٍ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«هَالِكٌ» از ریشه‌ی «ه ل ک» است و یعنی هلاک شدنی. کلمات دیگر از همان آیه‌اند، اما معنای دیگری دارند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1050",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "برای «نابودشونده» کدام کلمه‌ی عربی درست است؟",
+   "stem": {
+    "fa": "نابودشونده"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o2",
+     "ar": "إِلَـٰهًا"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "o4",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نابودشونده» همان «هَالِكٌ» است و ریشه‌ی آن «ه ل ک» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1051",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "کلمه‌ی عربیِ معادل «هلاک شدنی است» را انتخاب کن.",
+   "stem": {
+    "fa": "هلاک شدنی است"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَجْهَهُۥ ۚ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَهُ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o4",
+     "ar": "هَالِكٌ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "random"
+   },
+   "explanationFa": "«هَالِكٌ» خبرِ «كُلُّ شَىْءٍ» است و یعنی هلاک شدنی. «وَجْهَهُ» همان چیزی است که از نابودی مستثنا شده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1052",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «بازگردانده می شوید» است؟",
+   "stem": {
+    "fa": "بازگردانده می شوید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَإِلَيْهِ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْحُكْمُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تُرْجَعُونَ» مجهول از ریشه‌ی «ر ج ع» است. «وَإِلَيْهِ» فقط «و به سوی او» معنا می‌دهد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1053",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "برای «برگردانده می‌شوید» کدام کلمه‌ی عربی درست است؟",
+   "stem": {
+    "fa": "برگردانده می‌شوید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَهُ"
+    },
+    {
+     "id": "o2",
+     "ar": "كُلُّ"
+    },
+    {
+     "id": "o3",
+     "ar": "إِلَـٰهًا"
+    },
+    {
+     "id": "o4",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "فعل مجهول «تُرْجَعُونَ» از ریشه‌ی «ر ج ع» است و یعنی برگردانده می‌شوید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1054",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمه‌ی عربیِ معادل «بازگردانده می شوید» را انتخاب کن.",
+   "stem": {
+    "fa": "بازگردانده می شوید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o2",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "شَىْءٍ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَجْهَهُۥ ۚ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تُرْجَعُونَ» مجهول است و با معنای «بازگردانده می‌شوید» می‌آید. ریشه‌ی آن «ر ج ع» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1055",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l2",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l4",
+     "ar": "إِلَـٰهًا"
+    },
+    {
+     "id": "l5",
+     "ar": "وَجْهَهُۥ ۚ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "معبودی"
+    },
+    {
+     "id": "r2",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r3",
+     "fa": "ذات او"
+    },
+    {
+     "id": "r4",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r5",
+     "fa": "مخوان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«هالک» از «ه ل ک» و «ترجعون» مجهول از «ر ج ع» است. «وجهه» در این آیه یعنی ذات او.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1056",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "l2",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l3",
+     "ar": "مَعَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l5",
+     "ar": "كُلُّ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هر"
+    },
+    {
+     "id": "r2",
+     "fa": "هلاک‌کننده"
+    },
+    {
+     "id": "r3",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r4",
+     "fa": "با"
+    },
+    {
+     "id": "r5",
+     "fa": "فرمانروایی"
+    },
+    {
+     "id": "r6",
+     "fa": "بازگردانده می شوید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r6"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "near_miss"
+   },
+   "explanationFa": "«هالک» اسم فاعل به معنای هلاک شدنی است، نه هلاک‌کننده. «ترجعون» مجهول است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1057",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l2",
+     "ar": "شَىْءٍ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَإِلَيْهِ"
+    },
+    {
+     "id": "l4",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l5",
+     "ar": "تَدْعُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و به سوی او"
+    },
+    {
+     "id": "r2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r3",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r4",
+     "fa": "چیزی"
+    },
+    {
+     "id": "r5",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r6",
+     "fa": "رجوع می‌کنید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«رجوع می‌کنید» معلوم است، اما «ترجعون» مجهول است. «هالک» هم از «ه ل ک» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1058",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "جفت‌های درست عربی و فارسی را بساز.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَجْهَهُۥ ۚ"
+    },
+    {
+     "id": "l2",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l3",
+     "ar": "إِلَـٰهًا"
+    },
+    {
+     "id": "l4",
+     "ar": "لَهُ"
+    },
+    {
+     "id": "l5",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r2",
+     "fa": "ذات او"
+    },
+    {
+     "id": "r3",
+     "fa": "معبودی"
+    },
+    {
+     "id": "r4",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r5",
+     "fa": "برای او"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "دو فعل و صفت سخت این آیه «هالک» (هلاک شدنی) و «ترجعون» (بازگردانده می‌شوید) هستند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1059",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "كُلُّ"
+    },
+    {
+     "id": "l2",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "شَىْءٍ"
+    },
+    {
+     "id": "l4",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْحُكْمُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "فرمانروایی"
+    },
+    {
+     "id": "r2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r3",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r4",
+     "fa": "هر"
+    },
+    {
+     "id": "r5",
+     "fa": "چیزی"
+    },
+    {
+     "id": "r6",
+     "fa": "مالک است"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«كُلُّ شَىْءٍ» یعنی هر چیزی و «هالک» خبر آن است. «مالک» شبیه «هالک» است ولی معنای دیگری دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1060",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمات را با معنایشان جفت کن؛ یک گزینه‌ی راست اضافه است.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مَعَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَإِلَيْهِ"
+    },
+    {
+     "id": "l3",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَجْهَهُۥ ۚ"
+    },
+    {
+     "id": "l5",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ذات او"
+    },
+    {
+     "id": "r2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r3",
+     "fa": "با"
+    },
+    {
+     "id": "r4",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r5",
+     "fa": "و به سوی او"
+    },
+    {
+     "id": "r6",
+     "fa": "جاودانه است"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«وَإِلَيْهِ» یعنی «و به سوی او» و «تُرْجَعُونَ» فعل مجهول آن است. «هالک» عکس «جاودانه» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1061",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "هر کلمه را با معنای فارسی درستش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَهُ"
+    },
+    {
+     "id": "l4",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l5",
+     "ar": "هَالِكٌ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "برای او"
+    },
+    {
+     "id": "r2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r3",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r4",
+     "fa": "رجوع می‌کنید"
+    },
+    {
+     "id": "r5",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r6",
+     "fa": "فرمانروایی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«ترجعون» مجهول است و با «رجوع می‌کنید» فرق دارد. «هالک» هم هلاک شدنی است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1062",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "جفت‌های درست را بساز؛ دو گزینه‌ی سمت راست اضافه‌اند.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "إِلَـٰهًا"
+    },
+    {
+     "id": "l2",
+     "ar": "شَىْءٍ"
+    },
+    {
+     "id": "l3",
+     "ar": "مَعَ"
+    },
+    {
+     "id": "l4",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l5",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "با"
+    },
+    {
+     "id": "r2",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r3",
+     "fa": "هلاک‌کننده"
+    },
+    {
+     "id": "r4",
+     "fa": "معبودی"
+    },
+    {
+     "id": "r5",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r6",
+     "fa": "چیزی"
+    },
+    {
+     "id": "r7",
+     "fa": "رجوع می‌کنید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "near_miss",
+    "r7": "false_friend"
+   },
+   "explanationFa": "«هالک» هلاک شدنی است، نه هلاک‌کننده. «ترجعون» هم مجهول است و یعنی بازگردانده می‌شوید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1063",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معنای کلمه «لَرَآدُّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o2",
+     "fa": "رد کننده تو"
+    },
+    {
+     "id": "o3",
+     "fa": "نابود کننده تو"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستاده تو"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "این کلمه از ریشه (ر د د) به معنای بازگرداندن است؛ فریب شباهت آن با کلمه رد کردن در فارسی را نخورید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1064",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معنای دقیق «لَرَآدُّكَ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رها کننده تو"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت کننده تو"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعاً بازگرداننده توست"
+    },
+    {
+     "id": "o4",
+     "fa": "پس دهنده تو"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "حرف لام تاکید و کلمه رادّ اسم فاعل از ریشه (ر د د) است یعنی قطعاً بازگرداننده توست.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1065",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "در این آیه، «لَرَآدُّكَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هدایت می کند"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "o3",
+     "fa": "رد می کند"
+    },
+    {
+     "id": "o4",
+     "fa": "تکلیف می کند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "یعنی خداوند تو را به جایگاه اصلی و زادگاهت بازمی گرداند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1066",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معادل «لَرَآدُّكَ» در ترجمه آیه کدام است؟",
+   "stem": {
+    "wordId": "w28_085_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بر تو واجب کرده"
+    },
+    {
+     "id": "o2",
+     "fa": "رد کننده است"
+    },
+    {
+     "id": "o3",
+     "fa": "داناتر است"
+    },
+    {
+     "id": "o4",
+     "fa": "بازمی گرداند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در این آیه اشاره به بازگشت پیامبر (ص) به شهر مکه مکرمه دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1067",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "کدام کلمه به معنای «بازمی گرداند» است؟",
+   "stem": {
+    "fa": "بازمی گرداند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُلْقَىٰٓ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "لَرَآدُّكَ از ریشه ردد به معنای بازگرداندن است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1068",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معادل عربی «قطعاً بازگرداننده توست» چیست؟",
+   "stem": {
+    "fa": "قطعاً بازگرداننده توست"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَرَضَ عَلَيْكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "رَّبِّىٓ أَعْلَمُ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَىٰ مَعَادٍۢ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "لام در ابتدای آن برای تاکید و راد اسم فاعل است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1069",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006"
+   ],
+   "promptFa": "معادل «حتماً تو را بازمی گرداند» کدام کلمه است؟",
+   "stem": {
+    "fa": "حتماً تو را بازمی گرداند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "جَآءَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه لَرَآدُّكَ با ضمیر «كَ» به معنای تو را باز می گرداند است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1070",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "معنای کلمه «مَعَادٍۢ» چیست؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "o2",
+     "fa": "معمولی و عادی"
+    },
+    {
+     "id": "o3",
+     "fa": "دشمنی و عداوت"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراهی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه معاد از ریشه (ع و د) به معنای محل بازگشت است، فریب کلمه عادی در فارسی را نخورید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1071",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "معنای دقیق «مَعَادٍۢ» کدام است؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مقصد ناشناخته"
+    },
+    {
+     "id": "o2",
+     "fa": "عذاب دوزخ"
+    },
+    {
+     "id": "o3",
+     "fa": "جایگاه بازگشت"
+    },
+    {
+     "id": "o4",
+     "fa": "جایگاه عادی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "کلمه معاد هم‌ریشه با عود است و جایگاه بازگشت معنا می‌دهد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1073",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 85,
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "ترجمه «مَعَادٍۢ» با توجه به آیه چیست؟",
+   "stem": {
+    "wordId": "w28_085_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شهر مکه (بازگشت گاه)"
+    },
+    {
+     "id": "o2",
+     "fa": "بهشت برین"
+    },
+    {
+     "id": "o3",
+     "fa": "زمان وعده داده شده"
+    },
+    {
+     "id": "o4",
+     "fa": "جایگاه حسابرسی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "random",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "اشاره آیه به بازگشت پیروزمندانه پیامبر به شهر مکه است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1074",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "معادل عربی «بازگشت گاه» کدام است؟",
+   "stem": {
+    "fa": "بازگشت گاه"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "مَعَادٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْهُدَىٰ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "مَعَادٍۢ محل بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1075",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "کدام کلمه به معنای «جایگاه بازگشت» است؟",
+   "stem": {
+    "fa": "جایگاه بازگشت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "رَّبِّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَعَادٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْكِتَـٰبُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه معاد اسم مکان از ریشه عود است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1076",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_008"
+   ],
+   "promptFa": "در آیه، «مکان بازگشت (شهر مکه)» با چه کلمه ای بیان شده است؟",
+   "stem": {
+    "fa": "مکان بازگشت (شهر مکه)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "مَعَادٍۢ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "معاد جایگاه بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1077",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "معنای کلمه «تَرْجُوٓا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رجوع می کردی"
+    },
+    {
+     "id": "o2",
+     "fa": "امید داشتی"
+    },
+    {
+     "id": "o3",
+     "fa": "می ترسیدی"
+    },
+    {
+     "id": "o4",
+     "fa": "می دانستی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "این کلمه از ریشه (ر ج و) و رجاء به معنای امید داشتن است، نباید با رجوع اشتباه گرفت.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1078",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "معنای دقیق «تَرْجُوٓا۟» کدام است؟",
+   "stem": {
+    "wordId": "w28_086_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "انتظار داشتی"
+    },
+    {
+     "id": "o2",
+     "fa": "بازمی گشتی"
+    },
+    {
+     "id": "o3",
+     "fa": "پنهان می کردی"
+    },
+    {
+     "id": "o4",
+     "fa": "می خواندی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ترجوا یعنی امید داشتی یا انتظار داشتی.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1081",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "معادل عربی «امید داشتی / انتظار داشتی» کدام است؟",
+   "stem": {
+    "fa": "امید داشتی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "فَرَضَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ریشه رجو به معنای امید و انتظار است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1082",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کلمه به کار رفته برای «امید» (در ترکیب امید نداشتی) چیست؟",
+   "stem": {
+    "fa": "امید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "مَعَادٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "رَحْمَةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَرْجُوٓا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "ترجوا یعنی امید داشتی که با مَا كُنتَ منفی شده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1083",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_003"
+   ],
+   "promptFa": "کدام کلمه به معنای «انتظار داشتی» است؟",
+   "stem": {
+    "fa": "انتظار داشتی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَكُونَنَّ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ترجوا از ماده رجاء به معنای امید و انتظار است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1084",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معنای کلمه «ظَهِيرًۭا» چیست؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "o2",
+     "fa": "آشکار و نمایان"
+    },
+    {
+     "id": "o3",
+     "fa": "پیروز"
+    },
+    {
+     "id": "o4",
+     "fa": "مهربان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "کلمه ظهیر از ریشه ظهر (پشت) به معنای پشتیبان است و نباید با ظاهر (آشکار) اشتباه شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1085",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معنای دقیق «ظَهِيرًۭا» کدام است؟",
+   "stem": {
+    "wordId": "w28_086_014",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشت‌کننده"
+    },
+    {
+     "id": "o2",
+     "fa": "مسلط"
+    },
+    {
+     "id": "o3",
+     "fa": "یاور"
+    },
+    {
+     "id": "o4",
+     "fa": "ظاهر شونده"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "ظهیر یعنی یاور و پشتیبان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1088",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معادل عربی «پشتیبان» کدام است؟",
+   "stem": {
+    "fa": "پشتیبان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مُّبِينٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "مَعَادٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "رَحْمَةًۭ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ظهیر یعنی پشتیبان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1089",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "کدام کلمه به معنای «یاور و پشتیبان» است؟",
+   "stem": {
+    "fa": "یاور و پشتیبان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "رَّبِّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ضَلَـٰلٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْكِتَـٰبُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ظهیر هم ریشه با ظهر است یعنی کسی که پشت به پشت دیگری می دهد و کمک می کند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1090",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_086_014"
+   ],
+   "promptFa": "معادل عربی «یاور» چیست؟",
+   "stem": {
+    "fa": "یاور"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "يُلْقَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَرَضَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ظَهِيرًۭا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "ظهیر یعنی یاور و کمک کننده.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1091",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_085_006",
+    "w:w28_085_008",
+    "w:w28_086_003",
+    "w:w28_086_014"
+   ],
+   "promptFa": "کلمات را به معنای درست متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَرَآدُّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "مَعَادٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَرْجُوٓا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "فَرَضَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بازمی گرداند"
+    },
+    {
+     "id": "r2",
+     "fa": "بازگشت گاه"
+    },
+    {
+     "id": "r3",
+     "fa": "امید داشتی"
+    },
+    {
+     "id": "r4",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r5",
+     "fa": "واجب کرده است"
+    },
+    {
+     "id": "r6",
+     "fa": "رد کننده"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "کلمات سخت این بخش شامل راد، معاد، ترجوا و ظهیرا هستند که هرکدام به دقت ترجمه شده اند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1224",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "معنای «يَصُدُّنَّكَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مانع تو شوند"
+    },
+    {
+     "id": "o2",
+     "fa": "بر تو سد بسازند"
+    },
+    {
+     "id": "o3",
+     "fa": "به تو آسیب رسانند"
+    },
+    {
+     "id": "o4",
+     "fa": "از تو دور شوند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "صَد در عربی یعنی بازداشتن و جلوگیری کردن از چیزی.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1225",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "معنای کلمه مشخص‌شده در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_087_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دعوت نکنند"
+    },
+    {
+     "id": "o2",
+     "fa": "مشرک نشوند"
+    },
+    {
+     "id": "o3",
+     "fa": "تصدیق نکنند"
+    },
+    {
+     "id": "o4",
+     "fa": "باز دارند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "این فعل به معنای جلوگیری و ممانعت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1227",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «باز دارند» است؟",
+   "stem": {
+    "fa": "باز دارند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أُنزِلَتْ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱدْعُ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "يَصُدُّنَّ از ریشه ص د د به معنای بازداشتن است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1228",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «مانع تو شوند» است؟",
+   "stem": {
+    "fa": "مانع تو شوند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْمُشْرِكِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "رَبِّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ءَايَـٰتِ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه يَصُدُّنَّكَ دارای ضمیر «ک» خطاب است یعنی مانع تو شوند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1229",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002"
+   ],
+   "promptFa": "معادل عربی «تو را باز دارند» کدام است؟",
+   "stem": {
+    "fa": "تو را باز دارند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَرْجِعُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَدْعُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "similar_verse",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "این فعل به توطئه کافران برای بازداشتن پیامبر از ابلاغ آیات اشاره دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1230",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "معنای کلمه «تَدْعُ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ادعا نکن"
+    },
+    {
+     "id": "o2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "o3",
+     "fa": "دعوا نکن"
+    },
+    {
+     "id": "o4",
+     "fa": "هدایت نکن"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این کلمه از ریشه «د ع و» است، یعنی مخوان و دعوت نکن.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1232",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "در آیه مشخص‌شده، «تَدْعُ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_088_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مخوان"
+    },
+    {
+     "id": "o2",
+     "fa": "قرار نده"
+    },
+    {
+     "id": "o3",
+     "fa": "عبادت نکن"
+    },
+    {
+     "id": "o4",
+     "fa": "شریک نساز"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "تَدْعُ به معنای خواندن و صدا زدن است، یعنی خدای دیگری را مخوان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1234",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «مخوان» است؟",
+   "stem": {
+    "fa": "مخوان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَجْهَهُۥ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o4",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "تَدْعُ فعل نهی است به معنای مخوان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1235",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «دعوت نکن» است؟",
+   "stem": {
+    "fa": "دعوت نکن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱدْعُ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "وَٱدْعُ فعل امر (دعوت کن) و تَدْعُ فعل نهی (دعوت نکن) است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1236",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002"
+   ],
+   "promptFa": "معادل عربی «نخوان» کدام است؟",
+   "stem": {
+    "fa": "نخوان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ءَاخَرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَعَ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَـٰهًا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "تَدْعُ به معنای خواندن و صدا زدن است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1238",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "معنای «هَالِكٌ» کدام است؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نابودشونده"
+    },
+    {
+     "id": "o2",
+     "fa": "حاکم"
+    },
+    {
+     "id": "o3",
+     "fa": "دائمی"
+    },
+    {
+     "id": "o4",
+     "fa": "زیانکار"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "هَالِكٌ به معنای از بین رونده و نابودشونده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1239",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "در این آیه، کلمه «هَالِكٌ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مخلوق"
+    },
+    {
+     "id": "o2",
+     "fa": "آفریننده"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگردانده شده"
+    },
+    {
+     "id": "o4",
+     "fa": "هلاک شدنی است"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "یعنی هر چیزی جز ذات پروردگار محکوم به هلاکت و نابودی است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1240",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "معنای دقیق «هَالِكٌ» در آیه شریفه چیست؟",
+   "stem": {
+    "wordId": "w28_088_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جاودان است"
+    },
+    {
+     "id": "o2",
+     "fa": "نابودشونده"
+    },
+    {
+     "id": "o3",
+     "fa": "فرمانرواست"
+    },
+    {
+     "id": "o4",
+     "fa": "بازمی‌گردد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "همه چیز به جز ذات الهی از بین رونده و نابودشونده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1243",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_013"
+   ],
+   "promptFa": "عربی عبارت «هلاک شدنی» کدام است؟",
+   "stem": {
+    "fa": "هلاک شدنی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُنزِلَتْ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "هَالِك اسم فاعل است و به موجودی که هلاک می‌شود اشاره دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1244",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "معنای کلمه «تُرْجَعُونَ» چیست؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o2",
+     "fa": "رجوع می کنند"
+    },
+    {
+     "id": "o3",
+     "fa": "پاداش داده می شوید"
+    },
+    {
+     "id": "o4",
+     "fa": "باز می گردید"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "random",
+    "o4": "false_friend"
+   },
+   "explanationFa": "این فعل مجهول است و به معنای «بازگردانده می‌شوید» می‌باشد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1246",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمه مشخص‌شده در این آیه چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_088_019",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رجوع می کنید"
+    },
+    {
+     "id": "o2",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "o3",
+     "fa": "حاکم می شوید"
+    },
+    {
+     "id": "o4",
+     "fa": "دعوت می شوید"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در قیامت همه انسان‌ها به سوی خدا بازگردانده می‌شوند (مجهول).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1249",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_019"
+   ],
+   "promptFa": "کدام کلمه به معنای «برگردانده می شوید» می‌باشد؟",
+   "stem": {
+    "fa": "برگردانده می شوید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُنزِلَتْ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه این فعل ر ج ع به معنای بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1251",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_087_002",
+    "w:w28_088_002",
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l3",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l4",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l5",
+     "ar": "أُنزِلَتْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "باز دارند تو را"
+    },
+    {
+     "id": "r2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r3",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r4",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r5",
+     "fa": "نازل شد"
+    },
+    {
+     "id": "r6",
+     "fa": "تصدیق کردند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "يَصُدُّنَّكَ: باز دارند تو را / تَدْعُ: مخوان / هَالِكٌ: هلاک شدنی است / تُرْجَعُونَ: بازگردانده می شوید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1252",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_087_002",
+    "w:w28_088_002",
+    "w:w28_088_013"
+   ],
+   "promptFa": "ترجمه صحیح هر کلمه را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l3",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْمُشْرِكِينَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْحُكْمُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مانع تو شوند"
+    },
+    {
+     "id": "r2",
+     "fa": "دعوت نکن"
+    },
+    {
+     "id": "r3",
+     "fa": "نابودشونده"
+    },
+    {
+     "id": "r4",
+     "fa": "مشرکان"
+    },
+    {
+     "id": "r5",
+     "fa": "فرمانروایی"
+    },
+    {
+     "id": "r6",
+     "fa": "جاودان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تَدْعُ فعل نهی به معنای دعوت نکن است و هَالِكٌ یعنی نابودشونده.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1253",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_087_002",
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "هر کلمه قرآنی را به معادل فارسی‌اش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l2",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ءَاخَرَ ۘ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَجْهَهُۥ ۚ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هلاک شدنی"
+    },
+    {
+     "id": "r2",
+     "fa": "برگردانده می شوید"
+    },
+    {
+     "id": "r3",
+     "fa": "باز دارند تو را"
+    },
+    {
+     "id": "r4",
+     "fa": "دیگر"
+    },
+    {
+     "id": "r5",
+     "fa": "ذات او"
+    },
+    {
+     "id": "r6",
+     "fa": "همه چیز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تُرْجَعُونَ به صورت مجهول آمده (برگردانده می‌شوید) و وَجْهَهُ به ذات الهی اشاره دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1254",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_088_002",
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l2",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l3",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "رَبِّكَ ۖ"
+    },
+    {
+     "id": "l5",
+     "ar": "شَىْءٍ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "نخوان"
+    },
+    {
+     "id": "r2",
+     "fa": "نابودشونده"
+    },
+    {
+     "id": "r3",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r4",
+     "fa": "پروردگارت"
+    },
+    {
+     "id": "r5",
+     "fa": "چیزی"
+    },
+    {
+     "id": "r6",
+     "fa": "هرگز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تَدْعُ یعنی نخوان، و هَالِكٌ یعنی نابودشونده.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1255",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_087_002",
+    "w:w28_088_002",
+    "w:w28_088_019"
+   ],
+   "promptFa": "کلمات را به ترجمه انصاریان آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l3",
+     "ar": "تُرْجَعُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ءَايَـٰتِ"
+    },
+    {
+     "id": "l5",
+     "ar": "إِلَـٰهًا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "باز دارند تو را"
+    },
+    {
+     "id": "r2",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r3",
+     "fa": "برگردانده می شوید"
+    },
+    {
+     "id": "r4",
+     "fa": "آیات"
+    },
+    {
+     "id": "r5",
+     "fa": "معبودی"
+    },
+    {
+     "id": "r6",
+     "fa": "روزی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "يَصُدُّنَّكَ به معنای باز دارند تو را، و تُرْجَعُونَ به معنای برگردانده می‌شوید است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1543",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه دقیق آنها وصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَرَآدُّكَ إِلَىٰ مَعَادٍۢ ۚ"
+    },
+    {
+     "id": "l3",
+     "ar": "قُل رَّبِّىٓ أَعْلَمُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است"
+    },
+    {
+     "id": "r2",
+     "fa": "حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+    },
+    {
+     "id": "r3",
+     "fa": "بگو: پروردگارم ... داناتر است."
+    },
+    {
+     "id": "r4",
+     "fa": "پس هرگز پشتیبان کافران مباش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "neighbor_verse"
+   },
+   "explanationFa": "لَرَادُّک به معنای بازگرداننده تو، و مَعاد به معنای جایگاه بازگشت است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1545",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "ترجمه این آیه کدام است؟",
+   "stem": {
+    "verse": 85
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند. بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است."
+    },
+    {
+     "id": "o2",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست، و هر کس کار بدی بیاورد [پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند."
+    },
+    {
+     "id": "o3",
+     "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛ پس هرگز پشتیبان کافران مباش،"
+    },
+    {
+     "id": "o4",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "این آیه وعده بازگشت به مکه را می‌دهد و می‌فرماید خدا داناتر است چه کسی هدایت آورده و چه کسی در گمراهی است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1546",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "ترجمه این بخش از آیه چیست؟",
+   "stem": {
+    "verse": 85,
+    "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ لَرَآدُّكَ إِلَىٰ مَعَادٍۢ ۚ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+    },
+    {
+     "id": "o2",
+     "fa": "بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است."
+    },
+    {
+     "id": "o3",
+     "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]."
+    },
+    {
+     "id": "o4",
+     "fa": "یقیناً کسی که قرآن را بر تو نازل کرد، تو را به سوی مردم بازمی گرداند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "false_friend"
+   },
+   "explanationFa": "فَرَضَ به معنای واجب کرد و مَعاد به معنای بازگشت‌گاه است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1547",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "ترجمه این فراز از آیه کدام است؟",
+   "stem": {
+    "verse": 85,
+    "ar": "مَن جَآءَ بِٱلْهُدَىٰ وَمَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است"
+    },
+    {
+     "id": "o2",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست"
+    },
+    {
+     "id": "o3",
+     "fa": "بگو: پروردگارم به کسی که هدایت را آورده است داناتر است."
+    },
+    {
+     "id": "o4",
+     "fa": "پس هرگز پشتیبان کافران مباش،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«مَن» به معنای کسی که و «جاءَ بِالهُدی» یعنی هدایت را آورده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1548",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 85,
+   "targets": [
+    "vt:85",
+    "vr:85"
+   ],
+   "promptFa": "کدام آیه با این ترجمه مطابقت دارد؟",
+   "stem": {
+    "verse": 85,
+    "showFa": true,
+    "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند. بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است."
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 85,
+      "from": 1,
+      "to": 19
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 84,
+      "from": 1,
+      "to": 18
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 16
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "واجب کرده است = فَرَضَ، بازگشت‌گاه = مَعاد، گمراهی آشکار = ضَلال مُبین.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1549",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 85,
+   "targets": [
+    "vt:85",
+    "vr:85"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام بخش از آیه است؟ «یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند.»",
+   "stem": {
+    "verse": 85,
+    "showFa": true,
+    "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 85,
+      "from": 1,
+      "to": 8
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 85,
+      "from": 9,
+      "to": 19
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 7
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 84,
+      "from": 1,
+      "to": 6
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "واجب کرده است ترجمه فَرَضَ و بازگشت گاه ترجمه مَعاد است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1550",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام بخش از آیه است؟ «بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است.»",
+   "stem": {
+    "verse": 85,
+    "showFa": true,
+    "fa": "بگو: پروردگارم به کسی که هدایت را آورده است و به کسی که در گمراهی آشکاری است، داناتر است."
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 85,
+      "from": 9,
+      "to": 19
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 85,
+      "from": 1,
+      "to": 8
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 86,
+      "from": 8,
+      "to": 15
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 84,
+      "from": 7,
+      "to": 18
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "بگو پروردگارم = قُل رَبّی، داناتر است = اَعلَمُ.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1551",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "قطعات ترجمه را بر اساس ترتیب آیه مرتب کنید.",
+   "stem": {
+    "verse": 85
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است،",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند.",
+     "wordIdx": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "بگو: پروردگارم",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد،",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ (یقیناً کسی که قرآن را بر تو واجب کرده است)، لَرَآدُّكَ إِلَىٰ مَعَادٍۢ (حتماً تو را به بازگشت گاه بازمی‌گرداند)، قُل رَّبِّىٓ (بگو: پروردگارم).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1552",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "قطعات ترجمه را به ترتیب آیه بچینید.",
+   "stem": {
+    "verse": 85
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "به کسی که هدایت را آورده است",
+     "wordIdx": [
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و به کسی که در گمراهی آشکاری است،",
+     "wordIdx": [
+      15,
+      16,
+      17,
+      18,
+      19
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "داناتر است.",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "پس هرگز پشتیبان کافران مباش،",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b3",
+    "b1",
+    "b2"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "أَعْلَمُ (داناتر است) مَن جَآءَ بِٱلْهُدَىٰ (به کسی که هدایت را آورده است) وَمَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ (و به کسی که او در گمراهی آشکاری است).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1553",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85",
+    "w:w28_085_006"
+   ],
+   "promptFa": "جاهای خالی ترجمه را پر کنید.",
+   "stem": {
+    "verse": 85,
+    "showFa": false,
+    "hiddenIdx": [
+     3,
+     6,
+     8
+    ],
+    "faHidden": [
+     {
+      "start": 57,
+      "text": "واجب کرده است"
+     },
+     {
+      "start": 131,
+      "text": "بازمی گرداند"
+     },
+     {
+      "start": 86,
+      "text": "بازگشت گاه"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "واجب کرده است",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "بازمی گرداند",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "بازگشت گاه",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "فرستاده است",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "6": "b2",
+    "8": "b3"
+   },
+   "distractorTags": {
+    "b4": "false_friend"
+   },
+   "explanationFa": "فَرَضَ یعنی واجب کرد، لَرَادُّک یعنی حتماً بازمی‌گرداند و مَعاد یعنی جایگاه بازگشت (مکه).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1554",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 85,
+   "targets": [
+    "vt:85"
+   ],
+   "promptFa": "کلمات جاافتاده در ترجمه را قرار دهید.",
+   "stem": {
+    "verse": 85,
+    "showFa": false,
+    "hiddenIdx": [
+     11,
+     14,
+     18
+    ],
+    "faHidden": [
+     {
+      "start": 170,
+      "text": "هدایت را"
+     },
+     {
+      "start": 198,
+      "text": "گمراهی"
+     },
+     {
+      "start": 218,
+      "text": "داناتر است"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "هدایت را",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "گمراهی",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "داناتر است",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "روشنایی",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "11": "b3",
+    "14": "b1",
+    "18": "b2"
+   },
+   "distractorTags": {
+    "b4": "false_friend"
+   },
+   "explanationFa": "أَعْلَمُ یعنی داناتر، هُدی یعنی هدایت، و ضَلال یعنی گمراهی.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1555",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "عبارات آیه را به ترجمه دقیقشان متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَمَا كُنتَ تَرْجُوٓا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "أَن يُلْقَىٰٓ إِلَيْكَ ٱلْكِتَـٰبُ"
+    },
+    {
+     "id": "l3",
+     "ar": "إِلَّا رَحْمَةًۭ مِّن رَّبِّكَ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و تو امید و انتظار نداشتی"
+    },
+    {
+     "id": "r2",
+     "fa": "که این کتاب بر تو القا شود"
+    },
+    {
+     "id": "r3",
+     "fa": "لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]"
+    },
+    {
+     "id": "r4",
+     "fa": "پس هرگز پشتیبان کافران مباش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "neighbor_word"
+   },
+   "explanationFa": "تَرْجُوا از ریشه رجاء به معنای امید داشتن است و یُلقَی یعنی القا شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1556",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86",
+    "w:w28_086_014"
+   ],
+   "promptFa": "کلمات را به معنای صحیح وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَكُونَنَّ"
+    },
+    {
+     "id": "l2",
+     "ar": "ظَهِيرًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "لِّلْكَـٰفِرِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مباش"
+    },
+    {
+     "id": "r2",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "r3",
+     "fa": "کافران"
+    },
+    {
+     "id": "r4",
+     "fa": "آشکار"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "ظهیر از ریشه ظهر (پشت) به معنای پشتیبان است، نه آشکار و نمایان (ظاهر).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1557",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "کدام گزینه ترجمه صحیح آیه است؟",
+   "stem": {
+    "verse": 86
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛ پس هرگز پشتیبان کافران مباش،"
+    },
+    {
+     "id": "o2",
+     "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+    },
+    {
+     "id": "o3",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o4",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«تَرْجُوا» یعنی امید و انتظار نداشتی، «ظَهِيرًۭا» یعنی پشتیبان.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1558",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "ترجمه این بخش از آیه کدام است؟",
+   "stem": {
+    "verse": 86,
+    "ar": "وَمَا كُنتَ تَرْجُوٓا۟ أَن يُلْقَىٰٓ إِلَيْكَ ٱلْكِتَـٰبُ إِلَّا رَحْمَةًۭ مِّن رَّبِّكَ ۖ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]"
+    },
+    {
+     "id": "o2",
+     "fa": "و تو هرگز نمی‌خواستی که قرآن بر تو خوانده شود مگر به اراده پروردگارت"
+    },
+    {
+     "id": "o3",
+     "fa": "پس هرگز پشتیبان کافران مباش،"
+    },
+    {
+     "id": "o4",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«ما کنت ترجوا» یعنی تو امید نداشتی، «یُلقی إلیک» یعنی بر تو القا شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1559",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "ترجمه این فراز از آیه چیست؟ «فَلَا تَكُونَنَّ ظَهِيرًۭا لِّلْكَـٰفِرِينَ»",
+   "stem": {
+    "verse": 86,
+    "ar": "فَلَا تَكُونَنَّ ظَهِيرًۭا لِّلْكَـٰفِرِينَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس هرگز پشتیبان کافران مباش،"
+    },
+    {
+     "id": "o2",
+     "fa": "و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o3",
+     "fa": "پس کافران را آشکارا عذاب مکن"
+    },
+    {
+     "id": "o4",
+     "fa": "و هرگز به کافران دل مبند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«تَکونَنَّ» با لای نهی یعنی هرگز مباش. ظهیر به معنی پشتیبان و یاور است، نه ظاهر و آشکار.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1560",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 86,
+   "targets": [
+    "vt:86",
+    "vr:86"
+   ],
+   "promptFa": "کدام آیه با این ترجمه هماهنگ است؟",
+   "stem": {
+    "verse": 86,
+    "showFa": true,
+    "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛ پس هرگز پشتیبان کافران مباش،"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 85,
+      "from": 1,
+      "to": 19
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 16
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 84,
+      "from": 1,
+      "to": 18
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "امید نداشتی = ما کُنتَ تَرجوا، القا شود = یُلقی، پشتیبان = ظَهیراً.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1561",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "این ترجمه به کدام بخش از آیه اشاره دارد؟ «و تو امید و انتظار نداشتی که این کتاب بر تو القا شود»",
+   "stem": {
+    "verse": 86,
+    "showFa": true,
+    "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 7
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 86,
+      "from": 8,
+      "to": 15
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 85,
+      "from": 1,
+      "to": 8
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 6
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "امید نداشتی = ما کنتَ ترجوا، القا شود = یُلقی.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1562",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "ترجمه «پس هرگز پشتیبان کافران مباش» معادل کدام عبارت عربی است؟",
+   "stem": {
+    "verse": 86,
+    "showFa": true,
+    "fa": "پس هرگز پشتیبان کافران مباش،"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 86,
+      "from": 12,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 86,
+      "from": 8,
+      "to": 11
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 87,
+      "from": 13,
+      "to": 16
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 85,
+      "from": 15,
+      "to": 19
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "هرگز مباش = فَلا تَکونَنَّ، پشتیبان = ظَهیراً، برای کافران = لِلکافِرینَ.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1563",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86"
+   ],
+   "promptFa": "بخش‌های ترجمه را به ترتیب آیه مرتب کنید.",
+   "stem": {
+    "verse": 86
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و تو امید و انتظار نداشتی",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "که این کتاب بر تو القا شود،",
+     "wordIdx": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛",
+     "wordIdx": [
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و به جانب پروردگارت دعوت کن،",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "وَمَا كُنتَ تَرْجُوٓا۟ (و تو امید نداشتی) أَن يُلْقَىٰٓ إِلَيْكَ ٱلْكِتَـٰبُ (که این کتاب بر تو القا شود) إِلَّا رَحْمَةًۭ مِّن رَّبِّكَ (لکن رحمتی از سوی پروردگارت بود).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1565",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86",
+    "w:w28_086_003"
+   ],
+   "promptFa": "جاهای خالی را با ترجمه مناسب پر کنید.",
+   "stem": {
+    "verse": 86,
+    "showFa": false,
+    "hiddenIdx": [
+     3,
+     5,
+     9
+    ],
+    "faHidden": [
+     {
+      "start": 5,
+      "text": "امید و انتظار نداشتی"
+     },
+     {
+      "start": 44,
+      "text": "القا شود"
+     },
+     {
+      "start": 59,
+      "text": "رحمتی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "امید و انتظار نداشتی",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "القا شود",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "رحمتی",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "بازمی گرداند",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "5": "b2",
+    "9": "b3"
+   },
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "«تَرْجُوا» به معنای امید داشتن و انتظار داشتن است. «یُلقی» به معنای القا شود است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_1566",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 86,
+   "targets": [
+    "vt:86",
+    "w:w28_086_014"
+   ],
+   "promptFa": "کلمات جاافتاده را در ترجمه آیه قرار دهید.",
+   "stem": {
+    "verse": 86,
+    "showFa": false,
+    "hiddenIdx": [
+     10,
+     14,
+     15
+    ],
+    "faHidden": [
+     {
+      "start": 65,
+      "text": "از سوی"
+     },
+     {
+      "start": 116,
+      "text": "پشتیبان"
+     },
+     {
+      "start": 124,
+      "text": "کافران"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "از سوی",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پشتیبان",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "کافران",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "آشکار",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "10": "b1",
+    "14": "b2",
+    "15": "b3"
+   },
+   "distractorTags": {
+    "b4": "false_friend"
+   },
+   "explanationFa": "«مِن» به معنای از سوی، «ظهیر» به معنای پشتیبان، و «کافرین» به معنای کافران است. ظهیر ریشه ظهر دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2183",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه این آیه کدام است؟",
+   "stem": {
+    "verse": 87
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o2",
+     "fa": "و تو امید و انتظار نداشتی که این کتاب بر تو القا شود، لکن رحمتی از سوی پروردگارت بود [که بر تو القا شد]؛ پس هرگز پشتیبان کافران مباش،"
+    },
+    {
+     "id": "o3",
+     "fa": "و با خدا معبودی دیگر مخوان، جز او معبودی نیست، هر چیزی مگر ذات او هلاک شدنی است، فرمانروایی [بر همه جهان هستی] ویژه اوست، و فقط به سوی او بازگردانده می شوید."
+    },
+    {
+     "id": "o4",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پیش از آنکه به سوی تو نازل شود باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از کافران مباش،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ترجمه دقیق آیه ۸۷. گزینه‌های دوم و سوم به ترتیب ترجمه آیات ۸۶ و ۸۸ هستند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2184",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "کدام گزینه ترجمه دقیق این آیه است؟",
+   "stem": {
+    "verse": 87
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به سوی پروردگارت بازگرد، و هرگز از کافران مباش،"
+    },
+    {
+     "id": "o2",
+     "fa": "و هرگز تو را از [ابلاغ] آیات خدا باز نمی‌دارند پس از آنکه به سوی تو نازل شد، پس به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o3",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o4",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، پس هرگز پشتیبان کافران مباش،"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«وَلَا يَصُدُّنَّكَ» نهی است (و مبادا باز دارند). همچنین در پایان آیه «مِنَ ٱلْمُشْرِكِينَ» آمده است، نه کافران (که پایان آیه قبل است).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2185",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه آیه ۸۷ کدام است؟",
+   "stem": {
+    "verse": 87
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا باز دارند، به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o2",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "o3",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه نازل شد باز دارند، و پروردگارت را دعوت کن، و از مشرکان مباش،"
+    },
+    {
+     "id": "o4",
+     "fa": "و تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز داشتند، و به جانب پروردگارت دعوت شدی، پس از مشرکان مباش،"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در گزینه‌های انحرافی بخش‌هایی از ترجمه حذف شده (مانند «پس از آنکه به سوی تو نازل شد») یا زمان افعال به گذشته و مجهول تغییر یافته است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2343",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "قطعات عربی را به ترجمه فارسی مناسب وصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "بَعْدَ إِذْ أُنزِلَتْ إِلَيْكَ ۖ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَٱدْعُ إِلَىٰ رَبِّكَ ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس از آنکه به سوی تو نازل شد"
+    },
+    {
+     "id": "r2",
+     "fa": "و به جانب پروردگارت دعوت کن،"
+    },
+    {
+     "id": "r3",
+     "fa": "و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "r4",
+     "fa": "پس هرگز پشتیبان کافران مباش،"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "neighbor_verse"
+   },
+   "explanationFa": "گزینه انحرافی متعلق به آیه قبل (۸۶) است. ترجمه دقیق قطعات آیه ۸۷ مدنظر است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2344",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 87,
+   "targets": [
+    "w:w28_087_002",
+    "vt:87"
+   ],
+   "promptFa": "کلمات عربی را به معنای درست وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَصُدُّنَّكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "أُنزِلَتْ"
+    },
+    {
+     "id": "l3",
+     "ar": "رَبِّكَ ۖ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْمُشْرِكِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "باز دارند"
+    },
+    {
+     "id": "r2",
+     "fa": "نازل شد"
+    },
+    {
+     "id": "r3",
+     "fa": "پروردگارت"
+    },
+    {
+     "id": "r4",
+     "fa": "مشرکان"
+    },
+    {
+     "id": "r5",
+     "fa": "معبودی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "«يَصُدُّنَّكَ» از ریشه (ص د د) به معنای بازداشتن و جلوگیری کردن است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2345",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه کلمات پنهان شده را کامل کنید.",
+   "stem": {
+    "verse": 87,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "باز دارند"
+     },
+     {
+      "text": "دعوت کن"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "باز دارند",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "دعوت کن",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "مباش"
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "10": "b2"
+   },
+   "distractorTags": {
+    "b3": "neighbor_word"
+   },
+   "explanationFa": "کلمه «يَصُدُّنَّكَ» یعنی باز دارند و کلمه «وَٱدْعُ» فعل امر به معنای دعوت کن است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2346",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه کلمات پنهان شده را کامل کنید.",
+   "stem": {
+    "verse": 87,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "نازل شد"
+     },
+     {
+      "text": "مشرکان"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "نازل شد",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "مشرکان",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "کافران"
+    }
+   ],
+   "answer": {
+    "8": "b1",
+    "16": "b2"
+   },
+   "distractorTags": {
+    "b3": "neighbor_verse"
+   },
+   "explanationFa": "دقت کنید که در پایان این آیه به «مشرکین» اشاره شده است، بر خلاف آیه قبل که به کافرین اشاره داشت.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2643",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "کدام گزینه متن کامل آیه‌ای است که این ترجمه را دارد؟",
+   "stem": {
+    "verse": 87,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_086_001",
+      "w28_086_002",
+      "w28_086_003",
+      "w28_086_004",
+      "w28_086_005",
+      "w28_086_006",
+      "w28_086_007",
+      "w28_086_008",
+      "w28_086_009",
+      "w28_086_010",
+      "w28_086_011",
+      "w28_086_012",
+      "w28_086_013",
+      "w28_086_014",
+      "w28_086_015"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005",
+      "w28_087_006",
+      "w28_087_007",
+      "w28_087_008",
+      "w28_087_009",
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_086_012",
+      "w28_086_013",
+      "w28_086_014",
+      "w28_086_015"
+     ]
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 16
+     }
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_088_001",
+      "w28_088_002",
+      "w28_088_003",
+      "w28_088_004",
+      "w28_088_005",
+      "w28_088_006",
+      "w28_088_007",
+      "w28_088_008",
+      "w28_088_009",
+      "w28_088_010",
+      "w28_088_011",
+      "w28_088_012",
+      "w28_088_013",
+      "w28_088_014",
+      "w28_088_015",
+      "w28_088_016",
+      "w28_088_017",
+      "w28_088_018",
+      "w28_088_019"
+     ]
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o2": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "ترجمه با «باز دارند»، «دعوت کن» و «از مشرکان مباش» مطابق آیه‌ی ۸۷ است. گزینه‌ی دوم پایانی از آیه‌ی ۸۶ دارد («پشتیبان کافران»).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2644",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "کدام گزینه آغاز آیه‌ای است که این ترجمه را دارد؟",
+   "stem": {
+    "verse": 87,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_088_001",
+      "w28_088_002",
+      "w28_088_003",
+      "w28_088_004",
+      "w28_088_005"
+     ]
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 5
+     }
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_086_012",
+      "w28_086_013",
+      "w28_086_014",
+      "w28_086_015"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_087_013",
+      "w28_087_014",
+      "w28_087_015",
+      "w28_087_016"
+     ]
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه‌ی ۸۷ با «وَلَا يَصُدُّنَّكَ» (و مبادا تو را باز دارند) آغاز می‌شود. «وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ» پایان همین آیه است، نه آغاز آن.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2645",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "کدام گزینه آغاز آیه‌ی دارای این ترجمه است؟",
+   "stem": {
+    "verse": 87,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005",
+      "w28_088_005",
+      "w28_088_006"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_086_001",
+      "w28_086_002",
+      "w28_086_003",
+      "w28_086_004",
+      "w28_086_005",
+      "w28_086_006",
+      "w28_086_007",
+      "w28_086_008",
+      "w28_086_009"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_088_001",
+      "w28_088_002",
+      "w28_088_003",
+      "w28_088_004",
+      "w28_088_005",
+      "w28_088_006",
+      "w28_088_007",
+      "w28_088_008",
+      "w28_088_009"
+     ]
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 9
+     }
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse"
+   },
+   "explanationFa": "عبارت «از آیات خدا پس از آنکه به سوی تو نازل شد باز دارند» با «عَنْ ءَايَـٰتِ ٱللَّهِ بَعْدَ إِذْ أُنزِلَتْ إِلَيْكَ» مطابق است. گزینه‌ی اول بعد از «ٱللَّهِ» به آیه‌ی ۸۸ می‌رود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2646",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه‌ی آیه را با چیدن قطعه‌ها به ترتیب درست مرتب کن.",
+   "stem": {
+    "verse": 87,
+    "faSegments": [
+     "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا ",
+     "پس از آنکه به سوی تو نازل شد باز دارند، ",
+     "و به جانب پروردگارت دعوت کن، ",
+     "و هرگز از مشرکان مباش،"
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و به جانب پروردگارت دعوت کن، "
+    },
+    {
+     "id": "b2",
+     "fa": "و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "b3",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا "
+    },
+    {
+     "id": "b4",
+     "fa": "پس از آنکه به سوی تو نازل شد باز دارند، "
+    }
+   ],
+   "answer": [
+    "b3",
+    "b4",
+    "b1",
+    "b2"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ابتدا نهی از بازداشته شدن از آیات خدا می‌آید، سپس دستور دعوت و در پایان نهی از شرک.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2647",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "قطعه‌های ترجمه را به ترتیب درست بچین؛ دو قطعه اضافی است.",
+   "stem": {
+    "verse": 87,
+    "faSegments": [
+     "و مبادا [کفر پیشگان لجوج] تو را ",
+     "از [ابلاغ] آیات خدا ",
+     "پس از آنکه به سوی تو نازل شد ",
+     "باز دارند، ",
+     "و به جانب پروردگارت دعوت کن، ",
+     "و هرگز از مشرکان مباش،"
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس از آنکه به سوی تو نازل شد "
+    },
+    {
+     "id": "b2",
+     "fa": "پس هرگز پشتیبان کافران مباش،",
+     "decoy": true
+    },
+    {
+     "id": "b3",
+     "fa": "و هرگز از مشرکان مباش،"
+    },
+    {
+     "id": "b4",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را "
+    },
+    {
+     "id": "b5",
+     "fa": "باز دارند، "
+    },
+    {
+     "id": "b6",
+     "fa": "جز او معبودی نیست، ",
+     "decoy": true
+    },
+    {
+     "id": "b7",
+     "fa": "از [ابلاغ] آیات خدا "
+    },
+    {
+     "id": "b8",
+     "fa": "و به جانب پروردگارت دعوت کن، "
+    }
+   ],
+   "answer": [
+    "b4",
+    "b7",
+    "b1",
+    "b5",
+    "b8",
+    "b3"
+   ],
+   "distractorTags": {
+    "b2": "neighbor_verse",
+    "b6": "neighbor_verse"
+   },
+   "explanationFa": "فعل «باز دارند» پس از قید «پس از آنکه ... نازل شد» می‌آید. دو قطعه‌ی اضافی از آیات ۸۶ و ۸۸ است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2648",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+   "stem": {
+    "verse": 87,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 16
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 19
+     }
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_087_013",
+      "w28_087_014",
+      "w28_087_015",
+      "w28_087_016"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این ترجمه کامل آیه ۸۷ است که به عدم انحراف از آیات الهی و دعوت به سوی پروردگار اشاره دارد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2649",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه «و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،» با کدام عبارت قرآنی تطابق دارد؟",
+   "stem": {
+    "fa": "و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش،"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 87,
+      "from": 10,
+      "to": 16
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 86,
+      "from": 12,
+      "to": 15
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 6
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 5
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "عبارت «وَٱدْعُ إِلَىٰ رَبِّكَ» به معنای دعوت به سوی پروردگار و «وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ» به معنای نهی از شرک است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2650",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "ترجمه «و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،» به کدام بخش از آیات اشاره دارد؟",
+   "stem": {
+    "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 87,
+      "from": 1,
+      "to": 9
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 86,
+      "from": 1,
+      "to": 7
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 87,
+      "from": 10,
+      "to": 16
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 88,
+      "from": 11,
+      "to": 15
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "فعل «يَصُدُّنَّكَ» به معنای بازداشتن و منع کردن است که در ابتدای آیه ۸۷ و پیش از دستور به دعوت آمده است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2651",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۸۷ را به ترتیب صحیح مرتب کنید:",
+   "stem": {
+    "verse": 87
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پس از آنکه به سوی تو نازل شد باز دارند،",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و به جانب پروردگارت دعوت کن،",
+     "wordIdx": [
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و هرگز از مشرکان مباش،",
+     "wordIdx": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "پس هرگز پشتیبان کافران مباش،",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۸۷ با نهی از رویگردانی از آیات آغاز شده، سپس دستور به دعوت به سوی خدا و در نهایت نهی از شرک می‌دهد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2652",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 87,
+   "targets": [
+    "vt:87"
+   ],
+   "promptFa": "بخش‌های ترجمه زیر را بر اساس ترتیب آیه ۸۷ مرتب کنید:",
+   "stem": {
+    "verse": 87
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و مبادا [کفر پیشگان لجوج] تو را از [ابلاغ] آیات خدا پس از آنکه به سوی تو نازل شد باز دارند،",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و به جانب پروردگارت دعوت کن،",
+     "wordIdx": [
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و هرگز از مشرکان مباش،",
+     "wordIdx": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و با خدا معبودی دیگر مخوان،",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "ابتدا عدم انحراف از آیات مطرح شده و در دو بخش پایانی، دعوت به سوی پروردگار و دوری از مشرکان بیان می‌گردد.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2943",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "ترجمه‌ی بالا به کدام آغاز آیه تعلق دارد؟",
+   "stem": {
+    "verse": 88,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005"
+     ]
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 6
+     }
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_087_013"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_088_007",
+      "w28_088_008",
+      "w28_088_009",
+      "w28_088_010"
+     ]
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "ترجمه با «و با خدا معبودی دیگر مخوان» شروع می‌شود که با «وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ» مطابق است. «لَآ إِلَـٰهَ إِلَّا هُوَ» عبارت بعدی آیه است، نه آغاز آن.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2944",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "کدام گزینه آغاز آیه‌ای است که ترجمه‌ی آن آمده است؟",
+   "stem": {
+    "verse": 88,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005",
+      "w28_087_006",
+      "w28_087_007",
+      "w28_087_008",
+      "w28_087_009"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_088_011",
+      "w28_088_012",
+      "w28_088_013",
+      "w28_088_014",
+      "w28_088_015"
+     ]
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_087_013",
+      "w28_087_014",
+      "w28_087_015",
+      "w28_087_016"
+     ]
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o2": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "دو بخش اول ترجمه یعنی «و با خدا معبودی دیگر مخوان، جز او معبودی نیست» با کلمات ۱ تا ۱۰ آیه‌ی ۸۸ مطابق است. «كُلُّ شَىْءٍ هَالِكٌ…» بخش بعدی آیه است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2945",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88",
+    "vr:88"
+   ],
+   "promptFa": "کدام گزینه متن کامل و درست آیه‌ای است که ترجمه‌اش آمده است؟",
+   "stem": {
+    "verse": 88,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005",
+      "w28_087_006",
+      "w28_087_007",
+      "w28_087_008",
+      "w28_087_009",
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_087_013",
+      "w28_087_014",
+      "w28_087_015",
+      "w28_087_016"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_088_011",
+      "w28_088_012",
+      "w28_088_013",
+      "w28_088_014",
+      "w28_088_015",
+      "w28_088_016",
+      "w28_088_017",
+      "w28_088_018",
+      "w28_088_019",
+      "w28_088_001",
+      "w28_088_002",
+      "w28_088_003",
+      "w28_088_004",
+      "w28_088_005",
+      "w28_088_006",
+      "w28_088_007",
+      "w28_088_008",
+      "w28_088_009",
+      "w28_088_010"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_088_001",
+      "w28_088_002",
+      "w28_088_003",
+      "w28_088_004",
+      "w28_088_005",
+      "w28_088_006",
+      "w28_088_007",
+      "w28_088_008",
+      "w28_088_009",
+      "w28_088_010",
+      "w28_088_016",
+      "w28_088_017",
+      "w28_088_018",
+      "w28_088_019"
+     ]
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 19
+     }
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o2": "near_miss",
+    "o3": "near_miss"
+   },
+   "explanationFa": "ترجمه‌ی کامل شامل چهار بخش است: نهی از خواندن معبود دیگر، توحید، هلاکت هر چیز جز ذات او، و فرمانروایی و بازگشت به سوی او. فقط ترتیب و متن کامل ۱۹ کلمه‌ی آیه‌ی ۸۸ با آن مطابق است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2946",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "قطعه‌های ترجمه‌ی این آیه را به ترتیب درست بچین.",
+   "stem": {
+    "verse": 88,
+    "showAr": true,
+    "faSegments": [
+     "و با خدا معبودی دیگر مخوان، ",
+     "جز او معبودی نیست، ",
+     "هر چیزی مگر ذات او هلاک شدنی است، ",
+     "فرمانروایی [بر همه جهان هستی] ویژه اوست، ",
+     "و فقط به سوی او بازگردانده می شوید."
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "هر چیزی مگر ذات او هلاک شدنی است، ",
+     "wordIdx": [
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و فقط به سوی او بازگردانده می شوید.",
+     "wordIdx": [
+      18,
+      19
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و با خدا معبودی دیگر مخوان، ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "فرمانروایی [بر همه جهان هستی] ویژه اوست، ",
+     "wordIdx": [
+      16,
+      17
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "جز او معبودی نیست، ",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10
+     ]
+    }
+   ],
+   "answer": [
+    "b3",
+    "b5",
+    "b1",
+    "b4",
+    "b2"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه با نهی از خواندن معبود دیگر آغاز می‌شود و سپس توحید، هلاکت هر چیز جز ذات او، فرمانروایی و بازگشت می‌آید.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2947",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "قطعه‌های ریزتر ترجمه را مرتب کن؛ یک قطعه از آیه‌ی قبل است و در پاسخ نمی‌آید.",
+   "stem": {
+    "verse": 88,
+    "showAr": true,
+    "faSegments": [
+     "و با خدا معبودی دیگر مخوان، ",
+     "جز او معبودی نیست، ",
+     "هر چیزی مگر ذات او ",
+     "هلاک شدنی است، ",
+     "فرمانروایی [بر همه جهان هستی] ",
+     "ویژه اوست، ",
+     "و فقط به سوی او ",
+     "بازگردانده می شوید."
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ویژه اوست، ",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و فقط به سوی او ",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "هر چیزی مگر ذات او ",
+     "wordIdx": [
+      11,
+      12,
+      14,
+      15
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و هرگز از مشرکان مباش،",
+     "wordIdx": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b5",
+     "fa": "بازگردانده می شوید.",
+     "wordIdx": [
+      19
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "جز او معبودی نیست، ",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "هلاک شدنی است، ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b8",
+     "fa": "فرمانروایی [بر همه جهان هستی] ",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b9",
+     "fa": "و با خدا معبودی دیگر مخوان، ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b9",
+    "b6",
+    "b3",
+    "b7",
+    "b8",
+    "b1",
+    "b2",
+    "b5"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "در ترجمه‌ی فارسی «هلاک شدنی است» بعد از «هر چیزی مگر ذات او» می‌آید. «و هرگز از مشرکان مباش» از آیه‌ی ۸۷ است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2948",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "بخش‌های عربی آیه ۸۸ را به ترجمه صحیح آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ ۘ"
+    },
+    {
+     "id": "l2",
+     "ar": "كُلُّ شَىْءٍ هَالِكٌ إِلَّا وَجْهَهُۥ ۚ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَهُ ٱلْحُكْمُ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و با خدا معبودی دیگر مخوان،"
+    },
+    {
+     "id": "r2",
+     "fa": "هر چیزی مگر ذات او هلاک شدنی است،"
+    },
+    {
+     "id": "r3",
+     "fa": "فرمانروایی [بر همه جهان هستی] ویژه اوست،"
+    },
+    {
+     "id": "r4",
+     "fa": "و فقط به سوی او بازگردانده می شوید."
+    },
+    {
+     "id": "r5",
+     "fa": "و هرگز از مشرکان مباش،"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "ترجمه دقیق قطعات آیه ۸۸ سوره قصص. گزینه انحرافی مربوط به آیه قبل (۸۷) است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2949",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 88,
+   "targets": [
+    "w:w28_088_002",
+    "w:w28_088_013",
+    "w:w28_088_019"
+   ],
+   "promptFa": "معنای کلمات آیه ۸۸ را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَدْعُ"
+    },
+    {
+     "id": "l2",
+     "ar": "هَالِكٌ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَجْهَهُۥ"
+    },
+    {
+     "id": "l4",
+     "ar": "تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مخوان"
+    },
+    {
+     "id": "r2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "r3",
+     "fa": "ذات او"
+    },
+    {
+     "id": "r4",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "r5",
+     "fa": "ادعا نکن"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "false_friend"
+   },
+   "explanationFa": "«تَدْعُ» از ریشه (د ع و) به معنای خواندن و دعوت است، نه ادعا کردن. «تُرْجَعُونَ» فعل مجهول است (بازگردانده می‌شوید).",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2950",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "ترجمه صحیح آیه ۸۸ کدام است؟",
+   "stem": {
+    "verse": 88
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و با خدا معبودی دیگر مخوان، جز او معبودی نیست، هر چیزی مگر ذات او هلاک شدنی است، فرمانروایی [بر همه جهان هستی] ویژه اوست، و فقط به سوی او بازگردانده می شوید."
+    },
+    {
+     "id": "o2",
+     "fa": "و مبادا تو را از آیات خدا پس از آنکه به سوی تو نازل شد باز دارند، و به جانب پروردگارت دعوت کن، و هرگز از مشرکان مباش."
+    },
+    {
+     "id": "o3",
+     "fa": "و با خدا معبودی دیگر مخوان، جز او معبودی نیست، هر چیزی مگر ذات او هلاک شدنی است، فرمانروایی ویژه اوست، و به سوی او رجوع می کنند."
+    },
+    {
+     "id": "o4",
+     "fa": "و پروردگارت را با معبودی دیگر مخوان، جز او معبودی نیست، هر چیزی هلاک شدنی است، فرمانروایی از آن اوست و بازگردانده می شوید."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "گزینه اول ترجمه دقیق آیه است. در گزینه‌های دیگر فعل مجهول «بازگردانده می‌شوید» یا کلمات دیگر تغییر یافته‌اند.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2953",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 88,
+   "targets": [
+    "vr:88"
+   ],
+   "promptFa": "کدام آیه با این ترجمه مطابقت دارد: «و با خدا معبودی دیگر مخوان...»؟",
+   "stem": {
+    "verse": 88,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 88,
+      "from": 1,
+      "to": 19
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_087_001",
+      "w28_087_002",
+      "w28_087_003",
+      "w28_087_004",
+      "w28_087_005",
+      "w28_087_006"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_087_010",
+      "w28_087_011",
+      "w28_087_012",
+      "w28_087_013",
+      "w28_087_014",
+      "w28_087_015",
+      "w28_087_016"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_088_011",
+      "w28_088_012",
+      "w28_088_013",
+      "w28_088_014",
+      "w28_088_015",
+      "w28_088_016"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این ترجمه مربوط به آیه ۸۸ است که با «وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ» آغاز می‌شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2956",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه ۸۸ را به ترتیب صحیح مرتب کنید.",
+   "stem": {
+    "verse": 88
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و با خدا معبودی دیگر مخوان،"
+    },
+    {
+     "id": "b2",
+     "fa": "جز او معبودی نیست،"
+    },
+    {
+     "id": "b3",
+     "fa": "هر چیزی مگر ذات او هلاک شدنی است،"
+    },
+    {
+     "id": "b4",
+     "fa": "فرمانروایی [بر همه جهان هستی] ویژه اوست،"
+    },
+    {
+     "id": "b5",
+     "fa": "و فقط به سوی او بازگردانده می شوید."
+    },
+    {
+     "id": "b6",
+     "fa": "و هرگز از مشرکان مباش.",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "neighbor_verse"
+   },
+   "explanationFa": "ترتیب قطعات ترجمه دقیقا مطابق با سیر کلمات آیه از «وَلَا تَدْعُ...» تا «...تُرْجَعُونَ» است.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2958",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88",
+    "w:w28_088_002",
+    "w:w28_088_013"
+   ],
+   "promptFa": "جاهای خالی در ترجمه آیه ۸۸ را با کلمات مناسب پر کنید.",
+   "stem": {
+    "verse": 88,
+    "faHidden": [
+     {
+      "start": 22,
+      "text": "مخوان"
+     },
+     {
+      "start": 64,
+      "text": "هلاک شدنی است"
+     }
+    ],
+    "showFa": true
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "مخوان"
+    },
+    {
+     "id": "b2",
+     "fa": "هلاک شدنی است"
+    },
+    {
+     "id": "b3",
+     "fa": "دعوت کن",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "فانی",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«تَدْعُ» در اینجا صیغه نهی و به معنای «مخوان» است. «هَالِكٌ» نیز به «هلاک شدنی است» ترجمه می‌شود.",
+   "unitId": "u_p396a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p396a_A_2959",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 88,
+   "targets": [
+    "vt:88",
+    "w:w28_088_015",
+    "w:w28_088_019"
+   ],
+   "promptFa": "جای خالی را با کلمات صحیح ترجمه پر کنید.",
+   "stem": {
+    "verse": 88,
+    "faHidden": [
+     {
+      "start": 57,
+      "text": "ذات او"
+     },
+     {
+      "start": 126,
+      "text": "بازگردانده می شوید"
+     }
+    ],
+    "showFa": true
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ذات او"
+    },
+    {
+     "id": "b2",
+     "fa": "بازگردانده می شوید"
+    },
+    {
+     "id": "b3",
+     "fa": "رجوع می کنید",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "وجه او",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«وَجْهَهُ» کنایه از «ذات او» است. فعل «تُرْجَعُونَ» نیز مجهول است و باید «بازگردانده می‌شوید» ترجمه شود نه «رجوع می‌کنید».",
+   "unitId": "u_p396a",
+   "part": "A"
+  }
+ ],
+ "issues": [
+  "[u_p396a.partA2.json] در ورودی، کلمه‌ی w28_085_008 همراه علامت وقف «ۚ» آمده و عیناً همان‌گونه استفاده شد.",
+  "[u_p396a.partA2.json] معنای فعلِ «تَرْجُوٓا۟» بدون نفی نوشته شد (امید و انتظار داشتی) و در سوال‌های آیه‌دار، با نفی «مَا» (امید و انتظار نداشتی) آمد.",
+  "[u_p396a.partA3.json] در ورودی، هیچ earlierHardWords برای کلمه‌ی مرور در MATCH_WORDS داده نشده بود؛ از کلمات غیرسخت همین آیات استفاده شد.",
+  "[u_p396a.partA4.json] earlierHardWords در ورودی نبود؛ در MATCH_WORDS از کلمات غیرسخت همین آیه برای تکمیل جفت‌ها استفاده شد.",
+  "[u_p396a.partA4.json] فقط آیه‌ی ۸۸ در ورودی بود؛ گزینه‌های انحرافی عربی از کلمات همین آیه ساخته شد.",
+  "[u_p396a.partA10.json] در سوال‌های order، faSegments درون stem به ترتیب درست است و فقط bank باید به اپ نمایش داده شود.",
+  "[u_p396a.partA10.json] در q_2647 گزینه‌ی b3 باید دقیقاً «و هرگز از مشرکان مباش،» با ویرگول فارسی باشد؛ ویرگول لاتین تایپی است و قبل از استفاده اصلاح شود."
+ ],
+ "sourceFiles": [
+  "u_p396a.partA.json",
+  "u_p396a.partA2.json",
+  "u_p396a.partA3.json",
+  "u_p396a.partA4.json",
+  "u_p396a.partA5.json",
+  "u_p396a.partA6.json",
+  "u_p396a.partA7.json",
+  "u_p396a.partA8.json",
+  "u_p396a.partA9.json",
+  "u_p396a.partA10.json",
+  "u_p396a.partA11.json",
+  "u_p396a.partA12.json",
+  "u_p396a.partA13.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 33,
+  "files": 13
+ }
+}

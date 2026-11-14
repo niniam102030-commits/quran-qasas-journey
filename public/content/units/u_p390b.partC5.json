@@ -1,0 +1,1192 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "C5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_C_0501",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 38
+        },
+        {
+          "id": "o3",
+          "num": 39
+        },
+        {
+          "id": "o4",
+          "num": 40
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ» آغاز می‌شود و آیه‌ی ۳۹ است."
+    },
+    {
+      "id": "q_u_p390b_C_0502",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "این آیه، آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 39
+        },
+        {
+          "id": "o2",
+          "num": 41
+        },
+        {
+          "id": "o3",
+          "num": 42
+        },
+        {
+          "id": "o4",
+          "num": 40
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۹ درباره‌ی سرکشی فرعون و سپاهیانش است و آیه‌ی بعد آن ۴۰ است."
+    },
+    {
+      "id": "q_u_p390b_C_0503",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 41
+        },
+        {
+          "id": "o2",
+          "num": 38
+        },
+        {
+          "id": "o3",
+          "num": 42
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۸ سخن فرعون با اشراف است و آیه‌ی ۳۹ با «وَٱسْتَكْبَرَ» ادامه می‌یابد."
+    },
+    {
+      "id": "q_u_p390b_C_0504",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۳۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_040_001",
+            "w28_040_002",
+            "w28_040_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 39,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_038_001",
+            "w28_038_002",
+            "w28_038_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۹ با «وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ» شروع می‌شود؛ «فَأَخَذْنَـٰهُ…» آغاز آیه‌ی ۴۰ است."
+    },
+    {
+      "id": "q_u_p390b_C_0505",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۳۹ کدام است؟",
+      "stem": {
+        "num": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_044_001",
+            "w28_044_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_041_001",
+            "w28_041_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_042_001",
+            "w28_042_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 39,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "دو کلمه‌ی اول آیه‌ی ۳۹ «وَٱسْتَكْبَرَ هُوَ» است."
+    },
+    {
+      "id": "q_u_p390b_C_0506",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "آیه‌ی ۳۹ با کدام چهار کلمه شروع می‌شود؟",
+      "stem": {
+        "num": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 39,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_039_001",
+            "w28_039_002",
+            "w28_040_002",
+            "w28_039_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003",
+            "w28_042_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_037_001",
+            "w28_037_002",
+            "w28_037_003",
+            "w28_037_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ابتدای آیه‌ی ۳۹ «وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ فِى» است؛ در گزینه‌ی نزدیک، کلمه‌ی سوم از آیه‌ی ۴۰ آمده است."
+    },
+    {
+      "id": "q_u_p390b_C_0507",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 41
+        },
+        {
+          "id": "o2",
+          "num": 40
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «فَأَخَذْنَـٰهُ وَجُنُودَهُۥ» آغاز می‌شود و آیه‌ی ۴۰ است."
+    },
+    {
+      "id": "q_u_p390b_C_0508",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "این آیه، آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 43
+        },
+        {
+          "id": "o3",
+          "num": 42
+        },
+        {
+          "id": "o4",
+          "num": 40
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۰ پس از «وَظَنُّوٓا۟…» در آیه‌ی ۳۹ می‌آید و با «فَأَخَذْنَـٰهُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390b_C_0509",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 40
+        },
+        {
+          "id": "o2",
+          "num": 39
+        },
+        {
+          "id": "o3",
+          "num": 42
+        },
+        {
+          "id": "o4",
+          "num": 38
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۰ با «فَٱنظُرْ كَيْفَ كَانَ عَـٰقِبَةُ ٱلظَّـٰلِمِينَ» پایان می‌یابد و آیه‌ی ۴۱ پس از آن است."
+    },
+    {
+      "id": "q_u_p390b_C_0510",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۰ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_039_001",
+            "w28_039_002",
+            "w28_039_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 40,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۰ با «فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390b_C_0511",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۰ کدام است؟",
+      "stem": {
+        "num": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 40,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_042_001",
+            "w28_042_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_039_001",
+            "w28_039_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_044_001",
+            "w28_044_002"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "دو کلمه‌ی اول آیه‌ی ۴۰ «فَأَخَذْنَـٰهُ وَجُنُودَهُۥ» است."
+    },
+    {
+      "id": "q_u_p390b_C_0512",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 40,
+      "targets": [
+        "vn:40"
+      ],
+      "promptFa": "آیه‌ی ۴۰ با کدام چهار کلمه شروع می‌شود؟",
+      "stem": {
+        "num": 40
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_039_001",
+            "w28_039_002",
+            "w28_039_003",
+            "w28_039_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_040_001",
+            "w28_040_002",
+            "w28_041_001",
+            "w28_040_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_038_001",
+            "w28_038_002",
+            "w28_038_003",
+            "w28_038_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 40,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ابتدای آیه‌ی ۴۰ «فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى» است؛ در گزینه‌ی نزدیک، کلمه‌ی سوم از آیه‌ی ۴۱ آمده است."
+    },
+    {
+      "id": "q_u_p390b_C_0513",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 39
+        },
+        {
+          "id": "o2",
+          "num": 40
+        },
+        {
+          "id": "o3",
+          "num": 41
+        },
+        {
+          "id": "o4",
+          "num": 43
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ» آغاز می‌شود و آیه‌ی ۴۱ است."
+    },
+    {
+      "id": "q_u_p390b_C_0514",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "این آیه، آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 41
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 42
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۱ با «وَيَوْمَ ٱلْقِيَـٰمَةِ لَا يُنصَرُونَ» تمام می‌شود؛ آیه‌ی ۴۲ هم با «وَيَوْمَ ٱلْقِيَـٰمَةِ» ادامه دارد."
+    },
+    {
+      "id": "q_u_p390b_C_0515",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 40
+        },
+        {
+          "id": "o2",
+          "num": 42
+        },
+        {
+          "id": "o3",
+          "num": 43
+        },
+        {
+          "id": "o4",
+          "num": 39
+        },
+        {
+          "id": "o5",
+          "num": 41
+        }
+      ],
+      "answer": "o5",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۱ پس از آیه‌ی ۴۰ («…عَـٰقِبَةُ ٱلظَّـٰلِمِينَ») قرار دارد."
+    },
+    {
+      "id": "q_u_p390b_C_0516",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_040_001",
+            "w28_040_002",
+            "w28_040_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۱ با «وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ يَدْعُونَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390b_C_0517",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۱ کدام است؟",
+      "stem": {
+        "num": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_039_001",
+            "w28_039_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_043_001",
+            "w28_043_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_038_001",
+            "w28_038_002"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "دو کلمه‌ی اول آیه‌ی ۴۱ «وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ» است."
+    },
+    {
+      "id": "q_u_p390b_C_0518",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 41,
+      "targets": [
+        "vn:41"
+      ],
+      "promptFa": "آیه‌ی ۴۱ با کدام چهار کلمه شروع می‌شود؟",
+      "stem": {
+        "num": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_040_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003",
+            "w28_042_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_037_001",
+            "w28_037_002",
+            "w28_037_003",
+            "w28_037_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ابتدای آیه‌ی ۴۱ «وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ يَدْعُونَ إِلَى» است؛ در گزینه‌ی نزدیک، «فِى» از آیه‌ی ۴۰ به‌جای «إِلَى» آمده است."
+    },
+    {
+      "id": "q_u_p390b_C_0519",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 42
+        },
+        {
+          "id": "o2",
+          "num": 45
+        },
+        {
+          "id": "o3",
+          "num": 41
+        },
+        {
+          "id": "o4",
+          "num": 40
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَأَتْبَعْنَـٰهُمْ فِى هَـٰذِهِ» آغاز می‌شود و آیه‌ی ۴۲ است."
+    },
+    {
+      "id": "q_u_p390b_C_0520",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "این آیه، آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 43
+        },
+        {
+          "id": "o2",
+          "num": 40
+        },
+        {
+          "id": "o3",
+          "num": 41
+        },
+        {
+          "id": "o4",
+          "num": 42
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۲ دو آیه پس از آیه‌ی ۴۰ است و درباره‌ی لعنت در این دنیا سخن می‌گوید."
+    },
+    {
+      "id": "q_u_p390b_C_0521",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 39
+        },
+        {
+          "id": "o2",
+          "num": 42
+        },
+        {
+          "id": "o3",
+          "num": 44
+        },
+        {
+          "id": "o4",
+          "num": 41
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۲ بعد از آیه‌ی ۴۱ می‌آید و با «هُم مِّنَ ٱلْمَقْبُوحِينَ» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p390b_C_0522",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۲ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_039_001",
+            "w28_039_002",
+            "w28_039_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 42,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۲ با «وَأَتْبَعْنَـٰهُمْ فِى هَـٰذِهِ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390b_C_0523",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۲ کدام است؟",
+      "stem": {
+        "num": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_038_001",
+            "w28_038_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 42,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_043_001",
+            "w28_043_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_041_001",
+            "w28_041_002"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "دو کلمه‌ی اول آیه‌ی ۴۲ «وَأَتْبَعْنَـٰهُمْ فِى» است."
+    },
+    {
+      "id": "q_u_p390b_C_0524",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 42,
+      "targets": [
+        "vn:42"
+      ],
+      "promptFa": "آیه‌ی ۴۲ با کدام چهار کلمه شروع می‌شود؟",
+      "stem": {
+        "num": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_040_001",
+            "w28_040_002",
+            "w28_040_003",
+            "w28_040_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003",
+            "w28_041_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 42,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ابتدای آیه‌ی ۴۲ «وَأَتْبَعْنَـٰهُمْ فِى هَـٰذِهِ ٱلدُّنْيَا» است؛ در گزینه‌ی نزدیک، «إِلَى» از آیه‌ی ۴۱ آمده است."
+    }
+  ],
+  "issues": [
+    "ورودی similarity نداشت؛ انحرافی‌ها از شماره‌های مجاور و آغاز آیات هم‌جوار ساخته شد."
+  ]
+}

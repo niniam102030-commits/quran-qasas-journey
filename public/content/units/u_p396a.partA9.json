@@ -1,0 +1,260 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "A9",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p396a_A_2343",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "قطعات عربی را به ترجمه فارسی مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَعْدَ إِذْ أُنزِلَتْ إِلَيْكَ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱدْعُ إِلَىٰ رَبِّكَ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس از آنکه به سوی تو نازل شد"
+        },
+        {
+          "id": "r2",
+          "fa": "و به جانب پروردگارت دعوت کن،"
+        },
+        {
+          "id": "r3",
+          "fa": "و هرگز از مشرکان مباش،"
+        },
+        {
+          "id": "r4",
+          "fa": "پس هرگز پشتیبان کافران مباش،"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "گزینه انحرافی متعلق به آیه قبل (۸۶) است. ترجمه دقیق قطعات آیه ۸۷ مدنظر است."
+    },
+    {
+      "id": "q_u_p396a_A_2344",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002",
+        "vt:87"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُنزِلَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "رَبِّكَ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْمُشْرِكِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "باز دارند"
+        },
+        {
+          "id": "r2",
+          "fa": "نازل شد"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگارت"
+        },
+        {
+          "id": "r4",
+          "fa": "مشرکان"
+        },
+        {
+          "id": "r5",
+          "fa": "معبودی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "«يَصُدُّنَّكَ» از ریشه (ص د د) به معنای بازداشتن و جلوگیری کردن است."
+    },
+    {
+      "id": "q_u_p396a_A_2345",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "ترجمه کلمات پنهان شده را کامل کنید.",
+      "stem": {
+        "verse": 87,
+        "showFa": false,
+        "faHidden": [
+          {
+            "text": "باز دارند"
+          },
+          {
+            "text": "دعوت کن"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "باز دارند",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "دعوت کن",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "مباش"
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "10": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_word"
+      },
+      "explanationFa": "کلمه «يَصُدُّنَّكَ» یعنی باز دارند و کلمه «وَٱدْعُ» فعل امر به معنای دعوت کن است."
+    },
+    {
+      "id": "q_u_p396a_A_2346",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 87,
+      "targets": [
+        "vt:87"
+      ],
+      "promptFa": "ترجمه کلمات پنهان شده را کامل کنید.",
+      "stem": {
+        "verse": 87,
+        "showFa": false,
+        "faHidden": [
+          {
+            "text": "نازل شد"
+          },
+          {
+            "text": "مشرکان"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "نازل شد",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "مشرکان",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "کافران"
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "16": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که در پایان این آیه به «مشرکین» اشاره شده است، بر خلاف آیه قبل که به کافرین اشاره داشت."
+    }
+  ],
+  "issues": []
+}

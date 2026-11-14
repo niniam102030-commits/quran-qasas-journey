@@ -1,0 +1,343 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C2",
+  "generatedBy": "gemini-2.5-pro",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_0080",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 1,
+      "targets": [
+        "sq:1",
+        "vr:2"
+      ],
+      "promptFa": "پس از آیه ۱ («طسٓمٓ»)، آیه ۲ را با چیدن کلمات از بانک بسازید:",
+      "stem": {
+        "verse": 1,
+        "arText": "طسٓمٓ",
+        "targetVerse": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ءَايَـٰتُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "هَـٰذَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2",
+        "b4",
+        "b1",
+        "b3"
+      ],
+      "distractorTags": {
+        "b5": "similar_verse",
+        "b6": "near_miss"
+      },
+      "explanationFa": "پس از حروف مقطعه در آیه ۱، آیه ۲ با «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p385b_C_0081",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 1,
+      "skill": "sequence",
+      "verse": 1,
+      "targets": [
+        "sq:1",
+        "vr:1"
+      ],
+      "promptFa": "پیش از آیه ۲ («تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ»)، آیه ۱ را از بانک انتخاب و مرتب کنید:",
+      "stem": {
+        "verse": 2,
+        "arText": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+        "targetVerse": 1
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هَـٰذَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b3": "random"
+      },
+      "explanationFa": "سوره قصص در آیه ۱، پیش از «تِلْكَ ءَايَـٰتُ...»، با حروف مقطعه «طسٓمٓ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p385b_C_0082",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 1,
+      "targets": [
+        "sq:1",
+        "vr:1"
+      ],
+      "promptFa": "کدام عبارت آیه ۱ را تشکیل می‌دهد که بلافاصله پیش از آیه ۲ («تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ») قرار دارد؟",
+      "stem": {
+        "verse": 2,
+        "arText": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+        "targetVerse": 1
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "نَتْلُوا۟",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَمَّا",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّا",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "فَإِذَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b3"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b2": "random",
+        "b4": "near_miss",
+        "b5": "random"
+      },
+      "explanationFa": "آیه ۱ سوره قصص تنها از یک کلمه («طسٓمٓ») تشکیل شده که پیش از آیه ۲ آمده است."
+    },
+    {
+      "id": "q_u_p385b_C_0083",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 2,
+      "targets": [
+        "sq:2",
+        "vr:3"
+      ],
+      "promptFa": "پس از آیه ۲ («تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ»)، بخش‌های آیه ۳ را به ترتیب درست بچینید:",
+      "stem": {
+        "verse": 2,
+        "arText": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+        "targetVerse": 3
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِن نَّبَإِ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَتْلُوا۟ عَلَيْكَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لِقَوْمٍۢ يُؤْمِنُونَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُوسَىٰ وَفِرْعَوْنَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "وَهَـٰمَـٰنَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b3",
+        "b1",
+        "b5",
+        "b2",
+        "b4"
+      ],
+      "distractorTags": {
+        "b6": "same_root",
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "پس از معرفی کتاب مبین در آیه ۲، آیه ۳ با «نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ مُوسَىٰ وَفِرْعَوْنَ بِٱلْحَقِّ لِقَوْمٍۢ يُؤْمِنُونَ» ادامه می‌یابد."
+    },
+    {
+      "id": "q_u_p385b_C_0084",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 2,
+      "targets": [
+        "sq:2",
+        "vr:2"
+      ],
+      "promptFa": "پیش از آیه ۳ («نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ مُوسَىٰ وَفِرْعَوْنَ...»)، کلمات آیه ۲ را به ترتیب بچینید:",
+      "stem": {
+        "verse": 3,
+        "arText": "نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ مُوسَىٰ وَفِرْعَوْنَ بِٱلْحَقِّ لِقَوْمٍۢ يُؤْمِنُونَ",
+        "targetVerse": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَايَـٰتُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "حَقٌّۭ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b3",
+        "b2",
+        "b4",
+        "b1"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse",
+        "b7": "same_root"
+      },
+      "explanationFa": "پیش از شروع داستان موسی و فرعون در آیه ۳، آیه ۲ عبارت «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» است."
+    }
+  ],
+  "issues": [
+    "از آنجا که آیه ۱ پیشین ندارد، سهمیه BUILD_PREV_VERSE آیه ۱ و آیه ۲ بر اساس گذارهای ۱←۲ (بازسازی آیه ۱ با نمایش آیه ۲) و ۲←۳ (بازسازی آیه ۲ با نمایش آیه ۳) تنظیم شد."
+  ]
+}

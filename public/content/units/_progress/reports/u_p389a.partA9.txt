@@ -1,0 +1,56 @@
+[#3 q_u_p389a_A_1603 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p389a_A_1604 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p389a_A_1605 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p389a_A_1605 VERSE_TO_TRANSLATION] برچسب نامعتبر 'neighbor_phrase'.
+[#6 q_u_p389a_A_1606 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p389a_A_1607 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p389a_A_1607 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#7 q_u_p389a_A_1607 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#7 q_u_p389a_A_1607 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#8 q_u_p389a_A_1608 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p389a_A_1608 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#8 q_u_p389a_A_1608 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#8 q_u_p389a_A_1608 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#9 q_u_p389a_A_1609 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p389a_A_1609 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 29 برابر نیست.
+[#10 q_u_p389a_A_1610 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p389a_A_1610 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 29 برابر نیست.
+[#11 q_u_p389a_A_1611 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p389a_A_1612 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#15 q_u_p389a_A_1615 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#16 q_u_p389a_A_1616 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p389a_A_1617 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p389a_A_1618 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p389a_A_1619 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p389a_A_1619 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#19 q_u_p389a_A_1619 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ
+[#20 q_u_p389a_A_1620 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p389a_A_1621 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p389a_A_1621 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 30 برابر نیست.
+[#22 q_u_p389a_A_1622 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p389a_A_1622 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 30 برابر نیست.
+[#23 q_u_p389a_A_1623 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p389a_A_1624 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p389a_A_1625 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: عَصَاكَ ۖ
+[#26 q_u_p389a_A_1626 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: يُعَقِّبْ ۚ
+[#26 q_u_p389a_A_1626 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ ۖ
+[#27 q_u_p389a_A_1627 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#28 q_u_p389a_A_1628 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p389a_A_1629 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p389a_A_1629 VERSE_TO_TRANSLATION] برچسب نامعتبر 'neighbor_phrase'.
+[#30 q_u_p389a_A_1630 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p389a_A_1631 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p389a_A_1631 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#31 q_u_p389a_A_1631 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#31 q_u_p389a_A_1631 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#32 q_u_p389a_A_1632 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p389a_A_1632 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#32 q_u_p389a_A_1632 TRANSLATION_TO_VERSE] برچسب نامعتبر 'neighbor_phrase'.
+[#32 q_u_p389a_A_1632 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: يُعَقِّبْ ۚ
+[#32 q_u_p389a_A_1632 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ ۖ
+[#33 q_u_p389a_A_1633 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p389a_A_1633 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 31 برابر نیست.
+[#34 q_u_p389a_A_1634 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#34 q_u_p389a_A_1634 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 31 برابر نیست.
+[#35 q_u_p389a_A_1635 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p389a_A_1636 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

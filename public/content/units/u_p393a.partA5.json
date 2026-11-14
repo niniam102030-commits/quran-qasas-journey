@@ -1,0 +1,2463 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "A5",
+  "generatedBy": "Gemini-2.5-Pro",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p393a_A_0421",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "معنای کلمه «فَمَتَـٰعُ» چیست؟",
+      "stem": {
+        "wordId": "w28_060_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لذت‌بخش"
+        },
+        {
+          "id": "o2",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o3",
+          "fa": "باقیمانده"
+        },
+        {
+          "id": "o4",
+          "fa": "برخوردارش کرده‌ایم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "same_root"
+      },
+      "explanationFa": "«متاع» ابزار موقتی زندگی است؛ با لذت‌بخش اشتباه نشود."
+    },
+    {
+      "id": "q_u_p393a_A_0422",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "معنای «فَمَتَـٰعُ» در فارسی کدام است؟",
+      "stem": {
+        "wordId": "w28_060_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کالا و وسیله بهره‌مندی"
+        },
+        {
+          "id": "o2",
+          "fa": "لذت‌بخش"
+        },
+        {
+          "id": "o3",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "o4",
+          "fa": "زینت و زیبایی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه «م ت ع» به معنای کالا و وسیله بهره‌مندی است."
+    },
+    {
+      "id": "q_u_p393a_A_0423",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "در این آیه، «فَمَتَـٰعُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_060_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "زندگی دنیا"
+        },
+        {
+          "id": "o2",
+          "fa": "زینت آن"
+        },
+        {
+          "id": "o3",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o4",
+          "fa": "لذت‌بخش"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«فَمَتَـٰعُ ٱلْحَيَوٰةِ» یعنی کالا و ابزار زندگی."
+    },
+    {
+      "id": "q_u_p393a_A_0424",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "معادل دقیق «فَمَتَـٰعُ» در آیه شریفه کدام است؟",
+      "stem": {
+        "wordId": "w28_060_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لذت‌بخش"
+        },
+        {
+          "id": "o2",
+          "fa": "آنچه به شما داده شده"
+        },
+        {
+          "id": "o3",
+          "fa": "بهتر و پایدارتر"
+        },
+        {
+          "id": "o4",
+          "fa": "کالا و وسیله بهره‌مندی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "متاع به معنای کالا و ابزار موقتی زندگی است."
+    },
+    {
+      "id": "q_u_p393a_A_0425",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "کلمه عربی معادل «کالا و ابزار» چیست؟",
+      "stem": {
+        "fa": "کالا و ابزار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "شَىْءٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "زِينَتُهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "مَّتَّعْنَـٰهُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "«فَمَتَـٰعُ» یعنی پس کالا و ابزار."
+    },
+    {
+      "id": "q_u_p393a_A_0426",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "کدام کلمه به معنای «کالا و وسیله بهره‌مندی» است؟",
+      "stem": {
+        "fa": "کالا و وسیله بهره‌مندی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْحَيَوٰةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُوتِيتُم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَمَتَـٰعُ» اسم است به معنای کالا، اما مَّتَّعْنَـٰهُ فعل است."
+    },
+    {
+      "id": "q_u_p393a_A_0427",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_005"
+      ],
+      "promptFa": "«کالا و ابزار (در زندگی دنیا)» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "کالا و ابزار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِيتُم"
+        },
+        {
+          "id": "o2",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلدُّنْيَا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کالا و ابزار زندگی همان «فَمَتَـٰعُ» است."
+    },
+    {
+      "id": "q_u_p393a_A_0428",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "معنای کلمه «وَأَبْقَىٰٓ» چیست؟",
+      "stem": {
+        "wordId": "w28_060_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "o2",
+          "fa": "باقیمانده"
+        },
+        {
+          "id": "o3",
+          "fa": "بهتر"
+        },
+        {
+          "id": "o4",
+          "fa": "نزد خدا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه «ب ق ی»، افعل تفضیل است یعنی پایدارتر."
+    },
+    {
+      "id": "q_u_p393a_A_0429",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "معنای «وَأَبْقَىٰٓ» کدام است؟",
+      "stem": {
+        "wordId": "w28_060_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باقیمانده"
+        },
+        {
+          "id": "o2",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "o3",
+          "fa": "ماندگارتر و پایدارتر"
+        },
+        {
+          "id": "o4",
+          "fa": "احضار شده"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "به معنای ماندگارتر و پایدارتر است."
+    },
+    {
+      "id": "q_u_p393a_A_0430",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "در این آیه، «وَأَبْقَىٰٓ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_060_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بهتر"
+        },
+        {
+          "id": "o2",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "o3",
+          "fa": "نزد خدا"
+        },
+        {
+          "id": "o4",
+          "fa": "باقیمانده"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "خَيْرٌ وَأَبْقَىٰ یعنی بهتر و پایدارتر."
+    },
+    {
+      "id": "q_u_p393a_A_0431",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "معادل «وَأَبْقَىٰٓ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_060_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o2",
+          "fa": "ماندگارتر و پایدارتر"
+        },
+        {
+          "id": "o3",
+          "fa": "باقیمانده"
+        },
+        {
+          "id": "o4",
+          "fa": "نمی‌اندیشید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تأکید بر ماندگاری بیشتر است (پایدارتر)."
+    },
+    {
+      "id": "q_u_p393a_A_0432",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «و پایدارتر» است؟",
+      "stem": {
+        "fa": "و پایدارتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَأَبْقَىٰٓ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "«وَأَبْقَىٰٓ» از بقا به معنای پایدارتر است."
+    },
+    {
+      "id": "q_u_p393a_A_0433",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "معادل عربی «ماندگارتر و پایدارتر» چیست؟",
+      "stem": {
+        "fa": "ماندگارتر و پایدارتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَأَبْقَىٰٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "عِندَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَعْقِلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُوتِيتُم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "أبقی بر وزن أفعل برای برتری و ماندگاری است."
+    },
+    {
+      "id": "q_u_p393a_A_0434",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 60,
+      "targets": [
+        "w:w28_060_013"
+      ],
+      "promptFa": "کدام کلمه مفهوم «پایداری بیشتر» را می‌رساند؟",
+      "stem": {
+        "fa": "پایدارتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَأَبْقَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "خَيْرٌۭ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "أبقی به معنای پایدارتر است."
+    },
+    {
+      "id": "q_u_p393a_A_0435",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "معنای کلمه «لَـٰقِيهِ» چیست؟",
+      "stem": {
+        "wordId": "w28_061_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لیاقت دارد"
+        },
+        {
+          "id": "o2",
+          "fa": "وعده نیک"
+        },
+        {
+          "id": "o3",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "o4",
+          "fa": "احضار شده"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ملاقات کننده آن، یعنی حتما به آن می‌رسد؛ با لیاقت اشتباه نشود."
+    },
+    {
+      "id": "q_u_p393a_A_0436",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "معنای «لَـٰقِيهِ» کدام است؟",
+      "stem": {
+        "wordId": "w28_061_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برخوردارش کرده‌ایم"
+        },
+        {
+          "id": "o2",
+          "fa": "حتما به آن دست می‌یابد"
+        },
+        {
+          "id": "o3",
+          "fa": "لیاقت دارد"
+        },
+        {
+          "id": "o4",
+          "fa": "ماندگارتر"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "یعنی کسی که آن وعده را ملاقات می‌کند (به آن می‌رسد)."
+    },
+    {
+      "id": "q_u_p393a_A_0437",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "در این آیه، «لَـٰقِيهِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_061_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "o2",
+          "fa": "لیاقت دارد"
+        },
+        {
+          "id": "o3",
+          "fa": "کسی که"
+        },
+        {
+          "id": "o4",
+          "fa": "وعده نیک"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فَهُوَ لَـٰقِيهِ یعنی پس او حتما به آن رسنده است."
+    },
+    {
+      "id": "q_u_p393a_A_0438",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "معادل دقیق «لَـٰقِيهِ» در آیه شریفه کدام است؟",
+      "stem": {
+        "wordId": "w28_061_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لیاقت دارد"
+        },
+        {
+          "id": "o2",
+          "fa": "مانند کسی است"
+        },
+        {
+          "id": "o3",
+          "fa": "برخوردار شده"
+        },
+        {
+          "id": "o4",
+          "fa": "حتما به آن دست می‌یابد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "لَاقِیهِ اسم فاعل از لقا است، یعنی به آن دست می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_A_0439",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "کلمه عربی معادل «رسنده به آن» چیست؟",
+      "stem": {
+        "fa": "رسنده به آن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَعْدًا"
+        },
+        {
+          "id": "o2",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَعَدْنَـٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«لَـٰقِيهِ» به معنای ملاقات کننده و رسنده به آن است."
+    },
+    {
+      "id": "q_u_p393a_A_0440",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "کدام کلمه به معنای «حتما به آن دست می‌یابد» است؟",
+      "stem": {
+        "fa": "حتما به آن دست می‌یابد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَوْمَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَعَدْنَـٰهُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "لَـٰقِيهِ به معنای دست یابنده به وعده است."
+    },
+    {
+      "id": "q_u_p393a_A_0441",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_006"
+      ],
+      "promptFa": "مفهوم «رسنده (ملاقات کننده)» در کدام کلمه است؟",
+      "stem": {
+        "fa": "رسنده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَعْدًا"
+        },
+        {
+          "id": "o2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "لَـٰقِيهِ اسم فاعل از لقا است."
+    },
+    {
+      "id": "q_u_p393a_A_0442",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "معنای کلمه «مَّتَّعْنَـٰهُ» چیست؟",
+      "stem": {
+        "wordId": "w28_061_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "متقاعد کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o3",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "o4",
+          "fa": "برخوردارش کرده‌ایم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o3": "random"
+      },
+      "explanationFa": "از ریشه «م ت ع»، یعنی او را بهره‌مند و برخوردار کردیم."
+    },
+    {
+      "id": "q_u_p393a_A_0443",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "معنای «مَّتَّعْنَـٰهُ» کدام است؟",
+      "stem": {
+        "wordId": "w28_061_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "متقاعد کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "o3",
+          "fa": "او را از کالا بهره‌مند ساختیم"
+        },
+        {
+          "id": "o4",
+          "fa": "وعده نیک دادیم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "فعل ماضی متکلم مع الغیر، یعنی او را بهره‌مند ساختیم."
+    },
+    {
+      "id": "q_u_p393a_A_0444",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "در این آیه، «مَّتَّعْنَـٰهُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_061_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o2",
+          "fa": "برخوردارش کرده‌ایم"
+        },
+        {
+          "id": "o3",
+          "fa": "متقاعد کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "مانند کسی که"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "مَّتَّعْنَـٰهُ یعنی او را برخوردار کردیم."
+    },
+    {
+      "id": "q_u_p393a_A_0445",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "معادل دقیق «مَّتَّعْنَـٰهُ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_061_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "متقاعد کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "o3",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "o4",
+          "fa": "او را از کالا بهره‌مند ساختیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«متاع» کالا است و «مَّتَّعْنَـٰهُ» یعنی او را از کالا بهره‌مند ساختیم."
+    },
+    {
+      "id": "q_u_p393a_A_0446",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «برخوردارش کرده‌ایم» است؟",
+      "stem": {
+        "fa": "برخوردارش کرده‌ایم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَعَدْنَـٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَـٰقِيهِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "فعل «مَّتَّعْنَـٰهُ» یعنی برخوردارش کردیم."
+    },
+    {
+      "id": "q_u_p393a_A_0447",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "کلمه عربی معادل «او را از کالا بهره‌مند ساختیم» چیست؟",
+      "stem": {
+        "fa": "او را از کالا بهره‌مند ساختیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِيتُم"
+        },
+        {
+          "id": "o2",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَعَدْنَـٰهُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "مَّتَّعْنَـٰهُ از ریشه متاع است."
+    },
+    {
+      "id": "q_u_p393a_A_0448",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_008"
+      ],
+      "promptFa": "کدام کلمه فعل است و معنای «برخوردار ساختیم» می‌دهد؟",
+      "stem": {
+        "fa": "برخوردار ساختیم او را"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَتَـٰعَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَعَدْنَـٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَـٰقِيهِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "متاع اسم است، مَّتَّعْنَـٰهُ فعل ماضی است."
+    },
+    {
+      "id": "q_u_p393a_A_0449",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "معنای کلمه «ٱلْمُحْضَرِينَ» چیست؟",
+      "stem": {
+        "wordId": "w28_061_017",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حاضران"
+        },
+        {
+          "id": "o2",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "o3",
+          "fa": "پایدارتر"
+        },
+        {
+          "id": "o4",
+          "fa": "رسنده به آن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "اسم مفعول است، یعنی به زور حاضر و احضار شده‌اند؛ حاضران معنای غلطی است."
+    },
+    {
+      "id": "q_u_p393a_A_0450",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "معنای «ٱلْمُحْضَرِينَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_061_017",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حاضران در مجلس"
+        },
+        {
+          "id": "o2",
+          "fa": "وعده داده شدگان"
+        },
+        {
+          "id": "o3",
+          "fa": "کسانی که برای عذاب احضار شده‌اند"
+        },
+        {
+          "id": "o4",
+          "fa": "برخوردار شدگان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کسانی که برای عذاب در قیامت احضار شده‌اند."
+    },
+    {
+      "id": "q_u_p393a_A_0451",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "در این آیه، «ٱلْمُحْضَرِينَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_061_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "o2",
+          "fa": "حاضران"
+        },
+        {
+          "id": "o3",
+          "fa": "روز قیامت"
+        },
+        {
+          "id": "o4",
+          "fa": "وعده نیک"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "مِنَ ٱلْمُحْضَرِينَ یعنی از احضار شوندگان."
+    },
+    {
+      "id": "q_u_p393a_A_0452",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "معادل دقیق «ٱلْمُحْضَرِينَ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_061_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حاضران در قیامت"
+        },
+        {
+          "id": "o2",
+          "fa": "روز قیامت"
+        },
+        {
+          "id": "o3",
+          "fa": "کسانی که برخورداری دارند"
+        },
+        {
+          "id": "o4",
+          "fa": "کسانی که برای عذاب احضار شده‌اند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "اشاره به احضار اجباری برای عذاب دارد."
+    },
+    {
+      "id": "q_u_p393a_A_0453",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "کدام کلمه به معنای «احضار شوندگان» است؟",
+      "stem": {
+        "fa": "احضار شوندگان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمُحْضَرِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلدُّنْيَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«ٱلْمُحْضَرِينَ» از باب افعال یعنی احضار شوندگان."
+    },
+    {
+      "id": "q_u_p393a_A_0454",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "کلمه عربی معادل «کسانی که برای عذاب احضار شده‌اند» چیست؟",
+      "stem": {
+        "fa": "کسانی که برای عذاب احضار شده‌اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمُحْضَرِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَعَدْنَـٰهُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "جمع محضر، یعنی احضار شده."
+    },
+    {
+      "id": "q_u_p393a_A_0455",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 61,
+      "targets": [
+        "w:w28_061_017"
+      ],
+      "promptFa": "مفهوم «به زور حاضر شدن (احضار)» در کدام کلمه است؟",
+      "stem": {
+        "fa": "احضار شوندگان (برای عذاب)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَوْمَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمُحْضَرِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَـٰقِيهِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ٱلْمُحْضَرِينَ اسم مفعول است."
+    },
+    {
+      "id": "q_u_p393a_A_0456",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_005",
+        "w:w28_060_013",
+        "w:w28_061_006",
+        "w:w28_061_008",
+        "w:w28_061_017"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r2",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r3",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r4",
+          "fa": "برخوردارش کرده‌ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "r6",
+          "fa": "حاضران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "این کلمات سخت از آیات ۶۰ و ۶۱ سوره قصص هستند."
+    },
+    {
+      "id": "q_u_p393a_A_0457",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_005",
+        "w:w28_060_013",
+        "w:w28_060_012",
+        "w:w28_060_002",
+        "w:w28_060_008"
+      ],
+      "promptFa": "کلمات آیه ۶۰ را به معنای خود وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "أُوتِيتُم"
+        },
+        {
+          "id": "l5",
+          "ar": "وَزِينَتُهَا ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r2",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r3",
+          "fa": "بهتر"
+        },
+        {
+          "id": "r4",
+          "fa": "داده شده"
+        },
+        {
+          "id": "r5",
+          "fa": "و زینت آن"
+        },
+        {
+          "id": "r6",
+          "fa": "باقیمانده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "مرور کلمات سخت و عبارات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_A_0458",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_061_006",
+        "w:w28_061_008",
+        "w:w28_061_002",
+        "w:w28_061_004",
+        "w:w28_061_017"
+      ],
+      "promptFa": "کلمات آیه ۶۱ را با معنای صحیح تطبیق دهید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَعَدْنَـٰهُ"
+        },
+        {
+          "id": "l4",
+          "ar": "حَسَنًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r2",
+          "fa": "برخوردارش کرده‌ایم"
+        },
+        {
+          "id": "r3",
+          "fa": "وعده دادیم به او"
+        },
+        {
+          "id": "r4",
+          "fa": "نیک"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "r6",
+          "fa": "لیاقت دارد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "لَاقِیه به معنای رسنده به آن است، نه لیاقت."
+    },
+    {
+      "id": "q_u_p393a_A_0459",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_005",
+        "w:w28_061_006",
+        "w:w28_061_015",
+        "w:w28_060_015",
+        "w:w28_060_013"
+      ],
+      "promptFa": "معانی این کلمات چیست؟",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَعْقِلُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r2",
+          "fa": "حتما به آن دست می‌یابد"
+        },
+        {
+          "id": "r3",
+          "fa": "قیامت"
+        },
+        {
+          "id": "r4",
+          "fa": "می اندیشید"
+        },
+        {
+          "id": "r5",
+          "fa": "و پایدارتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترکیب کلمات سخت و پرکاربرد این دو آیه."
+    },
+    {
+      "id": "q_u_p393a_A_0460",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_061_008",
+        "w:w28_061_017",
+        "w:w28_060_004",
+        "w:w28_060_005",
+        "w:w28_061_006"
+      ],
+      "promptFa": "جفت‌های صحیح عربی و فارسی را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْمُحْضَرِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "شَىْءٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَـٰقِيهِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "او را از کالا بهره‌مند ساختیم"
+        },
+        {
+          "id": "r2",
+          "fa": "کسانی که برای عذاب احضار شده‌اند"
+        },
+        {
+          "id": "r3",
+          "fa": "چیزی"
+        },
+        {
+          "id": "r4",
+          "fa": "کالا و وسیله بهره‌مندی"
+        },
+        {
+          "id": "r5",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r6",
+          "fa": "لذت‌بخش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "متاع با لذت‌بخش متفاوت است؛ وسیله موقت زندگی است."
+    },
+    {
+      "id": "q_u_p393a_A_0461",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_013",
+        "w:w28_060_012",
+        "w:w28_060_002",
+        "w:w28_061_008",
+        "w:w28_061_017"
+      ],
+      "promptFa": "ارتباط کلمات و معانی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُوتِيتُم"
+        },
+        {
+          "id": "l4",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ماندگارتر و پایدارتر"
+        },
+        {
+          "id": "r2",
+          "fa": "بهتر"
+        },
+        {
+          "id": "r3",
+          "fa": "به شما داده شده"
+        },
+        {
+          "id": "r4",
+          "fa": "برخوردارش کرده ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "مرور معانی آیات ۶۰ و ۶۱."
+    },
+    {
+      "id": "q_u_p393a_A_0462",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_005",
+        "w:w28_060_013",
+        "w:w28_061_006",
+        "w:w28_061_008",
+        "w:w28_061_017"
+      ],
+      "promptFa": "هر کلمه را به ترجمه درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r2",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r3",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r4",
+          "fa": "برخوردارش کرده‌ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "r6",
+          "fa": "متقاعد کردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«مَّتَّعْنَـٰهُ» از متاع است، نه تقاعد."
+    },
+    {
+      "id": "q_u_p393a_A_0463",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_061_006",
+        "w:w28_061_003",
+        "w:w28_061_017",
+        "w:w28_060_005",
+        "w:w28_060_013"
+      ],
+      "promptFa": "جفت‌سازی کلمات و معانی.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَعْدًا"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمُحْضَرِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "حتما به آن دست می‌یابد"
+        },
+        {
+          "id": "r2",
+          "fa": "وعده"
+        },
+        {
+          "id": "r3",
+          "fa": "کسانی که برای عذاب احضار شده‌اند"
+        },
+        {
+          "id": "r4",
+          "fa": "کالا و وسیله بهره‌مندی"
+        },
+        {
+          "id": "r5",
+          "fa": "ماندگارتر و پایدارتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "استفاده از معانی دقیق و تشریحی کلمات سخت."
+    },
+    {
+      "id": "q_u_p393a_A_0464",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_061_008",
+        "w:w28_060_005",
+        "w:w28_060_013",
+        "w:w28_061_006",
+        "w:w28_061_017"
+      ],
+      "promptFa": "واژه‌های عربی را با معانی فارسی منطبق کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "او را از کالا بهره‌مند ساختیم"
+        },
+        {
+          "id": "r2",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r3",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r4",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "مرور کامل کلمات سخت این بخش."
+    },
+    {
+      "id": "q_u_p393a_A_0465",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_013",
+        "w:w28_061_006",
+        "w:w28_061_008",
+        "w:w28_060_005",
+        "w:w28_061_017"
+      ],
+      "promptFa": "کلمات را به دقت متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r2",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r3",
+          "fa": "برخوردارش کرده ایم"
+        },
+        {
+          "id": "r4",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "r6",
+          "fa": "باقیمانده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "دقت کنید که «أبقی» به معنای پایدارتر است نه باقیمانده."
+    },
+    {
+      "id": "q_u_p393a_A_0466",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_060_005",
+        "w:w28_060_013",
+        "w:w28_061_006",
+        "w:w28_061_008",
+        "w:w28_061_017"
+      ],
+      "promptFa": "ارتباط نهایی کلمات مشکل را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَمَتَـٰعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَأَبْقَىٰٓ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَـٰقِيهِ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَّتَّعْنَـٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُحْضَرِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کالا و ابزار"
+        },
+        {
+          "id": "r2",
+          "fa": "و پایدارتر"
+        },
+        {
+          "id": "r3",
+          "fa": "رسنده به آن"
+        },
+        {
+          "id": "r4",
+          "fa": "برخوردارش کرده ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "احضار شوندگان"
+        },
+        {
+          "id": "r6",
+          "fa": "حاضران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "ٱلْمُحْضَرِينَ اسم مفعول است و به احضار اجباری دلالت دارد."
+    }
+  ]
+}

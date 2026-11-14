@@ -1,0 +1,1243 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "A2",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p396a_A_0841",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "معنای «لَرَآدُّكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_085_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رد کننده تو"
+        },
+        {
+          "id": "o2",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "o3",
+          "fa": "واجب کرده است"
+        },
+        {
+          "id": "o4",
+          "fa": "بازگشت گاه"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی «ر د د» به معنای بازگرداندن است. «رد کننده» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p396a_A_0842",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "کدام گزینه معنای دقیق «لَرَآدُّكَ» است؟",
+      "stem": {
+        "wordId": "w28_085_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "امید و انتظار داشتی"
+        },
+        {
+          "id": "o2",
+          "fa": "رد کننده تو"
+        },
+        {
+          "id": "o3",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "o4",
+          "fa": "قطعاً بازگرداننده توست"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«لَ» تأکید و «رَآدّ» اسم فاعل از ریشه‌ی «ر د د» است؛ یعنی قطعاً بازگرداننده‌ی توست."
+    },
+    {
+      "id": "q_u_p396a_A_0843",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "در این آیه، معنای «لَرَآدُّكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_085_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "o2",
+          "fa": "داناتر است"
+        },
+        {
+          "id": "o3",
+          "fa": "رد کننده تو"
+        },
+        {
+          "id": "o4",
+          "fa": "آشکار می کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "در آیه‌ی ۸۵ یعنی خدا تو را به بازگشت گاه بازمی گرداند. ریشه‌ی آن «ر د د» است."
+    },
+    {
+      "id": "q_u_p396a_A_0844",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "در آیه، «لَرَآدُّكَ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_085_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "واجب کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "رد کننده تو"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعاً بازگرداننده توست"
+        },
+        {
+          "id": "o4",
+          "fa": "جایگاه بازگشت"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فاعل بازگرداندن خداست و مفعول، «تو». «جایگاه بازگشت» معنای کلمه‌ی بعدی است."
+    },
+    {
+      "id": "q_u_p396a_A_0845",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+      "stem": {
+        "fa": "بازمی گرداند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَرَضَ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَعْلَمُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«لَرَآدُّكَ» از ریشه‌ی «ر د د» و به معنای بازمی گرداند است."
+    },
+    {
+      "id": "q_u_p396a_A_0846",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "کلمه‌ی عربی متناسب با این معنا کدام است؟",
+      "stem": {
+        "fa": "قطعاً بازگرداننده توست"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِلَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "مَعَادٍۢ ۚ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَ» تأکید، «رَآدّ» بازگرداننده و «كَ» ضمیر تو است."
+    },
+    {
+      "id": "q_u_p396a_A_0847",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_006"
+      ],
+      "promptFa": "کدام کلمه یعنی «بازگرداننده‌ی تو» با تأکید؟",
+      "stem": {
+        "fa": "بازگرداننده تو"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَلَيْكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَرَضَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مُّبِينٍۢ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«عَلَيْكَ» هم ضمیر «ك» دارد، اما معنایش «بر تو» است."
+    },
+    {
+      "id": "q_u_p396a_A_0848",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "معنای «مَعَادٍ» چیست؟",
+      "stem": {
+        "wordId": "w28_085_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "معمولی و عادی"
+        },
+        {
+          "id": "o2",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "o3",
+          "fa": "بازگشت گاه"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراهی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی «ع و د» و به معنای محل بازگشت است. به «عادی» ربطی ندارد."
+    },
+    {
+      "id": "q_u_p396a_A_0849",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "کدام معنا برای «مَعَادٍ» درست است؟",
+      "stem": {
+        "wordId": "w28_085_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جایگاه بازگشت"
+        },
+        {
+          "id": "o2",
+          "fa": "معمولی و عادی"
+        },
+        {
+          "id": "o3",
+          "fa": "داناتر"
+        },
+        {
+          "id": "o4",
+          "fa": "قرآن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَعاد» اسم مکان از «ع و د» است؛ یعنی جایی که به آن بازمی گردند."
+    },
+    {
+      "id": "q_u_p396a_A_0850",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "در این آیه «مَعَادٍ» به چه معنا است؟",
+      "stem": {
+        "wordId": "w28_085_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "o2",
+          "fa": "معمولی و عادی"
+        },
+        {
+          "id": "o3",
+          "fa": "آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "بازگشت گاه"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "در این آیه یعنی بازگشت گاه؛ «لَرَآدُّكَ» فعل و «مَعَاد» مقصد بازگشت است."
+    },
+    {
+      "id": "q_u_p396a_A_0851",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "در آیه، «إِلَىٰ مَعَادٍ» یعنی بازگرداندن به کجا؟",
+      "stem": {
+        "wordId": "w28_085_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به رسم و عادت"
+        },
+        {
+          "id": "o2",
+          "fa": "به جایگاه بازگشت"
+        },
+        {
+          "id": "o3",
+          "fa": "به گمراهی آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "به قرآن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَعَاد» همان محل بازگشت است، نه عادت و رسم."
+    },
+    {
+      "id": "q_u_p396a_A_0852",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+      "stem": {
+        "fa": "بازگشت گاه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ضَلَـٰلٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَىٰ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَعَاد» از «ع و د» به معنای محل بازگشت است."
+    },
+    {
+      "id": "q_u_p396a_A_0853",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "کلمه‌ی عربی متناسب با این معنا را بیابید.",
+      "stem": {
+        "fa": "جایگاه بازگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقُرْءَانَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَعَادٍۢ ۚ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لَرَآدُّكَ» فعلِ بازگرداندن است و «مَعَاد» مکانِ بازگشت."
+    },
+    {
+      "id": "q_u_p396a_A_0854",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 85,
+      "targets": [
+        "w:w28_085_008"
+      ],
+      "promptFa": "کدام کلمه، محل بازگشت را می‌رساند؟",
+      "stem": {
+        "fa": "محل بازگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِلَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "مُّبِينٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَآءَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«إِلَىٰ» حرف جر به معنای «به سوی» است و محل بازگشت را نمی‌رساند."
+    },
+    {
+      "id": "q_u_p396a_A_0855",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "کلمه‌ی «تَرْجُوٓا۟» (خودِ فعل، بدون «مَا») یعنی چه؟",
+      "stem": {
+        "wordId": "w28_086_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رجوع کنی"
+        },
+        {
+          "id": "o2",
+          "fa": "می ترسی"
+        },
+        {
+          "id": "o3",
+          "fa": "امید و انتظار داشتی"
+        },
+        {
+          "id": "o4",
+          "fa": "بازمی گردی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "same_root"
+      },
+      "explanationFa": "از ریشه‌ی «ر ج و» و به معنای امیدواری است، نه رجوع."
+    },
+    {
+      "id": "q_u_p396a_A_0856",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "«تَرْجُوٓا۟» از کدام معناست؟",
+      "stem": {
+        "wordId": "w28_086_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پشتیبان بودن"
+        },
+        {
+          "id": "o2",
+          "fa": "رجوع کردن"
+        },
+        {
+          "id": "o3",
+          "fa": "القا شدن"
+        },
+        {
+          "id": "o4",
+          "fa": "امید داشتن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«رجاء» یعنی امید. با «رجوع» که از «ر ج ع» است اشتباه نشود."
+    },
+    {
+      "id": "q_u_p396a_A_0857",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "در «وَمَا كُنتَ تَرْجُوٓا۟»، معنای عبارت با نفی چیست؟",
+      "stem": {
+        "wordId": "w28_086_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رجوع نمی کردی"
+        },
+        {
+          "id": "o2",
+          "fa": "امید و انتظار نداشتی"
+        },
+        {
+          "id": "o3",
+          "fa": "نمی ترسیدی"
+        },
+        {
+          "id": "o4",
+          "fa": "پشتیبان نبودی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَا كُنتَ تَرْجُو» یعنی امید و انتظار نداشتی که این کتاب بر تو القا شود."
+    },
+    {
+      "id": "q_u_p396a_A_0858",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "در آیه، «تَرْجُوٓا۟» همراه «كُنتَ» با کدام معنا می‌آید؟",
+      "stem": {
+        "wordId": "w28_086_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "امید و انتظار داشتی"
+        },
+        {
+          "id": "o2",
+          "fa": "بازگشت می کردی"
+        },
+        {
+          "id": "o3",
+          "fa": "ترسیدی"
+        },
+        {
+          "id": "o4",
+          "fa": "القا کردی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل از «ر ج و» است. نفی آن از «مَا» می‌آید."
+    },
+    {
+      "id": "q_u_p396a_A_0859",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای زیر را دارد؟",
+      "stem": {
+        "fa": "امید داشتی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُلْقَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "رَحْمَةًۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَرْجُو» از ریشه‌ی «ر ج و» است."
+    },
+    {
+      "id": "q_u_p396a_A_0860",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "کلمه‌ی عربی متناسب با این معنا کدام است؟",
+      "stem": {
+        "fa": "انتظار داشتی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَيْكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَرْجُوٓا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَرْجُو» یعنی امید و انتظار داشتن."
+    },
+    {
+      "id": "q_u_p396a_A_0861",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_003"
+      ],
+      "promptFa": "کدام کلمه فعل «امیدواری» است؟",
+      "stem": {
+        "fa": "امید و انتظار داشتی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُلْقَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَحْمَةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَرْجُوٓا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«رَحْمَةً» اسم است نه فعل، و «يُلْقَىٰ» به معنای القا می شود."
+    },
+    {
+      "id": "q_u_p396a_A_0862",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_085_006",
+        "w:w28_085_008",
+        "w:w28_086_003"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "فَرَضَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ظَهِيرًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "r2",
+          "fa": "رد کننده تو"
+        },
+        {
+          "id": "r3",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "r4",
+          "fa": "امید و انتظار داشتی"
+        },
+        {
+          "id": "r5",
+          "fa": "واجب کرد"
+        },
+        {
+          "id": "r6",
+          "fa": "بازگشت گاه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«رد کننده» دوست فریبنده برای «لَرَآدُّكَ» است و معنای درست «بازمی گرداند» است."
+    },
+    {
+      "id": "q_u_p396a_A_0863",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_085_006",
+        "w:w28_085_008",
+        "w:w28_086_003"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُلْقَىٰٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "l5",
+          "ar": "رَحْمَةًۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بازگشت گاه"
+        },
+        {
+          "id": "r2",
+          "fa": "معمولی و عادی"
+        },
+        {
+          "id": "r3",
+          "fa": "رحمت"
+        },
+        {
+          "id": "r4",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "r5",
+          "fa": "القا شود"
+        },
+        {
+          "id": "r6",
+          "fa": "امید و انتظار داشتی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«مَعَاد» از «ع و د» محل بازگشت است و به «عادی» ربطی ندارد."
+    },
+    {
+      "id": "q_u_p396a_A_0864",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_085_006",
+        "w:w28_085_008",
+        "w:w28_086_003"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَعَادٍۢ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ضَلَـٰلٍۢ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَرْجُوٓا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراهی"
+        },
+        {
+          "id": "r2",
+          "fa": "رجوع کنی"
+        },
+        {
+          "id": "r3",
+          "fa": "بازگشت گاه"
+        },
+        {
+          "id": "r4",
+          "fa": "امید و انتظار داشتی"
+        },
+        {
+          "id": "r5",
+          "fa": "داناتر"
+        },
+        {
+          "id": "r6",
+          "fa": "بازمی گرداند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«تَرْجُو» از رجاء (امید) است، نه رجوع."
+    },
+    {
+      "id": "q_u_p396a_A_0865",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_085_006",
+        "w:w28_085_008",
+        "w:w28_086_003"
+      ],
+      "promptFa": "کلمه‌های عربی را به معانی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "فَرَضَ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَرَآدُّكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَعَادٍۢ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بازگشت گاه"
+        },
+        {
+          "id": "r2",
+          "fa": "واجب کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "بازمی گرداند"
+        },
+        {
+          "id": "r4",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "r5",
+          "fa": "امید و انتظار داشتی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "سه کلمه‌ی سخت این برش (لَرَآدُّكَ، مَعَاد، تَرْجُو) را با دو کلمه‌ی همین آیات مرور کنید."
+    }
+  ],
+  "issues": [
+    "در ورودی، کلمه‌ی w28_085_008 همراه علامت وقف «ۚ» آمده و عیناً همان‌گونه استفاده شد.",
+    "معنای فعلِ «تَرْجُوٓا۟» بدون نفی نوشته شد (امید و انتظار داشتی) و در سوال‌های آیه‌دار، با نفی «مَا» (امید و انتظار نداشتی) آمد."
+  ]
+}

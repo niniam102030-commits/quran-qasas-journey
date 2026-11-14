@@ -1,0 +1,317 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "C6",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_C_0601",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 41
+        },
+        {
+          "id": "o2",
+          "num": 42
+        },
+        {
+          "id": "o3",
+          "num": 43
+        },
+        {
+          "id": "o4",
+          "num": 44
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَـٰبَ» آغاز می‌شود و آیه‌ی ۴۳ است. آیه‌ی پیش از آن (۴۲) درباره‌ی لعنت در دنیا و روز قیامت است."
+    },
+    {
+      "id": "q_u_p390b_C_0602",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "آیه‌ی نمایش‌داده‌شده کدام شماره را دارد؟",
+      "stem": {
+        "verse": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 40
+        },
+        {
+          "id": "o2",
+          "num": 46
+        },
+        {
+          "id": "o3",
+          "num": 42
+        },
+        {
+          "id": "o4",
+          "num": 43
+        },
+        {
+          "id": "o5",
+          "num": 45
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "شماره‌ی این آیه ۴۳ است. آیه‌ی بعد از آن (۴۴) با «وَمَا كُنتَ بِجَانِبِ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390b_C_0603",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 41
+        },
+        {
+          "id": "o3",
+          "num": 45
+        },
+        {
+          "id": "o4",
+          "num": 43
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَـٰبَ… يَتَذَكَّرُونَ» آیه‌ی ۴۳ است. بعد از آیه‌ی ۴۲ و پیش از آیه‌ی ۴۴ قرار دارد."
+    },
+    {
+      "id": "q_u_p390b_C_0604",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "آیه‌ی ۴۳ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 43,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۴۳ با «وَلَقَدْ ءَاتَيْنَا مُوسَى» شروع می‌شود. گزینه‌ی «وَلَقَدْ ءَاتَيْنَا ٱلْكِتَـٰبَ» نام موسی را ندارد و ناقص است."
+    },
+    {
+      "id": "q_u_p390b_C_0605",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "ابتدای آیه‌ی شماره‌ی ۴۳ کدام است؟",
+      "stem": {
+        "num": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_004",
+            "w28_043_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_041_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 43,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست آغاز آیه‌ی ۴۳ «وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَـٰبَ» است. در گزینه‌ی نزدیک، جای «مُوسَى» و «ٱلْكِتَـٰبَ» عوض شده است."
+    },
+    {
+      "id": "q_u_p390b_C_0606",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 43,
+      "targets": [
+        "vn:43"
+      ],
+      "promptFa": "آغاز آیه‌ی ۴۳ را با دقت کامل انتخاب کنید.",
+      "stem": {
+        "num": 43
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_042_001",
+            "w28_042_002",
+            "w28_042_003",
+            "w28_042_004",
+            "w28_042_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_004",
+            "w28_043_003",
+            "w28_043_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 43,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004",
+            "w28_044_005"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز درست آیه‌ی ۴۳ «وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَـٰبَ مِنۢ» است. در گزینه‌ی نزدیک، ترتیب «مُوسَى» و «ٱلْكِتَـٰبَ» جابه‌جا شده است."
+    }
+  ],
+  "issues": []
+}

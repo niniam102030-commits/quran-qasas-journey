@@ -1,0 +1,1848 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395b",
+  "part": "C4",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395b_C_0901",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 81,
+      "targets": [
+        "w:w28_081_001",
+        "w:w28_081_009",
+        "w:w28_082_003",
+        "w:w28_082_015"
+      ],
+      "promptFa": "معنای هر کلمه را به آن متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "خَسَفْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "فِئَةٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَمَنَّوْا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "يَقْدِرُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فرو بردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "گروهی"
+        },
+        {
+          "id": "r3",
+          "fa": "آرزو داشتند"
+        },
+        {
+          "id": "r4",
+          "fa": "تنگ می گیرد"
+        },
+        {
+          "id": "r5",
+          "fa": "وسعت می دهد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "خسف به معنای فرو بردن، و یقدر به معنای تنگ گرفتن روزی است."
+    },
+    {
+      "id": "q_u_p395b_C_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "معنای «عُلُوًّۭا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_083_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برتری و تسلّط"
+        },
+        {
+          "id": "o2",
+          "fa": "فسادی"
+        },
+        {
+          "id": "o3",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o4",
+          "fa": "کار نیکی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«علو» به معنای برتری جویی و تسلط در زمین است."
+    },
+    {
+      "id": "q_u_p395b_C_0903",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 84,
+      "targets": [
+        "w:w28_084_014"
+      ],
+      "promptFa": "کدام کلمه به معنای «کارهای ناشایسته» است؟",
+      "stem": {
+        "fa": "کارهای ناشایسته"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلسَّيِّـَٔاتِ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِٱلسَّيِّئَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَسَادًۭا ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْـَٔاخِرَةُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "السیئات جمع سیئة به معنای کارهای ناشایسته و گناهان است."
+    },
+    {
+      "id": "q_u_p395b_C_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "معنای «لَخَسَفَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_082_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرو برده بود"
+        },
+        {
+          "id": "o2",
+          "fa": "منت گذاشته بود"
+        },
+        {
+          "id": "o3",
+          "fa": "تنگ می گیرد"
+        },
+        {
+          "id": "o4",
+          "fa": "وسعت می دهد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«خسف» به معنای در زمین فرو بردن است."
+    },
+    {
+      "id": "q_u_p395b_C_0905",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "معنای «وَٱلْعَـٰقِبَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_083_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سرانجام [نیک]"
+        },
+        {
+          "id": "o2",
+          "fa": "و مجازات"
+        },
+        {
+          "id": "o3",
+          "fa": "و پرهیزکاران"
+        },
+        {
+          "id": "o4",
+          "fa": "و آخرت"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "عاقبت به معنای سرانجام نیک و پایان کار است، نه مجازات."
+    },
+    {
+      "id": "q_u_p395b_C_0906",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 82,
+      "targets": [
+        "vt:82"
+      ],
+      "promptFa": "هر عبارت قرآنی را به ترجمه دقیق آن متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "مَكَانَهُۥ بِٱلْأَمْسِ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "لَخَسَفَ بِنَا ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بامدادان، آنانکه آرزو داشتند"
+        },
+        {
+          "id": "r2",
+          "fa": "مقام و جایگاه او را دیروز"
+        },
+        {
+          "id": "r3",
+          "fa": "اگر خدا بر ما منت نگذاشته بود،"
+        },
+        {
+          "id": "r4",
+          "fa": "ما را نیز در زمین فرو برده بود،"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "دقت در تطبیق کلمات با ترجمه آیه ۸۲."
+    },
+    {
+      "id": "q_u_p395b_C_0907",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 81,
+      "targets": [
+        "vt:81"
+      ],
+      "promptFa": "کدام ترجمه متعلق به این آیه است؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس او و خانه اش را در زمین فرو بردیم، و هیچ گروهی غیر از خدا برای او نبود که وی را [برای رهایی از عذاب] یاری دهد، و خود نیز نتوانست از خود دفاع کند."
+        },
+        {
+          "id": "o2",
+          "fa": "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند [چنان حالی شدند که] می گفتند: وه! گویی خدا رزق را برای هر کس از بندگانش بخواهد وسعت می دهد، و [برای هر که بخواهد] تنگ می گیرد، اگر خدا بر ما منت نگذاشته بود، ما را نیز در زمین فرو برده بود، وه، گویی کافران رستگار نمی شوند."
+        },
+        {
+          "id": "o3",
+          "fa": "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم که در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛ و سرانجام [نیک] برای پرهیزکاران است."
+        },
+        {
+          "id": "o4",
+          "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست، و هر کس کار بدی بیاورد [پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۱ به عذاب قارون و فرو رفتن او در زمین اشاره دارد."
+    },
+    {
+      "id": "q_u_p395b_C_0908",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 83,
+      "targets": [
+        "vt:83"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 83,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 26
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 18
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 17
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه توصیف سرای آخرت برای کسانی است که برتری جویی نمی کنند (تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ)."
+    },
+    {
+      "id": "q_u_p395b_C_0909",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 84,
+      "targets": [
+        "vt:84"
+      ],
+      "promptFa": "قطعات ترجمه آیه ۸۴ را به ترتیب درست بچینید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پاداشی بهتر از آن برای اوست،",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و هر کس کار بدی بیاورد",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "[پس بداند آنان که کارهای ناشایسته انجام داده اند]",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند.",
+          "wordIdx": [
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ابتدا پاداش کار نیک و سپس جزای کار بد بیان می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0910",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 81,
+      "targets": [
+        "vt:81"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 81,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "پس او و خانه اش را در زمین فرو بردیم،"
+          },
+          {
+            "start": 47,
+            "text": "هیچ گروهی غیر از خدا"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس او و خانه اش را در زمین فرو بردیم،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "هیچ گروهی غیر از خدا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "خدا بر ما منت نگذاشته بود،",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "خود نیز نتوانست از خود دفاع کند.",
+          "wordIdx": [
+            4
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "near_miss"
+      },
+      "explanationFa": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ (پس او و خانه اش را در زمین فرو بردیم)."
+    },
+    {
+      "id": "q_u_p395b_C_0911",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 84,
+      "targets": [
+        "vt:84"
+      ],
+      "promptFa": "کدام ترجمه متعلق به آیه ۸۴ است؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست، و هر کس کار بدی بیاورد [پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند."
+        },
+        {
+          "id": "o2",
+          "fa": "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم که در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛ و سرانجام [نیک] برای پرهیزکاران است."
+        },
+        {
+          "id": "o3",
+          "fa": "یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً تو را به بازگشت گاه [رفیع و بلند مرتبه ات، شهر مکه] بازمی گرداند."
+        },
+        {
+          "id": "o4",
+          "fa": "و کسانی که معرفت و دانش به آنان عطا شده بود، گفتند: وای بر شما پاداش خدا برای کسانی که ایمان آورده و کار شایسته انجام داده اند بهتر است."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۴ درباره پاداش کار نیک و جزای کار بد است (مَن جَآءَ بِٱلْحَسَنَةِ...)."
+    },
+    {
+      "id": "q_u_p395b_C_0912",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 82,
+      "targets": [
+        "vt:82"
+      ],
+      "promptFa": "این ترجمه کدام آیه است؟",
+      "stem": {
+        "verse": 82,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 26
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 18
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند...» ترجمه وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ است."
+    },
+    {
+      "id": "q_u_p395b_C_0913",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81",
+        "vn:82",
+        "vn:83",
+        "vn:84"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "81"
+        },
+        {
+          "id": "l2",
+          "ar": "82"
+        },
+        {
+          "id": "l3",
+          "ar": "83"
+        },
+        {
+          "id": "l4",
+          "ar": "84"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ... "
+        },
+        {
+          "id": "r2",
+          "fa": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟... "
+        },
+        {
+          "id": "r3",
+          "fa": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ... "
+        },
+        {
+          "id": "r4",
+          "fa": "مَن جَآءَ بِٱلْحَسَنَةِ... "
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "حفظ شروع آیات با شماره آنها به تثبیت ترتیب کمک می کند."
+    },
+    {
+      "id": "q_u_p395b_C_0914",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "آیه ۸۲ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        },
+        {
+          "id": "o3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۸۲ با «وَأَصْبَحَ ٱلَّذِينَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p395b_C_0915",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 83,
+      "targets": [
+        "vn:83"
+      ],
+      "promptFa": "آیه ۸۳ با چه عبارتی شروع می‌شود؟",
+      "stem": {
+        "num": 83
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+        },
+        {
+          "id": "o2",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "فَمَا كَانَ لَهُۥ مِن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۸۳ با «تِلْكَ ٱلدَّارُ» آغاز می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0916",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 81
+        },
+        {
+          "id": "o2",
+          "num": 82
+        },
+        {
+          "id": "o3",
+          "num": 80
+        },
+        {
+          "id": "o4",
+          "num": 83
+        },
+        {
+          "id": "o5",
+          "num": 84
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه فَخَسَفْنَا بِهِۦ آیه ۸۱ است."
+    },
+    {
+      "id": "q_u_p395b_C_0917",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84"
+      ],
+      "promptFa": "این آیه کدام شماره است؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 85
+        },
+        {
+          "id": "o3",
+          "num": 83
+        },
+        {
+          "id": "o4",
+          "num": 82
+        },
+        {
+          "id": "o5",
+          "num": 81
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه مَن جَآءَ بِٱلْحَسَنَةِ شماره ۸۴ است."
+    },
+    {
+      "id": "q_u_p395b_C_0918",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "شماره این آیه طولانی کدام است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 82
+        },
+        {
+          "id": "o2",
+          "num": 81
+        },
+        {
+          "id": "o3",
+          "num": 83
+        },
+        {
+          "id": "o4",
+          "num": 84
+        },
+        {
+          "id": "o5",
+          "num": 85
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه وَأَصْبَحَ ٱلَّذِينَ شماره ۸۲ می باشد."
+    },
+    {
+      "id": "q_u_p395b_C_0919",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "آیه بعد از «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ...» کدام است؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "بعد از فرو رفتن قارون در زمین، حالت عبرت گیرندگان در روز بعد با «وَأَصْبَحَ ٱلَّذِينَ» بیان می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0920",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 83,
+      "targets": [
+        "sq:83",
+        "vr:84"
+      ],
+      "promptFa": "کلمات آیه بعد از «تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ...» را مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَن جَآءَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِٱلْحَسَنَةِ فَلَهُۥ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "خَيْرٌۭ مِّنْهَا ۖ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَن جَآءَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "بِٱلسَّيِّئَةِ فَلَا يُجْزَى",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِلَّا مَا كَانُوا۟ يَعْمَلُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَلَا يُلَقَّىٰهَآ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه بعد از بیان سرای آخرت (آیه ۸۳)، قانون پاداش و کیفر در آیه ۸۴ (مَن جَآءَ بِٱلْحَسَنَةِ...) را مطرح می کند."
+    },
+    {
+      "id": "q_u_p395b_C_0921",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 84,
+      "targets": [
+        "sq:83"
+      ],
+      "promptFa": "آیه قبل از «مَن جَآءَ بِٱلْحَسَنَةِ...» با چه عبارتی پایان می‌یابد؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل (۸۳) با «وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ» تمام می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0922",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "pg:u_p395b"
+      ],
+      "promptFa": "ترتیب صحیح این آیات متوالی را مشخص کنید.",
+      "stem": {
+        "verses": [
+          81,
+          82,
+          83,
+          84
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ...",
+          "wordIdx": [
+            81
+          ],
+          "verse": 81
+        },
+        {
+          "id": "b2",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟...",
+          "wordIdx": [
+            82
+          ],
+          "verse": 82
+        },
+        {
+          "id": "b3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ...",
+          "wordIdx": [
+            83
+          ],
+          "verse": 83
+        },
+        {
+          "id": "b4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ...",
+          "wordIdx": [
+            84
+          ],
+          "verse": 84
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ابتدا عذاب (۸۱)، سپس عبرت مردم (۸۲)، توصیف آخرت (۸۳) و قانون پاداش و کیفر (۸۴)."
+    },
+    {
+      "id": "q_u_p395b_C_0923",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:82"
+      ],
+      "promptFa": "آیه بعد از «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟...» کدام است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از داستان قارون و عبرت مردم در آیه ۸۲، خداوند در آیه ۸۳ سرای آخرت را توصیف می کند (تِلْكَ ٱلدَّارُ)."
+    },
+    {
+      "id": "q_u_p395b_C_0924",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vr:81"
+      ],
+      "promptFa": "پایان این آیه کدام است؟ فَخَسَفْنَا بِهِۦ ...",
+      "stem": {
+        "verse": 81,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُنتَصِرِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لِلْمُتَّقِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكَـٰفِرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْمَلُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۱ با «وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ» پایان می یابد."
+    },
+    {
+      "id": "q_u_p395b_C_0925",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 82,
+      "targets": [
+        "vr:82"
+      ],
+      "promptFa": "پایان آیه ۸۲ چیست؟ وَأَصْبَحَ ٱلَّذِينَ ...",
+      "stem": {
+        "verse": 82,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَّا ٱلصَّـٰبِرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوا۟ يَعْمَلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِنَ ٱلْمُنتَصِرِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۲ با «وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ» تمام می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0926",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 84,
+      "targets": [
+        "vr:84"
+      ],
+      "promptFa": "کلمات پایانی آیه ۸۴ چیست؟",
+      "stem": {
+        "verse": 84,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَا كَانُوا۟ يَعْمَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِنَ ٱلْمُنتَصِرِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۴ با «إِلَّا مَا كَانُوا۟ يَعْمَلُونَ» خاتمه می یابد."
+    },
+    {
+      "id": "q_u_p395b_C_0927",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 83,
+      "targets": [
+        "vr:83",
+        "vt:83"
+      ],
+      "promptFa": "با توجه به ترجمه، آیه را بسازید: «آن سرای آخرت را برای کسانی قرار می دهیم...»",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نَجْعَلُهَا لِلَّذِينَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا يُرِيدُونَ عُلُوًّۭا",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فِى ٱلْأَرْضِ وَلَا فَسَادًۭا ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کلمات در ساخت آیه ۸۳ (تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ...)."
+    },
+    {
+      "id": "q_u_p395b_C_0928",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vr:81",
+        "vn:81"
+      ],
+      "promptFa": "آیه ۸۱ را مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَا كَانَ لَهُۥ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن فِئَةٍۢ يَنصُرُونَهُۥ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن دُونِ ٱللَّهِ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۸۱ از فَخَسَفْنَا بِهِۦ شروع و به ٱلْمُنتَصِرِينَ ختم می شود."
+    },
+    {
+      "id": "q_u_p395b_C_0929",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 82,
+      "targets": [
+        "vr:82"
+      ],
+      "promptFa": "جاهای خالی نیمه اول آیه ۸۲ را پر کنید.",
+      "stem": {
+        "verse": 82,
+        "hiddenIdx": [
+          3,
+          5,
+          9,
+          12
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَمَنَّوْا۟",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِٱلْأَمْسِ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَبْسُطُ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَشَآءُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَيَقْدِرُ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "يَقُولُونَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "5": "b2",
+        "9": "b3",
+        "12": "b4"
+      },
+      "distractorTags": {
+        "b5": "near_miss",
+        "b6": "near_miss"
+      },
+      "explanationFa": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ وَيْكَأَنَّ ٱللَّهَ يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ..."
+    },
+    {
+      "id": "q_u_p395b_C_0930",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 84,
+      "targets": [
+        "vr:84"
+      ],
+      "promptFa": "کلمات جاافتاده آیه ۸۴ را مشخص کنید.",
+      "stem": {
+        "verse": 84,
+        "hiddenIdx": [
+          2,
+          5,
+          9,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "جَآءَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "خَيْرٌۭ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِٱلسَّيِّئَةِ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُجْزَى",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلسَّيِّـَٔاتِ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "يَعْمَلُونَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "9": "b3",
+        "11": "b4"
+      },
+      "distractorTags": {
+        "b5": "same_root",
+        "b6": "near_miss"
+      },
+      "explanationFa": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى..."
+    },
+    {
+      "id": "q_u_p395b_C_0931",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 83,
+      "targets": [
+        "vr:83"
+      ],
+      "promptFa": "ادامه آیه ۸۳ را با قطعات داده شده کامل کنید.",
+      "stem": {
+        "verse": 83,
+        "givenCount": 4,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لِلَّذِينَ لَا يُرِيدُونَ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عُلُوًّۭا فِى ٱلْأَرْضِ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَا فَسَادًۭا ۚ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا كَانَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "8": "b2",
+        "11": "b3",
+        "13": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا / لِلَّذِينَ لَا يُرِيدُونَ / عُلُوًّۭا فِى ٱلْأَرْضِ / وَلَا فَسَادًۭا ۚ / وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ."
+    },
+    {
+      "id": "q_u_p395b_C_0932",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vr:81"
+      ],
+      "promptFa": "آیه ۸۱ را پس از ۵ کلمه اول تکمیل کنید.",
+      "stem": {
+        "verse": 81,
+        "givenCount": 5,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "كَانَ لَهُۥ مِن فِئَةٍۢ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَنصُرُونَهُۥ مِن دُونِ ٱللَّهِ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَبْسُطُ ٱلرِّزْقَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "10": "b2",
+        "14": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ فَمَا... / كَانَ لَهُۥ مِن فِئَةٍۢ / يَنصُرُونَهُۥ مِن دُونِ ٱللَّهِ / وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ."
+    }
+  ],
+  "issues": []
+}

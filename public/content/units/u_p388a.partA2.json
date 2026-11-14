@@ -1,0 +1,998 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388a",
+  "part": "A2",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388a_A_0149",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002"
+      ],
+      "promptFa": "معنای «تَوَجَّهَ» چیست؟",
+      "stem": {
+        "wordId": "w28_022_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گفت"
+        },
+        {
+          "id": "o2",
+          "fa": "روی آورد"
+        },
+        {
+          "id": "o3",
+          "fa": "متوجه شد"
+        },
+        {
+          "id": "o4",
+          "fa": "راهنمایی کند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تَوَجَّهَ از ریشه‌ی «وجه» (چهره و رو) است و یعنی روی آورد. «متوجه شدن» در فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0150",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002"
+      ],
+      "promptFa": "کدام معنا برای «تَوَجَّهَ» درست است؟",
+      "stem": {
+        "wordId": "w28_022_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دقت و تمرکز ذهنی کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "به سوی"
+        },
+        {
+          "id": "o3",
+          "fa": "امید است"
+        },
+        {
+          "id": "o4",
+          "fa": "عازم شد و رهسپار گردید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "تَوَجَّهَ یعنی چهره و مسیر خود را به سمتی قرار داد و عازم شد. معنای «تمرکز ذهنی» همان دوست فریبنده‌ی فارسی است."
+    },
+    {
+      "id": "q_u_p388a_A_0151",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002"
+      ],
+      "promptFa": "معنای «تَوَجَّهَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_022_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دقت کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "راهنمایی کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "روی آورد"
+        },
+        {
+          "id": "o4",
+          "fa": "ایستاد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "در این آیه یعنی «هنگامی که به سوی مدین روی آورد». ریشه‌ی آن «و ج ه» است."
+    },
+    {
+      "id": "q_u_p388a_A_0152",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_003"
+      ],
+      "promptFa": "معنای «تِلْقَآءَ» چیست؟",
+      "stem": {
+        "wordId": "w28_022_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تلقین کردن"
+        },
+        {
+          "id": "o2",
+          "fa": "مدین"
+        },
+        {
+          "id": "o3",
+          "fa": "پس از آن"
+        },
+        {
+          "id": "o4",
+          "fa": "به سوی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "تِلْقَآء از ریشه‌ی «لقی» (روبه‌رو شدن) و به معنای «به سوی» است. با «تلقین» در فارسی اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388a_A_0153",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_003"
+      ],
+      "promptFa": "کدام معنا برای «تِلْقَآءَ» درست است؟",
+      "stem": {
+        "wordId": "w28_022_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هنگامی که"
+        },
+        {
+          "id": "o2",
+          "fa": "در جهتِ روبه‌رو"
+        },
+        {
+          "id": "o3",
+          "fa": "به صورت خودکار"
+        },
+        {
+          "id": "o4",
+          "fa": "در پشت سر"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "تِلْقَآء یعنی در جهت رویارویی و به سمت چیزی. «تلقائی» در فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0154",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_003"
+      ],
+      "promptFa": "معنای «تِلْقَآءَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_022_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تلقین و آموزش"
+        },
+        {
+          "id": "o2",
+          "fa": "راه راست"
+        },
+        {
+          "id": "o3",
+          "fa": "از سوی"
+        },
+        {
+          "id": "o4",
+          "fa": "به سوی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "عبارت یعنی «به سوی مدین روی آورد». تِلْقَآء از ریشه‌ی «ل ق ي» است."
+    },
+    {
+      "id": "q_u_p388a_A_0155",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_006"
+      ],
+      "promptFa": "معنای «عَسَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_022_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گفت"
+        },
+        {
+          "id": "o2",
+          "fa": "هنگامی که"
+        },
+        {
+          "id": "o3",
+          "fa": "امید است"
+        },
+        {
+          "id": "o4",
+          "fa": "عصا و چوب‌دستی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "عَسَىٰ با سین، فعل رجاء و به معنای «امید است» است. با «عَصا» (با صاد) اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388a_A_0156",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_006"
+      ],
+      "promptFa": "کدام معنا برای «عَسَىٰ» درست است؟",
+      "stem": {
+        "wordId": "w28_022_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "چوب‌دستی"
+        },
+        {
+          "id": "o2",
+          "fa": "پروردگارم"
+        },
+        {
+          "id": "o3",
+          "fa": "یقیناً"
+        },
+        {
+          "id": "o4",
+          "fa": "چه بسا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "عَسَىٰ برای امید و احتمال است، یعنی «چه بسا». «یقیناً» بیان قطعیت است و نه رجاء."
+    },
+    {
+      "id": "q_u_p388a_A_0157",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_006"
+      ],
+      "promptFa": "معنای «عَسَىٰ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_022_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نافرمانی کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "امید است"
+        },
+        {
+          "id": "o3",
+          "fa": "به راه راست"
+        },
+        {
+          "id": "o4",
+          "fa": "مرا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "در آیه یعنی «امید است پروردگارم مرا راهنمایی کند». ریشه‌ی آن «ع س ي» است."
+    },
+    {
+      "id": "q_u_p388a_A_0158",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «روی آورد» است؟",
+      "stem": {
+        "fa": "روی آورد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَهْدِيَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَوَجَّهَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "تَوَجَّهَ از ریشه‌ی «وجه» به معنای روی آورد است. تِلْقَآءَ کنار آن می‌آید ولی «به سوی» معنا می‌دهد."
+    },
+    {
+      "id": "q_u_p388a_A_0159",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «عازم شد و رهسپار گردید» است؟",
+      "stem": {
+        "fa": "عازم شد و رهسپار گردید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "سَوَآءَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "فعل ماضی تَوَجَّهَ یعنی چهره و مسیر خود را به سمتی قرار داد. بقیه‌ی گزینه‌ها فعل حرکت نیستند."
+    },
+    {
+      "id": "q_u_p388a_A_0160",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «به سوی» است؟",
+      "stem": {
+        "fa": "به سوی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "تِلْقَآءَ از ریشه‌ی «ل ق ي» و به معنای «به سوی» است. تَوَجَّهَ فعل است و معنای «روی آورد» دارد."
+    },
+    {
+      "id": "q_u_p388a_A_0161",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «در جهتِ روبه‌رو» است؟",
+      "stem": {
+        "fa": "در جهتِ روبه‌رو"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلسَّبِيلِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَمَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْقَآءَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "تِلْقَآءَ یعنی در جهت رویارویی و به سمت چیزی. سَوَآءَ و ٱلسَّبِيلِ به معنای «راه راست» می‌آیند."
+    },
+    {
+      "id": "q_u_p388a_A_0162",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «امید است» است؟",
+      "stem": {
+        "fa": "امید است"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَبِّىٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "عَسَىٰ فعل رجاء و یعنی «امید است». أَن حرف مصدری است و رجا نمی‌رساند."
+    },
+    {
+      "id": "q_u_p388a_A_0163",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «چه بسا» است؟",
+      "stem": {
+        "fa": "چه بسا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَهْدِيَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَمَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "عَسَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "عَسَىٰ با سین به معنای «چه بسا» و «امید است» است. با عَصا (با صاد) اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388a_A_0164",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002",
+        "w:w28_022_003",
+        "w:w28_022_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنای فارسی‌اش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "l3",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَدْيَنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "امید است"
+        },
+        {
+          "id": "r2",
+          "fa": "مدین"
+        },
+        {
+          "id": "r3",
+          "fa": "تلقین کردن"
+        },
+        {
+          "id": "r4",
+          "fa": "روی آورد"
+        },
+        {
+          "id": "r5",
+          "fa": "گفت"
+        },
+        {
+          "id": "r6",
+          "fa": "به سوی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "تَوَجَّهَ یعنی روی آورد، تِلْقَآءَ یعنی به سوی و عَسَىٰ یعنی امید است. «تلقین» گزینه‌ی انحرافی است."
+    },
+    {
+      "id": "q_u_p388a_A_0165",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002",
+        "w:w28_022_003",
+        "w:w28_022_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنای فارسی‌اش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَلَمَّا"
+        },
+        {
+          "id": "l3",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَبِّىٓ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَوَجَّهَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "عازم شد و رهسپار گردید"
+        },
+        {
+          "id": "r2",
+          "fa": "عصا و چوب‌دستی"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگارم"
+        },
+        {
+          "id": "r4",
+          "fa": "چه بسا"
+        },
+        {
+          "id": "r5",
+          "fa": "هنگامی که"
+        },
+        {
+          "id": "r6",
+          "fa": "در جهتِ روبه‌رو"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "عَسَىٰ یعنی چه بسا و تِلْقَآءَ یعنی در جهتِ روبه‌رو. «عصا» با صاد نوشته می‌شود و گزینه‌ی انحرافی است."
+    },
+    {
+      "id": "q_u_p388a_A_0166",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002",
+        "w:w28_022_003",
+        "w:w28_022_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنای فارسی‌اش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَهْدِيَنِى"
+        },
+        {
+          "id": "l2",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلسَّبِيلِ"
+        },
+        {
+          "id": "l4",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "تِلْقَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "راه"
+        },
+        {
+          "id": "r2",
+          "fa": "به سوی"
+        },
+        {
+          "id": "r3",
+          "fa": "مرا راهنمایی کند"
+        },
+        {
+          "id": "r4",
+          "fa": "امید است"
+        },
+        {
+          "id": "r5",
+          "fa": "روی آورد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "يَهْدِيَنِى یعنی مرا راهنمایی کند و ٱلسَّبِيلِ یعنی راه. سه کلمه‌ی سخت هم با معنای خود جفت می‌شوند."
+    },
+    {
+      "id": "q_u_p388a_A_0167",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_002",
+        "w:w28_022_003",
+        "w:w28_022_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنای فارسی‌اش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "l2",
+          "ar": "عَسَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "l5",
+          "ar": "تِلْقَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "چه بسا"
+        },
+        {
+          "id": "r2",
+          "fa": "گفت"
+        },
+        {
+          "id": "r3",
+          "fa": "دقت و تمرکز ذهنی کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "عازم شد و رهسپار گردید"
+        },
+        {
+          "id": "r5",
+          "fa": "به سوی"
+        },
+        {
+          "id": "r6",
+          "fa": "راست"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "سَوَآءَ در «راه راست» یعنی راست. «دقت و تمرکز ذهنی» معنای دوست فریبنده‌ی تَوَجَّهَ در فارسی است و گزینه‌ی انحرافی است."
+    }
+  ],
+  "issues": [
+    "بخش earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در جفت‌سازی‌ها نیامد.",
+    "آیه‌ی ۲۲ فقط یک آیه‌ی ورودی بود؛ گزینه‌های انحرافی عربی فقط از کلمات همین آیه ساخته شد."
+  ]
+}

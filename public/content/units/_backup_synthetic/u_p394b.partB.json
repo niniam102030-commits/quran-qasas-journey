@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p394b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 75,
+      "targets": [
+        "vr:75"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «و از هر امتی گواه مطلع و آگاهی [چون پیامبر یا امام معصوم یا شخصی عادل ...»، آیه 75 را مرتب کن:",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا فَقُلْنَا",
+          "wordIdx": [
+            1,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هَاتُوا۟ بُرْهَـٰنَكُمْ فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            7,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَضَلَّ عَنْهُم مَّا كَانُوا۟ يَفْتَرُونَ",
+          "wordIdx": [
+            13,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 75 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p394b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 75,
+      "targets": [
+        "vr:75"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 75 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 75,
+        "hiddenIdx": [
+          9
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَلِمُوٓا۟",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «فَعَلِمُوٓا۟» در آیه 75 است."
+    }
+  ],
+  "issues": []
+}

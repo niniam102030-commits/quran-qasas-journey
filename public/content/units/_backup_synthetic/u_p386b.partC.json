@@ -1,0 +1,91 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386b",
+  "part": "C",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p386b_C_0001",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 10,
+      "targets": [
+        "sq:10"
+      ],
+      "promptFa": "بلافاصله پس از آیه 10 سوره قصص («وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَىٰ فَـٰرِغًا ۖ ...»)، کدام آیه قرار دارد؟",
+      "stem": {
+        "verse": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَقَالَتْ لِأُخْتِهِۦ قُصِّيهِ ۖ فَبَصُرَتْ بِهِۦ عَن جُنُبٍۢ وَهُمْ لَا يَشْعُرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَالَتْ لِأُخْتِهِۦ قُصِّيهِ ۖ فَبَصُرَتْ بِهِۦ عَن جُنُبٍۢ وَهُمْ لَا يَشْعُرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟ فِي ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه 11 سوره قصص بلافاصله پس از آیه 10 قرار دارد."
+    },
+    {
+      "id": "q_u_p386b_C_0002",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 10,
+      "targets": [
+        "vn:10"
+      ],
+      "promptFa": "آیه مبارکه «وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَىٰ فَـٰرِغًا ۖ إِن كَادَتْ لَتُبْدِى بِهِۦ لَوْلَآ أَن رَّبَطْنَا عَلَىٰ قَلْبِهَا لِتَكُونَ مِنَ ٱلْمُؤْمِنِينَ»، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 10
+        },
+        {
+          "id": "o2",
+          "num": 11
+        },
+        {
+          "id": "o3",
+          "num": 9
+        },
+        {
+          "id": "o4",
+          "num": 12
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه، آیه شماره 10 از سوره مبارکه قصص است."
+    }
+  ],
+  "issues": []
+}

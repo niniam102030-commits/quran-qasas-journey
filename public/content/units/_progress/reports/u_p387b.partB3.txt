@@ -1,0 +1,6 @@
+[#1 q_u_p387b_B_0253 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p387b_B_0253 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p387b_B_0254 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p387b_B_0255 CLOZE_COMPLETE_REST] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#4 q_u_p387b_B_0256 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p387b_B_0258 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

@@ -1,0 +1,6 @@
+[#1 q_u_p386b_C_0063 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p386b_C_0064 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p386b_C_0065 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p386b_C_0066 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p386b_C_0067 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p386b_C_0068 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.

@@ -1,0 +1,9308 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p390b",
+ "part": "A",
+ "generatedBy": "claude,Claude,Gemini",
+ "lexicon": [
+  {
+   "wordId": "w28_039_001",
+   "gloss": "و تکبّر کرد",
+   "hard": true,
+   "meaningFa": "سرکشی و بزرگ‌بینی کرد",
+   "rootAr": "ک ب ر",
+   "trapFa": null,
+   "tipFa": "استکبر با «کبیر/اکبر» هم‌ریشه است: خود را بزرگ دانستن.",
+   "segments": [
+    {
+     "text": "و",
+     "type": "prefix"
+    },
+    {
+     "text": "استکبر",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_039_002",
+   "gloss": "او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_003",
+   "gloss": "و سپاهیانش",
+   "hard": true,
+   "meaningFa": "لشکریان و سپاهیان او",
+   "rootAr": "ج ن د",
+   "trapFa": null,
+   "tipFa": "«جنود» جمع «جند» است؛ «جندی» در فارسی همین ریشه را دارد.",
+   "segments": [
+    {
+     "text": "و",
+     "type": "prefix"
+    },
+    {
+     "text": "جنود",
+     "type": "root"
+    },
+    {
+     "text": "ه",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_039_004",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_005",
+   "gloss": "زمین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_006",
+   "gloss": "به ناحق",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_007",
+   "gloss": "حق",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_008",
+   "gloss": "و پنداشتند",
+   "hard": true,
+   "meaningFa": "گمان کردند",
+   "rootAr": "ظ ن ن",
+   "trapFa": null,
+   "tipFa": "«ظنّ» یعنی گمان؛ «ظنّوا» یعنی گمان بردند.",
+   "segments": [
+    {
+     "text": "و",
+     "type": "prefix"
+    },
+    {
+     "text": "ظنوا",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_039_009",
+   "gloss": "که آنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_010",
+   "gloss": "به سوی ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_011",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_039_012",
+   "gloss": "بازگردانده می‌شوند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_001",
+   "gloss": "پس او را گرفتیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_002",
+   "gloss": "و سپاهیانش را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_003",
+   "gloss": "پس افکندیمشان",
+   "hard": true,
+   "meaningFa": "پس آنان را انداختیم و افکندیم",
+   "rootAr": "ن ب ذ",
+   "trapFa": null,
+   "tipFa": "«نبذ» یعنی دور انداختن؛ در فارسی «افکندن».",
+   "segments": [
+    {
+     "text": "فـ",
+     "type": "prefix"
+    },
+    {
+     "text": "نبذ",
+     "type": "root"
+    },
+    {
+     "text": "نا",
+     "type": "pronoun"
+    },
+    {
+     "text": "هم",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_040_004",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_005",
+   "gloss": "دریا",
+   "hard": true,
+   "meaningFa": "دریا",
+   "rootAr": "ی م م",
+   "trapFa": null,
+   "tipFa": "«یمّ» واژه‌ی کم‌کاربرد برای دریا است؛ با «یَوم» (روز) اشتباه نشود.",
+   "segments": [
+    {
+     "text": "ال",
+     "type": "prefix"
+    },
+    {
+     "text": "یم",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_040_006",
+   "gloss": "پس بنگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_007",
+   "gloss": "چگونه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_008",
+   "gloss": "بود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_040_009",
+   "gloss": "سرانجام",
+   "hard": true,
+   "meaningFa": "پایان کار و فرجام",
+   "rootAr": "ع ق ب",
+   "trapFa": null,
+   "tipFa": "«عاقبت» در فارسی هم هست: پایان و فرجام کار.",
+   "segments": [
+    {
+     "text": "عاقبة",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_040_010",
+   "gloss": "ستمکاران",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_001",
+   "gloss": "و قرارشان دادیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_002",
+   "gloss": "پیشوایان",
+   "hard": true,
+   "meaningFa": "پیشوایان و سرکردگان",
+   "rootAr": "أ م م",
+   "trapFa": null,
+   "tipFa": "«أئمّة» جمع «إمام» است؛ در این آیه پیشوایان گمراهی‌اند.",
+   "segments": [
+    {
+     "text": "أئمة",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_041_003",
+   "gloss": "دعوت می‌کنند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_004",
+   "gloss": "به",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_005",
+   "gloss": "آتش",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_006",
+   "gloss": "و روز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_007",
+   "gloss": "قیامت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_008",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_041_009",
+   "gloss": "یاری می‌شوند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_001",
+   "gloss": "و بدرقه‌شان کردیم",
+   "hard": true,
+   "meaningFa": "از پی آنان فرستادیم؛ با لعنت همراهشان کردیم",
+   "rootAr": "ت ب ع",
+   "trapFa": "پیروی کردن",
+   "tipFa": "از ریشه‌ی «تبع» (پی‌آمدن)؛ در این آیه یعنی لعنت را از پی‌شان فرستادیم.",
+   "segments": [
+    {
+     "text": "و",
+     "type": "prefix"
+    },
+    {
+     "text": "أتبع",
+     "type": "root"
+    },
+    {
+     "text": "نا",
+     "type": "pronoun"
+    },
+    {
+     "text": "هم",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_042_002",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_003",
+   "gloss": "این",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_004",
+   "gloss": "دنیا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_005",
+   "gloss": "لعنت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_006",
+   "gloss": "و روز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_007",
+   "gloss": "قیامت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_008",
+   "gloss": "آنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_009",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_042_010",
+   "gloss": "زشت‌رویان",
+   "hard": true,
+   "meaningFa": "زشت‌رویان و مطرودان از رحمت خدا",
+   "rootAr": "ق ب ح",
+   "trapFa": null,
+   "tipFa": "از ریشه‌ی «قبح» (زشتی)؛ «قبیح» در فارسی هم همین ریشه است.",
+   "segments": [
+    {
+     "text": "ال",
+     "type": "prefix"
+    },
+    {
+     "text": "مقبوحین",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_043_001",
+   "gloss": "و قطعاً",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_002",
+   "gloss": "دادیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_003",
+   "gloss": "موسی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_004",
+   "gloss": "کتاب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_005",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_006",
+   "gloss": "پس",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_007",
+   "gloss": "آنکه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_008",
+   "gloss": "هلاک کردیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_009",
+   "gloss": "اقوام",
+   "hard": true,
+   "meaningFa": "نسل‌ها و اقوامی که در یک دوره می‌زیستند",
+   "rootAr": "ق ر ن",
+   "trapFa": "قرن به معنای صد سال",
+   "tipFa": "«القرون» در این آیه یعنی اقوام و امت‌های گذشته، نه سده‌ها.",
+   "segments": [
+    {
+     "text": "ٱل",
+     "type": "prefix"
+    },
+    {
+     "text": "قرون",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_043_010",
+   "gloss": "پیشین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_011",
+   "gloss": "وسیله بینایی",
+   "hard": true,
+   "meaningFa": "بینش‌ها و دیده‌های دل، وسیله بینایی",
+   "rootAr": "ب ص ر",
+   "trapFa": "بصیرت به معنای هوشمندی عمومی",
+   "tipFa": "هم‌ریشه با «بصر» (دیدن)؛ بصائر یعنی چیزهایی که دل را بینا می‌کنند.",
+   "segments": [
+    {
+     "text": "بصائر",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_043_012",
+   "gloss": "برای مردم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_013",
+   "gloss": "و هدایت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_014",
+   "gloss": "و رحمت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_043_015",
+   "gloss": "تا",
+   "hard": true,
+   "meaningFa": "تا، برای اینکه (بیان امید به نتیجه)",
+   "rootAr": null,
+   "trapFa": "شاید",
+   "tipFa": "«لعلّ» معمولاً «شاید» ترجمه می‌شود، اما اینجا انصاریان آن را «تا» ترجمه کرده است.",
+   "segments": [
+    {
+     "text": "لَّعَلَّ",
+     "type": "root"
+    },
+    {
+     "text": "هُمْ",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_043_016",
+   "gloss": "متذکّر شوند",
+   "hard": true,
+   "meaningFa": "به یاد آورند و متذکّر شوند",
+   "rootAr": "ذ ك ر",
+   "trapFa": "ذکر گفتن؛ نه فقط زبانی",
+   "tipFa": "هم‌ریشه با «ذکر»؛ باب تفعّل یعنی با تأمل به یاد آوردن.",
+   "segments": [
+    {
+     "text": "يَ",
+     "type": "prefix"
+    },
+    {
+     "text": "تَذَكَّر",
+     "type": "root"
+    },
+    {
+     "text": "ونَ",
+     "type": "pronoun"
+    }
+   ]
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 39,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 3,
+     "fa": "او و سپاهیانش"
+    },
+    {
+     "from": 4,
+     "to": 5,
+     "fa": "در زمین"
+    },
+    {
+     "from": 6,
+     "to": 7,
+     "fa": "به ناحق"
+    },
+    {
+     "from": 8,
+     "to": 9,
+     "fa": "و پنداشتند که آنان"
+    },
+    {
+     "from": 10,
+     "to": 12,
+     "fa": "به سوی ما بازنمی گردانند"
+    }
+   ],
+   "faSegments": [
+    "او و سپاهیانش",
+    "به ناحق",
+    "در زمین",
+    "سرکشی و تکبّر کردند،",
+    "و پنداشتند",
+    "که آنان را",
+    "به سوی ما",
+    "بازنمی گردانند،"
+   ]
+  },
+  {
+   "verse": 40,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 2,
+     "fa": "پس او و سپاهیانش را گرفتیم"
+    },
+    {
+     "from": 3,
+     "to": 5,
+     "fa": "و در دریا افکندیم"
+    },
+    {
+     "from": 6,
+     "to": 7,
+     "fa": "پس با تأمل بنگر"
+    },
+    {
+     "from": 8,
+     "to": 10,
+     "fa": "سرانجام ستمکاران چگونه بود"
+    }
+   ],
+   "faSegments": [
+    "پس او و سپاهیانش را گرفتیم",
+    "و در دریا افکندیم؛",
+    "پس با تأمل بنگر",
+    "که سرانجام ستمکاران چگونه بود؟"
+   ]
+  },
+  {
+   "verse": 41,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 2,
+     "fa": "و آنان را [به کیفر طغیانشان] پیشوایانی"
+    },
+    {
+     "from": 3,
+     "to": 5,
+     "fa": "که دعوت به آتش می کنند"
+    },
+    {
+     "from": 6,
+     "to": 7,
+     "fa": "و روز قیامت"
+    },
+    {
+     "from": 8,
+     "to": 9,
+     "fa": "یاری نمی شوند"
+    }
+   ],
+   "faSegments": [
+    "و آنان را [به کیفر طغیانشان] پیشوایانی",
+    "که دعوت به آتش می کنند قرار دادیم،",
+    "و روز قیامت",
+    "یاری نمی شوند،"
+   ]
+  },
+  {
+   "verse": 42,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 5,
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم"
+    },
+    {
+     "from": 6,
+     "to": 7,
+     "fa": "و روز قیامت"
+    },
+    {
+     "from": 8,
+     "to": 10,
+     "fa": "از زشت رویان [و مطرودان] از رحمت خدایند"
+    }
+   ],
+   "faSegments": [
+    "و آنان را در این دنیا",
+    "با لعنت بدرقه کردیم،",
+    "و روز قیامت",
+    "از زشت رویان [و مطرودان] از رحمت خدایند،"
+   ]
+  },
+  {
+   "verse": 43,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 4,
+     "fa": "به موسی کتاب دادیم"
+    },
+    {
+     "from": 5,
+     "to": 10,
+     "fa": "و پس از آنکه اقوام پیشین را [چون قوم نوح و هود و صالح و لوط] هلاک کردیم"
+    },
+    {
+     "from": 11,
+     "to": 12,
+     "fa": "برای مردم وسیله بینایی"
+    },
+    {
+     "from": 13,
+     "to": 14,
+     "fa": "هدایت و رحمتی"
+    },
+    {
+     "from": 15,
+     "to": 16,
+     "fa": "تا متذکّر و هوشیار شوند"
+    }
+   ],
+   "faSegments": [
+    "و پس از آنکه اقوام پیشین را [چون قوم نوح و هود و صالح و لوط] هلاک کردیم،",
+    "به موسی کتاب دادیم",
+    "که برای مردم وسیله بینایی",
+    "و هدایت و رحمتی بود،",
+    "تا متذکّر و هوشیار شوند."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p390b_A_0301",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "معنای «وَٱسْتَكْبَرَ» چیست؟",
+   "stem": {
+    "wordId": "w28_039_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و پنداشت"
+    },
+    {
+     "id": "o2",
+     "fa": "سرکشی و بزرگ‌بینی کرد"
+    },
+    {
+     "id": "o3",
+     "fa": "و بزرگ‌تر شد"
+    },
+    {
+     "id": "o4",
+     "fa": "و در زمین گشت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ک ب ر» است و استکبر یعنی خود را بزرگ دانستن و سرکشی کردن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0302",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "«وَٱسْتَكْبَرَ» در کدام گزینه درست معنا شده است؟",
+   "stem": {
+    "wordId": "w28_039_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "o2",
+     "fa": "و بازگردانده شد"
+    },
+    {
+     "id": "o3",
+     "fa": "و تکبّر کرد"
+    },
+    {
+     "id": "o4",
+     "fa": "و کبیر را پیروی کرد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "استکبر با «کبیر/اکبر» هم‌ریشه است: خود را بزرگ دانستن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0303",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "در این آیه «وَٱسْتَكْبَرَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_039_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و تکبّر کرد"
+    },
+    {
+     "id": "o2",
+     "fa": "و گمان کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "و به ناحق بازگشت"
+    },
+    {
+     "id": "o4",
+     "fa": "و در زمین ماند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فاعل آن «هُوَ» است و در سیاق آیه یعنی تکبّر و سرکشی کرد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0304",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "با توجه به آیه، «وَٱسْتَكْبَرَ» یعنی:",
+   "stem": {
+    "wordId": "w28_039_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بزرگ‌تر از دیگران شد"
+    },
+    {
+     "id": "o2",
+     "fa": "لشکریان و سپاهیان او"
+    },
+    {
+     "id": "o3",
+     "fa": "گمان کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "سرکشی و بزرگ‌بینی کرد"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "استکبار یعنی خود را بزرگ‌بین دانستن، نه صرفاً بزرگ شدن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0305",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "معنای «وَجُنُودُهُۥ» چیست؟",
+   "stem": {
+    "wordId": "w28_039_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و زمینش"
+    },
+    {
+     "id": "o2",
+     "fa": "و دیوانگانش"
+    },
+    {
+     "id": "o3",
+     "fa": "و بزرگانش"
+    },
+    {
+     "id": "o4",
+     "fa": "و سپاهیانش"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "near_miss"
+   },
+   "explanationFa": "«جنود» جمع «جند» به معنای سپاه است و با «جنون» ارتباطی ندارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0306",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "کدام گزینه معنای «وَجُنُودُهُۥ» است؟",
+   "stem": {
+    "wordId": "w28_039_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "o2",
+     "fa": "لشکریان و سپاهیان او"
+    },
+    {
+     "id": "o3",
+     "fa": "و او سرکشی کرد"
+    },
+    {
+     "id": "o4",
+     "fa": "و حق او"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ج ن د»؛ «جندی» در فارسی همین ریشه را دارد. «ـهُ» ضمیر «او» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0307",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "در این آیه «وَجُنُودُهُۥ» به چه کسانی اشاره دارد؟",
+   "stem": {
+    "wordId": "w28_039_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "o2",
+     "fa": "و زمینیانش"
+    },
+    {
+     "id": "o3",
+     "fa": "و سرکشی‌اش"
+    },
+    {
+     "id": "o4",
+     "fa": "و بازگشتشان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«او و سپاهیانش» در ترجمه‌ی آیه از همین کلمه می‌آید.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0308",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "با توجه به آیه، معنای «وَجُنُودُهُۥ» کدام است؟",
+   "stem": {
+    "wordId": "w28_039_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و جنون او"
+    },
+    {
+     "id": "o2",
+     "fa": "و او و حق"
+    },
+    {
+     "id": "o3",
+     "fa": "لشکریان و سپاهیان او"
+    },
+    {
+     "id": "o4",
+     "fa": "و گمان‌های او"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«جنود» با «جنون» شبیه است اما از ریشه‌ی «ج ن د» و به معنای سپاهیان است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0309",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "معنای «وَظَنُّوٓا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_039_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و بازگشتند"
+    },
+    {
+     "id": "o2",
+     "fa": "و دانستند"
+    },
+    {
+     "id": "o3",
+     "fa": "و تکبّر کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "و پنداشتند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ظنّ» یعنی گمان؛ «ظنّوا» یعنی گمان بردند و پنداشتند، نه «یقین کردند».",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0311",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "در این آیه «وَظَنُّوٓا۟» یعنی:",
+   "stem": {
+    "wordId": "w28_039_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و یقین کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "o3",
+     "fa": "و بازگشتند"
+    },
+    {
+     "id": "o4",
+     "fa": "و سرکشی کردند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "بعد از آن «أَنَّهُمْ إِلَيْنَا لَا يُرْجَعُونَ» می‌آید و یعنی پنداشتند که بازنمی‌گردند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0312",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "با توجه به آیه، معنای «وَظَنُّوٓا۟» کدام است؟",
+   "stem": {
+    "wordId": "w28_039_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و ظلم کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "و سپاهیان او"
+    },
+    {
+     "id": "o3",
+     "fa": "و حق را شناختند"
+    },
+    {
+     "id": "o4",
+     "fa": "گمان کردند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "«ظنّ» گمان است و اینجا پنداری نادرست از سوی آنان را بیان می‌کند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0313",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «و تکبّر کرد»؟",
+   "stem": {
+    "fa": "و تکبّر کرد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "يُرْجَعُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "استکبر از ریشه‌ی «ک ب ر» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0314",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "کدام کلمه یعنی «سرکشی و بزرگ‌بینی کرد»؟",
+   "stem": {
+    "fa": "سرکشی و بزرگ‌بینی کرد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنَّهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "بِغَيْرِ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل ماضی با «و» در آغاز آیه که فاعل آن «هُوَ» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0315",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001"
+   ],
+   "promptFa": "کدام کلمه با ریشه‌ی «ک ب ر» و معنای «خود را بزرگ دانستن» می‌آید؟",
+   "stem": {
+    "fa": "خود را بزرگ دانستن (و تکبّر کرد)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "إِلَيْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "هُوَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱسْتَكْبَرَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "از میان این گزینه‌ها فقط «وَٱسْتَكْبَرَ» از ریشه‌ی «ک ب ر» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0316",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «و سپاهیانش»؟",
+   "stem": {
+    "fa": "و سپاهیانش"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْأَرْضِ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَجُنُودُهُۥ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«جنود» جمع «جند» و «ـهُ» ضمیر «او» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0317",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "کدام کلمه یعنی «لشکریان و سپاهیان او»؟",
+   "stem": {
+    "fa": "لشکریان و سپاهیان او"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هُوَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْحَقِّ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُرْجَعُونَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "«هُوَ» ضمیر منفصل «او» است، اما «سپاهیانش» همان «وَجُنُودُهُۥ» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0318",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_003"
+   ],
+   "promptFa": "کدام کلمه جمعِ «جُند» (سپاه) به‌همراه ضمیر «او» است؟",
+   "stem": {
+    "fa": "جمعِ سپاه + ضمیر «او» (و سپاهیانش)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "إِلَيْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "بِغَيْرِ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَجُنُودُهُۥ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ج ن د» و شکل جمعِ «جنود» مشخص‌کننده‌ی پاسخ است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0319",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «و پنداشتند»؟",
+   "stem": {
+    "fa": "و پنداشتند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يُرْجَعُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱسْتَكْبَرَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ظنّوا» از ریشه‌ی «ظ ن ن» به معنای گمان بردند است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0320",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "کدام کلمه یعنی «گمان کردند»؟",
+   "stem": {
+    "fa": "گمان کردند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنَّهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَا"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْحَقِّ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَظَنُّوٓا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "random"
+   },
+   "explanationFa": "فعل «ظنّوا» پیش از «أَنَّهُمْ» آمده است و مفعول آن جمله‌ی بعدی است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0321",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_008"
+   ],
+   "promptFa": "کدام کلمه یعنی «گمان بردند» (از «ظنّ»)؟",
+   "stem": {
+    "fa": "گمان بردند («ظنّ» یعنی گمان)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هُوَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَيْنَا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل جمعِ ماضی با واو جمع و الف پایانی نوشته شده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0322",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001",
+    "w:w28_039_003",
+    "w:w28_039_008"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "هُوَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَرْضِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "زمین"
+    },
+    {
+     "id": "r2",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "r3",
+     "fa": "او"
+    },
+    {
+     "id": "r4",
+     "fa": "و تکبّر کرد"
+    },
+    {
+     "id": "r5",
+     "fa": "و سپاهیانش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "answer": null,
+   "distractorTags": {},
+   "explanationFa": "سه کلمه‌ی سخت: تکبّر کرد (ک ب ر)، سپاهیانش (ج ن د)، پنداشتند (ظ ن ن).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0323",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001",
+    "w:w28_039_003",
+    "w:w28_039_008"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "فِى"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْحَقِّ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "سرکشی و بزرگ‌بینی کرد"
+    },
+    {
+     "id": "r2",
+     "fa": "حق"
+    },
+    {
+     "id": "r3",
+     "fa": "گمان کردند"
+    },
+    {
+     "id": "r4",
+     "fa": "در"
+    },
+    {
+     "id": "r5",
+     "fa": "لشکریان و سپاهیان او"
+    },
+    {
+     "id": "r6",
+     "fa": "و دانستند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "answer": null,
+   "distractorTags": {},
+   "explanationFa": "«و دانستند» گزینه‌ی اضافی است؛ «ظنّ» گمان است نه علم.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0324",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001",
+    "w:w28_039_003",
+    "w:w28_039_008"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "بِغَيْرِ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l5",
+     "ar": "لَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "r2",
+     "fa": "نه"
+    },
+    {
+     "id": "r3",
+     "fa": "و تکبّر کرد"
+    },
+    {
+     "id": "r4",
+     "fa": "بدون"
+    },
+    {
+     "id": "r5",
+     "fa": "و پنداشتند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "answer": null,
+   "distractorTags": {},
+   "explanationFa": "«بِغَيْرِ» یعنی بدون، و «لَا» حرف نفی است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0325",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001",
+    "w:w28_039_003",
+    "w:w28_039_008"
+   ],
+   "promptFa": "کلمات را با معنای دقیق‌شان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَٱسْتَكْبَرَ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَنَّهُمْ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l4",
+     "ar": "إِلَيْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "وَظَنُّوٓا۟"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "به سوی ما"
+    },
+    {
+     "id": "r2",
+     "fa": "گمان کردند"
+    },
+    {
+     "id": "r3",
+     "fa": "که آنان"
+    },
+    {
+     "id": "r4",
+     "fa": "سرکشی و بزرگ‌بینی کرد"
+    },
+    {
+     "id": "r5",
+     "fa": "لشکریان و سپاهیان او"
+    },
+    {
+     "id": "r6",
+     "fa": "و دیوانگانش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "answer": null,
+   "distractorTags": {},
+   "explanationFa": "«و دیوانگانش» انحرافی دوست‌فریبنده برای «جنود» (شبیه جنون) است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0326",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "w:w28_039_001",
+    "w:w28_039_003",
+    "w:w28_039_008"
+   ],
+   "promptFa": "جفت‌های درست را پیدا کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l2",
+     "ar": "يُرْجَعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "هُوَ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَٱسْتَكْبَرَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "r2",
+     "fa": "بازگردانده می‌شوند"
+    },
+    {
+     "id": "r3",
+     "fa": "و تکبّر کرد"
+    },
+    {
+     "id": "r4",
+     "fa": "او"
+    },
+    {
+     "id": "r5",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "r6",
+     "fa": "و بازگشتند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "answer": null,
+   "distractorTags": {},
+   "explanationFa": "«يُرْجَعُونَ» مضارع مجهول است؛ «و بازگشتند» انحرافی است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0401",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "معنای «فَنَبَذْنَـٰهُمْ» چیست؟",
+   "stem": {
+    "wordId": "w28_040_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس او را گرفتیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "o3",
+     "fa": "پس بنگر"
+    },
+    {
+     "id": "o4",
+     "fa": "و سپاهیانش"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «نبذ» یعنی دور انداختن؛ در فارسی «افکندن». «هم» ضمیر جمع است: آنان را.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0402",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "کدام گزینه معنای «فَنَبَذْنَـٰهُمْ» است؟",
+   "stem": {
+    "wordId": "w28_040_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس او و سپاهیانش را گرفتیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پس آنان را نگریستیم"
+    },
+    {
+     "id": "o3",
+     "fa": "پس سرانجامشان را دیدیم"
+    },
+    {
+     "id": "o4",
+     "fa": "پس آنان را انداختیم و افکندیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«فـ» یعنی پس، «نبذ» یعنی انداختن و «نا» یعنی ما: پس انداختیم. «هم» یعنی آنان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0403",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "در آیه‌ی ۴۰، «فَنَبَذْنَـٰهُمْ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_040_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "o2",
+     "fa": "پس گرفتیمشان"
+    },
+    {
+     "id": "o3",
+     "fa": "پس نگریستیمشان"
+    },
+    {
+     "id": "o4",
+     "fa": "پس آنان را گرفتند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در آیه، گرفتن (فَأَخَذْنَـٰهُ) و افکندن (فَنَبَذْنَـٰهُمْ) دو کار پشت‌سرهم‌اند. ریشه‌ی «نبذ» همان افکندن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0404",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "با توجه به آیه، «فَنَبَذْنَـٰهُمْ» با کدام معنا می‌خواند؟",
+   "stem": {
+    "wordId": "w28_040_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس آنان را گرفتیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پس به آنان نگریستیم"
+    },
+    {
+     "id": "o3",
+     "fa": "پس آنان را انداختیم و افکندیم"
+    },
+    {
+     "id": "o4",
+     "fa": "پس او را افکندیم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«هم» ضمیر جمع است (آنان)، نه مفرد. «نبذ» یعنی انداختن و افکندن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0405",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+   "stem": {
+    "fa": "پس افکندیمشان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَٱنظُرْ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَجُنُودَهُۥ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«فَنَبَذْنَـٰهُمْ» از ریشه‌ی «نبذ» به معنای افکندن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0406",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "پس آنان را انداختیم و افکندیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَٱنظُرْ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "فعل با «فـ» شروع می‌شود و ضمیر «هم» دارد. تفاوتش با «فَأَخَذْنَـٰهُ» در ریشه است: نبذ در برابر أخذ.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0407",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003"
+   ],
+   "promptFa": "عبارت فارسی زیر برابر کدام کلمه‌ی عربی آیه‌ی ۴۰ است؟",
+   "stem": {
+    "fa": "پس آنان را افکندیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَـٰقِبَةُ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "فَٱنظُرْ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نبذ» یعنی افکندن و «هم» یعنی آنان. «فَأَخَذْنَـٰهُ» مفرد است و معنایش گرفتن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0408",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "معنای «ٱلْيَمِّ» چیست؟",
+   "stem": {
+    "wordId": "w28_040_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "روز"
+    },
+    {
+     "id": "o2",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "o3",
+     "fa": "دریا"
+    },
+    {
+     "id": "o4",
+     "fa": "ستمکاران"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«یمّ» واژه‌ی کم‌کاربرد برای دریا است. با «یَوم» (روز) اشتباه نشود.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0409",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "کدام معنا برای «ٱلْيَمِّ» درست است؟",
+   "stem": {
+    "wordId": "w28_040_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دریا"
+    },
+    {
+     "id": "o2",
+     "fa": "سپاهیان"
+    },
+    {
+     "id": "o3",
+     "fa": "چگونه"
+    },
+    {
+     "id": "o4",
+     "fa": "روز"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ریشه‌ی «ی م م» است و «ال» برای معرفه‌سازی آمده. معنایش دریا است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0410",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "در آیه‌ی ۴۰، «ٱلْيَمِّ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_040_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "روز"
+    },
+    {
+     "id": "o2",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "o3",
+     "fa": "سپاهیانش"
+    },
+    {
+     "id": "o4",
+     "fa": "دریا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در آیه آمده است «در دریا افکندیم». «یمّ» با «یَوم» (روز) فرق دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0411",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "با توجه به آیه، «ٱلْيَمِّ» با کدام معنا می‌خواند؟",
+   "stem": {
+    "wordId": "w28_040_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "o2",
+     "fa": "دریا"
+    },
+    {
+     "id": "o3",
+     "fa": "روز"
+    },
+    {
+     "id": "o4",
+     "fa": "پس بنگر"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "جمله می‌گوید آنان را «فِى ٱلْيَمِّ» افکندیم، یعنی در دریا. «یمّ» غیر از «یوم» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0412",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+   "stem": {
+    "fa": "دریا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَـٰقِبَةُ"
+    },
+    {
+     "id": "o3",
+     "ar": "فِى"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْيَمِّ ۖ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْيَمِّ» یعنی دریا. «فِى» حرف جر و به معنای «در» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0413",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "دریا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَجُنُودَهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْيَمِّ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "كَانَ"
+    },
+    {
+     "id": "o4",
+     "ar": "كَيْفَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْيَمِّ» از ریشه‌ی «ی م م» است و معنایش دریا است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0414",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_005"
+   ],
+   "promptFa": "معنای فارسی زیر مربوط به کدام کلمه‌ی آیه‌ی ۴۰ است؟",
+   "stem": {
+    "fa": "دریا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَٱنظُرْ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْيَمِّ ۖ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در عبارت «فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ»، جای افکندن «ٱلْيَمِّ» است، یعنی دریا.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0415",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "معنای «عَـٰقِبَةُ» چیست؟",
+   "stem": {
+    "wordId": "w28_040_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "o2",
+     "fa": "چگونه"
+    },
+    {
+     "id": "o3",
+     "fa": "دریا"
+    },
+    {
+     "id": "o4",
+     "fa": "سرانجام"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ع ق ب» است. «عاقبت» در فارسی هم هست و یعنی پایان کار و فرجام.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0416",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "کدام گزینه معنای «عَـٰقِبَةُ» است؟",
+   "stem": {
+    "wordId": "w28_040_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "o2",
+     "fa": "بود"
+    },
+    {
+     "id": "o3",
+     "fa": "سپاهیانش"
+    },
+    {
+     "id": "o4",
+     "fa": "پس بنگر"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عاقبة» یعنی پایان کار و فرجام. در فارسی «عاقبت» همین معنا را دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0417",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "در آیه‌ی ۴۰، «عَـٰقِبَةُ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_040_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دریا"
+    },
+    {
+     "id": "o2",
+     "fa": "چگونه"
+    },
+    {
+     "id": "o3",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "o4",
+     "fa": "ستمکاران"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در آیه آمده است «سرانجام ستمکاران چگونه بود». «عاقبة» یعنی فرجام.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0418",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "با توجه به آیه، «عَـٰقِبَةُ» با کدام معنا می‌خواند؟",
+   "stem": {
+    "wordId": "w28_040_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "o2",
+     "fa": "گرفتن"
+    },
+    {
+     "id": "o3",
+     "fa": "چگونه"
+    },
+    {
+     "id": "o4",
+     "fa": "سرانجام"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«عاقبة» نهاد «كَانَ» است و «ٱلظَّـٰلِمِينَ» مضاف‌الیه آن. معنایش سرانجام و فرجام است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0419",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+   "stem": {
+    "fa": "سرانجام"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عَـٰقِبَةُ"
+    },
+    {
+     "id": "o2",
+     "ar": "كَيْفَ"
+    },
+    {
+     "id": "o3",
+     "ar": "كَانَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عَـٰقِبَةُ» همان «عاقبت» فارسی است و یعنی سرانجام.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0420",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "پایان کار و فرجام"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَٱنظُرْ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْيَمِّ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "o4",
+     "ar": "عَـٰقِبَةُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ع ق ب» به معنای پیامد و فرجام است. «عَـٰقِبَةُ» نامِ همین پایان کار است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0421",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_009"
+   ],
+   "promptFa": "معنای فارسی زیر مربوط به کدام کلمه‌ی آیه‌ی ۴۰ است؟",
+   "stem": {
+    "fa": "سرانجام"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَجُنُودَهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "فِى"
+    },
+    {
+     "id": "o4",
+     "ar": "عَـٰقِبَةُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در «كَيْفَ كَانَ عَـٰقِبَةُ ٱلظَّـٰلِمِينَ»، «عَـٰقِبَةُ» یعنی سرانجام. این عبارت پرسش از فرجام ستمکاران است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0422",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003",
+    "w:w28_040_005",
+    "w:w28_040_009"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْيَمِّ ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "عَـٰقِبَةُ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَجُنُودَهُۥ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "r2",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "r3",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "r4",
+     "fa": "پس او را گرفتیم"
+    },
+    {
+     "id": "r5",
+     "fa": "دریا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«نبذ» یعنی افکندن، «یمّ» دریا و «عاقبة» سرانجام. «أخذ» گرفتن و «جنود» سپاهیان است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0423",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003",
+    "w:w28_040_005",
+    "w:w28_040_009"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "عَـٰقِبَةُ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَٱنظُرْ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْيَمِّ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دریا"
+    },
+    {
+     "id": "r2",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "r3",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "r4",
+     "fa": "پس بنگر"
+    },
+    {
+     "id": "r5",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "r6",
+     "fa": "روز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«یمّ» دریا است و با «یوم» (روز) اشتباه نمی‌شود. «ٱلظَّـٰلِمِينَ» یعنی ستمکاران.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0424",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "w:w28_040_003",
+    "w:w28_040_005",
+    "w:w28_040_009"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْيَمِّ ۖ"
+    },
+    {
+     "id": "l2",
+     "ar": "كَيْفَ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "كَانَ"
+    },
+    {
+     "id": "l5",
+     "ar": "عَـٰقِبَةُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "چگونه"
+    },
+    {
+     "id": "r2",
+     "fa": "سرانجام"
+    },
+    {
+     "id": "r3",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "r4",
+     "fa": "بود"
+    },
+    {
+     "id": "r5",
+     "fa": "دریا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r1"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "عبارت «كَيْفَ كَانَ عَـٰقِبَةُ» یعنی «سرانجام چگونه بود». «فَنَبَذْنَـٰهُمْ» یعنی پس افکندیمشان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0701",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "معنای «أَئِمَّةًۭ» چیست؟",
+   "stem": {
+    "wordId": "w28_041_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مادران"
+    },
+    {
+     "id": "o2",
+     "fa": "پیشوایان"
+    },
+    {
+     "id": "o3",
+     "fa": "یاری‌شوندگان"
+    },
+    {
+     "id": "o4",
+     "fa": "روزهای قیامت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» جمع «إمام» و به معنای پیشوایان است. «أمّهات» (مادران) هم‌ریشه است ولی معنایش فرق دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0702",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "کدام معنا برای «أَئِمَّةًۭ» درست است؟",
+   "stem": {
+    "wordId": "w28_041_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دعوت‌کنندگان"
+    },
+    {
+     "id": "o2",
+     "fa": "قیام‌کنندگان"
+    },
+    {
+     "id": "o3",
+     "fa": "امّت‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "پیشوایان"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "same_root"
+   },
+   "explanationFa": "«أئمّة» از ریشه‌ی «أ م م» و جمع «إمام» است و به معنای پیشوایان است. «امّت» هم‌ریشه است ولی معنای دیگری دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0703",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "در این آیه، «أَئِمَّةًۭ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_041_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیشوایان"
+    },
+    {
+     "id": "o2",
+     "fa": "فرمانبرداران"
+    },
+    {
+     "id": "o3",
+     "fa": "آتش‌پرستان"
+    },
+    {
+     "id": "o4",
+     "fa": "قصدکنندگان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "در عبارت «پیشوایانی که دعوت به آتش می کنند»، «أئمّة» همان پیشوایان است. «أمّ» (قصد کردن) هم‌ریشه است ولی معنای این کلمه نیست.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0704",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "با توجه به آیه، معنای «أَئِمَّةًۭ» کدام است؟",
+   "stem": {
+    "wordId": "w28_041_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مادران"
+    },
+    {
+     "id": "o2",
+     "fa": "یاوران"
+    },
+    {
+     "id": "o3",
+     "fa": "پیشوایان"
+    },
+    {
+     "id": "o4",
+     "fa": "نشانه‌ها"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "«أئمّة» جمع «إمام» است و در این آیه یعنی پیشوایان. «مادران» هم‌ریشه است ولی معنایش فرق دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0705",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «پیشوایان» است؟",
+   "stem": {
+    "fa": "پیشوایان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَدْعُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُنصَرُونَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» جمع «إمام» و به معنای پیشوایان است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0706",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "معادل عربی «پیشوایانی» در این آیه کدام است؟",
+   "stem": {
+    "fa": "پیشوایانی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَجَعَلْنَـٰهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَيَوْمَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَدْعُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» با تنوین در این آیه «پیشوایانی» ترجمه شده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0707",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «پیشوایان و سرکردگان» است؟",
+   "stem": {
+    "fa": "پیشوایان و سرکردگان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يُنصَرُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَيَوْمَ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» از ریشه‌ی «أ م م» و جمع «إمام» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0708",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَدْعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلنَّارِ ۖ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَيَوْمَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "قیامت"
+    },
+    {
+     "id": "r2",
+     "fa": "و روز"
+    },
+    {
+     "id": "r3",
+     "fa": "پیشوایان"
+    },
+    {
+     "id": "r4",
+     "fa": "آتش"
+    },
+    {
+     "id": "r5",
+     "fa": "دعوت می کنند"
+    },
+    {
+     "id": "r6",
+     "fa": "یاری نمی شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» پیشوایان است و بقیه از همین آیه‌اند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0709",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "w:w28_041_002"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَجَعَلْنَـٰهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "l3",
+     "ar": "إِلَى"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلنَّارِ ۖ"
+    },
+    {
+     "id": "l5",
+     "ar": "يُنصَرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "یاری"
+    },
+    {
+     "id": "r2",
+     "fa": "به"
+    },
+    {
+     "id": "r3",
+     "fa": "آتش"
+    },
+    {
+     "id": "r4",
+     "fa": "و آنان را قرار دادیم"
+    },
+    {
+     "id": "r5",
+     "fa": "پیشوایان"
+    },
+    {
+     "id": "r6",
+     "fa": "قیامت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«أئمّة» پیشوایان است و «يُنصَرُونَ» از «نصر» به معنای یاری است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0801",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "معنای «وَأَتْبَعْنَـٰهُمْ» چیست؟",
+   "stem": {
+    "wordId": "w28_042_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و از آنان پیروی کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "و بدرقه‌شان کردیم"
+    },
+    {
+     "id": "o3",
+     "fa": "و آنان را هلاک کردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "و به آنان مهلت دادیم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "ریشه‌ی «تبع» به معنای پی‌آمدن است و در اینجا یعنی «از پی‌شان فرستادیم». «پیروی کردن» دوست فریبنده است، چون فاعل در آیه خدا است و لعنت را از پی آنان فرستاده.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0802",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "کدام گزینه معنای «وَأَتْبَعْنَـٰهُمْ» را درست نشان می‌دهد؟",
+   "stem": {
+    "wordId": "w28_042_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "از پی آنان فرستادیم؛ با لعنت همراهشان کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "و پیرو آنان شدیم"
+    },
+    {
+     "id": "o3",
+     "fa": "و روز قیامت آنان را برانگیختیم"
+    },
+    {
+     "id": "o4",
+     "fa": "و در این دنیا ماندگارشان کردیم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل «أتبع» از ریشه‌ی «تبع» است و متعدی به کار رفته: چیزی را از پی کسی فرستادن. معنای «پیرو شدن» معنای لازم و غیرقرآنی این‌جاست.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0803",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "در این آیه معنای «وَأَتْبَعْنَـٰهُمْ» چیست؟",
+   "stem": {
+    "wordId": "w28_042_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و از پی آنان رفتیم"
+    },
+    {
+     "id": "o2",
+     "fa": "و آنان را فراموش کردیم"
+    },
+    {
+     "id": "o3",
+     "fa": "و بدرقه‌شان کردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "و آنان را به دنیا بازگرداندیم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "«أتبع» از ریشه‌ی «تبع» است و یعنی چیزی را از پی کسی فرستادن. در این آیه لعنت از پی آنان فرستاده شده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0804",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "با توجه به آیه، «وَأَتْبَعْنَـٰهُمْ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_042_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و از آنان پیروی کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "و آنان را نجات دادیم"
+    },
+    {
+     "id": "o3",
+     "fa": "و آنان را در دنیا برگزیدیم"
+    },
+    {
+     "id": "o4",
+     "fa": "با لعنت همراهشان کردیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "random"
+   },
+   "explanationFa": "ریشه‌ی «تبع» یعنی پی‌آمدن؛ اینجا لعنت از پی آنان آمده است. «پیروی کردن» با اینکه هم‌ریشه به نظر می‌رسد، معنای آیه نیست.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0805",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "معنای «ٱلْمَقْبُوحِينَ» چیست؟",
+   "stem": {
+    "wordId": "w28_042_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نیک‌چهرگان"
+    },
+    {
+     "id": "o2",
+     "fa": "زشت‌رویان"
+    },
+    {
+     "id": "o3",
+     "fa": "بدرقه‌شدگان"
+    },
+    {
+     "id": "o4",
+     "fa": "مهلت‌یافتگان"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "از ریشه‌ی «قبح» به معنای زشتی است؛ «قبیح» در فارسی هم از همین ریشه است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0806",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "کدام گزینه معنای کامل «ٱلْمَقْبُوحِينَ» است؟",
+   "stem": {
+    "wordId": "w28_042_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "برگزیدگان نزد خدا"
+    },
+    {
+     "id": "o2",
+     "fa": "لعنت‌کنندگان"
+    },
+    {
+     "id": "o3",
+     "fa": "زشت‌رویان و مطرودان از رحمت خدا"
+    },
+    {
+     "id": "o4",
+     "fa": "رحمت‌یافتگان"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«مقبوح» اسم مفعول از ریشه‌ی «قبح» است، یعنی کسی که زشت و رانده شده است. جمع آن «مقبوحین» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0807",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "در این آیه «ٱلْمَقْبُوحِينَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_042_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "زشت‌رویان"
+    },
+    {
+     "id": "o2",
+     "fa": "زیبارویان"
+    },
+    {
+     "id": "o3",
+     "fa": "نیکوکاران"
+    },
+    {
+     "id": "o4",
+     "fa": "قیام‌کنندگان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی «قبح» (زشتی) است و در ترجمه‌ی آیه «زشت رویان» آمده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0808",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "با توجه به آیه، «ٱلْمَقْبُوحِينَ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_042_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بهره‌مندان از رحمت خدا"
+    },
+    {
+     "id": "o2",
+     "fa": "پیروان لعنت"
+    },
+    {
+     "id": "o3",
+     "fa": "بدرقه‌کنندگان"
+    },
+    {
+     "id": "o4",
+     "fa": "مطرودان از رحمت خدا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«مقبوحین» یعنی زشت‌رویان که از رحمت خدا رانده‌اند. معنا با «لعنت» در همین آیه هماهنگ است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0809",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «و بدرقه‌شان کردیم» است؟",
+   "stem": {
+    "fa": "و بدرقه‌شان کردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَيَوْمَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَعْنَةًۭ ۖ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَأَتْبَعْنَـٰهُمْ» از ریشه‌ی «تبع» است و یعنی از پی‌شان فرستادیم. «نا» فاعل و «هم» مفعول است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0810",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "کدام کلمه یعنی «از پی آنان فرستادیم»؟",
+   "stem": {
+    "fa": "از پی آنان فرستادیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَعْنَةًۭ ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "هَـٰذِهِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلدُّنْيَا"
+    },
+    {
+     "id": "o4",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "فعل «أتبع» با ضمیر «هم» یعنی آنان را از پی چیزی فرستادن. «و» ابتدای آن حرف عطف است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0811",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001"
+   ],
+   "promptFa": "کدام کلمه یعنی «با لعنت همراهشان کردیم»؟",
+   "stem": {
+    "fa": "با لعنت همراهشان کردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هُم"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "مِّنَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل «وَأَتْبَعْنَـٰهُمْ» یعنی لعنت را از پی آنان فرستادیم. «لعنة» در آیه مفعول دوم آن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0812",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «زشت‌رویان» است؟",
+   "stem": {
+    "fa": "زشت‌رویان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَعْنَةًۭ ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْمَقْبُوحِينَ» از ریشه‌ی «قبح» (زشتی) است؛ «قبیح» فارسی هم از همین ریشه است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0813",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "کدام کلمه یعنی «مطرودان از رحمت خدا»؟",
+   "stem": {
+    "fa": "مطرودان از رحمت خدا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلدُّنْيَا"
+    },
+    {
+     "id": "o2",
+     "ar": "هَـٰذِهِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَيَوْمَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مقبوحین» یعنی زشت‌رویان و رانده‌شدگان از رحمت خدا. در آیه بعد از «هُم مِّنَ» آمده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0814",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_010"
+   ],
+   "promptFa": "کدام کلمه یعنی «زشت‌رویان و مطرودان از رحمت خدا»؟",
+   "stem": {
+    "fa": "زشت‌رویان و مطرودان از رحمت خدا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "هُم"
+    },
+    {
+     "id": "o3",
+     "ar": "مِّنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْمَقْبُوحِينَ» جمع اسم مفعول از «قبح» است. «هُم» و «مِّنَ» کلمات کناری آن در آیه‌اند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0815",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001",
+    "w:w28_042_010"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَعْنَةًۭ ۖ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلدُّنْيَا"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْقِيَـٰمَةِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دنیا"
+    },
+    {
+     "id": "r2",
+     "fa": "زشت‌رویان"
+    },
+    {
+     "id": "r3",
+     "fa": "قیامت"
+    },
+    {
+     "id": "r4",
+     "fa": "و بدرقه‌شان کردیم"
+    },
+    {
+     "id": "r5",
+     "fa": "لعنت"
+    },
+    {
+     "id": "r6",
+     "fa": "پیروی کردن"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«أتبع» یعنی از پی فرستادن، نه «پیروی کردن»؛ «مقبوحین» از ریشه‌ی «قبح» و به معنای زشت‌رویان است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0816",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "w:w28_042_001",
+    "w:w28_042_010"
+   ],
+   "promptFa": "کلمه‌های عربی را به معنای فارسی‌شان وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْمَقْبُوحِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "هَـٰذِهِ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "فِى"
+    },
+    {
+     "id": "l5",
+     "ar": "وَيَوْمَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "در"
+    },
+    {
+     "id": "r2",
+     "fa": "و روز"
+    },
+    {
+     "id": "r3",
+     "fa": "و بدرقه‌شان کردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "این"
+    },
+    {
+     "id": "r5",
+     "fa": "زشت‌رویان"
+    },
+    {
+     "id": "r6",
+     "fa": "و آنان را فراموش کردیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«وَأَتْبَعْنَـٰهُمْ» از ریشه‌ی «تبع» و «ٱلْمَقْبُوحِينَ» از ریشه‌ی «قبح» است؛ ادوات «فِى» و «هَـٰذِهِ» معنای ساده دارند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0901",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "معنای «ٱلْقُرُونَ» چیست؟",
+   "stem": {
+    "wordId": "w28_043_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "صد سال‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "اقوام"
+    },
+    {
+     "id": "o3",
+     "fa": "پیشین"
+    },
+    {
+     "id": "o4",
+     "fa": "هلاک کردیم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«القرون» یعنی نسل‌ها و اقوام گذشته. «قرن» به معنای صد سال در اینجا دوست فریبنده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0902",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "«ٱلْقُرُونَ» (ریشه‌ی ق ر ن) به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_043_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "کتاب‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "مردم"
+    },
+    {
+     "id": "o3",
+     "fa": "سده‌ها و قرن‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "نسل‌ها و اقوامی که در یک دوره می‌زیستند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«القرون» یعنی نسل‌ها و امت‌های گذشته، نه سده‌ها.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0903",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "در این آیه معنای «ٱلْقُرُونَ» چیست؟",
+   "stem": {
+    "wordId": "w28_043_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اقوام"
+    },
+    {
+     "id": "o2",
+     "fa": "صد سال‌ها"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "پیشین"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در «أَهْلَكْنَا ٱلْقُرُونَ ٱلْأُولَىٰ» مقصود اقوام پیشین است. «قرن» به معنای سده در اینجا درست نیست.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0904",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "با توجه به آیه، «ٱلْقُرُونَ» که هلاک شدند کدام است؟",
+   "stem": {
+    "wordId": "w28_043_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سده‌های گذشته"
+    },
+    {
+     "id": "o2",
+     "fa": "کتاب‌های آسمانی"
+    },
+    {
+     "id": "o3",
+     "fa": "اقوام و امت‌های گذشته"
+    },
+    {
+     "id": "o4",
+     "fa": "پیامبران"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "فاعل هلاکت اقوام‌اند، نه زمان. مفعول «أَهْلَكْنَا» همان «ٱلْقُرُونَ» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0905",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «اقوام» است؟",
+   "stem": {
+    "fa": "اقوام"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْكِتَـٰبَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْقُرُونَ» یعنی اقوام و نسل‌ها. «ٱلْأُولَىٰ» صفت آن (پیشین) است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0906",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "کدام کلمه یعنی «نسل‌ها و اقوامی که در یک دوره می‌زیستند»؟",
+   "stem": {
+    "fa": "نسل‌ها و اقوامی که در یک دوره می‌زیستند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لِلنَّاسِ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "مُوسَى"
+    },
+    {
+     "id": "o4",
+     "ar": "بَصَآئِرَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "این معنا برای «ٱلْقُرُونَ» از ریشه‌ی ق ر ن است. «لِلنَّاسِ» به معنای «برای مردم» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0907",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009"
+   ],
+   "promptFa": "برای «اقوام پیشین» (نه سده‌ها) کدام واژه‌ی عربی در آیه آمده است؟",
+   "stem": {
+    "fa": "اقوام (نه سده‌ها)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْقُرُونَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْقُرُونَ» اقوام است و «ٱلْأُولَىٰ» فقط صفت «پیشین».",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0908",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "معنای «بَصَآئِرَ» چیست؟",
+   "stem": {
+    "wordId": "w28_043_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هدایت"
+    },
+    {
+     "id": "o2",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "o3",
+     "fa": "دیدن با چشم"
+    },
+    {
+     "id": "o4",
+     "fa": "رحمت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«بصائر» هم‌ریشه با «بصر» و به معنای بینش‌ها و وسیله بینایی دل است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0909",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "«بَصَآئِرَ» (ریشه‌ی ب ص ر) یعنی:",
+   "stem": {
+    "wordId": "w28_043_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هوشمندی عمومی"
+    },
+    {
+     "id": "o2",
+     "fa": "مردم"
+    },
+    {
+     "id": "o3",
+     "fa": "اقوام"
+    },
+    {
+     "id": "o4",
+     "fa": "بینش‌ها و دیده‌های دل"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "بصائر چیزهایی هستند که دل را بینا می‌کنند، نه صرفاً هوشمندی.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0910",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "در این آیه، کتابی که به موسی داده شد برای مردم چه بود؟ معنای «بَصَآئِرَ»:",
+   "stem": {
+    "wordId": "w28_043_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "o2",
+     "fa": "رحمتی"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت"
+    },
+    {
+     "id": "o4",
+     "fa": "هوشیار"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«بَصَآئِرَ» حال کتاب است و «وَهُدًى وَرَحْمَةً» پس از آن می‌آید و جدا هستند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0911",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "در این آیه «بَصَآئِرَ» به کدام معنا نزدیک‌تر است؟",
+   "stem": {
+    "wordId": "w28_043_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دیدن چشم سر"
+    },
+    {
+     "id": "o2",
+     "fa": "بینش‌های دل، وسیله بینایی"
+    },
+    {
+     "id": "o3",
+     "fa": "هوش و ذکاوت"
+    },
+    {
+     "id": "o4",
+     "fa": "عبرت‌های تاریخی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "از ریشه‌ی «بصر» است، اما مقصود بینایی دل است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0912",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «وسیله بینایی»؟",
+   "stem": {
+    "fa": "وسیله بینایی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "o2",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَصَآئِرَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«بَصَآئِرَ» وسیله بینایی است؛ «وَهُدًى» هدایت و «وَرَحْمَةً» رحمت.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0913",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "کدام واژه یعنی «بینش‌ها و دیده‌های دل»؟",
+   "stem": {
+    "fa": "بینش‌ها و دیده‌های دل"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْكِتَـٰبَ"
+    },
+    {
+     "id": "o2",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "لِلنَّاسِ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْأُولَىٰ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "این معنای «بَصَآئِرَ» از ریشه‌ی ب ص ر است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0914",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_011"
+   ],
+   "promptFa": "برای «وسیله بینایی» در آیه کدام کلمه آمده است؟",
+   "stem": {
+    "fa": "وسیله بینایی (برای مردم)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَصَآئِرَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«بَصَآئِرَ لِلنَّاسِ» یعنی وسیله بینایی برای مردم.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0915",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "در ترجمه‌ی انصاریان این آیه، «لَّعَلَّهُمْ» چگونه ترجمه شده است؟",
+   "stem": {
+    "wordId": "w28_043_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شاید"
+    },
+    {
+     "id": "o2",
+     "fa": "زیرا"
+    },
+    {
+     "id": "o3",
+     "fa": "تا"
+    },
+    {
+     "id": "o4",
+     "fa": "پس از آنکه"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لعلّ» معمولاً «شاید» ترجمه می‌شود، اما اینجا انصاریان آن را «تا» ترجمه کرده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0916",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "معنای «لَّعَلَّهُمْ» در ترجمه‌ی انصاریان این آیه کدام است؟",
+   "stem": {
+    "wordId": "w28_043_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شاید آنان"
+    },
+    {
+     "id": "o2",
+     "fa": "برای مردم"
+    },
+    {
+     "id": "o3",
+     "fa": "و رحمتی"
+    },
+    {
+     "id": "o4",
+     "fa": "تا، برای اینکه (بیان امید به نتیجه)"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَعَلَّ» اینجا بیان امید به نتیجه است و «هُمْ» ضمیر آنان. انصاریان آن را «تا» آورده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0917",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "در این آیه «لَّعَلَّهُمْ يَتَذَكَّرُونَ» با کدام آغاز معنایی ترجمه شده است؟",
+   "stem": {
+    "wordId": "w28_043_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تا"
+    },
+    {
+     "id": "o2",
+     "fa": "شاید"
+    },
+    {
+     "id": "o3",
+     "fa": "زیرا"
+    },
+    {
+     "id": "o4",
+     "fa": "هرگاه"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "در ترجمه‌ی انصاریان: «تا متذکّر و هوشیار شوند»؛ «لعلّ» اینجا «تا» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0918",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "در آیه، «لَّعَلَّهُمْ» پیش از «يَتَذَكَّرُونَ» در ترجمه‌ی انصاریان چه می‌شود؟",
+   "stem": {
+    "wordId": "w28_043_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شاید"
+    },
+    {
+     "id": "o2",
+     "fa": "تا (برای اینکه)"
+    },
+    {
+     "id": "o3",
+     "fa": "و"
+    },
+    {
+     "id": "o4",
+     "fa": "برای مردم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لَّعَلَّهُمْ» یعنی «تا آنان». «شاید» معنای رایج است، اما در این ترجمه نیامده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0919",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی در این آیه معادل «تا» در ترجمه‌ی انصاریان است؟",
+   "stem": {
+    "fa": "تا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَلَقَدْ"
+    },
+    {
+     "id": "o2",
+     "ar": "مِنۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَآ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَّعَلَّهُمْ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَّعَلَّهُمْ» اینجا «تا آنان» ترجمه شده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0920",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "کدام کلمه یعنی «تا، برای اینکه (بیان امید به نتیجه)»؟",
+   "stem": {
+    "fa": "تا، برای اینکه (بیان امید به نتیجه)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لِلنَّاسِ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَعْدِ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لَّعَلَّهُمْ» پیش از «يَتَذَكَّرُونَ» آمده و بیان امید به نتیجه است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0921",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_015"
+   ],
+   "promptFa": "کدام واژه در این آیه «تا آنان» را می‌رساند؟",
+   "stem": {
+    "fa": "تا آنان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "o2",
+     "ar": "مُوسَى"
+    },
+    {
+     "id": "o3",
+     "ar": "ءَاتَيْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "لَّعَلَّهُمْ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَعَلَّ» به‌اضافه‌ی ضمیر «هُمْ» می‌شود «تا آنان».",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0922",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009",
+    "w:w28_043_011",
+    "w:w28_043_015"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l2",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْكِتَـٰبَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "کتاب"
+    },
+    {
+     "id": "r2",
+     "fa": "تا"
+    },
+    {
+     "id": "r3",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r4",
+     "fa": "هلاک کردیم"
+    },
+    {
+     "id": "r5",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r6",
+     "fa": "سده‌ها"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«ٱلْقُرُونَ» اقوام (نه سده‌ها)، «بَصَآئِرَ» وسیله بینایی و «لَّعَلَّهُمْ» اینجا «تا» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0923",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009",
+    "w:w28_043_011",
+    "w:w28_043_015"
+   ],
+   "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "l4",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْقُرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r2",
+     "fa": "و رحمتی"
+    },
+    {
+     "id": "r3",
+     "fa": "شاید"
+    },
+    {
+     "id": "r4",
+     "fa": "متذکّر و هوشیار شوند"
+    },
+    {
+     "id": "r5",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r6",
+     "fa": "تا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "false_friend"
+   },
+   "explanationFa": "«لَّعَلَّهُمْ» در ترجمه‌ی انصاریان «تا» است نه «شاید»؛ «يَتَذَكَّرُونَ» یعنی متذکّر و هوشیار شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0924",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009",
+    "w:w28_043_011",
+    "w:w28_043_015"
+   ],
+   "promptFa": "هر واژه را به معنای آن در آیه وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "لِلنَّاسِ"
+    },
+    {
+     "id": "l5",
+     "ar": "لَّعَلَّهُمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "تا"
+    },
+    {
+     "id": "r2",
+     "fa": "برای مردم"
+    },
+    {
+     "id": "r3",
+     "fa": "و هدایت"
+    },
+    {
+     "id": "r4",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r5",
+     "fa": "اقوام"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«بَصَآئِرَ» وسیله بینایی، «وَهُدًى» و هدایت، «لِلنَّاسِ» برای مردم است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_0925",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_009",
+    "w:w28_043_011",
+    "w:w28_043_015"
+   ],
+   "promptFa": "کلمه‌ها را به معنایشان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "مُوسَى"
+    },
+    {
+     "id": "l5",
+     "ar": "بَصَآئِرَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "موسی"
+    },
+    {
+     "id": "r2",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r3",
+     "fa": "پیشین"
+    },
+    {
+     "id": "r4",
+     "fa": "تا"
+    },
+    {
+     "id": "r5",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r6",
+     "fa": "بینش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«ٱلْقُرُونَ ٱلْأُولَىٰ» یعنی اقوام پیشین؛ «بَصَآئِرَ» وسیله بینایی است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1001",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "معنای «يَتَذَكَّرُونَ» چیست؟",
+   "stem": {
+    "wordId": "w28_043_016",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ذکر زبانی بگویند"
+    },
+    {
+     "id": "o2",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "o3",
+     "fa": "هلاک شوند"
+    },
+    {
+     "id": "o4",
+     "fa": "فراموش کنند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "ریشه‌ی آن «ذ ک ر» است و باب تفعّل یعنی با تأمل به یاد آوردن. فقط ذکر زبانی نیست.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1002",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "«يَتَذَكَّرُونَ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_043_016",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بینا شوند"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت شوند"
+    },
+    {
+     "id": "o3",
+     "fa": "ذکر زبانی بگویند"
+    },
+    {
+     "id": "o4",
+     "fa": "به یاد آورند و متذکّر شوند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "از ریشه‌ی «ذ ک ر» و هم‌ریشه با «ذکر» است. معنای آن به یاد آوردن و متذکّر شدن است، نه فقط ذکر گفتن.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1003",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "در این آیه، «يَتَذَكَّرُونَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_043_016",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هلاک شوند"
+    },
+    {
+     "id": "o2",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "o3",
+     "fa": "بینا شوند"
+    },
+    {
+     "id": "o4",
+     "fa": "ذکر زبانی بگویند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "در آیه آمده است «تا متذکّر و هوشیار شوند». ریشه‌ی آن «ذ ک ر» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1004",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "با توجه به پایان آیه، معنای «يَتَذَكَّرُونَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_043_016",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "فراموش کنند"
+    },
+    {
+     "id": "o2",
+     "fa": "ذکر زبانی بگویند"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت شوند"
+    },
+    {
+     "id": "o4",
+     "fa": "به یاد آورند و متذکّر شوند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَعَلَّهُمْ يَتَذَكَّرُونَ» یعنی تا متذکّر شوند. هدایت کلمه‌ی دیگری در همین آیه است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1005",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «متذکّر شوند» است؟",
+   "stem": {
+    "fa": "متذکّر شوند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ءَاتَيْنَا"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَتَذَكَّرُونَ» از ریشه‌ی «ذ ک ر» و به معنای متذکّر شوند است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1006",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "معادل عربی «به یاد آورند و متذکّر شوند» کدام است؟",
+   "stem": {
+    "fa": "به یاد آورند و متذکّر شوند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْقُرُونَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "این فعل مضارع از باب تفعّل و از ریشه‌ی «ذ ک ر» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1007",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «متذکّر و هوشیار شوند» است؟",
+   "stem": {
+    "fa": "متذکّر و هوشیار شوند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لَعَلَّهُمْ» یعنی «تا آنان»، و فعل «يَتَذَكَّرُونَ» یعنی متذکّر شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1008",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ءَاتَيْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و رحمت"
+    },
+    {
+     "id": "r2",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r3",
+     "fa": "هلاک کردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "دادیم"
+    },
+    {
+     "id": "r5",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r6",
+     "fa": "فراموش کردیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "random"
+   },
+   "explanationFa": "«يَتَذَكَّرُونَ» از ریشه‌ی «ذ ک ر» و به معنای متذکّر شوند است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1009",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مُوسَى"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْكِتَـٰبَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "لِلنَّاسِ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r2",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r3",
+     "fa": "موسی"
+    },
+    {
+     "id": "r4",
+     "fa": "برای مردم"
+    },
+    {
+     "id": "r5",
+     "fa": "کتاب"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«يَتَذَكَّرُونَ» یعنی متذکّر شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1010",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "بَعْدِ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "l4",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "تا آنان"
+    },
+    {
+     "id": "r2",
+     "fa": "و هدایت"
+    },
+    {
+     "id": "r3",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r4",
+     "fa": "پیشین"
+    },
+    {
+     "id": "r5",
+     "fa": "پس از"
+    },
+    {
+     "id": "r6",
+     "fa": "نابینا شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«لَعَلَّهُمْ» یعنی «تا آنان» و «يَتَذَكَّرُونَ» یعنی متذکّر شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1011",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ءَاتَيْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَهُدًۭى"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و هدایت"
+    },
+    {
+     "id": "r2",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r3",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r4",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r5",
+     "fa": "دادیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r4"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«يَتَذَكَّرُونَ» از ریشه‌ی «ذ ک ر» است و معنایش متذکّر شوند است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1013",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مُوسَى"
+    },
+    {
+     "id": "l2",
+     "ar": "بَعْدِ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَّعَلَّهُمْ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r2",
+     "fa": "پیشین"
+    },
+    {
+     "id": "r3",
+     "fa": "تا آنان"
+    },
+    {
+     "id": "r4",
+     "fa": "موسی"
+    },
+    {
+     "id": "r5",
+     "fa": "پس از"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«يَتَذَكَّرُونَ» یعنی متذکّر شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1014",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_016"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ءَاتَيْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْكِتَـٰبَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْأُولَىٰ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَرَحْمَةًۭ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و رحمت"
+    },
+    {
+     "id": "r2",
+     "fa": "کتاب"
+    },
+    {
+     "id": "r3",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r4",
+     "fa": "دادیم"
+    },
+    {
+     "id": "r5",
+     "fa": "پیشین"
+    },
+    {
+     "id": "r6",
+     "fa": "هلاک شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«يَتَذَكَّرُونَ» از ریشه‌ی «ذ ک ر» است و به معنای متذکّر شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1401",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "vt:39",
+    "w:w28_039_001"
+   ],
+   "promptFa": "معنای هر عبارت را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَٱسْتَكْبَرَ هُوَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَجُنُودُهُۥ"
+    },
+    {
+     "id": "l3",
+     "ar": "فِى ٱلْأَرْضِ"
+    },
+    {
+     "id": "l4",
+     "ar": "بِغَيْرِ ٱلْحَقِّ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "او سرکشی و تکبّر کرد"
+    },
+    {
+     "id": "r2",
+     "fa": "و سپاهیانش"
+    },
+    {
+     "id": "r3",
+     "fa": "در زمین"
+    },
+    {
+     "id": "r4",
+     "fa": "به ناحق"
+    },
+    {
+     "id": "r5",
+     "fa": "به سوی ما"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "استکبر یعنی سرکشی و تکبر کرد، جنود یعنی سپاهیان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1402",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 39,
+   "targets": [
+    "vt:39",
+    "w:w28_039_008"
+   ],
+   "promptFa": "معنای هر قطعه را بیابید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَظَنُّوٓا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "أَنَّهُمْ"
+    },
+    {
+     "id": "l3",
+     "ar": "إِلَيْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "لَا يُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "r2",
+     "fa": "که آنان"
+    },
+    {
+     "id": "r3",
+     "fa": "به سوی ما"
+    },
+    {
+     "id": "r4",
+     "fa": "بازنمی گردانند"
+    },
+    {
+     "id": "r5",
+     "fa": "یاری نمی شوند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "similar_verse"
+   },
+   "explanationFa": "ظنّوا از ریشه ظن به معنای گمان بردن و پنداشتن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1403",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 39,
+   "targets": [
+    "vt:39"
+   ],
+   "promptFa": "ترجمه صحیح این آیه کدام است؟",
+   "stem": {
+    "verse": 39
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "او و سپاهیانش به ناحق در زمین سرکشی و تکبّر کردند، و پنداشتند که آنان را به سوی ما بازنمی گردانند،"
+    },
+    {
+     "id": "o2",
+     "fa": "پس او و سپاهیانش را در زمین به ناحق گرفتیم و پنداشتند که به سوی آتش بازمی گردند،"
+    },
+    {
+     "id": "o3",
+     "fa": "او و سپاهیانش در زمین به حق سرکشی کردند و پنداشتند که یاری نمی شوند،"
+    },
+    {
+     "id": "o4",
+     "fa": "او و سپاهیانش به ناحق در زمین تکبر نکردند، و گمان کردند که به سوی ما بازگردانده می شوند،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«بِغَيْرِ ٱلْحَقِّ» یعنی به ناحق و «لَا يُرْجَعُونَ» یعنی بازنمی‌گردند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1406",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 39,
+   "targets": [
+    "vr:39"
+   ],
+   "promptFa": "کدام آیه با ترجمه زیر مطابقت دارد؟\n«او و سپاهیانش به ناحق در زمین سرکشی و تکبّر کردند، و پنداشتند که آنان را به سوی ما بازنمی گردانند،»",
+   "stem": {
+    "verse": 39,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 39,
+      "from": 1,
+      "to": 12
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_040_001",
+      "w28_040_002",
+      "w28_039_004",
+      "w28_039_005",
+      "w28_039_006",
+      "w28_039_007",
+      "w28_039_008",
+      "w28_039_009",
+      "w28_039_010",
+      "w28_039_011",
+      "w28_039_012"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_039_001",
+      "w28_039_002",
+      "w28_039_003",
+      "w28_039_004",
+      "w28_039_005",
+      "w28_039_006",
+      "w28_039_007",
+      "w28_039_008",
+      "w28_039_009",
+      "w28_041_008",
+      "w28_041_009"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_041_001",
+      "w28_041_002",
+      "w28_041_003",
+      "w28_041_004",
+      "w28_041_005",
+      "w28_039_008",
+      "w28_039_009",
+      "w28_039_010",
+      "w28_039_011",
+      "w28_039_012"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "عبارت «وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ» معادل «او و سپاهیانش سرکشی کردند» است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1409",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 39,
+   "targets": [
+    "vt:39"
+   ],
+   "promptFa": "قطعات ترجمه را به ترتیب درست بچینید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "او و سپاهیانش ",
+     "wordIdx": [
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "به ناحق ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "در زمین ",
+     "wordIdx": [
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "سرکشی و تکبّر کردند، ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و پنداشتند ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "که آنان را به سوی ما ",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "بازنمی گردانند،",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b8",
+     "fa": "یاری نمی شوند،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {
+    "b8": "random"
+   },
+   "explanationFa": "ترتیب آیه: استکبر هو وجنوده (او و سپاهیانش سرکشی کردند) فی الارض بغیر الحق (در زمین به ناحق).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1410",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 39,
+   "targets": [
+    "vt:39"
+   ],
+   "promptFa": "ترجمه آیه را به درستی مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "او و سپاهیانش به ناحق ",
+     "wordIdx": [
+      2,
+      3,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "در زمین سرکشی و تکبّر کردند، ",
+     "wordIdx": [
+      4,
+      5,
+      1
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و پنداشتند که آنان را ",
+     "wordIdx": [
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "به سوی ما بازنمی گردانند،",
+     "wordIdx": [
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و در دریا افکندیم،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "آیه با استکبار فرعون و لشکریانش شروع شده و با پندار باطل آنها پایان می‌یابد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1411",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 39,
+   "targets": [
+    "vt:39"
+   ],
+   "promptFa": "جاهای خالی ترجمه را پر کنید.",
+   "stem": {
+    "verse": 39,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 14,
+      "text": "به ناحق"
+     },
+     {
+      "start": 38,
+      "text": "تکبّر"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "به ناحق"
+    },
+    {
+     "id": "b2",
+     "fa": "تکبّر"
+    },
+    {
+     "id": "b3",
+     "fa": "به حق",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "تواضع",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "random"
+   },
+   "explanationFa": "«بِغَيْرِ ٱلْحَقِّ» یعنی به ناحق و «وَٱسْتَكْبَرَ» اشاره به تکبر دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1412",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 39,
+   "targets": [
+    "vt:39"
+   ],
+   "promptFa": "کلمات مناسب را در ترجمه قرار دهید.",
+   "stem": {
+    "verse": 39,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 51,
+      "text": "و پنداشتند"
+     },
+     {
+      "start": 83,
+      "text": "بازنمی گردانند،"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و پنداشتند"
+    },
+    {
+     "id": "b2",
+     "fa": "بازنمی گردانند،"
+    },
+    {
+     "id": "b3",
+     "fa": "و دانستند",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "یاری نمی شوند،",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "similar_verse"
+   },
+   "explanationFa": "«وَظَنُّوٓا۟» یعنی پنداشتند و گمان بردند، و «لَا يُرْجَعُونَ» یعنی بازگردانده نمی‌شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1413",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "معنای هر بخش را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَأَخَذْنَـٰهُ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَجُنُودَهُۥ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَنَبَذْنَـٰهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "فِى ٱلْيَمِّ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس او را گرفتیم"
+    },
+    {
+     "id": "r2",
+     "fa": "و سپاهیانش را"
+    },
+    {
+     "id": "r3",
+     "fa": "پس افکندیمشان"
+    },
+    {
+     "id": "r4",
+     "fa": "در دریا"
+    },
+    {
+     "id": "r5",
+     "fa": "در زمین"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "یم به معنای دریا و نبذ به معنای دور انداختن و افکندن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1415",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "ترجمه این آیه کدام است؟",
+   "stem": {
+    "verse": 40
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس او و سپاهیانش را گرفتیم و در دریا افکندیم؛ پس با تأمل بنگر که سرانجام ستمکاران چگونه بود؟"
+    },
+    {
+     "id": "o2",
+     "fa": "پس او و سپاهیانش را در دریا افکندیم و سرانجام ستمکاران را ندیدند،"
+    },
+    {
+     "id": "o3",
+     "fa": "او و لشکریانش را در زمین گرفتیم و عاقبت ستمکاران را روشن کردیم،"
+    },
+    {
+     "id": "o4",
+     "fa": "پس او و سپاهیانش را گرفتیم و در دریا غرق کردیم؛ پس بنگر که عاقبت کافران چگونه بود؟"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ» یعنی آنان را در دریا افکندیم.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1418",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 40,
+   "targets": [
+    "vr:40"
+   ],
+   "promptFa": "کدام آیه با ترجمه زیر همخوانی دارد؟\n«پس او و سپاهیانش را گرفتیم و در دریا افکندیم؛ پس با تأمل بنگر که سرانجام ستمکاران چگونه بود؟»",
+   "stem": {
+    "verse": 40,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 40,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_040_001",
+      "w28_040_002",
+      "w28_040_003",
+      "w28_040_006",
+      "w28_040_007",
+      "w28_040_008",
+      "w28_040_009",
+      "w28_040_010"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_040_001",
+      "w28_040_002",
+      "w28_040_003",
+      "w28_040_004",
+      "w28_040_005",
+      "w28_040_006",
+      "w28_040_007",
+      "w28_040_008",
+      "w28_042_009",
+      "w28_042_010"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_040_001",
+      "w28_040_002",
+      "w28_039_004",
+      "w28_039_005",
+      "w28_040_006",
+      "w28_040_007",
+      "w28_040_008",
+      "w28_040_009",
+      "w28_040_010"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "similar_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه شامل «فِى ٱلْيَمِّ» (در دریا) است که در برخی گزینه‌ها جا افتاده یا تغییر کرده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1421",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس او و سپاهیانش را ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "گرفتیم ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و در دریا ",
+     "wordIdx": [
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "افکندیم؛ ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "پس با تأمل بنگر ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "که سرانجام ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "ستمکاران ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b8",
+     "fa": "چگونه بود؟",
+     "wordIdx": [
+      7,
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "fa": "یاری نمی شوند،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "distractorTags": {
+    "b9": "random"
+   },
+   "explanationFa": "ترتیب آیه: فأخذناه وجنوده (پس او و سپاهیانش را گرفتیم) فنبذناهم فی الیم (و در دریا افکندیم).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1422",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "ترجمه را به ترتیب صحیح بچینید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس او و سپاهیانش را گرفتیم ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و در دریا افکندیم؛ ",
+     "wordIdx": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "پس با تأمل بنگر ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "که سرانجام ستمکاران چگونه بود؟",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و آنان را در این دنیا بدرقه کردیم،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "ابتدا گرفتن و افکندن در دریا بیان شده و سپس دستور به نگریستن به سرانجام ستمکاران داده می‌شود.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1423",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "کلمات جاافتاده را در ترجمه آیه قرار دهید.",
+   "stem": {
+    "verse": 40,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 30,
+      "text": "دریا"
+     },
+     {
+      "start": 35,
+      "text": "افکندیم؛"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "دریا"
+    },
+    {
+     "id": "b2",
+     "fa": "افکندیم؛"
+    },
+    {
+     "id": "b3",
+     "fa": "زمین",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "گرفتیم",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "random",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«فِى ٱلْيَمِّ» یعنی در دریا، و «فَنَبَذْنَـٰهُمْ» یعنی افکندیمشان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1424",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 40,
+   "targets": [
+    "vt:40"
+   ],
+   "promptFa": "بخش‌های ناقص ترجمه را کامل کنید.",
+   "stem": {
+    "verse": 40,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 51,
+      "text": "تأمل"
+     },
+     {
+      "start": 70,
+      "text": "ستمکاران"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "تأمل"
+    },
+    {
+     "id": "b2",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "b3",
+     "fa": "شتاب",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "کافران",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "random",
+    "b4": "random"
+   },
+   "explanationFa": "«فَٱنظُرْ» در اینجا با تأمل نگریستن است و «ٱلظَّـٰلِمِينَ» یعنی ستمکاران.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1425",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "ترجمه عبارات را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَجَعَلْنَـٰهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَئِمَّةًۭ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَدْعُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "إِلَى ٱلنَّارِ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و آنان را قرار دادیم"
+    },
+    {
+     "id": "r2",
+     "fa": "پیشوایانی"
+    },
+    {
+     "id": "r3",
+     "fa": "دعوت می کنند"
+    },
+    {
+     "id": "r4",
+     "fa": "به آتش"
+    },
+    {
+     "id": "r5",
+     "fa": "به نور"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "random"
+   },
+   "explanationFa": "أئمّة جمع إمام به معنای پیشوایان است و النّار یعنی آتش.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1427",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "ترجمه این آیه کدام است؟",
+   "stem": {
+    "verse": 41
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و آنان را [به کیفر طغیانشان] پیشوایانی که دعوت به آتش می کنند قرار دادیم، و روز قیامت یاری نمی شوند،"
+    },
+    {
+     "id": "o2",
+     "fa": "و آنان را پیشوایانی که دعوت به بهشت می کنند قرار دادیم، و روز قیامت یاری می شوند،"
+    },
+    {
+     "id": "o3",
+     "fa": "و آنان را به کیفر طغیانشان پیشوایانی به سوی آتش قرار ندادیم، و روز قیامت یاری نمی شوند،"
+    },
+    {
+     "id": "o4",
+     "fa": "آنان پیشوایانی هستند که دعوت به آتش می کنند، و روز قیامت یاری کنندگان نیستند،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "random",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«إِلَى ٱلنَّارِ» یعنی به سوی آتش، و «لَا يُنصَرُونَ» یعنی یاری نمی‌شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1430",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 41,
+   "targets": [
+    "vr:41"
+   ],
+   "promptFa": "کدام آیه با ترجمه زیر همخوانی دارد؟\n«و آنان را [به کیفر طغیانشان] پیشوایانی که دعوت به آتش می کنند قرار دادیم، و روز قیامت یاری نمی شوند،»",
+   "stem": {
+    "verse": 41,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 41,
+      "from": 1,
+      "to": 9
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_041_001",
+      "w28_041_002",
+      "w28_041_003",
+      "w28_041_006",
+      "w28_041_007",
+      "w28_041_008",
+      "w28_041_009"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_041_001",
+      "w28_041_002",
+      "w28_041_003",
+      "w28_041_004",
+      "w28_041_005",
+      "w28_041_006",
+      "w28_041_007",
+      "w28_039_011",
+      "w28_039_012"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_042_001",
+      "w28_042_002",
+      "w28_042_003",
+      "w28_042_004",
+      "w28_042_005",
+      "w28_041_006",
+      "w28_041_007",
+      "w28_041_008",
+      "w28_041_009"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "similar_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "دقت کنید که «إِلَى ٱلنَّارِ» (به سوی آتش) نباید جا بیفتد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1433",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و آنان را [به کیفر طغیانشان] ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پیشوایانی که ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "دعوت به آتش می کنند ",
+     "wordIdx": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "قرار دادیم، ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و روز قیامت ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "یاری نمی شوند،",
+     "wordIdx": [
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "از زشت رویان از رحمت خدایند،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "b7": "neighbor_verse"
+   },
+   "explanationFa": "ترتیب آیه: وجعلناهم (و آنان را قرار دادیم) أئمة یدعون الی النار (پیشوایانی که به آتش دعوت می‌کنند).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1434",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "ترجمه را به ترتیب صحیح بچینید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و آنان را [به کیفر طغیانشان] پیشوایانی که ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "دعوت به آتش می کنند قرار دادیم، ",
+     "wordIdx": [
+      3,
+      4,
+      5,
+      1
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و روز قیامت یاری نمی شوند،",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "آیه ابتدا قرار دادن آنان به عنوان پیشوایان گمراهی را مطرح می‌کند و سپس حالشان در روز قیامت را.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1435",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "کلمات جاافتاده را در ترجمه آیه قرار دهید.",
+   "stem": {
+    "verse": 41,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 33,
+      "text": "پیشوایانی"
+     },
+     {
+      "start": 51,
+      "text": "آتش"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پیشوایانی"
+    },
+    {
+     "id": "b2",
+     "fa": "آتش"
+    },
+    {
+     "id": "b3",
+     "fa": "پیروانی",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "نور",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "random",
+    "b4": "random"
+   },
+   "explanationFa": "«أَئِمَّةًۭ» یعنی پیشوایان و «ٱلنَّارِ» یعنی آتش.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1436",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 41,
+   "targets": [
+    "vt:41"
+   ],
+   "promptFa": "بخش‌های ناقص ترجمه را کامل کنید.",
+   "stem": {
+    "verse": 41,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 76,
+      "text": "قیامت"
+     },
+     {
+      "start": 82,
+      "text": "یاری"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "قیامت"
+    },
+    {
+     "id": "b2",
+     "fa": "یاری"
+    },
+    {
+     "id": "b3",
+     "fa": "دنیا",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "عذاب",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "random"
+   },
+   "explanationFa": "«ٱلْقِيَـٰمَةِ» یعنی قیامت و «یُنصَرُونَ» از ریشه نصر به معنای یاری شدن است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1437",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "معنای هر بخش را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَأَتْبَعْنَـٰهُمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "فِى هَـٰذِهِ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلدُّنْيَا"
+    },
+    {
+     "id": "l4",
+     "ar": "لَعْنَةًۭ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و آنان را بدرقه کردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "در این"
+    },
+    {
+     "id": "r3",
+     "fa": "دنیا"
+    },
+    {
+     "id": "r4",
+     "fa": "با لعنت"
+    },
+    {
+     "id": "r5",
+     "fa": "با رحمت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "random"
+   },
+   "explanationFa": "أتبعناهم یعنی از پی آنها فرستادیم و بدرقه‌شان کردیم، لعنة یعنی لعنت.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1439",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "ترجمه این آیه کدام است؟",
+   "stem": {
+    "verse": 42
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم، و روز قیامت از زشت رویان [و مطرودان] از رحمت خدایند،"
+    },
+    {
+     "id": "o2",
+     "fa": "و آنان را در آخرت با لعنت بدرقه کردیم، و در این دنیا از زشت رویان هستند،"
+    },
+    {
+     "id": "o3",
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم، و روز قیامت یاری نمی شوند،"
+    },
+    {
+     "id": "o4",
+     "fa": "و آنان را در این دنیا به عنوان پیشوایان گمراهی قرار دادیم، و روز قیامت مطرودند،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«فِى هَـٰذِهِ ٱلدُّنْيَا» یعنی در این دنیا، و «ٱلْمَقْبُوحِينَ» یعنی زشت‌رویان و مطرودان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1442",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 42,
+   "targets": [
+    "vr:42"
+   ],
+   "promptFa": "کدام آیه با ترجمه زیر همخوانی دارد؟\n«و آنان را در این دنیا با لعنت بدرقه کردیم، و روز قیامت از زشت رویان [و مطرودان] از رحمت خدایند،»",
+   "stem": {
+    "verse": 42,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 42,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_042_001",
+      "w28_042_002",
+      "w28_042_003",
+      "w28_042_004",
+      "w28_042_005",
+      "w28_042_006",
+      "w28_042_007",
+      "w28_042_008",
+      "w28_042_009",
+      "w28_040_010"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_041_001",
+      "w28_041_002",
+      "w28_041_003",
+      "w28_041_004",
+      "w28_041_005",
+      "w28_042_006",
+      "w28_042_007",
+      "w28_042_008",
+      "w28_042_009",
+      "w28_042_010"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_042_001",
+      "w28_042_002",
+      "w28_042_003",
+      "w28_042_004",
+      "w28_042_005",
+      "w28_041_006",
+      "w28_041_007",
+      "w28_041_008",
+      "w28_041_009"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت «مِّنَ ٱلْمَقْبُوحِينَ» مشخصه این آیه است و با «الظالمین» تفاوت دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1445",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و آنان را ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "در این دنیا ",
+     "wordIdx": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "با لعنت ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "بدرقه کردیم، ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و روز قیامت ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "از زشت رویان [و مطرودان] از رحمت خدایند،",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "یاری نمی شوند،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "b7": "neighbor_verse"
+   },
+   "explanationFa": "ترتیب: أتبعناهم (و آنان را بدرقه کردیم) فی هذه الدنیا لعنة (در این دنیا با لعنت).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1446",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "ترجمه را به ترتیب صحیح بچینید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم، ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و روز قیامت ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "از زشت رویان [و مطرودان] از رحمت خدایند،",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و آنان را پیشوایانی که دعوت به آتش می کنند قرار دادیم،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "ابتدا وضعیت لعنت آنها در دنیا و سپس وضعیت طردشدگی آنها در قیامت بیان شده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1447",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "کلمات جاافتاده را در ترجمه آیه قرار دهید.",
+   "stem": {
+    "verse": 42,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 19,
+      "text": "دنیا"
+     },
+     {
+      "start": 27,
+      "text": "لعنت"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "دنیا"
+    },
+    {
+     "id": "b2",
+     "fa": "لعنت"
+    },
+    {
+     "id": "b3",
+     "fa": "آخرت",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "رحمت",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "random",
+    "b4": "random"
+   },
+   "explanationFa": "«ٱلدُّنْيَا» یعنی دنیا و «لَعْنَةًۭ» یعنی لعنت.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1448",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 42,
+   "targets": [
+    "vt:42"
+   ],
+   "promptFa": "بخش‌های ناقص ترجمه را کامل کنید.",
+   "stem": {
+    "verse": 42,
+    "showFa": false,
+    "faHidden": [
+     {
+      "start": 58,
+      "text": "زشت رویان"
+     },
+     {
+      "start": 85,
+      "text": "خدایند،"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "زشت رویان"
+    },
+    {
+     "id": "b2",
+     "fa": "خدایند،"
+    },
+    {
+     "id": "b3",
+     "fa": "زیبارویان",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "پیامبران",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "random"
+   },
+   "explanationFa": "«ٱلْمَقْبُوحِينَ» اشاره به زشت‌رویان و مطرودان از رحمت خدا در روز قیامت دارد.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1501",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "بخش‌های عربی آیه را به ترجمه دقیق آنها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَـٰبَ"
+    },
+    {
+     "id": "l2",
+     "ar": "بَصَآئِرَ لِلنَّاسِ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَهُدًۭى وَرَحْمَةًۭ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَّعَلَّهُمْ يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "به موسی کتاب دادیم"
+    },
+    {
+     "id": "r2",
+     "fa": "که برای مردم وسیله بینایی"
+    },
+    {
+     "id": "r3",
+     "fa": "و هدایت و رحمتی بود،"
+    },
+    {
+     "id": "r4",
+     "fa": "تا متذکّر و هوشیار شوند."
+    },
+    {
+     "id": "r5",
+     "fa": "و پس از آنکه"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "در ترجمه روان فارسی، «به موسی کتاب دادیم» به بخش اول آیه (آتینا موسی الکتاب) برمی‌گردد که پس از عبارت «أهلکنا» آمده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1502",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 43,
+   "targets": [
+    "w:w28_043_008",
+    "w:w28_043_009",
+    "w:w28_043_011",
+    "w:w28_043_015"
+   ],
+   "promptFa": "معنای کلمات مهم این آیه را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَهْلَكْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْقُرُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "بَصَآئِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَّعَلَّهُمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هلاک کردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "اقوام"
+    },
+    {
+     "id": "r3",
+     "fa": "وسیله بینایی"
+    },
+    {
+     "id": "r4",
+     "fa": "تا"
+    },
+    {
+     "id": "r5",
+     "fa": "سده‌ها"
+    },
+    {
+     "id": "r6",
+     "fa": "شاید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {
+    "r5": "false_friend",
+    "r6": "false_friend"
+   },
+   "explanationFa": "«قرون» در قرآن به معنای اقوام گذشته است نه سده‌ها. همچنین «لعلّ» در اینجا برای بیان نتیجه و با معنای «تا» به کار رفته است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1503",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "ترجمه صحیح این آیه کدام است؟",
+   "stem": {
+    "verse": 43
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و پس از آنکه اقوام پیشین را [چون قوم نوح و هود و صالح و لوط] هلاک کردیم، به موسی کتاب دادیم که برای مردم وسیله بینایی و هدایت و رحمتی بود، تا متذکّر و هوشیار شوند."
+    },
+    {
+     "id": "o2",
+     "fa": "و پس از آنکه اقوام پیشین را هلاک کردیم، به موسی کتاب دادیم تا برای مردم وسیله بینایی و هدایت و رحمتی باشد، شاید متذکّر و هوشیار شوند."
+    },
+    {
+     "id": "o3",
+     "fa": "ما به موسی کتاب دادیم پیش از آنکه اقوام گذشته را هلاک کنیم، تا برای مردم مایه بینایی و هدایت و رحمت باشد، تا پند گیرند."
+    },
+    {
+     "id": "o4",
+     "fa": "و پس از آنکه سده‌های نخستین را هلاک کردیم، به موسی کتاب دادیم که برای مردم بصیرت و هدایتی بود، تا متذکر شوند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "ترجمه دقیق و کامل انصاریان گزینه اول است. در گزینه دوم «شاید» جایگزین «تا» شده و گزینه چهارم از معانی فریبنده «سده‌ها» و «بصیرت» استفاده کرده است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1505",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43",
+    "w:w28_043_011"
+   ],
+   "promptFa": "ترجمه عبارت «بَصَآئِرَ لِلنَّاسِ وَهُدًۭى وَرَحْمَةًۭ» در این آیه چیست؟",
+   "stem": {
+    "verse": 43
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "که برای مردم وسیله بینایی و هدایت و رحمتی بود،"
+    },
+    {
+     "id": "o2",
+     "fa": "که برای مردم مایه بینایی و نوری بود،"
+    },
+    {
+     "id": "o3",
+     "fa": "که هدایت و رحمتی برای مؤمنان بود،"
+    },
+    {
+     "id": "o4",
+     "fa": "که وسیله بینایی و رحمتی برای عالمیان بود،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«بَصَآئِر» جمع بصیرت، بینش‌ها و وسیله‌های بینایی دل است و «لِلنَّاسِ» به طور عام به مردم اشاره دارد نه فقط مؤمنان یا عالمیان.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1506",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 43,
+   "targets": [
+    "vr:43",
+    "vt:43"
+   ],
+   "promptFa": "کدام آیه با این ترجمه مطابقت دارد؟ «و پس از آنکه اقوام پیشین را ... هلاک کردیم، به موسی کتاب دادیم ...»",
+   "stem": {
+    "verse": 43,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 43,
+      "from": 1,
+      "to": 16
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 42,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 44,
+      "from": 1,
+      "to": 13
+     }
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_043_001",
+      "w28_043_002",
+      "w28_043_003",
+      "w28_043_004",
+      "w28_043_005",
+      "w28_043_015",
+      "w28_043_016"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این آیه بیانگر اعطای کتاب به حضرت موسی پس از نابودی اقوام گذشته (قوم نوح، هود و ...) است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1507",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "کدام کلمات دقیقاً معادل «و پس از آنکه اقوام پیشین را هلاک کردیم» هستند؟",
+   "stem": {
+    "verse": 43,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_043_005",
+      "w28_043_006",
+      "w28_043_007",
+      "w28_043_008",
+      "w28_043_009",
+      "w28_043_010"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_043_001",
+      "w28_043_002",
+      "w28_043_003",
+      "w28_043_004"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_042_001",
+      "w28_042_002",
+      "w28_042_003",
+      "w28_042_004"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_043_011",
+      "w28_043_012",
+      "w28_043_013",
+      "w28_043_014"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«مِن بَعْدِ» (پس از)، «مَا أَهْلَكْنَا» (آنکه هلاک کردیم)، «ٱلْقُرُونَ ٱلْأُولَى» (اقوام پیشین).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1508",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43",
+    "w:w28_043_016"
+   ],
+   "promptFa": "عبارت «تا متذکّر و هوشیار شوند» ترجمه کدام بخش از آیه است؟",
+   "stem": {
+    "verse": 43,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "words": [
+      "w28_043_015",
+      "w28_043_016"
+     ]
+    },
+    {
+     "id": "o2",
+     "words": [
+      "w28_043_013",
+      "w28_043_014"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "w28_044_012",
+      "w28_044_013"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "w28_042_009",
+      "w28_042_010"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«لَعَلَّ» در اینجا به معنای امید به نتیجه و «تا» است و «يَتَذَكَّرُونَ» یعنی متذکر و هوشیار شوند.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1509",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۴۳ را به ترتیب صحیح مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و پس از آنکه اقوام پیشین را [چون قوم نوح و هود و صالح و لوط] هلاک کردیم،",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "به موسی کتاب دادیم",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "که برای مردم وسیله بینایی و هدایت و رحمتی بود،",
+     "wordIdx": [
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "تا متذکّر و هوشیار شوند.",
+     "wordIdx": [
+      15,
+      16
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و آنان را در این دنیا با لعنت بدرقه کردیم،",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "به دلیل ساختار زبان فارسی، فعل «دادیم» (آتینا) پس از قید زمان (من بعد...) در ترجمه می‌آید.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1510",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 6,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "بخش پایانی ترجمه آیه ۴۳ را با توجه به کلمات عربی مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "که برای مردم",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "وسیله بینایی",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و هدایت",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و رحمتی بود،",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "تا متذکّر",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "و هوشیار شوند.",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "رحمتی فراگیر",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "b7": "near_miss"
+   },
+   "explanationFa": "ترتیب کلمات: بصائر (وسیله بینایی) للناس (که برای مردم) و هدی (و هدایت) و رحمة (و رحمتی بود) لعلهم یتذکرون (تا متذکر و هوشیار شوند).",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1511",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 43,
+   "targets": [
+    "vt:43",
+    "w:w28_043_009",
+    "w:w28_043_011"
+   ],
+   "promptFa": "جاهای خالی ترجمه را با عبارات مناسب پر کنید.",
+   "stem": {
+    "verse": 43,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 13,
+      "text": "اقوام پیشین"
+     },
+     {
+      "start": 109,
+      "text": "وسیله بینایی"
+     },
+     {
+      "start": 151,
+      "text": "متذکّر و هوشیار شوند"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "اقوام پیشین",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "وسیله بینایی",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "متذکّر و هوشیار شوند",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "سده‌های نخستین",
+     "decoy": true
+    },
+    {
+     "id": "b5",
+     "fa": "پندپذیر شوند",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "9": "b1",
+    "11": "b2",
+    "16": "b3"
+   },
+   "distractorTags": {
+    "b4": "false_friend",
+    "b5": "similar_verse"
+   },
+   "explanationFa": "«القرون الأولی» در اینجا به معنای اقوام پیشین است و «بصائر» جمع بصیرت به عنوان وسیله بینایی دل ترجمه می‌شود.",
+   "unitId": "u_p390b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p390b_A_1512",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 43,
+   "targets": [
+    "vt:43"
+   ],
+   "promptFa": "کلمات جاافتاده در ترجمه آیه را انتخاب کنید.",
+   "stem": {
+    "verse": 43,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 70,
+      "text": "هلاک کردیم"
+     },
+     {
+      "start": 133,
+      "text": "و هدایت و رحمتی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "هلاک کردیم",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و هدایت و رحمتی",
+     "wordIdx": [
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "آفریدیم",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "نور و نعمتی",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "8": "b1",
+    "13": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "near_miss"
+   },
+   "explanationFa": "أهلکنا یعنی هلاک کردیم و «هدی و رحمة» معادل هدایت و رحمتی است.",
+   "unitId": "u_p390b",
+   "part": "A"
+  }
+ ],
+ "issues": [
+  "[u_p390b.partA2.json] ترتیب عربی و فارسی چانک‌ها یکسان نیست؛ چانک‌ها طبق اندیس عربی و faSegments طبق ترتیب ترجمه آمده است.",
+  "[u_p390b.partA3.json] ورودی فقط آیه ۳۹ را داشت؛ گزینه‌های عربی انحرافی از کلمات همین آیه گرفته شد.",
+  "[u_p390b.partA3.json] معنای کلمات غیرسخت (مثل فِى، هُوَ، لَا) در ورودی نبود و به‌صورت کوتاه افزوده شد.",
+  "[u_p390b.partA3.json] earlierHardWords در ورودی نبود و کلمه‌ی مرور در جفت‌سازی‌ها نیامد.",
+  "[u_p390b.partA4.json] کلمه‌ی w28_040_005 در ورودی علامت وقف «ۖ» دارد؛ عیناً در گزینه‌ها آمده است.",
+  "[u_p390b.partA4.json] earlierHardWords در ورودی نبود؛ در جفت‌سازی کلمه‌ی مروری نیامده است.",
+  "[u_p390b.partA4.json] برای کلمات غیرسخت در جفت‌سازی، معنا از `fa` آیه‌ی ۴۰ گرفته شده است.",
+  "[u_p390b.partA6.json] earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها از کلمات غیرسخت همین آیه برای تکمیل ۵ جفت استفاده شد.",
+  "[u_p390b.partA7.json] earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در جفت‌سازی نیامد.",
+  "[u_p390b.partA7.json] سهمیه‌ی ۳ جفت‌سازی برای هر کلمه با ۴ سوال و هر سه کلمه در همه‌ی آن‌ها رعایت شد.",
+  "[u_p390b.partA8.json] جفت‌سازی‌ها فقط از کلمات همین آیه ساخته شد، چون earlierHardWords در ورودی نبود.",
+  "[u_p390b.partA8.json] معنای کلمات غیرسخت (gloss) را از ترجمه‌ی همین آیه گرفتم و لغت‌نامه‌ی آن‌ها در ورودی نبود."
+ ],
+ "sourceFiles": [
+  "u_p390b.partA.json",
+  "u_p390b.partA2.json",
+  "u_p390b.partA3.json",
+  "u_p390b.partA4.json",
+  "u_p390b.partA5.json",
+  "u_p390b.partA6.json",
+  "u_p390b.partA7.json",
+  "u_p390b.partA8.json",
+  "u_p390b.partA9.json",
+  "u_p390b.partA10.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 25,
+  "files": 10
+ }
+}

@@ -1,0 +1,7 @@
+[#4 q_u_p390a_A_0904 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p390a_A_0906 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p390a_A_0907 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p390a_A_0909 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p390a_A_0910 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p390a_A_0911 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p390a_A_0912 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.

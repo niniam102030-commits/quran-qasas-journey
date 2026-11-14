@@ -1,0 +1,2859 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392b",
+  "part": "C",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392b_C_0101",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۷ کدام است؟",
+      "stem": {
+        "verse": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸ (وَكَمْ أَهْلَكْنَا...) مستقیماً پس از آیه ۵۷ قرار دارد."
+    },
+    {
+      "id": "q_u_p392b_C_0102",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:58"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۸ کدام است؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹ (وَمَا كَانَ رَبُّكَ...) مستقیماً پس از آیه ۵۸ قرار دارد."
+    },
+    {
+      "id": "q_u_p392b_C_0103",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۷ را بسازید.",
+      "stem": {
+        "verse": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بَطِرَتْ مَعِيشَتَهَا ۖ فَتِلْكَ مَسَـٰكِنُهُمْ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَمْ تُسْكَن مِّنۢ بَعْدِهِمْ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِلَّا قَلِيلًۭا ۖ وَكُنَّا نَحْنُ ٱلْوَٰرِثِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸ پس از این آیه قرار دارد."
+    },
+    {
+      "id": "q_u_p392b_C_0104",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۷ را با دقت بسازید.",
+      "stem": {
+        "verse": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَكَمْ أَهْلَكْنَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن قَرْيَةٍۭ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بَطِرَتْ مَعِيشَتَهَا ۖ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَتِلْكَ مَسَـٰكِنُهُمْ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَمْ تُسْكَن",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِّنۢ بَعْدِهِمْ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِلَّا قَلِيلًۭا ۖ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَكُنَّا نَحْنُ ٱلْوَٰرِثِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "ٱلْقُرَىٰ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "neighbor_word"
+      },
+      "explanationFa": "متن دقیق آیه ۵۸ سوره قصص."
+    },
+    {
+      "id": "q_u_p392b_C_0105",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:58"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۸ را بسازید.",
+      "stem": {
+        "verse": 58
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "حَتَّىٰ يَبْعَثَ فِىٓ أُمِّهَا رَسُولًۭا",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا ۚ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا كُنَّا مُهْلِكِى ٱلْقُرَىٰٓ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَّا وَأَهْلُهَا ظَـٰلِمُونَ",
+          "wordIdx": [
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِلَّا قَلِيلًۭا ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹ پس از این آیه قرار دارد."
+    },
+    {
+      "id": "q_u_p392b_C_0106",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:58"
+      ],
+      "promptFa": "آیه بعد از آیه ۵۸ را با قطعات کوچکتر بسازید.",
+      "stem": {
+        "verse": 58
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا كَانَ رَبُّكَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مُهْلِكَ ٱلْقُرَىٰ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "حَتَّىٰ يَبْعَثَ فِىٓ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أُمِّهَا رَسُولًۭا",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا ۚ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَمَا كُنَّا مُهْلِكِى",
+          "wordIdx": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْقُرَىٰٓ إِلَّا",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَأَهْلُهَا ظَـٰلِمُونَ",
+          "wordIdx": [
+            19,
+            20
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "وَكُنَّا نَحْنُ ٱلْوَٰرِثِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "متن دقیق آیه ۵۹ سوره قصص."
+    },
+    {
+      "id": "q_u_p392b_C_0107",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:56"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۷ کدام است؟",
+      "stem": {
+        "verse": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۶ (إِنَّكَ لَا تَهْدِى...) پیش از آیه ۵۷ است."
+    },
+    {
+      "id": "q_u_p392b_C_0108",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۸ کدام است؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷ (وَقَالُوٓا۟ إِن نَّتَّبِعِ...) پیش از آیه ۵۸ است."
+    },
+    {
+      "id": "q_u_p392b_C_0109",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:56"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۷ را بسازید.",
+      "stem": {
+        "verse": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ يَهْدِى",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۶ پیش از این آیه است."
+    },
+    {
+      "id": "q_u_p392b_C_0110",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 57,
+      "targets": [
+        "sq:56"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۷ را دقیق بسازید.",
+      "stem": {
+        "verse": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَهْدِى مَنْ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَحْبَبْتَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَهْدِى مَن",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَشَآءُ ۚ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَهُوَ أَعْلَمُ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "أَعْمَـٰلُنَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "neighbor_word"
+      },
+      "explanationFa": "متن دقیق آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392b_C_0111",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۸ را بسازید.",
+      "stem": {
+        "verse": 58
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نُتَخَطَّفْ مِنْ أَرْضِنَآ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَوَلَمْ نُمَكِّن لَّهُمْ حَرَمًا ءَامِنًۭا",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُجْبَىٰٓ إِلَيْهِ ثَمَرَٰتُ كُلِّ شَىْءٍۢ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "رِّزْقًۭا مِّن لَّدُنَّا",
+          "wordIdx": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷ پیش از این آیه است."
+    },
+    {
+      "id": "q_u_p392b_C_0112",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه قبل از آیه ۵۸ را با قطعات کوچک بسازید.",
+      "stem": {
+        "verse": 58
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْهُدَىٰ مَعَكَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نُتَخَطَّفْ مِنْ أَرْضِنَآ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَوَلَمْ نُمَكِّن لَّهُمْ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "حَرَمًا ءَامِنًۭا",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُجْبَىٰٓ إِلَيْهِ ثَمَرَٰتُ",
+          "wordIdx": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كُلِّ شَىْءٍۢ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "رِّزْقًۭا مِّن لَّدُنَّا",
+          "wordIdx": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ",
+          "wordIdx": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "لَا يَعْلَمُونَ",
+          "wordIdx": [
+            24,
+            25
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "مِن قَرْيَةٍۭ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
+      "distractorTags": {
+        "b11": "neighbor_word"
+      },
+      "explanationFa": "متن دقیق آیه ۵۷."
+    },
+    {
+      "id": "q_u_p392b_C_0113",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:56",
+        "sq:57"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست مرتب کنید.",
+      "stem": {
+        "verses": [
+          56,
+          57,
+          58
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        },
+        {
+          "id": "b2",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        },
+        {
+          "id": "b3",
+          "num": 56,
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...",
+          "verse": 56
+        },
+        {
+          "id": "b4",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "decoy": true,
+          "verse": 59
+        }
+      ],
+      "answer": [
+        "b3",
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب آیات: ۵۶، ۵۷، ۵۸."
+    },
+    {
+      "id": "q_u_p392b_C_0114",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:57",
+        "sq:58"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست مرتب کنید.",
+      "stem": {
+        "verses": [
+          57,
+          58,
+          59
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        },
+        {
+          "id": "b2",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "verse": 59
+        },
+        {
+          "id": "b3",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        },
+        {
+          "id": "b4",
+          "num": 56,
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...",
+          "decoy": true,
+          "verse": 56
+        }
+      ],
+      "answer": [
+        "b3",
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب آیات: ۵۷، ۵۸، ۵۹."
+    },
+    {
+      "id": "q_u_p392b_C_0115",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:58",
+        "sq:59"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست مرتب کنید.",
+      "stem": {
+        "verses": [
+          58,
+          59,
+          60
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 60,
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ...",
+          "verse": 60
+        },
+        {
+          "id": "b2",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        },
+        {
+          "id": "b3",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "verse": 59
+        },
+        {
+          "id": "b4",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "decoy": true,
+          "verse": 57
+        }
+      ],
+      "answer": [
+        "b2",
+        "b3",
+        "b1"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب آیات: ۵۸، ۵۹، ۶۰."
+    },
+    {
+      "id": "q_u_p392b_C_0116",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:55",
+        "sq:56",
+        "sq:57"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درست مرتب کنید.",
+      "stem": {
+        "verses": [
+          55,
+          56,
+          57,
+          58
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 56,
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...",
+          "verse": 56
+        },
+        {
+          "id": "b2",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        },
+        {
+          "id": "b3",
+          "num": 55,
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...",
+          "verse": 55
+        },
+        {
+          "id": "b4",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        },
+        {
+          "id": "b5",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "decoy": true,
+          "verse": 59
+        }
+      ],
+      "answer": [
+        "b3",
+        "b1",
+        "b4",
+        "b2"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب آیات: ۵۵ تا ۵۸."
+    },
+    {
+      "id": "q_u_p392b_C_0117",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:57",
+        "sq:58"
+      ],
+      "promptFa": "تمامی آیات این بخش را به ترتیب مرتب کنید.",
+      "stem": {
+        "verses": [
+          57,
+          58,
+          59
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        },
+        {
+          "id": "b2",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "verse": 59
+        },
+        {
+          "id": "b3",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        }
+      ],
+      "answer": [
+        "b3",
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کل آیات این واحد: ۵۷، ۵۸، ۵۹."
+    },
+    {
+      "id": "q_u_p392b_C_0118",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p392b",
+        "sq:57",
+        "sq:58"
+      ],
+      "promptFa": "تمامی آیات این بخش را به ترتیب مرتب کنید.",
+      "stem": {
+        "verses": [
+          57,
+          58,
+          59
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 59,
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "verse": 59
+        },
+        {
+          "id": "b2",
+          "num": 57,
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        },
+        {
+          "id": "b3",
+          "num": 58,
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ...",
+          "verse": 58
+        }
+      ],
+      "answer": [
+        "b2",
+        "b3",
+        "b1"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کل آیات این واحد: ۵۷، ۵۸، ۵۹."
+    },
+    {
+      "id": "q_u_p392b_C_0119",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 57
+        },
+        {
+          "id": "o2",
+          "num": 56
+        },
+        {
+          "id": "o3",
+          "num": 58
+        },
+        {
+          "id": "o4",
+          "num": 55
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه ۵۷ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0120",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 57
+        },
+        {
+          "id": "o2",
+          "num": 47
+        },
+        {
+          "id": "o3",
+          "num": 67
+        },
+        {
+          "id": "o4",
+          "num": 37
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "این آیه ۵۷ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0121",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 57
+        },
+        {
+          "id": "o2",
+          "num": 58
+        },
+        {
+          "id": "o3",
+          "num": 59
+        },
+        {
+          "id": "o4",
+          "num": 60
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۷ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0122",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 58
+        },
+        {
+          "id": "o2",
+          "num": 57
+        },
+        {
+          "id": "o3",
+          "num": 59
+        },
+        {
+          "id": "o4",
+          "num": 60
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۸ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0123",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 58
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 68
+        },
+        {
+          "id": "o4",
+          "num": 38
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "این آیه ۵۸ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0124",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 58
+        },
+        {
+          "id": "o2",
+          "num": 56
+        },
+        {
+          "id": "o3",
+          "num": 57
+        },
+        {
+          "id": "o4",
+          "num": 55
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۸ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0125",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 59
+        },
+        {
+          "id": "o2",
+          "num": 58
+        },
+        {
+          "id": "o3",
+          "num": 60
+        },
+        {
+          "id": "o4",
+          "num": 61
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۹ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0126",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 59
+        },
+        {
+          "id": "o2",
+          "num": 49
+        },
+        {
+          "id": "o3",
+          "num": 69
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "این آیه ۵۹ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0127",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 59
+        },
+        {
+          "id": "o2",
+          "num": 57
+        },
+        {
+          "id": "o3",
+          "num": 58
+        },
+        {
+          "id": "o4",
+          "num": 56
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۹ سوره قصص است."
+    },
+    {
+      "id": "q_u_p392b_C_0128",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "آیه ۵۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷: وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0129",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "آیه ۵۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷: وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0130",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "آیه ۵۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷: وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0131",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "آیه ۵۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸: وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0132",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "آیه ۵۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸: وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0133",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "آیه ۵۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸: وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0134",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "آیه ۵۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹: وَمَا كَانَ رَبُّكَ مُهْلِكَ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0135",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "آیه ۵۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹: وَمَا كَانَ رَبُّكَ مُهْلِكَ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0136",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "آیه ۵۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹: وَمَا كَانَ رَبُّكَ مُهْلِكَ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0137",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:56",
+        "vn:57",
+        "vn:58",
+        "vn:59"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 56
+        },
+        {
+          "id": "l2",
+          "num": 57
+        },
+        {
+          "id": "l3",
+          "num": 58
+        },
+        {
+          "id": "l4",
+          "num": 59
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ"
+        },
+        {
+          "id": "r5",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "هر آیه با شماره صحیح خود جفت شده است."
+    },
+    {
+      "id": "q_u_p392b_C_0138",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:57",
+        "vn:58",
+        "vn:59",
+        "vn:60"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 57
+        },
+        {
+          "id": "l2",
+          "num": 58
+        },
+        {
+          "id": "l3",
+          "num": 59
+        },
+        {
+          "id": "l4",
+          "num": 60
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ"
+        },
+        {
+          "id": "r5",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "هر آیه با شماره صحیح خود جفت شده است."
+    },
+    {
+      "id": "q_u_p392b_C_0139",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:55",
+        "vn:57",
+        "vn:58",
+        "vn:59"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 55
+        },
+        {
+          "id": "l2",
+          "num": 57
+        },
+        {
+          "id": "l3",
+          "num": 58
+        },
+        {
+          "id": "l4",
+          "num": 59
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ بَطِرَتْ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ"
+        },
+        {
+          "id": "r5",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "هر آیه با شماره صحیح خود جفت شده است."
+    },
+    {
+      "id": "q_u_p392b_C_0140",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 57,
+      "targets": [
+        "vr:57",
+        "vn:57"
+      ],
+      "promptFa": "آیه ۵۷ را بسازید.",
+      "stem": {
+        "num": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نُتَخَطَّفْ مِنْ أَرْضِنَآ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَوَلَمْ نُمَكِّن لَّهُمْ حَرَمًا ءَامِنًۭا",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُجْبَىٰٓ إِلَيْهِ ثَمَرَٰتُ كُلِّ شَىْءٍۢ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "رِّزْقًۭا مِّن لَّدُنَّا",
+          "wordIdx": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "متن آیه ۵۷ سوره قصص به این ترتیب است."
+    },
+    {
+      "id": "q_u_p392b_C_0141",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 58,
+      "targets": [
+        "vr:58",
+        "vn:58"
+      ],
+      "promptFa": "آیه ۵۸ را بسازید.",
+      "stem": {
+        "num": 58
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بَطِرَتْ مَعِيشَتَهَا ۖ فَتِلْكَ مَسَـٰكِنُهُمْ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَمْ تُسْكَن مِّنۢ بَعْدِهِمْ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِلَّا قَلِيلًۭا ۖ وَكُنَّا نَحْنُ ٱلْوَٰرِثِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "متن آیه ۵۸ سوره قصص به این ترتیب است."
+    },
+    {
+      "id": "q_u_p392b_C_0142",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 59,
+      "targets": [
+        "vr:59",
+        "vn:59"
+      ],
+      "promptFa": "آیه ۵۹ را بسازید.",
+      "stem": {
+        "num": 59
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "حَتَّىٰ يَبْعَثَ فِىٓ أُمِّهَا رَسُولًۭا",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا ۚ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا كُنَّا مُهْلِكِى ٱلْقُرَىٰٓ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَّا وَأَهْلُهَا ظَـٰلِمُونَ",
+          "wordIdx": [
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "متن آیه ۵۹ سوره قصص به این ترتیب است."
+    },
+    {
+      "id": "q_u_p392b_C_0143",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 57,
+      "targets": [
+        "vn:57"
+      ],
+      "promptFa": "آیه ۵۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 57
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۷: وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0144",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 58,
+      "targets": [
+        "vn:58"
+      ],
+      "promptFa": "آیه ۵۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۸: وَكَمْ أَهْلَكْنَا مِن قَرْيَةٍۭ... است."
+    },
+    {
+      "id": "q_u_p392b_C_0145",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 59,
+      "targets": [
+        "vn:59"
+      ],
+      "promptFa": "آیه ۵۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 59
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۹: وَمَا كَانَ رَبُّكَ مُهْلِكَ... است."
+    }
+  ],
+  "issues": []
+}

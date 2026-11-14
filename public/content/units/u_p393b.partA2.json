@@ -1,0 +1,2239 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393b",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393b_A_0261",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معنای کلمه «فَعَمِيَتْ» چیست؟",
+      "stem": {
+        "wordId": "w28_066_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس کور و پوشیده ماند"
+        },
+        {
+          "id": "o2",
+          "fa": "نابینا شد"
+        },
+        {
+          "id": "o3",
+          "fa": "آشکار می‌کند"
+        },
+        {
+          "id": "o4",
+          "fa": "پنهان می‌کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«فعمیت» در اینجا کنایه از پوشیده ماندن است و ترجمه آن به «نابینا شد» در این سیاق نادرست است."
+    },
+    {
+      "id": "q_u_p393b_A_0262",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معنای کلمه «فَعَمِيَتْ» چیست؟",
+      "stem": {
+        "wordId": "w28_066_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آشکار می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "پس کور و پوشیده ماند"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌آفریند"
+        },
+        {
+          "id": "o4",
+          "fa": "نابینا شد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ریشه «عمي» به معنای پوشیده ماندن و کور شدن اخبار و دلایل است."
+    },
+    {
+      "id": "q_u_p393b_A_0263",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 66,
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معنای «فَعَمِيَتْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_066_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نابینا شد"
+        },
+        {
+          "id": "o2",
+          "fa": "اخبار"
+        },
+        {
+          "id": "o3",
+          "fa": "پس کور و پوشیده ماند"
+        },
+        {
+          "id": "o4",
+          "fa": "از یکدیگر می‌پرسند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در این آیه پوشیده ماندن اخبار (الأنباء) مد نظر است."
+    },
+    {
+      "id": "q_u_p393b_A_0264",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 66,
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معنای «فَعَمِيَتْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_066_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روز"
+        },
+        {
+          "id": "o2",
+          "fa": "اخبار"
+        },
+        {
+          "id": "o3",
+          "fa": "نابینا شد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس کور و پوشیده ماند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "ترجمه صحیح «پس کور و پوشیده ماند» است و نباید با نابینایی جسمی خلط شود."
+    },
+    {
+      "id": "q_u_p393b_A_0265",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معادل عربی «پس کور و پوشیده ماند» کدام است؟",
+      "stem": {
+        "fa": "پس کور و پوشیده ماند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُعْلِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَتَسَآءَلُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «فَعَمِيَتْ» به معنای مستور ماندن و کور ماندن است."
+    },
+    {
+      "id": "q_u_p393b_A_0266",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معادل عربی «پس کور و پوشیده ماند» کدام است؟",
+      "stem": {
+        "fa": "پس کور و پوشیده ماند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَنۢبَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَخْلُقُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «فَعَمِيَتْ» از ریشه (ع م ي) است."
+    },
+    {
+      "id": "q_u_p393b_A_0267",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001"
+      ],
+      "promptFa": "معادل عربی «پس کور و پوشیده ماند» کدام است؟",
+      "stem": {
+        "fa": "پس کور و پوشیده ماند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَعْلَمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "تُكِنُّ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "گزینه صحیح «فَعَمِيَتْ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0268",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معنای کلمه «يَتَسَآءَلُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_066_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سوال می‌شوند"
+        },
+        {
+          "id": "o2",
+          "fa": "از یکدیگر پرسش می‌کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "پنهان می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "برمی‌گزینند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "این فعل از باب تفاعل است و معنای مشارکت دوطرفه یعنی «از یکدیگر پرسیدن» می‌دهد."
+    },
+    {
+      "id": "q_u_p393b_A_0269",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معنای کلمه «يَتَسَآءَلُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_066_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پنهان می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "سوال می‌شوند"
+        },
+        {
+          "id": "o3",
+          "fa": "از یکدیگر پرسش می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "آشکار می‌کنند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "باب تفاعل بر تعامل دوطرفه دلالت دارد."
+    },
+    {
+      "id": "q_u_p393b_A_0270",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 66,
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معنای «يَتَسَآءَلُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_066_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از یکدیگر پرسش می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "نمی‌پرسند"
+        },
+        {
+          "id": "o3",
+          "fa": "سوال می‌شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "پوشیده ماند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه با «لا» در آیه نفی شده است، اما خود «يتساءلون» به تنهایی به معنای «از یکدیگر پرسش می‌کنند» است."
+    },
+    {
+      "id": "q_u_p393b_A_0271",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 66,
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معنای «يَتَسَآءَلُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_066_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سوال می‌شوند"
+        },
+        {
+          "id": "o2",
+          "fa": "اخبار"
+        },
+        {
+          "id": "o3",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "o4",
+          "fa": "از یکدیگر پرسش می‌کنند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "گزینه صحیح «از یکدیگر پرسش می‌کنند» است."
+    },
+    {
+      "id": "q_u_p393b_A_0272",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معادل عربی «از یکدیگر پرسش می‌کنند» کدام است؟",
+      "stem": {
+        "fa": "از یکدیگر پرسش می‌کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُشْرِكُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُعْلِنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَعَمِيَتْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل «يَتَسَآءَلُونَ» از ریشه (س أ ل) در باب تفاعل است."
+    },
+    {
+      "id": "q_u_p393b_A_0273",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معادل عربی «از یکدیگر پرسش می‌کنند» کدام است؟",
+      "stem": {
+        "fa": "از یکدیگر پرسش می‌کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَخْلُقُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَنۢبَآءُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مضارع مرفوع به ثبوت نون است."
+    },
+    {
+      "id": "q_u_p393b_A_0274",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007"
+      ],
+      "promptFa": "معادل عربی «از یکدیگر پرسش می‌کنند» کدام است؟",
+      "stem": {
+        "fa": "از یکدیگر پرسش می‌کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُشْرِكُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَخْتَارُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَعَمِيَتْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "پاسخ صحیح «يَتَسَآءَلُونَ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0275",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معنای کلمه «مَا» چیست؟",
+      "stem": {
+        "wordId": "w28_068_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نیست"
+        },
+        {
+          "id": "o2",
+          "fa": "آنچه"
+        },
+        {
+          "id": "o3",
+          "fa": "چه چیزی"
+        },
+        {
+          "id": "o4",
+          "fa": "هرگز"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در این عبارت «ما» نافیه است و معنای نفی (نیست / نبود) می‌دهد، نه موصول یا استفهام."
+    },
+    {
+      "id": "q_u_p393b_A_0276",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معنای کلمه «مَا» چیست؟",
+      "stem": {
+        "wordId": "w28_068_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنچه"
+        },
+        {
+          "id": "o2",
+          "fa": "نیست"
+        },
+        {
+          "id": "o3",
+          "fa": "اختیار"
+        },
+        {
+          "id": "o4",
+          "fa": "چه"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ما» در اینجا عمل نفی را انجام می‌دهد."
+    },
+    {
+      "id": "q_u_p393b_A_0277",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 68,
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معنای «مَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_068_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنچه"
+        },
+        {
+          "id": "o2",
+          "fa": "چه چیزی"
+        },
+        {
+          "id": "o3",
+          "fa": "نیست"
+        },
+        {
+          "id": "o4",
+          "fa": "اختیار"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «ما کان لهم الخیرة» یعنی حق انتخابی برای آنان نیست."
+    },
+    {
+      "id": "q_u_p393b_A_0278",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 68,
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معنای «مَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_068_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنچه"
+        },
+        {
+          "id": "o2",
+          "fa": "اختیار"
+        },
+        {
+          "id": "o3",
+          "fa": "برای آنان"
+        },
+        {
+          "id": "o4",
+          "fa": "نیست"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در اینجا برای سلب اختیار به کار رفته است."
+    },
+    {
+      "id": "q_u_p393b_A_0279",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معادل عربی «نیست (حرف نفی)» کدام است؟",
+      "stem": {
+        "fa": "نیست (حرف نفی)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَا"
+        },
+        {
+          "id": "o2",
+          "ar": "لَا"
+        },
+        {
+          "id": "o3",
+          "ar": "لَمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَنْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در آیات این بخش «مَا» نافیه به کار رفته است."
+    },
+    {
+      "id": "q_u_p393b_A_0280",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معادل عربی «نیست (حرف نفی)» کدام است؟",
+      "stem": {
+        "fa": "نیست (حرف نفی)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَا"
+        },
+        {
+          "id": "o2",
+          "ar": "مَا"
+        },
+        {
+          "id": "o3",
+          "ar": "عَمَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "كَانَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "گزینه صحیح «مَا» است."
+    },
+    {
+      "id": "q_u_p393b_A_0281",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006"
+      ],
+      "promptFa": "معادل عربی «نیست (حرف نفی)» کدام است؟",
+      "stem": {
+        "fa": "نیست (حرف نفی)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كَانَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَهُمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَا"
+        },
+        {
+          "id": "o4",
+          "ar": "لَا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "پاسخ صحیح «مَا» است."
+    },
+    {
+      "id": "q_u_p393b_A_0282",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معنای کلمه «ٱلْخِيَرَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_068_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خیر و نیکی"
+        },
+        {
+          "id": "o2",
+          "fa": "حق انتخاب و اختیار"
+        },
+        {
+          "id": "o3",
+          "fa": "برگزیده"
+        },
+        {
+          "id": "o4",
+          "fa": "بهترین"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این کلمه اسم مصدر به معنای اختیار و انتخاب است و با خیر و نیکی متفاوت است."
+    },
+    {
+      "id": "q_u_p393b_A_0283",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معنای کلمه «ٱلْخِيَرَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_068_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حق انتخاب و اختیار"
+        },
+        {
+          "id": "o2",
+          "fa": "نیکی‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "خیر و نیکی"
+        },
+        {
+          "id": "o4",
+          "fa": "نیکوکار"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "گزینه صحیح «حق انتخاب و اختیار» است."
+    },
+    {
+      "id": "q_u_p393b_A_0284",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 68,
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معنای «ٱلْخِيَرَةُ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_068_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خیر و نیکی"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌آفریند"
+        },
+        {
+          "id": "o3",
+          "fa": "حق انتخاب و اختیار"
+        },
+        {
+          "id": "o4",
+          "fa": "منزه است"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در برابر اراده الهی، حق انتخاب و اختیاری برای آنان نیست."
+    },
+    {
+      "id": "q_u_p393b_A_0285",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 68,
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معنای «ٱلْخِيَرَةُ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_068_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برمی‌گزیند"
+        },
+        {
+          "id": "o2",
+          "fa": "خیر و نیکی"
+        },
+        {
+          "id": "o3",
+          "fa": "شریک می‌گیرند"
+        },
+        {
+          "id": "o4",
+          "fa": "حق انتخاب و اختیار"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ترجمه صحیح «حق انتخاب و اختیار» است."
+    },
+    {
+      "id": "q_u_p393b_A_0286",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معادل عربی «حق انتخاب و اختیار» کدام است؟",
+      "stem": {
+        "fa": "حق انتخاب و اختیار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَخْتَارُ"
+        },
+        {
+          "id": "o3",
+          "ar": "صُدُورُهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "سُبْحَـٰنَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «ٱلْخِيَرَةُ» هم‌ریشه با «يَخْتَارُ» و اسم است."
+    },
+    {
+      "id": "q_u_p393b_A_0287",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معادل عربی «حق انتخاب و اختیار» کدام است؟",
+      "stem": {
+        "fa": "حق انتخاب و اختیار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَخْتَارُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَعْلَمُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَنۢبَآءُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "گزینه صحیح «ٱلْخِيَرَةُ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0288",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009"
+      ],
+      "promptFa": "معادل عربی «حق انتخاب و اختیار» کدام است؟",
+      "stem": {
+        "fa": "حق انتخاب و اختیار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "صُدُورُهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَمَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "o4",
+          "ar": "سُبْحَـٰنَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "پاسخ صحیح «ٱلْخِيَرَةُ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0289",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معنای کلمه «تُكِنُّ» چیست؟",
+      "stem": {
+        "wordId": "w28_069_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "o2",
+          "fa": "اکنون"
+        },
+        {
+          "id": "o3",
+          "fa": "آشکار می‌کند"
+        },
+        {
+          "id": "o4",
+          "fa": "سینه‌ها"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه «كنن» به معنای پوشاندن و پنهان کردن است و نباید با «اکنون» اشتباه شود."
+    },
+    {
+      "id": "q_u_p393b_A_0290",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معنای کلمه «تُكِنُّ» چیست؟",
+      "stem": {
+        "wordId": "w28_069_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اکنون"
+        },
+        {
+          "id": "o2",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌آفریند"
+        },
+        {
+          "id": "o4",
+          "fa": "می‌داند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "گزینه صحیح «پنهان می‌کند» است."
+    },
+    {
+      "id": "q_u_p393b_A_0291",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 69,
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معنای «تُكِنُّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_069_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اکنون"
+        },
+        {
+          "id": "o2",
+          "fa": "آشکار می‌کند"
+        },
+        {
+          "id": "o3",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "o4",
+          "fa": "سینه‌ها"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تکن در تقابل با یعلنون (آشکار می‌کنند) آمده و به معنای پنهان کردن است."
+    },
+    {
+      "id": "q_u_p393b_A_0292",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 69,
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معنای «تُكِنُّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_069_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌داند"
+        },
+        {
+          "id": "o2",
+          "fa": "اکنون"
+        },
+        {
+          "id": "o3",
+          "fa": "سینه"
+        },
+        {
+          "id": "o4",
+          "fa": "پنهان می‌کند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ترجمه صحیح «پنهان می‌کند» است."
+    },
+    {
+      "id": "q_u_p393b_A_0293",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معادل عربی «پنهان می‌کند» کدام است؟",
+      "stem": {
+        "fa": "پنهان می‌کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُعْلِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَخْلُقُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْلَمُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل «تُكِنُّ» برای پنهان کردن در دل به کار می‌رود."
+    },
+    {
+      "id": "q_u_p393b_A_0294",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معادل عربی «پنهان می‌کند» کدام است؟",
+      "stem": {
+        "fa": "پنهان می‌کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَعْلَمُ"
+        },
+        {
+          "id": "o2",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُعْلِنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَشَآءُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "گزینه صحیح «تُكِنُّ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0295",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004"
+      ],
+      "promptFa": "معادل عربی «پنهان می‌کند» کدام است؟",
+      "stem": {
+        "fa": "پنهان می‌کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُعْلِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "صُدُورُهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَتَسَآءَلُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "پاسخ صحیح «تُكِنُّ» است."
+    },
+    {
+      "id": "q_u_p393b_A_0296",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001",
+        "w:w28_066_007",
+        "w:w28_068_006",
+        "w:w28_068_009"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَا"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْخِيَرَةُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r2",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r3",
+          "fa": "نیست"
+        },
+        {
+          "id": "r4",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r5",
+          "fa": "نابینا شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "دقت کنید که «فعمیت» به معنای پوشیده ماندن است و با نابینایی ظاهری متفاوت است."
+    },
+    {
+      "id": "q_u_p393b_A_0297",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007",
+        "w:w28_068_006",
+        "w:w28_068_009",
+        "w:w28_069_004"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَا"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "تُكِنُّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r2",
+          "fa": "نیست"
+        },
+        {
+          "id": "r3",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r4",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r5",
+          "fa": "آنچه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "در اینجا «ما» به معنای نفی (نیست/نبود) است، نه موصول."
+    },
+    {
+      "id": "q_u_p393b_A_0298",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006",
+        "w:w28_068_009",
+        "w:w28_069_004",
+        "w:w28_066_001"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَا"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَعَمِيَتْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نیست"
+        },
+        {
+          "id": "r2",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r3",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r4",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r5",
+          "fa": "خیر و نیکی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "کلمه «الخیرة» به معنای اختیار است نه خیر و نیکی."
+    },
+    {
+      "id": "q_u_p393b_A_0299",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009",
+        "w:w28_069_004",
+        "w:w28_066_001",
+        "w:w28_066_007"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَتَسَآءَلُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r2",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r3",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r4",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r5",
+          "fa": "اکنون"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "ریشه «تکنّ» ربطی به کلمه فارسی «اکنون» ندارد."
+    },
+    {
+      "id": "q_u_p393b_A_0300",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004",
+        "w:w28_066_001",
+        "w:w28_066_007",
+        "w:w28_068_006"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r2",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r3",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r4",
+          "fa": "نیست"
+        },
+        {
+          "id": "r5",
+          "fa": "سوال می‌شوند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "باب تفاعل در «یتساءلون» نشان‌دهنده پرسش دوطرفه است."
+    },
+    {
+      "id": "q_u_p393b_A_0301",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_001",
+        "w:w28_068_006",
+        "w:w28_069_004",
+        "w:w28_068_009"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَا"
+        },
+        {
+          "id": "l3",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْخِيَرَةُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r2",
+          "fa": "نیست"
+        },
+        {
+          "id": "r3",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r4",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r5",
+          "fa": "آشکار می‌کند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "near_miss"
+      },
+      "explanationFa": "تکن به معنای پنهان کردن است نه آشکار کردن."
+    },
+    {
+      "id": "q_u_p393b_A_0302",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_066_007",
+        "w:w28_068_009",
+        "w:w28_066_001",
+        "w:w28_068_006"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r2",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r3",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r4",
+          "fa": "نیست"
+        },
+        {
+          "id": "r5",
+          "fa": "نیکی‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "random"
+      },
+      "explanationFa": "ترجمه دقیق و لغوی کلمات را به یاد داشته باشید."
+    },
+    {
+      "id": "q_u_p393b_A_0303",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_006",
+        "w:w28_069_004",
+        "w:w28_066_007",
+        "w:w28_066_001"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مَا"
+        },
+        {
+          "id": "l2",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَعَمِيَتْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نیست"
+        },
+        {
+          "id": "r2",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r3",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r4",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r5",
+          "fa": "سینه‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "کلمه سینه‌ها ترجمه «صدور» است."
+    },
+    {
+      "id": "q_u_p393b_A_0304",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_068_009",
+        "w:w28_066_001",
+        "w:w28_068_006",
+        "w:w28_069_004"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَا"
+        },
+        {
+          "id": "l4",
+          "ar": "تُكِنُّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r2",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r3",
+          "fa": "نیست"
+        },
+        {
+          "id": "r4",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r5",
+          "fa": "برگزیده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "near_miss"
+      },
+      "explanationFa": "«الخیرة» به معنای مصدری یعنی حق انتخاب است."
+    },
+    {
+      "id": "q_u_p393b_A_0305",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_069_004",
+        "w:w28_066_007",
+        "w:w28_068_009",
+        "w:w28_068_006"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَتَسَآءَلُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْخِيَرَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "مَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پنهان می‌کند"
+        },
+        {
+          "id": "r2",
+          "fa": "از یکدیگر می‌پرسند"
+        },
+        {
+          "id": "r3",
+          "fa": "اختیار"
+        },
+        {
+          "id": "r4",
+          "fa": "نیست"
+        },
+        {
+          "id": "r5",
+          "fa": "اخبار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "کلمه اخبار ترجمه «الأنباء» است."
+    }
+  ],
+  "issues": []
+}

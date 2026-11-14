@@ -1,0 +1,12 @@
+[#2 q_u_p394a_A_2225 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p394a_A_2227 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p394a_A_2228 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p394a_A_2229 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p394a_A_2231 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p394a_A_2233 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p394a_A_2234 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p394a_A_2235 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p394a_A_2236 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p394a_A_2236 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#13 q_u_p394a_A_2236 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p394a_A_2237 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.

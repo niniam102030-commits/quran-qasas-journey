@@ -1,0 +1,503 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "C5",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p394a_C_1381",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "این آیه، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 74
+        },
+        {
+          "id": "o2",
+          "num": 62
+        },
+        {
+          "id": "o3",
+          "num": 73
+        },
+        {
+          "id": "o4",
+          "num": 75
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه هفتاد و چهارمین آیه از سوره قصص است. آیه ۶۲ نیز با همین کلمات آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394a_C_1382",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "شماره آیه «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ» کدام است؟",
+      "stem": {
+        "verse": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 72
+        },
+        {
+          "id": "o2",
+          "num": 74
+        },
+        {
+          "id": "o3",
+          "num": 65
+        },
+        {
+          "id": "o4",
+          "num": 64
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "این آیه ۷۴ سوره قصص است. آیه ۶۵ نیز با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ» آغاز می‌شود اما ادامه آن متفاوت است."
+    },
+    {
+      "id": "q_u_p394a_C_1383",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "شماره این آیه شریفه را مشخص کنید.",
+      "stem": {
+        "verse": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 70
+        },
+        {
+          "id": "o2",
+          "num": 76
+        },
+        {
+          "id": "o3",
+          "num": 62
+        },
+        {
+          "id": "o4",
+          "num": 74
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "adjacent_number",
+        "o3": "similar_verse"
+      },
+      "explanationFa": "این آیه شریفه هفتاد و چهارمین آیه از سوره قصص است."
+    },
+    {
+      "id": "q_u_p394a_C_1384",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "آیه ۷۴ سوره قصص با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 73,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 75,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۴ با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394a_C_1385",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "آیه ۷۴ چگونه آغاز می‌شود؟",
+      "stem": {
+        "num": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_073_009",
+            "w28_073_010",
+            "w28_073_011"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 72,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ابتدای آیه ۷۴ «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ» است."
+    },
+    {
+      "id": "q_u_p394a_C_1386",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "آغاز آیه ۷۴ کدام است؟",
+      "stem": {
+        "num": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 73,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۴ سوره قصص با عبارت «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394a_C_1387",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 74,
+      "targets": [
+        "vr:74"
+      ],
+      "promptFa": "قطعات آیه ۷۴ را به ترتیب درست بچینید.",
+      "stem": {
+        "verse": 74
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ أَيْنَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "متن کامل آیه: وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ."
+    },
+    {
+      "id": "q_u_p394a_C_1388",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 74,
+      "targets": [
+        "vn:74"
+      ],
+      "promptFa": "شروع دقیق آیه ۷۴ را انتخاب کنید.",
+      "stem": {
+        "num": 74
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 75,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 73,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 72,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۴ با عبارت «وَيَوْمَ يُنَادِيهِمْ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p394a_C_1389",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "page",
+      "targets": [
+        "sq:71",
+        "sq:72",
+        "sq:73"
+      ],
+      "promptFa": "آیات زیر را به ترتیب درستِ سوره مرتب کنید.",
+      "stem": {
+        "verses": [
+          71,
+          72,
+          73,
+          74
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 73,
+          "ar": "وَمِن رَّحْمَتِهِۦ جَعَلَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ...",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "verse": 73
+        },
+        {
+          "id": "b2",
+          "num": 71,
+          "ar": "قُلْ أَرَءَيْتُمْ إِن جَعَلَ ٱللَّهُ عَلَيْكُمُ ٱلَّيْلَ...",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "verse": 71
+        },
+        {
+          "id": "b3",
+          "num": 74,
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ...",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ],
+          "verse": 74
+        },
+        {
+          "id": "b4",
+          "num": 72,
+          "ar": "قُلْ أَرَءَيْتُمْ إِن جَعَلَ ٱللَّهُ عَلَيْكُمُ ٱلنَّهَارَ...",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "verse": 72
+        }
+      ],
+      "answer": [
+        "b2",
+        "b4",
+        "b1",
+        "b3"
+      ],
+      "explanationFa": "خداوند ابتدا در آیه ۷۱ از ثابت شدن شب و سپس در آیه ۷۲ از ثابت شدن روز می‌پرسد. در آیه ۷۳ خلقت هر دو (شب و روز) را از رحمت خود می‌داند."
+    }
+  ],
+  "issues": []
+}

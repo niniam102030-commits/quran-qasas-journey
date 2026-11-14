@@ -1,0 +1,549 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A",
+  "generatedBy": "Claude",
+  "lexicon": [
+    {
+      "wordId": "w28_036_001",
+      "gloss": "پس هنگامی که",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_002",
+      "gloss": "برایشان آورد",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_003",
+      "gloss": "موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_004",
+      "gloss": "با آیات ما",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_005",
+      "gloss": "روشن",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_006",
+      "gloss": "گفتند",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_007",
+      "gloss": "نیست",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_008",
+      "gloss": "این",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_009",
+      "gloss": "جز",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_010",
+      "gloss": "جادو",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_011",
+      "gloss": "ساختگی و دروغین",
+      "hard": true,
+      "meaningFa": "دروغی که به دروغ به کسی نسبت داده و ساخته شده است",
+      "rootAr": "ف ر ي",
+      "trapFa": null,
+      "tipFa": "با «افترا» در فارسی هم‌ریشه است: نسبت دادن دروغ."
+    },
+    {
+      "wordId": "w28_036_012",
+      "gloss": "و نه",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_013",
+      "gloss": "شنیده‌ایم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_014",
+      "gloss": "این را",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_015",
+      "gloss": "در",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_016",
+      "gloss": "پدران ما",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_036_017",
+      "gloss": "پیشینیان",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_001",
+      "gloss": "و گفت",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_002",
+      "gloss": "موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_003",
+      "gloss": "پروردگارم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_004",
+      "gloss": "داناتر",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_005",
+      "gloss": "به کسی که",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_006",
+      "gloss": "آورد",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_007",
+      "gloss": "هدایت را",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_008",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_009",
+      "gloss": "نزد او",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_010",
+      "gloss": "و کسی که",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_011",
+      "gloss": "باشد",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_012",
+      "gloss": "برای او",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_013",
+      "gloss": "سرانجام",
+      "hard": true,
+      "meaningFa": "فرجام و پایان کار",
+      "rootAr": "ع ق ب",
+      "trapFa": "عاقبت به معنای پایان بد",
+      "tipFa": "عاقبةُ الدار یعنی فرجام نیک؛ «عاقبت» در قرآن بار مثبت هم دارد."
+    },
+    {
+      "wordId": "w28_037_014",
+      "gloss": "سرای آخرت",
+      "hard": true,
+      "meaningFa": "سرا و جایگاه؛ در اینجا سرای آخرت",
+      "rootAr": "د و ر",
+      "trapFa": "خانه و منزل مسکونی",
+      "tipFa": "«دار» اینجا خانه‌ی معمولی نیست؛ سرای آخرت است."
+    },
+    {
+      "wordId": "w28_037_015",
+      "gloss": "بی‌تردید",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_016",
+      "gloss": "نه",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_037_017",
+      "gloss": "پیروز می‌شود",
+      "hard": true,
+      "meaningFa": "رستگار و پیروز می‌شود",
+      "rootAr": "ف ل ح",
+      "trapFa": null,
+      "tipFa": "از همین ریشه «فلاح» و «مُفلح» آمده است: رستگاری."
+    },
+    {
+      "wordId": "w28_037_018",
+      "gloss": "ستمکاران",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_001",
+      "gloss": "و گفت",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_002",
+      "gloss": "فرعون",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_003",
+      "gloss": "ای",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_004",
+      "gloss": "اشراف و سران",
+      "hard": true,
+      "meaningFa": "گروه اشراف و بزرگان قوم",
+      "rootAr": "م ل أ",
+      "trapFa": null,
+      "tipFa": "«الملأ» یعنی سران و اشراف، نه هر گروه معمولی."
+    },
+    {
+      "wordId": "w28_038_005",
+      "gloss": "نه",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_006",
+      "gloss": "شناختم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_007",
+      "gloss": "برای شما",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_008",
+      "gloss": "هیچ",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_009",
+      "gloss": "معبود",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_010",
+      "gloss": "جز من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_011",
+      "gloss": "پس بیفروز",
+      "hard": true,
+      "meaningFa": "پس آتش روشن کن",
+      "rootAr": "و ق د",
+      "trapFa": null,
+      "tipFa": "با «وَقود» (سوخت) هم‌ریشه است: افروختن آتش."
+    },
+    {
+      "wordId": "w28_038_012",
+      "gloss": "برایم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_013",
+      "gloss": "ای هامان",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_014",
+      "gloss": "بر",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_015",
+      "gloss": "گِل",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_016",
+      "gloss": "پس بساز",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_017",
+      "gloss": "برایم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_018",
+      "gloss": "برج بلند",
+      "hard": true,
+      "meaningFa": "بنای بلند و برج مانند",
+      "rootAr": "ص ر ح",
+      "trapFa": null,
+      "tipFa": "«صرح» یعنی کاخ یا برج بلند."
+    },
+    {
+      "wordId": "w28_038_019",
+      "gloss": "شاید من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_020",
+      "gloss": "آگاه شوم",
+      "hard": true,
+      "meaningFa": "بالا روم و آگاهی و اطلاع یابم",
+      "rootAr": "ط ل ع",
+      "trapFa": null,
+      "tipFa": "با «طلوع» هم‌ریشه است: بالا آمدن و آگاه شدن."
+    },
+    {
+      "wordId": "w28_038_021",
+      "gloss": "به",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_022",
+      "gloss": "معبود",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_023",
+      "gloss": "موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_024",
+      "gloss": "و همانا من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_025",
+      "gloss": "او را می‌پندارم",
+      "hard": true,
+      "meaningFa": "او را گمان می‌کنم",
+      "rootAr": "ظ ن ن",
+      "trapFa": null,
+      "tipFa": "«ظن» اینجا گمان و پنداشتن است."
+    },
+    {
+      "wordId": "w28_038_026",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_038_027",
+      "gloss": "دروغگویان",
+      "hard": false,
+      "trapFa": null
+    }
+  ],
+  "chunks": [
+    {
+      "verse": 36,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 3,
+          "fa": "پس هنگامی که موسی"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "fa": "آیات روشن ما را"
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "fa": "گفتند: این جز"
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "fa": "جادویی ساختگی و دروغین نیست،"
+        },
+        {
+          "from": 12,
+          "to": 14,
+          "fa": "و ما این [ادعای نبوّت و دعوت به توحید] را"
+        },
+        {
+          "from": 15,
+          "to": 17,
+          "fa": "از پدران پیشین خود"
+        }
+      ],
+      "faSegments": [
+        "پس هنگامی که موسی آیات روشن ما را برای آنان آورد،",
+        "گفتند: این جز جادویی ساختگی و دروغین نیست،",
+        "و ما این [ادعای نبوّت و دعوت به توحید] را",
+        "از پدران پیشین خود نشنیده ایم",
+        "[که به ما گفته باشند کسی در میانشان به عنوان پیامبر و دعوت کننده به توحید آمده باشد!!]"
+      ]
+    },
+    {
+      "verse": 37,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 3,
+          "fa": "و موسی گفت: پروردگارم"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "fa": "داناتر است"
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "fa": "از نزد او هدایت آورده"
+        },
+        {
+          "from": 10,
+          "to": 14,
+          "fa": "و به کسی که سرانجام نیک برای اوست"
+        },
+        {
+          "from": 15,
+          "to": 18,
+          "fa": "بی تردید ستمکاران پیروز نمی شوند."
+        }
+      ],
+      "faSegments": [
+        "و موسی گفت: پروردگارم",
+        "به کسی که از نزد او هدایت آورده",
+        "و به کسی که سرانجام نیک برای اوست",
+        "داناتر است؛",
+        "بی تردید ستمکاران پیروز نمی شوند."
+      ]
+    },
+    {
+      "verse": 38,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 2,
+          "fa": "و فرعون گفت"
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "fa": "ای اشراف و سران [مملکت]!"
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "fa": "من برای شما"
+        },
+        {
+          "from": 8,
+          "to": 10,
+          "fa": "هیچ معبودی جز خود نمی شناسم،"
+        },
+        {
+          "from": 11,
+          "to": 13,
+          "fa": "پس ای هامان!"
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "fa": "بر گِل آتش بیفروز"
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "fa": "پس برایم برجی بلند بساز"
+        },
+        {
+          "from": 19,
+          "to": 23,
+          "fa": "شاید بر معبود موسی آگاهی و اطلاع یابم،"
+        },
+        {
+          "from": 24,
+          "to": 27,
+          "fa": "و البته من او را از دروغگویان می پندارم."
+        }
+      ],
+      "faSegments": [
+        "و فرعون گفت: ای اشراف و سران [مملکت]!",
+        "من برای شما هیچ معبودی جز خود نمی شناسم،",
+        "پس ای هامان! برایم بر گِل آتش بیفروز",
+        "[تا آجر محکم و قوی به دست آید]،",
+        "پس برایم برجی بلند بساز",
+        "شاید بر معبود موسی آگاهی و اطلاع یابم،",
+        "و البته من او را از دروغگویان می پندارم."
+      ]
+    }
+  ],
+  "questions": [],
+  "issues": []
+}

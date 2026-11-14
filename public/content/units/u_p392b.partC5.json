@@ -1,0 +1,66 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392b",
+  "part": "C5",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392b_C_1061",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:57"
+      ],
+      "promptFa": "آیه‌ی قبل از این آیه با کدام عبارت پایان می‌یابد؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 57,
+            "from": 22,
+            "to": 25
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 18,
+            "to": 20
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 11,
+            "to": 13
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 55,
+            "from": 13,
+            "to": 15
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۷ با عبارت «وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ» پایان می‌یابد و پس از آن آیه‌ی ۵۸ با اشاره به هلاکت شهرها (وَكَمْ أَهْلَكْنَا...) آغاز می‌شود."
+    }
+  ],
+  "issues": []
+}

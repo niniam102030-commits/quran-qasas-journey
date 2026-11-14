@@ -1,0 +1,239 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "C4",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p394b_C_0581",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه‌ی قبل از این آیه کدام است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 75,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 73,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 77,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل درباره بیرون آوردن گواه از هر امت و درخواست دلیل از مشرکان (وَنَزَعْنَا مِن كُلِّ أُمَّةٍ...) است و سپس داستان قارون آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0582",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75",
+        "vr:75"
+      ],
+      "promptFa": "بخش ابتدایی آیه‌ی قبل از این آیه را بسازید:",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَنَزَعْنَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن كُلِّ أُمَّةٍۢ",
+          "wordIdx": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شَهِيدًۭا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَقُلْنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هَاتُوا۟",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "بُرْهَـٰنَكُمْ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَأَوْحَيْنَآ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "فَيَقُولُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "random",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا فَقُلْنَا هَاتُوا۟ بُرْهَـٰنَكُمْ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0583",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75",
+        "vr:75"
+      ],
+      "promptFa": "بخش پایانی آیه‌ی قبل از این آیه را بسازید:",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَلِمُوٓا۟",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَضَلَّ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَنْهُم",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَّا كَانُوا۟",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَفْتَرُونَ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "تَزْعُمُونَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه‌ی قبل به آگاهی مشرکان از حقانیت خدا و از بین رفتن دروغ‌هایشان اشاره دارد (فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ...)."
+    }
+  ],
+  "issues": []
+}

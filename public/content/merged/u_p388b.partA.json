@@ -1,0 +1,8632 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p388b",
+ "part": "A",
+ "generatedBy": "Claude,claude,Gemini",
+ "lexicon": [
+  {
+   "wordId": "w28_025_001",
+   "gloss": "پس نزدش آمد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_002",
+   "gloss": "یکی از آن دو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_003",
+   "gloss": "راه می‌رفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_004",
+   "gloss": "با حالتِ",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_005",
+   "gloss": "شرم و حیا",
+   "hard": true,
+   "meaningFa": "حالت شرم و آزرم",
+   "rootAr": "ح ي ي",
+   "trapFa": null,
+   "tipFa": "هم‌ریشه با «حیا»؛ «است-» در آغاز یعنی طلب و حالت حیا.",
+   "segments": [
+    {
+     "text": "ٱسْت",
+     "type": "prefix"
+    },
+    {
+     "text": "حيآء",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_025_006",
+   "gloss": "گفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_007",
+   "gloss": "همانا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_008",
+   "gloss": "پدرم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_009",
+   "gloss": "تو را می‌خواند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_010",
+   "gloss": "تا پاداشت دهد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_011",
+   "gloss": "مزد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_012",
+   "gloss": "آنچه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_013",
+   "gloss": "آب دادی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_014",
+   "gloss": "برای ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_015",
+   "gloss": "پس چون",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_016",
+   "gloss": "نزدش آمد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_017",
+   "gloss": "و بازگو کرد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_018",
+   "gloss": "بر او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_019",
+   "gloss": "داستان، سرگذشت",
+   "hard": true,
+   "meaningFa": "سرگذشت و ماجرا",
+   "rootAr": "ق ص ص",
+   "trapFa": null,
+   "tipFa": "هم‌ریشه با نام سوره «قصص»؛ یعنی بازگویی ماجرا.",
+   "segments": [
+    {
+     "text": "ٱلْ",
+     "type": "prefix"
+    },
+    {
+     "text": "قَصَص",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_025_020",
+   "gloss": "گفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_021",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_022",
+   "gloss": "نترس",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_023",
+   "gloss": "نجات یافتی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_024",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_025",
+   "gloss": "گروه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_025_026",
+   "gloss": "ستمکاران",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_001",
+   "gloss": "گفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_002",
+   "gloss": "یکی از آن دو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_003",
+   "gloss": "ای پدر",
+   "hard": true,
+   "meaningFa": "ای پدرم (ندا با «ت» جایگزین یای متکلم)",
+   "rootAr": "أ ب و",
+   "trapFa": null,
+   "tipFa": "«ـت» در «أبت» جای «ی» است؛ یعنی «ای پدرجان».",
+   "segments": [
+    {
+     "text": "يَـٰ",
+     "type": "prefix"
+    },
+    {
+     "text": "أَب",
+     "type": "root"
+    },
+    {
+     "text": "َتِ",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_026_004",
+   "gloss": "او را اجیر کن",
+   "hard": true,
+   "meaningFa": "او را به مزد بگیر و استخدام کن",
+   "rootAr": "أ ج ر",
+   "trapFa": "اجاره دادن خانه یا ملک",
+   "tipFa": "هم‌ریشه با «اجر» و «اجیر»؛ «است-» یعنی طلبِ اجیر گرفتن.",
+   "segments": [
+    {
+     "text": "ٱسْت",
+     "type": "prefix"
+    },
+    {
+     "text": "أْجِر",
+     "type": "root"
+    },
+    {
+     "text": "هُ",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_026_005",
+   "gloss": "زیرا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_006",
+   "gloss": "بهترین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_007",
+   "gloss": "کسی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_008",
+   "gloss": "اجیر کنی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_009",
+   "gloss": "نیرومند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_026_010",
+   "gloss": "امین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_001",
+   "gloss": "گفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_002",
+   "gloss": "همانا من",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_003",
+   "gloss": "می‌خواهم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_004",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_005",
+   "gloss": "به نکاح تو درآورم",
+   "hard": true,
+   "meaningFa": "همسر دهم، به عقد تو درآورم",
+   "rootAr": "ن ك ح",
+   "trapFa": null,
+   "tipFa": "هم‌ریشه با «نکاح»؛ باب افعال یعنی «به نکاح کسی درآوردن».",
+   "segments": [
+    {
+     "text": "أُنكِح",
+     "type": "root"
+    },
+    {
+     "text": "َكَ",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_027_006",
+   "gloss": "یکی از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_007",
+   "gloss": "دو دخترم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_008",
+   "gloss": "این دو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_009",
+   "gloss": "به شرط",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_010",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_011",
+   "gloss": "اجیرم باشی",
+   "hard": true,
+   "meaningFa": "برایم مزدور و اجیر شوی",
+   "rootAr": "أ ج ر",
+   "trapFa": null,
+   "tipFa": "هم‌ریشه با «اجر» و «اجیر».",
+   "segments": [
+    {
+     "text": "تَأْجُر",
+     "type": "root"
+    },
+    {
+     "text": "نِى",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_027_012",
+   "gloss": "هشت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_013",
+   "gloss": "سال‌ها",
+   "hard": true,
+   "meaningFa": "سال‌ها (جمع «حِجّة»)",
+   "rootAr": "ح ج ج",
+   "trapFa": "حج و زیارت خانه خدا",
+   "tipFa": "اینجا به معنای «سال» است، نه حج.",
+   "segments": []
+  },
+  {
+   "wordId": "w28_027_014",
+   "gloss": "پس اگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_015",
+   "gloss": "تمام کردی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_016",
+   "gloss": "ده (سال)",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_017",
+   "gloss": "پس از جانب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_018",
+   "gloss": "نزد تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_019",
+   "gloss": "و نمی‌",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_020",
+   "gloss": "خواهم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_021",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_022",
+   "gloss": "سخت بگیرم",
+   "hard": true,
+   "meaningFa": "به مشقت و سختی اندازم",
+   "rootAr": "ش ق ق",
+   "trapFa": null,
+   "tipFa": "هم‌ریشه با «مشقت»؛ «أشقّ علیک» یعنی «بر تو سخت گیرم».",
+   "segments": []
+  },
+  {
+   "wordId": "w28_027_023",
+   "gloss": "بر تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_024",
+   "gloss": "مرا خواهی یافت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_025",
+   "gloss": "اگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_026",
+   "gloss": "بخواهد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_027",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_028",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_027_029",
+   "gloss": "شایستگان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_001",
+   "gloss": "گفت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_002",
+   "gloss": "این (قرارداد)",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_003",
+   "gloss": "میان من",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_004",
+   "gloss": "و میان تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_005",
+   "gloss": "هر کدام",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_006",
+   "gloss": "دو مدت",
+   "hard": true,
+   "meaningFa": "دو زمان مقرر و سررسید",
+   "rootAr": "أ ج ل",
+   "trapFa": "اجل به معنای مرگ",
+   "tipFa": "«أجل» یعنی مدتِ معین؛ در فارسی بیشتر «مرگ» معنا می‌دهد.",
+   "segments": []
+  },
+  {
+   "wordId": "w28_028_007",
+   "gloss": "به پایان بردم",
+   "hard": true,
+   "meaningFa": "به انجام و پایان رساندم",
+   "rootAr": "ق ض ي",
+   "trapFa": "قضاوت و داوری کردم",
+   "tipFa": "اینجا «قضا» یعنی به پایان رساندن مدت.",
+   "segments": []
+  },
+  {
+   "wordId": "w28_028_008",
+   "gloss": "پس نیست",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_009",
+   "gloss": "تعدی، ستم",
+   "hard": true,
+   "meaningFa": "تجاوز و ستم",
+   "rootAr": "ع د و",
+   "trapFa": "دشمنی",
+   "tipFa": "هم‌ریشه با «تعدی» و «عدوّ»؛ یعنی از حد گذشتن.",
+   "segments": []
+  },
+  {
+   "wordId": "w28_028_010",
+   "gloss": "بر من",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_011",
+   "gloss": "و خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_012",
+   "gloss": "بر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_013",
+   "gloss": "آنچه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_014",
+   "gloss": "می‌گوییم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_028_015",
+   "gloss": "نگهبان، وکیل",
+   "hard": true,
+   "meaningFa": "نگهبان و کارساز، سپرده‌شده امور به او",
+   "rootAr": "و ك ل",
+   "trapFa": "وکیل دادگستری",
+   "tipFa": "هم‌ریشه با «توکل»؛ یعنی کسی که کار به او سپرده می‌شود.",
+   "segments": []
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 25,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 2,
+     "fa": "پس یکی از آن دو [زن]"
+    },
+    {
+     "from": 3,
+     "to": 5,
+     "fa": "در حالی که با حالت شرم و حیا گام برمی داشت"
+    },
+    {
+     "from": 6,
+     "to": 9,
+     "fa": "گفت: پدرم تو را می طلبد"
+    },
+    {
+     "from": 10,
+     "to": 14,
+     "fa": "تا پاداش اینکه [دام های] ما را آب دادی به تو بدهد"
+    },
+    {
+     "from": 15,
+     "to": 19,
+     "fa": "چون نزد او آمد و داستانش را بیان کرد"
+    },
+    {
+     "from": 20,
+     "to": 22,
+     "fa": "گفت: دیگر نترس"
+    },
+    {
+     "from": 23,
+     "to": 26,
+     "fa": "که از آن گروه ستمکار نجات یافتی"
+    }
+   ],
+   "faSegments": [
+    "پس یکی از آن دو [زن]",
+    "در حالی که با حالت شرم و حیا",
+    "گام برمی داشت، نزد او آمد [و] گفت:",
+    "پدرم تو را می طلبد",
+    "تا پاداش اینکه [دام های] ما را آب دادی",
+    "به تو بدهد.",
+    "چون نزد او آمد و داستانش را بیان کرد،",
+    "گفت: دیگر نترس",
+    "که از آن گروه ستمکار نجات یافتی."
+   ]
+  },
+  {
+   "verse": 26,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 2,
+     "fa": "یکی از آن دو زن گفت"
+    },
+    {
+     "from": 3,
+     "to": 4,
+     "fa": "ای پدر! او را استخدام کن"
+    },
+    {
+     "from": 5,
+     "to": 8,
+     "fa": "زیرا بهترین کسی که استخدام می کنی"
+    },
+    {
+     "from": 9,
+     "to": 10,
+     "fa": "نیرومند و امین"
+    }
+   ],
+   "faSegments": [
+    "یکی از آن دو زن گفت:",
+    "ای پدر! او را استخدام کن؛",
+    "زیرا بهترین کسی که استخدام می کنی",
+    "آن کسی است که نیرومند و امین باشد",
+    "[و او دارای این صفات است.]"
+   ]
+  },
+  {
+   "verse": 27,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 3,
+     "fa": "گفت: می خواهم"
+    },
+    {
+     "from": 4,
+     "to": 5,
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "from": 6,
+     "to": 8,
+     "fa": "یکی از این دو دخترم"
+    },
+    {
+     "from": 9,
+     "to": 13,
+     "fa": "به شرط آنکه هشت سال اجیر من باشی"
+    },
+    {
+     "from": 14,
+     "to": 16,
+     "fa": "و اگر ده سال را تمام کردی"
+    },
+    {
+     "from": 17,
+     "to": 18,
+     "fa": "اختیارش با خود توست"
+    },
+    {
+     "from": 19,
+     "to": 23,
+     "fa": "و من نمی خواهم بر تو سخت گیرم"
+    },
+    {
+     "from": 24,
+     "to": 27,
+     "fa": "و به خواست خدا مرا"
+    },
+    {
+     "from": 28,
+     "to": 29,
+     "fa": "از شایستگان خواهی یافت"
+    }
+   ],
+   "faSegments": [
+    "گفت: می خواهم",
+    "یکی از این دو دخترم",
+    "را به نکاح تو درآورم",
+    "به شرط آنکه هشت سال اجیر من باشی،",
+    "و اگر ده سال را تمام کردی،",
+    "اختیارش با خود توست [و ربطی به اصل قرار داد ندارد]،",
+    "و من نمی خواهم بر تو سخت گیرم،",
+    "و به خواست خدا مرا از شایستگان خواهی یافت."
+   ]
+  },
+  {
+   "verse": 28,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 2,
+     "fa": "[موسی] گفت: این قرارداد"
+    },
+    {
+     "from": 3,
+     "to": 4,
+     "fa": "میان من و تو باشد"
+    },
+    {
+     "from": 5,
+     "to": 7,
+     "fa": "هر یک از این دو مدت را به پایان برم"
+    },
+    {
+     "from": 8,
+     "to": 10,
+     "fa": "هیچ تعدّی و ستمی بر من نیست"
+    },
+    {
+     "from": 11,
+     "to": 15,
+     "fa": "و خدا بر آنچه می گوییم، نگهبان و وکیل است"
+    }
+   ],
+   "faSegments": [
+    "[موسی] گفت:",
+    "این قرارداد میان من و تو باشد،",
+    "هر یک از این دو مدت را به پایان برم",
+    "هیچ تعدّی و ستمی بر من نیست،",
+    "و خدا بر آنچه می گوییم،",
+    "نگهبان و وکیل است."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p388b_A_0201",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "معنای «ٱسْتِحْيَآءٍۢ» چیست؟",
+   "stem": {
+    "wordId": "w28_025_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "زندگی و حیات"
+    },
+    {
+     "id": "o2",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "o3",
+     "fa": "گام برداشتن"
+    },
+    {
+     "id": "o4",
+     "fa": "پاداش"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی «ح ي ي» و به معنای حالت شرم و آزرم است. «است-» در آغاز، حالت حیا را می‌رساند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0202",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "«ٱسْتِحْيَآءٍۢ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_025_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ترس و وحشت"
+    },
+    {
+     "id": "o2",
+     "fa": "زنده ماندن"
+    },
+    {
+     "id": "o3",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "o4",
+     "fa": "ستمکاری"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» یعنی شرم و حیا و با ریشه‌ی «حیا» هم‌خانواده است. معنای آن زنده ماندن نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0203",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "در این آیه «ٱسْتِحْيَآءٍۢ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_025_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نجات"
+    },
+    {
+     "id": "o2",
+     "fa": "آب دادن"
+    },
+    {
+     "id": "o3",
+     "fa": "گروه"
+    },
+    {
+     "id": "o4",
+     "fa": "شرم و حیا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در عبارت «تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ» یعنی با حالت شرم و حیا گام برمی‌داشت. ریشه‌اش «ح ي ي» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0204",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "در عبارت «تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ»، کلمه‌ی «ٱسْتِحْيَآءٍۢ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_025_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "o2",
+     "fa": "زندگی و حیات"
+    },
+    {
+     "id": "o3",
+     "fa": "بهترین"
+    },
+    {
+     "id": "o4",
+     "fa": "استخدام"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» حالت شرم و آزرم است. «حیات» از همین ریشه است ولی معنای این کلمه نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0205",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «شرم و حیا» است؟",
+   "stem": {
+    "fa": "شرم و حیا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَمْشِى"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَجْرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْقَوْمِ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» از ریشه‌ی «ح ي ي» و به معنای شرم و حیا است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0206",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معادل عبارت فارسی است؟",
+   "stem": {
+    "fa": "حالت شرم و آزرم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "نَجَوْتَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَدْعُوكَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» یعنی حالت شرم و آزرم. «است-» در آغاز آن نشانه‌ی طلب و حالت است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0207",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معادل «با حالت شرم و حیا» است؟",
+   "stem": {
+    "fa": "با حالت شرم و حیا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "سَقَيْتَ"
+    },
+    {
+     "id": "o2",
+     "ar": "خَيْرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَالَتْ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» در «عَلَى ٱسْتِحْيَآءٍۢ» یعنی با حالت شرم و حیا. ریشه‌اش «ح ي ي» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0208",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "معنای «ٱلْقَصَصَ» چیست؟",
+   "stem": {
+    "wordId": "w28_025_019",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گروه"
+    },
+    {
+     "id": "o2",
+     "fa": "پاداش"
+    },
+    {
+     "id": "o3",
+     "fa": "داستان، سرگذشت"
+    },
+    {
+     "id": "o4",
+     "fa": "کیفر و قصاص"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» یعنی سرگذشت و ماجرا و هم‌ریشه با نام سوره‌ی «قصص» است. «قصاص» در فارسی دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0209",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "«ٱلْقَصَصَ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_025_019",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "o2",
+     "fa": "نیرومند"
+    },
+    {
+     "id": "o3",
+     "fa": "نجات"
+    },
+    {
+     "id": "o4",
+     "fa": "سرگذشت و ماجرا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» اسم و به معنای سرگذشت و ماجرا است. ریشه‌اش «ق ص ص» و به معنای بازگویی ماجرا است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0210",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "در این آیه «ٱلْقَصَصَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_025_019",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "داستان، سرگذشت"
+    },
+    {
+     "id": "o2",
+     "fa": "آب دادن"
+    },
+    {
+     "id": "o3",
+     "fa": "کیفر و قصاص"
+    },
+    {
+     "id": "o4",
+     "fa": "شرم و حیا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در «وَقَصَّ عَلَيْهِ ٱلْقَصَصَ» یعنی داستانش را برای او بیان کرد. «ٱلْقَصَصَ» اسم است و با «وَقَصَّ» هم‌ریشه است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0211",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "در عبارت «وَقَصَّ عَلَيْهِ ٱلْقَصَصَ»، «ٱلْقَصَصَ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_025_019",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پاداش"
+    },
+    {
+     "id": "o2",
+     "fa": "گروه ستمکار"
+    },
+    {
+     "id": "o3",
+     "fa": "بهترین"
+    },
+    {
+     "id": "o4",
+     "fa": "داستان و سرگذشت"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "random"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» مفعول «وَقَصَّ» و یعنی ماجرا و سرگذشت. ریشه‌اش «ق ص ص» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0212",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «داستان، سرگذشت» است؟",
+   "stem": {
+    "fa": "داستان، سرگذشت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْقَوْمِ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَقَصَّ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَجْرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْقَصَصَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "same_root",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» اسم است و یعنی سرگذشت. «وَقَصَّ» هم‌ریشه است ولی فعل است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0213",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی (اسم) معادل عبارت فارسی است؟",
+   "stem": {
+    "fa": "سرگذشت و ماجرا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَمِينُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقَوِىُّ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» یعنی سرگذشت و ماجرا و هم‌ریشه با نام سوره است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0214",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 25,
+   "targets": [
+    "w:w28_025_019"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی (اسم) به معنای «داستان» است؟",
+   "stem": {
+    "fa": "داستان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْقَوْمِ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَمْشِى"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَقَصَّ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» اسم و به معنای داستان است. «وَقَصَّ» فعل و هم‌ریشه با آن است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0215",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "معنای «يَـٰٓأَبَتِ» چیست؟",
+   "stem": {
+    "wordId": "w28_026_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ای پسرم"
+    },
+    {
+     "id": "o2",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "o3",
+     "fa": "پدرم"
+    },
+    {
+     "id": "o4",
+     "fa": "ای برادر"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» ندا و یعنی «ای پدر». «ـت» در آن جای «ی» متکلم است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0216",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "«يَـٰٓأَبَتِ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_026_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پدر و مادر"
+    },
+    {
+     "id": "o2",
+     "fa": "ای مرد"
+    },
+    {
+     "id": "o3",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "o4",
+     "fa": "پدرم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی آن «أ ب و» و معنایش ندای «ای پدرجان» است. «پدرم» کلمه‌ی «أَبِى» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0217",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "در این آیه «يَـٰٓأَبَتِ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_026_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "o2",
+     "fa": "ای پسر"
+    },
+    {
+     "id": "o3",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "o4",
+     "fa": "یکی از آن دو"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در «يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ» دختر پدرش را صدا می‌زند و یعنی «ای پدر». «ـت» جای «ی» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0218",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "در عبارت «يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ»، «يَـٰٓأَبَتِ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_026_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بهترین"
+    },
+    {
+     "id": "o2",
+     "fa": "پدر شما"
+    },
+    {
+     "id": "o3",
+     "fa": "نیرومند"
+    },
+    {
+     "id": "o4",
+     "fa": "ای پدر"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» ندا است، یعنی «ای پدر». «ـت» در آن جایگزین «ی» متکلم است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0219",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «ای پدر» است؟",
+   "stem": {
+    "fa": "ای پدر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَبِى"
+    },
+    {
+     "id": "o2",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "o3",
+     "ar": "إِحْدَىٰهُمَا"
+    },
+    {
+     "id": "o4",
+     "ar": "خَيْرَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» ندا است و «ای پدر» معنا می‌دهد. «أَبِى» یعنی «پدرم» و ندا نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0220",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معادل «ای پدرجان» است؟",
+   "stem": {
+    "fa": "ای پدرجان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قَالَتْ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَدْعُوكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْأَمِينُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» ندای «ای پدرجان» است. «ـت» در آن جای «ی» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0221",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معادل «ای پدر!» در آیه است؟",
+   "stem": {
+    "fa": "ای پدر!"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْقَوِىُّ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَبِى"
+    },
+    {
+     "id": "o3",
+     "ar": "خَيْرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَـٰٓأَبَتِ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» ندا و یعنی «ای پدر». «أَبِى» (پدرم) در آیه‌ی ۲۵ آمده و ندا نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0222",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_025_005",
+    "w:w28_025_019",
+    "w:w28_026_003"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را با معنای آن جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْقَوْمِ"
+    },
+    {
+     "id": "l5",
+     "ar": "أَجْرَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پاداش"
+    },
+    {
+     "id": "r2",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "r3",
+     "fa": "نجات"
+    },
+    {
+     "id": "r4",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "r5",
+     "fa": "گروه"
+    },
+    {
+     "id": "r6",
+     "fa": "داستان، سرگذشت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "neighbor_word"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» شرم و حیا، «ٱلْقَصَصَ» سرگذشت و «يَـٰٓأَبَتِ» ندای «ای پدر» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0223",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_025_005",
+    "w:w28_025_019",
+    "w:w28_026_003"
+   ],
+   "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "l2",
+     "ar": "نَجَوْتَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْقَوِىُّ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "نیرومند"
+    },
+    {
+     "id": "r2",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "r3",
+     "fa": "پاداش"
+    },
+    {
+     "id": "r4",
+     "fa": "نجات یافتی"
+    },
+    {
+     "id": "r5",
+     "fa": "داستان، سرگذشت"
+    },
+    {
+     "id": "r6",
+     "fa": "ای پدر"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "neighbor_word"
+   },
+   "explanationFa": "سه کلمه‌ی سخت این جفت‌سازی «يَـٰٓأَبَتِ»، «ٱلْقَصَصَ» و «ٱسْتِحْيَآءٍۢ» هستند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0224",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_025_005",
+    "w:w28_025_019",
+    "w:w28_026_003"
+   ],
+   "promptFa": "هر کلمه را با معنای درست آن وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَمْشِى"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "سَقَيْتَ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَـٰٓأَبَتِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "آب دادی"
+    },
+    {
+     "id": "r2",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "r3",
+     "fa": "گام برمی‌دارد"
+    },
+    {
+     "id": "r4",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "r5",
+     "fa": "داستان، سرگذشت"
+    },
+    {
+     "id": "r6",
+     "fa": "شرم و حیا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "neighbor_word"
+   },
+   "explanationFa": "«تَمْشِى» فعل راه رفتن و «سَقَيْتَ» فعل آب دادن است. سه کلمه‌ی سخت اینجا معنای متمایز دارند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0225",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_025_005",
+    "w:w28_025_019",
+    "w:w28_026_003"
+   ],
+   "promptFa": "جفت‌های درست عربی و فارسی را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "خَيْرَ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْقَصَصَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَدْعُوكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱسْتِحْيَآءٍۢ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "شرم و حیا"
+    },
+    {
+     "id": "r2",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "r3",
+     "fa": "ای پدر"
+    },
+    {
+     "id": "r4",
+     "fa": "تو را می‌طلبد"
+    },
+    {
+     "id": "r5",
+     "fa": "بهترین"
+    },
+    {
+     "id": "r6",
+     "fa": "داستان، سرگذشت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "neighbor_word"
+   },
+   "explanationFa": "«خَيْرَ» بهترین و «يَدْعُوكَ» تو را می‌طلبد است. «ٱلْقَصَصَ» سرگذشت و «يَـٰٓأَبَتِ» ندای «ای پدر» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0301",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "معنای این کلمه چیست؟",
+   "stem": {
+    "wordId": "w28_026_004",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "خانه‌ات را به او اجاره بده"
+    },
+    {
+     "id": "o2",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "o3",
+     "fa": "به او مزد و پاداش بده"
+    },
+    {
+     "id": "o4",
+     "fa": "او را نزد خود نگه دار"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "از ریشه‌ی «أ ج ر» و به معنی «او را اجیر کن». «اجاره دادن ملک» دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0302",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "کدام معنا برای این کلمه درست است؟",
+   "stem": {
+    "wordId": "w28_026_004",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "او را از خود دور کن"
+    },
+    {
+     "id": "o2",
+     "fa": "اجرت او را بپرداز"
+    },
+    {
+     "id": "o3",
+     "fa": "او را اجاره بده (مثل ملک)"
+    },
+    {
+     "id": "o4",
+     "fa": "او را به مزد بگیر و استخدام کن"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "same_root",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«است-» یعنی طلب؛ پس «استجره» یعنی طلبِ اجیر گرفتن. با «اجرت پرداختن» یا «اجاره دادن» فرق دارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0303",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "در آیه‌ی ۲۶، معنای این کلمه‌ی مشخص‌شده چیست؟",
+   "stem": {
+    "wordId": "w28_026_004",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "o2",
+     "fa": "او را استخدام نکن"
+    },
+    {
+     "id": "o3",
+     "fa": "به او مزد بده"
+    },
+    {
+     "id": "o4",
+     "fa": "او را بخر"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "در ترجمه آمده: «او را استخدام کن». فعل امر است و نفی ندارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0304",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "با توجه به آیه‌ی ۲۶، این کلمه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_026_004",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "برای او خانه اجاره کن"
+    },
+    {
+     "id": "o2",
+     "fa": "پاداش او را بده"
+    },
+    {
+     "id": "o3",
+     "fa": "او را به مزد بگیر"
+    },
+    {
+     "id": "o4",
+     "fa": "او را بشناس"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ یعنی او را به مزد بگیر. معنای «اجاره‌ی خانه» مقصود نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0305",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "معنای این کلمه چیست؟",
+   "stem": {
+    "wordId": "w28_027_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "خودم با تو ازدواج کنم"
+    },
+    {
+     "id": "o2",
+     "fa": "تو را اجیر کنم"
+    },
+    {
+     "id": "o3",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "o4",
+     "fa": "به تو هدیه دهم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "از ریشه‌ی «ن ك ح» (هم‌ریشه با «نکاح»)، باب افعال: کسی را به نکاح دیگری درآوردن. فاعل، پدر است نه کسی که ازدواج می‌کند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0306",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "کدام معنا برای این کلمه درست است؟",
+   "stem": {
+    "wordId": "w28_027_005",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "همسر دهم، به عقد تو درآورم"
+    },
+    {
+     "id": "o2",
+     "fa": "از تو خواستگاری کنم"
+    },
+    {
+     "id": "o3",
+     "fa": "به تو مزد دهم"
+    },
+    {
+     "id": "o4",
+     "fa": "تو را نزد خود بپذیرم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "باب افعال از ریشه‌ی «نکاح» یعنی همسر دادن و به عقد کسی درآوردن، نه خواستگاری کردن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0307",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "در آیه‌ی ۲۷، این کلمه‌ی مشخص‌شده چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_027_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تو را به کار بگیرم"
+    },
+    {
+     "id": "o2",
+     "fa": "به تو سخت گیرم"
+    },
+    {
+     "id": "o3",
+     "fa": "تو را همسر خود کنم"
+    },
+    {
+     "id": "o4",
+     "fa": "به نکاح تو درآورم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "در ترجمه آمده: «یکی از این دو دخترم را به نکاح تو درآورم». «سخت گیرم» ترجمه‌ی کلمه‌ای دیگر در همین آیه است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0308",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "با توجه به آیه‌ی ۲۷، کدام معنا برای این کلمه دقیق است؟",
+   "stem": {
+    "wordId": "w28_027_005",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "برای تو همسر بجویم"
+    },
+    {
+     "id": "o2",
+     "fa": "همسر دهم، به عقد تو درآورم"
+    },
+    {
+     "id": "o3",
+     "fa": "ده سال به تو مهلت دهم"
+    },
+    {
+     "id": "o4",
+     "fa": "تو را از خود برانم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "ریشه‌ی «ن ك ح» و باب افعال؛ یعنی به عقد درآوردن. «ده سال» به کلمه‌ای دیگر در همین آیه مربوط است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0309",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "معنای این کلمه چیست؟",
+   "stem": {
+    "wordId": "w28_027_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "خانه‌ای به من اجاره دهی"
+    },
+    {
+     "id": "o2",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "o3",
+     "fa": "به من پاداش دهی"
+    },
+    {
+     "id": "o4",
+     "fa": "مرا به نکاح درآوری"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی «أ ج ر» (هم‌ریشه با «اجر» و «اجیر»)؛ یعنی برایم اجیر باشی.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0310",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "کدام معنا برای این کلمه درست است؟",
+   "stem": {
+    "wordId": "w28_027_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "به من مزد ندهی"
+    },
+    {
+     "id": "o2",
+     "fa": "برایم خانه بسازی"
+    },
+    {
+     "id": "o3",
+     "fa": "مرا اجاره کنی"
+    },
+    {
+     "id": "o4",
+     "fa": "برایم مزدور و اجیر شوی"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "random",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«تأجرنی» یعنی اجیر و مزدور من شوی. «اجاره کردن» معنای مقصود نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0311",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "در آیه‌ی ۲۷، معنای این کلمه‌ی مشخص‌شده چیست؟",
+   "stem": {
+    "wordId": "w28_027_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "o2",
+     "fa": "اجیر تو شوم"
+    },
+    {
+     "id": "o3",
+     "fa": "از من اجرت بگیری"
+    },
+    {
+     "id": "o4",
+     "fa": "سخت‌گیری کنی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در ترجمه آمده: «به شرط آنکه هشت سال اجیر من باشی». اجیر، مخاطب است نه گوینده.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0312",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "با توجه به آیه‌ی ۲۷، این کلمه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_027_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هشت سال بمانی"
+    },
+    {
+     "id": "o2",
+     "fa": "به من پاداش دهی"
+    },
+    {
+     "id": "o3",
+     "fa": "برایم مزدور و اجیر شوی"
+    },
+    {
+     "id": "o4",
+     "fa": "خانه‌ام را اجاره کنی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "same_root",
+    "o4": "false_friend"
+   },
+   "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ یعنی برایم کار کنی و اجیر باشی.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0313",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "او را استخدام کن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱسْتَـْٔجَرْتَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْقَوِىُّ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَأْجُرَنِى"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "«ٱسْتَـْٔجِرْهُ» فعل امر است. «ٱسْتَـْٔجَرْتَ» فعل ماضی با فاعل مخاطب است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0314",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "معادل عربی را انتخاب کن.",
+   "stem": {
+    "fa": "او را به مزد بگیر و استخدام کن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَمِينُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْتَـْٔجَرْتَ"
+    },
+    {
+     "id": "o3",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "same_root",
+    "o3": "neighbor_verse"
+   },
+   "explanationFa": "ریشه‌ی «أ ج ر» با پیشوند «است-» (طلب) و ضمیر «ـهُ» (او را).",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0315",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004"
+   ],
+   "promptFa": "این معنا از کدام کلمه است؟",
+   "stem": {
+    "fa": "او را اجیر کن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱسْتَـْٔجَرْتَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُرِيدُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "same_root",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "فعل امر با ضمیر «ـهُ». «تَأْجُرَنِى» یعنی «اجیرم باشی» و «ٱسْتَـْٔجَرْتَ» یعنی «استخدام می‌کنی».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0316",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "به نکاح تو درآورم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أُرِيدُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "o3",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَشُقَّ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أُنكِحَكَ» از ریشه‌ی «ن ك ح» است. بقیه‌ی گزینه‌ها کلمات همین آیه با معنای دیگر هستند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0317",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "معادل عربی را انتخاب کن.",
+   "stem": {
+    "fa": "همسر دهم، به عقد تو درآورم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o3",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَتْمَمْتَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "باب افعال از ریشه‌ی «ن ك ح» با ضمیر «ـكَ» (تو را). «تَأْجُرَنِى» مربوط به اجیر شدن است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0318",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_005"
+   ],
+   "promptFa": "این معنا از کدام کلمه است؟",
+   "stem": {
+    "fa": "به عقد تو درآورم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "سَتَجِدُنِىٓ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُنكِحَكَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_verse",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«أُنكِحَكَ» یعنی «به نکاح تو درآورم». «ٱبْنَتَىَّ» یعنی «دو دخترم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0319",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "اجیرم باشی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱسْتَـْٔجَرْتَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَتْمَمْتَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَأْجُرَنِى» از ریشه‌ی «أ ج ر» و ضمیر «نِى» (مرا) است. دو گزینه‌ی هم‌ریشه‌ی دیگر معنای متفاوتی دارند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0320",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "معادل عربی را انتخاب کن.",
+   "stem": {
+    "fa": "برایم مزدور و اجیر شوی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱسْتَـْٔجَرْتَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o4",
+     "ar": "سَتَجِدُنِىٓ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ ضمیر متصل «نِى» یعنی «برای من». «سَتَجِدُنِىٓ» هم «نِى» دارد اما از ریشه‌ی «وجد» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0321",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_011"
+   ],
+   "promptFa": "این معنا از کدام کلمه است؟",
+   "stem": {
+    "fa": "اجیر من باشی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُرِيدُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَأْجُرَنِى» یعنی «اجیر من باشی». «ٱسْتَـْٔجِرْهُ» یعنی «او را اجیر کن» و جهت کار برعکس است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0322",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 26,
+   "targets": [
+    "w:w28_026_004",
+    "w:w28_027_005",
+    "w:w28_027_011"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْقَوِىُّ"
+    },
+    {
+     "id": "l3",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْأَمِينُ"
+    },
+    {
+     "id": "l5",
+     "ar": "تَأْجُرَنِى"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "r2",
+     "fa": "امین"
+    },
+    {
+     "id": "r3",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "r4",
+     "fa": "نیرومند"
+    },
+    {
+     "id": "r5",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r6",
+     "fa": "سخت گیرم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "دو کلمه‌ی «ٱسْتَـْٔجِرْهُ» و «تَأْجُرَنِى» هم‌ریشه‌اند (أ ج ر) و نباید با هم اشتباه شوند. «أُنكِحَكَ» از ریشه‌ی نکاح است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0323",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_026_004",
+    "w:w28_027_005",
+    "w:w28_027_011"
+   ],
+   "promptFa": "جفت‌های درست کلمه و معنا را وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "l2",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَتْمَمْتَ"
+    },
+    {
+     "id": "l5",
+     "ar": "أُنكِحَكَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r2",
+     "fa": "تمام کردی"
+    },
+    {
+     "id": "r3",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "r4",
+     "fa": "سخت گیرم"
+    },
+    {
+     "id": "r5",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "r6",
+     "fa": "شایستگان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "random"
+   },
+   "explanationFa": "«تَأْجُرَنِى» و «ٱسْتَـْٔجِرْهُ» هم‌ریشه‌اند، ولی اولی «اجیرم باشی» و دومی «او را استخدام کن» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0324",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_026_004",
+    "w:w28_027_005",
+    "w:w28_027_011"
+   ],
+   "promptFa": "کلمه‌های عربی را به معنای فارسی‌شان وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلصَّـٰلِحِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "r2",
+     "fa": "دو دخترم"
+    },
+    {
+     "id": "r3",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "r4",
+     "fa": "شایستگان"
+    },
+    {
+     "id": "r5",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r6",
+     "fa": "هشت سال"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«أُنكِحَكَ» به ازدواج مربوط است و دو کلمه‌ی هم‌ریشه‌ی «أ ج ر» به استخدام و اجیر شدن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0325",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_026_004",
+    "w:w28_027_005",
+    "w:w28_027_011"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش برسان.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "عَشْرًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "ثَمَـٰنِىَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "l5",
+     "ar": "أُنكِحَكَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r2",
+     "fa": "ده سال"
+    },
+    {
+     "id": "r3",
+     "fa": "اجیرم باشی"
+    },
+    {
+     "id": "r4",
+     "fa": "هشت"
+    },
+    {
+     "id": "r5",
+     "fa": "او را استخدام کن"
+    },
+    {
+     "id": "r6",
+     "fa": "دو دخترم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«عَشْرًۭا» و «ثَمَـٰنِىَ» عدد هستند. سه کلمه‌ی سخت این برش، یعنی «ٱسْتَـْٔجِرْهُ»، «أُنكِحَكَ» و «تَأْجُرَنِى»، را از هم تفکیک کن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0601",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "معنای «حِجَجٍ» چیست؟",
+   "stem": {
+    "wordId": "w28_027_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "حج و زیارت خانه خدا"
+    },
+    {
+     "id": "o2",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "o3",
+     "fa": "هشت"
+    },
+    {
+     "id": "o4",
+     "fa": "دو دخترم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«حِجَج» جمع «حِجّة» و از ریشه‌ی «ح ج ج» است. اینجا به معنای «سال‌ها» است، نه حج.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0602",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "کدام گزینه معنای «حِجَجٍ» است؟",
+   "stem": {
+    "wordId": "w28_027_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اجیر من باشی"
+    },
+    {
+     "id": "o2",
+     "fa": "ده"
+    },
+    {
+     "id": "o3",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "سفرهای حج"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«حِجَج» از ریشه‌ی «ح ج ج» است و در اینجا یعنی «سال‌ها». دوست فریبنده: معنای حج در فارسی.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0603",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "در آیه‌ی «…عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍ…» معنای «حِجَجٍ» چیست؟",
+   "stem": {
+    "wordId": "w28_027_013",
+    "showVerse": true,
+    "verse": 27
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "شایستگان"
+    },
+    {
+     "id": "o3",
+     "fa": "حج و زیارت خانه خدا"
+    },
+    {
+     "id": "o4",
+     "fa": "این دو"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "سیاق آیه «هشت سال اجیر بودن» است؛ پس «حِجَج» یعنی «سال‌ها». معنای حج در اینجا مراد نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0604",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "در عبارت «ثَمَـٰنِىَ حِجَجٍ» (هشت …)، «حِجَجٍ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_027_013",
+    "showVerse": true,
+    "verse": 27
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "زیارت‌های خانه خدا"
+    },
+    {
+     "id": "o2",
+     "fa": "اجیر"
+    },
+    {
+     "id": "o3",
+     "fa": "تمام کردی"
+    },
+    {
+     "id": "o4",
+     "fa": "سال‌ها"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«حِجَج» جمع «حِجّة» به معنای «سال‌ها» است. ریشه‌ی آن با «حج» یکی است، اما معنای قرآنی‌اش در اینجا فرق دارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0605",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "کدام واژه‌ی عربی معادل «سال‌ها» است؟",
+   "stem": {
+    "fa": "سال‌ها"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ثَمَـٰنِىَ",
+     "wordId": "w28_027_012"
+    },
+    {
+     "id": "o2",
+     "ar": "حِجَجٍۢ",
+     "wordId": "w28_027_013"
+    },
+    {
+     "id": "o3",
+     "ar": "عَشْرًۭا",
+     "wordId": "w28_027_016"
+    },
+    {
+     "id": "o4",
+     "ar": "أَتْمَمْتَ",
+     "wordId": "w28_027_015"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«حِجَجٍ» جمع «حِجّة» است و یعنی «سال‌ها». «ثَمَـٰنِىَ» عدد هشت است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0606",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "واژه‌ی عربی «سال‌ها» (جمع «حِجّة»، نه حج و زیارت) کدام است؟",
+   "stem": {
+    "fa": "سال‌ها (جمع «حِجّة»)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "حِجَجٍۢ",
+     "wordId": "w28_027_013"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى",
+     "wordId": "w28_027_011"
+    },
+    {
+     "id": "o3",
+     "ar": "ثَمَـٰنِىَ",
+     "wordId": "w28_027_012"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱبْنَتَىَّ",
+     "wordId": "w28_027_007"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«حِجَجٍ» از ریشه‌ی «ح ج ج» است و اینجا یعنی «سال‌ها». «تَأْجُرَنِى» یعنی «اجیر من باشی».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0607",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "در «هشت … » جای خالی (سال‌ها) با کدام واژه‌ی عربی پر می‌شود؟",
+   "stem": {
+    "fa": "سال‌ها"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عَشْرًۭا",
+     "wordId": "w28_027_016"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱبْنَتَىَّ",
+     "wordId": "w28_027_007"
+    },
+    {
+     "id": "o3",
+     "ar": "أَشُقَّ",
+     "wordId": "w28_027_022"
+    },
+    {
+     "id": "o4",
+     "ar": "حِجَجٍۢ",
+     "wordId": "w28_027_013"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«حِجَجٍ» یعنی «سال‌ها» و بعد از «ثَمَـٰنِىَ» (هشت) آمده است. «عَشْرًا» یعنی «ده».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0608",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "هر واژه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "حِجَجٍۢ"
+    },
+    {
+     "id": "l2",
+     "ar": "ثَمَـٰنِىَ"
+    },
+    {
+     "id": "l3",
+     "ar": "عَشْرًۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "l5",
+     "ar": "أَتْمَمْتَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ده"
+    },
+    {
+     "id": "r2",
+     "fa": "تمام کردی"
+    },
+    {
+     "id": "r3",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "r4",
+     "fa": "اجیر من باشی"
+    },
+    {
+     "id": "r5",
+     "fa": "هشت"
+    },
+    {
+     "id": "r6",
+     "fa": "سخت گیرم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«حِجَج» یعنی «سال‌ها» و با «ثَمَـٰنِىَ» (هشت) و «عَشْرًا» (ده) همراه شده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0609",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "هر واژه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "حِجَجٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "l4",
+     "ar": "هَـٰتَيْنِ"
+    },
+    {
+     "id": "l5",
+     "ar": "إِحْدَى"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "یکی از"
+    },
+    {
+     "id": "r2",
+     "fa": "این دو"
+    },
+    {
+     "id": "r3",
+     "fa": "دو دخترم"
+    },
+    {
+     "id": "r4",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "r5",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r6",
+     "fa": "حج و زیارت خانه خدا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«حِجَج» اینجا «سال‌ها» است؛ معنای «حج و زیارت» دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0610",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "هر واژه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "l2",
+     "ar": "سَتَجِدُنِىٓ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلصَّـٰلِحِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "حِجَجٍۢ"
+    },
+    {
+     "id": "l5",
+     "ar": "عِندِكَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "شایستگان"
+    },
+    {
+     "id": "r2",
+     "fa": "نزد تو"
+    },
+    {
+     "id": "r3",
+     "fa": "مرا خواهی یافت"
+    },
+    {
+     "id": "r4",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "r5",
+     "fa": "سخت گیرم"
+    },
+    {
+     "id": "r6",
+     "fa": "اجیر من باشی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«حِجَج» یعنی «سال‌ها»؛ «أَشُقَّ» یعنی «سخت گیرم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0611",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_013"
+   ],
+   "promptFa": "هر واژه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "l2",
+     "ar": "أُرِيدُ"
+    },
+    {
+     "id": "l3",
+     "ar": "حِجَجٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "شَآءَ"
+    },
+    {
+     "id": "l5",
+     "ar": "عَشْرًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "خواست"
+    },
+    {
+     "id": "r2",
+     "fa": "سال‌ها"
+    },
+    {
+     "id": "r3",
+     "fa": "گفت"
+    },
+    {
+     "id": "r4",
+     "fa": "ده"
+    },
+    {
+     "id": "r5",
+     "fa": "می‌خواهم"
+    },
+    {
+     "id": "r6",
+     "fa": "هشت"
+    },
+    {
+     "id": "r7",
+     "fa": "زیارت‌های خانه خدا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word",
+    "r7": "false_friend"
+   },
+   "explanationFa": "«حِجَج» یعنی «سال‌ها»، نه زیارت و حج؛ «عَشْرًا» یعنی «ده».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0701",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "معنای «أَشُقَّ» چیست؟",
+   "stem": {
+    "wordId": "w28_027_022",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "o2",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "o3",
+     "fa": "شکافم و پاره کنم"
+    },
+    {
+     "id": "o4",
+     "fa": "اجیر تو شوم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أشقّ» از ریشه‌ی «ش ق ق» است و با «مشقت» هم‌ریشه است؛ «أشقّ علیک» یعنی «بر تو سخت گیرم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0702",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "کدام گزینه معنای «أَشُقَّ» را درست بیان می‌کند؟",
+   "stem": {
+    "wordId": "w28_027_022",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اختیارش با خود توست"
+    },
+    {
+     "id": "o2",
+     "fa": "ده سال را تمام کنم"
+    },
+    {
+     "id": "o3",
+     "fa": "به مشقت و سختی اندازم"
+    },
+    {
+     "id": "o4",
+     "fa": "مزدی به تو بدهم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أشقّ» یعنی کسی را به مشقت و سختی انداختن و با «مشقت» هم‌ریشه است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0703",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "در این آیه، «أَشُقَّ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_027_022",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بر تو شرط بگذارم"
+    },
+    {
+     "id": "o2",
+     "fa": "از تو جدا شوم"
+    },
+    {
+     "id": "o3",
+     "fa": "تو را اجیر کنم"
+    },
+    {
+     "id": "o4",
+     "fa": "بر تو سخت گیرم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در عبارت «وَمَا أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ» یعنی «نمی‌خواهم بر تو سخت گیرم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0704",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "با توجه به آیه، «أَشُقَّ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_027_022",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "o2",
+     "fa": "بشکافم"
+    },
+    {
+     "id": "o3",
+     "fa": "پیمان ببندم"
+    },
+    {
+     "id": "o4",
+     "fa": "اختیار دهم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "با «شق» به معنای شکافتن اشتباه نگیرید؛ در این آیه «أشقّ» به معنای «سخت بگیرم» است و با «مشقت» هم‌ریشه است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0705",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "معنای «ٱلْأَجَلَيْنِ» چیست؟",
+   "stem": {
+    "wordId": "w28_028_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دو دختر من"
+    },
+    {
+     "id": "o2",
+     "fa": "دو مرگ"
+    },
+    {
+     "id": "o3",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "o4",
+     "fa": "دو بار"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أجل» یعنی مدتِ معین و «الأجلین» یعنی «دو مدت». در فارسی «اجل» بیشتر به معنای مرگ است و این دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0706",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "کدام گزینه معنای «ٱلْأَجَلَيْنِ» را درست بیان می‌کند؟",
+   "stem": {
+    "wordId": "w28_028_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پایان زندگی و مرگ"
+    },
+    {
+     "id": "o2",
+     "fa": "دو قرارداد و پیمان"
+    },
+    {
+     "id": "o3",
+     "fa": "دو نگهبان"
+    },
+    {
+     "id": "o4",
+     "fa": "دو زمان مقرر و سررسید"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«أجل» به معنای زمان مقرر و سررسید است، نه لزوماً مرگ.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0707",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "در این آیه، «ٱلْأَجَلَيْنِ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_028_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دو تعدی"
+    },
+    {
+     "id": "o2",
+     "fa": "دو مرگ"
+    },
+    {
+     "id": "o3",
+     "fa": "دو وکیل"
+    },
+    {
+     "id": "o4",
+     "fa": "دو مدت"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "در «أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ» یعنی «هر یک از این دو مدت را به پایان برم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0709",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «سخت بگیرم» است؟",
+   "stem": {
+    "fa": "سخت بگیرم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَتْمَمْتَ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "أُرِيدُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أَشُقَّ» از ریشه‌ی «ش ق ق» به معنای «سخت بگیرم» است و با «مشقت» هم‌ریشه است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0710",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «به مشقت و سختی اندازم» است؟",
+   "stem": {
+    "fa": "به مشقت و سختی اندازم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o3",
+     "ar": "عَشْرًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "أَتْمَمْتَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أَشُقَّ» یعنی به مشقت انداختن؛ در این آیه «بر تو سخت گیرم» معنا می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0711",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022"
+   ],
+   "promptFa": "در عبارت «من نمی خواهم بر تو سخت گیرم»، کدام کلمه‌ی عربی برابر «سخت گیرم» است؟",
+   "stem": {
+    "fa": "بر تو سخت گیرم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أُرِيدُ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "o3",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَشُقَّ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«أَشُقَّ عَلَيْكَ» یعنی «بر تو سخت گیرم»؛ «أُرِيدُ» به معنای «می‌خواهم» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0712",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «دو مدت» است؟",
+   "stem": {
+    "fa": "دو مدت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "هَـٰتَيْنِ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ثَمَـٰنِىَ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَضَيْتُ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْأَجَلَيْنِ» مثنای «أجل» به معنای مدتِ معین است. «هَـٰتَيْنِ» هم‌شکل است اما یعنی «این دو (مؤنث)».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0713",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «دو زمان مقرر و سررسید» است؟",
+   "stem": {
+    "fa": "دو زمان مقرر و سررسید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "هَـٰتَيْنِ"
+    },
+    {
+     "id": "o3",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْأَجَلَيْنِ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«أجل» یعنی مدتِ معین و سررسید؛ «ٱبْنَتَىَّ» و «هَـٰتَيْنِ» نیز مثنی‌اند ولی معنای دیگری دارند.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0714",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_006"
+   ],
+   "promptFa": "در عبارت «هر یک از این دو مدت را به پایان برم»، کدام کلمه‌ی عربی برابر «این دو مدت» است؟",
+   "stem": {
+    "fa": "این دو مدت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o2",
+     "ar": "هَـٰتَيْنِ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "o4",
+     "ar": "عُدْوَٰنَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْأَجَلَيْنِ» یعنی «دو مدت»؛ «قَضَيْتُ» یعنی «به پایان بردم».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0715",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022",
+    "w:w28_028_006"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l3",
+     "ar": "أُنكِحَكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تَأْجُرَنِى"
+    },
+    {
+     "id": "l5",
+     "ar": "أُرِيدُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "اجیر من باشی"
+    },
+    {
+     "id": "r2",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "r3",
+     "fa": "می‌خواهم"
+    },
+    {
+     "id": "r4",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r5",
+     "fa": "به نکاح تو درآورم"
+    },
+    {
+     "id": "r6",
+     "fa": "تمام کردی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«أشقّ» با «مشقت» هم‌ریشه است و «الأجلین» یعنی دو مدت معین، نه دو مرگ.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0716",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_027_022",
+    "w:w28_028_006"
+   ],
+   "promptFa": "کلمات عربی را با معنای درستشان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l2",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَكِيلٌۭ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "l5",
+     "ar": "أَشُقَّ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "نگهبان و وکیل"
+    },
+    {
+     "id": "r2",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r3",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "r4",
+     "fa": "تعدّی و ستم"
+    },
+    {
+     "id": "r5",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r6",
+     "fa": "مرگ"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "false_friend"
+   },
+   "explanationFa": "«مرگ» دوست فریبنده‌ی «أجل» است؛ «أجل» در این آیه یعنی مدت معین.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0717",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 27,
+   "targets": [
+    "w:w28_027_022",
+    "w:w28_028_006"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کنید؛ یک گزینه‌ی فارسی اضافه است.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَتْمَمْتَ"
+    },
+    {
+     "id": "l2",
+     "ar": "عَشْرًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "ثَمَـٰنِىَ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَجَلَيْنِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r2",
+     "fa": "هشت"
+    },
+    {
+     "id": "r3",
+     "fa": "ده"
+    },
+    {
+     "id": "r4",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "r5",
+     "fa": "تمام کردی"
+    },
+    {
+     "id": "r6",
+     "fa": "دو"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«ثَمَـٰنِىَ» یعنی هشت و «عَشْرًا» یعنی ده؛ «أشقّ» هم‌ریشه با «مشقت» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0718",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_027_022",
+    "w:w28_028_006"
+   ],
+   "promptFa": "جفت‌های عربی و فارسی را درست کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱبْنَتَىَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "أَشُقَّ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "l5",
+     "ar": "أُرِيدُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "می‌خواهم"
+    },
+    {
+     "id": "r2",
+     "fa": "دو دخترم"
+    },
+    {
+     "id": "r3",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r4",
+     "fa": "سخت بگیرم"
+    },
+    {
+     "id": "r5",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r6",
+     "fa": "دو شایسته"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "near_miss"
+   },
+   "explanationFa": "«ٱبْنَتَىَّ» مثنای «ابنة» است و «الأجلین» مثنای «أجل»؛ هر دو «دو» معنا می‌دهند ولی مدلولشان فرق دارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0901",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "معنای «قَضَيْتُ» چیست؟",
+   "stem": {
+    "wordId": "w28_028_007",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قضاوت و داوری کردم"
+    },
+    {
+     "id": "o2",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "o3",
+     "fa": "می گوییم"
+    },
+    {
+     "id": "o4",
+     "fa": "تعدّی و ستم کردم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ق ض ي»؛ اینجا «قضا» یعنی به پایان رساندن مدت، نه قضاوت و داوری.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0902",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "در این آیه، «قَضَيْتُ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_028_007",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گفتم"
+    },
+    {
+     "id": "o2",
+     "fa": "قضاوت و داوری کردم"
+    },
+    {
+     "id": "o3",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "o4",
+     "fa": "ستم کردم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در عبارت «أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ» یعنی هر یک از دو مدت را به پایان برم؛ «قضاوت» دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0903",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "کدام گزینه معنای «قَضَيْتُ» است؟",
+   "stem": {
+    "wordId": "w28_028_007",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نگهبانی کردم"
+    },
+    {
+     "id": "o2",
+     "fa": "پیمان بستم"
+    },
+    {
+     "id": "o3",
+     "fa": "قضاوت و داوری کردم"
+    },
+    {
+     "id": "o4",
+     "fa": "به انجام و پایان رساندم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«قضی» در این آیه به معنای به انجام و پایان رساندن است، نه داوری کردن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0904",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "با توجه به آیه، معنای «قَضَيْتُ» کدام است؟",
+   "stem": {
+    "wordId": "w28_028_007",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مدت را آغاز کردم"
+    },
+    {
+     "id": "o2",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "o3",
+     "fa": "قضاوت کردم"
+    },
+    {
+     "id": "o4",
+     "fa": "تعدّی کردم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فاعل «قَضَيْتُ» خود گوینده است و مفعولش یکی از دو مدت؛ یعنی آن را تمام کردم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0905",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «به پایان بردم» است؟",
+   "stem": {
+    "fa": "به پایان بردم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "o2",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "o4",
+     "ar": "عُدْوَٰنَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«قَضَيْتُ» از ریشه‌ی «ق ض ي» به معنای به پایان رساندن مدت است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0906",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "معادل عربی «به انجام و پایان رساندم» کدام است؟",
+   "stem": {
+    "fa": "به انجام و پایان رساندم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o2",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَيَّمَا"
+    },
+    {
+     "id": "o4",
+     "ar": "وَكِيلٌۭ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«قَضَيْتُ» فعل ماضی متکلم است و «ٱلْأَجَلَيْنِ» مفعول آن است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0907",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "کدام کلمه یعنی «به پایان بردم» (نه داوری کردم)؟",
+   "stem": {
+    "fa": "به پایان بردم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عَلَىَّ ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَضَيْتُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«قضی» اینجا دوست فریبنده است؛ معنایش پایان دادن مدت است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0908",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "l2",
+     "ar": "بَيْنِى"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "l5",
+     "ar": "عُدْوَٰنَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "تعدّی و ستم"
+    },
+    {
+     "id": "r2",
+     "fa": "این دو مدت"
+    },
+    {
+     "id": "r3",
+     "fa": "گفت"
+    },
+    {
+     "id": "r4",
+     "fa": "قضاوت و داوری کردم"
+    },
+    {
+     "id": "r5",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r6",
+     "fa": "میان من"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«قَضَيْتُ» یعنی به پایان بردم؛ «قضاوت» معنای این آیه نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0909",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَكِيلٌۭ"
+    },
+    {
+     "id": "l3",
+     "ar": "عَلَىَّ ۖ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَٱللَّهُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و خدا"
+    },
+    {
+     "id": "r2",
+     "fa": "بر من"
+    },
+    {
+     "id": "r3",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r4",
+     "fa": "نگهبان و وکیل"
+    },
+    {
+     "id": "r5",
+     "fa": "می گوییم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«قَضَيْتُ» از ریشه‌ی «ق ض ي» و به معنای به پایان رساندن مدت است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0910",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "جفت‌های درست کلمه و معنا را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "l2",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l4",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "l5",
+     "ar": "قَضَيْتُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "می گوییم"
+    },
+    {
+     "id": "r2",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r3",
+     "fa": "گفت"
+    },
+    {
+     "id": "r4",
+     "fa": "نگهبانی کردم"
+    },
+    {
+     "id": "r5",
+     "fa": "این دو مدت"
+    },
+    {
+     "id": "r6",
+     "fa": "تعدّی و ستم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "neighbor_word"
+   },
+   "explanationFa": "«قَضَيْتُ» فعل است و مفعولش «ٱلْأَجَلَيْنِ»؛ یعنی دو مدت را به پایان بردم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_0911",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_007"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای درستش برسانید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "بَيْنِى"
+    },
+    {
+     "id": "l2",
+     "ar": "عَلَىَّ ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَكِيلٌۭ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَٱللَّهُ"
+    },
+    {
+     "id": "l5",
+     "ar": "قَضَيْتُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "قضاوت و داوری کردم"
+    },
+    {
+     "id": "r2",
+     "fa": "و خدا"
+    },
+    {
+     "id": "r3",
+     "fa": "نگهبان و وکیل"
+    },
+    {
+     "id": "r4",
+     "fa": "میان من"
+    },
+    {
+     "id": "r5",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r6",
+     "fa": "بر من"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {
+    "r1": "false_friend"
+   },
+   "explanationFa": "«قضاوت» دوست فریبنده است؛ «قَضَيْتُ» اینجا یعنی مدت را به پایان بردم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1001",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "معنای «عُدْوَٰنَ» چیست؟",
+   "stem": {
+    "wordId": "w28_028_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دشمنی"
+    },
+    {
+     "id": "o2",
+     "fa": "تجاوز و ستم"
+    },
+    {
+     "id": "o3",
+     "fa": "مدت و زمان"
+    },
+    {
+     "id": "o4",
+     "fa": "نگهبان و کارساز"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "«عُدْوَٰن» از ریشه‌ی «ع د و» یعنی تجاوز و ستم. با «دشمنی» اشتباه نگیرید.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1002",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "در این آیه معنای «عُدْوَٰنَ» چیست؟",
+   "stem": {
+    "wordId": "w28_028_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "عدالت و انصاف"
+    },
+    {
+     "id": "o2",
+     "fa": "دشمن"
+    },
+    {
+     "id": "o3",
+     "fa": "تعدی و ستم"
+    },
+    {
+     "id": "o4",
+     "fa": "پایان دادن"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«فَلَا عُدْوَٰنَ عَلَىَّ» یعنی هیچ تعدی و ستمی بر من نیست. «عدوّ» هم‌ریشه است اما معنای «دشمن» دارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1003",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "«عُدْوَٰنَ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_028_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دشمنی و کینه"
+    },
+    {
+     "id": "o2",
+     "fa": "قرارداد"
+    },
+    {
+     "id": "o3",
+     "fa": "بخشش"
+    },
+    {
+     "id": "o4",
+     "fa": "از حد گذشتن و ستم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "random"
+   },
+   "explanationFa": "ریشه‌ی «ع د و» یعنی از حد گذشتن؛ هم‌ریشه با «تعدی». معنای قرآنی‌اش ستم و تجاوز است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1004",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "در عبارت «فَلَا عُدْوَٰنَ عَلَىَّ» کلمه‌ی «عُدْوَٰنَ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_028_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تجاوز و ستم"
+    },
+    {
+     "id": "o2",
+     "fa": "دشمنی و کینه"
+    },
+    {
+     "id": "o3",
+     "fa": "دشمنِ آشکار"
+    },
+    {
+     "id": "o4",
+     "fa": "مدت قرارداد"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عُدْوَٰن» یعنی تجاوز از حد و ستم، نه دشمنی. هم‌ریشه با «تعدی» و «عدوّ» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1005",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "معنای «وَكِيلٌ» چیست؟",
+   "stem": {
+    "wordId": "w28_028_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "وکیل دادگستری"
+    },
+    {
+     "id": "o2",
+     "fa": "توکل و اعتماد"
+    },
+    {
+     "id": "o3",
+     "fa": "نگهبان و کارساز"
+    },
+    {
+     "id": "o4",
+     "fa": "گفتار"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَكِيل» از ریشه‌ی «و ك ل» یعنی نگهبان و کارساز. با «وکیل دادگستری» یکی نیست.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1006",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "در این آیه «وَكِيلٌ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_028_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "وکیل دادگستری"
+    },
+    {
+     "id": "o2",
+     "fa": "نگهبان و وکیل"
+    },
+    {
+     "id": "o3",
+     "fa": "مدت زمان"
+    },
+    {
+     "id": "o4",
+     "fa": "تجاوز و ستم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌ» یعنی خدا بر آنچه می‌گوییم نگهبان و وکیل است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1007",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "«وَكِيلٌ» به کدام معنا است؟",
+   "stem": {
+    "wordId": "w28_028_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سخنگو و گوینده"
+    },
+    {
+     "id": "o2",
+     "fa": "وکیل مدافع در دادگاه"
+    },
+    {
+     "id": "o3",
+     "fa": "توکل‌کننده"
+    },
+    {
+     "id": "o4",
+     "fa": "کسی که کار به او سپرده می‌شود"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "same_root"
+   },
+   "explanationFa": "«وَكِيل» هم‌ریشه با «توکل» است و یعنی کسی که کار به او سپرده می‌شود. «توکل‌کننده» همان کسی است که کار را می‌سپارد، نه کارساز.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1008",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "در پایان آیه، «وَكِيلٌ» برای خدا چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_028_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نگهبان و کارساز"
+    },
+    {
+     "id": "o2",
+     "fa": "وکیل قانونی در دادگاه"
+    },
+    {
+     "id": "o3",
+     "fa": "گواه و شاهد"
+    },
+    {
+     "id": "o4",
+     "fa": "ستمکار"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "در این آیه «وَكِيل» یعنی نگهبان و کارساز. معنای «وکیل دادگستری» در فارسی، دوست فریبنده است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1009",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «تجاوز و ستم» است؟",
+   "stem": {
+    "fa": "تجاوز و ستم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "o2",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَكِيلٌۭ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عُدْوَٰنَ» از ریشه‌ی «ع د و» به معنای تجاوز و ستم است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1010",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "کدام کلمه به معنای «تعدّی و ستم» است؟",
+   "stem": {
+    "fa": "تعدّی و ستم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَلَا"
+    },
+    {
+     "id": "o3",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ذَٰلِكَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عُدْوَٰنَ» هم‌ریشه با «تعدی» است و در این آیه یعنی ستم و تجاوز.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1011",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009"
+   ],
+   "promptFa": "کدام کلمه به معنای «از حد گذشتن و ستم» است؟",
+   "stem": {
+    "fa": "از حد گذشتن و ستم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَٱللَّهُ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَيْنِى"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ع د و» یعنی از حد گذشتن؛ «عُدْوَٰنَ» یعنی ستم و تجاوز.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1012",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «نگهبان و وکیل» است؟",
+   "stem": {
+    "fa": "نگهبان و وکیل"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَضَيْتُ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَكِيلٌۭ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«وَكِيلٌ» از ریشه‌ی «و ك ل» یعنی نگهبان و کارساز.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1013",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "کدام کلمه به معنای «نگهبان و کارساز» است؟",
+   "stem": {
+    "fa": "نگهبان و کارساز"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱللَّهُ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَكِيلٌۭ"
+    },
+    {
+     "id": "o3",
+     "ar": "نَقُولُ"
+    },
+    {
+     "id": "o4",
+     "ar": "فَلَا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَكِيلٌ» یعنی نگهبان و کارساز؛ هم‌ریشه با «توکل».",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1014",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_015"
+   ],
+   "promptFa": "کدام کلمه به معنای «کسی که کار به او سپرده می‌شود» است؟",
+   "stem": {
+    "fa": "کسی که کار به او سپرده می‌شود"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عُدْوَٰنَ"
+    },
+    {
+     "id": "o2",
+     "ar": "قَالَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَكِيلٌۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "عَلَىَّ ۖ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«وَكِيل» از ریشه‌ی «و ك ل» است؛ همان ریشه‌ی «توکل» که یعنی سپردن کار به دیگری.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1015",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009",
+    "w:w28_028_015"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "عُدْوَٰنَ",
+     "wordId": "w28_028_009"
+    },
+    {
+     "id": "l2",
+     "ar": "وَكِيلٌۭ",
+     "wordId": "w28_028_015"
+    },
+    {
+     "id": "l3",
+     "ar": "قَالَ",
+     "wordId": "w28_028_001"
+    },
+    {
+     "id": "l4",
+     "ar": "نَقُولُ",
+     "wordId": "w28_028_014"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَجَلَيْنِ",
+     "wordId": "w28_028_006"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "می‌گوییم"
+    },
+    {
+     "id": "r2",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r3",
+     "fa": "تجاوز و ستم"
+    },
+    {
+     "id": "r4",
+     "fa": "دشمنی"
+    },
+    {
+     "id": "r5",
+     "fa": "گفت"
+    },
+    {
+     "id": "r6",
+     "fa": "نگهبان و کارساز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«عُدْوَٰن» تجاوز و ستم است نه دشمنی؛ «وَكِيل» نگهبان و کارساز است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1016",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009",
+    "w:w28_028_015"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَكِيلٌۭ",
+     "wordId": "w28_028_015"
+    },
+    {
+     "id": "l2",
+     "ar": "قَضَيْتُ",
+     "wordId": "w28_028_007"
+    },
+    {
+     "id": "l3",
+     "ar": "عُدْوَٰنَ",
+     "wordId": "w28_028_009"
+    },
+    {
+     "id": "l4",
+     "ar": "بَيْنِى",
+     "wordId": "w28_028_003"
+    },
+    {
+     "id": "l5",
+     "ar": "وَٱللَّهُ",
+     "wordId": "w28_028_011"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و خدا"
+    },
+    {
+     "id": "r2",
+     "fa": "نگهبان و کارساز"
+    },
+    {
+     "id": "r3",
+     "fa": "میان من"
+    },
+    {
+     "id": "r4",
+     "fa": "تجاوز و ستم"
+    },
+    {
+     "id": "r5",
+     "fa": "به پایان بردم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«قَضَيْتُ» یعنی به پایان بردم؛ «بَيْنِى» یعنی میان من.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1017",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009",
+    "w:w28_028_015"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ذَٰلِكَ",
+     "wordId": "w28_028_002"
+    },
+    {
+     "id": "l2",
+     "ar": "عُدْوَٰنَ",
+     "wordId": "w28_028_009"
+    },
+    {
+     "id": "l3",
+     "ar": "عَلَىَّ ۖ",
+     "wordId": "w28_028_010"
+    },
+    {
+     "id": "l4",
+     "ar": "وَكِيلٌۭ",
+     "wordId": "w28_028_015"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَجَلَيْنِ",
+     "wordId": "w28_028_006"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دو مدت"
+    },
+    {
+     "id": "r2",
+     "fa": "بر من"
+    },
+    {
+     "id": "r3",
+     "fa": "وکیل دادگستری"
+    },
+    {
+     "id": "r4",
+     "fa": "نگهبان و کارساز"
+    },
+    {
+     "id": "r5",
+     "fa": "این"
+    },
+    {
+     "id": "r6",
+     "fa": "تجاوز و ستم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "false_friend"
+   },
+   "explanationFa": "«وَكِيل» در این آیه نگهبان و کارساز است، نه وکیل دادگستری.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1018",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 28,
+   "targets": [
+    "w:w28_028_009",
+    "w:w28_028_015"
+   ],
+   "promptFa": "هر کلمه را با معنایش جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "نَقُولُ",
+     "wordId": "w28_028_014"
+    },
+    {
+     "id": "l2",
+     "ar": "وَكِيلٌۭ",
+     "wordId": "w28_028_015"
+    },
+    {
+     "id": "l3",
+     "ar": "قَضَيْتُ",
+     "wordId": "w28_028_007"
+    },
+    {
+     "id": "l4",
+     "ar": "وَٱللَّهُ",
+     "wordId": "w28_028_011"
+    },
+    {
+     "id": "l5",
+     "ar": "عُدْوَٰنَ",
+     "wordId": "w28_028_009"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "تجاوز و ستم"
+    },
+    {
+     "id": "r2",
+     "fa": "به پایان بردم"
+    },
+    {
+     "id": "r3",
+     "fa": "می‌گوییم"
+    },
+    {
+     "id": "r4",
+     "fa": "نگهبان و کارساز"
+    },
+    {
+     "id": "r5",
+     "fa": "و خدا"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«عُدْوَٰن» هم‌ریشه با «تعدی» و «وَكِيل» هم‌ریشه با «توکل» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1501",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه دقیق آنها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَجَآءَتْهُ إِحْدَىٰهُمَا"
+    },
+    {
+     "id": "l2",
+     "ar": "تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "قَالَتْ إِنَّ أَبِى يَدْعُوكَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس یکی از آن دو [زن]... نزد او آمد"
+    },
+    {
+     "id": "r2",
+     "fa": "در حالی که با حالت شرم و حیا گام برمی داشت،"
+    },
+    {
+     "id": "r3",
+     "fa": "[و] گفت: پدرم تو را می طلبد"
+    },
+    {
+     "id": "r4",
+     "fa": "با شتاب به سوی او دوید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "near_miss"
+   },
+   "explanationFa": "دقت کنید که «تَمْشِى» به معنای گام برداشتن است نه دویدن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1503",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25"
+   ],
+   "promptFa": "ترجمه صحیح این آیه کدام است؟",
+   "stem": {
+    "verse": 25
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس یکی از آن دو [زن] در حالی که با حالت شرم و حیا گام برمی داشت، نزد او آمد [و] گفت: پدرم تو را می طلبد تا پاداش اینکه [دام های] ما را آب دادی به تو بدهد. چون نزد او آمد و داستانش را بیان کرد، گفت: دیگر نترس که از آن گروه ستمکار نجات یافتی."
+    },
+    {
+     "id": "o2",
+     "fa": "پس یکی از آن دو [زن] در حالی که با ترس گام برمی داشت، نزد او آمد [و] گفت: پدرم تو را می طلبد تا پاداش اینکه ما را پناه دادی به تو بدهد. چون نزد او آمد و داستانش را بیان کرد، گفت: دیگر نترس که از آن گروه ستمکار نجات یافتی."
+    },
+    {
+     "id": "o3",
+     "fa": "پس یکی از آن دو [زن] در حالی که با حالت شرم و حیا گام برمی داشت، نزد او آمد [و] گفت: پدرم تو را می طلبد تا پاداش اینکه [دام های] ما را آب دادی به تو بدهد. چون نزد او آمد و داستانش را پنهان کرد، گفت: دیگر نترس که از آن گروه کافران نجات یافتی."
+    },
+    {
+     "id": "o4",
+     "fa": "پس یکی از آن دو [زن] در حالی که با شتاب گام برمی داشت، نزد او آمد [و] گفت: پدرم تو را می طلبد تا پاداش اینکه به ما کمک کردی به تو بدهد. چون نزد او آمد، گفت: دیگر نترس که از ستمکاران نجات یافتی."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» به معنای شرم و حیا، «سَقَيْتَ» به معنای آب دادی و «وَقَصَّ» به معنای داستان را بیان کرد است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1504",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25",
+    "w:w28_025_005"
+   ],
+   "promptFa": "با توجه به کلمه «ٱسْتِحْيَآءٍۢ»، در ترجمه صحیح آیه چه عبارتی آمده است؟",
+   "stem": {
+    "verse": 25
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "با حالت شرم و حیا گام برمی داشت"
+    },
+    {
+     "id": "o2",
+     "fa": "با ترس و دلهره گام برمی داشت"
+    },
+    {
+     "id": "o3",
+     "fa": "با سرعت و شتاب گام برمی داشت"
+    },
+    {
+     "id": "o4",
+     "fa": "با غرور و تکبر گام برمی داشت"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱسْتِحْيَآءٍۢ» هم‌ریشه با «حیا» است و به معنای شرم و آزرم می‌باشد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1505",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25",
+    "w:w28_025_019"
+   ],
+   "promptFa": "با توجه به کلمه «ٱلْقَصَصَ»، کدام ترجمه برای بخش دوم آیه صحیح است؟",
+   "stem": {
+    "verse": 25
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و داستانش را بیان کرد"
+    },
+    {
+     "id": "o2",
+     "fa": "و قصاص او را طلب کرد"
+    },
+    {
+     "id": "o3",
+     "fa": "و اسرارش را پنهان کرد"
+    },
+    {
+     "id": "o4",
+     "fa": "و نامه را برایش خواند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱلْقَصَصَ» هم‌ریشه با نام سوره، به معنای ماجرا و داستان است و ربطی به قصاص ندارد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1506",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام آیه است؟ «پس یکی از آن دو [زن] در حالی که با حالت شرم و حیا گام برمی داشت، نزد او آمد...»",
+   "stem": {
+    "verse": 25,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 25,
+      "from": 1,
+      "to": 26
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 26,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 27,
+      "from": 1,
+      "to": 29
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 28,
+      "from": 1,
+      "to": 15
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "این آیه با «فَجَآءَتْهُ إِحْدَىٰهُمَا تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ» آغاز می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1509",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25"
+   ],
+   "promptFa": "قطعات ترجمه بخش اول آیه را به ترتیب درست مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس یکی از آن دو [زن] ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "در حالی که با حالت شرم و حیا گام برمی داشت، نزد او آمد ",
+     "wordIdx": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "[و] گفت: پدرم تو را می طلبد ",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "پس از او دوری کرد ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "near_miss"
+   },
+   "explanationFa": "ابتدا آمدن او با حیا (فَجَآءَتْهُ... تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ) و سپس پیام پدرش (قَالَتْ إِنَّ أَبِى يَدْعُوكَ) مطرح می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1511",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25",
+    "w:w28_025_005"
+   ],
+   "promptFa": "جاهای خالی را با کلمات مناسب از ترجمه آیه پر کنید.",
+   "stem": {
+    "verse": 25,
+    "showFa": false,
+    "hiddenIdx": [
+     5,
+     11
+    ],
+    "faHidden": [
+     {
+      "start": 41,
+      "text": "شرم و حیا"
+     },
+     {
+      "start": 97,
+      "text": "پاداش"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "شرم و حیا",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پاداش",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "ترس و وحشت",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "11": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss"
+   },
+   "explanationFa": "ٱسْتِحْيَآءٍۢ: شرم و حیا | أَجْرَ: پاداش.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1512",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 25,
+   "targets": [
+    "vt:25",
+    "w:w28_025_019"
+   ],
+   "promptFa": "کلمات جاافتاده در ترجمه را جایگذاری کنید.",
+   "stem": {
+    "verse": 25,
+    "showFa": false,
+    "hiddenIdx": [
+     19,
+     26
+    ],
+    "faHidden": [
+     {
+      "start": 160,
+      "text": "داستانش"
+     },
+     {
+      "start": 214,
+      "text": "ستمکار"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "داستانش",
+     "wordIdx": [
+      19
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "ستمکار",
+     "wordIdx": [
+      26
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "انتقامش",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "19": "b1",
+    "26": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend"
+   },
+   "explanationFa": "ٱلْقَصَصَ: داستانش | ٱلظَّـٰلِمِينَ: ستمکار(ان).",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1513",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "ترجمه عبارات آیه را بیابید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَتْ إِحْدَىٰهُمَا"
+    },
+    {
+     "id": "l2",
+     "ar": "يَـٰٓأَبَتِ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "یکی از آن دو زن گفت:"
+    },
+    {
+     "id": "r2",
+     "fa": "ای پدر!"
+    },
+    {
+     "id": "r3",
+     "fa": "او را استخدام کن؛"
+    },
+    {
+     "id": "r4",
+     "fa": "ای مادر!"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "near_miss"
+   },
+   "explanationFa": "«يَـٰٓأَبَتِ» یعنی ای پدر.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1515",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "ترجمه صحیح آیه ۲۶ کدام است؟",
+   "stem": {
+    "verse": 26
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "یکی از آن دو زن گفت: ای پدر! او را استخدام کن؛ زیرا بهترین کسی که استخدام می کنی آن کسی است که نیرومند و امین باشد [و او دارای این صفات است.]"
+    },
+    {
+     "id": "o2",
+     "fa": "یکی از آن دو زن گفت: ای پدر! او را به همسری من درآور؛ زیرا بهترین کسی که به همسری می‌گیری آن کسی است که نیرومند و امین باشد."
+    },
+    {
+     "id": "o3",
+     "fa": "یکی از آن دو زن گفت: ای برادر! او را استخدام کن؛ زیرا بهترین کسی که استخدام می کنی آن کسی است که ثروتمند و امین باشد."
+    },
+    {
+     "id": "o4",
+     "fa": "یکی از آن دو زن گفت: ای پدر! او را پاداش ده؛ زیرا بهترین کسی که به او پاداش می‌دهی کسی است که نیرومند و امین باشد."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱسْتَـْٔجِرْهُ» به معنای او را استخدام کن (اجیر کن) است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1516",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26",
+    "w:w28_026_003"
+   ],
+   "promptFa": "با توجه به کلمه «يَـٰٓأَبَتِ»، کدام ترجمه درست است؟",
+   "stem": {
+    "verse": 26
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "یکی از آن دو زن گفت: ای پدر! او را استخدام کن..."
+    },
+    {
+     "id": "o2",
+     "fa": "یکی از آن دو زن گفت: ای برادر! او را استخدام کن..."
+    },
+    {
+     "id": "o3",
+     "fa": "یکی از آن دو زن گفت: ای سرورم! او را استخدام کن..."
+    },
+    {
+     "id": "o4",
+     "fa": "یکی از آن دو زن گفت: ای مرد! او را استخدام کن..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أبت» به همراه یاء ندا، به معنای «ای پدرم» می‌باشد.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1517",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26",
+    "w:w28_026_004"
+   ],
+   "promptFa": "ترجمه دقیق «ٱسْتَـْٔجِرْهُ» چیست و در کدام گزینه آمده است؟",
+   "stem": {
+    "verse": 26
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "... او را استخدام کن؛ زیرا بهترین کسی که استخدام می کنی..."
+    },
+    {
+     "id": "o2",
+     "fa": "... او را پناه بده؛ زیرا بهترین کسی که پناه می‌دهی..."
+    },
+    {
+     "id": "o3",
+     "fa": "... از او تشکر کن؛ زیرا بهترین کسی که از او تشکر می‌کنی..."
+    },
+    {
+     "id": "o4",
+     "fa": "... او را رها کن؛ زیرا بهترین کسی که رها می‌کنی..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱسْتَـْٔجِرْهُ» یعنی او را به اجاره درآور و استخدام کن.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1518",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "این ترجمه کدام آیه است؟ «یکی از آن دو زن گفت: ای پدر! او را استخدام کن...»",
+   "stem": {
+    "verse": 26,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 26,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 25,
+      "from": 1,
+      "to": 26
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 27,
+      "from": 1,
+      "to": 29
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 28,
+      "from": 1,
+      "to": 15
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "این آیه با «قَالَتْ إِحْدَىٰهُمَا يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ» شروع می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1519",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26",
+    "w:w28_026_004"
+   ],
+   "promptFa": "معادل عربی «او را استخدام کن» در آیه چیست؟",
+   "stem": {
+    "verse": 26,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 26,
+      "from": 4,
+      "to": 4
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 26,
+      "from": 7,
+      "to": 8
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 26,
+      "from": 1,
+      "to": 2
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 27,
+      "from": 4,
+      "to": 5
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱسْتَـْٔجِرْهُ» دقیقاً به معنای او را استخدام کن است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1521",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "ترجمه این آیه کوتاه را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "یکی از آن دو زن گفت: ای پدر! ",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "او را استخدام کن؛ ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "زیرا بهترین کسی که استخدام می کنی ",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "نیرومند و امین باشد ",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "بهترین مردمان است",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "near_miss"
+   },
+   "explanationFa": "قَالَتْ... يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ... إِنَّ خَيْرَ مَنِ ٱسْتَـْٔجَرْتَ ٱلْقَوِىُّ ٱلْأَمِينُ.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1522",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "بخش دوم ترجمه آیه را به درستی بچینید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "زیرا بهترین کسی که ",
+     "wordIdx": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "استخدام می کنی ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "آن کسی است که نیرومند و امین باشد ",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "آن کسی است که ثروتمند باشد",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "near_miss"
+   },
+   "explanationFa": "إِنَّ خَيْرَ مَنِ ٱسْتَـْٔجَرْتَ ٱلْقَوِىُّ ٱلْأَمِينُ.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1523",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26",
+    "w:w28_026_004"
+   ],
+   "promptFa": "جاهای خالی را در ترجمه آیه پر کنید.",
+   "stem": {
+    "verse": 26,
+    "showFa": false,
+    "hiddenIdx": [
+     4,
+     6
+    ],
+    "faHidden": [
+     {
+      "start": 35,
+      "text": "استخدام کن"
+     },
+     {
+      "start": 52,
+      "text": "بهترین"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "استخدام کن",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "بهترین",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "رهایش کن",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "4": "b1",
+    "6": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss"
+   },
+   "explanationFa": "ٱسْتَـْٔجِرْهُ: استخدامش کن | خَيْرَ: بهترین.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1524",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 26,
+   "targets": [
+    "vt:26"
+   ],
+   "promptFa": "صفت‌های کلیدی این آیه را در ترجمه مشخص کنید.",
+   "stem": {
+    "verse": 26,
+    "showFa": false,
+    "hiddenIdx": [
+     9,
+     10
+    ],
+    "faHidden": [
+     {
+      "start": 90,
+      "text": "نیرومند"
+     },
+     {
+      "start": 100,
+      "text": "امین"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "نیرومند",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "امین",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "دانا",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "9": "b1",
+    "10": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss"
+   },
+   "explanationFa": "ٱلْقَوِىُّ: نیرومند | ٱلْأَمِينُ: امین.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1525",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27"
+   ],
+   "promptFa": "عبارات این آیه را با ترجمه دقیقشان جفت کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَ إِنِّىٓ أُرِيدُ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَنْ أُنكِحَكَ إِحْدَى ٱبْنَتَىَّ هَـٰتَيْنِ"
+    },
+    {
+     "id": "l3",
+     "ar": "عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍۢ ۖ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گفت: می خواهم"
+    },
+    {
+     "id": "r2",
+     "fa": "یکی از این دو دخترم را به نکاح تو درآورم"
+    },
+    {
+     "id": "r3",
+     "fa": "به شرط آنکه هشت سال اجیر من باشی،"
+    },
+    {
+     "id": "r4",
+     "fa": "یکی از این دو دخترم را به تو هدیه دهم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "near_miss"
+   },
+   "explanationFa": "«أُنكِحَكَ» یعنی به نکاح تو درآورم و «تَأْجُرَنِى» یعنی اجیر من باشی.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1527",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27"
+   ],
+   "promptFa": "ترجمه صحیح تمام آیه ۲۷ کدام است؟",
+   "stem": {
+    "verse": 27
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گفت: می خواهم یکی از این دو دخترم را به نکاح تو درآورم به شرط آنکه هشت سال اجیر من باشی، و اگر ده سال را تمام کردی، اختیارش با خود توست [و ربطی به اصل قرار داد ندارد]، و من نمی خواهم بر تو سخت گیرم، و به خواست خدا مرا از شایستگان خواهی یافت."
+    },
+    {
+     "id": "o2",
+     "fa": "گفت: می خواهم یکی از این دو دخترم را به عقد تو درآورم به شرط آنکه ده سال اجیر من باشی، و اگر هشت سال را تمام کردی، اختیارش با خود توست، و من نمی خواهم بر تو سخت گیرم، و به خواست خدا مرا از صالحان خواهی یافت."
+    },
+    {
+     "id": "o3",
+     "fa": "گفت: می خواهم یکی از این دو دخترم را به نکاح تو درآورم به شرط آنکه هشت ماه اجیر من باشی، و اگر ده ماه را تمام کردی، اختیارش با خود توست، و من نمی خواهم بر تو سخت گیرم، و مرا از شایستگان خواهی یافت."
+    },
+    {
+     "id": "o4",
+     "fa": "گفت: می خواهم یکی از این دو دخترم را به نکاح تو درآورم به شرط آنکه هشت سال اجیر من باشی، و اگر ده سال را تمام کردی، اختیارش با خود توست، و من می خواهم بر تو سخت گیرم تا مرا از شایستگان بیابی."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ثَمَـٰنِىَ» هشت و «عَشْرًۭا» ده است، «حِجَجٍۢ» در اینجا یعنی سال‌ها و «مَآ أُرِيدُ أَنْ أَشُقَّ» یعنی نمی‌خواهم سخت گیرم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1528",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27",
+    "w:w28_027_013"
+   ],
+   "promptFa": "با توجه به عبارت «ثَمَـٰنِىَ حِجَجٍۢ»، معنای صحیح آیه کدام است؟",
+   "stem": {
+    "verse": 27
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "... به شرط آنکه هشت سال اجیر من باشی..."
+    },
+    {
+     "id": "o2",
+     "fa": "... به شرط آنکه هشت بار به حج بروی..."
+    },
+    {
+     "id": "o3",
+     "fa": "... به شرط آنکه هشت ماه اجیر من باشی..."
+    },
+    {
+     "id": "o4",
+     "fa": "... به شرط آنکه هشت دینار به من بدهی..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«حِجَج» جمع حِجّة در اینجا به معنای سال‌ها است، نه مراسم حج.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1529",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27",
+    "w:w28_027_022"
+   ],
+   "promptFa": "ترجمه عبارت «وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ» در کدام گزینه درست آمده است؟",
+   "stem": {
+    "verse": 27
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "... و من نمی خواهم بر تو سخت گیرم..."
+    },
+    {
+     "id": "o2",
+     "fa": "... و من نمی خواهم تو را به زحمت بیندازم... (نادرست به دلیل تفاوت دقیق با ترجمه مبنا)"
+    },
+    {
+     "id": "o3",
+     "fa": "... و من نمی خواهم به تو عشق بورزم..."
+    },
+    {
+     "id": "o4",
+     "fa": "... و من نمی خواهم از تو جدا شوم..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أَشُقَّ» از ریشه شقّ (مشقت) است، یعنی سخت‌گیری کنم. ترجمه انصاریان دقیقاً «و من نمی خواهم بر تو سخت گیرم» است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1530",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام آیه است؟ «گفت: می خواهم یکی از این دو دخترم را به نکاح تو درآورم...»",
+   "stem": {
+    "verse": 27,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 27,
+      "from": 1,
+      "to": 29
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 26,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 28,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 25,
+      "from": 1,
+      "to": 26
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۲۷ با «قَالَ إِنِّىٓ أُرِيدُ أَنْ أُنكِحَكَ إِحْدَى ٱبْنَتَىَّ» شروع می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1531",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27",
+    "w:w28_027_005"
+   ],
+   "promptFa": "کدام کلمات به معنای «به نکاح تو درآورم» هستند؟",
+   "stem": {
+    "verse": 27,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 27,
+      "from": 5,
+      "to": 5
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 27,
+      "from": 11,
+      "to": 11
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 27,
+      "from": 22,
+      "to": 22
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 27,
+      "from": 3,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أُنكِحَكَ» دقیقاً به معنای به نکاح تو درآورم است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1533",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27"
+   ],
+   "promptFa": "قطعات ترجمه بخش اول آیه را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "گفت: می خواهم یکی از این دو دخترم را ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "به نکاح تو درآورم ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "به شرط آنکه هشت سال اجیر من باشی، ",
+     "wordIdx": [
+      9,
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "تا او را به فرزندی بپذیرم",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "near_miss"
+   },
+   "explanationFa": "اول پیشنهاد ازدواج (إِنِّىٓ أُرِيدُ أَنْ أُنكِحَكَ) و سپس شرط مهریه کاری (أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍۢ). (در ترجمه فارسی فعل درآورم در آخر قطعه آمده است)",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1535",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27",
+    "w:w28_027_013"
+   ],
+   "promptFa": "کلمات کلیدی پنهان شده در ترجمه آیه را بیابید.",
+   "stem": {
+    "verse": 27,
+    "showFa": false,
+    "hiddenIdx": [
+     5,
+     13
+    ],
+    "faHidden": [
+     {
+      "start": 41,
+      "text": "نکاح"
+     },
+     {
+      "start": 65,
+      "text": "هشت سال"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "نکاح",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "هشت سال",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "ده ماه",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "13": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss"
+   },
+   "explanationFa": "أُنكِحَكَ: به نکاح درآورم | ثَمَـٰنِىَ حِجَجٍۢ: هشت سال.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1536",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 27,
+   "targets": [
+    "vt:27",
+    "w:w28_027_022"
+   ],
+   "promptFa": "جاهای خالی را پر کنید.",
+   "stem": {
+    "verse": 27,
+    "showFa": false,
+    "hiddenIdx": [
+     22,
+     29
+    ],
+    "faHidden": [
+     {
+      "start": 189,
+      "text": "سخت گیرم"
+     },
+     {
+      "start": 223,
+      "text": "شایستگان"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "سخت گیرم",
+     "wordIdx": [
+      22
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "شایستگان",
+     "wordIdx": [
+      29
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "آسان گیرم",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "22": "b1",
+    "29": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend"
+   },
+   "explanationFa": "أَشُقَّ: مشقت دهم و سخت گیرم | ٱلصَّـٰلِحِينَ: شایستگان.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1537",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28"
+   ],
+   "promptFa": "پاسخ موسی (ع) را با ترجمه تطبیق دهید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَالَ ذَٰلِكَ بَيْنِى وَبَيْنَكَ ۖ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَيَّمَا ٱلْأَجَلَيْنِ"
+    },
+    {
+     "id": "l3",
+     "ar": "قَضَيْتُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "[موسی] گفت: این قرارداد میان من و تو باشد،"
+    },
+    {
+     "id": "r2",
+     "fa": "هر یک از این دو مدت را"
+    },
+    {
+     "id": "r3",
+     "fa": "به پایان برم"
+    },
+    {
+     "id": "r4",
+     "fa": "هر یک از این دو مرگ را"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«ٱلْأَجَلَيْنِ» به معنای دو مدت (هشت یا ده سال) است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1539",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28"
+   ],
+   "promptFa": "ترجمه صحیح آیه ۲۸ کدام است؟",
+   "stem": {
+    "verse": 28
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "[موسی] گفت: این قرارداد میان من و تو باشد، هر یک از این دو مدت را به پایان برم هیچ تعدّی و ستمی بر من نیست، و خدا بر آنچه می گوییم، نگهبان و وکیل است."
+    },
+    {
+     "id": "o2",
+     "fa": "[موسی] گفت: این قرارداد میان من و تو باشد، هر یک از این دو کار را به پایان برم هیچ دشمنی بر من نیست، و خدا بر آنچه می گوییم، نگهبان و وکیل است."
+    },
+    {
+     "id": "o3",
+     "fa": "[موسی] گفت: این دوستی میان من و تو باشد، هر یک از این دو مدت را به پایان برم هیچ تعدّی و ستمی بر من نیست، و خدا بر آنچه می گوییم، آگاه است."
+    },
+    {
+     "id": "o4",
+     "fa": "[موسی] گفت: این قرارداد میان من و تو باشد، هر یک از این دو مدت را رها کنم هیچ تعدّی و ستمی بر من نیست، و خدا بر آنچه می گوییم، شاهد است."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱلْأَجَلَيْنِ» دو مدت، «قَضَيْتُ» به پایان برم، و «عُدْوَٰنَ» تعدی و ستم است.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1540",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28",
+    "w:w28_028_006"
+   ],
+   "promptFa": "با توجه به کلمه «ٱلْأَجَلَيْنِ»، کدام ترجمه درست است؟",
+   "stem": {
+    "verse": 28
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "... هر یک از این دو مدت را به پایان برم..."
+    },
+    {
+     "id": "o2",
+     "fa": "... هر یک از این دو مرگ را به پایان برم..."
+    },
+    {
+     "id": "o3",
+     "fa": "... هر یک از این دو کار را به پایان برم..."
+    },
+    {
+     "id": "o4",
+     "fa": "... هر یک از این دو مسیر را به پایان برم..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "اجل در عربی به معنای مدت معین است، اگرچه در فارسی بیشتر به مرگ تعبیر می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1541",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28",
+    "w:w28_028_009"
+   ],
+   "promptFa": "عبارت «فَلَا عُدْوَٰنَ عَلَىَّ» چگونه ترجمه شده است؟",
+   "stem": {
+    "verse": 28
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هیچ تعدّی و ستمی بر من نیست"
+    },
+    {
+     "id": "o2",
+     "fa": "هیچ دشمنی بر من نیست"
+    },
+    {
+     "id": "o3",
+     "fa": "هیچ عذابی بر من نیست"
+    },
+    {
+     "id": "o4",
+     "fa": "هیچ بازگشتی بر من نیست"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«عُدْوَٰنَ» از ریشه عدو (تجاوز از حد) است، یعنی تعدی و ستم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1542",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28"
+   ],
+   "promptFa": "ترجمه «[موسی] گفت: این قرارداد میان من و تو باشد...» متعلق به کدام آیه است؟",
+   "stem": {
+    "verse": 28,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 28,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 27,
+      "from": 1,
+      "to": 29
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 26,
+      "from": 1,
+      "to": 10
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 25,
+      "from": 1,
+      "to": 26
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "این آیه با «قَالَ ذَٰلِكَ بَيْنِى وَبَيْنَكَ» شروع می‌شود.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1543",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28",
+    "w:w28_028_006"
+   ],
+   "promptFa": "کدام کلمات آیه به معنای «هر یک از این دو مدت» است؟",
+   "stem": {
+    "verse": 28,
+    "showFa": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 28,
+      "from": 5,
+      "to": 6
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 28,
+      "from": 8,
+      "to": 9
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 28,
+      "from": 3,
+      "to": 4
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 27,
+      "from": 7,
+      "to": 8
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أَيَّمَا» یعنی هر کدام و «ٱلْأَجَلَيْنِ» یعنی دو مدت.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1545",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28"
+   ],
+   "promptFa": "بخش اول ترجمه پاسخ موسی (ع) را مرتب کنید.",
+   "stem": {},
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "[موسی] گفت: این قرارداد میان من و تو باشد، ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "هر یک از این دو مدت را ",
+     "wordIdx": [
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "به پایان برم ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "هیچ دشمنی بین ما نیست",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "false_friend"
+   },
+   "explanationFa": "قَالَ ذَٰلِكَ بَيْنِى وَبَيْنَكَ ۖ أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1547",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28",
+    "w:w28_028_006"
+   ],
+   "promptFa": "جاهای خالی را با کلمات ترجمه پر کنید.",
+   "stem": {
+    "verse": 28,
+    "showFa": false,
+    "hiddenIdx": [
+     6,
+     7
+    ],
+    "faHidden": [
+     {
+      "start": 58,
+      "text": "دو مدت"
+     },
+     {
+      "start": 68,
+      "text": "به پایان برم"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "دو مدت",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "به پایان برم",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "دو کار",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "6": "b1",
+    "7": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss"
+   },
+   "explanationFa": "ٱلْأَجَلَيْنِ: دو مدت | قَضَيْتُ: به پایان برم.",
+   "unitId": "u_p388b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p388b_A_1548",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 28,
+   "targets": [
+    "vt:28",
+    "w:w28_028_009"
+   ],
+   "promptFa": "کلمات کلیدی جاافتاده در ترجمه را قرار دهید.",
+   "stem": {
+    "verse": 28,
+    "showFa": false,
+    "hiddenIdx": [
+     9,
+     15
+    ],
+    "faHidden": [
+     {
+      "start": 85,
+      "text": "تعدّی و ستمی"
+     },
+     {
+      "start": 135,
+      "text": "نگهبان و وکیل"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "تعدّی و ستمی",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "نگهبان و وکیل",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "دشمنی",
+     "wordIdx": []
+    }
+   ],
+   "answer": {
+    "9": "b1",
+    "15": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend"
+   },
+   "explanationFa": "عُدْوَٰنَ: تعدی و ستم | وَكِيلٌ: نگهبان و وکیل.",
+   "unitId": "u_p388b",
+   "part": "A"
+  }
+ ],
+ "issues": [
+  "[u_p388b.partA2.json] earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در MATCH_WORDS نیامد.",
+  "[u_p388b.partA3.json] earlierHardWords در ورودی نبود؛ در جفت‌سازی به‌جای آن از کلمات دیگر همین دو آیه (غیرسخت) به‌عنوان کلمه‌ی مرور استفاده شد.",
+  "[u_p388b.partA3.json] معنای کلمات غیرسخت در جفت‌سازی از fa ورودی (انصاریان) گرفته شد.",
+  "[u_p388b.partA4.json] earlierHardWords در ورودی نبود؛ کلمه‌ی مرور از کلمات آیه‌ی ۲۷ جایگزین شد.",
+  "[u_p388b.partA5.json] earlierHardWords در ورودی نبود؛ برای مرور از کلمات غیرسخت همین برش استفاده شد.",
+  "[u_p388b.partA6.json] earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در جفت‌سازی‌ها نیامد."
+ ],
+ "sourceFiles": [
+  "u_p388b.partA.json",
+  "u_p388b.partA2.json",
+  "u_p388b.partA3.json",
+  "u_p388b.partA4.json",
+  "u_p388b.partA5.json",
+  "u_p388b.partA6.json",
+  "u_p388b.partA7.json",
+  "u_p388b.partA8.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 13,
+  "files": 8
+ }
+}

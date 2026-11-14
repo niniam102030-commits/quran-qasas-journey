@@ -1,0 +1,837 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386b",
+  "part": "C5",
+  "generatedBy": "gemini-2.5-pro",
+  "lexicon": [],
+  "chunks": [],
+  "questions": [
+    {
+      "id": "q_u_p386b_C_0463",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 10,
+      "targets": [
+        "vn:10"
+      ],
+      "promptFa": "شماره این آیه در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 9
+        },
+        {
+          "id": "o2",
+          "num": 10
+        },
+        {
+          "id": "o3",
+          "num": 11
+        },
+        {
+          "id": "o4",
+          "num": 12
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه که از تهی شدن دل مادر موسی و استوار ساختن قلب او سخن می‌گوید، دهمین آیه سوره قصص است."
+    },
+    {
+      "id": "q_u_p386b_C_0464",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 10,
+      "targets": [
+        "vn:10"
+      ],
+      "promptFa": "این آیه که بلافاصله پس از سخن همسر فرعون در دفاع از نوزاد قرار دارد، چندمین آیه سوره قصص است؟",
+      "stem": {
+        "verse": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 7
+        },
+        {
+          "id": "o2",
+          "num": 8
+        },
+        {
+          "id": "o3",
+          "num": 11
+        },
+        {
+          "id": "o4",
+          "num": 10
+        },
+        {
+          "id": "o5",
+          "num": 13
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه مربوط به بی‌تابی دل مادر موسی و لطف الهی در آرامش بخشیدن به او، آیه ۱۰ سوره قصص است که میان آیه ۹ و آیه ۱۱ قرار دارد."
+    },
+    {
+      "id": "q_u_p386b_C_0465",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 10,
+      "targets": [
+        "vn:10"
+      ],
+      "promptFa": "آیه ۱۰ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 10,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_009_001",
+            "w28_009_002",
+            "w28_009_003",
+            "w28_009_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_011_001",
+            "w28_011_002",
+            "w28_011_003",
+            "w28_011_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_012_001",
+            "w28_012_002",
+            "w28_012_003",
+            "w28_012_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۱۰ سوره قصص با بیان وضعیت قلب مادر موسی آغاز می‌شود و سایر گزینه‌ها ابتدای آیات ۹، ۱۱ و ۱۲ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0466",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 10,
+      "targets": [
+        "vn:10"
+      ],
+      "promptFa": "کدام گزینه ابتدای آیه ۱۰ سوره قصص را به‌درستی نشان می‌دهد؟",
+      "stem": {
+        "num": 10
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_008_001",
+            "w28_008_002",
+            "w28_008_003",
+            "w28_008_004",
+            "w28_008_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_010_010",
+            "w28_010_011",
+            "w28_010_012",
+            "w28_010_013",
+            "w28_010_014"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 10,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_013_001",
+            "w28_013_002",
+            "w28_013_003",
+            "w28_013_004",
+            "w28_013_005"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "گزینه سوم سرآغاز دقیق آیه ۱۰ است؛ گزینه دوم بخشی از میانه همین آیه است و گزینه‌های اول و چهارم ابتدای آیات ۸ و ۱۳ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0467",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 11,
+      "targets": [
+        "vn:11"
+      ],
+      "promptFa": "شماره این آیه در سوره قصص چند است؟",
+      "stem": {
+        "verse": 11
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 10
+        },
+        {
+          "id": "o2",
+          "num": 12
+        },
+        {
+          "id": "o3",
+          "num": 11
+        },
+        {
+          "id": "o4",
+          "num": 13
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه که سفارش مادر موسی به دخترش برای پیگیری وضعیت نوزاد را بیان می‌کند، یازدهمین آیه سوره قصص است."
+    },
+    {
+      "id": "q_u_p386b_C_0468",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 11,
+      "targets": [
+        "vn:11"
+      ],
+      "promptFa": "این آیه که همچون آیه ۹ با عبارت «و در حالی که آنان درک نمی‌کردند» پایان می‌یابد، چندمین آیه سوره قصص است؟",
+      "stem": {
+        "verse": 11
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 11
+        },
+        {
+          "id": "o2",
+          "num": 9
+        },
+        {
+          "id": "o3",
+          "num": 10
+        },
+        {
+          "id": "o4",
+          "num": 12
+        },
+        {
+          "id": "o5",
+          "num": 14
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "اگرچه آیات ۹ و ۱۱ پایان یکسانی دارند، اما آیه مربوط به پیگیری خواهر موسی از دور، آیه ۱۱ سوره قصص است."
+    },
+    {
+      "id": "q_u_p386b_C_0469",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 11,
+      "targets": [
+        "vn:11"
+      ],
+      "promptFa": "آیه ۱۱ سوره قصص با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 11
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_010_001",
+            "w28_010_002",
+            "w28_010_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 11,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_012_001",
+            "w28_012_002",
+            "w28_012_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_013_001",
+            "w28_013_002",
+            "w28_013_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۱۱ با سخن مادر موسی به خواهر او آغاز می‌گردد و سایر گزینه‌ها ابتدای آیات ۱۰، ۱۲ و ۱۳ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0470",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 11,
+      "targets": [
+        "vn:11"
+      ],
+      "promptFa": "کدام عبارت آغازگر آیه ۱۱ سوره قصص است؟ (به تفاوت آغاز آیات ۹ و ۱۱ دقت کنید)",
+      "stem": {
+        "num": 11
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_009_001",
+            "w28_009_002",
+            "w28_009_003",
+            "w28_009_004",
+            "w28_009_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_011_004",
+            "w28_011_005",
+            "w28_011_006",
+            "w28_011_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_012_006",
+            "w28_012_007",
+            "w28_012_008",
+            "w28_012_009",
+            "w28_012_010"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 11,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه ۹ با سخن همسر فرعون و آیه ۱۱ با دستور مادر موسی به خواهرش آغاز می‌شود؛ گزینه‌های دوم و سوم نیز از میانه آیات ۱۱ و ۱۲ انتخاب شده‌اند."
+    },
+    {
+      "id": "q_u_p386b_C_0471",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 12,
+      "targets": [
+        "vn:12"
+      ],
+      "promptFa": "شماره این آیه در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 12
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 12
+        },
+        {
+          "id": "o2",
+          "num": 10
+        },
+        {
+          "id": "o3",
+          "num": 11
+        },
+        {
+          "id": "o4",
+          "num": 13
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه مربوط به حرام کردن همه زنان شیردهنده بر موسی و پیشنهاد خواهرش به فرعونیان، دوازدهمین آیه سوره قصص است."
+    },
+    {
+      "id": "q_u_p386b_C_0472",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 12,
+      "targets": [
+        "vn:12"
+      ],
+      "promptFa": "این آیه که با علامت حزب آغاز شده و پیشنهاد خواهر موسی برای معرفی خانواده‌ای سرپرست و خیرخواه را مطرح می‌کند، چندمین آیه سوره قصص است؟",
+      "stem": {
+        "verse": 12
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 9
+        },
+        {
+          "id": "o2",
+          "num": 11
+        },
+        {
+          "id": "o3",
+          "num": 12
+        },
+        {
+          "id": "o4",
+          "num": 13
+        },
+        {
+          "id": "o5",
+          "num": 14
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه پس از پیگیری خواهر موسی در آیه ۱۱ و پیش از بازگرداندن نوزاد به مادرش در آیه ۱۳ قرار دارد و شماره آن ۱۲ است."
+    },
+    {
+      "id": "q_u_p386b_C_0473",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 12,
+      "targets": [
+        "vn:12"
+      ],
+      "promptFa": "آیه ۱۲ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 12
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_010_001",
+            "w28_010_002",
+            "w28_010_003",
+            "w28_010_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_011_001",
+            "w28_011_002",
+            "w28_011_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 12,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_013_001",
+            "w28_013_002",
+            "w28_013_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۱۲ با بیان حرام شدن زنان شیردهنده بر موسی از پیش آغاز می‌گردد و سایر گزینه‌ها سرآغاز آیات ۱۰، ۱۱ و ۱۳ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0474",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 12,
+      "targets": [
+        "vn:12"
+      ],
+      "promptFa": "کدام گزینه سرآغاز دقیق آیه ۱۲ سوره قصص است؟",
+      "stem": {
+        "num": 12
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_012_006",
+            "w28_012_007",
+            "w28_012_008",
+            "w28_012_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 12,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_014_001",
+            "w28_014_002",
+            "w28_014_003",
+            "w28_014_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_008_001",
+            "w28_008_002",
+            "w28_008_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "گزینه دوم ابتدای آیه ۱۲ است، در حالی که گزینه اول جمله میانی همین آیه (پیشنهاد خواهر موسی) و گزینه‌های سوم و چهارم ابتدای آیات ۱۴ و ۸ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0475",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 13,
+      "targets": [
+        "vn:13"
+      ],
+      "promptFa": "شماره این آیه در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 13
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 11
+        },
+        {
+          "id": "o2",
+          "num": 12
+        },
+        {
+          "id": "o3",
+          "num": 14
+        },
+        {
+          "id": "o4",
+          "num": 13
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه که بازگرداندن موسی به مادرش برای روشنی چشم و رفع اندوه او را بیان می‌کند، سیزدهمین آیه سوره قصص است."
+    },
+    {
+      "id": "q_u_p386b_C_0476",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 13,
+      "targets": [
+        "vn:13"
+      ],
+      "promptFa": "این آیه که آخرین آیه صفحه ۳۸۶ است و مانند آیه ۵۷ با عبارت «ولی بیشتر مردم نمی‌دانند» ختم می‌شود، چندمین آیه سوره قصص است؟",
+      "stem": {
+        "verse": 13
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 10
+        },
+        {
+          "id": "o2",
+          "num": 13
+        },
+        {
+          "id": "o3",
+          "num": 12
+        },
+        {
+          "id": "o4",
+          "num": 14
+        },
+        {
+          "id": "o5",
+          "num": 57
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "similar_verse"
+      },
+      "explanationFa": "هرچند آیات ۱۳ و ۵۷ سوره قصص پایان مشابهی دارند، اما آیه مربوط به بازگرداندن موسی به مادرش و تحقق وعده خدا آیه ۱۳ است."
+    },
+    {
+      "id": "q_u_p386b_C_0477",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 13,
+      "targets": [
+        "vn:13"
+      ],
+      "promptFa": "آیه ۱۳ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 13
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 13,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_012_001",
+            "w28_012_002",
+            "w28_012_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_014_001",
+            "w28_014_002",
+            "w28_014_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_011_001",
+            "w28_011_002",
+            "w28_011_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۱۳ با بیان بازگرداندن موسی به سوی مادرش آغاز می‌شود و سایر گزینه‌ها ابتدای آیات ۱۲، ۱۴ و ۱۱ هستند."
+    },
+    {
+      "id": "q_u_p386b_C_0478",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 13,
+      "targets": [
+        "vn:13"
+      ],
+      "promptFa": "کدام گزینه ابتدای آیه ۱۳ سوره قصص (آخرین آیه صفحه ۳۸۶) را نشان می‌دهد؟",
+      "stem": {
+        "num": 13
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_008_001",
+            "w28_008_002",
+            "w28_008_003",
+            "w28_008_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_013_004",
+            "w28_013_005",
+            "w28_013_006",
+            "w28_013_007",
+            "w28_013_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_010_001",
+            "w28_010_002",
+            "w28_010_003",
+            "w28_010_004",
+            "w28_010_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 13,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "گزینه چهارم سرآغاز کامل آیه ۱۳ است؛ گزینه دوم ادامه همان جمله اول آیه ۱۳ است و گزینه‌های اول و سوم ابتدای آیات ۸ و ۱۰ هستند."
+    }
+  ],
+  "issues": []
+}

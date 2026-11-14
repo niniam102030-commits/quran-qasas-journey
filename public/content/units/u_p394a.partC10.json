@@ -1,0 +1,66 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "C10",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_C_2501",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 73,
+      "targets": [
+        "sq:72"
+      ],
+      "promptFa": "پایان آیه‌ی قبل از این آیه کدام است؟",
+      "stem": {
+        "verse": 73
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 71,
+            "from": 16,
+            "to": 19
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 74,
+            "from": 4,
+            "to": 8
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 72,
+            "from": 16,
+            "to": 21
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 70,
+            "from": 12,
+            "to": 15
+          }
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل (۷۲) درباره آرامش در شب سخن می‌گوید و با «أَفَلَا تُبْصِرُونَ» پایان می‌یابد که مقدمه‌ای برای بیان رحمت خدا در آفرینش شب و روز در آیه‌ی ۷۳ است."
+    }
+  ],
+  "issues": []
+}

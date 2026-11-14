@@ -1,0 +1,6116 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p391b",
+ "part": "A",
+ "generatedBy": "Gemini",
+ "lexicon": [
+  {
+   "wordId": "w28_047_001",
+   "gloss": "و اگر نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_002",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_003",
+   "gloss": "به آنان برسد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_004",
+   "gloss": "عذابی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_005",
+   "gloss": "به سبب آنچه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_006",
+   "gloss": "مرتکب شدند",
+   "hard": true,
+   "meaningFa": "پیش فرستاد، مرتکب شدند",
+   "rootAr": "ق د م",
+   "trapFa": null,
+   "tipFa": "کارهایی که از پیش فرستادند",
+   "segments": [
+    {
+     "text": "قَدَّمَتْ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_047_007",
+   "gloss": "دست‌هایشان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_008",
+   "gloss": "پس بگویند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_009",
+   "gloss": "پروردگارا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_010",
+   "gloss": "چرا نه",
+   "hard": true,
+   "meaningFa": "چرا نه، آیا نمی‌شد",
+   "rootAr": null,
+   "trapFa": "اگر نه",
+   "tipFa": "لولا وقتی قبل از فعل ماضی بیاید معنای سرزنش (چرا نکردی) می‌دهد.",
+   "segments": [
+    {
+     "text": "لَوْلَآ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_047_011",
+   "gloss": "فرستادی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_012",
+   "gloss": "به سوی ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_013",
+   "gloss": "پیامبری",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_014",
+   "gloss": "تا پیروی کنیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_015",
+   "gloss": "آیاتت را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_016",
+   "gloss": "و باشیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_017",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_047_018",
+   "gloss": "مؤمنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_001",
+   "gloss": "پس هنگامی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_002",
+   "gloss": "آمد آنان را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_003",
+   "gloss": "حق",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_004",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_005",
+   "gloss": "سوی ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_006",
+   "gloss": "گفتند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_007",
+   "gloss": "چرا نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_008",
+   "gloss": "داده شد",
+   "hard": true,
+   "meaningFa": "داده شد",
+   "rootAr": "ا ت ی",
+   "trapFa": "آمد",
+   "tipFa": "فعل مجهول است، یعنی داده شد.",
+   "segments": [
+    {
+     "text": "أُوتِىَ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_048_009",
+   "gloss": "مانند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_010",
+   "gloss": "آنچه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_011",
+   "gloss": "داده شد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_012",
+   "gloss": "موسی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_013",
+   "gloss": "آیا و نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_014",
+   "gloss": "کفر ورزیدند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_015",
+   "gloss": "به آنچه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_016",
+   "gloss": "داده شد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_017",
+   "gloss": "موسی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_018",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_019",
+   "gloss": "پیش",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_020",
+   "gloss": "گفتند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_021",
+   "gloss": "دو جادو",
+   "hard": true,
+   "meaningFa": "دو جادو",
+   "rootAr": "س ح ر",
+   "trapFa": "جادوگران",
+   "tipFa": "کلمه به شکل مثنی است (اشاره به تورات و قرآن)",
+   "segments": [
+    {
+     "text": "سِحْرَانِ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_048_022",
+   "gloss": "پشتیبان هم شدند",
+   "hard": true,
+   "meaningFa": "پشت به پشت هم دادند، پشتیبان یکدیگرند",
+   "rootAr": "ظ ه ر",
+   "trapFa": "آشکار شدند",
+   "tipFa": "از ریشه ظهر (پشت)، یعنی پشت‌گرمیِ هم شدند.",
+   "segments": [
+    {
+     "text": "تَظَـٰهَرَا",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_048_023",
+   "gloss": "و گفتند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_024",
+   "gloss": "مسلماً ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_025",
+   "gloss": "به هر یک",
+   "hard": false
+  },
+  {
+   "wordId": "w28_048_026",
+   "gloss": "کافرانیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_001",
+   "gloss": "بگو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_002",
+   "gloss": "پس بیاورید",
+   "hard": true,
+   "meaningFa": "پس بیاورید",
+   "rootAr": "ا ت ی",
+   "trapFa": "پس بیایید",
+   "tipFa": "از اتیان به معنای آوردن (چون با «بـ» متعدی شده)",
+   "segments": [
+    {
+     "text": "فَ",
+     "type": "prefix"
+    },
+    {
+     "text": "أْتُوا۟",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_049_003",
+   "gloss": "کتابی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_004",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_005",
+   "gloss": "نزد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_006",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_007",
+   "gloss": "آن",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_008",
+   "gloss": "هدایت‌کننده‌تر",
+   "hard": true,
+   "meaningFa": "هدایت‌کننده‌تر، راهنماتر",
+   "rootAr": "ه د ی",
+   "trapFa": "هدایت کرد",
+   "tipFa": "اسم تفضیل بر وزن أفعل است.",
+   "segments": [
+    {
+     "text": "أَهْدَىٰ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_049_009",
+   "gloss": "از آن دو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_010",
+   "gloss": "تا پیروی کنم آن را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_011",
+   "gloss": "اگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_012",
+   "gloss": "هستید",
+   "hard": false
+  },
+  {
+   "wordId": "w28_049_013",
+   "gloss": "راستگویان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_001",
+   "gloss": "پس اگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_002",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_003",
+   "gloss": "پاسخ دادند",
+   "hard": true,
+   "meaningFa": "پاسخ ندادند (با لم)",
+   "rootAr": "ج و ب",
+   "trapFa": "مستجاب نکردند",
+   "tipFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است.",
+   "segments": [
+    {
+     "text": "يَسْتَجِيبُوا۟",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_050_004",
+   "gloss": "به تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_005",
+   "gloss": "پس بدان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_006",
+   "gloss": "که فقط",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_007",
+   "gloss": "پیروی می‌کنند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_008",
+   "gloss": "هواهای نفسانی‌شان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_009",
+   "gloss": "و کیست",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_010",
+   "gloss": "گمراه‌تر",
+   "hard": true,
+   "meaningFa": "گمراه‌تر",
+   "rootAr": "ض ل ل",
+   "trapFa": "گمراه کرد",
+   "tipFa": "اسم تفضیل بر وزن أفعل است.",
+   "segments": [
+    {
+     "text": "أَضَلُّ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_050_011",
+   "gloss": "از کسی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_012",
+   "gloss": "پیروی کرد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_013",
+   "gloss": "هوای نفسش را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_014",
+   "gloss": "بدونِ",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_015",
+   "gloss": "هدایتی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_016",
+   "gloss": "از سوی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_017",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_018",
+   "gloss": "مسلماً",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_019",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_020",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_021",
+   "gloss": "هدایت می‌کند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_022",
+   "gloss": "مردمِ",
+   "hard": false
+  },
+  {
+   "wordId": "w28_050_023",
+   "gloss": "ستمکار را",
+   "hard": false
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 47,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 7,
+     "fa": "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، "
+    },
+    {
+     "from": 8,
+     "to": 13,
+     "fa": "پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی "
+    },
+    {
+     "from": 14,
+     "to": 18,
+     "fa": "تا از آیاتت پیروی کنیم و از مؤمنان باشیم [بی تردید در عذاب کردن و هلاکتشان شتاب می نمودیم.]"
+    }
+   ],
+   "faSegments": [
+    "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، ",
+    "پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی ",
+    "تا از آیاتت پیروی کنیم و از مؤمنان باشیم [بی تردید در عذاب کردن و هلاکتشان شتاب می نمودیم.]"
+   ]
+  },
+  {
+   "verse": 48,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 5,
+     "fa": "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد "
+    },
+    {
+     "from": 6,
+     "to": 12,
+     "fa": "[به جای آنکه بپذیرند] گفتند: چرا مانند آنچه به موسی دادند به او نداده اند؟ "
+    },
+    {
+     "from": 13,
+     "to": 19,
+     "fa": "آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟! "
+    },
+    {
+     "from": 20,
+     "to": 22,
+     "fa": "گفتند: [این تورات و قرآن] دو جادویند که پشتیبان یکدیگرند!! "
+    },
+    {
+     "from": 23,
+     "to": 26,
+     "fa": "و گفتند: ما منکر هر دو هستیم!!"
+    }
+   ],
+   "faSegments": [
+    "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد ",
+    "[به جای آنکه بپذیرند] گفتند: چرا مانند آنچه به موسی دادند به او نداده اند؟ ",
+    "آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟! ",
+    "گفتند: [این تورات و قرآن] دو جادویند که پشتیبان یکدیگرند!! ",
+    "و گفتند: ما منکر هر دو هستیم!!"
+   ]
+  },
+  {
+   "verse": 49,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 6,
+     "fa": "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست] اگر راست می گویید کتابی از نزد خدا بیاورید "
+    },
+    {
+     "from": 7,
+     "to": 9,
+     "fa": "که هدایت کننده تر از این دو باشد "
+    },
+    {
+     "from": 10,
+     "to": 13,
+     "fa": "تا آن را پیروی کنم."
+    }
+   ],
+   "faSegments": [
+    "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست] اگر راست می گویید کتابی از نزد خدا بیاورید ",
+    "که هدایت کننده تر از این دو باشد ",
+    "تا آن را پیروی کنم."
+   ]
+  },
+  {
+   "verse": 50,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 8,
+     "fa": "پس اگر پاسخ تو را ندادند بدان که فقط از هواهای نفسانی خود پیروی می کنند "
+    },
+    {
+     "from": 9,
+     "to": 17,
+     "fa": "و گمراه تر از کسی که بدون هدایتی از سوی خدا از هواهای نفسانی خود پیروی کند، کیست؟ "
+    },
+    {
+     "from": 18,
+     "to": 23,
+     "fa": "مسلماً خدا مردم ستمکار را هدایت نمی کند."
+    }
+   ],
+   "faSegments": [
+    "پس اگر پاسخ تو را ندادند بدان که فقط از هواهای نفسانی خود پیروی می کنند ",
+    "و گمراه تر از کسی که بدون هدایتی از سوی خدا از هواهای نفسانی خود پیروی کند، کیست؟ ",
+    "مسلماً خدا مردم ستمکار را هدایت نمی کند."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p391b_A_0201",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "معنای «قَدَّمَتْ» چیست؟",
+   "stem": {
+    "wordId": "w28_047_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "o2",
+     "fa": "تقدیم کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "پیشی گرفتند"
+    },
+    {
+     "id": "o4",
+     "fa": "قدم زدند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "same_root",
+    "o4": "false_friend"
+   },
+   "explanationFa": "به معنای پیش فرستادند و مرتکب شدند است. کارهایی که از پیش فرستادند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0202",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "معنای کلمه «قَدَّمَتْ» کدام است؟",
+   "stem": {
+    "wordId": "w28_047_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیش آمدند"
+    },
+    {
+     "id": "o2",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "o3",
+     "fa": "پشیمان شدند"
+    },
+    {
+     "id": "o4",
+     "fa": "قدیمی شدند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "random",
+    "o4": "same_root"
+   },
+   "explanationFa": "منظور اعمالی است که از پیش فرستادند و مرتکب شدند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0203",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "در این آیه، «قَدَّمَتْ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_047_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دستهایشان"
+    },
+    {
+     "id": "o2",
+     "fa": "عذاب کشیدند"
+    },
+    {
+     "id": "o3",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستادند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در کنار «أَيْدِيهِمْ» (دست‌هایشان)، یعنی کارهایی که دستانشان از پیش فرستاده و مرتکب شده‌اند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0204",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "معنای «قَدَّمَتْ» در آیه چیست؟",
+   "stem": {
+    "wordId": "w28_047_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیشی جستند"
+    },
+    {
+     "id": "o2",
+     "fa": "برخورد کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "تقدیم کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "مرتکب شدند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«قَدَّمَتْ أَيْدِيهِمْ» کنایه از اعمالی است که مرتکب شدند و پیش فرستادند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0205",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "معنای «لَوْلَآ» در این ترکیب چیست؟",
+   "stem": {
+    "wordId": "w28_047_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اگر نه"
+    },
+    {
+     "id": "o2",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "o3",
+     "fa": "کاش"
+    },
+    {
+     "id": "o4",
+     "fa": "شاید"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "لولا وقتی قبل از فعل ماضی بیاید معنای سرزنش و توبیخ می‌دهد، یعنی چرا نکردی (چرا نه).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0206",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "ترجمه صحیح «لَوْلَآ» کدام است؟",
+   "stem": {
+    "wordId": "w28_047_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آیا نمی‌شد"
+    },
+    {
+     "id": "o2",
+     "fa": "اگر نه"
+    },
+    {
+     "id": "o3",
+     "fa": "پس چرا"
+    },
+    {
+     "id": "o4",
+     "fa": "برای اینکه"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "به معنای «چرا نه» یا «آیا نمی‌شد» برای بیان سرزنش است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0207",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "با توجه به آیه، «لَوْلَآ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_047_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اگر نه"
+    },
+    {
+     "id": "o2",
+     "fa": "هرگز"
+    },
+    {
+     "id": "o3",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "o4",
+     "fa": "کاش"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در عبارت «لَوْلَآ أَرْسَلْتَ»، یعنی چرا نفرستادی (چرا نه).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0208",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "معنای کلمه «لَوْلَآ» در این سیاق چیست؟",
+   "stem": {
+    "wordId": "w28_047_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اگر"
+    },
+    {
+     "id": "o2",
+     "fa": "مگر"
+    },
+    {
+     "id": "o3",
+     "fa": "اگر نه"
+    },
+    {
+     "id": "o4",
+     "fa": "چرا نه"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "random",
+    "o3": "false_friend"
+   },
+   "explanationFa": "این کلمه برای تشویق یا سرزنش استفاده می‌شود و در اینجا معنای «چرا نه» دارد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0209",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "معنای «أُوتِىَ» چیست؟",
+   "stem": {
+    "wordId": "w28_048_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آمد"
+    },
+    {
+     "id": "o2",
+     "fa": "داد"
+    },
+    {
+     "id": "o3",
+     "fa": "داده شد"
+    },
+    {
+     "id": "o4",
+     "fa": "آورده شد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "فعل مجهول از ریشه (ا ت ی) است، یعنی داده شد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0210",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "ترجمه دقیق «أُوتِىَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_048_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "داده شد"
+    },
+    {
+     "id": "o2",
+     "fa": "می‌آید"
+    },
+    {
+     "id": "o3",
+     "fa": "دادند"
+    },
+    {
+     "id": "o4",
+     "fa": "آمدند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "صیغه مجهول ماضی است و معنای «داده شد» می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0211",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "معنای «أُوتِىَ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_048_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آمد"
+    },
+    {
+     "id": "o2",
+     "fa": "مانند آن"
+    },
+    {
+     "id": "o3",
+     "fa": "داده شد"
+    },
+    {
+     "id": "o4",
+     "fa": "می‌آورد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "اشاره به آنچه به موسی (ع) «داده شد» دارد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0212",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "در این عبارت «أُوتِىَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_048_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "داد"
+    },
+    {
+     "id": "o2",
+     "fa": "داده شد"
+    },
+    {
+     "id": "o3",
+     "fa": "داده می‌شود"
+    },
+    {
+     "id": "o4",
+     "fa": "می‌آورند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "near_miss",
+    "o4": "same_root"
+   },
+   "explanationFa": "فعل ماضی مجهول است (داده شد).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0213",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "معنای «سِحْرَانِ» چیست؟",
+   "stem": {
+    "wordId": "w28_048_021",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جادوگران"
+    },
+    {
+     "id": "o2",
+     "fa": "دو جادوگر"
+    },
+    {
+     "id": "o3",
+     "fa": "جادوها"
+    },
+    {
+     "id": "o4",
+     "fa": "دو جادو"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "false_friend",
+    "o3": "near_miss"
+   },
+   "explanationFa": "کلمه به شکل مثنی است و به معنای «دو جادو» (قرآن و تورات از دیدگاه کافران) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0214",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "ترجمه «سِحْرَانِ» کدام است؟",
+   "stem": {
+    "wordId": "w28_048_021",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "o2",
+     "fa": "سحرگاهان"
+    },
+    {
+     "id": "o3",
+     "fa": "جادوگران"
+    },
+    {
+     "id": "o4",
+     "fa": "یک جادو"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "مثنای سحر به معنای دو جادو است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0215",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "معنای کلمه «سِحْرَانِ» در آیه چیست؟",
+   "stem": {
+    "wordId": "w28_048_021",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دو جادوگر"
+    },
+    {
+     "id": "o2",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "o3",
+     "fa": "سحرگاهان"
+    },
+    {
+     "id": "o4",
+     "fa": "جادوهای بزرگ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آنان گفتند این دو (قرآن و تورات) دو جادو هستند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0216",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "کلمه «سِحْرَانِ» در این آیه به چه معناست؟",
+   "stem": {
+    "wordId": "w28_048_021",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جادوگران"
+    },
+    {
+     "id": "o2",
+     "fa": "دو پشتیبان"
+    },
+    {
+     "id": "o3",
+     "fa": "دو سحرگاه"
+    },
+    {
+     "id": "o4",
+     "fa": "دو جادو"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "same_root"
+   },
+   "explanationFa": "اشاره به دو کتاب آسمانی دارد که کافران آن‌ها را «دو جادو» خواندند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0217",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "معنای «تَظَـٰهَرَا» چیست؟",
+   "stem": {
+    "wordId": "w28_048_022",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "o2",
+     "fa": "آشکار شدند"
+    },
+    {
+     "id": "o3",
+     "fa": "تظاهر کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "پشت کردند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "false_friend",
+    "o4": "same_root"
+   },
+   "explanationFa": "از ریشه ظهر (پشت)، یعنی پشت به پشت هم دادند و پشتیبان یکدیگرند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0218",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "ترجمه «تَظَـٰهَرَا» کدام است؟",
+   "stem": {
+    "wordId": "w28_048_022",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ظاهر ساختند"
+    },
+    {
+     "id": "o2",
+     "fa": "پشتیبان هم شدند"
+    },
+    {
+     "id": "o3",
+     "fa": "ریاکاری کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "پنهان شدند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "به معنای پشتیبان هم شدند و یکدیگر را یاری دادند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0219",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "در آیه، «تَظَـٰهَرَا» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_048_022",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تظاهر کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "آشکار شدند"
+    },
+    {
+     "id": "o3",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "o4",
+     "fa": "پشتیبان یکدیگرند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "یعنی این دو جادو پشت به پشت هم داده و پشتیبان یکدیگرند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0220",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "کلمه «تَظَـٰهَرَا» در اینجا به چه معناست؟",
+   "stem": {
+    "wordId": "w28_048_022",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پشتیبان هم شدند"
+    },
+    {
+     "id": "o2",
+     "fa": "پشت کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "پیروز شدند"
+    },
+    {
+     "id": "o4",
+     "fa": "نمایان شدند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "random",
+    "o4": "false_friend"
+   },
+   "explanationFa": "از ظهر (پشت)، یعنی پشت‌گرمی هم شدند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0221",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "معنای «فَأْتُوا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_049_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس بیایید"
+    },
+    {
+     "id": "o2",
+     "fa": "پس رفتند"
+    },
+    {
+     "id": "o3",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "o4",
+     "fa": "پس دادند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "از اتیان به معنای آوردن (چون با «بـ» متعدی شده)، یعنی پس بیاورید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0222",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "ترجمه «فَأْتُوا۟» کدام است؟",
+   "stem": {
+    "wordId": "w28_049_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "o2",
+     "fa": "بیایید"
+    },
+    {
+     "id": "o3",
+     "fa": "بازگردید"
+    },
+    {
+     "id": "o4",
+     "fa": "آوردند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "فعل امر است به معنای پس بیاورید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0223",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "در این آیه، «فَأْتُوا۟» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_049_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس بیایید"
+    },
+    {
+     "id": "o2",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "o3",
+     "fa": "با کتاب"
+    },
+    {
+     "id": "o4",
+     "fa": "پیروی می‌کنم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«فَأْتُوا۟ بِكِتَـٰبٍۢ» یعنی پس کتابی بیاورید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0224",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "معنای کلمه «فَأْتُوا۟» در این سیاق چیست؟",
+   "stem": {
+    "wordId": "w28_049_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "روی آورید"
+    },
+    {
+     "id": "o2",
+     "fa": "مراجعه کنید"
+    },
+    {
+     "id": "o3",
+     "fa": "پس بیایید"
+    },
+    {
+     "id": "o4",
+     "fa": "پس بیاورید"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o3": "false_friend"
+   },
+   "explanationFa": "با حرف جر «بـ» متعدی شده و معنای آوردن می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0225",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "کدام کلمه به معنای «مرتکب شدند» است؟",
+   "stem": {
+    "fa": "مرتکب شدند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "أَرْسَلْتَ"
+    },
+    {
+     "id": "o2",
+     "fa": "قَدَّمَتْ"
+    },
+    {
+     "id": "o3",
+     "fa": "تُصِيبَهُم"
+    },
+    {
+     "id": "o4",
+     "fa": "نَتَّبِعَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "قَدَّمَتْ یعنی پیش فرستادند و مرتکب شدند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0226",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "معادل عربی «مرتکب شدند» کدام است؟",
+   "stem": {
+    "fa": "مرتکب شدند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قَدَّمَتْ"
+    },
+    {
+     "id": "o2",
+     "fa": "جَآءَهُمُ"
+    },
+    {
+     "id": "o3",
+     "fa": "أُوتِىَ"
+    },
+    {
+     "id": "o4",
+     "fa": "يَكْفُرُوا۟"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "random",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "کلمه‌ی قَدَّمَتْ به کارهایی که از پیش مرتکب شدند اشاره دارد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0227",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_006"
+   ],
+   "promptFa": "کلمه به معنای «پیش فرستادند / مرتکب شدند» را انتخاب کنید.",
+   "stem": {
+    "fa": "مرتکب شدند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "أَيْدِيهِمْ"
+    },
+    {
+     "id": "o2",
+     "fa": "رَبَّنَا"
+    },
+    {
+     "id": "o3",
+     "fa": "قَدَّمَتْ"
+    },
+    {
+     "id": "o4",
+     "fa": "فَيَقُولُوا۟"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«قَدَّمَتْ أَيْدِيهِمْ» یعنی آنچه دستانشان پیش فرستادند (مرتکب شدند).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0228",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "کدام کلمه به معنای «چرا نه» است؟",
+   "stem": {
+    "fa": "چرا نه"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "لَوْلَآ"
+    },
+    {
+     "id": "o2",
+     "fa": "لَوْ"
+    },
+    {
+     "id": "o3",
+     "fa": "أَن"
+    },
+    {
+     "id": "o4",
+     "fa": "إِن"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "لولا وقتی قبل از فعل ماضی بیاید معنای سرزنش (چرا نکردی) می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0229",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "معادل عربی «چرا نه / آیا نمی‌شد» چیست؟",
+   "stem": {
+    "fa": "چرا نه"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "لَمَّا"
+    },
+    {
+     "id": "o2",
+     "fa": "لَوْلَآ"
+    },
+    {
+     "id": "o3",
+     "fa": "فَلَمَّا"
+    },
+    {
+     "id": "o4",
+     "fa": "مَآ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "لَوْلَآ به معنای چرا نه است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0230",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 47,
+   "targets": [
+    "w:w28_047_010"
+   ],
+   "promptFa": "کدام کلمه برای سرزنش و به معنای «چرا ... نه» به کار می‌رود؟",
+   "stem": {
+    "fa": "چرا نه"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "أَن"
+    },
+    {
+     "id": "o2",
+     "fa": "مِنَ"
+    },
+    {
+     "id": "o3",
+     "fa": "وَلَوْلَآ"
+    },
+    {
+     "id": "o4",
+     "fa": "لَوْلَآ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "«لَوْلَآ» (در وسط آیه) به معنای چرا نه (چرا نفرستادی) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0231",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "کدام کلمه به معنای «داده شد» است؟",
+   "stem": {
+    "fa": "داده شد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جَآءَهُمُ"
+    },
+    {
+     "id": "o2",
+     "fa": "أُوتِىَ"
+    },
+    {
+     "id": "o3",
+     "fa": "فَأْتُوا۟"
+    },
+    {
+     "id": "o4",
+     "fa": "يَكْفُرُوا۟"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل مجهول أُوتِىَ به معنای داده شد است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0233",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_008"
+   ],
+   "promptFa": "برای «داده شد» کدام کلمه صحیح است؟",
+   "stem": {
+    "fa": "داده شد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "أُوتِىَ"
+    },
+    {
+     "id": "o2",
+     "fa": "عِندِنَا"
+    },
+    {
+     "id": "o3",
+     "fa": "مِثْلَ"
+    },
+    {
+     "id": "o4",
+     "fa": "قَبْلُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "أُوتِىَ یعنی داده شد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0234",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "کدام کلمه به معنای «دو جادو» است؟",
+   "stem": {
+    "fa": "دو جادو"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سَاحِرَانِ"
+    },
+    {
+     "id": "o2",
+     "fa": "سِحْرَانِ"
+    },
+    {
+     "id": "o3",
+     "fa": "سِحْرٌ"
+    },
+    {
+     "id": "o4",
+     "fa": "تَظَـٰهَرَا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "سِحْرَانِ مثنی سحر است و یعنی دو جادو.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0235",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "معادل «دو جادو» چیست؟",
+   "stem": {
+    "fa": "دو جادو"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ٱلْحَقُّ"
+    },
+    {
+     "id": "o2",
+     "fa": "ءَايَـٰتِكَ"
+    },
+    {
+     "id": "o3",
+     "fa": "سِحْرَانِ"
+    },
+    {
+     "id": "o4",
+     "fa": "بِكُلٍّۢ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "اشاره به قرآن و تورات به عنوان دو جادو است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0236",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_021"
+   ],
+   "promptFa": "کدام کلمه به معنای «دو جادو» در این آیه آمده است؟",
+   "stem": {
+    "fa": "دو جادو"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سِحْرَانِ"
+    },
+    {
+     "id": "o2",
+     "fa": "كَـٰفِرُونَ"
+    },
+    {
+     "id": "o3",
+     "fa": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "o4",
+     "fa": "قَالُوٓا۟"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "سِحْرَانِ مثنی سحر است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0237",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "کدام کلمه به معنای «پشتیبان یکدیگرند / پشتیبان هم شدند» است؟",
+   "stem": {
+    "fa": "پشتیبان یکدیگرند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ظَهَرُوا"
+    },
+    {
+     "id": "o2",
+     "fa": "تَظَاهَرُوا"
+    },
+    {
+     "id": "o3",
+     "fa": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "o4",
+     "fa": "قَالُوا۟"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "تَظَـٰهَرَا از ریشه ظهر، یعنی پشت به پشت هم دادند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0238",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 48,
+   "targets": [
+    "w:w28_048_022"
+   ],
+   "promptFa": "معادل عربی «پشتیبان هم شدند» کدام است؟",
+   "stem": {
+    "fa": "پشتیبان یکدیگرند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "يَكْفُرُوا۟"
+    },
+    {
+     "id": "o2",
+     "fa": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "o3",
+     "fa": "نَتَّبِعَ"
+    },
+    {
+     "id": "o4",
+     "fa": "يَقُولُوا۟"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "یعنی این دو کتاب جادوهایی هستند که پشتیبان یکدیگرند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0240",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «پس بیاورید» است؟",
+   "stem": {
+    "fa": "پس بیاورید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "فَأْتُوا۟"
+    },
+    {
+     "id": "o2",
+     "fa": "أُوتِىَ"
+    },
+    {
+     "id": "o3",
+     "fa": "أَتَّبِعْهُ"
+    },
+    {
+     "id": "o4",
+     "fa": "أَرْسَلْتَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "فَأْتُوا۟ فعل امر است به معنای پس بیاورید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0241",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "معادل «پس بیاورید» کدام کلمه است؟",
+   "stem": {
+    "fa": "پس بیاورید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "جَآءَهُمُ"
+    },
+    {
+     "id": "o2",
+     "fa": "فَأْتُوا۟"
+    },
+    {
+     "id": "o3",
+     "fa": "نَتَّبِعَ"
+    },
+    {
+     "id": "o4",
+     "fa": "يَكْفُرُوا۟"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "فعل امر از اتیان همراه با فاء نتیجه (پس).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0242",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_002"
+   ],
+   "promptFa": "برای «پس بیاورید» کدام کلمه در آیه آمده است؟",
+   "stem": {
+    "fa": "پس بیاورید"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قُلْ"
+    },
+    {
+     "id": "o2",
+     "fa": "بِكِتَـٰبٍۢ"
+    },
+    {
+     "id": "o3",
+     "fa": "فَأْتُوا۟"
+    },
+    {
+     "id": "o4",
+     "fa": "أَهْدَىٰ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "به معنای آوردن (چون با «بـ» متعدی شده است).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0243",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_047_006",
+    "w:w28_047_010",
+    "w:w28_048_008",
+    "w:w28_048_021",
+    "w:w28_048_022"
+   ],
+   "promptFa": "کلمات را به معنای درست آن‌ها وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l3",
+     "ar": "أُوتِىَ"
+    },
+    {
+     "id": "l4",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l5",
+     "ar": "تَظَـٰهَرَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r2",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r3",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r4",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r5",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r6",
+     "fa": "جادوگران"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "قَدَّمَتْ (مرتکب شدند)، لَوْلَآ (چرا نه)، أُوتِىَ (داده شد)، سِحْرَانِ (دو جادو)، تَظَـٰهَرَا (پشتیبان یکدیگرند).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0244",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_047_010",
+    "w:w28_048_008",
+    "w:w28_048_021",
+    "w:w28_048_022",
+    "w:w28_049_002"
+   ],
+   "promptFa": "معنای هر کلمه عربی را پیدا کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l2",
+     "ar": "أُوتِىَ"
+    },
+    {
+     "id": "l3",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l4",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l5",
+     "ar": "فَأْتُوا۟"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r2",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r3",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r4",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r5",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r6",
+     "fa": "آمد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "توجه: أُوتِىَ فعل مجهول (داده شد) و تَظَـٰهَرَا (پشتیبان هم شدند) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0245",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_048_008",
+    "w:w28_048_021",
+    "w:w28_048_022",
+    "w:w28_049_002",
+    "w:w28_047_006"
+   ],
+   "promptFa": "ارتباط کلمات و معانی را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أُوتِىَ"
+    },
+    {
+     "id": "l2",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l4",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "قَدَّمَتْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r2",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r3",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r4",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r5",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r6",
+     "fa": "آشکار شدند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "قَدَّمَتْ کارهایی است که از پیش مرتکب شدند، و تَظَـٰهَرَا از ریشه ظهر است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0246",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_048_021",
+    "w:w28_048_022",
+    "w:w28_049_002",
+    "w:w28_047_006",
+    "w:w28_047_010"
+   ],
+   "promptFa": "هر واژه را به ترجمه دقیق خود پیوند دهید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l3",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l5",
+     "ar": "لَوْلَآ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r2",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r3",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r4",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r5",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r6",
+     "fa": "پس بیایید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "فَأْتُوا۟ به دلیل متعدی شدن با باء یعنی پس بیاورید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0247",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_048_022",
+    "w:w28_049_002",
+    "w:w28_047_006",
+    "w:w28_047_010",
+    "w:w28_048_008"
+   ],
+   "promptFa": "معنای کلمات سخت را جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l2",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l5",
+     "ar": "أُوتِىَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r2",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r3",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r4",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r5",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r6",
+     "fa": "اگر نه"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "لَوْلَآ در کنار فعل ماضی یعنی چرا نه، و تَظَـٰهَرَا یعنی پشتیبان هم شدند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0248",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_049_002",
+    "w:w28_047_006",
+    "w:w28_047_010",
+    "w:w28_048_008",
+    "w:w28_048_021"
+   ],
+   "promptFa": "هر کلمه عربی را با معادل فارسی آن مرتبط کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l4",
+     "ar": "أُوتِىَ"
+    },
+    {
+     "id": "l5",
+     "ar": "سِحْرَانِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r2",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r3",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r4",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r5",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r6",
+     "fa": "تقدیم کردند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "قَدَّمَتْ به معنای تقدیم کردند نیست، بلکه یعنی از پیش فرستادند و مرتکب شدند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0249",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_047_006",
+    "w:w28_048_021",
+    "w:w28_048_022",
+    "w:w28_049_002",
+    "w:w28_048_008"
+   ],
+   "promptFa": "کلمات را به معانی‌شان متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l2",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l4",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "أُوتِىَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r2",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r3",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r4",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r5",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r6",
+     "fa": "تظاهر کردند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تَظَـٰهَرَا ارتباطی با تظاهر (ریاکاری) ندارد و از پشت‌گرمی می‌آید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0250",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_047_010",
+    "w:w28_048_008",
+    "w:w28_048_022",
+    "w:w28_049_002",
+    "w:w28_047_006"
+   ],
+   "promptFa": "جفت‌های صحیح کلمه و ترجمه را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l2",
+     "ar": "أُوتِىَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَظَـٰهَرَا"
+    },
+    {
+     "id": "l4",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "قَدَّمَتْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r2",
+     "fa": "داده شد"
+    },
+    {
+     "id": "r3",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r4",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r5",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r6",
+     "fa": "آشکار شدند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "ترکیب لولا با فعل ماضی برای ملامت است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0251",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_048_021",
+    "w:w28_047_010",
+    "w:w28_049_002",
+    "w:w28_047_006",
+    "w:w28_048_022"
+   ],
+   "promptFa": "هر واژه قرآنی را با معنای آن در این آیات جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "سِحْرَانِ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "قَدَّمَتْ"
+    },
+    {
+     "id": "l5",
+     "ar": "تَظَـٰهَرَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دو جادو"
+    },
+    {
+     "id": "r2",
+     "fa": "چرا نه"
+    },
+    {
+     "id": "r3",
+     "fa": "پس بیاورید"
+    },
+    {
+     "id": "r4",
+     "fa": "مرتکب شدند"
+    },
+    {
+     "id": "r5",
+     "fa": "پشتیبان یکدیگرند"
+    },
+    {
+     "id": "r6",
+     "fa": "دو جادوگر"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "سِحْرَانِ یعنی دو جادو، نه دو جادوگر (ساحران).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0301",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معنای کلمه «أَهْدَىٰ» چیست؟",
+   "stem": {
+    "wordId": "w28_049_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت کرد"
+    },
+    {
+     "id": "o3",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "o4",
+     "fa": "هدایت می کند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0302",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معنای کلمه «أَهْدَىٰ» چیست؟",
+   "stem": {
+    "wordId": "w28_049_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "کتابی"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت یافته"
+    },
+    {
+     "id": "o3",
+     "fa": "راهنمایی شد"
+    },
+    {
+     "id": "o4",
+     "fa": "هدایت کننده تر"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "same_root",
+    "o3": "same_root"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0303",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معنای کلمه «أَهْدَىٰ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_049_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیروی کنم"
+    },
+    {
+     "id": "o2",
+     "fa": "هدیه داد"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "o4",
+     "fa": "هدایت می کند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0304",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معنای کلمه «أَهْدَىٰ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_049_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "راست می گویید"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت کرد"
+    },
+    {
+     "id": "o4",
+     "fa": "راه یافته"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0305",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_050_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مستجاب نکردند"
+    },
+    {
+     "id": "o2",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "o3",
+     "fa": "پیروی می کنند"
+    },
+    {
+     "id": "o4",
+     "fa": "جواب می دهند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0306",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_050_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "o2",
+     "fa": "واجب کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "اجابت می کنند"
+    },
+    {
+     "id": "o4",
+     "fa": "بدان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0307",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_050_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مستجاب کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "ستمکار"
+    },
+    {
+     "id": "o3",
+     "fa": "گمراه شدند"
+    },
+    {
+     "id": "o4",
+     "fa": "پاسخ دادند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0308",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_050_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "o2",
+     "fa": "واجب می کنند"
+    },
+    {
+     "id": "o3",
+     "fa": "پیروی می کنند"
+    },
+    {
+     "id": "o4",
+     "fa": "هدایت نمی کند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0309",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معنای کلمه «أَضَلُّ» چیست؟",
+   "stem": {
+    "wordId": "w28_050_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "o2",
+     "fa": "گمراه کرد"
+    },
+    {
+     "id": "o3",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراهان"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0310",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معنای کلمه «أَضَلُّ» چیست؟",
+   "stem": {
+    "wordId": "w28_050_010",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ستمکار"
+    },
+    {
+     "id": "o2",
+     "fa": "سایه افکند"
+    },
+    {
+     "id": "o3",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراه می کند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0311",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معنای کلمه «أَضَلُّ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_050_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هواهای نفسانی"
+    },
+    {
+     "id": "o2",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "o3",
+     "fa": "مردم"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراه کرد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0312",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معنای کلمه «أَضَلُّ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_050_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "o2",
+     "fa": "هدایت"
+    },
+    {
+     "id": "o3",
+     "fa": "گمراه می شود"
+    },
+    {
+     "id": "o4",
+     "fa": "گمراه کننده"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "same_root",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0313",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+   "stem": {
+    "fa": "هدایت کننده تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "o2",
+     "ar": "هُدًۭى"
+    },
+    {
+     "id": "o3",
+     "ar": "يَهْدِى"
+    },
+    {
+     "id": "o4",
+     "ar": "أَضَلُّ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0314",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+   "stem": {
+    "fa": "هدایت کننده تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "صَـٰدِقِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "o3",
+     "ar": "مِّنْهُمَآ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَهْوَآءَهُمْ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0315",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 49,
+   "targets": [
+    "w:w28_049_008"
+   ],
+   "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+   "stem": {
+    "fa": "هدایت کننده تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَتَّبِعُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱتَّبَعَ"
+    },
+    {
+     "id": "o3",
+     "ar": "هَدَى"
+    },
+    {
+     "id": "o4",
+     "ar": "أَهْدَىٰ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o2": "neighbor_verse",
+    "o3": "same_root"
+   },
+   "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0316",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+   "stem": {
+    "fa": "پاسخ دادند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يَتَّبِعُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَسْتَجِيبُ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱتَّبَعَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0317",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+   "stem": {
+    "fa": "پاسخ دادند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَٱعْلَمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُجِيبُ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "same_root"
+   },
+   "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0318",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_003"
+   ],
+   "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+   "stem": {
+    "fa": "پاسخ دادند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَتَّبِعْهُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَهْدِى"
+    },
+    {
+     "id": "o3",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "يَسْتَجِيبُوا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_verse",
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse"
+   },
+   "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0319",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+   "stem": {
+    "fa": "گمراه تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ضَلَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَهْدَىٰ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0320",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+   "stem": {
+    "fa": "گمراه تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَهْوَآءَهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "o3",
+     "ar": "هَوَىٰهُ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُضِلُّ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0321",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 50,
+   "targets": [
+    "w:w28_050_010"
+   ],
+   "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+   "stem": {
+    "fa": "گمراه تر"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مِّمَّنِ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَّمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَسْتَجِيبُوا۟"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0322",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_049_008",
+    "w:w28_050_003"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "بِكِتَـٰبٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "صَـٰدِقِينَ"
+    },
+    {
+     "id": "l5",
+     "ar": "فَٱعْلَمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "r2",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "r3",
+     "fa": "کتابی"
+    },
+    {
+     "id": "r4",
+     "fa": "راست می گویید"
+    },
+    {
+     "id": "r5",
+     "fa": "بدان"
+    },
+    {
+     "id": "r6",
+     "fa": "ستمکار"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "یادآوری کلمات مهم این بخش.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0323",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_050_010",
+    "w:w28_049_008"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "l3",
+     "ar": "أَهْوَآءَهُمْ"
+    },
+    {
+     "id": "l4",
+     "ar": "هُدًۭى"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلظَّـٰلِمِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "r2",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "r3",
+     "fa": "هواهای نفسانی"
+    },
+    {
+     "id": "r4",
+     "fa": "هدایتی"
+    },
+    {
+     "id": "r5",
+     "fa": "ستمکار"
+    },
+    {
+     "id": "r6",
+     "fa": "پاسخ دادند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "یادآوری کلمات مهم این بخش.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0324",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_050_003",
+    "w:w28_050_010"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَأْتُوا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "عِندِ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَهْدِى"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "r2",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "r3",
+     "fa": "بیاورید"
+    },
+    {
+     "id": "r4",
+     "fa": "نزد"
+    },
+    {
+     "id": "r5",
+     "fa": "هدایت می کند"
+    },
+    {
+     "id": "r6",
+     "fa": "گمراه کرد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "یادآوری کلمات مهم این بخش.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0328",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_049_008",
+    "w:w28_050_003",
+    "w:w28_050_010"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَتَّبِعْهُ"
+    },
+    {
+     "id": "l5",
+     "ar": "كُنتُمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "r2",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "r3",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "r4",
+     "fa": "تا آن را پیروی کنم"
+    },
+    {
+     "id": "r5",
+     "fa": "هستید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "مرور کلمات سخت این آیات.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0329",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_050_003",
+    "w:w28_049_008"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَنَّمَا"
+    },
+    {
+     "id": "l5",
+     "ar": "مِّنَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "r2",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "r3",
+     "fa": "تو را"
+    },
+    {
+     "id": "r4",
+     "fa": "که فقط"
+    },
+    {
+     "id": "r5",
+     "fa": "از"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "مرور کلمات پرکاربرد این بخش.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0330",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_050_010",
+    "w:w28_049_008",
+    "w:w28_050_003"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَضَلُّ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَهْدَىٰ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَسْتَجِيبُوا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "إِن"
+    },
+    {
+     "id": "l5",
+     "ar": "مِمَّنِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "r2",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "r3",
+     "fa": "پاسخ دادند"
+    },
+    {
+     "id": "r4",
+     "fa": "اگر"
+    },
+    {
+     "id": "r5",
+     "fa": "از کسی که"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "جمع‌بندی کلمات چالش‌برانگیز.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0401",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "معنای هر قطعه را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَلَوْلَآ أَن"
+    },
+    {
+     "id": "l2",
+     "ar": "تُصِيبَهُم مُّصِيبَةٌۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "بِمَا قَدَّمَتْ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَيْدِيهِمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و اگر نه آن بود که"
+    },
+    {
+     "id": "r2",
+     "fa": "عذابی به آنان برسد،"
+    },
+    {
+     "id": "r3",
+     "fa": "به سبب گناهانی که مرتکب شدند"
+    },
+    {
+     "id": "r4",
+     "fa": "دست‌هایشان"
+    },
+    {
+     "id": "r5",
+     "fa": "پس بگویند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "pairs",
+   "distractorTags": {},
+   "explanationFa": "لولا در اینجا به معنای «اگر نه» و اصابت مصیبت به معنای رسیدن عذاب است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0403",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "ترجمه صحیح آیه ۴۷ چیست؟",
+   "stem": {
+    "verse": 47
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی تا از آیاتت پیروی کنیم و از مؤمنان باشیم [بی تردید در عذاب کردن و هلاکتشان شتاب می نمودیم.]"
+    },
+    {
+     "id": "o2",
+     "fa": "و هنگامی که عذابی به آنان رسید به سبب کارهایی که کردند، گفتند پروردگارا چرا پیامبری نفرستادی تا آیات را بپذیریم و مؤمن شویم."
+    },
+    {
+     "id": "o3",
+     "fa": "و اگر عذابی به آنها نرسد به خاطر اعمالشان، می‌گویند پروردگارا چرا پیامبر نیامد تا پیروی کنیم."
+    },
+    {
+     "id": "o4",
+     "fa": "و اگر پیش از این عذابی برایشان می‌فرستادیم، قطعا می‌گفتند پروردگارا چرا پیامبری به سوی ما نفرستادی."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "ترجمه دقیق و کامل انصاریان گزینه اول است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0406",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "کدام آیه با این ترجمه مطابقت دارد؟ «...پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی تا از آیاتت پیروی کنیم...»",
+   "stem": {
+    "verse": 47,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَيَقُولُوا۟ رَبَّنَا لَوْلَآ أَرْسَلْتَ إِلَيْنَا رَسُولًۭا فَنَتَّبِعَ ءَايَـٰتِكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "قَالُوا۟ لَوْلَآ أُوتِىَ مِثْلَ مَآ أُوتِىَ مُوسَىٰٓ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَلَمَّا جَآءَهُمُ ٱلْحَقُّ مِنْ عِندِنَا قَالُوا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ مِّنْ عِندِ ٱللَّهِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت در آیه ۴۷ قرار دارد.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0409",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۴۷ را مرتب کنید.",
+   "stem": {
+    "verse": 47
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد،",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی",
+     "wordIdx": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "تا از آیاتت پیروی کنیم و از مؤمنان باشیم",
+     "wordIdx": [
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "[بی تردید در عذاب کردن و هلاکتشان شتاب می نمودیم.]",
+     "wordIdx": [
+      18
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح قطعات بر اساس متن آیه ۴۷ است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0411",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "کلمات جاافتاده در ترجمه را جای‌گذاری کنید.",
+   "stem": {
+    "verse": 47,
+    "faHidden": [
+     {
+      "text": "گناهانی"
+     },
+     {
+      "text": "عذابی"
+     },
+     {
+      "text": "پیامبری"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "گناهانی"
+    },
+    {
+     "id": "b2",
+     "fa": "عذابی"
+    },
+    {
+     "id": "b3",
+     "fa": "پیامبری"
+    },
+    {
+     "id": "b4",
+     "fa": "مصیبتی"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2",
+    "2": "b3"
+   },
+   "distractorTags": {},
+   "explanationFa": "مصیبة به عنوان عذابی ترجمه شده و بما قدمت أیدیهم به سبب گناهانی.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0412",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 47,
+   "targets": [
+    "vt:47"
+   ],
+   "promptFa": "جاهای خالی را پر کنید.",
+   "stem": {
+    "verse": 47,
+    "faHidden": [
+     {
+      "text": "پیروی"
+     },
+     {
+      "text": "مؤمنان"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پیروی"
+    },
+    {
+     "id": "b2",
+     "fa": "مؤمنان"
+    },
+    {
+     "id": "b3",
+     "fa": "هدایت"
+    },
+    {
+     "id": "b4",
+     "fa": "ستمکاران"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "نتّبع = پیروی کنیم، المؤمنین = مؤمنان.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0413",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "معنای قطعات آیه ۴۸ را مشخص کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَلَمَّا جَآءَهُمُ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْحَقُّ مِنْ عِندِنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "قَالُوا۟ لَوْلَآ أُوتِىَ"
+    },
+    {
+     "id": "l4",
+     "ar": "مِثْلَ مَآ أُوتِىَ مُوسَىٰٓ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس هنگامی که برای آنان آمد"
+    },
+    {
+     "id": "r2",
+     "fa": "حق از سوی ما"
+    },
+    {
+     "id": "r3",
+     "fa": "گفتند: چرا به او نداده اند"
+    },
+    {
+     "id": "r4",
+     "fa": "مانند آنچه به موسی دادند"
+    },
+    {
+     "id": "r5",
+     "fa": "آیا کفر نورزیدند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "pairs",
+   "distractorTags": {},
+   "explanationFa": "تطبیق دقیق عبارات بخش اول آیه ۴۸.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0415",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "ترجمه آیه «فَلَمَّا جَآءَهُمُ ٱلْحَقُّ...» چیست؟",
+   "stem": {
+    "verse": 48
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد گفتند: چرا مانند آنچه به موسی دادند به او نداده اند؟ آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟! گفتند: دو جادویند که پشتیبان یکدیگرند!! و گفتند: ما منکر هر دو هستیم!!"
+    },
+    {
+     "id": "o2",
+     "fa": "پس هنگامی که پیامبر با حق از سوی ما آمد گفتند چرا کتابی مانند موسی نیاورد؟ مگر کفر نورزیدند؟ گفتند دو جادوگرند و ما کافریم."
+    },
+    {
+     "id": "o3",
+     "fa": "وقتی حق از جانب ما آمد، گفتند چرا به او مانند موسی وحی نشد؟ بگو مگر به موسی کفر نورزیدید پیش از این، گفتند هر دو جادو است."
+    },
+    {
+     "id": "o4",
+     "fa": "و هنگامی که حق به سویشان آمد گفتند چرا معجزات موسی را ندارد، آیا کافر نشدند؟ گفتند این دو جادوگرند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ترجمه کامل انصاریان شامل افزونه‌های داخل کروشه و دقت در معانی است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0418",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "کدام بخش آیه معادل «و گفتند: ما منکر هر دو هستیم!!» است؟",
+   "stem": {
+    "verse": 48,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَقَالُوٓا۟ إِنَّا بِكُلٍّۢ كَـٰفِرُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "قَالُوا۟ لَوْلَآ أُوتِىَ مِثْلَ"
+    },
+    {
+     "id": "o3",
+     "ar": "إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَالُوا۟ سِحْرَانِ تَظَـٰهَرَا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«بکل کافرون» یعنی به هر دو (قرآن و تورات) کافر هستیم (منکر هر دو هستیم).",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0421",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "بخش اول ترجمه آیه ۴۸ را مرتب کنید.",
+   "stem": {
+    "verse": 48
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "[به جای آنکه بپذیرند] گفتند:",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "چرا مانند آنچه به موسی دادند به او نداده اند؟",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟!",
+     "wordIdx": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "بر اساس ترتیب آیه: فلما جاءهم... قالوا لولا اوتی... أولم یکفروا...",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0422",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "بخش دوم ترجمه آیه ۴۸ را بچینید.",
+   "stem": {
+    "verse": 48
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "گفتند: [این تورات و قرآن] دو جادویند",
+     "wordIdx": [
+      20,
+      21
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "که پشتیبان یکدیگرند!!",
+     "wordIdx": [
+      22
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و گفتند: ما منکر هر دو هستیم!!",
+     "wordIdx": [
+      23,
+      24,
+      25,
+      26
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "هدایت کننده تر از این دو باشد",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب: قالوا سحران + تظاهرا + وقالوا إنا بکل کافرون.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0423",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "ترجمه آیه ۴۸ را تکمیل کنید.",
+   "stem": {
+    "verse": 48,
+    "faHidden": [
+     {
+      "text": "جادویند"
+     },
+     {
+      "text": "پشتیبان"
+     },
+     {
+      "text": "منکر"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "جادویند"
+    },
+    {
+     "id": "b2",
+     "fa": "پشتیبان"
+    },
+    {
+     "id": "b3",
+     "fa": "منکر"
+    },
+    {
+     "id": "b4",
+     "fa": "جادوگران"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2",
+    "2": "b3"
+   },
+   "distractorTags": {},
+   "explanationFa": "سحران = دو جادویند، تظاهرا = پشتیبان یکدیگرند، کافرون = منکر هستند.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0424",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 48,
+   "targets": [
+    "vt:48"
+   ],
+   "promptFa": "کلمات محذوف را در ترجمه آیه ۴۸ جای‌گذاری کنید.",
+   "stem": {
+    "verse": 48,
+    "faHidden": [
+     {
+      "text": "موسی"
+     },
+     {
+      "text": "کفر"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "موسی"
+    },
+    {
+     "id": "b2",
+     "fa": "کفر"
+    },
+    {
+     "id": "b3",
+     "fa": "عیسی"
+    },
+    {
+     "id": "b4",
+     "fa": "ایمان"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "یکفروا یعنی کفر نورزیدند و در آیه به موسی اشاره شده است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0425",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "ترجمه قطعات آیه ۴۹ را بیابید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قُلْ فَأْتُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "بِكِتَـٰبٍۢ مِّنْ عِندِ ٱللَّهِ"
+    },
+    {
+     "id": "l3",
+     "ar": "هُوَ أَهْدَىٰ مِنْهُمَآ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَتَّبِعْهُ إِن كُنتُمْ صَـٰدِقِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بگو: پس بیاورید"
+    },
+    {
+     "id": "r2",
+     "fa": "کتابی از نزد خدا"
+    },
+    {
+     "id": "r3",
+     "fa": "که هدایت کننده تر از این دو باشد"
+    },
+    {
+     "id": "r4",
+     "fa": "تا آن را پیروی کنم اگر راست می گویید"
+    },
+    {
+     "id": "r5",
+     "fa": "اگر پاسخ تو را ندادند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "pairs",
+   "distractorTags": {},
+   "explanationFa": "بخش‌بندی دقیق و ترجمه کلمات آیه ۴۹.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0427",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "ترجمه آیه «قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ مِّنْ عِندِ ٱللَّهِ...» چیست؟",
+   "stem": {
+    "verse": 49
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست] اگر راست می گویید کتابی از نزد خدا بیاورید که هدایت کننده تر از این دو باشد تا آن را پیروی کنم."
+    },
+    {
+     "id": "o2",
+     "fa": "بگو پس کتابی از نزد خدا بیاورید که هدایتگر باشد تا پیروی کنیم اگر از راستگویانید."
+    },
+    {
+     "id": "o3",
+     "fa": "بگو اگر راست می‌گویید کتابی بیاورید از جانب خدا تا آن را پیروی کنند."
+    },
+    {
+     "id": "o4",
+     "fa": "پس بگو کتابی بیاورید که از قرآن هدایت‌کننده‌تر باشد تا راستگو باشید."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ترجمه دقیق و بی‌نقص استاد انصاریان گزینه اول است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0430",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "کدام آیه مربوط به این ترجمه است: «بگو: ... کتابی از نزد خدا بیاورید که هدایت کننده تر از این دو باشد»؟",
+   "stem": {
+    "verse": 49,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ مِّنْ عِندِ ٱللَّهِ هُوَ أَهْدَىٰ مِنْهُمَآ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَوَلَمْ يَكْفُرُوا۟ بِمَآ أُوتِىَ مُوسَىٰ مِن قَبْلُ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ فَٱعْلَمْ أَنَّمَا يَتَّبِعُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَمَنْ أَضَلُّ مِمَّنِ ٱتَّبَعَ هَوَىٰهُ بِغَيْرِ هُدًۭى"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۴۹ درخواستی برای آوردن کتابی هدایت‌کننده‌تر از جانب خدا است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0433",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "ترجمه آیه ۴۹ را به ترتیب درست بچینید.",
+   "stem": {
+    "verse": 49
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست]",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "اگر راست می گویید",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "کتابی از نزد خدا بیاورید",
+     "wordIdx": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "که هدایت کننده تر از این دو باشد تا آن را پیروی کنم.",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b3",
+    "b4",
+    "b2"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب آیه: قل + فأتوا بکتاب من عند الله + هو أهدی منهما أتبعه + إن کنتم صادقین. (اگر راست می‌گویید در ترجمه فارسی ممکن است قبل از جواب شرط بیاید اما انصاریان در انتهای آیه آورده یا بین جمله). در ترجمه انصاریان: «اگر راست می‌گویید کتابی از نزد خدا بیاورید...» (شرط جلوتر آمده). پس b1 -> b2 -> b3 -> b4.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0434",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "نیمه دوم ترجمه آیه ۴۹ را بچینید.",
+   "stem": {
+    "verse": 49
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "کتابی از نزد خدا بیاورید",
+     "wordIdx": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "که هدایت کننده تر از این دو باشد",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "تا آن را پیروی کنم.",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "مسلماً خدا مردم ستمکار را هدایت نمی کند.",
+     "wordIdx": [
+      0
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "فأتوا بکتاب من عند الله -> هو أهدی منهما -> أتبعه.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0435",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "جاهای خالی ترجمه را پر کنید.",
+   "stem": {
+    "verse": 49,
+    "faHidden": [
+     {
+      "text": "هدایت کننده تر"
+     },
+     {
+      "text": "پیروی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "هدایت کننده تر"
+    },
+    {
+     "id": "b2",
+     "fa": "پیروی"
+    },
+    {
+     "id": "b3",
+     "fa": "روشن تر"
+    },
+    {
+     "id": "b4",
+     "fa": "تلاوت"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "أهدی = هدایت کننده‌تر، أتبعه = آن را پیروی کنم.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0436",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 49,
+   "targets": [
+    "vt:49"
+   ],
+   "promptFa": "کلمات صحیح را در ترجمه آیه ۴۹ جای‌گذاری کنید.",
+   "stem": {
+    "verse": 49,
+    "faHidden": [
+     {
+      "text": "کتابی"
+     },
+     {
+      "text": "راست می گویید"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "کتابی"
+    },
+    {
+     "id": "b2",
+     "fa": "راست می گویید"
+    },
+    {
+     "id": "b3",
+     "fa": "معجزه‌ای"
+    },
+    {
+     "id": "b4",
+     "fa": "دروغ می گویید"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "بکتاب = کتابی، صادقین = راست می‌گویید.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0437",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "قطعات بخش اول آیه ۵۰ را تطبیق دهید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "فَٱعْلَمْ أَنَّمَا يَتَّبِعُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "أَهْوَآءَهُمْ ۚ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَمَنْ أَضَلُّ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس اگر پاسخ تو را ندادند"
+    },
+    {
+     "id": "r2",
+     "fa": "بدان که فقط پیروی می کنند"
+    },
+    {
+     "id": "r3",
+     "fa": "از هواهای نفسانی خود"
+    },
+    {
+     "id": "r4",
+     "fa": "و گمراه تر کیست"
+    },
+    {
+     "id": "r5",
+     "fa": "ستمکاران کیستند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "pairs",
+   "distractorTags": {},
+   "explanationFa": "تطبیق دقیق قطعات با ترجمه استاد انصاریان.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0439",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "ترجمه کامل آیه ۵۰ چیست؟",
+   "stem": {
+    "verse": 50
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس اگر پاسخ تو را ندادند بدان که فقط از هواهای نفسانی خود پیروی می کنند و گمراه تر از کسی که بدون هدایتی از سوی خدا از هواهای نفسانی خود پیروی کند، کیست؟ مسلماً خدا مردم ستمکار را هدایت نمی کند."
+    },
+    {
+     "id": "o2",
+     "fa": "اگر به تو پاسخ دادند بدان که پیرو هوای نفس‌اند و چه کسی گمراه‌تر است از پیروان هوس؟ خدا ستمکاران را هرگز هدایت نخواهد کرد."
+    },
+    {
+     "id": "o3",
+     "fa": "پس اگر تو را اجابت نکردند بدان که فقط هوس‌بازند و هیچ‌کس گمراه‌تر از هوس‌بازان بی‌هدایت نیست. خداوند کافران را هدایت نمی‌کند."
+    },
+    {
+     "id": "o4",
+     "fa": "اگر پاسخ ندادند پس بدان از هوس‌ها پیروی می‌کنند، آیا گمراه‌تر از آن‌ها کسی هست؟ قطعا خدا مردم ظالم را هدایت نمی‌کند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ترجمه انصاریان با دقت کلمات و نشانه‌ها فقط گزینه اول است.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0442",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "کدام بخش آیه معادل «مسلماً خدا مردم ستمکار را هدایت نمی کند.» است؟",
+   "stem": {
+    "verse": 50,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّـٰلِمِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَمَنْ أَضَلُّ مِمَّنِ ٱتَّبَعَ هَوَىٰهُ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ فَٱعْلَمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَتَّبِعْهُ إِن كُنتُمْ صَـٰدِقِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "إن الله = مسلماً خدا، لا یهدی = هدایت نمی‌کند، القوم الظالمین = مردم ستمکار را.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0445",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "ترجمه آیه ۵۰ را از ابتدا مرتب کنید.",
+   "stem": {
+    "verse": 50
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس اگر پاسخ تو را ندادند",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "بدان که فقط از هواهای نفسانی خود پیروی می کنند",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و گمراه تر از کسی که بدون هدایتی از سوی خدا از هواهای نفسانی خود پیروی کند، کیست؟",
+     "wordIdx": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "مسلماً خدا مردم ستمکار را هدایت نمی کند.",
+     "wordIdx": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "مطابق ترتیب آیه: فإن لم یستجیبوا لک + فاعلم أنما یتبعون أهواءهم + و من أضل... + إن الله لا یهدی القوم الظالمین.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0447",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "کلمات افتاده از ترجمه آیه ۵۰ را پر کنید.",
+   "stem": {
+    "verse": 50,
+    "faHidden": [
+     {
+      "text": "پاسخ"
+     },
+     {
+      "text": "هواهای نفسانی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پاسخ"
+    },
+    {
+     "id": "b2",
+     "fa": "هواهای نفسانی"
+    },
+    {
+     "id": "b3",
+     "fa": "ندای"
+    },
+    {
+     "id": "b4",
+     "fa": "شیطان"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "یستجیبوا = پاسخ دادند، أهواءهم = هواهای نفسانی‌شان.",
+   "unitId": "u_p391b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391b_A_0448",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 50,
+   "targets": [
+    "vt:50"
+   ],
+   "promptFa": "جاهای خالی را با کلمات درست ترجمه کنید.",
+   "stem": {
+    "verse": 50,
+    "faHidden": [
+     {
+      "text": "گمراه تر"
+     },
+     {
+      "text": "ستمکار"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "گمراه تر"
+    },
+    {
+     "id": "b2",
+     "fa": "ستمکار"
+    },
+    {
+     "id": "b3",
+     "fa": "کافرتر"
+    },
+    {
+     "id": "b4",
+     "fa": "هدایت یافته"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "أضل = گمراه‌تر، الظالمین = ستمکار.",
+   "unitId": "u_p391b",
+   "part": "A"
+  }
+ ],
+ "issues": [],
+ "sourceFiles": [
+  "u_p391b.partA.json",
+  "u_p391b.partA2.json",
+  "u_p391b.partA3.json",
+  "u_p391b.partA4.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 27,
+  "files": 4
+ }
+}

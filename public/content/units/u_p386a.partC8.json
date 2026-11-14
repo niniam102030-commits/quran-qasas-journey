@@ -1,0 +1,218 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386a",
+  "part": "C8",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p386a_C_1157",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 9,
+      "targets": [
+        "vn:9"
+      ],
+      "promptFa": "این آیه، چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 9
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 8
+        },
+        {
+          "id": "o2",
+          "num": 9
+        },
+        {
+          "id": "o3",
+          "num": 10
+        },
+        {
+          "id": "o4",
+          "num": 7
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "سخن همسر فرعون درباره نوزاد، نهمین آیه از سوره قصص است که بلافاصله پس از گرفته شدن موسی از آب در آیه ۸ می‌آید."
+    },
+    {
+      "id": "q_u_p386a_C_1158",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 9,
+      "targets": [
+        "vn:9"
+      ],
+      "promptFa": "شماره آیه بالا در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 9
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 6
+        },
+        {
+          "id": "o2",
+          "num": 8
+        },
+        {
+          "id": "o3",
+          "num": 10
+        },
+        {
+          "id": "o4",
+          "num": 9
+        },
+        {
+          "id": "o5",
+          "num": 11
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "similar_verse"
+      },
+      "explanationFa": "این آیه شماره ۹ سوره قصص است؛ دقت کنید با آیه ۱۱ که پایان مشابهی دارد یا با آیات مجاور ۸ و ۱۰ اشتباه نشود."
+    },
+    {
+      "id": "q_u_p386a_C_1159",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 9,
+      "targets": [
+        "vn:9"
+      ],
+      "promptFa": "آیه ۹ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 9
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 9,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_008_001",
+            "w28_008_002",
+            "w28_008_003",
+            "w28_008_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_010_001",
+            "w28_010_002",
+            "w28_010_003",
+            "w28_010_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_007_001",
+            "w28_007_002",
+            "w28_007_003",
+            "w28_007_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۹ با سخن همسر فرعون آغاز می‌شود، در حالی که گزینه‌های دیگر آغاز آیات ۷، ۸ و ۱۰ همین سوره هستند."
+    },
+    {
+      "id": "q_u_p386a_C_1160",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 9,
+      "targets": [
+        "vn:9"
+      ],
+      "promptFa": "کدام گزینه ابتدای آیه نهم سوره قصص را به‌درستی نشان می‌دهد؟",
+      "stem": {
+        "num": 9
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_009_008",
+            "w28_009_009",
+            "w28_009_010",
+            "w28_009_011",
+            "w28_009_012"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_008_008",
+            "w28_008_009",
+            "w28_008_010",
+            "w28_008_011"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 9,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_010_001",
+            "w28_010_002",
+            "w28_010_003",
+            "w28_010_004",
+            "w28_010_005"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "گزینه سوم دقیقاً پنج کلمه آغازین آیه ۹ است؛ گزینه اول بخشی از میانه همین آیه و دو گزینه دیگر مربوط به آیات ۸ و ۱۰ هستند."
+    }
+  ],
+  "issues": []
+}

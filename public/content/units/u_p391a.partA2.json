@@ -1,0 +1,1351 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391a",
+  "part": "A2",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p391a_A_0201",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "معنای «قَضَيْنَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_044_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قضاوت کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "o3",
+          "fa": "گواهی دادیم"
+        },
+        {
+          "id": "o4",
+          "fa": "نازل کردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ق ض ي» است و «قضینا» یعنی امری را قطعی کردیم و به پایان رساندیم. با «قضاوت کردن» در فارسی اشتباه نشود."
+    },
+    {
+      "id": "q_u_p391a_A_0202",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "کدام گزینه معنای «قَضَيْنَآ» است؟",
+      "stem": {
+        "wordId": "w28_044_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "فرستادیم"
+        },
+        {
+          "id": "o3",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "o4",
+          "fa": "قضا کردیم (مثل نماز قضا)"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«قضا» در فارسی یعنی سرنوشت یا نماز قضا. اینجا یعنی امری را تمام و قطعی کردیم."
+    },
+    {
+      "id": "q_u_p391a_A_0203",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "معنای «قَضَيْنَآ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_044_006",
+        "showVerse": true,
+        "verse": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حکم دادیم و داوری کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "به موسی بازگرداندیم"
+        },
+        {
+          "id": "o3",
+          "fa": "از او دور کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "به انجام رساندیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "در «إِذْ قَضَيْنَآ إِلَىٰ مُوسَى ٱلْأَمْرَ» یعنی امر نبوّت موسی را به انجام رساندیم. ریشه‌ی آن «ق ض ي» است."
+    },
+    {
+      "id": "q_u_p391a_A_0204",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "در این آیه «قَضَيْنَآ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_044_006",
+        "showVerse": true,
+        "verse": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "o2",
+          "fa": "شاهد بودیم"
+        },
+        {
+          "id": "o3",
+          "fa": "قاضی شدیم"
+        },
+        {
+          "id": "o4",
+          "fa": "ساکن شدیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«قضینا» از «ق ض ي» است و یعنی امری را قطعی و تمام کردیم. معنای «قاضی شدن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p391a_A_0205",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "معنای «أَنشَأْنَا» چیست؟",
+      "stem": {
+        "wordId": "w28_045_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "انشا نوشتیم"
+        },
+        {
+          "id": "o3",
+          "fa": "فراموش کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "فرستادیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ن ش أ» است و یعنی پدید آوردن. از همین ریشه «نشأت گرفتن» یعنی پدید آمدن."
+    },
+    {
+      "id": "q_u_p391a_A_0206",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "کدام گزینه معنای «أَنشَأْنَا» است؟",
+      "stem": {
+        "wordId": "w28_045_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نازل کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "o3",
+          "fa": "بخوانیم"
+        },
+        {
+          "id": "o4",
+          "fa": "پدید آوردیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أنشأنا» یعنی به وجود آوردیم و ایجاد کردیم. ریشه‌اش «ن ش أ» است."
+    },
+    {
+      "id": "q_u_p391a_A_0207",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "معنای «أَنشَأْنَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_045_002",
+        "showVerse": true,
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فراموش کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "انشا کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "فرستادیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «أَنشَأْنَا قُرُونًا» یعنی نسل‌هایی را پدید آوردیم. «انشا» در فارسی معنای نوشتن دارد و اینجا درست نیست."
+    },
+    {
+      "id": "q_u_p391a_A_0208",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "در این آیه «أَنشَأْنَا» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_045_002",
+        "showVerse": true,
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر آنان خواندیم"
+        },
+        {
+          "id": "o2",
+          "fa": "ساکن کردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "از بین بردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "پدید آوردیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«أنشأنا» یعنی به وجود آوردیم؛ مفعول آن «قرونا» است. ریشه‌اش «ن ش أ» است."
+    },
+    {
+      "id": "q_u_p391a_A_0209",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "معنای «قُرُونًا» چیست؟",
+      "stem": {
+        "wordId": "w28_045_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قرن‌های صدساله"
+        },
+        {
+          "id": "o2",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "شهرها"
+        },
+        {
+          "id": "o4",
+          "fa": "پیامبران"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«قرون» جمع «قَرن» از ریشه‌ی «ق ر ن» است و یعنی نسل‌ها و ملت‌ها. صد سال بودنِ «قرن» در فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p391a_A_0210",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "کدام گزینه معنای «قُرُونًا» است؟",
+      "stem": {
+        "wordId": "w28_045_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روزگارها"
+        },
+        {
+          "id": "o2",
+          "fa": "شاهدان"
+        },
+        {
+          "id": "o3",
+          "fa": "سده‌های صدساله"
+        },
+        {
+          "id": "o4",
+          "fa": "نسل‌ها و ملت‌ها"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«قرون» اینجا یعنی نسل‌ها و امت‌های یک دوره. معنای «صد سال» اینجا مقصود نیست."
+    },
+    {
+      "id": "q_u_p391a_A_0211",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "معنای «قُرُونًا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_045_003",
+        "showVerse": true,
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "قرن‌ها (صد ساله)"
+        },
+        {
+          "id": "o3",
+          "fa": "آیه‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "مردم مدین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در «أَنشَأْنَا قُرُونًا» یعنی ملت‌هایی را پدید آوردیم. «قرون» جمع «قَرن» به معنای نسل است."
+    },
+    {
+      "id": "q_u_p391a_A_0212",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "در این آیه «قُرُونًا» مفعول «أَنشَأْنَا» است. معنایش کدام است؟",
+      "stem": {
+        "wordId": "w28_045_003",
+        "showVerse": true,
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرزمین‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "صدها سال"
+        },
+        {
+          "id": "o3",
+          "fa": "فرستادگان"
+        },
+        {
+          "id": "o4",
+          "fa": "نسل‌ها و ملت‌ها"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«قرون» از ریشه‌ی «ق ر ن» به معنای نسل‌ها و امت‌هاست. «صد سال» برداشت فارسی و دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p391a_A_0213",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «به انجام رساندیم» است؟",
+      "stem": {
+        "fa": "به انجام رساندیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَتْلُوا۟"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«قَضَيْنَآ» از ریشه‌ی «ق ض ي» است و یعنی به انجام رساندیم."
+    },
+    {
+      "id": "q_u_p391a_A_0214",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "کدام کلمه معنای «کاری را قطعی کردن و به پایان رساندن» را دارد؟",
+      "stem": {
+        "fa": "کاری را قطعی کردن و به پایان رساندن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَمْرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَضَيْنَآ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فعل «قَضَيْنَآ» یعنی امری را تمام و قطعی کردیم. «ٱلْأَمْرَ» مفعول آن است، نه خود فعل."
+    },
+    {
+      "id": "q_u_p391a_A_0215",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 44,
+      "targets": [
+        "w:w28_044_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی برابر «تمام و قطعی کردیم» است؟",
+      "stem": {
+        "fa": "تمام و قطعی کردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلشَّـٰهِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَضَيْنَآ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«قضینا» فعل ماضی با ضمیر «نا» است و از «ق ض ي» می‌آید."
+    },
+    {
+      "id": "q_u_p391a_A_0216",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پدید آوردیم» است؟",
+      "stem": {
+        "fa": "پدید آوردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنَّا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَنشَأْنَا» از «ن ش أ» یعنی پدید آوردیم. «نشأت گرفتن» از همین ریشه است."
+    },
+    {
+      "id": "q_u_p391a_A_0217",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «به وجود آوردن و ایجاد کردن» است؟",
+      "stem": {
+        "fa": "به وجود آوردن و ایجاد کردن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "ثَاوِيًۭا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَنشَأْنَا» یعنی ایجاد کردیم. سه گزینه‌ی دیگر فعل یا وصف‌هایی با معنای متفاوت در همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p391a_A_0218",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_002"
+      ],
+      "promptFa": "کدام کلمه برابر «ما پدید آوردیم» در این برش است؟",
+      "stem": {
+        "fa": "ما پدید آوردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْأَمْرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَنشَأْنَا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "«أنشأنا» فعل ماضی با ضمیر «نا» است. «قضینا» هم همین ضمیر را دارد اما معنایش فرق می‌کند."
+    },
+    {
+      "id": "q_u_p391a_A_0219",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ملت‌ها» است؟",
+      "stem": {
+        "fa": "ملت‌ها"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلشَّـٰهِدِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَهْلِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«قُرُونًا» جمع «قَرن» و یعنی نسل‌ها و ملت‌ها. «أَهْلِ» یعنی مردم یا اهل، نه ملت‌های گذشته."
+    },
+    {
+      "id": "q_u_p391a_A_0220",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "کدام کلمه به معنای «نسل‌ها و امت‌های یک دوره» است؟",
+      "stem": {
+        "fa": "نسل‌ها و امت‌های یک دوره"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَمْرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَلَيْهِمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "قُرُونًۭا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«قُرُونًا» از «ق ر ن» است. «ءَايَـٰتِنَا» یعنی نشانه‌های ما."
+    },
+    {
+      "id": "q_u_p391a_A_0221",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «ملت‌ها» می‌دهد، نه «قرن صدساله»؟",
+      "stem": {
+        "fa": "ملت‌ها (نه سده‌ی صدساله)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْعُمُرُ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ثَاوِيًۭا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«قرون» اینجا یعنی نسل‌ها و ملت‌ها. «ٱلْعُمُرُ» یعنی روزگار و عمر، که به گذر زمان اشاره دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0222",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_044_006",
+        "w:w28_045_002",
+        "w:w28_045_003"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ثَاوِيًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r2",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r3",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "r4",
+          "fa": "به درازا کشید"
+        },
+        {
+          "id": "r5",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r6",
+          "fa": "گواهی دادیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«قضینا» از «ق ض ي»، «أنشأنا» از «ن ش أ» و «قرون» از «ق ر ن» است. «فتطاول» یعنی روزگار به درازا کشید و «ثاویا» یعنی ساکن."
+    },
+    {
+      "id": "q_u_p391a_A_0223",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_044_006",
+        "w:w28_045_002",
+        "w:w28_045_003"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلشَّـٰهِدِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَنشَأْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "قضاوت کردیم"
+        },
+        {
+          "id": "r3",
+          "fa": "شاهدان"
+        },
+        {
+          "id": "r4",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "r5",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r6",
+          "fa": "بخوانی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«قضینا» یعنی به انجام رساندیم، نه قضاوت کردیم. «قرون» هم نسل‌ها و ملت‌هاست."
+    },
+    {
+      "id": "q_u_p391a_A_0224",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_044_006",
+        "w:w28_045_002",
+        "w:w28_045_003"
+      ],
+      "promptFa": "هر واژه را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "قُرُونًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r2",
+          "fa": "فرستندگان"
+        },
+        {
+          "id": "r3",
+          "fa": "به درازا کشید"
+        },
+        {
+          "id": "r4",
+          "fa": "قرن‌های صدساله"
+        },
+        {
+          "id": "r5",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r6",
+          "fa": "به انجام رساندیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "false_friend"
+      },
+      "explanationFa": "«قرون» اینجا نسل‌ها و ملت‌هاست، نه سده‌های صدساله. «أنشأنا» و «قضینا» هر دو ضمیر «نا» دارند اما معنایشان فرق دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0225",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_044_006",
+        "w:w28_045_002",
+        "w:w28_045_003"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کن؛ دو گزینه‌ی اضافه هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِجَانِبِ"
+        },
+        {
+          "id": "l2",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَمْرَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "انشا نوشتیم"
+        },
+        {
+          "id": "r2",
+          "fa": "در کنار"
+        },
+        {
+          "id": "r3",
+          "fa": "نازل کردیم"
+        },
+        {
+          "id": "r4",
+          "fa": "به انجام رساندیم"
+        },
+        {
+          "id": "r5",
+          "fa": "امر"
+        },
+        {
+          "id": "r6",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r7",
+          "fa": "ملت‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r7"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r6"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r1": "false_friend",
+        "r3": "near_miss"
+      },
+      "explanationFa": "«أنشأنا» یعنی پدید آوردیم و ربطی به «انشا» در فارسی ندارد. «قضینا» یعنی به انجام رساندیم."
+    },
+    {
+      "id": "q_u_p391a_A_0226",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_044_006",
+        "w:w28_045_002",
+        "w:w28_045_003"
+      ],
+      "promptFa": "کلمه‌ها را به معنایشان وصل کن؛ مراقب دوستان فریبنده باش.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَيْنَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "أَنشَأْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سرزمین‌ها"
+        },
+        {
+          "id": "r2",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r3",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r4",
+          "fa": "بخوانی"
+        },
+        {
+          "id": "r5",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r6",
+          "fa": "به انجام رساندیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r1": "near_miss"
+      },
+      "explanationFa": "«قرون» نسل‌ها و ملت‌هاست، نه سرزمین‌ها. «ثاویا» یعنی ساکن و «تتلو» یعنی بخوانی."
+    }
+  ],
+  "issues": [
+    "ورودی earlierHardWords نداشت؛ کلمه‌ی مرور از واحدهای قبلی در MATCH_WORDS نیامد و به‌جای آن از کلمات غیرسخت همین دو آیه استفاده شد.",
+    "معنای کلمات غیرسخت (فَتَطَاوَلَ، ثَاوِيًۭا، تَتْلُوا۟، مُرْسِلِينَ و …) در گزینه‌های جفت‌سازی از سیاق fa آیه گرفته شد."
+  ]
+}

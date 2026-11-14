@@ -1,0 +1,570 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A2",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390a_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "معنای «مُّفْتَرًۭى» چیست؟",
+      "stem": {
+        "wordId": "w28_036_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جادویی آشکار و روشن"
+        },
+        {
+          "id": "o2",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "o3",
+          "fa": "پراکنده و جدا از هم"
+        },
+        {
+          "id": "o4",
+          "fa": "پیشین و گذشته"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه‌ی «ف ر ي» است و با «افترا» در فارسی هم‌ریشه است؛ یعنی دروغی که به دروغ ساخته و نسبت داده شده است. معنای آن «جدا و پراکنده» نیست."
+    },
+    {
+      "id": "q_u_p390a_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کدام گزینه معنای «مُّفْتَرًۭى» است؟",
+      "stem": {
+        "wordId": "w28_036_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پدران پیشین"
+        },
+        {
+          "id": "o2",
+          "fa": "گفتند"
+        },
+        {
+          "id": "o3",
+          "fa": "نشنیده‌ایم"
+        },
+        {
+          "id": "o4",
+          "fa": "ساختگی و دروغین"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» از ریشه‌ی «ف ر ي» است و یعنی دروغ ساخته‌شده. با «افترا» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p390a_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "در این آیه «مُّفْتَرًۭى» که صفت «سِحْرٌ» است، چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_036_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بریده و جداشده"
+        },
+        {
+          "id": "o2",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "o3",
+          "fa": "روشن و آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "جز جادو"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فرعونیان گفتند: «جز جادویی ساختگی و دروغین نیست». «مُفْتَرًى» با «افترا» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p390a_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "با توجه به سیاق آیه، معنای «مُّفْتَرًۭى» کدام است؟",
+      "stem": {
+        "wordId": "w28_036_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آیات روشن"
+        },
+        {
+          "id": "o2",
+          "fa": "پیشین و گذشته"
+        },
+        {
+          "id": "o3",
+          "fa": "جدایی و پراکندگی"
+        },
+        {
+          "id": "o4",
+          "fa": "ساختگی و دروغین"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "این واژه جادو را «ساختگی و دروغین» توصیف می‌کند. ریشه‌ی آن با «افترا» یکی است."
+    },
+    {
+      "id": "q_u_p390a_A_0305",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ساختگی و دروغین» است؟",
+      "stem": {
+        "fa": "ساختگی و دروغین"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "o3",
+          "ar": "بَيِّنَـٰتٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَوَّلِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» از ریشه‌ی «ف ر ي» و هم‌ریشه با «افترا» است."
+    },
+    {
+      "id": "q_u_p390a_A_0306",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی با این معنا می‌خواند؟",
+      "stem": {
+        "fa": "دروغی که به دروغ به کسی نسبت داده و ساخته شده است"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَمِعْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَابَآئِنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "مُّفْتَرًۭى"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» یعنی دروغ ساخته‌شده و نسبت‌داده‌شده؛ همان ریشه‌ی «افترا»."
+    },
+    {
+      "id": "q_u_p390a_A_0307",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کلمه‌ی عربی مناسب برای «ساختگی» (صفت جادو در این آیه) کدام است؟",
+      "stem": {
+        "fa": "ساختگی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "o2",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُّوسَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَيِّنَـٰتٍۢ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "صفتِ «سِحْرٌ» در این آیه «مُفْتَرًى» است، با ریشه‌ی «ف ر ي» و هم‌ریشه با «افترا»."
+    },
+    {
+      "id": "q_u_p390a_A_0308",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "l2",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "بَيِّنَـٰتٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَالُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَوَّلِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روشن"
+        },
+        {
+          "id": "r2",
+          "fa": "پیشین"
+        },
+        {
+          "id": "r3",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "r4",
+          "fa": "گفتند"
+        },
+        {
+          "id": "r5",
+          "fa": "جادو"
+        },
+        {
+          "id": "r6",
+          "fa": "پدران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» دروغ ساخته‌شده است و با «افترا» هم‌ریشه است؛ بقیه معنای ساده‌ی کلمات همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p390a_A_0309",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ءَابَآئِنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "l3",
+          "ar": "سَمِعْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "إِلَّا"
+        },
+        {
+          "id": "l5",
+          "ar": "مُّوسَىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "موسی"
+        },
+        {
+          "id": "r2",
+          "fa": "شنیدیم"
+        },
+        {
+          "id": "r3",
+          "fa": "جز"
+        },
+        {
+          "id": "r4",
+          "fa": "آوردند"
+        },
+        {
+          "id": "r5",
+          "fa": "پدران ما"
+        },
+        {
+          "id": "r6",
+          "fa": "ساختگی و دروغین"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» از ریشه‌ی «ف ر ي» و هم‌ریشه با «افترا» است؛ «إِلَّا» یعنی «جز»."
+    },
+    {
+      "id": "q_u_p390a_A_0310",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درست آن وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِـَٔايَـٰتِنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "l4",
+          "ar": "هَـٰذَآ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآءَهُم"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برای آنان آورد"
+        },
+        {
+          "id": "r2",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "r3",
+          "fa": "آیات ما"
+        },
+        {
+          "id": "r4",
+          "fa": "جادو"
+        },
+        {
+          "id": "r5",
+          "fa": "این"
+        },
+        {
+          "id": "r6",
+          "fa": "پیشین"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«مُفْتَرًى» صفت جادو و به معنای دروغ ساخته‌شده است؛ با «افترا» هم‌ریشه است."
+    }
+  ],
+  "issues": []
+}

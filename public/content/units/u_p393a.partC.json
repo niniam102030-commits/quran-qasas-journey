@@ -1,0 +1,4280 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "C",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_C_0101",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:60",
+        "vr:61"
+      ],
+      "promptFa": "آیه بعد از «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۱ (أَفَمَن وَعَدْنَـٰهُ...) پس از بیان ناپایداری دنیا در آیه ۶۰ می‌آید."
+    },
+    {
+      "id": "q_u_p393a_C_0102",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:60",
+        "vr:61"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَهُوَ لَـٰقِيهِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَمَن مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0103",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:60",
+        "vr:61"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ كَمَن مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ ٱلْمُرْسَلِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0104",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:59",
+        "vr:59"
+      ],
+      "promptFa": "آیه قبل از «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۵۹ (وَمَا كَانَ رَبُّكَ مُهْلِكَ...) پیش از آیه ۶۰ قرار دارد."
+    },
+    {
+      "id": "q_u_p393a_C_0105",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:59",
+        "vr:59"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا كَانَ رَبُّكَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مُهْلِكَ ٱلْقُرَىٰ حَتَّىٰ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَبْعَثَ فِىٓ أُمِّهَا رَسُولًۭا",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا ۚ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا كُنَّا مُهْلِكِى ٱلْقُرَىٰٓ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِلَّا وَأَهْلُهَا ظَـٰلِمُونَ",
+          "wordIdx": [
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۵۹."
+    },
+    {
+      "id": "q_u_p393a_C_0106",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 60,
+      "targets": [
+        "sq:59",
+        "vr:59"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "حَتَّىٰ يَبْعَثَ فِىٓ أُمِّهَا رَسُولًۭا",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا ۚ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا كُنَّا مُهْلِكِى ٱلْقُرَىٰٓ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَّا وَأَهْلُهَا ظَـٰلِمُونَ",
+          "wordIdx": [
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِن قَرْيَةٍۭ بَطِرَتْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۵۹."
+    },
+    {
+      "id": "q_u_p393a_C_0107",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ ٱلْحَيَوٰةِ...»",
+      "stem": {
+        "verse": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 60
+        },
+        {
+          "id": "o2",
+          "num": 59
+        },
+        {
+          "id": "o3",
+          "num": 61
+        },
+        {
+          "id": "o4",
+          "num": 62
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_C_0108",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ ٱلْحَيَوٰةِ...»",
+      "stem": {
+        "verse": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 60
+        },
+        {
+          "id": "o2",
+          "num": 58
+        },
+        {
+          "id": "o3",
+          "num": 62
+        },
+        {
+          "id": "o4",
+          "num": 63
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_C_0109",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...»",
+      "stem": {
+        "verse": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 60
+        },
+        {
+          "id": "o2",
+          "num": 57
+        },
+        {
+          "id": "o3",
+          "num": 64
+        },
+        {
+          "id": "o4",
+          "num": 65
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_C_0110",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "آیه ۶۰ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۰ با «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_C_0111",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "آیه ۶۰ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 58,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۰: «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0112",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "آیه ۶۰ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۰: «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0113",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vn:60",
+        "vr:60"
+      ],
+      "promptFa": "کلمات آیه ۶۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا عِندَ ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۰ کامل."
+    },
+    {
+      "id": "q_u_p393a_C_0114",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 60,
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "آیه ۶۰ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۰: «وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0115",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:61",
+        "vr:62"
+      ],
+      "promptFa": "آیه بعد از «أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۲ (وَيَوْمَ يُنَادِيهِمْ...) پس از مقایسه مؤمن و کافر در آیه ۶۱ می‌آید."
+    },
+    {
+      "id": "q_u_p393a_C_0116",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:61",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۱ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ أَيْنَ شُرَكَآءِىَ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_C_0117",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:61",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۱ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ أَجَبْتُمُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_C_0118",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:60",
+        "vr:60"
+      ],
+      "promptFa": "آیه قبل از «أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۰ (وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...) پیش از آیه ۶۱ قرار دارد."
+    },
+    {
+      "id": "q_u_p393a_C_0119",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:60",
+        "vr:60"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۱ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَزِينَتُهَا ۚ وَمَا عِندَ ٱللَّهِ",
+          "wordIdx": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "خَيْرٌۭ وَأَبْقَىٰٓ ۚ أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_C_0120",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 61,
+      "targets": [
+        "sq:60",
+        "vr:60"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۱ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا عِندَ ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا كَانَ رَبُّكَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_C_0121",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا فَهُوَ...»",
+      "stem": {
+        "verse": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 61
+        },
+        {
+          "id": "o2",
+          "num": 60
+        },
+        {
+          "id": "o3",
+          "num": 62
+        },
+        {
+          "id": "o4",
+          "num": 63
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0122",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا فَهُوَ...»",
+      "stem": {
+        "verse": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 61
+        },
+        {
+          "id": "o2",
+          "num": 59
+        },
+        {
+          "id": "o3",
+          "num": 63
+        },
+        {
+          "id": "o4",
+          "num": 65
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0123",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...»",
+      "stem": {
+        "verse": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 61
+        },
+        {
+          "id": "o2",
+          "num": 58
+        },
+        {
+          "id": "o3",
+          "num": 64
+        },
+        {
+          "id": "o4",
+          "num": 66
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0124",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "آیه ۶۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۱ با «أَفَمَن وَعَدْنَـٰهُ وَعْدًا...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_C_0125",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "آیه ۶۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 59,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۱: «أَفَمَن وَعَدْنَـٰهُ وَعْدًا...»"
+    },
+    {
+      "id": "q_u_p393a_C_0126",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "آیه ۶۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۱: «أَفَمَن وَعَدْنَـٰهُ وَعْدًا...»"
+    },
+    {
+      "id": "q_u_p393a_C_0127",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vn:61",
+        "vr:61"
+      ],
+      "promptFa": "کلمات آیه ۶۱ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ كَمَن مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۱ کامل."
+    },
+    {
+      "id": "q_u_p393a_C_0128",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 61,
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "آیه ۶۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۱: «أَفَمَن وَعَدْنَـٰهُ وَعْدًا...»"
+    },
+    {
+      "id": "q_u_p393a_C_0129",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:62",
+        "vr:63"
+      ],
+      "promptFa": "آیه بعد از «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۳ (قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...) پاسخ مشرکان در برابر سؤال الهی در آیه ۶۲ است."
+    },
+    {
+      "id": "q_u_p393a_C_0130",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:62",
+        "vr:63"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۲ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0131",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:62",
+        "vr:63"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۲ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كَمَا غَوَيْنَا ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هَـٰٓؤُلَآءِ ٱلَّذِينَ كُنتُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0132",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:61",
+        "vr:61"
+      ],
+      "promptFa": "آیه قبل از «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۱ (أَفَمَن وَعَدْنَـٰهُ...) پیش از آیه ۶۲ قرار دارد."
+    },
+    {
+      "id": "q_u_p393a_C_0133",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:61",
+        "vr:61"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۲ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ كَمَن",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَّتَّعْنَـٰهُ مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0134",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "sq:61",
+        "vr:61"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۲ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ كَمَن مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا ثُمَّ هُوَ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَ ٱلْقِيَـٰمَةِ مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلْمُرْسَلِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_C_0135",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ...»",
+      "stem": {
+        "verse": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 62
+        },
+        {
+          "id": "o2",
+          "num": 61
+        },
+        {
+          "id": "o3",
+          "num": 63
+        },
+        {
+          "id": "o4",
+          "num": 64
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_C_0136",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ...»",
+      "stem": {
+        "verse": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 62
+        },
+        {
+          "id": "o2",
+          "num": 60
+        },
+        {
+          "id": "o3",
+          "num": 64
+        },
+        {
+          "id": "o4",
+          "num": 65
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۲ (آیه ۶۵ مشابه است اما کلمات بعدی‌اش متفاوت است)."
+    },
+    {
+      "id": "q_u_p393a_C_0137",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...»",
+      "stem": {
+        "verse": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 62
+        },
+        {
+          "id": "o2",
+          "num": 59
+        },
+        {
+          "id": "o3",
+          "num": 65
+        },
+        {
+          "id": "o4",
+          "num": 74
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۲ (آیات ۶۵ و ۷۴ تشابه آغازین دارند)."
+    },
+    {
+      "id": "q_u_p393a_C_0138",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "آیه ۶۲ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۲ با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_C_0139",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "آیه ۶۲ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۲: «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0140",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "آیه ۶۲ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۲: «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...» (گزینه آخر مربوط به آیه ۷۴ است که تکرار همین آیه است)."
+    },
+    {
+      "id": "q_u_p393a_C_0141",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vn:62",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه ۶۲ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۲ کامل."
+    },
+    {
+      "id": "q_u_p393a_C_0142",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62"
+      ],
+      "promptFa": "آیه ۶۲ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse",
+        "o5": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۲: «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0143",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:63",
+        "vr:64"
+      ],
+      "promptFa": "آیه بعد از «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۴ (وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...) پس از پاسخ مشرکان در آیه ۶۳ می‌آید."
+    },
+    {
+      "id": "q_u_p393a_C_0144",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:63",
+        "vr:64"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۳ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ",
+          "wordIdx": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_C_0145",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:63",
+        "vr:64"
+      ],
+      "promptFa": "کلمات آیه بعد از آیه ۶۳ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ أَجَبْتُمُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_C_0146",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62",
+        "vr:62"
+      ],
+      "promptFa": "آیه قبل از «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۲ (وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ...) پیش از آیه ۶۳ قرار دارد."
+    },
+    {
+      "id": "q_u_p393a_C_0147",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۳ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ أَيْنَ شُرَكَآءِىَ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_C_0148",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه قبل از آیه ۶۳ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلَّذِينَ كَانُوا۟ يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_C_0149",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ...»",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 63
+        },
+        {
+          "id": "o2",
+          "num": 62
+        },
+        {
+          "id": "o3",
+          "num": 64
+        },
+        {
+          "id": "o4",
+          "num": 65
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0150",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ...»",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 63
+        },
+        {
+          "id": "o2",
+          "num": 61
+        },
+        {
+          "id": "o3",
+          "num": 65
+        },
+        {
+          "id": "o4",
+          "num": 66
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0151",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...»",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 63
+        },
+        {
+          "id": "o2",
+          "num": 60
+        },
+        {
+          "id": "o3",
+          "num": 66
+        },
+        {
+          "id": "o4",
+          "num": 67
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0152",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "آیه ۶۳ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۳ با «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_C_0153",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "آیه ۶۳ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۳: «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0154",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "آیه ۶۳ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۳: «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0155",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vn:63",
+        "vr:63"
+      ],
+      "promptFa": "کلمات آیه ۶۳ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۳ کامل."
+    },
+    {
+      "id": "q_u_p393a_C_0156",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63"
+      ],
+      "promptFa": "آیه ۶۳ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۳: «قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0157",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ...»",
+      "stem": {
+        "verse": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 64
+        },
+        {
+          "id": "o2",
+          "num": 63
+        },
+        {
+          "id": "o3",
+          "num": 65
+        },
+        {
+          "id": "o4",
+          "num": 66
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_C_0158",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ...»",
+      "stem": {
+        "verse": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 64
+        },
+        {
+          "id": "o2",
+          "num": 62
+        },
+        {
+          "id": "o3",
+          "num": 66
+        },
+        {
+          "id": "o4",
+          "num": 67
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_C_0159",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "شماره این آیه چیست؟ «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...»",
+      "stem": {
+        "verse": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 64
+        },
+        {
+          "id": "o2",
+          "num": 61
+        },
+        {
+          "id": "o3",
+          "num": 67
+        },
+        {
+          "id": "o4",
+          "num": 68
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_C_0160",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "آیه ۶۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۴ با «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_C_0161",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "آیه ۶۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۴: «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0162",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "آیه ۶۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۴: «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0163",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vn:64",
+        "vr:64"
+      ],
+      "promptFa": "کلمات آیه ۶۴ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 64
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ",
+          "wordIdx": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۴ کامل."
+    },
+    {
+      "id": "q_u_p393a_C_0164",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64"
+      ],
+      "promptFa": "آیه ۶۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "near_miss"
+      },
+      "explanationFa": "آیه ۶۴: «وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...»"
+    },
+    {
+      "id": "q_u_p393a_C_0165",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "آیات را به ترتیب صحیح پشت سر هم قرار دهید.",
+      "stem": {
+        "verses": [
+          60,
+          61,
+          62
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۶۰. وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...",
+          "wordIdx": [],
+          "verse": 60
+        },
+        {
+          "id": "b2",
+          "ar": "۶۱. أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...",
+          "wordIdx": [],
+          "verse": 61
+        },
+        {
+          "id": "b3",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...",
+          "wordIdx": [],
+          "verse": 62
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پس از آیه ۶۰ (ناپایداری دنیا)، آیه ۶۱ (مقایسه مؤمن و کافر) و سپس آیه ۶۲ (ندای الهی در قیامت) می‌آید."
+    },
+    {
+      "id": "q_u_p393a_C_0166",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "آیات را به ترتیب صحیح پشت سر هم قرار دهید.",
+      "stem": {
+        "verses": [
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۶۱. أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...",
+          "wordIdx": [],
+          "verse": 61
+        },
+        {
+          "id": "b2",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...",
+          "wordIdx": [],
+          "verse": 62
+        },
+        {
+          "id": "b3",
+          "ar": "۶۳. قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...",
+          "wordIdx": [],
+          "verse": 63
+        },
+        {
+          "id": "b4",
+          "ar": "۶۴. وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ...",
+          "wordIdx": [],
+          "verse": 64
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۶۲ ندای خداوند است، آیه ۶۳ پاسخ گمراه‌کنندگان، و آیه ۶۴ فراخوانی شریکان است."
+    },
+    {
+      "id": "q_u_p393a_C_0167",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "آیات را به ترتیب صحیح پشت سر هم قرار دهید.",
+      "stem": {
+        "verses": [
+          62,
+          63,
+          64,
+          65
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...",
+          "wordIdx": [],
+          "verse": 62
+        },
+        {
+          "id": "b2",
+          "ar": "۶۳. قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...",
+          "wordIdx": [],
+          "verse": 63
+        },
+        {
+          "id": "b3",
+          "ar": "۶۴. وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ...",
+          "wordIdx": [],
+          "verse": 64
+        },
+        {
+          "id": "b4",
+          "ar": "۶۵. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ...",
+          "wordIdx": [],
+          "verse": 65
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیات مربوط به دادگاه قیامت و بازپرسی از مشرکان به این ترتیب است."
+    },
+    {
+      "id": "q_u_p393a_C_0168",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "آیات را به ترتیب صحیح پشت سر هم قرار دهید.",
+      "stem": {
+        "verses": [
+          59,
+          60,
+          61,
+          62
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۵۹. وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ...",
+          "wordIdx": [],
+          "verse": 59
+        },
+        {
+          "id": "b2",
+          "ar": "۶۰. وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ...",
+          "wordIdx": [],
+          "verse": 60
+        },
+        {
+          "id": "b3",
+          "ar": "۶۱. أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...",
+          "wordIdx": [],
+          "verse": 61
+        },
+        {
+          "id": "b4",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...",
+          "wordIdx": [],
+          "verse": 62
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پایان بحث هلاکت امم (۵۹)، متاع دنیا (۶۰)، عاقبت مؤمن و کافر (۶۱)، ندای قیامت (۶۲)."
+    },
+    {
+      "id": "q_u_p393a_C_0169",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "تمامی آیات این بخش را به ترتیب صحیح پشت سر هم قرار دهید.",
+      "stem": {
+        "verses": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۶۰. وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ...",
+          "wordIdx": [],
+          "verse": 60
+        },
+        {
+          "id": "b2",
+          "ar": "۶۱. أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا...",
+          "wordIdx": [],
+          "verse": 61
+        },
+        {
+          "id": "b3",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ...",
+          "wordIdx": [],
+          "verse": 62
+        },
+        {
+          "id": "b4",
+          "ar": "۶۳. قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ...",
+          "wordIdx": [],
+          "verse": 63
+        },
+        {
+          "id": "b5",
+          "ar": "۶۴. وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ...",
+          "wordIdx": [],
+          "verse": 64
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کامل آیات این نیم‌صفحه."
+    },
+    {
+      "id": "q_u_p393a_C_0170",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p393a"
+      ],
+      "promptFa": "تمامی آیات این بخش را به ترتیب صحیح پشت سر هم قرار دهید. (دقت مضاعف)",
+      "stem": {
+        "verses": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۶۰. وَمَآ أُوتِيتُم مِّن شَىْءٍۢ...",
+          "wordIdx": [],
+          "verse": 60
+        },
+        {
+          "id": "b2",
+          "ar": "۶۱. أَفَمَن وَعَدْنَـٰهُ...",
+          "wordIdx": [],
+          "verse": 61
+        },
+        {
+          "id": "b3",
+          "ar": "۶۲. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...",
+          "wordIdx": [],
+          "verse": 62
+        },
+        {
+          "id": "b4",
+          "ar": "۶۳. قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ...",
+          "wordIdx": [],
+          "verse": 63
+        },
+        {
+          "id": "b5",
+          "ar": "۶۴. وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ...",
+          "wordIdx": [],
+          "verse": 64
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "مرور کامل توالی آیات بخش."
+    },
+    {
+      "id": "q_u_p393a_C_0171",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:60",
+        "vn:61",
+        "vn:62",
+        "vn:63"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 60
+        },
+        {
+          "id": "l2",
+          "num": 61
+        },
+        {
+          "id": "l3",
+          "num": 62
+        },
+        {
+          "id": "l4",
+          "num": 63
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ..."
+        },
+        {
+          "id": "r2",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا..."
+        },
+        {
+          "id": "r3",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ..."
+        },
+        {
+          "id": "r4",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ..."
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "تطبیق شماره و سرآغاز آیات ۶۰ تا ۶۳."
+    },
+    {
+      "id": "q_u_p393a_C_0172",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:61",
+        "vn:62",
+        "vn:63",
+        "vn:64"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 61
+        },
+        {
+          "id": "l2",
+          "num": 62
+        },
+        {
+          "id": "l3",
+          "num": 63
+        },
+        {
+          "id": "l4",
+          "num": 64
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا..."
+        },
+        {
+          "id": "r2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ..."
+        },
+        {
+          "id": "r3",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ..."
+        },
+        {
+          "id": "r4",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ..."
+        },
+        {
+          "id": "r5",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ..."
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق آیات ۶۱ تا ۶۴. (گزینه اضافی آیه ۶۵ است)."
+    },
+    {
+      "id": "q_u_p393a_C_0173",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:59",
+        "vn:60",
+        "vn:64",
+        "vn:65"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید. (آیات ابتدایی و انتهایی)",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 59
+        },
+        {
+          "id": "l2",
+          "num": 60
+        },
+        {
+          "id": "l3",
+          "num": 64
+        },
+        {
+          "id": "l4",
+          "num": 65
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَمَا كَانَ رَبُّكَ مُهْلِكَ ٱلْقُرَىٰ..."
+        },
+        {
+          "id": "r2",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ..."
+        },
+        {
+          "id": "r3",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ..."
+        },
+        {
+          "id": "r4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ..."
+        },
+        {
+          "id": "r5",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ..."
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "similar_verse"
+      },
+      "explanationFa": "تطبیق شماره و سرآغاز آیات. (آیات ۶۲ و ۶۵ شروع مشابه دارند)."
+    }
+  ],
+  "issues": []
+}

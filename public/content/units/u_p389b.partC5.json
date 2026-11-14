@@ -1,0 +1,1208 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "C5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_C_0501",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 31
+        },
+        {
+          "id": "o2",
+          "num": 32
+        },
+        {
+          "id": "o3",
+          "num": 33
+        },
+        {
+          "id": "o4",
+          "num": 34
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه دستور بردن دست در گریبان و معجزه‌ی دست سفید است و شماره‌اش ۳۲ است."
+    },
+    {
+      "id": "q_u_p389b_C_0502",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "این آیه آیه‌ی چندم سوره‌ی قصص است؟",
+      "stem": {
+        "verse": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 35
+        },
+        {
+          "id": "o2",
+          "num": 29
+        },
+        {
+          "id": "o3",
+          "num": 33
+        },
+        {
+          "id": "o4",
+          "num": 32
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۲ بعد از آیه‌ی ۳۱ (بیفکندن عصا) و پیش از آیه‌ی ۳۳ (ترس موسی از کشته شدن) است."
+    },
+    {
+      "id": "q_u_p389b_C_0503",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 32
+        },
+        {
+          "id": "o2",
+          "num": 30
+        },
+        {
+          "id": "o3",
+          "num": 34
+        },
+        {
+          "id": "o4",
+          "num": 31
+        },
+        {
+          "id": "o5",
+          "num": 33
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «ٱسْلُكْ يَدَكَ» شروع می‌شود و شماره‌اش ۳۲ است."
+    },
+    {
+      "id": "q_u_p389b_C_0504",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 34
+        },
+        {
+          "id": "o2",
+          "num": 32
+        },
+        {
+          "id": "o3",
+          "num": 33
+        },
+        {
+          "id": "o4",
+          "num": 36
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "در این آیه موسی از کشتن یک نفر از آنان و ترس از کشته شدن سخن می‌گوید؛ شماره‌اش ۳۳ است."
+    },
+    {
+      "id": "q_u_p389b_C_0505",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "این آیه آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 16
+        },
+        {
+          "id": "o2",
+          "num": 33
+        },
+        {
+          "id": "o3",
+          "num": 31
+        },
+        {
+          "id": "o4",
+          "num": 34
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۳ با آیه‌ی ۱۶ آغاز مشترک دارد، اما این آیه‌ی «قَالَ رَبِّ إِنِّى قَتَلْتُ…» شماره‌ی ۳۳ است."
+    },
+    {
+      "id": "q_u_p389b_C_0506",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 30
+        },
+        {
+          "id": "o2",
+          "num": 31
+        },
+        {
+          "id": "o3",
+          "num": 32
+        },
+        {
+          "id": "o4",
+          "num": 33
+        },
+        {
+          "id": "o5",
+          "num": 35
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۳ بین آیه‌ی ۳۲ (دو معجزه) و آیه‌ی ۳۴ (درخواست یاری هارون) قرار دارد."
+    },
+    {
+      "id": "q_u_p389b_C_0507",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 33
+        },
+        {
+          "id": "o2",
+          "num": 35
+        },
+        {
+          "id": "o3",
+          "num": 34
+        },
+        {
+          "id": "o4",
+          "num": 36
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "در این آیه از برادرم هارون و یاور بودن او سخن می‌رود؛ شماره‌اش ۳۴ است."
+    },
+    {
+      "id": "q_u_p389b_C_0508",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "این آیه آیه‌ی چندم سوره‌ی قصص است؟",
+      "stem": {
+        "verse": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 31
+        },
+        {
+          "id": "o2",
+          "num": 34
+        },
+        {
+          "id": "o3",
+          "num": 32
+        },
+        {
+          "id": "o4",
+          "num": 35
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۴ پس از آیه‌ی ۳۳ (ترس از کشته شدن) و پیش از آیه‌ی ۳۵ (پاسخ خدا) است."
+    },
+    {
+      "id": "q_u_p389b_C_0509",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 34
+        },
+        {
+          "id": "o2",
+          "num": 33
+        },
+        {
+          "id": "o3",
+          "num": 35
+        },
+        {
+          "id": "o4",
+          "num": 37
+        },
+        {
+          "id": "o5",
+          "num": 32
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَأَخِى هَـٰرُونُ» شروع می‌شود و شماره‌اش ۳۴ است."
+    },
+    {
+      "id": "q_u_p389b_C_0510",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 34
+        },
+        {
+          "id": "o2",
+          "num": 36
+        },
+        {
+          "id": "o3",
+          "num": 35
+        },
+        {
+          "id": "o4",
+          "num": 33
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه پاسخ خداست به درخواست موسی و وعده‌ی پیروزی؛ شماره‌اش ۳۵ است."
+    },
+    {
+      "id": "q_u_p389b_C_0511",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "این آیه آیه‌ی چندم سوره است؟",
+      "stem": {
+        "verse": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 35
+        },
+        {
+          "id": "o2",
+          "num": 32
+        },
+        {
+          "id": "o3",
+          "num": 36
+        },
+        {
+          "id": "o4",
+          "num": 34
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳۵ پس از آیه‌ی ۳۴ (درخواست یاور) و پیش از آیه‌ی ۳۶ (واکنش فرعونیان) می‌آید."
+    },
+    {
+      "id": "q_u_p389b_C_0512",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 33
+        },
+        {
+          "id": "o2",
+          "num": 34
+        },
+        {
+          "id": "o3",
+          "num": 36
+        },
+        {
+          "id": "o4",
+          "num": 37
+        },
+        {
+          "id": "o5",
+          "num": 35
+        }
+      ],
+      "answer": "o5",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «قَالَ سَنَشُدُّ عَضُدَكَ» آغاز می‌شود و پایانش «ٱلْغَـٰلِبُونَ» است؛ شماره‌اش ۳۵ است."
+    },
+    {
+      "id": "q_u_p389b_C_0513",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "آیه‌ی ۳۲ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_031_001",
+            "w28_031_002",
+            "w28_031_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_036_001",
+            "w28_036_002",
+            "w28_036_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۲ با «ٱسْلُكْ يَدَكَ فِى» آغاز می‌شود؛ آیه‌ی ۳۱ با «وَأَنْ أَلْقِ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p389b_C_0514",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "ابتدای آیه‌ی شماره‌ی ۳۲ کدام است؟",
+      "stem": {
+        "num": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_001",
+            "w28_030_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_034_001",
+            "w28_034_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_035_001",
+            "w28_035_002"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه‌ی ۳۲ «ٱسْلُكْ يَدَكَ» است؛ گزینه‌های دیگر ابتدای آیه‌های ۳۰، ۳۴ و ۳۵ هستند."
+    },
+    {
+      "id": "q_u_p389b_C_0515",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 32,
+      "targets": [
+        "vn:32"
+      ],
+      "promptFa": "آیه‌ی ۳۲ را با ابتدای درستش پیدا کنید.",
+      "stem": {
+        "num": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_032_002",
+            "w28_032_001",
+            "w28_032_003",
+            "w28_032_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_001",
+            "w28_031_002",
+            "w28_031_003",
+            "w28_031_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_035_001",
+            "w28_035_002",
+            "w28_035_003",
+            "w28_035_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست «ٱسْلُكْ يَدَكَ فِى جَيْبِكَ» است؛ گزینه‌ی اول همان کلمات با ترتیب جابه‌جاست."
+    },
+    {
+      "id": "q_u_p389b_C_0516",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "آیه‌ی ۳۳ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_032_001",
+            "w28_032_002",
+            "w28_032_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_034_001",
+            "w28_034_002",
+            "w28_034_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_035_001",
+            "w28_035_002",
+            "w28_035_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۳ با «قَالَ رَبِّ إِنِّى» شروع می‌شود؛ آیه‌ی ۳۵ هم با «قَالَ» آغاز می‌شود اما ادامه‌اش فرق دارد."
+    },
+    {
+      "id": "q_u_p389b_C_0517",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "ابتدای آیه‌ی شماره‌ی ۳۳ کدام است؟",
+      "stem": {
+        "num": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_035_001",
+            "w28_035_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_031_001",
+            "w28_031_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_036_001",
+            "w28_036_002"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۳ با «قَالَ رَبِّ» آغاز می‌شود. «قَالَ سَنَشُدُّ» ابتدای آیه‌ی ۳۵ است."
+    },
+    {
+      "id": "q_u_p389b_C_0518",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 33,
+      "targets": [
+        "vn:33"
+      ],
+      "promptFa": "آیه‌ی ۳۳ را با ابتدای درستش پیدا کنید.",
+      "stem": {
+        "num": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_033_002",
+            "w28_033_001",
+            "w28_033_003",
+            "w28_033_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_035_001",
+            "w28_035_002",
+            "w28_035_003",
+            "w28_035_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_030_003",
+            "w28_030_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست «قَالَ رَبِّ إِنِّى قَتَلْتُ» است؛ گزینه‌ی اول همان کلمات با جابه‌جایی است."
+    },
+    {
+      "id": "q_u_p389b_C_0519",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "آیه‌ی ۳۴ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_031_001",
+            "w28_031_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_032_001",
+            "w28_032_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_036_001",
+            "w28_036_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۴ با «وَأَخِى هَـٰرُونُ» شروع می‌شود؛ آیه‌ی ۳۱ با «وَأَنْ أَلْقِ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p389b_C_0520",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "ابتدای آیه‌ی شماره‌ی ۳۴ کدام است؟",
+      "stem": {
+        "num": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_031_001",
+            "w28_031_002",
+            "w28_031_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_035_001",
+            "w28_035_002",
+            "w28_035_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۴ با «وَأَخِى هَـٰرُونُ هُوَ» آغاز می‌شود و درباره‌ی هارون است."
+    },
+    {
+      "id": "q_u_p389b_C_0521",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 34,
+      "targets": [
+        "vn:34"
+      ],
+      "promptFa": "آیه‌ی ۳۴ را با ابتدای درستش پیدا کنید.",
+      "stem": {
+        "num": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_031_001",
+            "w28_031_002",
+            "w28_031_003",
+            "w28_031_004",
+            "w28_031_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_034_002",
+            "w28_034_001",
+            "w28_034_003",
+            "w28_034_004",
+            "w28_034_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003",
+            "w28_033_004",
+            "w28_033_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست «وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى» است؛ گزینه‌ی دوم همان کلمات با جابه‌جایی است."
+    },
+    {
+      "id": "q_u_p389b_C_0522",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "آیه‌ی ۳۵ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_034_001",
+            "w28_034_002",
+            "w28_034_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_036_001",
+            "w28_036_002",
+            "w28_036_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۵ با «قَالَ سَنَشُدُّ عَضُدَكَ» شروع می‌شود؛ آیه‌ی ۳۳ هم با «قَالَ» آغاز می‌شود اما ادامه‌اش «رَبِّ إِنِّى» است."
+    },
+    {
+      "id": "q_u_p389b_C_0523",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "ابتدای آیه‌ی شماره‌ی ۳۵ کدام است؟",
+      "stem": {
+        "num": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_033_001",
+            "w28_033_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_001",
+            "w28_031_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_032_001",
+            "w28_032_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۵ با «قَالَ سَنَشُدُّ» آغاز می‌شود. «قَالَ رَبِّ» ابتدای آیه‌ی ۳۳ است."
+    },
+    {
+      "id": "q_u_p389b_C_0524",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 35,
+      "targets": [
+        "vn:35"
+      ],
+      "promptFa": "آیه‌ی ۳۵ را با ابتدای درستش پیدا کنید.",
+      "stem": {
+        "num": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_035_001",
+            "w28_035_002",
+            "w28_035_004",
+            "w28_035_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003",
+            "w28_033_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_034_001",
+            "w28_034_002",
+            "w28_034_003",
+            "w28_034_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست «قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ» است؛ گزینه‌ی دوم دو کلمه‌ی آخر را جابه‌جا کرده است."
+    }
+  ],
+  "issues": []
+}

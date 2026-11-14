@@ -1,0 +1,570 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A2",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "معنای «ٱسْلُكْ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیرون بیاور"
+        },
+        {
+          "id": "o2",
+          "fa": "ببر"
+        },
+        {
+          "id": "o3",
+          "fa": "رفتار کن"
+        },
+        {
+          "id": "o4",
+          "fa": "بر سینه بگذار"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ٱسْلُكْ فعل امر از ریشه‌ی «س ل ك» و یعنی «ببر». «سلوک» در فارسی به رفتار اشاره دارد، اما اینجا معنای وارد کردن است."
+    },
+    {
+      "id": "q_u_p389b_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "در این آیه «ٱسْلُكْ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیرون بیا"
+        },
+        {
+          "id": "o2",
+          "fa": "بگیر"
+        },
+        {
+          "id": "o3",
+          "fa": "داخل کن، وارد کن"
+        },
+        {
+          "id": "o4",
+          "fa": "بپوشان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در «ٱسْلُكْ يَدَكَ فِى جَيْبِكَ» یعنی دستت را داخل گریبانت کن. ریشه‌ی «س ل ك» است و «سلوک» هم‌ریشه‌ی آن است."
+    },
+    {
+      "id": "q_u_p389b_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "کدام معنا برای «ٱسْلُكْ» درست است؟",
+      "stem": {
+        "wordId": "w28_032_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رفتار کن"
+        },
+        {
+          "id": "o2",
+          "fa": "بر سینه بگذار"
+        },
+        {
+          "id": "o3",
+          "fa": "بیرون ببر"
+        },
+        {
+          "id": "o4",
+          "fa": "داخل کن، وارد کن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ٱسْلُكْ یعنی داخل کن و وارد کن، نه بیرون ببر. دوست فریبنده: «سلوک» در فارسی یعنی رفتار."
+    },
+    {
+      "id": "q_u_p389b_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "با توجه به آیه، معنای «ٱسْلُكْ» کدام است؟",
+      "stem": {
+        "wordId": "w28_032_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ببر"
+        },
+        {
+          "id": "o2",
+          "fa": "سفید شو"
+        },
+        {
+          "id": "o3",
+          "fa": "رفتار کن"
+        },
+        {
+          "id": "o4",
+          "fa": "بپوشان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«دستت را در گریبانت ببر» ترجمه‌ی ٱسْلُكْ يَدَكَ فِى جَيْبِكَ است. ریشه‌ی آن «س ل ك» است."
+    },
+    {
+      "id": "q_u_p389b_A_0305",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ببر» است؟",
+      "stem": {
+        "fa": "ببر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَيْبِكَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ببر» در این آیه معادل ٱسْلُكْ است. وَٱضْمُمْ یعنی «بگذار» و تَخْرُجْ یعنی «بیرون آید»."
+    },
+    {
+      "id": "q_u_p389b_A_0306",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "معادل عربی «داخل کن، وارد کن» کدام است؟",
+      "stem": {
+        "fa": "داخل کن، وارد کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَذَٰنِكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ٱسْلُكْ فعل امر به معنای داخل کن است. تَخْرُجْ نقطه‌ی مقابل آن و به معنای «بیرون آید» است."
+    },
+    {
+      "id": "q_u_p389b_A_0307",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "در «دستت را در گریبانت ببر»، فعل «ببر» کدام کلمه است؟",
+      "stem": {
+        "fa": "ببر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِلَيْكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱسْلُكْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فعل امر آغاز آیه ٱسْلُكْ است. وَٱضْمُمْ فعل امر دیگر آیه و به معنای «بگذار» است."
+    },
+    {
+      "id": "q_u_p389b_A_0308",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "l5",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "r2",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r3",
+          "fa": "داخل کن، وارد کن"
+        },
+        {
+          "id": "r4",
+          "fa": "بیرون آید"
+        },
+        {
+          "id": "r5",
+          "fa": "دستت"
+        },
+        {
+          "id": "r6",
+          "fa": "عیب"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "ٱسْلُكْ یعنی داخل کن و با «دستت» و «گریبانت» می‌آید. نتیجه‌اش این است که دست «سفید و درخشان بیرون آید»."
+    },
+    {
+      "id": "q_u_p389b_A_0309",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "کلمات را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱضْمُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r2",
+          "fa": "بر سینه بگذار"
+        },
+        {
+          "id": "r3",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r4",
+          "fa": "ببر"
+        },
+        {
+          "id": "r5",
+          "fa": "عیب"
+        },
+        {
+          "id": "r6",
+          "fa": "بیرون آید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "ٱسْلُكْ و وَٱضْمُمْ دو فعل امر آیه‌اند: «ببر» و «بر سینه بگذار». سُوٓءٍۢ یعنی عیب و فَـٰسِقِينَ یعنی نافرمان‌ها."
+    },
+    {
+      "id": "q_u_p389b_A_0310",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_001"
+      ],
+      "promptFa": "جفت‌های درست عربی و فارسی را وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَيْبِكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r2",
+          "fa": "پروردگار"
+        },
+        {
+          "id": "r3",
+          "fa": "ترس"
+        },
+        {
+          "id": "r4",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r5",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r6",
+          "fa": "داخل کن، وارد کن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "ٱسْلُكْ یعنی داخل کن و جَيْبِكَ «گریبانت» است. بُرْهَـٰنَانِ مثنی است و «دو معجزه» معنا می‌دهد."
+    }
+  ],
+  "issues": []
+}

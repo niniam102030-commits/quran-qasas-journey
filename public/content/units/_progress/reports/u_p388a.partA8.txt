@@ -1,0 +1,8 @@
+[#1 q_u_p388a_A_1049 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: تَذُودَانِ ۖ
+[#1 q_u_p388a_A_1049 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: خَطْبُكُمَا ۖ
+[#1 q_u_p388a_A_1049 MATCH_PHRASES] l5: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرِّعَآءُ ۖ
+[#3 q_u_p388a_A_1051 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p388a_A_1052 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p388a_A_1053 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p388a_A_1054 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p388a_A_1055 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.

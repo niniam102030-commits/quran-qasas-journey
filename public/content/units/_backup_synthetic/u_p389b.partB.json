@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p389b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 32,
+      "targets": [
+        "vr:32"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید، و برا...»، آیه 32 را مرتب کن:",
+      "stem": {
+        "verse": 32
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ",
+          "wordIdx": [
+            19,
+            25
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ",
+          "wordIdx": [
+            10,
+            18
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ",
+          "wordIdx": [
+            1,
+            9
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 32 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p389b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 32,
+      "targets": [
+        "vr:32"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 32 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 32,
+        "hiddenIdx": [
+          13
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِنَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "13": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «مِنَ» در آیه 32 است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,1878 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "A6",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p396a_A_1223",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معنای کلمه «يَصُدُّنَّكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "صدای تو را بشنوند"
+        },
+        {
+          "id": "o2",
+          "fa": "باز دارند"
+        },
+        {
+          "id": "o3",
+          "fa": "تو را تصدیق کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "به تو رو آورند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "کلمه يَصُدُّنَّ از ریشه «ص د د» به معنای بازداشتن است."
+    },
+    {
+      "id": "q_u_p396a_A_1224",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معنای «يَصُدُّنَّكَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مانع تو شوند"
+        },
+        {
+          "id": "o2",
+          "fa": "بر تو سد بسازند"
+        },
+        {
+          "id": "o3",
+          "fa": "به تو آسیب رسانند"
+        },
+        {
+          "id": "o4",
+          "fa": "از تو دور شوند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "صَد در عربی یعنی بازداشتن و جلوگیری کردن از چیزی."
+    },
+    {
+      "id": "q_u_p396a_A_1225",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معنای کلمه مشخص‌شده در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دعوت نکنند"
+        },
+        {
+          "id": "o2",
+          "fa": "مشرک نشوند"
+        },
+        {
+          "id": "o3",
+          "fa": "تصدیق نکنند"
+        },
+        {
+          "id": "o4",
+          "fa": "باز دارند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "این فعل به معنای جلوگیری و ممانعت است."
+    },
+    {
+      "id": "q_u_p396a_A_1226",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "در آیه شریفه، «يَصُدُّنَّكَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پنهان کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "آسیب زنند"
+        },
+        {
+          "id": "o3",
+          "fa": "مانع شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "انکار کنند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "یصدنک یعنی مانع تو شوند و تو را از کاری باز دارند."
+    },
+    {
+      "id": "q_u_p396a_A_1227",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «باز دارند» است؟",
+      "stem": {
+        "fa": "باز دارند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُنزِلَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱدْعُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "يَصُدُّنَّ از ریشه ص د د به معنای بازداشتن است."
+    },
+    {
+      "id": "q_u_p396a_A_1228",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «مانع تو شوند» است؟",
+      "stem": {
+        "fa": "مانع تو شوند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُشْرِكِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَبِّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَايَـٰتِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه يَصُدُّنَّكَ دارای ضمیر «ک» خطاب است یعنی مانع تو شوند."
+    },
+    {
+      "id": "q_u_p396a_A_1229",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معادل عربی «تو را باز دارند» کدام است؟",
+      "stem": {
+        "fa": "تو را باز دارند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَرْجِعُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَدْعُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "این فعل به توطئه کافران برای بازداشتن پیامبر از ابلاغ آیات اشاره دارد."
+    },
+    {
+      "id": "q_u_p396a_A_1230",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معنای کلمه «تَدْعُ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ادعا نکن"
+        },
+        {
+          "id": "o2",
+          "fa": "مخوان"
+        },
+        {
+          "id": "o3",
+          "fa": "دعوا نکن"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت نکن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این کلمه از ریشه «د ع و» است، یعنی مخوان و دعوت نکن."
+    },
+    {
+      "id": "q_u_p396a_A_1231",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معنای «تَدْعُ» کدام است؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باور نکن"
+        },
+        {
+          "id": "o2",
+          "fa": "رها نکن"
+        },
+        {
+          "id": "o3",
+          "fa": "دعوت نکن"
+        },
+        {
+          "id": "o4",
+          "fa": "آسیب نزن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه تَدْعُ فعل نهی است و به معنای نخوان و دعوت نکن است."
+    },
+    {
+      "id": "q_u_p396a_A_1232",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "در آیه مشخص‌شده، «تَدْعُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مخوان"
+        },
+        {
+          "id": "o2",
+          "fa": "قرار نده"
+        },
+        {
+          "id": "o3",
+          "fa": "عبادت نکن"
+        },
+        {
+          "id": "o4",
+          "fa": "شریک نساز"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "تَدْعُ به معنای خواندن و صدا زدن است، یعنی خدای دیگری را مخوان."
+    },
+    {
+      "id": "q_u_p396a_A_1233",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معنای دقیق «تَدْعُ» در متن این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیروی نکن"
+        },
+        {
+          "id": "o2",
+          "fa": "اعتماد نکن"
+        },
+        {
+          "id": "o3",
+          "fa": "تسلیم نشو"
+        },
+        {
+          "id": "o4",
+          "fa": "نخوان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "ریشه این کلمه دعا است، به معنای نخوان و عبادت نکن."
+    },
+    {
+      "id": "q_u_p396a_A_1234",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «مخوان» است؟",
+      "stem": {
+        "fa": "مخوان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَجْهَهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "تُرْجَعُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تَدْعُ فعل نهی است به معنای مخوان."
+    },
+    {
+      "id": "q_u_p396a_A_1235",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «دعوت نکن» است؟",
+      "stem": {
+        "fa": "دعوت نکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱدْعُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "وَٱدْعُ فعل امر (دعوت کن) و تَدْعُ فعل نهی (دعوت نکن) است."
+    },
+    {
+      "id": "q_u_p396a_A_1236",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معادل عربی «نخوان» کدام است؟",
+      "stem": {
+        "fa": "نخوان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَاخَرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَعَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَـٰهًا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تَدْعُ به معنای خواندن و صدا زدن است."
+    },
+    {
+      "id": "q_u_p396a_A_1237",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "معنای کلمه «هَالِكٌ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خالق"
+        },
+        {
+          "id": "o2",
+          "fa": "هلاک شدنی است"
+        },
+        {
+          "id": "o3",
+          "fa": "ماندگار"
+        },
+        {
+          "id": "o4",
+          "fa": "مالک"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این کلمه از ریشه «ه ل ک» است و به معنای هلاک شونده و نابودشونده است."
+    },
+    {
+      "id": "q_u_p396a_A_1238",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "معنای «هَالِكٌ» کدام است؟",
+      "stem": {
+        "wordId": "w28_088_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نابودشونده"
+        },
+        {
+          "id": "o2",
+          "fa": "حاکم"
+        },
+        {
+          "id": "o3",
+          "fa": "دائمی"
+        },
+        {
+          "id": "o4",
+          "fa": "زیانکار"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "هَالِكٌ به معنای از بین رونده و نابودشونده است."
+    },
+    {
+      "id": "q_u_p396a_A_1239",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "در این آیه، کلمه «هَالِكٌ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_088_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مخلوق"
+        },
+        {
+          "id": "o2",
+          "fa": "آفریننده"
+        },
+        {
+          "id": "o3",
+          "fa": "بازگردانده شده"
+        },
+        {
+          "id": "o4",
+          "fa": "هلاک شدنی است"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "یعنی هر چیزی جز ذات پروردگار محکوم به هلاکت و نابودی است."
+    },
+    {
+      "id": "q_u_p396a_A_1240",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "معنای دقیق «هَالِكٌ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_088_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جاودان است"
+        },
+        {
+          "id": "o2",
+          "fa": "نابودشونده"
+        },
+        {
+          "id": "o3",
+          "fa": "فرمانرواست"
+        },
+        {
+          "id": "o4",
+          "fa": "بازمی‌گردد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "همه چیز به جز ذات الهی از بین رونده و نابودشونده است."
+    },
+    {
+      "id": "q_u_p396a_A_1241",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «هلاک شدنی است» می‌باشد؟",
+      "stem": {
+        "fa": "هلاک شدنی است"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْحُكْمُ"
+        },
+        {
+          "id": "o2",
+          "ar": "شَىْءٍ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَجْهَهُۥ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "هَالِكٌ یعنی نابودشونده و هلاک شدنی."
+    },
+    {
+      "id": "q_u_p396a_A_1242",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "معادل «نابودشونده» کدام کلمه است؟",
+      "stem": {
+        "fa": "نابودشونده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o2",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَاخَرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَعَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه ه ل ک به معنای نابودشونده است."
+    },
+    {
+      "id": "q_u_p396a_A_1243",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_013"
+      ],
+      "promptFa": "عربی عبارت «هلاک شدنی» کدام است؟",
+      "stem": {
+        "fa": "هلاک شدنی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُنزِلَتْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "هَالِك اسم فاعل است و به موجودی که هلاک می‌شود اشاره دارد."
+    },
+    {
+      "id": "q_u_p396a_A_1244",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "معنای کلمه «تُرْجَعُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازگردانده می شوید"
+        },
+        {
+          "id": "o2",
+          "fa": "رجوع می کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "پاداش داده می شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "باز می گردید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این فعل مجهول است و به معنای «بازگردانده می‌شوید» می‌باشد."
+    },
+    {
+      "id": "q_u_p396a_A_1245",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "معنای «تُرْجَعُونَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_088_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رها می شوید"
+        },
+        {
+          "id": "o2",
+          "fa": "فرمانروایی می کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "برگردانده می شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "هلاک می شوید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تُرْجَعُونَ فعل مضارع مجهول از ریشه ر ج ع است."
+    },
+    {
+      "id": "q_u_p396a_A_1246",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "کلمه مشخص‌شده در این آیه چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_088_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رجوع می کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "بازگردانده می شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "حاکم می شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "دعوت می شوید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در قیامت همه انسان‌ها به سوی خدا بازگردانده می‌شوند (مجهول)."
+    },
+    {
+      "id": "q_u_p396a_A_1247",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "در آیه شریفه، معنای «تُرْجَعُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازمی گردانید"
+        },
+        {
+          "id": "o2",
+          "fa": "پناه می برید"
+        },
+        {
+          "id": "o3",
+          "fa": "قضاوت می شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "برگردانده می شوید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o3": "near_miss"
+      },
+      "explanationFa": "تُرْجَعُونَ به برگردانده شدن همه موجودات به سوی پروردگار اشاره دارد."
+    },
+    {
+      "id": "q_u_p396a_A_1248",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "کدام کلمه به معنای «بازگردانده می شوید» است؟",
+      "stem": {
+        "fa": "بازگردانده می شوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْحُكْمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَدْعُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این فعل به صورت مجهول آمده و معنای بازگردانده شدن می‌دهد."
+    },
+    {
+      "id": "q_u_p396a_A_1249",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "کدام کلمه به معنای «برگردانده می شوید» می‌باشد؟",
+      "stem": {
+        "fa": "برگردانده می شوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُنزِلَتْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه این فعل ر ج ع به معنای بازگشت است."
+    },
+    {
+      "id": "q_u_p396a_A_1250",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_019"
+      ],
+      "promptFa": "عربی «بازگردانده می شوید» کدام است؟",
+      "stem": {
+        "fa": "بازگردانده می شوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَإِلَيْهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱدْعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "كُلُّ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تُرْجَعُونَ بازگردانده می‌شوید (مجهول)."
+    },
+    {
+      "id": "q_u_p396a_A_1251",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_002",
+        "w:w28_088_013",
+        "w:w28_088_019"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l4",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "أُنزِلَتْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "باز دارند تو را"
+        },
+        {
+          "id": "r2",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r3",
+          "fa": "هلاک شدنی است"
+        },
+        {
+          "id": "r4",
+          "fa": "بازگردانده می شوید"
+        },
+        {
+          "id": "r5",
+          "fa": "نازل شد"
+        },
+        {
+          "id": "r6",
+          "fa": "تصدیق کردند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَصُدُّنَّكَ: باز دارند تو را / تَدْعُ: مخوان / هَالِكٌ: هلاک شدنی است / تُرْجَعُونَ: بازگردانده می شوید."
+    },
+    {
+      "id": "q_u_p396a_A_1252",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_002",
+        "w:w28_088_013"
+      ],
+      "promptFa": "ترجمه صحیح هر کلمه را بیابید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْمُشْرِكِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْحُكْمُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مانع تو شوند"
+        },
+        {
+          "id": "r2",
+          "fa": "دعوت نکن"
+        },
+        {
+          "id": "r3",
+          "fa": "نابودشونده"
+        },
+        {
+          "id": "r4",
+          "fa": "مشرکان"
+        },
+        {
+          "id": "r5",
+          "fa": "فرمانروایی"
+        },
+        {
+          "id": "r6",
+          "fa": "جاودان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "تَدْعُ فعل نهی به معنای دعوت نکن است و هَالِكٌ یعنی نابودشونده."
+    },
+    {
+      "id": "q_u_p396a_A_1253",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_013",
+        "w:w28_088_019"
+      ],
+      "promptFa": "هر کلمه قرآنی را به معادل فارسی‌اش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l2",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَاخَرَ ۘ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَجْهَهُۥ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هلاک شدنی"
+        },
+        {
+          "id": "r2",
+          "fa": "برگردانده می شوید"
+        },
+        {
+          "id": "r3",
+          "fa": "باز دارند تو را"
+        },
+        {
+          "id": "r4",
+          "fa": "دیگر"
+        },
+        {
+          "id": "r5",
+          "fa": "ذات او"
+        },
+        {
+          "id": "r6",
+          "fa": "همه چیز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "تُرْجَعُونَ به صورت مجهول آمده (برگردانده می‌شوید) و وَجْهَهُ به ذات الهی اشاره دارد."
+    },
+    {
+      "id": "q_u_p396a_A_1254",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_088_002",
+        "w:w28_088_013",
+        "w:w28_088_019"
+      ],
+      "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَبِّكَ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "شَىْءٍ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نخوان"
+        },
+        {
+          "id": "r2",
+          "fa": "نابودشونده"
+        },
+        {
+          "id": "r3",
+          "fa": "بازگردانده می شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "پروردگارت"
+        },
+        {
+          "id": "r5",
+          "fa": "چیزی"
+        },
+        {
+          "id": "r6",
+          "fa": "هرگز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "تَدْعُ یعنی نخوان، و هَالِكٌ یعنی نابودشونده."
+    },
+    {
+      "id": "q_u_p396a_A_1255",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_002",
+        "w:w28_088_019"
+      ],
+      "promptFa": "کلمات را به ترجمه انصاریان آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَايَـٰتِ"
+        },
+        {
+          "id": "l5",
+          "ar": "إِلَـٰهًا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "باز دارند تو را"
+        },
+        {
+          "id": "r2",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r3",
+          "fa": "برگردانده می شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "آیات"
+        },
+        {
+          "id": "r5",
+          "fa": "معبودی"
+        },
+        {
+          "id": "r6",
+          "fa": "روزی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَصُدُّنَّكَ به معنای باز دارند تو را، و تُرْجَعُونَ به معنای برگردانده می‌شوید است."
+    },
+    {
+      "id": "q_u_p396a_A_1256",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_013",
+        "w:w28_088_019"
+      ],
+      "promptFa": "معنای کلمات زیر را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "بَعْدَ"
+        },
+        {
+          "id": "l5",
+          "ar": "كُلُّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مانع تو شوند"
+        },
+        {
+          "id": "r2",
+          "fa": "هلاک شدنی است"
+        },
+        {
+          "id": "r3",
+          "fa": "بازگردانده می شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "پس از"
+        },
+        {
+          "id": "r5",
+          "fa": "هر"
+        },
+        {
+          "id": "r6",
+          "fa": "پیش از"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "هَالِكٌ از ریشه هلاک به معنای هلاک شدنی و نابودشونده است."
+    },
+    {
+      "id": "q_u_p396a_A_1257",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_088_002",
+        "w:w28_088_013",
+        "w:w28_088_019"
+      ],
+      "promptFa": "کلمات را به دقت جفت‌سازی کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱدْعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَكُونَنَّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r2",
+          "fa": "نابودشونده"
+        },
+        {
+          "id": "r3",
+          "fa": "برگردانده می شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "دعوت کن"
+        },
+        {
+          "id": "r5",
+          "fa": "مباش"
+        },
+        {
+          "id": "r6",
+          "fa": "بودند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "وَٱدْعُ فعل امر (دعوت کن) است اما تَدْعُ در اینجا فعل نهی (مخوان) است."
+    },
+    {
+      "id": "q_u_p396a_A_1258",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_087_002",
+        "w:w28_088_002",
+        "w:w28_088_013"
+      ],
+      "promptFa": "معادل‌های صحیح کلمات عربی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "l4",
+          "ar": "مِنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "إِلَـٰهَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "باز دارند"
+        },
+        {
+          "id": "r2",
+          "fa": "دعوت نکن"
+        },
+        {
+          "id": "r3",
+          "fa": "هلاک شدنی است"
+        },
+        {
+          "id": "r4",
+          "fa": "از"
+        },
+        {
+          "id": "r5",
+          "fa": "معبودی"
+        },
+        {
+          "id": "r6",
+          "fa": "به سوی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَصُدُّنَّكَ به معنای بازداشتن و جلوگیری کردن از چیزی است."
+    }
+  ],
+  "issues": []
+}

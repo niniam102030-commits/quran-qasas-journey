@@ -1,0 +1,1047 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391a",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p391a_A_0601",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "معنای «لِتُنذِرَ» چیست؟",
+      "stem": {
+        "wordId": "w28_046_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا نذر کنی"
+        },
+        {
+          "id": "o2",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "o3",
+          "fa": "تا متذکّر شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "تا ندا دهی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ن ذ ر» است و اینجا یعنی بیم دادن و هشدار دادن. با «نذر کردن» اشتباه نشود."
+    },
+    {
+      "id": "q_u_p391a_A_0602",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "در این آیه، «لِتُنذِرَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_046_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیش از تو"
+        },
+        {
+          "id": "o2",
+          "fa": "تا بیم داده شوی"
+        },
+        {
+          "id": "o3",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "o4",
+          "fa": "نذر کردن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«لِ» به معنای «تا» و «تُنذِرَ» به معنای بیم دهی است؛ نه نذر کردن."
+    },
+    {
+      "id": "q_u_p391a_A_0603",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "کدام گزینه مفهوم ریشه‌ی «ن ذ ر» در «لِتُنذِرَ» را درست بیان می‌کند؟",
+      "stem": {
+        "wordId": "w28_046_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای نذر کردن"
+        },
+        {
+          "id": "o2",
+          "fa": "یادآوری و متذکّر شدن"
+        },
+        {
+          "id": "o3",
+          "fa": "ندا دادن"
+        },
+        {
+          "id": "o4",
+          "fa": "هشدار دادن و ترساندن از عاقبت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«إنذار» یعنی هشدار دادن از عاقبت کار. نذر کردن معنای دیگری دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0604",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "با توجه به سیاق آیه، «لِتُنذِرَ» را چگونه ترجمه می‌کنید؟",
+      "stem": {
+        "wordId": "w28_046_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا رحمت کنی"
+        },
+        {
+          "id": "o2",
+          "fa": "تا نذر کنی"
+        },
+        {
+          "id": "o3",
+          "fa": "تا بیم دهند"
+        },
+        {
+          "id": "o4",
+          "fa": "تا بیم دهی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "فعل برای مخاطب (تو) است: «تا بیم دهی». «لِ» به معنای «تا» است."
+    },
+    {
+      "id": "q_u_p391a_A_0605",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "معنای «نَّذِيرٍۢ» چیست؟",
+      "stem": {
+        "wordId": "w28_046_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نذری"
+        },
+        {
+          "id": "o2",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "o3",
+          "fa": "مردمی"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگارت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نذیر» یعنی هشداردهنده؛ هم‌ریشه با نذر است ولی نذر کردن نیست."
+    },
+    {
+      "id": "q_u_p391a_A_0606",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "در این آیه «نَّذِيرٍۢ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_046_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "o2",
+          "fa": "نذر کننده‌ای"
+        },
+        {
+          "id": "o3",
+          "fa": "بیم دهی"
+        },
+        {
+          "id": "o4",
+          "fa": "رحمتی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نَذِیر» اسم و به معنای بیم‌دهنده است؛ «تُنذِرَ» فعل و هم‌ریشه با آن است."
+    },
+    {
+      "id": "q_u_p391a_A_0607",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "کدام توضیح برای «نَّذِيرٍۢ» درست است؟",
+      "stem": {
+        "wordId": "w28_046_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنچه برای خدا نذر شده"
+        },
+        {
+          "id": "o2",
+          "fa": "متذکّر و هوشیار"
+        },
+        {
+          "id": "o3",
+          "fa": "هشداردهنده و پیامبر بیم‌دهنده"
+        },
+        {
+          "id": "o4",
+          "fa": "مردمی که پیش از تو بودند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "نذیر یعنی هشداردهنده. «نذر» در فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p391a_A_0608",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "با توجه به عبارت «مَّا أَتَىٰهُم مِّن نَّذِيرٍۢ»، معنای «نَّذِيرٍۢ» کدام است؟",
+      "stem": {
+        "wordId": "w28_046_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیش از تو"
+        },
+        {
+          "id": "o2",
+          "fa": "نذری"
+        },
+        {
+          "id": "o3",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "o4",
+          "fa": "بیم‌دهنده‌ای"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "same_root"
+      },
+      "explanationFa": "یعنی برای آنان بیم‌دهنده‌ای نیامده بود. «نذیر» اسم است، نه فعل."
+    },
+    {
+      "id": "q_u_p391a_A_0609",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "تا بیم دهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "نَادَيْنَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«لِتُنذِرَ» یعنی تا بیم دهی. «نذیر» اسم هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p391a_A_0610",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "این مفهوم به کدام کلمه‌ی آیه‌ی ۴۶ برمی‌گردد؟",
+      "stem": {
+        "fa": "هشدار دادن و ترساندن از عاقبت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "أَتَىٰهُم"
+        },
+        {
+          "id": "o4",
+          "ar": "رَّحْمَةًۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل «تُنذِرَ» از ریشه‌ی ن ذ ر به معنای هشدار دادن است."
+    },
+    {
+      "id": "q_u_p391a_A_0611",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "معادل عربی را (با حرکات) انتخاب کنید.",
+      "stem": {
+        "fa": "بیم دهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَادَيْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "لِتُنذِرَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لِتُنذِرَ» فعل مضارع منصوب با «لِ» است و به معنای «تا بیم دهی» می‌آید."
+    },
+    {
+      "id": "q_u_p391a_A_0612",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "بیم‌دهنده‌ای"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "رَّحْمَةًۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نَذِیر» اسم و به معنای بیم‌دهنده است؛ «لِتُنذِرَ» فعل است."
+    },
+    {
+      "id": "q_u_p391a_A_0613",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "این معنا مربوط به کدام کلمه است؟",
+      "stem": {
+        "fa": "هشداردهنده و پیامبر بیم‌دهنده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَبْلِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَتَذَكَّرُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نَذِیر» یعنی هشداردهنده. با «نذر» هم‌ریشه است، اما معنایش فرق دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0614",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "معادل عربی را (با حرکات) انتخاب کنید.",
+      "stem": {
+        "fa": "بیم دهنده ای"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَتَىٰهُم"
+        },
+        {
+          "id": "o2",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "بِجَانِبِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلطُّورِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه: «مَّا أَتَىٰهُم مِّن نَّذِيرٍۢ»، یعنی بیم‌دهنده‌ای برای آنان نیامده بود."
+    },
+    {
+      "id": "q_u_p391a_A_0615",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011",
+        "w:w28_046_016"
+      ],
+      "promptFa": "هر کلمه را به معنای آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "نَادَيْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "رَّحْمَةًۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "رحمتی"
+        },
+        {
+          "id": "r2",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r3",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "r4",
+          "fa": "نذری"
+        },
+        {
+          "id": "r5",
+          "fa": "ندا دادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "بیم‌دهنده‌ای"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "false_friend"
+      },
+      "explanationFa": "«لِتُنذِرَ» فعل و «نَذِیر» اسم از ریشه‌ی ن ذ ر است و به نذر کردن ربطی ندارد."
+    },
+    {
+      "id": "q_u_p391a_A_0616",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011",
+        "w:w28_046_016"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَبْلِكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "رَّبِّكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پروردگارت"
+        },
+        {
+          "id": "r2",
+          "fa": "تا نذر کنی"
+        },
+        {
+          "id": "r3",
+          "fa": "متذکّر شوند"
+        },
+        {
+          "id": "r4",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "r5",
+          "fa": "پیش از تو"
+        },
+        {
+          "id": "r6",
+          "fa": "تا بیم دهی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«یَتَذَكَّرُونَ» یعنی متذکّر شوند و با «تُنذِرَ» که به معنای بیم دادن است فرق دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0617",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011",
+        "w:w28_046_016"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلطُّورِ"
+        },
+        {
+          "id": "l2",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِجَانِبِ"
+        },
+        {
+          "id": "l4",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "l5",
+          "ar": "قَوْمًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r2",
+          "fa": "در ناحیه"
+        },
+        {
+          "id": "r3",
+          "fa": "طور"
+        },
+        {
+          "id": "r4",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "r5",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "r6",
+          "fa": "ندا دادیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«بِجَانِبِ ٱلطُّورِ» یعنی در ناحیه‌ی طور."
+    },
+    {
+      "id": "q_u_p391a_A_0618",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_011"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "رَّحْمَةًۭ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "لِتُنذِرَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلطُّورِ"
+        },
+        {
+          "id": "l5",
+          "ar": "نَادَيْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "طور"
+        },
+        {
+          "id": "r2",
+          "fa": "ندا دادیم"
+        },
+        {
+          "id": "r3",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "r4",
+          "fa": "تا بیم دهی"
+        },
+        {
+          "id": "r5",
+          "fa": "متذکّر شوند"
+        },
+        {
+          "id": "r6",
+          "fa": "رحمتی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "same_root"
+      },
+      "explanationFa": "«لِتُنذِرَ» فعل است و معنای «بیم‌دهنده‌ای» اسم هم‌ریشه‌ی آن، یعنی «نَذِیر» است."
+    },
+    {
+      "id": "q_u_p391a_A_0619",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 46,
+      "targets": [
+        "w:w28_046_016"
+      ],
+      "promptFa": "کلمات را با معنایشان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَبْلِكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَّذِيرٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِجَانِبِ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "قَوْمًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r2",
+          "fa": "بیم‌دهنده‌ای"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگارت"
+        },
+        {
+          "id": "r4",
+          "fa": "در ناحیه"
+        },
+        {
+          "id": "r5",
+          "fa": "پیش از تو"
+        },
+        {
+          "id": "r6",
+          "fa": "تا بیم دهی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "same_root"
+      },
+      "explanationFa": "«نَذِیر» اسم به معنای بیم‌دهنده است؛ «تا بیم دهی» معنای فعل «لِتُنذِرَ» است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمه‌ی مرور از واحدهای قبلی نیامد و جفت‌ها از کلمات همین آیه ساخته شد.",
+    "برای کلمات غیرسخت، معانی جفت‌سازی از ترجمه‌ی fa و لغت‌نامه‌ی آیه برداشته شد."
+  ]
+}

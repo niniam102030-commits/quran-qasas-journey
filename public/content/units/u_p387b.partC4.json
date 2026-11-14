@@ -1,0 +1,820 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p387b",
+  "part": "C4",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p387b_C_0261",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 18,
+      "targets": [
+        "vn:18"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 18
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 16
+        },
+        {
+          "id": "o2",
+          "num": 17
+        },
+        {
+          "id": "o3",
+          "num": 18
+        },
+        {
+          "id": "o4",
+          "num": 19
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَأَصْبَحَ فِى ٱلْمَدِينَةِ خَآئِفًا يَتَرَقَّبُ…» آیه‌ی ۱۸ است."
+    },
+    {
+      "id": "q_u_p387b_C_0262",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 18,
+      "targets": [
+        "vn:18"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کن.",
+      "stem": {
+        "verse": 18
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 15
+        },
+        {
+          "id": "o2",
+          "num": 18
+        },
+        {
+          "id": "o3",
+          "num": 20
+        },
+        {
+          "id": "o4",
+          "num": 21
+        },
+        {
+          "id": "o5",
+          "num": 19
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «فَأَصْبَحَ» شروع می‌شود و آیه‌ی ۱۸ است؛ آیه‌ی ۲۱ هم «خَآئِفًا يَتَرَقَّبُ» دارد، اما با «فَخَرَجَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p387b_C_0263",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 18,
+      "targets": [
+        "vn:18"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۱۸ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 18
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 18,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_019_001",
+            "w28_019_002",
+            "w28_019_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۱۸ با «فَأَصْبَحَ فِى ٱلْمَدِينَةِ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p387b_C_0264",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 18,
+      "targets": [
+        "vn:18"
+      ],
+      "promptFa": "ابتدای درست آیه‌ی ۱۸ کدام است؟",
+      "stem": {
+        "num": 18
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_018_001",
+            "w28_018_002",
+            "w28_019_026",
+            "w28_018_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_021_001",
+            "w28_018_002",
+            "w28_018_003",
+            "w28_018_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 18,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_018_001",
+            "w28_021_002",
+            "w28_018_003",
+            "w28_018_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترتیب درست «فَأَصْبَحَ فِى ٱلْمَدِينَةِ خَآئِفًا» است؛ در گزینه‌های دیگر یک کلمه عوض شده است."
+    },
+    {
+      "id": "q_u_p387b_C_0265",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 19,
+      "targets": [
+        "vn:19"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 19
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 17
+        },
+        {
+          "id": "o2",
+          "num": 18
+        },
+        {
+          "id": "o3",
+          "num": 19
+        },
+        {
+          "id": "o4",
+          "num": 20
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَلَمَّآ أَنْ أَرَادَ أَن يَبْطِشَ…» آیه‌ی ۱۹ است."
+    },
+    {
+      "id": "q_u_p387b_C_0266",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 19,
+      "targets": [
+        "vn:19"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کن.",
+      "stem": {
+        "verse": 19
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 16
+        },
+        {
+          "id": "o2",
+          "num": 19
+        },
+        {
+          "id": "o3",
+          "num": 20
+        },
+        {
+          "id": "o4",
+          "num": 22
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۱۹ با «فَلَمَّآ» شروع می‌شود و در آن «أَتُرِيدُ أَن تَقْتُلَنِى» آمده است."
+    },
+    {
+      "id": "q_u_p387b_C_0267",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 19,
+      "targets": [
+        "vn:19"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۱۹ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 19
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 19,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_018_001",
+            "w28_018_002",
+            "w28_018_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۱۹ با «فَلَمَّآ أَنْ أَرَادَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p387b_C_0268",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 19,
+      "targets": [
+        "vn:19"
+      ],
+      "promptFa": "ابتدای درست آیه‌ی ۱۹ کدام است؟",
+      "stem": {
+        "num": 19
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_022_001",
+            "w28_019_002",
+            "w28_019_003",
+            "w28_019_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_019_001",
+            "w28_019_003",
+            "w28_019_002",
+            "w28_019_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_019_001",
+            "w28_019_002",
+            "w28_019_003",
+            "w28_019_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 19,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ترتیب درست «فَلَمَّآ أَنْ أَرَادَ أَن» است؛ در گزینه‌های دیگر کلمه‌ای عوض یا جابه‌جا شده است."
+    },
+    {
+      "id": "q_u_p387b_C_0269",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 20,
+      "targets": [
+        "vn:20"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 20
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 18
+        },
+        {
+          "id": "o2",
+          "num": 19
+        },
+        {
+          "id": "o3",
+          "num": 20
+        },
+        {
+          "id": "o4",
+          "num": 21
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَجَآءَ رَجُلٌ مِّنْ أَقْصَا ٱلْمَدِينَةِ يَسْعَىٰ» آیه‌ی ۲۰ است."
+    },
+    {
+      "id": "q_u_p387b_C_0270",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 20,
+      "targets": [
+        "vn:20"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کن.",
+      "stem": {
+        "verse": 20
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 20
+        },
+        {
+          "id": "o2",
+          "num": 21
+        },
+        {
+          "id": "o3",
+          "num": 22
+        },
+        {
+          "id": "o4",
+          "num": 23
+        },
+        {
+          "id": "o5",
+          "num": 17
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۲۰ با «وَجَآءَ رَجُلٌ» شروع می‌شود و در آن «فَٱخْرُجْ إِنِّى لَكَ مِنَ ٱلنَّـٰصِحِينَ» آمده است."
+    },
+    {
+      "id": "q_u_p387b_C_0271",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 20,
+      "targets": [
+        "vn:20"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۲۰ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 20
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_019_001",
+            "w28_019_002",
+            "w28_019_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 20,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_018_001",
+            "w28_018_002",
+            "w28_018_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۰ با «وَجَآءَ رَجُلٌ مِّنْ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p387b_C_0272",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 20,
+      "targets": [
+        "vn:20"
+      ],
+      "promptFa": "ابتدای درست آیه‌ی ۲۰ کدام است؟",
+      "stem": {
+        "num": 20
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_003",
+            "w28_020_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 20,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_017",
+            "w28_020_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_020_001",
+            "w28_020_003",
+            "w28_020_002",
+            "w28_020_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترتیب درست «وَجَآءَ رَجُلٌ مِّنْ أَقْصَا» است؛ «أَقْصَا» یعنی دورترین نقطه."
+    },
+    {
+      "id": "q_u_p387b_C_0273",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 21,
+      "targets": [
+        "vn:21"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 21
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 18
+        },
+        {
+          "id": "o2",
+          "num": 21
+        },
+        {
+          "id": "o3",
+          "num": 22
+        },
+        {
+          "id": "o4",
+          "num": 24
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَخَرَجَ مِنْهَا خَآئِفًا يَتَرَقَّبُ…» آیه‌ی ۲۱ است."
+    },
+    {
+      "id": "q_u_p387b_C_0274",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 21,
+      "targets": [
+        "vn:21"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کن.",
+      "stem": {
+        "verse": 21
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 19
+        },
+        {
+          "id": "o2",
+          "num": 22
+        },
+        {
+          "id": "o3",
+          "num": 25
+        },
+        {
+          "id": "o4",
+          "num": 21
+        },
+        {
+          "id": "o5",
+          "num": 23
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "similar_verse",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۲۱ با «فَخَرَجَ» شروع می‌شود و با «ٱلْقَوْمِ ٱلظَّـٰلِمِينَ» پایان می‌یابد؛ پایان آیه‌ی ۲۵ به آن شبیه است."
+    },
+    {
+      "id": "q_u_p387b_C_0275",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 21,
+      "targets": [
+        "vn:21"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۲۱ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 21
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_018_001",
+            "w28_018_002",
+            "w28_018_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_019_001",
+            "w28_019_002",
+            "w28_019_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 21,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۱ با «فَخَرَجَ مِنْهَا» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p387b_C_0276",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 21,
+      "targets": [
+        "vn:21"
+      ],
+      "promptFa": "ابتدای درست آیه‌ی ۲۱ کدام است؟",
+      "stem": {
+        "num": 21
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 21,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_018_001",
+            "w28_021_002",
+            "w28_021_003",
+            "w28_021_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_021_001",
+            "w28_018_002",
+            "w28_018_003",
+            "w28_021_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_005",
+            "w28_021_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترتیب درست «فَخَرَجَ مِنْهَا خَآئِفًا يَتَرَقَّبُ» است؛ آیه‌ی ۱۸ با «فَأَصْبَحَ» شروع می‌شود."
+    }
+  ],
+  "issues": []
+}

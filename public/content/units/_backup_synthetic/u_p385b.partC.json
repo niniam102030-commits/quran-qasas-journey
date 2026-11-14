@@ -1,0 +1,91 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_0001",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 1,
+      "targets": [
+        "sq:1"
+      ],
+      "promptFa": "بلافاصله پس از آیه 1 سوره قصص («طسٓمٓ...»)، کدام آیه قرار دارد؟",
+      "stem": {
+        "verse": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟ فِي ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه 2 سوره قصص بلافاصله پس از آیه 1 قرار دارد."
+    },
+    {
+      "id": "q_u_p385b_C_0002",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 1,
+      "targets": [
+        "vn:1"
+      ],
+      "promptFa": "آیه مبارکه «طسٓمٓ»، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 1
+        },
+        {
+          "id": "o2",
+          "num": 2
+        },
+        {
+          "id": "o3",
+          "num": 1
+        },
+        {
+          "id": "o4",
+          "num": 3
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه، آیه شماره 1 از سوره مبارکه قصص است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,2795 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "B",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_B_0261",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "targets": [
+        "vt:60"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "آنچه به شما داده شده کالا و ابزار زندگی دنیا و زینت آن است، و آنچه نزد خداست بهتر و پایدارتر است؛ آیا نمی اندیشید؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا عِندَ ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه و چینش دقیق قطعات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0262",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "targets": [
+        "vt:60"
+      ],
+      "promptFa": "بخش پایانی آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "و آنچه نزد خداست بهتر و پایدارتر است"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عِندَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهِ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "خَيْرٌۭ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه دقیق کلمات بخش میانی و پایانی آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0263",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "targets": [
+        "vt:60"
+      ],
+      "promptFa": "بخش میانی آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "کالا و ابزار زندگی دنیا و زینت آن است"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَمَتَـٰعُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْحَيَوٰةِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَتَـٰعَ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "وَأَهْلُهَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "near_miss",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که در این آیه کلمه «فَمَتَاعُ» با حرف فاء آمده است."
+    },
+    {
+      "id": "q_u_p393a_B_0264",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "number",
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "آیه ۶۰ را بسازید:",
+      "stem": {
+        "verseNum": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا عِندَ ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چینش قطعات آیه ۶۰ سوره قصص."
+    },
+    {
+      "id": "q_u_p393a_B_0265",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "بخش پایانی آیه ۶۰ را بچینید:",
+      "stem": {
+        "verseNum": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عِندَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهِ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "خَيْرٌۭ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "أَفَلَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "تَعْقِلُونَ",
+          "wordIdx": [
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چینش کلمه‌به‌کلمه نیمه پایانی آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0266",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:60"
+      ],
+      "promptFa": "بخش ابتدایی آیه ۶۰ را بچینید:",
+      "stem": {
+        "verseNum": 60
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أُوتِيتُم",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِّن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "شَىْءٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَمَتَـٰعُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْحَيَوٰةِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مَتَـٰعَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "وَمَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "near_miss",
+        "b8": "neighbor_word"
+      },
+      "explanationFa": "کلمه صحیح «فَمَتَاعُ» است."
+    },
+    {
+      "id": "q_u_p393a_B_0267",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 60,
+        "hiddenIdx": [
+          4,
+          8,
+          12,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "شَىْءٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "خَيْرٌۭ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَعْقِلُونَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "حَسَنًۭا",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "مَتَـٰعَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "8": "b2",
+        "12": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "near_miss"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0268",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 60,
+        "hiddenIdx": [
+          2,
+          5,
+          7,
+          10,
+          13,
+          14
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُوتِيتُم",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَتَـٰعُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عِندَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "أَفَلَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كَانَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "ثُمَّ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "7": "b3",
+        "10": "b4",
+        "13": "b5",
+        "14": "b6"
+      },
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل حدود ۴۰ درصد از کلمات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0269",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 60,
+        "hiddenIdx": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          13,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِّن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَمَتَـٰعُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْحَيَوٰةِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَمَا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱللَّهِ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "تَعْقِلُونَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "يُنَادِيهِمْ",
+          "decoy": true
+        },
+        {
+          "id": "b11",
+          "ar": "يَبْعَثَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "5": "b3",
+        "6": "b4",
+        "8": "b5",
+        "9": "b6",
+        "11": "b7",
+        "13": "b8",
+        "15": "b9"
+      },
+      "distractorTags": {
+        "b10": "neighbor_verse",
+        "b11": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل حدود ۶۰ درصد از کلمات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0270",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "اکثر کلمات آیه پنهان شده‌اند. آنها را کامل کنید:",
+      "stem": {
+        "verse": 60,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُوتِيتُم",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِّن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شَىْءٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَمَتَـٰعُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَمَا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "عِندَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "خَيْرٌۭ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "أَفَلَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "تَعْقِلُونَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "مَتَـٰعَ",
+          "decoy": true
+        },
+        {
+          "id": "b14",
+          "ar": "وَعَدْنَـٰهُ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "7": "b5",
+        "8": "b6",
+        "9": "b7",
+        "10": "b8",
+        "12": "b9",
+        "13": "b10",
+        "14": "b11",
+        "15": "b12"
+      },
+      "distractorTags": {
+        "b13": "near_miss",
+        "b14": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل بیش از ۸۰ درصد کلمات آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0271",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 60,
+        "givenCount": 4,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَمَا عِندَ ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "9": "b2",
+        "14": "b3"
+      },
+      "distractorTags": {
+        "b4": "near_miss"
+      },
+      "explanationFa": "بخش بعدی آیه ۶۰ با «فَمَتَاعُ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_B_0272",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 60,
+        "givenCount": 8,
+        "hiddenIdx": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا عِندَ ٱللَّهِ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "خَيْرٌۭ وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا كُنَّا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1",
+        "12": "b2",
+        "14": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل نیمه دوم آیه ۶۰."
+    },
+    {
+      "id": "q_u_p393a_B_0273",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 60,
+        "givenCount": 12,
+        "hiddenIdx": [
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَبْقَىٰٓ ۚ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَفَلَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَعْقِلُونَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَزْعُمُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "13": "b1",
+        "14": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه ۶۰ با استفهام توبیخی «أَفَلَا تَعْقِلُونَ» است."
+    },
+    {
+      "id": "q_u_p393a_B_0274",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "پایان آیه کدام است؟",
+      "stem": {
+        "verse": 60,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 14,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_062_007",
+            "w28_062_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_059_019",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۰ با «أَفَلَا تَعْقِلُونَ» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_B_0275",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "پایان آیه کدام است؟",
+      "stem": {
+        "verse": 60,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 12,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_059_017",
+            "w28_059_018",
+            "w28_059_019",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_062_005",
+            "w28_062_006",
+            "w28_062_007",
+            "w28_062_008"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "بخش پایانی آیه ۶۰: «خَيْرٌۭ وَأَبْقَىٰٓ ۚ أَفَلَا تَعْقِلُونَ»."
+    },
+    {
+      "id": "q_u_p393a_B_0276",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "کدام نسخه از آیه صحیح است؟",
+      "stem": {
+        "verseNum": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_061_009",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_060_009",
+            "w28_060_010",
+            "w28_060_011",
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_060_005",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_060_009",
+            "w28_059_008",
+            "w28_060_011",
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_060_005",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_060_009",
+            "w28_060_010",
+            "w28_060_011",
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_059_020"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در آیه ۶۰ عبارت «فَمَتَاعُ» صحیح است، نه «مَتَاعَ» که بدون فاء در آیه بعدی است."
+    },
+    {
+      "id": "q_u_p393a_B_0277",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "کدام نسخه از آیه صحیح است؟",
+      "stem": {
+        "verseNum": 60
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 60,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_060_005",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_060_009",
+            "w28_060_010",
+            "w28_060_011",
+            "w28_061_004",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_060_005",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_060_011",
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_059_001",
+            "w28_059_002",
+            "w28_060_003",
+            "w28_060_004",
+            "w28_060_005",
+            "w28_060_006",
+            "w28_060_007",
+            "w28_060_008",
+            "w28_060_009",
+            "w28_060_010",
+            "w28_060_011",
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترکیب صحیح «خَيْرٌ وَأَبْقَى» است، نه جایگزینی با کلمات مشابه آیات هم‌جوار."
+    },
+    {
+      "id": "q_u_p393a_B_0278",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "targets": [
+        "vt:61"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "پس آیا کسی که وعده نیک به او داده ایم و حتماً به آن خواهد رسید، مانند کسی است که او را [فقط] از کالا و ابزار زندگی دنیا برخوردارش کرده ایم، سپس او در روز قیامت از احضار شوندگان [برای عذاب] است؟!"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كَمَن مَّتَّعْنَـٰهُ مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه و چینش دقیق قطعات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0279",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "targets": [
+        "vt:61"
+      ],
+      "promptFa": "بخش پایانی آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "سپس او در روز قیامت از احضار شوندگان [برای عذاب] است؟!"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ثُمَّ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هُوَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَوْمَ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه کلمه‌به‌کلمه بخش پایانی آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0280",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "targets": [
+        "vt:61"
+      ],
+      "promptFa": "بخش ابتدایی آیه را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "پس آیا کسی که وعده نیک به او داده ایم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَعَدْنَـٰهُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَعْدًا",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "حَسَنًۭا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أُوتِيتُم",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "خَيْرٌۭ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه دقیق عبارت ابتدایی آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0281",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "number",
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "آیه ۶۱ را بسازید:",
+      "stem": {
+        "verseNum": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن وَعَدْنَـٰهُ وَعْدًا حَسَنًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ لَـٰقِيهِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كَمَن مَّتَّعْنَـٰهُ مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثُمَّ هُوَ يَوْمَ ٱلْقِيَـٰمَةِ مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چینش قطعات آیه ۶۱ سوره قصص."
+    },
+    {
+      "id": "q_u_p393a_B_0282",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "بخش پایانی آیه ۶۱ را بچینید:",
+      "stem": {
+        "verseNum": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ثُمَّ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُوَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چینش کلمه‌به‌کلمه نیمه پایانی آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0283",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:61"
+      ],
+      "promptFa": "بخش ابتدایی آیه ۶۱ را بچینید:",
+      "stem": {
+        "verseNum": 61
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَعَدْنَـٰهُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَعْدًا",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "حَسَنًۭا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَهُوَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَـٰقِيهِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَمَآ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "فَمَتَـٰعُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "شروع آیه ۶۱ با «أَفَمَن» است."
+    },
+    {
+      "id": "q_u_p393a_B_0284",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 61,
+        "hiddenIdx": [
+          3,
+          7,
+          10,
+          16
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَعْدًا",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كَمَن",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْحَيَوٰةِ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِّن",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "عِندَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "7": "b2",
+        "10": "b3",
+        "16": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0285",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 61,
+        "hiddenIdx": [
+          2,
+          5,
+          8,
+          9,
+          12,
+          15,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَعَدْنَـٰهُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَهُوَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَتَـٰعَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ثُمَّ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أُوتِيتُم",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "ظَـٰلِمُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "8": "b3",
+        "9": "b4",
+        "12": "b5",
+        "15": "b6",
+        "17": "b7"
+      },
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل حدود ۴۰ درصد از کلمات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0286",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "جاهای خالی آیه را پر کنید:",
+      "stem": {
+        "verse": 61,
+        "hiddenIdx": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          10,
+          11,
+          13,
+          14,
+          16
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَعْدًا",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "حَسَنًۭا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَـٰقِيهِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَمَن",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْحَيَوٰةِ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "هُوَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَوْمَ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "ٱلْـَٔاخِرَةِ",
+          "decoy": true
+        },
+        {
+          "id": "b12",
+          "ar": "يُنَادِيهِمْ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "4": "b3",
+        "6": "b4",
+        "7": "b5",
+        "10": "b6",
+        "11": "b7",
+        "13": "b8",
+        "14": "b9",
+        "16": "b10"
+      },
+      "distractorTags": {
+        "b11": "neighbor_word",
+        "b12": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل حدود ۶۰ درصد از کلمات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0287",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "اکثر کلمات آیه پنهان شده‌اند. آنها را کامل کنید:",
+      "stem": {
+        "verse": 61,
+        "hiddenIdx": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَفَمَن",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَعَدْنَـٰهُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَعْدًا",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "حَسَنًۭا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَـٰقِيهِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مَتَـٰعَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "ثُمَّ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "هُوَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "يَوْمَ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b14",
+          "ar": "ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b15",
+          "ar": "وَمَآ",
+          "decoy": true
+        },
+        {
+          "id": "b16",
+          "ar": "أَفَلَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2",
+        "3": "b3",
+        "4": "b4",
+        "6": "b5",
+        "8": "b6",
+        "9": "b7",
+        "11": "b8",
+        "12": "b9",
+        "13": "b10",
+        "14": "b11",
+        "15": "b12",
+        "16": "b13",
+        "17": "b14"
+      },
+      "distractorTags": {
+        "b15": "neighbor_verse",
+        "b16": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل بیش از ۸۰ درصد کلمات آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0288",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 61,
+        "givenCount": 4,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَهُوَ لَـٰقِيهِ كَمَن مَّتَّعْنَـٰهُ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ثُمَّ هُوَ يَوْمَ",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقِيَـٰمَةِ مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَمَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "9": "b2",
+        "12": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {
+        "b5": "near_miss"
+      },
+      "explanationFa": "بخش‌های بعدی آیه ۶۱ را به ترتیب قرار دهید."
+    },
+    {
+      "id": "q_u_p393a_B_0289",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 61,
+        "givenCount": 8,
+        "hiddenIdx": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَتَـٰعَ ٱلْحَيَوٰةِ ٱلدُّنْيَا",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ثُمَّ هُوَ يَوْمَ",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْقِيَـٰمَةِ مِنَ ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا عِندَ ٱللَّهِ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1",
+        "12": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل نیمه دوم آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0290",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید:",
+      "stem": {
+        "verse": 61,
+        "givenCount": 13,
+        "hiddenIdx": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَوْمَ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُحْضَرِينَ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُهْلِكِى",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "14": "b1",
+        "15": "b2",
+        "16": "b3",
+        "17": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "کلمات پایانی آیه ۶۱."
+    },
+    {
+      "id": "q_u_p393a_B_0291",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "پایان آیه کدام است؟",
+      "stem": {
+        "verse": 61,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 16,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_059_019",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_062_007",
+            "w28_062_008"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۱ با «مِنَ ٱلْمُحْضَرِينَ» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_B_0292",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "پایان آیه کدام است؟",
+      "stem": {
+        "verse": 61,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 14,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_059_017",
+            "w28_059_018",
+            "w28_059_019",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_060_012",
+            "w28_060_013",
+            "w28_060_014",
+            "w28_060_015"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_062_005",
+            "w28_062_006",
+            "w28_062_007",
+            "w28_062_008"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "بخش پایانی آیه ۶۱: «يَوْمَ ٱلْقِيَامَةِ مِنَ ٱلْمُحْضَرِينَ»."
+    },
+    {
+      "id": "q_u_p393a_B_0293",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "کدام نسخه از آیه صحیح است؟",
+      "stem": {
+        "verseNum": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_061_004",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_061_007",
+            "w28_061_008",
+            "w28_060_005",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_061_004",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_061_007",
+            "w28_061_008",
+            "w28_061_009",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_060_012",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_061_007",
+            "w28_061_008",
+            "w28_061_009",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در آیه ۶۱ عبارت «مَتَاعَ» صحیح است و «فَمَتَاعُ» برای آیه ۶۰ می‌باشد."
+    },
+    {
+      "id": "q_u_p393a_B_0294",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 61,
+      "targets": [
+        "vr:61"
+      ],
+      "promptFa": "کدام نسخه از آیه صحیح است؟",
+      "stem": {
+        "verseNum": 61
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 61,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_061_004",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_061_007",
+            "w28_061_008",
+            "w28_061_009",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_062_001",
+            "w28_062_002",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_060_001",
+            "w28_060_002",
+            "w28_061_003",
+            "w28_061_004",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_061_007",
+            "w28_061_008",
+            "w28_061_009",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_061_004",
+            "w28_061_005",
+            "w28_061_006",
+            "w28_059_014",
+            "w28_059_015",
+            "w28_061_009",
+            "w28_061_010",
+            "w28_061_011",
+            "w28_061_012",
+            "w28_061_013",
+            "w28_061_014",
+            "w28_061_015",
+            "w28_061_016",
+            "w28_061_017"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترکیب کلمات آیه ۶۱ از ابتدا تا انتها بدون جایگزینی با آیات مجاور."
+    }
+  ],
+  "issues": []
+}

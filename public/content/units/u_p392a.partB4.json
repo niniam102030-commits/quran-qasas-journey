@@ -1,0 +1,2228 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "B4",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392a_B_1221",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 55,
+      "targets": [
+        "vt:55"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «و هنگامی که سخن بیهوده ای بشنوند، از آن روی برمی گردانند»",
+      "stem": {
+        "fa": "و هنگامی که سخن بیهوده ای بشنوند، از آن روی برمی گردانند"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {},
+      "explanationFa": "این قطعه آغازگر آیه ۵۵ است."
+    },
+    {
+      "id": "q_u_p392a_B_1222",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 55,
+      "targets": [
+        "vt:55"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «و می گویند: اعمال ما برای ما و اعمال شما برای شما،»",
+      "stem": {
+        "fa": "و می گویند: اعمال ما برای ما و اعمال شما برای شما،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَنَآ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَعْمَـٰلُنَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَكُمْ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            10
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترکیب کلمات بخش میانی آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_B_1223",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 55,
+      "targets": [
+        "vt:55"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «سلام بر شما [سلام متارکه]، ما خواستار [همنشینی و معاشرت با] نادانان نیستیم.»",
+      "stem": {
+        "fa": "سلام بر شما [سلام متارکه]، ما خواستار [همنشینی و معاشرت با] نادانان نیستیم."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "سَلَـٰمٌ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْكُمْ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "نَبْتَغِى",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "near_miss"
+      },
+      "explanationFa": "کلمه صحیح «الجاهلین» است و «المفسدین» انحرافی است."
+    },
+    {
+      "id": "q_u_p392a_B_1224",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "قطعات آیه ۵۵ را به ترتیب درست بچینید.",
+      "stem": {
+        "verseNum": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "near_miss"
+      },
+      "explanationFa": "ترتیب قطعات آیه ۵۵ سوره قصص."
+    },
+    {
+      "id": "q_u_p392a_B_1225",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات بخش اول آیه ۵۵ را بچینید.",
+      "stem": {
+        "verseNum": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "سَمِعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّغْوَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَعْرَضُوا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَنْهُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَقَالُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لَنَآ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "فَإِذَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "near_miss"
+      },
+      "explanationFa": "آیه با «وإذا» شروع می‌شود، نه «فإذا»."
+    },
+    {
+      "id": "q_u_p392a_B_1226",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات بخش دوم آیه ۵۵ را بچینید.",
+      "stem": {
+        "verseNum": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَعْمَـٰلُنَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَكُمْ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "سَلَـٰمٌ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَلَيْكُمْ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "نَبْتَغِى",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "ٱلْوَٰرِثِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "near_miss"
+      },
+      "explanationFa": "بخش پایانی آیه ۵۵ با نفی همنشینی با جاهلان خاتمه می‌یابد."
+    },
+    {
+      "id": "q_u_p392a_B_1227",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۲۵٪ پنهان).",
+      "stem": {
+        "verse": 55,
+        "hiddenIdx": [
+          3,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱللَّغْوَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "سَلَـٰمٌ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "حَقٌّۭ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "وَعْدَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "11": "b2"
+      },
+      "distractorTags": {
+        "b3": "random",
+        "b4": "random"
+      },
+      "explanationFa": "«اللغو» به معنای سخن بیهوده و «سلام» ندای متارکه است."
+    },
+    {
+      "id": "q_u_p392a_B_1228",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۴۰٪ پنهان).",
+      "stem": {
+        "verse": 55,
+        "hiddenIdx": [
+          2,
+          4,
+          8,
+          10
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "سَمِعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَعْمَـٰلُنَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "صَبَرُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "4": "b2",
+        "8": "b3",
+        "10": "b4"
+      },
+      "distractorTags": {
+        "b5": "same_root",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "افعال «سمعوا» و «أعرضوا» به واکنش آنان در برابر لغو اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_B_1229",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۶۰٪ پنهان).",
+      "stem": {
+        "verse": 55,
+        "hiddenIdx": [
+          1,
+          5,
+          7,
+          9,
+          13,
+          14
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَنْهُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَنَآ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَكُمْ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "نَبْتَغِى",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَإِذَا",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "لَهُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "5": "b2",
+        "7": "b3",
+        "9": "b4",
+        "13": "b5",
+        "14": "b6"
+      },
+      "distractorTags": {
+        "b7": "near_miss",
+        "b8": "random"
+      },
+      "explanationFa": "دقت در حروف و ادوات ربط در این بخش اهمیت دارد."
+    },
+    {
+      "id": "q_u_p392a_B_1230",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۸۰٪ پنهان).",
+      "stem": {
+        "verse": 55,
+        "hiddenIdx": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          8,
+          10,
+          11,
+          13,
+          14
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱللَّغْوَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَعْرَضُوا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَقَالُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَنَآ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "أَعْمَـٰلُنَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "سَلَـٰمٌ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "لَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "نَبْتَغِى",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "عَلَيْهِ",
+          "decoy": true
+        },
+        {
+          "id": "b12",
+          "ar": "وَقَالُوٓا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "4": "b3",
+        "6": "b4",
+        "7": "b5",
+        "8": "b6",
+        "10": "b7",
+        "11": "b8",
+        "13": "b9",
+        "14": "b10"
+      },
+      "distractorTags": {
+        "b11": "random",
+        "b12": "near_miss"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی در سراسر آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_B_1231",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "با داشتن کلمات ابتدایی، بقیه آیه را کامل کنید (۲۵٪ داده شده).",
+      "stem": {
+        "verse": 55,
+        "givenCount": 3,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "6": "b2",
+        "9": "b3",
+        "13": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "ترتیب قطعات ادامه آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_B_1232",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "با داشتن کلمات ابتدایی، بقیه آیه را کامل کنید (۵۰٪ داده شده).",
+      "stem": {
+        "verse": 55,
+        "givenCount": 7,
+        "hiddenIdx": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "11": "b2",
+        "13": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "ادامه کلام مؤمنان در برابر لغوگویان."
+    },
+    {
+      "id": "q_u_p392a_B_1233",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "بخش پایانی آیه را کامل کنید (۷۵٪ داده شده).",
+      "stem": {
+        "verse": 55,
+        "givenCount": 12,
+        "hiddenIdx": [
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نَبْتَغِى",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "13": "b1",
+        "14": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "سه کلمه پایانی آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_B_1234",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55",
+        "sq:55"
+      ],
+      "promptFa": "کلمات پایانی آیه ۵۵ کدام است؟",
+      "stem": {
+        "verse": 55,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 14,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "نَبْتَغِى ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَبْتَغِى ٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه با «نبتغی الجاهلین» است."
+    },
+    {
+      "id": "q_u_p392a_B_1235",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55",
+        "sq:55"
+      ],
+      "promptFa": "سه کلمه پایانی آیه ۵۵ کدام است؟",
+      "stem": {
+        "verse": 55,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "لَا نَبْتَغِى ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَا يَعْلَمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَا نَبْتَغِى ٱلْمُؤْمِنِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "دوری از همنشینی با جاهلان در پایان آیه تأکید شده است."
+    },
+    {
+      "id": "q_u_p392a_B_1236",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کدام نسخه از آیه ۵۵ کاملاً صحیح است؟",
+      "stem": {
+        "verseNum": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى خَـٰطِـِٔينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در پایان آیه کلمه «الجاهلین» به کار رفته است."
+    },
+    {
+      "id": "q_u_p392a_B_1237",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "کدام نسخه از آیه ۵۵ به درستی آغاز شده است؟",
+      "stem": {
+        "verseNum": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "فَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَمَّا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَإِذَا كَانُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْجَـٰهِلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه دقیقاً با عبارت «وإذا سمعوا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p392a_B_1238",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 56,
+      "targets": [
+        "vt:56"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «قطعاً تو نمی توانی هر که را خود دوست داری هدایت کنی،»",
+      "stem": {
+        "fa": "قطعاً تو نمی توانی هر که را خود دوست داری هدایت کنی،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {},
+      "explanationFa": "شروع آیه ۵۶ و خطاب به پیامبر در مورد هدایت."
+    },
+    {
+      "id": "q_u_p392a_B_1239",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 56,
+      "targets": [
+        "vt:56"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «بلکه خدا هر که را بخواهد هدایت می کند؛»",
+      "stem": {
+        "fa": "بلکه خدا هر که را بخواهد هدایت می کند؛"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَـٰكِنَّ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱللَّهَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَهْدِى",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَشَآءُ ۚ",
+          "wordIdx": [
+            10
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بخش میانی آیه ۵۶ بیانگر اراده الهی در هدایت است."
+    },
+    {
+      "id": "q_u_p392a_B_1240",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 56,
+      "targets": [
+        "vt:56"
+      ],
+      "promptFa": "این بخش از آیه را با توجه به ترجمه بسازید: «و او به هدایت پذیران داناتر است،»",
+      "stem": {
+        "fa": "و او به هدایت پذیران داناتر است،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَهُوَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "near_miss"
+      },
+      "explanationFa": "پایان آیه ۵۶ با کلمه «المهتدین» است."
+    },
+    {
+      "id": "q_u_p392a_B_1241",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "قطعات آیه ۵۶ را به ترتیب درست بچینید.",
+      "stem": {
+        "verseNum": 56
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "near_miss"
+      },
+      "explanationFa": "ترتیب صحیح قطعات آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_B_1242",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات بخش اول آیه ۵۶ را بچینید.",
+      "stem": {
+        "verseNum": 56
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَهْدِى",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَنْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَحْبَبْتَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَلَـٰكِنَّ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِنَّ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "near_miss"
+      },
+      "explanationFa": "شروع آیه با «إنک» است."
+    },
+    {
+      "id": "q_u_p392a_B_1243",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات بخش دوم آیه ۵۶ را بچینید.",
+      "stem": {
+        "verseNum": 56
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱللَّهَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَهْدِى",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَشَآءُ ۚ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُوَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "near_miss"
+      },
+      "explanationFa": "کلمات پایانی آیه پیرامون علم خداوند به هدایت‌پذیران است."
+    },
+    {
+      "id": "q_u_p392a_B_1244",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۲۵٪ پنهان).",
+      "stem": {
+        "verse": 56,
+        "hiddenIdx": [
+          3,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَهْدِى",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَهْدِى",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَجْزِى",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "يَشَآءُ ۚ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "8": "b2"
+      },
+      "distractorTags": {
+        "b3": "random",
+        "b4": "random"
+      },
+      "explanationFa": "افعال هدایت در این دو جایگاه متفاوت‌اند."
+    },
+    {
+      "id": "q_u_p392a_B_1245",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۴۰٪ پنهان).",
+      "stem": {
+        "verse": 56,
+        "hiddenIdx": [
+          1,
+          5,
+          10,
+          12
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَحْبَبْتَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَشَآءُ ۚ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أُمِّ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "عَلَيْكَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "5": "b2",
+        "10": "b3",
+        "12": "b4"
+      },
+      "distractorTags": {
+        "b5": "random",
+        "b6": "near_miss"
+      },
+      "explanationFa": "تکمیل کلمات تعیین‌کننده مفهوم آیه."
+    },
+    {
+      "id": "q_u_p392a_B_1246",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۶۰٪ پنهان).",
+      "stem": {
+        "verse": 56,
+        "hiddenIdx": [
+          2,
+          4,
+          7,
+          9,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَنْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُوَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِنَّ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "عَلَى",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "4": "b2",
+        "7": "b3",
+        "9": "b4",
+        "11": "b5"
+      },
+      "distractorTags": {
+        "b6": "random",
+        "b7": "random"
+      },
+      "explanationFa": "دقت در جایگذاری ضمایر و حروف در آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_B_1247",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۸۰٪ پنهان).",
+      "stem": {
+        "verse": 56,
+        "hiddenIdx": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَهْدِى",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَنْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَحْبَبْتَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَـٰكِنَّ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَهْدِى",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَشَآءُ ۚ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "إِنَّ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "ٱلْوَٰرِثِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5",
+        "8": "b6",
+        "10": "b7",
+        "12": "b8"
+      },
+      "distractorTags": {
+        "b9": "near_miss",
+        "b10": "near_miss"
+      },
+      "explanationFa": "بازسازی ساختار اصلی آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_B_1248",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "با داشتن کلمات ابتدایی، بقیه آیه را کامل کنید (۲۵٪ داده شده).",
+      "stem": {
+        "verse": 56,
+        "givenCount": 3,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "6": "b2",
+        "11": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل کلام پس از «إنک لا تهدی»."
+    },
+    {
+      "id": "q_u_p392a_B_1249",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "با داشتن نیمی از آیه، بقیه آن را کامل کنید.",
+      "stem": {
+        "verse": 56,
+        "givenCount": 6,
+        "hiddenIdx": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "11": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "خداوند هدایتگر هر که بخواهد است."
+    },
+    {
+      "id": "q_u_p392a_B_1250",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "بخش پایانی آیه را کامل کنید (۷۵٪ داده شده).",
+      "stem": {
+        "verse": 56,
+        "givenCount": 10,
+        "hiddenIdx": [
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَهُوَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": {
+        "11": "b1",
+        "12": "b2",
+        "13": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "سه کلمه انتهای آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_B_1251",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56",
+        "sq:56"
+      ],
+      "promptFa": "کلمات پایانی آیه ۵۶ کدام است؟",
+      "stem": {
+        "verse": 56,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 12,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "أَعْلَمُ بِٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَعْلَمُ بِٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَكْثَرَهُمْ لَا يَعْلَمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۶ با «أعلم بالمهتدین» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p392a_B_1252",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56",
+        "sq:56"
+      ],
+      "promptFa": "سه کلمه پایانی آیه ۵۶ کدام است؟",
+      "stem": {
+        "verse": 56,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 11,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُفْسِدِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "تأکید بر علم خداوند نسبت به هدایت‌جویان."
+    },
+    {
+      "id": "q_u_p392a_B_1253",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کدام نسخه از آیه ۵۶ کاملاً صحیح است؟",
+      "stem": {
+        "verseNum": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْخَـٰطِـِٔينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "واژه صحیح در انتهای آیه «بالمهتدین» است."
+    },
+    {
+      "id": "q_u_p392a_B_1254",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "در کدام گزینه کلمه پیونددهنده در آیه ۵۶ درست آمده است؟",
+      "stem": {
+        "verseNum": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ إِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ كَانَ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ هَـٰذَا ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "کلمه ربط و استدراک صحیح «ولکن» می‌باشد."
+    }
+  ],
+  "issues": []
+}

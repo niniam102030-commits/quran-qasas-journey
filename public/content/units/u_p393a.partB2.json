@@ -1,0 +1,3762 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "B2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_B_0421",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 62,
+      "targets": [
+        "vt:62"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "و [یاد کن] روزی را که خدا آنان را ندا می دهد و می گوید: کجایند معبودانی که می پنداشتید شریکان من [در ربوبیت] هستند؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ أَيْنَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ساخت آیه ۶۲ از روی قطعات ترجمه فارسی."
+    },
+    {
+      "id": "q_u_p393a_B_0422",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 62,
+      "targets": [
+        "vt:62"
+      ],
+      "promptFa": "آیه زیر را کلمه به کلمه بسازید:",
+      "stem": {
+        "fa": "و [یاد کن] روزی را که خدا آنان را ندا می دهد و می گوید: کجایند معبودانی که می پنداشتید شریکان من [در ربوبیت] هستند؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کلمات آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_B_0423",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 62,
+      "targets": [
+        "vt:62"
+      ],
+      "promptFa": "کلمات آیه را به درستی بچینید (دقت کنید گزینه‌های اضافی وجود دارد):",
+      "stem": {
+        "fa": "و [یاد کن] روزی را که خدا آنان را ندا می دهد و می گوید: کجایند معبودانی که می پنداشتید شریکان من [در ربوبیت] هستند؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "وَقِيلَ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "شُرَكَآءَكُمْ",
+          "decoy": true
+        },
+        {
+          "id": "b11",
+          "ar": "مَاذَآ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "neighbor_verse",
+        "b10": "neighbor_verse",
+        "b11": "similar_verse"
+      },
+      "explanationFa": "کلماتی مانند شُرَكَآءَكُمْ مربوط به آیه ۶۴ است، در اینجا شُرَكَآءِىَ درست است."
+    },
+    {
+      "id": "q_u_p393a_B_0424",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62",
+        "vr:62"
+      ],
+      "promptFa": "متن آیه ۶۲ را کامل کنید:",
+      "stem": {
+        "verseNum": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ أَيْنَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "یادآوری آیه ۶۲ با استفاده از شماره آیه."
+    },
+    {
+      "id": "q_u_p393a_B_0425",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62",
+        "vr:62"
+      ],
+      "promptFa": "کلمات آیه ۶۲ را به ترتیب بچینید:",
+      "stem": {
+        "verseNum": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بازیابی کامل کلمات آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_B_0426",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 62,
+      "targets": [
+        "vn:62",
+        "vr:62"
+      ],
+      "promptFa": "آیه ۶۲ را بسازید (کلمات اضافی را کنار بگذارید):",
+      "stem": {
+        "verseNum": 62
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "أَجَبْتُمُ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "similar_verse",
+        "b10": "similar_verse"
+      },
+      "explanationFa": "کلمات انحرافی مربوط به آیه ۶۵ هستند که تشابه زیادی در آغاز با این آیه دارد."
+    },
+    {
+      "id": "q_u_p393a_B_0427",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "کلمات پنهان آیه را در جای مناسب قرار دهید (حدود ۲۵٪ پنهان):",
+      "stem": {
+        "verse": 62,
+        "hiddenIdx": [
+          4,
+          5
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءَكُمْ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "similar_verse"
+      },
+      "explanationFa": "در آیه ۶۲ کلمه شُرَكَآءِىَ به کار رفته است."
+    },
+    {
+      "id": "q_u_p393a_B_0428",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "کلمات پنهان آیه را پر کنید (حدود ۴۰٪ پنهان):",
+      "stem": {
+        "verse": 62,
+        "hiddenIdx": [
+          1,
+          2,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَقِيلَ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2",
+        "8": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه با وَيَوْمَ يُنَادِيهِمْ و پایان آن با تَزْعُمُونَ است."
+    },
+    {
+      "id": "q_u_p393a_B_0429",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "جای‌خالی‌ها را با کلمات مناسب کامل کنید (حدود ۶۰٪ پنهان):",
+      "stem": {
+        "verse": 62,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "مَاذَآ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4",
+        "7": "b5"
+      },
+      "distractorTags": {
+        "b6": "neighbor_verse",
+        "b7": "similar_verse"
+      },
+      "explanationFa": "جای‌خالی‌های میانی آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_B_0430",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "کلمات از قلم افتاده را سر جای خود بگذارید (حدود ۸۰٪ پنهان):",
+      "stem": {
+        "verse": 62,
+        "hiddenIdx": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَجَبْتُمُ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "يَهْتَدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5",
+        "8": "b6"
+      },
+      "distractorTags": {
+        "b7": "similar_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_B_0431",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 62,
+      "targets": [
+        "vr:62",
+        "sq:62"
+      ],
+      "promptFa": "با داشتن ۲ کلمه اول، بقیه آیه را کامل کنید:",
+      "stem": {
+        "verse": 62,
+        "givenCount": 2,
+        "showFa": false,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَيَقُولُ أَيْنَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "شُرَكَآءِىَ ٱلَّذِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ تَزْعُمُونَ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ أَجَبْتُمُ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "5": "b2",
+        "7": "b3"
+      },
+      "distractorTags": {
+        "b4": "similar_verse"
+      },
+      "explanationFa": "پس از وَيَوْمَ يُنَادِيهِمْ در این آیه فَيَقُولُ أَيْنَ شُرَكَآءِىَ می‌آید."
+    },
+    {
+      "id": "q_u_p393a_B_0432",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "نیمه دوم آیه را با کلمات داده شده تکمیل کنید:",
+      "stem": {
+        "verse": 62,
+        "givenCount": 4,
+        "showFa": false,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2",
+        "7": "b3",
+        "8": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل نیمه دوم آیه ۶۲."
+    },
+    {
+      "id": "q_u_p393a_B_0433",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "پایان آیه را مشخص کنید:",
+      "stem": {
+        "verse": 62,
+        "givenCount": 6,
+        "showFa": false,
+        "hiddenIdx": [
+          7,
+          8
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "8": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۲ با تَزْعُمُونَ ختم می‌شود."
+    },
+    {
+      "id": "q_u_p393a_B_0434",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "سه کلمه پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 62,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 6,
+            "to": 8
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه با ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_B_0435",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "دو کلمه آخر آیه را انتخاب کنید:",
+      "stem": {
+        "verse": 62,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 7,
+            "to": 8
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "پایان آیه ۶۲ عبارت كُنتُمْ تَزْعُمُونَ است."
+    },
+    {
+      "id": "q_u_p393a_B_0436",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "کدام نسخه از آیه ۶۲ صحیح است؟",
+      "stem": {
+        "verseNum": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 8
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءَكُمْ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "گزینه دوم مربوط به آیه ۶۵ است و در این آیه شُرَكَآءِىَ صحیح است نه شُرَكَآءَكُمْ."
+    },
+    {
+      "id": "q_u_p393a_B_0437",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 62,
+      "targets": [
+        "vr:62"
+      ],
+      "promptFa": "کدام آیه کاملاً صحیح نوشته شده است؟",
+      "stem": {
+        "verseNum": 62
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 8
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءَكُمْ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كَانُوا۟ تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترکیب دقیق آیه ۶۲ بدون تغییر ضمایر و ادوات."
+    },
+    {
+      "id": "q_u_p393a_B_0438",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 63,
+      "targets": [
+        "vt:63"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "کسانی که عذاب بر آنان حتمی و لازم شده [از سردمداران شرک و کفر که مردم را به اطاعت و بندگی خود واداشتند] می گویند: پروردگارا! اینانند [مطیعان ما] که گمراهشان کردیم، همان گونه که ما [به اختیار خود] گمراه شدیم آنان را نیز [به اختیار و انتخاب خودشان] گمراه کردیم، [از آنان] به سوی تو بیزاری می جوییم، ما را نمی پرستیدند، [بلکه هوای نفسشان را می پرستیدند،]"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ساخت آیه طولانی ۶۳ از روی قطعات بزرگ متناسب با ترجمه."
+    },
+    {
+      "id": "q_u_p393a_B_0439",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 63,
+      "targets": [
+        "vt:63"
+      ],
+      "promptFa": "بخشی از آیه را که معادل «[از آنان] به سوی تو بیزاری می جوییم، ما را نمی پرستیدند» است بسازید:",
+      "stem": {
+        "fa": "[از آنان] به سوی تو بیزاری می جوییم، ما را نمی پرستیدند، [بلکه هوای نفسشان را می پرستیدند،]"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَبَرَّأْنَآ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِلَيْكَ ۖ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَا",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوٓا۟",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِيَّانَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَعْبُدُونَ",
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ساخت دقیق نیمه پایانی آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_B_0440",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 63,
+      "targets": [
+        "vt:63"
+      ],
+      "promptFa": "بخش «پروردگارا! اینانند [مطیعان ما] که گمراهشان کردیم» را بسازید (با کلمات انحرافی):",
+      "stem": {
+        "fa": "پروردگارا! اینانند [مطیعان ما] که گمراهشان کردیم،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "رَبَّنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هَـٰٓؤُلَآءِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَغْوَيْنَآ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَغْوَيْنَـٰهُمْ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "غَوَيْنَا",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "near_miss",
+        "b6": "near_miss",
+        "b7": "random"
+      },
+      "explanationFa": "دقت کنید در این قسمت أَغْوَيْنَآ می‌آید و أَغْوَيْنَـٰهُمْ در جمله بعدی است."
+    },
+    {
+      "id": "q_u_p393a_B_0441",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63",
+        "vr:63"
+      ],
+      "promptFa": "آیه ۶۳ را با اتصال قطعات زیر بسازید:",
+      "stem": {
+        "verseNum": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بازیابی آیه طولانی ۶۳ بر اساس قطعات آن."
+    },
+    {
+      "id": "q_u_p393a_B_0442",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63",
+        "vr:63"
+      ],
+      "promptFa": "قسمت ابتدایی آیه ۶۳ را کلمه به کلمه بسازید:",
+      "stem": {
+        "verseNum": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "حَقَّ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْقَوْلُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "رَبَّنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "هَـٰٓؤُلَآءِ",
+          "wordIdx": [
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات در شروع آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_B_0443",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 63,
+      "targets": [
+        "vn:63",
+        "vr:63"
+      ],
+      "promptFa": "بخش پایانی آیه ۶۳ را بسازید (کلمات اضافی را حذف کنید):",
+      "stem": {
+        "verseNum": 63
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَبَرَّأْنَآ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِلَيْكَ ۖ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَا",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوٓا۟",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِيَّانَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَعْبُدُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَسْتَجِيبُوا۟",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "لَهُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "کلمات انحرافی مربوط به آیه ۶۴ هستند."
+    },
+    {
+      "id": "q_u_p393a_B_0444",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "کلمات پنهان آیه را سر جای خود قرار دهید (حدود ۲۵٪ پنهان):",
+      "stem": {
+        "verse": 63,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "حَقَّ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْقَوْلُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَبَّنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءَكُمْ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "أَغْوَيْنَآ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "near_miss"
+      },
+      "explanationFa": "عبارت حَقَّ عَلَيْهِمُ ٱلْقَوْلُ در ابتدای آیه ۶۳ ذکر شده است."
+    },
+    {
+      "id": "q_u_p393a_B_0445",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "جای‌خالی‌ها را پر کنید (حدود ۴۰٪ پنهان):",
+      "stem": {
+        "verse": 63,
+        "hiddenIdx": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "هَـٰٓؤُلَآءِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَآ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَغْوَيْنَـٰهُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَمَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "غَوَيْنَا ۖ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "تَبَرَّأْنَآ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "يَهْتَدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "8": "b2",
+        "9": "b3",
+        "10": "b4",
+        "11": "b5",
+        "12": "b6",
+        "13": "b7"
+      },
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "دقت در جای‌گذاری صحیح مشتقات ریشه غوی."
+    },
+    {
+      "id": "q_u_p393a_B_0446",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "کلمات از قلم افتاده را کامل کنید (حدود ۶۰٪ پنهان):",
+      "stem": {
+        "verse": 63,
+        "hiddenIdx": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَغْوَيْنَآ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَغْوَيْنَـٰهُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَمَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "غَوَيْنَا ۖ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "تَبَرَّأْنَآ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِلَيْكَ ۖ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "مَا",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "كَانُوٓا۟",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "إِيَّانَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "يَعْبُدُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "شُرَكَآءِىَ",
+          "decoy": true
+        },
+        {
+          "id": "b13",
+          "ar": "تَزْعُمُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "9": "b2",
+        "10": "b3",
+        "11": "b4",
+        "12": "b5",
+        "13": "b6",
+        "14": "b7",
+        "15": "b8",
+        "16": "b9",
+        "17": "b10",
+        "18": "b11"
+      },
+      "distractorTags": {
+        "b12": "neighbor_verse",
+        "b13": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل بیش از نیمی از آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_B_0447",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "اکثر کلمات آیه پنهان شده‌اند، آن‌ها را سر جای خود قرار دهید (حدود ۸۰٪ پنهان):",
+      "stem": {
+        "verse": 63,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "حَقَّ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْقَوْلُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَبَّنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هَـٰٓؤُلَآءِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَغْوَيْنَآ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَغْوَيْنَـٰهُمْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "كَمَا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "غَوَيْنَا ۖ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "تَبَرَّأْنَآ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "إِلَيْكَ ۖ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "كَانُوٓا۟",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b14",
+          "ar": "إِيَّانَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b15",
+          "ar": "يَسْتَجِيبُوا۟",
+          "decoy": true
+        },
+        {
+          "id": "b16",
+          "ar": "يَهْتَدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4",
+        "7": "b5",
+        "8": "b6",
+        "9": "b7",
+        "10": "b8",
+        "11": "b9",
+        "12": "b10",
+        "13": "b11",
+        "14": "b12",
+        "16": "b13",
+        "17": "b14"
+      },
+      "distractorTags": {
+        "b15": "neighbor_verse",
+        "b16": "neighbor_verse"
+      },
+      "explanationFa": "بازیابی تقریبا کامل آیه ۶۳."
+    },
+    {
+      "id": "q_u_p393a_B_0448",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "با داشتن ۴ کلمه اول، بقیه آیه را به صورت قطعه‌ای کامل کنید:",
+      "stem": {
+        "verse": 63,
+        "givenCount": 4,
+        "showFa": false,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "شُرَكَآءَكُمْ فَدَعَوْهُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "9": "b2",
+        "13": "b3",
+        "17": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل آیه ۶۳ از کلمه پنجم به بعد."
+    },
+    {
+      "id": "q_u_p393a_B_0449",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "نیمه دوم آیه را بچینید:",
+      "stem": {
+        "verse": 63,
+        "givenCount": 9,
+        "showFa": false,
+        "hiddenIdx": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَبَرَّأْنَآ إِلَيْكَ ۖ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَغْوَيْنَآ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "10": "b1",
+        "13": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {
+        "b4": "near_miss"
+      },
+      "explanationFa": "پس از هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ کلمه أَغْوَيْنَـٰهُمْ می‌آید."
+    },
+    {
+      "id": "q_u_p393a_B_0450",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "پایان آیه را مشخص کنید:",
+      "stem": {
+        "verse": 63,
+        "givenCount": 14,
+        "showFa": false,
+        "hiddenIdx": [
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَا",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كَانُوٓا۟",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِيَّانَا",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَعْبُدُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَهْتَدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "15": "b1",
+        "16": "b2",
+        "17": "b3",
+        "18": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۳ با مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_B_0451",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "چهار کلمه پایانی آیه ۶۳ کدام‌اند؟",
+      "stem": {
+        "verse": 63,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 15,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنتُمْ تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "کلمه مَا در شروع این بخش قرار دارد."
+    },
+    {
+      "id": "q_u_p393a_B_0452",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "سه کلمه آخر آیه را انتخاب کنید:",
+      "stem": {
+        "verse": 63,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 16,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنتُمْ تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "پایان آیه ۶۳ كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ است."
+    },
+    {
+      "id": "q_u_p393a_B_0453",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "کدام گزینه متن دقیق آیه ۶۳ را نشان می‌دهد؟",
+      "stem": {
+        "verseNum": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَضْلَلْنَـٰهُمْ كَمَا ضَلَلْنَا ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ فَمَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ غَوَيْنَا أَغْوَيْنَـٰهُمْ كَمَا أَغْوَيْنَآ ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "استفاده از مشتقات ریشه غوی و کلمه مَا بدون فـ صحیح است."
+    },
+    {
+      "id": "q_u_p393a_B_0454",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 63,
+      "targets": [
+        "vr:63"
+      ],
+      "promptFa": "در آیه ۶۳ کدام عبارت به درستی آمده است؟",
+      "stem": {
+        "verseNum": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 63,
+            "from": 1,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ تَبَرَّءُوا۟ إِلَيْكَ ۖ مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ ٱلَّذِينَ وَجَبَ عَلَيْهِمُ ٱلْقَوْلُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ ٱلَّذِينَ حَقَّ عَلَيْهِمُ ٱلْعَذَابُ رَبَّنَا هَـٰٓؤُلَآءِ ٱلَّذِينَ أَغْوَيْنَآ أَغْوَيْنَـٰهُمْ كَمَا غَوَيْنَا ۖ تَبَرَّأْنَآ إِلَيْكَ ۖ مَا كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "false_friend"
+      },
+      "explanationFa": "عبارات حَقَّ عَلَيْهِمُ ٱلْقَوْلُ و تَبَرَّأْنَآ در این آیه به کار رفته‌اند."
+    },
+    {
+      "id": "q_u_p393a_B_0455",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 64,
+      "targets": [
+        "vt:64"
+      ],
+      "promptFa": "آیه زیر را بر اساس ترجمه بسازید:",
+      "stem": {
+        "fa": "و [به مطیعان] گفته شود: شریکان خود را [که می پرستیدید] بخوانید. پس آنها را می خوانند ولی آنها پاسخشان را نمی دهند، و عذاب را می بینند و آرزو می کنند که ای کاش هدایت می یافتند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ",
+          "wordIdx": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ساخت آیه ۶۴ با کمک قطعات ترجمه."
+    },
+    {
+      "id": "q_u_p393a_B_0456",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 64,
+      "targets": [
+        "vt:64"
+      ],
+      "promptFa": "بخش اول آیه را که معادل «و [به مطیعان] گفته شود: شریکان خود را [که می پرستیدید] بخوانید...» است کلمه به کلمه بسازید:",
+      "stem": {
+        "fa": "و [به مطیعان] گفته شود: شریکان خود را [که می پرستیدید] بخوانید. پس آنها را می خوانند ولی آنها پاسخشان را نمی دهند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱدْعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {},
+      "explanationFa": "نظم کلمات در نیمه ابتدایی آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_B_0457",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 64,
+      "targets": [
+        "vt:64"
+      ],
+      "promptFa": "بخش پایانی آیه (و عذاب را می بینند و آرزو می کنند که ای کاش هدایت می یافتند) را بسازید (با کلمات انحرافی):",
+      "stem": {
+        "fa": "و عذاب را می بینند و آرزو می کنند که ای کاش هدایت می یافتند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَوْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مَا",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "كَانُوٓا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "در اینجا كَانُوا۟ بدون مد نوشته می‌شود، و كَانُوٓا۟ مربوط به آیه قبل است."
+    },
+    {
+      "id": "q_u_p393a_B_0458",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64",
+        "vr:64"
+      ],
+      "promptFa": "آیه ۶۴ را با استفاده از قطعات زیر کامل کنید:",
+      "stem": {
+        "verseNum": 64
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ",
+          "wordIdx": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب قطعات آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_B_0459",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64",
+        "vr:64"
+      ],
+      "promptFa": "قسمت دوم آیه ۶۴ را کلمه به کلمه مرتب کنید:",
+      "stem": {
+        "verseNum": 64
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَوْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بخش پایانی آیه ۶۴ پس از وَرَأَوُا۟."
+    },
+    {
+      "id": "q_u_p393a_B_0460",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 64,
+      "targets": [
+        "vn:64",
+        "vr:64"
+      ],
+      "promptFa": "شروع آیه ۶۴ را بسازید (کلمات انحرافی را جدا کنید):",
+      "stem": {
+        "verseNum": 64
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱدْعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَيَوْمَ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "يُنَادِيهِمْ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "شُرَكَآءِىَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse",
+        "b10": "neighbor_verse"
+      },
+      "explanationFa": "آیات قبل و بعد با وَيَوْمَ يُنَادِيهِمْ شروع می‌شوند اما این آیه با وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393a_B_0461",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "جای‌خالی‌ها را پر کنید (حدود ۲۵٪ پنهان):",
+      "stem": {
+        "verse": 64,
+        "hiddenIdx": [
+          3,
+          4,
+          5
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "شُرَكَآءِىَ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "near_miss"
+      },
+      "explanationFa": "استفاده از شُرَكَآءَكُمْ به جای شُرَكَآءِىَ در این آیه."
+    },
+    {
+      "id": "q_u_p393a_B_0462",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "کلمات پنهان آیه را قرار دهید (حدود ۴۰٪ پنهان):",
+      "stem": {
+        "verse": 64,
+        "hiddenIdx": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَوْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِلَيْكَ ۖ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوٓا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "7": "b2",
+        "8": "b3",
+        "9": "b4",
+        "10": "b5"
+      },
+      "distractorTags": {
+        "b6": "neighbor_verse",
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "کلمات میانی آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_B_0463",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "جاهای خالی را با کلمات درست پر کنید (حدود ۶۰٪ پنهان):",
+      "stem": {
+        "verse": 64,
+        "hiddenIdx": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          9,
+          10,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱدْعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لَوْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَعْبُدُونَ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "وَيَوْمَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2",
+        "5": "b3",
+        "6": "b4",
+        "7": "b5",
+        "9": "b6",
+        "10": "b7",
+        "13": "b8"
+      },
+      "distractorTags": {
+        "b9": "neighbor_verse",
+        "b10": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی در سراسر آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_B_0464",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "بیشتر کلمات آیه حذف شده‌اند، آنها را کامل کنید (حدود ۸۰٪ پنهان):",
+      "stem": {
+        "verse": 64,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱدْعُوا۟",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "شُرَكَآءِىَ",
+          "decoy": true
+        },
+        {
+          "id": "b12",
+          "ar": "يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5",
+        "7": "b6",
+        "8": "b7",
+        "11": "b8",
+        "12": "b9",
+        "13": "b10"
+      },
+      "distractorTags": {
+        "b11": "neighbor_verse",
+        "b12": "neighbor_verse"
+      },
+      "explanationFa": "بازیابی کامل متن آیه ۶۴."
+    },
+    {
+      "id": "q_u_p393a_B_0465",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 64,
+      "targets": [
+        "vr:64",
+        "sq:64"
+      ],
+      "promptFa": "با داشتن ۳ کلمه اول، بقیه آیه را به صورت قطعه‌ای بسازید:",
+      "stem": {
+        "verse": 64,
+        "givenCount": 3,
+        "showFa": false,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ",
+          "wordIdx": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَرَأَوُا۟ ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "8": "b2",
+        "10": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل آیه ۶۴ پس از وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ."
+    },
+    {
+      "id": "q_u_p393a_B_0466",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "نیمه دوم آیه را با کلمات داده شده بسازید:",
+      "stem": {
+        "verse": 64,
+        "givenCount": 6,
+        "showFa": false,
+        "hiddenIdx": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يَعْبُدُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "8": "b2",
+        "9": "b3",
+        "10": "b4",
+        "11": "b5",
+        "12": "b6",
+        "13": "b7"
+      },
+      "distractorTags": {
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "ادامه آیه از فَلَمْ يَسْتَجِيبُوا۟."
+    },
+    {
+      "id": "q_u_p393a_B_0467",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "پایان آیه را مشخص کنید:",
+      "stem": {
+        "verse": 64,
+        "givenCount": 10,
+        "showFa": false,
+        "hiddenIdx": [
+          11,
+          12,
+          13
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوٓا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "11": "b1",
+        "12": "b2",
+        "13": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۴ با أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ ختم می‌شود."
+    },
+    {
+      "id": "q_u_p393a_B_0468",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "چهار کلمه آخر آیه ۶۴ چیست؟",
+      "stem": {
+        "verse": 64,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 10,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوٓا۟ إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنتُمْ تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "پایان این آیه لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ است."
+    },
+    {
+      "id": "q_u_p393a_B_0469",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "سه کلمه پایانی آیه را انتخاب کنید:",
+      "stem": {
+        "verse": 64,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 11,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِيَّانَا يَعْبُدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "كَانُوا۟ تَعْمَلُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۴ با أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393a_B_0470",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "کدام گزینه آیه ۶۴ را به صورت صحیح و کامل آورده است؟",
+      "stem": {
+        "verseNum": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ وَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءِىَ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يُجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در این آیه فَلَمْ يَسْتَجِيبُوا۟ صحیح است و شُرَكَآءَكُمْ به کار رفته است."
+    },
+    {
+      "id": "q_u_p393a_B_0471",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 64,
+      "targets": [
+        "vr:64"
+      ],
+      "promptFa": "متن دقیق آیه ۶۴ کدام است؟",
+      "stem": {
+        "verseNum": 64
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 13
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ لَوْ أَنَّهُمْ كَانُوٓا۟ يَهْتَدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ لَوْ أَنَّهُمْ يَهْتَدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ ۚ بَلْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "در پایان آیه لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ با کَانُوا۟ (بدون مد) نوشته می‌شود."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,4076 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393b",
+  "part": "A3",
+  "generatedBy": "Gemini 1.5 Pro",
+  "lexicon": [],
+  "chunks": [],
+  "questions": [
+    {
+      "id": "q_u_p393b_A_0421",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَيَقُولُ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و روزی که خدا آنان را ندا می دهد"
+        },
+        {
+          "id": "r2",
+          "fa": "و می گوید:"
+        },
+        {
+          "id": "r3",
+          "fa": "چه پاسخی به پیامبران دادید؟"
+        },
+        {
+          "id": "r4",
+          "fa": "پس در آن روز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق دقیق قطعات آیه ۶۵ با ترجمه فارسی."
+    },
+    {
+      "id": "q_u_p393b_A_0422",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "کلمات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَيَوْمَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمُرْسَلِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و روزی که"
+        },
+        {
+          "id": "r2",
+          "fa": "خدا آنان را ندا می دهد"
+        },
+        {
+          "id": "r3",
+          "fa": "پیامبران"
+        },
+        {
+          "id": "r4",
+          "fa": "می گوید:"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "near_miss"
+      },
+      "explanationFa": "ترجمه دقیق واژگان آیه ۶۵ مد نظر است."
+    },
+    {
+      "id": "q_u_p393b_A_0423",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        },
+        {
+          "id": "o2",
+          "fa": "پس در آن روز اخبار بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "o3",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o4",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۶۵ درباره پرسش الهی از مشرکان در مورد پیامبران (المرسلین) است."
+    },
+    {
+      "id": "q_u_p393b_A_0424",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۶۵ چیست؟",
+      "stem": {
+        "verse": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        },
+        {
+          "id": "o2",
+          "fa": "و روزی که آنان را ندا می دهد و می گوید: شریکان من کجایند؟"
+        },
+        {
+          "id": "o3",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده"
+        },
+        {
+          "id": "o4",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و بر می گزیند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در این آیه سؤال خداوند از پاسخ به «المرسلین» (پیامبران) است، نه جایگاه شریکان."
+    },
+    {
+      "id": "q_u_p393b_A_0425",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "کدام گزینه ترجمه کامل و دقیق آیه ۶۵ است؟",
+      "stem": {
+        "verse": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        },
+        {
+          "id": "o2",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o3",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی که می گوید چه پاسخی دادید و از یکدیگر نمی پرسند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "کلمه «يُنَادِيهِمْ» به معنای ندا دادن و فراخواندن آنان است."
+    },
+    {
+      "id": "q_u_p393b_A_0426",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 65,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیات ۶۲ و ۷۴ مشابه هستند اما در آنها درباره «شرکاء» سؤال می‌شود، در حالی که آیه ۶۵ درباره «المرسلین» است."
+    },
+    {
+      "id": "q_u_p393b_A_0427",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 65,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "متن آیه با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0428",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "این آیه کدام است؟",
+      "stem": {
+        "verse": 65,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه دقیقاً به آیه ۶۵ اشاره می‌کند که درباره روز ندا و بازخواست است."
+    },
+    {
+      "id": "q_u_p393b_A_0429",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و روزی که خدا آنان را ندا می دهد",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و می گوید:",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "چه پاسخی به پیامبران دادید؟",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "در آن روز",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب صحیح قطعات: و روزی که خدا آنان را ندا می دهد / و می گوید: / چه پاسخی به پیامبران دادید؟"
+    },
+    {
+      "id": "q_u_p393b_A_0430",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۶۵ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و روزی که",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "خدا آنان را ندا می دهد و می گوید:",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "چه پاسخی",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "به پیامبران دادید؟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "شریکان خود را بخوانید",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "چینش دقیق کلمات بر اساس آیه ۶۵: و روزی که (وَيَوْمَ) خدا آنان را ندا می دهد و می گوید (يُنَادِيهِمْ فَيَقُولُ)..."
+    },
+    {
+      "id": "q_u_p393b_A_0431",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 65,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 22,
+            "text": "ندا"
+          },
+          {
+            "start": 44,
+            "text": "پاسخی"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "ندا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پاسخی",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "صدا",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "پاداشی",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«يُنَادِيهِمْ» به معنای ندا دادن و «أَجَبْتُمُ» به معنای پاسخ دادن است."
+    },
+    {
+      "id": "q_u_p393b_A_0432",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 65,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 10,
+            "text": "خدا"
+          },
+          {
+            "start": 52,
+            "text": "پیامبران"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "خدا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پیامبران",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "فرشتگان",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "مردم",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "6": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "واژه «المرسلین» جمع مرسل و به معنای پیامبران و فرستادگان الهی است."
+    },
+    {
+      "id": "q_u_p393b_A_0433",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَوْمَئِذٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَهُمْ لَا يَتَسَآءَلُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اخبار [واقعی] بر آنان پوشیده ماند"
+        },
+        {
+          "id": "r2",
+          "fa": "پس در آن روز"
+        },
+        {
+          "id": "r3",
+          "fa": "بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "r4",
+          "fa": "و اما کسی که توبه کرده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق قطعات آیه ۶۶ با ترجمه انصاریان."
+    },
+    {
+      "id": "q_u_p393b_A_0434",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "واژگان آیه ۶۶ را به ترجمه دقیق آنها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَعَمِيَتْ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأَنۢبَآءُ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَتَسَآءَلُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پوشیده ماند"
+        },
+        {
+          "id": "r2",
+          "fa": "اخبار [واقعی]"
+        },
+        {
+          "id": "r3",
+          "fa": "از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "r4",
+          "fa": "فرمانروایی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "random"
+      },
+      "explanationFa": "کلمه «عمیت» در اینجا کنایه از مبهم و پوشیده ماندن اخبار است."
+    },
+    {
+      "id": "q_u_p393b_A_0435",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 66
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "o2",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        },
+        {
+          "id": "o3",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده"
+        },
+        {
+          "id": "o4",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و بر می گزیند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۶ درباره پوشیده ماندن اخبار در قیامت و مسدود شدن راه پرسش است."
+    },
+    {
+      "id": "q_u_p393b_A_0436",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۶۶ چیست؟",
+      "stem": {
+        "verse": 66
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "o2",
+          "fa": "پس کور شد بر آنها خبرها در آن روز، پس آنها بازخواست نمی شوند"
+        },
+        {
+          "id": "o3",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o4",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که «عمیت» در قالب ترجمه روان به معنای پوشیده ماندن اخبار و مبهم شدن آنها آمده است."
+    },
+    {
+      "id": "q_u_p393b_A_0437",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "کدام گزینه ترجمه آیه ۶۶ است؟",
+      "stem": {
+        "verse": 66
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "o2",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        },
+        {
+          "id": "o4",
+          "fa": "پس در آن روز اخبار پوشیده ماند و از اعمال یکدیگر می پرسند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترکیب «لَا يَتَسَآءَلُونَ» صریحاً نفی پرسش از یکدیگر را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p393b_A_0438",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 66,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۶ با «فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0439",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 66,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این ترجمه صریح آیه ۶۶ درباره سردرگمی مشرکان در روز قیامت است."
+    },
+    {
+      "id": "q_u_p393b_A_0440",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "این ترجمه به کدام آیه اشاره دارد؟",
+      "stem": {
+        "verse": 66,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۶ توصیف مسدود شدن راه نجات و پرسش است."
+    },
+    {
+      "id": "q_u_p393b_A_0441",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس در آن روز",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "اخبار [واقعی] بر آنان پوشیده ماند",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "بنابراین از یکدیگر پرسش هم نمی کنند،",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و اما کسی که",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب در فارسی: پس در آن روز (يَوْمَئِذٍ) / اخبار پوشیده ماند (فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ) / بنابراین پرسش نمی کنند (فَهُمْ لَا يَتَسَآءَلُونَ)."
+    },
+    {
+      "id": "q_u_p393b_A_0442",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۶۶ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس در آن روز",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "اخبار [واقعی]",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "بر آنان پوشیده ماند",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "بنابراین از یکدیگر پرسش هم نمی کنند،",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "شریکان خود را بخوانید",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "چینش دقیق قطعات ترجمه آیه ۶۶."
+    },
+    {
+      "id": "q_u_p393b_A_0443",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 66,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 113,
+            "text": "اخبار"
+          },
+          {
+            "start": 135,
+            "text": "پوشیده"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "اخبار",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پوشیده",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "اعمال",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "کور",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "false_friend"
+      },
+      "explanationFa": "«الأنباء» جمع نبأ به معنای اخبار مهم است و «عمیت» کنایه از مبهم و پوشیده ماندن است."
+    },
+    {
+      "id": "q_u_p393b_A_0444",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 66,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 11,
+            "text": "روز"
+          },
+          {
+            "start": 214,
+            "text": "پرسش"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "روز",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پرسش",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "شب",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "یاری",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "7": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "کلمه «یومئذ» به آن روز اشاره دارد و «یتساءلون» به معنای از یکدیگر پرسش کردن است."
+    },
+    {
+      "id": "q_u_p393b_A_0445",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَأَمَّا مَن تَابَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "فَعَسَىٰٓ أَن يَكُونَ مِنَ ٱلْمُفْلِحِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و اما کسی که [از شرک و عصیان] توبه کرده"
+        },
+        {
+          "id": "r2",
+          "fa": "و ایمان آورده و کار شایسته انجام داده،"
+        },
+        {
+          "id": "r3",
+          "fa": "امید است که از رستگاران باشد،"
+        },
+        {
+          "id": "r4",
+          "fa": "می آفریند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق دقیق قطعات آیه ۶۷ با ترجمه فارسی."
+    },
+    {
+      "id": "q_u_p393b_A_0446",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "واژگان آیه ۶۷ را به ترجمه متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَابَ"
+        },
+        {
+          "id": "l2",
+          "ar": "صَـٰلِحًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمُفْلِحِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "توبه کرده"
+        },
+        {
+          "id": "r2",
+          "fa": "شایسته"
+        },
+        {
+          "id": "r3",
+          "fa": "رستگاران"
+        },
+        {
+          "id": "r4",
+          "fa": "مشرکان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "near_miss"
+      },
+      "explanationFa": "المفلحین به معنای رستگاران است."
+    },
+    {
+      "id": "q_u_p393b_A_0447",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 67
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+        },
+        {
+          "id": "o2",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+        },
+        {
+          "id": "o3",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند"
+        },
+        {
+          "id": "o4",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۷ درباره شرایط توبه، ایمان و عمل صالح برای رستگاری است."
+    },
+    {
+      "id": "q_u_p393b_A_0448",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۶۷ چیست؟",
+      "stem": {
+        "verse": 67
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+        },
+        {
+          "id": "o2",
+          "fa": "و اما کسی که ایمان آورد و کار شایسته کرد پس او از رستگاران است"
+        },
+        {
+          "id": "o3",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در آیه تعبیر «عسی» به معنای «امید است» به کار رفته است."
+    },
+    {
+      "id": "q_u_p393b_A_0449",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "کدام گزینه ترجمه کامل و دقیق آیه ۶۷ است؟",
+      "stem": {
+        "verse": 67
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+        },
+        {
+          "id": "o2",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        },
+        {
+          "id": "o4",
+          "fa": "و اما کسی که توبه کرد پس امید است از مشرکان نباشد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه شامل سه شرط توبه، ایمان و عمل صالح برای امید به فلاح (رستگاری) است."
+    },
+    {
+      "id": "q_u_p393b_A_0450",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 67,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۷ با کلمه «فَأَمَّا مَن تَابَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0451",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 67,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه توبه و عمل صالح به وضوح آیه ۶۷ است."
+    },
+    {
+      "id": "q_u_p393b_A_0452",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "این ترجمه به کدام آیه اشاره دارد؟",
+      "stem": {
+        "verse": 67,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیات ۶۲ و ۷۴ با عبارت «يوم ینادیهم» شروع می‌شوند، اما این ترجمه آیه ۶۷ است."
+    },
+    {
+      "id": "q_u_p393b_A_0453",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و اما کسی که",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "توبه کرده و ایمان آورده و کار شایسته انجام داده،",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "امید است که از رستگاران باشد،",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "نیست",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات بر اساس آیه: فَأَمَّا مَن (و اما کسی که) تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا (توبه کرده و ایمان...) فَعَسَىٰٓ... (امید است که...)"
+    },
+    {
+      "id": "q_u_p393b_A_0454",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۶۷ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و اما کسی که [از شرک و عصیان] توبه کرده",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و ایمان آورده و کار شایسته انجام داده،",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "امید است که",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "از رستگاران باشد،",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "می داند",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "مرتب‌سازی دقیق قطعات ترجمه آیه ۶۷."
+    },
+    {
+      "id": "q_u_p393b_A_0455",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 67,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 31,
+            "text": "توبه"
+          },
+          {
+            "start": 59,
+            "text": "شایسته"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "توبه",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "شایسته",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "بازگشت",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "نیک",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "6": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "واژه «تاب» به معنای توبه کردن و «صالحاً» به معنای کار شایسته است."
+    },
+    {
+      "id": "q_u_p393b_A_0456",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 67,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 71,
+            "text": "امید"
+          },
+          {
+            "start": 91,
+            "text": "رستگاران"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "امید",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "رستگاران",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "حتما",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "مؤمنان",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "11": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "واژه «عسی» به معنای امید است و «المفلحین» یعنی رستگاران."
+    },
+    {
+      "id": "q_u_p393b_A_0457",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيَخْتَارُ ۗ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند"
+        },
+        {
+          "id": "r2",
+          "fa": "و [آنچه را بخواهد] بر می گزیند،"
+        },
+        {
+          "id": "r3",
+          "fa": "برای آنان [در برابر اراده او در قلمرو تکوین و تشریع] اختیاری نیست؛"
+        },
+        {
+          "id": "r4",
+          "fa": "منزّه است خدا و برتر است از آنچه برای او شریک می گیرند،"
+        },
+        {
+          "id": "r5",
+          "fa": "می داند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق دقیق قطعات آیه ۶۸ با ترجمه."
+    },
+    {
+      "id": "q_u_p393b_A_0458",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "واژگان آیه ۶۸ را به ترجمه متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَخْلُقُ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَخْتَارُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْخِيَرَةُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می آفریند"
+        },
+        {
+          "id": "r2",
+          "fa": "بر می گزیند"
+        },
+        {
+          "id": "r3",
+          "fa": "اختیاری"
+        },
+        {
+          "id": "r4",
+          "fa": "نیکوکاری"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "false_friend"
+      },
+      "explanationFa": "کلمه «الخیرة» به معنای اختیار و حق انتخاب است، نه صرفاً خیر و نیکوکاری."
+    },
+    {
+      "id": "q_u_p393b_A_0459",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 68
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند، برای آنان اختیاری نیست..."
+        },
+        {
+          "id": "o2",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد"
+        },
+        {
+          "id": "o3",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o4",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۸ درباره آفرینش، گزینش الهی و سلب اختیار استقلالی از مشرکان است."
+    },
+    {
+      "id": "q_u_p393b_A_0460",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۶۸ چیست؟",
+      "stem": {
+        "verse": 68
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند، برای آنان اختیاری نیست..."
+        },
+        {
+          "id": "o2",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و برای آنها اختیاری هست تا نیکی را برگزینند"
+        },
+        {
+          "id": "o3",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "عبارت «ما کان لهم الخیرة» نفی حق انتخاب مشرکان در برابر اراده خداست."
+    },
+    {
+      "id": "q_u_p393b_A_0461",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "کدام گزینه ترجمه کامل آیه ۶۸ است؟",
+      "stem": {
+        "verse": 68
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند، برای آنان اختیاری نیست..."
+        },
+        {
+          "id": "o2",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        },
+        {
+          "id": "o4",
+          "fa": "خدا منزه است از آنچه شریک می گیرند و او می داند آنچه پنهان می کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه جامع موضوع خلقت و اختیار و تنزیه خداوند از شرک است."
+    },
+    {
+      "id": "q_u_p393b_A_0462",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 68,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه با «وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0463",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 68,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "موضوع آفرینش و اختیار در آیه ۶۸ مطرح شده است."
+    },
+    {
+      "id": "q_u_p393b_A_0464",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "این ترجمه به کدام آیه اشاره دارد؟",
+      "stem": {
+        "verse": 68,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیات دیگر به روز قیامت و شرکاء اشاره دارند، اما این آیه درباره خلق و اختیار الهی است."
+    },
+    {
+      "id": "q_u_p393b_A_0465",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند،",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "برای آنان [در برابر اراده او در قلمرو تکوین و تشریع] اختیاری نیست؛",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "منزّه است خدا و برتر است از آنچه برای او شریک می گیرند،",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "آشکار می کند",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات مطابق روند آفرینش، نفی اختیار دیگران، و تنزیه خداوند است."
+    },
+    {
+      "id": "q_u_p393b_A_0466",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۶۸ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و [آنچه را بخواهد] بر می گزیند،",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "برای آنان",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "اختیاری نیست؛",
+          "wordIdx": [
+            6,
+            7,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "منزّه است خدا",
+          "wordIdx": [
+            10,
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "مرتب‌سازی دقیق اجزای آیه ۶۸."
+    },
+    {
+      "id": "q_u_p393b_A_0467",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 68,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 28,
+            "text": "می آفریند"
+          },
+          {
+            "start": 56,
+            "text": "بر می گزیند"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "می آفریند",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "بر می گزیند",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "روزی می دهد",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "می داند",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«یخلق» یعنی می‌آفریند و «یختار» یعنی برمی‌گزیند."
+    },
+    {
+      "id": "q_u_p393b_A_0468",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 68,
+      "targets": [
+        "vt:68"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 68,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 127,
+            "text": "اختیاری"
+          },
+          {
+            "start": 181,
+            "text": "شریک"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "اختیاری",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "شریک",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "خیری",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "عذابی",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1",
+        "14": "b2"
+      },
+      "distractorTags": {
+        "b3": "false_friend",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«الخیرة» به معنای اختیار و «یشرکون» به معنای شریک گرفتن است."
+    },
+    {
+      "id": "q_u_p393b_A_0469",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَرَبُّكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "مَا تُكِنُّ صُدُورُهُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَمَا يُعْلِنُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و پروردگارت"
+        },
+        {
+          "id": "r2",
+          "fa": "آنچه را سینه هایشان پنهان می نماید"
+        },
+        {
+          "id": "r3",
+          "fa": "و آنچه را آشکار می کند،"
+        },
+        {
+          "id": "r4",
+          "fa": "می داند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "near_miss"
+      },
+      "explanationFa": "آیه ۶۹ علم خدا به نهان و آشکار را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p393b_A_0470",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "واژگان آیه ۶۹ را به ترجمه متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَعْلَمُ"
+        },
+        {
+          "id": "l2",
+          "ar": "تُكِنُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُعْلِنُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می داند"
+        },
+        {
+          "id": "r2",
+          "fa": "پنهان می نماید"
+        },
+        {
+          "id": "r3",
+          "fa": "آشکار می کند"
+        },
+        {
+          "id": "r4",
+          "fa": "می آفریند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "«تکن» از کنن به معنای پنهان کردن و «یعلم» یعنی می‌داند."
+    },
+    {
+      "id": "q_u_p393b_A_0471",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 69
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o2",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند"
+        },
+        {
+          "id": "o3",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست"
+        },
+        {
+          "id": "o4",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۹ درباره علم خداوند به پنهان و آشکار اعمال و نیات است."
+    },
+    {
+      "id": "q_u_p393b_A_0472",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۶۹ چیست؟",
+      "stem": {
+        "verse": 69
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o2",
+          "fa": "و پروردگارت آنچه را آشکار می کنند و آنچه را پنهان می کنند می داند"
+        },
+        {
+          "id": "o3",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه دقیق شامل واژه «صدورهم» (سینه هایشان) است که در گزینه دوم حذف شده بود."
+    },
+    {
+      "id": "q_u_p393b_A_0473",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "کدام گزینه ترجمه دقیق آیه ۶۹ است؟",
+      "stem": {
+        "verse": 69
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o2",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        },
+        {
+          "id": "o4",
+          "fa": "و پروردگارت می داند آنچه را سینه هایشان پنهان می کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه هم پنهان ساختن و هم آشکار کردن (یعلنون) را شامل می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0474",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 69,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۹ با «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393b_A_0475",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 69,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "تطابق آشکار با آیه ۶۹ که درباره علم خداست."
+    },
+    {
+      "id": "q_u_p393b_A_0476",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "این ترجمه به کدام آیه اشاره دارد؟",
+      "stem": {
+        "verse": 69,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۶۹ درباره علم خدا به نهان سینه‌ها است."
+    },
+    {
+      "id": "q_u_p393b_A_0477",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و پروردگارت",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "آنچه را سینه هایشان پنهان می نماید",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و آنچه را آشکار می کند،",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "می داند",
+          "wordIdx": [
+            2
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "کلمه «یعلم» در عربی اول آمده ولی در ترجمه فارسی، فعل در انتهای جمله (می داند) می‌آید."
+    },
+    {
+      "id": "q_u_p393b_A_0478",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۶۹ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و پروردگارت",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "آنچه را",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "سینه هایشان پنهان می نماید",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و آنچه را آشکار می کند، می داند",
+          "wordIdx": [
+            2,
+            6,
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح ترجمه آیه ۶۹."
+    },
+    {
+      "id": "q_u_p393b_A_0479",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 69,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 32,
+            "text": "پنهان"
+          },
+          {
+            "start": 56,
+            "text": "آشکار"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پنهان",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "آشکار",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "کینه",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "فاش",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "7": "b2"
+      },
+      "distractorTags": {
+        "b3": "false_friend",
+        "b4": "near_miss"
+      },
+      "explanationFa": "واژه «تکن» به معنای پنهان داشتن است."
+    },
+    {
+      "id": "q_u_p393b_A_0480",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 69,
+      "targets": [
+        "vt:69"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 69,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 20,
+            "text": "سینه هایشان"
+          },
+          {
+            "start": 73,
+            "text": "می داند"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "سینه هایشان",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "می داند",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "قلبهایشان",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "می بیند",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«صدور» جمع صدر یعنی سینه‌ها و «یعلم» یعنی می‌داند."
+    },
+    {
+      "id": "q_u_p393b_A_0481",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه مناسب وصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَهُ ٱلْحَمْدُ فِى ٱلْأُولَىٰ وَٱلْـَٔاخِرَةِ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَلَهُ ٱلْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و اوست خدا که معبودی جز او نیست،"
+        },
+        {
+          "id": "r2",
+          "fa": "همه ستایش ها در دنیا و آخرت ویژه اوست،"
+        },
+        {
+          "id": "r3",
+          "fa": "و فرمانروایی فقط برای اوست، و تنها به سوی او بازگردانده می شوید."
+        },
+        {
+          "id": "r4",
+          "fa": "می داند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۰ به توحید، اختصاص حمد و فرمانروایی به خدا اشاره دارد."
+    },
+    {
+      "id": "q_u_p393b_A_0482",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "واژگان آیه ۷۰ را به ترجمه متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "إِلَـٰهَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْحَمْدُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْحُكْمُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "معبودی"
+        },
+        {
+          "id": "r2",
+          "fa": "ستایش ها"
+        },
+        {
+          "id": "r3",
+          "fa": "فرمانروایی"
+        },
+        {
+          "id": "r4",
+          "fa": "بازگشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "near_miss"
+      },
+      "explanationFa": "«الحمد» به معنای ستایش و «الحکم» به معنای فرمانروایی و حکم است."
+    },
+    {
+      "id": "q_u_p393b_A_0483",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 70
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست، و فرمانروایی فقط برای اوست، و تنها به سوی او بازگردانده می شوید."
+        },
+        {
+          "id": "o2",
+          "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+        },
+        {
+          "id": "o3",
+          "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند"
+        },
+        {
+          "id": "o4",
+          "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۰ مجموعه‌ای از صفات الهی در توحید، حمد، و حاکمیت را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p393b_A_0484",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۷۰ چیست؟",
+      "stem": {
+        "verse": 70
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست، و فرمانروایی فقط برای اوست، و تنها به سوی او بازگردانده می شوید."
+        },
+        {
+          "id": "o2",
+          "fa": "و اوست خدا که معبودی جز او نیست، و او را ستایش در دنیا و آخرت است"
+        },
+        {
+          "id": "o3",
+          "fa": "پس در آن روز اخبار [واقعی] بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه دقیق شامل اشاره به «الحکم» (فرمانروایی) و «ترجعون» (بازگردانده می‌شوید) است."
+    },
+    {
+      "id": "q_u_p393b_A_0485",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "کدام گزینه ترجمه کامل آیه ۷۰ است؟",
+      "stem": {
+        "verse": 70
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اوست خدا که معبودی جز او نیست، همه ستایش ها در دنیا و آخرت ویژه اوست، و فرمانروایی فقط برای اوست، و تنها به سوی او بازگردانده می شوید."
+        },
+        {
+          "id": "o2",
+          "fa": "و به مطیعان گفته شود: شریکان خود را بخوانید. پس آنها را می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده کند"
+        },
+        {
+          "id": "o4",
+          "fa": "و تنها به سوی او بازگردانده می شوید در دنیا و آخرت"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترجمه کامل هر چهار بخش آیه ۷۰ باید در گزینه موجود باشد."
+    },
+    {
+      "id": "q_u_p393b_A_0486",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 70,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 69,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 68,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۰ با توحید و حمد و حکم پایان می‌یابد. آیه ۸۸ نیز عبارت «لَا إِلَـٰهَ إِلَّا هُوَ» را دارد اما بافت آن متفاوت است."
+    },
+    {
+      "id": "q_u_p393b_A_0487",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "این ترجمه با کدام آیه تطابق دارد؟",
+      "stem": {
+        "verse": 70,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۰ که در آن صفات الهی برای دنیا و آخرت مطرح شده است."
+    },
+    {
+      "id": "q_u_p393b_A_0488",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "این ترجمه به کدام آیه اشاره دارد؟",
+      "stem": {
+        "verse": 70,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 70,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 64,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 71,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "تطابق صریح با آیه ۷۰."
+    },
+    {
+      "id": "q_u_p393b_A_0489",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب درست آیه مرتب کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و اوست خدا که معبودی جز او نیست،",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "همه ستایش ها در دنیا و آخرت ویژه اوست،",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و فرمانروایی فقط برای اوست، و تنها به سوی او بازگردانده می شوید.",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و پروردگارت",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات آیه ۷۰."
+    },
+    {
+      "id": "q_u_p393b_A_0490",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "ساختار ترجمه آیه ۷۰ را با چینش درست مشخص کنید.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و اوست خدا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "که معبودی جز او نیست،",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "همه ستایش ها",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "در دنیا و آخرت ویژه اوست،",
+          "wordIdx": [
+            7,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "و فرمانروایی فقط برای اوست،",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "fa": "و تنها به سوی او بازگردانده می شوید.",
+          "wordIdx": [
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چینش دقیق ترجمه آیه ۷۰."
+    },
+    {
+      "id": "q_u_p393b_A_0491",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 70,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 14,
+            "text": "معبودی"
+          },
+          {
+            "start": 39,
+            "text": "ستایش"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "معبودی",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "ستایش",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "خدایی",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "شکر",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "8": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«إله» یعنی معبود و «الحمد» یعنی ستایش."
+    },
+    {
+      "id": "q_u_p393b_A_0492",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 70,
+      "targets": [
+        "vt:70"
+      ],
+      "promptFa": "کلمات افتاده ترجمه را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 70,
+        "showFa": false,
+        "faHidden": [
+          {
+            "start": 76,
+            "text": "فرمانروایی"
+          },
+          {
+            "start": 117,
+            "text": "بازگردانده"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "فرمانروایی",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "بازگردانده",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "حکومت",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "فرستاده",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "13": "b1",
+        "15": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "near_miss"
+      },
+      "explanationFa": "«الحکم» به معنای فرمانروایی و «ترجعون» به معنای بازگردانده شدن است."
+    }
+  ],
+  "issues": []
+}

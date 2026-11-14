@@ -1,0 +1,583 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "B5",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p389a_B_1201",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 30,
+      "targets": [
+        "vt:30",
+        "vr:30"
+      ],
+      "promptFa": "ترجمه زیر مربوط به آیه ۳۰ است، قطعات آیه را به ترتیب بچینید.",
+      "stem": {
+        "verse": 30,
+        "fa": "چون نزد آن آمد، از جانب راست آن وادی در آن جایگاه مبارک از آن درخت ندا رسید که ای موسی! یقیناً منم خدا پروردگار جهانیان،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّآ أَتَىٰهَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نُودِىَ مِن شَـٰطِئِ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْوَادِ ٱلْأَيْمَنِ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فِى ٱلْبُقْعَةِ ٱلْمُبَـٰرَكَةِ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلشَّجَرَةِ أَن يَـٰمُوسَىٰٓ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِنِّىٓ أَنَا ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه دقیق و کامل آیه ۳۰ سوره قصص."
+    },
+    {
+      "id": "q_u_p389a_B_1202",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 30,
+      "targets": [
+        "vt:30",
+        "vr:30"
+      ],
+      "promptFa": "بخش پایانی آیه ۳۰ را بر اساس ترجمه بسازید.",
+      "stem": {
+        "verse": 30,
+        "fa": "یقیناً منم خدا پروردگار جهانیان،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنِّىٓ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنَا",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهُ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَبُّ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْعَـٰلَمِينَ",
+          "wordIdx": [
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چیدمان کلمه به کلمه انتهای آیه ۳۰ بر اساس ترجمه."
+    },
+    {
+      "id": "q_u_p389a_B_1203",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 30,
+      "targets": [
+        "vt:30",
+        "vr:30"
+      ],
+      "promptFa": "کلمات معادل این بخش از ترجمه آیه ۳۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 30,
+        "fa": "از جانب راست آن وادی در آن جایگاه مبارک"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "شَـٰطِئِ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْوَادِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْأَيْمَنِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فِى",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْبُقْعَةِ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْمُبَـٰرَكَةِ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "مِنَ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "جَانِبِ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "ٱلطُّورِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "near_miss",
+        "b9": "neighbor_verse",
+        "b10": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که «جانب» و «الطور» مربوط به آیه قبل (۲۹) هستند."
+    },
+    {
+      "id": "q_u_p389a_B_1204",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 30,
+      "targets": [
+        "vr:30"
+      ],
+      "promptFa": "بخش ابتدایی آیه ۳۰ را به درستی بچینید.",
+      "stem": {
+        "verse": 30
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّآ أَتَىٰهَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نُودِىَ مِن شَـٰطِئِ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْوَادِ ٱلْأَيْمَنِ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فِى ٱلْبُقْعَةِ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَلَمَّا قَضَىٰ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "جَانِبِ ٱلطُّورِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۳۰ با «فَلَمَّآ أَتَىٰهَا» آغاز می‌شود، در حالی که آیه ۲۹ با «فَلَمَّا قَضَىٰ» آغاز شده است."
+    },
+    {
+      "id": "q_u_p389a_B_1205",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 30,
+      "targets": [
+        "vr:30"
+      ],
+      "promptFa": "بخش میانی آیه ۳۰ را از بین کلمات زیر مرتب کنید.",
+      "stem": {
+        "verse": 30
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِنَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلشَّجَرَةِ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَـٰمُوسَىٰٓ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَنْ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "أَلْقِ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "مِن",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse",
+        "b7": "near_miss"
+      },
+      "explanationFa": "ترکیب «مِنَ ٱلشَّجَرَةِ أَن يَـٰمُوسَىٰٓ» در آیه ۳۰ آمده است؛ «وَأَنْ أَلْقِ» در ابتدای آیه ۳۱ است."
+    },
+    {
+      "id": "q_u_p389a_B_1206",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 30,
+      "targets": [
+        "vr:30"
+      ],
+      "promptFa": "انتهای آیه ۳۰ را به ترتیب بچینید.",
+      "stem": {
+        "verse": 30
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنِّىٓ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنَا",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهُ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَبُّ ٱلْعَـٰلَمِينَ",
+          "wordIdx": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّكَ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ ٱلْـَٔامِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۳۰ با عبارت توحیدی «إِنِّىٓ أَنَا ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p389a_B_1207",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 30,
+      "targets": [
+        "vr:30"
+      ],
+      "promptFa": "دو کلمه پایانی آیه ۳۰ کدام است؟",
+      "stem": {
+        "verse": 30,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 30,
+            "from": 18,
+            "to": 19
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_018",
+            "w28_031_019"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_029_026",
+            "w28_029_027"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_031_011",
+            "w28_031_012"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۳۰ با «رَبُّ ٱلْعَـٰلَمِينَ» تمام می‌شود."
+    },
+    {
+      "id": "q_u_p389a_B_1208",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 30,
+      "targets": [
+        "vr:30"
+      ],
+      "promptFa": "سه کلمه پایانی آیه ۳۰ کدام است؟",
+      "stem": {
+        "verse": 30,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 30,
+            "from": 17,
+            "to": 19
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_017",
+            "w28_031_018",
+            "w28_031_019"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_029_023",
+            "w28_029_024",
+            "w28_029_025"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_029_016",
+            "w28_029_017",
+            "w28_029_018"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "کلمات پایانی آیه ۳۰ «ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ» هستند."
+    }
+  ],
+  "issues": []
+}

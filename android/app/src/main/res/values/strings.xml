@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">حفظ سوره قصص</string>
+    <string name="title_activity_main">حفظ سوره قصص</string>
+    <string name="package_name">com.quran.qasas</string>
+    <string name="custom_url_scheme">com.quran.qasas</string>
+</resources>

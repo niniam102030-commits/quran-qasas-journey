@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p393a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «آنچه به شما داده شده کالا و ابزار زندگی دنیا و زینت آن است، و آنچه نزد...»، آیه 60 را مرتب کن:",
+      "stem": {
+        "verse": 60
+      },
+      "bank": [
+        {
+          "id": "b2",
+          "ar": "ٱلْحَيَوٰةِ ٱلدُّنْيَا وَزِينَتُهَا ۚ وَمَا عِندَ",
+          "wordIdx": [
+            6,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهِ خَيْرٌۭ وَأَبْقَىٰٓ ۚ أَفَلَا تَعْقِلُونَ",
+          "wordIdx": [
+            11,
+            15
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "وَمَآ أُوتِيتُم مِّن شَىْءٍۢ فَمَتَـٰعُ",
+          "wordIdx": [
+            1,
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 60 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p393a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 60,
+      "targets": [
+        "vr:60"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 60 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 60,
+        "hiddenIdx": [
+          8
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَزِينَتُهَا ۚ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "8": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «وَزِينَتُهَا ۚ» در آیه 60 است."
+    }
+  ],
+  "issues": []
+}

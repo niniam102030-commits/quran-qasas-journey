@@ -1,0 +1,6 @@
+[#3 q_u_p388b_B_0703 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p388b_B_0704 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p388b_B_0705 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p388b_B_0706 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p388b_B_0707 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p388b_B_0708 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.

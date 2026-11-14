@@ -1,0 +1,40 @@
+[#2 q_u_p389b_A_1802 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرَّهْبِ ۖ
+[#2 q_u_p389b_A_1802 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: وَمَلَإِي۟هِۦٓ ۚ
+[#3 q_u_p389b_A_1803 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p389b_A_1806 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p389b_A_1807 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p389b_A_1808 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p389b_A_1809 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 32 برابر نیست.
+[#10 q_u_p389b_A_1810 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 32 برابر نیست.
+[#11 q_u_p389b_A_1811 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p389b_A_1812 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p389b_A_1814 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#14 q_u_p389b_A_1814 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#15 q_u_p389b_A_1815 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p389b_A_1818 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p389b_A_1819 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p389b_A_1820 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p389b_A_1821 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 33 برابر نیست.
+[#22 q_u_p389b_A_1822 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 33 برابر نیست.
+[#23 q_u_p389b_A_1823 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p389b_A_1824 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#26 q_u_p389b_A_1826 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: يُصَدِّقُنِىٓ ۖ
+[#27 q_u_p389b_A_1827 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#30 q_u_p389b_A_1830 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p389b_A_1831 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p389b_A_1832 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p389b_A_1833 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 34 برابر نیست.
+[#34 q_u_p389b_A_1834 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 34 برابر نیست.
+[#35 q_u_p389b_A_1835 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p389b_A_1836 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#37 q_u_p389b_A_1837 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: إِلَيْكُمَا ۚ
+[#39 q_u_p389b_A_1839 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#40 q_u_p389b_A_1840 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#41 q_u_p389b_A_1841 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#42 q_u_p389b_A_1842 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#43 q_u_p389b_A_1843 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#44 q_u_p389b_A_1844 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#45 q_u_p389b_A_1845 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 35 برابر نیست.
+[#46 q_u_p389b_A_1846 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 35 برابر نیست.
+[#47 q_u_p389b_A_1847 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#48 q_u_p389b_A_1848 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

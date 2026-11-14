@@ -1,0 +1,91 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "C",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p392a_C_0001",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:51"
+      ],
+      "promptFa": "بلافاصله پس از آیه 51 سوره قصص («۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ لَعَلّ...»)، کدام آیه قرار دارد؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟ فِي ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه 52 سوره قصص بلافاصله پس از آیه 51 قرار دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0002",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "آیه مبارکه «۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ لَعَلَّهُمْ يَتَذَكَّرُونَ»، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 51
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 50
+        },
+        {
+          "id": "o4",
+          "num": 53
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه، آیه شماره 51 از سوره مبارکه قصص است."
+    }
+  ],
+  "issues": []
+}

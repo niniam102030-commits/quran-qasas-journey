@@ -1,0 +1,951 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A7",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390a_A_1001",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "معنای «أَطَّلِعُ» چیست؟",
+      "stem": {
+        "wordId": "w28_038_020",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آتش بیفروزم"
+        },
+        {
+          "id": "o2",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "o3",
+          "fa": "برجی بسازم"
+        },
+        {
+          "id": "o4",
+          "fa": "گمان ببرم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ط ل ع» است و با «طلوع» هم‌ریشه است: بالا آمدن و آگاه شدن."
+    },
+    {
+      "id": "q_u_p390a_A_1002",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "کدام معنا برای «أَطَّلِعُ» درست است؟",
+      "stem": {
+        "wordId": "w28_038_020",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طلوع کنم و بتابم"
+        },
+        {
+          "id": "o2",
+          "fa": "او را بپندارم"
+        },
+        {
+          "id": "o3",
+          "fa": "برایم بر پا کنم"
+        },
+        {
+          "id": "o4",
+          "fa": "بالا روم و آگاهی و اطلاع یابم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "با «طلوع» هم‌ریشه است، اما اینجا یعنی بالا رفتن برای آگاهی و اطلاع یافتن، نه تابیدن."
+    },
+    {
+      "id": "q_u_p390a_A_1003",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "در این آیه «أَطَّلِعُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_038_020",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "o2",
+          "fa": "بدانم که او دروغگوست"
+        },
+        {
+          "id": "o3",
+          "fa": "او را بشناسم"
+        },
+        {
+          "id": "o4",
+          "fa": "به او ایمان آورم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "فرعون می‌گوید شاید بر معبود موسی «آگاه شوم»؛ ریشه‌ی «ط ل ع»."
+    },
+    {
+      "id": "q_u_p390a_A_1004",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "با توجه به آیه، «أَطَّلِعُ» به کدام معناست؟",
+      "stem": {
+        "wordId": "w28_038_020",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر آن آتش بیفروزم"
+        },
+        {
+          "id": "o2",
+          "fa": "طلوع کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "بالا روم و آگاهی و اطلاع یابم"
+        },
+        {
+          "id": "o4",
+          "fa": "برایم برجی بلند بسازم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "با «طلوع» هم‌ریشه است ولی در این آیه یعنی بالا رفتن و آگاهی یافتن."
+    },
+    {
+      "id": "q_u_p390a_A_1005",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "معنای «لَأَظُنُّهُۥ» چیست؟",
+      "stem": {
+        "wordId": "w28_038_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "او را می‌شناسم"
+        },
+        {
+          "id": "o2",
+          "fa": "او را می‌فرستم"
+        },
+        {
+          "id": "o3",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "o4",
+          "fa": "یقین دارم او را"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ظ ن ن» است؛ «ظن» یعنی گمان و پنداشتن، نه یقین."
+    },
+    {
+      "id": "q_u_p390a_A_1006",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "کدام معنا برای «لَأَظُنُّهُۥ» درست است؟",
+      "stem": {
+        "wordId": "w28_038_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "او را گمان می‌کنم"
+        },
+        {
+          "id": "o2",
+          "fa": "او را آگاه می‌کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "به او اطمینان دارم"
+        },
+        {
+          "id": "o4",
+          "fa": "او را می‌بینم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "از «ظ ن ن» است و به معنای گمان کردن است؛ با یقین فرق دارد."
+    },
+    {
+      "id": "q_u_p390a_A_1007",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "در این آیه «لَأَظُنُّهُۥ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_038_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "او را نمی‌شناسم"
+        },
+        {
+          "id": "o2",
+          "fa": "او را رها می‌کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "او را می‌بینم"
+        },
+        {
+          "id": "o4",
+          "fa": "او را می‌پندارم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "فرعون می‌گوید او را از دروغگویان «می‌پندارم»؛ ریشه‌ی «ظ ن ن»."
+    },
+    {
+      "id": "q_u_p390a_A_1008",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "با توجه به آیه، «لَأَظُنُّهُۥ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_038_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "یقین دارم که او"
+        },
+        {
+          "id": "o2",
+          "fa": "او را گمان می‌کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "او را از آن خود می‌دانم"
+        },
+        {
+          "id": "o4",
+          "fa": "او را بالا می‌برم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ظن» در اینجا گمان است، نه یقین؛ ریشه‌ی «ظ ن ن»."
+    },
+    {
+      "id": "q_u_p390a_A_1009",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «آگاه شوم» است؟",
+      "stem": {
+        "fa": "آگاه شوم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلِمْتُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«أَطَّلِعُ» از «ط ل ع» است و یعنی آگاه شوم؛ «عَلِمْتُ» یعنی شناختم."
+    },
+    {
+      "id": "q_u_p390a_A_1010",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "کدام کلمه یعنی «بالا روم و آگاهی و اطلاع یابم»؟",
+      "stem": {
+        "fa": "بالا روم و آگاهی و اطلاع یابم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o2",
+          "ar": "لَّعَلِّىٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَىٰٓ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَطَّلِعُ» با «طلوع» هم‌ریشه است: بالا آمدن و آگاه شدن."
+    },
+    {
+      "id": "q_u_p390a_A_1011",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020"
+      ],
+      "promptFa": "برای «اطلاع یابم» کدام کلمه‌ی عربی درست است؟",
+      "stem": {
+        "fa": "اطلاع یابم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَلِمْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَطَّلِعُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أَطَّلِعُ» یعنی آگاهی و اطلاع یابم؛ ریشه‌ی «ط ل ع»."
+    },
+    {
+      "id": "q_u_p390a_A_1012",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «او را می‌پندارم» است؟",
+      "stem": {
+        "fa": "او را می‌پندارم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "عَلِمْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَأَوْقِدْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَأَظُنُّهُۥ» از «ظ ن ن» است: او را گمان می‌کنم."
+    },
+    {
+      "id": "q_u_p390a_A_1013",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "کدام کلمه یعنی «او را گمان می‌کنم»؟",
+      "stem": {
+        "fa": "او را گمان می‌کنم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o3",
+          "ar": "وَإِنِّى"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلِمْتُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ظن» به معنای گمان است و «لَأَظُنُّهُۥ» یعنی او را گمان می‌کنم."
+    },
+    {
+      "id": "q_u_p390a_A_1014",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_025"
+      ],
+      "promptFa": "برای «من او را می‌پندارم» کدام کلمه‌ی عربی (در آیه) درست است؟",
+      "stem": {
+        "fa": "من او را می‌پندارم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَلِمْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَأَظُنُّهُۥ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لَأَظُنُّهُۥ» از ریشه‌ی «ظ ن ن» و به معنای گمان بردن است، نه دانستن."
+    },
+    {
+      "id": "q_u_p390a_A_1015",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020",
+        "w:w28_038_025"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَأَوْقِدْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گِل"
+        },
+        {
+          "id": "r2",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "r3",
+          "fa": "آتش بیفروز"
+        },
+        {
+          "id": "r4",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "r5",
+          "fa": "برج"
+        },
+        {
+          "id": "r6",
+          "fa": "دروغگویان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أَطَّلِعُ» از «ط ل ع» و «لَأَظُنُّهُۥ» از «ظ ن ن» است."
+    },
+    {
+      "id": "q_u_p390a_A_1016",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020",
+        "w:w28_038_025"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِلَـٰهٍ"
+        },
+        {
+          "id": "l5",
+          "ar": "عَلِمْتُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "معبود"
+        },
+        {
+          "id": "r2",
+          "fa": "شناختم"
+        },
+        {
+          "id": "r3",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "r4",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "r5",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "r6",
+          "fa": "برج"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«عَلِمْتُ» دانستن و شناختن است، ولی «لَأَظُنُّهُۥ» گمان و پنداشتن."
+    },
+    {
+      "id": "q_u_p390a_A_1017",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020",
+        "w:w28_038_025"
+      ],
+      "promptFa": "جفت‌های درست را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "غَيْرِى"
+        },
+        {
+          "id": "l2",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلطِّينِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "او را می‌پندارم"
+        },
+        {
+          "id": "r2",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "r3",
+          "fa": "گِل"
+        },
+        {
+          "id": "r4",
+          "fa": "جز من"
+        },
+        {
+          "id": "r5",
+          "fa": "آگاه شوم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«أَطَّلِعُ» یعنی آگاه شوم و «لَأَظُنُّهُۥ» یعنی او را می‌پندارم."
+    },
+    {
+      "id": "q_u_p390a_A_1018",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_020",
+        "w:w28_038_025"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "l2",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برج"
+        },
+        {
+          "id": "r2",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "r3",
+          "fa": "بساز"
+        },
+        {
+          "id": "r4",
+          "fa": "گِل"
+        },
+        {
+          "id": "r5",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "r6",
+          "fa": "او را می‌پندارم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "«فَٱجْعَل» یعنی بساز؛ «أَطَّلِعُ» یعنی آگاه شوم."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها کلمه‌ی مرور از واحدهای قبلی نیامد."
+  ]
+}

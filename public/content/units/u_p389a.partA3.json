@@ -1,0 +1,1338 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A3",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "معنای «ٱمْكُثُوٓا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_029_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بشتابید"
+        },
+        {
+          "id": "o2",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "برخیزید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ٱمْكُثُوٓا۟» فعل امر جمع از ریشه‌ی «م ك ث» است، یعنی بمانید و درنگ کنید."
+    },
+    {
+      "id": "q_u_p389a_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "«ٱمْكُثُوٓا۟» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_029_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رهسپار شوید"
+        },
+        {
+          "id": "o2",
+          "fa": "خبر بیاورید"
+        },
+        {
+          "id": "o3",
+          "fa": "آتش بیفروزید"
+        },
+        {
+          "id": "o4",
+          "fa": "درنگ کنید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «م ك ث» به معنای ماندن و توقف است؛ موسی به خانواده‌اش می‌گوید همان‌جا بمانند."
+    },
+    {
+      "id": "q_u_p389a_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "در این آیه، «ٱمْكُثُوٓا۟» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_029_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "به پایان برید"
+        },
+        {
+          "id": "o3",
+          "fa": "بگریزید"
+        },
+        {
+          "id": "o4",
+          "fa": "گرم شوید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "موسی پیش از رفتن به‌سوی آتش به خانواده‌اش می‌گوید «ٱمْكُثُوٓا۟»: درنگ کنید. ریشه‌اش «م ك ث» است."
+    },
+    {
+      "id": "q_u_p389a_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "با توجه به آیه، «ٱمْكُثُوٓا۟» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_029_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آتشی ببینید"
+        },
+        {
+          "id": "o2",
+          "fa": "پاره‌ای بیاورید"
+        },
+        {
+          "id": "o3",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "o4",
+          "fa": "با من بیایید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ٱمْكُثُوٓا۟» امر جمع و به معنای «بمانید» است، نه همراهی. ریشه‌ی آن «م ك ث» است."
+    },
+    {
+      "id": "q_u_p389a_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "معنای «ءَانَسْتُ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "انس گرفتم"
+        },
+        {
+          "id": "o2",
+          "fa": "دیدم"
+        },
+        {
+          "id": "o3",
+          "fa": "آوردم"
+        },
+        {
+          "id": "o4",
+          "fa": "شنیدم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ءَانَسْتُ» از ریشه‌ی «أ ن س» یعنی دیدم (و به آن دل‌گرم شدم). «انس گرفتم» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "کدام گزینه معنای «ءَانَسْتُ» است؟",
+      "stem": {
+        "wordId": "w28_029_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رسیدم"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌آورم"
+        },
+        {
+          "id": "o3",
+          "fa": "با آن انس گرفتم"
+        },
+        {
+          "id": "o4",
+          "fa": "دیدم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "فعل «آنس» در صیغه‌ی متکلم یعنی دیدم. نباید آن را با «انس گرفتن» فارسی یکی دانست."
+    },
+    {
+      "id": "q_u_p389a_A_0307",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "در این آیه، «ءَانَسْتُ» به چه معنا است؟",
+      "stem": {
+        "wordId": "w28_029_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "انس گرفتم"
+        },
+        {
+          "id": "o2",
+          "fa": "گرم شدم"
+        },
+        {
+          "id": "o3",
+          "fa": "دیدم"
+        },
+        {
+          "id": "o4",
+          "fa": "ماندم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "موسی می‌گوید «إِنِّىٓ ءَانَسْتُ نَارًۭا»: من آتشی دیدم. ریشه‌ی «أ ن س» است."
+    },
+    {
+      "id": "q_u_p389a_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "با توجه به آیه، «ءَانَسْتُ» چه می‌گوید؟",
+      "stem": {
+        "wordId": "w28_029_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دیدم"
+        },
+        {
+          "id": "o2",
+          "fa": "آوردم"
+        },
+        {
+          "id": "o3",
+          "fa": "درنگ کردم"
+        },
+        {
+          "id": "o4",
+          "fa": "انس گرفتم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«ءَانَسْتُ» با مفعول «نَارًۭا» یعنی آتشی دیدم. «ءَانَسَ» در آیه همین فعل برای سوم‌شخص است."
+    },
+    {
+      "id": "q_u_p389a_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "معنای «جَذْوَةٍۢ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_023",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "o2",
+          "fa": "خبری"
+        },
+        {
+          "id": "o3",
+          "fa": "آتشی"
+        },
+        {
+          "id": "o4",
+          "fa": "مدتی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«جَذْوَةٍۢ» از ریشه‌ی «ج ذ و» یعنی پاره‌ای افروخته از آتش."
+    },
+    {
+      "id": "q_u_p389a_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "«جَذْوَةٍۢ» یعنی کدام؟",
+      "stem": {
+        "wordId": "w28_029_023",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آتشی"
+        },
+        {
+          "id": "o2",
+          "fa": "گرم شدن"
+        },
+        {
+          "id": "o3",
+          "fa": "خبری"
+        },
+        {
+          "id": "o4",
+          "fa": "پاره‌ای افروخته، شعله"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جَذْوَةٍۢ» پاره‌ی افروخته‌ی آتش است که برای گرم شدن می‌آورند، نه خود آتش به‌صورت کلی."
+    },
+    {
+      "id": "q_u_p389a_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "در این آیه، «جَذْوَةٍۢ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_029_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خبری"
+        },
+        {
+          "id": "o2",
+          "fa": "جانب"
+        },
+        {
+          "id": "o3",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "o4",
+          "fa": "خانواده‌ای"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "موسی می‌گوید یا «بِخَبَرٍ» (خبری) می‌آورم یا «جَذْوَةٍۢ مِّنَ ٱلنَّارِ»، یعنی پاره‌ای از آتش."
+    },
+    {
+      "id": "q_u_p389a_A_0312",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "با توجه به آیه، «جَذْوَةٍۢ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آتشی"
+        },
+        {
+          "id": "o2",
+          "fa": "پاره‌ای افروخته از آتش"
+        },
+        {
+          "id": "o3",
+          "fa": "مدت"
+        },
+        {
+          "id": "o4",
+          "fa": "خبر"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جَذْوَةٍۢ» با «مِّنَ ٱلنَّارِ» آمده و یعنی پاره‌ای از آتش. هدف از آن گرم شدن است."
+    },
+    {
+      "id": "q_u_p389a_A_0313",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «درنگ کنید» است؟",
+      "stem": {
+        "fa": "درنگ کنید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَصْطَلُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«درنگ کنید» همان «ٱمْكُثُوٓا۟» از ریشه‌ی «م ك ث» است."
+    },
+    {
+      "id": "q_u_p389a_A_0314",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "معادل عربی «بمانید، توقف کنید» کدام است؟",
+      "stem": {
+        "fa": "بمانید، توقف کنید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَاتِيكُم"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱمْكُثُوٓا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱمْكُثُوٓا۟» فعل امر جمع از «م ك ث» است و یعنی بمانید."
+    },
+    {
+      "id": "q_u_p389a_A_0315",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014"
+      ],
+      "promptFa": "کدام کلمه‌ی آیه یعنی «همین‌جا بمانید» (فعل امر جمع)؟",
+      "stem": {
+        "fa": "همین‌جا بمانید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنِّىٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَانَسْتُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل امر جمع برای ماندن، «ٱمْكُثُوٓا۟» است که موسی به خانواده‌اش می‌گوید."
+    },
+    {
+      "id": "q_u_p389a_A_0316",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «دیدم» است؟",
+      "stem": {
+        "fa": "دیدم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَاتِيكُم"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَسَارَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ءَانَسْتُ» از ریشه‌ی «أ ن س» یعنی دیدم."
+    },
+    {
+      "id": "q_u_p389a_A_0317",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "کدام کلمه یعنی «من دیدم» (متکلم، نه سوم‌شخص)؟",
+      "stem": {
+        "fa": "من دیدم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَاتِيكُم"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱمْكُثُوٓا۟"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ءَانَسْتُ» صیغه‌ی متکلم است (دیدم) و «ءَانَسَ» صیغه‌ی سوم‌شخص (دید)."
+    },
+    {
+      "id": "q_u_p389a_A_0318",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_016"
+      ],
+      "promptFa": "فعلی از ریشه‌ی «أ ن س» با معنای «دیدم (و به آن دل‌گرم شدم)» کدام است؟",
+      "stem": {
+        "fa": "دیدم (و به آن دل‌گرم شدم)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَضَىٰ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ءَانَسْتُ» یعنی دیدم و در آن دل‌گرمی هست؛ با «انس گرفتن» فارسی فرق دارد."
+    },
+    {
+      "id": "q_u_p389a_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پاره‌ای» (از آتش) است؟",
+      "stem": {
+        "fa": "پاره‌ای"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِخَبَرٍ"
+        },
+        {
+          "id": "o2",
+          "ar": "نَارًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلنَّارِ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَذْوَةٍۢ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جَذْوَةٍۢ» از ریشه‌ی «ج ذ و» یعنی پاره‌ای از آتش."
+    },
+    {
+      "id": "q_u_p389a_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "معادل عربی «پاره‌ای افروخته، شعله» کدام است؟",
+      "stem": {
+        "fa": "پاره‌ای افروخته، شعله"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَانِبِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلطُّورِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«جَذْوَةٍۢ» شعله یا پاره‌ی افروخته است که برای گرم شدن می‌آورند."
+    },
+    {
+      "id": "q_u_p389a_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_023"
+      ],
+      "promptFa": "کدام کلمه یعنی «پاره‌ای آتش که برای گرم شدن می‌آورند»؟",
+      "stem": {
+        "fa": "پاره‌ای آتش که برای گرم شدن می‌آورند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "مِّنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَذْوَةٍۢ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَصْطَلُونَ» فعل گرم شدن است، ولی خودِ پاره‌ی آتش «جَذْوَةٍۢ» نام دارد."
+    },
+    {
+      "id": "q_u_p389a_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014",
+        "w:w28_029_016",
+        "w:w28_029_023"
+      ],
+      "promptFa": "هر کلمه را با معنای آن جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَصْطَلُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r2",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r3",
+          "fa": "شتافت"
+        },
+        {
+          "id": "r4",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r5",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r6",
+          "fa": "دیدم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "درنگ کنید، دیدم و پاره‌ای سه کلمه‌ی سخت‌اند؛ «قَضَىٰ» و «تَصْطَلُونَ» برای مرور آمده‌اند."
+    },
+    {
+      "id": "q_u_p389a_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014",
+        "w:w28_029_016",
+        "w:w28_029_023"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "l4",
+          "ar": "بِأَهْلِهِۦٓ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱمْكُثُوٓا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r2",
+          "fa": "با خانواده‌اش"
+        },
+        {
+          "id": "r3",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r4",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r5",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r6",
+          "fa": "انس گرفتم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«انس گرفتم» دوست فریبنده برای «ءَانَسْتُ» است؛ معنای درست «دیدم» است."
+    },
+    {
+      "id": "q_u_p389a_A_0324",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014",
+        "w:w28_029_016",
+        "w:w28_029_023"
+      ],
+      "promptFa": "جفت‌های درست عربی و فارسی را بسازید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلطُّورِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "بِخَبَرٍ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "l5",
+          "ar": "ءَانَسْتُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r2",
+          "fa": "خبری"
+        },
+        {
+          "id": "r3",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r4",
+          "fa": "طور"
+        },
+        {
+          "id": "r5",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r6",
+          "fa": "آتشی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«بِخَبَرٍ» یعنی خبری و «جَذْوَةٍۢ» یعنی پاره‌ای؛ این دو در آیه کنار هم با «أَوْ» آمده‌اند."
+    },
+    {
+      "id": "q_u_p389a_A_0325",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014",
+        "w:w28_029_016",
+        "w:w28_029_023"
+      ],
+      "promptFa": "هر کلمه را به معنای درست آن در آیه برسانید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِخَبَرٍ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "جَذْوَةٍۢ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r2",
+          "fa": "خبری"
+        },
+        {
+          "id": "r3",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r4",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r5",
+          "fa": "درنگ کنید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "هر سه کلمه‌ی سخت یعنی «درنگ کنید»، «دیدم» و «پاره‌ای» را به معنای آیه‌ای‌شان وصل کنید."
+    },
+    {
+      "id": "q_u_p389a_A_0326",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 7,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_014",
+        "w:w28_029_016",
+        "w:w28_029_023"
+      ],
+      "promptFa": "کلمات سخت و مرتبط با آن‌ها را به معنا وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ءَانَسْتُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r2",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r3",
+          "fa": "هیزم"
+        },
+        {
+          "id": "r4",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r5",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r6",
+          "fa": "پاره‌ای"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "«تَصْطَلُونَ» یعنی گرم شوید و «جَذْوَةٍۢ» یعنی پاره‌ای از آتش؛ این دو هم‌سیاق‌اند اما یکی فعل و دیگری اسم است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمات مرور از همان آیه‌ی ۲۹ و فقط از fa ورودی گرفته شد."
+  ]
+}

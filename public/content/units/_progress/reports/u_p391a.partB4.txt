@@ -1,0 +1,8 @@
+[#2 q_u_p391a_B_0602 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 45 را نمی‌پوشاند.
+[#3 q_u_p391a_B_0603 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p391a_B_0603 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 45 را نمی‌پوشاند.
+[#5 q_u_p391a_B_0605 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p391a_B_0605 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 45 را نمی‌پوشاند.
+[#6 q_u_p391a_B_0606 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p391a_B_0606 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 45 را نمی‌پوشاند.
+[#8 q_u_p391a_B_0608 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.

@@ -1,0 +1,1296 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "C3",
+  "generatedBy": "Gemini 2.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p395a_C_0901",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:79",
+        "vr:80"
+      ],
+      "promptFa": "آیه بعد از این کدام است؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۹ درباره خروج قارون در زینت است و آیه ۸۰ (بعدی) واکنش عالمان را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p395a_C_0902",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:79",
+        "vr:80"
+      ],
+      "promptFa": "بخش ابتدایی آیه بعد را بسازید.",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ ٱلَّذِينَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أُوتُوا۟ ٱلْعِلْمَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيْلَكُمْ ثَوَابُ ٱللَّهِ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "خَيْرٌۭ لِّمَنْ ءَامَنَ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أُوتِيتُهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "پس از آیه ۷۹، مؤمنان آگاه به قارون‌صفتان هشدار دادند."
+    },
+    {
+      "id": "q_u_p395a_C_0903",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:79",
+        "vr:80"
+      ],
+      "promptFa": "بخش پایانی آیه بعد را بسازید.",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَعَمِلَ صَـٰلِحًۭا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَا يُلَقَّىٰهَآ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِلَّا ٱلصَّـٰبِرُونَ",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه ۸۰ به پاداش الهی برای صابران اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_C_0904",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78",
+        "vr:78"
+      ],
+      "promptFa": "آیه قبل از این کدام است؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۸ ادعای قارون را بیان می‌کند و آیه ۷۹ خروج متکبرانه او را در پی آن نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p395a_C_0905",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78",
+        "vr:78"
+      ],
+      "promptFa": "بخش ابتدایی آیه قبل را بسازید.",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنَّمَآ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أُوتِيتُهُۥ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَلَىٰ عِلْمٍ عِندِىٓ ۚ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أُوتِىَ قَـٰرُونُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "قبل از آیه ۷۹ (خروج قارون)، ادعای او مبنی بر ثروت اندوزی با دانش خودش (آیه ۷۸) مطرح شده است."
+    },
+    {
+      "id": "q_u_p395a_C_0906",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 79,
+      "targets": [
+        "sq:78",
+        "vr:78"
+      ],
+      "promptFa": "بخش میانی آیه قبل را بسازید.",
+      "stem": {
+        "verse": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَوَلَمْ يَعْلَمْ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنَّ ٱللَّهَ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَدْ أَهْلَكَ مِن قَبْلِهِۦ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِنَ ٱلْقُرُونِ",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ ٱلْمُنتَصِرِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "خداوند در آیه ۷۸ به نابودی اقوامی قوی‌تر از او اشاره می‌کند."
+    },
+    {
+      "id": "q_u_p395a_C_0907",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "این آیه شماره چند است؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 78
+        },
+        {
+          "id": "o2",
+          "num": 79
+        },
+        {
+          "id": "o3",
+          "num": 80
+        },
+        {
+          "id": "o4",
+          "num": 81
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "خروج متکبرانه قارون در آیه ۷۹ سوره قصص آمده است."
+    },
+    {
+      "id": "q_u_p395a_C_0908",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 79
+        },
+        {
+          "id": "o2",
+          "num": 69
+        },
+        {
+          "id": "o3",
+          "num": 89
+        },
+        {
+          "id": "o4",
+          "num": 77
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شماره ۷۹ سوره قصص است."
+    },
+    {
+      "id": "q_u_p395a_C_0909",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "شماره دقیق این آیه کدام است؟",
+      "stem": {
+        "verse": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 76
+        },
+        {
+          "id": "o2",
+          "num": 78
+        },
+        {
+          "id": "o3",
+          "num": 79
+        },
+        {
+          "id": "o4",
+          "num": 80
+        },
+        {
+          "id": "o5",
+          "num": 82
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه ۷۹."
+    },
+    {
+      "id": "q_u_p395a_C_0910",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "آیه ۷۹ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۹ با «فَخَرَجَ عَلَىٰ قَوْمِهِۦ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p395a_C_0911",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "ابتدای آیه ۷۹ کدام است؟",
+      "stem": {
+        "num": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَسَفْنَا بِهِۦ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۹."
+    },
+    {
+      "id": "q_u_p395a_C_0912",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "آیه ۷۹ با چه کلماتی شروع می‌شود؟",
+      "stem": {
+        "num": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "شروع آیه ۷۹ با خروج قارون است: فَخَرَجَ عَلَىٰ قَوْمِهِۦ."
+    },
+    {
+      "id": "q_u_p395a_C_0913",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 79,
+      "targets": [
+        "vr:79",
+        "vn:79"
+      ],
+      "promptFa": "متن آیه ۷۹ را به ترتیب بچینید.",
+      "stem": {
+        "num": 79
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالَ ٱلَّذِينَ يُرِيدُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَـٰلَيْتَ لَنَا مِثْلَ مَآ أُوتِىَ قَـٰرُونُ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ لَذُو حَظٍّ عَظِيمٍۢ",
+          "wordIdx": [
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب قطعات آیه ۷۹ به این شکل است."
+    },
+    {
+      "id": "q_u_p395a_C_0914",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 79,
+      "targets": [
+        "vn:79"
+      ],
+      "promptFa": "عبارت آغازین آیه ۷۹ چیست؟",
+      "stem": {
+        "num": 79
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۹."
+    },
+    {
+      "id": "q_u_p395a_C_0915",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "این آیه شماره چند است؟",
+      "stem": {
+        "verse": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 80
+        },
+        {
+          "id": "o2",
+          "num": 79
+        },
+        {
+          "id": "o3",
+          "num": 81
+        },
+        {
+          "id": "o4",
+          "num": 78
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شماره ۸۰ است."
+    },
+    {
+      "id": "q_u_p395a_C_0916",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "شماره این آیه کدام است؟",
+      "stem": {
+        "verse": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 70
+        },
+        {
+          "id": "o2",
+          "num": 90
+        },
+        {
+          "id": "o3",
+          "num": 80
+        },
+        {
+          "id": "o4",
+          "num": 82
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0917",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "شماره دقیق این آیه چیست؟",
+      "stem": {
+        "verse": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 79
+        },
+        {
+          "id": "o2",
+          "num": 78
+        },
+        {
+          "id": "o3",
+          "num": 81
+        },
+        {
+          "id": "o4",
+          "num": 82
+        },
+        {
+          "id": "o5",
+          "num": 80
+        }
+      ],
+      "answer": "o5",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0918",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "آیه ۸۰ با کدام بخش آغاز می‌شود؟",
+      "stem": {
+        "num": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۰ با هشدار عالمان مؤمن «وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p395a_C_0919",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "ابتدای آیه ۸۰ چیست؟",
+      "stem": {
+        "num": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0920",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "شروع آیه ۸۰ کدام است؟",
+      "stem": {
+        "num": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَخَسَفْنَا بِهِۦ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "شروع آیه ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0921",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 80,
+      "targets": [
+        "vr:80",
+        "vn:80"
+      ],
+      "promptFa": "متن آیه ۸۰ را کامل بچینید.",
+      "stem": {
+        "num": 80
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ثَوَابُ ٱللَّهِ خَيْرٌۭ لِّمَنْ ءَامَنَ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَعَمِلَ صَـٰلِحًۭا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَا يُلَقَّىٰهَآ إِلَّا ٱلصَّـٰبِرُونَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب قطعات آیه ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0922",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 80,
+      "targets": [
+        "vn:80"
+      ],
+      "promptFa": "عبارت ابتدایی آیه ۸۰ کدام است؟",
+      "stem": {
+        "num": 80
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۰."
+    },
+    {
+      "id": "q_u_p395a_C_0923",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p395a"
+      ],
+      "promptFa": "این آیات را به ترتیب در پی هم بچینید.",
+      "stem": {
+        "verses": [
+          78,
+          79,
+          80
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 78,
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ ...",
+          "verse": 78
+        },
+        {
+          "id": "b2",
+          "num": 79,
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ ...",
+          "verse": 79
+        },
+        {
+          "id": "b3",
+          "num": 80,
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ ...",
+          "verse": 80
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ابتدا ادعای قارون (۷۸)، سپس خروج او در برابر قوم (۷۹) و در نهایت واکنش مؤمنان عالم (۸۰)."
+    },
+    {
+      "id": "q_u_p395a_C_0924",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p395a"
+      ],
+      "promptFa": "آیات را به ترتیب نزول مرتب کنید.",
+      "stem": {
+        "verses": [
+          79,
+          80,
+          81
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 79,
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ ...",
+          "verse": 79
+        },
+        {
+          "id": "b2",
+          "num": 80,
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ ...",
+          "verse": 80
+        },
+        {
+          "id": "b3",
+          "num": 81,
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ...",
+          "verse": 81
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پس از خروج با زینت (۷۹) و نصیحت عالمان (۸۰)، خداوند قارون را در زمین فرو برد (۸۱)."
+    },
+    {
+      "id": "q_u_p395a_C_0925",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p395a"
+      ],
+      "promptFa": "آیات این واحد را به ترتیب مرتب کنید.",
+      "stem": {
+        "verses": [
+          78,
+          79,
+          80
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 78,
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ ...",
+          "verse": 78
+        },
+        {
+          "id": "b2",
+          "num": 79,
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ ...",
+          "verse": 79
+        },
+        {
+          "id": "b3",
+          "num": 80,
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ ...",
+          "verse": 80
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب دقیق آیات این بخش."
+    },
+    {
+      "id": "q_u_p395a_C_0926",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:77",
+        "vn:78",
+        "vn:79",
+        "vn:80",
+        "vn:81"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 77
+        },
+        {
+          "id": "l2",
+          "num": 78
+        },
+        {
+          "id": "l3",
+          "num": 79
+        },
+        {
+          "id": "l4",
+          "num": 80
+        },
+        {
+          "id": "l5",
+          "num": 81
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ"
+        },
+        {
+          "id": "r2",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "r3",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ"
+        },
+        {
+          "id": "r5",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        },
+        {
+          "id": "r6",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق شماره آیات با ابتدای آن‌ها."
+    }
+  ],
+  "issues": []
+}

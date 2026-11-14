@@ -1,0 +1,2226 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "A4",
+  "generatedBy": "Gemini",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p395a_A_0901",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "معنای کلمه «يَـٰلَيْتَ» چیست؟",
+      "stem": {
+        "wordId": "w28_079_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o2",
+          "fa": "حتماً"
+        },
+        {
+          "id": "o3",
+          "fa": "وای بر ما"
+        },
+        {
+          "id": "o4",
+          "fa": "شاید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«يَـٰلَيْتَ» حرف حسرت است و به معنای «ای کاش» می‌باشد."
+    },
+    {
+      "id": "q_u_p395a_A_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "معنای کلمه «يَـٰلَيْتَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_079_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مبادا"
+        },
+        {
+          "id": "o2",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعاً"
+        },
+        {
+          "id": "o4",
+          "fa": "چه بسا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این کلمه برای آرزوهای دست‌نیافتنی یا همراه با حسرت استفاده می‌شود."
+    },
+    {
+      "id": "q_u_p395a_A_0903",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "معنای «يَـٰلَيْتَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_079_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اگر"
+        },
+        {
+          "id": "o2",
+          "fa": "افسوس"
+        },
+        {
+          "id": "o3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o4",
+          "fa": "پس"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "در آیه، دنیاطلبان با حسرت می‌گویند: «ای کاش برای ما هم بود»."
+    },
+    {
+      "id": "q_u_p395a_A_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "باتوجه به آیه، «يَـٰلَيْتَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_079_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ای مردم"
+        },
+        {
+          "id": "o2",
+          "fa": "ای وای"
+        },
+        {
+          "id": "o3",
+          "fa": "بپرهیزید"
+        },
+        {
+          "id": "o4",
+          "fa": "ای کاش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«يا» حرف ندا و «لَيْتَ» برای تمنا است و با هم «ای کاش» معنا می‌دهند."
+    },
+    {
+      "id": "q_u_p395a_A_0905",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "معادل عربی «ای کاش» کدام کلمه است؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَعَلَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيْلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِثْلَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَـٰلَيْتَ» برای آرزو (ای کاش) و «لعلّ» برای امید (شاید) به کار می‌رود."
+    },
+    {
+      "id": "q_u_p395a_A_0906",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "کدام کلمه معنای «ای کاش» را می‌رساند؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَذُو"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّمَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «يَـٰلَيْتَ» ترکیب «يا» و «لَيْتَ» است به معنای ای کاش."
+    },
+    {
+      "id": "q_u_p395a_A_0907",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_011"
+      ],
+      "promptFa": "در آیه شریفه، برای بیان «ای کاش» از چه کلمه‌ای استفاده شده است؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَـٰلَيْتَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "حرف تمنی «لَيْتَ» همراه با حرف ندای «يا» آمده است."
+    },
+    {
+      "id": "q_u_p395a_A_0908",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "معنای «أُوتِىَ» چیست؟",
+      "stem": {
+        "wordId": "w28_079_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "داده اند"
+        },
+        {
+          "id": "o2",
+          "fa": "آمده است"
+        },
+        {
+          "id": "o3",
+          "fa": "گرفته اند"
+        },
+        {
+          "id": "o4",
+          "fa": "خواسته اند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مجهول «أُوتِىَ» از ریشه «أ ت ي» به معنای «داده شده است» یا «داده اند» می‌باشد."
+    },
+    {
+      "id": "q_u_p395a_A_0909",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "کلمه «أُوتِىَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_079_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آورده اند"
+        },
+        {
+          "id": "o2",
+          "fa": "رسیدند"
+        },
+        {
+          "id": "o3",
+          "fa": "داده اند"
+        },
+        {
+          "id": "o4",
+          "fa": "رها کردند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از باب افعال است و معنای اعطا و دادن دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0910",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "در آیه، «أُوتِىَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_079_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گرفت"
+        },
+        {
+          "id": "o2",
+          "fa": "داده اند"
+        },
+        {
+          "id": "o3",
+          "fa": "آمدند"
+        },
+        {
+          "id": "o4",
+          "fa": "بردند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "دنیاطلبان می‌گویند: مانند آنچه به قارون داده‌اند، برای ما هم بود."
+    },
+    {
+      "id": "q_u_p395a_A_0911",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "معنای فعل «أُوتِىَ» در این سیاق چیست؟",
+      "stem": {
+        "wordId": "w28_079_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بخشید"
+        },
+        {
+          "id": "o2",
+          "fa": "عطا می کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "بازگشتند"
+        },
+        {
+          "id": "o4",
+          "fa": "داده اند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "فعل مجهول است و به شکل «داده شده است» یا «داده‌اند» ترجمه می‌شود."
+    },
+    {
+      "id": "q_u_p395a_A_0912",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "کدام فعل معادل «داده اند / داده شده است» است؟",
+      "stem": {
+        "fa": "داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَخَذَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَآءَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«أُوتِىَ» فعل ماضی مجهول است و به اعطای نعمت اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0913",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "برای عبارت «داده اند (داده شده است)» در آیه، کدام کلمه آمده است؟",
+      "stem": {
+        "fa": "داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُرِيدُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُوتُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "عَمِلَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "در عبارت «مَآ أُوتِىَ قَـٰرُونُ» از فعل مفرد مجهول «أُوتِىَ» استفاده شده است."
+    },
+    {
+      "id": "q_u_p395a_A_0914",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_015"
+      ],
+      "promptFa": "معادل عربی «داده اند» چیست؟",
+      "stem": {
+        "fa": "داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَامَنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "o3",
+          "ar": "خَرَجَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُلَقَّىٰهَآ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه «أ ت ي» در باب افعال به معنای بخشیدن و دادن است."
+    },
+    {
+      "id": "q_u_p395a_A_0915",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "معنای کلمه «حَظٍّ» چیست؟",
+      "stem": {
+        "wordId": "w28_079_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شانس"
+        },
+        {
+          "id": "o2",
+          "fa": "گناه"
+        },
+        {
+          "id": "o3",
+          "fa": "بهره"
+        },
+        {
+          "id": "o4",
+          "fa": "ثواب"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«حَظّ» به معنای بهره و نصیب از چیزی است."
+    },
+    {
+      "id": "q_u_p395a_A_0916",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "ترجمه «حَظٍّ» کدام است؟",
+      "stem": {
+        "wordId": "w28_079_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عظمت"
+        },
+        {
+          "id": "o2",
+          "fa": "مال"
+        },
+        {
+          "id": "o3",
+          "fa": "عذاب"
+        },
+        {
+          "id": "o4",
+          "fa": "بهره"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "کلمه حظ در زبان قرآنی به معنای بهره، قسمت یا نصیب است."
+    },
+    {
+      "id": "q_u_p395a_A_0917",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "در این آیه، منظور از «حَظٍّ» چیست؟",
+      "stem": {
+        "wordId": "w28_079_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مقام"
+        },
+        {
+          "id": "o2",
+          "fa": "قسمت"
+        },
+        {
+          "id": "o3",
+          "fa": "بهره"
+        },
+        {
+          "id": "o4",
+          "fa": "کیفر"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "عبارت «لَذُو حَظٍّ عَظِيمٍۢ» یعنی قارون دارای بهره و نصیب بزرگی است."
+    },
+    {
+      "id": "q_u_p395a_A_0918",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "با توجه به آیه، «حَظٍّ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_079_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پایان"
+        },
+        {
+          "id": "o2",
+          "fa": "لذت"
+        },
+        {
+          "id": "o3",
+          "fa": "روزی"
+        },
+        {
+          "id": "o4",
+          "fa": "بهره"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "کلمه حظّ به ثروت و بهره فراوانی که به قارون داده شده بود اشاره می‌کند."
+    },
+    {
+      "id": "q_u_p395a_A_0919",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "معادل «بهره» در عربی کدام است؟",
+      "stem": {
+        "fa": "بهره"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ثَوَابُ"
+        },
+        {
+          "id": "o2",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "o3",
+          "ar": "زِينَتِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "خَيْرٌۭ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«حَظٍّ» به معنای بهره و نصیب است."
+    },
+    {
+      "id": "q_u_p395a_A_0920",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "کدام کلمه به معنای «نصیب و بهره» است؟",
+      "stem": {
+        "fa": "بهره"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلدُّنْيَا"
+        },
+        {
+          "id": "o3",
+          "ar": "عِلْمَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَوْمِهِۦ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در قرآن «حَظّ» بیشتر برای بهره‌های دنیوی یا نصیب افراد به کار می‌رود."
+    },
+    {
+      "id": "q_u_p395a_A_0921",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 79,
+      "targets": [
+        "w:w28_079_019"
+      ],
+      "promptFa": "کلمه عربی معادل «بهره» در آیات مورد نظر کدام است؟",
+      "stem": {
+        "fa": "بهره"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "صَـٰلِحًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْحَيَوٰةَ"
+        },
+        {
+          "id": "o3",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "o4",
+          "ar": "زِينَة"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "عبارت «ذو حَظّ» یعنی صاحب بهره."
+    },
+    {
+      "id": "q_u_p395a_A_0922",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "کلمه «وَيْلَكُمْ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_080_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خوشا به حالتان"
+        },
+        {
+          "id": "o2",
+          "fa": "وای بر آنان"
+        },
+        {
+          "id": "o3",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "o4",
+          "fa": "بدا به حال ما"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "«ویل» کلمه‌ای برای هشدار و انذار است و «کم» ضمیر مخاطب جمع (شما) می‌باشد."
+    },
+    {
+      "id": "q_u_p395a_A_0923",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "معنای دقیق «وَيْلَكُمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_080_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای شماست"
+        },
+        {
+          "id": "o2",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "o3",
+          "fa": "لعنت بر شما"
+        },
+        {
+          "id": "o4",
+          "fa": "وای بر تو"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "same_root"
+      },
+      "explanationFa": "این کلمه برای بیدار کردن مخاطب و هشدار درباره عاقبت کار استفاده می‌شود."
+    },
+    {
+      "id": "q_u_p395a_A_0924",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "در آیه شریفه، منظور از «وَيْلَكُمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_080_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "o2",
+          "fa": "وای بر ما"
+        },
+        {
+          "id": "o3",
+          "fa": "بهشت برای شما"
+        },
+        {
+          "id": "o4",
+          "fa": "بترسید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "عالمان به دنیاطلبان هشدار می‌دهند و می‌گویند: وای بر شما، پاداش الهی بهتر است."
+    },
+    {
+      "id": "q_u_p395a_A_0925",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "باتوجه به آیه، «وَيْلَكُمْ» چگونه ترجمه می‌شود؟",
+      "stem": {
+        "wordId": "w28_080_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عذاب بر شما"
+        },
+        {
+          "id": "o2",
+          "fa": "بدا به احوالتان"
+        },
+        {
+          "id": "o3",
+          "fa": "پاداش شما"
+        },
+        {
+          "id": "o4",
+          "fa": "وای بر شما"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ترجمه روان آن «وای بر شما» است که لحنی هشداردهنده دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0926",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "معادل عبارت «وای بر شما» کدام است؟",
+      "stem": {
+        "fa": "وای بر شما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَيْلَنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "طُوبَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلَيْكُمْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "false_friend",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«ویل» به معنای وای و «کم» ضمیر جمع مخاطب است."
+    },
+    {
+      "id": "q_u_p395a_A_0927",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "برای بیان هشدار «وای بر شما» چه کلمه‌ای در آیه آمده است؟",
+      "stem": {
+        "fa": "وای بر شما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَكُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "ثَوَابُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "دانشمندان بنی‌اسرائیل با کلمه «وَيْلَكُمْ» فریب‌خوردگان ثروت قارون را نصیحت کردند."
+    },
+    {
+      "id": "q_u_p395a_A_0928",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_005"
+      ],
+      "promptFa": "کدام کلمه معنای «وای بر شما» را می‌رساند؟",
+      "stem": {
+        "fa": "وای بر شما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَا"
+        },
+        {
+          "id": "o4",
+          "ar": "فِى"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «ویل» نماد هشدار و تذکر شدید است."
+    },
+    {
+      "id": "q_u_p395a_A_0929",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "معنای فعل «يُلَقَّىٰهَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_080_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "o2",
+          "fa": "می گویند"
+        },
+        {
+          "id": "o3",
+          "fa": "می گریزند"
+        },
+        {
+          "id": "o4",
+          "fa": "ملاقات می کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "same_root"
+      },
+      "explanationFa": "از ریشه «ل ق ي» در باب تفعیل است و اینجا در جمله منفی معنای «آن را درنمی‌یابند» یا «به آن نمی‌رسند» می‌دهد."
+    },
+    {
+      "id": "q_u_p395a_A_0930",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "«يُلَقَّىٰهَآ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_080_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رها می کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "o3",
+          "fa": "می پذیرند"
+        },
+        {
+          "id": "o4",
+          "fa": "می شنوند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "این فعل به دستیابی و رسیدن به پاداش و حقیقت الهی اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0931",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "در آیه، فعل «يُلَقَّىٰهَآ» چگونه معنا شده است؟",
+      "stem": {
+        "wordId": "w28_080_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "o2",
+          "fa": "برخورد می کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "پاداش می گیرند"
+        },
+        {
+          "id": "o4",
+          "fa": "ایمان می آورند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "همراه با حرف نفی قبلش (وَلَا) به معنای «در نمی یابند» ترجمه شده است."
+    },
+    {
+      "id": "q_u_p395a_A_0932",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "با توجه به عبارت «وَلَا يُلَقَّىٰهَآ إِلَّا ٱلصَّـٰبِرُونَ»، کلمه «يُلَقَّىٰهَآ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_080_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "القا می کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "صبر می کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "در می یابند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "یعنی این پاداش و ثواب الهی را کسی جز شکیبایان دریافت نمی‌کند و درنمی‌یابد."
+    },
+    {
+      "id": "q_u_p395a_A_0933",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "معادل عربی «در می یابند» در آیات مربوطه چیست؟",
+      "stem": {
+        "fa": "در می یابند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُرِيدُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُوتُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْمَلُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«يُلَقَّىٰهَآ» فعل مجهول است و به رسیدن و یافتن پاداش دلالت دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0934",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "کدام کلمه برای رساندن مفهوم «آن را درمی یابند» به کار رفته است؟",
+      "stem": {
+        "fa": "در می یابند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَصْبِرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُلْقُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَقُولُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "فعل «يُلَقّى» با ضمیر «ها» ترکیب شده و به معنای «آن را درمی‌یابند» است."
+    },
+    {
+      "id": "q_u_p395a_A_0935",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 80,
+      "targets": [
+        "w:w28_080_014"
+      ],
+      "promptFa": "معادل عبارت «در می یابند» کدام گزینه است؟",
+      "stem": {
+        "fa": "در می یابند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَامَنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "خَرَجَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُؤْتَوْنَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "same_root"
+      },
+      "explanationFa": "خداوند می‌فرماید حقیقت این پاداش را جز شکیبایان درنمی‌یابند."
+    },
+    {
+      "id": "q_u_p395a_A_0936",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_011",
+        "w:w28_079_015"
+      ],
+      "promptFa": "کلمات عربی را به معنای صحیحشان متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "l3",
+          "ar": "زِينَتِهِۦ"
+        },
+        {
+          "id": "l4",
+          "ar": "ثَوَابُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ءَامَنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r2",
+          "fa": "داده اند"
+        },
+        {
+          "id": "r3",
+          "fa": "زینت خود"
+        },
+        {
+          "id": "r4",
+          "fa": "پاداش"
+        },
+        {
+          "id": "r5",
+          "fa": "ایمان آورده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "شناخت لغات کلیدی، درک معنای حسرت دنیاطلبان و هشدار عالمان را آسان می‌کند."
+    },
+    {
+      "id": "q_u_p395a_A_0937",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_019",
+        "w:w28_080_005",
+        "w:w28_080_014"
+      ],
+      "promptFa": "هر کلمه را به ترجمه دقیق آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْعِلْمَ"
+        },
+        {
+          "id": "l5",
+          "ar": "صَـٰلِحًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بهره"
+        },
+        {
+          "id": "r2",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "r3",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "r4",
+          "fa": "دانش"
+        },
+        {
+          "id": "r5",
+          "fa": "شایسته"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "دقت به ریشه لغاتی مانند «حظّ» (بهره) و «ویل» (عذاب/وای) ضروری است."
+    },
+    {
+      "id": "q_u_p395a_A_0938",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_011",
+        "w:w28_079_019"
+      ],
+      "promptFa": "معانی کلمات زیر را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلصَّـٰبِرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُرِيدُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مِثْلَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r2",
+          "fa": "بهره"
+        },
+        {
+          "id": "r3",
+          "fa": "شکیبایان"
+        },
+        {
+          "id": "r4",
+          "fa": "خواهان"
+        },
+        {
+          "id": "r5",
+          "fa": "مانند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه دقیق کلمات، تفاوت نگاه دنیاپرستان و شکیبایان را نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p395a_A_0939",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_015",
+        "w:w28_080_005"
+      ],
+      "promptFa": "کلمات را به معادل فارسی آن‌ها متصل سازید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْحَيَوٰةَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلدُّنْيَا"
+        },
+        {
+          "id": "l5",
+          "ar": "خَرَجَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "r3",
+          "fa": "زندگی"
+        },
+        {
+          "id": "r4",
+          "fa": "دنیا"
+        },
+        {
+          "id": "r5",
+          "fa": "درآمد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«أُوتِىَ» فعل مجهول و «خَرَجَ» فعل معلوم است."
+    },
+    {
+      "id": "q_u_p395a_A_0940",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_011",
+        "w:w28_079_015",
+        "w:w28_079_019",
+        "w:w28_080_005",
+        "w:w28_080_014"
+      ],
+      "promptFa": "تمامی کلمات دشوار آیات را به ترجمه‌شان متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَيْلَكُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "r2",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r3",
+          "fa": "داده اند"
+        },
+        {
+          "id": "r4",
+          "fa": "بهره"
+        },
+        {
+          "id": "r5",
+          "fa": "وای بر شما"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "یادگیری این ۵ کلمه کلیدی، فهم پیام داستان قارون را کامل می‌کند."
+    },
+    {
+      "id": "q_u_p395a_A_0941",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_011",
+        "w:w28_079_015"
+      ],
+      "promptFa": "هر عبارت عربی را با ترجمه دقیق فارسی آن جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَوْمِهِۦ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱللَّهِ"
+        },
+        {
+          "id": "l5",
+          "ar": "خَيْرٌۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r2",
+          "fa": "داده اند"
+        },
+        {
+          "id": "r3",
+          "fa": "قومش"
+        },
+        {
+          "id": "r4",
+          "fa": "خدا"
+        },
+        {
+          "id": "r5",
+          "fa": "بهتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«يَـٰلَيْتَ» نشانگر آرزوی محال و «أُوتِىَ» نشان‌دهنده نعمت داده‌شده است."
+    },
+    {
+      "id": "q_u_p395a_A_0942",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_019",
+        "w:w28_080_005",
+        "w:w28_080_014"
+      ],
+      "promptFa": "کلمات کلیدی را با معنای درستشان مرتبط سازید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "زِينَتِهِۦ"
+        },
+        {
+          "id": "l5",
+          "ar": "ثَوَابُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بهره"
+        },
+        {
+          "id": "r2",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "r3",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "r4",
+          "fa": "زینت خود"
+        },
+        {
+          "id": "r5",
+          "fa": "پاداش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "تضاد بین پاداش حقیقی (ثواب) و بهره ظاهری دنیا (حَظّ) در این عبارات مشهود است."
+    },
+    {
+      "id": "q_u_p395a_A_0943",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_011",
+        "w:w28_079_019",
+        "w:w28_080_005"
+      ],
+      "promptFa": "لغات متناسب را به هم متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰلَيْتَ"
+        },
+        {
+          "id": "l2",
+          "ar": "حَظٍّ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَيْلَكُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْعِلْمَ"
+        },
+        {
+          "id": "l5",
+          "ar": "عَظِيمٍۢ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r2",
+          "fa": "بهره"
+        },
+        {
+          "id": "r3",
+          "fa": "وای بر شما"
+        },
+        {
+          "id": "r4",
+          "fa": "دانش"
+        },
+        {
+          "id": "r5",
+          "fa": "بزرگی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "مرور مجدد لغات سخت به تثبیت معنای آن‌ها در ذهن کمک می‌کند."
+    },
+    {
+      "id": "q_u_p395a_A_0944",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_079_015",
+        "w:w28_080_014"
+      ],
+      "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِىَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُلَقَّىٰهَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "صَـٰلِحًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَامَنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلصَّـٰبِرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "در می یابند"
+        },
+        {
+          "id": "r3",
+          "fa": "شایسته"
+        },
+        {
+          "id": "r4",
+          "fa": "ایمان آورده"
+        },
+        {
+          "id": "r5",
+          "fa": "شکیبایان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "فعل «أُوتِىَ» برای بهره‌های دنیوی قارون و «يُلَقَّىٰهَآ» برای دستیابی به پاداش آخرت آمده است."
+    }
+  ]
+}

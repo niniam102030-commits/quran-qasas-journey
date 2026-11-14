@@ -1,0 +1,642 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A",
+  "generatedBy": "claude",
+  "lexicon": [
+    {
+      "wordId": "w28_029_001",
+      "gloss": "چون",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_002",
+      "gloss": "به پایان برد",
+      "hard": true,
+      "meaningFa": "به پایان رساند، انجام داد",
+      "rootAr": "ق ض ي",
+      "trapFa": "قضاوت کرد",
+      "tipFa": "«قضى» اینجا یعنی مدتی را تمام کرد، نه داوری کردن.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_029_003",
+      "gloss": "موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_004",
+      "gloss": "آن مدت",
+      "hard": true,
+      "meaningFa": "مدت و سررسید معیّن",
+      "rootAr": "أ ج ل",
+      "trapFa": "اجل به معنای مرگ",
+      "tipFa": "«الأجل» اینجا همان مدت قراردادی است، نه زمان مرگ.",
+      "segments": [
+        {
+          "text": "ال",
+          "type": "prefix"
+        },
+        {
+          "text": "أجل",
+          "type": "root"
+        }
+      ]
+    },
+    {
+      "wordId": "w28_029_005",
+      "gloss": "و رهسپار شد",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_006",
+      "gloss": "با خانواده‌اش",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_007",
+      "gloss": "دید",
+      "hard": true,
+      "meaningFa": "از دور دید و به آن دل‌گرم شد",
+      "rootAr": "أ ن س",
+      "trapFa": "انس گرفتن، مأنوس شدن",
+      "tipFa": "«آنس» را به معنای «دید» به خاطر بسپار، با «انس» هم‌ریشه است.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_029_008",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_009",
+      "gloss": "جانب",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_010",
+      "gloss": "طور",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_011",
+      "gloss": "آتشی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_012",
+      "gloss": "گفت",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_013",
+      "gloss": "به خانواده‌اش",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_014",
+      "gloss": "درنگ کنید",
+      "hard": true,
+      "meaningFa": "بمانید، توقف کنید",
+      "rootAr": "م ك ث",
+      "trapFa": null,
+      "tipFa": "«امكثوا» فعل امر جمع است: همین‌جا بمانید.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_029_015",
+      "gloss": "که من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_016",
+      "gloss": "دیدم",
+      "hard": true,
+      "meaningFa": "دیدم (و به آن دل‌گرم شدم)",
+      "rootAr": "أ ن س",
+      "trapFa": "انس گرفتم",
+      "tipFa": "همان فعل «آنس» در صیغه‌ی متکلم است.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_029_017",
+      "gloss": "آتشی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_018",
+      "gloss": "شاید من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_019",
+      "gloss": "بیاورم برای شما",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_020",
+      "gloss": "از آن",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_021",
+      "gloss": "خبری",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_022",
+      "gloss": "یا",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_023",
+      "gloss": "پاره‌ای",
+      "hard": true,
+      "meaningFa": "پاره‌ای افروخته از آتش، شعله",
+      "rootAr": "ج ذ و",
+      "trapFa": null,
+      "tipFa": "«جذوة» پاره‌ی آتش است که برای گرم شدن می‌آورند.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_029_024",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_025",
+      "gloss": "آتش",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_026",
+      "gloss": "شاید شما",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_029_027",
+      "gloss": "گرم شوید",
+      "hard": true,
+      "meaningFa": "خود را کنار آتش گرم کنید",
+      "rootAr": "ص ل ي",
+      "trapFa": "نماز می‌خوانید (به‌خاطر شباهت به صلات)",
+      "tipFa": "«تصطلون» از «اصطلاء» به معنای گرم شدن با آتش است، نه نماز.",
+      "segments": [
+        {
+          "text": "ت",
+          "type": "prefix"
+        },
+        {
+          "text": "صطل",
+          "type": "root"
+        },
+        {
+          "text": "ون",
+          "type": "pronoun"
+        }
+      ]
+    },
+    {
+      "wordId": "w28_030_001",
+      "gloss": "چون",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_002",
+      "gloss": "نزد آن آمد",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_003",
+      "gloss": "ندا رسید",
+      "hard": true,
+      "meaningFa": "ندا داده شد",
+      "rootAr": "ن د ي",
+      "trapFa": null,
+      "tipFa": "«نودي» مجهول است: کسی او را ندا داد.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_030_004",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_005",
+      "gloss": "جانب",
+      "hard": true,
+      "meaningFa": "کناره و کرانه‌ی وادی",
+      "rootAr": "ش ط أ",
+      "trapFa": null,
+      "tipFa": "«شاطئ» یعنی کناره، مثل ساحل.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_030_006",
+      "gloss": "وادی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_007",
+      "gloss": "راست",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_008",
+      "gloss": "در",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_009",
+      "gloss": "جایگاه",
+      "hard": true,
+      "meaningFa": "قطعه‌ای معیّن از زمین",
+      "rootAr": "ب ق ع",
+      "trapFa": null,
+      "tipFa": "«بقعة» یعنی جایگاه و قطعه‌ی زمین، مثل «بقعه» در فارسی.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_030_010",
+      "gloss": "مبارک",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_011",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_012",
+      "gloss": "درخت",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_013",
+      "gloss": "که",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_014",
+      "gloss": "ای موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_015",
+      "gloss": "یقیناً من",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_016",
+      "gloss": "منم",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_017",
+      "gloss": "خدا",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_018",
+      "gloss": "پروردگار",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_030_019",
+      "gloss": "جهانیان",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_001",
+      "gloss": "و که",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_002",
+      "gloss": "بیفکن",
+      "hard": true,
+      "meaningFa": "بینداز",
+      "rootAr": "ل ق ي",
+      "trapFa": "القا کن",
+      "tipFa": "«ألق» فعل امر از «إلقاء» است: بینداز.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_003",
+      "gloss": "عصایت",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_004",
+      "gloss": "پس وقتی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_005",
+      "gloss": "آن را دید",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_006",
+      "gloss": "تند حرکت می‌کند",
+      "hard": true,
+      "meaningFa": "با شدت و سرعت می‌جنبد",
+      "rootAr": "ه ز ز",
+      "trapFa": null,
+      "tipFa": "«تهتز» از ریشه‌ی «هزّ» است، مثل تکان‌دادن شدید.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_007",
+      "gloss": "گویا آن",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_008",
+      "gloss": "ماری باریک",
+      "hard": true,
+      "meaningFa": "مار باریک و تیزرو",
+      "rootAr": "ج ن ن",
+      "trapFa": "جن",
+      "tipFa": "«جانّ» مار است و با «جن» اشتباه نشود.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_009",
+      "gloss": "گریخت",
+      "hard": true,
+      "meaningFa": "پشت کرد و گریخت",
+      "rootAr": "و ل ي",
+      "trapFa": "ولی به معنای دوست یا سرپرست",
+      "tipFa": "«ولّى» یعنی پشت کرد و رفت.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_010",
+      "gloss": "پشت کنان",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_011",
+      "gloss": "و نه",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_012",
+      "gloss": "به پشت سر برنگشت",
+      "hard": true,
+      "meaningFa": "به عقب بازنگشت",
+      "rootAr": "ع ق ب",
+      "trapFa": "تعقیب کرد",
+      "tipFa": "«یعقّب» یعنی به پشت سر برنگشت، نه تعقیب کردن.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_013",
+      "gloss": "ای موسی",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_014",
+      "gloss": "پیش آی",
+      "hard": true,
+      "meaningFa": "رو بیاور و پیش آی",
+      "rootAr": "ق ب ل",
+      "trapFa": "قبول کن",
+      "tipFa": "«أقبل» امر است: پیش آی.",
+      "segments": []
+    },
+    {
+      "wordId": "w28_031_015",
+      "gloss": "و نه",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_016",
+      "gloss": "مترس",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_017",
+      "gloss": "بی‌تردید تو",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_018",
+      "gloss": "از",
+      "hard": false,
+      "trapFa": null
+    },
+    {
+      "wordId": "w28_031_019",
+      "gloss": "در امان",
+      "hard": false,
+      "trapFa": null
+    }
+  ],
+  "chunks": [
+    {
+      "verse": 29,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 4,
+          "fa": "چون موسی آن مدت را به پایان برد"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "fa": "و با خانواده اش رهسپار [مصر] شد"
+        },
+        {
+          "from": 7,
+          "to": 11,
+          "fa": "از جانب طور آتشی دید"
+        },
+        {
+          "from": 12,
+          "to": 14,
+          "fa": "به خانواده اش گفت: درنگ کنید"
+        },
+        {
+          "from": 15,
+          "to": 17,
+          "fa": "که من آتشی دیدم"
+        },
+        {
+          "from": 18,
+          "to": 21,
+          "fa": "شاید خبری از آن برای شما بیاورم"
+        },
+        {
+          "from": 22,
+          "to": 25,
+          "fa": "یا پاره ای از آتش را می آورم"
+        },
+        {
+          "from": 26,
+          "to": 27,
+          "fa": "تا گرم شوید"
+        }
+      ],
+      "faSegments": [
+        "چون موسی آن مدت را به پایان برد",
+        "و با خانواده اش رهسپار [مصر] شد،",
+        "از جانب طور آتشی دید،",
+        "به خانواده اش گفت: درنگ کنید",
+        "که من آتشی دیدم،",
+        "[می روم] شاید خبری از آن برای شما بیاورم",
+        "یا پاره ای از آتش را می آورم",
+        "تا گرم شوید."
+      ]
+    },
+    {
+      "verse": 30,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 2,
+          "fa": "چون نزد آن آمد"
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "fa": "از جانب راست آن وادی"
+        },
+        {
+          "from": 8,
+          "to": 10,
+          "fa": "در آن جایگاه مبارک"
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "fa": "از آن درخت"
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "fa": "که ای موسی"
+        },
+        {
+          "from": 15,
+          "to": 19,
+          "fa": "یقیناً منم خدا پروردگار جهانیان"
+        }
+      ],
+      "faSegments": [
+        "چون نزد آن آمد،",
+        "از جانب راست آن وادی",
+        "در آن جایگاه مبارک",
+        "از آن درخت ندا رسید",
+        "که ای موسی!",
+        "یقیناً منم خدا پروردگار جهانیان،"
+      ]
+    },
+    {
+      "verse": 31,
+      "chunks": [
+        {
+          "from": 1,
+          "to": 3,
+          "fa": "و عصایت را بیفکن"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "fa": "پس وقتی آن را دید"
+        },
+        {
+          "from": 6,
+          "to": 8,
+          "fa": "تند و سریع حرکت می کند، گویا ماری باریک و تیزرو است"
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "fa": "پشت کنان گریخت"
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "fa": "و به پشت سر برنگشت"
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "fa": "ای موسی! پیش آی"
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "fa": "و مترس"
+        },
+        {
+          "from": 17,
+          "to": 19,
+          "fa": "بی تردید تو [از آسیب و گزند آن] در امانی"
+        }
+      ],
+      "faSegments": [
+        "و عصایت را بیفکن.",
+        "پس وقتی آن را دید",
+        "که تند و سریع حرکت می کند،",
+        "گویا ماری باریک و تیزرو است،",
+        "پشت کنان گریخت",
+        "و به پشت سر برنگشت.",
+        "[ندا آمد:] ای موسی!",
+        "پیش آی و مترس،",
+        "بی تردید تو [از آسیب و گزند آن] در امانی،"
+      ]
+    }
+  ],
+  "questions": [],
+  "issues": []
+}

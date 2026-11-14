@@ -1,0 +1,24 @@
+[#1 q_u_p396a_B_1421 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p396a_B_1421 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p396a_B_1422 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p396a_B_1422 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p396a_B_1423 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p396a_B_1424 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p396a_B_1424 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p396a_B_1425 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p396a_B_1425 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p396a_B_1426 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p396a_B_1426 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p396a_B_1427 CLOZE_AR] نسبت پنهان 13% خارج از ۲۵٪ تا ۸۰٪ است.
+[#8 q_u_p396a_B_1428 CLOZE_AR] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#10 q_u_p396a_B_1430 CLOZE_AR] بانک b7: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#11 q_u_p396a_B_1431 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#12 q_u_p396a_B_1432 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#13 q_u_p396a_B_1433 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#14 q_u_p396a_B_1434 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#14 q_u_p396a_B_1434 ENDING_CHOICE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: لِّلْمُفْسِدِينَ
+[#15 q_u_p396a_B_1435 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#15 q_u_p396a_B_1435 ENDING_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: لِّلْمُؤْمِنِينَ
+[#16 q_u_p396a_B_1436 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p396a_B_1436 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ لِّلْمُفْسِدِينَ
+[#17 q_u_p396a_B_1437 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

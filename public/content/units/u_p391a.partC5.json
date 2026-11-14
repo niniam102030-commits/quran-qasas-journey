@@ -1,0 +1,928 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391a",
+  "part": "C5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p391a_C_0501",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 46
+        },
+        {
+          "id": "o2",
+          "num": 43
+        },
+        {
+          "id": "o3",
+          "num": 44
+        },
+        {
+          "id": "o4",
+          "num": 47
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ» آغاز می‌شود و آیه‌ی ۴۴ است. آیه‌ی ۴۶ با همین سه کلمه شروع می‌شود، اما ادامه‌اش «ٱلطُّورِ» است."
+    },
+    {
+      "id": "q_u_p391a_C_0502",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 41
+        },
+        {
+          "id": "o3",
+          "num": 45
+        },
+        {
+          "id": "o4",
+          "num": 42
+        },
+        {
+          "id": "o5",
+          "num": 46
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "similar_verse"
+      },
+      "explanationFa": "آیه‌ی «وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ إِذْ قَضَيْنَآ…» آیه‌ی ۴۴ است. آیه‌ی ۴۵ با «وَلَـٰكِنَّآ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p391a_C_0503",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "شماره‌ی آیه‌ی زیر را مشخص کنید.",
+      "stem": {
+        "verse": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 42
+        },
+        {
+          "id": "o2",
+          "num": 45
+        },
+        {
+          "id": "o3",
+          "num": 47
+        },
+        {
+          "id": "o4",
+          "num": 44
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ای که با «وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ» شروع می‌شود و به «ٱلشَّـٰهِدِينَ» ختم می‌شود، آیه‌ی ۴۴ است."
+    },
+    {
+      "id": "q_u_p391a_C_0504",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_046_001",
+            "w28_046_002",
+            "w28_046_003",
+            "w28_046_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 44,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_045_001",
+            "w28_045_002",
+            "w28_045_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_003",
+            "w28_043_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه‌ی ۴۴ «وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ» است. آیه‌ی ۴۶ سه کلمه‌ی اول را مشترک دارد و بعد «ٱلطُّورِ» می‌آید."
+    },
+    {
+      "id": "q_u_p391a_C_0505",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۴ کدام است؟",
+      "stem": {
+        "num": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_047_001",
+            "w28_047_002",
+            "w28_047_003",
+            "w28_047_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_046_001",
+            "w28_046_002",
+            "w28_046_003",
+            "w28_046_004",
+            "w28_046_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_044_010",
+            "w28_044_011",
+            "w28_044_012",
+            "w28_044_013"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 44,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "similar_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۴۴ با «وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ إِذْ» آغاز می‌شود. «وَمَا كُنتَ مِنَ ٱلشَّـٰهِدِينَ» پایان همین آیه است."
+    },
+    {
+      "id": "q_u_p391a_C_0506",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 44,
+      "targets": [
+        "vn:44"
+      ],
+      "promptFa": "کدام گزینه آغاز آیه‌ی شماره‌ی ۴۴ است؟",
+      "stem": {
+        "num": 44
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 44,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_046_001",
+            "w28_046_002",
+            "w28_046_003",
+            "w28_046_004",
+            "w28_046_005",
+            "w28_046_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004",
+            "w28_044_005",
+            "w28_044_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_045_001",
+            "w28_045_002",
+            "w28_045_003",
+            "w28_045_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۴ پس از «إِذْ» می‌گوید «قَضَيْنَآ». در آیه‌ی ۴۶ پس از «إِذْ» «نَادَيْنَا» می‌آید."
+    },
+    {
+      "id": "q_u_p391a_C_0507",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 45
+        },
+        {
+          "id": "o3",
+          "num": 46
+        },
+        {
+          "id": "o4",
+          "num": 48
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ای که با «وَلَـٰكِنَّآ أَنشَأْنَا قُرُونًۭا» شروع می‌شود، آیه‌ی ۴۵ است."
+    },
+    {
+      "id": "q_u_p391a_C_0508",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 42
+        },
+        {
+          "id": "o2",
+          "num": 43
+        },
+        {
+          "id": "o3",
+          "num": 46
+        },
+        {
+          "id": "o4",
+          "num": 45
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ… كُنَّا مُرْسِلِينَ» آیه‌ی ۴۵ است. این آیه‌ی بلند بین ۴۴ و ۴۶ قرار دارد."
+    },
+    {
+      "id": "q_u_p391a_C_0509",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "شماره‌ی آیه‌ی زیر را مشخص کنید.",
+      "stem": {
+        "verse": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 45
+        },
+        {
+          "id": "o2",
+          "num": 47
+        },
+        {
+          "id": "o3",
+          "num": 43
+        },
+        {
+          "id": "o4",
+          "num": 44
+        },
+        {
+          "id": "o5",
+          "num": 42
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَمَا كُنتَ ثَاوِيًۭا فِىٓ أَهْلِ مَدْيَنَ» در میانه‌ی آیه‌ی ۴۵ است. «مَدْيَنَ» در آیه‌ی ۴۴ و ۴۶ نیامده است."
+    },
+    {
+      "id": "q_u_p391a_C_0510",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۵ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_046_007",
+            "w28_046_008",
+            "w28_046_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_047_001",
+            "w28_047_002",
+            "w28_047_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه‌ی ۴۵ «وَلَـٰكِنَّآ أَنشَأْنَا قُرُونًۭا» است. «وَلَـٰكِن رَّحْمَةًۭ» از آیه‌ی ۴۶ است."
+    },
+    {
+      "id": "q_u_p391a_C_0511",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۵ کدام است؟",
+      "stem": {
+        "num": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_047_001",
+            "w28_047_002",
+            "w28_047_003",
+            "w28_047_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_045_016",
+            "w28_045_017",
+            "w28_045_018"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_003",
+            "w28_043_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۵ با «وَلَـٰكِنَّآ أَنشَأْنَا قُرُونًۭا فَتَطَاوَلَ» شروع می‌شود. «وَلَـٰكِنَّا كُنَّا مُرْسِلِينَ» پایان همین آیه است."
+    },
+    {
+      "id": "q_u_p391a_C_0512",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 45,
+      "targets": [
+        "vn:45"
+      ],
+      "promptFa": "کدام گزینه آغاز آیه‌ی شماره‌ی ۴۵ است؟",
+      "stem": {
+        "num": 45
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_043_001",
+            "w28_043_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_046_007",
+            "w28_046_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_047_001",
+            "w28_047_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 45,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۵ با «وَلَـٰكِنَّآ أَنشَأْنَا» آغاز می‌شود. «وَلَـٰكِن رَّحْمَةًۭ» آغاز بخش دوم آیه‌ی ۴۶ است."
+    },
+    {
+      "id": "q_u_p391a_C_0513",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 44
+        },
+        {
+          "id": "o2",
+          "num": 45
+        },
+        {
+          "id": "o3",
+          "num": 46
+        },
+        {
+          "id": "o4",
+          "num": 47
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَمَا كُنتَ بِجَانِبِ ٱلطُّورِ إِذْ نَادَيْنَا» آیه‌ی ۴۶ است. آیه‌ی ۴۴ با «ٱلْغَرْبِىِّ» ادامه می‌یابد."
+    },
+    {
+      "id": "q_u_p391a_C_0514",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 49
+        },
+        {
+          "id": "o2",
+          "num": 46
+        },
+        {
+          "id": "o3",
+          "num": 43
+        },
+        {
+          "id": "o4",
+          "num": 45
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «لِتُنذِرَ قَوْمًۭا مَّآ أَتَىٰهُم مِّن نَّذِيرٍۢ» آیه‌ی ۴۶ است."
+    },
+    {
+      "id": "q_u_p391a_C_0515",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "شماره‌ی آیه‌ی زیر را مشخص کنید.",
+      "stem": {
+        "verse": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 47
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 44
+        },
+        {
+          "id": "o4",
+          "num": 46
+        },
+        {
+          "id": "o5",
+          "num": 43
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "similar_verse",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴۶ با «وَمَا كُنتَ بِجَانِبِ ٱلطُّورِ» شروع و با «لَعَلَّهُمْ يَتَذَكَّرُونَ» تمام می‌شود."
+    },
+    {
+      "id": "q_u_p391a_C_0516",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۴۶ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_047_001",
+            "w28_047_002",
+            "w28_047_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_045_001",
+            "w28_045_002",
+            "w28_045_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه‌ی ۴۶ «وَمَا كُنتَ بِجَانِبِ ٱلطُّورِ» است. در آیه‌ی ۴۴ به‌جای «ٱلطُّورِ» «ٱلْغَرْبِىِّ» آمده است."
+    },
+    {
+      "id": "q_u_p391a_C_0517",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۴۶ کدام است؟",
+      "stem": {
+        "num": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004",
+            "w28_044_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_046_007",
+            "w28_046_008",
+            "w28_046_009",
+            "w28_046_010"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_043_001",
+            "w28_043_002",
+            "w28_043_003",
+            "w28_043_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۶ با «وَمَا كُنتَ بِجَانِبِ ٱلطُّورِ إِذْ» آغاز می‌شود. «وَلَـٰكِن رَّحْمَةًۭ مِّن رَّبِّكَ» بخش بعدی همین آیه است."
+    },
+    {
+      "id": "q_u_p391a_C_0518",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 46,
+      "targets": [
+        "vn:46"
+      ],
+      "promptFa": "کدام گزینه آغاز آیه‌ی شماره‌ی ۴۶ است؟",
+      "stem": {
+        "num": 46
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_047_001",
+            "w28_047_002",
+            "w28_047_003",
+            "w28_047_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_044_001",
+            "w28_044_002",
+            "w28_044_003",
+            "w28_044_004",
+            "w28_044_005",
+            "w28_044_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_045_001",
+            "w28_045_002",
+            "w28_045_003",
+            "w28_045_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 6
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "similar_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۶ پس از «إِذْ» «نَادَيْنَا» دارد. در آیه‌ی ۴۴ پس از «إِذْ» «قَضَيْنَآ» می‌آید."
+    }
+  ],
+  "issues": []
+}

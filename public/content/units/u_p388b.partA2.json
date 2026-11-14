@@ -1,0 +1,1248 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "A2",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p388b_A_0201",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "معنای «ٱسْتِحْيَآءٍۢ» چیست؟",
+      "stem": {
+        "wordId": "w28_025_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "زندگی و حیات"
+        },
+        {
+          "id": "o2",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "o3",
+          "fa": "گام برداشتن"
+        },
+        {
+          "id": "o4",
+          "fa": "پاداش"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی «ح ي ي» و به معنای حالت شرم و آزرم است. «است-» در آغاز، حالت حیا را می‌رساند."
+    },
+    {
+      "id": "q_u_p388b_A_0202",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "«ٱسْتِحْيَآءٍۢ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_025_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ترس و وحشت"
+        },
+        {
+          "id": "o2",
+          "fa": "زنده ماندن"
+        },
+        {
+          "id": "o3",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمکاری"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» یعنی شرم و حیا و با ریشه‌ی «حیا» هم‌خانواده است. معنای آن زنده ماندن نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0203",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "در این آیه «ٱسْتِحْيَآءٍۢ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_025_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نجات"
+        },
+        {
+          "id": "o2",
+          "fa": "آب دادن"
+        },
+        {
+          "id": "o3",
+          "fa": "گروه"
+        },
+        {
+          "id": "o4",
+          "fa": "شرم و حیا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ» یعنی با حالت شرم و حیا گام برمی‌داشت. ریشه‌اش «ح ي ي» است."
+    },
+    {
+      "id": "q_u_p388b_A_0204",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "در عبارت «تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ»، کلمه‌ی «ٱسْتِحْيَآءٍۢ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_025_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "o2",
+          "fa": "زندگی و حیات"
+        },
+        {
+          "id": "o3",
+          "fa": "بهترین"
+        },
+        {
+          "id": "o4",
+          "fa": "استخدام"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» حالت شرم و آزرم است. «حیات» از همین ریشه است ولی معنای این کلمه نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0205",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «شرم و حیا» است؟",
+      "stem": {
+        "fa": "شرم و حیا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَمْشِى"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَجْرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَوْمِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» از ریشه‌ی «ح ي ي» و به معنای شرم و حیا است."
+    },
+    {
+      "id": "q_u_p388b_A_0206",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معادل عبارت فارسی است؟",
+      "stem": {
+        "fa": "حالت شرم و آزرم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نَجَوْتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَدْعُوكَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» یعنی حالت شرم و آزرم. «است-» در آغاز آن نشانه‌ی طلب و حالت است."
+    },
+    {
+      "id": "q_u_p388b_A_0207",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معادل «با حالت شرم و حیا» است؟",
+      "stem": {
+        "fa": "با حالت شرم و حیا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَقَيْتَ"
+        },
+        {
+          "id": "o2",
+          "ar": "خَيْرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» در «عَلَى ٱسْتِحْيَآءٍۢ» یعنی با حالت شرم و حیا. ریشه‌اش «ح ي ي» است."
+    },
+    {
+      "id": "q_u_p388b_A_0208",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "معنای «ٱلْقَصَصَ» چیست؟",
+      "stem": {
+        "wordId": "w28_025_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گروه"
+        },
+        {
+          "id": "o2",
+          "fa": "پاداش"
+        },
+        {
+          "id": "o3",
+          "fa": "داستان، سرگذشت"
+        },
+        {
+          "id": "o4",
+          "fa": "کیفر و قصاص"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» یعنی سرگذشت و ماجرا و هم‌ریشه با نام سوره‌ی «قصص» است. «قصاص» در فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388b_A_0209",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "«ٱلْقَصَصَ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_025_019",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o2",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "o3",
+          "fa": "نجات"
+        },
+        {
+          "id": "o4",
+          "fa": "سرگذشت و ماجرا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» اسم و به معنای سرگذشت و ماجرا است. ریشه‌اش «ق ص ص» و به معنای بازگویی ماجرا است."
+    },
+    {
+      "id": "q_u_p388b_A_0210",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "در این آیه «ٱلْقَصَصَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_025_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "داستان، سرگذشت"
+        },
+        {
+          "id": "o2",
+          "fa": "آب دادن"
+        },
+        {
+          "id": "o3",
+          "fa": "کیفر و قصاص"
+        },
+        {
+          "id": "o4",
+          "fa": "شرم و حیا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «وَقَصَّ عَلَيْهِ ٱلْقَصَصَ» یعنی داستانش را برای او بیان کرد. «ٱلْقَصَصَ» اسم است و با «وَقَصَّ» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p388b_A_0211",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "در عبارت «وَقَصَّ عَلَيْهِ ٱلْقَصَصَ»، «ٱلْقَصَصَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_025_019",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاداش"
+        },
+        {
+          "id": "o2",
+          "fa": "گروه ستمکار"
+        },
+        {
+          "id": "o3",
+          "fa": "بهترین"
+        },
+        {
+          "id": "o4",
+          "fa": "داستان و سرگذشت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» مفعول «وَقَصَّ» و یعنی ماجرا و سرگذشت. ریشه‌اش «ق ص ص» است."
+    },
+    {
+      "id": "q_u_p388b_A_0212",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «داستان، سرگذشت» است؟",
+      "stem": {
+        "fa": "داستان، سرگذشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقَوْمِ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَصَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَجْرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَصَصَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» اسم است و یعنی سرگذشت. «وَقَصَّ» هم‌ریشه است ولی فعل است."
+    },
+    {
+      "id": "q_u_p388b_A_0213",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی (اسم) معادل عبارت فارسی است؟",
+      "stem": {
+        "fa": "سرگذشت و ماجرا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَمِينُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقَوِىُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» یعنی سرگذشت و ماجرا و هم‌ریشه با نام سوره است."
+    },
+    {
+      "id": "q_u_p388b_A_0214",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 25,
+      "targets": [
+        "w:w28_025_019"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی (اسم) به معنای «داستان» است؟",
+      "stem": {
+        "fa": "داستان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقَوْمِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَمْشِى"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَصَّ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "«ٱلْقَصَصَ» اسم و به معنای داستان است. «وَقَصَّ» فعل و هم‌ریشه با آن است."
+    },
+    {
+      "id": "q_u_p388b_A_0215",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "معنای «يَـٰٓأَبَتِ» چیست؟",
+      "stem": {
+        "wordId": "w28_026_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ای پسرم"
+        },
+        {
+          "id": "o2",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "o3",
+          "fa": "پدرم"
+        },
+        {
+          "id": "o4",
+          "fa": "ای برادر"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«يَـٰٓأَبَتِ» ندا و یعنی «ای پدر». «ـت» در آن جای «ی» متکلم است."
+    },
+    {
+      "id": "q_u_p388b_A_0216",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "«يَـٰٓأَبَتِ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_026_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پدر و مادر"
+        },
+        {
+          "id": "o2",
+          "fa": "ای مرد"
+        },
+        {
+          "id": "o3",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "o4",
+          "fa": "پدرم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی آن «أ ب و» و معنایش ندای «ای پدرجان» است. «پدرم» کلمه‌ی «أَبِى» است."
+    },
+    {
+      "id": "q_u_p388b_A_0217",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "در این آیه «يَـٰٓأَبَتِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_026_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "o2",
+          "fa": "ای پسر"
+        },
+        {
+          "id": "o3",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "o4",
+          "fa": "یکی از آن دو"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ» دختر پدرش را صدا می‌زند و یعنی «ای پدر». «ـت» جای «ی» است."
+    },
+    {
+      "id": "q_u_p388b_A_0218",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "در عبارت «يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ»، «يَـٰٓأَبَتِ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_026_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بهترین"
+        },
+        {
+          "id": "o2",
+          "fa": "پدر شما"
+        },
+        {
+          "id": "o3",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "o4",
+          "fa": "ای پدر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يَـٰٓأَبَتِ» ندا است، یعنی «ای پدر». «ـت» در آن جایگزین «ی» متکلم است."
+    },
+    {
+      "id": "q_u_p388b_A_0219",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ای پدر» است؟",
+      "stem": {
+        "fa": "ای پدر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَبِى"
+        },
+        {
+          "id": "o2",
+          "ar": "يَـٰٓأَبَتِ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِحْدَىٰهُمَا"
+        },
+        {
+          "id": "o4",
+          "ar": "خَيْرَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَـٰٓأَبَتِ» ندا است و «ای پدر» معنا می‌دهد. «أَبِى» یعنی «پدرم» و ندا نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0220",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معادل «ای پدرجان» است؟",
+      "stem": {
+        "fa": "ای پدرجان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَدْعُوكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَـٰٓأَبَتِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَمِينُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَـٰٓأَبَتِ» ندای «ای پدرجان» است. «ـت» در آن جای «ی» است."
+    },
+    {
+      "id": "q_u_p388b_A_0221",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معادل «ای پدر!» در آیه است؟",
+      "stem": {
+        "fa": "ای پدر!"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقَوِىُّ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَبِى"
+        },
+        {
+          "id": "o3",
+          "ar": "خَيْرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَـٰٓأَبَتِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يَـٰٓأَبَتِ» ندا و یعنی «ای پدر». «أَبِى» (پدرم) در آیه‌ی ۲۵ آمده و ندا نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0222",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_025_005",
+        "w:w28_025_019",
+        "w:w28_026_003"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنای آن جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَـٰٓأَبَتِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقَوْمِ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَجْرَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاداش"
+        },
+        {
+          "id": "r2",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "r3",
+          "fa": "نجات"
+        },
+        {
+          "id": "r4",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "r5",
+          "fa": "گروه"
+        },
+        {
+          "id": "r6",
+          "fa": "داستان، سرگذشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "«ٱسْتِحْيَآءٍۢ» شرم و حیا، «ٱلْقَصَصَ» سرگذشت و «يَـٰٓأَبَتِ» ندای «ای پدر» است."
+    },
+    {
+      "id": "q_u_p388b_A_0223",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_025_005",
+        "w:w28_025_019",
+        "w:w28_026_003"
+      ],
+      "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَـٰٓأَبَتِ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَجَوْتَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقَوِىُّ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "r2",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "r3",
+          "fa": "پاداش"
+        },
+        {
+          "id": "r4",
+          "fa": "نجات یافتی"
+        },
+        {
+          "id": "r5",
+          "fa": "داستان، سرگذشت"
+        },
+        {
+          "id": "r6",
+          "fa": "ای پدر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "سه کلمه‌ی سخت این جفت‌سازی «يَـٰٓأَبَتِ»، «ٱلْقَصَصَ» و «ٱسْتِحْيَآءٍۢ» هستند."
+    },
+    {
+      "id": "q_u_p388b_A_0224",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_025_005",
+        "w:w28_025_019",
+        "w:w28_026_003"
+      ],
+      "promptFa": "هر کلمه را با معنای درست آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَمْشِى"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "سَقَيْتَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَـٰٓأَبَتِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "آب دادی"
+        },
+        {
+          "id": "r2",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "r3",
+          "fa": "گام برمی‌دارد"
+        },
+        {
+          "id": "r4",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r5",
+          "fa": "داستان، سرگذشت"
+        },
+        {
+          "id": "r6",
+          "fa": "شرم و حیا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "«تَمْشِى» فعل راه رفتن و «سَقَيْتَ» فعل آب دادن است. سه کلمه‌ی سخت اینجا معنای متمایز دارند."
+    },
+    {
+      "id": "q_u_p388b_A_0225",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_025_005",
+        "w:w28_025_019",
+        "w:w28_026_003"
+      ],
+      "promptFa": "جفت‌های درست عربی و فارسی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "خَيْرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقَصَصَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَدْعُوكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَـٰٓأَبَتِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱسْتِحْيَآءٍۢ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شرم و حیا"
+        },
+        {
+          "id": "r2",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r3",
+          "fa": "ای پدر"
+        },
+        {
+          "id": "r4",
+          "fa": "تو را می‌طلبد"
+        },
+        {
+          "id": "r5",
+          "fa": "بهترین"
+        },
+        {
+          "id": "r6",
+          "fa": "داستان، سرگذشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "neighbor_word"
+      },
+      "explanationFa": "«خَيْرَ» بهترین و «يَدْعُوكَ» تو را می‌طلبد است. «ٱلْقَصَصَ» سرگذشت و «يَـٰٓأَبَتِ» ندای «ای پدر» است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در MATCH_WORDS نیامد."
+  ]
+}

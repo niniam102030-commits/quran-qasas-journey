@@ -1,0 +1,7 @@
+[#1 q_u_p394b_B_1541 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p394b_B_1541 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#1 q_u_p394b_B_1541 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p394b_B_1542 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#2 q_u_p394b_B_1542 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p394b_B_1543 BUILD_FROM_TRANSLATION] explanationFa خالی است.
+[#3 q_u_p394b_B_1543 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.

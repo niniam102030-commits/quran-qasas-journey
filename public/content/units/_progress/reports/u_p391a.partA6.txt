@@ -1,0 +1,39 @@
+[#1 q_u_p391a_A_0901 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#4 q_u_p391a_A_0904 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p391a_A_0905 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p391a_A_0906 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p391a_A_0907 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p391a_A_0908 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p391a_A_0910 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p391a_A_0911 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p391a_A_0912 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p391a_A_0913 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#13 q_u_p391a_A_0913 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْعُمُرُ
+[#13 q_u_p391a_A_0913 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p391a_A_0914 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p391a_A_0914 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْعُمُرُ
+[#15 q_u_p391a_A_0915 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#16 q_u_p391a_A_0916 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#16 q_u_p391a_A_0916 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#17 q_u_p391a_A_0917 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p391a_A_0917 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#18 q_u_p391a_A_0918 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p391a_A_0919 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p391a_A_0920 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p391a_A_0921 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p391a_A_0922 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#23 q_u_p391a_A_0923 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p391a_A_0924 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p391a_A_0925 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#25 q_u_p391a_A_0925 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#26 q_u_p391a_A_0926 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#26 q_u_p391a_A_0926 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#28 q_u_p391a_A_0928 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p391a_A_0929 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#30 q_u_p391a_A_0930 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p391a_A_0931 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p391a_A_0932 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p391a_A_0933 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#34 q_u_p391a_A_0934 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#35 q_u_p391a_A_0935 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p391a_A_0936 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

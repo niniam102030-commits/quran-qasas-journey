@@ -1,0 +1,2088 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395b",
+  "part": "C",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p395b_C_0261",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "آیه بعد از «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ...» با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۲ با «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟...» آغاز می‌شود و بیانگر حال کسانی است که روز قبل آرزوی جایگاه قارون را داشتند."
+    },
+    {
+      "id": "q_u_p395b_C_0262",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "قطعات آیه بعد (آیه ۸۲) را به ترتیب درست بچینید.",
+      "stem": {
+        "verse": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَيْكَأَنَّ ٱللَّهَ يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ مِنْ عِبَادِهِۦ وَيَقْدِرُ ۖ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ",
+          "wordIdx": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ",
+          "wordIdx": [
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "این آیه طولانی (آیه ۸۲) بازتابی از تغییر نگرش مردم پس از فرو رفتن قارون در زمین است."
+    },
+    {
+      "id": "q_u_p395b_C_0263",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "بخش ابتدایی آیه بعد (آیه ۸۲) را کلمه‌به‌کلمه بچینید.",
+      "stem": {
+        "verse": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَصْبَحَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَمَنَّوْا۟",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَكَانَهُۥ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "بِٱلْأَمْسِ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَقُولُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَبْسُطُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "explanationFa": "جمله با «وَأَصْبَحَ» (بامدادان شدند) آغاز می‌شود و به آرزومندان دیروز «بِٱلْأَمْسِ» اشاره دارد."
+    },
+    {
+      "id": "q_u_p395b_C_0264",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:80"
+      ],
+      "promptFa": "آیه قبل از «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ...» کدام است؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۰ با «وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ...» شروع می‌شود که هشدار عالمان به قوم پیش از عذاب قارون است."
+    },
+    {
+      "id": "q_u_p395b_C_0265",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:80"
+      ],
+      "promptFa": "قطعات آیه قبل (آیه ۸۰) را به ترتیب بچینید.",
+      "stem": {
+        "verse": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ثَوَابُ ٱللَّهِ خَيْرٌۭ لِّمَنْ ءَامَنَ وَعَمِلَ صَـٰلِحًۭا",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَا يُلَقَّىٰهَآ إِلَّا ٱلصَّـٰبِرُونَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "explanationFa": "عالمان قوم به کسانی که غرق دنیا بودند تذکر دادند که ثواب الهی بهتر است."
+    },
+    {
+      "id": "q_u_p395b_C_0266",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 81,
+      "targets": [
+        "sq:80"
+      ],
+      "promptFa": "کلمات ابتدایی آیه قبل (آیه ۸۰) را بسازید.",
+      "stem": {
+        "verse": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أُوتُوا۟",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْعِلْمَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَيْلَكُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ثَوَابُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "explanationFa": "این آیه تقابل سخن اهل علم (أُوتُوا۟ ٱلْعِلْمَ) با کسانی است که خواهان دنیا بودند (يُرِيدُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا)."
+    },
+    {
+      "id": "q_u_p395b_C_0267",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "آیه «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ...» آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 81
+        },
+        {
+          "id": "o2",
+          "num": 82
+        },
+        {
+          "id": "o3",
+          "num": 80
+        },
+        {
+          "id": "o4",
+          "num": 83
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه ۸۱ سوره قصص است که عذاب ناگهانی قارون را تصویر می‌کند."
+    },
+    {
+      "id": "q_u_p395b_C_0268",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "شماره آیه «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ...» کدام است؟",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 81
+        },
+        {
+          "id": "o2",
+          "num": 79
+        },
+        {
+          "id": "o3",
+          "num": 82
+        },
+        {
+          "id": "o4",
+          "num": 84
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "خسف (فرو رفتن در زمین) در آیه ۸۱ رخ می‌دهد."
+    },
+    {
+      "id": "q_u_p395b_C_0269",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "شماره این آیه را مشخص کنید: «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ...»",
+      "stem": {
+        "verse": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 81
+        },
+        {
+          "id": "o2",
+          "num": 80
+        },
+        {
+          "id": "o3",
+          "num": 82
+        },
+        {
+          "id": "o4",
+          "num": 85
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۱."
+    },
+    {
+      "id": "q_u_p395b_C_0270",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "آیه ۸۱ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۱ عذاب قارون را با عبارت «فَخَسَفْنَا بِهِۦ...» (پس او را فرو بردیم) بیان می‌کند."
+    },
+    {
+      "id": "q_u_p395b_C_0271",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "ابتدای آیه ۸۱ کدام است؟",
+      "stem": {
+        "num": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۱: «فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ»."
+    },
+    {
+      "id": "q_u_p395b_C_0272",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "سرآغاز آیه ۸۱ سوره قصص چیست؟",
+      "stem": {
+        "num": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۱ با کلمه «فَخَسَفْنَا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p395b_C_0273",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vn:81",
+        "vr:81"
+      ],
+      "promptFa": "متن کامل آیه ۸۱ را با چیدن قطعات بسازید.",
+      "stem": {
+        "num": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَرْضَ فَمَا كَانَ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُۥ مِن فِئَةٍۢ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَنصُرُونَهُۥ مِن دُونِ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱللَّهِ وَمَا كَانَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "explanationFa": "این آیه بیان می‌کند که قارون و خانه‌اش در زمین فرو رفتند و هیچ یاوری در برابر اراده خدا نداشت."
+    },
+    {
+      "id": "q_u_p395b_C_0274",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 81,
+      "targets": [
+        "vn:81"
+      ],
+      "promptFa": "کدام گزینه شروع آیه ۸۱ را نشان می‌دهد؟",
+      "stem": {
+        "num": 81
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "neighbor_verse"
+      },
+      "explanationFa": "«فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ» (آیه ۸۱). آیه قبل سخن عالمان و آیه بعد سخن مردم در روز بعد است."
+    },
+    {
+      "id": "q_u_p395b_C_0275",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:82"
+      ],
+      "promptFa": "آیه بعد از «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ...» کدام است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۳ با «تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ...» آغاز می‌شود که یک سنت کلی درباره عاقبت متقین پس از ماجرای قارون بیان می‌کند."
+    },
+    {
+      "id": "q_u_p395b_C_0276",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:82"
+      ],
+      "promptFa": "آیه بعد (آیه ۸۳) را با این قطعات بسازید.",
+      "stem": {
+        "verse": 82
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لِلَّذِينَ لَا يُرِيدُونَ عُلُوًّۭا",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فِى ٱلْأَرْضِ وَلَا فَسَادًۭا ۚ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "این آیه مشهور، سرای آخرت را برای کسانی می‌داند که برتری‌جویی و فساد در زمین نمی‌خواهند (نقطه مقابل قارون)."
+    },
+    {
+      "id": "q_u_p395b_C_0277",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:82"
+      ],
+      "promptFa": "بخش ابتدایی آیه بعد (آیه ۸۳) را از کلمات زیر بچینید.",
+      "stem": {
+        "verse": 82
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلدَّارُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْـَٔاخِرَةُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "نَجْعَلُهَا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لِلَّذِينَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "عُلُوًّۭا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "explanationFa": "پس از داستان قارون، خداوند سرای آخرت را معرفی می‌کند: «تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا لِلَّذِينَ...»"
+    },
+    {
+      "id": "q_u_p395b_C_0278",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "آیه قبل از «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ...» کدام است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پیش از بیان حال کسانی که پشیمان شدند (آیه ۸۲)، واقعه فرو رفتن قارون در آیه ۸۱ بیان شده است: «فَخَسَفْنَا بِهِۦ...»."
+    },
+    {
+      "id": "q_u_p395b_C_0279",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "آیه قبل (آیه ۸۱) را با این قطعات بسازید.",
+      "stem": {
+        "verse": 82
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن دُونِ ٱللَّهِ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "این آیه بیانگر عذاب قارون است که هیچ یاوری برای رهایی از آن نیافت."
+    },
+    {
+      "id": "q_u_p395b_C_0280",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 82,
+      "targets": [
+        "sq:81"
+      ],
+      "promptFa": "بخش انتهایی آیه قبل (آیه ۸۱) را بسازید.",
+      "stem": {
+        "verse": 82
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَنصُرُونَهُۥ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "دُونِ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱللَّهِ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "كَانَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مِنَ",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "explanationFa": "نه گروهی بود که قارون را یاری دهد (يَنصُرُونَهُۥ مِن دُونِ ٱللَّهِ) و نه خودش توانست از خود دفاع کند (وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ)."
+    },
+    {
+      "id": "q_u_p395b_C_0281",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "آیه «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ...» شماره چندم است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 82
+        },
+        {
+          "id": "o2",
+          "num": 81
+        },
+        {
+          "id": "o3",
+          "num": 83
+        },
+        {
+          "id": "o4",
+          "num": 84
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۸۲، بیانگر بیداری و عبرت گرفتن مردم در روز بعد از عذاب قارون است."
+    },
+    {
+      "id": "q_u_p395b_C_0282",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "شماره آیه «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ...» کدام است؟",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 82
+        },
+        {
+          "id": "o2",
+          "num": 81
+        },
+        {
+          "id": "o3",
+          "num": 80
+        },
+        {
+          "id": "o4",
+          "num": 83
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۸۲."
+    },
+    {
+      "id": "q_u_p395b_C_0283",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "شماره این آیه در سوره قصص: «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟...»",
+      "stem": {
+        "verse": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 82
+        },
+        {
+          "id": "o2",
+          "num": 81
+        },
+        {
+          "id": "o3",
+          "num": 84
+        },
+        {
+          "id": "o4",
+          "num": 85
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۲."
+    },
+    {
+      "id": "q_u_p395b_C_0284",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "آیه ۸۲ با کدام کلمات شروع می‌شود؟",
+      "stem": {
+        "num": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ» (و بامدادان آنانکه دیروز مقام او را آرزو داشتند...)."
+    },
+    {
+      "id": "q_u_p395b_C_0285",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "آیه ۸۲ سوره قصص چگونه آغاز می‌شود؟",
+      "stem": {
+        "num": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۲: «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ»."
+    },
+    {
+      "id": "q_u_p395b_C_0286",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "کدام گزینه سرآغاز آیه ۸۲ است؟",
+      "stem": {
+        "num": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۲ با «وَأَصْبَحَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p395b_C_0287",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 82,
+      "targets": [
+        "vn:82",
+        "vr:82"
+      ],
+      "promptFa": "متن آیه ۸۲ را به طور کامل بسازید.",
+      "stem": {
+        "num": 82
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَيْكَأَنَّ ٱللَّهَ يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنْ عِبَادِهِۦ وَيَقْدِرُ ۖ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ",
+          "wordIdx": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ",
+          "wordIdx": [
+            23,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "explanationFa": "این آیه عبرت گرفتن مردمی را نشان می‌دهد که پس از دیدن عذاب، فهمیدند رزق به خواست خدا وسعت می‌گیرد و کافران رستگار نمی‌شوند."
+    },
+    {
+      "id": "q_u_p395b_C_0288",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 82,
+      "targets": [
+        "vn:82"
+      ],
+      "promptFa": "ابتدای آیه ۸۲ چیست؟",
+      "stem": {
+        "num": 82
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 82,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 83,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 84,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse",
+        "o5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۲: «وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ»."
+    },
+    {
+      "id": "q_u_p395b_C_0289",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "page",
+      "targets": [
+        "pg:u_p395b"
+      ],
+      "promptFa": "این آیات پیاپی را به ترتیب درست (از ابتدا به انتها) مرتب کنید.",
+      "stem": {
+        "verses": [
+          81,
+          80,
+          79,
+          82
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ... (آیه ۷۹)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 79
+        },
+        {
+          "id": "b2",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ وَيْلَكُمْ... (آیه ۸۰)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 80
+        },
+        {
+          "id": "b3",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ فَمَا... (آیه ۸۱)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 81
+        },
+        {
+          "id": "b4",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ... (آیه ۸۲)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 82
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب وقایع: خروج قارون با زینت (۷۹)، هشدار عالمان (۸۰)، فرو رفتن در زمین (۸۱)، و عبرت گرفتن مردم در روز بعد (۸۲)."
+    },
+    {
+      "id": "q_u_p395b_C_0290",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "page",
+      "targets": [
+        "pg:u_p395b"
+      ],
+      "promptFa": "آیات متوالی زیر را به ترتیب قرآنی بچینید.",
+      "stem": {
+        "verses": [
+          84,
+          82,
+          85,
+          83
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ... (آیه ۸۲)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 82
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا لِلَّذِينَ... (آیه ۸۳)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 83
+        },
+        {
+          "id": "b3",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا... (آیه ۸۴)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 84
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ... (آیه ۸۵)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verse": 85
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "آیات ۸۲ تا ۸۵ به ترتیب عبرت مردم، بیان سرای آخرت، پاداش اعمال و وعده بازگشت پیامبر (ص) را بیان می‌کنند."
+    },
+    {
+      "id": "q_u_p395b_C_0291",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "page",
+      "targets": [
+        "pg:u_p395b"
+      ],
+      "promptFa": "همه آیات این بخش (آیات ۸۱ تا ۸۴) را به ترتیب نزول مرتب کنید.",
+      "stem": {
+        "verses": [
+          81,
+          82,
+          83,
+          84
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ... (آیه ۸۱)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "verse": 81
+        },
+        {
+          "id": "b2",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ... (آیه ۸۲)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "verse": 82
+        },
+        {
+          "id": "b3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا... (آیه ۸۳)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "verse": 83
+        },
+        {
+          "id": "b4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ... (آیه ۸۴)",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "verse": 84
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "داستان قارون با عذاب او (۸۱) پایان یافته، واکنش مردم (۸۲) مطرح می‌شود و سپس سنت الهی در پاداش اخروی (۸۳ و ۸۴) بیان می‌گردد."
+    },
+    {
+      "id": "q_u_p395b_C_0292",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:79",
+        "vn:80",
+        "vn:81",
+        "vn:82"
+      ],
+      "promptFa": "هر آیه را به شماره درست آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ..."
+        },
+        {
+          "id": "l2",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ..."
+        },
+        {
+          "id": "l3",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ..."
+        },
+        {
+          "id": "l4",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ..."
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "num": 79
+        },
+        {
+          "id": "r2",
+          "num": 80
+        },
+        {
+          "id": "r3",
+          "num": 81
+        },
+        {
+          "id": "r4",
+          "num": 82
+        },
+        {
+          "id": "r5",
+          "num": 83
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "تسلط بر ابتدای آیات و شماره آنها برای حفظ ضروری است. آیه ۸۱ نقطه اوج داستان (عذاب) است."
+    },
+    {
+      "id": "q_u_p395b_C_0293",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:81",
+        "vn:82",
+        "vn:83",
+        "vn:84",
+        "vn:85"
+      ],
+      "promptFa": "شماره آیات را به آغاز آنها وصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ..."
+        },
+        {
+          "id": "l2",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ..."
+        },
+        {
+          "id": "l3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا..."
+        },
+        {
+          "id": "l4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ..."
+        },
+        {
+          "id": "l5",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ..."
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "num": 81
+        },
+        {
+          "id": "r2",
+          "num": 82
+        },
+        {
+          "id": "r3",
+          "num": 83
+        },
+        {
+          "id": "r4",
+          "num": 84
+        },
+        {
+          "id": "r5",
+          "num": 85
+        },
+        {
+          "id": "r6",
+          "num": 80
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "آیات ۸۱ تا ۸۵ در انتهای سوره قصص قرار دارند و از داستان قارون به مباحث پاداش اخروی و وعده به پیامبر (ص) گذار می‌کنند."
+    }
+  ],
+  "issues": []
+}

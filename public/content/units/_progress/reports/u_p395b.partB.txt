@@ -1,0 +1,61 @@
+[#1 q_u_p395b_B_0101 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p395b_B_0101 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p395b_B_0102 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p395b_B_0102 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p395b_B_0103 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p395b_B_0104 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p395b_B_0104 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p395b_B_0105 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p395b_B_0106 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p395b_B_0107 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p395b_B_0109 CLOZE_AR] بانک d1: کلمه(های) عربی خارج از متن سوره/بانک: خَسَفْنَا
+[#10 q_u_p395b_B_0110 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p395b_B_0113 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#14 q_u_p395b_B_0114 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#14 q_u_p395b_B_0114 ENDING_CHOICE] choice باید حداقل ۴ گزینه داشته باشد.
+[#15 q_u_p395b_B_0115 ENDING_CHOICE] choice باید حداقل ۴ گزینه داشته باشد.
+[#16 q_u_p395b_B_0116 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: خَسَفْنَا
+[#17 q_u_p395b_B_0117 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: يَنصُرُونَهُمْ
+[#18 q_u_p395b_B_0118 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#18 q_u_p395b_B_0118 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#19 q_u_p395b_B_0119 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#19 q_u_p395b_B_0119 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#20 q_u_p395b_B_0120 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#21 q_u_p395b_B_0121 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#21 q_u_p395b_B_0121 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#22 q_u_p395b_B_0122 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#23 q_u_p395b_B_0123 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#24 q_u_p395b_B_0124 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#24 q_u_p395b_B_0124 CLOZE_AR] بانک d2: کلمه(های) عربی خارج از متن سوره/بانک: خَسَفْنَا
+[#26 q_u_p395b_B_0126 CLOZE_AR] بانک b8: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#26 q_u_p395b_B_0126 CLOZE_AR] بانک b13: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#27 q_u_p395b_B_0127 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#27 q_u_p395b_B_0127 CLOZE_AR] بانک b17: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#27 q_u_p395b_B_0127 CLOZE_AR] بانک d1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْمُفْسِدُونَ
+[#28 q_u_p395b_B_0128 CLOZE_COMPLETE_REST] بانک b2: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#28 q_u_p395b_B_0128 CLOZE_COMPLETE_REST] بانک b3: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#28 q_u_p395b_B_0128 CLOZE_COMPLETE_REST] بانک d1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْمُفْسِدُونَ
+[#29 q_u_p395b_B_0129 CLOZE_COMPLETE_REST] بانک b7: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#29 q_u_p395b_B_0129 CLOZE_COMPLETE_REST] بانک d1: کلمه(های) عربی خارج از متن سوره/بانک: خَسَفْنَا
+[#30 q_u_p395b_B_0130 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#30 q_u_p395b_B_0130 CLOZE_COMPLETE_REST] بانک d2: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْمُفْسِدُونَ
+[#31 q_u_p395b_B_0131 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#31 q_u_p395b_B_0131 ENDING_CHOICE] choice باید حداقل ۴ گزینه داشته باشد.
+[#32 q_u_p395b_B_0132 ENDING_CHOICE] choice باید حداقل ۴ گزینه داشته باشد.
+[#33 q_u_p395b_B_0133 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ بِنَا ۖ
+[#33 q_u_p395b_B_0133 MUTASHABIH_SPOT] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ بِنَا ۖ
+[#33 q_u_p395b_B_0133 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: وَيْكَأَنَّهُ وَيَقْدِرُ ۖ بِنَا
+[#33 q_u_p395b_B_0133 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ بِنَا ۖ
+[#34 q_u_p395b_B_0134 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ بِنَا ۖ
+[#34 q_u_p395b_B_0134 MUTASHABIH_SPOT] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ بِنَا ۖ
+[#34 q_u_p395b_B_0134 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ ۖ
+[#34 q_u_p395b_B_0134 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ خَسَفَ بِنَا
+[#35 q_u_p395b_B_0135 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#35 q_u_p395b_B_0135 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#36 q_u_p395b_B_0136 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#36 q_u_p395b_B_0136 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#37 q_u_p395b_B_0137 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#38 q_u_p395b_B_0138 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#38 q_u_p395b_B_0138 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#39 q_u_p395b_B_0139 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+… خطاهای بیشتر نمایش داده نمی‌شود.

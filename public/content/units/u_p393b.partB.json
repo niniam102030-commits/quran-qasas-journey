@@ -1,0 +1,3921 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393b",
+  "part": "B",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393b_B_0261",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ مَاذَآ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "explanationFa": "«ماذا» به معنای «چه پاسخی» و پیامبران معادل «المرسلین» است."
+    },
+    {
+      "id": "q_u_p393b_B_0262",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65",
+        "vr:65"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "explanationFa": "ترتیب کلمات دقیقا مطابق ترجمه پیش می‌رود."
+    },
+    {
+      "id": "q_u_p393b_B_0263",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 65,
+      "targets": [
+        "vt:65",
+        "vr:65"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_word",
+        "b8": "neighbor_word"
+      },
+      "explanationFa": "کلمات انحرافی از آیات قبل انتخاب شده‌اند که معنای متفاوتی دارند."
+    },
+    {
+      "id": "q_u_p393b_B_0264",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vn:65",
+        "vr:65"
+      ],
+      "promptFa": "آیه ۶۵ را بسازید.",
+      "stem": {
+        "verseNum": 65
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ مَاذَآ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۶۵ ندای الهی را در روز قیامت به تصویر می‌کشد."
+    },
+    {
+      "id": "q_u_p393b_B_0265",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vn:65",
+        "vr:65"
+      ],
+      "promptFa": "آیه ۶۵ را بسازید.",
+      "stem": {
+        "verseNum": 65
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه با کلمه ویوم آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0266",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vn:65",
+        "vr:65"
+      ],
+      "promptFa": "آیه ۶۵ را بسازید.",
+      "stem": {
+        "verseNum": 65
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "لَهُمْ",
+          "wordIdx": [
+            7
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "تمرکز بر روی واژگان اختصاصی همین آیه ضروری است."
+    },
+    {
+      "id": "q_u_p393b_B_0267",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "hiddenIdx": [
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه مربوط به سوال از پاسخگویی به پیامبران است."
+    },
+    {
+      "id": "q_u_p393b_B_0268",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "hiddenIdx": [
+          2,
+          4,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَدَعَوْهُمْ",
+          "wordIdx": [
+            4
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "4": "b2",
+        "6": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که فعل ینادیهم برای ندای قیامت استفاده شده است."
+    },
+    {
+      "id": "q_u_p393b_B_0269",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "hiddenIdx": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَقِيلَ",
+          "wordIdx": [
+            1
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            8
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "ساختار سوالی آیه با ماذا تکمیل می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0270",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5"
+      },
+      "distractorTags": {
+        "b6": "neighbor_verse",
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "یادآوری کلیدیِ افعال و اسامی مختص آیه ۶۵."
+    },
+    {
+      "id": "q_u_p393b_B_0271",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "vr:65",
+        "sq:65"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "givenCount": 2,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "پس از ذکر روز ندا، بلافاصله پرسش مطرح می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0272",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "vr:65",
+        "sq:65"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "givenCount": 3,
+        "hiddenIdx": [
+          4,
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَاذَآ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَجَبْتُمُ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "5": "b2",
+        "6": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "فیقول ماذا اجبتم المرسلین."
+    },
+    {
+      "id": "q_u_p393b_B_0273",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "vr:65",
+        "sq:65"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 65,
+        "givenCount": 5,
+        "hiddenIdx": [
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            17
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "wordIdx": [
+            53
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1"
+      },
+      "distractorTags": {
+        "b2": "near_miss",
+        "b3": "near_miss"
+      },
+      "explanationFa": "در اینجا سوال از پاسخ به پیامبران (المرسلین) است."
+    },
+    {
+      "id": "q_u_p393b_B_0274",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 65,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 5,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_064_006",
+            "w28_064_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_068_008",
+            "w28_068_009"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه با پرسش «أجبتم المرسلین» تمام می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0275",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 65,
+        "hideLastWords": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 6,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_068_014"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_067_011"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "کلمه نهایی المرسلین است."
+    },
+    {
+      "id": "q_u_p393b_B_0276",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_065_001",
+            "w28_064_004",
+            "w28_065_003",
+            "w28_065_004",
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_065_001",
+            "w28_065_002",
+            "w28_064_001",
+            "w28_065_004",
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_065_001",
+            "w28_065_002",
+            "w28_065_003",
+            "w28_065_004",
+            "w28_065_005",
+            "w28_064_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ترکیب ینادیهم و فیقول و المرسلین صحیح است، نه کلمات مشابه آیات قبل."
+    },
+    {
+      "id": "q_u_p393b_B_0277",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 65,
+      "targets": [
+        "vr:65"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 65
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 65,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_064_010",
+            "w28_064_011",
+            "w28_065_003",
+            "w28_065_004",
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_065_001",
+            "w28_065_002",
+            "w28_065_003",
+            "w28_064_004",
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_065_001",
+            "w28_065_002",
+            "w28_065_003",
+            "w28_065_004",
+            "w28_065_005",
+            "w28_067_011"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "گزینه‌های خطا با کلمات لو و فدعوهم از آیه قبل ترکیب شده‌اند."
+    },
+    {
+      "id": "q_u_p393b_B_0278",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "پس در آن روز اخبار بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَهُمْ لَا يَتَسَآءَلُونَ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "explanationFa": "«فعمیت» به معنای پوشیده ماندن و «لا یتساءلون» یعنی پرسش نمی‌کنند."
+    },
+    {
+      "id": "q_u_p393b_B_0279",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66",
+        "vr:66"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "پس در آن روز اخبار بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "explanationFa": "ترجمه دقیق و بدون اضافه از روی کلمات."
+    },
+    {
+      "id": "q_u_p393b_B_0280",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 66,
+      "targets": [
+        "vt:66",
+        "vr:66"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "پس در آن روز اخبار بر آنان پوشیده ماند، بنابراین از یکدیگر پرسش هم نمی کنند،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که فعل یتساءلون در اینجا به کار رفته است."
+    },
+    {
+      "id": "q_u_p393b_B_0281",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vn:66",
+        "vr:66"
+      ],
+      "promptFa": "آیه ۶۶ را بسازید.",
+      "stem": {
+        "verseNum": 66
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ عَلَيْهِمُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَهُمْ لَا يَتَسَآءَلُونَ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَوْ أَنَّهُمْ كَانُوا۟",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه توصیف حیرت در روز قیامت است."
+    },
+    {
+      "id": "q_u_p393b_B_0282",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vn:66",
+        "vr:66"
+      ],
+      "promptFa": "آیه ۶۶ را بسازید.",
+      "stem": {
+        "verseNum": 66
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب کلمات دقیقا رعایت شود."
+    },
+    {
+      "id": "q_u_p393b_B_0283",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vn:66",
+        "vr:66"
+      ],
+      "promptFa": "آیه ۶۶ را بسازید.",
+      "stem": {
+        "verseNum": 66
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "گزینه‌های خطا از کلمات آیه ۶۴ انتخاب شده‌اند."
+    },
+    {
+      "id": "q_u_p393b_B_0284",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "hiddenIdx": [
+          3,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "شُرَكَآءَكُمْ",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "wordIdx": [
+            6
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "7": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "کلمات کلیدیِ پوشیده‌ماندن اخبار و نپرسیدن."
+    },
+    {
+      "id": "q_u_p393b_B_0285",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "hiddenIdx": [
+          1,
+          4,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "4": "b2",
+        "7": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "فعل اول آیه فعمیت است."
+    },
+    {
+      "id": "q_u_p393b_B_0286",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "hiddenIdx": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَمِيَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَرَأَوُا۟",
+          "wordIdx": [
+            8
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْعَذَابَ ۚ",
+          "wordIdx": [
+            9
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "5": "b3",
+        "7": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی پوشیدگیِ اخبار."
+    },
+    {
+      "id": "q_u_p393b_B_0287",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَلَيْهِمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَنَّهُمْ",
+          "wordIdx": [
+            11
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5",
+        "7": "b6"
+      },
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "بیشتر آیه برای محک عمق حفظ پنهان شده است."
+    },
+    {
+      "id": "q_u_p393b_B_0288",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 66,
+      "targets": [
+        "vr:66",
+        "sq:66"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "givenCount": 2,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْأَنۢبَآءُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَوْمَئِذٍۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَهْتَدُونَ",
+          "wordIdx": [
+            13
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4",
+        "7": "b5"
+      },
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "پس از فعمیت علیهم، کلمه الانباء می‌آید."
+    },
+    {
+      "id": "q_u_p393b_B_0289",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 66,
+      "targets": [
+        "vr:66",
+        "sq:66"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "givenCount": 4,
+        "hiddenIdx": [
+          5,
+          6,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَلَمْ",
+          "wordIdx": [
+            5
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2",
+        "7": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "فهم لا یتساءلون پایان آیه است."
+    },
+    {
+      "id": "q_u_p393b_B_0290",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 66,
+      "targets": [
+        "vr:66",
+        "sq:66"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 66,
+        "givenCount": 5,
+        "hiddenIdx": [
+          6,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَتَسَآءَلُونَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [
+            6
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "7": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "فهم لا یتساءلون."
+    },
+    {
+      "id": "q_u_p393b_B_0291",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 66,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 6,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_068_013",
+            "w28_068_014"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه با لا یتساءلون پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393b_B_0292",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 66,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 5,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_064_011",
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_064_005",
+            "w28_064_006",
+            "w28_064_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_068_006",
+            "w28_068_007",
+            "w28_068_008"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پایان صحیح فهم لا یتساءلون است."
+    },
+    {
+      "id": "q_u_p393b_B_0293",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 66
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_066_001",
+            "w28_066_002",
+            "w28_064_009",
+            "w28_066_004",
+            "w28_066_005",
+            "w28_066_006",
+            "w28_066_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_064_008",
+            "w28_066_002",
+            "w28_066_003",
+            "w28_066_004",
+            "w28_066_005",
+            "w28_066_006",
+            "w28_066_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_066_001",
+            "w28_066_002",
+            "w28_066_003",
+            "w28_066_004",
+            "w28_064_011",
+            "w28_066_006",
+            "w28_066_007"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمات صحیح فعمیت، الانباء و فهم هستند."
+    },
+    {
+      "id": "q_u_p393b_B_0294",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 66,
+      "targets": [
+        "vr:66"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 66
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 66,
+            "from": 1,
+            "to": 7
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_066_001",
+            "w28_066_002",
+            "w28_066_003",
+            "w28_066_004",
+            "w28_066_005",
+            "w28_064_005",
+            "w28_064_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_066_001",
+            "w28_064_007",
+            "w28_066_003",
+            "w28_066_004",
+            "w28_066_005",
+            "w28_066_006",
+            "w28_066_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_066_001",
+            "w28_066_002",
+            "w28_066_003",
+            "w28_066_004",
+            "w28_064_011",
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ترکیب کلمات را با دقت از آیات مشابه تشخیص دهید."
+    },
+    {
+      "id": "q_u_p393b_B_0295",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا مَن تَابَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَعَسَىٰٓ أَن يَكُونَ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِنَ ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب قطعات آیه کاملا بر ترجمه منطبق است."
+    },
+    {
+      "id": "q_u_p393b_B_0296",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67",
+        "vr:67"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "explanationFa": "آیه شامل ۱۱ کلمه است که به ترتیب قرار می‌گیرند."
+    },
+    {
+      "id": "q_u_p393b_B_0297",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 67,
+      "targets": [
+        "vt:67",
+        "vr:67"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید.",
+      "stem": {
+        "fa": "و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            17
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b13",
+          "ar": "خَـٰطِـِٔينَ",
+          "wordIdx": [
+            39
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b14",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "wordIdx": [
+            53
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "distractorTags": {
+        "b12": "near_miss",
+        "b13": "near_miss",
+        "b14": "near_miss"
+      },
+      "explanationFa": "واژه المفلحین به معنای رستگاران است."
+    },
+    {
+      "id": "q_u_p393b_B_0298",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vn:67",
+        "vr:67"
+      ],
+      "promptFa": "آیه ۶۷ را بسازید.",
+      "stem": {
+        "verseNum": 67
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا مَن تَابَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَعَسَىٰٓ أَن يَكُونَ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِنَ ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَا يَشَآءُ وَيَخْتَارُ ۗ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه با عبارت فاما من تاب آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0299",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vn:67",
+        "vr:67"
+      ],
+      "promptFa": "آیه ۶۷ را بسازید.",
+      "stem": {
+        "verseNum": 67
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "وَرَبُّكَ",
+          "wordIdx": [
+            1
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "distractorTags": {
+        "b12": "neighbor_verse"
+      },
+      "explanationFa": "این آیه تنها آیه این بخش است که با فاما آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p393b_B_0300",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vn:67",
+        "vr:67"
+      ],
+      "promptFa": "آیه ۶۷ را بسازید.",
+      "stem": {
+        "verseNum": 67
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b12",
+          "ar": "يَخْلُقُ",
+          "wordIdx": [
+            2
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b13",
+          "ar": "ٱلْخِيَرَةُ ۚ",
+          "wordIdx": [
+            9
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "distractorTags": {
+        "b12": "neighbor_verse",
+        "b13": "neighbor_verse"
+      },
+      "explanationFa": "ساخت دقیق آیه با کنار زدن کلمات آیات مجاور."
+    },
+    {
+      "id": "q_u_p393b_B_0301",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "hiddenIdx": [
+          3,
+          6,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "خَـٰطِـِٔينَ",
+          "wordIdx": [
+            39
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            17
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "6": "b2",
+        "11": "b3"
+      },
+      "distractorTags": {
+        "b4": "near_miss",
+        "b5": "near_miss"
+      },
+      "explanationFa": "کلمات کلیدی توبه، عمل صالح و فلاح."
+    },
+    {
+      "id": "q_u_p393b_B_0302",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "hiddenIdx": [
+          1,
+          4,
+          7,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَأَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانَ",
+          "wordIdx": [
+            7
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "وَرَبُّكَ",
+          "wordIdx": [
+            1
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "4": "b2",
+        "7": "b3",
+        "9": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse",
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "فاما، وءامن، فعسی همگی با ف یا و آغاز می‌شوند."
+    },
+    {
+      "id": "q_u_p393b_B_0303",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "hiddenIdx": [
+          2,
+          4,
+          5,
+          8,
+          10,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "عَلَى",
+          "wordIdx": [
+            19
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "wordIdx": [
+            53
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "4": "b2",
+        "5": "b3",
+        "8": "b4",
+        "10": "b5",
+        "11": "b6"
+      },
+      "distractorTags": {
+        "b7": "near_miss",
+        "b8": "near_miss"
+      },
+      "explanationFa": "تکمیل حروف ربط و افعال."
+    },
+    {
+      "id": "q_u_p393b_B_0304",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "جاهای خالی را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَن",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَابَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَءَامَنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَعَمِلَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "صَـٰلِحًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "فَعَسَىٰٓ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "أَن",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "مَا",
+          "wordIdx": [
+            3
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b11",
+          "ar": "كَانَ",
+          "wordIdx": [
+            7
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5",
+        "7": "b6",
+        "8": "b7",
+        "9": "b8",
+        "10": "b9"
+      },
+      "distractorTags": {
+        "b10": "neighbor_verse",
+        "b11": "neighbor_verse"
+      },
+      "explanationFa": "بخش عمده آیه پنهان است، کلمات را دقیق جاگذاری کنید."
+    },
+    {
+      "id": "q_u_p393b_B_0305",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 67,
+      "targets": [
+        "vr:67",
+        "sq:67"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "givenCount": 3,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَءَامَنَ وَعَمِلَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "صَـٰلِحًۭا فَعَسَىٰٓ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَن يَكُونَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِنَ ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            17
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "6": "b2",
+        "8": "b3",
+        "10": "b4"
+      },
+      "distractorTags": {
+        "b5": "near_miss"
+      },
+      "explanationFa": "بعد از تاب، وءامن وعمل می‌آید."
+    },
+    {
+      "id": "q_u_p393b_B_0306",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 67,
+      "targets": [
+        "vr:67",
+        "sq:67"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "givenCount": 6,
+        "hiddenIdx": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَسَىٰٓ أَن",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنَ ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانُوا۟",
+          "wordIdx": [
+            12
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "9": "b2",
+        "10": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "پس از صالحا، عبارت فعسی ان یکون قرار دارد."
+    },
+    {
+      "id": "q_u_p393b_B_0307",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 67,
+      "targets": [
+        "vr:67",
+        "sq:67"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 67,
+        "givenCount": 8,
+        "hiddenIdx": [
+          9,
+          10,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَكُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِنَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُفْلِحِينَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَى",
+          "wordIdx": [
+            19
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1",
+        "10": "b2",
+        "11": "b3"
+      },
+      "distractorTags": {
+        "b4": "near_miss"
+      },
+      "explanationFa": "یکون من المفلحین."
+    },
+    {
+      "id": "q_u_p393b_B_0308",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 67,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 10,
+            "to": 11
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_068_008",
+            "w28_068_009"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_068_013",
+            "w28_068_014"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_065_005",
+            "w28_065_006"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه با من المفلحین پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p393b_B_0309",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "کلمات پایانی آیه کدام‌اند؟",
+      "stem": {
+        "verse": 67,
+        "hideLastWords": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 7,
+            "to": 11
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_068_010",
+            "w28_068_011",
+            "w28_068_012",
+            "w28_068_013",
+            "w28_068_014"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_064_009",
+            "w28_064_010",
+            "w28_064_011",
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_066_003",
+            "w28_066_004",
+            "w28_066_005",
+            "w28_066_006",
+            "w28_066_007"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پایان صحیح فعسی ان یکون من المفلحین است."
+    },
+    {
+      "id": "q_u_p393b_B_0310",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 67
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 11
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_067_007",
+            "w28_067_008",
+            "w28_067_009",
+            "w28_067_010",
+            "w28_065_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_067_007",
+            "w28_067_008",
+            "w28_067_009",
+            "w28_067_010",
+            "w28_068_014"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_067_007",
+            "w28_067_008",
+            "w28_068_007",
+            "w28_067_010",
+            "w28_067_011"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "دقت کنید که انتهای آیه المفلحین است و فعل یکون درست می‌باشد."
+    },
+    {
+      "id": "q_u_p393b_B_0311",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 67,
+      "targets": [
+        "vr:67"
+      ],
+      "promptFa": "کدام ترکیب برای این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 67
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 67,
+            "from": 1,
+            "to": 11
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_068_007",
+            "w28_067_008",
+            "w28_067_009",
+            "w28_067_010",
+            "w28_067_011"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_067_007",
+            "w28_067_008",
+            "w28_067_009",
+            "w28_068_013",
+            "w28_067_011"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_067_001",
+            "w28_067_002",
+            "w28_067_003",
+            "w28_067_004",
+            "w28_067_005",
+            "w28_067_006",
+            "w28_067_007",
+            "w28_067_008",
+            "w28_067_009",
+            "w28_067_010",
+            "w28_064_013"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ترکیب واژگان فعسی، من و المفلحین در این آیه صحیح است."
+    }
+  ],
+  "issues": []
+}

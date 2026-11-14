@@ -1,0 +1,6 @@
+[#1 q_u_p386a_C_0257 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_006'.
+[#1 q_u_p386a_C_0257 BUILD_PREV_VERSE] target نامعتبر 'vr:v28_006'.
+[#1 q_u_p386a_C_0257 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p386a_C_0258 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_006'.
+[#2 q_u_p386a_C_0258 BUILD_PREV_VERSE] target نامعتبر 'vr:v28_006'.
+[#2 q_u_p386a_C_0258 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.

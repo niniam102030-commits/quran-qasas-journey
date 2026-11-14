@@ -1,0 +1,7 @@
+[#2 q_u_p386b_A_1056 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p386b_A_1058 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p386b_A_1059 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: ۞ وَحَرَّمْنَا
+[#5 q_u_p386b_A_1059 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ
+[#6 q_u_p386b_A_1060 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p386b_A_1061 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p386b_A_1062 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

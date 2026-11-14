@@ -1,0 +1,991 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388a",
+  "part": "A5",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388a_A_0549",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_023"
+      ],
+      "promptFa": "معنای «يُصْدِرَ» چیست؟",
+      "stem": {
+        "wordId": "w28_023_023",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرمان صادر کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "برگردانند"
+        },
+        {
+          "id": "o3",
+          "fa": "آب بدهند"
+        },
+        {
+          "id": "o4",
+          "fa": "وارد آبگاه شوند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ص د ر»؛ «يُصْدِرَ» یعنی [دام‌ها را از آبگاه] برگردانند، نه فرمان صادر کردن."
+    },
+    {
+      "id": "q_u_p388a_A_0550",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_023"
+      ],
+      "promptFa": "در این آیه، معنای «يُصْدِرَ» چیست؟",
+      "stem": {
+        "wordId": "w28_023_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازمی‌دارند"
+        },
+        {
+          "id": "o2",
+          "fa": "در صدر بنشینند"
+        },
+        {
+          "id": "o3",
+          "fa": "پیر شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "برگردانند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يُصْدِرَ» در برابر «وُرود» است؛ یعنی برگرداندن دام‌ها از سر آب. به «صدر» (بالای مجلس) ربطی ندارد."
+    },
+    {
+      "id": "q_u_p388a_A_0551",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_023"
+      ],
+      "promptFa": "در عبارت «حَتَّىٰ يُصْدِرَ ٱلرِّعَآءُ» فعل «يُصْدِرَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_023_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیاورند و وارد کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "فرمان دهند"
+        },
+        {
+          "id": "o3",
+          "fa": "برگردانند و خارج سازند"
+        },
+        {
+          "id": "o4",
+          "fa": "گرد آورند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "«إصدار» نقطه‌ی مقابل «وُرود» است: خارج کردن گوسفندان از آبگاه. «فرمان دادن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0552",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_024"
+      ],
+      "promptFa": "معنای «ٱلرِّعَآءُ» چیست؟",
+      "stem": {
+        "wordId": "w28_023_024",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رعایت‌کنندگان"
+        },
+        {
+          "id": "o2",
+          "fa": "پیران"
+        },
+        {
+          "id": "o3",
+          "fa": "شبانان"
+        },
+        {
+          "id": "o4",
+          "fa": "زنان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الرِّعاء» جمع «راعی» به معنای چوپانان است، نه رعایت‌کنندگان."
+    },
+    {
+      "id": "q_u_p388a_A_0553",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_024"
+      ],
+      "promptFa": "در این آیه، «ٱلرِّعَآءُ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_023_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مردم"
+        },
+        {
+          "id": "o2",
+          "fa": "رعایا"
+        },
+        {
+          "id": "o3",
+          "fa": "گوسفندان"
+        },
+        {
+          "id": "o4",
+          "fa": "چوپانان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ر ع ي»؛ «الرِّعاء» چوپانانی‌اند که دام‌ها را برمی‌گردانند، نه خود دام‌ها."
+    },
+    {
+      "id": "q_u_p388a_A_0554",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_024"
+      ],
+      "promptFa": "فاعل «يُصْدِرَ» در «حَتَّىٰ يُصْدِرَ ٱلرِّعَآءُ» کیست؟ (معنای «ٱلرِّعَآءُ»)",
+      "stem": {
+        "wordId": "w28_023_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیرمردان"
+        },
+        {
+          "id": "o2",
+          "fa": "دو زن"
+        },
+        {
+          "id": "o3",
+          "fa": "رعایت‌کنندگان"
+        },
+        {
+          "id": "o4",
+          "fa": "شبانان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«الرِّعاء» جمع «راعی» و به معنای شبانان است؛ آنان دام‌هایشان را برمی‌گردانند."
+    },
+    {
+      "id": "q_u_p388a_A_0555",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 24,
+      "targets": [
+        "w:w28_024_004"
+      ],
+      "promptFa": "معنای «تَوَلَّىٰٓ» چیست؟",
+      "stem": {
+        "wordId": "w28_024_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آب داد"
+        },
+        {
+          "id": "o2",
+          "fa": "برگشت"
+        },
+        {
+          "id": "o3",
+          "fa": "سرپرستی را بر عهده گرفت"
+        },
+        {
+          "id": "o4",
+          "fa": "گفت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَوَلَّىٰ» با «إلَی» یعنی برگشت و رفت. «تولیت» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0556",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 24,
+      "targets": [
+        "w:w28_024_004"
+      ],
+      "promptFa": "در این آیه، «تَوَلَّىٰٓ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_024_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تولیت را پذیرفت"
+        },
+        {
+          "id": "o2",
+          "fa": "نیازمند شد"
+        },
+        {
+          "id": "o3",
+          "fa": "روی گرداند و به کناری رفت"
+        },
+        {
+          "id": "o4",
+          "fa": "به آنان کمک کرد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «و ل ي»؛ در اینجا یعنی روی گرداند و به سوی سایه رفت."
+    },
+    {
+      "id": "q_u_p388a_A_0557",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 24,
+      "targets": [
+        "w:w28_024_004"
+      ],
+      "promptFa": "در «ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ» فعل «تَوَلَّىٰٓ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_024_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برگشت"
+        },
+        {
+          "id": "o2",
+          "fa": "سرپرست شد"
+        },
+        {
+          "id": "o3",
+          "fa": "آب داد"
+        },
+        {
+          "id": "o4",
+          "fa": "رسید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "حرف جر «إلَی» نشان می‌دهد «تَوَلَّىٰ» یعنی برگشتن و رفتن به سوی سایه."
+    },
+    {
+      "id": "q_u_p388a_A_0558",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_023"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «برگردانند» است؟",
+      "stem": {
+        "fa": "برگردانند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَسْقِى"
+        },
+        {
+          "id": "o2",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُصْدِرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَذُودَانِ ۖ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يُصْدِرَ» از «ص د ر» است. «وَرَدَ» مقابل آن است (رسیدن به آب)."
+    },
+    {
+      "id": "q_u_p388a_A_0559",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_023"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «برگردانند و خارج سازند» است؟",
+      "stem": {
+        "fa": "برگردانند و خارج سازند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَسْقُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُصْدِرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَوَلَّىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "حَتَّىٰ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يُصْدِرَ» یعنی خارج کردن دام‌ها از آبگاه. «تَوَلَّىٰ» برگشتن خود شخص است."
+    },
+    {
+      "id": "q_u_p388a_A_0560",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_024"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «شبانان» است؟",
+      "stem": {
+        "fa": "شبانان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلنَّاسِ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱمْرَأَتَيْنِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«الرِّعاء» جمع «راعی» است. بقیه گزینه‌ها مردم و دو زن‌اند."
+    },
+    {
+      "id": "q_u_p388a_A_0561",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_024"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «چوپانان» است؟",
+      "stem": {
+        "fa": "چوپانان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلظِّلِّ"
+        },
+        {
+          "id": "o2",
+          "ar": "شَيْخٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "خَطْبُكُمَا ۖ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الرِّعاء» با ریشه‌ی «ر ع ي» یعنی چوپانان. «شَيْخ» پیر است و پدر دو زن را وصف می‌کند."
+    },
+    {
+      "id": "q_u_p388a_A_0562",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 24,
+      "targets": [
+        "w:w28_024_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «برگشت» است؟",
+      "stem": {
+        "fa": "برگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَسَقَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَوَلَّىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَقَالَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَنزَلْتَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَوَلَّىٰٓ» یعنی برگشت. «فَسَقَىٰ» آب داد و «فَقَالَ» گفت."
+    },
+    {
+      "id": "q_u_p388a_A_0563",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 24,
+      "targets": [
+        "w:w28_024_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «روی گرداند و به کناری رفت» است؟",
+      "stem": {
+        "fa": "روی گرداند و به کناری رفت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَجَدَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ثُمَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَنزَلْتَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَوَلَّىٰٓ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«تَوَلَّىٰٓ» از ریشه‌ی «و ل ي» است. «ثُمَّ» فقط حرف عطف زمانی (سپس) است."
+    },
+    {
+      "id": "q_u_p388a_A_0564",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_023_023",
+        "w:w28_023_024",
+        "w:w28_024_004"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُصْدِرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَوَلَّىٰٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلظِّلِّ"
+        },
+        {
+          "id": "l5",
+          "ar": "شَيْخٌۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سایه"
+        },
+        {
+          "id": "r2",
+          "fa": "برگشت"
+        },
+        {
+          "id": "r3",
+          "fa": "برگردانند"
+        },
+        {
+          "id": "r4",
+          "fa": "پیر"
+        },
+        {
+          "id": "r5",
+          "fa": "شبانان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "سه کلمه‌ی سخت: يُصْدِرَ (برگردانند)، الرِّعاء (شبانان) و تَوَلَّىٰ (برگشت)."
+    },
+    {
+      "id": "q_u_p388a_A_0565",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_023_023",
+        "w:w28_023_024",
+        "w:w28_024_004"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید. یک معنای اضافه هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَوَلَّىٰٓ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَقِيرٌۭ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُصْدِرَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نیازمند"
+        },
+        {
+          "id": "r2",
+          "fa": "فرمان صادر کنند"
+        },
+        {
+          "id": "r3",
+          "fa": "برگردانند"
+        },
+        {
+          "id": "r4",
+          "fa": "شبانان"
+        },
+        {
+          "id": "r5",
+          "fa": "رسید"
+        },
+        {
+          "id": "r6",
+          "fa": "برگشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«فرمان صادر کنند» دوست فریبنده‌ی «يُصْدِرَ» است؛ «وَرَدَ» مقابل آن است."
+    },
+    {
+      "id": "q_u_p388a_A_0566",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 7,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_023_023",
+        "w:w28_023_024",
+        "w:w28_024_004"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید. یک معنای اضافه هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَسْقِى"
+        },
+        {
+          "id": "l3",
+          "ar": "يُصْدِرَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَذُودَانِ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَوَلَّىٰٓ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بازمی‌دارند"
+        },
+        {
+          "id": "r2",
+          "fa": "برگشت"
+        },
+        {
+          "id": "r3",
+          "fa": "رعایت‌کنندگان"
+        },
+        {
+          "id": "r4",
+          "fa": "شبانان"
+        },
+        {
+          "id": "r5",
+          "fa": "آب نمی‌دهیم"
+        },
+        {
+          "id": "r6",
+          "fa": "برگردانند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "«رعایت‌کنندگان» دوست فریبنده‌ی «الرِّعاء» است؛ معنای درست شبانان است."
+    },
+    {
+      "id": "q_u_p388a_A_0567",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_023_023",
+        "w:w28_023_024",
+        "w:w28_024_004"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید. یک معنای اضافه هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَجَدَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَوَلَّىٰٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَسَقَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُصْدِرَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلرِّعَآءُ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شبانان"
+        },
+        {
+          "id": "r2",
+          "fa": "سرپرستی را بر عهده گرفت"
+        },
+        {
+          "id": "r3",
+          "fa": "آب داد"
+        },
+        {
+          "id": "r4",
+          "fa": "برگردانند"
+        },
+        {
+          "id": "r5",
+          "fa": "یافت"
+        },
+        {
+          "id": "r6",
+          "fa": "برگشت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«سرپرستی را بر عهده گرفت» دوست فریبنده‌ی «تَوَلَّىٰ» است؛ در این آیه یعنی برگشت."
+    }
+  ],
+  "issues": []
+}

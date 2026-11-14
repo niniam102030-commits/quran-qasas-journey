@@ -1,0 +1,40 @@
+[#1 q_u_p388a_B_0401 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p388a_B_0401 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p388a_B_0402 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p388a_B_0402 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p388a_B_0403 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p388a_B_0404 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p388a_B_0404 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p388a_B_0405 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p388a_B_0405 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p388a_B_0406 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p388a_B_0407 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p388a_B_0408 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#11 q_u_p388a_B_0411 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#11 q_u_p388a_B_0411 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#12 q_u_p388a_B_0412 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#13 q_u_p388a_B_0413 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#14 q_u_p388a_B_0414 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#18 q_u_p388a_B_0418 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#18 q_u_p388a_B_0418 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#19 q_u_p388a_B_0419 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#19 q_u_p388a_B_0419 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#20 q_u_p388a_B_0420 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#21 q_u_p388a_B_0421 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#21 q_u_p388a_B_0421 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#22 q_u_p388a_B_0422 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#22 q_u_p388a_B_0422 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#23 q_u_p388a_B_0423 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#24 q_u_p388a_B_0424 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#24 q_u_p388a_B_0424 CLOZE_AR] بانک b4: کلمه(های) عربی خارج از متن سوره/بانک: تَذُودَانِ ۖ
+[#24 q_u_p388a_B_0424 CLOZE_AR] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: خَطْبُكُمَا ۖ
+[#25 q_u_p388a_B_0425 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#25 q_u_p388a_B_0425 CLOZE_AR] بانک b9: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرِّعَآءُ ۖ
+[#26 q_u_p388a_B_0426 CLOZE_AR] بانک b13: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرِّعَآءُ ۖ
+[#27 q_u_p388a_B_0427 CLOZE_AR] بانک b15: کلمه(های) عربی خارج از متن سوره/بانک: خَطْبُكُمَا ۖ
+[#27 q_u_p388a_B_0427 CLOZE_AR] بانک b19: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرِّعَآءُ ۖ
+[#28 q_u_p388a_B_0428 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#28 q_u_p388a_B_0428 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#29 q_u_p388a_B_0429 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#30 q_u_p388a_B_0430 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#31 q_u_p388a_B_0431 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.

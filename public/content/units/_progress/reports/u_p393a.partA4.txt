@@ -1,0 +1,61 @@
+[#1 q_u_p393a_A_1381 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: وَزِينَتُهَا ۚ
+[#2 q_u_p393a_A_1382 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: وَأَبْقَىٰٓ ۚ
+[#6 q_u_p393a_A_1386 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p393a_A_1387 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p393a_A_1388 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p393a_A_1389 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p393a_A_1389 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 60 برابر نیست.
+[#10 q_u_p393a_A_1390 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p393a_A_1390 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 60 برابر نیست.
+[#11 q_u_p393a_A_1391 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p393a_A_1392 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p393a_A_1393 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#13 q_u_p393a_A_1393 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p393a_A_1394 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#14 q_u_p393a_A_1394 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#16 q_u_p393a_A_1396 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p393a_A_1397 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p393a_A_1398 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p393a_A_1399 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p393a_A_1400 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p393a_A_1401 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p393a_A_1401 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 61 برابر نیست.
+[#22 q_u_p393a_A_1402 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p393a_A_1402 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 61 برابر نیست.
+[#23 q_u_p393a_A_1403 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p393a_A_1404 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p393a_A_1405 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#25 q_u_p393a_A_1405 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#26 q_u_p393a_A_1406 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#26 q_u_p393a_A_1406 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 2).
+[#26 q_u_p393a_A_1406 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#28 q_u_p393a_A_1408 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p393a_A_1409 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#30 q_u_p393a_A_1410 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p393a_A_1411 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p393a_A_1412 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p393a_A_1413 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p393a_A_1413 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 62 برابر نیست.
+[#34 q_u_p393a_A_1414 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#34 q_u_p393a_A_1414 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 62 برابر نیست.
+[#35 q_u_p393a_A_1415 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p393a_A_1416 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#37 q_u_p393a_A_1417 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#37 q_u_p393a_A_1417 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#38 q_u_p393a_A_1418 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#38 q_u_p393a_A_1418 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#38 q_u_p393a_A_1418 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: غَوَيْنَا ۖ
+[#38 q_u_p393a_A_1418 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#38 q_u_p393a_A_1418 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#39 q_u_p393a_A_1419 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#40 q_u_p393a_A_1420 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#41 q_u_p393a_A_1421 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#42 q_u_p393a_A_1422 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#43 q_u_p393a_A_1423 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#44 q_u_p393a_A_1424 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#45 q_u_p393a_A_1425 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#45 q_u_p393a_A_1425 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 63 برابر نیست.
+[#46 q_u_p393a_A_1426 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#46 q_u_p393a_A_1426 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 63 برابر نیست.
+[#47 q_u_p393a_A_1427 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+… خطاهای بیشتر نمایش داده نمی‌شود.

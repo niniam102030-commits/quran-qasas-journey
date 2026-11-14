@@ -1,0 +1,18 @@
+[#1 q_u_p389b_C_1501 WORD_AR_TO_FA] stage باید در بازه‌ی 5 تا 8 باشد.
+[#2 q_u_p389b_C_1502 MATCH_WORDS] stage باید در بازه‌ی 5 تا 8 باشد.
+[#2 q_u_p389b_C_1502 MATCH_WORDS] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#2 q_u_p389b_C_1502 MATCH_WORDS] l1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلرَّهْبِ
+[#4 q_u_p389b_C_1504 MATCH_PHRASES] stage باید در بازه‌ی 5 تا 8 باشد.
+[#4 q_u_p389b_C_1504 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#5 q_u_p389b_C_1505 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 5 تا 8 باشد.
+[#7 q_u_p389b_C_1507 NUMBER_TO_VERSE_START] stage باید در بازه‌ی 5 تا 8 باشد.
+[#9 q_u_p389b_C_1509 MATCH_NUMBER_OPENING] stage باید در بازه‌ی 5 تا 8 باشد.
+[#11 q_u_p389b_C_1511 NEXT_VERSE_CHOICE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: أَفْصَحُ... (۳۴)
+[#11 q_u_p389b_C_1511 NEXT_VERSE_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: عَضُدَكَ... (۳۵)
+[#11 q_u_p389b_C_1511 NEXT_VERSE_CHOICE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: مُّوسَىٰ... (۳۶)
+[#11 q_u_p389b_C_1511 NEXT_VERSE_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: جَيْبِكَ... (۳۲)
+[#11 q_u_p389b_C_1511 NEXT_VERSE_CHOICE] متن گزینه‌ی صحیح بخشی از آیه‌ی 34 نیست.
+[#12 q_u_p389b_C_1512 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#15 q_u_p389b_C_1515 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#16 q_u_p389b_C_1516 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+همه‌ی سوال‌های این برش باید stage 8 باشند (15 مورد نیستند).

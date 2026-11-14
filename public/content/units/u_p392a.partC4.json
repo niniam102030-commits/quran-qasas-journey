@@ -1,0 +1,1474 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "C4",
+  "generatedBy": "Gemini",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p392a_C_0741",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "معنای «وَصَّلْنَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_051_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پی در پی و به هم پیوسته آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "o3",
+          "fa": "می خوانند"
+        },
+        {
+          "id": "o4",
+          "fa": "دفع می کنند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«وصّلنا» از ریشه وصل، به معنای پی در پی آوردن و پیوند دادن آیات است."
+    },
+    {
+      "id": "q_u_p392a_C_0742",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 55,
+      "targets": [
+        "w:w28_055_003"
+      ],
+      "promptFa": "کدام کلمه به معنای «سخن بیهوده ای» است؟",
+      "stem": {
+        "fa": "سخن بیهوده ای"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلسَّيِّئَةَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱللَّغْوَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْجَـٰهِلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَوْلَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«اللغو» به معنای سخن بیهوده و باطل است که مسلمانان از آن روی می‌گردانند."
+    },
+    {
+      "id": "q_u_p392a_C_0743",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 52,
+      "targets": [
+        "vt:52"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "[و برخی از] کسانی که پیش از قرآن کتابشان دادیم، به قرآن ایمان می آورند،"
+        },
+        {
+          "id": "o2",
+          "fa": "اینان به علت صبری که کردند و بدی را با نیکی دفع می کنند، دوبار پاداششان می دهند."
+        },
+        {
+          "id": "o3",
+          "fa": "و هنگامی که بر آنان خوانند، می گویند: یقیناً این قرآن حق است."
+        },
+        {
+          "id": "o4",
+          "fa": "قطعاً تو نمی توانی هر که را خود دوست داری هدایت کنی."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه به ایمان آوردن اهل کتابِ پیش از قرآن اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0744",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 56,
+      "targets": [
+        "vt:56"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 56,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 50,
+            "from": 18,
+            "to": 23
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۵۶ خطاب به پیامبر (ص) درباره عدم توانایی ایشان در هدایتِ اجباریِ افراد است."
+    },
+    {
+      "id": "q_u_p392a_C_0745",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "شماره این آیه چیست؟",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 52
+        },
+        {
+          "id": "o2",
+          "num": 53
+        },
+        {
+          "id": "o3",
+          "num": 54
+        },
+        {
+          "id": "o4",
+          "num": 55
+        },
+        {
+          "id": "o5",
+          "num": 56
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه ۵۴ سوره قصص است که به پاداش دوبرابر صابران می‌پردازد."
+    },
+    {
+      "id": "q_u_p392a_C_0746",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 53,
+      "targets": [
+        "vn:53"
+      ],
+      "promptFa": "آیه ۵۳ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۳ با «وَإِذَا يُتْلَىٰ عَلَيْهِمْ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0747",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:56"
+      ],
+      "promptFa": "آیه بعد از این کدام است؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_057_001",
+            "w28_057_002",
+            "w28_057_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از آیه اعراض از لغو، خداوند به پیامبر می‌فرماید «إِنَّكَ لَا تَهْدِى...»."
+    },
+    {
+      "id": "q_u_p392a_C_0748",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 52,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "آیه قبل از این کدام است؟",
+      "stem": {
+        "verse": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_050_001",
+            "w28_050_002",
+            "w28_050_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "قبل از آیه ۵۲، خداوند درباره پیوسته فرستادن آیات قرآن در آیه ۵۱ سخن گفته است."
+    },
+    {
+      "id": "q_u_p392a_C_0749",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 54,
+      "targets": [
+        "vr:54"
+      ],
+      "promptFa": "کلمات پایانی این آیه کدامند؟",
+      "stem": {
+        "verse": 54,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_055_013",
+            "w28_055_014",
+            "w28_055_015"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_056_011",
+            "w28_056_012",
+            "w28_056_013"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_052_006",
+            "w28_052_007",
+            "w28_052_008"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_054_010",
+            "w28_054_011",
+            "w28_054_012"
+          ]
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه با عبارت «وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ» به پایان می‌رسد."
+    },
+    {
+      "id": "q_u_p392a_C_0750",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56"
+      ],
+      "promptFa": "کدام گزینه ادامه صحیح آیه است؟",
+      "stem": {
+        "verseNum": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّكَ لَا تَهْدِى ٱلْقَوْمَ ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّ ٱللَّهَ لَا يَهْدِى مَنْ أَحْبَبْتَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "عبارت «إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ» صحیح است و «لَا يَهْدِى ٱلْقَوْمَ ٱلظَّـٰلِمِينَ» مربوط به آیات دیگر است."
+    },
+    {
+      "id": "q_u_p392a_C_0751",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007",
+        "w:w28_055_004",
+        "w:w28_056_013",
+        "w:w28_053_002"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَعْرَضُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "بِٱلْمُهْتَدِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُتْلَىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r2",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "r3",
+          "fa": "به هدایت پذیران"
+        },
+        {
+          "id": "r4",
+          "fa": "خوانند"
+        },
+        {
+          "id": "r5",
+          "fa": "انفاق می نمایند"
+        },
+        {
+          "id": "r6",
+          "fa": "می گویند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "دقت در افعال و ضمایر در ترجمه صحیح کلمات ضروری است."
+    },
+    {
+      "id": "q_u_p392a_C_0752",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 53,
+      "targets": [
+        "vt:53"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه فارسی وصل کن.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "قَالُوٓا۟ ءَامَنَّا بِهِۦٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "إِنَّهُ ٱلْحَقُّ مِن رَّبِّنَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِنَّا كُنَّا مِن قَبْلِهِۦ مُسْلِمِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و هنگامی که بر آنان خوانند،"
+        },
+        {
+          "id": "r2",
+          "fa": "می گویند: به آن ایمان آوردیم،"
+        },
+        {
+          "id": "r3",
+          "fa": "یقیناً این قرآن از سوی پروردگارمان حق و درست است،"
+        },
+        {
+          "id": "r4",
+          "fa": "البته ما پیش از نزول آن [به سبب راهنمایی های تورات و انجیل] تسلیم بودیم."
+        },
+        {
+          "id": "r5",
+          "fa": "اینان به علت صبری که [بر ایمان و عمل به قرآن] کردند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "این قطعات، توصیف دقیق ایمان‌آورندگان به قرآن در آیه ۵۳ است."
+    },
+    {
+      "id": "q_u_p392a_C_0753",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 52,
+      "targets": [
+        "vn:52",
+        "vn:53",
+        "vn:54",
+        "vn:55",
+        "vn:56"
+      ],
+      "promptFa": "شماره هر آیه را به آغاز آن وصل کن.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "۵۲"
+        },
+        {
+          "id": "l2",
+          "ar": "۵۳"
+        },
+        {
+          "id": "l3",
+          "ar": "۵۴"
+        },
+        {
+          "id": "l4",
+          "ar": "۵۵"
+        },
+        {
+          "id": "l5",
+          "ar": "۵۶"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ"
+        },
+        {
+          "id": "r2",
+          "fa": "وَإِذَا يُتْلَىٰ"
+        },
+        {
+          "id": "r3",
+          "fa": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ"
+        },
+        {
+          "id": "r4",
+          "fa": "وَإِذَا سَمِعُوا۟"
+        },
+        {
+          "id": "r5",
+          "fa": "إِنَّكَ لَا تَهْدِى"
+        },
+        {
+          "id": "r6",
+          "fa": "۞ وَلَقَدْ وَصَّلْنَا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "ترتیب و شماره شروع آیات نیازمند تسلط بر توالی داستان است."
+    },
+    {
+      "id": "q_u_p392a_C_0754",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 54,
+      "targets": [
+        "vr:54"
+      ],
+      "promptFa": "با توجه به ترجمه، بخش ابتدایی آیه را بساز: «اینان به علت صبری که کردند ... دوبار پاداششان می دهند.»",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُؤْتَوْنَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَجْرَهُم",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَّرَّتَيْنِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "بِمَا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "صَبَرُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "أَعْمَـٰلُنَا",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۵۴ با اشاره به پاداش مضاعف صابران آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0755",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "آیه ۵۲ را به ترتیب صحیح بچین.",
+      "stem": {
+        "verse": 52
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن قَبْلِهِۦ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "هُم بِهِۦ يُؤْمِنُونَ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "در آیه ۵۲ به اهل کتابی اشاره می‌شود که قبل از قرآن نیز ایمان داشتند."
+    },
+    {
+      "id": "q_u_p392a_C_0756",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 51,
+      "targets": [
+        "sq:52"
+      ],
+      "promptFa": "آیه نمایش داده شده است. آیه بعد (۵۲) را بساز.",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن قَبْلِهِۦ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "هُم بِهِۦ يُؤْمِنُونَ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه بعد از «لعلهم یتذکرون»، آیه مربوط به مؤمنان پیشین است."
+    },
+    {
+      "id": "q_u_p392a_C_0757",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 56,
+      "targets": [
+        "sq:56"
+      ],
+      "promptFa": "آیه نمایش داده شده است. آیه قبل (۵۵) را بساز.",
+      "stem": {
+        "verse": 56
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "قبل از آیه ۵۶ که خطاب به پیامبر است، واکنش مؤمنان به سخن لغو بیان شده است."
+    },
+    {
+      "id": "q_u_p392a_C_0758",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 55,
+      "targets": [
+        "vt:55"
+      ],
+      "promptFa": "قطعات ترجمه آیه ۵۵ را مرتب کن.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و هنگامی که سخن بیهوده ای بشنوند،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "از آن روی برمی گردانند",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و می گویند: اعمال ما برای ما و اعمال شما برای شما،",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "سلام بر شما [سلام متارکه]، ما خواستار [همنشینی و معاشرت با] نادانان نیستیم.",
+          "wordIdx": [
+            4
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "این بخش‌ها توالی منطقی برخورد مؤمنان با جاهلان را نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p392a_C_0759",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "page",
+      "verse": 53,
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "این آیات را به ترتیب نزول در سوره بچین.",
+      "stem": {
+        "verses": [
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 53,
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ],
+          "verse": 53
+        },
+        {
+          "id": "b2",
+          "num": 54,
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ],
+          "verse": 54
+        },
+        {
+          "id": "b3",
+          "num": 55,
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ],
+          "verse": 55
+        },
+        {
+          "id": "b4",
+          "num": 56,
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ],
+          "verse": 56
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب توصیفات مؤمنان و سپس خطاب مستقیم به پیامبر."
+    },
+    {
+      "id": "q_u_p392a_C_0760",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "جاهای خالی آیه را با کلمات مناسب پر کن.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          2,
+          5,
+          8,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَامَنَّا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَسْتَجِيبُوا۟",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلظَّـٰلِمِينَ",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "8": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "دقت در کلمات کلیدی آیه مانند یتلی و آمنا."
+    },
+    {
+      "id": "q_u_p392a_C_0761",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55"
+      ],
+      "promptFa": "ادامه آیه را از بانک کلمات تکمیل کن.",
+      "stem": {
+        "verse": 55,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَنْهُ وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَكُمْ أَعْمَـٰلُكُمْ سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن قَبْلِهِۦ مُسْلِمِينَ",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "9": "b2",
+        "13": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "پس از اعراض، اعلان متارکه و عدم همنشینی با جاهلان می‌آید."
+    },
+    {
+      "id": "q_u_p392a_C_0762",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 56,
+      "targets": [
+        "vt:56"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کن.",
+      "stem": {
+        "verse": 56,
+        "faHidden": [
+          {
+            "start": 42,
+            "text": "هدایت کنی"
+          },
+          {
+            "start": 78,
+            "text": "هدایت می کند"
+          },
+          {
+            "start": 100,
+            "text": "هدایت پذیران"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "هدایت کنی",
+          "wordIdx": []
+        },
+        {
+          "id": "b2",
+          "fa": "هدایت می کند",
+          "wordIdx": []
+        },
+        {
+          "id": "b3",
+          "fa": "هدایت پذیران",
+          "wordIdx": []
+        },
+        {
+          "id": "b4",
+          "fa": "ایمان می آورند",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "fa": "دفع می کنند",
+          "wordIdx": [],
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "42": "b1",
+        "78": "b2",
+        "100": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "ترجمه دقیق افعالِ هدایت در این آیه مهم است."
+    },
+    {
+      "id": "q_u_p392a_C_0763",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_007"
+      ],
+      "promptFa": "معنای «يَدْرَءُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_054_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "انفاق می نمایند"
+        },
+        {
+          "id": "o3",
+          "fa": "روی برمی گردانند"
+        },
+        {
+          "id": "o4",
+          "fa": "بشنوند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«یدرءون» به معنای دفع کردن و برطرف نمودن بدی با نیکی است."
+    },
+    {
+      "id": "q_u_p392a_C_0764",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 53,
+      "targets": [
+        "sq:54"
+      ],
+      "promptFa": "آیه بعد از این کدام است؟",
+      "stem": {
+        "verse": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "بعد از بیان ایمان آوردن پیشین آن‌ها، پاداش دوبرابرشان مطرح می‌شود."
+    }
+  ]
+}

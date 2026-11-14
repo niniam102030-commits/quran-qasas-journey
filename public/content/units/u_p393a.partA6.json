@@ -1,0 +1,1307 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "A6",
+  "generatedBy": "Gemini 1.5 Pro",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p393a_A_1221",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "معنای «أَغْوَيْنَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "غوغا کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "ما آنها را گمراه کردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "رها کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "یاری کردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از ریشه «غ و ی» به معنای گمراه کردن است. مراقب شباهت ظاهری آن با غوغا در فارسی باشید."
+    },
+    {
+      "id": "q_u_p393a_A_1222",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "معنای «أَغْوَيْنَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پناه دادیم"
+        },
+        {
+          "id": "o2",
+          "fa": "بیزاری جستیم"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراهشان کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت کردیم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "به معنای «ما آنها را گمراه کردیم» یا «گمراهشان کردیم» می‌باشد."
+    },
+    {
+      "id": "q_u_p393a_A_1223",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "معنای «أَغْوَيْنَآ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_063_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ما آنها را گمراه کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "غوغا کردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه شدیم"
+        },
+        {
+          "id": "o4",
+          "fa": "بیزاری می‌جوییم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَغْوَیْنَا» یعنی گمراه کردیم، اما «غَوَیْنَا» که در همین آیه آمده به معنای گمراه شدیم است."
+    },
+    {
+      "id": "q_u_p393a_A_1224",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "معنای «أَغْوَيْنَآ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_063_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رها کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "حق شد"
+        },
+        {
+          "id": "o3",
+          "fa": "می پرستیدند"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراهشان کردیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "این کلمه از ریشه «غ و ی» به معنای به گمراهی کشاندن است."
+    },
+    {
+      "id": "q_u_p393a_A_1225",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «ما آنها را گمراه کردیم» است؟",
+      "stem": {
+        "fa": "ما آنها را گمراه کردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "غَوَيْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَهْتَدُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَغْوَیْنَا» متعدی و به معنای گمراه کردیم است، بر خلاف «غَوَیْنَا» که لازم است."
+    },
+    {
+      "id": "q_u_p393a_A_1226",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «گمراهشان کردیم» است؟",
+      "stem": {
+        "fa": "گمراهشان کردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَغْوَيْنَـٰهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَدَعَوْهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَسْتَجِيبُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «أَغْوَيْنَآ» به تنهایی شامل مفعول در معنای سیاقی خود در این آیه می‌باشد (گمراهشان کردیم)."
+    },
+    {
+      "id": "q_u_p393a_A_1227",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «ما آنها را گمراه کردیم» است؟",
+      "stem": {
+        "fa": "ما آنها را گمراه کردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَبَّنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱدْعُوا۟"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از ریشه «غ و ی» به معنای به گمراهی کشاندن است."
+    },
+    {
+      "id": "q_u_p393a_A_1228",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "معنای «تَبَرَّأْنَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تبرئه شدیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پناه بردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "ایمان آوردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "از آنها بیزاری می‌جوییم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "از ریشه «ب ر ء» است و به معنای اعلام برائت و بیزاری جستن می‌باشد، نه تبرئه شدن در دادگاه."
+    },
+    {
+      "id": "q_u_p393a_A_1229",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "معنای «تَبَرَّأْنَآ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاسخ دادیم"
+        },
+        {
+          "id": "o2",
+          "fa": "بیزاری می‌جوییم"
+        },
+        {
+          "id": "o3",
+          "fa": "دعا کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "آرزو کردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "به معنای اعلام برائت و بیزاری جستن از معبودان دروغین است."
+    },
+    {
+      "id": "q_u_p393a_A_1230",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "معنای «تَبَرَّأْنَآ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_063_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از آنها بیزاری می‌جوییم"
+        },
+        {
+          "id": "o2",
+          "fa": "تبرئه شدیم"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه کردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "می پرستیدند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "یعنی از مطیعان و پیروان خود در دنیا بیزاری می‌جوییم."
+    },
+    {
+      "id": "q_u_p393a_A_1231",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "معنای «تَبَرَّأْنَآ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_063_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تبرئه شدیم"
+        },
+        {
+          "id": "o2",
+          "fa": "می خوانند"
+        },
+        {
+          "id": "o3",
+          "fa": "بیزاری می‌جوییم"
+        },
+        {
+          "id": "o4",
+          "fa": "حق شد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "به معنای بیزاری جستن است و با کلمه «إِلَيْكَ» متعدی شده است (به سوی تو بیزاری می جوییم)."
+    },
+    {
+      "id": "q_u_p393a_A_1232",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «از آنها بیزاری می‌جوییم» است؟",
+      "stem": {
+        "fa": "از آنها بیزاری می‌جوییم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَعْبُدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَسْتَجِيبُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «تَبَرَّأْنَآ» از ریشه برائت به معنای بیزاری جستن است."
+    },
+    {
+      "id": "q_u_p393a_A_1233",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «بیزاری می‌جوییم» است؟",
+      "stem": {
+        "fa": "بیزاری می‌جوییم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "غَوَيْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "فَدَعَوْهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَأَوُا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "تَبَرَّأْنَآ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "ریشه «ب ر ء» به معنای برائت و بیزاری است."
+    },
+    {
+      "id": "q_u_p393a_A_1234",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «از آنها بیزاری می‌جوییم» است؟",
+      "stem": {
+        "fa": "از آنها بیزاری می‌جوییم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱدْعُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْعَذَابَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه بیانگر اعلام برائت سردمداران کفر از پیروانشان در قیامت است."
+    },
+    {
+      "id": "q_u_p393a_A_1235",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "معنای «لَوْ» چیست؟",
+      "stem": {
+        "wordId": "w28_064_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اگر"
+        },
+        {
+          "id": "o2",
+          "fa": "تا اینکه"
+        },
+        {
+          "id": "o3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o4",
+          "fa": "مگر"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «لَوْ» معمولاً به معنای اگر است، اما در اینجا معنای تمنی و آرزو (ای کاش) دارد."
+    },
+    {
+      "id": "q_u_p393a_A_1236",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "معنای «لَوْ» چیست؟",
+      "stem": {
+        "wordId": "w28_064_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای"
+        },
+        {
+          "id": "o2",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o3",
+          "fa": "پس"
+        },
+        {
+          "id": "o4",
+          "fa": "و"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در این سیاق به معنای ای کاش و آرزو کردن است."
+    },
+    {
+      "id": "q_u_p393a_A_1237",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 64,
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "معنای «لَوْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_064_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "o2",
+          "fa": "اگر"
+        },
+        {
+          "id": "o3",
+          "fa": "ولی"
+        },
+        {
+          "id": "o4",
+          "fa": "که"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در عبارت «لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ» کلمه لو معنای ای کاش می‌دهد."
+    },
+    {
+      "id": "q_u_p393a_A_1238",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 64,
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "معنای «لَوْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_064_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هنگامی که"
+        },
+        {
+          "id": "o2",
+          "fa": "چون"
+        },
+        {
+          "id": "o3",
+          "fa": "اگر"
+        },
+        {
+          "id": "o4",
+          "fa": "ای کاش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "false_friend"
+      },
+      "explanationFa": "کلمه «لَوْ» معمولاً به معنای اگر است، اما در اینجا معنای تمنی و آرزو (ای کاش) دارد."
+    },
+    {
+      "id": "q_u_p393a_A_1239",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "کدام کلمه به معنای «ای کاش» است؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "لَهُمْ"
+        },
+        {
+          "id": "o2",
+          "fa": "لَوْ"
+        },
+        {
+          "id": "o3",
+          "fa": "فَلَمْ"
+        },
+        {
+          "id": "o4",
+          "fa": "مَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "حرف «لو» در زبان عربی علاوه بر شرط (اگر)، گاهی برای بیان آرزو (ای کاش) به کار می‌رود."
+    },
+    {
+      "id": "q_u_p393a_A_1240",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "کدام کلمه به معنای «ای کاش» است؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كَمَا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَنَّهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "o4",
+          "ar": "هَـٰٓؤُلَآءِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "در این آیه دلالت بر آرزوی محال و پشیمانی کفار دارد."
+    },
+    {
+      "id": "q_u_p393a_A_1241",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_064_010"
+      ],
+      "promptFa": "کدام کلمه به معنای «ای کاش» است؟",
+      "stem": {
+        "fa": "ای کاش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَدَعَوْهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقِيلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَيْكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "حرف «لو» در این آیه به معنای تمنی (ای کاش) است."
+    },
+    {
+      "id": "q_u_p393a_A_1242",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009",
+        "w:w28_063_013",
+        "w:w28_064_010"
+      ],
+      "promptFa": "کلمات را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "l4",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَهْتَدُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ما آنها را گمراه کردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیزاری می‌جوییم"
+        },
+        {
+          "id": "r3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r4",
+          "fa": "حتمی و لازم شده"
+        },
+        {
+          "id": "r5",
+          "fa": "هدایت می یافتند"
+        },
+        {
+          "id": "r6",
+          "fa": "شریکان خود را"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که «لو» در اینجا به معنای «ای کاش» است."
+    },
+    {
+      "id": "q_u_p393a_A_1243",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009",
+        "w:w28_063_013",
+        "w:w28_064_010"
+      ],
+      "promptFa": "کلمات را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "l4",
+          "ar": "غَوَيْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "يَعْبُدُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراهشان کردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "از آنها بیزاری می‌جوییم"
+        },
+        {
+          "id": "r3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r4",
+          "fa": "گمراه شدیم"
+        },
+        {
+          "id": "r5",
+          "fa": "می پرستیدند"
+        },
+        {
+          "id": "r6",
+          "fa": "می بینند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمه «تَبَرَّأْنَآ» از ریشه برائت به معنای بیزاری جستن است."
+    },
+    {
+      "id": "q_u_p393a_A_1244",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009",
+        "w:w28_063_013",
+        "w:w28_064_010"
+      ],
+      "promptFa": "کلمات را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "l4",
+          "ar": "شُرَكَآءَكُمْ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْعَذَابَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ما آنها را گمراه کردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیزاری می‌جوییم"
+        },
+        {
+          "id": "r3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r4",
+          "fa": "شریکان خود را"
+        },
+        {
+          "id": "r5",
+          "fa": "عذاب را"
+        },
+        {
+          "id": "r6",
+          "fa": "می خوانند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمه «أَغْوَیْنَا» یعنی گمراه کردیم و مراقب تفاوت آن با «غَوَیْنَا» (گمراه شدیم) باشید."
+    },
+    {
+      "id": "q_u_p393a_A_1245",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009",
+        "w:w28_063_013",
+        "w:w28_064_010"
+      ],
+      "promptFa": "کلمات را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَأَوُا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱدْعُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراهشان کردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "از آنها بیزاری می‌جوییم"
+        },
+        {
+          "id": "r3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r4",
+          "fa": "می بینند"
+        },
+        {
+          "id": "r5",
+          "fa": "بخوانید"
+        },
+        {
+          "id": "r6",
+          "fa": "اگر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمه «لو» در زبان عربی علاوه بر شرط (اگر)، گاهی برای بیان آرزو (ای کاش) به کار می‌رود."
+    },
+    {
+      "id": "q_u_p393a_A_1246",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_009",
+        "w:w28_063_013",
+        "w:w28_064_010"
+      ],
+      "promptFa": "کلمات را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَغْوَيْنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَوْ"
+        },
+        {
+          "id": "l4",
+          "ar": "كَمَا"
+        },
+        {
+          "id": "l5",
+          "ar": "إِلَيْكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ما آنها را گمراه کردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "بیزاری می‌جوییم"
+        },
+        {
+          "id": "r3",
+          "fa": "ای کاش"
+        },
+        {
+          "id": "r4",
+          "fa": "همان گونه که"
+        },
+        {
+          "id": "r5",
+          "fa": "به سوی تو"
+        },
+        {
+          "id": "r6",
+          "fa": "تبرئه شدیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "«تَبَرَّأْنَآ» از ریشه برائت به معنای اعلام بیزاری است و با «إِلَيْكَ» همراه شده است."
+    }
+  ]
+}

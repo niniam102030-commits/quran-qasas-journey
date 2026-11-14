@@ -1,0 +1,4 @@
+[#2 q_u_p390b_B_0302 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 39 را نمی‌پوشاند.
+[#3 q_u_p390b_B_0303 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p390b_B_0303 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 39 را نمی‌پوشاند.
+[#5 q_u_p390b_B_0305 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.

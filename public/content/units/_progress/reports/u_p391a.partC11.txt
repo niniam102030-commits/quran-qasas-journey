@@ -1,0 +1,5 @@
+[#8 q_u_p391a_C_1368 MATCH_NUMBER_OPENING] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#9 q_u_p391a_C_1369 NEXT_VERSE_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْعُمُرُ
+[#12 q_u_p391a_C_1372 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#13 q_u_p391a_C_1373 CLOZE_AR] نسبت پنهان 17% خارج از ۲۵٪ تا ۸۰٪ است.
+[#14 q_u_p391a_C_1374 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.

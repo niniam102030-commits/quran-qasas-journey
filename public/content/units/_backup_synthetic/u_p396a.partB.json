@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p396a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 85,
+      "targets": [
+        "vr:85"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «یقیناً کسی که [ابلاغ و عمل کردن به] قرآن را بر تو واجب کرده است، حتماً...»، آیه 85 را مرتب کن:",
+      "stem": {
+        "verse": 85
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "وَمَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ",
+          "wordIdx": [
+            15,
+            19
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَعَادٍۢ ۚ قُل رَّبِّىٓ أَعْلَمُ مَن جَآءَ بِٱلْهُدَىٰ",
+          "wordIdx": [
+            8,
+            14
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ لَرَآدُّكَ إِلَىٰ",
+          "wordIdx": [
+            1,
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 85 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p396a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 85,
+      "targets": [
+        "vr:85"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 85 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 85,
+        "hiddenIdx": [
+          10
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "رَّبِّىٓ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "10": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «رَّبِّىٓ» در آیه 85 است."
+    }
+  ],
+  "issues": []
+}

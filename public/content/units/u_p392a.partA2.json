@@ -1,0 +1,1967 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392a_A_0521",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "معنای «وَصَّلْنَا» چیست؟",
+      "stem": {
+        "wordId": "w28_051_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وصل کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پی در پی آوردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "پند دادیم"
+        },
+        {
+          "id": "o4",
+          "fa": "جدا کردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در باب تفعیل (توصیل)، تکرار و پیوستگی مداوم را نشان می‌دهد، نه صرفاً وصل کردن فیزیکی."
+    },
+    {
+      "id": "q_u_p392a_A_0522",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "معنای کلمه «وَصَّلْنَا» کدام است؟",
+      "stem": {
+        "wordId": "w28_051_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "متذکر شدند"
+        },
+        {
+          "id": "o2",
+          "fa": "پی در پی و به هم پیوسته"
+        },
+        {
+          "id": "o3",
+          "fa": "وصله زدیم"
+        },
+        {
+          "id": "o4",
+          "fa": "رسیدند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "same_root"
+      },
+      "explanationFa": "این کلمه از ریشه (و ص ل) به معنای پی در پی و متصل به هم آوردن است."
+    },
+    {
+      "id": "q_u_p392a_A_0523",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "در این آیه، «وَصَّلْنَا» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_051_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای آنان"
+        },
+        {
+          "id": "o2",
+          "fa": "پی در پی و به هم پیوسته آوردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "متذکر و هوشیار شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "به هم پیوستند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "اشاره به نزول پی در پی آیات و سوره‌ها برای تذکر انسان‌ها دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0524",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "معنای «وَصَّلْنَا» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_051_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "وصیت کردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "وصل شد"
+        },
+        {
+          "id": "o4",
+          "fa": "هوشیار شدند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در سیاق آیه، آوردن پی در پی قرآن مراد است."
+    },
+    {
+      "id": "q_u_p392a_A_0525",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «پی در پی و به هم پیوسته آوردیم» است؟",
+      "stem": {
+        "fa": "پی در پی و به هم پیوسته آوردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَقَدْ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "لَهُمُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَتَذَكَّرُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل ماضی متکلم مع الغیر از باب تفعیل است."
+    },
+    {
+      "id": "q_u_p392a_A_0526",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "معادل عربی «پیاپی آوردیم» کدام است؟",
+      "stem": {
+        "fa": "پیاپی آوردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنزَلْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَوْحَيْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "رَزَقْنَـٰهُمْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه متناسب با استمرار نزول در این سوره، وَصَّلْنَا است."
+    },
+    {
+      "id": "q_u_p392a_A_0527",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 51,
+      "targets": [
+        "w:w28_051_002"
+      ],
+      "promptFa": "کلمه معادل «آوردیم (متصل و پی در پی)» چیست؟",
+      "stem": {
+        "fa": "آوردیم (متصل و پی در پی)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "أُو۟لَـٰٓئِكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "صَبَرُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "از ریشه وصل می‌آید."
+    },
+    {
+      "id": "q_u_p392a_A_0528",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "معنای «يُتْلَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_053_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دنبال می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "تلاوت می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌گویند"
+        },
+        {
+          "id": "o4",
+          "fa": "ایمان می‌آورند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مجهول مضارع از تلاوت است، نه به معنای دنبال کردن (با وجود ریشه یکسان در تلو)."
+    },
+    {
+      "id": "q_u_p392a_A_0529",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "ترجمه «يُتْلَىٰ» کدام است؟",
+      "stem": {
+        "wordId": "w28_053_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرستاده شد"
+        },
+        {
+          "id": "o2",
+          "fa": "خوانده شود"
+        },
+        {
+          "id": "o3",
+          "fa": "پشت سر هم آمد"
+        },
+        {
+          "id": "o4",
+          "fa": "تسلیم شدند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "مضارع مجهول به معنای خوانده می‌شود/خوانده شود است."
+    },
+    {
+      "id": "q_u_p392a_A_0530",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "در این آیه، «يُتْلَىٰ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_053_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خوانند"
+        },
+        {
+          "id": "o2",
+          "fa": "پیروی کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌گویند"
+        },
+        {
+          "id": "o4",
+          "fa": "ایمان آوردیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در بافت آیه «هنگامی که بر آنان خوانند» ترجمه شده است."
+    },
+    {
+      "id": "q_u_p392a_A_0531",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "معنای «يُتْلَىٰ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_053_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هنگامی که"
+        },
+        {
+          "id": "o2",
+          "fa": "تلاوت می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "آنان"
+        },
+        {
+          "id": "o4",
+          "fa": "حق است"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "اشاره به تلاوت قرآن بر پیشینیان دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0532",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «خوانند / تلاوت می‌شود» است؟",
+      "stem": {
+        "fa": "خوانند / تلاوت می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "يَتَذَكَّرُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "فعل مضارع مجهول غایب است."
+    },
+    {
+      "id": "q_u_p392a_A_0533",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "معادل عربی «خوانده شود» کدام است؟",
+      "stem": {
+        "fa": "خوانده شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَامَنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "يُؤْتَوْنَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "به تلاوت آیات دلالت دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0534",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_002"
+      ],
+      "promptFa": "کلمه معادل «تلاوت می‌شود» چیست؟",
+      "stem": {
+        "fa": "تلاوت می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَتْلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَلَوْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَوْلَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "يُتلى صیغه مجهول است، در حالی که يتلون و تلونا معلوم هستند."
+    },
+    {
+      "id": "q_u_p392a_A_0535",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "معنای «مُسْلِمِينَ» چیست؟",
+      "stem": {
+        "wordId": "w28_053_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تسلیم‌شدگان"
+        },
+        {
+          "id": "o2",
+          "fa": "مسلمانان مصطلح"
+        },
+        {
+          "id": "o3",
+          "fa": "سلامت‌یافتگان"
+        },
+        {
+          "id": "o4",
+          "fa": "مؤمنان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در اینجا معنای لغوی آن یعنی تسلیم‌شدگان امر خدا و فرمانبرداران مد نظر است."
+    },
+    {
+      "id": "q_u_p392a_A_0536",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "ترجمه «مُسْلِمِينَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_053_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرمانبرداران"
+        },
+        {
+          "id": "o2",
+          "fa": "پیشینیان"
+        },
+        {
+          "id": "o3",
+          "fa": "عاقبت‌به‌خیران"
+        },
+        {
+          "id": "o4",
+          "fa": "مسلمانان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "اشاره به روح تسلیم در برابر حق دارد که در پیروان راستین ادیان پیشین هم بوده است."
+    },
+    {
+      "id": "q_u_p392a_A_0537",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "در این آیه، «مُسْلِمِينَ» با توجه به بافت قبلش به چه معناست؟",
+      "stem": {
+        "wordId": "w28_053_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مسلمان بودیم"
+        },
+        {
+          "id": "o2",
+          "fa": "تسلیم بودیم"
+        },
+        {
+          "id": "o3",
+          "fa": "پیش از آن"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگارمان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ترجمه عبارت «کُنّا ... مسلمین» تسلیم بودیم است."
+    },
+    {
+      "id": "q_u_p392a_A_0538",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "معنای «مُسْلِمِينَ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_053_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ایمان آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "تسلیم"
+        },
+        {
+          "id": "o3",
+          "fa": "نزول آن"
+        },
+        {
+          "id": "o4",
+          "fa": "سلامتی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "اشاره به پذیرش حق پیش از نزول قرآن دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0539",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "کدام کلمه به معنای «تسلیم» در این آیه است؟",
+      "stem": {
+        "fa": "تسلیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَامَنَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "قَبْلِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "صَبَرُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "جمع سالم مذکر از ریشه سلم است."
+    },
+    {
+      "id": "q_u_p392a_A_0540",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "معادل عربی «تسلیم‌شدگان» کدام است؟",
+      "stem": {
+        "fa": "تسلیم‌شدگان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "اسم فاعل از باب افعال است."
+    },
+    {
+      "id": "q_u_p392a_A_0541",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 53,
+      "targets": [
+        "w:w28_053_015"
+      ],
+      "promptFa": "کلمه معادل «فرمانبرداران» چیست؟",
+      "stem": {
+        "fa": "فرمانبرداران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَامَنَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْحَسَنَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلسَّيِّئَةَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "فرمانبرداران و تسلیم‌شدگان حق."
+    },
+    {
+      "id": "q_u_p392a_A_0542",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "معنای «يُؤْتَوْنَ» چیست؟",
+      "stem": {
+        "wordId": "w28_054_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌آیند"
+        },
+        {
+          "id": "o2",
+          "fa": "به آنان داده می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "پاداش می‌دهند"
+        },
+        {
+          "id": "o4",
+          "fa": "صبر می‌کنند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مجهول از ایتاء (بخشیدن و دادن) است، نه از اتیان (آمدن)."
+    },
+    {
+      "id": "q_u_p392a_A_0543",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "ترجمه «يُؤْتَوْنَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_054_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دفع می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "عطا می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "ایمان می‌آورند"
+        },
+        {
+          "id": "o4",
+          "fa": "وارد می‌شوند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "random",
+        "o4": "same_root"
+      },
+      "explanationFa": "به معنای داده و عطا می‌شود است."
+    },
+    {
+      "id": "q_u_p392a_A_0544",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "در این آیه، «يُؤْتَوْنَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_054_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌آیند"
+        },
+        {
+          "id": "o2",
+          "fa": "می دهند"
+        },
+        {
+          "id": "o3",
+          "fa": "دوبار"
+        },
+        {
+          "id": "o4",
+          "fa": "صبر کردند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "همراه با کلمه اجرهم به پاداش دادن دوگانه اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0545",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "معنای «يُؤْتَوْنَ» در آیه شریفه چیست؟",
+      "stem": {
+        "wordId": "w28_054_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اینان"
+        },
+        {
+          "id": "o2",
+          "fa": "پاداششان"
+        },
+        {
+          "id": "o3",
+          "fa": "داده می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "انفاق می‌کنند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مجهول مبنی بر عطا و بخشش."
+    },
+    {
+      "id": "q_u_p392a_A_0546",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «می دهند / به آنان داده می‌شود» است؟",
+      "stem": {
+        "fa": "می دهند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَأْتُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "یؤتون (با همزه روی واو) به معنای داده می‌شوند است، اما یأتون به معنای می‌آیند است."
+    },
+    {
+      "id": "q_u_p392a_A_0547",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "معادل عربی «داده می‌شود» کدام است؟",
+      "stem": {
+        "fa": "داده می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُو۟لَـٰٓئِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَجْرَهُم"
+        },
+        {
+          "id": "o3",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "رَزَقْنَـٰهُمْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از باب افعال و صیغه مجهول است."
+    },
+    {
+      "id": "q_u_p392a_A_0548",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 54,
+      "targets": [
+        "w:w28_054_002"
+      ],
+      "promptFa": "کلمه معادل «عطا می‌شود» چیست؟",
+      "stem": {
+        "fa": "عطا می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُنفِقُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "وَصَّلْنَا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "اعطای پاداش دوچندان را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p392a_A_0549",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_051_002",
+        "w:w28_053_002",
+        "w:w28_053_015"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مَّرَّتَيْنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پی در پی آوردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "خوانده شود"
+        },
+        {
+          "id": "r3",
+          "fa": "متذکّر شوند"
+        },
+        {
+          "id": "r4",
+          "fa": "تسلیم‌شدگان"
+        },
+        {
+          "id": "r5",
+          "fa": "دوبار"
+        },
+        {
+          "id": "r6",
+          "fa": "وصل کردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "وَصَّلْنَا تأکید بر استمرار و توالی نزول قرآن دارد و مُسْلِمِينَ یعنی فرمانبرداران پیش از نزول."
+    },
+    {
+      "id": "q_u_p392a_A_0550",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_054_002",
+        "w:w28_051_002",
+        "w:w28_053_002"
+      ],
+      "promptFa": "معنای کلمات را به هم وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلسَّيِّئَةَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به آنان داده می‌شود"
+        },
+        {
+          "id": "r2",
+          "fa": "پی در پی آوردیم"
+        },
+        {
+          "id": "r3",
+          "fa": "صبر کردند"
+        },
+        {
+          "id": "r4",
+          "fa": "تلاوت می‌شود"
+        },
+        {
+          "id": "r5",
+          "fa": "بدی"
+        },
+        {
+          "id": "r6",
+          "fa": "می‌آیند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يُؤْتَوْنَ فعل مجهول و به معنای عطا شدن است و با یأتون اشتباه نشود."
+    },
+    {
+      "id": "q_u_p392a_A_0551",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_053_015",
+        "w:w28_054_002",
+        "w:w28_051_002"
+      ],
+      "promptFa": "کلمات را با ترجمه دقیقشان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَدْرَءُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَامَنَّا"
+        },
+        {
+          "id": "l5",
+          "ar": "وَصَّلْنَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r2",
+          "fa": "تسلیم بودیم"
+        },
+        {
+          "id": "r3",
+          "fa": "عطا می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "ایمان آوردیم"
+        },
+        {
+          "id": "r5",
+          "fa": "به هم پیوسته آوردیم"
+        },
+        {
+          "id": "r6",
+          "fa": "پیروی می‌کنند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يَدْرَءُونَ به معنای دفع کردن بدی با نیکی است."
+    },
+    {
+      "id": "q_u_p392a_A_0552",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_053_002",
+        "w:w28_053_015",
+        "w:w28_054_002"
+      ],
+      "promptFa": "کلمات را به معادل فارسی متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "رَزَقْنَـٰهُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُنفِقُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روزی کرده ایم"
+        },
+        {
+          "id": "r2",
+          "fa": "خوانند"
+        },
+        {
+          "id": "r3",
+          "fa": "فرمانبرداران"
+        },
+        {
+          "id": "r4",
+          "fa": "می دهند"
+        },
+        {
+          "id": "r5",
+          "fa": "انفاق می نمایند"
+        },
+        {
+          "id": "r6",
+          "fa": "دنبال می‌شود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مُسْلِمِينَ در اینجا اشاره به تسلیم بودن پیروان واقعی کتب آسمانی پیشین دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0553",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_051_002",
+        "w:w28_053_002",
+        "w:w28_054_002"
+      ],
+      "promptFa": "ارتباط کلمات و معانی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْحَقُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَدْرَءُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پیاپی آوردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "حق و درست"
+        },
+        {
+          "id": "r3",
+          "fa": "خوانده می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "به آنان عطا می‌شود"
+        },
+        {
+          "id": "r5",
+          "fa": "دفع می کنند"
+        },
+        {
+          "id": "r6",
+          "fa": "سلامت‌یافتگان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يُتْلَىٰ فعل مجهول برای تلاوت است و وَصَّلْنَا برای پیوستگی نزول."
+    },
+    {
+      "id": "q_u_p392a_A_0554",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_053_015",
+        "w:w28_054_002",
+        "w:w28_051_002"
+      ],
+      "promptFa": "معادل هر کلمه عربی را بیابید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "صَبَرُوا۟"
+        },
+        {
+          "id": "l5",
+          "ar": "مَّرَّتَيْنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تسلیم‌شدگان"
+        },
+        {
+          "id": "r2",
+          "fa": "به آنان داده می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "متصل به هم آوردیم"
+        },
+        {
+          "id": "r4",
+          "fa": "صبر کردند"
+        },
+        {
+          "id": "r5",
+          "fa": "دوبار"
+        },
+        {
+          "id": "r6",
+          "fa": "مسلمانان مصطلح"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مَّرَّتَيْنِ به پاداش دوچندان اهل کتابی که به اسلام ایمان آوردند اشاره دارد."
+    },
+    {
+      "id": "q_u_p392a_A_0555",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_053_002",
+        "w:w28_054_002",
+        "w:w28_053_015"
+      ],
+      "promptFa": "جفت‌های صحیح ترجمه را انتخاب کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُنفِقُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلسَّيِّئَةَ"
+        },
+        {
+          "id": "l5",
+          "ar": "مُسْلِمِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "خوانده شود"
+        },
+        {
+          "id": "r2",
+          "fa": "می دهند"
+        },
+        {
+          "id": "r3",
+          "fa": "انفاق می نمایند"
+        },
+        {
+          "id": "r4",
+          "fa": "بدی"
+        },
+        {
+          "id": "r5",
+          "fa": "تسلیم بودیم"
+        },
+        {
+          "id": "r6",
+          "fa": "وصله زدیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "يُنفِقُونَ از ریشه نفق به معنای بخشش از روزی است."
+    },
+    {
+      "id": "q_u_p392a_A_0556",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_051_002",
+        "w:w28_053_002",
+        "w:w28_053_015",
+        "w:w28_054_002"
+      ],
+      "promptFa": "هر کلمه عربی را به معنای درست متصل نمایید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l2",
+          "ar": "يُتْلَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَتَذَكَّرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پی در پی آوردیم"
+        },
+        {
+          "id": "r2",
+          "fa": "تلاوت می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "تسلیم‌شدگان"
+        },
+        {
+          "id": "r4",
+          "fa": "به آنان داده می‌شود"
+        },
+        {
+          "id": "r5",
+          "fa": "متذکر شوند"
+        },
+        {
+          "id": "r6",
+          "fa": "می‌آیند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "همه این کلمات افعال یا صفاتی کلیدی در توصیف مؤمنان راستین و هدایت الهی هستند."
+    },
+    {
+      "id": "q_u_p392a_A_0557",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_053_015",
+        "w:w28_051_002",
+        "w:w28_054_002",
+        "w:w28_053_002"
+      ],
+      "promptFa": "معانی لغات را مطابقت دهید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُسْلِمِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَصَّلْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "يُؤْتَوْنَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَزَقْنَـٰهُمْ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُتْلَىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فرمانبرداران"
+        },
+        {
+          "id": "r2",
+          "fa": "پی در پی و به هم پیوسته آوردیم"
+        },
+        {
+          "id": "r3",
+          "fa": "عطا می‌شود"
+        },
+        {
+          "id": "r4",
+          "fa": "روزی کرده ایم"
+        },
+        {
+          "id": "r5",
+          "fa": "خوانند"
+        },
+        {
+          "id": "r6",
+          "fa": "دنبال می‌شود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که يُتْلَىٰ از تلاوت است نه دنبال کردن."
+    }
+  ],
+  "issues": []
+}

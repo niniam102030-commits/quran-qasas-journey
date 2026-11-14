@@ -1,0 +1,895 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395a_A_0741",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "معنای «جَمْعًۭا ۚ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_023",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "o2",
+          "fa": "جمعیت"
+        },
+        {
+          "id": "o3",
+          "fa": "نیرومندتر"
+        },
+        {
+          "id": "o4",
+          "fa": "گروه"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«جَمْعًۭا» در اینجا به معنای ثروت اندوزی است، نه جمعیت و گروه افراد."
+    },
+    {
+      "id": "q_u_p395a_A_0742",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "معنای کلمه «جَمْعًۭا ۚ» چیست؟",
+      "stem": {
+        "wordId": "w28_078_023",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قدرتمندتر"
+        },
+        {
+          "id": "o2",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "o3",
+          "fa": "خویشاوندان"
+        },
+        {
+          "id": "o4",
+          "fa": "اقوام"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در کنار أکثر، معنای «ثروت اندوزتر» و مال‌اندوزی می‌دهد و دوست فریبنده‌ای برای معنای جمعیت است."
+    },
+    {
+      "id": "q_u_p395a_A_0743",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مردمان"
+        },
+        {
+          "id": "o2",
+          "fa": "توانمندان"
+        },
+        {
+          "id": "o3",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "o4",
+          "fa": "سپاهیان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«جَمْعًۭا» در این سیاق به جمع‌آوری مال و ثروت‌اندوزی اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0744",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "معنای دقیق «جَمْعًۭا ۚ» با توجه به آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_023",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گناهان"
+        },
+        {
+          "id": "o2",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "o3",
+          "fa": "جمعیت"
+        },
+        {
+          "id": "o4",
+          "fa": "ثروت اندوزتر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "این کلمه از ریشه (ج م ع) در اینجا به معنای ثروت اندوزتر است، نه جمعیت."
+    },
+    {
+      "id": "q_u_p395a_A_0745",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "کدام کلمه به معنای «ثروت اندوزتر» است؟",
+      "stem": {
+        "fa": "ثروت اندوزتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قُوَّةًۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِنْهُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "عبارت أکثر جمعاً به معنای ثروت‌اندوزتر است."
+    },
+    {
+      "id": "q_u_p395a_A_0746",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "معادل عربی «ثروت اندوزتر» در این آیه چیست؟",
+      "stem": {
+        "fa": "ثروت اندوزتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَشَدُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "عِلْمٍ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَكْثَرُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه شریفه أکثر جمعاً به ثروت‌اندوزتر ترجمه شده است و جمعاً این مفهوم را کامل می‌کند."
+    },
+    {
+      "id": "q_u_p395a_A_0747",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023"
+      ],
+      "promptFa": "کلمه معادل «ثروت اندوزتر» را انتخاب کنید.",
+      "stem": {
+        "fa": "ثروت اندوزتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُجْرِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قُوَّةًۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَهْلَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَمْعًۭا ۚ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جَمْعًۭا» به گردآوری مال و ثروت اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0748",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای «يُسْـَٔلُ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هلاک می شود"
+        },
+        {
+          "id": "o2",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "o3",
+          "fa": "عذاب می شود"
+        },
+        {
+          "id": "o4",
+          "fa": "داده می شود"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه يُسْأَلُ فعل مجهول از ریشه (س أ ل) به معنای بازپرسی می‌شود است."
+    },
+    {
+      "id": "q_u_p395a_A_0749",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای کلمه «يُسْـَٔلُ» چیست؟",
+      "stem": {
+        "wordId": "w28_078_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درخواست می کند"
+        },
+        {
+          "id": "o2",
+          "fa": "می داند"
+        },
+        {
+          "id": "o3",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "o4",
+          "fa": "می پرسد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این فعل مجهول است و به معنای مورد پرسش و بازپرسی قرار گرفتن است."
+    },
+    {
+      "id": "q_u_p395a_A_0750",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای کلمه مشخص شده در آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "o2",
+          "fa": "سؤال می کند"
+        },
+        {
+          "id": "o3",
+          "fa": "بازخواست می کند"
+        },
+        {
+          "id": "o4",
+          "fa": "پاسخ می دهد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "فعل يُسْأَلُ مجهول است (بازپرسی می‌شود)."
+    },
+    {
+      "id": "q_u_p395a_A_0751",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای دقیق «يُسْـَٔلُ» با توجه به آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رها می شود"
+        },
+        {
+          "id": "o2",
+          "fa": "عذاب می شود"
+        },
+        {
+          "id": "o3",
+          "fa": "آمرزیده می شود"
+        },
+        {
+          "id": "o4",
+          "fa": "بازپرسی می شود"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "يُسْأَلُ یعنی بازپرسی می‌شود؛ همراه با «لا» یعنی بازپرسی نمی‌شود."
+    },
+    {
+      "id": "q_u_p395a_A_0752",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "کدام کلمه به معنای «بازپرسی می شود» است؟",
+      "stem": {
+        "fa": "بازپرسی می شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُسْـَٔلُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَهْلَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُوتِيتُهُۥ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل يُسْأَلُ از ریشه (س أ ل) است."
+    },
+    {
+      "id": "q_u_p395a_A_0753",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "معادل عربی «بازپرسی می شود» در این آیه چیست؟",
+      "stem": {
+        "fa": "بازپرسی می شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُسْـَٔلُ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَهْلَكَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل مضارع مجهول يُسْأَلُ این معنا را دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0754",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_025"
+      ],
+      "promptFa": "کلمه معادل «بازپرسی می شود» را انتخاب کنید.",
+      "stem": {
+        "fa": "بازپرسی می شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُسْـَٔلُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُجْرِمُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه يُسْأَلُ به معنای بازخواست و بازپرسی شدن است."
+    },
+    {
+      "id": "q_u_p395a_A_0755",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023",
+        "w:w28_078_025"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُسْـَٔلُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَهْلَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "r2",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "r3",
+          "fa": "اقوامی"
+        },
+        {
+          "id": "r4",
+          "fa": "هلاک کرده است"
+        },
+        {
+          "id": "r5",
+          "fa": "می دانست"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "جَمْعًۭا (ثروت اندوزتر) و يُسْـَٔلُ (بازپرسی می شود) کلمات مهم این آیه هستند."
+    },
+    {
+      "id": "q_u_p395a_A_0756",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023",
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای هر کلمه را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قُوَّةًۭ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "ذُنُوبِهِمُ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُسْـَٔلُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "r2",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "r3",
+          "fa": "گناهانشان"
+        },
+        {
+          "id": "r4",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "r5",
+          "fa": "مجرمان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "کلمات کلیدی: جَمْعًۭا به معنای ثروت اندوزتر و يُسْـَٔلُ به معنای بازپرسی می شود."
+    },
+    {
+      "id": "q_u_p395a_A_0757",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023",
+        "w:w28_078_025"
+      ],
+      "promptFa": "معنای کلمات قرآنی را به هم وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْمُجْرِمُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "عِلْمٍ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُسْـَٔلُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "r2",
+          "fa": "دانشی"
+        },
+        {
+          "id": "r3",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "r4",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "r5",
+          "fa": "اقوامی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "در آیه شریفه جَمْعًۭا (ثروت اندوزتر) و يُسْـَٔلُ (بازپرسی می شود) به کار رفته‌اند."
+    },
+    {
+      "id": "q_u_p395a_A_0758",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_023",
+        "w:w28_078_025"
+      ],
+      "promptFa": "جفت‌های صحیح کلمه و معنا را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُسْـَٔلُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "r3",
+          "fa": "می دانست"
+        },
+        {
+          "id": "r4",
+          "fa": "بازپرسی می شود"
+        },
+        {
+          "id": "r5",
+          "fa": "دانشی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "دقت کنید جَمْعًۭا یعنی ثروت اندوزتر و يُسْـَٔلُ یعنی بازپرسی می شود."
+    }
+  ],
+  "issues": []
+}

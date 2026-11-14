@@ -1,0 +1,9 @@
+[#1 q_u_p388b_B_0401 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p388b_B_0402 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 25 را نمی‌پوشاند.
+[#3 q_u_p388b_B_0403 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 25 را نمی‌پوشاند.
+[#5 q_u_p388b_B_0405 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 25 را نمی‌پوشاند.
+[#6 q_u_p388b_B_0406 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p388b_B_0406 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 25 را نمی‌پوشاند.
+[#7 q_u_p388b_B_0407 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p388b_B_0408 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p388b_B_0408 ENDING_CHOICE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ ۖ

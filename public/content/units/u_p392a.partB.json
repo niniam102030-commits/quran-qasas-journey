@@ -1,0 +1,1131 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "B",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392a_B_0421",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 51,
+      "targets": [
+        "vt:51"
+      ],
+      "promptFa": "بر اساس ترجمه، قطعات آیه را به ترتیب بچینید:",
+      "stem": {
+        "verse": 51,
+        "showFa": true,
+        "fa": "ما این قرآن را برای آنان پی در پی و به هم پیوسته [به صورت سوره ای پس از سوره ای و آیه ای بعد از آیه ای] آوردیم تا متذکّر و هوشیار [حقایق] شوند."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمُ ٱلْقَوْلَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه و ترتیب صحیح آیه ۵۱ سوره قصص."
+    },
+    {
+      "id": "q_u_p392a_B_0422",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 51,
+      "targets": [
+        "vt:51"
+      ],
+      "promptFa": "با توجه به ترجمه، کلمات آیه را بسازید:",
+      "stem": {
+        "verse": 51,
+        "showFa": true,
+        "fa": "ما این قرآن را برای آنان پی در پی و به هم پیوسته [به صورت سوره ای پس از سوره ای و آیه ای بعد از آیه ای] آوردیم تا متذکّر و هوشیار [حقایق] شوند."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترکیب کلمات آیه ۵۱ بر اساس معنا."
+    },
+    {
+      "id": "q_u_p392a_B_0423",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 51,
+      "targets": [
+        "vt:51"
+      ],
+      "promptFa": "کلمات آیه را از میان گزینه‌ها به درستی بچینید:",
+      "stem": {
+        "verse": 51,
+        "showFa": true,
+        "fa": "ما این قرآن را برای آنان پی در پی و به هم پیوسته [به صورت سوره ای پس از سوره ای و آیه ای بعد از آیه ای] آوردیم تا متذکّر و هوشیار [حقایق] شوند."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْكِتَـٰبَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "يُؤْمِنُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "دقت کنید که در این آیه از کلمه «القول» استفاده شده است، نه «الکتاب»."
+    },
+    {
+      "id": "q_u_p392a_B_0424",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51"
+      ],
+      "promptFa": "قطعات آیه ۵۱ را به ترتیب بچینید:",
+      "stem": {
+        "verseNum": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمُ ٱلْقَوْلَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن قَبْلِهِۦ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۱ سوره قصص."
+    },
+    {
+      "id": "q_u_p392a_B_0425",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51",
+        "vr:51"
+      ],
+      "promptFa": "کلمات آیه ۵۱ را مرتب کنید:",
+      "stem": {
+        "verseNum": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يَسْتَجِيبُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب صحیح ۶ کلمه آیه ۵۱."
+    },
+    {
+      "id": "q_u_p392a_B_0426",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 51,
+      "targets": [
+        "vn:51",
+        "vr:51"
+      ],
+      "promptFa": "کلمات آیه ۵۱ را از میان بانک کلمات پیدا کرده و مرتب کنید:",
+      "stem": {
+        "verseNum": 51
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لَكَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "يُؤْمِنُونَ",
+          "decoy": true
+        },
+        {
+          "id": "b9",
+          "ar": "ٱتَّبَعَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse",
+        "b8": "neighbor_verse",
+        "b9": "neighbor_verse"
+      },
+      "explanationFa": "تشخیص کلمات مختص آیه ۵۱ در برابر کلمات آیات مجاور."
+    },
+    {
+      "id": "q_u_p392a_B_0427",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کلمه جاافتاده را در جای خود قرار دهید:",
+      "stem": {
+        "verse": 51,
+        "hiddenIdx": [
+          2
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "أَضَلُّ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "يَهْدِى",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_verse",
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۱: ۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ..."
+    },
+    {
+      "id": "q_u_p392a_B_0428",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کلمات پنهان آیه را پیدا کنید:",
+      "stem": {
+        "verse": 51,
+        "hiddenIdx": [
+          4,
+          5
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "لَكَ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "أَنَّمَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "neighbor_verse",
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۱: ...لَهُمُ ٱلْقَوْلَ لَعَلَّهُمْ يَتَذَكَّرُونَ"
+    },
+    {
+      "id": "q_u_p392a_B_0429",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "جاهای خالی را با کلمات مناسب پر کنید:",
+      "stem": {
+        "verse": 51,
+        "hiddenIdx": [
+          1,
+          3,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَنْ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "هُم",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "يَتَّبِعُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "6": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "neighbor_verse",
+        "b6": "near_miss"
+      },
+      "explanationFa": "آیه ۵۱: ۞ وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ لَعَلَّهُمْ يَتَذَكَّرُونَ"
+    },
+    {
+      "id": "q_u_p392a_B_0430",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "بیشتر کلمات آیه پنهان شده‌اند، آن‌ها را کامل کنید:",
+      "stem": {
+        "verse": 51,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَصَّلْنَا",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْكِتَـٰبَ",
+          "decoy": true
+        },
+        {
+          "id": "b8",
+          "ar": "بِهِۦ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "6": "b5"
+      },
+      "distractorTags": {
+        "b6": "near_miss",
+        "b7": "near_miss",
+        "b8": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۱ با تعبیر «وصلنا» آغاز و به «یتذکرون» ختم می‌شود."
+    },
+    {
+      "id": "q_u_p392a_B_0431",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "با توجه به ابتدای آیه، ادامه آن را بسازید:",
+      "stem": {
+        "verse": 51,
+        "givenCount": 2,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَهُمُ ٱلْقَوْلَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن قَبْلِهِۦ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "هُم بِهِۦ يُؤْمِنُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "تکمیل آیه ۵۱ پس از «وَلَقَدْ وَصَّلْنَا»."
+    },
+    {
+      "id": "q_u_p392a_B_0432",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "نیمه دوم آیه را کامل کنید:",
+      "stem": {
+        "verse": 51,
+        "givenCount": 3,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "أَهْوَآءَهُمْ ۚ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "5": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "پس از «وَلَقَدْ وَصَّلْنَا لَهُمُ»، کلمه «القول» می‌آید."
+    },
+    {
+      "id": "q_u_p392a_B_0433",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کلمات پایانی آیه را قرار دهید:",
+      "stem": {
+        "verse": 51,
+        "givenCount": 4,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَعَلَّهُمْ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَتَذَكَّرُونَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يُؤْمِنُونَ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "يَسْتَجِيبُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "خاتمه آیه ۵۱ با عبارت «لَعَلَّهُمْ يَتَذَكَّرُونَ» است."
+    },
+    {
+      "id": "q_u_p392a_B_0434",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "پایان آیه کدام است؟",
+      "stem": {
+        "verse": 51,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 5,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_005",
+            "w28_052_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_051_005",
+            "w28_050_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_052_006",
+            "w28_052_008"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه با «يَتَذَكَّرُونَ» به پایان می‌رسد، نه «يُؤْمِنُونَ»."
+    },
+    {
+      "id": "q_u_p392a_B_0435",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کدام گزینه ادامه آیه را به درستی نشان می‌دهد؟",
+      "stem": {
+        "verse": 51,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 4,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_052_003",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_051_004",
+            "w28_052_006",
+            "w28_052_008"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_051_004",
+            "w28_050_020",
+            "w28_050_021"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«ٱلْقَوْلَ لَعَلَّهُمْ يَتَذَكَّرُونَ» پایان صحیح آیه است."
+    },
+    {
+      "id": "q_u_p392a_B_0436",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کدام نسخه از آیه ۵۱ دقیقاً مطابق متن قرآن است؟",
+      "stem": {
+        "verseNum": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_052_002",
+            "w28_051_003",
+            "w28_051_004",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003",
+            "w28_052_003",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003",
+            "w28_051_004",
+            "w28_052_004",
+            "w28_052_005",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "در این آیه «وَصَّلْنَا لَهُمُ ٱلْقَوْلَ» صحیح است. «آتیناهم» و «الکتاب» مربوط به آیه بعدی است."
+    },
+    {
+      "id": "q_u_p392a_B_0437",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "در بین گزینه‌های زیر، متن صحیح آیه ۵۱ کدام است؟",
+      "stem": {
+        "verseNum": 51
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_050_004",
+            "w28_051_004",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_051_001",
+            "w28_051_002",
+            "w28_051_003",
+            "w28_051_004",
+            "w28_051_005",
+            "w28_052_008"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_050_001",
+            "w28_051_002",
+            "w28_051_003",
+            "w28_051_004",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترکیب کلمات «لَهُمُ»، «يَتَذَكَّرُونَ» و «وَلَقَدْ» نسخه صحیح آیه را می‌سازد."
+    }
+  ],
+  "issues": []
+}

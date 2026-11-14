@@ -1,0 +1,71 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "C10",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p393a_C_1901",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62",
+        "vr:62"
+      ],
+      "promptFa": "کدام گزینه پایان آیه‌ی قبل از این آیه (آیه‌ی ۶۲) است؟",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_064_009",
+            "w28_064_010",
+            "w28_064_011",
+            "w28_064_012",
+            "w28_064_013"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 62,
+            "from": 5,
+            "to": 8
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_062_005",
+            "w28_062_006",
+            "w28_062_007",
+            "w28_063_018"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_063_015",
+            "w28_063_016",
+            "w28_063_017",
+            "w28_063_018"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۶۲ با «شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ» پایان می‌یابد و پس از آن آیه‌ی ۶۳ می‌آید. گزینه‌ی o1 پایان آیه‌ی بعدی و o4 پایان همین آیه است."
+    }
+  ],
+  "issues": []
+}

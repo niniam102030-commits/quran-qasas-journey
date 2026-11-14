@@ -1,0 +1,207 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "C13",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p390b_C_1501",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 42,
+      "targets": [
+        "sq:41"
+      ],
+      "promptFa": "آیه قبل از آیه نمایش داده شده کدام است؟",
+      "stem": {
+        "verse": 42
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 40,
+            "from": 1,
+            "to": 10
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 43,
+            "from": 1,
+            "to": 16
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 39,
+            "from": 1,
+            "to": 12
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل از «وَأَتْبَعْنَـٰهُمْ فِى هَـٰذِهِ ٱلدُّنْيَا...»، آیه ۴۱ «وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ يَدْعُونَ...» است."
+    },
+    {
+      "id": "q_u_p390b_C_1502",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 42,
+      "targets": [
+        "sq:41",
+        "vr:41"
+      ],
+      "promptFa": "با مرتب کردن قطعات زیر، آیه قبل از این آیه را بسازید:",
+      "stem": {
+        "verse": 42
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَدْعُونَ إِلَى ٱلنَّارِ ۖ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا يُنصَرُونَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هُم مِّنَ ٱلْمَقْبُوحِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست آیه ۴۱: وَجَعَلْنَـٰهُمْ أَئِمَّةًۭ يَدْعُونَ إِلَى ٱلنَّارِ ۖ وَيَوْمَ ٱلْقِيَـٰمَةِ لَا يُنصَرُونَ. عبارت انحرافی متعلق به آیه ۴۲ است."
+    },
+    {
+      "id": "q_u_p390b_C_1503",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 42,
+      "targets": [
+        "sq:41",
+        "vr:41"
+      ],
+      "promptFa": "قطعات زیر را به درستی بچینید تا آیه قبل از آیه نمایش داده شده تشکیل شود:",
+      "stem": {
+        "verse": 42
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَجَعَلْنَـٰهُمْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَئِمَّةًۭ يَدْعُونَ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِلَى ٱلنَّارِ ۖ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَيَوْمَ ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "لَا يُنصَرُونَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا يُرْجَعُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب درست آیه ۴۱ ساخته می‌شود. عبارت انحرافی «لَا يُرْجَعُونَ» متعلق به پایان آیه ۳۹ است."
+    }
+  ],
+  "issues": []
+}

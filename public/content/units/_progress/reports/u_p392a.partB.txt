@@ -1,0 +1,36 @@
+[#1 q_u_p392a_B_0421 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p392a_B_0421 BUILD_FROM_TRANSLATION] target نامعتبر 'vt:v28_051'.
+[#2 q_u_p392a_B_0422 BUILD_FROM_TRANSLATION] target نامعتبر 'vt:v28_051'.
+[#3 q_u_p392a_B_0423 BUILD_FROM_TRANSLATION] target نامعتبر 'vt:v28_051'.
+[#4 q_u_p392a_B_0424 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p392a_B_0424 BUILD_FROM_NUMBER] target نامعتبر 'vn:v28_051'.
+[#4 q_u_p392a_B_0424 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p392a_B_0425 BUILD_FROM_NUMBER] target نامعتبر 'vn:v28_051'.
+[#5 q_u_p392a_B_0425 BUILD_FROM_NUMBER] target نامعتبر 'vr:v28_051'.
+[#5 q_u_p392a_B_0425 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p392a_B_0426 BUILD_FROM_NUMBER] target نامعتبر 'vn:v28_051'.
+[#6 q_u_p392a_B_0426 BUILD_FROM_NUMBER] target نامعتبر 'vr:v28_051'.
+[#6 q_u_p392a_B_0426 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p392a_B_0427 CLOZE_AR] target نامعتبر 'vr:v28_051'.
+[#7 q_u_p392a_B_0427 CLOZE_AR] نسبت پنهان 17% خارج از ۲۵٪ تا ۸۰٪ است.
+[#8 q_u_p392a_B_0428 CLOZE_AR] target نامعتبر 'vr:v28_051'.
+[#9 q_u_p392a_B_0429 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p392a_B_0429 CLOZE_AR] target نامعتبر 'vr:v28_051'.
+[#9 q_u_p392a_B_0429 CLOZE_AR] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۞
+[#10 q_u_p392a_B_0430 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p392a_B_0430 CLOZE_AR] target نامعتبر 'vr:v28_051'.
+[#11 q_u_p392a_B_0431 CLOZE_COMPLETE_REST] target نامعتبر 'vr:v28_051'.
+[#11 q_u_p392a_B_0431 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#12 q_u_p392a_B_0432 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#12 q_u_p392a_B_0432 CLOZE_COMPLETE_REST] target نامعتبر 'vr:v28_051'.
+[#12 q_u_p392a_B_0432 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#13 q_u_p392a_B_0433 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p392a_B_0433 CLOZE_COMPLETE_REST] target نامعتبر 'vr:v28_051'.
+[#13 q_u_p392a_B_0433 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#14 q_u_p392a_B_0434 ENDING_CHOICE] target نامعتبر 'vr:v28_051'.
+[#15 q_u_p392a_B_0435 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#15 q_u_p392a_B_0435 ENDING_CHOICE] target نامعتبر 'vr:v28_051'.
+[#16 q_u_p392a_B_0436 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p392a_B_0436 MUTASHABIH_SPOT] target نامعتبر 'vr:v28_051'.
+[#17 q_u_p392a_B_0437 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p392a_B_0437 MUTASHABIH_SPOT] target نامعتبر 'vr:v28_051'.

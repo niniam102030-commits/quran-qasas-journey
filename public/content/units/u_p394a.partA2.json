@@ -1,0 +1,1738 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002"
+      ],
+      "promptFa": "معنای کلمه «أَرَءَيْتُمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_071_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آیا با چشم دیدید"
+        },
+        {
+          "id": "o2",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "o3",
+          "fa": "آیا می شنوید"
+        },
+        {
+          "id": "o4",
+          "fa": "نظر شما چیست"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترکیب استفهامی «أَرَءَيْتُمْ» در قرآن به معنای «به من خبر دهید» است، نه صرفاً دیدن با چشم."
+    },
+    {
+      "id": "q_u_p394a_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002"
+      ],
+      "promptFa": "معنای «أَرَءَيْتُمْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تصور می کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "آیا می بینید"
+        },
+        {
+          "id": "o3",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "o4",
+          "fa": "آیا پند می گیرید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "ترکیب «أَرَءَيْتُمْ» به معنای «به من خبر دهید» است."
+    },
+    {
+      "id": "q_u_p394a_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002"
+      ],
+      "promptFa": "معنای «أَرَءَيْتُمْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آیا مشاهده کردید"
+        },
+        {
+          "id": "o2",
+          "fa": "آگاه می شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "آیا صبر می کنید"
+        },
+        {
+          "id": "o4",
+          "fa": "به من خبر دهید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "random"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0307",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008"
+      ],
+      "promptFa": "معنای کلمه «سَرْمَدًا» چیست؟",
+      "stem": {
+        "wordId": "w28_071_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "o2",
+          "fa": "سرد و تاریک"
+        },
+        {
+          "id": "o3",
+          "fa": "پیوسته و تاریک"
+        },
+        {
+          "id": "o4",
+          "fa": "طولانی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«سَرْمَدًا» یعنی پیوسته، پاینده و جاوید؛ واژه «سرمدی» در فارسی نیز از همین ریشه است."
+    },
+    {
+      "id": "q_u_p394a_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008"
+      ],
+      "promptFa": "معنای «سَرْمَدًا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرمای شدید"
+        },
+        {
+          "id": "o2",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "o3",
+          "fa": "جاودانگی شب"
+        },
+        {
+          "id": "o4",
+          "fa": "تاریکی مطلق"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«سَرْمَدًا» صفتی به معنای پاینده و جاوید است."
+    },
+    {
+      "id": "q_u_p394a_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008"
+      ],
+      "promptFa": "معنای «سَرْمَدًا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "همیشه تاریک"
+        },
+        {
+          "id": "o2",
+          "fa": "بی پایان"
+        },
+        {
+          "id": "o3",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "o4",
+          "fa": "سرما و یخبندان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017"
+      ],
+      "promptFa": "معنای کلمه «بِضِيَآءٍ ۖ» چیست؟",
+      "stem": {
+        "wordId": "w28_071_017",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گرما و حرارت"
+        },
+        {
+          "id": "o2",
+          "fa": "تاریکی"
+        },
+        {
+          "id": "o3",
+          "fa": "آرامش"
+        },
+        {
+          "id": "o4",
+          "fa": "روشنایی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "«ضِيَآء» به معنای روشنایی و فروغ تابناک است."
+    },
+    {
+      "id": "q_u_p394a_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017"
+      ],
+      "promptFa": "معنای «بِضِيَآءٍ ۖ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "o2",
+          "fa": "بینایی"
+        },
+        {
+          "id": "o3",
+          "fa": "شب قدر"
+        },
+        {
+          "id": "o4",
+          "fa": "روز"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0312",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017"
+      ],
+      "promptFa": "معنای «بِضِيَآءٍ ۖ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_071_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شعله آتش"
+        },
+        {
+          "id": "o2",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "o3",
+          "fa": "خورشید"
+        },
+        {
+          "id": "o4",
+          "fa": "آسایش"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0313",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018"
+      ],
+      "promptFa": "معنای کلمه «تَسْكُنُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_072_018",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سکونت و اقامت کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "ساکت شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "o4",
+          "fa": "بایستید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "«تَسْكُنُونَ» در اینجا از آرامش و استراحت در شب می‌گوید، نه اقامت در مسکن."
+    },
+    {
+      "id": "q_u_p394a_A_0314",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018"
+      ],
+      "promptFa": "معنای «تَسْكُنُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_072_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مسکن بگیرید"
+        },
+        {
+          "id": "o2",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "o3",
+          "fa": "خاموش شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "حرکت نکنید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "اشاره به آرامش یافتن و استراحت کردن در شب دارد."
+    },
+    {
+      "id": "q_u_p394a_A_0315",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018"
+      ],
+      "promptFa": "معنای «تَسْكُنُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_072_018",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خانه بسازید"
+        },
+        {
+          "id": "o2",
+          "fa": "آرام کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "سکوت کنید"
+        },
+        {
+          "id": "o4",
+          "fa": "بیارامید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0316",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021"
+      ],
+      "promptFa": "معنای کلمه «تُبْصِرُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_072_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می بینید"
+        },
+        {
+          "id": "o2",
+          "fa": "نمی شنوید"
+        },
+        {
+          "id": "o3",
+          "fa": "آگاه می شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "پند می گیرید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0317",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021"
+      ],
+      "promptFa": "معنای «تُبْصِرُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_072_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بصیرت می یابید"
+        },
+        {
+          "id": "o2",
+          "fa": "گوش می دهید"
+        },
+        {
+          "id": "o3",
+          "fa": "می بینید"
+        },
+        {
+          "id": "o4",
+          "fa": "می یابید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "random"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0318",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021"
+      ],
+      "promptFa": "معنای «تُبْصِرُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_072_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تفکر می کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "درک می کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "آرام می گیرید"
+        },
+        {
+          "id": "o4",
+          "fa": "می بینید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «به من خبر دهید» است؟",
+      "stem": {
+        "fa": "به من خبر دهید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْمَعُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَعَلَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «به من خبر دهید» است؟",
+      "stem": {
+        "fa": "به من خبر دهید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَأْتِيكُم"
+        },
+        {
+          "id": "o2",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "سَرْمَدًا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «پاینده و جاوید» است؟",
+      "stem": {
+        "fa": "پاینده و جاوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ضِيَآءٍ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَيْلٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "o4",
+          "ar": "نَهَارَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0322",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «پاینده و جاوید» است؟",
+      "stem": {
+        "fa": "پاینده و جاوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَوْمِ"
+        },
+        {
+          "id": "o2",
+          "ar": "قِيَـٰمَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِلَـٰهٌ"
+        },
+        {
+          "id": "o4",
+          "ar": "سَرْمَدًا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0323",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017"
+      ],
+      "promptFa": "کدام کلمه به معنای «روشنایی» است؟",
+      "stem": {
+        "fa": "روشنایی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَيْلٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "o4",
+          "ar": "نَهَارَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0324",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017"
+      ],
+      "promptFa": "کدام کلمه به معنای «روشنایی» است؟",
+      "stem": {
+        "fa": "روشنایی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْمَعُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَعَلَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0325",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018"
+      ],
+      "promptFa": "کدام کلمه به معنای «بیارامید» است؟",
+      "stem": {
+        "fa": "بیارامید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَسْمَعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَأْتِيكُم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0326",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018"
+      ],
+      "promptFa": "کدام کلمه به معنای «بیارامید» است؟",
+      "stem": {
+        "fa": "بیارامید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَعَلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَسْكُنُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0327",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021"
+      ],
+      "promptFa": "کدام کلمه به معنای «می بینید» است؟",
+      "stem": {
+        "fa": "می بینید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَسْمَعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَرَءَيْتُمْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0328",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021"
+      ],
+      "promptFa": "کدام کلمه به معنای «می بینید» است؟",
+      "stem": {
+        "fa": "می بینید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَأْتِيكُم"
+        },
+        {
+          "id": "o2",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَعَلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قُلْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      }
+    },
+    {
+      "id": "q_u_p394a_A_0329",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_002",
+        "w:w28_071_008",
+        "w:w28_071_017"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "l3",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلنَّهَارَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r2",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r3",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "r4",
+          "fa": "شب"
+        },
+        {
+          "id": "r5",
+          "fa": "روز"
+        },
+        {
+          "id": "r6",
+          "fa": "تاریکی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0330",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018",
+        "w:w28_072_021",
+        "w:w28_071_002"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَعَلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَأْتِيكُم"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "r2",
+          "fa": "می بینید"
+        },
+        {
+          "id": "r3",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r4",
+          "fa": "کند"
+        },
+        {
+          "id": "r5",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r6",
+          "fa": "می شنوید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0331",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_008",
+        "w:w28_071_017",
+        "w:w28_072_018"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "l2",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَوْمِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r2",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "r3",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "r4",
+          "fa": "قیامت"
+        },
+        {
+          "id": "r5",
+          "fa": "روز"
+        },
+        {
+          "id": "r6",
+          "fa": "معبود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0332",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_021",
+        "w:w28_071_002",
+        "w:w28_071_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "l4",
+          "ar": "غَيْرُ"
+        },
+        {
+          "id": "l5",
+          "ar": "إِلَـٰهٌ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می بینید"
+        },
+        {
+          "id": "r2",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r3",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r4",
+          "fa": "جز"
+        },
+        {
+          "id": "r5",
+          "fa": "معبودی"
+        },
+        {
+          "id": "r6",
+          "fa": "روشنایی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0333",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017",
+        "w:w28_072_018",
+        "w:w28_072_021"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلنَّهَارَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "r2",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "r3",
+          "fa": "می بینید"
+        },
+        {
+          "id": "r4",
+          "fa": "شب"
+        },
+        {
+          "id": "r5",
+          "fa": "روز"
+        },
+        {
+          "id": "r6",
+          "fa": "قیامت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0334",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_071_002",
+        "w:w28_071_008",
+        "w:w28_072_018"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "l3",
+          "ar": "تَسْمَعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَأْتِيكُم"
+        },
+        {
+          "id": "l5",
+          "ar": "تَسْكُنُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r2",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r3",
+          "fa": "می شنوید"
+        },
+        {
+          "id": "r4",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r5",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "r6",
+          "fa": "می بینید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0335",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 71,
+      "targets": [
+        "w:w28_071_017",
+        "w:w28_072_021",
+        "w:w28_071_002",
+        "w:w28_071_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَرَءَيْتُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "سَرْمَدًا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "r2",
+          "fa": "می بینید"
+        },
+        {
+          "id": "r3",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r4",
+          "fa": "شب"
+        },
+        {
+          "id": "r5",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r6",
+          "fa": "روز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    },
+    {
+      "id": "q_u_p394a_A_0336",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 72,
+      "targets": [
+        "w:w28_072_018",
+        "w:w28_071_017",
+        "w:w28_071_008",
+        "w:w28_072_021",
+        "w:w28_071_002"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَسْكُنُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِضِيَآءٍ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "سَرْمَدًا"
+        },
+        {
+          "id": "l4",
+          "ar": "تُبْصِرُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَرَءَيْتُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیارامید"
+        },
+        {
+          "id": "r2",
+          "fa": "روشنایی"
+        },
+        {
+          "id": "r3",
+          "fa": "پاینده و جاوید"
+        },
+        {
+          "id": "r4",
+          "fa": "می بینید"
+        },
+        {
+          "id": "r5",
+          "fa": "به من خبر دهید"
+        },
+        {
+          "id": "r6",
+          "fa": "کند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ]
+    }
+  ],
+  "issues": []
+}

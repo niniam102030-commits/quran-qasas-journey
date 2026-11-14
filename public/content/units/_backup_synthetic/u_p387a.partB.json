@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p387a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p387a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 14,
+      "targets": [
+        "vr:14"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «چون به توانایی [جسمی و عقلی] خود رسید و رشد و کمال یافت، به او حکمت و ...»، آیه 14 را مرتب کن:",
+      "stem": {
+        "verse": 14
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَمَّا بَلَغَ أَشُدَّهُۥ وَٱسْتَوَىٰٓ",
+          "wordIdx": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُ حُكْمًۭا وَعِلْمًۭا ۚ وَكَذَٰلِكَ",
+          "wordIdx": [
+            5,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَجْزِى ٱلْمُحْسِنِينَ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 14 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p387a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 14,
+      "targets": [
+        "vr:14"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 14 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 14,
+        "hiddenIdx": [
+          6
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "حُكْمًۭا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «حُكْمًۭا» در آیه 14 است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,6206 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p393b",
+ "part": "C",
+ "generatedBy": "Gemini",
+ "questions": [
+  {
+   "id": "q_u_p393b_C_0261",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 66,
+   "targets": [
+    "w:w28_066_001"
+   ],
+   "promptFa": "معنای «فَعَمِيَتْ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_066_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پوشیده ماند"
+    },
+    {
+     "id": "o2",
+     "fa": "نابینا شد"
+    },
+    {
+     "id": "o3",
+     "fa": "آشکار شد"
+    },
+    {
+     "id": "o4",
+     "fa": "فراموش شد"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "«فَعَمِيَتْ» از ریشه «عمی» (کوری) است، اما در این سیاق به معنای مخفی و پوشیده ماندن اخبار به کار رفته است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0262",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 69,
+   "targets": [
+    "w:w28_069_004"
+   ],
+   "promptFa": "معنای «تُكِنُّ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_069_004",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پنهان می نماید"
+    },
+    {
+     "id": "o2",
+     "fa": "آشکار می کند"
+    },
+    {
+     "id": "o3",
+     "fa": "کینه می ورزد"
+    },
+    {
+     "id": "o4",
+     "fa": "خلق می کند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "«تُكِنُّ» از ریشه «کنن» به معنای مخفی کردن و در دل پنهان داشتن است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0263",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 68,
+   "targets": [
+    "w:w28_068_009"
+   ],
+   "promptFa": "معادل عربی «اختیاری» کدام است؟",
+   "stem": {
+    "fa": "اختیاری"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ٱلْخِيَرَةُ"
+    },
+    {
+     "id": "o2",
+     "fa": "ٱلْحُكْمُ"
+    },
+    {
+     "id": "o3",
+     "fa": "يَخْتَارُ"
+    },
+    {
+     "id": "o4",
+     "fa": "صَـٰلِحًۭا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "«ٱلْخِيَرَةُ» به معنای اختیار و حق انتخاب است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0264",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 67,
+   "targets": [
+    "w:w28_067_011"
+   ],
+   "promptFa": "معادل عربی «رستگاران» کدام است؟",
+   "stem": {
+    "fa": "رستگاران"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ٱلْمُفْلِحِينَ"
+    },
+    {
+     "id": "o2",
+     "fa": "ٱلْمُرْسَلِينَ"
+    },
+    {
+     "id": "o3",
+     "fa": "ٱلْمُؤْمِنِينَ"
+    },
+    {
+     "id": "o4",
+     "fa": "ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«ٱلْمُفْلِحِينَ» جمع مفلح به معنای رستگار است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0265",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 65,
+   "targets": [
+    "w:w28_065_002",
+    "w:w28_066_007",
+    "w:w28_068_005",
+    "w:w28_069_007"
+   ],
+   "promptFa": "کلمات را به معنای درست متصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يُنَادِيهِمْ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَتَسَآءَلُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَخْتَارُ"
+    },
+    {
+     "id": "l4",
+     "ar": "يُعْلِنُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "آنان را ندا می دهد"
+    },
+    {
+     "id": "r2",
+     "fa": "از یکدیگر پرسش هم نمی کنند"
+    },
+    {
+     "id": "r3",
+     "fa": "بر می گزیند"
+    },
+    {
+     "id": "r4",
+     "fa": "آشکار می کند"
+    },
+    {
+     "id": "r5",
+     "fa": "پنهان می نماید"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "دقت کنید که «يَتَسَآءَلُونَ» با «لا» در آیه منفی شده است و در اینجا معنای پرسش نکردن را در قالب عبارت فارسی می‌رساند.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0266",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 68,
+   "targets": [
+    "w:w28_067_006",
+    "w:w28_069_005",
+    "w:w28_070_008",
+    "w:w28_070_013"
+   ],
+   "promptFa": "کلمات عربی را به معنای دقیق آنها وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "صَـٰلِحًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "صُدُورُهُمْ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْحَمْدُ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْحُكْمُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "کار شایسته"
+    },
+    {
+     "id": "r2",
+     "fa": "سینه هایشان"
+    },
+    {
+     "id": "r3",
+     "fa": "ستایش ها"
+    },
+    {
+     "id": "r4",
+     "fa": "فرانروایی"
+    },
+    {
+     "id": "r5",
+     "fa": "اختیاری"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "واژگان پرکاربرد قرآنی که در آیات ۶۷ تا ۷۰ این بخش تکرار شده‌اند.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0267",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 70,
+   "targets": [
+    "w:w28_070_010"
+   ],
+   "promptFa": "معنای «ٱلْأُولَىٰ» در آیه ۷۰ چیست؟",
+   "stem": {
+    "wordId": "w28_070_010",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "دنیا"
+    },
+    {
+     "id": "o2",
+     "fa": "آخرت"
+    },
+    {
+     "id": "o3",
+     "fa": "اولین"
+    },
+    {
+     "id": "o4",
+     "fa": "برتر"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "در قرآن معمولاً «ٱلْأُولَىٰ» وقتی در تقابل با «ٱلْـَٔاخِرَةِ» قرار می‌گیرد به معنای حیات دنیاست.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0268",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 65,
+   "targets": [
+    "vt:65"
+   ],
+   "promptFa": "ترجمه صحیح این آیه کدام است؟",
+   "stem": {
+    "verse": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟"
+    },
+    {
+     "id": "o2",
+     "fa": "و روزی که آنان را می خوانند و گفته می شود: شریکان خود را بخوانید."
+    },
+    {
+     "id": "o3",
+     "fa": "و پروردگارت آنان را ندا می دهد و می گوید: چه کردید با پیامبران؟"
+    },
+    {
+     "id": "o4",
+     "fa": "و روزی که خداوند ندا می دهد: آیا پاسخ پیامبران را دادید؟"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "آیه ۶۵ صراحتاً درباره ندای الهی و سؤال از پاسخ به مرسلین (پیامبران) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0269",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 69,
+   "targets": [
+    "vt:69"
+   ],
+   "promptFa": "کدام گزینه ترجمه دقیق آیه ۶۹ است؟",
+   "stem": {
+    "verse": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند"
+    },
+    {
+     "id": "o2",
+     "fa": "و خداوند آنچه را در دل پنهان می کنند و آنچه را آشکار می سازند، آگاه است"
+    },
+    {
+     "id": "o3",
+     "fa": "و پروردگارت آنچه را در سینه هاست و آنچه را کتمان می کنند می داند"
+    },
+    {
+     "id": "o4",
+     "fa": "و پروردگار تو می داند چه چیزی را پنهان می کنند و چه چیزی را در سینه آشکار می سازند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "ترجمه دقیق و کلمه‌به‌کلمه «تُكِنُّ صُدُورُهُمْ» (سینه هایشان پنهان می نماید) فقط در این گزینه رعایت شده است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0270",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 66,
+   "targets": [
+    "vt:66"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام آیه است؟\n«پس در آن روز [...] اخبار [واقعی] بر آنان پوشیده ماند [...]، بنابراین از یکدیگر پرسش هم نمی کنند»",
+   "stem": {
+    "verse": 66,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ فَهُمْ لَا يَتَسَآءَلُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "similar_verse",
+    "o4": "random"
+   },
+   "explanationFa": "ترجمه پوشیده ماندن اخبار و پرسش نکردن مربوط به آیه ۶۶ (فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0271",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 68,
+   "targets": [
+    "vt:68"
+   ],
+   "promptFa": "این ترجمه کدام آیه است؟\n«و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند...»",
+   "stem": {
+    "verse": 68,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ ..."
+    },
+    {
+     "id": "o2",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا ..."
+    },
+    {
+     "id": "o4",
+     "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ لَهُ ٱلْحَمْدُ ..."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "عبارت «می آفریند و بر می گزیند» معادل «يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ» است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0272",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 68,
+   "targets": [
+    "vt:68"
+   ],
+   "promptFa": "قطعات عربی آیه ۶۸ را به ترجمه دقیق آنها وصل کن.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ"
+    },
+    {
+     "id": "l2",
+     "ar": "مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ"
+    },
+    {
+     "id": "l3",
+     "ar": "سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ"
+    },
+    {
+     "id": "l4",
+     "ar": "عَمَّا يُشْرِكُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و پروردگارت آنچه را بخواهد می آفریند و [آنچه را بخواهد] بر می گزیند،"
+    },
+    {
+     "id": "r2",
+     "fa": "برای آنان [در برابر اراده او در قلمرو تکوین و تشریع] اختیاری نیست؛"
+    },
+    {
+     "id": "r3",
+     "fa": "منزّه است خدا و برتر است"
+    },
+    {
+     "id": "r4",
+     "fa": "از آنچه برای او شریک می گیرند،"
+    },
+    {
+     "id": "r5",
+     "fa": "و آنچه را آشکار می کند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۸ توحید در خالقیت و حاکمیت را بیان می‌کند و هرگونه اختیار استقلالی را از مشرکان نفی می‌کند.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0273",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 70,
+   "targets": [
+    "vt:70"
+   ],
+   "promptFa": "بخش‌های آیه ۷۰ را با ترجمه متصل کن.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَهُ ٱلْحَمْدُ فِى ٱلْأُولَىٰ وَٱلْـَٔاخِرَةِ ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَلَهُ ٱلْحُكْمُ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و اوست خدا که معبودی جز او نیست،"
+    },
+    {
+     "id": "r2",
+     "fa": "همه ستایش ها در دنیا و آخرت ویژه اوست،"
+    },
+    {
+     "id": "r3",
+     "fa": "و فرمانروایی فقط برای اوست،"
+    },
+    {
+     "id": "r4",
+     "fa": "و تنها به سوی او بازگردانده می شوید."
+    },
+    {
+     "id": "r5",
+     "fa": "و پروردگارت آنچه را بخواهد می آفریند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "ترجمه دقیق تکه‌تکه‌های آیه پایانی این بخش.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0274",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 67,
+   "targets": [
+    "vt:67"
+   ],
+   "promptFa": "ترجمه آیه ۶۷ را به ترتیب درست بچین.",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و اما کسی که [از شرک و عصیان] توبه کرده",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "و ایمان آورده",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و کار شایسته انجام داده،",
+     "wordIdx": [
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "امید است که از رستگاران باشد،",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "فَأَمَّا مَن تَابَ (توبه کرده) وَءَامَنَ (و ایمان آورده) وَعَمِلَ صَـٰلِحًۭا (و کار شایسته انجام داده)...",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0275",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 70,
+   "targets": [
+    "vt:70"
+   ],
+   "promptFa": "تکه‌های ترجمه آیه ۷۰ را مرتب کن.",
+   "stem": {
+    "verse": 70
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و اوست خدا که معبودی جز او نیست،",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "همه ستایش ها در دنیا و آخرت ویژه اوست،",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و فرمانروایی فقط برای اوست،",
+     "wordIdx": [
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و تنها به سوی او بازگردانده می شوید.",
+     "wordIdx": [
+      14,
+      15
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "وَهُوَ ٱللَّهُ... لَهُ ٱلْحَمْدُ... وَلَهُ ٱلْحُكْمُ... وَإِلَيْهِ تُرْجَعُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0276",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 68,
+   "targets": [
+    "vt:68"
+   ],
+   "promptFa": "جاهای خالی در ترجمه آیه ۶۸ را پر کن.",
+   "stem": {
+    "verse": 68,
+    "faHidden": [
+     {
+      "start": 23,
+      "text": "می آفریند"
+     },
+     {
+      "start": 54,
+      "text": "بر می گزیند"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "می آفریند",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "بر می گزیند",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "پنهان می نماید",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "آشکار می کند",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "5": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "«يَخْلُقُ» یعنی می آفریند و «يَخْتَارُ» یعنی بر می گزیند.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0277",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "translation",
+   "verse": 66,
+   "targets": [
+    "vt:66"
+   ],
+   "promptFa": "کلمات پنهان شده در ترجمه آیه ۶۶ را کامل کن.",
+   "stem": {
+    "verse": 66,
+    "faHidden": [
+     {
+      "start": 132,
+      "text": "پوشیده ماند"
+     },
+     {
+      "start": 199,
+      "text": "پرسش هم نمی کنند"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پوشیده ماند",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پرسش هم نمی کنند",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "پنهان می نماید",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "ندا می دهد",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "7": "b2"
+   },
+   "distractorTags": {},
+   "explanationFa": "«عَمِيَتْ» در اینجا به پوشیده ماندن و «لا یَتَساءَلُونَ» به پرسش نکردن ترجمه شده است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0278",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "number",
+   "verse": 65,
+   "targets": [
+    "vn:65"
+   ],
+   "promptFa": "آیه «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ» کدام آیه است؟",
+   "stem": {
+    "verse": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 65
+    },
+    {
+     "id": "o2",
+     "num": 66
+    },
+    {
+     "id": "o3",
+     "num": 64
+    },
+    {
+     "id": "o4",
+     "num": 68
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "این آیه سرآغاز پرسش الهی در قیامت است و شماره آن ۶۵ می‌باشد.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0279",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "number",
+   "verse": 68,
+   "targets": [
+    "vn:68"
+   ],
+   "promptFa": "شماره آیه «وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ ...» چند است؟",
+   "stem": {
+    "verse": 68
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 68
+    },
+    {
+     "id": "o2",
+     "num": 69
+    },
+    {
+     "id": "o3",
+     "num": 67
+    },
+    {
+     "id": "o4",
+     "num": 70
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه ۶۸ درباره خلقت و انتخاب پروردگار است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0280",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "number",
+   "verse": 70,
+   "targets": [
+    "vn:70"
+   ],
+   "promptFa": "شماره این آیه چیست؟ «وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ لَهُ ٱلْحَمْدُ ...»",
+   "stem": {
+    "verse": 70
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 70
+    },
+    {
+     "id": "o2",
+     "num": 69
+    },
+    {
+     "id": "o3",
+     "num": 71
+    },
+    {
+     "id": "o4",
+     "num": 68
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "این آیه پایانی بخش جاری و متضمن کلمه توحید، آیه ۷۰ است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0281",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "number",
+   "verse": 66,
+   "targets": [
+    "vn:66"
+   ],
+   "promptFa": "آیه ۶۶ با کدام کلمات آغاز می‌شود؟",
+   "stem": {
+    "num": 66
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "آیه ۶۶ در پی آیه ندای الهی (۶۵) وضع مشرکان را توصیف می‌کند: فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0282",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "number",
+   "verse": 67,
+   "targets": [
+    "vn:67"
+   ],
+   "promptFa": "آیه ۶۷ با چه عبارتی شروع می‌شود؟",
+   "stem": {
+    "num": 67
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "پس از بیان حال مشرکان، آیه ۶۷ حالت توبه‌کنندگان را بیان می‌دارد: فَأَمَّا مَن تَابَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0283",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "number",
+   "verse": 69,
+   "targets": [
+    "vn:69"
+   ],
+   "promptFa": "شروع آیه ۶۹ کدام است؟",
+   "stem": {
+    "num": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ"
+    },
+    {
+     "id": "o4",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "هر دو آیه ۶۸ و ۶۹ با «وَرَبُّكَ» آغاز می‌شوند، آیه ۶۸ با «يَخْلُقُ» و آیه ۶۹ با «يَعْلَمُ».",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0284",
+   "type": "MATCH_NUMBER_OPENING",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "number",
+   "verse": 65,
+   "targets": [
+    "vn:65",
+    "vn:66",
+    "vn:67",
+    "vn:68"
+   ],
+   "promptFa": "شماره آیات را به آغاز آنها متصل کن.",
+   "stem": {
+    "mode": "NUMBER_OPENING"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "آیه ۶۵"
+    },
+    {
+     "id": "l2",
+     "ar": "آیه ۶۶"
+    },
+    {
+     "id": "l3",
+     "ar": "آیه ۶۷"
+    },
+    {
+     "id": "l4",
+     "ar": "آیه ۶۸"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+    },
+    {
+     "id": "r2",
+     "fa": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ"
+    },
+    {
+     "id": "r3",
+     "fa": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    },
+    {
+     "id": "r4",
+     "fa": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ"
+    },
+    {
+     "id": "r5",
+     "fa": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "یادآوری ترتیب آغاز آیات ۶۵ تا ۶۸.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0285",
+   "type": "MATCH_NUMBER_OPENING",
+   "shape": "match",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "number",
+   "verse": 67,
+   "targets": [
+    "vn:67",
+    "vn:68",
+    "vn:69",
+    "vn:70"
+   ],
+   "promptFa": "شماره آیات را با ابتدای صحیح‌شان جفت کن.",
+   "stem": {
+    "mode": "NUMBER_OPENING"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "آیه ۶۷"
+    },
+    {
+     "id": "l2",
+     "ar": "آیه ۶۸"
+    },
+    {
+     "id": "l3",
+     "ar": "آیه ۶۹"
+    },
+    {
+     "id": "l4",
+     "ar": "آیه ۷۰"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    },
+    {
+     "id": "r2",
+     "fa": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ"
+    },
+    {
+     "id": "r3",
+     "fa": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ"
+    },
+    {
+     "id": "r4",
+     "fa": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ"
+    },
+    {
+     "id": "r5",
+     "fa": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "answer": "",
+   "distractorTags": {},
+   "explanationFa": "دقت کنید آیه ۶۸ با يَخْلُقُ و آیه ۶۹ با يَعْلَمُ آغاز می‌گردد.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0286",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "number",
+   "verse": 69,
+   "targets": [
+    "vn:69"
+   ],
+   "promptFa": "آیه «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ» آیه چندم است؟",
+   "stem": {
+    "verse": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 69
+    },
+    {
+     "id": "o2",
+     "num": 68
+    },
+    {
+     "id": "o3",
+     "num": 70
+    },
+    {
+     "id": "o4",
+     "num": 67
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "این آیه دقیقاً قبل از آیه توحید (۷۰) قرار دارد.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0287",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "number",
+   "verse": 65,
+   "targets": [
+    "vn:65"
+   ],
+   "promptFa": "آیه ۶۵ چگونه آغاز می‌شود؟",
+   "stem": {
+    "num": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ"
+    },
+    {
+     "id": "o4",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "آیه ۶۵ با «وَيَوْمَ يُنَادِيهِمْ» آغاز می‌شود. (آیه قبل آن با وَقِيلَ شروع شده بود).",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0288",
+   "type": "NEXT_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "پس از آیه «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ»، کدام آیه می‌آید؟",
+   "stem": {
+    "verse": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 66,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 64,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 4
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_verse",
+    "o4": "random"
+   },
+   "explanationFa": "پس از سوال از مجرمان، آیه توصیف می‌کند که اخبار بر آنان پوشیده می‌ماند (فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...).",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0289",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "کدام آیه دقیقاً قبل از «وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ ...» آمده است؟",
+   "stem": {
+    "verse": 68
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 66,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 65,
+      "from": 1,
+      "to": 4
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_verse",
+    "o4": "random"
+   },
+   "explanationFa": "قبل از آیه ۶۸، آیه ۶۷ (فَأَمَّا مَن تَابَ وَءَامَنَ...) قرار دارد که حال توبه‌کنندگان را بیان می‌کند.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0290",
+   "type": "NEXT_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:69"
+   ],
+   "promptFa": "آیه بعد از «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ» چیست؟",
+   "stem": {
+    "verse": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 5
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 71,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 4
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 4
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "random"
+   },
+   "explanationFa": "بعد از علم خداوند به پنهان و آشکار سینه ها، آیه یکتایی و ستایش او (وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ...) می‌آید.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0291",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "پس از آیه ۶۶ (فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...)، آیه بعدی را بساز.",
+   "stem": {
+    "verse": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَن تَابَ",
+     "wordIdx": [
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا",
+     "wordIdx": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَعَسَىٰٓ أَن يَكُونَ مِنَ ٱلْمُفْلِحِينَ",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۷ با فَأَمَّا مَن تَابَ شروع می‌شود و در تقابل با مجرمان آیات قبل است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0292",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "sequence",
+   "verse": 70,
+   "targets": [
+    "sq:69"
+   ],
+   "promptFa": "آیه قبل از آیه ۷۰ (وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ...) را از تکه‌های زیر بساز.",
+   "stem": {
+    "verse": 70
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَعْلَمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا تُكِنُّ صُدُورُهُمْ",
+     "wordIdx": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَمَا يُعْلِنُونَ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَخْلُقُ مَا يَشَآءُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۹ (وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ...) آیه پیش از آیه ۷۰ است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0293",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:65",
+    "sq:66",
+    "sq:67"
+   ],
+   "promptFa": "ترتیب صحیح این چهار آیه متوالی را مشخص کن.",
+   "stem": {
+    "verses": [
+     65,
+     66,
+     67,
+     68
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ... (۶۵)",
+     "verse": 65
+    },
+    {
+     "id": "b2",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ... (۶۶)",
+     "verse": 66
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ... (۶۷)",
+     "verse": 67
+    },
+    {
+     "id": "b4",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ... (۶۸)",
+     "verse": 68
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "داستان از ندای روز قیامت (۶۵) شروع شده، تحیر مجرمان (۶۶)، استثنای تائبان (۶۷) و در نهایت اختیار انحصاری پروردگار (۶۸) بیان می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0294",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:67",
+    "sq:68",
+    "sq:69"
+   ],
+   "promptFa": "ترتیب درست این آیات پیاپی کدام است؟",
+   "stem": {
+    "verses": [
+     67,
+     68,
+     69,
+     70
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا مَن تَابَ وَءَامَنَ... (۶۷)",
+     "verse": 67
+    },
+    {
+     "id": "b2",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ... (۶۸)",
+     "verse": 68
+    },
+    {
+     "id": "b3",
+     "ar": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ... (۶۹)",
+     "verse": 69
+    },
+    {
+     "id": "b4",
+     "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ... (۷۰)",
+     "verse": 70
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۸ بر خلقت، ۶۹ بر علم و ۷۰ بر الوهیت و حمد پروردگار تأکید دارد.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0295",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 67,
+   "targets": [
+    "vr:67"
+   ],
+   "promptFa": "آیه ۶۷ با چه عبارتی پایان می‌یابد؟ (فَأَمَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا فَعَسَىٰٓ أَن ...)",
+   "stem": {
+    "verse": 67,
+    "hideLastWords": 3
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 67,
+      "from": 9,
+      "to": 11
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "يَكُونَ",
+      "مِنَ",
+      "ٱلْمُؤْمِنِينَ"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "يَكُونَ",
+      "مِنَ",
+      "ٱلْمُفْسِدِينَ"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "تُرْجَعُونَ"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "امید است که از رستگاران باشند: يَكُونَ مِنَ ٱلْمُفْلِحِينَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0296",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 68,
+   "targets": [
+    "vr:68"
+   ],
+   "promptFa": "پایان آیه ۶۸ کدام است؟ (وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ... سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ ...)",
+   "stem": {
+    "verse": 68,
+    "hideLastWords": 2
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 68,
+      "from": 13,
+      "to": 14
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "عَمَّا",
+      "يَصِفُونَ"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "مَا",
+      "يُعْلِنُونَ"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "عَمَّا",
+      "يَعْمَلُونَ"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه با تنزیه خداوند از شرک پایان می‌یابد: عَمَّا يُشْرِكُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0297",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 70,
+   "targets": [
+    "vr:70"
+   ],
+   "promptFa": "کلمات پایانی آیه ۷۰ چیست؟ (وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ... وَلَهُ ٱلْحُكْمُ ...)",
+   "stem": {
+    "verse": 70,
+    "hideLastWords": 2
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 70,
+      "from": 14,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "وَإِلَيْهِ",
+      "يُرْجَعُونَ"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "وَإِلَيْهِ",
+      "ٱلْمَصِيرُ"
+     ]
+    },
+    {
+     "id": "o4",
+     "words": [
+      "وَهُوَ",
+      "عَلَىٰ",
+      "كُلِّ",
+      "شَىْءٍۢ",
+      "قَدِيرٌ"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "similar_verse",
+    "o4": "random"
+   },
+   "explanationFa": "آیه با فعل مجهول مخاطب پایان می‌یابد: وَإِلَيْهِ تُرْجَعُونَ (تنها به سوی او بازگردانده می شوید).",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0298",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 70,
+   "targets": [
+    "vr:70"
+   ],
+   "promptFa": "کدام نسخه از آیه ۷۰ صحیح است؟",
+   "stem": {
+    "verseNum": 70
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "وَهُوَ",
+      "ٱللَّهُ",
+      "لَآ",
+      "إِلَـٰهَ",
+      "إِلَّا",
+      "ٱللَّهُ",
+      "ۖ",
+      "لَهُ",
+      "ٱلْحَمْدُ",
+      "فِى",
+      "ٱلْأُولَىٰ",
+      "وَٱلْـَٔاخِرَةِ",
+      "ۖ",
+      "وَلَهُ",
+      "ٱلْحُكْمُ",
+      "وَإِلَيْهِ",
+      "تُرْجَعُونَ"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "وَهُوَ",
+      "ٱللَّهُ",
+      "لَآ",
+      "إِلَـٰهَ",
+      "إِلَّا",
+      "هُوَ",
+      "ۖ",
+      "لَهُ",
+      "ٱلْمُلْكُ",
+      "وَلَهُ",
+      "ٱلْحَمْدُ",
+      "وَإِلَيْهِ",
+      "تُرْجَعُونَ"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "similar_verse"
+   },
+   "explanationFa": "عبارت دقیق قرآن «لَآ إِلَـٰهَ إِلَّا هُوَ» و «لَهُ ٱلْحَمْدُ فِى ٱلْأُولَىٰ وَٱلْـَٔاخِرَةِ» است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0299",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 65,
+   "targets": [
+    "vr:65"
+   ],
+   "promptFa": "با توجه به ترجمه، آیه ۶۵ را بساز:\n«و روزی که خدا آنان را ندا می دهد و می گوید: چه پاسخی به پیامبران دادید؟»",
+   "stem": {
+    "verse": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "فَيَقُولُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَاذَآ أَجَبْتُمُ",
+     "wordIdx": [
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "ٱلْمُرْسَلِينَ",
+     "wordIdx": [
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه شامل ندا (يُنَادِيهِمْ)، پرسش (مَاذَا أَجَبْتُمُ) و مفعول آن (ٱلْمُرْسَلِينَ) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0300",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 69,
+   "targets": [
+    "vr:69"
+   ],
+   "promptFa": "بر اساس ترجمه، متن عربی آیه ۶۹ را مرتب کن.\n«و پروردگارت آنچه را سینه هایشان پنهان می نماید و آنچه را آشکار می کند، می داند»",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ يَعْلَمُ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَا تُكِنُّ",
+     "wordIdx": [
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "صُدُورُهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَمَا يُعْلِنُونَ",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَخْلُقُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0301",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 66,
+   "targets": [
+    "vr:66"
+   ],
+   "promptFa": "آیه ۶۶ را به طور کامل از تکه‌های زیر بساز.",
+   "stem": {
+    "verse": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَهُمْ لَا يَتَسَآءَلُونَ",
+     "wordIdx": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مَاذَآ أَجَبْتُمُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ يَوْمَئِذٍۢ فَهُمْ لَا يَتَسَآءَلُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0302",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 68,
+   "targets": [
+    "vr:68"
+   ],
+   "promptFa": "قطعات آیه ۶۸ را به ترتیب درست بچین.",
+   "stem": {
+    "verse": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "سُبْحَـٰنَ ٱللَّهِ",
+     "wordIdx": [
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ",
+     "wordIdx": [
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَا يُعْلِنُونَ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه خلقت و انتخاب، نفی اختیار مشرکان، و سپس تسبیح و تنزیه الهی.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0303",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 67,
+   "targets": [
+    "vr:67"
+   ],
+   "promptFa": "کلمات جاافتاده از آیه ۶۷ را در جای مناسب قرار بده.",
+   "stem": {
+    "verse": 67,
+    "hiddenIdx": [
+     3,
+     5,
+     11
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "تَابَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَعَمِلَ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْمُفْلِحِينَ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَخْلُقُ",
+     "decoy": true
+    },
+    {
+     "id": "b5",
+     "ar": "ٱلْمُفْسِدِينَ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "5": "b2",
+    "11": "b3"
+   },
+   "distractorTags": {},
+   "explanationFa": "فَأَمَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا فَعَسَىٰٓ أَن يَكُونَ مِنَ ٱلْمُفْلِحِينَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0304",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 70,
+   "targets": [
+    "vr:70"
+   ],
+   "promptFa": "تکمیل کلمات مخفی در آیه ۷۰.",
+   "stem": {
+    "verse": 70,
+    "hiddenIdx": [
+     4,
+     10,
+     13
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "إِلَـٰهَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱلْأُولَىٰ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْحُكْمُ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "ٱلْـَٔاخِرَةِ",
+     "decoy": true
+    },
+    {
+     "id": "b5",
+     "ar": "ٱلْحَمْدُ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "4": "b1",
+    "10": "b2",
+    "13": "b3"
+   },
+   "distractorTags": {},
+   "explanationFa": "لَآ إِلَـٰهَ إِلَّا هُوَ ۖ لَهُ ٱلْحَمْدُ فِى ٱلْأُولَىٰ وَٱلْـَٔاخِرَةِ ۖ وَلَهُ ٱلْحُكْمُ...",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0305",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 68,
+   "targets": [
+    "vr:68"
+   ],
+   "promptFa": "با داشتن ۴ کلمه اول، بقیه آیه ۶۸ را کامل کن. (وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ ...)",
+   "stem": {
+    "verse": 68,
+    "givenCount": 4,
+    "hiddenIdx": [
+     5,
+     6,
+     10,
+     12
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "سُبْحَـٰنَ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَتَعَـٰلَىٰ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَعْلَمُ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "6": "b2",
+    "10": "b3",
+    "12": "b4"
+   },
+   "distractorTags": {},
+   "explanationFa": "... وَيَخْتَارُ ۗ مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0306",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 8,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 70,
+   "targets": [
+    "vr:70"
+   ],
+   "promptFa": "بقیه آیه ۷۰ را کامل کن (وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ ...)",
+   "stem": {
+    "verse": 70,
+    "givenCount": 6,
+    "hiddenIdx": [
+     7,
+     12,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "لَهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَلَهُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "وَإِلَيْهِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فِى",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "7": "b1",
+    "12": "b2",
+    "14": "b3"
+   },
+   "distractorTags": {},
+   "explanationFa": "... لَهُ ٱلْحَمْدُ... وَلَهُ ٱلْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0307",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 65,
+   "targets": [
+    "vr:65"
+   ],
+   "promptFa": "کدام گزینه متن دقیق آیه ۶۵ است؟",
+   "stem": {
+    "verseNum": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 65,
+      "from": 1,
+      "to": 6
+     }
+    },
+    {
+     "id": "o2",
+     "words": [
+      "وَيَوْمَ",
+      "يُنَادِيهِمْ",
+      "فَيَقُولُ",
+      "أَيْنَ",
+      "شُرَكَآءِىَ",
+      "ٱلَّذِينَ",
+      "كُنتُمْ",
+      "تَزْعُمُونَ"
+     ]
+    },
+    {
+     "id": "o3",
+     "words": [
+      "وَقِيلَ",
+      "ٱدْعُوا۟",
+      "شُرَكَآءَكُمْ",
+      "فَدَعَوْهُمْ",
+      "فَلَمْ",
+      "يَسْتَجِيبُوا۟",
+      "لَهُمْ"
+     ]
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse"
+   },
+   "explanationFa": "این آیه درباره سوال از پیامبران است: مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0308",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 8,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 67,
+   "targets": [
+    "vr:67"
+   ],
+   "promptFa": "آیه ۶۷ را مطابق ترجمه زیر بساز:\n«و اما کسی که توبه کرده و ایمان آورده و کار شایسته انجام داده، امید است که از رستگاران باشد،»",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا مَن تَابَ",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا",
+     "wordIdx": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَعَسَىٰٓ أَن يَكُونَ",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مِنَ ٱلْمُفْلِحِينَ",
+     "wordIdx": [
+      10,
+      11
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "فَأَمَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا فَعَسَىٰٓ أَن يَكُونَ مِنَ ٱلْمُفْلِحِينَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0102",
+   "type": "NEXT_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "آیه بعد از آیه ۶۶ کدام است؟",
+   "stem": {
+    "verse": 66
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 65,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه بعد از «فَعَمِيَتْ عَلَيْهِمُ»، آیه «فَأَمَّا مَن تَابَ» است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0103",
+   "type": "NEXT_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "آیه بعد از آیه ۶۷ کدام است؟",
+   "stem": {
+    "verse": 67
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 66,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه بعد از «فَأَمَّا مَن تَابَ»، آیه «وَرَبُّكَ يَخْلُقُ» است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0104",
+   "type": "NEXT_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "آیه بعد از آیه ۶۸ کدام است؟",
+   "stem": {
+    "verse": 68
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 71,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه بعد از «وَرَبُّكَ يَخْلُقُ»، آیه «وَرَبُّكَ يَعْلَمُ» است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0106",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "شروع آیه بعد از آیه ۶۵ را بسازید.",
+   "stem": {
+    "verse": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَلَيْهِمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۶ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0107",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "متن آیه بعد از آیه ۶۵ را بچینید.",
+   "stem": {
+    "verse": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَلَيْهِمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "لَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يَتَسَآءَلُونَ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "يَعْلَمُ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {
+    "d1": "random"
+   },
+   "explanationFa": "متن کامل آیه ۶۶.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0109",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "بخش اول آیه بعد از آیه ۶۶ را بچینید.",
+   "stem": {
+    "verse": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَن",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "تَابَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَءَامَنَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَعَمِلَ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "صَـٰلِحًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "صُدُورُهُمْ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "random"
+   },
+   "explanationFa": "ابتدای آیه ۶۷.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0110",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "شروع آیه بعد از آیه ۶۷ را بسازید.",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَخْلُقُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَشَآءُ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۸ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0111",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "بخش اول آیه بعد از آیه ۶۷ را بچینید.",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَخْلُقُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَشَآءُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "مَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "يَعْلَمُ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "similar_verse"
+   },
+   "explanationFa": "ابتدای آیه ۶۸. دقت کنید که با یخلق شروع می‌شود نه یعلم.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0112",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "شروع آیه بعد از آیه ۶۸ را بسازید.",
+   "stem": {
+    "verse": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَعْلَمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "تُكِنُّ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۹ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0113",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "متن آیه بعد از آیه ۶۸ را بچینید.",
+   "stem": {
+    "verse": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَعْلَمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "تُكِنُّ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "صُدُورُهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "وَمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يُعْلِنُونَ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "يَخْلُقُ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {
+    "d1": "similar_verse"
+   },
+   "explanationFa": "متن کامل آیه ۶۹. دقت کنید این آیه یعلم است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0114",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:69"
+   ],
+   "promptFa": "شروع آیه بعد از آیه ۶۹ را بسازید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَهُوَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱللَّهُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "لَآ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِلَـٰهَ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۷۰ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0115",
+   "type": "BUILD_NEXT_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:69"
+   ],
+   "promptFa": "بخش اول آیه بعد از آیه ۶۹ را بچینید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَهُوَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱللَّهُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "لَآ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِلَـٰهَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِلَّا",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "هُوَ ۖ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "لَهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "ٱلْأُولَىٰ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {
+    "d1": "same_root"
+   },
+   "explanationFa": "ابتدای آیه ۷۰.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0116",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:64"
+   ],
+   "promptFa": "آیه قبل از آیه ۶۵ کدام است؟",
+   "stem": {
+    "verse": 65
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 64,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 63,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 66,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه قبل از ۶۵، آیه ۶۴ (وَقِيلَ ٱدْعُوا۟) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0117",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 2,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "آیه قبل از آیه ۶۶ کدام است؟",
+   "stem": {
+    "verse": 66
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 65,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 64,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه قبل از ۶۶، آیه ۶۵ (وَيَوْمَ يُنَادِيهِمْ) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0118",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "آیه قبل از آیه ۶۷ کدام است؟",
+   "stem": {
+    "verse": 67
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 66,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 65,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه قبل از ۶۷، آیه ۶۶ (فَعَمِيَتْ عَلَيْهِمُ) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0120",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "آیه قبل از آیه ۶۹ کدام است؟",
+   "stem": {
+    "verse": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 71,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه قبل از ۶۹، آیه ۶۸ (وَرَبُّكَ يَخْلُقُ) است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0121",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:64"
+   ],
+   "promptFa": "شروع آیه قبل از آیه ۶۵ را بسازید.",
+   "stem": {
+    "verse": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَقِيلَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱدْعُوا۟",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "شُرَكَآءَكُمْ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَدَعَوْهُمْ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۴ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0122",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 65,
+   "targets": [
+    "sq:64"
+   ],
+   "promptFa": "بخش اول آیه قبل از آیه ۶۵ را بچینید.",
+   "stem": {
+    "verse": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَقِيلَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱدْعُوا۟",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "شُرَكَآءَكُمْ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَدَعَوْهُمْ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَلَمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "يَسْتَجِيبُوا۟",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "مَاذَآ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "random"
+   },
+   "explanationFa": "ابتدای آیه ۶۴.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0123",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "شروع آیه قبل از آیه ۶۶ را بسازید.",
+   "stem": {
+    "verse": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَوْمَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يُنَادِيهِمْ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَيَقُولُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مَاذَآ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۵ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0124",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 66,
+   "targets": [
+    "sq:65"
+   ],
+   "promptFa": "متن آیه قبل از آیه ۶۶ را بچینید.",
+   "stem": {
+    "verse": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَوْمَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يُنَادِيهِمْ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَيَقُولُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مَاذَآ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "أَجَبْتُمُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱلْمُرْسَلِينَ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "neighbor_word"
+   },
+   "explanationFa": "متن کامل آیه ۶۵.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0125",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "شروع آیه قبل از آیه ۶۷ را بسازید.",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَلَيْهِمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۶ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0126",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 67,
+   "targets": [
+    "sq:66"
+   ],
+   "promptFa": "بخش اول آیه قبل از آیه ۶۷ را بچینید.",
+   "stem": {
+    "verse": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَلَيْهِمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "لَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "تَابَ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "neighbor_word"
+   },
+   "explanationFa": "ابتدای آیه ۶۶.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0127",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "شروع آیه قبل از آیه ۶۸ را بسازید.",
+   "stem": {
+    "verse": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَن",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "تَابَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَءَامَنَ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۷ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0128",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 68,
+   "targets": [
+    "sq:67"
+   ],
+   "promptFa": "بخش اول آیه قبل از آیه ۶۸ را بچینید.",
+   "stem": {
+    "verse": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَن",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "تَابَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَءَامَنَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَعَمِلَ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "صَـٰلِحًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "يَخْتَارُ ۗ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "random"
+   },
+   "explanationFa": "ابتدای آیه ۶۷.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0129",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "شروع آیه قبل از آیه ۶۹ را بسازید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَخْلُقُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَشَآءُ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "آیه ۶۸ با این کلمات آغاز می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0130",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68"
+   ],
+   "promptFa": "بخش اول آیه قبل از آیه ۶۹ را بچینید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَخْلُقُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَشَآءُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "مَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "d1",
+     "ar": "صُدُورُهُمْ",
+     "decoy": true,
+     "wordIdx": [
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "d1": "neighbor_word"
+   },
+   "explanationFa": "ابتدای آیه ۶۸.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0131",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "targets": [
+    "sq:65",
+    "sq:66"
+   ],
+   "promptFa": "سه آیه متوالی را به ترتیب صحیح بچینید.",
+   "stem": {
+    "verses": [
+     65,
+     66,
+     67
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "۶۵: وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ...",
+     "verse": 65
+    },
+    {
+     "id": "b2",
+     "ar": "۶۶: فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...",
+     "verse": 66
+    },
+    {
+     "id": "b3",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ وَءَامَنَ...",
+     "verse": 67
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح: ۶۵، ۶۶، ۶۷.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0132",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "targets": [
+    "sq:66",
+    "sq:67",
+    "sq:68"
+   ],
+   "promptFa": "چهار آیه متوالی را به ترتیب صحیح بچینید.",
+   "stem": {
+    "verses": [
+     66,
+     67,
+     68,
+     69
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "۶۶: فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...",
+     "verse": 66
+    },
+    {
+     "id": "b2",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ وَءَامَنَ...",
+     "verse": 67
+    },
+    {
+     "id": "b3",
+     "ar": "۶۸: وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ...",
+     "verse": 68
+    },
+    {
+     "id": "b4",
+     "ar": "۶۹: وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ...",
+     "verse": 69
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح: ۶۶ تا ۶۹.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0133",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "targets": [
+    "sq:65",
+    "sq:66",
+    "sq:67",
+    "sq:68"
+   ],
+   "promptFa": "پنج آیه متوالی را به ترتیب صحیح بچینید.",
+   "stem": {
+    "verses": [
+     65,
+     66,
+     67,
+     68,
+     69
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "۶۵: وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ...",
+     "verse": 65
+    },
+    {
+     "id": "b2",
+     "ar": "۶۶: فَعَمِيَتْ عَلَيْهِمُ ٱلْأَنۢبَآءُ...",
+     "verse": 66
+    },
+    {
+     "id": "b3",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ وَءَامَنَ...",
+     "verse": 67
+    },
+    {
+     "id": "b4",
+     "ar": "۶۸: وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ...",
+     "verse": 68
+    },
+    {
+     "id": "b5",
+     "ar": "۶۹: وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ...",
+     "verse": 69
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح: ۶۵ تا ۶۹.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0134",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "targets": [
+    "sq:67",
+    "sq:68",
+    "sq:69"
+   ],
+   "promptFa": "چهار آیه پایانی واحد را به ترتیب بچینید.",
+   "stem": {
+    "verses": [
+     67,
+     68,
+     69,
+     70
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ وَءَامَنَ...",
+     "verse": 67
+    },
+    {
+     "id": "b2",
+     "ar": "۶۸: وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ...",
+     "verse": 68
+    },
+    {
+     "id": "b3",
+     "ar": "۶۹: وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ...",
+     "verse": 69
+    },
+    {
+     "id": "b4",
+     "ar": "۷۰: وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ...",
+     "verse": 70
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح: ۶۷ تا ۷۰.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0135",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "sequence",
+   "targets": [
+    "sq:65",
+    "sq:66",
+    "sq:67",
+    "sq:68",
+    "sq:69"
+   ],
+   "promptFa": "همه آیات این واحد را به ترتیب صحیح بچینید.",
+   "stem": {
+    "verses": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "۶۵: وَيَوْمَ يُنَادِيهِمْ...",
+     "verse": 65
+    },
+    {
+     "id": "b2",
+     "ar": "۶۶: فَعَمِيَتْ عَلَيْهِمُ...",
+     "verse": 66
+    },
+    {
+     "id": "b3",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ...",
+     "verse": 67
+    },
+    {
+     "id": "b4",
+     "ar": "۶۸: وَرَبُّكَ يَخْلُقُ...",
+     "verse": 68
+    },
+    {
+     "id": "b5",
+     "ar": "۶۹: وَرَبُّكَ يَعْلَمُ...",
+     "verse": 69
+    },
+    {
+     "id": "b6",
+     "ar": "۷۰: وَهُوَ ٱللَّهُ لَآ...",
+     "verse": 70
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب کامل آیات این واحد: ۶۵ تا ۷۰.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0136",
+   "type": "ORDER_VERSES",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "sequence",
+   "targets": [
+    "sq:65",
+    "sq:66",
+    "sq:67",
+    "sq:68",
+    "sq:69"
+   ],
+   "promptFa": "مرور نهایی: آیات واحد را از ابتدا تا انتها مرتب کنید.",
+   "stem": {
+    "verses": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70
+    ]
+   },
+   "bank": [
+    {
+     "id": "x1",
+     "ar": "۶۵: وَيَوْمَ يُنَادِيهِمْ...",
+     "verse": 65
+    },
+    {
+     "id": "x2",
+     "ar": "۶۶: فَعَمِيَتْ عَلَيْهِمُ...",
+     "verse": 66
+    },
+    {
+     "id": "x3",
+     "ar": "۶۷: فَأَمَّا مَن تَابَ...",
+     "verse": 67
+    },
+    {
+     "id": "x4",
+     "ar": "۶۸: وَرَبُّكَ يَخْلُقُ...",
+     "verse": 68
+    },
+    {
+     "id": "x5",
+     "ar": "۶۹: وَرَبُّكَ يَعْلَمُ...",
+     "verse": 69
+    },
+    {
+     "id": "x6",
+     "ar": "۷۰: وَهُوَ ٱللَّهُ لَآ...",
+     "verse": 70
+    }
+   ],
+   "answer": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترتیب صحیح این مجموعه، از ۶۵ تا ۷۰ است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0140",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 6,
+   "difficulty": 2,
+   "skill": "number",
+   "verse": 66,
+   "targets": [
+    "vn:66"
+   ],
+   "promptFa": "شماره این آیه چیست؟",
+   "stem": {
+    "verse": 66
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 66
+    },
+    {
+     "id": "o2",
+     "num": 65
+    },
+    {
+     "id": "o3",
+     "num": 67
+    },
+    {
+     "id": "o4",
+     "num": 56
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "این آیه ۶۶ است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0143",
+   "type": "VERSE_TO_NUMBER",
+   "shape": "choice",
+   "stage": 6,
+   "difficulty": 2,
+   "skill": "number",
+   "verse": 67,
+   "targets": [
+    "vn:67"
+   ],
+   "promptFa": "شماره این آیه چیست؟",
+   "stem": {
+    "verse": 67
+   },
+   "options": [
+    {
+     "id": "o1",
+     "num": 67
+    },
+    {
+     "id": "o2",
+     "num": 66
+    },
+    {
+     "id": "o3",
+     "num": 68
+    },
+    {
+     "id": "o4",
+     "num": 57
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "adjacent_number",
+    "o3": "adjacent_number",
+    "o4": "random"
+   },
+   "explanationFa": "این آیه ۶۷ است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0164",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 6,
+   "difficulty": 2,
+   "skill": "number",
+   "verse": 68,
+   "targets": [
+    "vn:68"
+   ],
+   "promptFa": "آیه ۶۸ با کدام کلمات آغاز می‌شود؟",
+   "stem": {
+    "num": 68
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 67,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "similar_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه ۶۸ با «وَرَبُّكَ يَخْلُقُ» شروع می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0170",
+   "type": "NUMBER_TO_VERSE_START",
+   "shape": "choice",
+   "stage": 6,
+   "difficulty": 2,
+   "skill": "number",
+   "verse": 70,
+   "targets": [
+    "vn:70"
+   ],
+   "promptFa": "آیه ۷۰ با کدام کلمات آغاز می‌شود؟",
+   "stem": {
+    "num": 70
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 70,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 69,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 71,
+      "from": 1,
+      "to": 3
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 68,
+      "from": 1,
+      "to": 3
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه ۷۰ با «وَهُوَ ٱللَّهُ لَآ» شروع می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0173",
+   "type": "MATCH_NUMBER_OPENING",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 3,
+   "skill": "number",
+   "targets": [
+    "vn:64",
+    "vn:65",
+    "vn:66",
+    "vn:67"
+   ],
+   "promptFa": "شماره هر آیه را به شروع آن وصل کنید.",
+   "stem": {
+    "mode": "NUMBER_OPENING"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "num": 64
+    },
+    {
+     "id": "l2",
+     "num": 65
+    },
+    {
+     "id": "l3",
+     "num": 66
+    },
+    {
+     "id": "l4",
+     "num": 67
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "ar": "وَقِيلَ ٱدْعُوا۟... (۶۴)"
+    },
+    {
+     "id": "r2",
+     "ar": "وَيَوْمَ يُنَادِيهِمْ... (۶۵)"
+    },
+    {
+     "id": "r3",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ... (۶۶)"
+    },
+    {
+     "id": "r4",
+     "ar": "فَأَمَّا مَن تَابَ... (۶۷)"
+    },
+    {
+     "id": "r5",
+     "ar": "وَرَبُّكَ يَخْلُقُ... (۶۸)"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تطبیق صحیح آیات و شماره‌ها.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0174",
+   "type": "MATCH_NUMBER_OPENING",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "number",
+   "targets": [
+    "vn:66",
+    "vn:67",
+    "vn:68",
+    "vn:69"
+   ],
+   "promptFa": "شماره آیات را به آغازشان متصل کنید.",
+   "stem": {
+    "mode": "NUMBER_OPENING"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "num": 66
+    },
+    {
+     "id": "l2",
+     "num": 67
+    },
+    {
+     "id": "l3",
+     "num": 68
+    },
+    {
+     "id": "l4",
+     "num": 69
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "ar": "فَعَمِيَتْ عَلَيْهِمُ... (۶۶)"
+    },
+    {
+     "id": "r2",
+     "ar": "فَأَمَّا مَن تَابَ... (۶۷)"
+    },
+    {
+     "id": "r3",
+     "ar": "وَرَبُّكَ يَخْلُقُ... (۶۸)"
+    },
+    {
+     "id": "r4",
+     "ar": "وَرَبُّكَ يَعْلَمُ... (۶۹)"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "دقت کنید آیه ۶۸ یخلق و ۶۹ یعلم است.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0175",
+   "type": "MATCH_NUMBER_OPENING",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "number",
+   "targets": [
+    "vn:67",
+    "vn:68",
+    "vn:69",
+    "vn:70",
+    "vn:71"
+   ],
+   "promptFa": "شماره آیات پایانی واحد و بعد از آن را به متن وصل کنید.",
+   "stem": {
+    "mode": "NUMBER_OPENING"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "num": 67
+    },
+    {
+     "id": "l2",
+     "num": 68
+    },
+    {
+     "id": "l3",
+     "num": 69
+    },
+    {
+     "id": "l4",
+     "num": 70
+    },
+    {
+     "id": "l5",
+     "num": 71
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "ar": "فَأَمَّا مَن تَابَ... (۶۷)"
+    },
+    {
+     "id": "r2",
+     "ar": "وَرَبُّكَ يَخْلُقُ... (۶۸)"
+    },
+    {
+     "id": "r3",
+     "ar": "وَرَبُّكَ يَعْلَمُ... (۶۹)"
+    },
+    {
+     "id": "r4",
+     "ar": "وَهُوَ ٱللَّهُ لَآ... (۷۰)"
+    },
+    {
+     "id": "r5",
+     "ar": "قُلْ أَرَءَيْتُمْ... (۷۱)"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تطبیق آیات با شماره‌هایشان.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0176",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 65,
+   "targets": [
+    "vr:65"
+   ],
+   "promptFa": "متن آیه ۶۵ را کامل بچینید.",
+   "stem": {
+    "num": 65
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَيَوْمَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يُنَادِيهِمْ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَيَقُولُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مَاذَآ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "أَجَبْتُمُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱلْمُرْسَلِينَ",
+     "wordIdx": [
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۶۵.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0177",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 66,
+   "targets": [
+    "vr:66"
+   ],
+   "promptFa": "متن آیه ۶۶ را کامل بچینید.",
+   "stem": {
+    "num": 66
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَعَمِيَتْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَلَيْهِمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلْأَنۢبَآءُ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَوْمَئِذٍۢ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "لَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يَتَسَآءَلُونَ",
+     "wordIdx": [
+      7
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۶۶.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0178",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 67,
+   "targets": [
+    "vr:67"
+   ],
+   "promptFa": "متن آیه ۶۷ را کامل بچینید.",
+   "stem": {
+    "num": 67
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَمَّا",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَن",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "تَابَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَءَامَنَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَعَمِلَ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "صَـٰلِحًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "فَعَسَىٰٓ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "يَكُونَ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "مِنَ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "ٱلْمُفْلِحِينَ",
+     "wordIdx": [
+      11
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
+    "b11"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۶۷.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0179",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 68,
+   "targets": [
+    "vr:68"
+   ],
+   "promptFa": "متن آیه ۶۸ را کامل بچینید.",
+   "stem": {
+    "num": 68
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَخْلُقُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يَشَآءُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "مَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "كَانَ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "لَهُمُ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "ٱلْخِيَرَةُ ۚ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "سُبْحَـٰنَ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "ٱللَّهِ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "وَتَعَـٰلَىٰ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b13",
+     "ar": "عَمَّا",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b14",
+     "ar": "يُشْرِكُونَ",
+     "wordIdx": [
+      14
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
+    "b11",
+    "b12",
+    "b13",
+    "b14"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۶۸.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0180",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 69,
+   "targets": [
+    "vr:69"
+   ],
+   "promptFa": "متن آیه ۶۹ را کامل بچینید.",
+   "stem": {
+    "num": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَعْلَمُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَا",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "تُكِنُّ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "صُدُورُهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "وَمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يُعْلِنُونَ",
+     "wordIdx": [
+      7
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۶۹.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0181",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 7,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 70,
+   "targets": [
+    "vr:70"
+   ],
+   "promptFa": "متن آیه ۷۰ را کامل بچینید.",
+   "stem": {
+    "num": 70
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَهُوَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "ٱللَّهُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "لَآ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِلَـٰهَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِلَّا",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "هُوَ ۖ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "لَهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "ٱلْحَمْدُ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "فِى",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "ٱلْأُولَىٰ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "وَٱلْـَٔاخِرَةِ ۖ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "وَلَهُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b13",
+     "ar": "ٱلْحُكْمُ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b14",
+     "ar": "وَإِلَيْهِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b15",
+     "ar": "تُرْجَعُونَ",
+     "wordIdx": [
+      15
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
+    "b11",
+    "b12",
+    "b13",
+    "b14",
+    "b15"
+   ],
+   "distractorTags": {},
+   "explanationFa": "متن کامل آیه ۷۰.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0421",
+   "type": "PREV_VERSE_CHOICE",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68",
+    "vr:68"
+   ],
+   "promptFa": "آیه قبل از «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ» با کدام عبارت پایان می‌یابد؟",
+   "stem": {
+    "verse": 69
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عَمَّا يُشْرِكُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "مِنَ ٱلْمُفْلِحِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَا يَتَسَآءَلُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه قبل (۶۸) با «عَمَّا يُشْرِكُونَ» ختم می‌شود.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0422",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68",
+    "vr:68"
+   ],
+   "promptFa": "آیه قبل از «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ» (آیه ۶۹) را بسازید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَا كَانَ لَهُمُ ٱلْخِيَرَةُ ۚ",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "سُبْحَـٰنَ ٱللَّهِ",
+     "wordIdx": [
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ",
+     "wordIdx": [
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۶۸: وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ مَا كَانَ لَهُمُ ٱلْخِيَرَةُ سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  },
+  {
+   "id": "q_u_p393b_C_0423",
+   "type": "BUILD_PREV_VERSE",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "sequence",
+   "verse": 69,
+   "targets": [
+    "sq:68",
+    "vr:68"
+   ],
+   "promptFa": "بخش پایانی آیه قبل از «وَرَبُّكَ يَعْلَمُ مَا تُكِنُّ صُدُورُهُمْ وَمَا يُعْلِنُونَ» (آیه ۶۹) را به ترتیب بچینید.",
+   "stem": {
+    "verse": 69
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "مَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "كَانَ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "لَهُمُ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "ٱلْخِيَرَةُ ۚ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "سُبْحَـٰنَ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱللَّهِ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "وَتَعَـٰلَىٰ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "عَمَّا",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "يُشْرِكُونَ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "يَخْلُقُ",
+     "decoy": true
+    },
+    {
+     "id": "b11",
+     "ar": "يَشَآءُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9"
+   ],
+   "distractorTags": {
+    "b10": "near_miss",
+    "b11": "near_miss"
+   },
+   "explanationFa": "ادامه آیه ۶۸: ...مَا كَانَ لَهُمُ ٱلْخِيَرَةُ سُبْحَـٰنَ ٱللَّهِ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ.",
+   "unitId": "u_p393b",
+   "part": "C"
+  }
+ ],
+ "issues": [],
+ "sourceFiles": [
+  "u_p393b.partC.json",
+  "u_p393b.partC2.json",
+  "u_p393b.partC3.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 42,
+  "files": 3
+ }
+}

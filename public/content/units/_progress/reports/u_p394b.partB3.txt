@@ -1,0 +1,34 @@
+[#1 q_u_p394b_B_0901 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p394b_B_0901 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p394b_B_0902 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p394b_B_0903 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p394b_B_0904 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p394b_B_0904 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 76 را نمی‌پوشاند.
+[#5 q_u_p394b_B_0905 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 76 را نمی‌پوشاند.
+[#6 q_u_p394b_B_0906 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 76 را نمی‌پوشاند.
+[#7 q_u_p394b_B_0907 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p394b_B_0908 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p394b_B_0908 CLOZE_AR] بانک b3: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#8 q_u_p394b_B_0908 CLOZE_AR] بانک b9: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ ۖ
+[#9 q_u_p394b_B_0909 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p394b_B_0909 CLOZE_AR] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۞
+[#10 q_u_p394b_B_0910 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p394b_B_0910 CLOZE_AR] بانک b6: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#10 q_u_p394b_B_0910 CLOZE_AR] بانک b16: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ ۖ
+[#11 q_u_p394b_B_0911 CLOZE_COMPLETE_REST] پاسخ‌ها دقیقاً کلمات hiddenIdx را نمی‌پوشانند.
+[#11 q_u_p394b_B_0911 CLOZE_COMPLETE_REST] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#11 q_u_p394b_B_0911 CLOZE_COMPLETE_REST] بانک b3: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ ۖ
+[#11 q_u_p394b_B_0911 CLOZE_COMPLETE_REST] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#12 q_u_p394b_B_0912 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#12 q_u_p394b_B_0912 CLOZE_COMPLETE_REST] پاسخ‌ها دقیقاً کلمات hiddenIdx را نمی‌پوشانند.
+[#12 q_u_p394b_B_0912 CLOZE_COMPLETE_REST] بانک b2: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ ۖ
+[#13 q_u_p394b_B_0913 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p394b_B_0913 CLOZE_COMPLETE_REST] بانک b2: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ ۖ
+[#14 q_u_p394b_B_0914 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#15 q_u_p394b_B_0915 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p394b_B_0916 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p394b_B_0917 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p394b_B_0917 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: ۞ ۖ
+[#17 q_u_p394b_B_0917 MUTASHABIH_SPOT] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَإِنَّ ۖ
+[#17 q_u_p394b_B_0917 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: ۞ ۖ
+[#17 q_u_p394b_B_0917 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ۞ فَعَلَا ۖ

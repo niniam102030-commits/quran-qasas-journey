@@ -1,0 +1,250 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A6",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_1744",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "معادل عربی کلمه «تا بیارامید» چیست؟",
+      "stem": {
+        "fa": "تا بیارامید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "وَلِتَبْتَغُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "تَشْكُرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَعَلَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لِتَسْكُنُوا۟» به معنای «تا بیارامید» است. «لِتَبْتَغُوا» یعنی رزق و روزی بجویید."
+    },
+    {
+      "id": "q_u_p394a_A_1745",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "کدام کلمه در آیه به معنای «تا بیارامید» است؟",
+      "stem": {
+        "fa": "تا بیارامید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "فِيهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "رَّحْمَتِهِۦ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لِتَسْكُنُوا۟» از ریشه «س ک ن» به معنای آرامش یافتن و سکونت است."
+    },
+    {
+      "id": "q_u_p394a_A_1746",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "جَعَلَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَشْكُرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "r2",
+          "fa": "قرار داد"
+        },
+        {
+          "id": "r3",
+          "fa": "شب"
+        },
+        {
+          "id": "r4",
+          "fa": "سپاس گزاری کنید"
+        },
+        {
+          "id": "r5",
+          "fa": "روز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "pairs",
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "«لِتَسْكُنُوا۟» یعنی تا بیارامید."
+    },
+    {
+      "id": "q_u_p394a_A_1747",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "کلمات را به ترجمه صحیح متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "لَكُمُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلنَّهَارَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَّحْمَتِهِۦ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "r2",
+          "fa": "برای شما"
+        },
+        {
+          "id": "r3",
+          "fa": "روز"
+        },
+        {
+          "id": "r4",
+          "fa": "رحمت خود"
+        },
+        {
+          "id": "r5",
+          "fa": "رزق و روزی بجویید"
+        },
+        {
+          "id": "r6",
+          "fa": "شب"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "pairs",
+      "distractorTags": {
+        "r5": "neighbor_word",
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«لِتَسْكُنُوا۟» به معنای «تا بیارامید» است و لام در ابتدای آن برای تعلیل آمده است."
+    }
+  ],
+  "issues": []
+}

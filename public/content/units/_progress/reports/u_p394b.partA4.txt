@@ -1,0 +1,43 @@
+[#1 q_u_p394b_A_0741 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p394b_A_0742 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p394b_A_0742 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p394b_A_0742 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p394b_A_0742 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p394b_A_0742 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#4 q_u_p394b_A_0744 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p394b_A_0745 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p394b_A_0747 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p394b_A_0748 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p394b_A_0749 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p394b_A_0749 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 75 برابر نیست.
+[#10 q_u_p394b_A_0750 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p394b_A_0750 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 75 برابر نیست.
+[#11 q_u_p394b_A_0751 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p394b_A_0752 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p394b_A_0753 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: تَفْرَحْ
+[#13 q_u_p394b_A_0753 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#16 q_u_p394b_A_0756 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p394b_A_0757 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p394b_A_0759 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p394b_A_0760 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p394b_A_0761 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p394b_A_0761 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 76 برابر نیست.
+[#22 q_u_p394b_A_0762 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p394b_A_0762 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 76 برابر نیست.
+[#23 q_u_p394b_A_0763 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p394b_A_0764 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p394b_A_0765 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْـَٔاخِرَةَ
+[#25 q_u_p394b_A_0765 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#25 q_u_p394b_A_0765 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#26 q_u_p394b_A_0766 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#26 q_u_p394b_A_0766 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#28 q_u_p394b_A_0768 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p394b_A_0769 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p394b_A_0771 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p394b_A_0772 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p394b_A_0773 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p394b_A_0773 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 77 برابر نیست.
+[#34 q_u_p394b_A_0774 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#34 q_u_p394b_A_0774 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 77 برابر نیست.
+[#35 q_u_p394b_A_0775 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p394b_A_0776 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

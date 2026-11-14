@@ -1,0 +1,6648 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p391a",
+ "part": "A",
+ "generatedBy": "Claude,claude,Gemini",
+ "lexicon": [
+  {
+   "wordId": "w28_044_001",
+   "gloss": "و نبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_002",
+   "gloss": "بودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_003",
+   "gloss": "در جانب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_004",
+   "gloss": "غربی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_005",
+   "gloss": "هنگامی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_006",
+   "gloss": "به انجام رساندیم",
+   "hard": true,
+   "meaningFa": "کاری را قطعی کردن و به پایان رساندن",
+   "rootAr": "ق ض ي",
+   "trapFa": "قضاوت کردن یا قضا شدن",
+   "tipFa": "«قضا» در فارسی یعنی سرنوشت یا نماز قضا؛ اینجا یعنی امری را تمام و قطعی کردیم.",
+   "segments": [
+    {
+     "text": "قَضَيْ",
+     "type": "root"
+    },
+    {
+     "text": "نَا",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_044_007",
+   "gloss": "به",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_008",
+   "gloss": "موسی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_009",
+   "gloss": "امر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_010",
+   "gloss": "و نبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_011",
+   "gloss": "بودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_012",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_044_013",
+   "gloss": "شاهدان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_001",
+   "gloss": "ولی ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_002",
+   "gloss": "پدید آوردیم",
+   "hard": true,
+   "meaningFa": "به وجود آوردن و ایجاد کردن",
+   "rootAr": "ن ش أ",
+   "trapFa": null,
+   "tipFa": "از همین ریشه «نشأت گرفتن» یعنی پدید آمدن.",
+   "segments": [
+    {
+     "text": "أَنشَأْ",
+     "type": "root"
+    },
+    {
+     "text": "نَا",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_003",
+   "gloss": "ملت‌ها",
+   "hard": true,
+   "meaningFa": "نسل‌ها و امت‌های یک دوره",
+   "rootAr": "ق ر ن",
+   "trapFa": "قرن به معنای صد سال",
+   "tipFa": "اینجا «قرن» صد سال نیست؛ جمع قَرن یعنی نسل‌ها و ملت‌ها.",
+   "segments": [
+    {
+     "text": "قُرُون",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_004",
+   "gloss": "پس دراز شد",
+   "hard": true,
+   "meaningFa": "به درازا کشیدن و طولانی شدن",
+   "rootAr": "ط و ل",
+   "trapFa": null,
+   "tipFa": "با «طول» و «طویل» هم‌ریشه است؛ باب تفاعل یعنی کم‌کم دراز شد.",
+   "segments": [
+    {
+     "text": "فَ",
+     "type": "prefix"
+    },
+    {
+     "text": "تَطَاوَلَ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_005",
+   "gloss": "بر آنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_006",
+   "gloss": "روزگار",
+   "hard": true,
+   "meaningFa": "زمان و روزگار دراز",
+   "rootAr": "ع م ر",
+   "trapFa": "عمر یک انسان",
+   "tipFa": "«عُمُر» در فارسی زندگی یک فرد است؛ اینجا یعنی روزگار و مدت زمان.",
+   "segments": [
+    {
+     "text": "ٱلْ",
+     "type": "prefix"
+    },
+    {
+     "text": "عُمُرُ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_007",
+   "gloss": "و نبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_008",
+   "gloss": "بودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_009",
+   "gloss": "ساکن",
+   "hard": true,
+   "meaningFa": "مقیم و ماندگار",
+   "rootAr": "ث و ي",
+   "trapFa": null,
+   "tipFa": "از ریشه‌ی کم‌کاربرد «ثوی» است که یعنی ماندن و اقامت کردن.",
+   "segments": [
+    {
+     "text": "ثَاوِيًا",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_010",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_011",
+   "gloss": "مردم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_012",
+   "gloss": "مدین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_013",
+   "gloss": "می‌خوانی",
+   "hard": true,
+   "meaningFa": "بر کسی خواندن و تلاوت کردن",
+   "rootAr": "ت ل و",
+   "trapFa": null,
+   "tipFa": "با «تلاوت» هم‌ریشه است؛ تلاوت یعنی خواندن آیات.",
+   "segments": [
+    {
+     "text": "تَتْلُو",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_014",
+   "gloss": "بر آنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_015",
+   "gloss": "نشانه‌های ما",
+   "hard": true,
+   "meaningFa": "نشانه‌ها و دلایل الهی",
+   "rootAr": null,
+   "trapFa": "آیه‌های قرآن",
+   "tipFa": "«آیات» در فارسی بیشتر آیه‌های قرآن است؛ در ترجمه‌ی این آیه «نشانه‌ها» آمده است.",
+   "segments": [
+    {
+     "text": "ءَايَـٰت",
+     "type": "root"
+    },
+    {
+     "text": "نَا",
+     "type": "pronoun"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_045_016",
+   "gloss": "ولی ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_017",
+   "gloss": "بودیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_045_018",
+   "gloss": "فرستندگان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_001",
+   "gloss": "و نبودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_002",
+   "gloss": "بودی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_003",
+   "gloss": "در جانب",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_004",
+   "gloss": "طور",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_005",
+   "gloss": "هنگامی که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_006",
+   "gloss": "ندا دادیم",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_007",
+   "gloss": "ولی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_008",
+   "gloss": "رحمتی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_009",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_010",
+   "gloss": "پروردگارت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_011",
+   "gloss": "تا بیم دهی",
+   "hard": true,
+   "meaningFa": "هشدار دادن و ترساندن از عاقبت",
+   "rootAr": "ن ذ ر",
+   "trapFa": "نذر کردن",
+   "tipFa": "با «نذر» هم‌ریشه است ولی اینجا یعنی بیم دادن و هشدار دادن.",
+   "segments": [
+    {
+     "text": "لِ",
+     "type": "prefix"
+    },
+    {
+     "text": "تُنذِرَ",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_046_012",
+   "gloss": "مردمی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_013",
+   "gloss": "که نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_014",
+   "gloss": "آمد برایشان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_015",
+   "gloss": "هیچ",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_016",
+   "gloss": "بیم‌دهنده‌ای",
+   "hard": true,
+   "meaningFa": "هشداردهنده و پیامبر بیم‌دهنده",
+   "rootAr": "ن ذ ر",
+   "trapFa": "نذر",
+   "tipFa": "«نذیر» یعنی هشداردهنده؛ با نذر کردن فرق دارد.",
+   "segments": [
+    {
+     "text": "نَذِير",
+     "type": "root"
+    }
+   ]
+  },
+  {
+   "wordId": "w28_046_017",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_018",
+   "gloss": "پیش از تو",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_019",
+   "gloss": "باشد که آنان",
+   "hard": false
+  },
+  {
+   "wordId": "w28_046_020",
+   "gloss": "متذکّر شوند",
+   "hard": false
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 44,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 4,
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی"
+    },
+    {
+     "from": 5,
+     "to": 9,
+     "fa": "هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم،"
+    },
+    {
+     "from": 10,
+     "to": 13,
+     "fa": "و از شاهدان [آن واقعه مهم هم] نبودی."
+    }
+   ],
+   "faSegments": [
+    "تو در جانب غربی [وادی طور]",
+    "حضور نداشتی",
+    "هنگامی که ما [با نازل کردن تورات]",
+    "امر نبوّت موسی را به انجام رساندیم،",
+    "و از شاهدان [آن واقعه مهم هم] نبودی."
+   ]
+  },
+  {
+   "verse": 45,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 3,
+     "fa": "ولی ما ملت هایی را پدید آوردیم،"
+    },
+    {
+     "from": 4,
+     "to": 6,
+     "fa": "پس روزگار درازی بر آنان گذشت"
+    },
+    {
+     "from": 7,
+     "to": 12,
+     "fa": "و تو در میان مردم مدین ساکن نبودی"
+    },
+    {
+     "from": 13,
+     "to": 15,
+     "fa": "تا نشانه های [قدرت و خشم] ما را [که به آنان رسید] بر اینان"
+    },
+    {
+     "from": 16,
+     "to": 18,
+     "fa": "ولی ما بودیم که تو را به پیامبری فرستادیم"
+    }
+   ],
+   "faSegments": [
+    "ولی ما ملت هایی را پدید آوردیم،",
+    "پس روزگار درازی بر آنان گذشت",
+    "[تا جایی که سرگذشتشان فراموش شد، اکنون ما سرگذشتشان را به تو وحی می کنیم تا برای مردم بیان کنی].",
+    "و تو در میان مردم مدین ساکن نبودی",
+    "تا نشانه های [قدرت و خشم] ما را [که به آنان رسید] بر اینان [که در مکه، آلوده به طغیان و فسادند] بخوانی،",
+    "ولی ما بودیم که تو را به پیامبری فرستادیم [و سرگذشت مردم مدین را به تو وحی کردیم تا بر آنان بخوانی.]"
+   ]
+  },
+  {
+   "verse": 46,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 4,
+     "fa": "تو در ناحیه طور نبودی"
+    },
+    {
+     "from": 5,
+     "to": 6,
+     "fa": "و زمانی که ما موسی را ندا دادیم،"
+    },
+    {
+     "from": 7,
+     "to": 10,
+     "fa": "ولی به سبب رحمتی از پروردگارت"
+    },
+    {
+     "from": 11,
+     "to": 12,
+     "fa": "بیم دهی"
+    },
+    {
+     "from": 13,
+     "to": 18,
+     "fa": "مردمی که پیش از تو [تا زمان عیسی] بیم دهنده ای برای آنان نیامده بود،"
+    },
+    {
+     "from": 19,
+     "to": 20,
+     "fa": "تا متذکّر و هوشیار شوند."
+    }
+   ],
+   "faSegments": [
+    "و زمانی که ما موسی را ندا دادیم،",
+    "تو در ناحیه طور نبودی",
+    "ولی به سبب رحمتی از پروردگارت [سرگذشت موسی را به تو وحی کردیم]",
+    "تا به مردمی که پیش از تو [تا زمان عیسی] بیم دهنده ای برای آنان نیامده بود،",
+    "بیم دهی تا متذکّر و هوشیار شوند."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p391a_A_0201",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "معنای «قَضَيْنَآ» چیست؟",
+   "stem": {
+    "wordId": "w28_044_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قضاوت کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "o3",
+     "fa": "گواهی دادیم"
+    },
+    {
+     "id": "o4",
+     "fa": "نازل کردیم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ریشه‌ی «ق ض ي» است و «قضینا» یعنی امری را قطعی کردیم و به پایان رساندیم. با «قضاوت کردن» در فارسی اشتباه نشود.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0202",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "کدام گزینه معنای «قَضَيْنَآ» است؟",
+   "stem": {
+    "wordId": "w28_044_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "فرستادیم"
+    },
+    {
+     "id": "o3",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "o4",
+     "fa": "قضا کردیم (مثل نماز قضا)"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«قضا» در فارسی یعنی سرنوشت یا نماز قضا. اینجا یعنی امری را تمام و قطعی کردیم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0203",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "معنای «قَضَيْنَآ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_044_006",
+    "showVerse": true,
+    "verse": 44
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "حکم دادیم و داوری کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "به موسی بازگرداندیم"
+    },
+    {
+     "id": "o3",
+     "fa": "از او دور کردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "به انجام رساندیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "near_miss"
+   },
+   "explanationFa": "در «إِذْ قَضَيْنَآ إِلَىٰ مُوسَى ٱلْأَمْرَ» یعنی امر نبوّت موسی را به انجام رساندیم. ریشه‌ی آن «ق ض ي» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0204",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "در این آیه «قَضَيْنَآ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_044_006",
+    "showVerse": true,
+    "verse": 44
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "o2",
+     "fa": "شاهد بودیم"
+    },
+    {
+     "id": "o3",
+     "fa": "قاضی شدیم"
+    },
+    {
+     "id": "o4",
+     "fa": "ساکن شدیم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«قضینا» از «ق ض ي» است و یعنی امری را قطعی و تمام کردیم. معنای «قاضی شدن» دوست فریبنده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0205",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "معنای «أَنشَأْنَا» چیست؟",
+   "stem": {
+    "wordId": "w28_045_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "انشا نوشتیم"
+    },
+    {
+     "id": "o3",
+     "fa": "فراموش کردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستادیم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه‌ی «ن ش أ» است و یعنی پدید آوردن. از همین ریشه «نشأت گرفتن» یعنی پدید آمدن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0206",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "کدام گزینه معنای «أَنشَأْنَا» است؟",
+   "stem": {
+    "wordId": "w28_045_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نازل کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "o3",
+     "fa": "بخوانیم"
+    },
+    {
+     "id": "o4",
+     "fa": "پدید آوردیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«أنشأنا» یعنی به وجود آوردیم و ایجاد کردیم. ریشه‌اش «ن ش أ» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0207",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "معنای «أَنشَأْنَا» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_045_002",
+    "showVerse": true,
+    "verse": 45
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "فراموش کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "o3",
+     "fa": "انشا کردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستادیم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در «أَنشَأْنَا قُرُونًا» یعنی نسل‌هایی را پدید آوردیم. «انشا» در فارسی معنای نوشتن دارد و اینجا درست نیست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0208",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "در این آیه «أَنشَأْنَا» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_045_002",
+    "showVerse": true,
+    "verse": 45
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بر آنان خواندیم"
+    },
+    {
+     "id": "o2",
+     "fa": "ساکن کردیم"
+    },
+    {
+     "id": "o3",
+     "fa": "از بین بردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "پدید آوردیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "«أنشأنا» یعنی به وجود آوردیم؛ مفعول آن «قرونا» است. ریشه‌اش «ن ش أ» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0209",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "معنای «قُرُونًا» چیست؟",
+   "stem": {
+    "wordId": "w28_045_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قرن‌های صدساله"
+    },
+    {
+     "id": "o2",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "o3",
+     "fa": "شهرها"
+    },
+    {
+     "id": "o4",
+     "fa": "پیامبران"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«قرون» جمع «قَرن» از ریشه‌ی «ق ر ن» است و یعنی نسل‌ها و ملت‌ها. صد سال بودنِ «قرن» در فارسی دوست فریبنده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0210",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "کدام گزینه معنای «قُرُونًا» است؟",
+   "stem": {
+    "wordId": "w28_045_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "روزگارها"
+    },
+    {
+     "id": "o2",
+     "fa": "شاهدان"
+    },
+    {
+     "id": "o3",
+     "fa": "سده‌های صدساله"
+    },
+    {
+     "id": "o4",
+     "fa": "نسل‌ها و ملت‌ها"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«قرون» اینجا یعنی نسل‌ها و امت‌های یک دوره. معنای «صد سال» اینجا مقصود نیست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0211",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "معنای «قُرُونًا» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_045_003",
+    "showVerse": true,
+    "verse": 45
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "قرن‌ها (صد ساله)"
+    },
+    {
+     "id": "o3",
+     "fa": "آیه‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "مردم مدین"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "در «أَنشَأْنَا قُرُونًا» یعنی ملت‌هایی را پدید آوردیم. «قرون» جمع «قَرن» به معنای نسل است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0212",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "در این آیه «قُرُونًا» مفعول «أَنشَأْنَا» است. معنایش کدام است؟",
+   "stem": {
+    "wordId": "w28_045_003",
+    "showVerse": true,
+    "verse": 45
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سرزمین‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "صدها سال"
+    },
+    {
+     "id": "o3",
+     "fa": "فرستادگان"
+    },
+    {
+     "id": "o4",
+     "fa": "نسل‌ها و ملت‌ها"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«قرون» از ریشه‌ی «ق ر ن» به معنای نسل‌ها و امت‌هاست. «صد سال» برداشت فارسی و دوست فریبنده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0213",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «به انجام رساندیم» است؟",
+   "stem": {
+    "fa": "به انجام رساندیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "كُنَّا"
+    },
+    {
+     "id": "o4",
+     "ar": "تَتْلُوا۟"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "«قَضَيْنَآ» از ریشه‌ی «ق ض ي» است و یعنی به انجام رساندیم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0214",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "کدام کلمه معنای «کاری را قطعی کردن و به پایان رساندن» را دارد؟",
+   "stem": {
+    "fa": "کاری را قطعی کردن و به پایان رساندن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَمْرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَضَيْنَآ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "فعل «قَضَيْنَآ» یعنی امری را تمام و قطعی کردیم. «ٱلْأَمْرَ» مفعول آن است، نه خود فعل.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0215",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی برابر «تمام و قطعی کردیم» است؟",
+   "stem": {
+    "fa": "تمام و قطعی کردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلشَّـٰهِدِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَضَيْنَآ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«قضینا» فعل ماضی با ضمیر «نا» است و از «ق ض ي» می‌آید.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0216",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «پدید آوردیم» است؟",
+   "stem": {
+    "fa": "پدید آوردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنَّا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أَنشَأْنَا» از «ن ش أ» یعنی پدید آوردیم. «نشأت گرفتن» از همین ریشه است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0217",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "کدام کلمه به معنای «به وجود آوردن و ایجاد کردن» است؟",
+   "stem": {
+    "fa": "به وجود آوردن و ایجاد کردن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "ثَاوِيًۭا"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«أَنشَأْنَا» یعنی ایجاد کردیم. سه گزینه‌ی دیگر فعل یا وصف‌هایی با معنای متفاوت در همین آیه‌اند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0218",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002"
+   ],
+   "promptFa": "کدام کلمه برابر «ما پدید آوردیم» در این برش است؟",
+   "stem": {
+    "fa": "ما پدید آوردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "كُنَّا"
+    },
+    {
+     "id": "o2",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْأَمْرَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَنشَأْنَا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o3": "random"
+   },
+   "explanationFa": "«أنشأنا» فعل ماضی با ضمیر «نا» است. «قضینا» هم همین ضمیر را دارد اما معنایش فرق می‌کند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0219",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «ملت‌ها» است؟",
+   "stem": {
+    "fa": "ملت‌ها"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلشَّـٰهِدِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَهْلِ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«قُرُونًا» جمع «قَرن» و یعنی نسل‌ها و ملت‌ها. «أَهْلِ» یعنی مردم یا اهل، نه ملت‌های گذشته.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0220",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "کدام کلمه به معنای «نسل‌ها و امت‌های یک دوره» است؟",
+   "stem": {
+    "fa": "نسل‌ها و امت‌های یک دوره"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْأَمْرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَلَيْهِمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "قُرُونًۭا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«قُرُونًا» از «ق ر ن» است. «ءَايَـٰتِنَا» یعنی نشانه‌های ما.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0221",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_003"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی معنای «ملت‌ها» می‌دهد، نه «قرن صدساله»؟",
+   "stem": {
+    "fa": "ملت‌ها (نه سده‌ی صدساله)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْعُمُرُ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ثَاوِيًۭا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«قرون» اینجا یعنی نسل‌ها و ملت‌ها. «ٱلْعُمُرُ» یعنی روزگار و عمر، که به گذر زمان اشاره دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0222",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_045_002",
+    "w:w28_045_003"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ثَاوِيًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r2",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r3",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "r4",
+     "fa": "به درازا کشید"
+    },
+    {
+     "id": "r5",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r6",
+     "fa": "گواهی دادیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«قضینا» از «ق ض ي»، «أنشأنا» از «ن ش أ» و «قرون» از «ق ر ن» است. «فتطاول» یعنی روزگار به درازا کشید و «ثاویا» یعنی ساکن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0223",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_045_002",
+    "w:w28_045_003"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلشَّـٰهِدِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l5",
+     "ar": "أَنشَأْنَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "قضاوت کردیم"
+    },
+    {
+     "id": "r3",
+     "fa": "شاهدان"
+    },
+    {
+     "id": "r4",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "r5",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r6",
+     "fa": "بخوانی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "false_friend"
+   },
+   "explanationFa": "«قضینا» یعنی به انجام رساندیم، نه قضاوت کردیم. «قرون» هم نسل‌ها و ملت‌هاست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0224",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_045_002",
+    "w:w28_045_003"
+   ],
+   "promptFa": "هر واژه را به معنای درستش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "l5",
+     "ar": "قُرُونًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r2",
+     "fa": "فرستندگان"
+    },
+    {
+     "id": "r3",
+     "fa": "به درازا کشید"
+    },
+    {
+     "id": "r4",
+     "fa": "قرن‌های صدساله"
+    },
+    {
+     "id": "r5",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r6",
+     "fa": "به انجام رساندیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«قرون» اینجا نسل‌ها و ملت‌هاست، نه سده‌های صدساله. «أنشأنا» و «قضینا» هر دو ضمیر «نا» دارند اما معنایشان فرق دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0225",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_045_002",
+    "w:w28_045_003"
+   ],
+   "promptFa": "جفت‌های درست را پیدا کن؛ دو گزینه‌ی اضافه هست.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "بِجَانِبِ"
+    },
+    {
+     "id": "l2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l4",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَمْرَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "انشا نوشتیم"
+    },
+    {
+     "id": "r2",
+     "fa": "در کنار"
+    },
+    {
+     "id": "r3",
+     "fa": "نازل کردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "r5",
+     "fa": "امر"
+    },
+    {
+     "id": "r6",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r7",
+     "fa": "ملت‌ها"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r7"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r6"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {
+    "r1": "false_friend",
+    "r3": "near_miss"
+   },
+   "explanationFa": "«أنشأنا» یعنی پدید آوردیم و ربطی به «انشا» در فارسی ندارد. «قضینا» یعنی به انجام رساندیم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0226",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_045_002",
+    "w:w28_045_003"
+   ],
+   "promptFa": "کلمه‌ها را به معنایشان وصل کن؛ مراقب دوستان فریبنده باش.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l4",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "أَنشَأْنَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "سرزمین‌ها"
+    },
+    {
+     "id": "r2",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r3",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "بخوانی"
+    },
+    {
+     "id": "r5",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r6",
+     "fa": "به انجام رساندیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r1": "near_miss"
+   },
+   "explanationFa": "«قرون» نسل‌ها و ملت‌هاست، نه سرزمین‌ها. «ثاویا» یعنی ساکن و «تتلو» یعنی بخوانی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0301",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "معنای «فَتَطَاوَلَ» چیست؟",
+   "stem": {
+    "wordId": "w28_045_004",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس تکبر ورزید"
+    },
+    {
+     "id": "o2",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "o3",
+     "fa": "پس کوتاه شد"
+    },
+    {
+     "id": "o4",
+     "fa": "پس فراموش شد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ریشه‌ی «ط و ل» است و با «طول» هم‌ریشه است. «تطاول» در فارسی به معنای دست‌درازی است، اما در این آیه یعنی کم‌کم دراز شد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0302",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "کدام معنا برای «فَتَطَاوَلَ» درست است؟",
+   "stem": {
+    "wordId": "w28_045_004",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس پدید آوردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پس دست‌درازی کرد"
+    },
+    {
+     "id": "o3",
+     "fa": "پس بر آنان گذشت"
+    },
+    {
+     "id": "o4",
+     "fa": "پس دراز شد"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "باب تفاعل است و یعنی به‌تدریج طولانی شد. معنای فارسی «تطاول» (تعدی) اینجا مراد نیست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0303",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "«فَتَطَاوَلَ» در این آیه چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_045_004",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "o2",
+     "fa": "پس برتری جست"
+    },
+    {
+     "id": "o3",
+     "fa": "پس کوتاه شد"
+    },
+    {
+     "id": "o4",
+     "fa": "پس ساکن شد"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فاعل آن «ٱلْعُمُرُ» است، یعنی روزگار بر آنان دراز شد. با «طویل» هم‌ریشه است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0304",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "در عبارت «فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ»، معنای «فَتَطَاوَلَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_045_004",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس ستم کرد"
+    },
+    {
+     "id": "o2",
+     "fa": "پس نابود شد"
+    },
+    {
+     "id": "o3",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "o4",
+     "fa": "پس فرستاده شد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ف» یعنی «پس» و «تَطَاوَلَ» یعنی دراز شد. این فعل به درازای زمان اشاره دارد، نه ستم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0305",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «پس دراز شد» است؟",
+   "stem": {
+    "fa": "پس دراز شد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o3",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَتْلُوا۟"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«فَتَطَاوَلَ» از «ط و ل» است. «فـ» یعنی «پس».",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0306",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "معادل عربی «به درازا کشیدن و طولانی شدن» کدام است؟",
+   "stem": {
+    "fa": "به درازا کشیدن و طولانی شدن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o4",
+     "ar": "مُرْسِلِينَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل «تَطَاوَلَ» از باب تفاعل و هم‌ریشه با «طول» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0307",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004"
+   ],
+   "promptFa": "کدام کلمه یعنی «کم‌کم دراز شد»؟",
+   "stem": {
+    "fa": "کم‌کم دراز شد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَلَيْهِمُ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنَّا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "باب تفاعل یعنی تدریجی بودن؛ «تَطَاوَلَ» یعنی کم‌کم دراز شد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0308",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "معنای «ٱلْعُمُرُ» چیست؟",
+   "stem": {
+    "wordId": "w28_045_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "عمر یک انسان"
+    },
+    {
+     "id": "o2",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "o3",
+     "fa": "روزگار"
+    },
+    {
+     "id": "o4",
+     "fa": "پیری"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "same_root"
+   },
+   "explanationFa": "ریشه‌ی «ع م ر» است. «عمر» در فارسی زندگی یک فرد است، اما اینجا یعنی روزگار و مدت دراز.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0309",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "کدام معنا برای «ٱلْعُمُرُ» درست است؟",
+   "stem": {
+    "wordId": "w28_045_006",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نشانه‌ها"
+    },
+    {
+     "id": "o2",
+     "fa": "روزگار"
+    },
+    {
+     "id": "o3",
+     "fa": "زندگی یک فرد"
+    },
+    {
+     "id": "o4",
+     "fa": "سرگذشت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ٱلْعُمُرُ» به زمان و روزگار اشاره دارد. نباید آن را با «عمر فرد» در فارسی یکی گرفت.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0310",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "«ٱلْعُمُرُ» در این آیه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_045_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "روزگار"
+    },
+    {
+     "id": "o2",
+     "fa": "عمر یک انسان"
+    },
+    {
+     "id": "o3",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "o4",
+     "fa": "مردم مدین"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فاعل «فَتَطَاوَلَ» است: روزگار بر آنان دراز شد. مراد مدت زمان است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0311",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "در «فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ»، «ٱلْعُمُرُ» چیست؟",
+   "stem": {
+    "wordId": "w28_045_006",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیری"
+    },
+    {
+     "id": "o2",
+     "fa": "نسل‌ها"
+    },
+    {
+     "id": "o3",
+     "fa": "عمر یک انسان"
+    },
+    {
+     "id": "o4",
+     "fa": "روزگار"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«ٱلْ» ادات تعریف و «عُمُرُ» به معنای روزگار دراز است. این کلمه یک «دوست فریبنده» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0312",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «روزگار»؟",
+   "stem": {
+    "fa": "روزگار"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "أَهْلِ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْعُمُرُ ۚ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْعُمُرُ» از «ع م ر» به معنای روزگار و مدت زمان است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0313",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "معادل عربی «زمان و روزگار دراز» کدام است؟",
+   "stem": {
+    "fa": "زمان و روزگار دراز"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنتَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْعُمُرُ» اسم است و فاعل «فَتَطَاوَلَ». اینجا یعنی مدت زمان.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0314",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_006"
+   ],
+   "promptFa": "کدام کلمه برابر «روزگار» است، نه «عمر یک فرد»؟",
+   "stem": {
+    "fa": "روزگار (نه عمر یک فرد)"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "عَلَيْهِمْ"
+    },
+    {
+     "id": "o4",
+     "ar": "مُرْسِلِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ٱلْعُمُرُ» اینجا مدت زمان و روزگار است. در فارسی «عمر» معنای دیگری دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0315",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "معنای «ثَاوِيًا» چیست؟",
+   "stem": {
+    "wordId": "w28_045_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "فرستاده"
+    },
+    {
+     "id": "o2",
+     "fa": "مهمان"
+    },
+    {
+     "id": "o3",
+     "fa": "ساکن"
+    },
+    {
+     "id": "o4",
+     "fa": "خواننده"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "از ریشه‌ی کم‌کاربرد «ث و ي» به معنای ماندن و اقامت کردن است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0316",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "کدام معنا برای «ثَاوِيًا» درست است؟",
+   "stem": {
+    "wordId": "w28_045_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ساکن"
+    },
+    {
+     "id": "o2",
+     "fa": "غایب"
+    },
+    {
+     "id": "o3",
+     "fa": "گذرنده"
+    },
+    {
+     "id": "o4",
+     "fa": "بیان‌کننده"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ثاوي» یعنی مقیم و ماندگار. از «ثوی» به معنای اقامت گرفته است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0317",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "«ثَاوِيًا» در این آیه یعنی چه؟",
+   "stem": {
+    "wordId": "w28_045_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مهمان"
+    },
+    {
+     "id": "o2",
+     "fa": "فرستاده"
+    },
+    {
+     "id": "o3",
+     "fa": "خواننده"
+    },
+    {
+     "id": "o4",
+     "fa": "ساکن"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«ما كنتَ ثاويًا في أهل مدين» یعنی تو در میان مردم مدین ساکن نبودی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0318",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "در عبارت «وَمَا كُنتَ ثَاوِيًا فِي أَهْلِ مَدْيَنَ»، «ثَاوِيًا» کدام است؟",
+   "stem": {
+    "wordId": "w28_045_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بیننده"
+    },
+    {
+     "id": "o2",
+     "fa": "ساکن"
+    },
+    {
+     "id": "o3",
+     "fa": "فرستنده"
+    },
+    {
+     "id": "o4",
+     "fa": "گذرنده"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«كنتَ ثاويًا» یعنی ساکن بودی؛ با نفی «ما» یعنی ساکن نبودی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0319",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی یعنی «ساکن»؟",
+   "stem": {
+    "fa": "ساکن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَنشَأْنَا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ثَاوِيًا» از «ث و ي» است و یعنی مقیم و ساکن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0320",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "معادل عربی «مقیم و ماندگار» کدام است؟",
+   "stem": {
+    "fa": "مقیم و ماندگار"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "أَهْلِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنتَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ثَاوِيًا» یعنی ماندن و اقامت کردن؛ ریشه‌اش کم‌کاربرد است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0321",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_009"
+   ],
+   "promptFa": "کدام کلمه یعنی «اقامت‌کننده»؟",
+   "stem": {
+    "fa": "اقامت‌کننده"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "o2",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنَّا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ثَاوِيًا» اسم فاعل از ریشه‌ی «ثوي» است و یعنی کسی که اقامت دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0322",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "l3",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "قُرُونًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r2",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r3",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r4",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r5",
+     "fa": "روزگار"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "سه کلمه‌ی سخت: «فَتَطَاوَلَ» پس دراز شد، «ٱلْعُمُرُ» روزگار و «ثَاوِيًا» ساکن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0323",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی جفت کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "l4",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "l5",
+     "ar": "فَتَطَاوَلَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "روزگار"
+    },
+    {
+     "id": "r2",
+     "fa": "فرستندگان"
+    },
+    {
+     "id": "r3",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r4",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r5",
+     "fa": "بخوانی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r1"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«تَتْلُوا» یعنی بخوانی و «مُرْسِلِينَ» یعنی فرستندگان. سه کلمه‌ی سخت هم مثل قبل است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0324",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کن؛ یک گزینه‌ی فارسی اضافه است.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَهْلِ"
+    },
+    {
+     "id": "l2",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْعُمُرُ ۚ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "روزگار"
+    },
+    {
+     "id": "r2",
+     "fa": "مهمان"
+    },
+    {
+     "id": "r3",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "r4",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r5",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r6",
+     "fa": "مردم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "near_miss"
+   },
+   "explanationFa": "«مهمان» به «ثَاوِيًا» شبیه است اما معنایش نیست؛ «ثاوي» یعنی مقیم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0325",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "کلمات را به معنایشان وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "l2",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "l3",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "l5",
+     "ar": "فَتَطَاوَلَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r2",
+     "fa": "مدین"
+    },
+    {
+     "id": "r3",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r4",
+     "fa": "بودی"
+    },
+    {
+     "id": "r5",
+     "fa": "روزگار"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«كنتَ» یعنی بودی و «مَدْيَنَ» نام قوم و شهر مدین است. سه کلمه‌ی سخت مرور می‌شوند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0326",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_004",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "جفت‌های درست را پیدا کن؛ مراقب معنای «دوست فریبنده» باش.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلْعُمُرُ ۚ"
+    },
+    {
+     "id": "l5",
+     "ar": "فَتَطَاوَلَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r2",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r3",
+     "fa": "عمر یک انسان"
+    },
+    {
+     "id": "r4",
+     "fa": "بخوانی"
+    },
+    {
+     "id": "r5",
+     "fa": "روزگار"
+    },
+    {
+     "id": "r6",
+     "fa": "پدید آوردیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r1"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "false_friend"
+   },
+   "explanationFa": "«عمر یک انسان» معنای فارسی «عُمُر» است، اما در آیه یعنی روزگار.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0501",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "معنای «تَتْلُوا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_045_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ساکن می‌شوی"
+    },
+    {
+     "id": "o2",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "o3",
+     "fa": "می‌فرستی"
+    },
+    {
+     "id": "o4",
+     "fa": "می‌نویسی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«تَتْلُو» از ریشه‌ی «ت ل و» و هم‌ریشه با «تلاوت» است؛ یعنی می‌خوانی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0502",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "کدام گزینه معنای «تَتْلُوا۟» است؟",
+   "stem": {
+    "wordId": "w28_045_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بر کسی وحی فرستادن"
+    },
+    {
+     "id": "o2",
+     "fa": "در میان کسی ماندن"
+    },
+    {
+     "id": "o3",
+     "fa": "به کسی خبر دادن"
+    },
+    {
+     "id": "o4",
+     "fa": "بر کسی خواندن و تلاوت کردن"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "random"
+   },
+   "explanationFa": "«تتلوا» یعنی بر کسی خواندن؛ هم‌ریشه با «تلاوت» که خواندن آیات است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0503",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "معنای «تَتْلُوا۟» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_045_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "می‌گذری"
+    },
+    {
+     "id": "o2",
+     "fa": "دراز می‌کشی"
+    },
+    {
+     "id": "o3",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "o4",
+     "fa": "پدید می‌آوری"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در عبارت «تَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا» یعنی نشانه‌های ما را بر آنان می‌خوانی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0504",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "«تَتْلُوا۟» در این آیه کدام معنا را دارد؟",
+   "stem": {
+    "wordId": "w28_045_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "(ما) می‌فرستیم"
+    },
+    {
+     "id": "o2",
+     "fa": "(تو) ساکنی"
+    },
+    {
+     "id": "o3",
+     "fa": "(آنان) می‌خوانند"
+    },
+    {
+     "id": "o4",
+     "fa": "(تو) می‌خوانی"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "فعل برای مخاطب (تو) است، نه آنان؛ «تَتْلُو» یعنی می‌خوانی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0505",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "معنای «ءَايَـٰتِنَا» چیست؟",
+   "stem": {
+    "wordId": "w28_045_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "o2",
+     "fa": "آیه‌های قرآن"
+    },
+    {
+     "id": "o3",
+     "fa": "ملت‌های ما"
+    },
+    {
+     "id": "o4",
+     "fa": "فرستادگان ما"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«آیات» در فارسی بیشتر آیه‌های قرآن است؛ اما در این آیه به معنای «نشانه‌ها» آمده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0506",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "کدام گزینه معنای «ءَايَـٰتِنَا» است؟",
+   "stem": {
+    "wordId": "w28_045_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مردم مدین"
+    },
+    {
+     "id": "o2",
+     "fa": "سوره‌های ما"
+    },
+    {
+     "id": "o3",
+     "fa": "روزگار دراز"
+    },
+    {
+     "id": "o4",
+     "fa": "نشانه‌ها و دلایل الهی"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«آیات» یعنی نشانه‌ها و دلایل؛ ضمیر «نا» یعنی ما.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0507",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "معنای «ءَايَـٰتِنَا» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_045_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ملت‌هایی که پدید آوردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "آیه‌های قرآن"
+    },
+    {
+     "id": "o3",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "o4",
+     "fa": "اهل مدین"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در ترجمه‌ی این آیه «نشانه‌های [قدرت و خشم] ما» آمده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0508",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "«ءَايَـٰتِنَا» که تو بر آنان می‌خوانی، یعنی چه؟",
+   "stem": {
+    "wordId": "w28_045_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "فرستادگان ما"
+    },
+    {
+     "id": "o2",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "o3",
+     "fa": "آیه‌های شماره‌دار قرآن"
+    },
+    {
+     "id": "o4",
+     "fa": "سرگذشت‌های فراموش‌شده"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«آیات» اینجا یعنی نشانه‌ها؛ «نا» ضمیر متصل به معنای «ما» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0509",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «می‌خوانی» است؟",
+   "stem": {
+    "fa": "می‌خوانی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "كُنتَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تَتْلُوا۟» از ریشه‌ی «ت ل و» است و هم‌ریشه با «تلاوت».",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0510",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "بر کسی خواندن و تلاوت کردن"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "o4",
+     "ar": "عَلَيْهِمْ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«تتلوا» فعل خواندن است؛ «عَلَيْهِمْ» فقط به معنای «بر آنان» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0511",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی با این معنا می‌آید؟",
+   "stem": {
+    "fa": "تو بر آنان می‌خوانی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "o2",
+     "ar": "كُنَّا"
+    },
+    {
+     "id": "o3",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "تَتْلُوا۟"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "فعل خواندن برای مخاطب «تَتْلُوا۟» است؛ «كُنتَ» یعنی بودی.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0512",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به معنای «نشانه‌های ما» است؟",
+   "stem": {
+    "fa": "نشانه‌های ما"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "أَهْلِ"
+    },
+    {
+     "id": "o4",
+     "ar": "مُرْسِلِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«ءَايَـٰتِنَا» یعنی نشانه‌های ما، نه الزاماً آیه‌های قرآن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0513",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+   "stem": {
+    "fa": "نشانه‌ها و دلایل الهی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "o3",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "ءَايَـٰتِنَا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«آیات» جمع «آیه» به معنای نشانه‌هاست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0514",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_015"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی این معنا را می‌رساند؟",
+   "stem": {
+    "fa": "نشانه‌هایی از ما"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَلَـٰكِنَّا"
+    },
+    {
+     "id": "o2",
+     "ar": "عَلَيْهِمْ"
+    },
+    {
+     "id": "o3",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "ءَايَـٰتِنَا"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "پایان «نَا» یعنی «ما»؛ «ءَايَـٰت» یعنی نشانه‌ها.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0515",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013",
+    "w:w28_045_015"
+   ],
+   "promptFa": "هر کلمه را به معنایش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "ثَاوِيًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ملت‌ها"
+    },
+    {
+     "id": "r2",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "r3",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r4",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "r5",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r6",
+     "fa": "گذشت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r2"
+    ],
+    [
+     "l2",
+     "r4"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«تتلوا» می‌خوانی و «آیات» نشانه‌هاست؛ سه کلمه‌ی دیگر از همین آیه‌اند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0516",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013",
+    "w:w28_045_015"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "مُرْسِلِينَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "مَدْيَنَ"
+    },
+    {
+     "id": "l5",
+     "ar": "كُنتَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بودی"
+    },
+    {
+     "id": "r2",
+     "fa": "فرستنده‌ها"
+    },
+    {
+     "id": "r3",
+     "fa": "مدین"
+    },
+    {
+     "id": "r4",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "r5",
+     "fa": "نشانه‌های ما"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«نشانه‌های ما» و «می‌خوانی» معنای دو کلمه‌ی سخت این آیه‌اند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0517",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013",
+    "w:w28_045_015"
+   ],
+   "promptFa": "کلمه‌ها را به معنایشان وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَتَطَاوَلَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَتْلُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "أَهْلِ"
+    },
+    {
+     "id": "l4",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "عَلَيْهِمْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "r2",
+     "fa": "بر آنان"
+    },
+    {
+     "id": "r3",
+     "fa": "پس دراز شد"
+    },
+    {
+     "id": "r4",
+     "fa": "مردم"
+    },
+    {
+     "id": "r5",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "r6",
+     "fa": "ساکن"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«ساکن» معنای «ثاویا» است و در این ردیف جفتی ندارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0518",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_013",
+    "w:w28_045_015"
+   ],
+   "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "كُنتَ"
+    },
+    {
+     "id": "l2",
+     "ar": "ثَاوِيًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "تَتْلُوا۟"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "می‌خوانی"
+    },
+    {
+     "id": "r2",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r3",
+     "fa": "بودی"
+    },
+    {
+     "id": "r4",
+     "fa": "نشانه‌های ما"
+    },
+    {
+     "id": "r5",
+     "fa": "ساکن"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "«ثاویا» یعنی ساکن؛ «تتلوا» می‌خوانی و «آیات» نشانه‌هاست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0601",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "معنای «لِتُنذِرَ» چیست؟",
+   "stem": {
+    "wordId": "w28_046_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تا نذر کنی"
+    },
+    {
+     "id": "o2",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "o3",
+     "fa": "تا متذکّر شوند"
+    },
+    {
+     "id": "o4",
+     "fa": "تا ندا دهی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ریشه‌ی «ن ذ ر» است و اینجا یعنی بیم دادن و هشدار دادن. با «نذر کردن» اشتباه نشود.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0602",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "در این آیه، «لِتُنذِرَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_046_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیش از تو"
+    },
+    {
+     "id": "o2",
+     "fa": "تا بیم داده شوی"
+    },
+    {
+     "id": "o3",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "o4",
+     "fa": "نذر کردن"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«لِ» به معنای «تا» و «تُنذِرَ» به معنای بیم دهی است؛ نه نذر کردن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0603",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "کدام گزینه مفهوم ریشه‌ی «ن ذ ر» در «لِتُنذِرَ» را درست بیان می‌کند؟",
+   "stem": {
+    "wordId": "w28_046_011",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "برای نذر کردن"
+    },
+    {
+     "id": "o2",
+     "fa": "یادآوری و متذکّر شدن"
+    },
+    {
+     "id": "o3",
+     "fa": "ندا دادن"
+    },
+    {
+     "id": "o4",
+     "fa": "هشدار دادن و ترساندن از عاقبت"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "near_miss"
+   },
+   "explanationFa": "«إنذار» یعنی هشدار دادن از عاقبت کار. نذر کردن معنای دیگری دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0604",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "با توجه به سیاق آیه، «لِتُنذِرَ» را چگونه ترجمه می‌کنید؟",
+   "stem": {
+    "wordId": "w28_046_011",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تا رحمت کنی"
+    },
+    {
+     "id": "o2",
+     "fa": "تا نذر کنی"
+    },
+    {
+     "id": "o3",
+     "fa": "تا بیم دهند"
+    },
+    {
+     "id": "o4",
+     "fa": "تا بیم دهی"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "near_miss"
+   },
+   "explanationFa": "فعل برای مخاطب (تو) است: «تا بیم دهی». «لِ» به معنای «تا» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0605",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "معنای «نَّذِيرٍۢ» چیست؟",
+   "stem": {
+    "wordId": "w28_046_016",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نذری"
+    },
+    {
+     "id": "o2",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "o3",
+     "fa": "مردمی"
+    },
+    {
+     "id": "o4",
+     "fa": "پروردگارت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نذیر» یعنی هشداردهنده؛ هم‌ریشه با نذر است ولی نذر کردن نیست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0606",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "در این آیه «نَّذِيرٍۢ» یعنی چه؟",
+   "stem": {
+    "wordId": "w28_046_016",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "o2",
+     "fa": "نذر کننده‌ای"
+    },
+    {
+     "id": "o3",
+     "fa": "بیم دهی"
+    },
+    {
+     "id": "o4",
+     "fa": "رحمتی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "same_root",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نَذِیر» اسم و به معنای بیم‌دهنده است؛ «تُنذِرَ» فعل و هم‌ریشه با آن است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0607",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "کدام توضیح برای «نَّذِيرٍۢ» درست است؟",
+   "stem": {
+    "wordId": "w28_046_016",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آنچه برای خدا نذر شده"
+    },
+    {
+     "id": "o2",
+     "fa": "متذکّر و هوشیار"
+    },
+    {
+     "id": "o3",
+     "fa": "هشداردهنده و پیامبر بیم‌دهنده"
+    },
+    {
+     "id": "o4",
+     "fa": "مردمی که پیش از تو بودند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "near_miss"
+   },
+   "explanationFa": "نذیر یعنی هشداردهنده. «نذر» در فارسی دوست فریبنده است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0608",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "با توجه به عبارت «مَّا أَتَىٰهُم مِّن نَّذِيرٍۢ»، معنای «نَّذِيرٍۢ» کدام است؟",
+   "stem": {
+    "wordId": "w28_046_016",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیش از تو"
+    },
+    {
+     "id": "o2",
+     "fa": "نذری"
+    },
+    {
+     "id": "o3",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "o4",
+     "fa": "بیم‌دهنده‌ای"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "false_friend",
+    "o3": "same_root"
+   },
+   "explanationFa": "یعنی برای آنان بیم‌دهنده‌ای نیامده بود. «نذیر» اسم است، نه فعل.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0609",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+   "stem": {
+    "fa": "تا بیم دهی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "نَادَيْنَا"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«لِتُنذِرَ» یعنی تا بیم دهی. «نذیر» اسم هم‌ریشه است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0610",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "این مفهوم به کدام کلمه‌ی آیه‌ی ۴۶ برمی‌گردد؟",
+   "stem": {
+    "fa": "هشدار دادن و ترساندن از عاقبت"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "o2",
+     "ar": "قَوْمًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "أَتَىٰهُم"
+    },
+    {
+     "id": "o4",
+     "ar": "رَّحْمَةًۭ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "فعل «تُنذِرَ» از ریشه‌ی ن ذ ر به معنای هشدار دادن است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0611",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "معادل عربی را (با حرکات) انتخاب کنید.",
+   "stem": {
+    "fa": "بیم دهی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "نَادَيْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "قَوْمًۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "رَّبِّكَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لِتُنذِرَ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«لِتُنذِرَ» فعل مضارع منصوب با «لِ» است و به معنای «تا بیم دهی» می‌آید.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0612",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+   "stem": {
+    "fa": "بیم‌دهنده‌ای"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَوْمًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "رَّحْمَةًۭ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نَذِیر» اسم و به معنای بیم‌دهنده است؛ «لِتُنذِرَ» فعل است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0613",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "این معنا مربوط به کدام کلمه است؟",
+   "stem": {
+    "fa": "هشداردهنده و پیامبر بیم‌دهنده"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "قَبْلِكَ"
+    },
+    {
+     "id": "o2",
+     "ar": "رَّبِّكَ"
+    },
+    {
+     "id": "o3",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَتَذَكَّرُونَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«نَذِیر» یعنی هشداردهنده. با «نذر» هم‌ریشه است، اما معنایش فرق دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0614",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "معادل عربی را (با حرکات) انتخاب کنید.",
+   "stem": {
+    "fa": "بیم دهنده ای"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَتَىٰهُم"
+    },
+    {
+     "id": "o2",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "بِجَانِبِ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلطُّورِ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "در آیه: «مَّا أَتَىٰهُم مِّن نَّذِيرٍۢ»، یعنی بیم‌دهنده‌ای برای آنان نیامده بود.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0615",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011",
+    "w:w28_046_016"
+   ],
+   "promptFa": "هر کلمه را به معنای آن وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "l2",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "نَادَيْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "قَوْمًۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "رَّحْمَةًۭ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "رحمتی"
+    },
+    {
+     "id": "r2",
+     "fa": "مردمی"
+    },
+    {
+     "id": "r3",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "r4",
+     "fa": "نذری"
+    },
+    {
+     "id": "r5",
+     "fa": "ندا دادیم"
+    },
+    {
+     "id": "r6",
+     "fa": "بیم‌دهنده‌ای"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r6"
+    ],
+    [
+     "l3",
+     "r5"
+    ],
+    [
+     "l4",
+     "r2"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "false_friend"
+   },
+   "explanationFa": "«لِتُنذِرَ» فعل و «نَذِیر» اسم از ریشه‌ی ن ذ ر است و به نذر کردن ربطی ندارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0616",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011",
+    "w:w28_046_016"
+   ],
+   "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "قَبْلِكَ"
+    },
+    {
+     "id": "l5",
+     "ar": "رَّبِّكَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پروردگارت"
+    },
+    {
+     "id": "r2",
+     "fa": "تا نذر کنی"
+    },
+    {
+     "id": "r3",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r4",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "r5",
+     "fa": "پیش از تو"
+    },
+    {
+     "id": "r6",
+     "fa": "تا بیم دهی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r4"
+    ],
+    [
+     "l2",
+     "r3"
+    ],
+    [
+     "l3",
+     "r6"
+    ],
+    [
+     "l4",
+     "r5"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r2": "false_friend"
+   },
+   "explanationFa": "«یَتَذَكَّرُونَ» یعنی متذکّر شوند و با «تُنذِرَ» که به معنای بیم دادن است فرق دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0617",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011",
+    "w:w28_046_016"
+   ],
+   "promptFa": "جفت‌های درست را پیدا کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلطُّورِ"
+    },
+    {
+     "id": "l2",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "l3",
+     "ar": "بِجَانِبِ"
+    },
+    {
+     "id": "l4",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "l5",
+     "ar": "قَوْمًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مردمی"
+    },
+    {
+     "id": "r2",
+     "fa": "در ناحیه"
+    },
+    {
+     "id": "r3",
+     "fa": "طور"
+    },
+    {
+     "id": "r4",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "r5",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "r6",
+     "fa": "ندا دادیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r3"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r2"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "neighbor_word"
+   },
+   "explanationFa": "«بِجَانِبِ ٱلطُّورِ» یعنی در ناحیه‌ی طور.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0618",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011"
+   ],
+   "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "رَّحْمَةًۭ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَتَذَكَّرُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلطُّورِ"
+    },
+    {
+     "id": "l5",
+     "ar": "نَادَيْنَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "طور"
+    },
+    {
+     "id": "r2",
+     "fa": "ندا دادیم"
+    },
+    {
+     "id": "r3",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "r4",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "r5",
+     "fa": "متذکّر شوند"
+    },
+    {
+     "id": "r6",
+     "fa": "رحمتی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r6"
+    ],
+    [
+     "l2",
+     "r5"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r1"
+    ],
+    [
+     "l5",
+     "r2"
+    ]
+   ],
+   "distractorTags": {
+    "r3": "same_root"
+   },
+   "explanationFa": "«لِتُنذِرَ» فعل است و معنای «بیم‌دهنده‌ای» اسم هم‌ریشه‌ی آن، یعنی «نَذِیر» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0619",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_016"
+   ],
+   "promptFa": "کلمات را با معنایشان جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "قَبْلِكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "نَّذِيرٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "بِجَانِبِ"
+    },
+    {
+     "id": "l4",
+     "ar": "رَّبِّكَ"
+    },
+    {
+     "id": "l5",
+     "ar": "قَوْمًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "مردمی"
+    },
+    {
+     "id": "r2",
+     "fa": "بیم‌دهنده‌ای"
+    },
+    {
+     "id": "r3",
+     "fa": "پروردگارت"
+    },
+    {
+     "id": "r4",
+     "fa": "در ناحیه"
+    },
+    {
+     "id": "r5",
+     "fa": "پیش از تو"
+    },
+    {
+     "id": "r6",
+     "fa": "تا بیم دهی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r5"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r4"
+    ],
+    [
+     "l4",
+     "r3"
+    ],
+    [
+     "l5",
+     "r1"
+    ]
+   ],
+   "distractorTags": {
+    "r6": "same_root"
+   },
+   "explanationFa": "«نَذِیر» اسم به معنای بیم‌دهنده است؛ «تا بیم دهی» معنای فعل «لِتُنذِرَ» است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0901",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "عبارات آیه ۴۴ را به ترجمه صحیح متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA",
+    "verse": 44
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَمَا كُنتَ بِجَانِبِ ٱلْغَرْبِىِّ"
+    },
+    {
+     "id": "l2",
+     "ar": "إِذْ قَضَيْنَآ إِلَىٰ مُوسَى ٱلْأَمْرَ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَمَا كُنتَ مِنَ ٱلشَّـٰهِدِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی"
+    },
+    {
+     "id": "r2",
+     "fa": "هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم"
+    },
+    {
+     "id": "r3",
+     "fa": "و از شاهدان [آن واقعه مهم هم] نبودی"
+    },
+    {
+     "id": "r4",
+     "fa": "تو در ناحیه طور نبودی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "similar_verse"
+   },
+   "explanationFa": "آیه ۴۴ به عدم حضور پیامبر در جانب غربی و انجام رساندن امر نبوت موسی اشاره می‌کند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0902",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 44,
+   "targets": [
+    "w:w28_044_006",
+    "w:w28_044_013"
+   ],
+   "promptFa": "معنای کلمات زیر از آیه ۴۴ را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 44
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْغَرْبِىِّ"
+    },
+    {
+     "id": "l2",
+     "ar": "قَضَيْنَآ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْأَمْرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلشَّـٰهِدِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "غربی"
+    },
+    {
+     "id": "r2",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "r3",
+     "fa": "امر"
+    },
+    {
+     "id": "r4",
+     "fa": "شاهدان"
+    },
+    {
+     "id": "r5",
+     "fa": "قضاوت کردیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "false_friend"
+   },
+   "explanationFa": "واژه «قَضَيْنَآ» در اینجا به معنای «به انجام رساندیم و قطعی کردیم» است، نه قضاوت.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0903",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "ترجمه صحیح آیه ۴۴ کدام است؟",
+   "stem": {
+    "verse": 44
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم، و از شاهدان [آن واقعه مهم هم] نبودی."
+    },
+    {
+     "id": "o2",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی ولی به سبب رحمتی از پروردگارت تا بیم دهی."
+    },
+    {
+     "id": "o3",
+     "fa": "ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت."
+    },
+    {
+     "id": "o4",
+     "fa": "و پس از آنکه اقوام پیشین را هلاک کردیم، به موسی کتاب دادیم تا وسیله بینایی باشد."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "این آیه صراحتاً به جانب غربی (ٱلْغَرْبِىِّ) و پایان یافتن امر نبوت موسی اشاره دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0906",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 44,
+   "targets": [
+    "vr:44"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام آیه است؟ «تو در جانب غربی [وادی طور] حضور نداشتی هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم، و از شاهدان [آن واقعه مهم هم] نبودی.»",
+   "stem": {
+    "verse": 44,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 44,
+      "from": 1,
+      "to": 13
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 46,
+      "from": 1,
+      "to": 20
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 45,
+      "from": 1,
+      "to": 18
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 43,
+      "from": 1,
+      "to": 16
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "ترکیب «جانب غربی» معادل «بِجَانِبِ ٱلْغَرْبِىِّ» در ابتدای آیه ۴۴ است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0909",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۴۴ را به ترتیب صحیح مرتب کنید.",
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی "
+    },
+    {
+     "id": "b2",
+     "fa": "هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم، "
+    },
+    {
+     "id": "b3",
+     "fa": "و از شاهدان [آن واقعه مهم هم] نبودی."
+    },
+    {
+     "id": "b4",
+     "fa": "تو در ناحیه طور نبودی ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "similar_verse"
+   },
+   "explanationFa": "ساختار آیه: بجانب الغربی (جانب غربی)، اذ قضینا (هنگامی که به انجام رساندیم)، من الشاهدین (از شاهدان).",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0910",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه ۴۴ را منظم کنید.",
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی "
+    },
+    {
+     "id": "b2",
+     "fa": "هنگامی که ما [با نازل کردن تورات] "
+    },
+    {
+     "id": "b3",
+     "fa": "امر نبوّت موسی را به انجام رساندیم، "
+    },
+    {
+     "id": "b4",
+     "fa": "و از شاهدان [آن واقعه مهم هم] نبودی."
+    },
+    {
+     "id": "b5",
+     "fa": "و زمانی که ما موسی را ندا دادیم، ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "similar_verse"
+   },
+   "explanationFa": "پس از جانب غربی، تعبیر «اذ قضینا» با عبارت «هنگامی که ما... امر نبوت موسی را به انجام رساندیم» ادامه می‌یابد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0911",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "جاهای خالی ترجمه را کامل کنید.",
+   "stem": {
+    "verse": 44,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "حضور نداشتی"
+     },
+     {
+      "text": "به انجام رساندیم"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "حضور نداشتی"
+    },
+    {
+     "id": "b2",
+     "fa": "به انجام رساندیم"
+    },
+    {
+     "id": "b3",
+     "fa": "ساکن نبودی"
+    },
+    {
+     "id": "b4",
+     "fa": "ندا دادیم"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "neighbor_verse",
+    "b4": "similar_verse"
+   },
+   "explanationFa": "«وَمَا كُنتَ» یعنی حضور نداشتی و «قَضَيْنَآ» یعنی به انجام رساندیم.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0912",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 44,
+   "targets": [
+    "vt:44"
+   ],
+   "promptFa": "ترجمه آیه ۴۴ را با کلمات درست تکمیل کنید.",
+   "stem": {
+    "verse": 44,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "جانب غربی"
+     },
+     {
+      "text": "شاهدان"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "جانب غربی"
+    },
+    {
+     "id": "b2",
+     "fa": "شاهدان"
+    },
+    {
+     "id": "b3",
+     "fa": "ناحیه طور"
+    },
+    {
+     "id": "b4",
+     "fa": "مؤمنان"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "similar_verse",
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت «بِجَانِبِ ٱلْغَرْبِىِّ» معادل «جانب غربی» و «ٱلشَّـٰهِدِينَ» یعنی «شاهدان».",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0913",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 45,
+   "targets": [
+    "vt:45"
+   ],
+   "promptFa": "عبارات آیه ۴۵ را به ترجمه صحیح متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA",
+    "verse": 45
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَلَـٰكِنَّآ أَنشَأْنَا قُرُونًۭا فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَمَا كُنتَ ثَاوِيًۭا فِىٓ أَهْلِ مَدْيَنَ تَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "وَلَـٰكِنَّا كُنَّا مُرْسِلِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت"
+    },
+    {
+     "id": "r2",
+     "fa": "و تو در میان مردم مدین ساکن نبودی تا نشانه های ما را بر اینان بخوانی"
+    },
+    {
+     "id": "r3",
+     "fa": "ولی ما بودیم که تو را به پیامبری فرستادیم"
+    },
+    {
+     "id": "r4",
+     "fa": "و زمانی که ما موسی را ندا دادیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ]
+   ],
+   "distractorTags": {
+    "r4": "similar_verse"
+   },
+   "explanationFa": "آیه ۴۵ به آفرینش ملت‌های گذشته، گذر زمان و رسالت پیامبر بدون حضور در میان اهل مدین اشاره دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0914",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 45,
+   "targets": [
+    "w:w28_045_002",
+    "w:w28_045_003",
+    "w:w28_045_006",
+    "w:w28_045_009"
+   ],
+   "promptFa": "معنای دقیق کلمات سخت آیه ۴۵ را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 45
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "أَنشَأْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "قُرُونًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْعُمُرُ"
+    },
+    {
+     "id": "l4",
+     "ar": "ثَاوِيًۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "ملت هایی"
+    },
+    {
+     "id": "r3",
+     "fa": "روزگار"
+    },
+    {
+     "id": "r4",
+     "fa": "ساکن"
+    },
+    {
+     "id": "r5",
+     "fa": "قرن‌ها"
+    },
+    {
+     "id": "r6",
+     "fa": "عمر انسان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "false_friend",
+    "r6": "false_friend"
+   },
+   "explanationFa": "در اینجا «قرون» یعنی ملت‌ها و امت‌ها و «عُمُر» به معنای روزگار دراز است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0915",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 45,
+   "targets": [
+    "vt:45"
+   ],
+   "promptFa": "کدام گزینه ترجمه صحیحی برای آیه ۴۵ است؟",
+   "stem": {
+    "verse": 45
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت... و تو در میان مردم مدین ساکن نبودی تا نشانه های ما را بر اینان بخوانی، ولی ما بودیم که تو را به پیامبری فرستادیم."
+    },
+    {
+     "id": "o2",
+     "fa": "تو در جانب غربی حضور نداشتی هنگامی که ما امر نبوّت موسی را به انجام رساندیم، و از شاهدان نبودی."
+    },
+    {
+     "id": "o3",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی ولی به سبب رحمتی از پروردگارت تا بیم دهی."
+    },
+    {
+     "id": "o4",
+     "fa": "و پس از آنکه اقوام پیشین را هلاک کردیم، به موسی کتاب دادیم که وسیله بینایی و هدایت بود."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۴۵ با «وَلَـٰكِنَّآ أَنشَأْنَا قُرُونًۭا» شروع شده که ترجمه‌اش پدید آوردن ملت‌هاست.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0918",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 45,
+   "targets": [
+    "vr:45"
+   ],
+   "promptFa": "ترجمه «ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت...» متعلق به کدام آیه است؟",
+   "stem": {
+    "verse": 45,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 45,
+      "from": 1,
+      "to": 18
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 44,
+      "from": 1,
+      "to": 13
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 46,
+      "from": 1,
+      "to": 20
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 47,
+      "from": 1,
+      "to": 18
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "پدید آوردن ملت‌ها (أَنشَأْنَا قُرُونًا) ویژگی آیه ۴۵ است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0921",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 45,
+   "targets": [
+    "vt:45"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه ۴۵ را مرتب کنید.",
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت "
+    },
+    {
+     "id": "b2",
+     "fa": "[تا جایی که سرگذشتشان فراموش شد، اکنون ما سرگذشتشان را به تو وحی می کنیم تا برای مردم بیان کنی]. "
+    },
+    {
+     "id": "b3",
+     "fa": "و تو در میان مردم مدین ساکن نبودی تا نشانه های [قدرت و خشم] ما را [که به آنان رسید] بر اینان [که در مکه، آلوده به طغیان و فسادند] بخوانی، "
+    },
+    {
+     "id": "b4",
+     "fa": "ولی ما بودیم که تو را به پیامبری فرستادیم [و سرگذشت مردم مدین را به تو وحی کردیم تا بر آنان بخوانی.]"
+    },
+    {
+     "id": "b5",
+     "fa": "و از شاهدان [آن واقعه مهم هم] نبودی.",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "ترتیب آیه: آفرینش قرون، گذر زمان، ساکن نبودن در مدین، و سرانجام اراده الهی بر ارسال پیامبر.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0923",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 45,
+   "targets": [
+    "vt:45"
+   ],
+   "promptFa": "جاهای خالی ترجمه را تکمیل کنید.",
+   "stem": {
+    "verse": 45,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "پدید آوردیم"
+     },
+     {
+      "text": "روزگار درازی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پدید آوردیم"
+    },
+    {
+     "id": "b2",
+     "fa": "روزگار درازی"
+    },
+    {
+     "id": "b3",
+     "fa": "هلاک کردیم"
+    },
+    {
+     "id": "b4",
+     "fa": "عمر کوتاهی"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "neighbor_verse",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«أنشأنا» به معنای ایجاد کردیم و پدید آوردیم است، و «عُمُر» روزگار طولانی را می‌رساند.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0924",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 45,
+   "targets": [
+    "vt:45"
+   ],
+   "promptFa": "کلمات مناسب را در ترجمه آیه ۴۵ جایگذاری کنید.",
+   "stem": {
+    "verse": 45,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "ساکن نبودی"
+     },
+     {
+      "text": "به پیامبری فرستادیم"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ساکن نبودی"
+    },
+    {
+     "id": "b2",
+     "fa": "به پیامبری فرستادیم"
+    },
+    {
+     "id": "b3",
+     "fa": "حضور نداشتی"
+    },
+    {
+     "id": "b4",
+     "fa": "رحمت فرستادیم"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "neighbor_verse",
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "«ثَاوِيًۭا» در اینجا به معنای ساکن شدن و مقیم بودن است و «مُرْسِلِينَ» یعنی فرستندگان به پیامبری.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0925",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "بخش‌های آیه ۴۶ را به ترجمه فارسی آن‌ها وصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA",
+    "verse": 46
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَمَا كُنتَ بِجَانِبِ ٱلطُّورِ إِذْ نَادَيْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "وَلَـٰكِن رَّحْمَةًۭ مِّن رَّبِّكَ لِتُنذِرَ قَوْمًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "مَّآ أَتَىٰهُم مِّن نَّذِيرٍۢ مِّن قَبْلِكَ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی"
+    },
+    {
+     "id": "r2",
+     "fa": "ولی به سبب رحمتی از پروردگارت تا به مردمی بیم دهی"
+    },
+    {
+     "id": "r3",
+     "fa": "که پیش از تو بیم دهنده ای برای آنان نیامده بود"
+    },
+    {
+     "id": "r4",
+     "fa": "تا متذکّر و هوشیار شوند"
+    },
+    {
+     "id": "r5",
+     "fa": "هنگامی که ما امر نبوّت موسی را به انجام رساندیم"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "similar_verse"
+   },
+   "explanationFa": "این آیه به ناحیه طور، نزول رحمت، هشدار دادن به مردم فاقد پیامبر پیشین و نهایتاً تذکر یافتن آنان می‌پردازد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0926",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 46,
+   "targets": [
+    "w:w28_046_011",
+    "w:w28_046_016"
+   ],
+   "promptFa": "معنای واژگان آیه ۴۶ را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 46
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلطُّورِ"
+    },
+    {
+     "id": "l2",
+     "ar": "نَادَيْنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "لِتُنذِرَ"
+    },
+    {
+     "id": "l4",
+     "ar": "نَّذِيرٍۢ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "طور"
+    },
+    {
+     "id": "r2",
+     "fa": "ندا دادیم"
+    },
+    {
+     "id": "r3",
+     "fa": "تا بیم دهی"
+    },
+    {
+     "id": "r4",
+     "fa": "بیم دهنده ای"
+    },
+    {
+     "id": "r5",
+     "fa": "نذر کننده"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "false_friend"
+   },
+   "explanationFa": "کلمات «لِتُنذِرَ» و «نَذِيرٍۢ» از ریشه «نذر» به معنای بیم دادن و هشدار دادن هستند، نه نذر کردن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0927",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "کدام گزینه ترجمه صحیحی از آیه ۴۶ است؟",
+   "stem": {
+    "verse": 46
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی ولی به سبب رحمتی از پروردگارت [سرگذشت موسی را به تو وحی کردیم] تا به مردمی که پیش از تو [تا زمان عیسی] بیم دهنده ای برای آنان نیامده بود، بیم دهی تا متذکّر و هوشیار شوند."
+    },
+    {
+     "id": "o2",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی هنگامی که ما [با نازل کردن تورات] امر نبوّت موسی را به انجام رساندیم، و از شاهدان [آن واقعه مهم هم] نبودی."
+    },
+    {
+     "id": "o3",
+     "fa": "ولی ما ملت هایی را پدید آوردیم، پس روزگار درازی بر آنان گذشت [تا جایی که سرگذشتشان فراموش شد]."
+    },
+    {
+     "id": "o4",
+     "fa": "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۴۶ با «بِجَانِبِ ٱلطُّورِ» و «نَادَيْنَا» شناخته می‌شود و به ارسال پیامبر برای انذار و یادآوری اشاره دارد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0930",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 46,
+   "targets": [
+    "vr:46"
+   ],
+   "promptFa": "ترجمه «و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی...» به کدام آیه مربوط است؟",
+   "stem": {
+    "verse": 46,
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 46,
+      "from": 1,
+      "to": 20
+     }
+    },
+    {
+     "id": "o2",
+     "wordRange": {
+      "verse": 44,
+      "from": 1,
+      "to": 13
+     }
+    },
+    {
+     "id": "o3",
+     "wordRange": {
+      "verse": 45,
+      "from": 1,
+      "to": 18
+     }
+    },
+    {
+     "id": "o4",
+     "wordRange": {
+      "verse": 43,
+      "from": 1,
+      "to": 16
+     }
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«ناحیه طور» و «ندا دادیم» مستقیماً به «بِجَانِبِ ٱلطُّورِ إِذْ نَادَيْنَا» در آیه ۴۶ بازمی‌گردد.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0933",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۴۶ را منظم کنید.",
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی "
+    },
+    {
+     "id": "b2",
+     "fa": "ولی به سبب رحمتی از پروردگارت [سرگذشت موسی را به تو وحی کردیم] "
+    },
+    {
+     "id": "b3",
+     "fa": "تا به مردمی که پیش از تو [تا زمان عیسی] بیم دهنده ای برای آنان نیامده بود، بیم دهی تا متذکّر و هوشیار شوند."
+    },
+    {
+     "id": "b4",
+     "fa": "تو در جانب غربی [وادی طور] حضور نداشتی ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "similar_verse"
+   },
+   "explanationFa": "ترتیب آیه: عدم حضور در طور هنگام ندا، رحمت پروردگار، و در نهایت بیم دادن برای تذکر یافتن.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0934",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "بخش‌های ترجمه آیه ۴۶ را به درستی بچینید.",
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و زمانی که ما موسی را ندا دادیم، تو در ناحیه طور نبودی "
+    },
+    {
+     "id": "b2",
+     "fa": "ولی به سبب رحمتی از پروردگارت [سرگذشت موسی را به تو وحی کردیم] "
+    },
+    {
+     "id": "b3",
+     "fa": "تا به مردمی که پیش از تو [تا زمان عیسی] بیم دهنده ای برای آنان نیامده بود، بیم دهی "
+    },
+    {
+     "id": "b4",
+     "fa": "تا متذکّر و هوشیار شوند."
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {},
+   "explanationFa": "شروع با عدم حضور در طور (إِذْ نَادَيْنَا)، ادامه با رحمت الهی، سپس انذار قوم و نتیجه آن متذکر شدن است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0935",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "جاهای خالی ترجمه را پر کنید.",
+   "stem": {
+    "verse": 46,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "ناحیه طور"
+     },
+     {
+      "text": "ندا دادیم"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ناحیه طور"
+    },
+    {
+     "id": "b2",
+     "fa": "ندا دادیم"
+    },
+    {
+     "id": "b3",
+     "fa": "جانب غربی"
+    },
+    {
+     "id": "b4",
+     "fa": "به انجام رساندیم"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "similar_verse",
+    "b4": "similar_verse"
+   },
+   "explanationFa": "کلمه «ٱلطُّورِ» به معنای کوه یا ناحیه طور و «نَادَيْنَا» یعنی ندا دادیم است.",
+   "unitId": "u_p391a",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p391a_A_0936",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 46,
+   "targets": [
+    "vt:46"
+   ],
+   "promptFa": "ترجمه آیه ۴۶ را با کلمات درست کامل کنید.",
+   "stem": {
+    "verse": 46,
+    "showFa": false,
+    "faHidden": [
+     {
+      "text": "رحمتی"
+     },
+     {
+      "text": "بیم دهنده ای"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "رحمتی"
+    },
+    {
+     "id": "b2",
+     "fa": "بیم دهنده ای"
+    },
+    {
+     "id": "b3",
+     "fa": "نعمتی"
+    },
+    {
+     "id": "b4",
+     "fa": "شاهدانی"
+    }
+   ],
+   "answer": {
+    "0": "b1",
+    "1": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "«رَّحْمَةًۭ» یعنی رحمت و موهبتی و «نَّذِيرٍۢ» یعنی بیم دهنده و هشداردهنده‌ای که پیش از پیامبر اسلام برای آنان نیامده بود.",
+   "unitId": "u_p391a",
+   "part": "A"
+  }
+ ],
+ "issues": [
+  "[u_p391a.partA.json] در w28_045_006 علامت وقف «ۚ» جزو متن کلمه آمده است.",
+  "[u_p391a.partA2.json] ورودی earlierHardWords نداشت؛ کلمه‌ی مرور از واحدهای قبلی در MATCH_WORDS نیامد و به‌جای آن از کلمات غیرسخت همین دو آیه استفاده شد.",
+  "[u_p391a.partA2.json] معنای کلمات غیرسخت (فَتَطَاوَلَ، ثَاوِيًۭا، تَتْلُوا۟، مُرْسِلِينَ و …) در گزینه‌های جفت‌سازی از سیاق fa آیه گرفته شد.",
+  "[u_p391a.partA3.json] earlierHardWords در ورودی نبود؛ در جفت‌سازی از کلمات غیرسخت همین آیه برای مرور استفاده شد.",
+  "[u_p391a.partA5.json] earlierHardWords در ورودی نبود؛ کلمه‌ی مرور از واحدهای قبلی نیامد و جفت‌ها از کلمات همین آیه ساخته شد.",
+  "[u_p391a.partA5.json] برای کلمات غیرسخت، معانی جفت‌سازی از ترجمه‌ی fa و لغت‌نامه‌ی آیه برداشته شد."
+ ],
+ "sourceFiles": [
+  "u_p391a.partA.json",
+  "u_p391a.partA2.json",
+  "u_p391a.partA3.json",
+  "u_p391a.partA4.json",
+  "u_p391a.partA5.json",
+  "u_p391a.partA6.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 14,
+  "files": 6
+ }
+}

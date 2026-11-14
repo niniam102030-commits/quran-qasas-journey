@@ -1,0 +1,66 @@
+[#1 q_u_p395b_A_0741 WORD_AR_FA] shape/type نامعتبر.
+[#2 q_u_p395b_A_0742 WORD_AR_FA] shape/type نامعتبر.
+[#4 q_u_p395b_A_0744 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p395b_A_0745 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p395b_A_0746 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: بِدَارِهِ
+[#6 q_u_p395b_A_0746 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#7 q_u_p395b_A_0747 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p395b_A_0747 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#8 q_u_p395b_A_0748 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p395b_A_0751 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p395b_A_0752 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p395b_A_0753 WORD_AR_FA] shape/type نامعتبر.
+[#14 q_u_p395b_A_0754 WORD_AR_FA] shape/type نامعتبر.
+[#16 q_u_p395b_A_0756 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p395b_A_0757 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p395b_A_0759 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p395b_A_0759 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#19 q_u_p395b_A_0759 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#19 q_u_p395b_A_0759 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#19 q_u_p395b_A_0759 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#20 q_u_p395b_A_0760 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p395b_A_0760 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#20 q_u_p395b_A_0760 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#20 q_u_p395b_A_0760 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#21 q_u_p395b_A_0761 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 82 برابر نیست.
+[#22 q_u_p395b_A_0762 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 82 برابر نیست.
+[#23 q_u_p395b_A_0763 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p395b_A_0764 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p395b_A_0765 WORD_AR_FA] shape/type نامعتبر.
+[#26 q_u_p395b_A_0766 WORD_AR_FA] shape/type نامعتبر.
+[#28 q_u_p395b_A_0768 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p395b_A_0769 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p395b_A_0771 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#31 q_u_p395b_A_0771 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: فَسَادًۭا ۚ
+[#31 q_u_p395b_A_0771 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: فَسَادًۭا ۚ
+[#32 q_u_p395b_A_0772 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p395b_A_0772 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: لِلظّٰلِمِينَ
+[#32 q_u_p395b_A_0772 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: فَسَادًۭا ۚ
+[#33 q_u_p395b_A_0773 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 83 برابر نیست.
+[#34 q_u_p395b_A_0774 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 83 برابر نیست.
+[#35 q_u_p395b_A_0775 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p395b_A_0776 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#37 q_u_p395b_A_0777 WORD_AR_FA] shape/type نامعتبر.
+[#38 q_u_p395b_A_0778 WORD_AR_FA] shape/type نامعتبر.
+[#40 q_u_p395b_A_0780 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#41 q_u_p395b_A_0781 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#42 q_u_p395b_A_0782 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#43 q_u_p395b_A_0783 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#43 q_u_p395b_A_0783 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#44 q_u_p395b_A_0784 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#44 q_u_p395b_A_0784 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: يَفْعَلُونَ
+[#45 q_u_p395b_A_0785 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 84 برابر نیست.
+[#46 q_u_p395b_A_0786 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 84 برابر نیست.
+[#47 q_u_p395b_A_0787 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#48 q_u_p395b_A_0788 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+MATCH_PHRASES: حداقل 8 لازم است (الان 0).
+نوع(های) غیرمجاز در این برش: WORD_AR_FA؛ فقط CLOZE_FA, MATCH_PHRASES, ORDER_TRANSLATION_CHUNKS, TRANSLATION_TO_VERSE, VERSE_TO_TRANSLATION.
+اعتبارسنج Node: ❌ u_p395b.partA4.pending.json has 8 errors:
+   - [Q#1 (q_u_p395b_A_0741)]: Invalid type 'WORD_AR_FA'
+   - [Q#2 (q_u_p395b_A_0742)]: Invalid type 'WORD_AR_FA'
+   - [Q#13 (q_u_p395b_A_0753)]: Invalid type 'WORD_AR_FA'
+   - [Q#14 (q_u_p395b_A_0754)]: Invalid type 'WORD_AR_FA'
+   - [Q#25 (q_u_p395b_A_0765)]: Invalid type 'WORD_AR_FA'
+   - [Q#26 (q_u_p395b_A_0766)]: Invalid type 'WORD_AR_FA'
+   - [Q#37 (q_u_p395b_A_0777)]: Invalid type 'WORD_AR_FA'
+   - [Q#38 (q_u_p395b_A_0778)]: Invalid type 'WORD_AR_FA'

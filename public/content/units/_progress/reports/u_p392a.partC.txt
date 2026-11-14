@@ -1,0 +1,15 @@
+[#4 q_u_p392a_C_0264 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 52 را نمی‌پوشاند.
+[#5 q_u_p392a_C_0265 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 52 را نمی‌پوشاند.
+[#6 q_u_p392a_C_0266 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 53 را نمی‌پوشاند.
+[#7 q_u_p392a_C_0267 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 53 را نمی‌پوشاند.
+[#8 q_u_p392a_C_0268 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 54 را نمی‌پوشاند.
+[#9 q_u_p392a_C_0269 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 54 را نمی‌پوشاند.
+[#13 q_u_p392a_C_0273 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 50 را نمی‌پوشاند.
+[#14 q_u_p392a_C_0274 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 50 را نمی‌پوشاند.
+[#15 q_u_p392a_C_0275 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 51 را نمی‌پوشاند.
+[#16 q_u_p392a_C_0276 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 51 را نمی‌پوشاند.
+[#17 q_u_p392a_C_0277 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 52 را نمی‌پوشاند.
+[#18 q_u_p392a_C_0278 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 52 را نمی‌پوشاند.
+[#40 q_u_p392a_C_0300 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#41 q_u_p392a_C_0301 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#42 q_u_p392a_C_0302 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.

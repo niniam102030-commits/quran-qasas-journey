@@ -1,0 +1,13 @@
+[#3 q_u_p389b_A_1303 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p389b_A_1304 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p389b_A_1307 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p389b_A_1308 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p389b_A_1310 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p389b_A_1311 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p389b_A_1313 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p389b_A_1314 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p389b_A_1314 WORD_FA_TO_AR] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: إِلَيْكُمَا
+[#16 q_u_p389b_A_1316 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p389b_A_1317 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p389b_A_1318 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p389b_A_1319 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.

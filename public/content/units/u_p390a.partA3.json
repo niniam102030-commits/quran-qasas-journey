@@ -1,0 +1,775 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A3",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390a_A_0401",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "معنای «عَـٰقِبَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_037_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پایان بد و شوم"
+        },
+        {
+          "id": "o2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o3",
+          "fa": "سرای آخرت"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمکاران"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "عاقبت از ریشه‌ی «ع ق ب» به معنای سرانجام و فرجام است. در فارسی گاهی بار منفی دارد، اما در این آیه فرجام نیک مراد است."
+    },
+    {
+      "id": "q_u_p390a_A_0402",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "کدام گزینه معنای درست «عَـٰقِبَةُ» است؟",
+      "stem": {
+        "wordId": "w28_037_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خانه و منزل مسکونی"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o3",
+          "fa": "پایان بد"
+        },
+        {
+          "id": "o4",
+          "fa": "فرجام و پایان کار"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«عاقبة» یعنی فرجام و پایان کار و ذاتاً بد نیست. «عاقبةُ الدار» یعنی فرجام نیکِ سرای آخرت."
+    },
+    {
+      "id": "q_u_p390a_A_0403",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "در این آیه، «عَـٰقِبَةُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_037_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرجام و پایان کار"
+        },
+        {
+          "id": "o2",
+          "fa": "پیروز شدن"
+        },
+        {
+          "id": "o3",
+          "fa": "داناتر"
+        },
+        {
+          "id": "o4",
+          "fa": "پایان ناگوار"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ریشه‌ی «ع ق ب» است و «عاقبة» یعنی سرانجام. در این سیاق به فرجام نیک اشاره دارد، نه پایان بد."
+    },
+    {
+      "id": "q_u_p390a_A_0404",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "با توجه به آیه، «عَـٰقِبَةُ» یعنی:",
+      "stem": {
+        "wordId": "w28_037_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o2",
+          "fa": "عاقبت به معنای پایان بد"
+        },
+        {
+          "id": "o3",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عاقبة» یعنی سرانجام و فرجام، از ریشه‌ی «ع ق ب». در این آیه بار مثبت دارد، پس پایان بد نیست."
+    },
+    {
+      "id": "q_u_p390a_A_0405",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "معنای «ٱلدَّارِ» چیست؟",
+      "stem": {
+        "wordId": "w28_037_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o2",
+          "fa": "خانه و منزل مسکونی"
+        },
+        {
+          "id": "o3",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o4",
+          "fa": "سرای آخرت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«دار» از ریشه‌ی «د و ر» به معنای سرا و جایگاه است. اینجا خانه‌ی معمولی نیست و سرای آخرت مراد است."
+    },
+    {
+      "id": "q_u_p390a_A_0406",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "کدام معنا برای «ٱلدَّارِ» درست است؟",
+      "stem": {
+        "wordId": "w28_037_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرا و جایگاه"
+        },
+        {
+          "id": "o2",
+          "fa": "پیروزی"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o4",
+          "fa": "فرجام بد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«دار» یعنی سرا و جایگاه، از ریشه‌ی «د و ر». در این آیه همان سرای آخرت است."
+    },
+    {
+      "id": "q_u_p390a_A_0407",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "در این آیه «ٱلدَّارِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_037_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خانه و منزل مسکونی"
+        },
+        {
+          "id": "o2",
+          "fa": "موسی"
+        },
+        {
+          "id": "o3",
+          "fa": "سرای آخرت"
+        },
+        {
+          "id": "o4",
+          "fa": "داناتر"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«دار» در فارسی یعنی خانه، اما اینجا «عاقبةُ الدار» یعنی فرجام نیکِ سرای آخرت. این کلمه «دوست فریبنده» است."
+    },
+    {
+      "id": "q_u_p390a_A_0408",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "در عبارت «عَـٰقِبَةُ ٱلدَّارِ»، منظور از «ٱلدَّارِ» کدام است؟",
+      "stem": {
+        "wordId": "w28_037_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیروزی"
+        },
+        {
+          "id": "o2",
+          "fa": "سرا و جایگاه؛ در اینجا سرای آخرت"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o4",
+          "fa": "خانه و منزل مسکونی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«دار» یعنی سرا و جایگاه و اینجا سرای آخرت است. معنای خانه‌ی مسکونی در این آیه درست نیست."
+    },
+    {
+      "id": "q_u_p390a_A_0409",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «سرانجام» را دارد؟",
+      "stem": {
+        "fa": "سرانجام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَكُونُ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُفْلِحُ"
+        },
+        {
+          "id": "o4",
+          "ar": "بِٱلْهُدَىٰ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«عَـٰقِبَةُ» از ریشه‌ی «ع ق ب» به معنای سرانجام و فرجام است."
+    },
+    {
+      "id": "q_u_p390a_A_0410",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «فرجام و پایان کار» است؟",
+      "stem": {
+        "fa": "فرجام و پایان کار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«عَـٰقِبَةُ» یعنی فرجام و پایان کار. در عبارت «عاقبةُ الدار» به فرجام نیک اشاره دارد."
+    },
+    {
+      "id": "q_u_p390a_A_0411",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "برای معنای «سرانجام» در این آیه، کدام کلمه‌ی عربی را باید انتخاب کرد؟",
+      "stem": {
+        "fa": "سرانجام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«عَـٰقِبَةُ» یعنی سرانجام. کلمه‌ی کناری آن «ٱلدَّارِ» است و معنایش سرای آخرت است."
+    },
+    {
+      "id": "q_u_p390a_A_0412",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «سرای آخرت» را دارد؟",
+      "stem": {
+        "fa": "سرای آخرت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "عِندِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّهُۥ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«ٱلدَّارِ» از ریشه‌ی «د و ر» به معنای سرا است. اینجا مراد سرای آخرت است."
+    },
+    {
+      "id": "q_u_p390a_A_0413",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «سرا و جایگاه» است؟",
+      "stem": {
+        "fa": "سرا و جایگاه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُفْلِحُ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "بِمَن"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلدَّارِ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«ٱلدَّارِ» یعنی سرا و جایگاه، و در این آیه سرای آخرت است. به معنای خانه‌ی معمولی نیست."
+    },
+    {
+      "id": "q_u_p390a_A_0414",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_014"
+      ],
+      "promptFa": "در «عاقبةُ ...»، کدام کلمه‌ی عربی «سرای آخرت» را می‌رساند؟",
+      "stem": {
+        "fa": "سرای آخرت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَكُونُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلدَّارِ» پس از «عَـٰقِبَةُ» آمده و یعنی سرای آخرت. «عَـٰقِبَةُ» خودش یعنی سرانجام."
+    },
+    {
+      "id": "q_u_p390a_A_0415",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013",
+        "w:w28_037_014"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُفْلِحُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r3",
+          "fa": "پیروز"
+        },
+        {
+          "id": "r4",
+          "fa": "سرای آخرت"
+        },
+        {
+          "id": "r5",
+          "fa": "داناتر"
+        },
+        {
+          "id": "r6",
+          "fa": "پایان بد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«عَـٰقِبَةُ» یعنی سرانجام و «ٱلدَّارِ» یعنی سرای آخرت. «پایان بد» معنای دوست فریبنده‌ی «عاقبت» است و جفتی ندارد."
+    },
+    {
+      "id": "q_u_p390a_A_0416",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013",
+        "w:w28_037_014"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای درست وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلدَّارِ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِٱلْهُدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُوسَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَعْلَمُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هدایت"
+        },
+        {
+          "id": "r2",
+          "fa": "موسی"
+        },
+        {
+          "id": "r3",
+          "fa": "سرای آخرت"
+        },
+        {
+          "id": "r4",
+          "fa": "داناتر"
+        },
+        {
+          "id": "r5",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r6",
+          "fa": "خانه و منزل مسکونی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«ٱلدَّارِ» در این آیه سرای آخرت است، نه خانه‌ی مسکونی. «عَـٰقِبَةُ» یعنی سرانجام."
+    }
+  ],
+  "issues": []
+}

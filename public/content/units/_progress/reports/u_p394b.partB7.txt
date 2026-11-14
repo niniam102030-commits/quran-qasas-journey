@@ -1,0 +1,4 @@
+[#1 q_u_p394b_B_2181 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p394b_B_2181 BUILD_FROM_NUMBER] order ناقص است.
+اعتبارسنج Node: ❌ u_p394b.partB7.pending.json has 1 errors:
+   - [Q#1 (q_u_p394b_B_2181)]: Order question missing bank or answer array

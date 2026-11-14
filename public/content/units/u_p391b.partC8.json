@@ -1,0 +1,1282 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391b",
+  "part": "C8",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p391b_C_0961",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 48,
+      "targets": [
+        "w:w28_048_022"
+      ],
+      "promptFa": "معنای «تَظَـٰهَرَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_048_022",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پشتیبان یکدیگرند"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "o3",
+          "fa": "پیروی می کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "کفر نورزیدند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه تظاهرا به معنای پشتیبان یکدیگرند است."
+    },
+    {
+      "id": "q_u_p391b_C_0962",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «هدایت کننده تر» است؟",
+      "stem": {
+        "fa": "هدایت کننده تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "o3",
+          "ar": "هُدًۭى"
+        },
+        {
+          "id": "o4",
+          "ar": "أَضَلُّ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "same_root",
+        "o4": "false_friend"
+      },
+      "explanationFa": "أهدی اسم تفضیل است به معنای هدایت‌کننده‌تر."
+    },
+    {
+      "id": "q_u_p391b_C_0963",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 49,
+      "targets": [
+        "vt:49"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست] اگر راست می گویید کتابی از نزد خدا بیاورید که هدایت کننده تر از این دو باشد تا آن را پیروی کنم."
+        },
+        {
+          "id": "o2",
+          "fa": "پس اگر پاسخ تو را ندادند بدان که فقط از هواهای نفسانی خود پیروی می کنند و گمراه تر از کسی که بدون هدایتی از سوی خدا از هواهای نفسانی خود پیروی کند، کیست؟ مسلماً خدا مردم ستمکار را هدایت نمی کند."
+        },
+        {
+          "id": "o3",
+          "fa": "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد [به جای آنکه بپذیرند] گفتند: چرا مانند آنچه به موسی دادند به او نداده اند؟ آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟! گفتند: [این تورات و قرآن] دو جادویند که پشتیبان یکدیگرند!! و گفتند: ما منکر هر دو هستیم!!"
+        },
+        {
+          "id": "o4",
+          "fa": "و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، پس بگویند: پروردگارا! چرا پیامبری به سوی ما نفرستادی تا از آیاتت پیروی کنیم و از مؤمنان باشیم [بی تردید در عذاب کردن و هلاکتشان شتاب می نمودیم.]"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه قل فأتوا بکتاب ترجمه تحدی پیامبر است."
+    },
+    {
+      "id": "q_u_p391b_C_0964",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 50,
+      "targets": [
+        "vt:50"
+      ],
+      "promptFa": "کدام آیه با این ترجمه مطابقت دارد؟",
+      "stem": {
+        "verse": 50,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "اگر پاسخ تو را ندادند مربوط به فإن لم یستجیبوا لک است."
+    },
+    {
+      "id": "q_u_p391b_C_0965",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48"
+      ],
+      "promptFa": "این آیه، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 47
+        },
+        {
+          "id": "o2",
+          "num": 48
+        },
+        {
+          "id": "o3",
+          "num": 49
+        },
+        {
+          "id": "o4",
+          "num": 50
+        },
+        {
+          "id": "o5",
+          "num": 46
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه فلما جاءهم الحق آیه ۴۸ است."
+    },
+    {
+      "id": "q_u_p391b_C_0966",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 47,
+      "targets": [
+        "vn:47"
+      ],
+      "promptFa": "آیه ۴۷ سوره قصص با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 47
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۴۷ با ولولا أن تصیبهم آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0967",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 49,
+      "targets": [
+        "sq:49",
+        "vr:50"
+      ],
+      "promptFa": "آیه بعد از «قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ...» با چه کلماتی آغاز می‌شود؟",
+      "stem": {
+        "verse": 49
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "پس از درخواست کتاب هدایت‌کننده‌تر، می‌فرماید اگر پاسخ ندادند: فإن لم یستجیبوا."
+    },
+    {
+      "id": "q_u_p391b_C_0968",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 48,
+      "targets": [
+        "sq:47",
+        "vr:47"
+      ],
+      "promptFa": "آیه قبل از «فَلَمَّا جَآءَهُمُ ٱلْحَقُّ...» با چه کلماتی آغاز می‌شود؟",
+      "stem": {
+        "verse": 48
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 47,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 46,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 49,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 50,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "پیش از آمدن حق، آیه ولولا أن تصیبهم مصیبة می‌آید."
+    },
+    {
+      "id": "q_u_p391b_C_0969",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 47,
+      "targets": [
+        "vr:47"
+      ],
+      "promptFa": "پایان این آیه کدام است؟",
+      "stem": {
+        "verse": 47,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 47,
+            "from": 16,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "يَتَذَكَّرُونَ"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 48,
+            "from": 25,
+            "to": 26
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 50,
+            "from": 21,
+            "to": 23
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۴۷ با ونکون من المؤمنین پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p391b_C_0970",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 50,
+      "targets": [
+        "vr:50"
+      ],
+      "promptFa": "کدام گزینه متن صحیح آیه ۵۰ است؟",
+      "stem": {
+        "verseNum": 50
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 50,
+            "from": 19,
+            "to": 23
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "إِنَّ",
+            "ٱللَّهَ",
+            "لَا",
+            "يَهْدِى",
+            "ٱلْقَوْمَ",
+            "ٱلْمُفْسِدِينَ"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "إِنَّ",
+            "ٱللَّهَ",
+            "لَا",
+            "يَهْدِى",
+            "ٱلْقَوْمَ",
+            "خَـٰطِـِٔينَ"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "وَمَنْ",
+            "أَضَلُّ",
+            "مِمَّنِ",
+            "ٱتَّبَعَ",
+            "أَهْوَآءَهُمْ"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "در پایان آیه ۵۰ تعبیر القوم الظالمین آمده است."
+    },
+    {
+      "id": "q_u_p391b_C_0971",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 48,
+      "targets": [
+        "w:w28_048_022",
+        "w:w28_047_006",
+        "w:w28_050_015"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَظَـٰهَرَا"
+        },
+        {
+          "id": "l2",
+          "ar": "قَدَّمَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "هُدًۭى"
+        },
+        {
+          "id": "l4",
+          "ar": "أَضَلُّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پشتیبان یکدیگرند"
+        },
+        {
+          "id": "r2",
+          "fa": "مرتکب شدند"
+        },
+        {
+          "id": "r3",
+          "fa": "هدایتی"
+        },
+        {
+          "id": "r4",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r5",
+          "fa": "جادویند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "معانی کلمات بر اساس ترجمه آیه تنظیم شده است."
+    },
+    {
+      "id": "q_u_p391b_C_0972",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 47,
+      "targets": [
+        "vt:47"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه صحیح متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَلَوْلَآ أَن تُصِيبَهُم"
+        },
+        {
+          "id": "l2",
+          "ar": "بِمَا قَدَّمَتْ أَيْدِيهِمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَيَقُولُوا۟ رَبَّنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "وَنَكُونَ مِنَ ٱلْمُؤْمِنِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و اگر نه آن بود که عذابی به آنان برسد"
+        },
+        {
+          "id": "r2",
+          "fa": "به سبب گناهانی که مرتکب شدند"
+        },
+        {
+          "id": "r3",
+          "fa": "پس بگویند: پروردگارا!"
+        },
+        {
+          "id": "r4",
+          "fa": "و از مؤمنان باشیم"
+        },
+        {
+          "id": "r5",
+          "fa": "چرا پیامبری به سوی ما نفرستادی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "ترجمه قطعات آیه ۴۷."
+    },
+    {
+      "id": "q_u_p391b_C_0973",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 48,
+      "targets": [
+        "vn:48",
+        "vn:49",
+        "vn:50"
+      ],
+      "promptFa": "شماره هر آیه را به کلمات آغازین آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 47
+        },
+        {
+          "id": "l2",
+          "num": 48
+        },
+        {
+          "id": "l3",
+          "num": 49
+        },
+        {
+          "id": "l4",
+          "num": 50
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَلَوْلَآ أَن تُصِيبَهُم"
+        },
+        {
+          "id": "r2",
+          "ar": "فَلَمَّا جَآءَهُمُ ٱلْحَقُّ"
+        },
+        {
+          "id": "r3",
+          "ar": "قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ"
+        },
+        {
+          "id": "r4",
+          "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "r5",
+          "ar": "وَلَقَدْ وَصَّلْنَا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "شناخت آغاز آیات ۴۷ تا ۵۰."
+    },
+    {
+      "id": "q_u_p391b_C_0974",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 49,
+      "targets": [
+        "vr:49"
+      ],
+      "promptFa": "با توجه به ترجمه «بگو: اگر راست می گویید کتابی از نزد خدا بیاورید»، آیه را بسازید.",
+      "stem": {
+        "fa": "بگو: [بنا بر ادعای شما چنانچه تورات و قرآن از جانب خدا نیست] اگر راست می گویید کتابی از نزد خدا بیاورید"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قُلْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَأْتُوا۟ بِكِتَـٰبٍۢ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِّنْ عِندِ ٱللَّهِ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِن كُنتُمْ صَـٰدِقِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِنْ عِندِنَا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "قل فأتوا بکتاب من عند الله..."
+    },
+    {
+      "id": "q_u_p391b_C_0975",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 50,
+      "targets": [
+        "vr:50"
+      ],
+      "promptFa": "بخش آغازین آیه ۵۰ را بچینید.",
+      "stem": {
+        "num": 50
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَإِن لَّمْ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَسْتَجِيبُوا۟ لَكَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَٱعْلَمْ أَنَّمَا",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَتَّبِعُونَ أَهْوَآءَهُمْ ۚ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَلَمَّا جَآءَهُمُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "آیه ۵۰ با فإن لم یستجیبوا لک فاعلم... آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p391b_C_0976",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 48,
+      "targets": [
+        "sq:48"
+      ],
+      "promptFa": "آیه بعد از «...سِحْرَانِ تَظَـٰهَرَا وَقَالُوٓا۟ إِنَّا بِكُلٍّۢ كَـٰفِرُونَ» (آیه ۴۸) را بسازید.",
+      "stem": {
+        "verse": 48
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قُلْ فَأْتُوا۟",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِكِتَـٰبٍۢ مِّنْ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عِندِ ٱللَّهِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "هُوَ أَهْدَىٰ مِنْهُمَآ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "آیه ۴۹ قل فأتوا بکتاب است."
+    },
+    {
+      "id": "q_u_p391b_C_0977",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 50,
+      "targets": [
+        "sq:49"
+      ],
+      "promptFa": "آیه قبل از «فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ...» (آیه ۵۰) را بسازید.",
+      "stem": {
+        "verse": 50
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِّنْ عِندِ ٱللَّهِ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُوَ أَهْدَىٰ مِنْهُمَآ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَتَّبِعْهُ إِن كُنتُمْ صَـٰدِقِينَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَلَمَّا جَآءَهُمُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "آیه ۴۹ که تحدی می‌کند پیش از آیه ۵۰ قرار دارد."
+    },
+    {
+      "id": "q_u_p391b_C_0978",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 48,
+      "targets": [
+        "vt:48"
+      ],
+      "promptFa": "قطعات ترجمه آیه ۴۸ را مرتب کنید.",
+      "stem": {
+        "verse": 48
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس هنگامی که حق [چون قرآن و پیامبر] از سوی ما برای آنان آمد"
+        },
+        {
+          "id": "b2",
+          "fa": "[به جای آنکه بپذیرند] گفتند: چرا مانند آنچه به موسی دادند به او نداده اند؟"
+        },
+        {
+          "id": "b3",
+          "fa": "آیا پیش از این به آنچه به موسی داده شد، کفر نورزیدند؟!"
+        },
+        {
+          "id": "b4",
+          "fa": "گفتند: [این تورات و قرآن] دو جادویند که پشتیبان یکدیگرند!!"
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب ترجمه: آمدن حق -> بهانه موسی -> یادآوری کفر قبلی -> تهمت سحر."
+    },
+    {
+      "id": "q_u_p391b_C_0979",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "page",
+      "verse": 47,
+      "targets": [
+        "pg:u_p391b"
+      ],
+      "promptFa": "ترتیب صحیح آیات را مشخص کنید.",
+      "stem": {
+        "verses": [
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَوْلَآ أَن تُصِيبَهُم...",
+          "verse": 47
+        },
+        {
+          "id": "b2",
+          "ar": "فَلَمَّا جَآءَهُمُ ٱلْحَقُّ...",
+          "verse": 48
+        },
+        {
+          "id": "b3",
+          "ar": "قُلْ فَأْتُوا۟ بِكِتَـٰبٍۢ...",
+          "verse": 49
+        },
+        {
+          "id": "b4",
+          "ar": "فَإِن لَّمْ يَسْتَجِيبُوا۟...",
+          "verse": 50
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "روند آیات: بهانه عدم ارسال رسل -> بهانه جدید هنگام آمدن رسل -> تحدی -> نتیجه لجاجت."
+    },
+    {
+      "id": "q_u_p391b_C_0980",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 47,
+      "targets": [
+        "vr:47"
+      ],
+      "promptFa": "جاهای خالی آیه را کامل کنید.",
+      "stem": {
+        "verse": 47,
+        "hiddenIdx": [
+          4,
+          10,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مُّصِيبَةٌۢ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَوْلَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "رَسُولًۭا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِثْلَ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "سِحْرَانِ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "10": "b2",
+        "13": "b3"
+      },
+      "explanationFa": "ولولا أن تصیبهم مصیبة ... ربنا لولا أرسلت إلینا رسولا."
+    },
+    {
+      "id": "q_u_p391b_C_0981",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 50,
+      "targets": [
+        "vr:50"
+      ],
+      "promptFa": "ادامه آیه را با انتخاب کلمات تکمیل کنید.",
+      "stem": {
+        "verse": 50,
+        "givenCount": 15,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِّنَ ٱللَّهِ ۚ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنَّ ٱللَّهَ",
+          "wordIdx": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا يَهْدِى",
+          "wordIdx": [
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْقَوْمَ ٱلظَّـٰلِمِينَ",
+          "wordIdx": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "16": "b1",
+        "18": "b2",
+        "20": "b3",
+        "22": "b4"
+      },
+      "explanationFa": "بغیر هدی من الله إن الله لا یهدی القوم الظالمین."
+    },
+    {
+      "id": "q_u_p391b_C_0982",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 48,
+      "targets": [
+        "vt:48"
+      ],
+      "promptFa": "جاهای خالی ترجمه را کامل کنید.",
+      "stem": {
+        "verse": 48,
+        "faHidden": [
+          {
+            "start": 21,
+            "text": "حق [چون قرآن و پیامبر]"
+          },
+          {
+            "start": 240,
+            "text": "دو جادویند"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "حق [چون قرآن و پیامبر]"
+        },
+        {
+          "id": "b2",
+          "fa": "دو جادویند"
+        },
+        {
+          "id": "b3",
+          "fa": "کتابی",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "fa": "گمراه تر",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "explanationFa": "کلمه الحق به «حق [چون قرآن و پیامبر]» و سحران به «دو جادویند» ترجمه شده است."
+    }
+  ],
+  "issues": []
+}

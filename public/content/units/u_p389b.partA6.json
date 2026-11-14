@@ -1,0 +1,866 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A6",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_0901",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "معنای «بُرْهَـٰنَانِ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "این دو"
+        },
+        {
+          "id": "o2",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "o3",
+          "fa": "دو نافرمان"
+        },
+        {
+          "id": "o4",
+          "fa": "دو دستت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ب ر ه ن»؛ «بُرهانان» مثنای «برهان» و یعنی دو دلیل روشن و معجزه."
+    },
+    {
+      "id": "q_u_p389b_A_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "«بُرْهَـٰنَانِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "یک دلیل ضعیف"
+        },
+        {
+          "id": "o2",
+          "fa": "دو پیام‌رسان"
+        },
+        {
+          "id": "o3",
+          "fa": "دو سپاه"
+        },
+        {
+          "id": "o4",
+          "fa": "دو دلیل روشن و حجت آشکار"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«بُرهان» یعنی دلیل روشن؛ پسوند «ـانِ» نشان‌دهنده‌ی مثناست و پس یعنی دو برهان."
+    },
+    {
+      "id": "q_u_p389b_A_0903",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "در این آیه، «بُرْهَـٰنَانِ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_032_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "o2",
+          "fa": "دو عیب"
+        },
+        {
+          "id": "o3",
+          "fa": "دو مردم نافرمان"
+        },
+        {
+          "id": "o4",
+          "fa": "دو ترس"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه آمده «این دو معجزه از ناحیه پروردگار توست»؛ مقصود دو نشانه‌ی روشن (ید بیضا و حرکت‌دادن دست بر سینه) در سیاق همین آیه است."
+    },
+    {
+      "id": "q_u_p389b_A_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "با توجه به آیه، «بُرْهَـٰنَانِ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دو سرزمین"
+        },
+        {
+          "id": "o2",
+          "fa": "دو بال پرنده"
+        },
+        {
+          "id": "o3",
+          "fa": "دو دلیل روشن و حجت آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "دو بزرگ قوم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بُرهان» در فارسی هم هست و همان معنای دلیل روشن را دارد؛ اینجا مثنا آمده است."
+    },
+    {
+      "id": "q_u_p389b_A_0905",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "معنای «وَمَلَإِي۟هِۦٓ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پروردگار تو"
+        },
+        {
+          "id": "o2",
+          "fa": "و فرعون"
+        },
+        {
+          "id": "o3",
+          "fa": "و سران او"
+        },
+        {
+          "id": "o4",
+          "fa": "و مردمی نافرمان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَلَأ» به گروه سران و بزرگان قوم می‌گویند؛ «و» عطف است و «ـهِ» ضمیر «او»."
+    },
+    {
+      "id": "q_u_p389b_A_0906",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "«وَمَلَإِي۟هِۦٓ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اشراف و سران او"
+        },
+        {
+          "id": "o2",
+          "fa": "و فرشتگان او"
+        },
+        {
+          "id": "o3",
+          "fa": "و اشراف و سران تو"
+        },
+        {
+          "id": "o4",
+          "fa": "و ترس او"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «م ل أ»؛ ضمیر پایانی «ـهِ» به فرعون برمی‌گردد نه به مخاطب (ـکَ)."
+    },
+    {
+      "id": "q_u_p389b_A_0907",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "در این آیه، «وَمَلَإِي۟هِۦٓ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_032_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و ترسی که دچارش شده‌ای"
+        },
+        {
+          "id": "o2",
+          "fa": "و مردم نافرمان"
+        },
+        {
+          "id": "o3",
+          "fa": "و پروردگار او"
+        },
+        {
+          "id": "o4",
+          "fa": "و اشراف و سران او"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در آیه آمده «به سوی فرعون و اشراف و سران او»؛ «مَلَأ» یعنی گروه سران قوم."
+    },
+    {
+      "id": "q_u_p389b_A_0908",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "با توجه به آیه، «وَمَلَإِي۟هِۦٓ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سپاه فرعون"
+        },
+        {
+          "id": "o2",
+          "fa": "و سران او"
+        },
+        {
+          "id": "o3",
+          "fa": "و سران تو"
+        },
+        {
+          "id": "o4",
+          "fa": "و دو دستت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«مَلَأ» گروه بزرگان است و «ـهِ» یعنی «او» (فرعون)."
+    },
+    {
+      "id": "q_u_p389b_A_0909",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «دو معجزه» است؟",
+      "stem": {
+        "fa": "دو معجزه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بُرْهَـٰنَانِ» مثنای «برهان» است؛ «فَذَٰنِكَ» اسم اشاره‌ی «این دو» است نه خود معجزه."
+    },
+    {
+      "id": "q_u_p389b_A_0910",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "معادل عربی «دو دلیل روشن و حجت آشکار» کدام است؟",
+      "stem": {
+        "fa": "دو دلیل روشن و حجت آشکار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَذَٰنِكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ب ر ه ن» به معنای دلیل روشن است و شکل مثنا «بُرْهَـٰنَانِ»."
+    },
+    {
+      "id": "q_u_p389b_A_0911",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016"
+      ],
+      "promptFa": "کدام کلمه به معنای «دو معجزه» است؟",
+      "stem": {
+        "fa": "دو معجزه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بُرْهَـٰنَانِ» خبر برای «فَذَٰنِكَ» است: این دو، دو برهان‌اند."
+    },
+    {
+      "id": "q_u_p389b_A_0912",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «و سران او» است؟",
+      "stem": {
+        "fa": "و سران او"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«مَلَأ» یعنی سران قوم؛ «وَ» عطف بر «فِرْعَوْنَ» و «ـهِ» ضمیر او."
+    },
+    {
+      "id": "q_u_p389b_A_0913",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "معادل عربی «و اشراف و سران او» کدام است؟",
+      "stem": {
+        "fa": "و اشراف و سران او"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَوْمًۭا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «م ل أ»؛ این کلمه معطوف به «فِرْعَوْنَ» است و به گروه سران او اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_0914",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_021"
+      ],
+      "promptFa": "کدام کلمه یعنی «اشراف و سران او»؟",
+      "stem": {
+        "fa": "اشراف و سران او"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِنَّهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«إِنَّهُمْ» به همین سران و فرعون برمی‌گردد، اما معنای «اشراف و سران او» از «وَمَلَإِي۟هِۦٓ» است."
+    },
+    {
+      "id": "q_u_p389b_A_0915",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016",
+        "w:w28_032_021"
+      ],
+      "promptFa": "هر کلمه را به معنای آن وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَدَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r2",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r3",
+          "fa": "ترس"
+        },
+        {
+          "id": "r4",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "r5",
+          "fa": "و سران او"
+        },
+        {
+          "id": "r6",
+          "fa": "دستت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "«بُرْهَـٰنَانِ» مثنای برهان و «مَلَأ» گروه سران است؛ «ترس» گزینه‌ی اضافی است."
+    },
+    {
+      "id": "q_u_p389b_A_0916",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016",
+        "w:w28_032_021"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l3",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیرون آید"
+        },
+        {
+          "id": "r2",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r3",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r4",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r5",
+          "fa": "ببر"
+        },
+        {
+          "id": "r6",
+          "fa": "و سران او"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "«فَـٰسِقِينَ» یعنی نافرمانان؛ «مردمی» معنای «قَوْمًۭا» است و در این جفت‌سازی اضافی است."
+    },
+    {
+      "id": "q_u_p389b_A_0917",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_016",
+        "w:w28_032_021"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَمَلَإِي۟هِۦٓ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و سران او"
+        },
+        {
+          "id": "r2",
+          "fa": "بگذار"
+        },
+        {
+          "id": "r3",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r4",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r5",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r6",
+          "fa": "دو دستت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "در ترجمه‌ی این آیه «جَنَاحَكَ» به «دو دستت» برگردانده شده است؛ «نافرمان» معنای «فَـٰسِقِينَ» و اضافی است."
+    }
+  ],
+  "issues": [
+    "ورودی earlierHardWords نداشت؛ در جفت‌سازی‌ها به‌جای کلمه‌ی مرور از کلمات غیرسخت همین آیه استفاده شد."
+  ]
+}

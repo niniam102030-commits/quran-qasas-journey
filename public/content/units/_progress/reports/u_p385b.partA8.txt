@@ -1,0 +1,8 @@
+[#2 q_u_p385b_A_1202 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p385b_A_1202 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#4 q_u_p385b_A_1204 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p385b_A_1206 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p385b_A_1208 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p385b_A_1210 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p385b_A_1212 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p385b_A_1214 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

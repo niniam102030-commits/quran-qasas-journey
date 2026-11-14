@@ -1,0 +1,5 @@
+خطا در اعتبارسنج پایتون (نادیده گرفته شد): 'id'
+اعتبارسنج Node: ❌ u_p385b.partA9.pending.json has 3 errors:
+   - [Q#2 (q_u_p385b_A_1302)]: Pair right 'r2' not in right items
+   - [Q#2 (q_u_p385b_A_1302)]: Pair right 'r4' not in right items
+   - [Q#2 (q_u_p385b_A_1302)]: Pair right 'r3' not in right items

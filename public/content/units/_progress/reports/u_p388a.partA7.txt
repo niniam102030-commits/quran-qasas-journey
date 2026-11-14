@@ -1,0 +1,6 @@
+[#1 q_u_p388a_A_0849 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p388a_A_0850 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#3 q_u_p388a_A_0851 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p388a_A_0852 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p388a_A_0853 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p388a_A_0854 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

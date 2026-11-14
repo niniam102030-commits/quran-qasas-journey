@@ -1,0 +1,564 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A4",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_0601",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "معنای «تَصْطَلُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_027",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نماز می‌خوانید"
+        },
+        {
+          "id": "o2",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "o4",
+          "fa": "خبر می‌آورید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تصطلون» از «اصطلاء» به معنای گرم شدن با آتش است. شباهت به «صلات» (نماز) فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0602",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "کدام معنا برای «تَصْطَلُونَ» درست است؟",
+      "stem": {
+        "wordId": "w28_029_027",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاره‌ای از آتش می‌آورید"
+        },
+        {
+          "id": "o2",
+          "fa": "نماز می‌گزارید"
+        },
+        {
+          "id": "o3",
+          "fa": "شاید شما"
+        },
+        {
+          "id": "o4",
+          "fa": "گرم شوید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تصطلون» یعنی خود را کنار آتش گرم کنید. معنای نماز از ریشه‌ی «صلات» است و در اینجا مراد نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0603",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "در این آیه، «تَصْطَلُونَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_029_027",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "آتش را می‌بینید"
+        },
+        {
+          "id": "o3",
+          "fa": "نماز می‌خوانید"
+        },
+        {
+          "id": "o4",
+          "fa": "گرم شوید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "در آیه آمده است «تا گرم شوید». «تصطلون» به گرم شدن کنار آتش اشاره دارد، نه نماز."
+    },
+    {
+      "id": "q_u_p389a_A_0604",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "با توجه به سیاق آیه، معنای «تَصْطَلُونَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_029_027",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نماز می‌خوانید"
+        },
+        {
+          "id": "o2",
+          "fa": "رهسپار شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "o4",
+          "fa": "خبر بیاورید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "سیاق آیه آتش و آوردن پاره‌ای از آن است تا گرم شوید. ریشه‌ی «ص ل ي» در این کلمه به گرم شدن با آتش برمی‌گردد."
+    },
+    {
+      "id": "q_u_p389a_A_0605",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «گرم شوید» است؟",
+      "stem": {
+        "fa": "گرم شوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَاتِيكُم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَصْطَلُونَ» یعنی خود را کنار آتش گرم کنید. سه کلمه‌ی دیگر هم در همین آیه آمده‌اند، اما معنای دیگری دارند."
+    },
+    {
+      "id": "q_u_p389a_A_0606",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "معادل عربی «خود را کنار آتش گرم کنید» کدام است؟",
+      "stem": {
+        "fa": "خود را کنار آتش گرم کنید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "تَصْطَلُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَصْطَلُونَ» در پایان آیه آمده است. «لَعَلَّكُمْ» درست قبل از آن می‌آید و به معنای «شاید شما» است."
+    },
+    {
+      "id": "q_u_p389a_A_0607",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «گرم شدن با آتش» است؟",
+      "stem": {
+        "fa": "گرم شدن با آتش (به صورت «گرم شوید»)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "بِخَبَرٍ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَصْطَلُونَ» فعل مضارع با ریشه‌ی «ص ل ي» و به معنای گرم شدن است. «ءَانَسَ» به معنای «دید» است."
+    },
+    {
+      "id": "q_u_p389a_A_0608",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱمْكُثُوٓا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r2",
+          "fa": "مدت"
+        },
+        {
+          "id": "r3",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "دید"
+        },
+        {
+          "id": "r5",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r6",
+          "fa": "نماز می‌خوانید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«تصطلون» یعنی گرم شوید، نه نماز. بقیه‌ی معناها از ترجمه‌ی همین آیه است."
+    },
+    {
+      "id": "q_u_p389a_A_0609",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "کلمات عربی را با معنای درست جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلطُّورِ"
+        },
+        {
+          "id": "l5",
+          "ar": "بِخَبَرٍ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "با خبری"
+        },
+        {
+          "id": "r2",
+          "fa": "و رهسپار شد"
+        },
+        {
+          "id": "r3",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "طور"
+        },
+        {
+          "id": "r5",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r6",
+          "fa": "درنگ کنید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«جَذْوَة» پاره‌ای از آتش است و «تصطلون» گرم شدن در کنار آن. «درنگ کنید» معنای «ٱمْكُثُوا» است."
+    },
+    {
+      "id": "q_u_p389a_A_0610",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_027"
+      ],
+      "promptFa": "هر کلمه را به معنای مناسب آن وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "ءَاتِيكُم"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلنَّارِ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَصْطَلُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r2",
+          "fa": "شاید شما"
+        },
+        {
+          "id": "r3",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r4",
+          "fa": "برای شما بیاورم"
+        },
+        {
+          "id": "r5",
+          "fa": "آتش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«لَعَلَّكُمْ» یعنی «شاید شما» و «تَصْطَلُونَ» فعل بعد از آن است: «تا گرم شوید»."
+    }
+  ],
+  "issues": []
+}

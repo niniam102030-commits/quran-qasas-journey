@@ -1,0 +1,2 @@
+[#1 q_u_p394b_B_2341 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p394b_B_2341 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.

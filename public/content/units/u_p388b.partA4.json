@@ -1,0 +1,681 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "A4",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388b_A_0601",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "معنای «حِجَجٍ» چیست؟",
+      "stem": {
+        "wordId": "w28_027_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حج و زیارت خانه خدا"
+        },
+        {
+          "id": "o2",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "هشت"
+        },
+        {
+          "id": "o4",
+          "fa": "دو دخترم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«حِجَج» جمع «حِجّة» و از ریشه‌ی «ح ج ج» است. اینجا به معنای «سال‌ها» است، نه حج."
+    },
+    {
+      "id": "q_u_p388b_A_0602",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "کدام گزینه معنای «حِجَجٍ» است؟",
+      "stem": {
+        "wordId": "w28_027_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اجیر من باشی"
+        },
+        {
+          "id": "o2",
+          "fa": "ده"
+        },
+        {
+          "id": "o3",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "سفرهای حج"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«حِجَج» از ریشه‌ی «ح ج ج» است و در اینجا یعنی «سال‌ها». دوست فریبنده: معنای حج در فارسی."
+    },
+    {
+      "id": "q_u_p388b_A_0603",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "در آیه‌ی «…عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍ…» معنای «حِجَجٍ» چیست؟",
+      "stem": {
+        "wordId": "w28_027_013",
+        "showVerse": true,
+        "verse": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "شایستگان"
+        },
+        {
+          "id": "o3",
+          "fa": "حج و زیارت خانه خدا"
+        },
+        {
+          "id": "o4",
+          "fa": "این دو"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "سیاق آیه «هشت سال اجیر بودن» است؛ پس «حِجَج» یعنی «سال‌ها». معنای حج در اینجا مراد نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0604",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "در عبارت «ثَمَـٰنِىَ حِجَجٍ» (هشت …)، «حِجَجٍ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_027_013",
+        "showVerse": true,
+        "verse": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "زیارت‌های خانه خدا"
+        },
+        {
+          "id": "o2",
+          "fa": "اجیر"
+        },
+        {
+          "id": "o3",
+          "fa": "تمام کردی"
+        },
+        {
+          "id": "o4",
+          "fa": "سال‌ها"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«حِجَج» جمع «حِجّة» به معنای «سال‌ها» است. ریشه‌ی آن با «حج» یکی است، اما معنای قرآنی‌اش در اینجا فرق دارد."
+    },
+    {
+      "id": "q_u_p388b_A_0605",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "کدام واژه‌ی عربی معادل «سال‌ها» است؟",
+      "stem": {
+        "fa": "سال‌ها"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ثَمَـٰنِىَ",
+          "wordId": "w28_027_012"
+        },
+        {
+          "id": "o2",
+          "ar": "حِجَجٍۢ",
+          "wordId": "w28_027_013"
+        },
+        {
+          "id": "o3",
+          "ar": "عَشْرًۭا",
+          "wordId": "w28_027_016"
+        },
+        {
+          "id": "o4",
+          "ar": "أَتْمَمْتَ",
+          "wordId": "w28_027_015"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«حِجَجٍ» جمع «حِجّة» است و یعنی «سال‌ها». «ثَمَـٰنِىَ» عدد هشت است."
+    },
+    {
+      "id": "q_u_p388b_A_0606",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "واژه‌ی عربی «سال‌ها» (جمع «حِجّة»، نه حج و زیارت) کدام است؟",
+      "stem": {
+        "fa": "سال‌ها (جمع «حِجّة»)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "حِجَجٍۢ",
+          "wordId": "w28_027_013"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى",
+          "wordId": "w28_027_011"
+        },
+        {
+          "id": "o3",
+          "ar": "ثَمَـٰنِىَ",
+          "wordId": "w28_027_012"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱبْنَتَىَّ",
+          "wordId": "w28_027_007"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«حِجَجٍ» از ریشه‌ی «ح ج ج» است و اینجا یعنی «سال‌ها». «تَأْجُرَنِى» یعنی «اجیر من باشی»."
+    },
+    {
+      "id": "q_u_p388b_A_0607",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "در «هشت … » جای خالی (سال‌ها) با کدام واژه‌ی عربی پر می‌شود؟",
+      "stem": {
+        "fa": "سال‌ها"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَشْرًۭا",
+          "wordId": "w28_027_016"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱبْنَتَىَّ",
+          "wordId": "w28_027_007"
+        },
+        {
+          "id": "o3",
+          "ar": "أَشُقَّ",
+          "wordId": "w28_027_022"
+        },
+        {
+          "id": "o4",
+          "ar": "حِجَجٍۢ",
+          "wordId": "w28_027_013"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«حِجَجٍ» یعنی «سال‌ها» و بعد از «ثَمَـٰنِىَ» (هشت) آمده است. «عَشْرًا» یعنی «ده»."
+    },
+    {
+      "id": "q_u_p388b_A_0608",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "هر واژه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "حِجَجٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "ثَمَـٰنِىَ"
+        },
+        {
+          "id": "l3",
+          "ar": "عَشْرًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "l5",
+          "ar": "أَتْمَمْتَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ده"
+        },
+        {
+          "id": "r2",
+          "fa": "تمام کردی"
+        },
+        {
+          "id": "r3",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "r4",
+          "fa": "اجیر من باشی"
+        },
+        {
+          "id": "r5",
+          "fa": "هشت"
+        },
+        {
+          "id": "r6",
+          "fa": "سخت گیرم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«حِجَج» یعنی «سال‌ها» و با «ثَمَـٰنِىَ» (هشت) و «عَشْرًا» (ده) همراه شده است."
+    },
+    {
+      "id": "q_u_p388b_A_0609",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "هر واژه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "حِجَجٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "هَـٰتَيْنِ"
+        },
+        {
+          "id": "l5",
+          "ar": "إِحْدَى"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "یکی از"
+        },
+        {
+          "id": "r2",
+          "fa": "این دو"
+        },
+        {
+          "id": "r3",
+          "fa": "دو دخترم"
+        },
+        {
+          "id": "r4",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "r5",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r6",
+          "fa": "حج و زیارت خانه خدا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«حِجَج» اینجا «سال‌ها» است؛ معنای «حج و زیارت» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388b_A_0610",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "هر واژه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "سَتَجِدُنِىٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلصَّـٰلِحِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "حِجَجٍۢ"
+        },
+        {
+          "id": "l5",
+          "ar": "عِندِكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شایستگان"
+        },
+        {
+          "id": "r2",
+          "fa": "نزد تو"
+        },
+        {
+          "id": "r3",
+          "fa": "مرا خواهی یافت"
+        },
+        {
+          "id": "r4",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "r5",
+          "fa": "سخت گیرم"
+        },
+        {
+          "id": "r6",
+          "fa": "اجیر من باشی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«حِجَج» یعنی «سال‌ها»؛ «أَشُقَّ» یعنی «سخت گیرم»."
+    },
+    {
+      "id": "q_u_p388b_A_0611",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_013"
+      ],
+      "promptFa": "هر واژه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُرِيدُ"
+        },
+        {
+          "id": "l3",
+          "ar": "حِجَجٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "شَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "عَشْرًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "خواست"
+        },
+        {
+          "id": "r2",
+          "fa": "سال‌ها"
+        },
+        {
+          "id": "r3",
+          "fa": "گفت"
+        },
+        {
+          "id": "r4",
+          "fa": "ده"
+        },
+        {
+          "id": "r5",
+          "fa": "می‌خواهم"
+        },
+        {
+          "id": "r6",
+          "fa": "هشت"
+        },
+        {
+          "id": "r7",
+          "fa": "زیارت‌های خانه خدا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word",
+        "r7": "false_friend"
+      },
+      "explanationFa": "«حِجَج» یعنی «سال‌ها»، نه زیارت و حج؛ «عَشْرًا» یعنی «ده»."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمه‌ی مرور از کلمات آیه‌ی ۲۷ جایگزین شد."
+  ]
+}

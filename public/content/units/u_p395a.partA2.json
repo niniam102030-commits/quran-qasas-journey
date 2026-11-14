@@ -1,0 +1,1030 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395a_A_0581",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "معنای کلمه «أُوتِيتُهُۥ» چیست؟",
+      "stem": {
+        "wordId": "w28_078_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آن را به من داده اند"
+        },
+        {
+          "id": "o2",
+          "fa": "به او دادیم"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌دهند"
+        },
+        {
+          "id": "o4",
+          "fa": "داده می‌شود"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "از ریشه «أ ت ي» است و به معنای «آن به من داده شده است» یا «آن را به من داده‌اند» می‌باشد."
+    },
+    {
+      "id": "q_u_p395a_A_0582",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "معنای دقیق «أُوتِيتُهُۥ» کدام است؟",
+      "stem": {
+        "wordId": "w28_078_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "داده شدی"
+        },
+        {
+          "id": "o2",
+          "fa": "آن را آوردند"
+        },
+        {
+          "id": "o3",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "o4",
+          "fa": "آن را طلب کرد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "ضمیر «ـهُ» به مال و ثروت برمی‌گردد و فعل مجهول متکلم است، یعنی «به من داده اند»."
+    },
+    {
+      "id": "q_u_p395a_A_0583",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "در این آیه، «أُوتِيتُهُۥ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_078_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دانستم"
+        },
+        {
+          "id": "o2",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "o3",
+          "fa": "تباه کردم"
+        },
+        {
+          "id": "o4",
+          "fa": "آن را یافتم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "قارون ادعا می‌کند که این ثروت بر اساس دانش خودش به او داده شده است."
+    },
+    {
+      "id": "q_u_p395a_A_0584",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "ترجمه کلمه مشخص شده در آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "o2",
+          "fa": "هلاک کرده است"
+        },
+        {
+          "id": "o3",
+          "fa": "به تو داده شده"
+        },
+        {
+          "id": "o4",
+          "fa": "آن را به من داده اند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "فعل مجهول است؛ یعنی جز این نیست که این ثروت را به من داده اند."
+    },
+    {
+      "id": "q_u_p395a_A_0585",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "معادل عربی «به من داده اند» کدام است؟",
+      "stem": {
+        "fa": "به من داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَهْلَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَشَدُّ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«أُوتِيتُهُۥ» فعل مجهول متکلم وحده به همراه ضمیر مفعولی است."
+    },
+    {
+      "id": "q_u_p395a_A_0586",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "کدام کلمه به معنای «آن را به من داده اند» است؟",
+      "stem": {
+        "fa": "آن را به من داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "قُوَّةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَبْلِهِۦ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه أتي؛ این کلمه یعنی آن ثروت به من اعطا شده است."
+    },
+    {
+      "id": "q_u_p395a_A_0587",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003"
+      ],
+      "promptFa": "در سیاق آیه، معادل «به من داده اند» کدام است؟",
+      "stem": {
+        "fa": "به من داده اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُسْـَٔلُ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "عِلْمٍ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "«أُوتِيتُهُۥ» از إیتاء به معنای دادن و بخشیدن است."
+    },
+    {
+      "id": "q_u_p395a_A_0588",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "معنای «ٱلْقُرُونِ» چیست؟",
+      "stem": {
+        "wordId": "w28_078_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قرن‌ها (زمان)"
+        },
+        {
+          "id": "o2",
+          "fa": "مردمان"
+        },
+        {
+          "id": "o3",
+          "fa": "اقوامی"
+        },
+        {
+          "id": "o4",
+          "fa": "شاخی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "قرون در قرآن غالباً جمع قرن به معنای نسل‌ها و اقوام گذشته است و به معنای زمان صدساله نیست."
+    },
+    {
+      "id": "q_u_p395a_A_0589",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "کلمه «ٱلْقُرُونِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_078_016",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نسل‌ها، اقوام پیشین"
+        },
+        {
+          "id": "o2",
+          "fa": "قرون گذشته"
+        },
+        {
+          "id": "o3",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "o4",
+          "fa": "گناهانشان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این کلمه «دوست فریبنده» است و در زبان فارسی با معنای قرآنی‌اش (اقوام) متفاوت استفاده می‌شود."
+    },
+    {
+      "id": "q_u_p395a_A_0590",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "معنای کلمه «ٱلْقُرُونِ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "o2",
+          "fa": "قرن‌ها (زمان)"
+        },
+        {
+          "id": "o3",
+          "fa": "نیرومندتر"
+        },
+        {
+          "id": "o4",
+          "fa": "اقوامی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "خداوند اقوامی را پیش از او هلاک کرد که نیرومندتر بودند."
+    },
+    {
+      "id": "q_u_p395a_A_0591",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "ترجمه کلمه مشخص شده در آیه چیست؟",
+      "stem": {
+        "wordId": "w28_078_016",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "o2",
+          "fa": "نسل‌ها، اقوام پیشین"
+        },
+        {
+          "id": "o3",
+          "fa": "قرن‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "دانشی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«من القرون» یعنی از نسل‌ها و اقوام پیشین."
+    },
+    {
+      "id": "q_u_p395a_A_0592",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "کدام کلمه به معنای «اقوامی» است؟",
+      "stem": {
+        "fa": "اقوامی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُجْرِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ذُنُوبِهِمُ"
+        },
+        {
+          "id": "o4",
+          "ar": "قُوَّةًۭ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "قرون در این آیه به معنای اقوامی است که در گذشته می‌زیسته‌اند."
+    },
+    {
+      "id": "q_u_p395a_A_0593",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "معادل عربی «نسل‌ها، اقوام پیشین» کدام است؟",
+      "stem": {
+        "fa": "نسل‌ها، اقوام پیشین"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَبْلِهِۦ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "o4",
+          "ar": "عِلْمٍ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این واژه جمع قرن است و به اقوام پیشین اشاره دارد."
+    },
+    {
+      "id": "q_u_p395a_A_0594",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_016"
+      ],
+      "promptFa": "کلمه عربی معادل «اقوامی (نسل‌های گذشته)» چیست؟",
+      "stem": {
+        "fa": "اقوامی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُجْرِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَشَدُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "قُوَّةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقُرُونِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ٱلْقُرُونِ به معنای اقوامی است که خداوند پیش از قارون هلاک کرد."
+    },
+    {
+      "id": "q_u_p395a_A_0595",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003",
+        "w:w28_078_016"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَهْلَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "عِلْمٍ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُجْرِمُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "اقوامی"
+        },
+        {
+          "id": "r3",
+          "fa": "هلاک کرده است"
+        },
+        {
+          "id": "r4",
+          "fa": "دانشی"
+        },
+        {
+          "id": "r5",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "r6",
+          "fa": "قرن‌ها (زمان)"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "قرون به معنای اقوامی است و کلمه أوتیته یعنی آن را به من داده اند."
+    },
+    {
+      "id": "q_u_p395a_A_0596",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003",
+        "w:w28_078_016"
+      ],
+      "promptFa": "معادل فارسی هر کلمه را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَعْلَمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "ذُنُوبِهِمُ"
+        },
+        {
+          "id": "l5",
+          "ar": "قَبْلِهِۦ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نسل‌ها، اقوام پیشین"
+        },
+        {
+          "id": "r2",
+          "fa": "آن را به من داده اند"
+        },
+        {
+          "id": "r3",
+          "fa": "می دانست"
+        },
+        {
+          "id": "r4",
+          "fa": "گناهانشان"
+        },
+        {
+          "id": "r5",
+          "fa": "پیش از او"
+        },
+        {
+          "id": "r6",
+          "fa": "زمان‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت کنید که القرون جمع قرن به معنای نسل‌ها و اقوام گذشته است."
+    },
+    {
+      "id": "q_u_p395a_A_0597",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003",
+        "w:w28_078_016"
+      ],
+      "promptFa": "هر کلمه را به ترجمه دقیقش متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَمْعًۭا ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "عِندِىٓ ۚ"
+        },
+        {
+          "id": "l5",
+          "ar": "قَالَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "اقوامی"
+        },
+        {
+          "id": "r3",
+          "fa": "ثروت اندوزتر"
+        },
+        {
+          "id": "r4",
+          "fa": "نزد من است"
+        },
+        {
+          "id": "r5",
+          "fa": "گفت"
+        },
+        {
+          "id": "r6",
+          "fa": "داده شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "«جمعاً» در اینجا به معنای ثروت‌اندوزتر و «أوتیته» به معنای به من داده‌اند است."
+    },
+    {
+      "id": "q_u_p395a_A_0598",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003",
+        "w:w28_078_016"
+      ],
+      "promptFa": "کلمات را به معانی صحیح خود پیوند دهید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِنَّمَآ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَهْلَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اقوامی"
+        },
+        {
+          "id": "r2",
+          "fa": "آن را به من داده اند"
+        },
+        {
+          "id": "r3",
+          "fa": "گفت"
+        },
+        {
+          "id": "r4",
+          "fa": "جز این نیست که"
+        },
+        {
+          "id": "r5",
+          "fa": "هلاک کرده است"
+        },
+        {
+          "id": "r6",
+          "fa": "قرن‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "توجه به کلمات سخت آیه مانند القرون (اقوامی) و أوتیته (به من داده اند) ضروری است."
+    },
+    {
+      "id": "q_u_p395a_A_0599",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 78,
+      "targets": [
+        "w:w28_078_003",
+        "w:w28_078_016"
+      ],
+      "promptFa": "کلمات دشوار و مهم آیه را به ترجمه‌هایشان متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُوتِيتُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقُرُونِ"
+        },
+        {
+          "id": "l3",
+          "ar": "عِلْمٍ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْمُجْرِمُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ذُنُوبِهِمُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به من داده اند"
+        },
+        {
+          "id": "r2",
+          "fa": "نسل‌ها، اقوام پیشین"
+        },
+        {
+          "id": "r3",
+          "fa": "دانشی"
+        },
+        {
+          "id": "r4",
+          "fa": "مجرمان"
+        },
+        {
+          "id": "r5",
+          "fa": "گناهانشان"
+        },
+        {
+          "id": "r6",
+          "fa": "بخشیده می‌شود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت این آیه: القرون (نسل‌ها) و أوتیته (به من داده اند)."
+    }
+  ]
+}

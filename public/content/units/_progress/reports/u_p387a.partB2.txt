@@ -1,0 +1,9 @@
+[#1 q_u_p387a_B_0149 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p387a_B_0149 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p387a_B_0150 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p387a_B_0151 CLOZE_COMPLETE_REST] بانک b4: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ
+[#4 q_u_p387a_B_0152 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p387a_B_0155 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p387a_B_0155 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ
+[#7 q_u_p387a_B_0155 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ
+[#7 q_u_p387a_B_0155 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ

@@ -1,0 +1,815 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_A_1061",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "معنای «حَقَّ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "حقشان است"
+        },
+        {
+          "id": "o2",
+          "fa": "حتمی و لازم شده"
+        },
+        {
+          "id": "o3",
+          "fa": "حقیقت"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگارا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «حَقَّ» در اینجا به معنای ثابت شدن و قطعی شدن عذاب است."
+    },
+    {
+      "id": "q_u_p393a_A_1062",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "معنای «حَقَّ» در زبان قرآن چیست؟",
+      "stem": {
+        "wordId": "w28_063_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ثابت و محقق شده"
+        },
+        {
+          "id": "o2",
+          "fa": "شایسته است"
+        },
+        {
+          "id": "o3",
+          "fa": "سخن و فرمان (عذاب)"
+        },
+        {
+          "id": "o4",
+          "fa": "باطل شده"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از ریشه «ح ق ق» بوده و به معنای ثابت و محقق شده می‌باشد."
+    },
+    {
+      "id": "q_u_p393a_A_1063",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "معنای «حَقَّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_063_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گمراهشان کردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "حقشان است"
+        },
+        {
+          "id": "o3",
+          "fa": "بیزاری می جوییم"
+        },
+        {
+          "id": "o4",
+          "fa": "حتمی و لازم شده"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "در این سیاق، منظور قطعی شدن عذاب الهی است."
+    },
+    {
+      "id": "q_u_p393a_A_1064",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "کلمه «حَقَّ» در متن آیه به چه معناست؟",
+      "stem": {
+        "wordId": "w28_063_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عذاب"
+        },
+        {
+          "id": "o2",
+          "fa": "سزاوار است"
+        },
+        {
+          "id": "o3",
+          "fa": "ثابت و محقق شده"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگارا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "مقصود آیه این است که عذاب بر آنان قطعی و ثابت گردید."
+    },
+    {
+      "id": "q_u_p393a_A_1065",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "کدام کلمه به معنای «حتمی و لازم شده» است؟",
+      "stem": {
+        "fa": "حتمی و لازم شده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْقَوْلُ"
+        },
+        {
+          "id": "o2",
+          "ar": "غَوَيْنَا ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَغْوَيْنَآ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«حَقَّ» به معنای ثابت و محقق شدن است."
+    },
+    {
+      "id": "q_u_p393a_A_1066",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "معادل عربی «ثابت و محقق شده» چیست؟",
+      "stem": {
+        "fa": "ثابت و محقق شده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَمَا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلَّذِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَوْلُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این واژه در قرآن معمولا برای قطعی شدن عذاب یا وعده به کار می‌رود."
+    },
+    {
+      "id": "q_u_p393a_A_1067",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003"
+      ],
+      "promptFa": "کدام کلمه به معنای «حتمی و لازم شده» می‌باشد؟",
+      "stem": {
+        "fa": "حتمی و لازم شده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَعْبُدُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَـٰٓؤُلَآءِ"
+        },
+        {
+          "id": "o4",
+          "ar": "غَوَيْنَا ۖ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "واژه «حَقَّ» دقیقاً این معنا را می‌رساند."
+    },
+    {
+      "id": "q_u_p393a_A_1068",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "معنای «ٱلْقَوْلُ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قول و قرار"
+        },
+        {
+          "id": "o2",
+          "fa": "گفته"
+        },
+        {
+          "id": "o3",
+          "fa": "بر آنان"
+        },
+        {
+          "id": "o4",
+          "fa": "عذاب"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در این عبارت قرآنی، منظور از «قول» فرمان قطعی عذاب الهی است."
+    },
+    {
+      "id": "q_u_p393a_A_1069",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "کلمه «ٱلْقَوْلُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_063_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سخن و فرمان (عذاب)"
+        },
+        {
+          "id": "o2",
+          "fa": "وعده و وعید"
+        },
+        {
+          "id": "o3",
+          "fa": "حتمی و لازم شده"
+        },
+        {
+          "id": "o4",
+          "fa": "بیزاری"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "فرمان الهی مبنی بر عذاب کفار مراد است."
+    },
+    {
+      "id": "q_u_p393a_A_1070",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "در این آیه معنای «ٱلْقَوْلُ» چیست؟",
+      "stem": {
+        "wordId": "w28_063_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عذاب"
+        },
+        {
+          "id": "o2",
+          "fa": "قول و قرار"
+        },
+        {
+          "id": "o3",
+          "fa": "پروردگارا"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراهشان کردیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«حق علیهم القول» یعنی عذاب بر آنها ثابت و محقق شد."
+    },
+    {
+      "id": "q_u_p393a_A_1071",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 63,
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "کلمه «ٱلْقَوْلُ» در سیاق این آیه چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_063_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کسانی که"
+        },
+        {
+          "id": "o2",
+          "fa": "سخن و فرمان (عذاب)"
+        },
+        {
+          "id": "o3",
+          "fa": "گفته"
+        },
+        {
+          "id": "o4",
+          "fa": "حتمی و لازم شده"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه القول در اینجا مجازاً به فرمان عذاب اشاره دارد."
+    },
+    {
+      "id": "q_u_p393a_A_1072",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "کدام کلمه به معنای «عذاب» در این آیه به کار رفته است؟",
+      "stem": {
+        "fa": "عذاب"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَبَّنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "إِيَّانَا"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقَوْلُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "«ٱلْقَوْلُ» در این تعبیر قرآنی نمایانگر عذاب است."
+    },
+    {
+      "id": "q_u_p393a_A_1073",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "معادل عربی «سخن و فرمان (عذاب)» چیست؟",
+      "stem": {
+        "fa": "سخن و فرمان (عذاب)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كَمَا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقَوْلُ"
+        },
+        {
+          "id": "o3",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْبُدُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "واژه «قول» از ریشه (ق و ل) است که در اینجا معنای فرمان عذاب دارد."
+    },
+    {
+      "id": "q_u_p393a_A_1074",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_005"
+      ],
+      "promptFa": "کدام گزینه معادل «عذاب» است؟",
+      "stem": {
+        "fa": "عذاب"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَبَرَّأْنَآ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلَّذِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقَوْلُ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَيْكَ ۖ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "همان‌طور که گذشت «القول» در ترکیب حق علیهم القول به این معنی است."
+    },
+    {
+      "id": "q_u_p393a_A_1075",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003",
+        "w:w28_063_005"
+      ],
+      "promptFa": "کلمات عربی را به معنای درست آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقَوْلُ"
+        },
+        {
+          "id": "l3",
+          "ar": "رَبَّنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "تَبَرَّأْنَآ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "حتمی و لازم شده"
+        },
+        {
+          "id": "r2",
+          "fa": "عذاب"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگارا"
+        },
+        {
+          "id": "r4",
+          "fa": "بیزاری می جوییم"
+        },
+        {
+          "id": "r5",
+          "fa": "حقشان است"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "دقت کنید که حَقَّ به معنای حتمی شدن و القول به معنای فرمان عذاب است."
+    },
+    {
+      "id": "q_u_p393a_A_1076",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003",
+        "w:w28_063_005"
+      ],
+      "promptFa": "هر واژه را به ترجمه فارسی آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْقَوْلُ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَغْوَيْنَـٰهُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَعْبُدُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سخن و فرمان (عذاب)"
+        },
+        {
+          "id": "r2",
+          "fa": "گمراهشان کردیم"
+        },
+        {
+          "id": "r3",
+          "fa": "ثابت و محقق شده"
+        },
+        {
+          "id": "r4",
+          "fa": "می پرستیدند"
+        },
+        {
+          "id": "r5",
+          "fa": "قول و قرار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "false_friend"
+      },
+      "explanationFa": "معنای قرآنی این کلمات در ترجمه انصاریان با معنای روزمره متفاوت است."
+    },
+    {
+      "id": "q_u_p393a_A_1077",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_063_003",
+        "w:w28_063_005"
+      ],
+      "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "حَقَّ"
+        },
+        {
+          "id": "l2",
+          "ar": "غَوَيْنَا ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "هَـٰٓؤُلَآءِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقَوْلُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "حتمی و لازم شده"
+        },
+        {
+          "id": "r2",
+          "fa": "گمراه شدیم"
+        },
+        {
+          "id": "r3",
+          "fa": "اینانند"
+        },
+        {
+          "id": "r4",
+          "fa": "عذاب"
+        },
+        {
+          "id": "r5",
+          "fa": "گفته"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "same_root"
+      },
+      "explanationFa": "ترجمه دقیق عبارات کلید حفظ صحیح مفاهیم آیات است."
+    }
+  ],
+  "issues": []
+}

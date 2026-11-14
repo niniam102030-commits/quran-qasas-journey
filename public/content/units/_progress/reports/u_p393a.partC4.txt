@@ -1,0 +1,3 @@
+[#16 q_u_p393a_C_0916 MUTASHABIH_SPOT] choice باید حداقل ۴ گزینه داشته باشد.
+[#18 q_u_p393a_C_0918 CLOZE_AR] بانک b4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#19 q_u_p393a_C_0919 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.

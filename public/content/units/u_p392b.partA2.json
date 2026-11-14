@@ -1,0 +1,3362 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392b",
+  "part": "A2",
+  "generatedBy": "Gemini 2.5 Pro",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p392b_A_0261",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "معنای «نُتَخَطَّفْ» چیست؟",
+      "stem": {
+        "wordId": "w28_057_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تخلف می‌کنیم"
+        },
+        {
+          "id": "o2",
+          "fa": "ربوده خواهیم شد!"
+        },
+        {
+          "id": "o3",
+          "fa": "خطا می‌کنیم"
+        },
+        {
+          "id": "o4",
+          "fa": "فرار می‌کنیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0262",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "«نُتَخَطَّفْ» یعنی:",
+      "stem": {
+        "wordId": "w28_057_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ربوده می‌شویم"
+        },
+        {
+          "id": "o2",
+          "fa": "ربوده می‌شوند"
+        },
+        {
+          "id": "o3",
+          "fa": "تخلف می‌کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "اخراج می‌شویم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0263",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "معنای «نُتَخَطَّفْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تخلف می‌کنیم"
+        },
+        {
+          "id": "o2",
+          "fa": "بیرون رانده می‌شویم"
+        },
+        {
+          "id": "o3",
+          "fa": "ربوده خواهیم شد!"
+        },
+        {
+          "id": "o4",
+          "fa": "جدا می‌شویم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0264",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "ترجمه «نُتَخَطَّفْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "با سرعت فرار می‌کنیم"
+        },
+        {
+          "id": "o2",
+          "fa": "به خطا می‌افتیم"
+        },
+        {
+          "id": "o3",
+          "fa": "کشته و نابود می‌شویم"
+        },
+        {
+          "id": "o4",
+          "fa": "با سرعت ربوده و آواره خواهیم شد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "random"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0265",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "کدام کلمه به معنای «ربوده خواهیم شد!» است؟",
+      "stem": {
+        "fa": "ربوده خواهیم شد!"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0266",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "معادل عربی «ربوده می‌شویم» کدام است؟",
+      "stem": {
+        "fa": "ربوده می‌شویم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o2",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَبْعَثَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0267",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_006"
+      ],
+      "promptFa": "کلمه‌ای برای «با سرعت ربوده و آواره شدن»:",
+      "stem": {
+        "fa": "با سرعت ربوده و آواره خواهیم شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَّدُنَّا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تخطف» به معنای ربودن سریع است، مانند پرنده‌ای که طعمه را می‌رباید."
+    },
+    {
+      "id": "q_u_p392b_A_0268",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "معنای «نُمَكِّن» چیست؟",
+      "stem": {
+        "wordId": "w28_057_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ممکن نکردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "o3",
+          "fa": "نابود نکردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "خلق نکردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0269",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "«نُمَكِّن» یعنی:",
+      "stem": {
+        "wordId": "w28_057_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "امکان و قدرت ندادیم و مستقر نکردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "مکان را از آن‌ها نگرفتیم"
+        },
+        {
+          "id": "o3",
+          "fa": "ممکن نکردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "از آن‌ها پنهان نکردیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0270",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "معنای «نُمَكِّن» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "o2",
+          "fa": "ممکن نکردیم"
+        },
+        {
+          "id": "o3",
+          "fa": "سکونت ندادیم"
+        },
+        {
+          "id": "o4",
+          "fa": "رها نکردیم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0271",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "ترجمه «نُمَكِّن» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ویران نکردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "ممکن نساختیم"
+        },
+        {
+          "id": "o3",
+          "fa": "آواره نکردیم"
+        },
+        {
+          "id": "o4",
+          "fa": "مستقر نکردیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0272",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "کدام کلمه به معنای «جای ندادیم» است؟",
+      "stem": {
+        "fa": "جای ندادیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نੁتَخَطَّفْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "نُمَكِّن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0273",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "معادل عربی «امکان و قدرت ندادیم» کدام است؟",
+      "stem": {
+        "fa": "امکان و قدرت ندادیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0274",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_010"
+      ],
+      "promptFa": "کلمه‌ای برای «مستقر نکردیم»:",
+      "stem": {
+        "fa": "مستقر نکردیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o4",
+          "ar": "نُتَخَطَّفْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از تمکین به معنای جای دادن و اقتدار بخشیدن در یک مکان است."
+    },
+    {
+      "id": "q_u_p392b_A_0275",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "معنای «يُجْبَىٰٓ» چیست؟",
+      "stem": {
+        "wordId": "w28_057_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاسخ داده می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "پنهان می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "تقسیم می‌شود"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0276",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "«يُجْبَىٰٓ» یعنی:",
+      "stem": {
+        "wordId": "w28_057_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جواب داده می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "از آنجا صادر می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "در آنجا کاشته می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "به سوی آن جمع‌آوری و آورده می‌شود"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0277",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "معنای «يُجْبَىٰٓ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "پاسخ می‌گیرد"
+        },
+        {
+          "id": "o3",
+          "fa": "پراکنده می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "مصرف می‌شود"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0278",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "ترجمه «يُجْبَىٰٓ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اجابت می‌شود"
+        },
+        {
+          "id": "o2",
+          "fa": "جمع‌آوری می‌شود"
+        },
+        {
+          "id": "o3",
+          "fa": "رویانده می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "خریده می‌شود"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0279",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "کدام کلمه به معنای «گردآوری می‌شود» است؟",
+      "stem": {
+        "fa": "گردآوری می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o3",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "نُتَخَطَّفْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0280",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "معادل عربی «به سوی آن جمع‌آوری می‌شود» کدام است؟",
+      "stem": {
+        "fa": "به سوی آن جمع‌آوری می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0281",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_014"
+      ],
+      "promptFa": "کلمه‌ای برای «آورده می‌شود»:",
+      "stem": {
+        "fa": "آورده می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جباية» به معنی جمع‌آوری کردن چیزی مانند مالیات یا محصول از اطراف است."
+    },
+    {
+      "id": "q_u_p392b_A_0282",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "معنای «لَّدُنَّا» چیست؟",
+      "stem": {
+        "wordId": "w28_057_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دین ما"
+        },
+        {
+          "id": "o2",
+          "fa": "دنیای ما"
+        },
+        {
+          "id": "o3",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "o4",
+          "fa": "نعمت ما"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0283",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "«لَّدُنَّا» یعنی:",
+      "stem": {
+        "wordId": "w28_057_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از نزد ما و از جانب ما"
+        },
+        {
+          "id": "o2",
+          "fa": "از شهر ما"
+        },
+        {
+          "id": "o3",
+          "fa": "از دین ما"
+        },
+        {
+          "id": "o4",
+          "fa": "برای ما"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0284",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "معنای «لَّدُنَّا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "o2",
+          "fa": "شهر ما"
+        },
+        {
+          "id": "o3",
+          "fa": "پیشینه‌ی ما"
+        },
+        {
+          "id": "o4",
+          "fa": "دنیای ما"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0285",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "ترجمه «لَّدُنَّا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_057_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از خانواده ما"
+        },
+        {
+          "id": "o2",
+          "fa": "از جانب ما"
+        },
+        {
+          "id": "o3",
+          "fa": "از دین ما"
+        },
+        {
+          "id": "o4",
+          "fa": "از نعمت‌های ما"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0286",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "کدام کلمه به معنای «سوی ما» است؟",
+      "stem": {
+        "fa": "سوی ما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o4",
+          "ar": "لَّدُنَّا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0287",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "معادل عربی «از جانب ما» کدام است؟",
+      "stem": {
+        "fa": "از جانب ما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0288",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 57,
+      "targets": [
+        "w:w28_057_021"
+      ],
+      "promptFa": "کلمه‌ای برای «از نزد ما»:",
+      "stem": {
+        "fa": "از نزد ما"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o3",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "کلمه «لدن» به معنای نزد و پیش است و در قرآن برای لطف یا علم ویژه الهی به کار می‌رود."
+    },
+    {
+      "id": "q_u_p392b_A_0289",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "معنای «بَطِرَتْ» چیست؟",
+      "stem": {
+        "wordId": "w28_058_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باطل شده بود"
+        },
+        {
+          "id": "o2",
+          "fa": "تباه شده بود"
+        },
+        {
+          "id": "o3",
+          "fa": "آباد شده بود"
+        },
+        {
+          "id": "o4",
+          "fa": "گرفتار سرمستی و طغیان شده بودند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0290",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "«بَطِرَتْ» یعنی:",
+      "stem": {
+        "wordId": "w28_058_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "o2",
+          "fa": "باطل ساختند"
+        },
+        {
+          "id": "o3",
+          "fa": "ناسپاسی کردند"
+        },
+        {
+          "id": "o4",
+          "fa": "پشیمان شدند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0291",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "معنای «بَطِرَتْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_058_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باطل شده بودند"
+        },
+        {
+          "id": "o2",
+          "fa": "گرفتار سرمستی شده بودند"
+        },
+        {
+          "id": "o3",
+          "fa": "گرفتار فقر شده بودند"
+        },
+        {
+          "id": "o4",
+          "fa": "کوچ کرده بودند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0292",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "ترجمه «بَطِرَتْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_058_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طغیان در نعمت شده بودند"
+        },
+        {
+          "id": "o2",
+          "fa": "باطل در عمل شده بودند"
+        },
+        {
+          "id": "o3",
+          "fa": "دچار قحطی شده بودند"
+        },
+        {
+          "id": "o4",
+          "fa": "گرفتار عذاب شده بودند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0293",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "کدام کلمه به معنای «گرفتار سرمستی و طغیان شده بودند» است؟",
+      "stem": {
+        "fa": "گرفتار سرمستی و طغیان شده بودند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o4",
+          "ar": "نُمَكِّن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0294",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "معادل عربی «طغیان کرده بودند» کدام است؟",
+      "stem": {
+        "fa": "طغیان کرده بودند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "بَطِرَتْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0295",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 58,
+      "targets": [
+        "w:w28_058_005"
+      ],
+      "promptFa": "کلمه‌ای برای «سرمستی در نعمت»:",
+      "stem": {
+        "fa": "سرمستی در نعمت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«بطر» یعنی طغیان و سرمستی ناشی از فراوانی نعمت و رفاه بیش از حد."
+    },
+    {
+      "id": "q_u_p392b_A_0296",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "معنای «يَبْعَثَ» چیست؟",
+      "stem": {
+        "wordId": "w28_059_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باعث شود"
+        },
+        {
+          "id": "o2",
+          "fa": "بفرستند"
+        },
+        {
+          "id": "o3",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "o4",
+          "fa": "نابود کند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0297",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "«يَبْعَثَ» یعنی:",
+      "stem": {
+        "wordId": "w28_059_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "باعث نزول عذاب شود"
+        },
+        {
+          "id": "o2",
+          "fa": "زنده کند"
+        },
+        {
+          "id": "o3",
+          "fa": "رها کند"
+        },
+        {
+          "id": "o4",
+          "fa": "مبعوث کند و پیامبری بفرستد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0298",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "معنای «يَبْعَثَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_059_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "o2",
+          "fa": "باعث شود"
+        },
+        {
+          "id": "o3",
+          "fa": "بازگرداند"
+        },
+        {
+          "id": "o4",
+          "fa": "تلاوت کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0299",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "ترجمه «يَبْعَثَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_059_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ایجاد کند"
+        },
+        {
+          "id": "o2",
+          "fa": "مبعوث کند"
+        },
+        {
+          "id": "o3",
+          "fa": "هلاک کند"
+        },
+        {
+          "id": "o4",
+          "fa": "جمع‌آوری کند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0300",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "کدام کلمه به معنای «برانگیزد» است؟",
+      "stem": {
+        "fa": "برانگیزد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o4",
+          "ar": "يَبْعَثَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0301",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "معادل عربی «مبعوث کند» کدام است؟",
+      "stem": {
+        "fa": "مبعوث کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "لَّدُنَّا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0302",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_007"
+      ],
+      "promptFa": "کلمه‌ای برای «پیامبری بفرستد»:",
+      "stem": {
+        "fa": "پیامبری بفرستد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "هم‌خانواده مبعوث و بعثت است، یعنی برانگیختن و فرستادن."
+    },
+    {
+      "id": "q_u_p392b_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "معنای «أُمِّهَا» چیست؟",
+      "stem": {
+        "wordId": "w28_059_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مادرش"
+        },
+        {
+          "id": "o2",
+          "fa": "امت آنها"
+        },
+        {
+          "id": "o3",
+          "fa": "آغاز آن"
+        },
+        {
+          "id": "o4",
+          "fa": "مرکز آنها"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "«أُمِّهَا» یعنی:",
+      "stem": {
+        "wordId": "w28_059_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مرکز و پایتخت و شهر اصلی آنها"
+        },
+        {
+          "id": "o2",
+          "fa": "مادران آنها"
+        },
+        {
+          "id": "o3",
+          "fa": "مردم آن دیار"
+        },
+        {
+          "id": "o4",
+          "fa": "رهبران آنها"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "معنای «أُمِّهَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_059_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مادر آن"
+        },
+        {
+          "id": "o2",
+          "fa": "امت پیامبر"
+        },
+        {
+          "id": "o3",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "o4",
+          "fa": "آبادی‌های اطراف"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "ترجمه «أُمِّهَا» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_059_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شهر اصلی آنها"
+        },
+        {
+          "id": "o2",
+          "fa": "مادرانشان"
+        },
+        {
+          "id": "o3",
+          "fa": "روستاهای آنها"
+        },
+        {
+          "id": "o4",
+          "fa": "بزرگان آنها"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0307",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «مرکز آنها» است؟",
+      "stem": {
+        "fa": "مرکز آنها"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0308",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "معادل عربی «مرکز و پایتخت شهر» کدام است؟",
+      "stem": {
+        "fa": "مرکز و پایتخت شهر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "o4",
+          "ar": "نُمَكِّن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0309",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 59,
+      "targets": [
+        "w:w28_059_009"
+      ],
+      "promptFa": "کلمه‌ای برای «شهر اصلی آنها»:",
+      "stem": {
+        "fa": "شهر اصلی آنها"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«أم القری» یعنی مرکز و مادر شهرها، جایی که سایر مناطق به آن وابسته‌اند."
+    },
+    {
+      "id": "q_u_p392b_A_0310",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_006",
+        "w:w28_057_010",
+        "w:w28_057_014",
+        "w:w28_057_021",
+        "w:w28_058_005"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l3",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l5",
+          "ar": "بَطِرَتْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r7"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r6"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0311",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_010",
+        "w:w28_057_014",
+        "w:w28_057_021",
+        "w:w28_058_005",
+        "w:w28_059_007"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l4",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَبْعَثَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0312",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_014",
+        "w:w28_057_021",
+        "w:w28_058_005",
+        "w:w28_059_007",
+        "w:w28_059_009"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l5",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0313",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_021",
+        "w:w28_058_005",
+        "w:w28_059_007",
+        "w:w28_059_009",
+        "w:w28_057_006"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l5",
+          "ar": "نُتَخَطَّفْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r7"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0314",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_058_005",
+        "w:w28_059_007",
+        "w:w28_059_009",
+        "w:w28_057_006",
+        "w:w28_057_010"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l4",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l5",
+          "ar": "نُمَكِّن"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r7"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0315",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_059_007",
+        "w:w28_059_009",
+        "w:w28_057_006",
+        "w:w28_057_010",
+        "w:w28_057_014"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l4",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l5",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r7"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0316",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_059_009",
+        "w:w28_057_006",
+        "w:w28_057_010",
+        "w:w28_057_014",
+        "w:w28_057_021"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l2",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l4",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَّدُنَّا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r7"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r6"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0317",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_006",
+        "w:w28_057_014",
+        "w:w28_058_005",
+        "w:w28_059_009",
+        "w:w28_057_010"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l4",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l5",
+          "ar": "نُمَكِّن"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r7"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0318",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_010",
+        "w:w28_057_021",
+        "w:w28_059_007",
+        "w:w28_057_006",
+        "w:w28_057_014"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l2",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l3",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l4",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُجْبَىٰٓ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r7"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0319",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_014",
+        "w:w28_058_005",
+        "w:w28_059_009",
+        "w:w28_057_010",
+        "w:w28_057_021"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l2",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l4",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l5",
+          "ar": "لَّدُنَّا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r6"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0320",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_057_021",
+        "w:w28_059_007",
+        "w:w28_057_006",
+        "w:w28_057_014",
+        "w:w28_058_005"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l2",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l3",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l5",
+          "ar": "بَطِرَتْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r7"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0321",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_058_005",
+        "w:w28_059_009",
+        "w:w28_057_010",
+        "w:w28_057_021",
+        "w:w28_059_007"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l3",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l4",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l5",
+          "ar": "يَبْعَثَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r6"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_059_007",
+        "w:w28_057_006",
+        "w:w28_057_014",
+        "w:w28_058_005",
+        "w:w28_059_009"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نُتَخَطَّفْ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُجْبَىٰٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "بَطِرَتْ"
+        },
+        {
+          "id": "l5",
+          "ar": "أُمِّهَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r7"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    },
+    {
+      "id": "q_u_p392b_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_059_009",
+        "w:w28_057_010",
+        "w:w28_057_021",
+        "w:w28_059_007",
+        "w:w28_057_006"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُمِّهَا"
+        },
+        {
+          "id": "l2",
+          "ar": "نُمَكِّن"
+        },
+        {
+          "id": "l3",
+          "ar": "لَّدُنَّا"
+        },
+        {
+          "id": "l4",
+          "ar": "يَبْعَثَ"
+        },
+        {
+          "id": "l5",
+          "ar": "نُتَخَطَّفْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برانگیزد"
+        },
+        {
+          "id": "r2",
+          "fa": "گردآوری می‌شود"
+        },
+        {
+          "id": "r3",
+          "fa": "طغیان کرده بودند"
+        },
+        {
+          "id": "r4",
+          "fa": "مرکز آنها"
+        },
+        {
+          "id": "r5",
+          "fa": "جای ندادیم"
+        },
+        {
+          "id": "r6",
+          "fa": "سوی ما"
+        },
+        {
+          "id": "r7",
+          "fa": "ربوده می‌شویم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r7"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت آیات ۵۷ تا ۵۹."
+    }
+  ]
+}

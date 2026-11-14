@@ -1,0 +1,3 @@
+[#2 q_u_p396a_A_2944 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#3 q_u_p396a_A_2945 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p396a_A_2947 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.

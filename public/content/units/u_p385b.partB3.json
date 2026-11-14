@@ -1,0 +1,370 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "B3",
+  "generatedBy": "gemini-2.5-pro",
+  "questions": [
+    {
+      "id": "q_u_p385b_B_0356",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2",
+        "vn:2"
+      ],
+      "promptFa": "آیه‌ی ۲ سوره‌ی قصص را با چیدن قطعه‌ها بسازید:",
+      "stem": {
+        "verse": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ ءَايَـٰتُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَتْلُوا۟ عَلَيْكَ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "بِٱلْحَقِّ لِقَوْمٍۢ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2",
+        "b1"
+      ],
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲ از دو بخش «تِلْكَ ءَايَـٰتُ» (این آیات) و «ٱلْكِتَـٰبِ ٱلْمُبِينِ» (کتاب روشنگر است) تشکیل شده است."
+    },
+    {
+      "id": "q_u_p385b_B_0357",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2",
+        "vn:2"
+      ],
+      "promptFa": "کلمات آیه‌ی ۲ سوره‌ی قصص را به ترتیب درست بچینید:",
+      "stem": {
+        "verse": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ءَايَـٰتُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هَـٰذَا",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "حَقٌّۭ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2",
+        "b4",
+        "b3",
+        "b1"
+      ],
+      "distractorTags": {
+        "b5": "near_miss",
+        "b6": "near_miss",
+        "b7": "random"
+      },
+      "explanationFa": "ترتیب دقیق کلمات آیه‌ی ۲ «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» است و با اسم اشاره‌ی «تِلْكَ» آغاز می‌شود، نه «هَـٰذَا»."
+    },
+    {
+      "id": "q_u_p385b_B_0358",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2"
+      ],
+      "promptFa": "با توجه به دو کلمه‌ی اول، ادامه‌ی آیه‌ی ۲ را کامل کنید:",
+      "stem": {
+        "verse": 2,
+        "givenCount": 2,
+        "hiddenIdx": [
+          3,
+          4
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْأَرْضِ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b2",
+        "4": "b1"
+      },
+      "distractorTags": {
+        "b3": "near_miss",
+        "b4": "random"
+      },
+      "explanationFa": "پس از «تِلْكَ ءَايَـٰتُ»، عبارت «ٱلْكِتَـٰبِ ٱلْمُبِينِ» به معنای «کتاب روشنگر» قرار می‌گیرد."
+    },
+    {
+      "id": "q_u_p385b_B_0359",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2"
+      ],
+      "promptFa": "کلمه‌ی اول آیه‌ی ۲ داده شده است؛ باقی کلمات آیه را به ترتیب در جای خالی قرار دهید:",
+      "stem": {
+        "verse": 2,
+        "givenCount": 1,
+        "hiddenIdx": [
+          2,
+          3,
+          4
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَايَـٰتُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "نَّبَإِ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "وَعْدَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b2",
+        "3": "b1",
+        "4": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "near_miss",
+        "b6": "random"
+      },
+      "explanationFa": "پس از «تِلْكَ»، سه کلمه‌ی «ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» آیه‌ی دوم را کامل می‌کنند."
+    },
+    {
+      "id": "q_u_p385b_B_0360",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2"
+      ],
+      "promptFa": "دو کلمه‌ی پایانی آیه‌ی ۲ («تِلْكَ ءَايَـٰتُ ...») کدام است؟",
+      "stem": {
+        "verse": 2,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_003_008",
+            "w28_003_009"
+          ],
+          "ar": "لِقَوْمٍۢ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 2,
+            "from": 3,
+            "to": 4
+          },
+          "ar": "ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_002_003"
+          ],
+          "ar": "ٱلْكِتَـٰبِ ٱلْمُرْسَلِينَ"
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_003_007",
+            "w28_002_004"
+          ],
+          "ar": "بِٱلْحَقِّ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی دوم با عبارت «ٱلْكِتَـٰبِ ٱلْمُبِينِ» (کتاب روشنگر) پایان می‌یابد و «لِقَوْمٍۢ يُؤْمِنُونَ» پایان آیه‌ی سوم است."
+    },
+    {
+      "id": "q_u_p385b_B_0361",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2"
+      ],
+      "promptFa": "کدام گزینه متن دقیق و بی‌کم‌وکاست آیه‌ی ۲ سوره‌ی قصص است؟",
+      "stem": {
+        "verseNum": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هَـٰذَا ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْمُبِينِ ٱلْكِتَـٰبِ"
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 2,
+            "from": 1,
+            "to": 4
+          },
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ بِٱلْحَقِّ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "متن صحیح «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» است؛ صفت «ٱلْمُبِينِ» پس از موصوف خود یعنی «ٱلْكِتَـٰبِ» می‌آید."
+    }
+  ],
+  "issues": []
+}

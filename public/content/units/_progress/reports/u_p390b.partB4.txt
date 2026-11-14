@@ -1,0 +1,3 @@
+[#3 q_u_p390b_B_0603 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p390b_B_0605 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p390b_B_0606 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.

@@ -1,0 +1,4 @@
+[#1 q_u_p396a_A_2183 VERSE_TO_TRANSLATION] target نامعتبر 'vt:v28_087'.
+[#2 q_u_p396a_A_2184 VERSE_TO_TRANSLATION] target نامعتبر 'vt:v28_087'.
+[#3 q_u_p396a_A_2185 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#3 q_u_p396a_A_2185 VERSE_TO_TRANSLATION] target نامعتبر 'vt:v28_087'.

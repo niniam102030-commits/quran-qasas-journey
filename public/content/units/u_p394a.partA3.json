@@ -1,0 +1,373 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_0944",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011"
+      ],
+      "promptFa": "معنای کلمه «فَضْلِهِۦ» چیست؟",
+      "stem": {
+        "wordId": "w28_073_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رزق و روزی"
+        },
+        {
+          "id": "o2",
+          "fa": "برتری علمی"
+        },
+        {
+          "id": "o3",
+          "fa": "رحمت واسعه"
+        },
+        {
+          "id": "o4",
+          "fa": "پاداش نیک"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«فَضْلِهِۦ» در این سیاق (ابتغاء من فضل الله) کنایه از تلاش برای کسب رزق و روزی حلال در روز است، نه برتری و مقام."
+    },
+    {
+      "id": "q_u_p394a_A_0945",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011"
+      ],
+      "promptFa": "معنای «فَضْلِهِۦ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_073_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فضیلت اخلاقی"
+        },
+        {
+          "id": "o2",
+          "fa": "رزق و روزی"
+        },
+        {
+          "id": "o3",
+          "fa": "آرامش شب"
+        },
+        {
+          "id": "o4",
+          "fa": "سپاس‌گزاری"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "تعبیر قرآنی «إبتغاء من فضل الله» به معنای جستجوی رزق و روزی است."
+    },
+    {
+      "id": "q_u_p394a_A_0946",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011"
+      ],
+      "promptFa": "کدام ترجمه برای «فَضْلِهِۦ» دقیق‌تر است؟",
+      "stem": {
+        "wordId": "w28_073_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برتری و مقام او"
+        },
+        {
+          "id": "o2",
+          "fa": "رحمت و شفقت او"
+        },
+        {
+          "id": "o3",
+          "fa": "نور و روشنی او"
+        },
+        {
+          "id": "o4",
+          "fa": "فضل و بخشش او (روزی)"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "در آیه 73 سوره قصص، فضل خدا در روز، اشاره به کسب روزی و معاش دارد."
+    },
+    {
+      "id": "q_u_p394a_A_0947",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011"
+      ],
+      "promptFa": "کدام کلمه به معنای «رزق و روزی (فضل او)» است؟",
+      "stem": {
+        "fa": "رزق و روزی (فضل او)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَّحْمَتِهِۦ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَضْلِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَشْكُرُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «فَضْلِهِۦ» در عبارت «وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ» به معنای رزق و روزی است."
+    },
+    {
+      "id": "q_u_p394a_A_0948",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011"
+      ],
+      "promptFa": "کدام کلمه در این آیه کنایه از «روزی» است؟",
+      "stem": {
+        "fa": "بخشش او (روزی)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَضْلِهِۦ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَّحْمَتِهِۦ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَكُمُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فِيهِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«فَضْلِهِۦ» در کنار ابتغاء (جستجو)، اشاره به فضل الهی به شکل روزی مادی دارد."
+    },
+    {
+      "id": "q_u_p394a_A_0949",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011",
+        "w:w28_073_002",
+        "w:w28_073_007",
+        "w:w28_073_013"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَضْلِهِۦ"
+        },
+        {
+          "id": "l2",
+          "ar": "رَّحْمَتِهِۦ"
+        },
+        {
+          "id": "l3",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "تَشْكُرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "رزق و روزی (فضل او)"
+        },
+        {
+          "id": "r2",
+          "fa": "رحمت او"
+        },
+        {
+          "id": "r3",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "r4",
+          "fa": "سپاس‌گزاری کنید"
+        },
+        {
+          "id": "r5",
+          "fa": "تا تلاش کنید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "توجه کنید که فَضلِه در اینجا کنایه از رزق و روزی در روز است."
+    },
+    {
+      "id": "q_u_p394a_A_0950",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_011",
+        "w:w28_073_006",
+        "w:w28_073_005",
+        "w:w28_073_009"
+      ],
+      "promptFa": "کلمات عربی را به ترجمه فارسی وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَضْلِهِۦ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلنَّهَارَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l4",
+          "ar": "لِتَبْتَغُوا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فضل و روزی"
+        },
+        {
+          "id": "r2",
+          "fa": "روز"
+        },
+        {
+          "id": "r3",
+          "fa": "شب"
+        },
+        {
+          "id": "r4",
+          "fa": "تا بجویید"
+        },
+        {
+          "id": "r5",
+          "fa": "فضیلت علمی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "ابتغاء از فضل خدا، جستجوی روزی حلال در هنگام روز است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,985 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388a",
+  "part": "A3",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388a_A_0249",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_010"
+      ],
+      "promptFa": "معنای «سَوَآءَ» چیست؟",
+      "stem": {
+        "wordId": "w28_022_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جدا و به جز"
+        },
+        {
+          "id": "o2",
+          "fa": "راست و میانه"
+        },
+        {
+          "id": "o3",
+          "fa": "روی آورد"
+        },
+        {
+          "id": "o4",
+          "fa": "راه"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«سَوَآء» از ریشه‌ی «س و ي» به معنای میانه و راست است. «سِوای» فارسی به معنای «جدا و به جز» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0250",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_010"
+      ],
+      "promptFa": "معنای «سَوَآءَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_022_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "امید است"
+        },
+        {
+          "id": "o2",
+          "fa": "جدا و به جز"
+        },
+        {
+          "id": "o3",
+          "fa": "راست"
+        },
+        {
+          "id": "o4",
+          "fa": "مرا راهنمایی کند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «سَوَآءَ ٱلسَّبِيلِ» یعنی «راه راست». معنای «جدا و به جز» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0251",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_010"
+      ],
+      "promptFa": "در عبارت «سَوَآءَ ٱلسَّبِيلِ»، کلمه‌ی «سَوَآءَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_022_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به سوی"
+        },
+        {
+          "id": "o2",
+          "fa": "راه"
+        },
+        {
+          "id": "o3",
+          "fa": "غیر و به جز"
+        },
+        {
+          "id": "o4",
+          "fa": "راست و معتدل"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«سَوَآء» یعنی حد وسط و مستقیم، و «ٱلسَّبِيلِ» یعنی راه. «غیر و به جز» معنای فارسی «سِوای» است، نه معنای قرآنی."
+    },
+    {
+      "id": "q_u_p388a_A_0252",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_010"
+      ],
+      "promptFa": "کدام کلمه به معنای «میانه، راست و معتدل» است؟",
+      "stem": {
+        "fa": "میانه، راست و معتدل"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تِلْقَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلسَّبِيلِ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَسَىٰ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«سَوَآءَ» به معنای میانه و راست است. «ٱلسَّبِيلِ» به معنای «راه» است."
+    },
+    {
+      "id": "q_u_p388a_A_0253",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 22,
+      "targets": [
+        "w:w28_022_010"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی معنای «راست، میانه» (وصف راه درست) را دارد؟",
+      "stem": {
+        "fa": "راست، میانه (وصف راه درست)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "شَيْخٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَبِيرٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلسَّبِيلِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«سَوَآء» وصف راه در «سَوَآءَ ٱلسَّبِيلِ» است. «ٱلسَّبِيلِ» خود «راه» است، نه «راست»."
+    },
+    {
+      "id": "q_u_p388a_A_0254",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_002"
+      ],
+      "promptFa": "معنای «وَرَدَ» چیست؟",
+      "stem": {
+        "wordId": "w28_023_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "یافت"
+        },
+        {
+          "id": "o2",
+          "fa": "گل سرخ"
+        },
+        {
+          "id": "o3",
+          "fa": "رسید و بر سر آبگاه وارد شد"
+        },
+        {
+          "id": "o4",
+          "fa": "آب داد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَرَدَ» از ریشه‌ی «و ر د» یعنی به آبگاه رسید. «وَرد» به معنای گل و «وِرد» به معنای ذکر در فارسی دوست فریبنده‌اند."
+    },
+    {
+      "id": "q_u_p388a_A_0255",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_002"
+      ],
+      "promptFa": "معنای «وَرَدَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_023_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ذکر و ورد زبان"
+        },
+        {
+          "id": "o2",
+          "fa": "دید"
+        },
+        {
+          "id": "o3",
+          "fa": "بازمی‌دارند"
+        },
+        {
+          "id": "o4",
+          "fa": "رسید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«وَرَدَ مَآءَ مَدْيَنَ» یعنی «به آب مدین رسید». «ورد» فارسی دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0256",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_002"
+      ],
+      "promptFa": "در عبارت «وَرَدَ مَآءَ مَدْيَنَ»، فعل «وَرَدَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_023_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رسید"
+        },
+        {
+          "id": "o2",
+          "fa": "یافت"
+        },
+        {
+          "id": "o3",
+          "fa": "گل سرخ"
+        },
+        {
+          "id": "o4",
+          "fa": "برگرداندند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«وُرود» رسیدن به آبشخور است و مقابل «صُدور» (برگشتن از آبگاه) قرار دارد. «برگرداندند» معنای فعل «يُصْدِرَ» است."
+    },
+    {
+      "id": "q_u_p388a_A_0257",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «رسید (به آبگاه)» است؟",
+      "stem": {
+        "fa": "رسید (به آبگاه)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَجَدَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَوَجَّهَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«وَرَدَ» یعنی به سر آبشخور رسید. «وَجَدَ» یعنی «یافت»."
+    },
+    {
+      "id": "q_u_p388a_A_0258",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «بر سر آب وارد شد» است؟",
+      "stem": {
+        "fa": "بر سر آب وارد شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَسْقُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَوَجَدَ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَسْقِى"
+        },
+        {
+          "id": "o4",
+          "ar": "وَرَدَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«وَرَدَ» از ریشه‌ی «و ر د» است. «يَسْقُونَ» و «نَسْقِى» از آب‌دادن‌اند، نه رسیدن."
+    },
+    {
+      "id": "q_u_p388a_A_0259",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_007"
+      ],
+      "promptFa": "معنای «أُمَّةً» چیست؟",
+      "stem": {
+        "wordId": "w28_023_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "امت پیروان یک پیامبر"
+        },
+        {
+          "id": "o2",
+          "fa": "مردم"
+        },
+        {
+          "id": "o3",
+          "fa": "گروهی"
+        },
+        {
+          "id": "o4",
+          "fa": "شبانان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أُمَّة» از ریشه‌ی «ا م م» است و در اینجا یعنی گروه و جمعیت. «امت» فارسی به معنای پیروان یک پیامبر دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388a_A_0260",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_007"
+      ],
+      "promptFa": "معنای «أُمَّةً» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_023_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گروهی"
+        },
+        {
+          "id": "o2",
+          "fa": "ملت یک کشور"
+        },
+        {
+          "id": "o3",
+          "fa": "دو زن"
+        },
+        {
+          "id": "o4",
+          "fa": "پیر"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أُمَّةً مِّنَ ٱلنَّاسِ» یعنی «گروهی از مردم». این‌جا مقصود امت مذهبی یا ملت نیست."
+    },
+    {
+      "id": "q_u_p388a_A_0261",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_007"
+      ],
+      "promptFa": "در عبارت «أُمَّةًۭ مِّنَ ٱلنَّاسِ»، کلمه‌ی «أُمَّةًۭ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_023_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مردم"
+        },
+        {
+          "id": "o2",
+          "fa": "گروهی و جمعیتی انبوه"
+        },
+        {
+          "id": "o3",
+          "fa": "پیروان یک دین"
+        },
+        {
+          "id": "o4",
+          "fa": "شبانان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أُمَّةً» همان «گروهی» است و «ٱلنَّاسِ» به معنای «مردم» است. معنای «پیروان یک دین» برای این آیه نادرست است."
+    },
+    {
+      "id": "q_u_p388a_A_0262",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_007"
+      ],
+      "promptFa": "کدام کلمه به معنای «گروهی، جمعیت» است؟",
+      "stem": {
+        "fa": "گروهی، جمعیت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلنَّاسِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلرِّعَآءُ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱمْرَأَتَيْنِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أُمَّةًۭ» یعنی گروه. «ٱلنَّاسِ» یعنی مردم و «ٱلرِّعَآءُ» یعنی شبانان."
+    },
+    {
+      "id": "q_u_p388a_A_0263",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 23,
+      "targets": [
+        "w:w28_023_007"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «جمعیتی انبوه» است؟",
+      "stem": {
+        "fa": "جمعیتی انبوه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "شَيْخٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُمَّةًۭ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "random"
+      },
+      "explanationFa": "«أُمَّةًۭ» از ریشه‌ی «ا م م» است و یعنی گروه و جمعیت. «شَيْخٌۭ» یک فرد پیر است."
+    },
+    {
+      "id": "q_u_p388a_A_0264",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_022_010",
+        "w:w28_023_002",
+        "w:w28_023_007"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَوَجَّهَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلسَّبِيلِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "راه"
+        },
+        {
+          "id": "r2",
+          "fa": "گروهی"
+        },
+        {
+          "id": "r3",
+          "fa": "راست"
+        },
+        {
+          "id": "r4",
+          "fa": "روی آورد"
+        },
+        {
+          "id": "r5",
+          "fa": "رسید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«سَوَآءَ ٱلسَّبِيلِ» یعنی «راه راست». «وَرَدَ» یعنی رسید و «أُمَّةً» یعنی گروهی."
+    },
+    {
+      "id": "q_u_p388a_A_0265",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_022_010",
+        "w:w28_023_002",
+        "w:w28_023_007"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن. یک گزینه‌ی اضافی هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "l2",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلرِّعَآءُ"
+        },
+        {
+          "id": "l5",
+          "ar": "شَيْخٌۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پیر"
+        },
+        {
+          "id": "r2",
+          "fa": "رسید"
+        },
+        {
+          "id": "r3",
+          "fa": "شبانان"
+        },
+        {
+          "id": "r4",
+          "fa": "راست"
+        },
+        {
+          "id": "r5",
+          "fa": "گروهی"
+        },
+        {
+          "id": "r6",
+          "fa": "گل سرخ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«وَرَدَ» به معنای رسید است، نه «گل سرخ». «ٱلرِّعَآءُ» یعنی شبانان و «شَيْخٌۭ» یعنی پیر."
+    },
+    {
+      "id": "q_u_p388a_A_0266",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_022_010",
+        "w:w28_023_002",
+        "w:w28_023_007"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن. یک گزینه‌ی اضافی هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "l2",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَجَدَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱمْرَأَتَيْنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو زن"
+        },
+        {
+          "id": "r2",
+          "fa": "گروهی"
+        },
+        {
+          "id": "r3",
+          "fa": "یافت"
+        },
+        {
+          "id": "r4",
+          "fa": "راست"
+        },
+        {
+          "id": "r5",
+          "fa": "رسید"
+        },
+        {
+          "id": "r6",
+          "fa": "جدا و به جز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«وَرَدَ» (رسید) را با «وَجَدَ» (یافت) اشتباه نگیر. «جدا و به جز» معنای «سِوای» فارسی است."
+    },
+    {
+      "id": "q_u_p388a_A_0267",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_022_010",
+        "w:w28_023_002",
+        "w:w28_023_007"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَهْدِيَنِى"
+        },
+        {
+          "id": "l2",
+          "ar": "أُمَّةًۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَرَدَ"
+        },
+        {
+          "id": "l4",
+          "ar": "سَوَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَسْقُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "آب می‌دادند"
+        },
+        {
+          "id": "r2",
+          "fa": "رسید"
+        },
+        {
+          "id": "r3",
+          "fa": "مرا راهنمایی کند"
+        },
+        {
+          "id": "r4",
+          "fa": "گروهی"
+        },
+        {
+          "id": "r5",
+          "fa": "راست"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«يَهْدِيَنِى» یعنی «مرا راهنمایی کند» و «يَسْقُونَ» یعنی «آب می‌دادند». «سَوَآءَ» یعنی راست."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,11 @@
+[#1 q_u_p388a_C11_0957 BUILD_PREV_VERSE] شناسه باید q_u_p388a_C_<عدد چهاررقمی بین 957 و 1056> باشد.
+[#1 q_u_p388a_C11_0957 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_023'.
+[#1 q_u_p388a_C11_0957 BUILD_PREV_VERSE] target نامعتبر 'vr:v28_023'.
+[#1 q_u_p388a_C11_0957 BUILD_PREV_VERSE] order ناقص است.
+[#2 q_u_p388a_C11_0958 BUILD_PREV_VERSE] شناسه باید q_u_p388a_C_<عدد چهاررقمی بین 957 و 1056> باشد.
+[#2 q_u_p388a_C11_0958 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_023'.
+[#2 q_u_p388a_C11_0958 BUILD_PREV_VERSE] target نامعتبر 'vr:v28_023'.
+[#2 q_u_p388a_C11_0958 BUILD_PREV_VERSE] order ناقص است.
+اعتبارسنج Node: ❌ u_p388a.partC11.pending.json has 2 errors:
+   - [Q#1 (q_u_p388a_C11_0957)]: Order question missing bank or answer array
+   - [Q#2 (q_u_p388a_C11_0958)]: Order question missing bank or answer array

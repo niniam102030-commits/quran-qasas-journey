@@ -1,0 +1,219 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C8",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_0680",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 5,
+      "targets": [
+        "vn:5"
+      ],
+      "promptFa": "این آیه، چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 4
+        },
+        {
+          "id": "o2",
+          "num": 5
+        },
+        {
+          "id": "o3",
+          "num": 6
+        },
+        {
+          "id": "o4",
+          "num": 3
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟...» پنجمین آیه از سوره قصص است که پس از بیان سرکشی فرعون در آیه ۴ می‌آید."
+    },
+    {
+      "id": "q_u_p385b_C_0681",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 5,
+      "targets": [
+        "vn:5"
+      ],
+      "promptFa": "شماره آیه شریفه زیر در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 2
+        },
+        {
+          "id": "o2",
+          "num": 4
+        },
+        {
+          "id": "o3",
+          "num": 7
+        },
+        {
+          "id": "o4",
+          "num": 5
+        },
+        {
+          "id": "o5",
+          "num": 6
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه که به اراده الهی برای منت نهادن بر مستضعفان و پیشوا و وارث قرار دادن آنان اشاره دارد، آیه ۵ سوره قصص است."
+    },
+    {
+      "id": "q_u_p385b_C_0682",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 5,
+      "targets": [
+        "vn:5",
+        "vr:5"
+      ],
+      "promptFa": "آیه ۵ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 5,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_004_001",
+            "w28_004_002",
+            "w28_004_003",
+            "w28_004_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_006_001",
+            "w28_006_002",
+            "w28_006_003",
+            "w28_006_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵ سوره قصص با عبارت «وَنُرِيدُ أَن نَّمُنَّ عَلَى» آغاز می‌گردد، در حالی که «وَنُمَكِّنَ لَهُمْ فِى ٱلْأَرْضِ» ابتدای آیه ۶ است."
+    },
+    {
+      "id": "q_u_p385b_C_0683",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 5,
+      "targets": [
+        "vn:5",
+        "vr:5"
+      ],
+      "promptFa": "کدام گزینه، ابتدای آیه پنجم سوره قصص را به‌درستی نشان می‌دهد؟",
+      "stem": {
+        "num": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_006_001",
+            "w28_006_002",
+            "w28_006_003",
+            "w28_006_004",
+            "w28_006_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_005_009",
+            "w28_005_010",
+            "w28_005_011",
+            "w28_005_012"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 5,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_006_005",
+            "w28_006_006",
+            "w28_006_007",
+            "w28_006_008"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵ با «وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟» شروع می‌شود؛ عبارت «وَنَجْعَلَهُمْ أَئِمَّةًۭ...» پایان‌بندی همین آیه و «وَنُرِىَ فِرْعَوْنَ...» بخشی از آیه ۶ است."
+    }
+  ],
+  "issues": []
+}

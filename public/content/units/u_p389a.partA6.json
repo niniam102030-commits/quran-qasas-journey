@@ -1,0 +1,1342 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A6",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_0801",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "معنای «ٱلْبُقْعَةِ» چیست؟",
+      "stem": {
+        "wordId": "w28_030_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درخت"
+        },
+        {
+          "id": "o2",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "o3",
+          "fa": "کرانه"
+        },
+        {
+          "id": "o4",
+          "fa": "وادی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بقعة» از ریشه‌ی ب ق ع یعنی جایگاه و قطعه‌ای از زمین."
+    },
+    {
+      "id": "q_u_p389a_A_0802",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "کدام گزینه معنای «ٱلْبُقْعَةِ» است؟",
+      "stem": {
+        "wordId": "w28_030_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بنای آرامگاه"
+        },
+        {
+          "id": "o2",
+          "fa": "رودی پرآب"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعه‌ای معیّن از زمین"
+        },
+        {
+          "id": "o4",
+          "fa": "سمت راست"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بقعة» یعنی قطعه‌ای معیّن از زمین. دوست فریبنده: «بقعه» در فارسی بیشتر به آرامگاه می‌گویند، اما در قرآن یعنی جایگاه."
+    },
+    {
+      "id": "q_u_p389a_A_0803",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "معنای «ٱلْبُقْعَةِ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_030_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مبارک"
+        },
+        {
+          "id": "o2",
+          "fa": "درخت"
+        },
+        {
+          "id": "o3",
+          "fa": "آرامگاه"
+        },
+        {
+          "id": "o4",
+          "fa": "جایگاه"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "در عبارت «فِى ٱلْبُقْعَةِ ٱلْمُبَـٰرَكَةِ» یعنی «در آن جایگاه مبارک». «مبارک» وصف آن است، نه معنای «بقعة»."
+    },
+    {
+      "id": "q_u_p389a_A_0804",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "در این آیه «ٱلْبُقْعَةِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_030_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ندا و فراخوانی"
+        },
+        {
+          "id": "o2",
+          "fa": "جایگاه و قطعه‌ی زمین"
+        },
+        {
+          "id": "o3",
+          "fa": "بیابان خشک"
+        },
+        {
+          "id": "o4",
+          "fa": "پرتگاه و دره"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«بقعة» از ریشه‌ی ب ق ع یعنی جایگاه و قطعه‌ی زمین. «ندا» مربوط به «نُودِىَ» در همان آیه است."
+    },
+    {
+      "id": "q_u_p389a_A_0805",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "معنای «أَلْقِ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "القا کن"
+        },
+        {
+          "id": "o2",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "o3",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "o4",
+          "fa": "مترس"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَلْقِ» فعل امر از «إلقاء» (ریشه‌ی ل ق ي) است: بیفکن. دوست فریبنده: «القا کن»."
+    },
+    {
+      "id": "q_u_p389a_A_0806",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "کدام گزینه معنای «أَلْقِ» است؟",
+      "stem": {
+        "wordId": "w28_031_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بگیر"
+        },
+        {
+          "id": "o2",
+          "fa": "القا کن"
+        },
+        {
+          "id": "o3",
+          "fa": "برگردان"
+        },
+        {
+          "id": "o4",
+          "fa": "بینداز"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«أَلْقِ» یعنی بینداز. «القا کن» معنای رایج فارسی است و در این آیه درست نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0807",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "معنای «أَلْقِ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_031_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "القا کن"
+        },
+        {
+          "id": "o2",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "o3",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "o4",
+          "fa": "بگریز"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «أَلْقِ عَصَاكَ» یعنی «عصایت را بیفکن». «پیش آی» معنای «أَقْبِلْ» در همین آیه است."
+    },
+    {
+      "id": "q_u_p389a_A_0808",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "در این آیه «أَلْقِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_031_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بردار"
+        },
+        {
+          "id": "o2",
+          "fa": "بنشین"
+        },
+        {
+          "id": "o3",
+          "fa": "بینداز"
+        },
+        {
+          "id": "o4",
+          "fa": "الهام کن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«أَلْقِ» از ریشه‌ی ل ق ي و به معنای انداختن است. «الهام کن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0809",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "معنای «تَهْتَزُّ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پشت کرده می‌گریزد"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌ترسد"
+        },
+        {
+          "id": "o3",
+          "fa": "تند حرکت می‌کند"
+        },
+        {
+          "id": "o4",
+          "fa": "ماری باریک است"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تهتز» از ریشه‌ی ه ز ز است، مثل تکان‌دادن شدید."
+    },
+    {
+      "id": "q_u_p389a_A_0810",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "کدام گزینه معنای «تَهْتَزُّ» است؟",
+      "stem": {
+        "wordId": "w28_031_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آرام و بی‌صدا می‌خزد"
+        },
+        {
+          "id": "o2",
+          "fa": "به پشت سر برمی‌گردد"
+        },
+        {
+          "id": "o3",
+          "fa": "پیش می‌آید"
+        },
+        {
+          "id": "o4",
+          "fa": "با شدت و سرعت می‌جنبد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَهْتَزُّ» یعنی با شدت و سرعت می‌جنبد. این معنا با آرام خزیدن در تضاد است."
+    },
+    {
+      "id": "q_u_p389a_A_0811",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "معنای «تَهْتَزُّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_031_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تند و سریع حرکت می کند"
+        },
+        {
+          "id": "o2",
+          "fa": "پشت کنان می‌گریزد"
+        },
+        {
+          "id": "o3",
+          "fa": "ماری تیزرو است"
+        },
+        {
+          "id": "o4",
+          "fa": "در امان است"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «رَءَاهَا تَهْتَزُّ» یعنی عصا را دید که تند و سریع حرکت می‌کند. «ماری تیزرو» به «جَآنٌّۭ» برمی‌گردد."
+    },
+    {
+      "id": "q_u_p389a_A_0812",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "در این آیه «تَهْتَزُّ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_031_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از ترس می‌لرزد"
+        },
+        {
+          "id": "o2",
+          "fa": "به‌آرامی پیش می‌آید"
+        },
+        {
+          "id": "o3",
+          "fa": "با شدت و سرعت می‌جنبد"
+        },
+        {
+          "id": "o4",
+          "fa": "ناگهان ناپدید می‌شود"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«تهتز» از ریشه‌ی «هزّ» یعنی با شدت جنبیدن. فاعل آن عصاست و ترس موسی معنای این کلمه نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0813",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «جایگاه» است؟",
+      "stem": {
+        "fa": "جایگاه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلشَّجَرَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "شَـٰطِئِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْبُقْعَةِ» از ریشه‌ی ب ق ع یعنی جایگاه."
+    },
+    {
+      "id": "q_u_p389a_A_0814",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «قطعه‌ای معیّن از زمین» است؟",
+      "stem": {
+        "fa": "قطعه‌ای معیّن از زمین"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْأَيْمَنِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْعَـٰلَمِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«ٱلْبُقْعَةِ» یعنی قطعه‌ای معیّن از زمین. «ٱلْمُبَـٰرَكَةِ» وصف آن است."
+    },
+    {
+      "id": "q_u_p389a_A_0815",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_009"
+      ],
+      "promptFa": "برای «جایگاه و قطعه‌ی زمین» کدام کلمه‌ی عربی درست است؟",
+      "stem": {
+        "fa": "جایگاه و قطعه‌ی زمین"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلشَّجَرَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْبُقْعَةِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْوَادِ» یعنی وادی و دره، که با «جایگاه» فرق دارد. «ٱلْبُقْعَةِ» همان جایگاه است."
+    },
+    {
+      "id": "q_u_p389a_A_0816",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «بیفکن» است؟",
+      "stem": {
+        "fa": "بیفکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَّىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَلْقِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أَلْقِ» فعل امر از ریشه‌ی ل ق ي است: بیفکن."
+    },
+    {
+      "id": "q_u_p389a_A_0817",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «بینداز» است؟",
+      "stem": {
+        "fa": "بینداز"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَأَنَّهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مُدْبِرًۭا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَلْقِ» یعنی بینداز. دوست فریبنده: «القا کن»."
+    },
+    {
+      "id": "q_u_p389a_A_0818",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002"
+      ],
+      "promptFa": "«عصایت را بیفکن»؛ فعل عربی «بیفکن» کدام است؟",
+      "stem": {
+        "fa": "بیفکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَتَىٰهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "أَقْبِلْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَلْقِ» فعل امر و به معنای «بیفکن» است. «أَقْبِلْ» هم امر است، اما یعنی «پیش آی»."
+    },
+    {
+      "id": "q_u_p389a_A_0819",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «تند حرکت می‌کند» است؟",
+      "stem": {
+        "fa": "تند حرکت می‌کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "كَأَنَّهَا"
+        },
+        {
+          "id": "o2",
+          "ar": "جَآنٌّۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَهْتَزُّ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَهْتَزُّ» از ریشه‌ی ه ز ز است: تکان شدید خوردن."
+    },
+    {
+      "id": "q_u_p389a_A_0820",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "کدام کلمه به معنای «با شدت و سرعت می‌جنبد» است؟",
+      "stem": {
+        "fa": "با شدت و سرعت می‌جنبد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَلَّىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَهْتَزُّ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَهْتَزُّ» یعنی با شدت و سرعت می‌جنبد. «وَلَّىٰ» یعنی پشت کرد."
+    },
+    {
+      "id": "q_u_p389a_A_0821",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_006"
+      ],
+      "promptFa": "برای «تند و سریع حرکت می کند» کدام کلمه‌ی عربی درست است؟",
+      "stem": {
+        "fa": "تند و سریع حرکت می کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "o4",
+          "ar": "مُدْبِرًۭا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَهْتَزُّ» فعل مضارع است و فاعل آن عصاست. «مُدْبِرًۭا» حال موسی است و یعنی پشت‌کنان."
+    },
+    {
+      "id": "q_u_p389a_A_0822",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_030_009",
+        "w:w28_031_002",
+        "w:w28_031_006"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلشَّجَرَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآنٌّۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ماری باریک و تیزرو"
+        },
+        {
+          "id": "r2",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r3",
+          "fa": "درخت"
+        },
+        {
+          "id": "r4",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "r5",
+          "fa": "تند حرکت می‌کند"
+        },
+        {
+          "id": "r6",
+          "fa": "کرانه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«بقعة» جایگاه، «ألق» بیفکن و «تهتز» تند حرکت‌کردن است."
+    },
+    {
+      "id": "q_u_p389a_A_0823",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_030_009",
+        "w:w28_031_002",
+        "w:w28_031_006"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْوَادِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "وادی"
+        },
+        {
+          "id": "r2",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "r3",
+          "fa": "بینداز"
+        },
+        {
+          "id": "r4",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r5",
+          "fa": "با شدت و سرعت می‌جنبد"
+        },
+        {
+          "id": "r6",
+          "fa": "القا کن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«أَلْقِ» یعنی بینداز و «القا کن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0824",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_030_009",
+        "w:w28_031_002",
+        "w:w28_031_006"
+      ],
+      "promptFa": "کلمه‌ها را با معنایشان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَخَفْ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مترس"
+        },
+        {
+          "id": "r2",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r3",
+          "fa": "تند و سریع حرکت می کند"
+        },
+        {
+          "id": "r4",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "r5",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r6",
+          "fa": "آرامگاه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«بقعة» در فارسی بیشتر به آرامگاه می‌گویند، ولی در این آیه یعنی جایگاه."
+    },
+    {
+      "id": "q_u_p389a_A_0825",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_030_009",
+        "w:w28_031_002"
+      ],
+      "promptFa": "هر کلمه را به معنای آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْـَٔامِنِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلشَّجَرَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "درخت"
+        },
+        {
+          "id": "r2",
+          "fa": "مبارک"
+        },
+        {
+          "id": "r3",
+          "fa": "در امانان"
+        },
+        {
+          "id": "r4",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r5",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "r6",
+          "fa": "پرتگاه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "random"
+      },
+      "explanationFa": "«ٱلْمُبَـٰرَكَةِ» وصف «ٱلْبُقْعَةِ» است، نه معنای آن."
+    },
+    {
+      "id": "q_u_p389a_A_0826",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_002",
+        "w:w28_031_006"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای درستشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَآنٌّۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "أَقْبِلْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r2",
+          "fa": "ماری باریک و تیزرو"
+        },
+        {
+          "id": "r3",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "r4",
+          "fa": "با شدت و سرعت می‌جنبد"
+        },
+        {
+          "id": "r5",
+          "fa": "بینداز"
+        },
+        {
+          "id": "r6",
+          "fa": "الهام کن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«أَلْقِ» یعنی بینداز و «أَقْبِلْ» یعنی پیش آی. «تهتز» تند جنبیدن است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها به‌جای کلمه‌ی مرور از کلمات غیرسخت همین دو آیه استفاده شد."
+  ]
+}

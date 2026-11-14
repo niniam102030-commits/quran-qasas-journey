@@ -1,0 +1,15 @@
+[#1 q_u_p392a_B_0901 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p392a_B_0901 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p392a_B_0902 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p392a_B_0903 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p392a_B_0904 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p392a_B_0905 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p392a_B_0906 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p392a_B_0906 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#9 q_u_p392a_B_0909 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p392a_B_0910 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#12 q_u_p392a_B_0912 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p392a_B_0913 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#15 q_u_p392a_B_0915 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p392a_B_0916 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p392a_B_0917 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

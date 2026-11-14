@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p394a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 71,
+      "targets": [
+        "vr:71"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «بگو: به من خبر دهید، اگر خدا شب را بر شما تا روز قیامت پاینده و جاوید ...»، آیه 71 را مرتب کن:",
+      "stem": {
+        "verse": 71
+      },
+      "bank": [
+        {
+          "id": "b2",
+          "ar": "سَرْمَدًا إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ مَنْ إِلَـٰهٌ غَيْرُ",
+          "wordIdx": [
+            8,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهِ يَأْتِيكُم بِضِيَآءٍ ۖ أَفَلَا تَسْمَعُونَ",
+          "wordIdx": [
+            15,
+            19
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "قُلْ أَرَءَيْتُمْ إِن جَعَلَ ٱللَّهُ عَلَيْكُمُ ٱلَّيْلَ",
+          "wordIdx": [
+            1,
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 71 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p394a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 71,
+      "targets": [
+        "vr:71"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 71 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 71,
+        "hiddenIdx": [
+          10
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَوْمِ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "10": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «يَوْمِ» در آیه 71 است."
+    }
+  ],
+  "issues": []
+}

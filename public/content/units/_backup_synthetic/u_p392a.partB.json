@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p392a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «ما این قرآن را برای آنان پی در پی و به هم پیوسته [به صورت سوره ای پس ا...»، آیه 51 را مرتب کن:",
+      "stem": {
+        "verse": 51
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُمُ ٱلْقَوْلَ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "۞ وَلَقَدْ وَصَّلْنَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 51 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p392a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 51,
+      "targets": [
+        "vr:51"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 51 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 51,
+        "hiddenIdx": [
+          4
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْقَوْلَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «ٱلْقَوْلَ» در آیه 51 است."
+    }
+  ],
+  "issues": []
+}

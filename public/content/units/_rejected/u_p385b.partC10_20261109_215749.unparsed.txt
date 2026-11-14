@@ -1,0 +1,97 @@
+JSON
+{"schema":"qasas.content.v1","unitId":"u_p385b","part":"C10","generatedBy":"Gemini","lexicon":[],"chunks":[],"questions":[{"id":"q_u_p385b_C_0880","type":"BUILD_FROM_NUMBER","shape":"order","stage":7,"difficulty":5,"skill":"recall","verse":1,"targets":["vr:1"],"promptFa":"آیه‌ی ۱ سوره قصص را از حفظ بچینید.","bank":[{"id":"b1","ar":"طسٓمٓ","wordIdx":[1]}],"answer":["b1"],"distractorTags":{},"explanationFa":"آیه‌ی ۱ سوره قصص با حروف مقطعه «طسّم» آغاز می‌شود."},{"id":"q_u_p385b_C_0881","type":"NUMBER_TO_VERSE_START","shape":"choice","stage":7,"difficulty":5,"skill":"number","verse":1,"targets":["vn:1"],"promptFa":"آیه‌ی شماره ۱ سوره قصص با کدام کلمه آغاز می‌شود؟","options":[{"id":"o1","wordRange":{"verse":1,"from":1,"to":1}},{"id":"o2","words":["w28_002_001"]},{"id":"o3","words":["w28_003_001"]},{"id":"o4","words":["w28_004_001"]}],"answer":"o1","distractorTags":{"o2":"neighbor_verse","o3":"neighbor_verse","o4":"neighbor_verse"},"explanationFa":"آیه‌ی ۱ با حروف مقطعه طسم شروع می‌شود."},{"id":"q_u_p385b_C_0882","type":"BUILD_FROM_NUMBER","shape":"order","stage":7,"difficulty":5,"skill":"recall","verse":2,"targets":["vr:2"],"promptFa":"آیه‌ی ۲ سوره قصص را از حفظ بچینید.","bank":[{"id":"b1","ar":"تِلْكَ","wordIdx":[1]},{"id":"b2","ar":"ءَايَـٰتُ","wordIdx":[2]},{"id":"b3","ar":"ٱلْكِتَـٰبِ","wordIdx":[3]},{"id":"b4","ar":"ٱلْمُبِينِ","wordIdx":[4]}],"answer":["b1","b2","b3","b4"],"distractorTags":{},"explanationFa":"آیه‌ی ۲ سوره قصص توصیف کتاب الهی است."},{"id":"q_u_p385b_C_0883","type":"NUMBER_TO_VERSE_START","shape":"choice","stage":7,"difficulty":5,"skill":"number","verse":2,"targets":["vn:2"],"promptFa":"آیه‌ی شماره ۲ سوره قصص با چه عبارتی آغاز می‌شود؟","options":[{"id":"o1","words":["w28_001_001"]},{"id":"o2```json
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C10",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_0880",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 1,
+      "targets": ["vr:1"],
+      "promptFa": "آیه‌ی ۱ سوره قصص (طسم) را با چیدن کلمات آن از بانک بسازید.",
+      "bank": [
+        {"id": "b1", "ar": "طسٓمٓ", "wordIdx": [1]}
+      ],
+      "answer": ["b1"],
+      "explanationFa": "آیه‌ی اول سوره قصص از حروف مقطعه «طسّم» تشکیل شده است."
+    },
+    {
+      "id": "q_u_p385b_C_0881",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 1,
+      "targets": ["vn:1"],
+      "promptFa": "آغاز کدام آیه با «طسٓمٓ» است؟",
+      "options": [
+        {"id": "o1", "wordRange": {"verse": 1, "from": 1, "to": 1}},
+        {"id": "o2", "words": ["w28_002_001"]},
+        {"id": "o3", "words": ["w28_003_001"]},
+        {"id": "o4", "words": ["w28_004_001"]}
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "سوره قصص با حروف مقطعه «طسّم» در آیه‌ی ۱ آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p385b_C_0882",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 2,
+      "targets": ["vr:2"],
+      "promptFa": "آیه‌ی ۲ سوره قصص را از روی شماره‌ی آن با چیدن کلمات مرتب کنید.",
+      "bank": [
+        {"id": "b1", "ar": "تِلْكَ", "wordIdx": [1]},
+        {"id": "b2", "ar": "ءَايَـٰتُ", "wordIdx": [2]},
+        {"id": "b3", "ar": "ٱلْكِتَـٰبِ", "wordIdx": [3]},
+        {"id": "b4", "ar": "ٱلْمُبِينِ", "wordIdx": [4]},
+        {"id": "b5", "ar": "عَلَيْكَ", "decoy": true},
+        {"id": "b6", "ar": "نَّبَإِ", "decoy": true}
+      ],
+      "answer": ["b1", "b2", "b3", "b4"],
+      "explanationFa": "آیه‌ی ۲ سوره قصص عبارت «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» است."
+    },
+    {
+      "id": "q_u_p385b_C_0883",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 2,
+      "targets": ["vn:2"],
+      "promptFa": "ابتدای آیه‌ی ۲ سوره قصص کدام است؟",
+      "options": [
+        {"id": "o1", "words": ["w28_001_001"]},
+        {"id": "o2", "wordRange": {"verse": 2, "from": 1, "to": 3}},
+        {"id": "o3", "words": ["w28_003_001"]},
+        {"id": "o4", "words": ["w28_004_001"]}
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲ با «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ» آغاز می‌شود."
+    }
+  ],
+  "issues": []
+}
+#پایان

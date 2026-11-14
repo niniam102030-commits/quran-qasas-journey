@@ -1,0 +1,6 @@
+[#1 q_u_p396a_B_1101 CLOZE_COMPLETE_REST] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: مَعَادٍۢ ۚ
+[#1 q_u_p396a_B_1101 CLOZE_COMPLETE_REST] بانک b6: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#2 q_u_p396a_B_1102 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p396a_B_1103 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p396a_B_1104 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p396a_B_1105 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

@@ -1,0 +1,782 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "B2",
+  "generatedBy": "gemini-2.5-pro",
+  "questions": [
+    {
+      "id": "q_u_p385b_B_0256",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 1,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vt:1"
+      ],
+      "promptFa": "بر اساس ترجمهٔ «طسم»، متن آیهٔ اول سورهٔ قصص را از بانک بچینید.",
+      "stem": {
+        "verse": 1,
+        "fa": "طسم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        }
+      ],
+      "answer": [
+        "b2"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse"
+      },
+      "explanationFa": "آیهٔ اول سورهٔ قصص تنها از حروف مقطعهٔ «طسٓمٓ» تشکیل شده و «تِلْكَ» آغاز آیهٔ دوم است."
+    },
+    {
+      "id": "q_u_p385b_B_0257",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vt:1"
+      ],
+      "promptFa": "متن عربی مطابق با ترجمهٔ «طسم» را انتخاب و مرتب کنید.",
+      "stem": {
+        "verse": 1,
+        "fa": "طسم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَايَـٰتُ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        }
+      ],
+      "answer": [
+        "b3"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b2": "neighbor_verse"
+      },
+      "explanationFa": "معادل قرآنی ترجمهٔ «طسم» در آیهٔ ۱ کلمهٔ «طسٓمٓ» است و دو واژهٔ دیگر متعلق به آیهٔ ۲ هستند."
+    },
+    {
+      "id": "q_u_p385b_B_0258",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vt:1"
+      ],
+      "promptFa": "با توجه به ترجمهٔ «طسم»، آیهٔ ۱ را از میان گزینه‌های بانک بسازید.",
+      "stem": {
+        "verse": 1,
+        "fa": "طسم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هَـٰذَا",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّا",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2"
+      ],
+      "distractorTags": {
+        "b1": "near_miss",
+        "b3": "neighbor_word",
+        "b4": "near_miss"
+      },
+      "explanationFa": "آیهٔ نخست سورهٔ قصص فقط کلمهٔ «طسٓمٓ» است و کلمات دیگر در این آیه وجود ندارند."
+    },
+    {
+      "id": "q_u_p385b_B_0259",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vn:1"
+      ],
+      "promptFa": "متن آیهٔ ۱ سورهٔ قصص را از بانک کلمات بچینید.",
+      "stem": {
+        "verse": 1
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْمُبِينِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        }
+      ],
+      "answer": [
+        "b3"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b2": "neighbor_verse"
+      },
+      "explanationFa": "آیهٔ ۱ سورهٔ قصص عبارت است از «طسٓمٓ»؛ واژه‌های «تِلْكَ» و «ٱلْمُبِينِ» مربوط به آیهٔ ۲ هستند."
+    },
+    {
+      "id": "q_u_p385b_B_0260",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vn:1"
+      ],
+      "promptFa": "آیهٔ شمارهٔ ۱ سورهٔ قصص را با انتخاب کلمهٔ درست بازسازی کنید.",
+      "stem": {
+        "verse": 1
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَأَوْحَيْنَآ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَمَّا",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "وَفِرْعَوْنَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2"
+      ],
+      "distractorTags": {
+        "b1": "similar_verse",
+        "b3": "similar_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "نخستین آیهٔ سورهٔ قصص حروف مقطعهٔ «طسٓمٓ» است."
+    },
+    {
+      "id": "q_u_p385b_B_0261",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 1,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "جای خالی آیهٔ ۱ سورهٔ قصص را با توجه به ترجمه پر کنید.",
+      "stem": {
+        "verse": 1,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "هَـٰذَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_verse",
+        "b3": "random"
+      },
+      "explanationFa": "آیهٔ اول سورهٔ قصص تنها از کلمهٔ «طسٓمٓ» تشکیل شده است."
+    },
+    {
+      "id": "q_u_p385b_B_0262",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "جای خالی آیهٔ ۱ را با انتخاب واژهٔ صحیح کامل کنید.",
+      "stem": {
+        "verse": 1,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَايَـٰتُ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَيْكَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b3"
+      },
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b2": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "واژهٔ «طسٓمٓ» تنها کلمهٔ آیهٔ ۱ است و نباید با واژه‌های آیهٔ ۲ اشتباه شود."
+    },
+    {
+      "id": "q_u_p385b_B_0263",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "کلمهٔ پنهان‌شدهٔ آیهٔ ۱ سورهٔ قصص را از بانک برگزینید.",
+      "stem": {
+        "verse": 1,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَإِذَا",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "فَوَجَدَ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "فَقَالَتْ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَرَدَدْنَـٰهُ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b4"
+      },
+      "distractorTags": {
+        "b1": "random",
+        "b2": "random",
+        "b3": "random",
+        "b5": "random"
+      },
+      "explanationFa": "آیهٔ ۱ سورهٔ قصص با حروف مقطعهٔ «طسٓمٓ» آغاز و به پایان می‌رسد."
+    },
+    {
+      "id": "q_u_p385b_B_0264",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "با توجه به ترجمه، متن کامل آیهٔ ۱ سورهٔ قصص را در جای خالی قرار دهید.",
+      "stem": {
+        "verse": 1,
+        "givenCount": 0,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمُبِينِ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُرْسَلِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b3": "near_miss"
+      },
+      "explanationFa": "کل آیهٔ ۱ سورهٔ قصص همان کلمهٔ «طسٓمٓ» است."
+    },
+    {
+      "id": "q_u_p385b_B_0265",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "ادامه و متن کامل آیهٔ ۱ سورهٔ قصص را از بانک انتخاب کنید.",
+      "stem": {
+        "verse": 1,
+        "givenCount": 0,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "نَّبَإِ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "حَقٌّۭ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَعْدَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b3"
+      },
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b2": "random",
+        "b4": "random"
+      },
+      "explanationFa": "آیهٔ ۱ سورهٔ قصص یک‌کلمه‌ای است و با «طسٓمٓ» کامل می‌شود."
+    },
+    {
+      "id": "q_u_p385b_B_0266",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "بدون مشاهدهٔ ترجمه، متن آیهٔ ۱ سورهٔ قصص را تکمیل کنید.",
+      "stem": {
+        "verse": 1,
+        "givenCount": 0,
+        "hiddenIdx": [
+          1
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَالُ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "أَهْلِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "أُمِّ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَن",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b4"
+      },
+      "distractorTags": {
+        "b1": "near_miss",
+        "b2": "random",
+        "b3": "random",
+        "b5": "near_miss"
+      },
+      "explanationFa": "تنها واژهٔ آیهٔ اول سورهٔ قصص «طسٓمٓ» است."
+    },
+    {
+      "id": "q_u_p385b_B_0267",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "کدام گزینه پایان و متن دقیق آیهٔ ۱ سورهٔ قصص است؟",
+      "stem": {
+        "verse": 1,
+        "hideLastWords": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "طسٓمٓ",
+          "wordRange": {
+            "verse": 1,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمُبِينِ",
+          "words": [
+            "w28_002_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكِتَـٰبِ",
+          "words": [
+            "w28_002_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ",
+          "words": [
+            "w28_002_001"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیهٔ ۱ فقط از «طسٓمٓ» تشکیل شده و گزینه‌های دیگر واژه‌های آیهٔ ۲ هستند."
+    },
+    {
+      "id": "q_u_p385b_B_0268",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "واژهٔ پایانی (و تنها کلمهٔ) آیهٔ ۱ سورهٔ قصص کدام است؟",
+      "stem": {
+        "verse": 1,
+        "hideLastWords": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْوَٰرِثِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "طسٓمٓ",
+          "wordRange": {
+            "verse": 1,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُؤْمِنِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیهٔ ۱ سورهٔ قصص حروف مقطعهٔ «طسٓمٓ» است و یک‌آیه‌ای مستقل به شمار می‌رود."
+    },
+    {
+      "id": "q_u_p385b_B_0269",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "کدام گزینه متن دقیق و بی‌کم‌وکاست آیهٔ ۱ سورهٔ قصص را نشان می‌دهد؟",
+      "stem": {
+        "verseNum": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "طسٓمٓ تِلْكَ",
+          "words": [
+            "w28_001_001",
+            "w28_002_001"
+          ]
+        },
+        {
+          "id": "o2",
+          "ar": "طسٓمٓ",
+          "wordRange": {
+            "verse": 1,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o3",
+          "ar": "تِلْكَ ءَايَـٰتُ",
+          "words": [
+            "w28_002_001",
+            "w28_002_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "ar": "طسٓمٓ ءَايَـٰتُ ٱلْكِتَـٰبِ",
+          "words": [
+            "w28_001_001",
+            "w28_002_002",
+            "w28_002_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در مصحف مدینه «طسٓمٓ» به تنهایی آیهٔ ۱ است و «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» آیهٔ ۲ است."
+    },
+    {
+      "id": "q_u_p385b_B_0270",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1"
+      ],
+      "promptFa": "نسخهٔ کاملاً صحیح آیهٔ ۱ سورهٔ قصص را از میان گزینه‌ها تشخیص دهید.",
+      "stem": {
+        "verseNum": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "طسٓمٓ ٱلْكِتَـٰبِ",
+          "words": [
+            "w28_001_001",
+            "w28_002_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْكَ طسٓمٓ",
+          "words": [
+            "w28_002_001",
+            "w28_001_001"
+          ]
+        },
+        {
+          "id": "o3",
+          "ar": "طسٓمٓ ٱلْمُبِينِ",
+          "words": [
+            "w28_001_001",
+            "w28_002_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "ar": "طسٓمٓ",
+          "wordRange": {
+            "verse": 1,
+            "from": 1,
+            "to": 1
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیهٔ ۱ سورهٔ قصص بدون هیچ واژهٔ اضافه‌ای فقط «طسٓمٓ» است."
+    }
+  ],
+  "issues": [
+    "آیه ۱ (طسٓمٓ) تک‌کلمه‌ای است؛ بنابراین در سوالات CLOZE_AR و CLOZE_COMPLETE_REST تنها اندیس موجود [1] پنهان شده و تفاوت سوالات با تغییر انحرافی‌ها و نمایش ترجمه ایجاد شده است.",
+    "به دلیل تک‌کلمه‌ای بودن آیه ۱، در سطح ۱ سوال BUILD_FROM_TRANSLATION نیز یک گزینه انحرافی افزوده شد تا پاسخ از بانک تک‌گزینه‌ای لو نرود."
+  ]
+}

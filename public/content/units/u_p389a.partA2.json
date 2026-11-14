@@ -1,0 +1,1443 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A2",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_0201",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "معنای «قَضَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قضاوت کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "o3",
+          "fa": "گفت"
+        },
+        {
+          "id": "o4",
+          "fa": "درنگ کرد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«قضى» از ریشه‌ی «ق ض ي» است و در اینجا یعنی مدتی را تمام کرد. به معنای داوری کردن نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0202",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "کدام گزینه معنای «قَضَىٰ» است؟",
+      "stem": {
+        "wordId": "w28_029_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رهسپار شد"
+        },
+        {
+          "id": "o2",
+          "fa": "داوری کرد و حکم داد"
+        },
+        {
+          "id": "o3",
+          "fa": "آتشی دید"
+        },
+        {
+          "id": "o4",
+          "fa": "به پایان رساند، انجام داد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«قضى» یعنی به پایان رساند و انجام داد. دوست فریبنده‌ی آن «قضاوت» است."
+    },
+    {
+      "id": "q_u_p389a_A_0203",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "در آیه‌ی «فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ…» معنای «قَضَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قضاوت کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "دید"
+        },
+        {
+          "id": "o3",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "o4",
+          "fa": "رهسپار شد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "موسی «آن مدت» را به پایان برد؛ «قضى» اینجا یعنی تمام کرد، نه حکم و داوری."
+    },
+    {
+      "id": "q_u_p389a_A_0204",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "در این آیه «قَضَىٰ» با فاعل «مُوسَى» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_029_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گفت"
+        },
+        {
+          "id": "o2",
+          "fa": "درنگ کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "حکم کرد و داوری نمود"
+        },
+        {
+          "id": "o4",
+          "fa": "به پایان رساند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«قضى» با مفعولی مانند «الأجل» یعنی تمام کردن مدت. معنای داوری در اینجا درست نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0205",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "معنای «ٱلْأَجَلَ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مرگ"
+        },
+        {
+          "id": "o2",
+          "fa": "خانواده"
+        },
+        {
+          "id": "o3",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "o4",
+          "fa": "جانب"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الأجل» از ریشه‌ی «أ ج ل» و به معنای مدت معیّن است. در فارسی «اجل» به مرگ اشاره دارد و دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0206",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "کدام گزینه معنای «ٱلْأَجَلَ» است؟",
+      "stem": {
+        "wordId": "w28_029_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "زمان مرگ و پایان عمر"
+        },
+        {
+          "id": "o2",
+          "fa": "آتشی"
+        },
+        {
+          "id": "o3",
+          "fa": "درنگ"
+        },
+        {
+          "id": "o4",
+          "fa": "مدت و سررسید معیّن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أجل» یعنی مدت و سررسید معیّن. «ال» در ابتدای آن حرف تعریف است."
+    },
+    {
+      "id": "q_u_p389a_A_0207",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "در آیه‌ی «فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ…» معنای «ٱلْأَجَلَ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مرگ"
+        },
+        {
+          "id": "o2",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "o3",
+          "fa": "خبر"
+        },
+        {
+          "id": "o4",
+          "fa": "طور"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "موسی «آن مدت» را به پایان برد. «الأجل» اینجا مدت قراردادی است، نه زمان مرگ."
+    },
+    {
+      "id": "q_u_p389a_A_0208",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "«ٱلْأَجَلَ» که مفعولِ «قَضَىٰ» است، در این آیه چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_029_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پایان عمر موسی"
+        },
+        {
+          "id": "o2",
+          "fa": "مدت و سررسید معیّن"
+        },
+        {
+          "id": "o3",
+          "fa": "خانواده‌اش"
+        },
+        {
+          "id": "o4",
+          "fa": "پاره‌ای از آتش"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "معنا در سیاق آیه «مدت معیّن» است. «قضى الأجل» یعنی مدت را تمام کرد."
+    },
+    {
+      "id": "q_u_p389a_A_0209",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "معنای «ءَانَسَ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "انس گرفت"
+        },
+        {
+          "id": "o2",
+          "fa": "گفت"
+        },
+        {
+          "id": "o3",
+          "fa": "می‌آورم"
+        },
+        {
+          "id": "o4",
+          "fa": "دید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«آنس» از ریشه‌ی «أ ن س» است و در اینجا یعنی دید. شباهت آن به «انس گرفتن» فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_0210",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "کدام گزینه معنای «ءَانَسَ» است؟",
+      "stem": {
+        "wordId": "w28_029_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "از دور دید و به آن دل‌گرم شد"
+        },
+        {
+          "id": "o2",
+          "fa": "مأنوس شد و الفت گرفت"
+        },
+        {
+          "id": "o3",
+          "fa": "گرم شدند"
+        },
+        {
+          "id": "o4",
+          "fa": "درنگ کنید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«آنس» یعنی از دور دید و به آن دل‌گرم شد. با «انس» هم‌ریشه است ولی اینجا معنای دیدن دارد."
+    },
+    {
+      "id": "q_u_p389a_A_0211",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "در آیه‌ی «…وَسَارَ بِأَهْلِهِۦٓ ءَانَسَ مِن جَانِبِ ٱلطُّورِ نَارًۭا» معنای «ءَانَسَ» چیست؟",
+      "stem": {
+        "wordId": "w28_029_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "رهسپار شد"
+        },
+        {
+          "id": "o2",
+          "fa": "انس گرفت"
+        },
+        {
+          "id": "o3",
+          "fa": "دید"
+        },
+        {
+          "id": "o4",
+          "fa": "به پایان برد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از جانب طور آتشی «دید». «آنس» با «انس» هم‌ریشه است اما اینجا یعنی دیدن."
+    },
+    {
+      "id": "q_u_p389a_A_0212",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "«ءَانَسَ» با مفعولِ «نَارًۭا» در این آیه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_029_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "با آتش مأنوس شد"
+        },
+        {
+          "id": "o2",
+          "fa": "برای شما می‌آورم"
+        },
+        {
+          "id": "o3",
+          "fa": "گفت"
+        },
+        {
+          "id": "o4",
+          "fa": "از دور دید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در سیاق آیه، «آنس نارًا» یعنی آتشی دید. بر دیدنِ همراه با دل‌گرمی دلالت دارد."
+    },
+    {
+      "id": "q_u_p389a_A_0213",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «به پایان برد» است؟",
+      "stem": {
+        "fa": "به پایان برد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَانَسَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«قضى» یعنی به پایان برد. «قالَ» گفت و «سارَ» رهسپار شد."
+    },
+    {
+      "id": "q_u_p389a_A_0214",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «به پایان رساند، انجام داد» است؟",
+      "stem": {
+        "fa": "به پایان رساند، انجام داد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«قضى» از ریشه‌ی «ق ض ي» است و در اینجا یعنی تمام کرد، نه داوری."
+    },
+    {
+      "id": "q_u_p389a_A_0215",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002"
+      ],
+      "promptFa": "موسی آن مدت را «به پایان برد»؛ کدام فعل عربی را در آیه برای این معنا می‌یابی؟",
+      "stem": {
+        "fa": "به پایان برد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَضَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فعل «قضى» در آغاز آیه آمده است. «آنس» به معنای دید است و «سار» رهسپار شد."
+    },
+    {
+      "id": "q_u_p389a_A_0216",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «آن مدت» است؟",
+      "stem": {
+        "fa": "آن مدت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلطُّورِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَانِبِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلنَّارِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الأجل» یعنی مدت معیّن. دوست فریبنده‌ی آن «اجل» به معنای مرگ است."
+    },
+    {
+      "id": "q_u_p389a_A_0217",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «مدت و سررسید معیّن» است؟",
+      "stem": {
+        "fa": "مدت و سررسید معیّن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَذْوَةٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِخَبَرٍ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَجَلَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «أ ج ل» است و «ال» حرف تعریف. معنای آن در اینجا مدت قراردادی است."
+    },
+    {
+      "id": "q_u_p389a_A_0218",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_004"
+      ],
+      "promptFa": "موسی «آن مدت» را به پایان برد؛ کدام اسم عربی در آیه این معنا را دارد؟",
+      "stem": {
+        "fa": "آن مدت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "نَارًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "لَعَلَّكُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَانِبِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الأجل» مفعولِ «قضى» است و مدت را می‌رساند، نه مرگ را."
+    },
+    {
+      "id": "q_u_p389a_A_0219",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «دید» است؟",
+      "stem": {
+        "fa": "دید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱمْكُثُوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَانَسَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«آنس» یعنی دید. با «انس» هم‌ریشه است ولی معنای «مأنوس شدن» اینجا مراد نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0220",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "کدام فعل عربی به معنای «از دور دید و به آن دل‌گرم شد» است؟",
+      "stem": {
+        "fa": "از دور دید و به آن دل‌گرم شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَاتِيكُم"
+        },
+        {
+          "id": "o4",
+          "ar": "تَصْطَلُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«آنس» صیغه‌ی سوم‌شخص است (او دید)، اما «آنستُ» یعنی «من دیدم». این دو را با هم اشتباه نگیر."
+    },
+    {
+      "id": "q_u_p389a_A_0221",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_007"
+      ],
+      "promptFa": "از جانب طور آتشی «دید»؛ کدام فعل عربی در آیه به این معناست؟",
+      "stem": {
+        "fa": "دید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ءَانَسْتُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "فعل «آنس» با فاعل موسی آمده است. «آنستُ» در گفتار موسی به خانواده‌اش است (من دیدم)."
+    },
+    {
+      "id": "q_u_p389a_A_0222",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "l5",
+          "ar": "قَالَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دید"
+        },
+        {
+          "id": "r2",
+          "fa": "گفت"
+        },
+        {
+          "id": "r3",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r4",
+          "fa": "موسی"
+        },
+        {
+          "id": "r5",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r6",
+          "fa": "قضاوت کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«قضى» به پایان برد و «الأجل» آن مدت است. «آنس» یعنی دید."
+    },
+    {
+      "id": "q_u_p389a_A_0223",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "هر کلمه را به معنای درست آن در آیه وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱمْكُثُوٓا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "درنگ کنید"
+        },
+        {
+          "id": "r2",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r3",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r4",
+          "fa": "و رهسپار شد"
+        },
+        {
+          "id": "r5",
+          "fa": "دید"
+        },
+        {
+          "id": "r6",
+          "fa": "مرگ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«الأجل» مدت است، نه مرگ. «قضى» به پایان برد و «آنس» دید."
+    },
+    {
+      "id": "q_u_p389a_A_0224",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "کلمات را با معنایشان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَارًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَذْوَةٍۢ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاره‌ای"
+        },
+        {
+          "id": "r2",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r3",
+          "fa": "آتشی"
+        },
+        {
+          "id": "r4",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r5",
+          "fa": "دید"
+        },
+        {
+          "id": "r6",
+          "fa": "انس گرفت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«آنس» یعنی دید و «انس گرفت» دوست فریبنده است. «قضى» تمام کرد و «الأجل» مدت است."
+    },
+    {
+      "id": "q_u_p389a_A_0225",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "هر کلمه را به معنای آن در این آیه وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَصْطَلُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l5",
+          "ar": "بِخَبَرٍ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r2",
+          "fa": "گرم شوید"
+        },
+        {
+          "id": "r3",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r4",
+          "fa": "خبری"
+        },
+        {
+          "id": "r5",
+          "fa": "دید"
+        },
+        {
+          "id": "r6",
+          "fa": "داوری کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«داوری کرد» دوست فریبنده‌ی «قضى» است. در این آیه «قضى» یعنی به پایان برد."
+    },
+    {
+      "id": "q_u_p389a_A_0226",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "کلمات سخت و همجوارشان را با معنا جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَانَسْتُ"
+        },
+        {
+          "id": "l5",
+          "ar": "لِأَهْلِهِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دیدم"
+        },
+        {
+          "id": "r2",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r3",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r4",
+          "fa": "به خانواده‌اش"
+        },
+        {
+          "id": "r5",
+          "fa": "دید"
+        },
+        {
+          "id": "r6",
+          "fa": "مرگ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«آنس» (او دید) و «آنستُ» (من دیدم) را از هم جدا کن. «الأجل» مدت است، نه مرگ."
+    },
+    {
+      "id": "q_u_p389a_A_0227",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 29,
+      "targets": [
+        "w:w28_029_002",
+        "w:w28_029_004",
+        "w:w28_029_007"
+      ],
+      "promptFa": "هر کلمه را به معنای درست آن وصل کن؛ به دوستان فریبنده دقت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ءَانَسَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأَجَلَ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَسَارَ"
+        },
+        {
+          "id": "l5",
+          "ar": "قَالَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گفت"
+        },
+        {
+          "id": "r2",
+          "fa": "قضاوت کرد"
+        },
+        {
+          "id": "r3",
+          "fa": "آن مدت"
+        },
+        {
+          "id": "r4",
+          "fa": "دید"
+        },
+        {
+          "id": "r5",
+          "fa": "به پایان برد"
+        },
+        {
+          "id": "r6",
+          "fa": "و رهسپار شد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r6"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«قضى» به پایان برد است، نه قضاوت. «آنس» دید و «الأجل» مدت است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها کلمه‌ی مرور از واحدهای قبلی نیامد و به‌جای آن از کلمات همین آیه استفاده شد.",
+    "در سوال‌های MATCH_WORDS فیلد answer برابر null است چون پاسخ در pairs آمده."
+  ]
+}

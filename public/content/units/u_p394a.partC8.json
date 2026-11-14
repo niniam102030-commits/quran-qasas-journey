@@ -1,0 +1,217 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "C8",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p394a_C8_2021",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 71,
+      "targets": [
+        "sq:70"
+      ],
+      "promptFa": "آیه‌ی قبل از این آیه، با کدام عبارت پایان می‌یابد؟",
+      "stem": {
+        "verse": 71
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 70,
+            "from": 14,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_069_006",
+            "w28_069_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_072_020",
+            "w28_072_021"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_073_012",
+            "w28_073_013"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل (آیه ۷۰) با «وَإِلَيْهِ تُرْجَعُونَ» به پایان می‌رسد."
+    },
+    {
+      "id": "q_u_p394a_C8_2022",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 71,
+      "targets": [
+        "sq:70"
+      ],
+      "promptFa": "آیه‌ی قبل (آیه ۷۰) را بسازید:",
+      "stem": {
+        "verse": 71
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُ ٱلْحَمْدُ فِى ٱلْأُولَىٰ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱلْـَٔاخِرَةِ ۖ وَلَهُ ٱلْحُكْمُ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَإِلَيْهِ تُرْجَعُونَ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَعَلَّكُمْ تَشْكُرُونَ",
+          "wordIdx": [
+            12,
+            13
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی قبل (۷۰) با یگانگی خدا و اختصاص حمد و فرمانروایی به او آغاز و با بازگشت به سوی او ختم می‌شود."
+    },
+    {
+      "id": "q_u_p394a_C8_2023",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 71,
+      "targets": [
+        "sq:70"
+      ],
+      "promptFa": "آیه‌ی قبل (آیه ۷۰) را به ترتیب بسازید:",
+      "stem": {
+        "verse": 71
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَهُوَ ٱللَّهُ لَآ إِلَـٰهَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِلَّا هُوَ ۖ لَهُ ٱلْحَمْدُ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فِى ٱلْأُولَىٰ وَٱلْـَٔاخِرَةِ ۖ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَهُ ٱلْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مَنْ إِلَـٰهٌ غَيْرُ ٱللَّهِ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "این آیه با حمد خدا در دنیا و آخرت، فرمانروایی او و بازگشت به سوی او پایان می‌یابد."
+    }
+  ],
+  "issues": []
+}

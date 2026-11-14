@@ -1,0 +1,35 @@
+[#1 q_u_p387b_A_1149 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: يَسْتَصْرِخُهُۥ
+[#1 q_u_p387b_A_1149 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#1 q_u_p387b_A_1149 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#3 q_u_p387b_A_1151 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p387b_A_1152 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p387b_A_1153 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p387b_A_1153 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: يَسْتَصْرِخُهُۥ ۚ
+[#5 q_u_p387b_A_1153 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#6 q_u_p387b_A_1154 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p387b_A_1155 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p387b_A_1156 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#9 q_u_p387b_A_1157 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#11 q_u_p387b_A_1159 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p387b_A_1160 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p387b_A_1161 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p387b_A_1162 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#15 q_u_p387b_A_1163 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#16 q_u_p387b_A_1164 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#18 q_u_p387b_A_1166 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p387b_A_1167 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p387b_A_1168 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p387b_A_1168 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#21 q_u_p387b_A_1169 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p387b_A_1170 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#23 q_u_p387b_A_1171 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#23 q_u_p387b_A_1171 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#23 q_u_p387b_A_1171 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#23 q_u_p387b_A_1171 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#24 q_u_p387b_A_1172 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#26 q_u_p387b_A_1174 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#27 q_u_p387b_A_1175 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#28 q_u_p387b_A_1176 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#28 q_u_p387b_A_1176 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#29 q_u_p387b_A_1177 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#30 q_u_p387b_A_1178 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

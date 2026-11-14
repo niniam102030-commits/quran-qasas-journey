@@ -1,0 +1,19 @@
+[#1 q_u_p389a_B_0501 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p389a_B_0501 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p389a_B_0502 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p389a_B_0503 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p389a_B_0504 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p389a_B_0505 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p389a_B_0506 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p389a_B_0506 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#9 q_u_p389a_B_0509 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p389a_B_0509 CLOZE_AR] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۞
+[#9 q_u_p389a_B_0509 CLOZE_AR] بانک b18: کلمه(های) عربی خارج از متن سوره/بانک: لَّعَلَّكُمْ
+[#10 q_u_p389a_B_0510 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p389a_B_0510 CLOZE_AR] بانک b25: کلمه(های) عربی خارج از متن سوره/بانک: تَتَّقُونَ
+[#11 q_u_p389a_B_0511 CLOZE_COMPLETE_REST] پاسخ‌ها دقیقاً کلمات hiddenIdx را نمی‌پوشانند.
+[#12 q_u_p389a_B_0512 CLOZE_COMPLETE_REST] پاسخ‌ها دقیقاً کلمات hiddenIdx را نمی‌پوشانند.
+[#13 q_u_p389a_B_0513 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p389a_B_0516 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p389a_B_0517 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p389a_B_0517 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: بِنَبَإِ

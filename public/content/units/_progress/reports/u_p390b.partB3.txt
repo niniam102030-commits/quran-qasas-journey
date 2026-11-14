@@ -1,0 +1,11 @@
+[#1 q_u_p390b_B_0501 CLOZE_AR] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#3 q_u_p390b_B_0503 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p390b_B_0503 CLOZE_AR] بانک b7: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#4 q_u_p390b_B_0504 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p390b_B_0505 CLOZE_COMPLETE_REST] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#6 q_u_p390b_B_0506 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#7 q_u_p390b_B_0507 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p390b_B_0508 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p390b_B_0508 MUTASHABIH_SPOT] گزینه‌های هم‌محتوا (تکراری) وجود دارد.
+[#9 q_u_p390b_B_0509 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#9 q_u_p390b_B_0509 MUTASHABIH_SPOT] گزینه‌های هم‌محتوا (تکراری) وجود دارد.

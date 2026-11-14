@@ -1,0 +1,16 @@
+[#1 q_u_p390a_B_0401 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p390a_B_0401 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p390a_B_0402 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p390a_B_0403 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p390a_B_0404 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p390a_B_0405 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p390a_B_0406 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p390a_B_0407 CLOZE_AR] نسبت پنهان 15% خارج از ۲۵٪ تا ۸۰٪ است.
+[#9 q_u_p390a_B_0409 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p390a_B_0410 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#11 q_u_p390a_B_0411 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#12 q_u_p390a_B_0412 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#13 q_u_p390a_B_0413 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#13 q_u_p390a_B_0413 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#14 q_u_p390a_B_0414 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p390a_B_0417 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

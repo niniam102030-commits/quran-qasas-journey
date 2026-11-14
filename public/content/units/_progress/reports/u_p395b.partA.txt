@@ -1,0 +1,8 @@
+lexicon: کلمه‌ی سخت w28_081_009 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_081_017 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_082_001 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_082_003 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_082_007 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_082_009 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_082_021 باید meaningFa و tipFa داشته باشد.
+lexicon: کلمه‌ی سخت w28_083_008 باید meaningFa و tipFa داشته باشد.

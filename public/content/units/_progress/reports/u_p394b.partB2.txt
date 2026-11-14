@@ -1,0 +1,10 @@
+[#1 q_u_p394b_B_0581 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p394b_B_0581 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 75 را نمی‌پوشاند.
+[#2 q_u_p394b_B_0582 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 75 را نمی‌پوشاند.
+[#3 q_u_p394b_B_0583 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 75 را نمی‌پوشاند.
+[#5 q_u_p394b_B_0585 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 75 را نمی‌پوشاند.
+[#6 q_u_p394b_B_0586 BUILD_FROM_NUMBER] پاسخ کل آیه‌ی 75 را نمی‌پوشاند.
+[#7 q_u_p394b_B_0587 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p394b_B_0588 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p394b_B_0588 ENDING_CHOICE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: عَلَيْهِم
+[#8 q_u_p394b_B_0588 ENDING_CHOICE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: مِّنْهُم

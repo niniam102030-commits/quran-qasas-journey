@@ -1,0 +1,923 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "C4",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_C_0301",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 27
+        },
+        {
+          "id": "o2",
+          "num": 28
+        },
+        {
+          "id": "o3",
+          "num": 29
+        },
+        {
+          "id": "o4",
+          "num": 30
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ…» آیه‌ی ۲۹ است؛ آیه‌ی ۳۰ با «فَلَمَّآ أَتَىٰهَا» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p389a_C_0302",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 29
+        },
+        {
+          "id": "o2",
+          "num": 28
+        },
+        {
+          "id": "o3",
+          "num": 31
+        },
+        {
+          "id": "o4",
+          "num": 30
+        },
+        {
+          "id": "o5",
+          "num": 32
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با پایان یافتن مدت و دیدن آتش از جانب طور آغاز می‌شود و شماره‌اش ۲۹ است."
+    },
+    {
+      "id": "q_u_p389a_C_0303",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "کدام شماره به این آیه تعلق دارد؟",
+      "stem": {
+        "verse": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 31
+        },
+        {
+          "id": "o2",
+          "num": 30
+        },
+        {
+          "id": "o3",
+          "num": 28
+        },
+        {
+          "id": "o4",
+          "num": 29
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «لَعَلَّكُمْ تَصْطَلُونَ» پایان می‌یابد و آیه‌ی ۲۹ است."
+    },
+    {
+      "id": "q_u_p389a_C_0304",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 29
+        },
+        {
+          "id": "o2",
+          "num": 30
+        },
+        {
+          "id": "o3",
+          "num": 31
+        },
+        {
+          "id": "o4",
+          "num": 32
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَلَمَّآ أَتَىٰهَا نُودِىَ…» آیه‌ی ۳۰ است."
+    },
+    {
+      "id": "q_u_p389a_C_0305",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 27
+        },
+        {
+          "id": "o2",
+          "num": 28
+        },
+        {
+          "id": "o3",
+          "num": 30
+        },
+        {
+          "id": "o4",
+          "num": 31
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "ندا رسیدن «إِنِّىٓ أَنَا ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ» در آیه‌ی ۳۰ است."
+    },
+    {
+      "id": "q_u_p389a_C_0306",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "کدام شماره به این آیه تعلق دارد؟",
+      "stem": {
+        "verse": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 30
+        },
+        {
+          "id": "o2",
+          "num": 29
+        },
+        {
+          "id": "o3",
+          "num": 31
+        },
+        {
+          "id": "o4",
+          "num": 33
+        },
+        {
+          "id": "o5",
+          "num": 32
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «رَبُّ ٱلْعَـٰلَمِينَ» پایان می‌یابد و آیه‌ی ۳۰ است."
+    },
+    {
+      "id": "q_u_p389a_C_0307",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 28
+        },
+        {
+          "id": "o2",
+          "num": 29
+        },
+        {
+          "id": "o3",
+          "num": 30
+        },
+        {
+          "id": "o4",
+          "num": 31
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَأَنْ أَلْقِ عَصَاكَ…» آیه‌ی ۳۱ است."
+    },
+    {
+      "id": "q_u_p389a_C_0308",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 31
+        },
+        {
+          "id": "o2",
+          "num": 30
+        },
+        {
+          "id": "o3",
+          "num": 32
+        },
+        {
+          "id": "o4",
+          "num": 29
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "فرمان انداختن عصا و «لَا تَخَفْ» در آیه‌ی ۳۱ است."
+    },
+    {
+      "id": "q_u_p389a_C_0309",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "کدام شماره به این آیه تعلق دارد؟",
+      "stem": {
+        "verse": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 29
+        },
+        {
+          "id": "o2",
+          "num": 33
+        },
+        {
+          "id": "o3",
+          "num": 31
+        },
+        {
+          "id": "o4",
+          "num": 32
+        },
+        {
+          "id": "o5",
+          "num": 30
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «إِنَّكَ مِنَ ٱلْـَٔامِنِينَ» پایان می‌یابد و آیه‌ی ۳۱ است."
+    },
+    {
+      "id": "q_u_p389a_C_0310",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "آغاز آیه‌ی ۲۹ کدام است؟",
+      "stem": {
+        "num": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_030_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 29,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۹ با «فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ» شروع می‌شود؛ «فَلَمَّآ أَتَىٰهَا» آغاز آیه‌ی ۳۰ است."
+    },
+    {
+      "id": "q_u_p389a_C_0311",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "کدام عبارت آغاز آیه‌ی ۲۹ است؟",
+      "stem": {
+        "num": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 29,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_030_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_031_004",
+            "w28_031_005",
+            "w28_031_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_029_001",
+            "w28_030_002",
+            "w28_029_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۹ با «فَلَمَّا قَضَىٰ مُوسَى» آغاز می‌شود؛ آیات ۳۰ و ۳۱ هم با «فَلَمَّا» شروع می‌شوند، پس ادامه را به خاطر بسپار."
+    },
+    {
+      "id": "q_u_p389a_C_0312",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 29,
+      "targets": [
+        "vn:29"
+      ],
+      "promptFa": "آغاز پنج‌کلمه‌ای آیه‌ی ۲۹ را مشخص کنید.",
+      "stem": {
+        "num": 29
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_030_003",
+            "w28_030_004",
+            "w28_030_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_004",
+            "w28_031_005",
+            "w28_031_006",
+            "w28_031_007",
+            "w28_031_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_029_001",
+            "w28_029_002",
+            "w28_029_003",
+            "w28_029_004",
+            "w28_030_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 29,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۹ چنین آغاز می‌شود: «فَلَمَّا قَضَىٰ مُوسَى ٱلْأَجَلَ وَسَارَ». در گزینه‌ی نزدیک‌به‌درست، کلمه‌ی پنجم از آیه‌ی ۳۰ آمده است."
+    },
+    {
+      "id": "q_u_p389a_C_0313",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "آغاز آیه‌ی ۳۰ کدام است؟",
+      "stem": {
+        "num": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_029_001",
+            "w28_029_002",
+            "w28_029_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 30,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_031_004",
+            "w28_031_005",
+            "w28_031_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۰ با «فَلَمَّآ أَتَىٰهَا نُودِىَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p389a_C_0314",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "کدام عبارت آغاز آیه‌ی ۳۰ است؟",
+      "stem": {
+        "num": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_029_001",
+            "w28_029_002",
+            "w28_029_003",
+            "w28_029_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_031_004",
+            "w28_031_005",
+            "w28_031_006",
+            "w28_031_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 30,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_031_005",
+            "w28_030_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۳۰ با «فَلَمَّآ أَتَىٰهَا نُودِىَ مِن» آغاز می‌شود و پس از «أَتَىٰهَا» فعل «نُودِىَ» می‌آید."
+    },
+    {
+      "id": "q_u_p389a_C_0315",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 30,
+      "targets": [
+        "vn:30"
+      ],
+      "promptFa": "آغاز پنج‌کلمه‌ای آیه‌ی ۳۰ را مشخص کنید.",
+      "stem": {
+        "num": 30
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_001",
+            "w28_030_002",
+            "w28_030_003",
+            "w28_030_004",
+            "w28_029_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_029_001",
+            "w28_029_002",
+            "w28_029_003",
+            "w28_029_004",
+            "w28_029_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_031_004",
+            "w28_031_005",
+            "w28_031_006",
+            "w28_031_007",
+            "w28_031_008"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 30,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۰ چنین آغاز می‌شود: «فَلَمَّآ أَتَىٰهَا نُودِىَ مِن شَـٰطِئِ». «جَانِبِ» در آیه‌ی ۲۹ است."
+    },
+    {
+      "id": "q_u_p389a_C_0316",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "آغاز آیه‌ی ۳۱ کدام است؟",
+      "stem": {
+        "num": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_013",
+            "w28_030_014",
+            "w28_030_015"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_032_001",
+            "w28_032_002",
+            "w28_032_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_029_001",
+            "w28_029_002",
+            "w28_029_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 31,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳۱ با «وَأَنْ أَلْقِ عَصَاكَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p389a_C_0317",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "کدام عبارت آغاز آیه‌ی ۳۱ است؟",
+      "stem": {
+        "num": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_013",
+            "w28_030_014"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 31,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_032_001",
+            "w28_032_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_031_001",
+            "w28_032_002"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۳۱ با «وَأَنْ أَلْقِ» شروع می‌شود؛ «أَن يَـٰمُوسَىٰٓ» در آیه‌ی ۳۰ آمده است."
+    },
+    {
+      "id": "q_u_p389a_C_0318",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 31,
+      "targets": [
+        "vn:31"
+      ],
+      "promptFa": "آغاز چهارکلمه‌ای آیه‌ی ۳۱ را مشخص کنید.",
+      "stem": {
+        "num": 31
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_030_013",
+            "w28_030_014",
+            "w28_030_015",
+            "w28_030_016"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_032_010",
+            "w28_032_011",
+            "w28_032_012",
+            "w28_032_013"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_031_001",
+            "w28_031_002",
+            "w28_031_003",
+            "w28_030_001"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 31,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۳۱ چنین آغاز می‌شود: «وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا». در گزینه‌ی نزدیک‌به‌درست، «فَلَمَّآ» از آیه‌ی ۳۰ است."
+    }
+  ],
+  "issues": [
+    "ورودی similarity نداشت؛ برچسب similar_verse استفاده نشد."
+  ]
+}

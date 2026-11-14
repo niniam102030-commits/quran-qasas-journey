@@ -1,0 +1,9403 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p395b",
+ "part": "A",
+ "generatedBy": "Gemini-Exp,Gemini,Gemini 1.5 Pro,Gemini 2.5 Pro",
+ "lexicon": [
+  {
+   "wordId": "w28_081_001",
+   "gloss": "پس فرو بردیم",
+   "hard": true,
+   "meaningFa": "پس او را در زمین فرو بردیم",
+   "rootAr": "خ س ف",
+   "trapFa": "گرفتیم",
+   "tipFa": "«خسف» به معنای فرو بردن در زمین است."
+  },
+  {
+   "wordId": "w28_081_002",
+   "gloss": "او را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_003",
+   "gloss": "و خانه‌اش را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_004",
+   "gloss": "در زمین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_005",
+   "gloss": "پس نبود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_006",
+   "gloss": "بود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_007",
+   "gloss": "برای او",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_008",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_009",
+   "gloss": "گروهی",
+   "hard": true,
+   "meaningFa": "گروه و دسته‌ای",
+   "rootAr": "ف ی ا",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_081_010",
+   "gloss": "یاری‌اش دهند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_011",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_012",
+   "gloss": "غیر از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_013",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_014",
+   "gloss": "و نبود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_015",
+   "gloss": "بود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_016",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_081_017",
+   "gloss": "دفاع کنندگان",
+   "hard": true,
+   "meaningFa": "یاری‌شوندگان، کسانی که از خود دفاع می‌کنند",
+   "rootAr": "ن ص ر",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_001",
+   "gloss": "و بامدادان",
+   "hard": true,
+   "meaningFa": "و صبح کردند، و بامدادان چنان حالی یافتند",
+   "rootAr": "ص ب ح",
+   "trapFa": "و صبح شد",
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_002",
+   "gloss": "آنانکه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_003",
+   "gloss": "آرزو داشتند",
+   "hard": true,
+   "meaningFa": "آرزو کردند",
+   "rootAr": "م ن ی",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_004",
+   "gloss": "مقام و جایگاه او را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_005",
+   "gloss": "دیروز",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_006",
+   "gloss": "می‌گفتند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_007",
+   "gloss": "وه! گویی",
+   "hard": true,
+   "meaningFa": "وای گویی، شگفتا که",
+   "rootAr": null,
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_008",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_009",
+   "gloss": "وسعت می‌دهد",
+   "hard": true,
+   "meaningFa": "گسترش می‌دهد و فراخ می‌سازد",
+   "rootAr": "ب س ط",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_010",
+   "gloss": "رزق را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_011",
+   "gloss": "برای هر کس",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_012",
+   "gloss": "بخواهد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_013",
+   "gloss": "از",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_014",
+   "gloss": "بندگانش",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_015",
+   "gloss": "و تنگ می‌گیرد",
+   "hard": true,
+   "meaningFa": "و روزی را محدود می‌کند",
+   "rootAr": "ق د ر",
+   "trapFa": "قدرت دارد",
+   "tipFa": "«یقدر» در اینجا در مقابل «یبسط» به معنای تنگ گرفتن روزی است."
+  },
+  {
+   "wordId": "w28_082_016",
+   "gloss": "اگر نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_017",
+   "gloss": "که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_018",
+   "gloss": "منت گذاشته بود",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_019",
+   "gloss": "خدا",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_020",
+   "gloss": "بر ما",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_021",
+   "gloss": "قطعا فرو برده بود",
+   "hard": true,
+   "meaningFa": "هر آینه ما را در زمین فرو می‌برد",
+   "rootAr": "خ س ف",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_082_022",
+   "gloss": "ما را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_023",
+   "gloss": "وه، گویی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_024",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_025",
+   "gloss": "رستگار می‌شوند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_082_026",
+   "gloss": "کافران",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_001",
+   "gloss": "آن",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_002",
+   "gloss": "سرای",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_003",
+   "gloss": "آخرت",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_004",
+   "gloss": "قرار می‌دهیم آن را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_005",
+   "gloss": "برای کسانی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_006",
+   "gloss": "نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_007",
+   "gloss": "می‌خواهند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_008",
+   "gloss": "برتری و تسلّطی",
+   "hard": true,
+   "meaningFa": "برتری‌جویی و تسلط",
+   "rootAr": "ع ل و",
+   "trapFa": null,
+   "tipFa": null
+  },
+  {
+   "wordId": "w28_083_009",
+   "gloss": "در",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_010",
+   "gloss": "زمین",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_011",
+   "gloss": "و هیچ",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_012",
+   "gloss": "فسادی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_083_013",
+   "gloss": "و سرانجام نیک",
+   "hard": true,
+   "meaningFa": "و پایان کار و سرانجام نیک",
+   "rootAr": "ع ق ب",
+   "trapFa": "مجازات",
+   "tipFa": "«عاقبة» در قرآن معمولاً به معنای سرانجام نیک است، برعکس عقوبت."
+  },
+  {
+   "wordId": "w28_083_014",
+   "gloss": "برای پرهیزکاران",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_001",
+   "gloss": "هر کس",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_002",
+   "gloss": "بیاورد",
+   "hard": true,
+   "meaningFa": "حاضر کند، با خود بیاورد",
+   "rootAr": "ج ی ا",
+   "trapFa": "آمد",
+   "tipFa": "«جاء بـ» به معنای آوردن است، نه آمدن."
+  },
+  {
+   "wordId": "w28_084_003",
+   "gloss": "کار نیکی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_004",
+   "gloss": "پس برای اوست",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_005",
+   "gloss": "بهتر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_006",
+   "gloss": "از آن",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_007",
+   "gloss": "و هر کس",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_008",
+   "gloss": "بیاورد",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_009",
+   "gloss": "کار بدی",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_010",
+   "gloss": "پس نه",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_011",
+   "gloss": "جزا داده می‌شوند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_012",
+   "gloss": "آنان که",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_013",
+   "gloss": "انجام داده‌اند",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_014",
+   "gloss": "کارهای ناشایسته",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_015",
+   "gloss": "مگر",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_016",
+   "gloss": "آنچه را",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_017",
+   "gloss": "همواره",
+   "hard": false
+  },
+  {
+   "wordId": "w28_084_018",
+   "gloss": "انجام می‌داده‌اند",
+   "hard": false
+  }
+ ],
+ "chunks": [
+  {
+   "verse": 81,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 4,
+     "fa": "پس او و خانه اش را در زمین فرو بردیم، "
+    },
+    {
+     "from": 5,
+     "to": 13,
+     "fa": "و هیچ گروهی غیر از خدا برای او نبود که وی را [برای رهایی از عذاب] یاری دهد، "
+    },
+    {
+     "from": 14,
+     "to": 17,
+     "fa": "و خود نیز نتوانست از خود دفاع کند."
+    }
+   ],
+   "faSegments": [
+    "پس او و خانه اش را در زمین فرو بردیم، ",
+    "و هیچ گروهی غیر از خدا برای او نبود که وی را [برای رهایی از عذاب] یاری دهد، ",
+    "و خود نیز نتوانست از خود دفاع کند."
+   ]
+  },
+  {
+   "verse": 82,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 6,
+     "fa": "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند [چنان حالی شدند که] می گفتند: "
+    },
+    {
+     "from": 7,
+     "to": 15,
+     "fa": "وه! گویی خدا رزق را برای هر کس از بندگانش بخواهد وسعت می دهد، و [برای هر که بخواهد] تنگ می گیرد، "
+    },
+    {
+     "from": 16,
+     "to": 22,
+     "fa": "اگر خدا بر ما منت نگذاشته بود، ما را نیز در زمین فرو برده بود، "
+    },
+    {
+     "from": 23,
+     "to": 26,
+     "fa": "وه، گویی کافران رستگار نمی شوند."
+    }
+   ],
+   "faSegments": [
+    "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند [چنان حالی شدند که] می گفتند: ",
+    "وه! گویی خدا رزق را برای هر کس از بندگانش بخواهد وسعت می دهد، و [برای هر که بخواهد] تنگ می گیرد، ",
+    "اگر خدا بر ما منت نگذاشته بود، ما را نیز در زمین فرو برده بود، ",
+    "وه، گویی کافران رستگار نمی شوند."
+   ]
+  },
+  {
+   "verse": 83,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 5,
+     "fa": "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم که "
+    },
+    {
+     "from": 6,
+     "to": 12,
+     "fa": "در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛ "
+    },
+    {
+     "from": 13,
+     "to": 14,
+     "fa": "و سرانجام [نیک] برای پرهیزکاران است."
+    }
+   ],
+   "faSegments": [
+    "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم که ",
+    "در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛ ",
+    "و سرانجام [نیک] برای پرهیزکاران است."
+   ]
+  },
+  {
+   "verse": 84,
+   "chunks": [
+    {
+     "from": 1,
+     "to": 6,
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست، "
+    },
+    {
+     "from": 7,
+     "to": 9,
+     "fa": "و هر کس کار بدی بیاورد "
+    },
+    {
+     "from": 10,
+     "to": 18,
+     "fa": "[پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند."
+    }
+   ],
+   "faSegments": [
+    "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست، ",
+    "و هر کس کار بدی بیاورد ",
+    "[پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند مگر آنچه را همواره انجام می داده اند."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_u_p395b_A_0421",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "معنای کلمه «فَخَسَفْنَا» چیست؟",
+   "stem": {
+    "wordId": "w28_081_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "گرفتیم"
+    },
+    {
+     "id": "o3",
+     "fa": "پس شکافتیم"
+    },
+    {
+     "id": "o4",
+     "fa": "ویران کردیم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«خسف» به معنای فرو بردن در زمین است و «پس گرفتیم» غلط است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0422",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "معنای «فَخَسَفْنَا» کدام است؟",
+   "stem": {
+    "wordId": "w28_081_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس پنهان کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "پس او را در زمین فرو بردیم"
+    },
+    {
+     "id": "o3",
+     "fa": "گرفتیم"
+    },
+    {
+     "id": "o4",
+     "fa": "فرو می بریم"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "فعل ماضی است و به فرورفتن در زمین دلالت دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0423",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "معنای «فَخَسَفْنَا» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_081_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس دفن کردیم"
+    },
+    {
+     "id": "o2",
+     "fa": "فرو می بریم"
+    },
+    {
+     "id": "o3",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "عذاب کردیم"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "same_root",
+    "o4": "near_miss"
+   },
+   "explanationFa": "به فرو بردن قارون و خانه‌اش در زمین اشاره دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0424",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "در این آیه، «فَخَسَفْنَا» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_081_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس زمین را شکافتیم"
+    },
+    {
+     "id": "o2",
+     "fa": "گرفتیم او را"
+    },
+    {
+     "id": "o3",
+     "fa": "فرو بردیم"
+    },
+    {
+     "id": "o4",
+     "fa": "پس او را در زمین فرو بردیم"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "false_friend",
+    "o3": "near_miss"
+   },
+   "explanationFa": "خسف به معنای فرو بردن در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0425",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "معادل عربی «پس فرو بردیم» چیست؟",
+   "stem": {
+    "fa": "پس فرو بردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "o2",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَمَا"
+    },
+    {
+     "id": "o4",
+     "ar": "يَقْدِرُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "«فَخَسَفْنَا» فعل متکلم مع الغیر و به معنای پس فرو بردیم است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0426",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "کدام کلمه به معنای «پس او را در زمین فرو بردیم» است؟",
+   "stem": {
+    "fa": "پس او را در زمین فرو بردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "o3",
+     "ar": "خَسَفْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "وَبِدَارِهِ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "similar_verse",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "حرف فاء در ابتدا به معنای پس می‌باشد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0427",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001"
+   ],
+   "promptFa": "معادل «فرو بردیم» کدام است؟",
+   "stem": {
+    "fa": "فرو بردیم"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "أَصْبَحَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "o4",
+     "ar": "لَخَسَفَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o4": "same_root"
+   },
+   "explanationFa": "خسفنا به معنای فرو بردیم است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0428",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "معنای کلمه «فِئَةٍۢ» چیست؟",
+   "stem": {
+    "wordId": "w28_081_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "گروهی"
+    },
+    {
+     "id": "o2",
+     "fa": "نعمتی"
+    },
+    {
+     "id": "o3",
+     "fa": "اندکی"
+    },
+    {
+     "id": "o4",
+     "fa": "قومی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«فئة» در عربی به معنای گروه و دسته است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0429",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "معنای «فِئَةٍۢ» کدام است؟",
+   "stem": {
+    "wordId": "w28_081_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "سپاهی"
+    },
+    {
+     "id": "o2",
+     "fa": "گروه و دسته‌ای"
+    },
+    {
+     "id": "o3",
+     "fa": "خانواده‌ای"
+    },
+    {
+     "id": "o4",
+     "fa": "دوستانی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این کلمه به هر نوع گروهی اطلاق می‌شود.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0430",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "در آیه شریفه، «فِئَةٍۢ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_081_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نعمتی"
+    },
+    {
+     "id": "o2",
+     "fa": "فایده‌ای"
+    },
+    {
+     "id": "o3",
+     "fa": "گروهی"
+    },
+    {
+     "id": "o4",
+     "fa": "قدرتی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در این آیه به نبود هیچ گروهی برای یاری قارون اشاره دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0431",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "معنای «فِئَةٍۢ» در متن آیه چیست؟",
+   "stem": {
+    "wordId": "w28_081_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "نعمتی"
+    },
+    {
+     "id": "o2",
+     "fa": "اندکی"
+    },
+    {
+     "id": "o3",
+     "fa": "لشکری"
+    },
+    {
+     "id": "o4",
+     "fa": "گروه و دسته‌ای"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "near_miss"
+   },
+   "explanationFa": "گروه و دسته است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0432",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "معادل عربی «گروهی» کدام کلمه است؟",
+   "stem": {
+    "fa": "گروهی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "o2",
+     "ar": "عِبَادِهِۦ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَمَا"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "کلمه فئة به معنای گروه است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0433",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "کدام کلمه به معنای «گروه و دسته‌ای» است؟",
+   "stem": {
+    "fa": "گروه و دسته‌ای"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لِمَن"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "فئة یعنی گروه و دسته.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0434",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009"
+   ],
+   "promptFa": "معادل «گروهی» در آیه چیست؟",
+   "stem": {
+    "fa": "گروهی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَنصُرُونَهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "دُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "o4",
+     "ar": "مِنَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "فئة همان گروه است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0435",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "معنای «ٱلْمُنتَصِرِينَ» چیست؟",
+   "stem": {
+    "wordId": "w28_081_017",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیروزمندان"
+    },
+    {
+     "id": "o2",
+     "fa": "انتقام گیرندگان"
+    },
+    {
+     "id": "o3",
+     "fa": "یاری دهندگان"
+    },
+    {
+     "id": "o4",
+     "fa": "دفاع کنندگان"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "same_root"
+   },
+   "explanationFa": "در اینجا به معنای دفاع‌کنندگان از خود است، نه پیروزمندان.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0436",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "معنای کلمه «ٱلْمُنتَصِرِينَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_081_017",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "یاری‌شوندگان"
+    },
+    {
+     "id": "o2",
+     "fa": "پیروزمندان"
+    },
+    {
+     "id": "o3",
+     "fa": "ظالمان"
+    },
+    {
+     "id": "o4",
+     "fa": "کمک کاران"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "کسی که یاری می‌شود یا از خود دفاع می‌کند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0437",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "در این آیه، «ٱلْمُنتَصِرِينَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_081_017",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیروزمندان"
+    },
+    {
+     "id": "o2",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "o3",
+     "fa": "ستمکاران"
+    },
+    {
+     "id": "o4",
+     "fa": "مؤمنان"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "قارون نتوانست از خود دفاع کند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0438",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "معنای «ٱلْمُنتَصِرِينَ» در آیه چیست؟",
+   "stem": {
+    "wordId": "w28_081_017",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پیروزمندان"
+    },
+    {
+     "id": "o2",
+     "fa": "انتقام جویان"
+    },
+    {
+     "id": "o3",
+     "fa": "یاری دهندگان"
+    },
+    {
+     "id": "o4",
+     "fa": "کسانی که از خود دفاع می‌کنند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "same_root"
+   },
+   "explanationFa": "منتصرین جمع منتصر به معنای دفاع‌کننده است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0439",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "معادل عربی «دفاع کنندگان» کدام است؟",
+   "stem": {
+    "fa": "دفاع کنندگان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَنصُرُونَهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "فِئَةٍۢ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "same_root",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "المنتصرین یعنی دفاع کنندگان.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0440",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "کدام کلمه به معنای «یاری‌شوندگان» است؟",
+   "stem": {
+    "fa": "یاری‌شوندگان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَنصُرُونَهُۥ"
+    },
+    {
+     "id": "o2",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "عِبَادِهِۦ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "same_root",
+    "o2": "random",
+    "o4": "random"
+   },
+   "explanationFa": "یاری شوندگان یا دفاع کنندگان معنای منتصرین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0441",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017"
+   ],
+   "promptFa": "معادل «کسانی که از خود دفاع می‌کنند» در آیه چیست؟",
+   "stem": {
+    "fa": "کسانی که از خود دفاع می‌کنند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَنصُرُونَهُۥ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْكَـٰفِرُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "same_root",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "کسانی که از خود دفاع می‌کنند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0442",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "معنای کلمه «وَأَصْبَحَ» چیست؟",
+   "stem": {
+    "wordId": "w28_082_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و صبح شد"
+    },
+    {
+     "id": "o2",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "o3",
+     "fa": "و شبانگاهان"
+    },
+    {
+     "id": "o4",
+     "fa": "و روز شد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«أصبح» در اینجا به معنای بامدادان چنان حالی یافتند است، نه صرفا صبح شد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0443",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "معنای «وَأَصْبَحَ» کدام است؟",
+   "stem": {
+    "wordId": "w28_082_001",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و صبح کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "و بیدار شدند"
+    },
+    {
+     "id": "o3",
+     "fa": "و صبح شد"
+    },
+    {
+     "id": "o4",
+     "fa": "و دیدند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "و بامدادان چنان حالی یافتند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0444",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "در آیه، «وَأَصْبَحَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_082_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و صبح شد"
+    },
+    {
+     "id": "o2",
+     "fa": "و روز روشن شد"
+    },
+    {
+     "id": "o3",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "o4",
+     "fa": "و برخاستند"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "در بامداد حالشان دگرگون شد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0445",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "معنای کلمه «وَأَصْبَحَ» در این سیاق چیست؟",
+   "stem": {
+    "wordId": "w28_082_001",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و صبح شد"
+    },
+    {
+     "id": "o2",
+     "fa": "و بامدادان چنان حالی یافتند"
+    },
+    {
+     "id": "o3",
+     "fa": "و بیدار شدند"
+    },
+    {
+     "id": "o4",
+     "fa": "و پشیمان شدند"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "بامدادان چنان حالی یافتند صحیح است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0446",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "معادل «و بامدادان» در آیه چیست؟",
+   "stem": {
+    "fa": "و بامدادان"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "بِٱلْأَمْسِ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "يَقُولُونَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "أصبح اشاره به بامداد دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0447",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "کدام کلمه به معنای «و صبح کردند» است؟",
+   "stem": {
+    "fa": "و صبح کردند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَخَسَفَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "random",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "و أصبح به این معناست.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0448",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001"
+   ],
+   "promptFa": "معادل «و بامدادان چنان حالی یافتند» کدام است؟",
+   "stem": {
+    "fa": "و بامدادان چنان حالی یافتند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "بِٱلْأَمْسِ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَقُولُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَيْكَأَنَّهُۥ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "random",
+    "o4": "random"
+   },
+   "explanationFa": "وأصبح صحیح است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0449",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003"
+   ],
+   "promptFa": "معنای «تَمَنَّوْا۟» چیست؟",
+   "stem": {
+    "wordId": "w28_082_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تمنا می کنند"
+    },
+    {
+     "id": "o2",
+     "fa": "منع کردند"
+    },
+    {
+     "id": "o3",
+     "fa": "دیدند"
+    },
+    {
+     "id": "o4",
+     "fa": "آرزو داشتند"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "false_friend",
+    "o3": "random"
+   },
+   "explanationFa": "«تمنوا» فعل ماضی است و به معنای آرزو داشتند می‌باشد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0450",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003"
+   ],
+   "promptFa": "معنای کلمه «تَمَنَّوْا۟» کدام است؟",
+   "stem": {
+    "wordId": "w28_082_003",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آرزو کردند"
+    },
+    {
+     "id": "o2",
+     "fa": "امیدوارند"
+    },
+    {
+     "id": "o3",
+     "fa": "درخواست کردند"
+    },
+    {
+     "id": "o4",
+     "fa": "حسرت خوردند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آرزو کردند یا آرزو داشتند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0451",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003"
+   ],
+   "promptFa": "در آیه شریفه، «تَمَنَّوْا۟» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_082_003",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "o2",
+     "fa": "طلب می کنند"
+    },
+    {
+     "id": "o3",
+     "fa": "دیدند"
+    },
+    {
+     "id": "o4",
+     "fa": "تمنا می کنند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "مردمی که دیروز مقام قارون را آرزو داشتند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0453",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003"
+   ],
+   "promptFa": "معادل عربی «آرزو داشتند» چیست؟",
+   "stem": {
+    "fa": "آرزو داشتند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَقُولُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَصْبَحَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "random",
+    "o4": "random"
+   },
+   "explanationFa": "تمنوا یعنی آرزو داشتند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0454",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003"
+   ],
+   "promptFa": "کدام کلمه به معنای «آرزو کردند» است؟",
+   "stem": {
+    "fa": "آرزو کردند"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يَقُولُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَّنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَبْسُطُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "تمنوا صحیح است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0456",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "معنای «وَيْكَأَنَّ» چیست؟",
+   "stem": {
+    "wordId": "w28_082_007",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و قطعا"
+    },
+    {
+     "id": "o2",
+     "fa": "وای بر آنها"
+    },
+    {
+     "id": "o3",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "o4",
+     "fa": "و گویا"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«ویکأن» کلمه‌ای مرکب برای تعجب است و معنای وه! گویی می‌دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0457",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "معنای کلمه «وَيْكَأَنَّ» کدام است؟",
+   "stem": {
+    "wordId": "w28_082_007",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "شگفتا که"
+    },
+    {
+     "id": "o2",
+     "fa": "و قطعا"
+    },
+    {
+     "id": "o3",
+     "fa": "پس گویا"
+    },
+    {
+     "id": "o4",
+     "fa": "وای بر ما"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "برای تعجب به کار می‌رود، شگفتا که یا وه گویی.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0458",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "در این آیه، «وَيْكَأَنَّ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_082_007",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و گویا"
+    },
+    {
+     "id": "o2",
+     "fa": "وای گویی"
+    },
+    {
+     "id": "o3",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "o4",
+     "fa": "حقا که"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "وه! گویی تعبیر دقیقی برای این اصطلاح است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0459",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "معنای «وَيْكَأَنَّ» در این سیاق چیست؟",
+   "stem": {
+    "wordId": "w28_082_007",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و قطعا"
+    },
+    {
+     "id": "o2",
+     "fa": "وای گویی، شگفتا که"
+    },
+    {
+     "id": "o3",
+     "fa": "و چنین است که"
+    },
+    {
+     "id": "o4",
+     "fa": "همانا گویی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "شگفتا که یا وای گویی.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0460",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "معادل عربی «وه! گویی» چیست؟",
+   "stem": {
+    "fa": "وه! گویی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "o2",
+     "ar": "أَن"
+    },
+    {
+     "id": "o3",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَيْكَأَنَّهُۥ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "random",
+    "o2": "random",
+    "o4": "same_root"
+   },
+   "explanationFa": "ویکأن به معنای وه! گویی است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0461",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "کدام کلمه به معنای «وای گویی، شگفتا که» است؟",
+   "stem": {
+    "fa": "وای گویی، شگفتا که"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَّنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَيْكَأَنَّهُۥ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "random",
+    "o3": "random",
+    "o4": "same_root"
+   },
+   "explanationFa": "ویکأن صحیح است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0462",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_007"
+   ],
+   "promptFa": "معادل «وه! گویی» در آیه کدام است؟",
+   "stem": {
+    "fa": "وه! گویی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَيْكَأَنَّهُۥ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَصْبَحَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "same_root",
+    "o4": "random"
+   },
+   "explanationFa": "ویکأن کلمه تعجب است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0463",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001",
+    "w:w28_081_009",
+    "w:w28_081_017",
+    "w:w28_082_001"
+   ],
+   "promptFa": "کلمات را به معنای درست وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْأَرْضَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r3",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "r4",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "r5",
+     "fa": "زمین"
+    },
+    {
+     "id": "r6",
+     "fa": "دیروز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "مرور کلمات سخت این آیات.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0464",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003",
+    "w:w28_082_007",
+    "w:w28_081_001",
+    "w:w28_081_009"
+   ],
+   "promptFa": "معنای کلمات را مطابقت دهید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l5",
+     "ar": "بِٱلْأَمْسِ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r2",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "r3",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r5",
+     "fa": "دیروز"
+    },
+    {
+     "id": "r6",
+     "fa": "زمین"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "دقت در معانی کلمات جدید و قدیم.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0465",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017",
+    "w:w28_082_001",
+    "w:w28_082_003",
+    "w:w28_082_007"
+   ],
+   "promptFa": "هر کلمه عربی را به معنای فارسی آن متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلرِّزْقَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "r2",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "r3",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r4",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "r5",
+     "fa": "رزق"
+    },
+    {
+     "id": "r6",
+     "fa": "تنگ می گیرد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "مرور ترکیبی کلمات مهم بخش.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0466",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_081_001",
+    "w:w28_081_017",
+    "w:w28_082_003",
+    "w:w28_082_007"
+   ],
+   "promptFa": "کلمات را به معادل فارسی‌شان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l3",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l4",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَبْسُطُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس او را در زمین فرو بردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "یاری‌شوندگان"
+    },
+    {
+     "id": "r3",
+     "fa": "آرزو کردند"
+    },
+    {
+     "id": "r4",
+     "fa": "شگفتا که"
+    },
+    {
+     "id": "r5",
+     "fa": "وسعت می دهد"
+    },
+    {
+     "id": "r6",
+     "fa": "رزق"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "استفاده از معانی جایگزین برای تسلط بیشتر.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0467",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_009",
+    "w:w28_082_001",
+    "w:w28_081_001",
+    "w:w28_082_003"
+   ],
+   "promptFa": "ترجمه صحیح هر کلمه را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "يَقْدِرُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گروه و دسته‌ای"
+    },
+    {
+     "id": "r2",
+     "fa": "و صبح کردند"
+    },
+    {
+     "id": "r3",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r5",
+     "fa": "تنگ می گیرد"
+    },
+    {
+     "id": "r6",
+     "fa": "کافران"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "مرور و تثبیت لغات سخت.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0468",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 5,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_081_017",
+    "w:w28_082_007",
+    "w:w28_081_009",
+    "w:w28_082_001"
+   ],
+   "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l5",
+     "ar": "لِمَن"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "کسانی که از خود دفاع می‌کنند"
+    },
+    {
+     "id": "r2",
+     "fa": "وای گویی"
+    },
+    {
+     "id": "r3",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r4",
+     "fa": "و بامدادان چنان حالی یافتند"
+    },
+    {
+     "id": "r5",
+     "fa": "برای هر کس"
+    },
+    {
+     "id": "r6",
+     "fa": "زمین"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تسلط بر معانی در قالب جملات کوتاه.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0469",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001",
+    "w:w28_082_003",
+    "w:w28_081_017",
+    "w:w28_082_007"
+   ],
+   "promptFa": "ارتباط کلمات را پیدا کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l5",
+     "ar": "عِبَادِهِۦ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r3",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "r4",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "r5",
+     "fa": "بندگانش"
+    },
+    {
+     "id": "r6",
+     "fa": "رزق"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تمرین مجدد کلمات هدف.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0470",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_081_009",
+    "w:w28_082_001",
+    "w:w28_081_001",
+    "w:w28_082_003"
+   ],
+   "promptFa": "معنای کلمات را به هم وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l3",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l4",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "يُفْلِحُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r2",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "r3",
+     "fa": "پس او را در زمین فرو بردیم"
+    },
+    {
+     "id": "r4",
+     "fa": "آرزو کردند"
+    },
+    {
+     "id": "r5",
+     "fa": "رستگار می شوند"
+    },
+    {
+     "id": "r6",
+     "fa": "کافران"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تطبیق سریع کلمات.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0471",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_017",
+    "w:w28_082_007",
+    "w:w28_081_009",
+    "w:w28_081_001"
+   ],
+   "promptFa": "کدام کلمه با کدام ترجمه هم‌خوان است؟",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "ٱلْكَـٰفِرُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "r2",
+     "fa": "وه! گویی"
+    },
+    {
+     "id": "r3",
+     "fa": "گروه و دسته‌ای"
+    },
+    {
+     "id": "r4",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r5",
+     "fa": "کافران"
+    },
+    {
+     "id": "r6",
+     "fa": "رزق"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "تسلط بر کلمات سخت دو آیه.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0472",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_001",
+    "w:w28_082_003",
+    "w:w28_081_017",
+    "w:w28_081_009"
+   ],
+   "promptFa": "لغات را متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l2",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l4",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَنصُرُونَهُۥ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و صبح کردند"
+    },
+    {
+     "id": "r2",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r3",
+     "fa": "یاری‌شوندگان"
+    },
+    {
+     "id": "r4",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r5",
+     "fa": "یاری دهد او را"
+    },
+    {
+     "id": "r6",
+     "fa": "بندگانش"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "شناخت دقیق کلمات و جلوگیری از اشتباه.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0473",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_082_007",
+    "w:w28_081_001",
+    "w:w28_082_001",
+    "w:w28_082_003"
+   ],
+   "promptFa": "معانی را به کلمات مرتبط وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l2",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l3",
+     "ar": "وَأَصْبَحَ"
+    },
+    {
+     "id": "l4",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l5",
+     "ar": "مِنْ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "وای گویی"
+    },
+    {
+     "id": "r2",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r3",
+     "fa": "و بامدادان"
+    },
+    {
+     "id": "r4",
+     "fa": "آرزو کردند"
+    },
+    {
+     "id": "r5",
+     "fa": "از"
+    },
+    {
+     "id": "r6",
+     "fa": "پس"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "مرور نهایی کلمات مشکل.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0474",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_081_017",
+    "w:w28_081_009",
+    "w:w28_082_007",
+    "w:w28_081_001"
+   ],
+   "promptFa": "عربی را به فارسی جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l2",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَيْكَأَنَّ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l5",
+     "ar": "لَوْلَآ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "کسانی که از خود دفاع می‌کنند"
+    },
+    {
+     "id": "r2",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r3",
+     "fa": "شگفتا که"
+    },
+    {
+     "id": "r4",
+     "fa": "پس او را در زمین فرو بردیم"
+    },
+    {
+     "id": "r5",
+     "fa": "اگر"
+    },
+    {
+     "id": "r6",
+     "fa": "برای هر کس"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "distractorTags": {},
+   "explanationFa": "آزمون جامع کلمات دشوار.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0581",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "معنای کلمه «يَبْسُطُ» چیست؟",
+   "stem": {
+    "wordId": "w28_082_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "o2",
+     "fa": "تنگ می‌گیرد"
+    },
+    {
+     "id": "o3",
+     "fa": "مسلط می‌شود"
+    },
+    {
+     "id": "o4",
+     "fa": "روزى می‌دهد"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«يَبْسُطُ» از ریشه (ب س ط) به معنای گسترش دادن و وسعت دادن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0582",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "معنای «يَبْسُطُ» کدام است؟",
+   "stem": {
+    "wordId": "w28_082_009",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تنگ می‌گیرد"
+    },
+    {
+     "id": "o2",
+     "fa": "می‌بخشد"
+    },
+    {
+     "id": "o3",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "o4",
+     "fa": "قرار می‌دهد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "این کلمه در مقابل «یَقْدِرُ» (تنگ می‌گیرد) به کار می‌رود و معنای فراخ ساختن دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0583",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "در این آیه، «يَبْسُطُ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_082_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آرزو می‌کنند"
+    },
+    {
+     "id": "o2",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "o3",
+     "fa": "تنگ می‌گیرد"
+    },
+    {
+     "id": "o4",
+     "fa": "فرو می‌برد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "خداوند رزق را برای هر کس بخواهد «وسعت می‌دهد» (گسترش می‌دهد).",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0584",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "معنای «يَبْسُطُ» در متن آیه چیست؟",
+   "stem": {
+    "wordId": "w28_082_009",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تنگ می‌گیرد"
+    },
+    {
+     "id": "o2",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "o3",
+     "fa": "رستگار نمی‌شوند"
+    },
+    {
+     "id": "o4",
+     "fa": "وسعت می‌دهد"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "«يَبْسُطُ ٱلرِّزْقَ» یعنی روزی را وسعت می‌دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0585",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "معادل عربی «وسعت می‌دهد» کدام است؟",
+   "stem": {
+    "fa": "وسعت می‌دهد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَقْدِرُ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُفْلِحُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَبْسُطُ» یعنی وسعت می‌دهد و «يَقْدِرُ» یعنی تنگ می‌گیرد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0586",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "«وسعت می‌دهد» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "وسعت می‌دهد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o3",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "o4",
+     "ar": "يَقُولُونَ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "این فعل از ریشه (ب س ط) است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0587",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009"
+   ],
+   "promptFa": "کدام کلمه به معنای «وسعت می‌دهد» است؟",
+   "stem": {
+    "fa": "وسعت می‌دهد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَقْدِرُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يُفْلِحُ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَشَآءُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَبْسُطُ» از بسط دادن به معنای وسعت دادن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0588",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "معنای «وَيَقْدِرُ» چیست؟",
+   "stem": {
+    "wordId": "w28_082_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و قدرت دارد"
+    },
+    {
+     "id": "o2",
+     "fa": "و تقدیر می‌کند"
+    },
+    {
+     "id": "o3",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "o4",
+     "fa": "و وسعت می‌دهد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«یقدر» در اینجا در مقابل «یبسط» به معنای تنگ گرفتن روزی است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0589",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "«وَيَقْدِرُ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_082_015",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "o2",
+     "fa": "و مقدر می‌سازد"
+    },
+    {
+     "id": "o3",
+     "fa": "و توانایی دارد"
+    },
+    {
+     "id": "o4",
+     "fa": "و اراده می‌کند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "false_friend",
+    "o4": "random"
+   },
+   "explanationFa": "این کلمه از ریشه (ق د ر) است و در بحث رزق به معنای محدود کردن و تنگ گرفتن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0590",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "در آیه شریفه، «وَيَقْدِرُ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_082_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و مقدر می‌کند"
+    },
+    {
+     "id": "o2",
+     "fa": "و قدرت می‌دهد"
+    },
+    {
+     "id": "o3",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "o4",
+     "fa": "و می‌بخشد"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "false_friend",
+    "o4": "false_friend"
+   },
+   "explanationFa": "خداوند برای هرکه بخواهد روزی را وسعت می‌دهد و برای هرکه بخواهد «تنگ می‌گیرد».",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0591",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "معنای «وَيَقْدِرُ» در این آیه چیست؟",
+   "stem": {
+    "wordId": "w28_082_015",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و اراده می‌کند"
+    },
+    {
+     "id": "o2",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "o3",
+     "fa": "و قدرت می‌یابد"
+    },
+    {
+     "id": "o4",
+     "fa": "و روزی می‌دهد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "random",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "کاربرد «یقدر» در سیاق رزق به معنای تنگی معیشت است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0592",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "کدام کلمه به معنای «و تنگ می‌گیرد» است؟",
+   "stem": {
+    "fa": "و تنگ می‌گیرد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُفْلِحُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«يَقْدِرُ» در اینجا نقطه مقابل «يَبْسُطُ» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0593",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "معادل عربی «و تنگ می‌گیرد» چیست؟",
+   "stem": {
+    "fa": "و تنگ می‌گیرد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَقُولُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "o4",
+     "ar": "تَمَنَّوْا۟"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه (ق د ر) در اینجا به معنای محدود کردن به کار رفته است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0594",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015"
+   ],
+   "promptFa": "«و تنگ می‌گیرد» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "و تنگ می‌گیرد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "o2",
+     "ar": "يُفْلِحُ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَيَقْدِرُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "false_friend"
+   },
+   "explanationFa": "«وَيَقْدِرُ» یعنی و روزی را محدود می‌کند و تنگ می‌گیرد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0595",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "معنای کلمه «لَخَسَفَ» چیست؟",
+   "stem": {
+    "wordId": "w28_082_021",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قطعا عذاب کرده بود"
+    },
+    {
+     "id": "o2",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعا پنهان کرده بود"
+    },
+    {
+     "id": "o4",
+     "fa": "قطعا هلاک کرده بود"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "random",
+    "o4": "near_miss"
+   },
+   "explanationFa": "این کلمه از ریشه (خ س ف) به معنای فرو بردن در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0596",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "«لَخَسَفَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_082_021",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "o2",
+     "fa": "قطعا منت نهاده بود"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعا نجات داده بود"
+    },
+    {
+     "id": "o4",
+     "fa": "قطعا عذاب کرده بود"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "near_miss"
+   },
+   "explanationFa": "حرف «لَ» برای تاکید است و «خسف» یعنی در زمین فرو برد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0597",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "در این آیه، «لَخَسَفَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_082_021",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قطعا منت گذاشته بود"
+    },
+    {
+     "id": "o2",
+     "fa": "قطعا هلاک کرده بود"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "o4",
+     "fa": "قطعا نجات داده بود"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "می‌گویند اگر خدا منت نگذاشته بود، ما را نیز در زمین «فرو برده بود».",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0598",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "معنای «لَخَسَفَ» در متن آیه کدام است؟",
+   "stem": {
+    "wordId": "w28_082_021",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "قطعا تنگ گرفته بود"
+    },
+    {
+     "id": "o2",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "o3",
+     "fa": "قطعا عذاب کرده بود"
+    },
+    {
+     "id": "o4",
+     "fa": "قطعا پنهان کرده بود"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "near_miss",
+    "o4": "random"
+   },
+   "explanationFa": "اشاره به سرنوشت قارون دارد که در زمین فرو برده شد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0599",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "معادل عربی «قطعا فرو برده بود» کدام است؟",
+   "stem": {
+    "fa": "قطعا فرو برده بود"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَوْلَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "مَّنَّ"
+    },
+    {
+     "id": "o4",
+     "ar": "يُفْلِحُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لَخَسَفَ» ترکیب لام تاکید و فعل ماضی از خسف است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0600",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021"
+   ],
+   "promptFa": "«قطعا فرو برده بود» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "قطعا فرو برده بود"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مَّنَّ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَقْدِرُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه (خ س ف) برای فرو رفتن در زمین به کار می‌رود.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0602",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "معنای کلمه «عُلُوًّۭا» چیست؟",
+   "stem": {
+    "wordId": "w28_083_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بلندمرتبگی"
+    },
+    {
+     "id": "o2",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "o3",
+     "fa": "تکبر"
+    },
+    {
+     "id": "o4",
+     "fa": "فسادی"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "این کلمه از ریشه (ع ل و) است و به معنای برتری‌جویی و تسلط در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0603",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "«عُلُوًّۭا» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_083_008",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "o2",
+     "fa": "علو درجات"
+    },
+    {
+     "id": "o3",
+     "fa": "سرانجام نیک"
+    },
+    {
+     "id": "o4",
+     "fa": "جایگاهی"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "در این سیاق، منظور سلطه‌جویی مادی و طغیان در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0604",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "در این آیه، «عُلُوًّۭا» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_083_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "تکبر"
+    },
+    {
+     "id": "o2",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "o3",
+     "fa": "فسادی"
+    },
+    {
+     "id": "o4",
+     "fa": "مقام آخرت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "سرای آخرت برای کسانی است که اراده‌ی «برتری و تسلطی» در زمین ندارند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0605",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "معنای «عُلُوًّۭا» در متن آیه کدام است؟",
+   "stem": {
+    "wordId": "w28_083_008",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "بلندی آسمان"
+    },
+    {
+     "id": "o2",
+     "fa": "پاداشی"
+    },
+    {
+     "id": "o3",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "o4",
+     "fa": "مقام و جایگاهی"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "near_miss",
+    "o2": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "این کلمه به انحصارطلبی و سرکشی اشاره دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0606",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "معادل عربی «برتری و تسلّطی» کدام است؟",
+   "stem": {
+    "fa": "برتری و تسلّطی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَسَادًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "o3",
+     "ar": "مَكَانَهُۥ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْعَـٰقِبَةُ"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o3": "random",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه (ع ل و) بیانگر برتری‌جویی است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0607",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "«برتری و تسلّطی» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "برتری و تسلّطی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "نَجْعَلُهَا"
+    },
+    {
+     "id": "o3",
+     "ar": "يُرِيدُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْأَرْضِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«لَا يُرِيدُونَ عُلُوًّۭا» یعنی هیچ برتری و تسلطی را نمی‌خواهند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0608",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008"
+   ],
+   "promptFa": "کدام کلمه به معنای «برتری و تسلّطی» است؟",
+   "stem": {
+    "fa": "برتری و تسلّطی"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَسَادًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلدَّارُ"
+    },
+    {
+     "id": "o3",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْـَٔاخِرَةُ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه «علو» در عربی به معنای برتری است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0609",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "معنای کلمه «وَٱلْعَـٰقِبَةُ» چیست؟",
+   "stem": {
+    "wordId": "w28_083_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و مجازات"
+    },
+    {
+     "id": "o2",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "o3",
+     "fa": "و کیفر"
+    },
+    {
+     "id": "o4",
+     "fa": "و آخرت"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عاقبة» در قرآن معمولاً به معنای سرانجام نیک است، برعکس عقوبت که به معنای مجازات است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0610",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "«وَٱلْعَـٰقِبَةُ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_083_013",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و عذاب"
+    },
+    {
+     "id": "o2",
+     "fa": "و پاداش"
+    },
+    {
+     "id": "o3",
+     "fa": "و بازگشت"
+    },
+    {
+     "id": "o4",
+     "fa": "و سرانجام نیک"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "near_miss",
+    "o3": "near_miss"
+   },
+   "explanationFa": "این کلمه از ریشه (ع ق ب) به معنای پایان کار و سرانجام نیک است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0611",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "در این آیه، «وَٱلْعَـٰقِبَةُ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_083_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "o2",
+     "fa": "و آخرت"
+    },
+    {
+     "id": "o3",
+     "fa": "و مجازات"
+    },
+    {
+     "id": "o4",
+     "fa": "و کیفر"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "false_friend",
+    "o4": "false_friend"
+   },
+   "explanationFa": "خداوند می‌فرماید: «و سرانجام نیک» برای پرهیزکاران است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0612",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "معنای «وَٱلْعَـٰقِبَةُ» در متن آیه کدام است؟",
+   "stem": {
+    "wordId": "w28_083_013",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و عاقبت بد"
+    },
+    {
+     "id": "o2",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "o3",
+     "fa": "و خانه"
+    },
+    {
+     "id": "o4",
+     "fa": "و عذاب"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "neighbor_word",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«العاقبة» در اینگونه تعابیر قرآنی همواره بار مثبت دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0613",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "معادل عربی «و سرانجام نیک» کدام است؟",
+   "stem": {
+    "fa": "و سرانجام نیک"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "ٱلْـَٔاخِرَةُ"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلدَّارُ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "o4",
+     "ar": "لِلْمُتَّقِينَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«عاقبة» به معنای سرانجام و پایان کار است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0614",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "«و سرانجام نیک» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "و سرانجام نیک"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "o2",
+     "ar": "خَيْرٌۭ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلسَّيِّئَةِ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلْـَٔاخِرَةُ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "کلمه «وَٱلْعَـٰقِبَةُ» با واو عطف آمده است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0615",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013"
+   ],
+   "promptFa": "کدام کلمه به معنای «و سرانجام نیک» است؟",
+   "stem": {
+    "fa": "و سرانجام نیک"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَسَادًۭا"
+    },
+    {
+     "id": "o2",
+     "ar": "ٱلْأَرْضِ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلدَّارُ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o3": "neighbor_word"
+   },
+   "explanationFa": "سرانجام کار را «عاقبت» می‌گویند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0616",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002"
+   ],
+   "promptFa": "معنای کلمه «جَآءَ» چیست؟",
+   "stem": {
+    "wordId": "w28_084_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آمد"
+    },
+    {
+     "id": "o2",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "o3",
+     "fa": "انجام دهد"
+    },
+    {
+     "id": "o4",
+     "fa": "برسد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«جَاءَ بِـ» به معنای آوردن و حاضر کردن است، نه آمدن.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0617",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002"
+   ],
+   "promptFa": "«جَآءَ» به چه معناست؟",
+   "stem": {
+    "wordId": "w28_084_002",
+    "showVerse": false
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آمد"
+    },
+    {
+     "id": "o2",
+     "fa": "قرار داد"
+    },
+    {
+     "id": "o3",
+     "fa": "عمل کرد"
+    },
+    {
+     "id": "o4",
+     "fa": "بیاورد"
+    }
+   ],
+   "answer": "o4",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o2": "random",
+    "o3": "near_miss"
+   },
+   "explanationFa": "در کنار حرف جر «بِـ»، فعل متعدی شده و معنای آوردن می‌دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0618",
+   "type": "WORD_AR_TO_FA",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 84,
+   "targets": [
+    "w:w28_084_002"
+   ],
+   "promptFa": "در این آیه، «جَآءَ» چه معنایی دارد؟",
+   "stem": {
+    "wordId": "w28_084_002",
+    "showVerse": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آمد"
+    },
+    {
+     "id": "o2",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "o3",
+     "fa": "رفت"
+    },
+    {
+     "id": "o4",
+     "fa": "عمل کرد"
+    }
+   ],
+   "answer": "o2",
+   "distractorTags": {
+    "o1": "false_friend",
+    "o3": "false_friend",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "هر کس کار نیکی به پیشگاه خدا «بیاورد»، پاداشی بهتر برای اوست.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0620",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002"
+   ],
+   "promptFa": "معادل عربی «بیاورد» کدام است؟",
+   "stem": {
+    "fa": "بیاورد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "عَمِلُوا۟"
+    },
+    {
+     "id": "o2",
+     "ar": "يُجْزَى"
+    },
+    {
+     "id": "o3",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَعْمَلُونَ"
+    }
+   ],
+   "answer": "o3",
+   "distractorTags": {
+    "o1": "neighbor_word",
+    "o2": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "«جَآءَ» به همراه حرف جر «بِـ» معنای آوردن می‌دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0621",
+   "type": "WORD_FA_TO_AR",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002"
+   ],
+   "promptFa": "«بیاورد» به عربی چه می‌شود؟",
+   "stem": {
+    "fa": "بیاورد"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "o2",
+     "ar": "عَمِلُوا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "خَيْرٌۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱلسَّيِّئَةِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_word",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "ریشه (ج ی ا) در این قالب به معنی احضار و آوردن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0623",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009",
+    "w:w28_082_015",
+    "w:w28_082_021",
+    "w:w28_083_008",
+    "w:w28_083_013"
+   ],
+   "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l4",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r2",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r3",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r4",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r5",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r6",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r7",
+     "fa": "دیروز"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "مرور کلمات مهم این بخش.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0624",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002",
+    "w:w28_082_009",
+    "w:w28_082_015",
+    "w:w28_082_021",
+    "w:w28_083_008"
+   ],
+   "promptFa": "هر کلمه را به ترجمه صحیح آن وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l4",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l5",
+     "ar": "عُلُوًّۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r2",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r3",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r4",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r5",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r6",
+     "fa": "سرانجام نیک"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "کلمات کلیدی آیات ۸۲ تا ۸۴.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0625",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013",
+    "w:w28_084_002",
+    "w:w28_082_009",
+    "w:w28_082_015",
+    "w:w28_082_021"
+   ],
+   "promptFa": "معنای هر کلمه را پیدا کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l2",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l5",
+     "ar": "لَخَسَفَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r2",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r3",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r4",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r5",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r6",
+     "fa": "تکبر"
+    },
+    {
+     "id": "r7",
+     "fa": "کافران"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "ترکیب کلمات سخت در یک نگاه.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0626",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008",
+    "w:w28_083_013",
+    "w:w28_084_002",
+    "w:w28_082_009",
+    "w:w28_082_015"
+   ],
+   "promptFa": "کلمات را به معادل فارسی‌شان متصل نمایید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l3",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l4",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَيَقْدِرُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r2",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r3",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r4",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r5",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r6",
+     "fa": "مجازات"
+    },
+    {
+     "id": "r7",
+     "fa": "آمد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "دقت در معانی «عاقبة» و «جاء بـ» که دوستان فریبنده هستند ضروری است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0627",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021",
+    "w:w28_083_008",
+    "w:w28_083_013",
+    "w:w28_084_002",
+    "w:w28_082_009"
+   ],
+   "promptFa": "هر کلمه قرآنی را به ترجمه آن وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l2",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l4",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَبْسُطُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r2",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r3",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r4",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r5",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r6",
+     "fa": "تنگ می‌گیرد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تکرار و مرور معانی.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0628",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015",
+    "w:w28_082_021",
+    "w:w28_083_008",
+    "w:w28_083_013",
+    "w:w28_084_002"
+   ],
+   "promptFa": "کلمات و معانی را جفت کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l3",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l5",
+     "ar": "جَآءَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r2",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r3",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r4",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r5",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r6",
+     "fa": "عاقبت بد"
+    },
+    {
+     "id": "r7",
+     "fa": "وسعت می‌دهد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "توجه به «یقدر» به معنای تنگ گرفتن.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0629",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_009",
+    "w:w28_082_015",
+    "w:w28_082_021",
+    "w:w28_083_013",
+    "w:w28_084_002"
+   ],
+   "promptFa": "گزینه‌های مرتبط را به یکدیگر وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l5",
+     "ar": "جَآءَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r2",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r3",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r4",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r5",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r6",
+     "fa": "تکبر"
+    },
+    {
+     "id": "r7",
+     "fa": "انجام دهد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "مرور جفت‌های متضاد معنایی مثل یبسط و یقدر.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0630",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_008",
+    "w:w28_083_013",
+    "w:w28_084_002",
+    "w:w28_082_009",
+    "w:w28_082_021"
+   ],
+   "promptFa": "ترجمه دقیق هر کلمه را انتخاب کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l2",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l3",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l4",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l5",
+     "ar": "لَخَسَفَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r2",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r3",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r4",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r5",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r6",
+     "fa": "سرانجام بد"
+    },
+    {
+     "id": "r7",
+     "fa": "توانایی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "آشنایی با کلمات دشوار آیات.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0631",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_015",
+    "w:w28_083_008",
+    "w:w28_083_013",
+    "w:w28_084_002",
+    "w:w28_082_009"
+   ],
+   "promptFa": "کلمات را به معانی‌شان وصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l2",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l4",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَبْسُطُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r2",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r3",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r4",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r5",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r6",
+     "fa": "فرو برده بود"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "تثبیت لغات سخت درس.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0632",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "targets": [
+    "w:w28_082_021",
+    "w:w28_082_015",
+    "w:w28_082_009",
+    "w:w28_083_008",
+    "w:w28_084_002"
+   ],
+   "promptFa": "ارتباط صحیح بین کلمات و ترجمه را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l4",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l5",
+     "ar": "جَآءَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r2",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r3",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r4",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r5",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r6",
+     "fa": "سرانجام نیک"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "مرور نهایی لغات.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0633",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "word",
+   "targets": [
+    "w:w28_083_013",
+    "w:w28_083_008",
+    "w:w28_082_021",
+    "w:w28_082_015",
+    "w:w28_082_009"
+   ],
+   "promptFa": "هر واژه عربی را به معنای فارسی متصل کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l2",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَيَقْدِرُ"
+    },
+    {
+     "id": "l5",
+     "ar": "يَبْسُطُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r2",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r3",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r4",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r5",
+     "fa": "وسعت می‌دهد"
+    },
+    {
+     "id": "r6",
+     "fa": "بیاورد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "یادآوری معانی دقیق.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0634",
+   "type": "MATCH_WORDS",
+   "shape": "match",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "word",
+   "targets": [
+    "w:w28_084_002",
+    "w:w28_083_013",
+    "w:w28_083_008",
+    "w:w28_082_021",
+    "w:w28_082_015"
+   ],
+   "promptFa": "کلمات را با ترجمه دقیق آن‌ها مطابقت دهید.",
+   "stem": {
+    "mode": "WORD_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "جَآءَ"
+    },
+    {
+     "id": "l2",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l3",
+     "ar": "عُلُوًّۭا"
+    },
+    {
+     "id": "l4",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l5",
+     "ar": "وَيَقْدِرُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بیاورد"
+    },
+    {
+     "id": "r2",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r3",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r4",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r5",
+     "fa": "و تنگ می‌گیرد"
+    },
+    {
+     "id": "r6",
+     "fa": "آمد"
+    },
+    {
+     "id": "r7",
+     "fa": "توانایی دارد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ],
+    [
+     "l5",
+     "r5"
+    ]
+   ],
+   "explanationFa": "دقت در تفاوت‌ها و دوستان فریبنده.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0741",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_001",
+    "w:w28_081_004",
+    "w:w28_081_009",
+    "w:w28_081_010"
+   ],
+   "promptFa": "معنای هر کلمه یا عبارت را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 81
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَخَسَفْنَا"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْأَرْضَ"
+    },
+    {
+     "id": "l3",
+     "ar": "فِئَةٍۢ"
+    },
+    {
+     "id": "l4",
+     "ar": "يَنصُرُونَهُۥ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس فرو بردیم"
+    },
+    {
+     "id": "r2",
+     "fa": "زمین"
+    },
+    {
+     "id": "r3",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r4",
+     "fa": "یاری‌اش دهند"
+    },
+    {
+     "id": "r5",
+     "fa": "دفاع کنندگان"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«فخسفنا» از ریشه خسف به معنای فرو بردن در زمین است و «فئة» به معنای گروه و دسته است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0742",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 81,
+   "targets": [
+    "w:w28_081_012",
+    "w:w28_081_017",
+    "w:w28_081_015"
+   ],
+   "promptFa": "معادل فارسی کلمات آیه ۸۱ را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 81
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "دُونِ"
+    },
+    {
+     "id": "l2",
+     "ar": "ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "l3",
+     "ar": "بِدَارِهِ"
+    },
+    {
+     "id": "l4",
+     "ar": "كَانَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "غیر از"
+    },
+    {
+     "id": "r2",
+     "fa": "دفاع کنندگان"
+    },
+    {
+     "id": "r3",
+     "fa": "خانه‌اش"
+    },
+    {
+     "id": "r4",
+     "fa": "بود"
+    },
+    {
+     "id": "r5",
+     "fa": "یاری‌اش دهند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«المنتصرین» در اینجا به معنای کسانی است که از خود دفاع می‌کنند و یاری می‌شوند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0743",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "ترجمه صحیح این بخش از آیه چیست؟",
+   "stem": {
+    "verse": 81,
+    "text": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "پس او و خانه اش را در زمین فرو بردیم،"
+    },
+    {
+     "id": "o2",
+     "fa": "پس او را در زمین فرو بردیم،"
+    },
+    {
+     "id": "o3",
+     "fa": "پس خانه اش را در زمین فرو بردیم،"
+    },
+    {
+     "id": "o4",
+     "fa": "ما آنان را در زمین فرو بردیم،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«بِهِۦ وَبِدَارِهِ» شامل هر دو مورد یعنی «او و خانه‌اش» می‌شود.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0744",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "مفهوم این بخش از آیه ۸۱ کدام است؟",
+   "stem": {
+    "verse": 81,
+    "text": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ مِن دُونِ ٱللَّهِ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و هیچ گروهی غیر از خدا برای او نبود که وی را [برای رهایی از عذاب] یاری دهد،"
+    },
+    {
+     "id": "o2",
+     "fa": "و گروهی غیر از خدا برای او بود که وی را یاری دهد،"
+    },
+    {
+     "id": "o3",
+     "fa": "و هیچ کسی غیر از خدا برای او نبود که او را نجات دهد،"
+    },
+    {
+     "id": "o4",
+     "fa": "و یاری دهندگانی غیر از خدا برای او نبودند،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«فِئَةٍ» به معنای گروه است و «مَا كَانَ» نفی می‌کند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0745",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "ترجمه صحیح قسمت پایانی آیه ۸۱ چیست؟",
+   "stem": {
+    "verse": 81,
+    "text": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و خود نیز نتوانست از خود دفاع کند."
+    },
+    {
+     "id": "o2",
+     "fa": "و از یاری کنندگان نبود."
+    },
+    {
+     "id": "o3",
+     "fa": "و هیچ کس نتوانست از او دفاع کند."
+    },
+    {
+     "id": "o4",
+     "fa": "و از رستگاران نبود."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "«ٱلْمُنتَصِرِينَ» در این بافتار به معنای کسانی است که از خود دفاع می‌کنند و یاری می‌طلبند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0746",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 81,
+   "targets": [
+    "vr:81"
+   ],
+   "promptFa": "کدام عبارت عربی معادل این ترجمه است؟",
+   "stem": {
+    "verse": 81,
+    "text": "پس او و خانه اش را در زمین فرو بردیم،",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَخَسَفْنَا بِهِۦ ٱلْأَرْضَ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَخَسَفْنَا بِدَارِهِ ٱلْأَرْضَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَخَسَفَ بِنَا ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت کامل شامل «بِهِۦ» (او) و «بِدَارِهِ» (خانه‌اش) است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0747",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 81,
+   "targets": [
+    "vr:81"
+   ],
+   "promptFa": "کدام بخش از آیه با ترجمه مطابقت دارد؟",
+   "stem": {
+    "verse": 81,
+    "text": "و هیچ گروهی غیر از خدا برای او نبود که وی را [برای رهایی از عذاب] یاری دهد،",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ مِن دُونِ ٱللَّهِ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "random"
+   },
+   "explanationFa": "بخش «مِن دُونِ ٱللَّهِ» (غیر از خدا) باید در عبارت باشد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0748",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 81,
+   "targets": [
+    "vr:81"
+   ],
+   "promptFa": "متن عربی این بخش از آیه کدام است؟",
+   "stem": {
+    "verse": 81,
+    "text": "و خود نیز نتوانست از خود دفاع کند.",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ"
+    },
+    {
+     "id": "o3",
+     "ar": "لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_word",
+    "o3": "neighbor_verse",
+    "o4": "random"
+   },
+   "explanationFa": "«المنتصرین» به معنای دفاع‌کنندگان از خویشتن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0749",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "قطعات ترجمه آیه ۸۱ را به ترتیب درست مرتب کنید.",
+   "stem": {
+    "verse": 81
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس او و خانه اش را",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "در زمین فرو بردیم،",
+     "wordIdx": [
+      1,
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و هیچ گروهی غیر از خدا",
+     "wordIdx": [
+      5,
+      8,
+      9,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "برای او نبود",
+     "wordIdx": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "که وی را [برای رهایی از عذاب] یاری دهد،",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "و خود نیز نتوانست از خود دفاع کند.",
+     "wordIdx": [
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "b7",
+     "fa": "و رستگار نشد",
+     "wordIdx": [
+      100
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "distractorTags": {
+    "b7": "false_friend"
+   },
+   "explanationFa": "ترتیب بر اساس: فَخَسَفْنَا ... فَمَا كَانَ ... يَنصُرُونَهُ ... وَمَا كَانَ.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0750",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "بخش‌های ترجمه را به ترتیب قرار دهید.",
+   "stem": {
+    "verse": 81
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "پس او و خانه اش را",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "در زمین فرو بردیم، و هیچ گروهی",
+     "wordIdx": [
+      1,
+      4,
+      5,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "غیر از خدا برای او نبود که وی را",
+     "wordIdx": [
+      6,
+      7,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "[برای رهایی از عذاب] یاری دهد، و خود نیز",
+     "wordIdx": [
+      10,
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "نتوانست از خود دفاع کند.",
+     "wordIdx": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "از آنان یاری خواست",
+     "wordIdx": [
+      101
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "false_friend"
+   },
+   "explanationFa": "ترتیب دقیق و پیوسته ترجمه آیه ۸۱ مد نظر است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0751",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "کلمات جاافتاده در ترجمه آیه را جای‌گذاری کنید.",
+   "stem": {
+    "verse": 81,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 27,
+      "text": "فرو بردیم"
+     },
+     {
+      "start": 44,
+      "text": "گروهی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "فرو بردیم",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "گروهی",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "نجات دادیم",
+     "wordIdx": [
+      1
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "کسی",
+     "wordIdx": [
+      9
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "27": "b1",
+    "44": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«خسف» یعنی در زمین فرو بردیم، و «فئة» به معنی گروه است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0752",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "جای‌خالی‌ها را با کلمات مناسب پر کنید.",
+   "stem": {
+    "verse": 81,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 106,
+      "text": "یاری دهد"
+     },
+     {
+      "start": 141,
+      "text": "دفاع کند"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "یاری دهد",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "دفاع کند",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "نجات دهد",
+     "wordIdx": [
+      10
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "فرار کند",
+     "wordIdx": [
+      17
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "106": "b1",
+    "141": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "false_friend"
+   },
+   "explanationFa": "«یَنصُرُونَهُ» به معنای یاری دهند او را و «المنتصرین» دفاع‌کنندگان است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0753",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_003",
+    "w:w28_082_005",
+    "w:w28_082_009",
+    "w:w28_082_010"
+   ],
+   "promptFa": "معنای کلمات آیه ۸۲ را تطبیق دهید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 82
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تَمَنَّوْا۟"
+    },
+    {
+     "id": "l2",
+     "ar": "بِٱلْأَمْسِ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l4",
+     "ar": "ٱلرِّزْقَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "آرزو داشتند"
+    },
+    {
+     "id": "r2",
+     "fa": "دیروز"
+    },
+    {
+     "id": "r3",
+     "fa": "وسعت می دهد"
+    },
+    {
+     "id": "r4",
+     "fa": "رزق را"
+    },
+    {
+     "id": "r5",
+     "fa": "مقام"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«تمنوا» از ریشه مُنی به معنای آرزو کردن و «یبسط» گستردن و وسعت دادن است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0754",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 82,
+   "targets": [
+    "w:w28_082_012",
+    "w:w28_082_018",
+    "w:w28_082_021",
+    "w:w28_082_025"
+   ],
+   "promptFa": "معادل صحیح را برای هر کلمه انتخاب کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 82
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يَشَآءُ"
+    },
+    {
+     "id": "l2",
+     "ar": "مَّنَّ"
+    },
+    {
+     "id": "l3",
+     "ar": "لَخَسَفَ"
+    },
+    {
+     "id": "l4",
+     "ar": "يُفْلِحُ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "بخواهد"
+    },
+    {
+     "id": "r2",
+     "fa": "منت گذاشته بود"
+    },
+    {
+     "id": "r3",
+     "fa": "قطعا فرو برده بود"
+    },
+    {
+     "id": "r4",
+     "fa": "رستگار می شوند"
+    },
+    {
+     "id": "r5",
+     "fa": "کافران"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«لخسف» از لام تاکید و خسف تشکیل شده و قطعا در زمین فرو بردن معنا می‌دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0755",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "معنای این بخش از آیه ۸۲ چیست؟",
+   "stem": {
+    "verse": 82,
+    "text": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ وَيْكَأَنَّ ٱللَّهَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند [چنان حالی شدند که] می گفتند: وه! گویی خدا"
+    },
+    {
+     "id": "o2",
+     "fa": "و آنانکه دیروز جایگاه او را دیدند گفتند گویی خدا"
+    },
+    {
+     "id": "o3",
+     "fa": "بامدادان کسانی که دیروز آرزوی جایگاهش را داشتند گفتند وای بر ما خدا"
+    },
+    {
+     "id": "o4",
+     "fa": "و صبح کردند در حالی که جایگاه او را آرزو می کردند و گفتند گویی خدا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«أَصْبَحَ» در اینجا به معنای «بامدادان چنان حالی یافتند» است و «وَيْكَأَنَّ» به معنای «وه! گویی» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0756",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "ترجمه این فراز از آیه کدام است؟",
+   "stem": {
+    "verse": 82,
+    "text": "يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ مِنْ عِبَادِهِۦ وَيَقْدِرُ ۖ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "رزق را برای هر کس از بندگانش بخواهد وسعت می دهد، و [برای هر که بخواهد] تنگ می گیرد،"
+    },
+    {
+     "id": "o2",
+     "fa": "رزق را برای هر کس از بندگانش بخواهد وسعت می دهد و قدرت دارد،"
+    },
+    {
+     "id": "o3",
+     "fa": "روزی بندگانش را هرگونه بخواهد گسترش می دهد،"
+    },
+    {
+     "id": "o4",
+     "fa": "رزق را می گستراند برای هر کس که بخواهد و اندازه نگه می دارد،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«يَقْدِرُ» در اینجا نقطه مقابل «يَبْسُطُ» بوده و به معنای تنگ گرفتن روزی است، نه قدرت داشتن.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0757",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "ترجمه صحیح بخش پایانی آیه ۸۲ چیست؟",
+   "stem": {
+    "verse": 82,
+    "text": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "اگر خدا بر ما منت نگذاشته بود، ما را نیز در زمین فرو برده بود، وه، گویی کافران رستگار نمی شوند."
+    },
+    {
+     "id": "o2",
+     "fa": "اگر منت خدا بر ما نبود ما را نیز عذاب می کرد، گویی کافران نجات نمی یابند."
+    },
+    {
+     "id": "o3",
+     "fa": "اگر خدا بر ما منت نگذاشته بود قطعا هلاک می شدیم، وای که کافران رستگار نمی شوند."
+    },
+    {
+     "id": "o4",
+     "fa": "اگر لطف خدا بر ما نبود ما را در زمین فرو می برد، گویی کافران پیروز نمی شوند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "دقت در ترجمه «لَخَسَفَ بِنَا» (ما را نیز در زمین فرو برده بود) و «وَيْكَأَنَّهُۥ» (وه، گویی) ضروری است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0758",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 82,
+   "targets": [
+    "vr:82"
+   ],
+   "promptFa": "معادل عربی این بخش از ترجمه کدام است؟",
+   "stem": {
+    "verse": 82,
+    "text": "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند [چنان حالی شدند که] می گفتند: وه! گویی خدا",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ يَقُولُونَ وَيْكَأَنَّ ٱللَّهَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ يَقُولُونَ وَيْكَأَنَّ ٱللَّهَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ بِٱلْأَمْسِ يَقُولُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ مِنْ عِبَادِهِۦ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«بِٱلْأَمْسِ» معادل دیروز و «وَيْكَأَنَّ» معادل «وه! گویی» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0759",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 82,
+   "targets": [
+    "vr:82"
+   ],
+   "promptFa": "کدام قسمت آیه با این ترجمه هم‌خوان است؟",
+   "stem": {
+    "verse": 82,
+    "text": "رزق را برای هر کس از بندگانش بخواهد وسعت می دهد، و [برای هر که بخواهد] تنگ می گیرد،",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ مِنْ عِبَادِهِۦ وَيَقْدِرُ ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "يَبْسُطُ ٱلرِّزْقَ لِمَن يَشَآءُ وَيَقْدِرُ ۖ"
+    },
+    {
+     "id": "o3",
+     "ar": "يَبْسُطُ ٱلرِّزْقَ مِنْ عِبَادِهِۦ وَيَقْدِرُ ۖ"
+    },
+    {
+     "id": "o4",
+     "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت کامل شامل «مِنْ عِبَادِهِۦ» نیز می‌شود.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0760",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 82,
+   "targets": [
+    "vr:82"
+   ],
+   "promptFa": "متن عربی متناظر با این ترجمه کدام است؟",
+   "stem": {
+    "verse": 82,
+    "text": "اگر خدا بر ما منت نگذاشته بود، ما را نیز در زمین فرو برده بود، وه، گویی کافران رستگار نمی شوند.",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَوْلَآ أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَن مَّنَّ ٱللَّهُ عَلَيْنَا لَخَسَفَ بِنَا ۖ وَيْكَأَنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا لِلَّذِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«وَيْكَأَنَّهُۥ» معادل «وه، گویی» است و نباید در عربی جا بیفتد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0761",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "قطعات ترجمه ابتدای آیه ۸۲ را مرتب کنید.",
+   "stem": {
+    "verse": 82
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "و بامدادان، آنانکه دیروز مقام و جایگاه او را",
+     "wordIdx": [
+      1,
+      2,
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "آرزو داشتند [چنان حالی شدند که] می گفتند:",
+     "wordIdx": [
+      3,
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "وه! گویی خدا رزق را برای هر کس",
+     "wordIdx": [
+      7,
+      8,
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "از بندگانش بخواهد وسعت می دهد،",
+     "wordIdx": [
+      9,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "و [برای هر که بخواهد] تنگ می گیرد،",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "و او را عذاب می کند،",
+     "wordIdx": [
+      100
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "random"
+   },
+   "explanationFa": "الگوی ترتیب: وَأَصْبَحَ ٱلَّذِينَ ... تَمَنَّوْا۟ ... وَيْكَأَنَّ ٱللَّهَ ... يَبْسُطُ ... وَيَقْدِرُ.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0763",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "کلمات جاافتاده از ترجمه را پر کنید.",
+   "stem": {
+    "verse": 82,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 139,
+      "text": "وسعت می دهد"
+     },
+     {
+      "start": 174,
+      "text": "تنگ می گیرد"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "وسعت می دهد",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "تنگ می گیرد",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "روزی می دهد",
+     "wordIdx": [
+      9
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "قدرت دارد",
+     "wordIdx": [
+      15
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "139": "b1",
+    "174": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "false_friend"
+   },
+   "explanationFa": "«یَبسُطُ» به معنی گستردن است و «یَقدِرُ» نقطه مقابل آن یعنی محدود کردن روزی.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0764",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "عبارات پنهان‌شده در ترجمه آیه ۸۲ را جای‌گذاری کنید.",
+   "stem": {
+    "verse": 82,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 202,
+      "text": "منت نگذاشته بود"
+     },
+     {
+      "start": 236,
+      "text": "فرو برده بود"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "منت نگذاشته بود",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "فرو برده بود",
+     "wordIdx": [
+      21
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "رحم نکرده بود",
+     "wordIdx": [
+      18
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "هلاک کرده بود",
+     "wordIdx": [
+      21
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "202": "b1",
+    "236": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«مَنَّ» یعنی منت گذاشت، و «لَخَسَفَ» تاکید بر فرو بردن در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0765",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_001",
+    "w:w28_083_004",
+    "w:w28_083_007",
+    "w:w28_083_008"
+   ],
+   "promptFa": "معنی دقیق هر کلمه یا بخش آیه را انتخاب کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 83
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تِلْكَ"
+    },
+    {
+     "id": "l2",
+     "ar": "نَجْعَلُهَا"
+    },
+    {
+     "id": "l3",
+     "ar": "يُرِيدُونَ"
+    },
+    {
+     "id": "l4",
+     "ar": "عُلُوًّۭا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "آن"
+    },
+    {
+     "id": "r2",
+     "fa": "قرار می دهیم آن را"
+    },
+    {
+     "id": "r3",
+     "fa": "می خواهند"
+    },
+    {
+     "id": "r4",
+     "fa": "برتری و تسلّطی"
+    },
+    {
+     "id": "r5",
+     "fa": "زمین"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«علوّا» به معنای برتری‌جویی و تسلط یافتن در زمین است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0766",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 83,
+   "targets": [
+    "w:w28_083_010",
+    "w:w28_083_012",
+    "w:w28_083_013",
+    "w:w28_083_014"
+   ],
+   "promptFa": "معادل‌های کلمات نیمه دوم آیه ۸۳ را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 83
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "ٱلْأَرْضِ"
+    },
+    {
+     "id": "l2",
+     "ar": "فَسَادًۭا"
+    },
+    {
+     "id": "l3",
+     "ar": "وَٱلْعَـٰقِبَةُ"
+    },
+    {
+     "id": "l4",
+     "ar": "لِلْمُتَّقِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "زمین"
+    },
+    {
+     "id": "r2",
+     "fa": "فسادی"
+    },
+    {
+     "id": "r3",
+     "fa": "و سرانجام نیک"
+    },
+    {
+     "id": "r4",
+     "fa": "برای پرهیزکاران"
+    },
+    {
+     "id": "r5",
+     "fa": "آخرت"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«العاقبة» در قرآن غالباً به معنای سرانجام نیک و رستگاری پایانی است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0767",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "این بخش از آیه چه ترجمه‌ای دارد؟",
+   "stem": {
+    "verse": 83,
+    "text": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم"
+    },
+    {
+     "id": "o2",
+     "fa": "آن خانه آخرت را بنا می کنیم"
+    },
+    {
+     "id": "o3",
+     "fa": "این سرای آخرت است که ما آن را قرار می دهیم"
+    },
+    {
+     "id": "o4",
+     "fa": "آن سرای آخرت را برای شما قرار می دهیم"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«تِلْكَ» برای اشاره دور است و ترجمه انصاریان «آن سرای [پرارزش] آخرت را...» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0768",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "معنای صحیح این قسمت از آیه ۸۳ چیست؟",
+   "stem": {
+    "verse": 83,
+    "text": "لِلَّذِينَ لَا يُرِيدُونَ عُلُوًّۭا فِى ٱلْأَرْضِ وَلَا فَسَادًۭا ۚ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "که در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛"
+    },
+    {
+     "id": "o2",
+     "fa": "برای کسانی که در زمین نه فساد می کنند و نه برتری می جویند؛"
+    },
+    {
+     "id": "o3",
+     "fa": "که در زمین خواستار برتری و فساد نیستند؛"
+    },
+    {
+     "id": "o4",
+     "fa": "برای کسانی که برتری را دوست ندارند و فساد نمی کنند؛"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«لَا يُرِيدُونَ» به معنی «نمی خواهند» است و «عُلُوًّۭا» برتری و تسلط است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0769",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "ترجمه عبارت پایانی آیه ۸۳ کدام است؟",
+   "stem": {
+    "verse": 83,
+    "text": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و سرانجام [نیک] برای پرهیزکاران است."
+    },
+    {
+     "id": "o2",
+     "fa": "و مجازات برای پرهیزکاران نیست."
+    },
+    {
+     "id": "o3",
+     "fa": "و عاقبت کار با پرهیزکاران است."
+    },
+    {
+     "id": "o4",
+     "fa": "و سرانجام پرهیزکاران نیکوست."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«عاقبة» سرانجام نیک است و «لـِ» در «لِلْمُتَّقِينَ» مالکیت و اختصاص را می‌رساند (برای).",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0770",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 83,
+   "targets": [
+    "vr:83"
+   ],
+   "promptFa": "متن عربی متناظر با این ترجمه چیست؟",
+   "stem": {
+    "verse": 83,
+    "text": "آن سرای [پرارزش] آخرت را برای کسانی قرار می دهیم",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا"
+    },
+    {
+     "id": "o2",
+     "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا لِلَّذِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "لِلَّذِينَ لَا يُرِيدُونَ عُلُوًّۭا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "عبارت کامل عربی شامل «تِلْكَ» تا «نَجْعَلُهَا» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0771",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 83,
+   "targets": [
+    "vr:83"
+   ],
+   "promptFa": "کدام عبارت عربی، معادل این ترجمه است؟",
+   "stem": {
+    "verse": 83,
+    "text": "که در زمین هیچ برتری و تسلّط و هیچ فسادی را نمی خواهند؛",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "لِلَّذِينَ لَا يُرِيدُونَ عُلُوًّۭا فِى ٱلْأَرْضِ وَلَا فَسَادًۭا ۚ"
+    },
+    {
+     "id": "o2",
+     "ar": "لَا يُرِيدُونَ عُلُوًّۭا فِى ٱلْأَرْضِ وَلَا فَسَادًۭا ۚ"
+    },
+    {
+     "id": "o3",
+     "ar": "لِلَّذِينَ لَا يُرِيدُونَ عُلُوًّۭا فِى ٱلْأَرْضِ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "ترجمه «برای کسانی که...» یا «که ...» معادل «لِلَّذِينَ» در ابتدای این قطعه است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0772",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 83,
+   "targets": [
+    "vr:83"
+   ],
+   "promptFa": "این ترجمه مربوط به کدام عبارت قرآنی است؟",
+   "stem": {
+    "verse": 83,
+    "text": "و سرانجام [نیک] برای پرهیزکاران است.",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَٱلْعَـٰقِبَةُ لِلْمُتَّقِينَ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَٱلْعَـٰقِبَةُ لِلظّٰلِمِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَلَا فَسَادًۭا ۚ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "پرهیزکاران معادل «لِلْمُتَّقِينَ» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0773",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "تکه‌های ترجمه آیه ۸۳ را مرتب کنید.",
+   "stem": {
+    "verse": 83
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "آن سرای [پرارزش] آخرت را",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "برای کسانی قرار می دهیم",
+     "wordIdx": [
+      4,
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "که در زمین هیچ برتری و تسلّط",
+     "wordIdx": [
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و هیچ فسادی را نمی خواهند؛",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "پس نابود می شوند",
+     "wordIdx": [
+      100
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "random"
+   },
+   "explanationFa": "ترتیب بر اساس: تِلْكَ ... نَجْعَلُهَا لِلَّذِينَ ... يُرِيدُونَ عُلُوًّۭا فِى ٱلْأَرْضِ ... وَلَا فَسَادًۭا.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0774",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "بخش پایانی ترجمه آیه ۸۳ را به درستی بچینید.",
+   "stem": {
+    "verse": 83
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "که در زمین",
+     "wordIdx": [
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "هیچ برتری و تسلّط",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "و هیچ فسادی را نمی خواهند؛",
+     "wordIdx": [
+      6,
+      7,
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و سرانجام [نیک]",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "برای پرهیزکاران است.",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "و مجازات می شوند",
+     "wordIdx": [
+      100
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "false_friend"
+   },
+   "explanationFa": "الگوی ترتیب دقیق از «فِی الأَرض» تا پایان آیه.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0775",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "کلمات غایب ترجمه را از گزینه‌ها انتخاب کنید.",
+   "stem": {
+    "verse": 83,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 64,
+      "text": "برتری و تسلّط"
+     },
+     {
+      "start": 84,
+      "text": "فسادی"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "برتری و تسلّط",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "فسادی",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "مال و ثروت",
+     "wordIdx": [
+      8
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "گناهی",
+     "wordIdx": [
+      12
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "64": "b1",
+    "84": "b2"
+   },
+   "distractorTags": {
+    "b3": "near_miss",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«عُلُوًّۭا» به معنای برتری‌جویی و تسلط، و «فَسَادًۭا» به معنای فساد است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0776",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "جاهای خالی را در ترجمه آیه پر کنید.",
+   "stem": {
+    "verse": 83,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 109,
+      "text": "سرانجام"
+     },
+     {
+      "start": 128,
+      "text": "پرهیزکاران"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "سرانجام",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "پرهیزکاران",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "مجازات",
+     "wordIdx": [
+      13
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "ستمکاران",
+     "wordIdx": [
+      14
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "109": "b1",
+    "128": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "false_friend"
+   },
+   "explanationFa": "«العاقبة» در اینجا سرانجام نیک است و اختصاص به «المتقین» دارد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0777",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "word",
+   "verse": 84,
+   "targets": [
+    "w:w28_084_002",
+    "w:w28_084_003",
+    "w:w28_084_005",
+    "w:w28_084_006"
+   ],
+   "promptFa": "معادل هر بخش از آیه ۸۴ را مشخص کنید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 84
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مَن جَآءَ"
+    },
+    {
+     "id": "l2",
+     "ar": "بِٱلْحَسَنَةِ"
+    },
+    {
+     "id": "l3",
+     "ar": "خَيْرٌۭ"
+    },
+    {
+     "id": "l4",
+     "ar": "مِّنْهَا"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هر کس بیاورد"
+    },
+    {
+     "id": "r2",
+     "fa": "کار نیکی"
+    },
+    {
+     "id": "r3",
+     "fa": "بهتر"
+    },
+    {
+     "id": "r4",
+     "fa": "از آن"
+    },
+    {
+     "id": "r5",
+     "fa": "بدی"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_word"
+   },
+   "explanationFa": "«جاء بـ» به معنای آوردن است، و «الحسنة» یعنی کار نیک.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0778",
+   "type": "WORD_AR_TO_FA",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "word",
+   "verse": 84,
+   "targets": [
+    "w:w28_084_011",
+    "w:w28_084_013",
+    "w:w28_084_014",
+    "w:w28_084_018"
+   ],
+   "promptFa": "معادل‌های نیمه دوم آیه ۸۴ را بیابید.",
+   "stem": {
+    "mode": "WORD_AR_FA",
+    "verse": 84
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "يُجْزَى"
+    },
+    {
+     "id": "l2",
+     "ar": "عَمِلُوا۟"
+    },
+    {
+     "id": "l3",
+     "ar": "ٱلسَّيِّـَٔاتِ"
+    },
+    {
+     "id": "l4",
+     "ar": "يَعْمَلُونَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "جزا داده می شوند"
+    },
+    {
+     "id": "r2",
+     "fa": "انجام داده اند"
+    },
+    {
+     "id": "r3",
+     "fa": "کارهای ناشایسته"
+    },
+    {
+     "id": "r4",
+     "fa": "انجام می داده اند"
+    },
+    {
+     "id": "r5",
+     "fa": "همواره"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "near_miss"
+   },
+   "explanationFa": "«یُجزَی» فعل مجهول و به معنای جزا داده می‌شوند است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0779",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "ترجمه صحیح این قسمت از آیه ۸۴ چیست؟",
+   "stem": {
+    "verse": 84,
+    "text": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست،"
+    },
+    {
+     "id": "o2",
+     "fa": "کسی که خوبی کرد برای او بهتر از آن است،"
+    },
+    {
+     "id": "o3",
+     "fa": "هر کس با خوبی بیاید بهتری می یابد،"
+    },
+    {
+     "id": "o4",
+     "fa": "آنان که نیکی آوردند بهتر از آن برایشان است،"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«مَن» به معنای هر کس و «جَآءَ بِٱلْحَسَنَةِ» به معنای کار نیکی بیاورد است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0780",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "مفهوم دقیق این بخش از آیه کدام است؟",
+   "stem": {
+    "verse": 84,
+    "text": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "و هر کس کار بدی بیاورد [پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند"
+    },
+    {
+     "id": "o2",
+     "fa": "و هر کس بدی آورد پس مجازات نمی شوند آنان که کارهای بد می کنند"
+    },
+    {
+     "id": "o3",
+     "fa": "و هر کس بدی کرد پس آنان که کارهای ناشایسته کردند جزا نمی بینند"
+    },
+    {
+     "id": "o4",
+     "fa": "و هر کس کار بد آورد پس جزا داده می شوند آنان که کارهای ناشایسته کردند"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "false_friend"
+   },
+   "explanationFa": "«فَلَا يُجْزَى» یک فعل مجهول منفی است (جزا داده نمی‌شوند).",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0781",
+   "type": "VERSE_TO_TRANSLATION",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "ترجمه بخش پایانی آیه ۸۴ چیست؟",
+   "stem": {
+    "verse": 84,
+    "text": "إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+   },
+   "options": [
+    {
+     "id": "o1",
+     "fa": "مگر آنچه را همواره انجام می داده اند."
+    },
+    {
+     "id": "o2",
+     "fa": "مگر کارهایی که کرده اند."
+    },
+    {
+     "id": "o3",
+     "fa": "جز آنچه را که عمل می کردند."
+    },
+    {
+     "id": "o4",
+     "fa": "جز برای آنچه انجام داده اند."
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "«كَانُوا۟ يَعْمَلُونَ» دلالت بر استمرار در گذشته دارد، یعنی «همواره انجام می‌داده‌اند».",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0782",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 84,
+   "targets": [
+    "vr:84"
+   ],
+   "promptFa": "کدام بخش از آیه با این ترجمه تطابق دارد؟",
+   "stem": {
+    "verse": 84,
+    "text": "هر کس کار نیکی [به پیشگاه خدا] بیاورد، پاداشی بهتر از آن برای اوست،",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى"
+    },
+    {
+     "id": "o3",
+     "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ"
+    },
+    {
+     "id": "o4",
+     "ar": "إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«خَيْرٌۭ مِّنْهَا» در انتهای این فراز نباید از قلم بیفتد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0783",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 84,
+   "targets": [
+    "vr:84"
+   ],
+   "promptFa": "متن عربی متناظر با این قسمت از ترجمه کدام است؟",
+   "stem": {
+    "verse": 84,
+    "text": "و هر کس کار بدی بیاورد [پس بداند آنان که کارهای ناشایسته انجام داده اند] جزا داده نمی شوند",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ"
+    },
+    {
+     "id": "o2",
+     "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى ٱلَّذِينَ عَمِلُوا۟"
+    },
+    {
+     "id": "o3",
+     "ar": "فَلَا يُجْزَى ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ"
+    },
+    {
+     "id": "o4",
+     "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "ترجمه شامل «جاء بالسیئة» تا «السیئات» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0784",
+   "type": "TRANSLATION_TO_VERSE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 84,
+   "targets": [
+    "vr:84"
+   ],
+   "promptFa": "معادل عربی عبارت پایانی آیه ۸۴ چیست؟",
+   "stem": {
+    "verse": 84,
+    "text": "مگر آنچه را همواره انجام می داده اند.",
+    "showFa": true
+   },
+   "options": [
+    {
+     "id": "o1",
+     "ar": "إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+    },
+    {
+     "id": "o2",
+     "ar": "إِلَّا مَا كَانُوا۟ يَفْعَلُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "عَمِلُوا۟ ٱلسَّيِّـَٔاتِ إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "false_friend",
+    "o3": "near_miss",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "«كَانُوا۟ يَعْمَلُونَ» معادل «همواره انجام می‌داده‌اند» است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0785",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "قطعات ترجمه ابتدای آیه ۸۴ را به ترتیب قرار دهید.",
+   "stem": {
+    "verse": 84
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "هر کس کار نیکی",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "[به پیشگاه خدا] بیاورد،",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "پاداشی بهتر از آن برای اوست،",
+     "wordIdx": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "و هر کس کار بدی بیاورد",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "پس هلاک می شود",
+     "wordIdx": [
+      100
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "random"
+   },
+   "explanationFa": "ترتیب بر اساس: مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ وَمَن جَآءَ بِٱلسَّيِّئَةِ.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0786",
+   "type": "ORDER_TRANSLATION_CHUNKS",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "تکه‌های ترجمه بخش دوم آیه ۸۴ را مرتب کنید.",
+   "stem": {
+    "verse": 84
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "[پس بداند آنان که",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "کارهای ناشایسته انجام داده اند]",
+     "wordIdx": [
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "جزا داده نمی شوند",
+     "wordIdx": [
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "fa": "مگر آنچه را",
+     "wordIdx": [
+      15,
+      16
+     ]
+    },
+    {
+     "id": "b5",
+     "fa": "همواره انجام می داده اند.",
+     "wordIdx": [
+      17,
+      18
+     ]
+    },
+    {
+     "id": "b6",
+     "fa": "همواره پنهان می کردند.",
+     "wordIdx": [
+      101
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b3",
+    "b1",
+    "b2",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "false_friend"
+   },
+   "explanationFa": "توجه: در متن عربی «فَلَا يُجْزَى» (جزا داده نمی شوند) قبل از «ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ» آمده است، اما در ترجمه فارسی روان جای آن‌ها عوض شده است.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0787",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "کلمات پنهان در ترجمه آیه ۸۴ را تکمیل کنید.",
+   "stem": {
+    "verse": 84,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 7,
+      "text": "کار نیکی"
+     },
+     {
+      "start": 53,
+      "text": "بهتر"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "کار نیکی",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "بهتر",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "کار بدی",
+     "wordIdx": [
+      3
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "بیشتر",
+     "wordIdx": [
+      5
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "7": "b1",
+    "53": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«الحَسَنَة» کار نیک و «خَیر» در اینجا یعنی بهتر.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0788",
+   "type": "CLOZE_FA",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "جاهای خالی در انتهای ترجمه را پر کنید.",
+   "stem": {
+    "verse": 84,
+    "showFa": true,
+    "faHidden": [
+     {
+      "start": 131,
+      "text": "ناشایسته"
+     },
+     {
+      "start": 181,
+      "text": "همواره"
+     }
+    ]
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "fa": "ناشایسته",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b2",
+     "fa": "همواره",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b3",
+     "fa": "شایسته",
+     "wordIdx": [
+      14
+     ],
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "fa": "گاهی",
+     "wordIdx": [
+      17
+     ],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "131": "b1",
+    "181": "b2"
+   },
+   "distractorTags": {
+    "b3": "false_friend",
+    "b4": "near_miss"
+   },
+   "explanationFa": "«السَّیِّئات» به معنای کارهای ناشایسته است و «کانُوا یَعمَلون» یعنی همواره انجام می‌دادند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0901",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 81,
+   "targets": [
+    "vt:81"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه فارسی دقیق آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+    },
+    {
+     "id": "l2",
+     "ar": "مِن فِئَةٍۢ"
+    },
+    {
+     "id": "l3",
+     "ar": "مِن دُونِ ٱللَّهِ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "پس او و خانه اش را در زمین فرو بردیم"
+    },
+    {
+     "id": "r3",
+     "fa": "غیر از خدا"
+    },
+    {
+     "id": "r5",
+     "fa": "وه، گویی کافران رستگار نمی شوند"
+    },
+    {
+     "id": "r2",
+     "fa": "گروهی"
+    },
+    {
+     "id": "r4",
+     "fa": "و خود نیز نتوانست از خود دفاع کند"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "خسف به معنای فرو بردن در زمین است. هیچ گروهی نتوانست قارون را در برابر این عذاب یاری دهد.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0903",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 82,
+   "targets": [
+    "vt:82"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه فارسی دقیق آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ بِٱلْأَمْسِ"
+    },
+    {
+     "id": "l2",
+     "ar": "يَقُولُونَ وَيْكَأَنَّ ٱللَّهَ"
+    },
+    {
+     "id": "l3",
+     "ar": "يَبْسُطُ"
+    },
+    {
+     "id": "l4",
+     "ar": "لِمَن يَشَآءُ مِنْ عِبَادِهِۦ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "و بامدادان، آنانکه دیروز مقام و جایگاه او را آرزو داشتند"
+    },
+    {
+     "id": "r3",
+     "fa": "وسعت می دهد"
+    },
+    {
+     "id": "r5",
+     "fa": "هیچ برتری و تسلّط"
+    },
+    {
+     "id": "r2",
+     "fa": "می گفتند: وه! گویی خدا"
+    },
+    {
+     "id": "r4",
+     "fa": "برای هر کس از بندگانش بخواهد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "کسانی که پیش از آن آرزوی جایگاه قارون را داشتند، با دیدن عذاب او به اشتباه خود پی بردند و دریافتند رزق به دست خداست.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0905",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 83,
+   "targets": [
+    "vt:83"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه فارسی دقیق آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+    },
+    {
+     "id": "l2",
+     "ar": "لَا يُرِيدُونَ"
+    },
+    {
+     "id": "l3",
+     "ar": "عُلُوًّۭا فِى ٱلْأَرْضِ"
+    },
+    {
+     "id": "l4",
+     "ar": "وَلَا فَسَادًۭا ۚ"
+    }
+   ],
+   "right": [
+    {
+     "id": "r2",
+     "fa": "نمی خواهند"
+    },
+    {
+     "id": "r1",
+     "fa": "آن سرای [پرارزش] آخرت را"
+    },
+    {
+     "id": "r4",
+     "fa": "و هیچ فسادی را"
+    },
+    {
+     "id": "r5",
+     "fa": "پاداشی بهتر از آن برای اوست"
+    },
+    {
+     "id": "r3",
+     "fa": "در زمین هیچ برتری و تسلّط"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "سرای آخرت به کسانی اختصاص دارد که به دنبال برتری‌جویی (علو) و فساد در زمین نیستند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  },
+  {
+   "id": "q_u_p395b_A_0907",
+   "type": "MATCH_PHRASES",
+   "shape": "match",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 84,
+   "targets": [
+    "vt:84"
+   ],
+   "promptFa": "عبارات عربی را به ترجمه فارسی دقیق آن‌ها متصل کنید.",
+   "stem": {
+    "mode": "PHRASE_AR_FA"
+   },
+   "left": [
+    {
+     "id": "l1",
+     "ar": "مَن جَآءَ بِٱلْحَسَنَةِ"
+    },
+    {
+     "id": "l2",
+     "ar": "فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ"
+    },
+    {
+     "id": "l3",
+     "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ"
+    },
+    {
+     "id": "l4",
+     "ar": "فَلَا يُجْزَى"
+    }
+   ],
+   "right": [
+    {
+     "id": "r1",
+     "fa": "هر کس کار نیکی [به پیشگاه خدا] بیاورد"
+    },
+    {
+     "id": "r4",
+     "fa": "جزا داده نمی شوند"
+    },
+    {
+     "id": "r2",
+     "fa": "پاداشی بهتر از آن برای اوست"
+    },
+    {
+     "id": "r5",
+     "fa": "ما را نیز در زمین فرو برده بود"
+    },
+    {
+     "id": "r3",
+     "fa": "و هر کس کار بدی بیاورد"
+    }
+   ],
+   "pairs": [
+    [
+     "l1",
+     "r1"
+    ],
+    [
+     "l2",
+     "r2"
+    ],
+    [
+     "l3",
+     "r3"
+    ],
+    [
+     "l4",
+     "r4"
+    ]
+   ],
+   "distractorTags": {
+    "r5": "neighbor_verse"
+   },
+   "explanationFa": "تعبیر «جاء بـ» به معنای آوردن است. هر کس نیکی بیاورد پاداشی بهتر دریافت می‌کند.",
+   "unitId": "u_p395b",
+   "part": "A"
+  }
+ ],
+ "issues": [],
+ "sourceFiles": [
+  "u_p395b.partA.json",
+  "u_p395b.partA2.json",
+  "u_p395b.partA3.json",
+  "u_p395b.partA4.json",
+  "u_p395b.partA5.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 10,
+  "files": 5
+ }
+}

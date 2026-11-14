@@ -1,0 +1,534 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "A2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_A_0901",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "معنای «تَزْعُمُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_062_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o2",
+          "fa": "زعامت می کردید"
+        },
+        {
+          "id": "o3",
+          "fa": "ندا می دادید"
+        },
+        {
+          "id": "o4",
+          "fa": "شریک قرار می دادید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«زعم» به معنای گمان باطل و پندار است و نباید با زعامت (سرپرستی) در فارسی اشتباه گرفته شود."
+    },
+    {
+      "id": "q_u_p393a_A_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "معنای کلمه «تَزْعُمُونَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_062_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می دانستید"
+        },
+        {
+          "id": "o2",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o3",
+          "fa": "حکومت می کردید"
+        },
+        {
+          "id": "o4",
+          "fa": "انجام می دادید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از ریشه «ز ع م» به معنای ادعای بی‌پایه و پندار باطل است."
+    },
+    {
+      "id": "q_u_p393a_A_0903",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "با توجه به آیه، معنای «تَزْعُمُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_062_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می گفتید"
+        },
+        {
+          "id": "o2",
+          "fa": "سرپرستی می کردید"
+        },
+        {
+          "id": "o3",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o4",
+          "fa": "شریک می گرفتید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَزْعُمُونَ» یعنی می‌پنداشتید و گمان باطل می‌بردید؛ دوست فریبنده آن «زعامت» (سرپرستی) است."
+    },
+    {
+      "id": "q_u_p393a_A_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "در این آیه، «تَزْعُمُونَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_062_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o2",
+          "fa": "عمل می کردید"
+        },
+        {
+          "id": "o3",
+          "fa": "صدا می زدید"
+        },
+        {
+          "id": "o4",
+          "fa": "رهبری می کردید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این کلمه به ادعای بی‌اساس مشرکان اشاره دارد و معنای آن «می‌پنداشتید» است."
+    },
+    {
+      "id": "q_u_p393a_A_0905",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "معادل عربی «می پنداشتید» چیست؟",
+      "stem": {
+        "fa": "می پنداشتید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "شُرَكَآءِىَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَعْلَمُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«تَزْعُمُونَ» معادل می‌پنداشتید است و از ریشه «ز ع م» می‌آید."
+    },
+    {
+      "id": "q_u_p393a_A_0906",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «گمان باطل می بردید» است؟",
+      "stem": {
+        "fa": "گمان باطل می بردید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَقُولُ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَعْمَلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَزْرَعُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "same_root"
+      },
+      "explanationFa": "«تَزْعُمُونَ» به پندار نادرست اشاره دارد. مراقب شباهت ظاهری آن با «تزرعون» باشید."
+    },
+    {
+      "id": "q_u_p393a_A_0907",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "معادل عربی «می پنداشتید» کدام کلمه است؟",
+      "stem": {
+        "fa": "می پنداشتید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَظْلِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "كُنتُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنَادِيهِمْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَزْعُمُونَ» یعنی می‌پنداشتید، از ریشه زعم که گمان باطل است."
+    },
+    {
+      "id": "q_u_p393a_A_0908",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "کلمات را به معنای درست وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَيْنَ"
+        },
+        {
+          "id": "l4",
+          "ar": "شُرَكَآءِىَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "r2",
+          "fa": "آنان را ندا می دهد"
+        },
+        {
+          "id": "r3",
+          "fa": "کجایند"
+        },
+        {
+          "id": "r4",
+          "fa": "شریکان من"
+        },
+        {
+          "id": "r5",
+          "fa": "و می گوید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "«تَزْعُمُونَ» به معنای می‌پنداشتید و گمان باطل می‌بردید است."
+    },
+    {
+      "id": "q_u_p393a_A_0909",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "معنای هر کلمه را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَقُولُ"
+        },
+        {
+          "id": "l3",
+          "ar": "كُنتُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَوْمَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "r2",
+          "fa": "می گوید"
+        },
+        {
+          "id": "r3",
+          "fa": "بودید"
+        },
+        {
+          "id": "r4",
+          "fa": "روزی را"
+        },
+        {
+          "id": "r5",
+          "fa": "آنان را"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "«زعم» ریشه تَزْعُمُونَ است که پندار و ادعای بی‌پایه معنا می‌دهد."
+    },
+    {
+      "id": "q_u_p393a_A_0910",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 62,
+      "targets": [
+        "w:w28_062_008"
+      ],
+      "promptFa": "کلمات عربی و معادل فارسی آن‌ها را جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَيَقُولُ"
+        },
+        {
+          "id": "l3",
+          "ar": "شُرَكَآءِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَيْنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "r2",
+          "fa": "و می گوید"
+        },
+        {
+          "id": "r3",
+          "fa": "شریکان من"
+        },
+        {
+          "id": "r4",
+          "fa": "کجایند"
+        },
+        {
+          "id": "r5",
+          "fa": "کسانی که"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "در این آیه خداوند پندار باطل مشرکان را با کلمه «تَزْعُمُونَ» زیر سؤال می‌برد."
+    }
+  ],
+  "issues": []
+}

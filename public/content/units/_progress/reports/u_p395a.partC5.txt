@@ -1,0 +1,5 @@
+[#1 q_u_p395a_C_1221 PREV_VERSE_CHOICE] target نامعتبر 'sq:v28_078'.
+[#2 q_u_p395a_C_1222 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_078'.
+[#2 q_u_p395a_C_1222 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 78 را نمی‌پوشاند.
+[#3 q_u_p395a_C_1223 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_078'.
+[#3 q_u_p395a_C_1223 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 78 را نمی‌پوشاند.

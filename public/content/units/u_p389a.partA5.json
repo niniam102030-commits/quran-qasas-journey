@@ -1,0 +1,867 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_0701",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "معنای «نُودِىَ» چیست؟",
+      "stem": {
+        "wordId": "w28_030_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نزد آن آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "o3",
+          "fa": "مبارک"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگار"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«نُودِىَ» فعل مجهول از ریشه‌ی «ن د ي» است و یعنی «ندا رسید»."
+    },
+    {
+      "id": "q_u_p389a_A_0702",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "کدام گزینه معنای درست «نُودِىَ» است؟",
+      "stem": {
+        "wordId": "w28_030_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "o2",
+          "fa": "راست"
+        },
+        {
+          "id": "o3",
+          "fa": "ندا داد"
+        },
+        {
+          "id": "o4",
+          "fa": "ندا داده شد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«نُودِىَ» مجهول است، یعنی کسی او را ندا داد. «ندا داد» فاعل را معلوم می‌کند و غلط است."
+    },
+    {
+      "id": "q_u_p389a_A_0703",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "در این آیه «نُودِىَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_030_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "o2",
+          "fa": "نزد آن آمد"
+        },
+        {
+          "id": "o3",
+          "fa": "درخت"
+        },
+        {
+          "id": "o4",
+          "fa": "جهانیان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«نُودِىَ» از ریشه‌ی «ن د ي» و مجهول است: ندا رسید."
+    },
+    {
+      "id": "q_u_p389a_A_0704",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "با توجه به آیه، «نُودِىَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_030_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ندا داد"
+        },
+        {
+          "id": "o2",
+          "fa": "جانب"
+        },
+        {
+          "id": "o3",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "o4",
+          "fa": "پروردگار"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "فعل مجهول است و به معنای «ندا رسید». معنای «ندا داد» فاعلی است و درست نیست."
+    },
+    {
+      "id": "q_u_p389a_A_0705",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "معنای «شَـٰطِئِ» چیست؟",
+      "stem": {
+        "wordId": "w28_030_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "o2",
+          "fa": "درخت"
+        },
+        {
+          "id": "o3",
+          "fa": "راست"
+        },
+        {
+          "id": "o4",
+          "fa": "جانب"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«شَـٰطِئِ» از ریشه‌ی «ش ط أ» است و یعنی جانب و کناره‌ی وادی."
+    },
+    {
+      "id": "q_u_p389a_A_0706",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "کدام گزینه معنای «شَـٰطِئِ» است؟",
+      "stem": {
+        "wordId": "w28_030_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کناره و کرانه‌ی وادی"
+        },
+        {
+          "id": "o2",
+          "fa": "وادی"
+        },
+        {
+          "id": "o3",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "o4",
+          "fa": "جهانیان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«شَـٰطِئِ» یعنی کناره و کرانه، مثل ساحل. «وادی» کلمه‌ی بعدی است، نه معنای آن."
+    },
+    {
+      "id": "q_u_p389a_A_0707",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "در این آیه «شَـٰطِئِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_030_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "درخت"
+        },
+        {
+          "id": "o2",
+          "fa": "جانب"
+        },
+        {
+          "id": "o3",
+          "fa": "مبارک"
+        },
+        {
+          "id": "o4",
+          "fa": "راست"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«شَـٰطِئِ ٱلْوَادِ» یعنی جانب و کناره‌ی وادی. «راست» معنای «ٱلْأَيْمَنِ» است."
+    },
+    {
+      "id": "q_u_p389a_A_0708",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "با توجه به آیه، «شَـٰطِئِ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_030_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "o2",
+          "fa": "پروردگار"
+        },
+        {
+          "id": "o3",
+          "fa": "جانب"
+        },
+        {
+          "id": "o4",
+          "fa": "ندا رسید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«شَـٰطِئِ» به معنای جانب و کناره است. «جایگاه» معنای «ٱلْبُقْعَةِ» در همین آیه است."
+    },
+    {
+      "id": "q_u_p389a_A_0709",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ندا رسید» است؟",
+      "stem": {
+        "fa": "ندا رسید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَتَىٰهَا"
+        },
+        {
+          "id": "o2",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلشَّجَرَةِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«نُودِىَ» مجهول از ریشه‌ی «ن د ي» است و یعنی ندا رسید."
+    },
+    {
+      "id": "q_u_p389a_A_0710",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "معادل عربی «ندا داده شد» کدام است؟",
+      "stem": {
+        "fa": "ندا داده شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَيْمَنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَـٰمُوسَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "نُودِىَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«نُودِىَ» صیغه‌ی مجهول است و یعنی ندا داده شد. «يَـٰمُوسَىٰٓ» خود ندا‌شونده است، نه فعل ندا."
+    },
+    {
+      "id": "q_u_p389a_A_0711",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003"
+      ],
+      "promptFa": "کدام کلمه یعنی «کسی او را ندا کرد» (به صورت مجهول)؟",
+      "stem": {
+        "fa": "ندا رسید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَتَىٰهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْعَـٰلَمِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "شَـٰطِئِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نُودِىَ» مجهول است: کسی او را ندا داد. «أَتَىٰهَا» فعل آمدن است."
+    },
+    {
+      "id": "q_u_p389a_A_0712",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «جانب» است؟",
+      "stem": {
+        "fa": "جانب"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "o3",
+          "ar": "شَـٰطِئِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلشَّجَرَةِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«شَـٰطِئِ» از ریشه‌ی «ش ط أ» است و یعنی جانب و کناره."
+    },
+    {
+      "id": "q_u_p389a_A_0713",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "معادل عربی «کناره و کرانه‌ی وادی» (کلمه‌ی اول عبارت) کدام است؟",
+      "stem": {
+        "fa": "کناره و کرانه‌ی وادی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "شَـٰطِئِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَيْمَنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«شَـٰطِئِ» یعنی کناره و کرانه، مثل ساحل. «ٱلْأَيْمَنِ» وصف وادی و به معنای راست است."
+    },
+    {
+      "id": "q_u_p389a_A_0714",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_005"
+      ],
+      "promptFa": "کدام کلمه برای «کناره» به کار رفته است؟",
+      "stem": {
+        "fa": "کناره"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَبُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "شَـٰطِئِ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "«شَـٰطِئِ» یعنی کناره و جانب. «ٱلْوَادِ» خود دره است و «ٱلْبُقْعَةِ» یعنی جایگاه."
+    },
+    {
+      "id": "q_u_p389a_A_0715",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003",
+        "w:w28_030_005"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "l2",
+          "ar": "شَـٰطِئِ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْوَادِ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَيْمَنِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلشَّجَرَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "راست"
+        },
+        {
+          "id": "r2",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r3",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "r4",
+          "fa": "درخت"
+        },
+        {
+          "id": "r5",
+          "fa": "جانب"
+        },
+        {
+          "id": "r6",
+          "fa": "وادی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "neighbor_word"
+      },
+      "explanationFa": "«نُودِىَ» ندا رسید و «شَـٰطِئِ» جانب است. «ٱلْأَيْمَنِ» یعنی راست و «ٱلْبُقْعَةِ» (نه «شَـٰطِئِ») یعنی جایگاه."
+    },
+    {
+      "id": "q_u_p389a_A_0716",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003",
+        "w:w28_030_005"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "شَـٰطِئِ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْبُقْعَةِ"
+        },
+        {
+          "id": "l3",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْمُبَـٰرَكَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْعَـٰلَمِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مبارک"
+        },
+        {
+          "id": "r2",
+          "fa": "جهانیان"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگار"
+        },
+        {
+          "id": "r4",
+          "fa": "ندا رسید"
+        },
+        {
+          "id": "r5",
+          "fa": "جایگاه"
+        },
+        {
+          "id": "r6",
+          "fa": "جانب"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْبُقْعَةِ» جایگاه و «ٱلْمُبَـٰرَكَةِ» مبارک است. «رَبُّ» به معنای پروردگار در این جفت‌ها نیامده است."
+    },
+    {
+      "id": "q_u_p389a_A_0717",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 30,
+      "targets": [
+        "w:w28_030_003",
+        "w:w28_030_005"
+      ],
+      "promptFa": "جفت‌های درست کلمه و معنا را پیدا کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَتَىٰهَا"
+        },
+        {
+          "id": "l2",
+          "ar": "رَبُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "نُودِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَيْمَنِ"
+        },
+        {
+          "id": "l5",
+          "ar": "شَـٰطِئِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "جانب"
+        },
+        {
+          "id": "r2",
+          "fa": "راست"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگار"
+        },
+        {
+          "id": "r4",
+          "fa": "درخت"
+        },
+        {
+          "id": "r5",
+          "fa": "نزد آن آمد"
+        },
+        {
+          "id": "r6",
+          "fa": "ندا رسید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_word"
+      },
+      "explanationFa": "«أَتَىٰهَا» یعنی نزد آن آمد و «نُودِىَ» یعنی ندا رسید. «رَبُّ» پروردگار و «شَـٰطِئِ» جانب است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی از کلمات غیرسخت همین آیه استفاده شد.",
+    "فقط آیه‌ی ۳۰ در ورودی بود؛ گزینه‌های عربی انحرافی از کلمات همین آیه‌اند."
+  ]
+}

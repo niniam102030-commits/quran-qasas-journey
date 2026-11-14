@@ -1,0 +1,1047 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389a",
+  "part": "A8",
+  "generatedBy": "model",
+  "questions": [
+    {
+      "id": "q_u_p389a_A_1101",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "معنای «يُعَقِّبْ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_012",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تعقیب کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "o3",
+          "fa": "گریخت"
+        },
+        {
+          "id": "o4",
+          "fa": "به پشت سر نگریست"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«یعقّب» از ریشه‌ی ع ق ب است و با «وَلَمْ» یعنی به پشت سر برنگشت. معنای «تعقیب کرد» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_1102",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "معنای «أَقْبِلْ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "o2",
+          "fa": "قبول کن"
+        },
+        {
+          "id": "o3",
+          "fa": "مترس"
+        },
+        {
+          "id": "o4",
+          "fa": "بیفکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أقبل» فعل امر از ریشه‌ی ق ب ل و یعنی پیش آی. «قبول کن» معنای قرآنی آن در این آیه نیست."
+    },
+    {
+      "id": "q_u_p389a_A_1103",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "کدام معنا برای «يُعَقِّبْ» درست است؟",
+      "stem": {
+        "wordId": "w28_031_012",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "o2",
+          "fa": "ایستاد و نگاه کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "o4",
+          "fa": "تعقیب کرد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ریشه‌ی ع ق ب است و «یعقّب» یعنی به عقب بازنگشت. «تعقیب کرد» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_1104",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "کدام معنا برای «أَقْبِلْ» درست است؟",
+      "stem": {
+        "wordId": "w28_031_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روی برگردان"
+        },
+        {
+          "id": "o2",
+          "fa": "در امانی"
+        },
+        {
+          "id": "o3",
+          "fa": "قبول کن"
+        },
+        {
+          "id": "o4",
+          "fa": "پیش آی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«أقبل» امر است و یعنی رو بیاور و پیش آی؛ ضد آن روی گرداندن است."
+    },
+    {
+      "id": "q_u_p389a_A_1105",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "در این آیه معنای «يُعَقِّبْ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_012",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گریخت"
+        },
+        {
+          "id": "o2",
+          "fa": "تعقیب کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "o4",
+          "fa": "آن را دید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «پشت کنان گریخت و به پشت سر برنگشت» همین کلمه آمده است. تعقیب کردن معنای آن نیست."
+    },
+    {
+      "id": "q_u_p389a_A_1106",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "در سیاق این آیه «وَلَمْ يُعَقِّبْ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_031_012",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و به پشت سر برنگشت"
+        },
+        {
+          "id": "o2",
+          "fa": "و او را تعقیب کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "و پیش آمد"
+        },
+        {
+          "id": "o4",
+          "fa": "و بیفکن"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ولم یعقّب» یعنی و به پشت سر برنگشت. «یعقّب» از ع ق ب است."
+    },
+    {
+      "id": "q_u_p389a_A_1107",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "در این آیه معنای «أَقْبِلْ» چیست؟",
+      "stem": {
+        "wordId": "w28_031_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مترس"
+        },
+        {
+          "id": "o2",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "o3",
+          "fa": "قبول کن"
+        },
+        {
+          "id": "o4",
+          "fa": "بیفکن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «ای موسی! پیش آی و مترس» همین کلمه آمده است. «أقبل» از ریشه‌ی ق ب ل است."
+    },
+    {
+      "id": "q_u_p389a_A_1108",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "در «يَـٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ» کلمه‌ی «أَقْبِلْ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_031_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روی برگردان"
+        },
+        {
+          "id": "o2",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "o3",
+          "fa": "قبول کن"
+        },
+        {
+          "id": "o4",
+          "fa": "پیش آی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«أقبل» یعنی رو بیاور و پیش آی. «قبول کن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389a_A_1109",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "به پشت سر برنگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَلَّىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "تَخَفْ ۖ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«یعقّب» به معنای به پشت سر بازگشتن است و با «لَمْ» منفی شده است."
+    },
+    {
+      "id": "q_u_p389a_A_1110",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "به عقب بازنگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَلَّىٰ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«یعقّب» از ریشه‌ی ع ق ب است. «وَلَّىٰ» یعنی گریخت، نه برنگشتن."
+    },
+    {
+      "id": "q_u_p389a_A_1111",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012"
+      ],
+      "promptFa": "کلمه‌ی عربیِ «به پشت سر برنگشت» کدام است؟",
+      "stem": {
+        "fa": "به پشت سر برنگشت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "وَلَمْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«وَلَمْ» فقط نفی می‌کند و «مُدْبِرًا» یعنی پشت کنان. فعل برنگشتن «یعقّب» است."
+    },
+    {
+      "id": "q_u_p389a_A_1112",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "پیش آی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَخَفْ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَّىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَقْبِلْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«أقبل» فعل امر به معنای پیش آی است. «وَلَّىٰ» ضد آن و یعنی پشت کرد و گریخت."
+    },
+    {
+      "id": "q_u_p389a_A_1113",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "رو بیاور و پیش آی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "رَءَاهَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أقبل» از ریشه‌ی ق ب ل است. «مُدْبِرًا» ضد آن و یعنی پشت کنان."
+    },
+    {
+      "id": "q_u_p389a_A_1114",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_014"
+      ],
+      "promptFa": "کلمه‌ی عربی با این معنا را انتخاب کن.",
+      "stem": {
+        "fa": "پیش آی؛ فعل امر از ریشه‌ی ق ب ل"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَخَفْ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّكَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أقبل» امر و به معنای پیش آی است. «تَخَفْ» نهی و یعنی مترس."
+    },
+    {
+      "id": "q_u_p389a_A_1115",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012",
+        "w:w28_031_014"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآنٌّۭ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ماری باریک و تیزرو"
+        },
+        {
+          "id": "r2",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r3",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "r4",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "r5",
+          "fa": "تند و سریع حرکت می کند"
+        },
+        {
+          "id": "r6",
+          "fa": "تعقیب کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«یعقّب» یعنی به پشت سر برنگشت و «أقبل» یعنی پیش آی؛ بقیه از همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p389a_A_1116",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012",
+        "w:w28_031_014"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَلَّىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l3",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَخَفْ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "r2",
+          "fa": "مترس"
+        },
+        {
+          "id": "r3",
+          "fa": "گریخت"
+        },
+        {
+          "id": "r4",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "r5",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r6",
+          "fa": "قبول کن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«أقبل» پیش آی است نه قبول کن؛ «یعقّب» یعنی به پشت سر برنگشت."
+    },
+    {
+      "id": "q_u_p389a_A_1117",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012",
+        "w:w28_031_014"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "l2",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَآنٌّۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُدْبِرًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "يُعَقِّبْ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پشت کنان"
+        },
+        {
+          "id": "r2",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r3",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "r4",
+          "fa": "آن را دید"
+        },
+        {
+          "id": "r5",
+          "fa": "ماری باریک و تیزرو"
+        },
+        {
+          "id": "r6",
+          "fa": "تعقیب کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«یعقّب» از ع ق ب است و تعقیب کردن نیست؛ «أقبل» امر است."
+    },
+    {
+      "id": "q_u_p389a_A_1118",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012",
+        "w:w28_031_014"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَخَفْ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَلْقِ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَلَّىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گریخت"
+        },
+        {
+          "id": "r2",
+          "fa": "بیفکن"
+        },
+        {
+          "id": "r3",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r4",
+          "fa": "مترس"
+        },
+        {
+          "id": "r5",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "r6",
+          "fa": "روی برگردان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«أقبل» پیش آی است و ضد آن روی گرداندن؛ «یعقّب» یعنی به پشت سر برنگشت."
+    },
+    {
+      "id": "q_u_p389a_A_1119",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 31,
+      "targets": [
+        "w:w28_031_012",
+        "w:w28_031_014"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَقْبِلْ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَهْتَزُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُعَقِّبْ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَءَاهَا"
+        },
+        {
+          "id": "l5",
+          "ar": "وَلَّىٰ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گریخت"
+        },
+        {
+          "id": "r2",
+          "fa": "به پشت سر برنگشت"
+        },
+        {
+          "id": "r3",
+          "fa": "آن را دید"
+        },
+        {
+          "id": "r4",
+          "fa": "تند و سریع حرکت می کند"
+        },
+        {
+          "id": "r5",
+          "fa": "پیش آی"
+        },
+        {
+          "id": "r6",
+          "fa": "قبول کن"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«أقبل» پیش آی است نه قبول کن؛ «یعقّب» یعنی به پشت سر برنگشت."
+    }
+  ],
+  "issues": []
+}

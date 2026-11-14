@@ -1,0 +1,227 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C10",
+  "generatedBy": "gemini-3-pro",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_1080",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 1,
+      "targets": [
+        "vn:1",
+        "vr:1"
+      ],
+      "promptFa": "آیه ۱ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 1
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_002_001",
+            "w28_002_002",
+            "w28_002_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 1,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_004_001",
+            "w28_004_002",
+            "w28_004_003",
+            "w28_004_004",
+            "w28_004_005"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "نخستین آیه سوره قصص تنها از حروف مقطعه «طسٓمٓ» تشکیل شده است و سایر گزینه‌ها آغاز آیات ۲ تا ۴ همین سوره هستند."
+    },
+    {
+      "id": "q_u_p385b_C_1081",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 1,
+      "targets": [
+        "vr:1",
+        "vn:1"
+      ],
+      "promptFa": "متن آیه ۱ سوره قصص را از بانک کلمات انتخاب کنید.",
+      "stem": {
+        "num": 1
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تِلْكَ",
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "طسٓمٓ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَتْلُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2"
+      ],
+      "distractorTags": {
+        "b1": "neighbor_verse",
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۱ سوره قصص از یک کلمه و حروف مقطعه «طسٓمٓ» تشکیل شده است و کلمات دیگر آغاز آیات ۲ و ۳ هستند."
+    },
+    {
+      "id": "q_u_p385b_C_1082",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 2,
+      "targets": [
+        "vn:2",
+        "vr:2"
+      ],
+      "promptFa": "کدام گزینه آغاز و متن آیه ۲ سوره قصص است؟",
+      "stem": {
+        "num": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_001_001"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 2,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_002_001",
+            "w28_002_002",
+            "w28_002_003",
+            "w28_003_007"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۲ بلافاصله پس از حروف مقطعه با عبارت «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» (این آیات کتاب روشنگر است) می‌آید."
+    },
+    {
+      "id": "q_u_p385b_C_1083",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 2,
+      "targets": [
+        "vr:2",
+        "vn:2"
+      ],
+      "promptFa": "کلمات آیه ۲ سوره قصص را به ترتیب صحیح مرتب کنید.",
+      "stem": {
+        "num": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْكِتَـٰبِ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْمُبِينِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ءَايَـٰتُ",
+          "wordIdx": [
+            2
+          ]
+        }
+      ],
+      "answer": [
+        "b2",
+        "b4",
+        "b1",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات آیه ۲ «تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ» به معنای «این آیات [باعظمت] کتاب روشنگر است» می‌باشد."
+    }
+  ],
+  "issues": []
+}

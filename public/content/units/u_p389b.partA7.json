@@ -1,0 +1,1319 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A7",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_1001",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "معنای «فَـٰسِقِينَ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بدکار و هوس‌ران"
+        },
+        {
+          "id": "o2",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "o3",
+          "fa": "مردمی"
+        },
+        {
+          "id": "o4",
+          "fa": "ترسان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ف س ق» است. فاسق در قرآن یعنی کسی که از فرمان خدا بیرون رفته، نه لزوماً بدکار و هوس‌ران."
+    },
+    {
+      "id": "q_u_p389b_A_1002",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "کدام گزینه معنای «فَـٰسِقِينَ» است؟",
+      "stem": {
+        "wordId": "w28_032_025",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکار"
+        },
+        {
+          "id": "o2",
+          "fa": "بدکار و هوس‌ران"
+        },
+        {
+          "id": "o3",
+          "fa": "گروه"
+        },
+        {
+          "id": "o4",
+          "fa": "نافرمان، خارج از اطاعت"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«فاسق» از ریشه‌ی «ف س ق» به معنای خارج‌شده از اطاعت است. معنای فارسی رایج‌اش دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389b_A_1003",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "در آیه‌ی ۳۲، «فَـٰسِقِينَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "o2",
+          "fa": "دروغگو"
+        },
+        {
+          "id": "o3",
+          "fa": "معجزه"
+        },
+        {
+          "id": "o4",
+          "fa": "بدکار و هوس‌ران"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "فرعون و اشراف او «مردمی نافرمان» توصیف شده‌اند. فسق در اینجا بیرون رفتن از فرمان خداست."
+    },
+    {
+      "id": "q_u_p389b_A_1004",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "با توجه به آیه‌ی ۳۲، معنای «فَـٰسِقِينَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_032_025",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکار"
+        },
+        {
+          "id": "o2",
+          "fa": "فرستاده"
+        },
+        {
+          "id": "o3",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "o4",
+          "fa": "گناهکار بدکار"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«فاسقین» جمع «فاسق» و به معنای نافرمانان است. نکته‌ی دوست فریبنده: با «بدکار» یکی گرفته نشود."
+    },
+    {
+      "id": "q_u_p389b_A_1005",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "معنای «نَفْسًۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_033_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هوای نفس"
+        },
+        {
+          "id": "o2",
+          "fa": "تنفس"
+        },
+        {
+          "id": "o3",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "o4",
+          "fa": "کشتن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ن ف س» است. «نفس» در اینجا یعنی شخص و جان، نه هوای نفس یا تنفس."
+    },
+    {
+      "id": "q_u_p389b_A_1006",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "کدام معنا برای «نَفْسًۭا» درست است؟",
+      "stem": {
+        "wordId": "w28_033_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "یک انسان، یک نفر"
+        },
+        {
+          "id": "o2",
+          "fa": "برادر"
+        },
+        {
+          "id": "o3",
+          "fa": "جان‌پناه"
+        },
+        {
+          "id": "o4",
+          "fa": "هوای نفس"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«نفس» به معنای شخص و جان است. معنای فارسی «هوای نفس» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389b_A_1007",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "در آیه‌ی ۳۳ موسی «قَتَلْتُ مِنْهُمْ نَفْسًۭا» می‌گوید. «نَفْسًۭا» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_033_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هوای نفس"
+        },
+        {
+          "id": "o2",
+          "fa": "ترس"
+        },
+        {
+          "id": "o3",
+          "fa": "قاتل"
+        },
+        {
+          "id": "o4",
+          "fa": "یک نفر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ترجمه‌ی آیه: «من یک نفر از آنان را کشته‌ام». «نفس» یعنی یک شخص، نه هوای نفس."
+    },
+    {
+      "id": "q_u_p389b_A_1008",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "در آیه‌ی ۳۳، «نَفْسًۭا» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_033_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنان"
+        },
+        {
+          "id": "o2",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "o3",
+          "fa": "تنفس"
+        },
+        {
+          "id": "o4",
+          "fa": "گروهی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«نفسا» مفعول «قتلت» و به معنای یک شخص است. «منهم» یعنی از میان آنان."
+    },
+    {
+      "id": "q_u_p389b_A_1009",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "معنای «أَفْصَحُ» چیست؟",
+      "stem": {
+        "wordId": "w28_034_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "o2",
+          "fa": "زبان"
+        },
+        {
+          "id": "o3",
+          "fa": "راستگوتر"
+        },
+        {
+          "id": "o4",
+          "fa": "یاور"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أفصح» صفت برتر از ریشه‌ی «ف ص ح» است و با «فصیح» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p389b_A_1010",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "کدام گزینه معنای «أَفْصَحُ» است؟",
+      "stem": {
+        "wordId": "w28_034_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ناتوان‌تر"
+        },
+        {
+          "id": "o2",
+          "fa": "بزرگ‌تر"
+        },
+        {
+          "id": "o3",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "o4",
+          "fa": "مهربان‌تر"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أفصح» یعنی شیواتر و روشن‌سخن‌تر. ریشه‌ی آن «ف ص ح» است."
+    },
+    {
+      "id": "q_u_p389b_A_1011",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "در آیه‌ی ۳۴، موسی درباره‌ی هارون می‌گوید «هُوَ أَفْصَحُ مِنِّى لِسَانًۭا». «أَفْصَحُ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_034_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "راستگوتر"
+        },
+        {
+          "id": "o2",
+          "fa": "یاور و دستیار"
+        },
+        {
+          "id": "o3",
+          "fa": "تندخوتر"
+        },
+        {
+          "id": "o4",
+          "fa": "گویاتر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "ترجمه: «زبانش از من گویاتر است». «أفصح» صفت برتر است."
+    },
+    {
+      "id": "q_u_p389b_A_1012",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "در آیه‌ی ۳۴، «أَفْصَحُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_034_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ترسوتر"
+        },
+        {
+          "id": "o2",
+          "fa": "شیواتر و روشن‌سخن‌تر"
+        },
+        {
+          "id": "o3",
+          "fa": "کم‌سخن‌تر"
+        },
+        {
+          "id": "o4",
+          "fa": "زبان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أفصح» مقایسه‌ای است و با «مِنِّى» (از من) می‌آید. «لسانا» تمییز است و به زبان اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1013",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «نافرمان» است؟",
+      "stem": {
+        "fa": "نافرمان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "سُوٓءٍۢ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«فاسقین» از ریشه‌ی «ف س ق» به معنای نافرمانان است."
+    },
+    {
+      "id": "q_u_p389b_A_1014",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "این معنا برای کدام کلمه است؟",
+      "stem": {
+        "fa": "خارج از اطاعت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَوْمًۭا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فسق یعنی بیرون رفتن از اطاعت. کلمه‌ی مورد نظر در پایان آیه‌ی ۳۲ آمده است."
+    },
+    {
+      "id": "q_u_p389b_A_1015",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_025"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "کسانی که از فرمان خدا بیرون رفته‌اند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "غَيْرِ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«فاسقین» جمع فاسق است. فاسق در قرآن یعنی خارج‌شده از فرمان خدا."
+    },
+    {
+      "id": "q_u_p389b_A_1016",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «یک نفر» است؟",
+      "stem": {
+        "fa": "یک نفر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَتَلْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "يَقْتُلُونِ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَأَخَافُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نفسا» یعنی یک شخص و مفعول «قتلت» است. سایر گزینه‌ها فعل‌اند."
+    },
+    {
+      "id": "q_u_p389b_A_1017",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "این معنا برای کدام کلمه است؟",
+      "stem": {
+        "fa": "یک انسان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِسَانًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "رِدْءًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "قَوْمًۭا"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نفسا» در آیه‌ی ۳۳ یعنی یک نفر. همه‌ی گزینه‌ها اسم‌های منصوب با تنوین‌اند."
+    },
+    {
+      "id": "q_u_p389b_A_1018",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 33,
+      "targets": [
+        "w:w28_033_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "شخص و جان (نه هوای نفس)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "مِنْهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "رَبِّ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نفس» در این آیه یعنی شخص. هوای نفس معنای فارسی رایج و دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p389b_A_1019",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «گویاتر» است؟",
+      "stem": {
+        "fa": "گویاتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِسَانًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "o3",
+          "ar": "رِدْءًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "هَـٰرُونُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أفصح» صفت برتر از «فصیح» است. «لسانا» یعنی زبان."
+    },
+    {
+      "id": "q_u_p389b_A_1020",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "این معنا برای کدام کلمه است؟",
+      "stem": {
+        "fa": "شیواتر و روشن‌سخن‌تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُكَذِّبُونِ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَرْسِلْهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَعِىَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَفْصَحُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أفصح» از ریشه‌ی «ف ص ح» و بر وزن افعل (برتر) است."
+    },
+    {
+      "id": "q_u_p389b_A_1021",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 34,
+      "targets": [
+        "w:w28_034_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به این معناست؟",
+      "stem": {
+        "fa": "روشن‌سخن‌تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مِنِّى"
+        },
+        {
+          "id": "o2",
+          "ar": "لِسَانًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "o4",
+          "ar": "هُوَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أفصح» یعنی گویاتر و روشن‌سخن‌تر. «مِنِّى» یعنی از من و معنای مقایسه را کامل می‌کند."
+    },
+    {
+      "id": "q_u_p389b_A_1022",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_032_025",
+        "w:w28_033_006",
+        "w:w28_034_004"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "l4",
+          "ar": "رِدْءًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "بُرْهَـٰنَانِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r2",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "r3",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r4",
+          "fa": "یاور و دستیار"
+        },
+        {
+          "id": "r5",
+          "fa": "یک نفر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "فاسق یعنی نافرمان، نفس در این آیه یعنی یک نفر و أفصح یعنی گویاتر."
+    },
+    {
+      "id": "q_u_p389b_A_1023",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_032_025",
+        "w:w28_033_006",
+        "w:w28_034_004"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَتَلْتُ"
+        },
+        {
+          "id": "l5",
+          "ar": "نَفْسًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کشته‌ام"
+        },
+        {
+          "id": "r2",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "r3",
+          "fa": "هوای نفس"
+        },
+        {
+          "id": "r4",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r5",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r6",
+          "fa": "گویاتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "«هوای نفس» معنای فارسی رایج است و اینجا درست نیست. نفس یعنی یک نفر."
+    },
+    {
+      "id": "q_u_p389b_A_1024",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_032_025",
+        "w:w28_033_006",
+        "w:w28_034_004"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "يُكَذِّبُونِ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "l4",
+          "ar": "لِسَانًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "زبان"
+        },
+        {
+          "id": "r2",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r3",
+          "fa": "تکذیبم می‌کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "r5",
+          "fa": "یک نفر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«لسان» یعنی زبان و «أفصح» یعنی گویاتر. «یکذبون» از تکذیب است."
+    },
+    {
+      "id": "q_u_p389b_A_1025",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_032_025",
+        "w:w28_033_006",
+        "w:w28_034_004"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَقْتُلُونِ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَخَافُ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "l5",
+          "ar": "نَفْسًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می‌ترسم"
+        },
+        {
+          "id": "r2",
+          "fa": "بدکار"
+        },
+        {
+          "id": "r3",
+          "fa": "مرا می‌کشند"
+        },
+        {
+          "id": "r4",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "r5",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r6",
+          "fa": "گویاتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r6"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "false_friend"
+      },
+      "explanationFa": "«بدکار» دوست فریبنده‌ی «فاسق» است. فاسق یعنی نافرمان."
+    },
+    {
+      "id": "q_u_p389b_A_1026",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_032_025",
+        "w:w28_033_006",
+        "w:w28_034_004"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای فارسی‌اش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَفْصَحُ"
+        },
+        {
+          "id": "l2",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l3",
+          "ar": "نَفْسًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "يُكَذِّبُونِ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r2",
+          "fa": "تکذیبم می‌کنند"
+        },
+        {
+          "id": "r3",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "r4",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r5",
+          "fa": "یک نفر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«برهانان» مثنی و به معنای دو معجزه است. سه کلمه‌ی سخت این برش: نافرمان، یک نفر و گویاتر."
+    }
+  ],
+  "issues": []
+}

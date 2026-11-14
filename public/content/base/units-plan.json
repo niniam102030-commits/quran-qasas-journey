@@ -1,0 +1,398 @@
+[
+  {
+    "id": "u_p385b",
+    "page": 385,
+    "half": "b",
+    "verseFrom": 1,
+    "verseTo": 5,
+    "verses": [
+      "v28_001",
+      "v28_002",
+      "v28_003",
+      "v28_004",
+      "v28_005"
+    ],
+    "lines": {
+      "from": 10,
+      "to": 15
+    },
+    "order": 1
+  },
+  {
+    "id": "u_p386a",
+    "page": 386,
+    "half": "a",
+    "verseFrom": 6,
+    "verseTo": 9,
+    "verses": [
+      "v28_006",
+      "v28_007",
+      "v28_008",
+      "v28_009"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 2
+  },
+  {
+    "id": "u_p386b",
+    "page": 386,
+    "half": "b",
+    "verseFrom": 10,
+    "verseTo": 13,
+    "verses": [
+      "v28_010",
+      "v28_011",
+      "v28_012",
+      "v28_013"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 3
+  },
+  {
+    "id": "u_p387a",
+    "page": 387,
+    "half": "a",
+    "verseFrom": 14,
+    "verseTo": 17,
+    "verses": [
+      "v28_014",
+      "v28_015",
+      "v28_016",
+      "v28_017"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 4
+  },
+  {
+    "id": "u_p387b",
+    "page": 387,
+    "half": "b",
+    "verseFrom": 18,
+    "verseTo": 21,
+    "verses": [
+      "v28_018",
+      "v28_019",
+      "v28_020",
+      "v28_021"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 5
+  },
+  {
+    "id": "u_p388a",
+    "page": 388,
+    "half": "a",
+    "verseFrom": 22,
+    "verseTo": 24,
+    "verses": [
+      "v28_022",
+      "v28_023",
+      "v28_024"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 6
+    },
+    "order": 6
+  },
+  {
+    "id": "u_p388b",
+    "page": 388,
+    "half": "b",
+    "verseFrom": 25,
+    "verseTo": 28,
+    "verses": [
+      "v28_025",
+      "v28_026",
+      "v28_027",
+      "v28_028"
+    ],
+    "lines": {
+      "from": 6,
+      "to": 15
+    },
+    "order": 7
+  },
+  {
+    "id": "u_p389a",
+    "page": 389,
+    "half": "a",
+    "verseFrom": 29,
+    "verseTo": 31,
+    "verses": [
+      "v28_029",
+      "v28_030",
+      "v28_031"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 8
+  },
+  {
+    "id": "u_p389b",
+    "page": 389,
+    "half": "b",
+    "verseFrom": 32,
+    "verseTo": 35,
+    "verses": [
+      "v28_032",
+      "v28_033",
+      "v28_034",
+      "v28_035"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 9
+  },
+  {
+    "id": "u_p390a",
+    "page": 390,
+    "half": "a",
+    "verseFrom": 36,
+    "verseTo": 38,
+    "verses": [
+      "v28_036",
+      "v28_037",
+      "v28_038"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 7
+    },
+    "order": 10
+  },
+  {
+    "id": "u_p390b",
+    "page": 390,
+    "half": "b",
+    "verseFrom": 39,
+    "verseTo": 43,
+    "verses": [
+      "v28_039",
+      "v28_040",
+      "v28_041",
+      "v28_042",
+      "v28_043"
+    ],
+    "lines": {
+      "from": 7,
+      "to": 15
+    },
+    "order": 11
+  },
+  {
+    "id": "u_p391a",
+    "page": 391,
+    "half": "a",
+    "verseFrom": 44,
+    "verseTo": 46,
+    "verses": [
+      "v28_044",
+      "v28_045",
+      "v28_046"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 6
+    },
+    "order": 12
+  },
+  {
+    "id": "u_p391b",
+    "page": 391,
+    "half": "b",
+    "verseFrom": 47,
+    "verseTo": 50,
+    "verses": [
+      "v28_047",
+      "v28_048",
+      "v28_049",
+      "v28_050"
+    ],
+    "lines": {
+      "from": 7,
+      "to": 15
+    },
+    "order": 13
+  },
+  {
+    "id": "u_p392a",
+    "page": 392,
+    "half": "a",
+    "verseFrom": 51,
+    "verseTo": 56,
+    "verses": [
+      "v28_051",
+      "v28_052",
+      "v28_053",
+      "v28_054",
+      "v28_055",
+      "v28_056"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 14
+  },
+  {
+    "id": "u_p392b",
+    "page": 392,
+    "half": "b",
+    "verseFrom": 57,
+    "verseTo": 59,
+    "verses": [
+      "v28_057",
+      "v28_058",
+      "v28_059"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 15
+  },
+  {
+    "id": "u_p393a",
+    "page": 393,
+    "half": "a",
+    "verseFrom": 60,
+    "verseTo": 64,
+    "verses": [
+      "v28_060",
+      "v28_061",
+      "v28_062",
+      "v28_063",
+      "v28_064"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 16
+  },
+  {
+    "id": "u_p393b",
+    "page": 393,
+    "half": "b",
+    "verseFrom": 65,
+    "verseTo": 70,
+    "verses": [
+      "v28_065",
+      "v28_066",
+      "v28_067",
+      "v28_068",
+      "v28_069",
+      "v28_070"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 17
+  },
+  {
+    "id": "u_p394a",
+    "page": 394,
+    "half": "a",
+    "verseFrom": 71,
+    "verseTo": 74,
+    "verses": [
+      "v28_071",
+      "v28_072",
+      "v28_073",
+      "v28_074"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 8
+    },
+    "order": 18
+  },
+  {
+    "id": "u_p394b",
+    "page": 394,
+    "half": "b",
+    "verseFrom": 75,
+    "verseTo": 77,
+    "verses": [
+      "v28_075",
+      "v28_076",
+      "v28_077"
+    ],
+    "lines": {
+      "from": 8,
+      "to": 15
+    },
+    "order": 19
+  },
+  {
+    "id": "u_p395a",
+    "page": 395,
+    "half": "a",
+    "verseFrom": 78,
+    "verseTo": 80,
+    "verses": [
+      "v28_078",
+      "v28_079",
+      "v28_080"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 7
+    },
+    "order": 20
+  },
+  {
+    "id": "u_p395b",
+    "page": 395,
+    "half": "b",
+    "verseFrom": 81,
+    "verseTo": 84,
+    "verses": [
+      "v28_081",
+      "v28_082",
+      "v28_083",
+      "v28_084"
+    ],
+    "lines": {
+      "from": 7,
+      "to": 15
+    },
+    "order": 21
+  },
+  {
+    "id": "u_p396a",
+    "page": 396,
+    "half": "a",
+    "verseFrom": 85,
+    "verseTo": 88,
+    "verses": [
+      "v28_085",
+      "v28_086",
+      "v28_087",
+      "v28_088"
+    ],
+    "lines": {
+      "from": 1,
+      "to": 7
+    },
+    "order": 22
+  }
+]

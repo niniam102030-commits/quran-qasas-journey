@@ -1,0 +1,1631 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "C2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394b_C_0261",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_015"
+      ],
+      "promptFa": "معنای «لَتَنُوٓأُ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_076_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گران و دشوار می آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "گروهی نیرومند"
+        },
+        {
+          "id": "o3",
+          "fa": "شادی مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "تعدی و تجاوز کرد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «تنوء» از ریشه نوء به معنای سنگینی کردن و دشوار بودن است."
+    },
+    {
+      "id": "q_u_p394b_C_0262",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 75,
+      "targets": [
+        "w:w28_075_005"
+      ],
+      "promptFa": "کدام کلمه به معنای «گواه مطلع و آگاه» است؟",
+      "stem": {
+        "fa": "گواه مطلع و آگاه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "شَهِيدًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "بُرْهَـٰنَكُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمَّةٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْحَقَّ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«شهید» به معنای گواه و شاهد مطلع است."
+    },
+    {
+      "id": "q_u_p394b_C_0263",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 77,
+      "targets": [
+        "vt:77"
+      ],
+      "promptFa": "ترجمه صحیح این آیه کدام است؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "در آنچه خدا به تو عطا کرده است سرای آخرت را بجوی، و سهم خود را از دنیا فراموش مکن، و نیکی کن همان گونه که خدا به تو نیکی کرده است، و در زمین خواهان فساد مباش، بی تردید خدا مفسدان را دوست ندارد."
+        },
+        {
+          "id": "o2",
+          "fa": "همانا قارون از قوم موسی بود که بر آنان تعدی و تجاوز کرد، و از گنجینه های مال و ثروت آن اندازه به او دادیم که حمل کلیدهایش بر گروهی نیرومند گران و دشوار می آمد."
+        },
+        {
+          "id": "o3",
+          "fa": "و از هر امتی گواه مطلع و آگاهی بیرون می آوریم، و می گوییم: دلیل خود را بیاورید. پس برای آنان یقینی شود که بی تردید حق ویژه خداست."
+        },
+        {
+          "id": "o4",
+          "fa": "در آنچه خدا به تو عطا کرده است سرای دنیا را بجوی، و سهم خود را از آخرت فراموش مکن، و نیکی کن همان گونه که خدا به تو نیکی کرده است."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترجمه دقیق و کامل آیه ۷۷ است."
+    },
+    {
+      "id": "q_u_p394b_C_0264",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 75,
+      "targets": [
+        "vt:75"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 75,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 75,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 76,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 77,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 74,
+            "from": 1,
+            "to": 8
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این ترجمه دقیق آیه ۷۵ است."
+    },
+    {
+      "id": "q_u_p394b_C_0265",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "این آیه، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 76
+        },
+        {
+          "id": "o2",
+          "num": 75
+        },
+        {
+          "id": "o3",
+          "num": 77
+        },
+        {
+          "id": "o4",
+          "num": 78
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه مربوط به ماجرای قارون، آیه ۷۶ است."
+    },
+    {
+      "id": "q_u_p394b_C_0266",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "آیه ۷۷ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با توصیه به جستجوی آخرت (وَٱبْتَغِ) آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p394b_C_0267",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:75",
+        "vr:76"
+      ],
+      "promptFa": "آیه بعد از این آیه با چه عبارتی شروع می‌شود؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از آیه ۷۵، داستان قارون در آیه ۷۶ آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0268",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 77,
+      "targets": [
+        "sq:76",
+        "vr:76"
+      ],
+      "promptFa": "آیه قبل از این آیه با چه عبارتی شروع می‌شود؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "o2",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه قبل (آیه ۷۶) ابتدای داستان قارون است."
+    },
+    {
+      "id": "q_u_p394b_C_0269",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 76,
+      "targets": [
+        "vr:76"
+      ],
+      "promptFa": "پایان این آیه کدام است؟",
+      "stem": {
+        "verse": 76,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_076_027",
+            "w28_076_028",
+            "w28_076_029"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_077_024",
+            "w28_077_025",
+            "w28_077_026"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_075_015",
+            "w28_075_016",
+            "w28_075_017"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_078_026",
+            "w28_078_027",
+            "w28_078_028"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه ۷۶ «لَا يُحِبُّ ٱلْفَرِحِينَ» است و «ٱلْمُفْسِدِينَ» پایان آیه بعدی است."
+    },
+    {
+      "id": "q_u_p394b_C_0270",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 77,
+      "targets": [
+        "vr:77"
+      ],
+      "promptFa": "کدام گزینه ادامه صحیح آیه است؟",
+      "stem": {
+        "verseNum": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 77,
+            "from": 22,
+            "to": 26
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_077_022",
+            "w28_077_023",
+            "w28_077_024",
+            "w28_077_025",
+            "w28_076_029"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_077_022",
+            "w28_077_023",
+            "w28_077_024",
+            "w28_077_025",
+            "w28_078_028"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_077_022",
+            "w28_077_023",
+            "w28_077_024",
+            "w28_077_025",
+            "w28_075_017"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در آیه ۷۷ عبارت صحیح «إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ» است."
+    },
+    {
+      "id": "q_u_p394b_C_0271",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_007",
+        "w:w28_076_011",
+        "w:w28_076_014",
+        "w:w28_076_015"
+      ],
+      "promptFa": "کلمات را به معنای صحیح متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَبَغَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَتَنُوٓأُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تجاوز کرد"
+        },
+        {
+          "id": "r2",
+          "fa": "گنجینه ها"
+        },
+        {
+          "id": "r3",
+          "fa": "کلیدهایش"
+        },
+        {
+          "id": "r4",
+          "fa": "گران و دشوار می آمد"
+        },
+        {
+          "id": "r5",
+          "fa": "گروهی نیرومند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "«تنوء» یعنی گران می‌آمد و «بغی» به معنای تجاوز است."
+    },
+    {
+      "id": "q_u_p394b_C_0272",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 77,
+      "targets": [
+        "vt:77"
+      ],
+      "promptFa": "عبارات عربی را به ترجمه فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَلَا تَنسَ نَصِيبَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "مِنَ ٱلدُّنْيَا ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "در آنچه خدا به تو عطا کرده است بجوی"
+        },
+        {
+          "id": "r2",
+          "fa": "سرای آخرت را"
+        },
+        {
+          "id": "r3",
+          "fa": "و سهم خود را فراموش مکن"
+        },
+        {
+          "id": "r4",
+          "fa": "از دنیا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "ترجمه دقیق عبارات آیه ۷۷."
+    },
+    {
+      "id": "q_u_p394b_C_0273",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75",
+        "vn:76",
+        "vn:77"
+      ],
+      "promptFa": "شماره هر آیه را به آغاز آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 75
+        },
+        {
+          "id": "l2",
+          "num": 76
+        },
+        {
+          "id": "l3",
+          "num": 77
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "r2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "r4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "explanationFa": "یادآوری شروع هر آیه با شماره آن."
+    },
+    {
+      "id": "q_u_p394b_C_0274",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 75,
+      "targets": [
+        "vr:75",
+        "vt:75"
+      ],
+      "promptFa": "با توجه به ترجمه، آیه را مرتب کنید.",
+      "stem": {
+        "fa": "و از هر امتی گواه مطلع و آگاهی بیرون می آوریم، و می گوییم: دلیل خود را بیاورید. پس برای آنان یقینی شود که بی تردید حق ویژه خداست، و آنچه را به دروغ می ساختند از دستشان می رود و گم می شود."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَقُلْنَا هَاتُوا۟ بُرْهَـٰنَكُمْ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَضَلَّ عَنْهُم مَّا كَانُوا۟ يَفْتَرُونَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِن قَوْمِ مُوسَىٰ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب قطعات بر اساس ترجمه فارسی."
+    },
+    {
+      "id": "q_u_p394b_C_0275",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 77,
+      "targets": [
+        "vr:77",
+        "vn:77"
+      ],
+      "promptFa": "کلمات آیه ۷۷ را به ترتیب صحیح بچینید.",
+      "stem": {
+        "num": 77
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَأَحْسِن كَمَآ أَحْسَنَ ٱللَّهُ إِلَيْكَ ۖ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَا تَبْغِ ٱلْفَسَادَ فِى ٱلْأَرْضِ ۖ",
+          "wordIdx": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "explanationFa": "آیه ۷۷ که شامل توصیه‌های خداوند به قارون است."
+    },
+    {
+      "id": "q_u_p394b_C_0276",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:75",
+        "vr:76"
+      ],
+      "promptFa": "آغاز آیه بعد را بچینید.",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ إِنَّ قَـٰرُونَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كَانَ مِن قَوْمِ مُوسَىٰ",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَبَغَىٰ عَلَيْهِمْ ۖ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَٱبْتَغِ فِيمَآ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "پس از آیه ۷۵، داستان قارون در آیه ۷۶ شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0277",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:76",
+        "vr:75"
+      ],
+      "promptFa": "پایان آیه قبل را بچینید.",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَضَلَّ عَنْهُم",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَّا كَانُوا۟ يَفْتَرُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن قَبْلِهِۦ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "explanationFa": "آیه ۷۵ با بیان ضلالت و گمراهی افترا زنندگان پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p394b_C_0278",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 76,
+      "targets": [
+        "vt:76"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب آیه مرتب کنید.",
+      "stem": {
+        "faSegments": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "همانا قارون از قوم موسی بود که بر آنان تعدی و تجاوز کرد،"
+        },
+        {
+          "id": "b2",
+          "fa": "و از گنجینه های مال و ثروت آن اندازه به او دادیم"
+        },
+        {
+          "id": "b3",
+          "fa": "که حمل کلیدهایش بر گروهی نیرومند گران و دشوار می آمد."
+        },
+        {
+          "id": "b4",
+          "fa": "هنگامی که قومش به او گفتند: شادی مکن، قطعاً خدا شادمانان را دوست ندارد."
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب قطعات ترجمه آیه ۷۶."
+    },
+    {
+      "id": "q_u_p394b_C_0279",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:74",
+        "sq:75",
+        "sq:76"
+      ],
+      "promptFa": "آیات را به ترتیب صحیح قرار دهید.",
+      "stem": {
+        "verses": [
+          74,
+          75,
+          76,
+          77
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "num": 74,
+          "ar": "وَيَوْمَ يُنَادِيهِمْ...",
+          "verse": 74
+        },
+        {
+          "id": "b2",
+          "num": 75,
+          "ar": "وَنَزَعْنَا مِن كُلِّ...",
+          "verse": 75
+        },
+        {
+          "id": "b3",
+          "num": 76,
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ...",
+          "verse": 76
+        },
+        {
+          "id": "b4",
+          "num": 77,
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ...",
+          "verse": 77
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ترتیب آیات از ۷۴ تا ۷۷ سوره قصص."
+    },
+    {
+      "id": "q_u_p394b_C_0280",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 75,
+      "targets": [
+        "vr:75"
+      ],
+      "promptFa": "کلمات جاافتاده را در جای خود قرار دهید.",
+      "stem": {
+        "verse": 75,
+        "hiddenIdx": [
+          5,
+          8,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "شَهِيدًۭا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بُرْهَـٰنَكُمْ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْحَقَّ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْكُنُوزِ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "أُمَّةٍۢ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "8": "b2",
+        "11": "b3"
+      },
+      "explanationFa": "تکمیل کلمات آیه ۷۵."
+    },
+    {
+      "id": "q_u_p394b_C_0281",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 76,
+      "targets": [
+        "vr:76"
+      ],
+      "promptFa": "ادامه آیه را کامل کنید.",
+      "stem": {
+        "verse": 76,
+        "givenCount": 23,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "تَفْرَحْ ۖ",
+          "wordIdx": [
+            24
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنَّ ٱللَّهَ",
+          "wordIdx": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا يُحِبُّ",
+          "wordIdx": [
+            27,
+            28
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْفَرِحِينَ",
+          "wordIdx": [
+            29
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْمُفْسِدِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "24": "b1",
+        "25": "b2",
+        "27": "b3",
+        "29": "b4"
+      },
+      "explanationFa": "پایان آیه ۷۶ لَا يُحِبُّ ٱلْفَرِحِينَ است."
+    },
+    {
+      "id": "q_u_p394b_C_0282",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 77,
+      "targets": [
+        "vt:77"
+      ],
+      "promptFa": "ترجمه کلمات مشخص شده را قرار دهید.",
+      "stem": {
+        "verse": 77,
+        "faHidden": [
+          {
+            "start": 30,
+            "text": "سرای آخرت"
+          },
+          {
+            "start": 54,
+            "text": "سهم خود"
+          },
+          {
+            "start": 141,
+            "text": "فساد"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "سرای آخرت",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "سهم خود",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "فساد",
+          "wordIdx": [
+            19
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "نیکی",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "fa": "گنجینه ها",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "9": "b2",
+        "19": "b3"
+      },
+      "explanationFa": "الآخرة = سرای آخرت، نصیبک = سهم خود، الفساد = فساد."
+    },
+    {
+      "id": "q_u_p394b_C_0283",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 77,
+      "targets": [
+        "w:w28_077_009"
+      ],
+      "promptFa": "معنای کلمه «نَصِيبَكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_077_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سهم خود"
+        },
+        {
+          "id": "o2",
+          "fa": "نیکی کن"
+        },
+        {
+          "id": "o3",
+          "fa": "خواهان فساد"
+        },
+        {
+          "id": "o4",
+          "fa": "سرای آخرت"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نصیب» به معنای سهم و بهره است."
+    },
+    {
+      "id": "q_u_p394b_C_0284",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 76,
+      "targets": [
+        "w:w28_076_016"
+      ],
+      "promptFa": "کدام کلمه به معنای «گروهی» است؟",
+      "stem": {
+        "fa": "گروهی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِٱلْعُصْبَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَفَاتِحَهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقُوَّةِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُصبَة» به معنای گروه است."
+    },
+    {
+      "id": "q_u_p394b_C_0285",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 75,
+      "targets": [
+        "vt:75"
+      ],
+      "promptFa": "ترجمه این آیه کدام است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و از هر امتی گواه مطلع و آگاهی بیرون می آوریم، و می گوییم: دلیل خود را بیاورید. پس برای آنان یقینی شود که بی تردید حق ویژه خداست، و آنچه را به دروغ می ساختند از دستشان می رود و گم می شود."
+        },
+        {
+          "id": "o2",
+          "fa": "همانا قارون از قوم موسی بود که بر آنان تعدی و تجاوز کرد، و از گنجینه های مال و ثروت آن اندازه به او دادیم که حمل کلیدهایش بر گروهی نیرومند گران و دشوار می آمد."
+        },
+        {
+          "id": "o3",
+          "fa": "در آنچه خدا به تو عطا کرده است سرای آخرت را بجوی، و سهم خود را از دنیا فراموش مکن، و نیکی کن همان گونه که خدا به تو نیکی کرده است."
+        },
+        {
+          "id": "o4",
+          "fa": "و یاد کن روزی را که خدا آنان را ندا می کند و می گوید: کجایند معبودانی که می پنداشتید شریکان من هستند؟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه کامل آیه ۷۵ سوره قصص."
+    },
+    {
+      "id": "q_u_p394b_C_0286",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 76,
+      "targets": [
+        "vt:76"
+      ],
+      "promptFa": "این ترجمه مربوط به کدام آیه است؟",
+      "stem": {
+        "verse": 76,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 76,
+            "from": 1,
+            "to": 29
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 75,
+            "from": 1,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 77,
+            "from": 1,
+            "to": 26
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 78,
+            "from": 1,
+            "to": 28
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۶ درباره ماجرای قارون و گنجینه‌های اوست."
+    },
+    {
+      "id": "q_u_p394b_C_0287",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "این آیه، آیه چندم است؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 77
+        },
+        {
+          "id": "o2",
+          "num": 76
+        },
+        {
+          "id": "o3",
+          "num": 75
+        },
+        {
+          "id": "o4",
+          "num": 78
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۷۷ که پندهای به قارون را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p394b_C_0288",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "آیه ۷۵ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا...» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p394b_C_0289",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:76",
+        "vr:77"
+      ],
+      "promptFa": "آیه بعد از این آیه با چه عبارتی شروع می‌شود؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه پس از داستان دارایی‌های قارون، پندها به او را بیان می‌کند (وَٱبْتَغِ...)."
+    },
+    {
+      "id": "q_u_p394b_C_0290",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 77,
+      "targets": [
+        "vr:77"
+      ],
+      "promptFa": "پایان این آیه کدام است؟",
+      "stem": {
+        "verse": 77,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_077_024",
+            "w28_077_025",
+            "w28_077_026"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_076_027",
+            "w28_076_028",
+            "w28_076_029"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_078_026",
+            "w28_078_027",
+            "w28_078_028"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_075_015",
+            "w28_075_016",
+            "w28_075_017"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با «لَا يُحِبُّ ٱلْمُفْسِدِينَ» پایان می‌یابد."
+    }
+  ],
+  "issues": []
+}

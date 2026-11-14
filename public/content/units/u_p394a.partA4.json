@@ -1,0 +1,585 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A4",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_1104",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002"
+      ],
+      "promptFa": "معنای کلمه «يُنَادِيهِمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_074_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنان را ندا می کند"
+        },
+        {
+          "id": "o2",
+          "fa": "با آنان نجوا می کند"
+        },
+        {
+          "id": "o3",
+          "fa": "آنان را پند داد"
+        },
+        {
+          "id": "o4",
+          "fa": "آنان را رها می کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "«يُنَادِيهِمْ» از ریشه نداء به معنای صدا زدن با صدای بلند است، نه نجوا و درگوشی سخن گفتن."
+    },
+    {
+      "id": "q_u_p394a_A_1105",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002"
+      ],
+      "promptFa": "معنای «يُنَادِيهِمْ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_074_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "با آنان درگوشی سخن می گوید"
+        },
+        {
+          "id": "o2",
+          "fa": "آنان را مجازات می کند"
+        },
+        {
+          "id": "o3",
+          "fa": "آنان را ندا می کند"
+        },
+        {
+          "id": "o4",
+          "fa": "آنان را دور می سازد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«يُنَادِيهِمْ» یعنی «آنان را ندا می کند». در صحرای محشر خداوند مشرکان را با صدای بلند ندا می‌دهد."
+    },
+    {
+      "id": "q_u_p394a_A_1106",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002"
+      ],
+      "promptFa": "معنای «يُنَادِيهِمْ» در آیه شریفه کدام است؟",
+      "stem": {
+        "wordId": "w28_074_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آنان را زنده می کند"
+        },
+        {
+          "id": "o2",
+          "fa": "آنان را ندا می کند"
+        },
+        {
+          "id": "o3",
+          "fa": "آنان را فرا می خواند"
+        },
+        {
+          "id": "o4",
+          "fa": "فراموششان می کند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "کلمه «يُنَادِيهِمْ» به معنای «آنان را ندا می کند» است."
+    },
+    {
+      "id": "q_u_p394a_A_1107",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «آنان را ندا می کند» است؟",
+      "stem": {
+        "fa": "آنان را ندا می کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَقُولُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "شُرَكَآءِىَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يُنَادِيهِمْ» به معنای آنان را ندا می کند است."
+    },
+    {
+      "id": "q_u_p394a_A_1108",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002"
+      ],
+      "promptFa": "معادل عربی «آنان را ندا می کند» کدام است؟",
+      "stem": {
+        "fa": "آنان را ندا می کند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نُنَادِيهِمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "تُنَادِيهِمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "يُنَادِى"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنَادِيهِمْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«يُنَادِيهِمْ» صیغه مفرد مذکر غایب است به معنای او (خداوند) آنان را ندا می کند."
+    },
+    {
+      "id": "q_u_p394a_A_1109",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_008"
+      ],
+      "promptFa": "معنای کلمه «تَزْعُمُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_074_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "یقین و ایمان داشتید"
+        },
+        {
+          "id": "o2",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o3",
+          "fa": "ستم می کردید"
+        },
+        {
+          "id": "o4",
+          "fa": "میدانستید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«زَعْم» در قرآن به معنای پندار واهی و باطل است، نه یقین داشتن."
+    },
+    {
+      "id": "q_u_p394a_A_1110",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_008"
+      ],
+      "promptFa": "معنای «تَزْعُمُونَ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_074_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o2",
+          "fa": "ایمان داشتید"
+        },
+        {
+          "id": "o3",
+          "fa": "انکار می کردید"
+        },
+        {
+          "id": "o4",
+          "fa": "عمل می کردید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "«تَزْعُمُونَ» یعنی به باطل می پنداشتید و ادعای بی دلیل داشتید."
+    },
+    {
+      "id": "q_u_p394a_A_1111",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_008"
+      ],
+      "promptFa": "معنای «تَزْعُمُونَ» در آیه شریفه کدام است؟",
+      "stem": {
+        "wordId": "w28_074_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ادعا می کردند"
+        },
+        {
+          "id": "o2",
+          "fa": "شریک می ساختید"
+        },
+        {
+          "id": "o3",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "o4",
+          "fa": "تکذیب می کردید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "صیغه جمع مذکر مخاطب است و به معنای «می پنداشتید» می باشد."
+    },
+    {
+      "id": "q_u_p394a_A_1112",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «می پنداشتید» است؟",
+      "stem": {
+        "fa": "می پنداشتید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَزْعُمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنتُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "شُرَكَآءِىَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَزْعُمُونَ» به معنای می پنداشتید است."
+    },
+    {
+      "id": "q_u_p394a_A_1113",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_008"
+      ],
+      "promptFa": "معادل عربی «می پنداشتید» کدام است؟",
+      "stem": {
+        "fa": "می پنداشتید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "زَعَمْتُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَعْلَمُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَعْمَلُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَزْعُمُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "random"
+      },
+      "explanationFa": "«تَزْعُمُونَ» فعل مضارع مخاطب است و به معنای شما می پنداشتید."
+    },
+    {
+      "id": "q_u_p394a_A_1114",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002",
+        "w:w28_074_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی مناسب متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَيَقُولُ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَيْنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "آنان را ندا می کند"
+        },
+        {
+          "id": "r2",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "r3",
+          "fa": "و می گوید"
+        },
+        {
+          "id": "r4",
+          "fa": "کجایند"
+        },
+        {
+          "id": "r5",
+          "fa": "یقین و ایمان داشتید"
+        },
+        {
+          "id": "r6",
+          "fa": "نجوا می کند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "یُنَادِيهِمْ: آنان را ندا می کند، تَزْعُمُونَ: می پنداشتید."
+    },
+    {
+      "id": "q_u_p394a_A_1115",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 74,
+      "targets": [
+        "w:w28_074_002",
+        "w:w28_074_008"
+      ],
+      "promptFa": "ارتباط صحیح بین کلمات و معانی را برقرار کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَزْعُمُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُنَادِيهِمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "شُرَكَآءِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلَّذِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می پنداشتید"
+        },
+        {
+          "id": "r2",
+          "fa": "آنان را ندا می کند"
+        },
+        {
+          "id": "r3",
+          "fa": "شریکان من"
+        },
+        {
+          "id": "r4",
+          "fa": "که"
+        },
+        {
+          "id": "r5",
+          "fa": "می دانستید"
+        },
+        {
+          "id": "r6",
+          "fa": "رها می کند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "يُنَادِيهِمْ: آنان را ندا می کند، تَزْعُمُونَ: می پنداشتید (به باطل)."
+    }
+  ],
+  "issues": []
+}

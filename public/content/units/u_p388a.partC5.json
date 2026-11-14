@@ -1,0 +1,630 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388a",
+  "part": "C5",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388a_C_0357",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 22,
+      "targets": [
+        "vn:22"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 22
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 20
+        },
+        {
+          "id": "o2",
+          "num": 21
+        },
+        {
+          "id": "o3",
+          "num": 22
+        },
+        {
+          "id": "o4",
+          "num": 23
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَلَمَّا تَوَجَّهَ تِلْقَآءَ مَدْيَنَ…» آیه‌ی ۲۲ است و بعد از آیه‌ی ۲۱ (دعای موسی برای نجات) می‌آید."
+    },
+    {
+      "id": "q_u_p388a_C_0358",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 22,
+      "targets": [
+        "vn:22"
+      ],
+      "promptFa": "شماره‌ی این آیه را مشخص کن.",
+      "stem": {
+        "verse": 22
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 24
+        },
+        {
+          "id": "o2",
+          "num": 22
+        },
+        {
+          "id": "o3",
+          "num": 21
+        },
+        {
+          "id": "o4",
+          "num": 25
+        },
+        {
+          "id": "o5",
+          "num": 23
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۲۲ با «وَلَمَّا» شروع می‌شود و با «سَوَآءَ ٱلسَّبِيلِ» تمام می‌شود. آیه‌ی ۲۳ هم با «وَلَمَّا» آغاز می‌شود، پس مراقب باش."
+    },
+    {
+      "id": "q_u_p388a_C_0359",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 22,
+      "targets": [
+        "vn:22",
+        "vr:22"
+      ],
+      "promptFa": "آیه‌ی ۲۲ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 22
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_023_001",
+            "w28_023_002",
+            "w28_023_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_024_001",
+            "w28_024_002",
+            "w28_024_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 22,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۲ با «وَلَمَّا تَوَجَّهَ تِلْقَآءَ» آغاز می‌شود. آیه‌ی ۲۳ هم با «وَلَمَّا» شروع می‌شود، اما ادامه‌اش «وَرَدَ مَآءَ» است."
+    },
+    {
+      "id": "q_u_p388a_C_0360",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 22,
+      "targets": [
+        "vn:22",
+        "vr:22"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۲ کدام است؟",
+      "stem": {
+        "num": 22
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_022_001",
+            "w28_022_002",
+            "w28_023_003",
+            "w28_022_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 22,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_023_001",
+            "w28_023_002",
+            "w28_023_003",
+            "w28_023_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003",
+            "w28_025_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۲ «وَلَمَّا تَوَجَّهَ تِلْقَآءَ مَدْيَنَ» است. «تِلْقَآءَ» جای «مَآءَ» در آیه‌ی ۲۳ نشسته است."
+    },
+    {
+      "id": "q_u_p388a_C_0361",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 23,
+      "targets": [
+        "vn:23"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 23
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 23
+        },
+        {
+          "id": "o2",
+          "num": 22
+        },
+        {
+          "id": "o3",
+          "num": 24
+        },
+        {
+          "id": "o4",
+          "num": 25
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «وَلَمَّا وَرَدَ مَآءَ مَدْيَنَ…» آیه‌ی ۲۳ است (دیدن دو زن و گفت‌وگوی موسی با آن‌ها)."
+    },
+    {
+      "id": "q_u_p388a_C_0362",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 23,
+      "targets": [
+        "vn:23"
+      ],
+      "promptFa": "شماره‌ی این آیه را مشخص کن.",
+      "stem": {
+        "verse": 23
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 21
+        },
+        {
+          "id": "o2",
+          "num": 22
+        },
+        {
+          "id": "o3",
+          "num": 24
+        },
+        {
+          "id": "o4",
+          "num": 23
+        },
+        {
+          "id": "o5",
+          "num": 25
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۲۳ پس از آیه‌ی ۲۲ می‌آید و با «وَأَبُونَا شَيْخٌۭ كَبِيرٌۭ» تمام می‌شود."
+    },
+    {
+      "id": "q_u_p388a_C_0363",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 23,
+      "targets": [
+        "vn:23",
+        "vr:23"
+      ],
+      "promptFa": "آیه‌ی ۲۳ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 23
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_022_001",
+            "w28_022_002",
+            "w28_022_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 23,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_020_001",
+            "w28_020_002",
+            "w28_020_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۳ با «وَلَمَّا وَرَدَ مَآءَ» شروع می‌شود، نه «وَلَمَّا تَوَجَّهَ» که ابتدای آیه‌ی ۲۲ است."
+    },
+    {
+      "id": "q_u_p388a_C_0364",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 23,
+      "targets": [
+        "vn:23",
+        "vr:23"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۳ کدام است؟",
+      "stem": {
+        "num": 23
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_022_001",
+            "w28_022_002",
+            "w28_022_003",
+            "w28_022_004",
+            "w28_022_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_024_001",
+            "w28_024_002",
+            "w28_024_003",
+            "w28_024_004",
+            "w28_024_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_023_001",
+            "w28_023_002",
+            "w28_023_003",
+            "w28_023_004",
+            "w28_023_011"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 23,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۳ «وَلَمَّا وَرَدَ مَآءَ مَدْيَنَ وَجَدَ» است. در گزینه‌ی نزدیک به آن، «وَوَجَدَ» جای «وَجَدَ» آمده که مربوط به میانه‌ی همین آیه است."
+    },
+    {
+      "id": "q_u_p388a_C_0365",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 24,
+      "targets": [
+        "vn:24"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 24
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 22
+        },
+        {
+          "id": "o2",
+          "num": 24
+        },
+        {
+          "id": "o3",
+          "num": 25
+        },
+        {
+          "id": "o4",
+          "num": 23
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ…» آیه‌ی ۲۴ است."
+    },
+    {
+      "id": "q_u_p388a_C_0366",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 24,
+      "targets": [
+        "vn:24"
+      ],
+      "promptFa": "شماره‌ی این آیه را مشخص کن.",
+      "stem": {
+        "verse": 24
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 25
+        },
+        {
+          "id": "o2",
+          "num": 23
+        },
+        {
+          "id": "o3",
+          "num": 26
+        },
+        {
+          "id": "o4",
+          "num": 22
+        },
+        {
+          "id": "o5",
+          "num": 24
+        }
+      ],
+      "answer": "o5",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۲۴ پس از آیه‌ی ۲۳ می‌آید و با «إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍۢ فَقِيرٌۭ» تمام می‌شود."
+    },
+    {
+      "id": "q_u_p388a_C_0367",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 24,
+      "targets": [
+        "vn:24",
+        "vr:24"
+      ],
+      "promptFa": "آیه‌ی ۲۴ با کدام عبارت شروع می‌شود؟",
+      "stem": {
+        "num": 24
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 24,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_023_001",
+            "w28_023_002",
+            "w28_023_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_022_001",
+            "w28_022_002",
+            "w28_022_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۴ با «فَسَقَىٰ لَهُمَا ثُمَّ» آغاز می‌شود؛ یعنی موسی برای آن دو آب داد."
+    },
+    {
+      "id": "q_u_p388a_C_0368",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 24,
+      "targets": [
+        "vn:24",
+        "vr:24"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۴ کدام است؟",
+      "stem": {
+        "num": 24
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_021_001",
+            "w28_021_002",
+            "w28_021_003",
+            "w28_021_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_024_001",
+            "w28_024_002",
+            "w28_024_003",
+            "w28_024_007"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003",
+            "w28_025_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 24,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۴ «فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ» است. «فَقَالَ» در همین آیه بعد از «إِلَى ٱلظِّلِّ» می‌آید، نه بعد از «ثُمَّ»."
+    }
+  ],
+  "issues": []
+}

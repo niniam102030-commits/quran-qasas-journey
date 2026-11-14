@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p388b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 25,
+      "targets": [
+        "vr:25"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «پس یکی از آن دو [زن] در حالی که با حالت شرم و حیا گام برمی داشت، نزد ا...»، آیه 25 را مرتب کن:",
+      "stem": {
+        "verse": 25
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَجَآءَتْهُ إِحْدَىٰهُمَا تَمْشِى عَلَى ٱسْتِحْيَآءٍۢ قَالَتْ إِنَّ أَبِى يَدْعُوكَ",
+          "wordIdx": [
+            1,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لِيَجْزِيَكَ أَجْرَ مَا سَقَيْتَ لَنَا ۚ فَلَمَّا جَآءَهُۥ وَقَصَّ عَلَيْهِ",
+          "wordIdx": [
+            10,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْقَصَصَ قَالَ لَا تَخَفْ ۖ نَجَوْتَ مِنَ ٱلْقَوْمِ ٱلظَّـٰلِمِينَ",
+          "wordIdx": [
+            19,
+            26
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 25 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p388b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 25,
+      "targets": [
+        "vr:25"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 25 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 25,
+        "hiddenIdx": [
+          14
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَنَا ۚ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "14": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «لَنَا ۚ» در آیه 25 است."
+    }
+  ],
+  "issues": []
+}

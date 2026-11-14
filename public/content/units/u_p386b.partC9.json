@@ -1,0 +1,161 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386b",
+  "part": "C9",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p386b_C_0863",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 12,
+      "targets": [
+        "sq:11",
+        "vr:11"
+      ],
+      "promptFa": "آیه‌ی ۱۲ نمایش داده شده است. آیه‌ی قبل از آن (آیه‌ی ۱۱) را از روی کلمات بچین.",
+      "stem": {
+        "verse": 12,
+        "wordIdx": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "جُنُبٍۢ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَقَالَتْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَبَصُرَتْ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَشْعُرُونَ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لِأُخْتِهِۦ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "عَن",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَهُمْ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "قُصِّيهِ ۖ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "فَقَالَتْ",
+          "wordIdx": [
+            6
+          ],
+          "srcVerse": 12,
+          "decoy": true
+        },
+        {
+          "id": "b12",
+          "ar": "لَهُۥ",
+          "wordIdx": [
+            15
+          ],
+          "srcVerse": 12,
+          "decoy": true
+        },
+        {
+          "id": "b13",
+          "ar": "يَعْلَمُونَ",
+          "wordIdx": [
+            17
+          ],
+          "srcVerse": 13,
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b2",
+        "b6",
+        "b9",
+        "b4",
+        "b10",
+        "b7",
+        "b1",
+        "b8",
+        "b3",
+        "b5"
+      ],
+      "distractorTags": {
+        "b11": "near_miss",
+        "b12": "neighbor_verse",
+        "b13": "neighbor_word"
+      },
+      "explanationFa": "آیه‌ی ۱۱ با «وَقَالَتْ لِأُخْتِهِۦ» آغاز می‌شود و با «وَهُمْ لَا يَشْعُرُونَ» پایان می‌یابد. آیه‌ی ۱۲ بعد از آن است و با «وَحَرَّمْنَا» شروع می‌شود."
+    }
+  ],
+  "issues": []
+}

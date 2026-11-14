@@ -1,0 +1,2 @@
+[#7 q_u_p395b_C_0747 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#8 q_u_p395b_C_0748 NUMBER_TO_VERSE_START] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ۖ

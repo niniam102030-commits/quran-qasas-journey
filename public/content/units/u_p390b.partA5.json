@@ -1,0 +1,575 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_A_0701",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "معنای «أَئِمَّةًۭ» چیست؟",
+      "stem": {
+        "wordId": "w28_041_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مادران"
+        },
+        {
+          "id": "o2",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "o3",
+          "fa": "یاری‌شوندگان"
+        },
+        {
+          "id": "o4",
+          "fa": "روزهای قیامت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» جمع «إمام» و به معنای پیشوایان است. «أمّهات» (مادران) هم‌ریشه است ولی معنایش فرق دارد."
+    },
+    {
+      "id": "q_u_p390b_A_0702",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "کدام معنا برای «أَئِمَّةًۭ» درست است؟",
+      "stem": {
+        "wordId": "w28_041_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دعوت‌کنندگان"
+        },
+        {
+          "id": "o2",
+          "fa": "قیام‌کنندگان"
+        },
+        {
+          "id": "o3",
+          "fa": "امّت‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "پیشوایان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "same_root"
+      },
+      "explanationFa": "«أئمّة» از ریشه‌ی «أ م م» و جمع «إمام» است و به معنای پیشوایان است. «امّت» هم‌ریشه است ولی معنای دیگری دارد."
+    },
+    {
+      "id": "q_u_p390b_A_0703",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "در این آیه، «أَئِمَّةًۭ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_041_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "o2",
+          "fa": "فرمانبرداران"
+        },
+        {
+          "id": "o3",
+          "fa": "آتش‌پرستان"
+        },
+        {
+          "id": "o4",
+          "fa": "قصدکنندگان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "در عبارت «پیشوایانی که دعوت به آتش می کنند»، «أئمّة» همان پیشوایان است. «أمّ» (قصد کردن) هم‌ریشه است ولی معنای این کلمه نیست."
+    },
+    {
+      "id": "q_u_p390b_A_0704",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "با توجه به آیه، معنای «أَئِمَّةًۭ» کدام است؟",
+      "stem": {
+        "wordId": "w28_041_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مادران"
+        },
+        {
+          "id": "o2",
+          "fa": "یاوران"
+        },
+        {
+          "id": "o3",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "o4",
+          "fa": "نشانه‌ها"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أئمّة» جمع «إمام» است و در این آیه یعنی پیشوایان. «مادران» هم‌ریشه است ولی معنایش فرق دارد."
+    },
+    {
+      "id": "q_u_p390b_A_0705",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پیشوایان» است؟",
+      "stem": {
+        "fa": "پیشوایان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَدْعُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُنصَرُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» جمع «إمام» و به معنای پیشوایان است."
+    },
+    {
+      "id": "q_u_p390b_A_0706",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "معادل عربی «پیشوایانی» در این آیه کدام است؟",
+      "stem": {
+        "fa": "پیشوایانی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَجَعَلْنَـٰهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيَوْمَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَدْعُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» با تنوین در این آیه «پیشوایانی» ترجمه شده است."
+    },
+    {
+      "id": "q_u_p390b_A_0707",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «پیشوایان و سرکردگان» است؟",
+      "stem": {
+        "fa": "پیشوایان و سرکردگان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُنصَرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» از ریشه‌ی «أ م م» و جمع «إمام» است."
+    },
+    {
+      "id": "q_u_p390b_A_0708",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَدْعُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلنَّارِ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَيَوْمَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قیامت"
+        },
+        {
+          "id": "r2",
+          "fa": "و روز"
+        },
+        {
+          "id": "r3",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "r4",
+          "fa": "آتش"
+        },
+        {
+          "id": "r5",
+          "fa": "دعوت می کنند"
+        },
+        {
+          "id": "r6",
+          "fa": "یاری نمی شوند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» پیشوایان است و بقیه از همین آیه‌اند."
+    },
+    {
+      "id": "q_u_p390b_A_0709",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَجَعَلْنَـٰهُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "إِلَى"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلنَّارِ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "يُنصَرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "یاری"
+        },
+        {
+          "id": "r2",
+          "fa": "به"
+        },
+        {
+          "id": "r3",
+          "fa": "آتش"
+        },
+        {
+          "id": "r4",
+          "fa": "و آنان را قرار دادیم"
+        },
+        {
+          "id": "r5",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "r6",
+          "fa": "قیامت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» پیشوایان است و «يُنصَرُونَ» از «نصر» به معنای یاری است."
+    },
+    {
+      "id": "q_u_p390b_A_0710",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 7,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 41,
+      "targets": [
+        "w:w28_041_002"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَدْعُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَئِمَّةًۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَيَوْمَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يُنصَرُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْقِيَـٰمَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "یاری"
+        },
+        {
+          "id": "r2",
+          "fa": "قیامت"
+        },
+        {
+          "id": "r3",
+          "fa": "دعوت می کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "و روز"
+        },
+        {
+          "id": "r5",
+          "fa": "پیشوایان"
+        },
+        {
+          "id": "r6",
+          "fa": "آتش"
+        },
+        {
+          "id": "r7",
+          "fa": "به"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word",
+        "r7": "neighbor_word"
+      },
+      "explanationFa": "«أئمّة» جمع «إمام» و به معنای پیشوایان است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p386b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 10,
+      "targets": [
+        "vr:10"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «و قلب مادر موسی [از هر چیز جز یاد فرزندش] تهی شد [و در اضطراب و نگرانی...»، آیه 10 را مرتب کن:",
+      "stem": {
+        "verse": 10
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "عَلَىٰ قَلْبِهَا لِتَكُونَ مِنَ ٱلْمُؤْمِنِينَ",
+          "wordIdx": [
+            13,
+            17
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كَادَتْ لَتُبْدِى بِهِۦ لَوْلَآ أَن رَّبَطْنَا",
+          "wordIdx": [
+            7,
+            12
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَىٰ فَـٰرِغًا ۖ إِن",
+          "wordIdx": [
+            1,
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 10 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p386b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 10,
+      "targets": [
+        "vr:10"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 10 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 10,
+        "hiddenIdx": [
+          9
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «بِهِۦ» در آیه 10 است."
+    }
+  ],
+  "issues": []
+}

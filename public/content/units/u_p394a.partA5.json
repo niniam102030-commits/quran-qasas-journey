@@ -1,0 +1,135 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A5",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_1584",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "معنای «لِتَسْكُنُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_073_007",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "o2",
+          "fa": "تا خانه‌نشین شوید"
+        },
+        {
+          "id": "o3",
+          "fa": "تا روزی بجویید"
+        },
+        {
+          "id": "o4",
+          "fa": "تا سپاس گزاری کنید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لِتَسْكُنُوا۟» از ریشه (س ك ن) به معنای «تا بیارامید» است. معنای خانه‌نشین شدن دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p394a_A_1585",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "معنای «لِتَسْكُنُوا۟» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_073_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا سپاس گزاری کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "o3",
+          "fa": "قرار داد"
+        },
+        {
+          "id": "o4",
+          "fa": "تا مسکن گزینید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "این کلمه یعنی «تا بیارامید». سپاس‌گزاری ترجمه «تَشْكُرُونَ» و قرار داد ترجمه «جَعَلَ» است."
+    },
+    {
+      "id": "q_u_p394a_A_1586",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_007"
+      ],
+      "promptFa": "با توجه به آیه، «لِتَسْكُنُوا۟» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_073_007",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا آرامش بخشید"
+        },
+        {
+          "id": "o2",
+          "fa": "تا سکونت کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "تا روزی بجویید"
+        },
+        {
+          "id": "o4",
+          "fa": "تا بیارامید"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "این فعل مضارع منصوب با لام تعلیل به معنای «تا بیارامید» است. «سکونت کنید» در اینجا دوست فریبنده محسوب می‌شود."
+    }
+  ],
+  "issues": []
+}

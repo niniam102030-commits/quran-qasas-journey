@@ -1,0 +1,3 @@
+[#1 q_u_p389b_C_1301 PREV_VERSE_CHOICE] target نامعتبر 'sq:v28_033'.
+[#2 q_u_p389b_C_1302 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_033'.
+[#3 q_u_p389b_C_1303 BUILD_PREV_VERSE] target نامعتبر 'sq:v28_033'.

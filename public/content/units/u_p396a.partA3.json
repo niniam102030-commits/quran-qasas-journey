@@ -1,0 +1,1240 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "A3",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p396a_A_0941",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "معنای «ظَهِيرًۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_086_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آشکار و نمایان"
+        },
+        {
+          "id": "o2",
+          "fa": "رحمت و مهربانی"
+        },
+        {
+          "id": "o3",
+          "fa": "پشتیبان، یاور"
+        },
+        {
+          "id": "o4",
+          "fa": "کافر و ناسپاس"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ظهیر» از ریشه‌ی «ظ ه ر» (پشت) است و یعنی پشتیبان. با «ظاهر» به معنای آشکار اشتباه نشود."
+    },
+    {
+      "id": "q_u_p396a_A_0942",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "کدام گزینه معنای «ظَهِيرًۭا» است؟",
+      "stem": {
+        "wordId": "w28_086_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "o2",
+          "fa": "پشت‌کننده و رویگردان"
+        },
+        {
+          "id": "o3",
+          "fa": "پشته و بلندی"
+        },
+        {
+          "id": "o4",
+          "fa": "فرستاده و پیام‌آور"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "«ظهیر» یعنی پشتیبان و یاور، کسی که پشت دیگری می‌ایستد. هم‌ریشه بودن با «پشت» به معنای رویگردانی نیست."
+    },
+    {
+      "id": "q_u_p396a_A_0943",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "در این آیه، معنای «ظَهِيرًۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_086_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "همراه و هم‌سفر"
+        },
+        {
+          "id": "o2",
+          "fa": "آشکارکننده"
+        },
+        {
+          "id": "o3",
+          "fa": "امیدوار"
+        },
+        {
+          "id": "o4",
+          "fa": "پشتیبان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در «فَلَا تَكُونَنَّ ظَهِيرًۭا لِّلْكَـٰفِرِينَ» یعنی پشتیبان کافران مباش. ریشه‌ی «ظ ه ر» به پشت برمی‌گردد."
+    },
+    {
+      "id": "q_u_p396a_A_0944",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "«ظَهِيرًۭا» در این آیه به چه معناست؟",
+      "stem": {
+        "wordId": "w28_086_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نگهبان و زندانبان"
+        },
+        {
+          "id": "o2",
+          "fa": "پشتیبان، یاور"
+        },
+        {
+          "id": "o3",
+          "fa": "ظاهر و نمایان"
+        },
+        {
+          "id": "o4",
+          "fa": "دریافت‌کننده‌ی کتاب"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "نهی از پشتیبانی کافران است، پس «ظهیر» یعنی پشتیبان. «ظاهر» به معنای آشکار دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p396a_A_0945",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پشتیبان» است؟",
+      "stem": {
+        "fa": "پشتیبان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِّلْكَـٰفِرِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "رَحْمَةًۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَكُونَنَّ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«پشتیبان» در این آیه «ظَهِيرًۭا» است و از ریشه‌ی «ظ ه ر» (پشت) می‌آید."
+    },
+    {
+      "id": "q_u_p396a_A_0946",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "معادل عربی «یاور و پشتیبان» را انتخاب کن.",
+      "stem": {
+        "fa": "یاور و پشتیبان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يُلْقَىٰٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكِتَـٰبُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ظَهِيرًۭا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ظَهِيرًۭا» یعنی یاور و پشتیبان. سه گزینه‌ی دیگر از همین آیه‌اند و معنای دیگری دارند."
+    },
+    {
+      "id": "q_u_p396a_A_0947",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014"
+      ],
+      "promptFa": "کدام کلمه یعنی «کسی که از دیگری حمایت و پشتیبانی می‌کند»؟",
+      "stem": {
+        "fa": "پشتیبان؛ حمایت‌کننده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "لِّلْكَـٰفِرِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَّا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ظَهِيرًۭا» به معنای پشتیبان است. «لِّلْكَـٰفِرِينَ» یعنی «برای کافران»، مفعول‌له‌ی پشتیبانی."
+    },
+    {
+      "id": "q_u_p396a_A_0948",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معنای «يَصُدُّنَّكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "صدای تو را بشنوند"
+        },
+        {
+          "id": "o2",
+          "fa": "تو را مانع شوند"
+        },
+        {
+          "id": "o3",
+          "fa": "تو را فراخوانند"
+        },
+        {
+          "id": "o4",
+          "fa": "بر تو نازل کنند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«صدّ» در عربی یعنی بازداشتن و جلوگیری، از ریشه‌ی «ص د د». ربطی به «صدا» ندارد."
+    },
+    {
+      "id": "q_u_p396a_A_0949",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "کدام گزینه معنای «يَصُدُّنَّكَ» است؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تو را راه نمایند"
+        },
+        {
+          "id": "o2",
+          "fa": "تو را بازگردانند"
+        },
+        {
+          "id": "o3",
+          "fa": "تو را صدا بزنند"
+        },
+        {
+          "id": "o4",
+          "fa": "تو را باز دارند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«يَصُدُّنَّكَ» یعنی تو را باز دارند و مانع شوند. «صدا زدن» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p396a_A_0950",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "در این آیه، معنای «يَصُدُّنَّكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تو را مانع شوند"
+        },
+        {
+          "id": "o2",
+          "fa": "تو را شریک گیرند"
+        },
+        {
+          "id": "o3",
+          "fa": "صدایت را بشنوند"
+        },
+        {
+          "id": "o4",
+          "fa": "تو را بخوانند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَلَا يَصُدُّنَّكَ عَنْ ءَايَـٰتِ ٱللَّهِ» یعنی مبادا تو را از آیات خدا باز دارند. «عَنْ» با «صدّ» معنای بازداشتن از چیزی را می‌دهد."
+    },
+    {
+      "id": "q_u_p396a_A_0951",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "«يَصُدُّنَّكَ» در این آیه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_087_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر تو بفرستند"
+        },
+        {
+          "id": "o2",
+          "fa": "صدای آیات را بشنوند"
+        },
+        {
+          "id": "o3",
+          "fa": "باز دارند"
+        },
+        {
+          "id": "o4",
+          "fa": "به تو بازگردند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این فعل یعنی تو را باز دارند و جلوگیری کنند. ریشه‌ی «ص د د» با «صدا» فرق دارد."
+    },
+    {
+      "id": "q_u_p396a_A_0952",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «تو را مانع شوند» است؟",
+      "stem": {
+        "fa": "تو را مانع شوند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱدْعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُنزِلَتْ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمُشْرِكِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَصُدُّنَّكَ» از ریشه‌ی «ص د د» به معنای بازداشتن است. «وَٱدْعُ» یعنی «و دعوت کن»."
+    },
+    {
+      "id": "q_u_p396a_A_0953",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "معادل عربی «باز دارند» را انتخاب کن.",
+      "stem": {
+        "fa": "باز دارند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَكُونَنَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَايَـٰتِ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَعْدَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«باز دارند» همان «يَصُدُّنَّكَ» است. «تَكُونَنَّ» فعل «باشی» با نون تأکید است."
+    },
+    {
+      "id": "q_u_p396a_A_0954",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_087_002"
+      ],
+      "promptFa": "کدام کلمه یعنی «بازداشتن و جلوگیری کنند»؟",
+      "stem": {
+        "fa": "بازداشتن و جلوگیری کنند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱدْعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَايَـٰتِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمُشْرِكِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَصُدُّنَّكَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يَصُدُّنَّكَ» یعنی تو را باز دارند و مانع شوند. گزینه‌های دیگر معنای دعوت، نشانه‌ها و مشرکان را دارند."
+    },
+    {
+      "id": "q_u_p396a_A_0955",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معنای «تَدْعُ» در «وَلَا تَدْعُ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نخوان، دعوت نکن"
+        },
+        {
+          "id": "o2",
+          "fa": "ادعا نکن"
+        },
+        {
+          "id": "o3",
+          "fa": "بازگردانده نشو"
+        },
+        {
+          "id": "o4",
+          "fa": "هلاک مشو"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَدْعُ» از ریشه‌ی «د ع و» به معنای خواندن و دعوت کردن است. با «ادعا» به معنای مدعی شدن اشتباه نشود."
+    },
+    {
+      "id": "q_u_p396a_A_0956",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "کدام گزینه معنای «تَدْعُ» است؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "طلب حکم مکن"
+        },
+        {
+          "id": "o2",
+          "fa": "همراهی مکن"
+        },
+        {
+          "id": "o3",
+          "fa": "مخوان"
+        },
+        {
+          "id": "o4",
+          "fa": "او را رها مکن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«وَلَا تَدْعُ» نهی است و یعنی مخوان. ریشه‌ی آن «د ع و» است."
+    },
+    {
+      "id": "q_u_p396a_A_0957",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "در این آیه، معنای «تَدْعُ» چیست؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "معبود بگیر"
+        },
+        {
+          "id": "o2",
+          "fa": "نخوان، دعوت نکن"
+        },
+        {
+          "id": "o3",
+          "fa": "ادعا مکن"
+        },
+        {
+          "id": "o4",
+          "fa": "با او همراه شو"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ» یعنی با خدا معبودی دیگر مخوان. «لا» ی ناهیه معنا را منفی می‌کند."
+    },
+    {
+      "id": "q_u_p396a_A_0958",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "«تَدْعُ» در این آیه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_088_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بازگردانده می‌شوی"
+        },
+        {
+          "id": "o2",
+          "fa": "فرمان مده"
+        },
+        {
+          "id": "o3",
+          "fa": "ادعای معبود کن"
+        },
+        {
+          "id": "o4",
+          "fa": "مخوان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«تَدْعُ» با «لا» یعنی مخوان. از ریشه‌ی «د ع و» است که در دعوت و دعا هم هست."
+    },
+    {
+      "id": "q_u_p396a_A_0959",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «مخوان» است؟",
+      "stem": {
+        "fa": "مخوان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَالِكٌ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَـٰهًا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَدْعُ» با «لا» می‌شود «مخوان». «تُرْجَعُونَ» یعنی بازگردانده می‌شوید."
+    },
+    {
+      "id": "q_u_p396a_A_0960",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "معادل عربی «نخوان، دعوت نکن» را انتخاب کن.",
+      "stem": {
+        "fa": "نخوان، دعوت نکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱدْعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَرْجُوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "تَدْعُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«تَدْعُ» (با «لا») نهی از خواندن است. «وَٱدْعُ» هم‌ریشه است ولی امر و یعنی «و دعوت کن»."
+    },
+    {
+      "id": "q_u_p396a_A_0961",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_088_002"
+      ],
+      "promptFa": "کدام کلمه یعنی «مخوان؛ دعوت نکن»؟",
+      "stem": {
+        "fa": "مخوان؛ دعوت نکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْحُكْمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِلَـٰهَ"
+        },
+        {
+          "id": "o4",
+          "ar": "هَالِكٌ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَدْعُ» یعنی مخوان. «إِلَـٰهَ» مفعول و به معنای «معبود» است."
+    },
+    {
+      "id": "q_u_p396a_A_0962",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 86,
+      "targets": [
+        "w:w28_086_014",
+        "w:w28_087_002",
+        "w:w28_088_002"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَحْمَةًۭ"
+        },
+        {
+          "id": "l5",
+          "ar": "هَالِكٌ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هلاک شدنی"
+        },
+        {
+          "id": "r2",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "r3",
+          "fa": "آشکار و نمایان"
+        },
+        {
+          "id": "r4",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r5",
+          "fa": "رحمت"
+        },
+        {
+          "id": "r6",
+          "fa": "تو را مانع شوند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "ظهیر از «ظ ه ر» پشتیبان است، یصدنّک از «صد» بازداشتن و تدع از «دعو» خواندن. «آشکار» دوست فریبنده‌ی ظهیر است."
+    },
+    {
+      "id": "q_u_p396a_A_0963",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 87,
+      "targets": [
+        "w:w28_086_014",
+        "w:w28_087_002",
+        "w:w28_088_002"
+      ],
+      "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ظَهِيرًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l4",
+          "ar": "أُنزِلَتْ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمُشْرِكِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مشرکان"
+        },
+        {
+          "id": "r2",
+          "fa": "نازل شد"
+        },
+        {
+          "id": "r3",
+          "fa": "تو را مانع شوند"
+        },
+        {
+          "id": "r4",
+          "fa": "صدای تو را بشنوند"
+        },
+        {
+          "id": "r5",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r6",
+          "fa": "پشتیبان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "false_friend"
+      },
+      "explanationFa": "«يَصُدُّنَّكَ» بازداشتن است نه شنیدن صدا. «تَدْعُ» یعنی مخوان و «ظَهِيرًۭا» یعنی پشتیبان."
+    },
+    {
+      "id": "q_u_p396a_A_0964",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_086_014",
+        "w:w28_087_002",
+        "w:w28_088_002"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُلْقَىٰٓ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تُرْجَعُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ظَهِيرًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بازگردانده می‌شوید"
+        },
+        {
+          "id": "r2",
+          "fa": "مخوان"
+        },
+        {
+          "id": "r3",
+          "fa": "القا شود"
+        },
+        {
+          "id": "r4",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "r5",
+          "fa": "تو را مانع شوند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«تَدْعُ» مخوان، «يَصُدُّنَّكَ» مانع شوند و «ظَهِيرًۭا» پشتیبان است. «يُلْقَىٰٓ» و «تُرْجَعُونَ» برای مرور آمده‌اند."
+    },
+    {
+      "id": "q_u_p396a_A_0965",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 88,
+      "targets": [
+        "w:w28_086_014",
+        "w:w28_087_002",
+        "w:w28_088_002"
+      ],
+      "promptFa": "جفت‌های درست عربی و فارسی را بساز.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْحُكْمُ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَصُدُّنَّكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "لِّلْكَـٰفِرِينَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَدْعُ"
+        },
+        {
+          "id": "l5",
+          "ar": "ظَهِيرًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فرمانروایی"
+        },
+        {
+          "id": "r2",
+          "fa": "کافران"
+        },
+        {
+          "id": "r3",
+          "fa": "پشتیبان"
+        },
+        {
+          "id": "r4",
+          "fa": "تو را مانع شوند"
+        },
+        {
+          "id": "r5",
+          "fa": "مخوان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "سه کلمه‌ی سخت این برش: ظهیر پشتیبان، یصدنّک مانع شوند، تدع مخوان. «ٱلْحُكْمُ» و «لِّلْكَـٰفِرِينَ» برای تمایز آمده‌اند."
+    }
+  ],
+  "issues": [
+    "در ورودی، هیچ earlierHardWords برای کلمه‌ی مرور در MATCH_WORDS داده نشده بود؛ از کلمات غیرسخت همین آیات استفاده شد."
+  ]
+}

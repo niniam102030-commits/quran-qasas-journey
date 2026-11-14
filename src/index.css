@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UthmanTaha";
+  src: url("/fonts/UthmanTahaNaskh-Regular.woff2") format("woff2"),
+       url("/fonts/KFGQPC-Hafs.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KFGQPC-Hafs";
+  src: url("/fonts/KFGQPC-Hafs.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
+    font-feature-settings: "ss01"; /* فعال‌سازی اعداد فارسی */
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  .quran-text {
+    font-family: "UthmanTaha", serif;
+    font-feature-settings: normal;
+    line-height: 2.2;
+  }
+}
+
+@layer components {
+  /* دکمه‌های سه‌بعدی فشاری به سبک دولینگو */
+  .btn-3d {
+    @apply relative inline-flex items-center justify-center font-bold rounded-2xl px-6 py-3.5 transition-all duration-75 border-b-4 active:border-b-0 active:translate-y-1 select-none cursor-pointer;
+  }
+  .btn-3d-primary {
+    @apply btn-3d bg-brand-primary border-brand-primaryDark text-white hover:brightness-105;
+  }
+  .btn-3d-success {
+    @apply btn-3d bg-brand-success border-brand-successDark text-white hover:brightness-105;
+  }
+  .btn-3d-amber {
+    @apply btn-3d bg-brand-amber border-brand-amberDark text-white hover:brightness-105;
+  }
+  .btn-3d-ruby {
+    @apply btn-3d bg-brand-ruby border-brand-rubyDark text-white hover:brightness-105;
+  }
+  .btn-3d-neutral {
+    @apply btn-3d bg-white dark:bg-lapis-card border-termeh-border dark:border-lapis-border text-slate-700 dark:text-slate-100 hover:bg-slate-50;
+  }
+}

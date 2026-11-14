@@ -1,0 +1,225 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "C10",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p389b_C_1301",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 34,
+      "targets": [
+        "sq:33",
+        "vr:33"
+      ],
+      "promptFa": "کدام آیه پیش از این آیه قرار دارد؟",
+      "stem": {
+        "verse": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_033_001",
+            "w28_033_002",
+            "w28_033_003",
+            "w28_034_012",
+            "w28_034_013",
+            "w28_034_014"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۳۳ که بیانگر ترس موسی (ع) از قصاص است، پیش از آیه ۳۴ (درخواست همراهی هارون) قرار دارد."
+    },
+    {
+      "id": "q_u_p389b_C_1302",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 34,
+      "targets": [
+        "sq:33",
+        "vr:33"
+      ],
+      "promptFa": "آیه‌ی قبل از این آیه را بسازید:",
+      "stem": {
+        "verse": 34
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ رَبِّ إِنِّى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَتَلْتُ مِنْهُمْ نَفْسًۭا",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَأَخَافُ أَن يَقْتُلُونِ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنِّىٓ أَخَافُ أَن",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "explanationFa": "آیه ۳۳ با بیان کشتن یک نفر از فرعونیان و ترس از کشته شدن آغاز می‌شود و زمینه را برای آیه ۳۴ فراهم می‌کند."
+    },
+    {
+      "id": "q_u_p389b_C_1303",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 34,
+      "targets": [
+        "sq:33",
+        "vr:33"
+      ],
+      "promptFa": "کلمات آیه‌ی قبل را به ترتیب درست بچینید:",
+      "stem": {
+        "verse": 34
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ رَبِّ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنِّى قَتَلْتُ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنْهُمْ نَفْسًۭا",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَأَخَافُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "أَن يَقْتُلُونِ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُصَدِّقُنِىٓ ۖ",
+          "wordIdx": [
+            10
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "أَخَافُ أَن",
+          "wordIdx": [
+            12,
+            13
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "explanationFa": "در آیه ۳۳، موسی (ع) ابتدا به کشتن یک نفر اعتراف می‌کند (إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا) و سپس ابراز ترس می‌کند (فَأَخَافُ أَن يَقْتُلُونِ)."
+    }
+  ],
+  "issues": []
+}

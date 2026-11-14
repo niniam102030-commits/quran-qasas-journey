@@ -1,0 +1,1242 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "A4",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_A_0401",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "معنای «فَنَبَذْنَـٰهُمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_040_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس او را گرفتیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "o3",
+          "fa": "پس بنگر"
+        },
+        {
+          "id": "o4",
+          "fa": "و سپاهیانش"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «نبذ» یعنی دور انداختن؛ در فارسی «افکندن». «هم» ضمیر جمع است: آنان را."
+    },
+    {
+      "id": "q_u_p390b_A_0402",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "کدام گزینه معنای «فَنَبَذْنَـٰهُمْ» است؟",
+      "stem": {
+        "wordId": "w28_040_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس او و سپاهیانش را گرفتیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پس آنان را نگریستیم"
+        },
+        {
+          "id": "o3",
+          "fa": "پس سرانجامشان را دیدیم"
+        },
+        {
+          "id": "o4",
+          "fa": "پس آنان را انداختیم و افکندیم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«فـ» یعنی پس، «نبذ» یعنی انداختن و «نا» یعنی ما: پس انداختیم. «هم» یعنی آنان."
+    },
+    {
+      "id": "q_u_p390b_A_0403",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "در آیه‌ی ۴۰، «فَنَبَذْنَـٰهُمْ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_040_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "o2",
+          "fa": "پس گرفتیمشان"
+        },
+        {
+          "id": "o3",
+          "fa": "پس نگریستیمشان"
+        },
+        {
+          "id": "o4",
+          "fa": "پس آنان را گرفتند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در آیه، گرفتن (فَأَخَذْنَـٰهُ) و افکندن (فَنَبَذْنَـٰهُمْ) دو کار پشت‌سرهم‌اند. ریشه‌ی «نبذ» همان افکندن است."
+    },
+    {
+      "id": "q_u_p390b_A_0404",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "با توجه به آیه، «فَنَبَذْنَـٰهُمْ» با کدام معنا می‌خواند؟",
+      "stem": {
+        "wordId": "w28_040_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس آنان را گرفتیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پس به آنان نگریستیم"
+        },
+        {
+          "id": "o3",
+          "fa": "پس آنان را انداختیم و افکندیم"
+        },
+        {
+          "id": "o4",
+          "fa": "پس او را افکندیم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«هم» ضمیر جمع است (آنان)، نه مفرد. «نبذ» یعنی انداختن و افکندن."
+    },
+    {
+      "id": "q_u_p390b_A_0405",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+      "stem": {
+        "fa": "پس افکندیمشان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَٱنظُرْ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَجُنُودَهُۥ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَنَبَذْنَـٰهُمْ» از ریشه‌ی «نبذ» به معنای افکندن است."
+    },
+    {
+      "id": "q_u_p390b_A_0406",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "پس آنان را انداختیم و افکندیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱنظُرْ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "فعل با «فـ» شروع می‌شود و ضمیر «هم» دارد. تفاوتش با «فَأَخَذْنَـٰهُ» در ریشه است: نبذ در برابر أخذ."
+    },
+    {
+      "id": "q_u_p390b_A_0407",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003"
+      ],
+      "promptFa": "عبارت فارسی زیر برابر کدام کلمه‌ی عربی آیه‌ی ۴۰ است؟",
+      "stem": {
+        "fa": "پس آنان را افکندیم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَٱنظُرْ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«نبذ» یعنی افکندن و «هم» یعنی آنان. «فَأَخَذْنَـٰهُ» مفرد است و معنایش گرفتن."
+    },
+    {
+      "id": "q_u_p390b_A_0408",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "معنای «ٱلْيَمِّ» چیست؟",
+      "stem": {
+        "wordId": "w28_040_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روز"
+        },
+        {
+          "id": "o2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o3",
+          "fa": "دریا"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمکاران"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«یمّ» واژه‌ی کم‌کاربرد برای دریا است. با «یَوم» (روز) اشتباه نشود."
+    },
+    {
+      "id": "q_u_p390b_A_0409",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "کدام معنا برای «ٱلْيَمِّ» درست است؟",
+      "stem": {
+        "wordId": "w28_040_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دریا"
+        },
+        {
+          "id": "o2",
+          "fa": "سپاهیان"
+        },
+        {
+          "id": "o3",
+          "fa": "چگونه"
+        },
+        {
+          "id": "o4",
+          "fa": "روز"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ی م م» است و «ال» برای معرفه‌سازی آمده. معنایش دریا است."
+    },
+    {
+      "id": "q_u_p390b_A_0410",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "در آیه‌ی ۴۰، «ٱلْيَمِّ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_040_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روز"
+        },
+        {
+          "id": "o2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o3",
+          "fa": "سپاهیانش"
+        },
+        {
+          "id": "o4",
+          "fa": "دریا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در آیه آمده است «در دریا افکندیم». «یمّ» با «یَوم» (روز) فرق دارد."
+    },
+    {
+      "id": "q_u_p390b_A_0411",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "با توجه به آیه، «ٱلْيَمِّ» با کدام معنا می‌خواند؟",
+      "stem": {
+        "wordId": "w28_040_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o2",
+          "fa": "دریا"
+        },
+        {
+          "id": "o3",
+          "fa": "روز"
+        },
+        {
+          "id": "o4",
+          "fa": "پس بنگر"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "جمله می‌گوید آنان را «فِى ٱلْيَمِّ» افکندیم، یعنی در دریا. «یمّ» غیر از «یوم» است."
+    },
+    {
+      "id": "q_u_p390b_A_0412",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+      "stem": {
+        "fa": "دریا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فِى"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْيَمِّ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْيَمِّ» یعنی دریا. «فِى» حرف جر و به معنای «در» است."
+    },
+    {
+      "id": "q_u_p390b_A_0413",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "دریا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَجُنُودَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانَ"
+        },
+        {
+          "id": "o4",
+          "ar": "كَيْفَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْيَمِّ» از ریشه‌ی «ی م م» است و معنایش دریا است."
+    },
+    {
+      "id": "q_u_p390b_A_0414",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_005"
+      ],
+      "promptFa": "معنای فارسی زیر مربوط به کدام کلمه‌ی آیه‌ی ۴۰ است؟",
+      "stem": {
+        "fa": "دریا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَٱنظُرْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در عبارت «فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ»، جای افکندن «ٱلْيَمِّ» است، یعنی دریا."
+    },
+    {
+      "id": "q_u_p390b_A_0415",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "معنای «عَـٰقِبَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_040_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o2",
+          "fa": "چگونه"
+        },
+        {
+          "id": "o3",
+          "fa": "دریا"
+        },
+        {
+          "id": "o4",
+          "fa": "سرانجام"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ع ق ب» است. «عاقبت» در فارسی هم هست و یعنی پایان کار و فرجام."
+    },
+    {
+      "id": "q_u_p390b_A_0416",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "کدام گزینه معنای «عَـٰقِبَةُ» است؟",
+      "stem": {
+        "wordId": "w28_040_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o2",
+          "fa": "بود"
+        },
+        {
+          "id": "o3",
+          "fa": "سپاهیانش"
+        },
+        {
+          "id": "o4",
+          "fa": "پس بنگر"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عاقبة» یعنی پایان کار و فرجام. در فارسی «عاقبت» همین معنا را دارد."
+    },
+    {
+      "id": "q_u_p390b_A_0417",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "در آیه‌ی ۴۰، «عَـٰقِبَةُ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_040_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دریا"
+        },
+        {
+          "id": "o2",
+          "fa": "چگونه"
+        },
+        {
+          "id": "o3",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمکاران"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در آیه آمده است «سرانجام ستمکاران چگونه بود». «عاقبة» یعنی فرجام."
+    },
+    {
+      "id": "q_u_p390b_A_0418",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "با توجه به آیه، «عَـٰقِبَةُ» با کدام معنا می‌خواند؟",
+      "stem": {
+        "wordId": "w28_040_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o2",
+          "fa": "گرفتن"
+        },
+        {
+          "id": "o3",
+          "fa": "چگونه"
+        },
+        {
+          "id": "o4",
+          "fa": "سرانجام"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«عاقبة» نهاد «كَانَ» است و «ٱلظَّـٰلِمِينَ» مضاف‌الیه آن. معنایش سرانجام و فرجام است."
+    },
+    {
+      "id": "q_u_p390b_A_0419",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی در آیه‌ی ۴۰ به این معناست؟",
+      "stem": {
+        "fa": "سرانجام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَيْفَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كَانَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عَـٰقِبَةُ» همان «عاقبت» فارسی است و یعنی سرانجام."
+    },
+    {
+      "id": "q_u_p390b_A_0420",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "پایان کار و فرجام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱنظُرْ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ع ق ب» به معنای پیامد و فرجام است. «عَـٰقِبَةُ» نامِ همین پایان کار است."
+    },
+    {
+      "id": "q_u_p390b_A_0421",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_009"
+      ],
+      "promptFa": "معنای فارسی زیر مربوط به کدام کلمه‌ی آیه‌ی ۴۰ است؟",
+      "stem": {
+        "fa": "سرانجام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَجُنُودَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "فِى"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "در «كَيْفَ كَانَ عَـٰقِبَةُ ٱلظَّـٰلِمِينَ»، «عَـٰقِبَةُ» یعنی سرانجام. این عبارت پرسش از فرجام ستمکاران است."
+    },
+    {
+      "id": "q_u_p390b_A_0422",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003",
+        "w:w28_040_005",
+        "w:w28_040_009"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَجُنُودَهُۥ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r2",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "r3",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "r4",
+          "fa": "پس او را گرفتیم"
+        },
+        {
+          "id": "r5",
+          "fa": "دریا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«نبذ» یعنی افکندن، «یمّ» دریا و «عاقبة» سرانجام. «أخذ» گرفتن و «جنود» سپاهیان است."
+    },
+    {
+      "id": "q_u_p390b_A_0423",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003",
+        "w:w28_040_005",
+        "w:w28_040_009"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "فَٱنظُرْ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْيَمِّ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دریا"
+        },
+        {
+          "id": "r2",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "r3",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r4",
+          "fa": "پس بنگر"
+        },
+        {
+          "id": "r5",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r6",
+          "fa": "روز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«یمّ» دریا است و با «یوم» (روز) اشتباه نمی‌شود. «ٱلظَّـٰلِمِينَ» یعنی ستمکاران."
+    },
+    {
+      "id": "q_u_p390b_A_0424",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003",
+        "w:w28_040_005",
+        "w:w28_040_009"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "كَيْفَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "كَانَ"
+        },
+        {
+          "id": "l5",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "چگونه"
+        },
+        {
+          "id": "r2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r3",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "r4",
+          "fa": "بود"
+        },
+        {
+          "id": "r5",
+          "fa": "دریا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "عبارت «كَيْفَ كَانَ عَـٰقِبَةُ» یعنی «سرانجام چگونه بود». «فَنَبَذْنَـٰهُمْ» یعنی پس افکندیمشان."
+    },
+    {
+      "id": "q_u_p390b_A_0425",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 40,
+      "targets": [
+        "w:w28_040_003",
+        "w:w28_040_005",
+        "w:w28_040_009"
+      ],
+      "promptFa": "کلمات را به معنایشان وصل کنید؛ یک معنای اضافه هم هست.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَأَخَذْنَـٰهُ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْيَمِّ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَنَبَذْنَـٰهُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس او را گرفتیم"
+        },
+        {
+          "id": "r2",
+          "fa": "پس افکندیمشان"
+        },
+        {
+          "id": "r3",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r4",
+          "fa": "دریا"
+        },
+        {
+          "id": "r5",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r6",
+          "fa": "پس بنگر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أخذ» گرفتن و «نبذ» افکندن است؛ این دو فعل را با هم اشتباه نکنید. «فَٱنظُرْ» یعنی پس بنگر و در این سوال معنای اضافه است."
+    }
+  ],
+  "issues": [
+    "کلمه‌ی w28_040_005 در ورودی علامت وقف «ۖ» دارد؛ عیناً در گزینه‌ها آمده است.",
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی کلمه‌ی مروری نیامده است.",
+    "برای کلمات غیرسخت در جفت‌سازی، معنا از `fa` آیه‌ی ۴۰ گرفته شده است."
+  ]
+}

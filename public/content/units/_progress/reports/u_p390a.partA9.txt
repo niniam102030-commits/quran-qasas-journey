@@ -1,0 +1,21 @@
+[#1 q_u_p390a_A_1601 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ٱلدَّارِ
+[#2 q_u_p390a_A_1602 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ٱلدَّارِ ۖ
+[#2 q_u_p390a_A_1602 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#4 q_u_p390a_A_1604 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#5 q_u_p390a_A_1605 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#7 q_u_p390a_A_1607 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p390a_A_1608 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p390a_A_1609 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p390a_A_1610 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p390a_A_1611 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p390a_A_1612 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p390a_A_1614 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p390a_A_1614 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p390a_A_1614 MATCH_PHRASES] قطعه‌ی فارسی r4 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#16 q_u_p390a_A_1616 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#19 q_u_p390a_A_1619 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p390a_A_1620 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p390a_A_1621 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p390a_A_1622 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#23 q_u_p390a_A_1623 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p390a_A_1624 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

@@ -1,0 +1,4 @@
+[#2 q_u_p391a_C_1102 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 44 را نمی‌پوشاند.
+[#9 q_u_p391a_C_1109 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْعُمُرُ
+[#9 q_u_p391a_C_1109 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#12 q_u_p391a_C_1112 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.

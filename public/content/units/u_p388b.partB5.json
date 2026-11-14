@@ -1,0 +1,2083 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "B5",
+  "generatedBy": "Gemini-1.5-Pro",
+  "questions": [
+    {
+      "id": "q_u_p388b_B_1101",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 27,
+      "targets": [
+        "vt:27"
+      ],
+      "promptFa": "با توجه به ترجمه، قطعات آیه را به ترتیب بچین.",
+      "stem": {
+        "fa": "گفت: می خواهم یکی از این دو دخترم را به نکاح تو درآورم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنِّىٓ أُرِيدُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَنْ أُنكِحَكَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِحْدَى ٱبْنَتَىَّ هَـٰتَيْنِ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "این بخش پیشنهاد شعیب به موسی برای ازدواج را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p388b_B_1102",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 27,
+      "targets": [
+        "vt:27"
+      ],
+      "promptFa": "با توجه به ترجمه، کلمات را به ترتیب بچین.",
+      "stem": {
+        "fa": "به شرط آنکه هشت سال اجیر من باشی"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَلَىٰٓ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَن",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "تَأْجُرَنِى",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ثَمَـٰنِىَ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "حِجَجٍۢ ۖ",
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه دقیق عبارت شرطی."
+    },
+    {
+      "id": "q_u_p388b_B_1103",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 27,
+      "targets": [
+        "vt:27"
+      ],
+      "promptFa": "با توجه به ترجمه، کلمات را به ترتیب بچین (مراقب کلمات اضافی باش).",
+      "stem": {
+        "fa": "و من نمی خواهم بر تو سخت گیرم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَآ",
+          "wordIdx": [
+            19
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أُرِيدُ",
+          "wordIdx": [
+            20
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَنْ",
+          "wordIdx": [
+            21
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَشُقَّ",
+          "wordIdx": [
+            22
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَلَيْكَ ۚ",
+          "wordIdx": [
+            23
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "عَلَىَّ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "false_friend"
+      },
+      "explanationFa": "«عَلَيْكَ» (بر تو) صحیح است و «عَلَىَّ» در آیه بعد آمده است."
+    },
+    {
+      "id": "q_u_p388b_B_1104",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "بخش اول آیه ۲۷ را بساز.",
+      "stem": {
+        "verseNum": 27
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنِّىٓ أُرِيدُ أَنْ أُنكِحَكَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِحْدَى ٱبْنَتَىَّ هَـٰتَيْنِ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍۢ ۖ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آغاز آیه با پیشنهاد ازدواج و تعیین مهریه هشت سال کار است."
+    },
+    {
+      "id": "q_u_p388b_B_1105",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "بخش میانی آیه ۲۷ را بساز.",
+      "stem": {
+        "verseNum": 27
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَإِنْ أَتْمَمْتَ عَشْرًۭا",
+          "wordIdx": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَمِنْ عِندِكَ ۖ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ ۚ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "در ادامه آیه شرط اختیاری ده سال را مطرح می‌کند."
+    },
+    {
+      "id": "q_u_p388b_B_1106",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "بخش پایانی آیه ۲۷ را بساز (یک قطعه اضافی است).",
+      "stem": {
+        "verseNum": 27
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "سَتَجِدُنِىٓ",
+          "wordIdx": [
+            24
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِن شَآءَ ٱللَّهُ",
+          "wordIdx": [
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            28,
+            29
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَمِنْ عِندِكَ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_word"
+      },
+      "explanationFa": "پایان آیه با «مِنَ ٱلصَّـٰلِحِينَ» ختم می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1107",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "کلمات جاافتاده را در جای مناسب قرار بده.",
+      "stem": {
+        "verse": 27,
+        "hiddenIdx": [
+          5,
+          12,
+          13,
+          15,
+          16,
+          22,
+          23
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُنكِحَكَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ثَمَـٰنِىَ حِجَجٍۢ ۖ",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَتْمَمْتَ عَشْرًۭا",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَشُقَّ عَلَيْكَ ۚ",
+          "wordIdx": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عُدْوَٰنَ عَلَىَّ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "12": "b2",
+        "15": "b3",
+        "22": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "با توجه به سیاق کلمات شرطی تکمیل می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1108",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "کلمات جاافتاده را کامل کن.",
+      "stem": {
+        "verse": 27,
+        "hiddenIdx": [
+          2,
+          3,
+          6,
+          7,
+          10,
+          11,
+          17,
+          18,
+          25,
+          26,
+          28,
+          29
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنِّىٓ أُرِيدُ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِحْدَى ٱبْنَتَىَّ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أَن تَأْجُرَنِى",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَمِنْ عِندِكَ ۖ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِن شَآءَ",
+          "wordIdx": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            28,
+            29
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بَيْنِى وَبَيْنَكَ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "6": "b2",
+        "10": "b3",
+        "17": "b4",
+        "25": "b5",
+        "28": "b6"
+      },
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "کلمات با دقت در ضمایر و معنای آیه پر می‌شوند."
+    },
+    {
+      "id": "q_u_p388b_B_1109",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "جاهای خالی آیه را تکمیل کن.",
+      "stem": {
+        "verse": 27,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          9,
+          10,
+          11,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَنْ أُنكِحَكَ إِحْدَى",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَىٰٓ أَن تَأْجُرَنِى",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَإِنْ أَتْمَمْتَ عَشْرًۭا",
+          "wordIdx": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ",
+          "wordIdx": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "فَلَا عُدْوَٰنَ عَلَىَّ ۖ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "9": "b2",
+        "14": "b3",
+        "19": "b4",
+        "24": "b5"
+      },
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات بر اساس جملات شرطی آیه است."
+    },
+    {
+      "id": "q_u_p388b_B_1110",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "بیشتر کلمات آیه پنهان شده است، آن را کامل کن.",
+      "stem": {
+        "verse": 27,
+        "hiddenIdx": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          26,
+          27,
+          28,
+          29
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنِّىٓ أُرِيدُ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِحْدَى ٱبْنَتَىَّ هَـٰتَيْنِ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍۢ ۖ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَتْمَمْتَ عَشْرًۭا فَمِنْ عِندِكَ ۖ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ ۚ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            26,
+            27,
+            28,
+            29
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "قَالَتْ إِحْدَىٰهُمَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "6": "b2",
+        "9": "b3",
+        "15": "b4",
+        "19": "b5",
+        "26": "b6"
+      },
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه شامل شروط سنگین اما منعطفانه شعیب است."
+    },
+    {
+      "id": "q_u_p388b_B_1111",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "ادامه آیه را کامل کن.",
+      "stem": {
+        "verse": 27,
+        "givenCount": 7,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "هَـٰتَيْنِ عَلَىٰٓ أَن تَأْجُرَنِى ثَمَـٰنِىَ حِجَجٍۢ ۖ",
+          "wordIdx": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَإِنْ أَتْمَمْتَ عَشْرًۭا فَمِنْ عِندِكَ ۖ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ ۚ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "14": "b2",
+        "19": "b3",
+        "24": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "پس از ذکر دو دختر، موضوع هشت سال کار مطرح می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1112",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "نیمه دوم آیه را بچین.",
+      "stem": {
+        "verse": 27,
+        "givenCount": 13,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَإِنْ أَتْمَمْتَ عَشْرًۭا فَمِنْ عِندِكَ ۖ",
+          "wordIdx": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ ۚ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        }
+      ],
+      "answer": {
+        "14": "b1",
+        "19": "b2",
+        "24": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "پس از هشت سال، ده سال اختیاری بیان می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1113",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "پایان آیه را از ادامه بخش داده شده کامل کن.",
+      "stem": {
+        "verse": 27,
+        "givenCount": 22,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَلَيْكَ ۚ",
+          "wordIdx": [
+            23
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ",
+          "wordIdx": [
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِنَ ٱلصَّـٰلِحِينَ",
+          "wordIdx": [
+            28,
+            29
+          ]
+        }
+      ],
+      "answer": {
+        "23": "b1",
+        "24": "b2",
+        "28": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "جمله با اطمینان دادن به شایسته بودن خود پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p388b_B_1114",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "کدام گزینه پایان این آیه است؟",
+      "stem": {
+        "verse": 27,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 27,
+            "from": 27,
+            "to": 29
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "ٱللَّهُ مِنَ ٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱللَّهُ مِنَ ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "رَبِّى مِنَ ٱلصَّـٰلِحِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "similar_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "شعیب می‌گوید مرا از شایستگان خواهی یافت."
+    },
+    {
+      "id": "q_u_p388b_B_1115",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "پایان آیه را انتخاب کن.",
+      "stem": {
+        "verse": 27,
+        "hideLastWords": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 27,
+            "from": 25,
+            "to": 29
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "إِن شَآءَ ٱللَّهُ مِنَ ٱلْمُتَّقِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ عَلَيْكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُحْسِنِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "عبارت «إن شاء الله من الصالحین» در پایان می‌آید."
+    },
+    {
+      "id": "q_u_p388b_B_1116",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "کدام خوانش صحیح است؟",
+      "stem": {
+        "verseNum": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 27,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَتْ إِنِّىٓ أُرِيدُ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَا أُرِيدُ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَتْ إِنَّمَا أُرِيدُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "چون شعیب (مرد) صحبت می‌کند، از «قال» استفاده شده است."
+    },
+    {
+      "id": "q_u_p388b_B_1117",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 27,
+      "targets": [
+        "vr:27"
+      ],
+      "promptFa": "کدام کلمه در این آیه صحیح است؟",
+      "stem": {
+        "verseNum": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 27,
+            "from": 28,
+            "to": 29
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "مِنَ ٱلْمُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مِنَ ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِنَ ٱلْخَـٰسِرِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "خداوند در اینجا شعیب را از «صالحین» می‌خواند."
+    },
+    {
+      "id": "q_u_p388b_B_1118",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 28,
+      "targets": [
+        "vt:28"
+      ],
+      "promptFa": "قطعات آیه را مطابق ترجمه بچین.",
+      "stem": {
+        "fa": "[موسی] گفت: این قرارداد میان من و تو باشد"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ذَٰلِكَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بَيْنِى",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَبَيْنَكَ ۖ",
+          "wordIdx": [
+            4
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه شروع پذیرش قرارداد از سوی موسی."
+    },
+    {
+      "id": "q_u_p388b_B_1119",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 28,
+      "targets": [
+        "vt:28"
+      ],
+      "promptFa": "کلمات را به ترتیب ترجمه بچین.",
+      "stem": {
+        "fa": "هر یک از این دو مدت را به پایان برم"
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَيَّمَا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَجَلَيْنِ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَضَيْتُ",
+          "wordIdx": [
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "«أَيَّمَا ٱلْأَجَلَيْنِ» یعنی هرکدام از دو سررسید."
+    },
+    {
+      "id": "q_u_p388b_B_1120",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 28,
+      "targets": [
+        "vt:28"
+      ],
+      "promptFa": "کلمات را به ترتیب ترجمه بچین (یک کلمه اضافی است).",
+      "stem": {
+        "fa": "هیچ تعدّی و ستمی بر من نیست، و خدا بر آنچه می گوییم، نگهبان و وکیل است."
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَا عُدْوَٰنَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَىَّ ۖ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱللَّهُ عَلَىٰ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَا نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَلَيْكَ ۚ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "near_miss"
+      },
+      "explanationFa": "«عَلَىَّ» یعنی بر من، و «عَلَيْكَ» یعنی بر تو."
+    },
+    {
+      "id": "q_u_p388b_B_1121",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "بخش اول آیه ۲۸ را بساز.",
+      "stem": {
+        "verseNum": 28
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ذَٰلِكَ بَيْنِى وَبَيْنَكَ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَضَيْتُ",
+          "wordIdx": [
+            7
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "تأیید قرارداد توسط موسی و مختار بودن در انتخاب مدت."
+    },
+    {
+      "id": "q_u_p388b_B_1122",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "بخش دوم آیه ۲۸ را بساز.",
+      "stem": {
+        "verseNum": 28
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَا عُدْوَٰنَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَىَّ ۖ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "شاهد گرفتن خدا بر این توافق."
+    },
+    {
+      "id": "q_u_p388b_B_1123",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "کل آیه ۲۸ را بساز (با قطعه انحرافی).",
+      "stem": {
+        "verseNum": 28
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ذَٰلِكَ بَيْنِى وَبَيْنَكَ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ فَلَا عُدْوَٰنَ عَلَىَّ ۖ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "قرارداد به طور کامل بین طرفین بسته می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1124",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "کلمات جاافتاده را در جای مناسب قرار بده.",
+      "stem": {
+        "verse": 28,
+        "hiddenIdx": [
+          3,
+          4,
+          9,
+          10
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بَيْنِى وَبَيْنَكَ ۖ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عُدْوَٰنَ عَلَىَّ ۖ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عِندِكَ ۖ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَيْكَ ۚ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "9": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse",
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "«بَيْنِى وَبَيْنَكَ» یعنی میان من و تو."
+    },
+    {
+      "id": "q_u_p388b_B_1125",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "کلمات جاافتاده را پر کن.",
+      "stem": {
+        "verse": 28,
+        "hiddenIdx": [
+          1,
+          2,
+          5,
+          6,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ ذَٰلِكَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَصْطَلُونَ",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "شَهِيدٌۭ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "5": "b2",
+        "14": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse",
+        "b5": "near_miss"
+      },
+      "explanationFa": "دقت در کلماتی چون «ٱلْأَجَلَيْنِ» برای دو سررسید."
+    },
+    {
+      "id": "q_u_p388b_B_1126",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "بیشتر کلمات آیه پنهان شده‌اند، کامل کن.",
+      "stem": {
+        "verse": 28,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَلَا عُدْوَٰنَ عَلَىَّ ۖ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَآ أُرِيدُ أَنْ أَشُقَّ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "8": "b2",
+        "11": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات بر اساس پاسخ موسی و واگذاری به خداست."
+    },
+    {
+      "id": "q_u_p388b_B_1127",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "آیه را با کلمات داده شده بساز.",
+      "stem": {
+        "verse": 28,
+        "hiddenIdx": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ذَٰلِكَ بَيْنِى وَبَيْنَكَ ۖ",
+          "wordIdx": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عُدْوَٰنَ عَلَىَّ ۖ وَٱللَّهُ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَا نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "9": "b3",
+        "13": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "پایان قرارداد بین موسی و شعیب."
+    },
+    {
+      "id": "q_u_p388b_B_1128",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "ادامه آیه را کامل کن.",
+      "stem": {
+        "verse": 28,
+        "givenCount": 4,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَيَّمَا ٱلْأَجَلَيْنِ قَضَيْتُ",
+          "wordIdx": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَلَا عُدْوَٰنَ عَلَىَّ ۖ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "8": "b2",
+        "11": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "پس از «ذلک بینی و بینک» شروط بعدی ذکر می‌شود."
+    },
+    {
+      "id": "q_u_p388b_B_1129",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "نیمه دوم آیه را بچین.",
+      "stem": {
+        "verse": 28,
+        "givenCount": 7,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَا عُدْوَٰنَ عَلَىَّ ۖ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌۭ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "11": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "بعد از اتمام مدت، هیچ ستمی نباید در کار باشد."
+    },
+    {
+      "id": "q_u_p388b_B_1130",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "پایان آیه را کامل کن.",
+      "stem": {
+        "verse": 28,
+        "givenCount": 11,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَلَىٰ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَا نَقُولُ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَكِيلٌۭ",
+          "wordIdx": [
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "12": "b1",
+        "13": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "خداوند به عنوان وکیل و نگهبان شاهد است."
+    },
+    {
+      "id": "q_u_p388b_B_1131",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "کلمات پایانی آیه کدامند؟",
+      "stem": {
+        "verse": 28,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 28,
+            "from": 14,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "نَقُولُ شَهِيدٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَقُولُ وَكِيلٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَعْمَلُونَ بَصِيرٌۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«وَكِيلٌۭ» در پایان این آیه آمده است."
+    },
+    {
+      "id": "q_u_p388b_B_1132",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "بخش پایانی آیه را انتخاب کن.",
+      "stem": {
+        "verse": 28,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 28,
+            "from": 12,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "بِمَا نَقُولُ وَكِيلٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "عَلَىٰ مَا يَفْعَلُونَ وَكِيلٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلَىٰ كُلِّ شَىْءٍۢ وَكِيلٌۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "«على ما نقول» یعنی بر آنچه می‌گوییم."
+    },
+    {
+      "id": "q_u_p388b_B_1133",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "کدام خوانش از این قسمت آیه صحیح است؟",
+      "stem": {
+        "verseNum": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 28,
+            "from": 8,
+            "to": 10
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "فَلَا عُدْوَٰنَ عَلَيْكَ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَلَا سُلْطَـٰنَ عَلَىَّ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَلَا عُدْوَٰنَ لَهُۥ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "موسی می‌گوید تعدی بر «من» (عَلَىَّ) نباشد."
+    },
+    {
+      "id": "q_u_p388b_B_1134",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 28,
+      "targets": [
+        "vr:28"
+      ],
+      "promptFa": "کدام کلمه در این آیه به کار رفته است؟",
+      "stem": {
+        "verseNum": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 28,
+            "from": 11,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا يَقُولُ وَكِيلٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا نَقُولُ شَهِيدٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱللَّهُ عَلَىٰ مَا نَقُولُ حَقٌّۭ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«نَقُولُ» صیغه متکلم مع الغیر است و «وَكِيلٌ» در اینجا به کار می‌رود."
+    }
+  ],
+  "issues": []
+}

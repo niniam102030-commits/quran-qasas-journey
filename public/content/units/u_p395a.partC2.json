@@ -1,0 +1,644 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "C2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395a_C_0741",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 78,
+      "targets": [
+        "vn:78"
+      ],
+      "promptFa": "آیه ۷۸ با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "num": 78
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 78,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 77,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 76,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۸ با سخن قارون «قَالَ إِنَّمَآ أُوتِيتُهُۥ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p395a_C_0742",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 78,
+      "targets": [
+        "vn:78"
+      ],
+      "promptFa": "ابتدای آیه ۷۸ کدام است؟",
+      "stem": {
+        "num": 78
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 78,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 76,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 81,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۷۸ مربوط به ادعای قارون درباره ثروتش است و با «قَالَ إِنَّمَآ أُوتِيتُهُۥ...» آغاز می‌گردد. آیه ۸۰ با «وَقَالَ ٱلَّذِينَ أُوتُوا۟...» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p395a_C_0743",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 78,
+      "targets": [
+        "vn:78"
+      ],
+      "promptFa": "دو کلمه نخست آیه ۷۸ چیست؟",
+      "stem": {
+        "num": 78
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 78,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_076_020",
+            "w28_076_021"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۷۸ بدون حرف عطف و مستقیما با «قَالَ إِنَّمَآ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p395a_C_0744",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 78,
+      "targets": [
+        "sq:77",
+        "vr:77"
+      ],
+      "promptFa": "قطعات را مرتب کنید تا آیه قبل از این آیه (آیه ۷۷) ساخته شود:",
+      "stem": {
+        "verse": 78
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَأَحْسِن كَمَآ أَحْسَنَ ٱللَّهُ إِلَيْكَ ۖ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَا تَبْغِ ٱلْفَسَادَ فِى ٱلْأَرْضِ ۖ",
+          "wordIdx": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْفَرِحِينَ",
+          "wordIdx": [
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "near_miss"
+      },
+      "explanationFa": "آیه ۷۷ با توصیه به آخرت‌طلبی آغاز شده و با عبارت «إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ» پایان می‌یابد، در حالی که آیه قبل‌تر با «ٱلْفَرِحِينَ» تمام شده بود."
+    },
+    {
+      "id": "q_u_p395a_C_0745",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 78,
+      "targets": [
+        "sq:77",
+        "vr:77"
+      ],
+      "promptFa": "با استفاده از قطعات، متن کامل آیه پیشین (آیه ۷۷) را بسازید:",
+      "stem": {
+        "verse": 78
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ وَلَا تَنسَ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ وَأَحْسِن كَمَآ أَحْسَنَ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهُ إِلَيْكَ ۖ وَلَا تَبْغِ ٱلْفَسَادَ فِى ٱلْأَرْضِ ۖ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَمَا كَانَ لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ شامل چهار توصیه مهم به قارون است و پیش از ادعای باطل او در آیه ۷۸ می‌آید."
+    },
+    {
+      "id": "q_u_p395a_C_0746",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:76",
+        "vn:77",
+        "vn:78",
+        "vn:79"
+      ],
+      "promptFa": "شماره هر آیه را به کلمات آغازین آن متصل کنید:",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 76
+        },
+        {
+          "id": "l2",
+          "num": 77
+        },
+        {
+          "id": "l3",
+          "num": 78
+        },
+        {
+          "id": "l4",
+          "num": 79
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ... "
+        },
+        {
+          "id": "r2",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ... "
+        },
+        {
+          "id": "r3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ... "
+        },
+        {
+          "id": "r4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ... "
+        },
+        {
+          "id": "r5",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟... "
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "similar_verse"
+      },
+      "explanationFa": "دقت کنید که آیه ۷۸ پاسخ قارون است (قَالَ إِنَّمَآ) و آیه ۷۹ خروج او با زینت‌هایش را بیان می‌کند (فَخَرَجَ عَلَىٰ). آیه ۸۰ نیز سخن عالمان است (وَقَالَ ٱلَّذِينَ)."
+    },
+    {
+      "id": "q_u_p395a_C_0747",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:77",
+        "vn:78",
+        "vn:80",
+        "vn:81"
+      ],
+      "promptFa": "آغاز آیات را به شماره صحیح آن‌ها وصل کنید:",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 77
+        },
+        {
+          "id": "l2",
+          "num": 78
+        },
+        {
+          "id": "l3",
+          "num": 80
+        },
+        {
+          "id": "l4",
+          "num": 81
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ... "
+        },
+        {
+          "id": "r2",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ... "
+        },
+        {
+          "id": "r3",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟... "
+        },
+        {
+          "id": "r4",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ... "
+        },
+        {
+          "id": "r5",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ... "
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۸ سخن مغرورانه قارون است. آیه ۸۰ سخن عالمان (وَقَالَ ٱلَّذِينَ) و آیه ۸۱ عاقبت کار قارون (فَخَسَفْنَا) را توصیف می‌کند."
+    },
+    {
+      "id": "q_u_p395a_C_0748",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 78,
+      "targets": [
+        "sq:77",
+        "vr:77"
+      ],
+      "promptFa": "آیه قبل از این آیه (یعنی آیه ۷۷) با کدام عبارت پایان می‌یابد؟",
+      "stem": {
+        "verse": 78
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 76,
+            "from": 25,
+            "to": 29
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 77,
+            "from": 22,
+            "to": 26
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 78,
+            "from": 24,
+            "to": 28
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 79,
+            "from": 17,
+            "to": 20
+          }
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با عبارت «إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ» پایان می‌یابد، در حالی که آیه قبل از آن (۷۶) با «... لَا يُحِبُّ ٱلْفَرِحِينَ» تمام شده بود."
+    },
+    {
+      "id": "q_u_p395a_C_0749",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 78,
+      "targets": [
+        "vn:78"
+      ],
+      "promptFa": "آیه ۷۸ با کدام کلمه آغاز می‌شود؟",
+      "stem": {
+        "num": 78
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 79,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 80,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 77,
+            "from": 1,
+            "to": 1
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 78,
+            "from": 1,
+            "to": 1
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "similar_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۸ بدون واو عطف و با فعل «قَالَ» شروع می‌شود، در حالی که آیه ۸۰ با «وَقَالَ» آغاز می‌گردد."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,4 @@
+[#2 q_u_p392a_C_1802 BUILD_PREV_VERSE] گزینه‌ی decoy در answer آمده.
+[#2 q_u_p392a_C_1802 BUILD_PREV_VERSE] متن بانک b6 با کلمات [1, 2, 3] آیه‌ی 54 نمی‌خواند.
+[#2 q_u_p392a_C_1802 BUILD_PREV_VERSE] ترتیب پاسخ، متن پیوسته‌ی آیه‌ی 54 را نمی‌سازد.
+[#2 q_u_p392a_C_1802 BUILD_PREV_VERSE] پاسخ کل آیه‌ی 54 را نمی‌پوشاند.

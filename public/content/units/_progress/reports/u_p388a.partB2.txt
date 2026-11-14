@@ -1,0 +1,16 @@
+[#1 q_u_p388a_B_0501 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p388a_B_0502 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p388a_B_0503 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p388a_B_0503 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#4 q_u_p388a_B_0504 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#4 q_u_p388a_B_0504 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#5 q_u_p388a_B_0505 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p388a_B_0505 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#6 q_u_p388a_B_0506 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p388a_B_0506 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#7 q_u_p388a_B_0507 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#10 q_u_p388a_B_0510 CLOZE_AR] stage باید در بازه‌ی 3 تا 4 باشد.
+[#12 q_u_p388a_B_0512 CLOZE_COMPLETE_REST] بانک b5: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ ۖ
+[#13 q_u_p388a_B_0513 CLOZE_COMPLETE_REST] stage باید در بازه‌ی 3 تا 4 باشد.
+[#16 q_u_p388a_B_0516 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#17 q_u_p388a_B_0517 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

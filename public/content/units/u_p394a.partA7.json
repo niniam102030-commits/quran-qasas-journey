@@ -1,0 +1,367 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "A7",
+  "generatedBy": "Gemini 1.5 Pro",
+  "questions": [
+    {
+      "id": "q_u_p394a_A_1904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "معنای کلمه «وَلِتَبْتَغُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_073_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سرکشی کنید"
+        },
+        {
+          "id": "o2",
+          "fa": "و بجویید"
+        },
+        {
+          "id": "o3",
+          "fa": "و بپوشانید"
+        },
+        {
+          "id": "o4",
+          "fa": "و سپاس گزاری کنید"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَبْتَغُوا۟» از ریشه (ب غ ي) در باب افتعال به معنای جستجو کردن است. مراقب باشید با «بغی» (سرکشی) اشتباه نگیرید."
+    },
+    {
+      "id": "q_u_p394a_A_1905",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "با توجه به آیه، معنای «وَلِتَبْتَغُوا۟» کدام است؟",
+      "stem": {
+        "wordId": "w28_073_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و تا بیارامید"
+        },
+        {
+          "id": "o2",
+          "fa": "و تا طغیان کنید"
+        },
+        {
+          "id": "o3",
+          "fa": "و بجویید"
+        },
+        {
+          "id": "o4",
+          "fa": "و تا قرار دهید"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این کلمه به معنای «طلب کردن و جستن» است (و بجویید)، نه طغیان و سرکشی."
+    },
+    {
+      "id": "q_u_p394a_A_1906",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "معنای کلمه «وَلِتَبْتَغُوا۟» در عبارت «وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ» چیست؟",
+      "stem": {
+        "wordId": "w28_073_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و بجویید"
+        },
+        {
+          "id": "o2",
+          "fa": "و برتری جویید"
+        },
+        {
+          "id": "o3",
+          "fa": "و درخواست کنید"
+        },
+        {
+          "id": "o4",
+          "fa": "و ستم کنید"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«ابتغاء» یعنی جستجو کردن؛ در اینجا یعنی «و بجویید» از فضل او."
+    },
+    {
+      "id": "q_u_p394a_A_1907",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «و بجویید» است؟",
+      "stem": {
+        "fa": "و بجویید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "تَشْكُرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلِتَبْتَغُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "جَعَلَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَلِتَبْتَغُوا۟» به معنای «و بجویید» است."
+    },
+    {
+      "id": "q_u_p394a_A_1908",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "معادل عربی «و بجویید» در این آیه چیست؟",
+      "stem": {
+        "fa": "و بجویید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَلِتَبْتَغُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "تَبْغُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَسْكُنُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "رَّحْمَتِهِۦ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «وَلِتَبْتَغُوا۟» در آیه ۷۳ سوره قصص به معنای «و بجویید» است."
+    },
+    {
+      "id": "q_u_p394a_A_1909",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "کلمات را به معنای درست متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَلِتَبْتَغُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "لِتَسْكُنُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "تَشْكُرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَعَلَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و بجویید"
+        },
+        {
+          "id": "r2",
+          "fa": "تا بیارامید"
+        },
+        {
+          "id": "r3",
+          "fa": "سپاس گزاری کنید"
+        },
+        {
+          "id": "r4",
+          "fa": "قرار داد"
+        },
+        {
+          "id": "r5",
+          "fa": "و سرکشی کنید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "«وَلِتَبْتَغُوا۟» یعنی «و بجویید». گزینه «و سرکشی کنید» برای گمراهی است."
+    },
+    {
+      "id": "q_u_p394a_A_1910",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 73,
+      "targets": [
+        "w:w28_073_009"
+      ],
+      "promptFa": "جفت‌های صحیح عربی و فارسی را مشخص کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلَّيْلَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱلنَّهَارَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَلِتَبْتَغُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "فَضْلِهِۦ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شب"
+        },
+        {
+          "id": "r2",
+          "fa": "و روز را"
+        },
+        {
+          "id": "r3",
+          "fa": "و بجویید"
+        },
+        {
+          "id": "r4",
+          "fa": "فضل او"
+        },
+        {
+          "id": "r5",
+          "fa": "رحمت او"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "explanationFa": "معنای «وَلِتَبْتَغُوا۟»، «و بجویید» است."
+    }
+  ],
+  "issues": []
+}

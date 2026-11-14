@@ -1,0 +1,16 @@
+[#1 q_u_p395b_A_0901 MATCH_PHRASES] target نامعتبر 'vt:081'.
+[#2 q_u_p395b_A_0902 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p395b_A_0902 MATCH_PHRASES] target نامعتبر 'vt:081'.
+[#3 q_u_p395b_A_0903 MATCH_PHRASES] target نامعتبر 'vt:082'.
+[#4 q_u_p395b_A_0904 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p395b_A_0904 MATCH_PHRASES] target نامعتبر 'vt:082'.
+[#4 q_u_p395b_A_0904 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: وَيَقْدِرُ ۖ
+[#4 q_u_p395b_A_0904 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: بِنَا ۖ
+[#5 q_u_p395b_A_0905 MATCH_PHRASES] target نامعتبر 'vt:083'.
+[#5 q_u_p395b_A_0905 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: فَسَادًۭا ۚ
+[#6 q_u_p395b_A_0906 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p395b_A_0906 MATCH_PHRASES] target نامعتبر 'vt:083'.
+[#7 q_u_p395b_A_0907 MATCH_PHRASES] target نامعتبر 'vt:084'.
+[#7 q_u_p395b_A_0907 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#8 q_u_p395b_A_0908 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p395b_A_0908 MATCH_PHRASES] target نامعتبر 'vt:084'.

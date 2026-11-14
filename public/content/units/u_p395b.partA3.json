@@ -1,0 +1,2833 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395b",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395b_A_0581",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "معنای کلمه «يَبْسُطُ» چیست؟",
+      "stem": {
+        "wordId": "w28_082_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "o2",
+          "fa": "تنگ می‌گیرد"
+        },
+        {
+          "id": "o3",
+          "fa": "مسلط می‌شود"
+        },
+        {
+          "id": "o4",
+          "fa": "روزى می‌دهد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«يَبْسُطُ» از ریشه (ب س ط) به معنای گسترش دادن و وسعت دادن است."
+    },
+    {
+      "id": "q_u_p395b_A_0582",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "معنای «يَبْسُطُ» کدام است؟",
+      "stem": {
+        "wordId": "w28_082_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تنگ می‌گیرد"
+        },
+        {
+          "id": "o2",
+          "fa": "می‌بخشد"
+        },
+        {
+          "id": "o3",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "o4",
+          "fa": "قرار می‌دهد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه در مقابل «یَقْدِرُ» (تنگ می‌گیرد) به کار می‌رود و معنای فراخ ساختن دارد."
+    },
+    {
+      "id": "q_u_p395b_A_0583",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "در این آیه، «يَبْسُطُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_082_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آرزو می‌کنند"
+        },
+        {
+          "id": "o2",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "o3",
+          "fa": "تنگ می‌گیرد"
+        },
+        {
+          "id": "o4",
+          "fa": "فرو می‌برد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "خداوند رزق را برای هر کس بخواهد «وسعت می‌دهد» (گسترش می‌دهد)."
+    },
+    {
+      "id": "q_u_p395b_A_0584",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "معنای «يَبْسُطُ» در متن آیه چیست؟",
+      "stem": {
+        "wordId": "w28_082_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تنگ می‌گیرد"
+        },
+        {
+          "id": "o2",
+          "fa": "آرزو داشتند"
+        },
+        {
+          "id": "o3",
+          "fa": "رستگار نمی‌شوند"
+        },
+        {
+          "id": "o4",
+          "fa": "وسعت می‌دهد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يَبْسُطُ ٱلرِّزْقَ» یعنی روزی را وسعت می‌دهد."
+    },
+    {
+      "id": "q_u_p395b_A_0585",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "معادل عربی «وسعت می‌دهد» کدام است؟",
+      "stem": {
+        "fa": "وسعت می‌دهد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَقْدِرُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُفْلِحُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَبْسُطُ» یعنی وسعت می‌دهد و «يَقْدِرُ» یعنی تنگ می‌گیرد."
+    },
+    {
+      "id": "q_u_p395b_A_0586",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "«وسعت می‌دهد» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "وسعت می‌دهد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَمَنَّوْا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يَقُولُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این فعل از ریشه (ب س ط) است."
+    },
+    {
+      "id": "q_u_p395b_A_0587",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «وسعت می‌دهد» است؟",
+      "stem": {
+        "fa": "وسعت می‌دهد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَقْدِرُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُفْلِحُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَشَآءُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَبْسُطُ» از بسط دادن به معنای وسعت دادن است."
+    },
+    {
+      "id": "q_u_p395b_A_0588",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "معنای «وَيَقْدِرُ» چیست؟",
+      "stem": {
+        "wordId": "w28_082_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و قدرت دارد"
+        },
+        {
+          "id": "o2",
+          "fa": "و تقدیر می‌کند"
+        },
+        {
+          "id": "o3",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "o4",
+          "fa": "و وسعت می‌دهد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«یقدر» در اینجا در مقابل «یبسط» به معنای تنگ گرفتن روزی است."
+    },
+    {
+      "id": "q_u_p395b_A_0589",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "«وَيَقْدِرُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_082_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "o2",
+          "fa": "و مقدر می‌سازد"
+        },
+        {
+          "id": "o3",
+          "fa": "و توانایی دارد"
+        },
+        {
+          "id": "o4",
+          "fa": "و اراده می‌کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه از ریشه (ق د ر) است و در بحث رزق به معنای محدود کردن و تنگ گرفتن است."
+    },
+    {
+      "id": "q_u_p395b_A_0590",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "در آیه شریفه، «وَيَقْدِرُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_082_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و مقدر می‌کند"
+        },
+        {
+          "id": "o2",
+          "fa": "و قدرت می‌دهد"
+        },
+        {
+          "id": "o3",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "o4",
+          "fa": "و می‌بخشد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "false_friend"
+      },
+      "explanationFa": "خداوند برای هرکه بخواهد روزی را وسعت می‌دهد و برای هرکه بخواهد «تنگ می‌گیرد»."
+    },
+    {
+      "id": "q_u_p395b_A_0591",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "معنای «وَيَقْدِرُ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_082_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و اراده می‌کند"
+        },
+        {
+          "id": "o2",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "o3",
+          "fa": "و قدرت می‌یابد"
+        },
+        {
+          "id": "o4",
+          "fa": "و روزی می‌دهد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "کاربرد «یقدر» در سیاق رزق به معنای تنگی معیشت است."
+    },
+    {
+      "id": "q_u_p395b_A_0592",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "کدام کلمه به معنای «و تنگ می‌گیرد» است؟",
+      "stem": {
+        "fa": "و تنگ می‌گیرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُفْلِحُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَقْدِرُ» در اینجا نقطه مقابل «يَبْسُطُ» است."
+    },
+    {
+      "id": "q_u_p395b_A_0593",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "معادل عربی «و تنگ می‌گیرد» چیست؟",
+      "stem": {
+        "fa": "و تنگ می‌گیرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَقُولُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَمَنَّوْا۟"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه (ق د ر) در اینجا به معنای محدود کردن به کار رفته است."
+    },
+    {
+      "id": "q_u_p395b_A_0594",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015"
+      ],
+      "promptFa": "«و تنگ می‌گیرد» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "و تنگ می‌گیرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَشَآءُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يُفْلِحُ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَقْدِرُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«وَيَقْدِرُ» یعنی و روزی را محدود می‌کند و تنگ می‌گیرد."
+    },
+    {
+      "id": "q_u_p395b_A_0595",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "معنای کلمه «لَخَسَفَ» چیست؟",
+      "stem": {
+        "wordId": "w28_082_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قطعا عذاب کرده بود"
+        },
+        {
+          "id": "o2",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعا پنهان کرده بود"
+        },
+        {
+          "id": "o4",
+          "fa": "قطعا هلاک کرده بود"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این کلمه از ریشه (خ س ف) به معنای فرو بردن در زمین است."
+    },
+    {
+      "id": "q_u_p395b_A_0596",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "«لَخَسَفَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_082_021",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "o2",
+          "fa": "قطعا منت نهاده بود"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعا نجات داده بود"
+        },
+        {
+          "id": "o4",
+          "fa": "قطعا عذاب کرده بود"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "حرف «لَ» برای تاکید است و «خسف» یعنی در زمین فرو برد."
+    },
+    {
+      "id": "q_u_p395b_A_0597",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "در این آیه، «لَخَسَفَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_082_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قطعا منت گذاشته بود"
+        },
+        {
+          "id": "o2",
+          "fa": "قطعا هلاک کرده بود"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "o4",
+          "fa": "قطعا نجات داده بود"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o4": "false_friend"
+      },
+      "explanationFa": "می‌گویند اگر خدا منت نگذاشته بود، ما را نیز در زمین «فرو برده بود»."
+    },
+    {
+      "id": "q_u_p395b_A_0598",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 82,
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "معنای «لَخَسَفَ» در متن آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_082_021",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "قطعا تنگ گرفته بود"
+        },
+        {
+          "id": "o2",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "o3",
+          "fa": "قطعا عذاب کرده بود"
+        },
+        {
+          "id": "o4",
+          "fa": "قطعا پنهان کرده بود"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "اشاره به سرنوشت قارون دارد که در زمین فرو برده شد."
+    },
+    {
+      "id": "q_u_p395b_A_0599",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "معادل عربی «قطعا فرو برده بود» کدام است؟",
+      "stem": {
+        "fa": "قطعا فرو برده بود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَوْلَآ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَّنَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُفْلِحُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَخَسَفَ» ترکیب لام تاکید و فعل ماضی از خسف است."
+    },
+    {
+      "id": "q_u_p395b_A_0600",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "«قطعا فرو برده بود» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "قطعا فرو برده بود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَّنَّ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَقْدِرُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه (خ س ف) برای فرو رفتن در زمین به کار می‌رود."
+    },
+    {
+      "id": "q_u_p395b_A_0601",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021"
+      ],
+      "promptFa": "کدام کلمه به معنای «قطعا فرو برده بود» است؟",
+      "stem": {
+        "fa": "قطعا فرو برده بود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَمَنَّوْا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "أَصْبَحَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيْكَأَنَّهُۥ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَخَسَفَ بِنَا» یعنی قطعا ما را نیز در زمین فرو برده بود."
+    },
+    {
+      "id": "q_u_p395b_A_0602",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "معنای کلمه «عُلُوًّۭا» چیست؟",
+      "stem": {
+        "wordId": "w28_083_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بلندمرتبگی"
+        },
+        {
+          "id": "o2",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "o3",
+          "fa": "تکبر"
+        },
+        {
+          "id": "o4",
+          "fa": "فسادی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این کلمه از ریشه (ع ل و) است و به معنای برتری‌جویی و تسلط در زمین است."
+    },
+    {
+      "id": "q_u_p395b_A_0603",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "«عُلُوًّۭا» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_083_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "o2",
+          "fa": "علو درجات"
+        },
+        {
+          "id": "o3",
+          "fa": "سرانجام نیک"
+        },
+        {
+          "id": "o4",
+          "fa": "جایگاهی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "در این سیاق، منظور سلطه‌جویی مادی و طغیان در زمین است."
+    },
+    {
+      "id": "q_u_p395b_A_0604",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "در این آیه، «عُلُوًّۭا» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_083_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تکبر"
+        },
+        {
+          "id": "o2",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "o3",
+          "fa": "فسادی"
+        },
+        {
+          "id": "o4",
+          "fa": "مقام آخرت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "سرای آخرت برای کسانی است که اراده‌ی «برتری و تسلطی» در زمین ندارند."
+    },
+    {
+      "id": "q_u_p395b_A_0605",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "معنای «عُلُوًّۭا» در متن آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_083_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بلندی آسمان"
+        },
+        {
+          "id": "o2",
+          "fa": "پاداشی"
+        },
+        {
+          "id": "o3",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "o4",
+          "fa": "مقام و جایگاهی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "این کلمه به انحصارطلبی و سرکشی اشاره دارد."
+    },
+    {
+      "id": "q_u_p395b_A_0606",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "معادل عربی «برتری و تسلّطی» کدام است؟",
+      "stem": {
+        "fa": "برتری و تسلّطی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَسَادًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "مَكَانَهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْعَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه (ع ل و) بیانگر برتری‌جویی است."
+    },
+    {
+      "id": "q_u_p395b_A_0607",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "«برتری و تسلّطی» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "برتری و تسلّطی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "نَجْعَلُهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "يُرِيدُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَرْضِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَا يُرِيدُونَ عُلُوًّۭا» یعنی هیچ برتری و تسلطی را نمی‌خواهند."
+    },
+    {
+      "id": "q_u_p395b_A_0608",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008"
+      ],
+      "promptFa": "کدام کلمه به معنای «برتری و تسلّطی» است؟",
+      "stem": {
+        "fa": "برتری و تسلّطی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَسَادًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلدَّارُ"
+        },
+        {
+          "id": "o3",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْـَٔاخِرَةُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «علو» در عربی به معنای برتری است."
+    },
+    {
+      "id": "q_u_p395b_A_0609",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "معنای کلمه «وَٱلْعَـٰقِبَةُ» چیست؟",
+      "stem": {
+        "wordId": "w28_083_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و مجازات"
+        },
+        {
+          "id": "o2",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "o3",
+          "fa": "و کیفر"
+        },
+        {
+          "id": "o4",
+          "fa": "و آخرت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عاقبة» در قرآن معمولاً به معنای سرانجام نیک است، برعکس عقوبت که به معنای مجازات است."
+    },
+    {
+      "id": "q_u_p395b_A_0610",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "«وَٱلْعَـٰقِبَةُ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_083_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و عذاب"
+        },
+        {
+          "id": "o2",
+          "fa": "و پاداش"
+        },
+        {
+          "id": "o3",
+          "fa": "و بازگشت"
+        },
+        {
+          "id": "o4",
+          "fa": "و سرانجام نیک"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "این کلمه از ریشه (ع ق ب) به معنای پایان کار و سرانجام نیک است."
+    },
+    {
+      "id": "q_u_p395b_A_0611",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "در این آیه، «وَٱلْعَـٰقِبَةُ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_083_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "o2",
+          "fa": "و آخرت"
+        },
+        {
+          "id": "o3",
+          "fa": "و مجازات"
+        },
+        {
+          "id": "o4",
+          "fa": "و کیفر"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "false_friend"
+      },
+      "explanationFa": "خداوند می‌فرماید: «و سرانجام نیک» برای پرهیزکاران است."
+    },
+    {
+      "id": "q_u_p395b_A_0612",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 83,
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "معنای «وَٱلْعَـٰقِبَةُ» در متن آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_083_013",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و عاقبت بد"
+        },
+        {
+          "id": "o2",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "o3",
+          "fa": "و خانه"
+        },
+        {
+          "id": "o4",
+          "fa": "و عذاب"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«العاقبة» در اینگونه تعابیر قرآنی همواره بار مثبت دارد."
+    },
+    {
+      "id": "q_u_p395b_A_0613",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "معادل عربی «و سرانجام نیک» کدام است؟",
+      "stem": {
+        "fa": "و سرانجام نیک"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْـَٔاخِرَةُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلدَّارُ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "o4",
+          "ar": "لِلْمُتَّقِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عاقبة» به معنای سرانجام و پایان کار است."
+    },
+    {
+      "id": "q_u_p395b_A_0614",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "«و سرانجام نیک» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "و سرانجام نیک"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "o2",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلسَّيِّئَةِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْـَٔاخِرَةُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "کلمه «وَٱلْعَـٰقِبَةُ» با واو عطف آمده است."
+    },
+    {
+      "id": "q_u_p395b_A_0615",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013"
+      ],
+      "promptFa": "کدام کلمه به معنای «و سرانجام نیک» است؟",
+      "stem": {
+        "fa": "و سرانجام نیک"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَسَادًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَرْضِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلدَّارُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "سرانجام کار را «عاقبت» می‌گویند."
+    },
+    {
+      "id": "q_u_p395b_A_0616",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "معنای کلمه «جَآءَ» چیست؟",
+      "stem": {
+        "wordId": "w28_084_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "o3",
+          "fa": "انجام دهد"
+        },
+        {
+          "id": "o4",
+          "fa": "برسد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«جَاءَ بِـ» به معنای آوردن و حاضر کردن است، نه آمدن."
+    },
+    {
+      "id": "q_u_p395b_A_0617",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "«جَآءَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_084_002",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "قرار داد"
+        },
+        {
+          "id": "o3",
+          "fa": "عمل کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "بیاورد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "random",
+        "o3": "near_miss"
+      },
+      "explanationFa": "در کنار حرف جر «بِـ»، فعل متعدی شده و معنای آوردن می‌دهد."
+    },
+    {
+      "id": "q_u_p395b_A_0618",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 84,
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "در این آیه، «جَآءَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_084_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "آمد"
+        },
+        {
+          "id": "o2",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "o3",
+          "fa": "رفت"
+        },
+        {
+          "id": "o4",
+          "fa": "عمل کرد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "false_friend",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "هر کس کار نیکی به پیشگاه خدا «بیاورد»، پاداشی بهتر برای اوست."
+    },
+    {
+      "id": "q_u_p395b_A_0619",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 84,
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "معنای «جَآءَ» در متن آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_084_002",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می‌دهد"
+        },
+        {
+          "id": "o2",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "o3",
+          "fa": "پاداش می‌گیرد"
+        },
+        {
+          "id": "o4",
+          "fa": "می‌رسد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترکیب «مَن جَاءَ بِالحَسَنَةِ» یعنی کسی که حسنه را با خود بیاورد."
+    },
+    {
+      "id": "q_u_p395b_A_0620",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "معادل عربی «بیاورد» کدام است؟",
+      "stem": {
+        "fa": "بیاورد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عَمِلُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يُجْزَى"
+        },
+        {
+          "id": "o3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْمَلُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جَآءَ» به همراه حرف جر «بِـ» معنای آوردن می‌دهد."
+    },
+    {
+      "id": "q_u_p395b_A_0621",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "«بیاورد» به عربی چه می‌شود؟",
+      "stem": {
+        "fa": "بیاورد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَمِلُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "خَيْرٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلسَّيِّئَةِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه (ج ی ا) در این قالب به معنی احضار و آوردن است."
+    },
+    {
+      "id": "q_u_p395b_A_0622",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002"
+      ],
+      "promptFa": "کدام کلمه به معنای «بیاورد» است؟",
+      "stem": {
+        "fa": "بیاورد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يُجْزَى"
+        },
+        {
+          "id": "o2",
+          "ar": "عَمِلُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَعْمَلُونَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل «جاء» در آیه شریفه دوبار برای آوردن کار نیک و بد به کار رفته است."
+    },
+    {
+      "id": "q_u_p395b_A_0623",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009",
+        "w:w28_082_015",
+        "w:w28_082_021",
+        "w:w28_083_008",
+        "w:w28_083_013"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l4",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r2",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r3",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r4",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r5",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r6",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r7",
+          "fa": "دیروز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p395b_A_0624",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002",
+        "w:w28_082_009",
+        "w:w28_082_015",
+        "w:w28_082_021",
+        "w:w28_083_008"
+      ],
+      "promptFa": "هر کلمه را به ترجمه صحیح آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l4",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l5",
+          "ar": "عُلُوًّۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r2",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r3",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r4",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r5",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r6",
+          "fa": "سرانجام نیک"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "کلمات کلیدی آیات ۸۲ تا ۸۴."
+    },
+    {
+      "id": "q_u_p395b_A_0625",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013",
+        "w:w28_084_002",
+        "w:w28_082_009",
+        "w:w28_082_015",
+        "w:w28_082_021"
+      ],
+      "promptFa": "معنای هر کلمه را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَخَسَفَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r2",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r3",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r4",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r5",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r6",
+          "fa": "تکبر"
+        },
+        {
+          "id": "r7",
+          "fa": "کافران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "ترکیب کلمات سخت در یک نگاه."
+    },
+    {
+      "id": "q_u_p395b_A_0626",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008",
+        "w:w28_083_013",
+        "w:w28_084_002",
+        "w:w28_082_009",
+        "w:w28_082_015"
+      ],
+      "promptFa": "کلمات را به معادل فارسی‌شان متصل نمایید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَيَقْدِرُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r2",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r3",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r4",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r5",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r6",
+          "fa": "مجازات"
+        },
+        {
+          "id": "r7",
+          "fa": "آمد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت در معانی «عاقبة» و «جاء بـ» که دوستان فریبنده هستند ضروری است."
+    },
+    {
+      "id": "q_u_p395b_A_0627",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021",
+        "w:w28_083_008",
+        "w:w28_083_013",
+        "w:w28_084_002",
+        "w:w28_082_009"
+      ],
+      "promptFa": "هر کلمه قرآنی را به ترجمه آن وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l2",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَبْسُطُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r2",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r3",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r4",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r5",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r6",
+          "fa": "تنگ می‌گیرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "تکرار و مرور معانی."
+    },
+    {
+      "id": "q_u_p395b_A_0628",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015",
+        "w:w28_082_021",
+        "w:w28_083_008",
+        "w:w28_083_013",
+        "w:w28_084_002"
+      ],
+      "promptFa": "کلمات و معانی را جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l3",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r2",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r3",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r4",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r5",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r6",
+          "fa": "عاقبت بد"
+        },
+        {
+          "id": "r7",
+          "fa": "وسعت می‌دهد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "توجه به «یقدر» به معنای تنگ گرفتن."
+    },
+    {
+      "id": "q_u_p395b_A_0629",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_009",
+        "w:w28_082_015",
+        "w:w28_082_021",
+        "w:w28_083_013",
+        "w:w28_084_002"
+      ],
+      "promptFa": "گزینه‌های مرتبط را به یکدیگر وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r2",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r3",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r4",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r5",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r6",
+          "fa": "تکبر"
+        },
+        {
+          "id": "r7",
+          "fa": "انجام دهد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور جفت‌های متضاد معنایی مثل یبسط و یقدر."
+    },
+    {
+      "id": "q_u_p395b_A_0630",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_008",
+        "w:w28_083_013",
+        "w:w28_084_002",
+        "w:w28_082_009",
+        "w:w28_082_021"
+      ],
+      "promptFa": "ترجمه دقیق هر کلمه را انتخاب کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَخَسَفَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r2",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r3",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r4",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r5",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r6",
+          "fa": "سرانجام بد"
+        },
+        {
+          "id": "r7",
+          "fa": "توانایی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "آشنایی با کلمات دشوار آیات."
+    },
+    {
+      "id": "q_u_p395b_A_0631",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_015",
+        "w:w28_083_008",
+        "w:w28_083_013",
+        "w:w28_084_002",
+        "w:w28_082_009"
+      ],
+      "promptFa": "کلمات را به معانی‌شان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l2",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَبْسُطُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r2",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r3",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r4",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r5",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r6",
+          "fa": "فرو برده بود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "تثبیت لغات سخت درس."
+    },
+    {
+      "id": "q_u_p395b_A_0632",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_082_021",
+        "w:w28_082_015",
+        "w:w28_082_009",
+        "w:w28_083_008",
+        "w:w28_084_002"
+      ],
+      "promptFa": "ارتباط صحیح بین کلمات و ترجمه را بیابید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَبْسُطُ"
+        },
+        {
+          "id": "l4",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "جَآءَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r2",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r3",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r4",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r5",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r6",
+          "fa": "سرانجام نیک"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور نهایی لغات."
+    },
+    {
+      "id": "q_u_p395b_A_0633",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_083_013",
+        "w:w28_083_008",
+        "w:w28_082_021",
+        "w:w28_082_015",
+        "w:w28_082_009"
+      ],
+      "promptFa": "هر واژه عربی را به معنای فارسی متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l2",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَيَقْدِرُ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَبْسُطُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r2",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r3",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r4",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r5",
+          "fa": "وسعت می‌دهد"
+        },
+        {
+          "id": "r6",
+          "fa": "بیاورد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری معانی دقیق."
+    },
+    {
+      "id": "q_u_p395b_A_0634",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_084_002",
+        "w:w28_083_013",
+        "w:w28_083_008",
+        "w:w28_082_021",
+        "w:w28_082_015"
+      ],
+      "promptFa": "کلمات را با ترجمه دقیق آن‌ها مطابقت دهید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَٱلْعَـٰقِبَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "عُلُوًّۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "لَخَسَفَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَيَقْدِرُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بیاورد"
+        },
+        {
+          "id": "r2",
+          "fa": "و سرانجام نیک"
+        },
+        {
+          "id": "r3",
+          "fa": "برتری و تسلّطی"
+        },
+        {
+          "id": "r4",
+          "fa": "قطعا فرو برده بود"
+        },
+        {
+          "id": "r5",
+          "fa": "و تنگ می‌گیرد"
+        },
+        {
+          "id": "r6",
+          "fa": "آمد"
+        },
+        {
+          "id": "r7",
+          "fa": "توانایی دارد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "دقت در تفاوت‌ها و دوستان فریبنده."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,25 @@
+[#9 q_u_p391b_C_0969 ENDING_CHOICE] شناسه‌ی کلمه‌ی ناموجود يَتَذَكَّرُونَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود إِنَّ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱللَّهَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود لَا.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود يَهْدِى.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱلْقَوْمَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱلْمُفْسِدِينَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود إِنَّ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱللَّهَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود لَا.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود يَهْدِى.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱلْقَوْمَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود خَـٰطِـِٔينَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود وَمَنْ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود أَضَلُّ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود مِمَّنِ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود ٱتَّبَعَ.
+[#10 q_u_p391b_C_0970 MUTASHABIH_SPOT] شناسه‌ی کلمه‌ی ناموجود أَهْوَآءَهُمْ.
+[#12 q_u_p391b_C_0972 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#14 q_u_p391b_C_0974 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#15 q_u_p391b_C_0975 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#16 q_u_p391b_C_0976 BUILD_NEXT_VERSE] پاسخ کل آیه‌ی 49 را نمی‌پوشاند.
+[#18 q_u_p391b_C_0978 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 48 برابر نیست.
+[#20 q_u_p391b_C_0980 CLOZE_AR] نسبت پنهان 17% خارج از ۲۵٪ تا ۸۰٪ است.
+[#21 q_u_p391b_C_0981 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.

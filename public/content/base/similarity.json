@@ -1,0 +1,731 @@
+{
+  "v28_001": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_002": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_003": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_004": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_005": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_006": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_007": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_008": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_009": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_011"
+    ],
+    "sharedPhrases": []
+  },
+  "v28_010": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_011": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_009"
+    ],
+    "sharedPhrases": []
+  },
+  "v28_012": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_013": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_057"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+        "verses": [
+          "v28_013",
+          "v28_057"
+        ]
+      }
+    ]
+  },
+  "v28_014": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_015": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_016": {
+    "sameStart": [
+      "v28_033"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_017": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_018": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_019": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_020": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_021": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_025"
+    ],
+    "sharedPhrases": []
+  },
+  "v28_022": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_023": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_024": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_025": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_021"
+    ],
+    "sharedPhrases": []
+  },
+  "v28_026": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_027": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_028": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_029": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_030": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_031": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_032": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_033": {
+    "sameStart": [
+      "v28_016"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_034": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_035": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_036": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_037": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_038": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_039": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_040": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_041": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_042": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_043": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_044": {
+    "sameStart": [
+      "v28_046"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_045": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_046": {
+    "sameStart": [
+      "v28_044"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_047": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_048": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_049": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_050": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_051": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_052": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_053": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_054": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_055": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_056": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_057": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_013"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+        "verses": [
+          "v28_057",
+          "v28_013"
+        ]
+      }
+    ]
+  },
+  "v28_058": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_059": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_060": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_061": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_062": {
+    "sameStart": [
+      "v28_065",
+      "v28_074"
+    ],
+    "sameEnd": [
+      "v28_074"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ",
+        "verses": [
+          "v28_062",
+          "v28_074"
+        ]
+      },
+      {
+        "ar": "يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ",
+        "verses": [
+          "v28_062",
+          "v28_074"
+        ]
+      },
+      {
+        "ar": "فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ",
+        "verses": [
+          "v28_062",
+          "v28_074"
+        ]
+      },
+      {
+        "ar": "أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ",
+        "verses": [
+          "v28_062",
+          "v28_074"
+        ]
+      },
+      {
+        "ar": "شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ",
+        "verses": [
+          "v28_062",
+          "v28_074"
+        ]
+      }
+    ]
+  },
+  "v28_063": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_064": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_065": {
+    "sameStart": [
+      "v28_062",
+      "v28_074"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_066": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_067": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_068": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_069": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_070": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_088"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "لَآ إِلَـٰهَ إِلَّا هُوَ ۖ",
+        "verses": [
+          "v28_070",
+          "v28_088"
+        ]
+      }
+    ]
+  },
+  "v28_071": {
+    "sameStart": [
+      "v28_072"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": [
+      {
+        "ar": "قُلْ أَرَءَيْتُمْ إِن جَعَلَ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "أَرَءَيْتُمْ إِن جَعَلَ ٱللَّهُ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "إِن جَعَلَ ٱللَّهُ عَلَيْكُمُ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "سَرْمَدًا إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ مَنْ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "يَوْمِ ٱلْقِيَـٰمَةِ مَنْ إِلَـٰهٌ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "ٱلْقِيَـٰمَةِ مَنْ إِلَـٰهٌ غَيْرُ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "مَنْ إِلَـٰهٌ غَيْرُ ٱللَّهِ",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      },
+      {
+        "ar": "إِلَـٰهٌ غَيْرُ ٱللَّهِ يَأْتِيكُم",
+        "verses": [
+          "v28_071",
+          "v28_072"
+        ]
+      }
+    ]
+  },
+  "v28_072": {
+    "sameStart": [
+      "v28_071"
+    ],
+    "sameEnd": [],
+    "sharedPhrases": [
+      {
+        "ar": "قُلْ أَرَءَيْتُمْ إِن جَعَلَ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "أَرَءَيْتُمْ إِن جَعَلَ ٱللَّهُ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "إِن جَعَلَ ٱللَّهُ عَلَيْكُمُ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "سَرْمَدًا إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ مَنْ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "يَوْمِ ٱلْقِيَـٰمَةِ مَنْ إِلَـٰهٌ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "ٱلْقِيَـٰمَةِ مَنْ إِلَـٰهٌ غَيْرُ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "مَنْ إِلَـٰهٌ غَيْرُ ٱللَّهِ",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      },
+      {
+        "ar": "إِلَـٰهٌ غَيْرُ ٱللَّهِ يَأْتِيكُم",
+        "verses": [
+          "v28_072",
+          "v28_071"
+        ]
+      }
+    ]
+  },
+  "v28_073": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_074": {
+    "sameStart": [
+      "v28_062",
+      "v28_065"
+    ],
+    "sameEnd": [
+      "v28_062"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ",
+        "verses": [
+          "v28_074",
+          "v28_062"
+        ]
+      },
+      {
+        "ar": "يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ",
+        "verses": [
+          "v28_074",
+          "v28_062"
+        ]
+      },
+      {
+        "ar": "فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ",
+        "verses": [
+          "v28_074",
+          "v28_062"
+        ]
+      },
+      {
+        "ar": "أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ",
+        "verses": [
+          "v28_074",
+          "v28_062"
+        ]
+      },
+      {
+        "ar": "شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ",
+        "verses": [
+          "v28_074",
+          "v28_062"
+        ]
+      }
+    ]
+  },
+  "v28_075": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_076": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": [
+      {
+        "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ",
+        "verses": [
+          "v28_076",
+          "v28_077"
+        ]
+      }
+    ]
+  },
+  "v28_077": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": [
+      {
+        "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ",
+        "verses": [
+          "v28_077",
+          "v28_076"
+        ]
+      }
+    ]
+  },
+  "v28_078": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_079": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_080": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_081": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_082": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_083": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_084": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_085": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_086": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_087": {
+    "sameStart": [],
+    "sameEnd": [],
+    "sharedPhrases": []
+  },
+  "v28_088": {
+    "sameStart": [],
+    "sameEnd": [
+      "v28_070"
+    ],
+    "sharedPhrases": [
+      {
+        "ar": "لَآ إِلَـٰهَ إِلَّا هُوَ ۖ",
+        "verses": [
+          "v28_088",
+          "v28_070"
+        ]
+      }
+    ]
+  }
+}

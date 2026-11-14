@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p392b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 57,
+      "targets": [
+        "vr:57"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «و [مشرکان برای معذور بودن خود در نپذیرفتن هدایت] گفتند: اگر ما همراه ت...»، آیه 57 را مرتب کن:",
+      "stem": {
+        "verse": 57
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ نُتَخَطَّفْ مِنْ أَرْضِنَآ ۚ أَوَلَمْ",
+          "wordIdx": [
+            1,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نُمَكِّن لَّهُمْ حَرَمًا ءَامِنًۭا يُجْبَىٰٓ إِلَيْهِ ثَمَرَٰتُ كُلِّ شَىْءٍۢ",
+          "wordIdx": [
+            10,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "رِّزْقًۭا مِّن لَّدُنَّا وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+          "wordIdx": [
+            19,
+            25
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 57 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p392b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 57,
+      "targets": [
+        "vr:57"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 57 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 57,
+        "hiddenIdx": [
+          13
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَامِنًۭا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "13": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «ءَامِنًۭا» در آیه 57 است."
+    }
+  ],
+  "issues": []
+}

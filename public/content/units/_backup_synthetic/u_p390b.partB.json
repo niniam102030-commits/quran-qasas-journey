@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p390b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 39,
+      "targets": [
+        "vr:39"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «او و سپاهیانش به ناحق در زمین سرکشی و تکبّر کردند، و پنداشتند که آنان ...»، آیه 39 را مرتب کن:",
+      "stem": {
+        "verse": 39
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "أَنَّهُمْ إِلَيْنَا لَا يُرْجَعُونَ",
+          "wordIdx": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْأَرْضِ بِغَيْرِ ٱلْحَقِّ وَظَنُّوٓا۟",
+          "wordIdx": [
+            5,
+            8
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ فِى",
+          "wordIdx": [
+            1,
+            4
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 39 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p390b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 39,
+      "targets": [
+        "vr:39"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 39 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 39,
+        "hiddenIdx": [
+          7
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «ٱلْحَقِّ» در آیه 39 است."
+    }
+  ],
+  "issues": []
+}

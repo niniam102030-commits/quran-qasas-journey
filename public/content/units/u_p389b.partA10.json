@@ -1,0 +1,2733 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A10",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_1801",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "عبارات عربی آیه ۳۲ را به ترجمه فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "تَخْرُجْ بَيْضَآءَ"
+        },
+        {
+          "id": "l3",
+          "ar": "مِنْ غَيْرِ سُوٓءٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دستت را در گریبانت ببر"
+        },
+        {
+          "id": "r2",
+          "fa": "سفید و درخشان بیرون آید،"
+        },
+        {
+          "id": "r3",
+          "fa": "بدون هیچ عیبی"
+        },
+        {
+          "id": "r4",
+          "fa": "دو دستت را بر سینه بگذار،"
+        },
+        {
+          "id": "r5",
+          "fa": "پس این دو معجزه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "اسلک یدک فی جیبک یعنی دستت را در گریبانت ببر. جناح به معنای دست است."
+    },
+    {
+      "id": "q_u_p389b_A_1802",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "ترجمه صحیح این قطعات از آیه ۳۲ را پیدا کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مِنَ ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَذَٰنِكَ بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l3",
+          "ar": "إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ترسی که دچارش شده ای"
+        },
+        {
+          "id": "r2",
+          "fa": "پس این دو معجزه"
+        },
+        {
+          "id": "r3",
+          "fa": "به سوی فرعون و اشراف و سران او"
+        },
+        {
+          "id": "r4",
+          "fa": "که همواره مردمی نافرمان هستند."
+        },
+        {
+          "id": "r5",
+          "fa": "از ناحیه پروردگار توست"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "near_miss"
+      },
+      "explanationFa": "رهب به معنای ترس است. برهانان یعنی دو معجزه و ملأ به معنای سران است."
+    },
+    {
+      "id": "q_u_p389b_A_1803",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "ترجمه صحیح این آیه کدام است؟",
+      "stem": {
+        "verse": 32
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید، و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار، پس این دو معجزه از ناحیه پروردگار توست به سوی فرعون و اشراف و سران او که همواره مردمی نافرمان هستند."
+        },
+        {
+          "id": "o2",
+          "fa": "و عصایت را بیفکن. پس وقتی آن را دید که تند و سریع حرکت می کند، پشت کنان گریخت و به پشت سر برنگشت."
+        },
+        {
+          "id": "o3",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم."
+        },
+        {
+          "id": "o4",
+          "fa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه به معجزات دست سفید و ایجاد آرامش برای پیامبر در برابر فرعون اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1804",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "ترجمه این بخش از آیه ۳۲ چیست؟",
+      "stem": {
+        "text": "فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس این دو معجزه از ناحیه پروردگار توست به سوی فرعون و اشراف و سران او"
+        },
+        {
+          "id": "o2",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند این جز جادویی ساختگی نیست"
+        },
+        {
+          "id": "o3",
+          "fa": "و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم که آنان به شما دست نیابند"
+        },
+        {
+          "id": "o4",
+          "fa": "پس او را همراه من بفرست که یاور و دستیارم باشد تا مرا تصدیق کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«فَذانِكَ بُرهانان» به دو معجزه (عصا و ید بیضا) اشاره دارد که از سوی پروردگار فرستاده شد."
+    },
+    {
+      "id": "q_u_p389b_A_1805",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "ترجمه عبارت «وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ» چیست؟",
+      "stem": {
+        "text": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار،"
+        },
+        {
+          "id": "o2",
+          "fa": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید،"
+        },
+        {
+          "id": "o3",
+          "fa": "به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،"
+        },
+        {
+          "id": "o4",
+          "fa": "پشت کنان گریخت و به پشت سر برنگشت."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«جناح» در اینجا به معنای دست است و «رهب» به معنای ترس."
+    },
+    {
+      "id": "q_u_p389b_A_1806",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "کدام آیه مربوط به این ترجمه است: «دستت را در گریبانت ببر...»؟",
+      "stem": {
+        "verse": 32,
+        "showFa": true,
+        "text": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید، و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار، پس این دو معجزه از ناحیه پروردگار توست به سوی فرعون و اشراف و سران او که همواره مردمی نافرمان هستند."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 25
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 31,
+            "from": 1,
+            "to": 19
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 15
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه معجزات دست سفید و غلبه بر ترس را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p389b_A_1807",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "ترجمه «دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید» معادل کدام بخش است؟",
+      "stem": {
+        "showFa": true,
+        "text": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 32,
+            "from": 10,
+            "to": 14
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 31,
+            "from": 4,
+            "to": 8
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 32,
+            "from": 15,
+            "to": 21
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "similar_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«اسلک یدک فی جیبک» یعنی دستت را در گریبانت ببر."
+    },
+    {
+      "id": "q_u_p389b_A_1808",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "کدام عبارت به معنای «که همواره مردمی نافرمان هستند» می‌باشد؟",
+      "stem": {
+        "showFa": true,
+        "text": "که همواره مردمی نافرمان هستند."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 32,
+            "from": 22,
+            "to": 25
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 32,
+            "from": 15,
+            "to": 21
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 31,
+            "from": 17,
+            "to": 19
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 34,
+            "from": 11,
+            "to": 14
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "قوم فاسقین به معنای مردمی نافرمان است."
+    },
+    {
+      "id": "q_u_p389b_A_1809",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "قطعات ترجمه را به ترتیب آیه مرتب کنید.",
+      "stem": {
+        "verse": 32
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "دستت را در گریبانت ببر",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "تا بدون هیچ عیبی",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "سفید و درخشان بیرون آید،",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و برای [از بین رفتن] ترسی که دچارش شده ای",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "دو دستت را بر سینه بگذار،",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "fa": "پس او را همراه من بفرست",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب صحیح ترجمه: دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید، و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار،"
+    },
+    {
+      "id": "q_u_p389b_A_1810",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "بخش دوم ترجمه آیه ۳۲ را مرتب کنید.",
+      "stem": {
+        "verse": 32
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس این دو معجزه",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "از ناحیه پروردگار توست",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "به سوی فرعون و اشراف و سران او",
+          "wordIdx": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "که همواره مردمی نافرمان هستند.",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "و ما این را از پدران خود نشنیده ایم",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "similar_verse"
+      },
+      "explanationFa": "پس این دو معجزه از ناحیه پروردگار توست به سوی فرعون و اشراف و سران او که همواره مردمی نافرمان هستند."
+    },
+    {
+      "id": "q_u_p389b_A_1811",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "کلمات جاافتاده در ترجمه آیه را مشخص کنید.",
+      "stem": {
+        "verse": 32,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "سفید و درخشان"
+          },
+          {
+            "start": 0,
+            "text": "هیچ عیبی"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "b2",
+          "fa": "هیچ عیبی"
+        },
+        {
+          "id": "b3",
+          "fa": "جادویی ساختگی",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "similar_verse"
+      },
+      "explanationFa": "بَیضاء به معنای سفید و درخشان و سوء به معنای عیب است."
+    },
+    {
+      "id": "q_u_p389b_A_1812",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 32,
+      "targets": [
+        "vt:32"
+      ],
+      "promptFa": "بخش‌های پنهان ترجمه آیه را تکمیل کنید.",
+      "stem": {
+        "verse": 32,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "معجزه"
+          },
+          {
+            "start": 0,
+            "text": "اشراف و سران"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "معجزه"
+        },
+        {
+          "id": "b2",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "b3",
+          "fa": "پیامبر و دعوت کننده",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "similar_verse"
+      },
+      "explanationFa": "برهانان یعنی دو معجزه، و ملأ به معنای اشراف و سران قوم است."
+    },
+    {
+      "id": "q_u_p389b_A_1813",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "عبارات عربی آیه ۳۳ را به ترجمه فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَالَ رَبِّ"
+        },
+        {
+          "id": "l2",
+          "ar": "قَتَلْتُ"
+        },
+        {
+          "id": "l3",
+          "ar": "مِنْهُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "نَفْسًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گفت: پروردگارا!"
+        },
+        {
+          "id": "r2",
+          "fa": "کشته ام،"
+        },
+        {
+          "id": "r3",
+          "fa": "از آنان"
+        },
+        {
+          "id": "r4",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "r5",
+          "fa": "می ترسم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "قال رب یعنی گفت پروردگارا. نفسا به معنای یک نفر است."
+    },
+    {
+      "id": "q_u_p389b_A_1814",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "کلمات و عبارات آیه ۳۳ را با ترجمه معادل آن‌ها جفت کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "إِنِّى قَتَلْتُ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَأَخَافُ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَن يَقْتُلُونِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "من ... کشته ام،"
+        },
+        {
+          "id": "r2",
+          "fa": "می ترسم"
+        },
+        {
+          "id": "r3",
+          "fa": "مرا بکشند،"
+        },
+        {
+          "id": "r4",
+          "fa": "تکذیبم کنند."
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "neighbor_verse"
+      },
+      "explanationFa": "أخاف یعنی می‌ترسم و یقتلون به معنای این است که مرا بکشند."
+    },
+    {
+      "id": "q_u_p389b_A_1815",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "ترجمه آیه ۳۳ کدام است؟",
+      "stem": {
+        "verse": 33
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند،"
+        },
+        {
+          "id": "o2",
+          "fa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد تا مرا تصدیق کند؛"
+        },
+        {
+          "id": "o3",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما قدرتی قرار می دهم."
+        },
+        {
+          "id": "o4",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی نیست."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "موسی علیه‌السلام در این آیه به خداوند عرض می‌کند که یک نفر از قبطیان را کشته است و می‌ترسد او را قصاص کنند."
+    },
+    {
+      "id": "q_u_p389b_A_1816",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "ترجمه «إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا» چیست؟",
+      "stem": {
+        "text": "إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "من یک نفر از آنان را کشته ام،"
+        },
+        {
+          "id": "o2",
+          "fa": "پس او را همراه من بفرست که یاور و دستیارم باشد"
+        },
+        {
+          "id": "o3",
+          "fa": "می ترسم مرا بکشند،"
+        },
+        {
+          "id": "o4",
+          "fa": "و برای [از بین رفتن] ترسی که دچارش شده ای"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "نفسا در این آیه به معنای یک شخص و یک نفر است."
+    },
+    {
+      "id": "q_u_p389b_A_1817",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "عبارت «فَأَخَافُ أَن يَقْتُلُونِ» یعنی چه؟",
+      "stem": {
+        "text": "فَأَخَافُ أَن يَقْتُلُونِ"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "می ترسم مرا بکشند،"
+        },
+        {
+          "id": "o2",
+          "fa": "زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+        },
+        {
+          "id": "o3",
+          "fa": "که آنان به شما دست نیابند،"
+        },
+        {
+          "id": "o4",
+          "fa": "که همواره مردمی نافرمان هستند."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«فأخاف» یعنی پس می‌ترسم و «یقتلون» یعنی مرا بکشند."
+    },
+    {
+      "id": "q_u_p389b_A_1818",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "آیه مربوط به این ترجمه را مشخص کنید: «گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند،»",
+      "stem": {
+        "verse": 33,
+        "showFa": true,
+        "text": "گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 31,
+            "from": 1,
+            "to": 19
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "موسی علیه‌السلام کشته شدن فرد قبطی را به پیشگاه الهی عرضه می‌دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1819",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "عبارت عربی معادل «من یک نفر از آنان را کشته ام،» کدام است؟",
+      "stem": {
+        "showFa": true,
+        "text": "من یک نفر از آنان را کشته ام،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 33,
+            "from": 3,
+            "to": 6
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 33,
+            "from": 7,
+            "to": 9
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 11,
+            "to": 14
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 32,
+            "from": 22,
+            "to": 25
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "إنی قتلت منهم نفسا به معنای کشتن یک نفر از آنهاست."
+    },
+    {
+      "id": "q_u_p389b_A_1820",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "کدام بخش از آیه به معنای «می ترسم مرا بکشند،» است؟",
+      "stem": {
+        "showFa": true,
+        "text": "می ترسم مرا بکشند،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 33,
+            "from": 7,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 34,
+            "from": 11,
+            "to": 14
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 8,
+            "to": 10
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 31,
+            "from": 9,
+            "to": 12
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "فأخاف یعنی می‌ترسم و یقتلون به کشتن اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1821",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "قطعات ترجمه را بر اساس ترتیب آیه بچینید.",
+      "stem": {
+        "verse": 33
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "گفت: پروردگارا!",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "من یک نفر",
+          "wordIdx": [
+            3,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "از آنان را",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "کشته ام،",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "پشت کنان گریخت",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام،"
+    },
+    {
+      "id": "q_u_p389b_A_1822",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "ترجمه این آیه کوتاه را مرتب کنید.",
+      "stem": {
+        "verse": 33
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "من یک نفر از آنان را کشته ام،",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "می ترسم",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "مرا بکشند،",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "تکذیبم کنند.",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "similar_verse"
+      },
+      "explanationFa": "ابتدا به کشتن اشاره می‌کند و سپس ترس از قصاص را بیان می‌دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1823",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "جاهای خالی ترجمه را پر کنید.",
+      "stem": {
+        "verse": 33,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "یک نفر"
+          },
+          {
+            "start": 0,
+            "text": "کشته ام"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "یک نفر"
+        },
+        {
+          "id": "b2",
+          "fa": "کشته ام"
+        },
+        {
+          "id": "b3",
+          "fa": "یاور",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "نفسا یعنی یک نفر (شخص) و قتلت یعنی کشته‌ام."
+    },
+    {
+      "id": "q_u_p389b_A_1824",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 33,
+      "targets": [
+        "vt:33"
+      ],
+      "promptFa": "در ترجمه آیه چه کلماتی جاافتاده است؟",
+      "stem": {
+        "verse": 33,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "می ترسم"
+          },
+          {
+            "start": 0,
+            "text": "مرا بکشند"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "می ترسم"
+        },
+        {
+          "id": "b2",
+          "fa": "مرا بکشند"
+        },
+        {
+          "id": "b3",
+          "fa": "تکذیبم کنند",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "similar_verse"
+      },
+      "explanationFa": "أخاف یعنی می‌ترسم و یقتلون به معنای مرا بکشند است."
+    },
+    {
+      "id": "q_u_p389b_A_1825",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "تطبیق عبارات عربی آیه ۳۴ با ترجمه فارسی",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَأَخِى هَـٰرُونُ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَفْصَحُ مِنِّى"
+        },
+        {
+          "id": "l3",
+          "ar": "فَأَرْسِلْهُ مَعِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رِدْءًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و برادرم هارون"
+        },
+        {
+          "id": "r2",
+          "fa": "از من گویاتر است،"
+        },
+        {
+          "id": "r3",
+          "fa": "پس او را همراه من بفرست"
+        },
+        {
+          "id": "r4",
+          "fa": "که یاور و دستیارم باشد"
+        },
+        {
+          "id": "r5",
+          "fa": "تصدیق کند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "افصح صفت برتر از فصیح به معنای گویاتر است. ردء نیز یاور و پشتیبان است."
+    },
+    {
+      "id": "q_u_p389b_A_1826",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "معادل‌های فارسی کلمات آیه ۳۴ را بیابید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يُصَدِّقُنِىٓ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "إِنِّىٓ أَخَافُ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَن يُكَذِّبُونِ"
+        },
+        {
+          "id": "l4",
+          "ar": "لِسَانًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تا [در همه امور] مرا تصدیق کند؛"
+        },
+        {
+          "id": "r2",
+          "fa": "زیرا می ترسم"
+        },
+        {
+          "id": "r3",
+          "fa": "تکذیبم کنند."
+        },
+        {
+          "id": "r4",
+          "fa": "زبانش"
+        },
+        {
+          "id": "r5",
+          "fa": "مرا بکشند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "similar_verse"
+      },
+      "explanationFa": "یصدقنی به معنای مرا تصدیق کند و یکذبون به معنای تکذیب کردن است."
+    },
+    {
+      "id": "q_u_p389b_A_1827",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "ترجمه دقیق آیه ۳۴ کدام گزینه است؟",
+      "stem": {
+        "verse": 34
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+        },
+        {
+          "id": "o2",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم."
+        },
+        {
+          "id": "o3",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی و دروغین نیست،"
+        },
+        {
+          "id": "o4",
+          "fa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند،"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه به درخواست موسی علیه‌السلام برای همراهی هارون به دلیل فصاحت زبان و یاریگری اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1828",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "ترجمه این بخش «وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى لِسَانًۭا فَأَرْسِلْهُ مَعِىَ رِدْءًۭا» چیست؟",
+      "stem": {
+        "text": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى لِسَانًۭا فَأَرْسِلْهُ مَعِىَ رِدْءًۭا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد"
+        },
+        {
+          "id": "o2",
+          "fa": "تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+        },
+        {
+          "id": "o3",
+          "fa": "به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما قدرتی قرار می دهم"
+        },
+        {
+          "id": "o4",
+          "fa": "و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار،"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "«افصح منی لسانا» یعنی زبانش از من گویاتر است و «ردء» به معنای دستیار و پشتیبان است."
+    },
+    {
+      "id": "q_u_p389b_A_1829",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "ترجمه «يُصَدِّقُنِىٓ ۖ إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ» چیست؟",
+      "stem": {
+        "text": "يُصَدِّقُنِىٓ ۖ إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+        },
+        {
+          "id": "o2",
+          "fa": "پس او را همراه من بفرست که یاور و دستیارم باشد"
+        },
+        {
+          "id": "o3",
+          "fa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند،"
+        },
+        {
+          "id": "o4",
+          "fa": "شما و آنان که از شما پیروی کنند، پیروزید."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "تصدیق در مقابل تکذیب است؛ یصدقنی یعنی مرا تصدیق کند و یکذبون یعنی تکذیبم کنند."
+    },
+    {
+      "id": "q_u_p389b_A_1830",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "ترجمه زیر متعلق به کدام آیه است؟ «و برادرم هارون زبانش از من گویاتر است...»",
+      "stem": {
+        "verse": 34,
+        "showFa": true,
+        "text": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 33,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 25
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "درخواست موسی برای همراهی برادرش هارون در این آیه آمده است."
+    },
+    {
+      "id": "q_u_p389b_A_1831",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "عبارت «پس او را همراه من بفرست که یاور و دستیارم باشد» به عربی چه می‌شود؟",
+      "stem": {
+        "showFa": true,
+        "text": "پس او را همراه من بفرست که یاور و دستیارم باشد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 34,
+            "from": 7,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 2,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 34,
+            "from": 10,
+            "to": 14
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فأرسله یعنی او را بفرست، معی یعنی همراه من، و ردءاً یعنی پشتیبان و دستیار."
+    },
+    {
+      "id": "q_u_p389b_A_1832",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "کدام قسمت آیه به معنای «زیرا می ترسم تکذیبم کنند.» است؟",
+      "stem": {
+        "showFa": true,
+        "text": "زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 34,
+            "from": 11,
+            "to": 14
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 33,
+            "from": 7,
+            "to": 9
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 7,
+            "to": 10
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 8,
+            "to": 10
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "neighbor_word",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "إنی أخاف أن یکذبون به ترس از تکذیب شدن اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_1833",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "بخش اول ترجمه آیه ۳۴ را تنظیم کنید.",
+      "stem": {
+        "verse": 34
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و برادرم هارون",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "زبانش از من گویاتر است،",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "پس او را همراه من بفرست",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "که یاور و دستیارم باشد",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "قدرت و نیرویت را",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد"
+    },
+    {
+      "id": "q_u_p389b_A_1834",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "بخش دوم ترجمه را تکمیل نمایید.",
+      "stem": {
+        "verse": 34
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "تا [در همه امور] مرا تصدیق کند؛",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "زیرا می ترسم",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "[فرعون و فرعونیان]",
+          "wordIdx": []
+        },
+        {
+          "id": "b4",
+          "fa": "تکذیبم کنند.",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "مرا بکشند،",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "similar_verse"
+      },
+      "explanationFa": "تا مرا تصدیق کند؛ زیرا می ترسم فرعون و فرعونیان تکذیبم کنند."
+    },
+    {
+      "id": "q_u_p389b_A_1835",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "کلمات غایب در ترجمه آیه را بیابید.",
+      "stem": {
+        "verse": 34,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "گویاتر"
+          },
+          {
+            "start": 0,
+            "text": "زبانش"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "گویاتر"
+        },
+        {
+          "id": "b2",
+          "fa": "زبانش"
+        },
+        {
+          "id": "b3",
+          "fa": "استوارتر",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss"
+      },
+      "explanationFa": "افصح به معنای گویاتر و فصیح‌تر است و لسان به معنای زبان."
+    },
+    {
+      "id": "q_u_p389b_A_1836",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 34,
+      "targets": [
+        "vt:34"
+      ],
+      "promptFa": "ترجمه آیه ۳۴ را تکمیل کنید.",
+      "stem": {
+        "verse": 34,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "تصدیق کند"
+          },
+          {
+            "start": 0,
+            "text": "تکذیبم کنند"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "تصدیق کند"
+        },
+        {
+          "id": "b2",
+          "fa": "تکذیبم کنند"
+        },
+        {
+          "id": "b3",
+          "fa": "آزارم دهند",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss"
+      },
+      "explanationFa": "یصدقنی یعنی مرا تصدیق کند، و یکذبون یعنی مرا تکذیب کنند."
+    },
+    {
+      "id": "q_u_p389b_A_1837",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "کلمات آیه ۳۵ و معانی فارسی را مطابقت دهید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عَضُدَكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِأَخِيكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "سُلْطَـٰنًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "فَلَا يَصِلُونَ إِلَيْكُمَا ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قدرت و نیرویت را"
+        },
+        {
+          "id": "r2",
+          "fa": "به وسیله برادرت"
+        },
+        {
+          "id": "r3",
+          "fa": "قدرتی"
+        },
+        {
+          "id": "r4",
+          "fa": "که آنان به شما دست نیابند،"
+        },
+        {
+          "id": "r5",
+          "fa": "پیروی کنند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "عضد به معنای بازو و در اینجا قدرت و نیرو است. سلطان نیز به معنای قدرت و برهان قاطع است."
+    },
+    {
+      "id": "q_u_p389b_A_1838",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "بخش پایانی آیه ۳۵ را به ترجمه‌اش متصل کنید.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بِـَٔايَـٰتِنَآ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَنتُمَا"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱتَّبَعَكُمَا"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْغَـٰلِبُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به خاطر معجزات ما"
+        },
+        {
+          "id": "r2",
+          "fa": "شما"
+        },
+        {
+          "id": "r3",
+          "fa": "از شما پیروی کنند،"
+        },
+        {
+          "id": "r4",
+          "fa": "پیروزید."
+        },
+        {
+          "id": "r5",
+          "fa": "تکذیبم کنند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "similar_verse"
+      },
+      "explanationFa": "آیاتنا یعنی معجزات ما. الغالبون یعنی کسانی که پیروزند."
+    },
+    {
+      "id": "q_u_p389b_A_1839",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "ترجمه آیه «قَالَ سَنَشُدُّ عَضُدَكَ...» چیست؟",
+      "stem": {
+        "verse": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما [که در اختیارتان نهاده ام] قدرتی قرار می دهم که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+        },
+        {
+          "id": "o2",
+          "fa": "و برادرم هارون زبانش از من گویاتر است، پس او را همراه من بفرست که یاور و دستیارم باشد تا مرا تصدیق کند؛ زیرا می ترسم تکذیبم کنند."
+        },
+        {
+          "id": "o3",
+          "fa": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید، و دو دستت را بر سینه بگذار،"
+        },
+        {
+          "id": "o4",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی و دروغین نیست،"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه وعده الهی به موسی است که با برادرش او را تقویت می‌کند و به آنها برهان و قدرت پیروزی می‌بخشد."
+    },
+    {
+      "id": "q_u_p389b_A_1840",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "ترجمه «سَنَشُدُّ عَضُدَكَ بِأَخِيكَ وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا» چیست؟",
+      "stem": {
+        "text": "سَنَشُدُّ عَضُدَكَ بِأَخِيكَ وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما [که در اختیارتان نهاده ام] قدرتی قرار می دهم که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+        },
+        {
+          "id": "o2",
+          "fa": "فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ"
+        },
+        {
+          "id": "o3",
+          "fa": "پس این دو معجزه از ناحیه پروردگار توست به سوی فرعون"
+        },
+        {
+          "id": "o4",
+          "fa": "که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "سنشد یعنی به زودی محکم و افزون می‌کنیم. عضد به معنای قدرت و بازوست."
+    },
+    {
+      "id": "q_u_p389b_A_1841",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "معنی عبارت «بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ» چیست؟",
+      "stem": {
+        "text": "بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما [که در اختیارتان نهاده ام] قدرتی قرار می دهم که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+        },
+        {
+          "id": "o2",
+          "fa": "و برای هر دوی شما قدرتی قرار می دهم که آنان به شما دست نیابند،"
+        },
+        {
+          "id": "o3",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند این جز جادویی ساختگی نیست"
+        },
+        {
+          "id": "o4",
+          "fa": "تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این قسمت آیه تضمین پیروزی موسی و پیروان او را از طریق معجزات الهی بیان می‌کند."
+    },
+    {
+      "id": "q_u_p389b_A_1842",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "متن آیه مربوط به این ترجمه را انتخاب کنید: «[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم...»",
+      "stem": {
+        "verse": 35,
+        "showFa": true,
+        "text": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم، و برای هر دوی شما به خاطر معجزات ما [که در اختیارتان نهاده ام] قدرتی قرار می دهم که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 14
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 32,
+            "from": 1,
+            "to": 25
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 17
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "خداوند در آیه ۳۵ به موسی اطمینان می‌دهد که به کمک برادرش و برهان‌های الهی پیروز خواهد شد."
+    },
+    {
+      "id": "q_u_p389b_A_1843",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "کدام بخش از آیه ترجمه «به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،» است؟",
+      "stem": {
+        "showFa": true,
+        "text": "به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 35,
+            "from": 2,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 5,
+            "to": 7
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 1
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "سنشد عضدک بأخیک به معنای این است که به وسیله برادرت نیرویت را افزون و استوار می‌کنیم."
+    },
+    {
+      "id": "q_u_p389b_A_1844",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "«شما و آنان که از شما پیروی کنند، پیروزید.» به عربی چه می‌شود؟",
+      "stem": {
+        "showFa": true,
+        "text": "شما و آنان که از شما پیروی کنند، پیروزید."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 35,
+            "from": 12,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 8,
+            "to": 10
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 34,
+            "from": 11,
+            "to": 14
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 36,
+            "from": 12,
+            "to": 17
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "أنتما و من اتبعکما الغالبون یعنی شما دو نفر و هرکه از شما پیروی کند پیروزید."
+    },
+    {
+      "id": "q_u_p389b_A_1845",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "تکه‌های ترجمه آیه ۳۵ را مرتب کنید.",
+      "stem": {
+        "verse": 35
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "[خدا] گفت: به زودی",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "قدرت و نیرویت را",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "به وسیله برادرت",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "افزون کنم،",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "پس او را همراه من بفرست",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،"
+    },
+    {
+      "id": "q_u_p389b_A_1846",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "ادامه ترجمه آیه ۳۵ را پشت سر هم قرار دهید.",
+      "stem": {
+        "verse": 35
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و برای هر دوی شما",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "به خاطر معجزات ما",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "قدرتی قرار می دهم",
+          "wordIdx": [
+            5,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "که آنان به شما دست نیابند،",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "که همواره مردمی نافرمان هستند.",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم که آنان به شما دست نیابند،"
+    },
+    {
+      "id": "q_u_p389b_A_1847",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "جاهای خالی ترجمه را کامل کنید.",
+      "stem": {
+        "verse": 35,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "قدرت و نیرویت"
+          },
+          {
+            "start": 0,
+            "text": "افزون کنم"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "قدرت و نیرویت"
+        },
+        {
+          "id": "b2",
+          "fa": "افزون کنم"
+        },
+        {
+          "id": "b3",
+          "fa": "محافظت کنم",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "near_miss"
+      },
+      "explanationFa": "عضد به معنای قدرت و نیرو (در اصل بازو) و نشدّ به معنای افزون و محکم کردن است."
+    },
+    {
+      "id": "q_u_p389b_A_1848",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 35,
+      "targets": [
+        "vt:35"
+      ],
+      "promptFa": "کلمات غایب ترجمه آیه را برگزینید.",
+      "stem": {
+        "verse": 35,
+        "showFa": true,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "معجزات"
+          },
+          {
+            "start": 0,
+            "text": "قدرتی"
+          }
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "معجزات"
+        },
+        {
+          "id": "b2",
+          "fa": "قدرتی"
+        },
+        {
+          "id": "b3",
+          "fa": "پادشاهی",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "0": "b1",
+        "1": "b2"
+      },
+      "distractorTags": {
+        "b3": "false_friend"
+      },
+      "explanationFa": "آیات به معنای نشانه‌ها و معجزات است. سلطان در اینجا به معنای قدرت و برهان است، نه پادشاه."
+    }
+  ],
+  "issues": []
+}

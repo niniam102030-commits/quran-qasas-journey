@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p386a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p386a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 6,
+      "targets": [
+        "vr:6"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «و برای آنان در آن سرزمین، زمینه قدرت و حکومت آماده کنیم، و به فرعون و ...»، آیه 6 را مرتب کن:",
+      "stem": {
+        "verse": 6
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "مِنْهُم مَّا كَانُوا۟ يَحْذَرُونَ",
+          "wordIdx": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَنُرِىَ فِرْعَوْنَ وَهَـٰمَـٰنَ وَجُنُودَهُمَا",
+          "wordIdx": [
+            5,
+            8
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "وَنُمَكِّنَ لَهُمْ فِى ٱلْأَرْضِ",
+          "wordIdx": [
+            1,
+            4
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 6 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p386a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 6,
+      "targets": [
+        "vr:6"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 6 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 6,
+        "hiddenIdx": [
+          7
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَهَـٰمَـٰنَ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «وَهَـٰمَـٰنَ» در آیه 6 است."
+    }
+  ],
+  "issues": []
+}

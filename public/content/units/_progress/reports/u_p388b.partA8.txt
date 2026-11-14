@@ -1,0 +1,54 @@
+[#1 q_u_p388b_A_1501 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#1 q_u_p388b_A_1501 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p388b_A_1502 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#2 q_u_p388b_A_1502 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ۚ
+[#2 q_u_p388b_A_1502 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: تَخَفْ ۖ
+[#2 q_u_p388b_A_1502 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#5 q_u_p388b_A_1505 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p388b_A_1507 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p388b_A_1508 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p388b_A_1509 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#10 q_u_p388b_A_1510 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p388b_A_1511 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p388b_A_1512 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p388b_A_1513 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#13 q_u_p388b_A_1513 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ٱسْتَـْٔجِرْهُ ۖ
+[#14 q_u_p388b_A_1514 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#16 q_u_p388b_A_1516 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#16 q_u_p388b_A_1516 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#17 q_u_p388b_A_1517 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p388b_A_1517 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#19 q_u_p388b_A_1519 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p388b_A_1520 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p388b_A_1521 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p388b_A_1522 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#23 q_u_p388b_A_1523 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p388b_A_1524 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#25 q_u_p388b_A_1525 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#25 q_u_p388b_A_1525 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: حِجَجٍۢ ۖ
+[#26 q_u_p388b_A_1526 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#26 q_u_p388b_A_1526 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: عِندِكَ ۖ
+[#26 q_u_p388b_A_1526 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: ۚ
+[#28 q_u_p388b_A_1528 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#28 q_u_p388b_A_1528 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#29 q_u_p388b_A_1529 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p388b_A_1529 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#31 q_u_p388b_A_1531 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#32 q_u_p388b_A_1532 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#33 q_u_p388b_A_1533 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#34 q_u_p388b_A_1534 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#35 q_u_p388b_A_1535 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#36 q_u_p388b_A_1536 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#37 q_u_p388b_A_1537 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#37 q_u_p388b_A_1537 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: وَبَيْنَكَ ۖ
+[#38 q_u_p388b_A_1538 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#38 q_u_p388b_A_1538 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#40 q_u_p388b_A_1540 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#40 q_u_p388b_A_1540 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#41 q_u_p388b_A_1541 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#43 q_u_p388b_A_1543 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#44 q_u_p388b_A_1544 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#45 q_u_p388b_A_1545 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#46 q_u_p388b_A_1546 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#47 q_u_p388b_A_1547 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#48 q_u_p388b_A_1548 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

@@ -1,0 +1,26 @@
+[#1 q_u_p387a_A_1248 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: وَعِلْمًۭا ۚ
+[#3 q_u_p387a_A_1250 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#4 q_u_p387a_A_1251 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p387a_A_1252 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p387a_A_1254 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p387a_A_1255 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#9 q_u_p387a_A_1256 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p387a_A_1256 VERSE_TO_TRANSLATION] ترجمه‌ی گزینه‌ی صحیح زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#10 q_u_p387a_A_1257 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p387a_A_1258 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p387a_A_1260 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#14 q_u_p387a_A_1261 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: لَهُۥٓ ۚ
+[#15 q_u_p387a_A_1262 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#15 q_u_p387a_A_1262 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: لَهُۥٓ ۚ
+[#17 q_u_p387a_A_1264 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p387a_A_1265 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p387a_A_1266 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p387a_A_1268 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p387a_A_1269 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#22 q_u_p387a_A_1269 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#23 q_u_p387a_A_1270 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#23 q_u_p387a_A_1270 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#25 q_u_p387a_A_1272 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#26 q_u_p387a_A_1273 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#27 q_u_p387a_A_1274 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#29 q_u_p387a_A_1276 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

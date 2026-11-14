@@ -1,0 +1,775 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390a_A_0701",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "معنای «ٱلْمَلَأُ» چیست؟",
+      "stem": {
+        "wordId": "w28_038_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گِل"
+        },
+        {
+          "id": "o2",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "o3",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "o4",
+          "fa": "معبودان"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الملأ» یعنی سران و اشراف قوم. ریشه‌ی آن «م ل أ» است."
+    },
+    {
+      "id": "q_u_p390a_A_0702",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "«ٱلْمَلَأُ» در این آیه، فرعون خطاب به چه کسانی است؟",
+      "stem": {
+        "wordId": "w28_038_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مردم عادی شهر"
+        },
+        {
+          "id": "o2",
+          "fa": "برج‌سازان"
+        },
+        {
+          "id": "o3",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "o4",
+          "fa": "دروغگویان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فرعون سران و اشراف را صدا می‌زند: «ای اشراف و سران». «الملأ» گروه بزرگان است، نه هر جمعیتی."
+    },
+    {
+      "id": "q_u_p390a_A_0703",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "کدام معنا برای «ٱلْمَلَأُ» درست است؟",
+      "stem": {
+        "wordId": "w28_038_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گروه اشراف و بزرگان قوم"
+        },
+        {
+          "id": "o2",
+          "fa": "گروه سپاهیان"
+        },
+        {
+          "id": "o3",
+          "fa": "معبود بزرگ"
+        },
+        {
+          "id": "o4",
+          "fa": "برجی بلند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«الملأ» گروه اشراف و بزرگان قوم است. دقت کنید که فقط سپاه یا مردم عادی را نمی‌رساند."
+    },
+    {
+      "id": "q_u_p390a_A_0704",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "در «يَـٰٓأَيُّهَا ٱلْمَلَأُ» کلمه‌ی «ٱلْمَلَأُ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_038_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گِل و آجر"
+        },
+        {
+          "id": "o2",
+          "fa": "گروه کوچک مردم"
+        },
+        {
+          "id": "o3",
+          "fa": "معبودان"
+        },
+        {
+          "id": "o4",
+          "fa": "اشراف و سران"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "منادا «ٱلْمَلَأُ» است و یعنی اشراف و سران. فرعون با این خطاب بزرگان را مخاطب قرار می‌دهد."
+    },
+    {
+      "id": "q_u_p390a_A_0705",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "معنای «فَأَوْقِدْ» چیست؟",
+      "stem": {
+        "wordId": "w28_038_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس خاموش کن"
+        },
+        {
+          "id": "o2",
+          "fa": "پس بساز"
+        },
+        {
+          "id": "o3",
+          "fa": "پس بیفروز"
+        },
+        {
+          "id": "o4",
+          "fa": "پس بدان"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَأَوْقِدْ» فعل امر و یعنی «پس آتش روشن کن». با «وَقود» (سوخت) هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p390a_A_0706",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "معنای «فَأَوْقِدْ» چیست؟",
+      "stem": {
+        "wordId": "w28_038_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس آتش روشن کن"
+        },
+        {
+          "id": "o2",
+          "fa": "پس آگاه شو"
+        },
+        {
+          "id": "o3",
+          "fa": "پس برجی بساز"
+        },
+        {
+          "id": "o4",
+          "fa": "پس بگو"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«أوقد» از ریشه‌ی «و ق د» به معنی افروختن آتش است. «فـ» در اول آن یعنی «پس»."
+    },
+    {
+      "id": "q_u_p390a_A_0707",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "فرعون به هامان با «فَأَوْقِدْ» چه دستوری می‌دهد؟",
+      "stem": {
+        "wordId": "w28_038_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برج بساز"
+        },
+        {
+          "id": "o2",
+          "fa": "آتش بیفروز"
+        },
+        {
+          "id": "o3",
+          "fa": "گِل را بشمار"
+        },
+        {
+          "id": "o4",
+          "fa": "موسی را بیاور"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«فَأَوْقِدْ» یعنی پس بیفروز. ساختن برج در ادامه با «فَٱجْعَل» می‌آید."
+    },
+    {
+      "id": "q_u_p390a_A_0708",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "در «فَأَوْقِدْ لِى يَـٰهَـٰمَـٰنُ عَلَى ٱلطِّينِ» معنای «فَأَوْقِدْ» کدام است؟",
+      "stem": {
+        "wordId": "w28_038_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس ببین"
+        },
+        {
+          "id": "o2",
+          "fa": "پس بنشان"
+        },
+        {
+          "id": "o3",
+          "fa": "پس بساز"
+        },
+        {
+          "id": "o4",
+          "fa": "پس بیفروز"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "معنای آن «پس آتش روشن کن» است. هامان باید بر گِل آتش بیفروزد."
+    },
+    {
+      "id": "q_u_p390a_A_0709",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «اشراف و سران»؟",
+      "stem": {
+        "fa": "اشراف و سران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فِرْعَوْنُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْمَلَأُ» یعنی اشراف و سران. ریشه‌ی آن «م ل أ» است."
+    },
+    {
+      "id": "q_u_p390a_A_0710",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «گروه اشراف و بزرگان قوم»؟",
+      "stem": {
+        "fa": "گروه اشراف و بزرگان قوم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "مُوسَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَـٰهٍ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْمَلَأُ» گروه بزرگان و اشراف است. در این آیه فرعون آن‌ها را صدا می‌زند."
+    },
+    {
+      "id": "q_u_p390a_A_0711",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004"
+      ],
+      "promptFa": "برای «ای اشراف و سران!» کدام کلمه‌ی عربی بعد از «يَـٰٓأَيُّهَا» می‌آید؟",
+      "stem": {
+        "fa": "اشراف و سران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِلَـٰهِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْمَلَأُ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "بعد از «يَـٰٓأَيُّهَا» منادای «ٱلْمَلَأُ» می‌آید و یعنی اشراف و سران. دیگر گزینه‌ها هم «ال» دارند ولی معنایشان فرق دارد."
+    },
+    {
+      "id": "q_u_p390a_A_0712",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «پس بیفروز»؟",
+      "stem": {
+        "fa": "پس بیفروز"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلِمْتُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَأَوْقِدْ» یعنی پس آتش روشن کن. «فَٱجْعَل» یعنی «پس بساز»."
+    },
+    {
+      "id": "q_u_p390a_A_0713",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «پس آتش روشن کن»؟",
+      "stem": {
+        "fa": "پس آتش روشن کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَأَظُنُّهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o3",
+          "ar": "عَلِمْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَأَوْقِدْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«فَأَوْقِدْ» از ریشه‌ی «و ق د» است و با «فَٱجْعَل» (پس بساز) فرق دارد. هر دو با «فـ» شروع می‌شوند و فعل امر هستند."
+    },
+    {
+      "id": "q_u_p390a_A_0714",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_011"
+      ],
+      "promptFa": "برای دستور فرعون «پس بیفروز» کدام کلمه‌ی آیه درست است؟",
+      "stem": {
+        "fa": "پس بیفروز"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَطَّلِعُ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَٱجْعَل"
+        },
+        {
+          "id": "o4",
+          "ar": "لَأَظُنُّهُۥ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَأَوْقِدْ» دستور افروختن آتش است. «فَٱجْعَل» دستور ساختن برج است، نه افروختن."
+    },
+    {
+      "id": "q_u_p390a_A_0715",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004",
+        "w:w28_038_011"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلطِّينِ"
+        },
+        {
+          "id": "l4",
+          "ar": "صَرْحًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دروغگویان"
+        },
+        {
+          "id": "r2",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "r3",
+          "fa": "برجی بلند"
+        },
+        {
+          "id": "r4",
+          "fa": "پس بیفروز"
+        },
+        {
+          "id": "r5",
+          "fa": "گِل"
+        },
+        {
+          "id": "r6",
+          "fa": "معبود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْمَلَأُ» اشراف و سران و «فَأَوْقِدْ» پس بیفروز است. «معبود» معنای «إِلَـٰه» است و در این جفت‌سازی نیست."
+    },
+    {
+      "id": "q_u_p390a_A_0716",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 38,
+      "targets": [
+        "w:w28_038_004",
+        "w:w28_038_011"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَأَوْقِدْ"
+        },
+        {
+          "id": "l2",
+          "ar": "فِرْعَوْنُ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْمَلَأُ"
+        },
+        {
+          "id": "l4",
+          "ar": "يَـٰهَـٰمَـٰنُ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَطَّلِعُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "r2",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r3",
+          "fa": "پس بیفروز"
+        },
+        {
+          "id": "r4",
+          "fa": "آگاه شوم"
+        },
+        {
+          "id": "r5",
+          "fa": "ای هامان"
+        },
+        {
+          "id": "r6",
+          "fa": "پس بساز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«فَأَوْقِدْ» برای افروختن آتش و «ٱلْمَلَأُ» برای اشراف و سران است. «پس بساز» معنای «فَٱجْعَل» است و جفتی در ستون چپ ندارد."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ برای مرور از کلمات دیگر همین آیه استفاده شد."
+  ]
+}

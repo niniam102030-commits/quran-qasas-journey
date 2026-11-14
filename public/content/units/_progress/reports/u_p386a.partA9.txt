@@ -1,0 +1,6 @@
+[#3 q_u_p386a_A_0870 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p386a_A_0872 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p386a_A_0874 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: أَرْضِعِيهِ ۖ
+[#7 q_u_p386a_A_0874 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: تَحْزَنِىٓ ۖ
+[#9 q_u_p386a_A_0876 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p386a_A_0878 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.

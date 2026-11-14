@@ -1,0 +1,1226 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "C5",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388b_C_0501",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 23
+        },
+        {
+          "id": "o2",
+          "num": 24
+        },
+        {
+          "id": "o3",
+          "num": 25
+        },
+        {
+          "id": "o4",
+          "num": 26
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۵ است؛ پیش از آن آیه‌ی ۲۴ و پس از آن آیه‌ی ۲۶ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0502",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 21
+        },
+        {
+          "id": "o2",
+          "num": 25
+        },
+        {
+          "id": "o3",
+          "num": 27
+        },
+        {
+          "id": "o4",
+          "num": 28
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره‌ی این آیه ۲۵ است. آیه‌ی ۲۱ پایانی مشابه دارد، ولی شماره‌ی این آیه نیست."
+    },
+    {
+      "id": "q_u_p388b_C_0503",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 26
+        },
+        {
+          "id": "o2",
+          "num": 25
+        },
+        {
+          "id": "o3",
+          "num": 23
+        },
+        {
+          "id": "o4",
+          "num": 28
+        },
+        {
+          "id": "o5",
+          "num": 22
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۵ است و با شماره‌های ۲۲ تا ۲۸ که نزدیک‌اند اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388b_C_0504",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 24
+        },
+        {
+          "id": "o2",
+          "num": 27
+        },
+        {
+          "id": "o3",
+          "num": 25
+        },
+        {
+          "id": "o4",
+          "num": 26
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۶ است؛ پیش از آن آیه‌ی ۲۵ و پس از آن آیه‌ی ۲۷ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0505",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 29
+        },
+        {
+          "id": "o2",
+          "num": 26
+        },
+        {
+          "id": "o3",
+          "num": 24
+        },
+        {
+          "id": "o4",
+          "num": 27
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره‌ی این آیه ۲۶ است؛ شماره‌های ۲۴ و ۲۷ و ۲۹ مجاور آن هستند."
+    },
+    {
+      "id": "q_u_p388b_C_0506",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 23
+        },
+        {
+          "id": "o2",
+          "num": 27
+        },
+        {
+          "id": "o3",
+          "num": 28
+        },
+        {
+          "id": "o4",
+          "num": 26
+        },
+        {
+          "id": "o5",
+          "num": 25
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۶ است و بین آیه‌های ۲۵ و ۲۷ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0507",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 25
+        },
+        {
+          "id": "o2",
+          "num": 26
+        },
+        {
+          "id": "o3",
+          "num": 27
+        },
+        {
+          "id": "o4",
+          "num": 28
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۷ است؛ پیش از آن آیه‌ی ۲۶ و پس از آن آیه‌ی ۲۸ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0508",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 30
+        },
+        {
+          "id": "o2",
+          "num": 27
+        },
+        {
+          "id": "o3",
+          "num": 24
+        },
+        {
+          "id": "o4",
+          "num": 26
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره‌ی این آیه ۲۷ است و با ۲۴ و ۲۶ و ۳۰ اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388b_C_0509",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 29
+        },
+        {
+          "id": "o2",
+          "num": 28
+        },
+        {
+          "id": "o3",
+          "num": 26
+        },
+        {
+          "id": "o4",
+          "num": 27
+        },
+        {
+          "id": "o5",
+          "num": 25
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۷ است؛ شماره‌های ۲۵ و ۲۶ و ۲۸ و ۲۹ مجاور آن هستند."
+    },
+    {
+      "id": "q_u_p388b_C_0510",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28"
+      ],
+      "promptFa": "این آیه شماره‌ی چند است؟",
+      "stem": {
+        "verse": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 26
+        },
+        {
+          "id": "o2",
+          "num": 27
+        },
+        {
+          "id": "o3",
+          "num": 28
+        },
+        {
+          "id": "o4",
+          "num": 29
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۸ است؛ پیش از آن آیه‌ی ۲۷ و پس از آن آیه‌ی ۲۹ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0511",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28"
+      ],
+      "promptFa": "شماره‌ی این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 31
+        },
+        {
+          "id": "o2",
+          "num": 25
+        },
+        {
+          "id": "o3",
+          "num": 28
+        },
+        {
+          "id": "o4",
+          "num": 27
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شماره‌ی این آیه ۲۸ است و با ۲۷ و ۲۵ و ۳۱ اشتباه نشود."
+    },
+    {
+      "id": "q_u_p388b_C_0512",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 28
+        },
+        {
+          "id": "o2",
+          "num": 25
+        },
+        {
+          "id": "o3",
+          "num": 29
+        },
+        {
+          "id": "o4",
+          "num": 26
+        },
+        {
+          "id": "o5",
+          "num": 30
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه، آیه‌ی ۲۸ است و بین آیه‌های ۲۷ و ۲۹ قرار دارد."
+    },
+    {
+      "id": "q_u_p388b_C_0513",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25",
+        "vr:25"
+      ],
+      "promptFa": "آیه‌ی ۲۵ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_024_001",
+            "w28_024_002",
+            "w28_024_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 25,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_026_003"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۵ با «فَجَآءَتْهُ» آغاز می‌شود. گزینه‌ی دیگر که شبیه آن است، کلمه‌ی سوم را از آیه‌ی ۲۶ گرفته است."
+    },
+    {
+      "id": "q_u_p388b_C_0514",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25",
+        "vr:25"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۵ کدام است؟",
+      "stem": {
+        "num": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_025_015",
+            "w28_025_016"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_024_001",
+            "w28_024_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_026_001",
+            "w28_026_002"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 25,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آغاز آیه‌ی ۲۵ همین دو کلمه است. «فَلَمَّا جَآءَهُۥ» از میانه‌ی همین آیه است، نه آغاز آن."
+    },
+    {
+      "id": "q_u_p388b_C_0515",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 25,
+      "targets": [
+        "vn:25",
+        "vr:25"
+      ],
+      "promptFa": "آیه‌ی ۲۵ را با کدام آغاز می‌شناسید؟",
+      "stem": {
+        "num": 25
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_003",
+            "w28_026_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003",
+            "w28_025_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 25,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_024_001",
+            "w28_024_002",
+            "w28_024_003",
+            "w28_024_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در آیه‌ی ۲۵ پس از «تَمْشِى» کلمه‌ی «عَلَى» می‌آید و بعد «ٱسْتِحْيَآءٍۢ». گزینه‌ی o2 «عَلَى» را جا انداخته است."
+    },
+    {
+      "id": "q_u_p388b_C_0516",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26",
+        "vr:26"
+      ],
+      "promptFa": "آیه‌ی ۲۶ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_025_006",
+            "w28_025_007",
+            "w28_025_008"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_025_001",
+            "w28_025_002",
+            "w28_025_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 26,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_005"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۶ با «قَالَتْ إِحْدَىٰهُمَا يَـٰٓأَبَتِ» آغاز می‌شود. «قَالَتْ إِنَّ أَبِى» از آیه‌ی ۲۵ است."
+    },
+    {
+      "id": "q_u_p388b_C_0517",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26",
+        "vr:26"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۶ کدام است؟",
+      "stem": {
+        "num": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 26,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_025_001",
+            "w28_025_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_025_006",
+            "w28_025_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_027_001",
+            "w28_027_002"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۶ با «قَالَتْ إِحْدَىٰهُمَا» آغاز می‌شود. «فَجَآءَتْهُ إِحْدَىٰهُمَا» آغاز آیه‌ی ۲۵ است."
+    },
+    {
+      "id": "q_u_p388b_C_0518",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 26,
+      "targets": [
+        "vn:26",
+        "vr:26"
+      ],
+      "promptFa": "آیه‌ی ۲۶ را با کدام آغاز می‌شناسید؟",
+      "stem": {
+        "num": 26
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003",
+            "w28_027_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_003",
+            "w28_026_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_025_006",
+            "w28_025_007",
+            "w28_025_008",
+            "w28_025_009"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 26,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "پس از «يَـٰٓأَبَتِ» در آیه‌ی ۲۶ کلمه‌ی «ٱسْتَـْٔجِرْهُ» می‌آید. «ٱسْتَـْٔجَرْتَ» در میانه‌ی همان آیه است."
+    },
+    {
+      "id": "q_u_p388b_C_0519",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "آیه‌ی ۲۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 27,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_019"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۷ با «قَالَ إِنِّىٓ أُرِيدُ» آغاز می‌شود. «قَالَ ذَٰلِكَ» آغاز آیه‌ی ۲۸ است."
+    },
+    {
+      "id": "q_u_p388b_C_0520",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۷ کدام است؟",
+      "stem": {
+        "num": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003",
+            "w28_027_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 27,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003",
+            "w28_028_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_025_020",
+            "w28_025_021",
+            "w28_025_022",
+            "w28_025_023"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۲۷ با «قَالَ إِنِّىٓ أُرِيدُ أَنْ» آغاز می‌شود. در گزینه‌ی o1 کلمه‌ی «أَنْ» جا افتاده است."
+    },
+    {
+      "id": "q_u_p388b_C_0521",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 27,
+      "targets": [
+        "vn:27",
+        "vr:27"
+      ],
+      "promptFa": "آیه‌ی ۲۷ را با کدام آغاز می‌شناسید؟",
+      "stem": {
+        "num": 27
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003",
+            "w28_028_004",
+            "w28_028_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003",
+            "w28_027_004",
+            "w28_027_022"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_026_001",
+            "w28_026_002",
+            "w28_026_003",
+            "w28_026_004",
+            "w28_026_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 27,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "در آیه‌ی ۲۷ پس از «أَنْ»، کلمه‌ی «أُنكِحَكَ» می‌آید. «أَشُقَّ» به بخش بعدی همین آیه مربوط است."
+    },
+    {
+      "id": "q_u_p388b_C_0522",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "آیه‌ی ۲۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_029_012",
+            "w28_029_013",
+            "w28_029_014"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_011"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 28,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۸ با «قَالَ ذَٰلِكَ بَيْنِى» آغاز می‌شود. «قَالَ إِنِّىٓ أُرِيدُ» آغاز آیه‌ی ۲۷ است."
+    },
+    {
+      "id": "q_u_p388b_C_0523",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۲۸ کدام است؟",
+      "stem": {
+        "num": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_027_001",
+            "w28_027_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_025_020",
+            "w28_025_021"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 28,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_028_001",
+            "w28_028_008"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۲۸ با «قَالَ ذَٰلِكَ» آغاز می‌شود. «فَلَا» از میانه‌ی همین آیه است."
+    },
+    {
+      "id": "q_u_p388b_C_0524",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 28,
+      "targets": [
+        "vn:28",
+        "vr:28"
+      ],
+      "promptFa": "آیه‌ی ۲۸ را با کدام آغاز می‌شناسید؟",
+      "stem": {
+        "num": 28
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_028_001",
+            "w28_028_002",
+            "w28_028_003",
+            "w28_028_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_027_001",
+            "w28_027_002",
+            "w28_027_003",
+            "w28_027_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 28,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_029_012",
+            "w28_029_013",
+            "w28_029_014",
+            "w28_029_015"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "در آیه‌ی ۲۸ پس از «بَيْنِى»، «وَبَيْنَكَ» می‌آید. گزینه‌ی o1 این کلمه را جا انداخته است."
+    }
+  ],
+  "issues": []
+}

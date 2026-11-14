@@ -1,0 +1,963 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "A7",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p388b_A_1001",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "معنای «عُدْوَٰنَ» چیست؟",
+      "stem": {
+        "wordId": "w28_028_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دشمنی"
+        },
+        {
+          "id": "o2",
+          "fa": "تجاوز و ستم"
+        },
+        {
+          "id": "o3",
+          "fa": "مدت و زمان"
+        },
+        {
+          "id": "o4",
+          "fa": "نگهبان و کارساز"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«عُدْوَٰن» از ریشه‌ی «ع د و» یعنی تجاوز و ستم. با «دشمنی» اشتباه نگیرید."
+    },
+    {
+      "id": "q_u_p388b_A_1002",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "در این آیه معنای «عُدْوَٰنَ» چیست؟",
+      "stem": {
+        "wordId": "w28_028_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عدالت و انصاف"
+        },
+        {
+          "id": "o2",
+          "fa": "دشمن"
+        },
+        {
+          "id": "o3",
+          "fa": "تعدی و ستم"
+        },
+        {
+          "id": "o4",
+          "fa": "پایان دادن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَلَا عُدْوَٰنَ عَلَىَّ» یعنی هیچ تعدی و ستمی بر من نیست. «عدوّ» هم‌ریشه است اما معنای «دشمن» دارد."
+    },
+    {
+      "id": "q_u_p388b_A_1003",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "«عُدْوَٰنَ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_028_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دشمنی و کینه"
+        },
+        {
+          "id": "o2",
+          "fa": "قرارداد"
+        },
+        {
+          "id": "o3",
+          "fa": "بخشش"
+        },
+        {
+          "id": "o4",
+          "fa": "از حد گذشتن و ستم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "ریشه‌ی «ع د و» یعنی از حد گذشتن؛ هم‌ریشه با «تعدی». معنای قرآنی‌اش ستم و تجاوز است."
+    },
+    {
+      "id": "q_u_p388b_A_1004",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "در عبارت «فَلَا عُدْوَٰنَ عَلَىَّ» کلمه‌ی «عُدْوَٰنَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_028_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تجاوز و ستم"
+        },
+        {
+          "id": "o2",
+          "fa": "دشمنی و کینه"
+        },
+        {
+          "id": "o3",
+          "fa": "دشمنِ آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "مدت قرارداد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُدْوَٰن» یعنی تجاوز از حد و ستم، نه دشمنی. هم‌ریشه با «تعدی» و «عدوّ» است."
+    },
+    {
+      "id": "q_u_p388b_A_1005",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "معنای «وَكِيلٌ» چیست؟",
+      "stem": {
+        "wordId": "w28_028_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وکیل دادگستری"
+        },
+        {
+          "id": "o2",
+          "fa": "توکل و اعتماد"
+        },
+        {
+          "id": "o3",
+          "fa": "نگهبان و کارساز"
+        },
+        {
+          "id": "o4",
+          "fa": "گفتار"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَكِيل» از ریشه‌ی «و ك ل» یعنی نگهبان و کارساز. با «وکیل دادگستری» یکی نیست."
+    },
+    {
+      "id": "q_u_p388b_A_1006",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "در این آیه «وَكِيلٌ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_028_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وکیل دادگستری"
+        },
+        {
+          "id": "o2",
+          "fa": "نگهبان و وکیل"
+        },
+        {
+          "id": "o3",
+          "fa": "مدت زمان"
+        },
+        {
+          "id": "o4",
+          "fa": "تجاوز و ستم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌ» یعنی خدا بر آنچه می‌گوییم نگهبان و وکیل است."
+    },
+    {
+      "id": "q_u_p388b_A_1007",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "«وَكِيلٌ» به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_028_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سخنگو و گوینده"
+        },
+        {
+          "id": "o2",
+          "fa": "وکیل مدافع در دادگاه"
+        },
+        {
+          "id": "o3",
+          "fa": "توکل‌کننده"
+        },
+        {
+          "id": "o4",
+          "fa": "کسی که کار به او سپرده می‌شود"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "same_root"
+      },
+      "explanationFa": "«وَكِيل» هم‌ریشه با «توکل» است و یعنی کسی که کار به او سپرده می‌شود. «توکل‌کننده» همان کسی است که کار را می‌سپارد، نه کارساز."
+    },
+    {
+      "id": "q_u_p388b_A_1008",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "در پایان آیه، «وَكِيلٌ» برای خدا چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_028_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نگهبان و کارساز"
+        },
+        {
+          "id": "o2",
+          "fa": "وکیل قانونی در دادگاه"
+        },
+        {
+          "id": "o3",
+          "fa": "گواه و شاهد"
+        },
+        {
+          "id": "o4",
+          "fa": "ستمکار"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "در این آیه «وَكِيل» یعنی نگهبان و کارساز. معنای «وکیل دادگستری» در فارسی، دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388b_A_1009",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «تجاوز و ستم» است؟",
+      "stem": {
+        "fa": "تجاوز و ستم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَضَيْتُ"
+        },
+        {
+          "id": "o2",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَكِيلٌۭ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُدْوَٰنَ» از ریشه‌ی «ع د و» به معنای تجاوز و ستم است."
+    },
+    {
+      "id": "q_u_p388b_A_1010",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «تعدّی و ستم» است؟",
+      "stem": {
+        "fa": "تعدّی و ستم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "نَقُولُ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَلَا"
+        },
+        {
+          "id": "o3",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ذَٰلِكَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«عُدْوَٰنَ» هم‌ریشه با «تعدی» است و در این آیه یعنی ستم و تجاوز."
+    },
+    {
+      "id": "q_u_p388b_A_1011",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009"
+      ],
+      "promptFa": "کدام کلمه به معنای «از حد گذشتن و ستم» است؟",
+      "stem": {
+        "fa": "از حد گذشتن و ستم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱللَّهُ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَيْنِى"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ع د و» یعنی از حد گذشتن؛ «عُدْوَٰنَ» یعنی ستم و تجاوز."
+    },
+    {
+      "id": "q_u_p388b_A_1012",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «نگهبان و وکیل» است؟",
+      "stem": {
+        "fa": "نگهبان و وکیل"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَجَلَيْنِ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَضَيْتُ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَكِيلٌۭ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«وَكِيلٌ» از ریشه‌ی «و ك ل» یعنی نگهبان و کارساز."
+    },
+    {
+      "id": "q_u_p388b_A_1013",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "کدام کلمه به معنای «نگهبان و کارساز» است؟",
+      "stem": {
+        "fa": "نگهبان و کارساز"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱللَّهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَكِيلٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "نَقُولُ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَلَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَكِيلٌ» یعنی نگهبان و کارساز؛ هم‌ریشه با «توکل»."
+    },
+    {
+      "id": "q_u_p388b_A_1014",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_015"
+      ],
+      "promptFa": "کدام کلمه به معنای «کسی که کار به او سپرده می‌شود» است؟",
+      "stem": {
+        "fa": "کسی که کار به او سپرده می‌شود"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "عُدْوَٰنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَكِيلٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَلَىَّ ۖ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«وَكِيل» از ریشه‌ی «و ك ل» است؛ همان ریشه‌ی «توکل» که یعنی سپردن کار به دیگری."
+    },
+    {
+      "id": "q_u_p388b_A_1015",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009",
+        "w:w28_028_015"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عُدْوَٰنَ",
+          "wordId": "w28_028_009"
+        },
+        {
+          "id": "l2",
+          "ar": "وَكِيلٌۭ",
+          "wordId": "w28_028_015"
+        },
+        {
+          "id": "l3",
+          "ar": "قَالَ",
+          "wordId": "w28_028_001"
+        },
+        {
+          "id": "l4",
+          "ar": "نَقُولُ",
+          "wordId": "w28_028_014"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَجَلَيْنِ",
+          "wordId": "w28_028_006"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "می‌گوییم"
+        },
+        {
+          "id": "r2",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r3",
+          "fa": "تجاوز و ستم"
+        },
+        {
+          "id": "r4",
+          "fa": "دشمنی"
+        },
+        {
+          "id": "r5",
+          "fa": "گفت"
+        },
+        {
+          "id": "r6",
+          "fa": "نگهبان و کارساز"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r4": "false_friend"
+      },
+      "explanationFa": "«عُدْوَٰن» تجاوز و ستم است نه دشمنی؛ «وَكِيل» نگهبان و کارساز است."
+    },
+    {
+      "id": "q_u_p388b_A_1016",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009",
+        "w:w28_028_015"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَكِيلٌۭ",
+          "wordId": "w28_028_015"
+        },
+        {
+          "id": "l2",
+          "ar": "قَضَيْتُ",
+          "wordId": "w28_028_007"
+        },
+        {
+          "id": "l3",
+          "ar": "عُدْوَٰنَ",
+          "wordId": "w28_028_009"
+        },
+        {
+          "id": "l4",
+          "ar": "بَيْنِى",
+          "wordId": "w28_028_003"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱللَّهُ",
+          "wordId": "w28_028_011"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و خدا"
+        },
+        {
+          "id": "r2",
+          "fa": "نگهبان و کارساز"
+        },
+        {
+          "id": "r3",
+          "fa": "میان من"
+        },
+        {
+          "id": "r4",
+          "fa": "تجاوز و ستم"
+        },
+        {
+          "id": "r5",
+          "fa": "به پایان بردم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«قَضَيْتُ» یعنی به پایان بردم؛ «بَيْنِى» یعنی میان من."
+    },
+    {
+      "id": "q_u_p388b_A_1017",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009",
+        "w:w28_028_015"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ذَٰلِكَ",
+          "wordId": "w28_028_002"
+        },
+        {
+          "id": "l2",
+          "ar": "عُدْوَٰنَ",
+          "wordId": "w28_028_009"
+        },
+        {
+          "id": "l3",
+          "ar": "عَلَىَّ ۖ",
+          "wordId": "w28_028_010"
+        },
+        {
+          "id": "l4",
+          "ar": "وَكِيلٌۭ",
+          "wordId": "w28_028_015"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَجَلَيْنِ",
+          "wordId": "w28_028_006"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو مدت"
+        },
+        {
+          "id": "r2",
+          "fa": "بر من"
+        },
+        {
+          "id": "r3",
+          "fa": "وکیل دادگستری"
+        },
+        {
+          "id": "r4",
+          "fa": "نگهبان و کارساز"
+        },
+        {
+          "id": "r5",
+          "fa": "این"
+        },
+        {
+          "id": "r6",
+          "fa": "تجاوز و ستم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "«وَكِيل» در این آیه نگهبان و کارساز است، نه وکیل دادگستری."
+    },
+    {
+      "id": "q_u_p388b_A_1018",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 28,
+      "targets": [
+        "w:w28_028_009",
+        "w:w28_028_015"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "نَقُولُ",
+          "wordId": "w28_028_014"
+        },
+        {
+          "id": "l2",
+          "ar": "وَكِيلٌۭ",
+          "wordId": "w28_028_015"
+        },
+        {
+          "id": "l3",
+          "ar": "قَضَيْتُ",
+          "wordId": "w28_028_007"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱللَّهُ",
+          "wordId": "w28_028_011"
+        },
+        {
+          "id": "l5",
+          "ar": "عُدْوَٰنَ",
+          "wordId": "w28_028_009"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تجاوز و ستم"
+        },
+        {
+          "id": "r2",
+          "fa": "به پایان بردم"
+        },
+        {
+          "id": "r3",
+          "fa": "می‌گوییم"
+        },
+        {
+          "id": "r4",
+          "fa": "نگهبان و کارساز"
+        },
+        {
+          "id": "r5",
+          "fa": "و خدا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«عُدْوَٰن» هم‌ریشه با «تعدی» و «وَكِيل» هم‌ریشه با «توکل» است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,2208 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "B2",
+  "generatedBy": "Gemini-2.5-Pro",
+  "questions": [
+    {
+      "id": "q_u_p392a_B_0581",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 52,
+      "targets": [
+        "vt:52",
+        "vr:52"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید: «[و برخی از] کسانی که پیش از قرآن کتابشان دادیم،»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن قَبْلِهِۦ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه بخش اول آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0582",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 52,
+      "targets": [
+        "vt:52",
+        "vr:52"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بسازید: «به قرآن ایمان می آورند،»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بخش پایانی آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0583",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 52,
+      "targets": [
+        "vt:52",
+        "vr:52"
+      ],
+      "promptFa": "آیه را بر اساس ترجمه بچینید: «[و برخی از] کسانی که پیش از قرآن کتابشان دادیم، به قرآن ایمان می آورند،»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "وَهُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "near_miss"
+      },
+      "explanationFa": "ترجمه کامل آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0584",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "آیه ۵۲ را از قطعات زیر بسازید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن قَبْلِهِۦ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم بِهِۦ يُؤْمِنُونَ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن قَبْلِهِم",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {
+        "b4": "false_friend"
+      },
+      "explanationFa": "تشکیل آیه ۵۲ با کلمات صحیح."
+    },
+    {
+      "id": "q_u_p392a_B_0585",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کلمات آیه ۵۲ را به ترتیب بچینید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
+      "distractorTags": {
+        "b9": "similar_verse"
+      },
+      "explanationFa": "ترتیب کلمات آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0586",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "متن آیه ۵۲ را کامل کنید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبَ مِن قَبْلِهِۦ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم بِهِۦ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "random"
+      },
+      "explanationFa": "ترتیب صحیح آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0587",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "جاهای خالی را پر کنید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          2,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَكْفُلُونَهُۥ",
+          "decoy": true
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "8": "b2"
+      },
+      "distractorTags": {
+        "b3": "random",
+        "b4": "same_root"
+      },
+      "explanationFa": "کلمات پنهان: آتیناهم، یؤمنون."
+    },
+    {
+      "id": "q_u_p392a_B_0588",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کلمات جاافتاده را در جای صحیح قرار دهید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          1,
+          4,
+          7
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "عَلَى",
+          "decoy": true
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَيْهِ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "4": "b2",
+        "7": "b3"
+      },
+      "distractorTags": {
+        "b4": "random",
+        "b5": "false_friend"
+      },
+      "explanationFa": "کلمات پنهان: الذین، من، به."
+    },
+    {
+      "id": "q_u_p392a_B_0589",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "بخش اعظم آیه را کامل کنید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "5": "b3",
+        "6": "b4",
+        "8": "b5"
+      },
+      "distractorTags": {
+        "b6": "same_root"
+      },
+      "explanationFa": "تکمیل کلمات اصلی آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0590",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "تقریبا تمام آیه را بازسازی کنید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَيْنَـٰهُمُ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْكِتَـٰبَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2",
+        "3": "b3",
+        "5": "b4",
+        "7": "b5",
+        "8": "b6"
+      },
+      "distractorTags": {
+        "b7": "random"
+      },
+      "explanationFa": "بازسازی کلمات آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0591",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "ادامه آیه را تکمیل کنید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "showFa": false,
+        "givenCount": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْكِتَـٰبَ مِن",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم بِهِۦ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَبْلِهِم",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "5": "b2",
+        "6": "b3",
+        "8": "b4"
+      },
+      "distractorTags": {
+        "b5": "near_miss"
+      },
+      "explanationFa": "تکمیل کلمات پس از الذین آتیناهم."
+    },
+    {
+      "id": "q_u_p392a_B_0592",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "نیمه دوم آیه را بچینید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "showFa": false,
+        "givenCount": 4
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هُم",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُمْ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2",
+        "7": "b3",
+        "8": "b4"
+      },
+      "distractorTags": {
+        "b5": "false_friend"
+      },
+      "explanationFa": "تکمیل پس از الکتاب من."
+    },
+    {
+      "id": "q_u_p392a_B_0593",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کلمات پایانی آیه را قرار دهید.",
+      "stem": {
+        "verse": 52,
+        "hiddenIdx": [
+          7,
+          8
+        ],
+        "showFa": false,
+        "givenCount": 6
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِهِۦ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مُسْلِمِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "7": "b1",
+        "8": "b2"
+      },
+      "distractorTags": {
+        "b3": "neighbor_word"
+      },
+      "explanationFa": "دو کلمه پایانی آیه ۵۲."
+    },
+    {
+      "id": "q_u_p392a_B_0594",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کدام گزینه پایان آیه را به درستی تکمیل می‌کند؟",
+      "stem": {
+        "verse": 52,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَهُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "هُم بِهِۦ مُسْلِمِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "هُم لَهُۥ يُؤْمِنُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "پایان آیه ۵۲ هُم بِهِۦ يُؤْمِنُونَ است."
+    },
+    {
+      "id": "q_u_p392a_B_0595",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "پایان آیه ۵۲ کدام است؟",
+      "stem": {
+        "verse": 52,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لَهُۥ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "بِهِۦ مُسْلِمِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فِيهِ يُؤْمِنُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "عبارت پایانی بِهِۦ يُؤْمِنُونَ است."
+    },
+    {
+      "id": "q_u_p392a_B_0596",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کدام نسخه از آیه ۵۲ کاملاً صحیح است؟",
+      "stem": {
+        "verseNum": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِمْ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ وَهُم بِهِۦ يُؤْمِنُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه بدون واو در ابتدا و با مِن قَبْلِهِۦ هُم صحیح است."
+    },
+    {
+      "id": "q_u_p392a_B_0597",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 52,
+      "targets": [
+        "vr:52"
+      ],
+      "promptFa": "کدام ترکیب کلمات در آیه ۵۲ دقیق و صحیح است؟",
+      "stem": {
+        "verseNum": 52
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن بَعْدِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ هُم لَهُۥ يُؤْمِنُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْقَوْلَ مِن قَبْلِهِۦ هُم بِهِۦ يُؤْمِنُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "متن صحیح: مِن قَبْلِهِۦ و ٱلْكِتَـٰبَ."
+    },
+    {
+      "id": "q_u_p392a_B_0598",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "translation",
+      "verse": 53,
+      "targets": [
+        "vt:53",
+        "vr:53"
+      ],
+      "promptFa": "بر اساس ترجمه بسازید: «و هنگامی که بر آنان خوانند، می گویند: به آن ایمان آوردیم،»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوٓا۟ ءَامَنَّا بِهِۦٓ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترجمه بخش اول آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0599",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "translation",
+      "verse": 53,
+      "targets": [
+        "vt:53",
+        "vr:53"
+      ],
+      "promptFa": "بر اساس ترجمه بسازید: «یقیناً این قرآن از سوی پروردگارمان حق و درست است،»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّهُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَّبِّنَآ",
+          "wordIdx": [
+            10
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "بخش میانی آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0600",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 53,
+      "targets": [
+        "vt:53",
+        "vr:53"
+      ],
+      "promptFa": "بر اساس ترجمه بچینید: «البته ما پیش از نزول آن تسلیم بودیم.»",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "same_root",
+        "b7": "random"
+      },
+      "explanationFa": "بخش پایانی آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0601",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "آیه ۵۳ را از قطعات زیر بسازید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوٓا۟ ءَامَنَّا بِهِۦٓ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُ ٱلْحَقُّ مِن رَّبِّنَآ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّا كُنَّا مِن قَبْلِهِۦ مُسْلِمِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "near_miss"
+      },
+      "explanationFa": "چینش کامل قطعات آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0602",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "بخش میانی آیه ۵۳ را مرتب کنید. (از إِنَّهُ تا كُنَّا)",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّهُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "رَّبِّنَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "random"
+      },
+      "explanationFa": "بخش میانی آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0603",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "بخش پایانی آیه ۵۳ را بسازید. (از إِنَّا تا پایان)",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "قَبْلِهِم",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "near_miss"
+      },
+      "explanationFa": "پایان آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0604",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "جاهای خالی را پر کنید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          2,
+          5,
+          10,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَامَنَّا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "رَّبِّنَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُؤْمِنُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "10": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {
+        "b5": "neighbor_word"
+      },
+      "explanationFa": "تکمیل کلمات جاافتاده آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0605",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "کلمات جاافتاده را در جای صحیح قرار دهید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          1,
+          4,
+          7,
+          12,
+          14
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوٓا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "فَإِذَا",
+          "decoy": true
+        },
+        {
+          "id": "b7",
+          "ar": "إِنَّهَا",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "4": "b2",
+        "7": "b3",
+        "12": "b4",
+        "14": "b5"
+      },
+      "distractorTags": {
+        "b6": "near_miss",
+        "b7": "near_miss"
+      },
+      "explanationFa": "کلمات پنهان آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0606",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "بخش اعظم آیه را کامل کنید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          2,
+          3,
+          6,
+          8,
+          9,
+          11,
+          13,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُتْلَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِهِۦٓ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِن",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "عَلَيْهِ",
+          "decoy": true
+        },
+        {
+          "id": "b10",
+          "ar": "مُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "3": "b2",
+        "6": "b3",
+        "8": "b4",
+        "9": "b5",
+        "11": "b6",
+        "13": "b7",
+        "15": "b8"
+      },
+      "distractorTags": {
+        "b9": "near_miss",
+        "b10": "false_friend"
+      },
+      "explanationFa": "تکمیل کلمات کلیدی آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0607",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "تقریبا تمام آیه ۵۳ را بازسازی کنید. (۱۱ کلمه مخفی است)",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمْ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَالُوٓا۟",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ءَامَنَّا",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّهُ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "رَّبِّنَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "إِنَّا",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "4": "b3",
+        "5": "b4",
+        "7": "b5",
+        "8": "b6",
+        "10": "b7",
+        "11": "b8",
+        "12": "b9",
+        "14": "b10",
+        "15": "b11"
+      },
+      "distractorTags": {},
+      "explanationFa": "بازسازی دقیق آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0608",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "ادامه آیه را تکمیل کنید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false,
+        "givenCount": 4
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ءَامَنَّا بِهِۦٓ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنَّهُ ٱلْحَقُّ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن رَّبِّنَآ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّا كُنَّا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِن قَبْلِهِۦ مُسْلِمِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِن قَبْلِهِم",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "7": "b2",
+        "9": "b3",
+        "11": "b4",
+        "13": "b5"
+      },
+      "distractorTags": {
+        "b6": "near_miss"
+      },
+      "explanationFa": "ادامه آیه ۵۳ پس از قالوا."
+    },
+    {
+      "id": "q_u_p392a_B_0609",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "نیمه دوم آیه را بچینید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false,
+        "givenCount": 7
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْحَقُّ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن رَّبِّنَآ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّا كُنَّا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن قَبْلِهِۦ",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "8": "b1",
+        "9": "b2",
+        "11": "b3",
+        "13": "b4",
+        "15": "b5"
+      },
+      "distractorTags": {
+        "b6": "false_friend"
+      },
+      "explanationFa": "ادامه آیه پس از إنه."
+    },
+    {
+      "id": "q_u_p392a_B_0610",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "کلمات پایانی آیه را قرار دهید.",
+      "stem": {
+        "verse": 53,
+        "hiddenIdx": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "showFa": false,
+        "givenCount": 11
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "كُنَّا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَبْلِهِۦ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مُسْلِمِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "12": "b1",
+        "13": "b2",
+        "14": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {
+        "b5": "random"
+      },
+      "explanationFa": "تکمیل کلمات پایانی آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_B_0611",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "کدام گزینه پایان آیه ۵۳ را به درستی تکمیل می‌کند؟",
+      "stem": {
+        "verse": 53,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مِن قَبْلِهِۦ مُسْلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "مِن قَبْلِهِۦ مُؤْمِنِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مِن قَبْلِهِۦ خَـٰطِـِٔينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مِن قَبْلِهِم مُسْلِمِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "پایان صحیح آیه ۵۳: مِن قَبْلِهِۦ مُسْلِمِينَ است."
+    },
+    {
+      "id": "q_u_p392a_B_0612",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "دو کلمه پایانی آیه ۵۳ چیست؟",
+      "stem": {
+        "verse": 53,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَبْلِهِم مُسْلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بَعْدِهِۦ مُسْلِمِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَبْلِهِۦ مُسْلِمِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَبْلِهِۦ صَـٰبِرِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "کلمات پایانی قَبْلِهِۦ مُسْلِمِينَ است."
+    },
+    {
+      "id": "q_u_p392a_B_0613",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "کدام شروع برای آیه ۵۳ صحیح است؟",
+      "stem": {
+        "verseNum": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَلَمَّا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "شروع صحیح با وَإِذَا يُتْلَىٰ عَلَيْهِمْ است."
+    },
+    {
+      "id": "q_u_p392a_B_0614",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 53,
+      "targets": [
+        "vr:53"
+      ],
+      "promptFa": "کدام بخش از میانه آیه ۵۳ به درستی آمده است؟",
+      "stem": {
+        "verseNum": 53
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِنَّهُ حَقٌّ مِّن رَّبِّنَآ إِنَّا كُنَّا"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّهُ ٱلْحَقُّ مِن رَّبِّنَآ إِنَّا كُنَّا"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ إِنَّا كُنَّا"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّهَا ٱلْحَقُّ مِن رَّبِّنَآ إِنَّا كُنَّا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترکیب صحیح: إِنَّهُ ٱلْحَقُّ مِن رَّبِّنَآ است."
+    }
+  ],
+  "issues": []
+}

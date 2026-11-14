@@ -1,0 +1,2 @@
+[#1 q_u_p389a_B_1101 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p389a_B_1102 MUTASHABIH_SPOT] stage باید در بازه‌ی 3 تا 4 باشد.

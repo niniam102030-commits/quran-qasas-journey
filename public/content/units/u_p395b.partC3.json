@@ -1,0 +1,429 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395b",
+  "part": "C3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p395b_C_0741",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84"
+      ],
+      "promptFa": "آیه «مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا...» کدام است؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 83
+        },
+        {
+          "id": "o3",
+          "num": 85
+        },
+        {
+          "id": "o4",
+          "num": 82
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "این آیه بیانگر پاداش نیکوکاران و جزای بدکاران در آیه ۸۴ است."
+    },
+    {
+      "id": "q_u_p395b_C_0742",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84"
+      ],
+      "promptFa": "آیه «...وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى ٱلَّذِينَ...» کدام است؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 82
+        },
+        {
+          "id": "o3",
+          "num": 85
+        },
+        {
+          "id": "o4",
+          "num": 80
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "این بخش مربوط به آیه ۸۴ است که کیفر بدکاران را معادل عملشان می‌داند."
+    },
+    {
+      "id": "q_u_p395b_C_0743",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84"
+      ],
+      "promptFa": "آیه «...ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ إِلَّا مَا كَانُوا۟ يَعْمَلُونَ» کدام است؟",
+      "stem": {
+        "verse": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 83
+        },
+        {
+          "id": "o2",
+          "num": 85
+        },
+        {
+          "id": "o3",
+          "num": 84
+        },
+        {
+          "id": "o4",
+          "num": 81
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه ۸۴ به این موضوع اشاره دارد که بدکاران تنها به اندازه عملشان مجازات می‌شوند."
+    },
+    {
+      "id": "q_u_p395b_C_0744",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84",
+        "vr:84"
+      ],
+      "promptFa": "آیه ۸۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَالَ ٱلَّذِينَ أُوتُوا۟"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۸۴ با بیان پاداش کار نیک (مَن جَآءَ بِٱلْحَسَنَةِ) آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p395b_C_0745",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84",
+        "vr:84"
+      ],
+      "promptFa": "آیه ۸۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آغاز آیه ۸۴ درباره نتیجه آوردن کار نیک به پیشگاه خداست."
+    },
+    {
+      "id": "q_u_p395b_C_0746",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84",
+        "vr:84"
+      ],
+      "promptFa": "آیه ۸۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ"
+        },
+        {
+          "id": "o2",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا"
+        },
+        {
+          "id": "o3",
+          "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۸۴ با «مَن جَآءَ بِٱلْحَسَنَةِ» شروع می‌شود و عبارت «وَمَن جَآءَ بِٱلسَّيِّئَةِ» در میانه همین آیه است."
+    },
+    {
+      "id": "q_u_p395b_C_0747",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 84,
+      "targets": [
+        "vr:84"
+      ],
+      "promptFa": "آیه ۸۴ را بسازید.",
+      "stem": {
+        "num": 84
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَلَا يُجْزَى ٱلَّذِينَ عَمِلُوا۟ ٱلسَّيِّـَٔاتِ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَّا مَا كَانُوا۟ يَعْمَلُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "explanationFa": "ابتدا پاداش کار نیک و سپس کیفر کار بد دقیقاً به اندازه همان کار بیان می‌شود."
+    },
+    {
+      "id": "q_u_p395b_C_0748",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 84,
+      "targets": [
+        "vn:84",
+        "vr:84"
+      ],
+      "promptFa": "آیه ۸۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 84
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَمَن جَآءَ بِٱلسَّيِّئَةِ فَلَا يُجْزَى"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا لِلَّذِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ خَيْرٌۭ مِّنْهَا ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "در آیه ۸۴ ابتدا «مَن جَآءَ بِٱلْحَسَنَةِ» و سپس در ادامه «وَمَن جَآءَ بِٱلسَّيِّئَةِ» آمده است."
+    },
+    {
+      "id": "q_u_p395b_C_0749",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "sq:81",
+        "sq:82",
+        "sq:83"
+      ],
+      "promptFa": "ترتیب صحیح آیات ۸۱ تا ۸۴ را مشخص کنید.",
+      "stem": {
+        "verses": [
+          81,
+          82,
+          83,
+          84
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ...",
+          "num": 81,
+          "verse": 81
+        },
+        {
+          "id": "b2",
+          "ar": "وَأَصْبَحَ ٱلَّذِينَ تَمَنَّوْا۟ مَكَانَهُۥ...",
+          "num": 82,
+          "verse": 82
+        },
+        {
+          "id": "b3",
+          "ar": "تِلْكَ ٱلدَّارُ ٱلْـَٔاخِرَةُ نَجْعَلُهَا...",
+          "num": 83,
+          "verse": 83
+        },
+        {
+          "id": "b4",
+          "ar": "مَن جَآءَ بِٱلْحَسَنَةِ فَلَهُۥ...",
+          "num": 84,
+          "verse": 84
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "explanationFa": "ابتدا فرو رفتن قارون در زمین (۸۱)، سپس پشیمانی آرزومندان جایگاه او (۸۲)، سپس اختصاص سرای آخرت به پرهیزکاران (۸۳) و در نهایت پاداش و کیفر اعمال (۸۴) بیان می‌شود."
+    }
+  ],
+  "issues": []
+}

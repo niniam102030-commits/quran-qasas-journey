@@ -1,0 +1,1205 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p396a",
+  "part": "C5",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p396a_C_0501",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 85
+        },
+        {
+          "id": "o3",
+          "num": 86
+        },
+        {
+          "id": "o4",
+          "num": 87
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «إِنَّ ٱلَّذِى فَرَضَ» آغاز می‌شود و آیه‌ی ۸۵ است؛ ۸۴ پیش از آن و ۸۶ پس از آن است."
+    },
+    {
+      "id": "q_u_p396a_C_0502",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 82
+        },
+        {
+          "id": "o2",
+          "num": 83
+        },
+        {
+          "id": "o3",
+          "num": 85
+        },
+        {
+          "id": "o4",
+          "num": 86
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۸۵ درباره‌ی «لَرَآدُّكَ إِلَىٰ مَعَادٍ» است و پس از آیه‌ی ۸۴ می‌آید."
+    },
+    {
+      "id": "q_u_p396a_C_0503",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 88
+        },
+        {
+          "id": "o2",
+          "num": 84
+        },
+        {
+          "id": "o3",
+          "num": 85
+        },
+        {
+          "id": "o4",
+          "num": 83
+        },
+        {
+          "id": "o5",
+          "num": 87
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه چهارمین آیه از انتهای سوره است و شماره‌اش ۸۵ است."
+    },
+    {
+      "id": "q_u_p396a_C_0504",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۵ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_085_001",
+            "w28_086_002",
+            "w28_086_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_084_001",
+            "w28_084_002",
+            "w28_084_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۸۵ با «إِنَّ ٱلَّذِى فَرَضَ» شروع می‌شود؛ گزینه‌های دیگر آغاز آیه‌های ۸۶ و ۸۴ یا ترکیبی ساختگی‌اند."
+    },
+    {
+      "id": "q_u_p396a_C_0505",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۸۵ کدام است؟",
+      "stem": {
+        "num": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_084_001",
+            "w28_084_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_083_001",
+            "w28_083_002"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_085_001",
+            "w28_085_003"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۸۵ با «إِنَّ ٱلَّذِى» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p396a_C_0506",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 85,
+      "targets": [
+        "vn:85"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۵ چگونه شروع می‌شود؟",
+      "stem": {
+        "num": 85
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003",
+            "w28_087_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_085_001",
+            "w28_085_002",
+            "w28_085_003",
+            "w28_086_006"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003",
+            "w28_086_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 85,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "چهار کلمه‌ی آغازین آیه‌ی ۸۵ «إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ» است."
+    },
+    {
+      "id": "q_u_p396a_C_0507",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 83
+        },
+        {
+          "id": "o2",
+          "num": 84
+        },
+        {
+          "id": "o3",
+          "num": 85
+        },
+        {
+          "id": "o4",
+          "num": 86
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَمَا كُنتَ تَرْجُوٓا۟» آغاز می‌شود و آیه‌ی ۸۶ است."
+    },
+    {
+      "id": "q_u_p396a_C_0508",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 86
+        },
+        {
+          "id": "o2",
+          "num": 87
+        },
+        {
+          "id": "o3",
+          "num": 88
+        },
+        {
+          "id": "o4",
+          "num": 85
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۸۶ بلافاصله پس از آیه‌ی ۸۵ و پیش از آیه‌ی ۸۷ است."
+    },
+    {
+      "id": "q_u_p396a_C_0509",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 88
+        },
+        {
+          "id": "o3",
+          "num": 86
+        },
+        {
+          "id": "o4",
+          "num": 87
+        },
+        {
+          "id": "o5",
+          "num": 85
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «فَلَا تَكُونَنَّ ظَهِيرًا لِّلْكَـٰفِرِينَ» پایان می‌یابد و شماره‌اش ۸۶ است."
+    },
+    {
+      "id": "q_u_p396a_C_0510",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۶ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_085_001",
+            "w28_085_002",
+            "w28_085_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_088_001",
+            "w28_088_002",
+            "w28_088_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 86,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۸۶ با «وَمَا كُنتَ تَرْجُوٓا۟» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p396a_C_0511",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۸۶ کدام است؟",
+      "stem": {
+        "num": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_086_001",
+            "w28_087_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 86,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_086_012",
+            "w28_086_013"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_088_001",
+            "w28_088_002"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۸۶ با «وَمَا كُنتَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p396a_C_0512",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 86,
+      "targets": [
+        "vn:86"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۶ چگونه شروع می‌شود؟",
+      "stem": {
+        "num": 86
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_088_001",
+            "w28_088_002",
+            "w28_088_003",
+            "w28_088_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003",
+            "w28_087_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003",
+            "w28_086_006"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 86,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "چهار کلمه‌ی آغازین آیه‌ی ۸۶ «وَمَا كُنتَ تَرْجُوٓا۟ أَن» است."
+    },
+    {
+      "id": "q_u_p396a_C_0513",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 85
+        },
+        {
+          "id": "o3",
+          "num": 86
+        },
+        {
+          "id": "o4",
+          "num": 87
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَلَا يَصُدُّنَّكَ عَنْ» آغاز می‌شود و آیه‌ی ۸۷ است."
+    },
+    {
+      "id": "q_u_p396a_C_0514",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 84
+        },
+        {
+          "id": "o2",
+          "num": 88
+        },
+        {
+          "id": "o3",
+          "num": 87
+        },
+        {
+          "id": "o4",
+          "num": 85
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۸۷ پس از ۸۶ و پیش از آیه‌ی پایانی سوره (۸۸) است."
+    },
+    {
+      "id": "q_u_p396a_C_0515",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 86
+        },
+        {
+          "id": "o2",
+          "num": 85
+        },
+        {
+          "id": "o3",
+          "num": 88
+        },
+        {
+          "id": "o4",
+          "num": 87
+        },
+        {
+          "id": "o5",
+          "num": 84
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ» پایان می‌یابد و شماره‌اش ۸۷ است."
+    },
+    {
+      "id": "q_u_p396a_C_0516",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_088_001",
+            "w28_088_002",
+            "w28_088_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۸۷ با «وَلَا يَصُدُّنَّكَ عَنْ» شروع می‌شود؛ آیه‌ی ۸۸ هم با «وَلَا» آغاز می‌شود اما ادامه‌اش فرق دارد."
+    },
+    {
+      "id": "q_u_p396a_C_0517",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۸۷ کدام است؟",
+      "stem": {
+        "num": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_088_001",
+            "w28_088_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_087_013",
+            "w28_087_014"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_086_001",
+            "w28_086_002"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۸۷ با «وَلَا يَصُدُّنَّكَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p396a_C_0518",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 87,
+      "targets": [
+        "vn:87"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۷ چگونه شروع می‌شود؟",
+      "stem": {
+        "num": 87
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_088_001",
+            "w28_088_002",
+            "w28_088_003",
+            "w28_088_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 87,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003",
+            "w28_088_004"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003",
+            "w28_086_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "چهار کلمه‌ی آغازین آیه‌ی ۸۷ «وَلَا يَصُدُّنَّكَ عَنْ ءَايَـٰتِ» است."
+    },
+    {
+      "id": "q_u_p396a_C_0519",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "شماره‌ی این آیه کدام است؟",
+      "stem": {
+        "verse": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 85
+        },
+        {
+          "id": "o2",
+          "num": 86
+        },
+        {
+          "id": "o3",
+          "num": 87
+        },
+        {
+          "id": "o4",
+          "num": 88
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "این آیه با «وَلَا تَدْعُ مَعَ ٱللَّهِ» آغاز می‌شود و آیه‌ی پایانی سوره (۸۸) است."
+    },
+    {
+      "id": "q_u_p396a_C_0520",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "این آیه کدام شماره را دارد؟",
+      "stem": {
+        "verse": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 88
+        },
+        {
+          "id": "o2",
+          "num": 87
+        },
+        {
+          "id": "o3",
+          "num": 86
+        },
+        {
+          "id": "o4",
+          "num": 84
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی «كُلُّ شَىْءٍ هَالِكٌ إِلَّا وَجْهَهُۥ» آخرین آیه‌ی سوره، یعنی ۸۸ است."
+    },
+    {
+      "id": "q_u_p396a_C_0521",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "شماره‌ی درست این آیه را انتخاب کنید.",
+      "stem": {
+        "verse": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 70
+        },
+        {
+          "id": "o2",
+          "num": 87
+        },
+        {
+          "id": "o3",
+          "num": 88
+        },
+        {
+          "id": "o4",
+          "num": 86
+        },
+        {
+          "id": "o5",
+          "num": 85
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "عبارت «لَآ إِلَـٰهَ إِلَّا هُوَ» در آیه‌ی ۷۰ هم هست، اما این آیه با «وَلَا تَدْعُ مَعَ ٱللَّهِ» آغاز می‌شود و آیه‌ی ۸۸ است."
+    },
+    {
+      "id": "q_u_p396a_C_0522",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۸ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_086_001",
+            "w28_086_002",
+            "w28_086_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_088_007",
+            "w28_088_008",
+            "w28_088_009"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "similar_verse"
+      },
+      "explanationFa": "آیه‌ی ۸۸ با «وَلَا تَدْعُ مَعَ» شروع می‌شود؛ «لَآ إِلَـٰهَ إِلَّا» در میانه‌ی همین آیه است."
+    },
+    {
+      "id": "q_u_p396a_C_0523",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "ابتدای آیه‌ی ۸۸ کدام است؟",
+      "stem": {
+        "num": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_087_001",
+            "w28_087_002"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_088_001",
+            "w28_088_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_087_013",
+            "w28_087_014"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه‌ی ۸۸ با «وَلَا تَدْعُ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p396a_C_0524",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 88,
+      "targets": [
+        "vn:88"
+      ],
+      "promptFa": "آیه‌ی شماره‌ی ۸۸ چگونه شروع می‌شود؟",
+      "stem": {
+        "num": 88
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_087_001",
+            "w28_087_002",
+            "w28_087_003",
+            "w28_087_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_088_001",
+            "w28_088_002",
+            "w28_088_003",
+            "w28_088_005"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_088_007",
+            "w28_088_008",
+            "w28_088_009",
+            "w28_088_010"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 88,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o3": "similar_verse"
+      },
+      "explanationFa": "چهار کلمه‌ی آغازین آیه‌ی ۸۸ «وَلَا تَدْعُ مَعَ ٱللَّهِ» است."
+    }
+  ],
+  "issues": []
+}

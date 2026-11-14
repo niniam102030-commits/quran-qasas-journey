@@ -1,0 +1,1008 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p387b",
+  "part": "A4",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p387b_A_0449",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024"
+      ],
+      "promptFa": "معنای «جَبَّارًا» چیست؟",
+      "stem": {
+        "wordId": "w28_019_024",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جبران‌کننده و التیام‌بخش"
+        },
+        {
+          "id": "o2",
+          "fa": "دشمن"
+        },
+        {
+          "id": "o3",
+          "fa": "یاغی و سرکش"
+        },
+        {
+          "id": "o4",
+          "fa": "مصلح"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ج ب ر». دوست فریبنده: «جبّار» برای انسان یعنی زورگو و یاغی، نه جبران‌کننده."
+    },
+    {
+      "id": "q_u_p387b_A_0450",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024"
+      ],
+      "promptFa": "در عبارت «تَكُونَ جَبَّارًا فِي الْأَرْضِ» معنای «جَبَّارًا» کدام است؟",
+      "stem": {
+        "wordId": "w28_019_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جبران‌کننده‌ی خسارت‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "زورگو و ستمگر سرکش"
+        },
+        {
+          "id": "o3",
+          "fa": "اصلاح‌گر میان مردم"
+        },
+        {
+          "id": "o4",
+          "fa": "یک نفر که کشته شد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جبّار» برای انسان صفت مذموم است و یعنی کسی که با قهر اراده‌ی خود را تحمیل می‌کند."
+    },
+    {
+      "id": "q_u_p387b_A_0451",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024"
+      ],
+      "promptFa": "در این آیه «جَبَّارًا» در برابر «الْمُصْلِحِينَ» آمده است. معنایش چیست؟",
+      "stem": {
+        "wordId": "w28_019_024",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بخشنده و التیام‌دهنده"
+        },
+        {
+          "id": "o2",
+          "fa": "خیرخواه و دلسوز"
+        },
+        {
+          "id": "o3",
+          "fa": "دشمن آشکار"
+        },
+        {
+          "id": "o4",
+          "fa": "یاغی و سرکش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جبّار» در برابر «مصلح» قرار گرفته و یعنی یاغی و گردنکش، نه کسی که کار را اصلاح می‌کند."
+    },
+    {
+      "id": "q_u_p387b_A_0452",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_004"
+      ],
+      "promptFa": "معنای «أَقْصَا» چیست؟",
+      "stem": {
+        "wordId": "w28_020_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دورترین نقطه"
+        },
+        {
+          "id": "o2",
+          "fa": "کوتاه‌ترین یا نزدیک‌ترین"
+        },
+        {
+          "id": "o3",
+          "fa": "مرکز و میانه"
+        },
+        {
+          "id": "o4",
+          "fa": "بزرگ‌ترین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "«أقصا» اسم تفضیل از ریشه‌ی «ق ص و» است و یعنی دورترین؛ مانند «مسجدالأقصی»."
+    },
+    {
+      "id": "q_u_p387b_A_0453",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_004"
+      ],
+      "promptFa": "در «مِنْ أَقْصَا الْمَدِينَةِ» معنای «أَقْصَا» چیست؟",
+      "stem": {
+        "wordId": "w28_020_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نزدیک‌ترین بخش"
+        },
+        {
+          "id": "o2",
+          "fa": "بازار"
+        },
+        {
+          "id": "o3",
+          "fa": "دورترین نقطه و نهایت"
+        },
+        {
+          "id": "o4",
+          "fa": "دروازه‌ها"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "مرد از دورترین نقطه‌ی شهر آمد. «أقصا» اسم تفضیل است."
+    },
+    {
+      "id": "q_u_p387b_A_0454",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_004"
+      ],
+      "promptFa": "«أَقْصَا» در آیه‌ی «وَجَاءَ رَجُلٌ مِنْ أَقْصَا الْمَدِينَةِ…» کدام معنا را می‌دهد؟",
+      "stem": {
+        "wordId": "w28_020_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کوتاه‌ترین"
+        },
+        {
+          "id": "o2",
+          "fa": "دورترین"
+        },
+        {
+          "id": "o3",
+          "fa": "بالاترین"
+        },
+        {
+          "id": "o4",
+          "fa": "شلوغ‌ترین"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه‌ی «ق ص و» به معنای دوری است؛ «أقصا» یعنی دورترین."
+    },
+    {
+      "id": "q_u_p387b_A_0455",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_006"
+      ],
+      "promptFa": "معنای «يَسْعَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_020_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مشورت می‌کند"
+        },
+        {
+          "id": "o2",
+          "fa": "کوشش فکری می‌کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "آهسته راه می‌رفت"
+        },
+        {
+          "id": "o4",
+          "fa": "شتابان"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «س ع ي». در حرکت فیزیکی یعنی شتابان رفتن (مانند سعی صفا و مروه)."
+    },
+    {
+      "id": "q_u_p387b_A_0456",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_006"
+      ],
+      "promptFa": "در «رَجُلٌ مِنْ أَقْصَا الْمَدِينَةِ يَسْعَىٰ» معنای «يَسْعَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_020_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "در حالی که با شتاب می‌دوید"
+        },
+        {
+          "id": "o2",
+          "fa": "در حالی که کار می‌کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "در حالی که می‌کشت"
+        },
+        {
+          "id": "o4",
+          "fa": "در حالی که می‌ایستاد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«يَسْعَىٰ» حالِ «رَجُلٌ» است و یعنی شتابان؛ معنای «تلاش فکری» در اینجا مراد نیست."
+    },
+    {
+      "id": "q_u_p387b_A_0457",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_006"
+      ],
+      "promptFa": "آن مرد چگونه از دورترین نقطه‌ی شهر آمد؟ «يَسْعَىٰ» یعنی:",
+      "stem": {
+        "wordId": "w28_020_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پنهانی"
+        },
+        {
+          "id": "o2",
+          "fa": "خیرخواهانه"
+        },
+        {
+          "id": "o3",
+          "fa": "شتابان"
+        },
+        {
+          "id": "o4",
+          "fa": "با ترس از اشراف"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«يَسْعَىٰ» به گام برداشتن تند و شتابان اشاره دارد."
+    },
+    {
+      "id": "q_u_p387b_A_0458",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «یاغی و سرکش» است؟",
+      "stem": {
+        "fa": "یاغی و سرکش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْمُصْلِحِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَبَّارًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "عَدُوٌّۭ"
+        },
+        {
+          "id": "o4",
+          "ar": "نَفْسًۢا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جَبَّارًا» از ریشه‌ی «ج ب ر» است و برای انسان یعنی یاغی و سرکش."
+    },
+    {
+      "id": "q_u_p387b_A_0459",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024"
+      ],
+      "promptFa": "«زورگو، ستمگر سرکش و گردنکش» معنای کدام کلمه است؟",
+      "stem": {
+        "fa": "زورگو، ستمگر سرکش و گردنکش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَقْتُلَنِى"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَرْضِ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَبْطِشَ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَبَّارًۭا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«جَبَّارًا» صفتی مذموم برای کسی است که با قهر اراده‌اش را تحمیل می‌کند."
+    },
+    {
+      "id": "q_u_p387b_A_0460",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «دورترین نقطه» است؟",
+      "stem": {
+        "fa": "دورترین نقطه"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "رَجُلٌۭ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمَدِينَةِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْمَلَأَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَقْصَا"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أَقْصَا» از ریشه‌ی «ق ص و» و اسم تفضیل به معنای دورترین است."
+    },
+    {
+      "id": "q_u_p387b_A_0461",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_004"
+      ],
+      "promptFa": "«دورترین نقطه و نهایت» معنای کدام کلمه است؟",
+      "stem": {
+        "fa": "دورترین نقطه و نهایت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَقْصَا"
+        },
+        {
+          "id": "o2",
+          "ar": "فَٱخْرُجْ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلنَّـٰصِحِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِنَّ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أَقْصَا» یعنی دورترین نقطه؛ مانند «مسجدالأقصی»."
+    },
+    {
+      "id": "q_u_p387b_A_0462",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «شتابان» است؟",
+      "stem": {
+        "fa": "شتابان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَأْتَمِرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَسْعَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "لِيَقْتُلُوكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«يَسْعَىٰ» از ریشه‌ی «س ع ي» و به معنای شتابان رفتن است."
+    },
+    {
+      "id": "q_u_p387b_A_0463",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_020_006"
+      ],
+      "promptFa": "«در حالی که با شتاب می‌دوید» معنای کدام کلمه است؟",
+      "stem": {
+        "fa": "در حالی که با شتاب می‌دوید"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱخْرُجْ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَجَآءَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَـٰمُوسَىٰٓ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَسْعَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«يَسْعَىٰ» حالِ آن مرد است و حرکت تند و شتابان او را نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p387b_A_0464",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024",
+        "w:w28_020_004",
+        "w:w28_020_006"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَبَّارًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "أَقْصَا"
+        },
+        {
+          "id": "l3",
+          "ar": "يَسْعَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "عَدُوٌّۭ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْمَدِينَةِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "شهر"
+        },
+        {
+          "id": "r2",
+          "fa": "شتابان"
+        },
+        {
+          "id": "r3",
+          "fa": "دشمن"
+        },
+        {
+          "id": "r4",
+          "fa": "یاغی و سرکش"
+        },
+        {
+          "id": "r5",
+          "fa": "دورترین نقطه"
+        },
+        {
+          "id": "r6",
+          "fa": "جبران‌کننده و التیام‌بخش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«جَبَّارًا» یاغی، «أَقْصَا» دورترین و «يَسْعَىٰ» شتابان است."
+    },
+    {
+      "id": "q_u_p387b_A_0465",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_019_024",
+        "w:w28_020_004",
+        "w:w28_020_006"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَسْعَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْمُصْلِحِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَبَّارًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "يَأْتَمِرُونَ"
+        },
+        {
+          "id": "l5",
+          "ar": "أَقْصَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "مصلحان"
+        },
+        {
+          "id": "r2",
+          "fa": "زورگو و ستمگر سرکش"
+        },
+        {
+          "id": "r3",
+          "fa": "مشورت می‌کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "دورترین نقطه و نهایت"
+        },
+        {
+          "id": "r5",
+          "fa": "با شتاب می‌دوید"
+        },
+        {
+          "id": "r6",
+          "fa": "کوتاه‌ترین یا نزدیک‌ترین"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r4"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "سه کلمه‌ی سخت با معنای قرآنی‌شان جفت می‌شوند و دو کلمه‌ی دیگر از همین آیات‌اند."
+    },
+    {
+      "id": "q_u_p387b_A_0466",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 20,
+      "targets": [
+        "w:w28_019_024",
+        "w:w28_020_004",
+        "w:w28_020_006"
+      ],
+      "promptFa": "معنای هر کلمه را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَقْصَا"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْمَلَأَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَسْعَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَبَّارًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلنَّـٰصِحِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "خیرخواهان"
+        },
+        {
+          "id": "r2",
+          "fa": "اشراف و سران"
+        },
+        {
+          "id": "r3",
+          "fa": "شتابان"
+        },
+        {
+          "id": "r4",
+          "fa": "یاغی و سرکش"
+        },
+        {
+          "id": "r5",
+          "fa": "دورترین"
+        },
+        {
+          "id": "r6",
+          "fa": "کوشش فکری می‌کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«يَسْعَىٰ» در اینجا حرکت تند فیزیکی است، نه کوشش فکری."
+    },
+    {
+      "id": "q_u_p387b_A_0467",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 19,
+      "targets": [
+        "w:w28_019_024",
+        "w:w28_020_004",
+        "w:w28_020_006"
+      ],
+      "promptFa": "جفت‌های درست را بسازید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَبَّارًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "يَبْطِشَ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَسْعَىٰ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَقْصَا"
+        },
+        {
+          "id": "l5",
+          "ar": "بِٱلْأَمْسِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دیروز"
+        },
+        {
+          "id": "r2",
+          "fa": "شتابان"
+        },
+        {
+          "id": "r3",
+          "fa": "به سختی برخورد کند"
+        },
+        {
+          "id": "r4",
+          "fa": "دورترین نقطه"
+        },
+        {
+          "id": "r5",
+          "fa": "یاغی و سرکش"
+        },
+        {
+          "id": "r6",
+          "fa": "بخشنده و التیام‌دهنده"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«جبّار» برای انسان یعنی یاغی و سرکش، نه بخشنده یا جبران‌کننده."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی‌ها کلمه‌ی مرور نیامد و به‌جایش کلمات غیرسخت همین دو آیه به کار رفت.",
+    "معنای کلمات غیرسخت (مثل «يَبْطِشَ» و «ٱلْمَلَأَ») از قطعات fa ورودی گرفته شد."
+  ]
+}

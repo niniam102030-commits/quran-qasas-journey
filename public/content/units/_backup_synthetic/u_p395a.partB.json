@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p395a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 78,
+      "targets": [
+        "vr:78"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «گفت: جز این نیست که این [ثروت و مال انبوه] را بر پایه دانشی که نزد من ...»، آیه 78 را مرتب کن:",
+      "stem": {
+        "verse": 78
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ",
+          "wordIdx": [
+            1,
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَدْ أَهْلَكَ مِن قَبْلِهِۦ مِنَ ٱلْقُرُونِ مَنْ هُوَ أَشَدُّ مِنْهُ",
+          "wordIdx": [
+            11,
+            20
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قُوَّةًۭ وَأَكْثَرُ جَمْعًۭا ۚ وَلَا يُسْـَٔلُ عَن ذُنُوبِهِمُ ٱلْمُجْرِمُونَ",
+          "wordIdx": [
+            21,
+            28
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 78 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p395a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 78,
+      "targets": [
+        "vr:78"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 78 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 78,
+        "hiddenIdx": [
+          15
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِنَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "15": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «مِنَ» در آیه 78 است."
+    }
+  ],
+  "issues": []
+}

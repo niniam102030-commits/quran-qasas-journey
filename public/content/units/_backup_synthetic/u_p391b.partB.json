@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p391b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 47,
+      "targets": [
+        "vr:47"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «و اگر نه آن بود که به سبب گناهانی که مرتکب شدند عذابی به آنان برسد، پس...»، آیه 47 را مرتب کن:",
+      "stem": {
+        "verse": 47
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "رَسُولًۭا فَنَتَّبِعَ ءَايَـٰتِكَ وَنَكُونَ مِنَ ٱلْمُؤْمِنِينَ",
+          "wordIdx": [
+            13,
+            18
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَيْدِيهِمْ فَيَقُولُوا۟ رَبَّنَا لَوْلَآ أَرْسَلْتَ إِلَيْنَا",
+          "wordIdx": [
+            7,
+            12
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "وَلَوْلَآ أَن تُصِيبَهُم مُّصِيبَةٌۢ بِمَا قَدَّمَتْ",
+          "wordIdx": [
+            1,
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 47 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p391b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 47,
+      "targets": [
+        "vr:47"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 47 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 47,
+        "hiddenIdx": [
+          10
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَوْلَآ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "10": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «لَوْلَآ» در آیه 47 است."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,1647 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391b",
+  "part": "A3",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p391b_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معنای کلمه «أَهْدَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_049_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت می کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معنای کلمه «أَهْدَىٰ» چیست؟",
+      "stem": {
+        "wordId": "w28_049_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کتابی"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت یافته"
+        },
+        {
+          "id": "o3",
+          "fa": "راهنمایی شد"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت کننده تر"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o3": "same_root"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معنای کلمه «أَهْدَىٰ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_049_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیروی کنم"
+        },
+        {
+          "id": "o2",
+          "fa": "هدیه داد"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت می کند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معنای کلمه «أَهْدَىٰ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_049_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "راست می گویید"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "راه یافته"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است و معنای هدایت‌کننده‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_050_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مستجاب نکردند"
+        },
+        {
+          "id": "o2",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "o3",
+          "fa": "پیروی می کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "جواب می دهند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب)."
+    },
+    {
+      "id": "q_u_p391b_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_050_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "o2",
+          "fa": "واجب کردند"
+        },
+        {
+          "id": "o3",
+          "fa": "اجابت می کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "بدان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب)."
+    },
+    {
+      "id": "q_u_p391b_A_0307",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_050_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مستجاب کردند"
+        },
+        {
+          "id": "o2",
+          "fa": "ستمکار"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه شدند"
+        },
+        {
+          "id": "o4",
+          "fa": "پاسخ دادند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب)."
+    },
+    {
+      "id": "q_u_p391b_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معنای کلمه «يَسْتَجِيبُوا۟» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_050_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "o2",
+          "fa": "واجب می کنند"
+        },
+        {
+          "id": "o3",
+          "fa": "پیروی می کنند"
+        },
+        {
+          "id": "o4",
+          "fa": "هدایت نمی کند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "استجابت در اینجا به معنای پاسخ دادن و پذیرفتن دعوت است، از ریشه (ج و ب)."
+    },
+    {
+      "id": "q_u_p391b_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معنای کلمه «أَضَلُّ» چیست؟",
+      "stem": {
+        "wordId": "w28_050_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "o2",
+          "fa": "گمراه کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراهان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معنای کلمه «أَضَلُّ» چیست؟",
+      "stem": {
+        "wordId": "w28_050_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ستمکار"
+        },
+        {
+          "id": "o2",
+          "fa": "سایه افکند"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراه می کند"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معنای کلمه «أَضَلُّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_050_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هواهای نفسانی"
+        },
+        {
+          "id": "o2",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "o3",
+          "fa": "مردم"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراه کرد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0312",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معنای کلمه «أَضَلُّ» در این آیه چیست؟",
+      "stem": {
+        "wordId": "w28_050_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "o2",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o3",
+          "fa": "گمراه می شود"
+        },
+        {
+          "id": "o4",
+          "fa": "گمراه کننده"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "same_root",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است و معنای گمراه‌تر می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0313",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+      "stem": {
+        "fa": "هدایت کننده تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "هُدًۭى"
+        },
+        {
+          "id": "o3",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "o4",
+          "ar": "أَضَلُّ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است."
+    },
+    {
+      "id": "q_u_p391b_A_0314",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+      "stem": {
+        "fa": "هدایت کننده تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "صَـٰدِقِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "مِّنْهُمَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَهْوَآءَهُمْ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است."
+    },
+    {
+      "id": "q_u_p391b_A_0315",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 49,
+      "targets": [
+        "w:w28_049_008"
+      ],
+      "promptFa": "معادل عربی «هدایت کننده تر» کدام است؟",
+      "stem": {
+        "fa": "هدایت کننده تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَتَّبِعُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱتَّبَعَ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَدَى"
+        },
+        {
+          "id": "o4",
+          "ar": "أَهْدَىٰ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_verse",
+        "o3": "same_root"
+      },
+      "explanationFa": "أَهْدَىٰ اسم تفضیل بر وزن أفعل از ریشه (ه د ی) است."
+    },
+    {
+      "id": "q_u_p391b_A_0316",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+      "stem": {
+        "fa": "پاسخ دادند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يَتَّبِعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَسْتَجِيبُ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱتَّبَعَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0317",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+      "stem": {
+        "fa": "پاسخ دادند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَٱعْلَمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُجِيبُ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "same_root"
+      },
+      "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0318",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_003"
+      ],
+      "promptFa": "معادل عربی «پاسخ دادند» کدام است؟",
+      "stem": {
+        "fa": "پاسخ دادند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَتَّبِعْهُ"
+        },
+        {
+          "id": "o2",
+          "ar": "يَهْدِى"
+        },
+        {
+          "id": "o3",
+          "ar": "فَأْتُوا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يَسْتَجِيبُوا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "neighbor_word",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "يَسْتَجِيبُوا۟ فعل مضارع از ریشه (ج و ب) است که با توجه به «لَّمْ» قبل از آن، معنای گذشته می‌دهد."
+    },
+    {
+      "id": "q_u_p391b_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+      "stem": {
+        "fa": "گمراه تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ضَلَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَهْدَىٰ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "same_root",
+        "o4": "near_miss"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است."
+    },
+    {
+      "id": "q_u_p391b_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+      "stem": {
+        "fa": "گمراه تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَهْوَآءَهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "o3",
+          "ar": "هَوَىٰهُ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُضِلُّ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است."
+    },
+    {
+      "id": "q_u_p391b_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 50,
+      "targets": [
+        "w:w28_050_010"
+      ],
+      "promptFa": "معادل عربی «گمراه تر» کدام است؟",
+      "stem": {
+        "fa": "گمراه تر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مِّمَّنِ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَّمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يَسْتَجِيبُوا۟"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "أَضَلُّ اسم تفضیل بر وزن أفعل از ریشه (ض ل ل) است."
+    },
+    {
+      "id": "q_u_p391b_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_049_008",
+        "w:w28_050_003"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "بِكِتَـٰبٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "صَـٰدِقِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَٱعْلَمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r2",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r3",
+          "fa": "کتابی"
+        },
+        {
+          "id": "r4",
+          "fa": "راست می گویید"
+        },
+        {
+          "id": "r5",
+          "fa": "بدان"
+        },
+        {
+          "id": "r6",
+          "fa": "ستمکار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_010",
+        "w:w28_049_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "أَهْوَآءَهُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "هُدًۭى"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلظَّـٰلِمِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r3",
+          "fa": "هواهای نفسانی"
+        },
+        {
+          "id": "r4",
+          "fa": "هدایتی"
+        },
+        {
+          "id": "r5",
+          "fa": "ستمکار"
+        },
+        {
+          "id": "r6",
+          "fa": "پاسخ دادند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0324",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_003",
+        "w:w28_050_010"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَأْتُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "عِندِ"
+        },
+        {
+          "id": "l5",
+          "ar": "يَهْدِى"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r2",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r3",
+          "fa": "بیاورید"
+        },
+        {
+          "id": "r4",
+          "fa": "نزد"
+        },
+        {
+          "id": "r5",
+          "fa": "هدایت می کند"
+        },
+        {
+          "id": "r6",
+          "fa": "گمراه کرد"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0325",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_049_008",
+        "w:w28_050_003"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "يَتَّبِعُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "هَوَىٰهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "بِغَيْرِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r2",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r3",
+          "fa": "پیروی می کنند"
+        },
+        {
+          "id": "r4",
+          "fa": "هواهای نفسانی خود"
+        },
+        {
+          "id": "r5",
+          "fa": "بدون"
+        },
+        {
+          "id": "r6",
+          "fa": "راه یافتگان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0326",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_010",
+        "w:w28_049_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱتَّبَعَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْقَوْمَ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَّمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r3",
+          "fa": "پیروی کند"
+        },
+        {
+          "id": "r4",
+          "fa": "مردم"
+        },
+        {
+          "id": "r5",
+          "fa": "نه"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0327",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_003",
+        "w:w28_050_010"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "قُلْ"
+        },
+        {
+          "id": "l4",
+          "ar": "مِّنْهُمَآ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r2",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r3",
+          "fa": "بگو"
+        },
+        {
+          "id": "r4",
+          "fa": "از این دو"
+        },
+        {
+          "id": "r5",
+          "fa": "نمی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "یادآوری کلمات مهم این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0328",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_049_008",
+        "w:w28_050_003",
+        "w:w28_050_010"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَتَّبِعْهُ"
+        },
+        {
+          "id": "l5",
+          "ar": "كُنتُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r2",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r3",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r4",
+          "fa": "تا آن را پیروی کنم"
+        },
+        {
+          "id": "r5",
+          "fa": "هستید"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات سخت این آیات."
+    },
+    {
+      "id": "q_u_p391b_A_0329",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_003",
+        "w:w28_049_008"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَنَّمَا"
+        },
+        {
+          "id": "l5",
+          "ar": "مِّنَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r3",
+          "fa": "تو را"
+        },
+        {
+          "id": "r4",
+          "fa": "که فقط"
+        },
+        {
+          "id": "r5",
+          "fa": "از"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "مرور کلمات پرکاربرد این بخش."
+    },
+    {
+      "id": "q_u_p391b_A_0330",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "targets": [
+        "w:w28_050_010",
+        "w:w28_049_008",
+        "w:w28_050_003"
+      ],
+      "promptFa": "کلمات عربی را به معنای فارسی آن‌ها متصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَضَلُّ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَهْدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "يَسْتَجِيبُوا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "إِن"
+        },
+        {
+          "id": "l5",
+          "ar": "مِمَّنِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "گمراه تر"
+        },
+        {
+          "id": "r2",
+          "fa": "هدایت کننده تر"
+        },
+        {
+          "id": "r3",
+          "fa": "پاسخ دادند"
+        },
+        {
+          "id": "r4",
+          "fa": "اگر"
+        },
+        {
+          "id": "r5",
+          "fa": "از کسی که"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "explanationFa": "جمع‌بندی کلمات چالش‌برانگیز."
+    }
+  ],
+  "issues": []
+}

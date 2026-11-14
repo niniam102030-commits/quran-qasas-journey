@@ -1,0 +1,91 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "C",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p390b_C_0001",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 39,
+      "targets": [
+        "sq:39"
+      ],
+      "promptFa": "بلافاصله پس از آیه 39 سوره قصص («وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ فِى ٱلْأَرْضِ...»)، کدام آیه قرار دارد؟",
+      "stem": {
+        "verse": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ ۖ فَٱنظُرْ كَيْفَ كَانَ عَـٰقِبَةُ ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ ۖ فَٱنظُرْ كَيْفَ كَانَ عَـٰقِبَةُ ٱلظَّـٰلِمِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسْتُضْعِفُوا۟ فِي ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه 40 سوره قصص بلافاصله پس از آیه 39 قرار دارد."
+    },
+    {
+      "id": "q_u_p390b_C_0002",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 39,
+      "targets": [
+        "vn:39"
+      ],
+      "promptFa": "آیه مبارکه «وَٱسْتَكْبَرَ هُوَ وَجُنُودُهُۥ فِى ٱلْأَرْضِ بِغَيْرِ ٱلْحَقِّ وَظَنُّوٓا۟ أَنَّهُمْ إِلَيْنَا لَا يُرْجَعُونَ»، آیه چندم سوره قصص است؟",
+      "stem": {
+        "verse": 39
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 39
+        },
+        {
+          "id": "o2",
+          "num": 40
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 41
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "این آیه شریفه، آیه شماره 39 از سوره مبارکه قصص است."
+    }
+  ],
+  "issues": []
+}

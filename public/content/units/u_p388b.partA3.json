@@ -1,0 +1,1255 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388b",
+  "part": "A3",
+  "generatedBy": "Claude",
+  "lexicon": [],
+  "chunks": [],
+  "questions": [
+    {
+      "id": "q_u_p388b_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "معنای این کلمه چیست؟",
+      "stem": {
+        "wordId": "w28_026_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خانه‌ات را به او اجاره بده"
+        },
+        {
+          "id": "o2",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "o3",
+          "fa": "به او مزد و پاداش بده"
+        },
+        {
+          "id": "o4",
+          "fa": "او را نزد خود نگه دار"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "از ریشه‌ی «أ ج ر» و به معنی «او را اجیر کن». «اجاره دادن ملک» دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p388b_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "کدام معنا برای این کلمه درست است؟",
+      "stem": {
+        "wordId": "w28_026_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "او را از خود دور کن"
+        },
+        {
+          "id": "o2",
+          "fa": "اجرت او را بپرداز"
+        },
+        {
+          "id": "o3",
+          "fa": "او را اجاره بده (مثل ملک)"
+        },
+        {
+          "id": "o4",
+          "fa": "او را به مزد بگیر و استخدام کن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "same_root",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«است-» یعنی طلب؛ پس «استجره» یعنی طلبِ اجیر گرفتن. با «اجرت پرداختن» یا «اجاره دادن» فرق دارد."
+    },
+    {
+      "id": "q_u_p388b_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "در آیه‌ی ۲۶، معنای این کلمه‌ی مشخص‌شده چیست؟",
+      "stem": {
+        "wordId": "w28_026_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "o2",
+          "fa": "او را استخدام نکن"
+        },
+        {
+          "id": "o3",
+          "fa": "به او مزد بده"
+        },
+        {
+          "id": "o4",
+          "fa": "او را بخر"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "در ترجمه آمده: «او را استخدام کن». فعل امر است و نفی ندارد."
+    },
+    {
+      "id": "q_u_p388b_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "با توجه به آیه‌ی ۲۶، این کلمه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_026_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای او خانه اجاره کن"
+        },
+        {
+          "id": "o2",
+          "fa": "پاداش او را بده"
+        },
+        {
+          "id": "o3",
+          "fa": "او را به مزد بگیر"
+        },
+        {
+          "id": "o4",
+          "fa": "او را بشناس"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "same_root",
+        "o4": "random"
+      },
+      "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ یعنی او را به مزد بگیر. معنای «اجاره‌ی خانه» مقصود نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "معنای این کلمه چیست؟",
+      "stem": {
+        "wordId": "w28_027_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خودم با تو ازدواج کنم"
+        },
+        {
+          "id": "o2",
+          "fa": "تو را اجیر کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "o4",
+          "fa": "به تو هدیه دهم"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "از ریشه‌ی «ن ك ح» (هم‌ریشه با «نکاح»)، باب افعال: کسی را به نکاح دیگری درآوردن. فاعل، پدر است نه کسی که ازدواج می‌کند."
+    },
+    {
+      "id": "q_u_p388b_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "کدام معنا برای این کلمه درست است؟",
+      "stem": {
+        "wordId": "w28_027_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "همسر دهم، به عقد تو درآورم"
+        },
+        {
+          "id": "o2",
+          "fa": "از تو خواستگاری کنم"
+        },
+        {
+          "id": "o3",
+          "fa": "به تو مزد دهم"
+        },
+        {
+          "id": "o4",
+          "fa": "تو را نزد خود بپذیرم"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "باب افعال از ریشه‌ی «نکاح» یعنی همسر دادن و به عقد کسی درآوردن، نه خواستگاری کردن."
+    },
+    {
+      "id": "q_u_p388b_A_0307",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "در آیه‌ی ۲۷، این کلمه‌ی مشخص‌شده چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_027_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تو را به کار بگیرم"
+        },
+        {
+          "id": "o2",
+          "fa": "به تو سخت گیرم"
+        },
+        {
+          "id": "o3",
+          "fa": "تو را همسر خود کنم"
+        },
+        {
+          "id": "o4",
+          "fa": "به نکاح تو درآورم"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "در ترجمه آمده: «یکی از این دو دخترم را به نکاح تو درآورم». «سخت گیرم» ترجمه‌ی کلمه‌ای دیگر در همین آیه است."
+    },
+    {
+      "id": "q_u_p388b_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "با توجه به آیه‌ی ۲۷، کدام معنا برای این کلمه دقیق است؟",
+      "stem": {
+        "wordId": "w28_027_005",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "برای تو همسر بجویم"
+        },
+        {
+          "id": "o2",
+          "fa": "همسر دهم، به عقد تو درآورم"
+        },
+        {
+          "id": "o3",
+          "fa": "ده سال به تو مهلت دهم"
+        },
+        {
+          "id": "o4",
+          "fa": "تو را از خود برانم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه‌ی «ن ك ح» و باب افعال؛ یعنی به عقد درآوردن. «ده سال» به کلمه‌ای دیگر در همین آیه مربوط است."
+    },
+    {
+      "id": "q_u_p388b_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "معنای این کلمه چیست؟",
+      "stem": {
+        "wordId": "w28_027_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "خانه‌ای به من اجاره دهی"
+        },
+        {
+          "id": "o2",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "o3",
+          "fa": "به من پاداش دهی"
+        },
+        {
+          "id": "o4",
+          "fa": "مرا به نکاح درآوری"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی «أ ج ر» (هم‌ریشه با «اجر» و «اجیر»)؛ یعنی برایم اجیر باشی."
+    },
+    {
+      "id": "q_u_p388b_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "کدام معنا برای این کلمه درست است؟",
+      "stem": {
+        "wordId": "w28_027_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "به من مزد ندهی"
+        },
+        {
+          "id": "o2",
+          "fa": "برایم خانه بسازی"
+        },
+        {
+          "id": "o3",
+          "fa": "مرا اجاره کنی"
+        },
+        {
+          "id": "o4",
+          "fa": "برایم مزدور و اجیر شوی"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "random",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«تأجرنی» یعنی اجیر و مزدور من شوی. «اجاره کردن» معنای مقصود نیست."
+    },
+    {
+      "id": "q_u_p388b_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "در آیه‌ی ۲۷، معنای این کلمه‌ی مشخص‌شده چیست؟",
+      "stem": {
+        "wordId": "w28_027_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "o2",
+          "fa": "اجیر تو شوم"
+        },
+        {
+          "id": "o3",
+          "fa": "از من اجرت بگیری"
+        },
+        {
+          "id": "o4",
+          "fa": "سخت‌گیری کنی"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در ترجمه آمده: «به شرط آنکه هشت سال اجیر من باشی». اجیر، مخاطب است نه گوینده."
+    },
+    {
+      "id": "q_u_p388b_A_0312",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "با توجه به آیه‌ی ۲۷، این کلمه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_027_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هشت سال بمانی"
+        },
+        {
+          "id": "o2",
+          "fa": "به من پاداش دهی"
+        },
+        {
+          "id": "o3",
+          "fa": "برایم مزدور و اجیر شوی"
+        },
+        {
+          "id": "o4",
+          "fa": "خانه‌ام را اجاره کنی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o4": "false_friend"
+      },
+      "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ یعنی برایم کار کنی و اجیر باشی."
+    },
+    {
+      "id": "q_u_p388b_A_0313",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "او را استخدام کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْتَـْٔجَرْتَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقَوِىُّ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَأْجُرَنِى"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "«ٱسْتَـْٔجِرْهُ» فعل امر است. «ٱسْتَـْٔجَرْتَ» فعل ماضی با فاعل مخاطب است."
+    },
+    {
+      "id": "q_u_p388b_A_0314",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "معادل عربی را انتخاب کن.",
+      "stem": {
+        "fa": "او را به مزد بگیر و استخدام کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأَمِينُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱسْتَـْٔجَرْتَ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "same_root",
+        "o3": "neighbor_verse"
+      },
+      "explanationFa": "ریشه‌ی «أ ج ر» با پیشوند «است-» (طلب) و ضمیر «ـهُ» (او را)."
+    },
+    {
+      "id": "q_u_p388b_A_0315",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004"
+      ],
+      "promptFa": "این معنا از کدام کلمه است؟",
+      "stem": {
+        "fa": "او را اجیر کن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْتَـْٔجَرْتَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُرِيدُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "same_root",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "فعل امر با ضمیر «ـهُ». «تَأْجُرَنِى» یعنی «اجیرم باشی» و «ٱسْتَـْٔجَرْتَ» یعنی «استخدام می‌کنی»."
+    },
+    {
+      "id": "q_u_p388b_A_0316",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "به نکاح تو درآورم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُرِيدُ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "o3",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَشُقَّ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«أُنكِحَكَ» از ریشه‌ی «ن ك ح» است. بقیه‌ی گزینه‌ها کلمات همین آیه با معنای دیگر هستند."
+    },
+    {
+      "id": "q_u_p388b_A_0317",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "معادل عربی را انتخاب کن.",
+      "stem": {
+        "fa": "همسر دهم، به عقد تو درآورم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَتْمَمْتَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "باب افعال از ریشه‌ی «ن ك ح» با ضمیر «ـكَ» (تو را). «تَأْجُرَنِى» مربوط به اجیر شدن است."
+    },
+    {
+      "id": "q_u_p388b_A_0318",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_005"
+      ],
+      "promptFa": "این معنا از کدام کلمه است؟",
+      "stem": {
+        "fa": "به عقد تو درآورم"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سَتَجِدُنِىٓ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُنكِحَكَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_verse",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«أُنكِحَكَ» یعنی «به نکاح تو درآورم». «ٱبْنَتَىَّ» یعنی «دو دخترم»."
+    },
+    {
+      "id": "q_u_p388b_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی این معنا را دارد؟",
+      "stem": {
+        "fa": "اجیرم باشی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْتَـْٔجَرْتَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَتْمَمْتَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَأْجُرَنِى» از ریشه‌ی «أ ج ر» و ضمیر «نِى» (مرا) است. دو گزینه‌ی هم‌ریشه‌ی دیگر معنای متفاوتی دارند."
+    },
+    {
+      "id": "q_u_p388b_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "معادل عربی را انتخاب کن.",
+      "stem": {
+        "fa": "برایم مزدور و اجیر شوی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْتَـْٔجَرْتَ"
+        },
+        {
+          "id": "o2",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o4",
+          "ar": "سَتَجِدُنِىٓ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "هم‌ریشه با «اجر» و «اجیر»؛ ضمیر متصل «نِى» یعنی «برای من». «سَتَجِدُنِىٓ» هم «نِى» دارد اما از ریشه‌ی «وجد» است."
+    },
+    {
+      "id": "q_u_p388b_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_027_011"
+      ],
+      "promptFa": "این معنا از کدام کلمه است؟",
+      "stem": {
+        "fa": "اجیر من باشی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "o4",
+          "ar": "أُرِيدُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "same_root",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«تَأْجُرَنِى» یعنی «اجیر من باشی». «ٱسْتَـْٔجِرْهُ» یعنی «او را اجیر کن» و جهت کار برعکس است."
+    },
+    {
+      "id": "q_u_p388b_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 26,
+      "targets": [
+        "w:w28_026_004",
+        "w:w28_027_005",
+        "w:w28_027_011"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْقَوِىُّ"
+        },
+        {
+          "id": "l3",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَمِينُ"
+        },
+        {
+          "id": "l5",
+          "ar": "تَأْجُرَنِى"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "r2",
+          "fa": "امین"
+        },
+        {
+          "id": "r3",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "r4",
+          "fa": "نیرومند"
+        },
+        {
+          "id": "r5",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r6",
+          "fa": "سخت گیرم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "دو کلمه‌ی «ٱسْتَـْٔجِرْهُ» و «تَأْجُرَنِى» هم‌ریشه‌اند (أ ج ر) و نباید با هم اشتباه شوند. «أُنكِحَكَ» از ریشه‌ی نکاح است."
+    },
+    {
+      "id": "q_u_p388b_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_026_004",
+        "w:w28_027_005",
+        "w:w28_027_011"
+      ],
+      "promptFa": "جفت‌های درست کلمه و معنا را وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "l2",
+          "ar": "أَشُقَّ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَتْمَمْتَ"
+        },
+        {
+          "id": "l5",
+          "ar": "أُنكِحَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r2",
+          "fa": "تمام کردی"
+        },
+        {
+          "id": "r3",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "r4",
+          "fa": "سخت گیرم"
+        },
+        {
+          "id": "r5",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "r6",
+          "fa": "شایستگان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "random"
+      },
+      "explanationFa": "«تَأْجُرَنِى» و «ٱسْتَـْٔجِرْهُ» هم‌ریشه‌اند، ولی اولی «اجیرم باشی» و دومی «او را استخدام کن» است."
+    },
+    {
+      "id": "q_u_p388b_A_0324",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_026_004",
+        "w:w28_027_005",
+        "w:w28_027_011"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای فارسی‌شان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلصَّـٰلِحِينَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أُنكِحَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱبْنَتَىَّ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "r2",
+          "fa": "دو دخترم"
+        },
+        {
+          "id": "r3",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "r4",
+          "fa": "شایستگان"
+        },
+        {
+          "id": "r5",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r6",
+          "fa": "هشت سال"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«أُنكِحَكَ» به ازدواج مربوط است و دو کلمه‌ی هم‌ریشه‌ی «أ ج ر» به استخدام و اجیر شدن."
+    },
+    {
+      "id": "q_u_p388b_A_0325",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 27,
+      "targets": [
+        "w:w28_026_004",
+        "w:w28_027_005",
+        "w:w28_027_011"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش برسان.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "عَشْرًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱسْتَـْٔجِرْهُ ۖ"
+        },
+        {
+          "id": "l3",
+          "ar": "ثَمَـٰنِىَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَأْجُرَنِى"
+        },
+        {
+          "id": "l5",
+          "ar": "أُنكِحَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به نکاح تو درآورم"
+        },
+        {
+          "id": "r2",
+          "fa": "ده سال"
+        },
+        {
+          "id": "r3",
+          "fa": "اجیرم باشی"
+        },
+        {
+          "id": "r4",
+          "fa": "هشت"
+        },
+        {
+          "id": "r5",
+          "fa": "او را استخدام کن"
+        },
+        {
+          "id": "r6",
+          "fa": "دو دخترم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«عَشْرًۭا» و «ثَمَـٰنِىَ» عدد هستند. سه کلمه‌ی سخت این برش، یعنی «ٱسْتَـْٔجِرْهُ»، «أُنكِحَكَ» و «تَأْجُرَنِى»، را از هم تفکیک کن."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی به‌جای آن از کلمات دیگر همین دو آیه (غیرسخت) به‌عنوان کلمه‌ی مرور استفاده شد.",
+    "معنای کلمات غیرسخت در جفت‌سازی از fa ورودی (انصاریان) گرفته شد."
+  ]
+}

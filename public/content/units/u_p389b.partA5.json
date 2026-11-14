@@ -1,0 +1,572 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A5",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_0801",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "معنای «فَذَٰنِكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس آن یکی"
+        },
+        {
+          "id": "o2",
+          "fa": "پس این دو"
+        },
+        {
+          "id": "o3",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "o4",
+          "fa": "پس تو را"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«فَذَٰنِكَ» شکل مثنای «ذلك» است و یعنی «پس این دو». آخر آن «ـكَ» نشانه‌ی «تو» نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0802",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "«فَذَٰنِكَ» در این آیه به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس این دو (اشاره به دو چیز)"
+        },
+        {
+          "id": "o2",
+          "fa": "پس دو دستت"
+        },
+        {
+          "id": "o3",
+          "fa": "پس آن مرد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس پروردگار توست"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در سیاق آیه، «فَذَٰنِكَ» به دو نشانه‌ی پیشین اشاره دارد و خبر آن «بُرْهَـٰنَانِ» است."
+    },
+    {
+      "id": "q_u_p389b_A_0803",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "کدام معنا برای «فَذَٰنِكَ» درست است؟",
+      "stem": {
+        "wordId": "w28_032_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس این تو هستی"
+        },
+        {
+          "id": "o2",
+          "fa": "پس سفید و درخشان"
+        },
+        {
+          "id": "o3",
+          "fa": "پس این دو"
+        },
+        {
+          "id": "o4",
+          "fa": "پس آن مردمی"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«فَذَٰنِكَ» اسم اشاره‌ی مثنا است و یعنی «پس این دو»؛ ضمیر «تو» در آن مستقل نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0804",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "با توجه به آیه، «فَذَٰنِكَ» یعنی:",
+      "stem": {
+        "wordId": "w28_032_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس آن یکی"
+        },
+        {
+          "id": "o2",
+          "fa": "پس از ترس"
+        },
+        {
+          "id": "o3",
+          "fa": "پس نافرمانان"
+        },
+        {
+          "id": "o4",
+          "fa": "پس این دو"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«فَذَٰنِكَ» یعنی «پس این دو» و به دو نشانه‌ای اشاره دارد که «بُرْهَـٰنَانِ» نام‌شان است."
+    },
+    {
+      "id": "q_u_p389b_A_0805",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پس این دو» است؟",
+      "stem": {
+        "fa": "پس این دو"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "«فَذَٰنِكَ» همان «پس این دو» است. «بُرْهَـٰنَانِ» کلمه‌ی بعدی و به معنای «دو معجزه» است."
+    },
+    {
+      "id": "q_u_p389b_A_0806",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "برای معنای زیر کدام کلمه‌ی عربی درست است؟",
+      "stem": {
+        "fa": "پس این دو (اشاره به دو چیز)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "إِلَيْكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَذَٰنِكَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "اشاره به دو چیز با «فَذَٰنِكَ» بیان می‌شود. «إِلَيْكَ» هم به «ـكَ» ختم می‌شود، اما یعنی «به سوی تو»."
+    },
+    {
+      "id": "q_u_p389b_A_0807",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "کلمه‌ای را انتخاب کن که معنایش این است:",
+      "stem": {
+        "fa": "پس این دو"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَيْبِكَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "«فَذَٰنِكَ» مثنای اسم اشاره است. «جَيْبِكَ» یعنی «گریبانت» و ضمیر «ـكَ» آن مالکیت را می‌رساند."
+    },
+    {
+      "id": "q_u_p389b_A_0808",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l3",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نافرمان"
+        },
+        {
+          "id": "r2",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r3",
+          "fa": "پس این دو"
+        },
+        {
+          "id": "r4",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r5",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "r6",
+          "fa": "دو دستت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«فَذَٰنِكَ» یعنی «پس این دو» و خبرش «بُرْهَـٰنَانِ» (دو معجزه) است."
+    },
+    {
+      "id": "q_u_p389b_A_0809",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "کلمه‌های عربی را به معنای فارسی‌شان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l4",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱسْلُكْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ببر"
+        },
+        {
+          "id": "r2",
+          "fa": "عیب"
+        },
+        {
+          "id": "r3",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r4",
+          "fa": "پس این دو"
+        },
+        {
+          "id": "r5",
+          "fa": "بیرون آید"
+        },
+        {
+          "id": "r6",
+          "fa": "ترس"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«فَذَٰنِكَ» اسم اشاره‌ی مثناست («پس این دو») و فعل نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0810",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_015"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l2",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "l3",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "l4",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱضْمُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بر سینه بگذار"
+        },
+        {
+          "id": "r2",
+          "fa": "پس این دو"
+        },
+        {
+          "id": "r3",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r4",
+          "fa": "دو دستت"
+        },
+        {
+          "id": "r5",
+          "fa": "پروردگار تو"
+        },
+        {
+          "id": "r6",
+          "fa": "نافرمان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "«فَذَٰنِكَ» یعنی «پس این دو»؛ «رَّبِّكَ» یعنی «پروردگار تو» و به همین دلیل این دو معنا با هم اشتباه نمی‌شوند."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در جفت‌سازی‌ها نیامد."
+  ]
+}

@@ -1,0 +1,12 @@
+[#1 q_u_p385b_B_0556 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#1 q_u_p385b_B_0556 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#2 q_u_p385b_B_0557 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#2 q_u_p385b_B_0557 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#3 q_u_p385b_B_0558 CLOZE_COMPLETE_REST] بانک b3: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ
+[#4 q_u_p385b_B_0559 CLOZE_COMPLETE_REST] بانک b1: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ
+[#5 q_u_p385b_B_0560 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#5 q_u_p385b_B_0560 ENDING_CHOICE] explanationFa خالی است.
+[#6 q_u_p385b_B_0561 MUTASHABIH_SPOT] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ
+[#6 q_u_p385b_B_0561 MUTASHABIH_SPOT] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ
+[#6 q_u_p385b_B_0561 MUTASHABIH_SPOT] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ
+[#6 q_u_p385b_B_0561 MUTASHABIH_SPOT] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: نِسَآءَهُمْ ۚ

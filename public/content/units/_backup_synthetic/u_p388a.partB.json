@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p388a",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p388a_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 22,
+      "targets": [
+        "vr:22"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «هنگامی که به سوی مدین روی آورد، گفت: امید است پروردگارم مرا به راه راس...»، آیه 22 را مرتب کن:",
+      "stem": {
+        "verse": 22
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَمَّا تَوَجَّهَ تِلْقَآءَ مَدْيَنَ",
+          "wordIdx": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالَ عَسَىٰ رَبِّىٓ أَن",
+          "wordIdx": [
+            5,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "يَهْدِيَنِى سَوَآءَ ٱلسَّبِيلِ",
+          "wordIdx": [
+            9,
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 22 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p388a_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 22,
+      "targets": [
+        "vr:22"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 22 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 22,
+        "hiddenIdx": [
+          6
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "عَسَىٰ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "6": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «عَسَىٰ» در آیه 22 است."
+    }
+  ],
+  "issues": []
+}

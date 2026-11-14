@@ -1,0 +1,1345 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p389b",
+  "part": "A4",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p389b_A_0501",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "معنای «وَٱضْمُمْ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و بیرون بیاور"
+        },
+        {
+          "id": "o2",
+          "fa": "و جمع کن، بر هم بگذار"
+        },
+        {
+          "id": "o3",
+          "fa": "و ببند"
+        },
+        {
+          "id": "o4",
+          "fa": "و بینداز"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی ض م م است؛ «ضمیمه» از همین ریشه است و یعنی چیزی را به چیز دیگر چسباندن."
+    },
+    {
+      "id": "q_u_p389b_A_0502",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "کدام گزینه معنای «وَٱضْمُمْ» است؟",
+      "stem": {
+        "wordId": "w28_032_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و رها کن"
+        },
+        {
+          "id": "o2",
+          "fa": "و بپوشان"
+        },
+        {
+          "id": "o3",
+          "fa": "و ببر"
+        },
+        {
+          "id": "o4",
+          "fa": "و بگذار"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "وَٱضْمُمْ فعل امر از ریشه‌ی ض م م است، به معنای «جمع کن و بر هم بگذار»."
+    },
+    {
+      "id": "q_u_p389b_A_0503",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "در این آیه، «وَٱضْمُمْ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_032_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بر هم بگذار"
+        },
+        {
+          "id": "o2",
+          "fa": "داخل ببر"
+        },
+        {
+          "id": "o3",
+          "fa": "از هم باز کن"
+        },
+        {
+          "id": "o4",
+          "fa": "بیرون آور"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در ترجمه آمده است «دو دستت را بر سینه بگذار»؛ ریشه‌ی ض م م یعنی جمع کردن و چسباندن."
+    },
+    {
+      "id": "q_u_p389b_A_0504",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "با توجه به آیه، «وَٱضْمُمْ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_010",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ببخش و رها کن"
+        },
+        {
+          "id": "o2",
+          "fa": "پنهان کن"
+        },
+        {
+          "id": "o3",
+          "fa": "به هم ضمیمه کن، جمع کن"
+        },
+        {
+          "id": "o4",
+          "fa": "دو برابر کن"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ضمیمه» هم‌ریشه با این کلمه است. معنایش چسباندن و جمع کردن است."
+    },
+    {
+      "id": "q_u_p389b_A_0505",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "معنای «جَنَاحَكَ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_012",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بال؛ دست و بازو"
+        },
+        {
+          "id": "o2",
+          "fa": "جناح و گروه سیاسی"
+        },
+        {
+          "id": "o3",
+          "fa": "سینه"
+        },
+        {
+          "id": "o4",
+          "fa": "پهلو و کناره"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "جَناح در اصل «بال» است. «جناح» در فارسی به معنای گروه سیاسی است، اما این معنا در این آیه مراد نیست."
+    },
+    {
+      "id": "q_u_p389b_A_0506",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "کدام گزینه معنای «جَنَاحَكَ» در این آیه است؟",
+      "stem": {
+        "wordId": "w28_032_012",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "o2",
+          "fa": "پروردگارت"
+        },
+        {
+          "id": "o3",
+          "fa": "دو دستت"
+        },
+        {
+          "id": "o4",
+          "fa": "جناح سیاسی تو"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ریشه‌ی ج ن ح است. جَناح یعنی بال و در این آیه به دست انسان اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_0507",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "در این آیه، «جَنَاحَكَ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_012",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گروه و دسته"
+        },
+        {
+          "id": "o2",
+          "fa": "سینه"
+        },
+        {
+          "id": "o3",
+          "fa": "پهلو"
+        },
+        {
+          "id": "o4",
+          "fa": "بال (در اینجا دست و بازو)"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "جَناح در اصل بال پرنده است و در این آیه به دست و بازوی انسان اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_0508",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "با توجه به آیه، «جَنَاحَكَ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_012",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ترس و هراس"
+        },
+        {
+          "id": "o2",
+          "fa": "بال پرنده؛ در این آیه دست انسان"
+        },
+        {
+          "id": "o3",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "o4",
+          "fa": "طرف و سمت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "جَناح از ریشه‌ی ج ن ح و به معنای بال است؛ در این آیه کنایه از دست و بازوست."
+    },
+    {
+      "id": "q_u_p389b_A_0509",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "معنای «ٱلرَّهْبِ» چیست؟",
+      "stem": {
+        "wordId": "w28_032_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "راهب و تارک دنیا"
+        },
+        {
+          "id": "o2",
+          "fa": "بدی"
+        },
+        {
+          "id": "o3",
+          "fa": "ترس و هراس"
+        },
+        {
+          "id": "o4",
+          "fa": "عبادت"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ریشه‌ی ر ه ب است. «راهب» کسی است که بسیار از خدا می‌ترسد؛ خود رَهب یعنی ترس."
+    },
+    {
+      "id": "q_u_p389b_A_0510",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "کدام گزینه معنای «ٱلرَّهْبِ» است؟",
+      "stem": {
+        "wordId": "w28_032_014",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ترس"
+        },
+        {
+          "id": "o2",
+          "fa": "سفیدی"
+        },
+        {
+          "id": "o3",
+          "fa": "نافرمانی"
+        },
+        {
+          "id": "o4",
+          "fa": "رهبری"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "ٱلرَّهْبِ از ریشه‌ی ر ه ب است و ربطی به «رهبری» ندارد؛ معنایش ترس است."
+    },
+    {
+      "id": "q_u_p389b_A_0511",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "در این آیه، «ٱلرَّهْبِ» یعنی چه؟",
+      "stem": {
+        "wordId": "w28_032_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "گریبان"
+        },
+        {
+          "id": "o2",
+          "fa": "ترس"
+        },
+        {
+          "id": "o3",
+          "fa": "پروردگار"
+        },
+        {
+          "id": "o4",
+          "fa": "راهب‌بودن"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "در ترجمه آمده است «برای [از بین رفتن] ترسی که دچارش شده‌ای». «راهب» هم‌ریشه با رَهب است."
+    },
+    {
+      "id": "q_u_p389b_A_0512",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "با توجه به آیه، «ٱلرَّهْبِ» به چه معناست؟",
+      "stem": {
+        "wordId": "w28_032_014",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نافرمانی"
+        },
+        {
+          "id": "o2",
+          "fa": "سفید و درخشان"
+        },
+        {
+          "id": "o3",
+          "fa": "عیب و بدی"
+        },
+        {
+          "id": "o4",
+          "fa": "ترس و هراس"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ٱلرَّهْبِ یعنی ترس و هراس؛ «راهب» هم‌ریشه با آن است."
+    },
+    {
+      "id": "q_u_p389b_A_0513",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «و بگذار» است؟",
+      "stem": {
+        "fa": "و بگذار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "o2",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَيْكَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "وَٱضْمُمْ از ریشه‌ی ض م م است؛ «ضمیمه» هم‌ریشه با آن است."
+    },
+    {
+      "id": "q_u_p389b_A_0514",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "معادل عربی «و جمع کن، بر هم بگذار» کدام است؟",
+      "stem": {
+        "fa": "و جمع کن، بر هم بگذار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "فَذَٰنِكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَنَاحَكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "وَٱضْمُمْ فعل امر و به معنای جمع کردن و چسباندن است."
+    },
+    {
+      "id": "q_u_p389b_A_0515",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010"
+      ],
+      "promptFa": "کدام کلمه فعل امر به معنای «به هم ضمیمه کن» است؟",
+      "stem": {
+        "fa": "به هم ضمیمه کن (فعل امر)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "o2",
+          "ar": "كَانُوا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱضْمُمْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی ض م م؛ ضمیمه کردن یعنی چسباندن چیزی به چیز دیگر."
+    },
+    {
+      "id": "q_u_p389b_A_0516",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «بال؛ در اینجا دست و بازو» است؟",
+      "stem": {
+        "fa": "بال؛ در اینجا دست و بازو"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بُرْهَـٰنَانِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "random",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "جَناح از ریشه‌ی ج ن ح و در اصل بال پرنده است."
+    },
+    {
+      "id": "q_u_p389b_A_0517",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "معادل عربی «دو دستت» در این آیه کدام است؟",
+      "stem": {
+        "fa": "دو دستت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "رَّبِّكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "جَنَاحَكَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "جَنَاحَكَ در اصل «بال تو» است و در این آیه به دست و بازو اشاره دارد."
+    },
+    {
+      "id": "q_u_p389b_A_0518",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_012"
+      ],
+      "promptFa": "کدام کلمه به معنای «بال پرنده» است که در این آیه دست انسان را می‌رساند؟",
+      "stem": {
+        "fa": "بال پرنده (در این آیه: دست انسان)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَيْكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "سُوٓءٍۢ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "ریشه‌ی ج ن ح است. جَناح یعنی بال."
+    },
+    {
+      "id": "q_u_p389b_A_0519",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 1,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «ترس» است؟",
+      "stem": {
+        "fa": "ترس"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "فَـٰسِقِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَيْضَآءَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ٱلرَّهْبِ از ریشه‌ی ر ه ب به معنای ترس است."
+    },
+    {
+      "id": "q_u_p389b_A_0520",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "معادل عربی «ترس و هراس» کدام است؟",
+      "stem": {
+        "fa": "ترس و هراس"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "o2",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "مَلَإِي۟هِۦٓ ۚ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«راهب» هم‌ریشه با رَهب است؛ رَهب یعنی ترس و هراس."
+    },
+    {
+      "id": "q_u_p389b_A_0521",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_014"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «هراس» است؟",
+      "stem": {
+        "fa": "هراس"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "غَيْرِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلرَّهْبِ ۖ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ٱلرَّهْبِ یعنی ترس و هراس و از ریشه‌ی ر ه ب است."
+    },
+    {
+      "id": "q_u_p389b_A_0522",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010",
+        "w:w28_032_012",
+        "w:w28_032_014"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "فِرْعَوْنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَـٰسِقِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "نافرمانان"
+        },
+        {
+          "id": "r2",
+          "fa": "ترس و هراس"
+        },
+        {
+          "id": "r3",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r4",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r5",
+          "fa": "بال؛ دست و بازو"
+        },
+        {
+          "id": "r6",
+          "fa": "و جمع کن، بر هم بگذار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "neighbor_word"
+      },
+      "explanationFa": "وَٱضْمُمْ از ض م م، جَنَاحَكَ از ج ن ح (بال) و ٱلرَّهْبِ از ر ه ب (ترس) است."
+    },
+    {
+      "id": "q_u_p389b_A_0523",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010",
+        "w:w28_032_012",
+        "w:w28_032_014"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَيْبِكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "بُرْهَـٰنَانِ"
+        },
+        {
+          "id": "l5",
+          "ar": "جَنَاحَكَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "دو دستت"
+        },
+        {
+          "id": "r2",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r3",
+          "fa": "و بگذار"
+        },
+        {
+          "id": "r4",
+          "fa": "گریبانت"
+        },
+        {
+          "id": "r5",
+          "fa": "ترس"
+        },
+        {
+          "id": "r6",
+          "fa": "سفید و درخشان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_word"
+      },
+      "explanationFa": "جَناح یعنی بال و در این آیه دست؛ رَهب یعنی ترس؛ «ضمیمه» هم‌ریشه با وَٱضْمُمْ است."
+    },
+    {
+      "id": "q_u_p389b_A_0524",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010",
+        "w:w28_032_012",
+        "w:w28_032_014"
+      ],
+      "promptFa": "هر کلمه‌ی عربی را به معنای درستش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَيْضَآءَ"
+        },
+        {
+          "id": "l2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "تَخْرُجْ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَٱضْمُمْ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلرَّهْبِ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ترس و هراس"
+        },
+        {
+          "id": "r2",
+          "fa": "فرعون"
+        },
+        {
+          "id": "r3",
+          "fa": "بیرون آید"
+        },
+        {
+          "id": "r4",
+          "fa": "بال؛ دست و بازو"
+        },
+        {
+          "id": "r5",
+          "fa": "جمع کن، بر هم بگذار"
+        },
+        {
+          "id": "r6",
+          "fa": "سفید و درخشان"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "neighbor_word"
+      },
+      "explanationFa": "سه کلمه‌ی سخت: وَٱضْمُمْ (ض م م)، جَنَاحَكَ (ج ن ح) و ٱلرَّهْبِ (ر ه ب)."
+    },
+    {
+      "id": "q_u_p389b_A_0525",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010",
+        "w:w28_032_012",
+        "w:w28_032_014"
+      ],
+      "promptFa": "کلمات را به معنایشان وصل کن؛ یک معنا اضافه است.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱسْلُكْ"
+        },
+        {
+          "id": "l2",
+          "ar": "سُوٓءٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "l4",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱضْمُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "بال؛ دست و بازو"
+        },
+        {
+          "id": "r2",
+          "fa": "و جمع کن، بر هم بگذار"
+        },
+        {
+          "id": "r3",
+          "fa": "ترس"
+        },
+        {
+          "id": "r4",
+          "fa": "عیب"
+        },
+        {
+          "id": "r5",
+          "fa": "نافرمانان"
+        },
+        {
+          "id": "r6",
+          "fa": "ببر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_word"
+      },
+      "explanationFa": "سُوٓءٍ در ترجمه «عیب» آمده است؛ سه کلمه‌ی دیگر سخت‌اند: ض م م، ج ن ح، ر ه ب."
+    },
+    {
+      "id": "q_u_p389b_A_0526",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 32,
+      "targets": [
+        "w:w28_032_010",
+        "w:w28_032_012",
+        "w:w28_032_014"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "قَوْمًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "جَنَاحَكَ"
+        },
+        {
+          "id": "l3",
+          "ar": "مَلَإِي۟هِۦٓ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلرَّهْبِ ۖ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱضْمُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اشراف و سران او"
+        },
+        {
+          "id": "r2",
+          "fa": "دو معجزه"
+        },
+        {
+          "id": "r3",
+          "fa": "و بگذار"
+        },
+        {
+          "id": "r4",
+          "fa": "مردمی"
+        },
+        {
+          "id": "r5",
+          "fa": "ترس و هراس"
+        },
+        {
+          "id": "r6",
+          "fa": "دو دستت"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "neighbor_word"
+      },
+      "explanationFa": "جَناح در اصل بال است؛ رَهب با «راهب» هم‌ریشه است؛ وَٱضْمُمْ با «ضمیمه»."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در MATCH_WORDS کلمه‌ی مرور آورده نشد و به‌جای آن از کلمات غیرسخت همین آیه استفاده شد.",
+    "معنای کلمات غیرسخت در جفت‌سازی‌ها از ترجمه‌ی همین آیه گرفته شد."
+  ]
+}

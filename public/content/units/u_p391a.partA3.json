@@ -1,0 +1,1326 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p391a",
+  "part": "A3",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p391a_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "معنای «فَتَطَاوَلَ» چیست؟",
+      "stem": {
+        "wordId": "w28_045_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس تکبر ورزید"
+        },
+        {
+          "id": "o2",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "o3",
+          "fa": "پس کوتاه شد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس فراموش شد"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ریشه‌ی «ط و ل» است و با «طول» هم‌ریشه است. «تطاول» در فارسی به معنای دست‌درازی است، اما در این آیه یعنی کم‌کم دراز شد."
+    },
+    {
+      "id": "q_u_p391a_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "کدام معنا برای «فَتَطَاوَلَ» درست است؟",
+      "stem": {
+        "wordId": "w28_045_004",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس پدید آوردیم"
+        },
+        {
+          "id": "o2",
+          "fa": "پس دست‌درازی کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "پس بر آنان گذشت"
+        },
+        {
+          "id": "o4",
+          "fa": "پس دراز شد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "باب تفاعل است و یعنی به‌تدریج طولانی شد. معنای فارسی «تطاول» (تعدی) اینجا مراد نیست."
+    },
+    {
+      "id": "q_u_p391a_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "«فَتَطَاوَلَ» در این آیه چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_045_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "o2",
+          "fa": "پس برتری جست"
+        },
+        {
+          "id": "o3",
+          "fa": "پس کوتاه شد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس ساکن شد"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فاعل آن «ٱلْعُمُرُ» است، یعنی روزگار بر آنان دراز شد. با «طویل» هم‌ریشه است."
+    },
+    {
+      "id": "q_u_p391a_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "در عبارت «فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ»، معنای «فَتَطَاوَلَ» کدام است؟",
+      "stem": {
+        "wordId": "w28_045_004",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس ستم کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "پس نابود شد"
+        },
+        {
+          "id": "o3",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "o4",
+          "fa": "پس فرستاده شد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ف» یعنی «پس» و «تَطَاوَلَ» یعنی دراز شد. این فعل به درازای زمان اشاره دارد، نه ستم."
+    },
+    {
+      "id": "q_u_p391a_A_0305",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «پس دراز شد» است؟",
+      "stem": {
+        "fa": "پس دراز شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "o4",
+          "ar": "تَتْلُوا۟"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«فَتَطَاوَلَ» از «ط و ل» است. «فـ» یعنی «پس»."
+    },
+    {
+      "id": "q_u_p391a_A_0306",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "معادل عربی «به درازا کشیدن و طولانی شدن» کدام است؟",
+      "stem": {
+        "fa": "به درازا کشیدن و طولانی شدن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "مُرْسِلِينَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل «تَطَاوَلَ» از باب تفاعل و هم‌ریشه با «طول» است."
+    },
+    {
+      "id": "q_u_p391a_A_0307",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004"
+      ],
+      "promptFa": "کدام کلمه یعنی «کم‌کم دراز شد»؟",
+      "stem": {
+        "fa": "کم‌کم دراز شد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "عَلَيْهِمُ"
+        },
+        {
+          "id": "o3",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنَّا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "باب تفاعل یعنی تدریجی بودن؛ «تَطَاوَلَ» یعنی کم‌کم دراز شد."
+    },
+    {
+      "id": "q_u_p391a_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "معنای «ٱلْعُمُرُ» چیست؟",
+      "stem": {
+        "wordId": "w28_045_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "عمر یک انسان"
+        },
+        {
+          "id": "o2",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "روزگار"
+        },
+        {
+          "id": "o4",
+          "fa": "پیری"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "ریشه‌ی «ع م ر» است. «عمر» در فارسی زندگی یک فرد است، اما اینجا یعنی روزگار و مدت دراز."
+    },
+    {
+      "id": "q_u_p391a_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "کدام معنا برای «ٱلْعُمُرُ» درست است؟",
+      "stem": {
+        "wordId": "w28_045_006",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "نشانه‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "روزگار"
+        },
+        {
+          "id": "o3",
+          "fa": "زندگی یک فرد"
+        },
+        {
+          "id": "o4",
+          "fa": "سرگذشت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "false_friend",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«ٱلْعُمُرُ» به زمان و روزگار اشاره دارد. نباید آن را با «عمر فرد» در فارسی یکی گرفت."
+    },
+    {
+      "id": "q_u_p391a_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "«ٱلْعُمُرُ» در این آیه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_045_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روزگار"
+        },
+        {
+          "id": "o2",
+          "fa": "عمر یک انسان"
+        },
+        {
+          "id": "o3",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "مردم مدین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فاعل «فَتَطَاوَلَ» است: روزگار بر آنان دراز شد. مراد مدت زمان است."
+    },
+    {
+      "id": "q_u_p391a_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "در «فَتَطَاوَلَ عَلَيْهِمُ ٱلْعُمُرُ»، «ٱلْعُمُرُ» چیست؟",
+      "stem": {
+        "wordId": "w28_045_006",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیری"
+        },
+        {
+          "id": "o2",
+          "fa": "نسل‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "عمر یک انسان"
+        },
+        {
+          "id": "o4",
+          "fa": "روزگار"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«ٱلْ» ادات تعریف و «عُمُرُ» به معنای روزگار دراز است. این کلمه یک «دوست فریبنده» است."
+    },
+    {
+      "id": "q_u_p391a_A_0312",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «روزگار»؟",
+      "stem": {
+        "fa": "روزگار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْعُمُرُ ۚ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْعُمُرُ» از «ع م ر» به معنای روزگار و مدت زمان است."
+    },
+    {
+      "id": "q_u_p391a_A_0313",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "معادل عربی «زمان و روزگار دراز» کدام است؟",
+      "stem": {
+        "fa": "زمان و روزگار دراز"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنتَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْعُمُرُ» اسم است و فاعل «فَتَطَاوَلَ». اینجا یعنی مدت زمان."
+    },
+    {
+      "id": "q_u_p391a_A_0314",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_006"
+      ],
+      "promptFa": "کدام کلمه برابر «روزگار» است، نه «عمر یک فرد»؟",
+      "stem": {
+        "fa": "روزگار (نه عمر یک فرد)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "عَلَيْهِمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "مُرْسِلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْعُمُرُ» اینجا مدت زمان و روزگار است. در فارسی «عمر» معنای دیگری دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0315",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "معنای «ثَاوِيًا» چیست؟",
+      "stem": {
+        "wordId": "w28_045_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "فرستاده"
+        },
+        {
+          "id": "o2",
+          "fa": "مهمان"
+        },
+        {
+          "id": "o3",
+          "fa": "ساکن"
+        },
+        {
+          "id": "o4",
+          "fa": "خواننده"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "از ریشه‌ی کم‌کاربرد «ث و ي» به معنای ماندن و اقامت کردن است."
+    },
+    {
+      "id": "q_u_p391a_A_0316",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "کدام معنا برای «ثَاوِيًا» درست است؟",
+      "stem": {
+        "wordId": "w28_045_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ساکن"
+        },
+        {
+          "id": "o2",
+          "fa": "غایب"
+        },
+        {
+          "id": "o3",
+          "fa": "گذرنده"
+        },
+        {
+          "id": "o4",
+          "fa": "بیان‌کننده"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ثاوي» یعنی مقیم و ماندگار. از «ثوی» به معنای اقامت گرفته است."
+    },
+    {
+      "id": "q_u_p391a_A_0317",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "«ثَاوِيًا» در این آیه یعنی چه؟",
+      "stem": {
+        "wordId": "w28_045_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "مهمان"
+        },
+        {
+          "id": "o2",
+          "fa": "فرستاده"
+        },
+        {
+          "id": "o3",
+          "fa": "خواننده"
+        },
+        {
+          "id": "o4",
+          "fa": "ساکن"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ما كنتَ ثاويًا في أهل مدين» یعنی تو در میان مردم مدین ساکن نبودی."
+    },
+    {
+      "id": "q_u_p391a_A_0318",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "در عبارت «وَمَا كُنتَ ثَاوِيًا فِي أَهْلِ مَدْيَنَ»، «ثَاوِيًا» کدام است؟",
+      "stem": {
+        "wordId": "w28_045_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بیننده"
+        },
+        {
+          "id": "o2",
+          "fa": "ساکن"
+        },
+        {
+          "id": "o3",
+          "fa": "فرستنده"
+        },
+        {
+          "id": "o4",
+          "fa": "گذرنده"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "near_miss"
+      },
+      "explanationFa": "«كنتَ ثاويًا» یعنی ساکن بودی؛ با نفی «ما» یعنی ساکن نبودی."
+    },
+    {
+      "id": "q_u_p391a_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «ساکن»؟",
+      "stem": {
+        "fa": "ساکن"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "قُرُونًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "أَنشَأْنَا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ثَاوِيًا» از «ث و ي» است و یعنی مقیم و ساکن."
+    },
+    {
+      "id": "q_u_p391a_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "معادل عربی «مقیم و ماندگار» کدام است؟",
+      "stem": {
+        "fa": "مقیم و ماندگار"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "o3",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنتَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ثَاوِيًا» یعنی ماندن و اقامت کردن؛ ریشه‌اش کم‌کاربرد است."
+    },
+    {
+      "id": "q_u_p391a_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_009"
+      ],
+      "promptFa": "کدام کلمه یعنی «اقامت‌کننده»؟",
+      "stem": {
+        "fa": "اقامت‌کننده"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "o4",
+          "ar": "كُنَّا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ثَاوِيًا» اسم فاعل از ریشه‌ی «ثوي» است و یعنی کسی که اقامت دارد."
+    },
+    {
+      "id": "q_u_p391a_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004",
+        "w:w28_045_006",
+        "w:w28_045_009"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "l3",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "قُرُونًۭا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ملت‌ها"
+        },
+        {
+          "id": "r2",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r3",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r4",
+          "fa": "پدید آوردیم"
+        },
+        {
+          "id": "r5",
+          "fa": "روزگار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r2"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "سه کلمه‌ی سخت: «فَتَطَاوَلَ» پس دراز شد، «ٱلْعُمُرُ» روزگار و «ثَاوِيًا» ساکن."
+    },
+    {
+      "id": "q_u_p391a_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004",
+        "w:w28_045_006",
+        "w:w28_045_009"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی جفت کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l2",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُرْسِلِينَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَتَطَاوَلَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روزگار"
+        },
+        {
+          "id": "r2",
+          "fa": "فرستندگان"
+        },
+        {
+          "id": "r3",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r4",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r5",
+          "fa": "بخوانی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«تَتْلُوا» یعنی بخوانی و «مُرْسِلِينَ» یعنی فرستندگان. سه کلمه‌ی سخت هم مثل قبل است."
+    },
+    {
+      "id": "q_u_p391a_A_0324",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004",
+        "w:w28_045_006",
+        "w:w28_045_009"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کن؛ یک گزینه‌ی فارسی اضافه است.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَهْلِ"
+        },
+        {
+          "id": "l2",
+          "ar": "فَتَطَاوَلَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "ءَايَـٰتِنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْعُمُرُ ۚ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روزگار"
+        },
+        {
+          "id": "r2",
+          "fa": "مهمان"
+        },
+        {
+          "id": "r3",
+          "fa": "نشانه‌های ما"
+        },
+        {
+          "id": "r4",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r5",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r6",
+          "fa": "مردم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r6"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r4"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r2": "near_miss"
+      },
+      "explanationFa": "«مهمان» به «ثَاوِيًا» شبیه است اما معنایش نیست؛ «ثاوي» یعنی مقیم."
+    },
+    {
+      "id": "q_u_p391a_A_0325",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004",
+        "w:w28_045_006",
+        "w:w28_045_009"
+      ],
+      "promptFa": "کلمات را به معنایشان وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "l2",
+          "ar": "كُنتَ"
+        },
+        {
+          "id": "l3",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l4",
+          "ar": "مَدْيَنَ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَتَطَاوَلَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r2",
+          "fa": "مدین"
+        },
+        {
+          "id": "r3",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r4",
+          "fa": "بودی"
+        },
+        {
+          "id": "r5",
+          "fa": "روزگار"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«كنتَ» یعنی بودی و «مَدْيَنَ» نام قوم و شهر مدین است. سه کلمه‌ی سخت مرور می‌شوند."
+    },
+    {
+      "id": "q_u_p391a_A_0326",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 45,
+      "targets": [
+        "w:w28_045_004",
+        "w:w28_045_006",
+        "w:w28_045_009"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کن؛ مراقب معنای «دوست فریبنده» باش.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "تَتْلُوا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "ثَاوِيًۭا"
+        },
+        {
+          "id": "l3",
+          "ar": "أَنشَأْنَا"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْعُمُرُ ۚ"
+        },
+        {
+          "id": "l5",
+          "ar": "فَتَطَاوَلَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "ساکن"
+        },
+        {
+          "id": "r2",
+          "fa": "پس دراز شد"
+        },
+        {
+          "id": "r3",
+          "fa": "عمر یک انسان"
+        },
+        {
+          "id": "r4",
+          "fa": "بخوانی"
+        },
+        {
+          "id": "r5",
+          "fa": "روزگار"
+        },
+        {
+          "id": "r6",
+          "fa": "پدید آوردیم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r1"
+        ],
+        [
+          "l3",
+          "r6"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "«عمر یک انسان» معنای فارسی «عُمُر» است، اما در آیه یعنی روزگار."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ در جفت‌سازی از کلمات غیرسخت همین آیه برای مرور استفاده شد."
+  ]
+}

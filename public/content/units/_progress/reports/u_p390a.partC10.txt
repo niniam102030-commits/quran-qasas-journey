@@ -1,0 +1,59 @@
+[#15 q_u_p390a_C_1315 MATCH_WORDS] l4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلدَّارِ ۖ
+[#20 q_u_p390a_C_1320 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: بَيِّنَـٰتٍۢ...
+[#20 q_u_p390a_C_1320 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: بِٱلْهُدَىٰ...
+[#20 q_u_p390a_C_1320 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: بِأَخِيكَ...
+[#20 q_u_p390a_C_1320 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْمَلَأُ...
+[#21 q_u_p390a_C_1321 TRANSLATION_TO_VERSE] گزینه o1: کلمه(های) عربی خارج از متن سوره/بانک: عِندِهِۦ...
+[#21 q_u_p390a_C_1321 TRANSLATION_TO_VERSE] گزینه o2: کلمه(های) عربی خارج از متن سوره/بانک: بَيِّنَـٰتٍۢ...
+[#21 q_u_p390a_C_1321 TRANSLATION_TO_VERSE] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: بِأَخِيكَ...
+[#21 q_u_p390a_C_1321 TRANSLATION_TO_VERSE] گزینه o4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلْمَلَأُ...
+[#24 q_u_p390a_C_1324 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#24 q_u_p390a_C_1324 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#25 q_u_p390a_C_1325 MATCH_PHRASES] l4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلدَّارِ ۖ
+[#25 q_u_p390a_C_1325 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#25 q_u_p390a_C_1325 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#26 q_u_p390a_C_1326 MATCH_PHRASES] قطعه‌ی فارسی r1 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#26 q_u_p390a_C_1326 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#51 q_u_p390a_C_1351 MATCH_NUMBER_OPENING] l1: کلمه(های) عربی خارج از متن سوره/بانک: 36
+[#51 q_u_p390a_C_1351 MATCH_NUMBER_OPENING] l2: کلمه(های) عربی خارج از متن سوره/بانک: 37
+[#51 q_u_p390a_C_1351 MATCH_NUMBER_OPENING] l3: کلمه(های) عربی خارج از متن سوره/بانک: 35
+[#51 q_u_p390a_C_1351 MATCH_NUMBER_OPENING] l4: کلمه(های) عربی خارج از متن سوره/بانک: 38
+[#52 q_u_p390a_C_1352 MATCH_NUMBER_OPENING] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#52 q_u_p390a_C_1352 MATCH_NUMBER_OPENING] l1: کلمه(های) عربی خارج از متن سوره/بانک: 35
+[#52 q_u_p390a_C_1352 MATCH_NUMBER_OPENING] l2: کلمه(های) عربی خارج از متن سوره/بانک: 36
+[#52 q_u_p390a_C_1352 MATCH_NUMBER_OPENING] l3: کلمه(های) عربی خارج از متن سوره/بانک: 37
+[#53 q_u_p390a_C_1353 MATCH_NUMBER_OPENING] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 2).
+[#53 q_u_p390a_C_1353 MATCH_NUMBER_OPENING] l1: کلمه(های) عربی خارج از متن سوره/بانک: 36
+[#53 q_u_p390a_C_1353 MATCH_NUMBER_OPENING] l2: کلمه(های) عربی خارج از متن سوره/بانک: 37
+[#54 q_u_p390a_C_1354 MATCH_NUMBER_OPENING] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#54 q_u_p390a_C_1354 MATCH_NUMBER_OPENING] l1: کلمه(های) عربی خارج از متن سوره/بانک: 36
+[#54 q_u_p390a_C_1354 MATCH_NUMBER_OPENING] l2: کلمه(های) عربی خارج از متن سوره/بانک: 37
+[#54 q_u_p390a_C_1354 MATCH_NUMBER_OPENING] l3: کلمه(های) عربی خارج از متن سوره/بانک: 38
+[#55 q_u_p390a_C_1355 MATCH_NUMBER_OPENING] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 2).
+[#55 q_u_p390a_C_1355 MATCH_NUMBER_OPENING] l1: کلمه(های) عربی خارج از متن سوره/بانک: 35
+[#55 q_u_p390a_C_1355 MATCH_NUMBER_OPENING] l2: کلمه(های) عربی خارج از متن سوره/بانک: 36
+[#62 q_u_p390a_C_1362 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#63 q_u_p390a_C_1363 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#64 q_u_p390a_C_1364 BUILD_PREV_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#69 q_u_p390a_C_1369 BUILD_NEXT_VERSE] آیه‌ی هدف (None) معتبر نیست.
+[#76 q_u_p390a_C_1376 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#77 q_u_p390a_C_1377 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#78 q_u_p390a_C_1378 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#79 q_u_p390a_C_1379 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#80 q_u_p390a_C_1380 BUILD_FROM_TRANSLATION] آیه‌ی هدف (None) معتبر نیست.
+[#81 q_u_p390a_C_1381 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#82 q_u_p390a_C_1382 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#83 q_u_p390a_C_1383 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#84 q_u_p390a_C_1384 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#85 q_u_p390a_C_1385 BUILD_FROM_NUMBER] آیه‌ی هدف (None) معتبر نیست.
+[#89 q_u_p390a_C_1389 CLOZE_AR] بانک b4: کلمه(های) عربی خارج از متن سوره/بانک: ٱلدَّارِ ۖ
+[#92 q_u_p390a_C_1392 CLOZE_AR] نسبت پنهان 18% خارج از ۲۵٪ تا ۸۰٪ است.
+[#93 q_u_p390a_C_1393 CLOZE_AR] نسبت پنهان 17% خارج از ۲۵٪ تا ۸۰٪ است.
+[#94 q_u_p390a_C_1394 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#95 q_u_p390a_C_1395 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#96 q_u_p390a_C_1396 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#97 q_u_p390a_C_1397 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#98 q_u_p390a_C_1398 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#99 q_u_p390a_C_1399 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+[#100 q_u_p390a_C_1400 CLOZE_COMPLETE_REST] stem.hiddenIdx نامعتبر.
+تعداد سوال 100 زیاد است؛ حدود 15 بخواهم.

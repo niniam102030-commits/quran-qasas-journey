@@ -1,0 +1,69 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p393a",
+  "part": "C6",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p393a_C6_1381",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 63,
+      "targets": [
+        "sq:62"
+      ],
+      "promptFa": "آیه‌ی قبل از این آیه، با کدام کلمات آغاز می‌شود؟",
+      "stem": {
+        "verse": 63
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_065_001",
+            "w28_065_002",
+            "w28_065_003",
+            "w28_065_004"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_064_001",
+            "w28_064_002",
+            "w28_064_003",
+            "w28_064_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 62,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_061_001",
+            "w28_061_002",
+            "w28_061_003",
+            "w28_061_004"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۶۲ (آیه‌ی قبل) با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ» آغاز می‌شود. گزینه‌ی دارای «مَاذَآ» مربوط به آغاز آیه‌ی مشابه یعنی آیه‌ی ۶۵ است."
+    }
+  ],
+  "issues": []
+}

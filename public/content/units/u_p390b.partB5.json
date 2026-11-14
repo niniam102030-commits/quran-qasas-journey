@@ -1,0 +1,733 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "B5",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_B_0901",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 1,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "کلمات پایانی آیه را در جای خالی بگذارید.",
+      "stem": {
+        "verse": 41,
+        "hiddenIdx": [
+          5,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْمَقْبُوحِينَ",
+          "wordIdx": []
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلنَّارِ ۖ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلْيَمِّ ۖ",
+          "wordIdx": []
+        },
+        {
+          "id": "b4",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        }
+      ],
+      "answer": {
+        "5": "b2",
+        "9": "b4"
+      },
+      "distractorTags": {
+        "b1": "similar_verse",
+        "b3": "neighbor_verse"
+      },
+      "explanationFa": "آیه با «يَدْعُونَ إِلَى ٱلنَّارِ» شروع به دعوت می‌شود و با «لَا يُنصَرُونَ» (یاری نمی‌شوند) پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p390b_B_0902",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "کلمات پنهان آیه را از بانک انتخاب کنید.",
+      "stem": {
+        "verse": 41,
+        "hiddenIdx": [
+          1,
+          3,
+          6,
+          8
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَنَبَذْنَـٰهُمْ",
+          "wordIdx": []
+        },
+        {
+          "id": "b3",
+          "ar": "وَجَعَلْنَـٰهُمْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَدْعُونَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَأَتْبَعْنَـٰهُمْ",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "1": "b3",
+        "3": "b5",
+        "6": "b1",
+        "8": "b4"
+      },
+      "distractorTags": {
+        "b2": "neighbor_verse",
+        "b6": "similar_verse"
+      },
+      "explanationFa": "آغاز آیه «وَجَعَلْنَـٰهُمْ» (قرار دادیم) است، نه «وَأَتْبَعْنَـٰهُمْ» که آغاز آیه‌ی بعد است."
+    },
+    {
+      "id": "q_u_p390b_B_0903",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "پنج کلمه‌ی پنهان آیه را بازسازی کنید.",
+      "stem": {
+        "verse": 41,
+        "hiddenIdx": [
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِلَى",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلدُّنْيَا",
+          "wordIdx": []
+        },
+        {
+          "id": "b3",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَئِمَّةًۭ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "فِى",
+          "wordIdx": []
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلنَّارِ ۖ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "ٱلْمَقْبُوحِينَ",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "2": "b4",
+        "4": "b1",
+        "5": "b7",
+        "7": "b5",
+        "9": "b3"
+      },
+      "distractorTags": {
+        "b2": "similar_verse",
+        "b6": "neighbor_word",
+        "b8": "similar_verse"
+      },
+      "explanationFa": "«يَدْعُونَ إِلَى ٱلنَّارِ» یعنی «به آتش دعوت می‌کنند»؛ «فِى» در این جمله نمی‌آید."
+    },
+    {
+      "id": "q_u_p390b_B_0904",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "فقط «ٱلنَّارِ» و «ٱلْقِيَـٰمَةِ» داده شده‌اند؛ بقیه را بازسازی کنید.",
+      "stem": {
+        "verse": 41,
+        "hiddenIdx": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يَدْعُونَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "هُم",
+          "wordIdx": []
+        },
+        {
+          "id": "b4",
+          "ar": "وَجَعَلْنَـٰهُمْ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِلَى",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَأَتْبَعْنَـٰهُمْ",
+          "wordIdx": []
+        },
+        {
+          "id": "b8",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "أَئِمَّةًۭ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "نَجْزِى",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "1": "b4",
+        "2": "b9",
+        "3": "b1",
+        "4": "b5",
+        "6": "b8",
+        "8": "b2",
+        "9": "b6"
+      },
+      "distractorTags": {
+        "b3": "similar_verse",
+        "b7": "similar_verse",
+        "b10": "random"
+      },
+      "explanationFa": "«هُم» در آیه‌ی بعد پس از «وَيَوْمَ ٱلْقِيَـٰمَةِ» می‌آید؛ در این آیه «لَا يُنصَرُونَ» می‌آید."
+    },
+    {
+      "id": "q_u_p390b_B_0905",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "دو کلمه‌ی اول آیه داده شده؛ بقیه را کامل کنید.",
+      "stem": {
+        "verse": 41,
+        "givenCount": 2,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يَدْعُونَ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فِى",
+          "wordIdx": []
+        },
+        {
+          "id": "b4",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلنَّارِ ۖ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "إِلَى",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "هُم",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "3": "b2",
+        "4": "b6",
+        "5": "b5",
+        "6": "b8",
+        "7": "b1",
+        "8": "b4",
+        "9": "b7"
+      },
+      "distractorTags": {
+        "b3": "neighbor_word",
+        "b9": "similar_verse"
+      },
+      "explanationFa": "پس از «أَئِمَّةًۭ» می‌آید «يَدْعُونَ إِلَى ٱلنَّارِ» و سپس «وَيَوْمَ ٱلْقِيَـٰمَةِ لَا يُنصَرُونَ»."
+    },
+    {
+      "id": "q_u_p390b_B_0906",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "پنج کلمه‌ی اول آیه داده شده؛ بخش پایانی را کامل کنید.",
+      "stem": {
+        "verse": 41,
+        "givenCount": 5,
+        "hiddenIdx": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هُم",
+          "wordIdx": []
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِّنَ",
+          "wordIdx": []
+        },
+        {
+          "id": "b5",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْقِيَـٰمَةِ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "ٱلْمَقْبُوحِينَ",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "6": "b3",
+        "7": "b6",
+        "8": "b1",
+        "9": "b5"
+      },
+      "distractorTags": {
+        "b2": "similar_verse",
+        "b4": "similar_verse",
+        "b7": "similar_verse"
+      },
+      "explanationFa": "آیه‌ی ۴۱ با «لَا يُنصَرُونَ» تمام می‌شود، ولی آیه‌ی ۴۲ پس از همین ابتدا «هُم مِّنَ ٱلْمَقْبُوحِينَ» دارد."
+    },
+    {
+      "id": "q_u_p390b_B_0907",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "هفت کلمه‌ی اول آیه داده شده؛ پایان آیه را کامل کنید.",
+      "stem": {
+        "verse": 41,
+        "givenCount": 7,
+        "hiddenIdx": [
+          8,
+          9
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "يُنصَرُونَ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هُم",
+          "wordIdx": []
+        },
+        {
+          "id": "b3",
+          "ar": "لَا",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلْمَقْبُوحِينَ",
+          "wordIdx": []
+        },
+        {
+          "id": "b5",
+          "ar": "يَنفَعَنَآ",
+          "wordIdx": []
+        }
+      ],
+      "answer": {
+        "8": "b3",
+        "9": "b1"
+      },
+      "distractorTags": {
+        "b2": "similar_verse",
+        "b4": "similar_verse",
+        "b5": "random"
+      },
+      "explanationFa": "«لَا يُنصَرُونَ» یعنی «یاری نمی‌شوند»؛ پایان آیه‌ی ۴۲ متفاوت است."
+    },
+    {
+      "id": "q_u_p390b_B_0908",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "کدام نسخه عیناً آیه‌ی ۴۱ است؟",
+      "stem": {
+        "verseNum": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_041_001",
+            "w28_041_003",
+            "w28_041_002",
+            "w28_041_004",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_041_008",
+            "w28_041_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_041_004",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_042_008",
+            "w28_041_009"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_041_004",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_041_009"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "similar_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در نسخه‌های غلط جای «أَئِمَّةًۭ» و «يَدْعُونَ» عوض شده، «لَا» با «هُم» (از آیه‌ی ۴۲) جایگزین شده، یا «لَا» حذف شده است."
+    },
+    {
+      "id": "q_u_p390b_B_0909",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 41,
+      "targets": [
+        "vr:41"
+      ],
+      "promptFa": "کدام نسخه دقیقاً آیه‌ی ۴۱ است؟",
+      "stem": {
+        "verseNum": 41
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_042_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_041_004",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_041_008",
+            "w28_041_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_042_002",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_041_008",
+            "w28_041_009"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 41,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_041_001",
+            "w28_041_002",
+            "w28_041_003",
+            "w28_041_004",
+            "w28_041_005",
+            "w28_041_006",
+            "w28_041_007",
+            "w28_041_008",
+            "w28_041_009",
+            "w28_042_010"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "similar_verse",
+        "o2": "near_miss",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "در نسخه‌های غلط آغاز آیه با «وَأَتْبَعْنَـٰهُمْ» عوض شده، «يَدْعُونَ إِلَى» با «فِى» جایگزین شده، یا «ٱلْمَقْبُوحِينَ» از آیه‌ی ۴۲ به انتها افزوده شده است."
+    }
+  ],
+  "issues": [
+    "lexicon/chunks فقط در PART A است و ساخته نشد",
+    "کلمه‌های انحرافی بدون شناسه از surahWordPool، با wordIdx خالی"
+  ]
+}

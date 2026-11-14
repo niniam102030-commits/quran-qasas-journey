@@ -1,0 +1,12 @@
+[#3 q_u_p387a_A_0450 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p387a_A_0453 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p387a_A_0456 WORD_AR_TO_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p387a_A_0458 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p387a_A_0459 WORD_FA_TO_AR] گزینه o3: کلمه(های) عربی خارج از متن سوره/بانک: ٱلشَّيْطَـٰنِ ۖ
+[#13 q_u_p387a_A_0460 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#15 q_u_p387a_A_0462 WORD_FA_TO_AR] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p387a_A_0464 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#18 q_u_p387a_A_0465 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p387a_A_0466 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p387a_A_0467 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p387a_A_0468 MATCH_WORDS] stage باید در بازه‌ی 1 تا 2 باشد.

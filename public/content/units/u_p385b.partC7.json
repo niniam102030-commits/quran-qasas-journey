@@ -1,0 +1,432 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "C7",
+  "generatedBy": "gemini-3.1-pro",
+  "questions": [
+    {
+      "id": "q_u_p385b_C_0580",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 3,
+      "targets": [
+        "vn:3"
+      ],
+      "promptFa": "این آیه چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 2
+        },
+        {
+          "id": "o2",
+          "num": 3
+        },
+        {
+          "id": "o3",
+          "num": 4
+        },
+        {
+          "id": "o4",
+          "num": 5
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "پس از حروف مقطعه در آیه‌ی ۱ و معرفی کتاب روشنگر در آیه‌ی ۲، بیان سرگذشت موسی و فرعون در آیه‌ی ۳ آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p385b_C_0581",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 3,
+      "targets": [
+        "vn:3"
+      ],
+      "promptFa": "شماره‌ی آیه‌ای که از خواندن بخشی از سرگذشت موسی و فرعون به حق برای مؤمنان سخن می‌گوید کدام است؟",
+      "stem": {
+        "verse": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 1
+        },
+        {
+          "id": "o2",
+          "num": 4
+        },
+        {
+          "id": "o3",
+          "num": 6
+        },
+        {
+          "id": "o4",
+          "num": 3
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o3": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۳ سوره قصص مقدمه‌ی ورود به داستان حضرت موسی و فرعون با عبارت «نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ مُوسَىٰ وَفِرْعَوْنَ» است."
+    },
+    {
+      "id": "q_u_p385b_C_0582",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 3,
+      "targets": [
+        "vn:3",
+        "vr:3"
+      ],
+      "promptFa": "آیه‌ی ۳ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 3,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_002_001",
+            "w28_002_002",
+            "w28_002_003",
+            "w28_002_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_004_001",
+            "w28_004_002",
+            "w28_004_003",
+            "w28_004_004",
+            "w28_004_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_005_001",
+            "w28_005_002",
+            "w28_005_003",
+            "w28_005_004",
+            "w28_005_005"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۳ با «نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ» شروع می‌شود؛ آیه‌ی ۲ با «تِلْكَ ءَايَـٰتُ» و آیه‌ی ۴ با «إِنَّ فِرْعَوْنَ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p385b_C_0583",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 3,
+      "targets": [
+        "vn:3",
+        "vr:3"
+      ],
+      "promptFa": "کدام گزینه ابتدای آیه‌ی سوم سوره قصص را به درستی نشان می‌دهد؟",
+      "stem": {
+        "num": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_007",
+            "w28_003_004",
+            "w28_003_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_006_001",
+            "w28_006_002",
+            "w28_006_003",
+            "w28_006_004"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 3,
+            "from": 1,
+            "to": 6
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004",
+            "w28_004_002",
+            "w28_003_005"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "در ابتدای آیه‌ی ۳ نخست نام «مُوسَىٰ» و سپس «وَفِرْعَوْنَ» می‌آید و واژه‌ی «بِٱلْحَقِّ» پس از نام آن دو قرار گرفته است."
+    },
+    {
+      "id": "q_u_p385b_C_0584",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 4,
+      "targets": [
+        "vn:4"
+      ],
+      "promptFa": "این آیه که برتری‌جویی فرعون و گروه گروه ساختن مردم را بیان می‌کند، چندمین آیه‌ی سوره قصص است؟",
+      "stem": {
+        "verse": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 3
+        },
+        {
+          "id": "o2",
+          "num": 5
+        },
+        {
+          "id": "o3",
+          "num": 4
+        },
+        {
+          "id": "o4",
+          "num": 6
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "adjacent_number",
+        "o2": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شرح طغیان فرعون در سرزمین مصر بلافاصله پس از معرفی کلی سرگذشت در آیه‌ی ۳، در آیه‌ی ۴ آمده است."
+    },
+    {
+      "id": "q_u_p385b_C_0585",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 4,
+      "targets": [
+        "vn:4"
+      ],
+      "promptFa": "شماره‌ی این آیه در سوره قصص کدام است؟",
+      "stem": {
+        "verse": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 4
+        },
+        {
+          "id": "o2",
+          "num": 2
+        },
+        {
+          "id": "o3",
+          "num": 3
+        },
+        {
+          "id": "o4",
+          "num": 5
+        },
+        {
+          "id": "o5",
+          "num": 6
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه‌ی ۴ سوره قصص به تفصیل ستم‌های فرعون یعنی ضعیف‌شمردن بنی‌اسرائیل و سربریدن پسرانشان می‌پردازد."
+    },
+    {
+      "id": "q_u_p385b_C_0586",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 4,
+      "targets": [
+        "vn:4",
+        "vr:4"
+      ],
+      "promptFa": "آیه‌ی ۴ سوره قصص با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004",
+            "w28_003_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 4,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_005_001",
+            "w28_005_002",
+            "w28_005_003",
+            "w28_005_004",
+            "w28_005_005"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_006_001",
+            "w28_006_002",
+            "w28_006_003",
+            "w28_006_004"
+          ]
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۴ با «إِنَّ فِرْعَوْنَ عَلَا فِى ٱلْأَرْضِ» شروع می‌شود؛ آیه‌ی ۳ با «نَتْلُوا۟» و آیه‌ی ۵ با «وَنُرِيدُ» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p385b_C_0587",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 4,
+      "targets": [
+        "vn:4",
+        "vr:4"
+      ],
+      "promptFa": "کدام گزینه آغاز دقیق آیه‌ی چهارم سوره قصص است؟",
+      "stem": {
+        "num": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_004_001",
+            "w28_004_002",
+            "w28_006_007",
+            "w28_004_003",
+            "w28_004_004",
+            "w28_004_005"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_004_009",
+            "w28_004_010",
+            "w28_004_011",
+            "w28_004_012",
+            "w28_004_013"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_004_016",
+            "w28_004_017",
+            "w28_004_018",
+            "w28_004_019"
+          ]
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 4,
+            "from": 1,
+            "to": 8
+          }
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o3": "near_miss"
+      },
+      "explanationFa": "ابتدای آیه‌ی ۴ تنها از سرکشی فرعون و تفرقه‌افکنی او سخن می‌گوید و نام «وَهَـٰمَـٰنَ» در آیه‌ی ۶ می‌آید."
+    }
+  ],
+  "issues": []
+}

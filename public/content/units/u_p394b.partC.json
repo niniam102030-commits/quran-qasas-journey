@@ -1,0 +1,2357 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394b",
+  "part": "C",
+  "generatedBy": "Gemini-1.5-Pro",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p394b_C_0101",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه بعد از آیه ۷۵ کدام است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "پس از پایان آیه ۷۵ (مَّا كَانُوا۟ يَفْتَرُونَ)، داستان قارون در آیه ۷۶ آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0102",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "ابتدای آیه بعد (آیه ۷۶) را بسازید.",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ إِنَّ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَـٰرُونَ كَانَ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن قَوْمِ مُوسَىٰ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَبَغَىٰ عَلَيْهِمْ ۖ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَٱبْتَغِ فِيمَآ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۷۶ با معرفی قارون و ستم او آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0103",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه بعد (آیه ۷۶) با چه کلماتی ادامه می‌یابد؟",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَآ إِنَّ مَفَاتِحَهُۥ",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَتَنُوٓأُ بِٱلْعُصْبَةِ",
+          "wordIdx": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أُو۟لِى ٱلْقُوَّةِ",
+          "wordIdx": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَا تَنسَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ادامه آیه ۷۶ درباره ثروت عظیم قارون است."
+    },
+    {
+      "id": "q_u_p394b_C_0104",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:74"
+      ],
+      "promptFa": "آیه قبل از آیه ۷۵ کدام است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَمِن رَّحْمَتِهِۦ جَعَلَ لَكُمُ ٱلَّيْلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه قبل (۷۴) درباره ندای خداوند به مشرکان است."
+    },
+    {
+      "id": "q_u_p394b_C_0105",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:74"
+      ],
+      "promptFa": "آیه قبل (آیه ۷۴) با چه کلماتی آغاز می‌شود؟",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَيَوْمَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "يُنَادِيهِمْ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَيَقُولُ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَيْنَ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمِن رَّحْمَتِهِۦ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۷۴ با «وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0106",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 75,
+      "targets": [
+        "sq:74"
+      ],
+      "promptFa": "آیه قبل (آیه ۷۴) چگونه پایان می‌یابد؟",
+      "stem": {
+        "verse": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "شُرَكَآءِىَ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "كُنتُمْ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "تَزْعُمُونَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يَفْتَرُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پایان آیه ۷۴ با «كُنتُمْ تَزْعُمُونَ» است."
+    },
+    {
+      "id": "q_u_p394b_C_0107",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:76"
+      ],
+      "promptFa": "آیه بعد از آیه ۷۶ کدام است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا فَقُلْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "پس از داستان تکبر قارون، دعوت به آخرت‌طلبی (آیه ۷۷) می‌آید."
+    },
+    {
+      "id": "q_u_p394b_C_0108",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:76"
+      ],
+      "promptFa": "ابتدای آیه بعد (آیه ۷۷) را بسازید.",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَٱبْتَغِ فِيمَآ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ءَاتَىٰكَ ٱللَّهُ",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَا تَنسَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۷۷ با «وَٱبْتَغِ فِيمَآ...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0109",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:76"
+      ],
+      "promptFa": "آیه بعد (آیه ۷۷) چگونه ادامه می‌یابد؟",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَا تَنسَ نَصِيبَكَ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِنَ ٱلدُّنْيَا ۖ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَأَحْسِن كَمَآ",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَحْسَنَ ٱللَّهُ إِلَيْكَ ۖ",
+          "wordIdx": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَلَا تَبْغِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ادامه آیه ۷۷ درباره فراموش نکردن سهم دنیا و احسان است."
+    },
+    {
+      "id": "q_u_p394b_C_0110",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه قبل از آیه ۷۶ کدام است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا فَقُلْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه قبل (۷۵) درباره بیرون آوردن گواه از هر امت است."
+    },
+    {
+      "id": "q_u_p394b_C_0111",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه قبل (آیه ۷۵) با چه کلماتی آغاز می‌شود؟",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَنَزَعْنَا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن كُلِّ",
+          "wordIdx": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "أُمَّةٍۢ شَهِيدًۭا",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فَقُلْنَا",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "هَاتُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0112",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 76,
+      "targets": [
+        "sq:75"
+      ],
+      "promptFa": "آیه قبل (آیه ۷۵) چگونه پایان می‌یابد؟",
+      "stem": {
+        "verse": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "هَاتُوا۟ بُرْهَـٰنَكُمْ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَضَلَّ عَنْهُم",
+          "wordIdx": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَّا كَانُوا۟ يَفْتَرُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "كَانُوا۟ يَكْفُرُونَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "پایان آیه ۷۵ با «مَّا كَانُوا۟ يَفْتَرُونَ» است."
+    },
+    {
+      "id": "q_u_p394b_C_0113",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "آیات زیر را به ترتیب صحیح مرتب کنید.",
+      "stem": {
+        "verses": [
+          74,
+          75,
+          76
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "74. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 74
+        },
+        {
+          "id": "b2",
+          "ar": "75. وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 75
+        },
+        {
+          "id": "b3",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 76
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات ۷۴ تا ۷۶."
+    },
+    {
+      "id": "q_u_p394b_C_0114",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "آیات زیر را به ترتیب صحیح مرتب کنید.",
+      "stem": {
+        "verses": [
+          75,
+          76,
+          77
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "75. وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 75
+        },
+        {
+          "id": "b2",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 76
+        },
+        {
+          "id": "b3",
+          "ar": "77. وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 77
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات ۷۵ تا ۷۷."
+    },
+    {
+      "id": "q_u_p394b_C_0115",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "آیات زیر را به ترتیب صحیح مرتب کنید.",
+      "stem": {
+        "verses": [
+          76,
+          77,
+          78
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 76
+        },
+        {
+          "id": "b2",
+          "ar": "77. وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 77
+        },
+        {
+          "id": "b3",
+          "ar": "78. قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 78
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات ۷۶ تا ۷۸."
+    },
+    {
+      "id": "q_u_p394b_C_0116",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "آیات زیر را به ترتیب صحیح مرتب کنید.",
+      "stem": {
+        "verses": [
+          73,
+          74,
+          75,
+          76
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "73. وَمِن رَّحْمَتِهِۦ جَعَلَ لَكُمُ...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 73
+        },
+        {
+          "id": "b2",
+          "ar": "74. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 74
+        },
+        {
+          "id": "b3",
+          "ar": "75. وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 75
+        },
+        {
+          "id": "b4",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن...",
+          "wordIdx": [
+            4
+          ],
+          "verse": 76
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات ۷۳ تا ۷۶."
+    },
+    {
+      "id": "q_u_p394b_C_0117",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "همه آیات این بخش را به ترتیب قرار دهید.",
+      "stem": {
+        "verses": [
+          75,
+          76,
+          77
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "75. وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 75
+        },
+        {
+          "id": "b2",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 76
+        },
+        {
+          "id": "b3",
+          "ar": "77. وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 77
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیات ۷۵ تا ۷۷ به ترتیب."
+    },
+    {
+      "id": "q_u_p394b_C_0118",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "sequence",
+      "targets": [
+        "pg:u_p394b"
+      ],
+      "promptFa": "زنجیره آیات را به ترتیب صحیح بچینید.",
+      "stem": {
+        "verses": [
+          74,
+          75,
+          76,
+          77,
+          78
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "74. وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ...",
+          "wordIdx": [
+            1
+          ],
+          "verse": 74
+        },
+        {
+          "id": "b2",
+          "ar": "75. وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا...",
+          "wordIdx": [
+            2
+          ],
+          "verse": 75
+        },
+        {
+          "id": "b3",
+          "ar": "76. ۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ...",
+          "wordIdx": [
+            3
+          ],
+          "verse": 76
+        },
+        {
+          "id": "b4",
+          "ar": "77. وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...",
+          "wordIdx": [
+            4
+          ],
+          "verse": 77
+        },
+        {
+          "id": "b5",
+          "ar": "78. قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ...",
+          "wordIdx": [
+            5
+          ],
+          "verse": 78
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات ۷۴ تا ۷۸ پیوستگی مفاهیم سوره را نشان می‌دهد."
+    },
+    {
+      "id": "q_u_p394b_C_0119",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 75
+        },
+        {
+          "id": "o2",
+          "num": 74
+        },
+        {
+          "id": "o3",
+          "num": 76
+        },
+        {
+          "id": "o4",
+          "num": 77
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...» آیه ۷۵ است."
+    },
+    {
+      "id": "q_u_p394b_C_0120",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 75
+        },
+        {
+          "id": "o2",
+          "num": 73
+        },
+        {
+          "id": "o3",
+          "num": 78
+        },
+        {
+          "id": "o4",
+          "num": 85
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...» آیه ۷۵ است."
+    },
+    {
+      "id": "q_u_p394b_C_0121",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 75
+        },
+        {
+          "id": "o2",
+          "num": 65
+        },
+        {
+          "id": "o3",
+          "num": 72
+        },
+        {
+          "id": "o4",
+          "num": 79
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...» آیه ۷۵ است."
+    },
+    {
+      "id": "q_u_p394b_C_0122",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "ابتدای آیه ۷۵ کدام است؟",
+      "stem": {
+        "num": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        },
+        {
+          "id": "o3",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0123",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "ابتدای آیه ۷۵ کدام است؟",
+      "stem": {
+        "num": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَمِن رَّحْمَتِهِۦ جَعَلَ لَكُمُ ٱلَّيْلَ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0124",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "ابتدای آیه ۷۵ کدام است؟",
+      "stem": {
+        "num": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "o2",
+          "ar": "وَأَوْحَيْنَآ إِلَىٰٓ أُمِّ مُوسَىٰٓ أَنْ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَقَالَتْ لِأُخْتِهِۦ قُصِّيهِ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0125",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 76
+        },
+        {
+          "id": "o2",
+          "num": 75
+        },
+        {
+          "id": "o3",
+          "num": 77
+        },
+        {
+          "id": "o4",
+          "num": 78
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ...» آیه ۷۶ است."
+    },
+    {
+      "id": "q_u_p394b_C_0126",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 76
+        },
+        {
+          "id": "o2",
+          "num": 74
+        },
+        {
+          "id": "o3",
+          "num": 79
+        },
+        {
+          "id": "o4",
+          "num": 86
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ...» آیه ۷۶ است."
+    },
+    {
+      "id": "q_u_p394b_C_0127",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 76
+        },
+        {
+          "id": "o2",
+          "num": 66
+        },
+        {
+          "id": "o3",
+          "num": 73
+        },
+        {
+          "id": "o4",
+          "num": 80
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ...» آیه ۷۶ است."
+    },
+    {
+      "id": "q_u_p394b_C_0128",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "ابتدای آیه ۷۶ کدام است؟",
+      "stem": {
+        "num": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۶ با «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0129",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "ابتدای آیه ۷۶ کدام است؟",
+      "stem": {
+        "num": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ فِى زِينَتِهِۦ ۖ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "random",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "آیه ۷۶ با «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0130",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "ابتدای آیه ۷۶ کدام است؟",
+      "stem": {
+        "num": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْفَرِحِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۶ با «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0131",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 77
+        },
+        {
+          "id": "o2",
+          "num": 76
+        },
+        {
+          "id": "o3",
+          "num": 78
+        },
+        {
+          "id": "o4",
+          "num": 75
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...» آیه ۷۷ است."
+    },
+    {
+      "id": "q_u_p394b_C_0132",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 77
+        },
+        {
+          "id": "o2",
+          "num": 74
+        },
+        {
+          "id": "o3",
+          "num": 79
+        },
+        {
+          "id": "o4",
+          "num": 87
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...» آیه ۷۷ است."
+    },
+    {
+      "id": "q_u_p394b_C_0133",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "این آیه چندمین آیه از سوره قصص است؟",
+      "stem": {
+        "verse": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 77
+        },
+        {
+          "id": "o2",
+          "num": 67
+        },
+        {
+          "id": "o3",
+          "num": 71
+        },
+        {
+          "id": "o4",
+          "num": 78
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ...» آیه ۷۷ است."
+    },
+    {
+      "id": "q_u_p394b_C_0134",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "ابتدای آیه ۷۷ کدام است؟",
+      "stem": {
+        "num": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0135",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "ابتدای آیه ۷۷ کدام است؟",
+      "stem": {
+        "num": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o4",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۷۷ با «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0136",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "ابتدای آیه ۷۷ کدام است؟",
+      "stem": {
+        "num": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَلَا تَبْغِ ٱلْفَسَادَ فِى ٱلْأَرْضِ ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p394b_C_0137",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:74",
+        "vn:75",
+        "vn:76",
+        "vn:77"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 74
+        },
+        {
+          "id": "l2",
+          "num": 75
+        },
+        {
+          "id": "l3",
+          "num": 76
+        },
+        {
+          "id": "l4",
+          "num": 77
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "r3",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "r4",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "r5",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق شماره آیات با عبارات آغازین آن‌ها."
+    },
+    {
+      "id": "q_u_p394b_C_0138",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:75",
+        "vn:76",
+        "vn:77",
+        "vn:78"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 75
+        },
+        {
+          "id": "l2",
+          "num": 76
+        },
+        {
+          "id": "l3",
+          "num": 77
+        },
+        {
+          "id": "l4",
+          "num": 78
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "r2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "r3",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "r4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        },
+        {
+          "id": "r5",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق شماره آیات با عبارات آغازین آن‌ها."
+    },
+    {
+      "id": "q_u_p394b_C_0139",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "targets": [
+        "vn:73",
+        "vn:74",
+        "vn:75",
+        "vn:76",
+        "vn:77"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 73
+        },
+        {
+          "id": "l2",
+          "num": 74
+        },
+        {
+          "id": "l3",
+          "num": 75
+        },
+        {
+          "id": "l4",
+          "num": 76
+        },
+        {
+          "id": "l5",
+          "num": 77
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَمِن رَّحْمَتِهِۦ جَعَلَ لَكُمُ ٱلَّيْلَ"
+        },
+        {
+          "id": "r2",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا"
+        },
+        {
+          "id": "r4",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن"
+        },
+        {
+          "id": "r5",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ"
+        },
+        {
+          "id": "r6",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r5"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "neighbor_verse"
+      },
+      "explanationFa": "تطبیق شماره آیات با عبارات آغازین آن‌ها."
+    },
+    {
+      "id": "q_u_p394b_C_0140",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 75,
+      "targets": [
+        "vr:75"
+      ],
+      "promptFa": "آیه ۷۵ را به طور کامل بسازید.",
+      "stem": {
+        "num": 75
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَقُلْنَا هَاتُوا۟ بُرْهَـٰنَكُمْ",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَضَلَّ عَنْهُم مَّا كَانُوا۟ يَفْتَرُونَ",
+          "wordIdx": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات در آیه ۷۵."
+    },
+    {
+      "id": "q_u_p394b_C_0141",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 76,
+      "targets": [
+        "vr:76"
+      ],
+      "promptFa": "آیه ۷۶ را به طور کامل بسازید.",
+      "stem": {
+        "num": 76
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ فَبَغَىٰ عَلَيْهِمْ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ مَآ إِنَّ مَفَاتِحَهُۥ",
+          "wordIdx": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَتَنُوٓأُ بِٱلْعُصْبَةِ أُو۟لِى ٱلْقُوَّةِ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِذْ قَالَ لَهُۥ قَوْمُهُۥ لَا تَفْرَحْ ۖ",
+          "wordIdx": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْفَرِحِينَ",
+          "wordIdx": [
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات در آیه ۷۶."
+    },
+    {
+      "id": "q_u_p394b_C_0142",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 77,
+      "targets": [
+        "vr:77"
+      ],
+      "promptFa": "آیه ۷۷ را به طور کامل بسازید.",
+      "stem": {
+        "num": 77
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَأَحْسِن كَمَآ أَحْسَنَ ٱللَّهُ إِلَيْكَ ۖ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَا تَبْغِ ٱلْفَسَادَ فِى ٱلْأَرْضِ ۖ",
+          "wordIdx": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ",
+          "wordIdx": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح کلمات در آیه ۷۷."
+    },
+    {
+      "id": "q_u_p394b_C_0143",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 75,
+      "targets": [
+        "vn:75"
+      ],
+      "promptFa": "آیه ۷۵ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 75
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ شَهِيدًۭا فَقُلْنَا هَاتُوا۟ بُرْهَـٰنَكُمْ فَعَلِمُوٓا۟ أَنَّ ٱلْحَقَّ لِلَّهِ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ فَبَغَىٰ عَلَيْهِمْ ۖ وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۵ با «وَنَزَعْنَا مِن كُلِّ أُمَّةٍۢ...» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p394b_C_0144",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 76,
+      "targets": [
+        "vn:76"
+      ],
+      "promptFa": "آیه ۷۶ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 76
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ فَبَغَىٰ عَلَيْهِمْ ۖ وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُفْسِدِينَ وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ قَدْ أَهْلَكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "similar_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۶ با معرفی قارون «۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ...» آغاز می‌گردد."
+    },
+    {
+      "id": "q_u_p394b_C_0145",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 77,
+      "targets": [
+        "vn:77"
+      ],
+      "promptFa": "آیه ۷۷ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 77
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ ٱلدُّنْيَا ۖ"
+        },
+        {
+          "id": "o2",
+          "ar": "۞ إِنَّ قَـٰرُونَ كَانَ مِن قَوْمِ مُوسَىٰ فَبَغَىٰ عَلَيْهِمْ ۖ وَءَاتَيْنَـٰهُ مِنَ ٱلْكُنُوزِ"
+        },
+        {
+          "id": "o3",
+          "ar": "إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْفَرِحِينَ وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ"
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ ۚ أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ قَدْ أَهْلَكَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۷۷ با «وَٱبْتَغِ فِيمَآ ءَاتَىٰكَ ٱللَّهُ ٱلدَّارَ ٱلْـَٔاخِرَةَ ۖ...» آغاز می‌گردد."
+    }
+  ]
+}

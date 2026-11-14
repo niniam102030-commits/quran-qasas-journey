@@ -1,0 +1,5701 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390a",
+  "part": "C10",
+  "generatedBy": "Gemini",
+  "issues": [],
+  "questions": [
+    {
+      "id": "q_u_p390a_C_1301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_005"
+      ],
+      "promptFa": "معنای «بَيِّنَـٰتٍۢ»؟",
+      "stem": {
+        "wordId": "w28_036_005",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "روشن"
+        },
+        {
+          "id": "o2",
+          "fa": "ساختگی"
+        },
+        {
+          "id": "o3",
+          "fa": "جادویی"
+        },
+        {
+          "id": "o4",
+          "fa": "پیشین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "بینات جمع بینه به معنای روشن است."
+    },
+    {
+      "id": "q_u_p390a_C_1302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "معنای «مُّفْتَرًۭى»؟",
+      "stem": {
+        "wordId": "w28_036_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "o2",
+          "fa": "نشنیده ایم"
+        },
+        {
+          "id": "o3",
+          "fa": "آیات روشن"
+        },
+        {
+          "id": "o4",
+          "fa": "پدران پیشین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "near_miss",
+        "o4": "random"
+      },
+      "explanationFa": "مفتری به معنای دروغین و ساختگی است."
+    },
+    {
+      "id": "q_u_p390a_C_1303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_013"
+      ],
+      "promptFa": "معنای «عَـٰقِبَةُ»؟",
+      "stem": {
+        "wordId": "w28_037_013",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "o2",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o4",
+          "fa": "عذاب"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "عاقبت به معنای سرانجام است."
+    },
+    {
+      "id": "q_u_p390a_C_1304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_017"
+      ],
+      "promptFa": "معنای «يُفْلِحُ»؟",
+      "stem": {
+        "wordId": "w28_037_017",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پیروز می شوند"
+        },
+        {
+          "id": "o2",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "o3",
+          "fa": "می دانند"
+        },
+        {
+          "id": "o4",
+          "fa": "رستگار شدند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "near_miss"
+      },
+      "explanationFa": "یفلح فعل مضارع است."
+    },
+    {
+      "id": "q_u_p390a_C_1305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_010"
+      ],
+      "promptFa": "معنای «سِحْرٌۭ»؟",
+      "stem": {
+        "wordId": "w28_036_010",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "جادویی"
+        },
+        {
+          "id": "o2",
+          "fa": "ساختگی"
+        },
+        {
+          "id": "o3",
+          "fa": "دروغین"
+        },
+        {
+          "id": "o4",
+          "fa": "معجزه"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "false_friend"
+      },
+      "explanationFa": "سحر یعنی جادو."
+    },
+    {
+      "id": "q_u_p390a_C_1306",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_011"
+      ],
+      "promptFa": "کدام کلمه به معنای «ساختگی» است؟",
+      "stem": {
+        "fa": "ساختگی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "o2",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "بَيِّنَـٰتٍۢ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأَوَّلِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "مفتری یعنی ساختگی."
+    },
+    {
+      "id": "q_u_p390a_C_1307",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_018"
+      ],
+      "promptFa": "کدام کلمه به معنای «ستمکاران» است؟",
+      "stem": {
+        "fa": "ستمکاران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْمُفْسِدِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْغَـٰلِبُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْكَـٰذِبِينَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "similar_verse",
+        "o3": "similar_verse",
+        "o4": "similar_verse"
+      },
+      "explanationFa": "ظالمون جمع ظالم."
+    },
+    {
+      "id": "q_u_p390a_C_1308",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_004"
+      ],
+      "promptFa": "کلمه «داناتر»؟",
+      "stem": {
+        "fa": "داناتر"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "o2",
+          "ar": "عِندِهِۦ"
+        },
+        {
+          "id": "o3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُفْلِحُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "اعلم اسم تفضیل است."
+    },
+    {
+      "id": "q_u_p390a_C_1309",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_016"
+      ],
+      "promptFa": "کدام کلمه یعنی «پدران»؟",
+      "stem": {
+        "fa": "پدران"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ءَابَآئِنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْأَوَّلِينَ"
+        },
+        {
+          "id": "o3",
+          "ar": "بِهَـٰذَا"
+        },
+        {
+          "id": "o4",
+          "ar": "أَبْنَآءَهُمْ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "random",
+        "o4": "false_friend"
+      },
+      "explanationFa": "آباء جمع اب است."
+    },
+    {
+      "id": "q_u_p390a_C_1310",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_007"
+      ],
+      "promptFa": "معادل «هدایت»؟",
+      "stem": {
+        "fa": "هدایت"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "بِٱلْهُدَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "بِـَٔايَـٰتِنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "عِندِهِۦ"
+        },
+        {
+          "id": "o4",
+          "ar": "عَـٰقِبَةُ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "هدی یعنی هدایت."
+    },
+    {
+      "id": "q_u_p390a_C_1311",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_005",
+        "w:w28_036_010",
+        "w:w28_036_011",
+        "w:w28_036_017"
+      ],
+      "promptFa": "کلمات آیه ۳۶ را به معنای آن‌ها وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَيِّنَـٰتٍۢ"
+        },
+        {
+          "id": "l2",
+          "ar": "سِحْرٌۭ"
+        },
+        {
+          "id": "l3",
+          "ar": "مُّفْتَرًۭى"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلْأَوَّلِينَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "روشن"
+        },
+        {
+          "id": "r2",
+          "fa": "جادویی"
+        },
+        {
+          "id": "r3",
+          "fa": "ساختگی و دروغین"
+        },
+        {
+          "id": "r4",
+          "fa": "پیشین"
+        },
+        {
+          "id": "r5",
+          "fa": "ستمکاران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "تطبیق لغات آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1312",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 37,
+      "targets": [
+        "w:w28_037_004",
+        "w:w28_037_013",
+        "w:w28_037_017",
+        "w:w28_037_018"
+      ],
+      "promptFa": "لغات آیه ۳۷ را متصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "أَعْلَمُ"
+        },
+        {
+          "id": "l2",
+          "ar": "عَـٰقِبَةُ"
+        },
+        {
+          "id": "l3",
+          "ar": "يُفْلِحُ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "داناتر"
+        },
+        {
+          "id": "r2",
+          "fa": "سرانجام"
+        },
+        {
+          "id": "r3",
+          "fa": "پیروز می شوند"
+        },
+        {
+          "id": "r4",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r5",
+          "fa": "ساختگی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "تطبیق لغات ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1313",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_002",
+        "w:w28_036_013",
+        "w:w28_037_006",
+        "w:w28_037_011"
+      ],
+      "promptFa": "افعال آیات ۳۶ و ۳۷ را وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "جَآءَهُم"
+        },
+        {
+          "id": "l2",
+          "ar": "سَمِعْنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "جَآءَ"
+        },
+        {
+          "id": "l4",
+          "ar": "تَكُونُ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "برای آنان آورد"
+        },
+        {
+          "id": "r2",
+          "fa": "نشنیده ایم"
+        },
+        {
+          "id": "r3",
+          "fa": "آورده"
+        },
+        {
+          "id": "r4",
+          "fa": "برای اوست"
+        },
+        {
+          "id": "r5",
+          "fa": "گفتند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "افعال ماضی و مضارع."
+    },
+    {
+      "id": "q_u_p390a_C_1314",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_003",
+        "w:w28_036_008",
+        "w:w28_036_014",
+        "w:w28_037_009"
+      ],
+      "promptFa": "اسامی و ضمایر را وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "مُّوسَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "هَـٰذَآ"
+        },
+        {
+          "id": "l3",
+          "ar": "بِهَـٰذَا"
+        },
+        {
+          "id": "l4",
+          "ar": "عِندِهِۦ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "موسی"
+        },
+        {
+          "id": "r2",
+          "fa": "این"
+        },
+        {
+          "id": "r3",
+          "fa": "این [ادعای نبوّت و دعوت به توحید]"
+        },
+        {
+          "id": "r4",
+          "fa": "نزد او"
+        },
+        {
+          "id": "r5",
+          "fa": "پروردگارم"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "تطبیق ضمایر."
+    },
+    {
+      "id": "q_u_p390a_C_1315",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 36,
+      "targets": [
+        "w:w28_036_001",
+        "w:w28_036_004",
+        "w:w28_037_003",
+        "w:w28_037_014"
+      ],
+      "promptFa": "کلمات ترکیبی را وصل کن.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَلَمَّا"
+        },
+        {
+          "id": "l2",
+          "ar": "بِـَٔايَـٰتِنَا"
+        },
+        {
+          "id": "l3",
+          "ar": "رَبِّىٓ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلدَّارِ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس هنگامی که"
+        },
+        {
+          "id": "r2",
+          "fa": "آیات روشن ما"
+        },
+        {
+          "id": "r3",
+          "fa": "پروردگارم"
+        },
+        {
+          "id": "r4",
+          "fa": "سرانجام نیک"
+        },
+        {
+          "id": "r5",
+          "fa": "داناتر"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "ترکیبات قرآنی."
+    },
+    {
+      "id": "q_u_p390a_C_1316",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۳۶ چیست؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی و دروغین نیست، و ما این [ادعای نبوّت و دعوت به توحید] را از پدران پیشین خود نشنیده ایم [که به ما گفته باشند کسی در میانشان به عنوان پیامبر و دعوت کننده به توحید آمده باشد!!]"
+        },
+        {
+          "id": "o2",
+          "fa": "و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده و به کسی که سرانجام نیک برای اوست داناتر است؛ بی تردید ستمکاران پیروز نمی شوند."
+        },
+        {
+          "id": "o3",
+          "fa": "پس هنگامی که عیسی آیات ما را آورد، گفتند این جادویی است و ما نشنیدیم."
+        },
+        {
+          "id": "o4",
+          "fa": "پس هنگامی که موسی آیات ما را آورد، گفتند این دروغی است و ما از پدرانمان شنیدیم."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترجمه دقیق آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1317",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "ترجمه صحیح آیه ۳۷ کدام است؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده و به کسی که سرانجام نیک برای اوست داناتر است؛ بی تردید ستمکاران پیروز نمی شوند."
+        },
+        {
+          "id": "o2",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی و دروغین نیست."
+        },
+        {
+          "id": "o3",
+          "fa": "و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده داناتر است؛ بی تردید کافران پیروز نمی شوند."
+        },
+        {
+          "id": "o4",
+          "fa": "و فرعون گفت: پروردگارم داناتر است؛ بی تردید ستمکاران پیروز نمی شوند."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ترجمه دقیق آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1318",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "کدام ترجمه آیه ۳۶ است؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد، گفتند: این جز جادویی ساختگی و دروغین نیست، و ما این [ادعای نبوّت و دعوت به توحید] را از پدران پیشین خود نشنیده ایم [که به ما گفته باشند کسی در میانشان به عنوان پیامبر و دعوت کننده به توحید آمده باشد!!]"
+        },
+        {
+          "id": "o2",
+          "fa": "پس هنگامی که موسی معجزات را آورد، گفتند این جادویی دروغین است."
+        },
+        {
+          "id": "o3",
+          "fa": "و ما این را از پدران پیشین خود نشنیده ایم."
+        },
+        {
+          "id": "o4",
+          "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "ترجمه کامل آیه."
+    },
+    {
+      "id": "q_u_p390a_C_1319",
+      "type": "VERSE_TO_TRANSLATION",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "ترجمه آیه ۳۷ چیست؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده و به کسی که سرانجام نیک برای اوست داناتر است؛ بی تردید ستمکاران پیروز نمی شوند."
+        },
+        {
+          "id": "o2",
+          "fa": "و موسی گفت: پروردگارم داناتر است؛ بی تردید ظالمان پیروز می شوند."
+        },
+        {
+          "id": "o3",
+          "fa": "و فرعون گفت: ای اشراف و سران [مملکت]! من برای شما هیچ معبودی جز خود نمی شناسم."
+        },
+        {
+          "id": "o4",
+          "fa": "و موسی گفت پروردگارتان داناتر است به کسی که هدایت آورده."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_verse",
+        "o4": "near_miss"
+      },
+      "explanationFa": "ظالمون به ستمکاران ترجمه شده است."
+    },
+    {
+      "id": "q_u_p390a_C_1320",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "کدام آیه مربوط به این ترجمه است: «پس هنگامی که موسی آیات روشن ما را برای آنان آورد...»؟",
+      "stem": {
+        "verse": 36,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ..."
+        },
+        {
+          "id": "o2",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ بِمَن جَآءَ بِٱلْهُدَىٰ..."
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ..."
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَالَ فِرْعَوْنُ يَـٰٓأَيُّهَا ٱلْمَلَأُ..."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۳۶ با فلما جاءهم شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390a_C_1321",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "این ترجمه کدام آیه است: «و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده... داناتر است»؟",
+      "stem": {
+        "verse": 37,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ..."
+        },
+        {
+          "id": "o2",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ..."
+        },
+        {
+          "id": "o3",
+          "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ..."
+        },
+        {
+          "id": "o4",
+          "ar": "وَقَالَ فِرْعَوْنُ يَـٰٓأَيُّهَا ٱلْمَلَأُ..."
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۳۷ با وقال موسی ربی اعلم شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390a_C_1322",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "ترجمه «و ما این [ادعای نبوّت...] را از پدران پیشین خود نشنیده ایم» در کدام آیه است؟",
+      "stem": {
+        "verse": 36,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 12,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 37,
+            "from": 10,
+            "to": 14
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "بخش پایانی آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1323",
+      "type": "TRANSLATION_TO_VERSE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "«بی تردید ستمکاران پیروز نمی شوند» در کدام آیه است؟",
+      "stem": {
+        "verse": 37,
+        "showFa": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 15,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 36,
+            "from": 6,
+            "to": 11
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "بخش پایانی آیه ۳۷ است."
+    },
+    {
+      "id": "q_u_p390a_C_1324",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "بخش‌های آیه ۳۶ را متصل کن.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ"
+        },
+        {
+          "id": "l2",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ"
+        },
+        {
+          "id": "l3",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِلَّا سِحْرٌۭ مُّفْتَرًۭى"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "پس هنگامی که موسی... برای آنان آورد"
+        },
+        {
+          "id": "r2",
+          "fa": "آیات روشن ما را"
+        },
+        {
+          "id": "r3",
+          "fa": "گفتند: این جز... نیست"
+        },
+        {
+          "id": "r4",
+          "fa": "جادویی ساختگی و دروغین"
+        },
+        {
+          "id": "r5",
+          "fa": "پدران پیشین خود"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "ترجمه عبارات آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1325",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "بخش‌های آیه ۳۷ را متصل کن.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَعْلَمُ بِمَن جَآءَ بِٱلْهُدَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَمَن تَكُونُ لَهُۥ"
+        },
+        {
+          "id": "l4",
+          "ar": "عَـٰقِبَةُ ٱلدَّارِ ۖ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و موسی گفت: پروردگارم"
+        },
+        {
+          "id": "r2",
+          "fa": "داناتر است... به کسی که... هدایت آورده"
+        },
+        {
+          "id": "r3",
+          "fa": "و به کسی که... برای اوست"
+        },
+        {
+          "id": "r4",
+          "fa": "سرانجام نیک"
+        },
+        {
+          "id": "r5",
+          "fa": "ستمکاران"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "ترجمه عبارات ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1326",
+      "type": "MATCH_PHRASES",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36",
+        "vt:37"
+      ],
+      "promptFa": "عبارات دو آیه را به ترجمه وصل کن.",
+      "stem": {
+        "mode": "PHRASE_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا"
+        },
+        {
+          "id": "l2",
+          "ar": "فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ"
+        },
+        {
+          "id": "l3",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ"
+        },
+        {
+          "id": "l4",
+          "ar": "ٱلظَّـٰلِمُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و ما این [ادعای نبوّت و دعوت به توحید] را... نشنیده ایم"
+        },
+        {
+          "id": "r2",
+          "fa": "از پدران پیشین خود"
+        },
+        {
+          "id": "r3",
+          "fa": "بی تردید... پیروز نمی شوند"
+        },
+        {
+          "id": "r4",
+          "fa": "ستمکاران"
+        },
+        {
+          "id": "r5",
+          "fa": "جادویی ساختگی"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "تطبیق بخش‌های پایانی دو آیه."
+    },
+    {
+      "id": "q_u_p390a_C_1327",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "ترجمه آیه ۳۶ را مرتب کن.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس هنگامی که موسی آیات روشن ما را برای آنان آورد،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "گفتند: این جز جادویی ساختگی و دروغین نیست،",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و ما این [ادعای نبوّت و دعوت به توحید] را از پدران پیشین خود نشنیده ایم",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "[که به ما گفته باشند کسی در میانشان به عنوان پیامبر و دعوت کننده به توحید آمده باشد!!]",
+          "wordIdx": [
+            4
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح ترجمه آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1328",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "ترجمه آیه ۳۷ را مرتب کن.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و موسی گفت: پروردگارم به کسی که از نزد او هدایت آورده",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و به کسی که سرانجام نیک برای اوست داناتر است؛",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "بی تردید ستمکاران پیروز نمی شوند.",
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب صحیح آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1329",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "بخش‌های میانی ترجمه ۳۶ را مرتب کن.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "آیات روشن ما را برای آنان آورد،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "گفتند: این جز جادویی ساختگی",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و دروغین نیست،",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "و ما این [ادعای نبوّت و دعوت به توحید] را",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "داناتر است؛",
+          "decoy": true,
+          "wordIdx": [
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب تکه های آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1330",
+      "type": "ORDER_TRANSLATION_CHUNKS",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "ترجمه ۳۷ را با دقت بچین.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و موسی گفت:",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "پروردگارم به کسی که از نزد او هدایت آورده",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و به کسی که سرانجام نیک برای اوست",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "fa": "داناتر است؛",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "fa": "بی تردید ستمکاران پیروز نمی شوند.",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "fa": "ستمکاران شکست می خورند",
+          "decoy": true,
+          "wordIdx": [
+            6
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "دقت در کلمات ترجمه."
+    },
+    {
+      "id": "q_u_p390a_C_1331",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "جاهای خالی ترجمه ۳۶ را پر کن.",
+      "stem": {
+        "verse": 36,
+        "faHidden": [
+          {
+            "start": 46,
+            "text": "گفتند: این جز جادویی ساختگی و دروغین نیست،"
+          },
+          {
+            "start": 115,
+            "text": "از پدران پیشین خود"
+          }
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "گفتند: این جز جادویی ساختگی و دروغین نیست،",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "از پدران پیشین خود",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "بی تردید ستمکاران",
+          "decoy": true,
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "جاگذاری کلمات فارسی."
+    },
+    {
+      "id": "q_u_p390a_C_1332",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "جاهای خالی ترجمه ۳۷ را پر کن.",
+      "stem": {
+        "verse": 37,
+        "faHidden": [
+          {
+            "start": 14,
+            "text": "پروردگارم به کسی که از نزد او هدایت آورده"
+          },
+          {
+            "start": 70,
+            "text": "سرانجام نیک"
+          }
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پروردگارم به کسی که از نزد او هدایت آورده",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "سرانجام نیک",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "جادویی ساختگی",
+          "decoy": true,
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "جاگذاری کلمات کلیدی."
+    },
+    {
+      "id": "q_u_p390a_C_1333",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "کلمات ترجمه ۳۶؟",
+      "stem": {
+        "verse": 36,
+        "faHidden": [
+          {
+            "start": 22,
+            "text": "آیات روشن ما را"
+          },
+          {
+            "start": 162,
+            "text": "در میانشان به عنوان پیامبر و دعوت کننده به توحید"
+          }
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "آیات روشن ما را",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "در میانشان به عنوان پیامبر و دعوت کننده به توحید",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "از نزد او هدایت آورده",
+          "decoy": true,
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل مفاهیم ترجمه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1334",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "translation",
+      "verse": 37,
+      "targets": [
+        "vt:37"
+      ],
+      "promptFa": "کدام کلمات در ترجمه ۳۷ می‌نشینند؟",
+      "stem": {
+        "verse": 37,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "و موسی گفت: پروردگارم"
+          },
+          {
+            "start": 100,
+            "text": "بی تردید ستمکاران پیروز نمی شوند."
+          }
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "و موسی گفت: پروردگارم",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "بی تردید ستمکاران پیروز نمی شوند.",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "پدران پیشین خود",
+          "decoy": true,
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "ابتدا و انتهای ترجمه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1335",
+      "type": "CLOZE_FA",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "translation",
+      "verse": 36,
+      "targets": [
+        "vt:36"
+      ],
+      "promptFa": "ترجمه ۳۶، بخش‌های جا افتاده؟",
+      "stem": {
+        "verse": 36,
+        "faHidden": [
+          {
+            "start": 0,
+            "text": "پس هنگامی که موسی"
+          },
+          {
+            "start": 89,
+            "text": "و ما این [ادعای نبوّت و دعوت به توحید] را"
+          }
+        ],
+        "showFa": true
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "fa": "پس هنگامی که موسی",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "fa": "و ما این [ادعای نبوّت و دعوت به توحید] را",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "fa": "و موسی گفت: پروردگارم",
+          "decoy": true,
+          "wordIdx": [
+            3
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "2": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "دقت در ابتدای جملات ترجمه."
+    },
+    {
+      "id": "q_u_p390a_C_1336",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "این آیه چندم است: «فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ...»؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 36
+        },
+        {
+          "id": "o2",
+          "num": 35
+        },
+        {
+          "id": "o3",
+          "num": 37
+        },
+        {
+          "id": "o4",
+          "num": 38
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۶ سوره قصص."
+    },
+    {
+      "id": "q_u_p390a_C_1337",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "شماره آیه «وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ بِمَن جَآءَ بِٱلْهُدَىٰ...»؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 36
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۷ است."
+    },
+    {
+      "id": "q_u_p390a_C_1338",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "آیه ۳۶ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۶ با فلما جاءهم شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390a_C_1339",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "آغاز آیه ۳۷ کدام است؟",
+      "stem": {
+        "num": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۳۷ با وقال موسی شروع می‌شود."
+    },
+    {
+      "id": "q_u_p390a_C_1340",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "شماره آیه «فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ...»؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 36
+        },
+        {
+          "id": "o2",
+          "num": 34
+        },
+        {
+          "id": "o3",
+          "num": 37
+        },
+        {
+          "id": "o4",
+          "num": 33
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "random",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1341",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "شماره آیه «وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ...»؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 36
+        },
+        {
+          "id": "o3",
+          "num": 35
+        },
+        {
+          "id": "o4",
+          "num": 34
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1342",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "آیه حاوی «مُّفْتَرًۭى» آیه چند است؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 36
+        },
+        {
+          "id": "o2",
+          "num": 37
+        },
+        {
+          "id": "o3",
+          "num": 35
+        },
+        {
+          "id": "o4",
+          "num": 38
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "در آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1343",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "آیه حاوی «عَـٰقِبَةُ ٱلدَّارِ» کدام است؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 36
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "random"
+      },
+      "explanationFa": "در آیه ۳۷ است."
+    },
+    {
+      "id": "q_u_p390a_C_1344",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "کدام آیه با «فَلَمَّا جَآءَهُم...» شروع می‌شود؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 36
+        },
+        {
+          "id": "o2",
+          "num": 35
+        },
+        {
+          "id": "o3",
+          "num": 38
+        },
+        {
+          "id": "o4",
+          "num": 39
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1345",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "آیه پایان‌یافته با «ٱلظَّـٰلِمُونَ» کدام است؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 37
+        },
+        {
+          "id": "o2",
+          "num": 36
+        },
+        {
+          "id": "o3",
+          "num": 35
+        },
+        {
+          "id": "o4",
+          "num": 38
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۳۷ با الظالمون تمام می‌شود."
+    },
+    {
+      "id": "q_u_p390a_C_1346",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "آغاز آیه ۳۶؟",
+      "stem": {
+        "num": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "فلما جاءهم آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1347",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "آغاز آیه ۳۷؟",
+      "stem": {
+        "num": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "وقال موسی ربی آیه ۳۷ است."
+    },
+    {
+      "id": "q_u_p390a_C_1348",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "عبارت اول آیه ۳۶؟",
+      "stem": {
+        "num": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 2
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شروع ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1349",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:37"
+      ],
+      "promptFa": "عبارت اول آیه ۳۷؟",
+      "stem": {
+        "num": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شروع ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1350",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "۳۶ با چه شروع می‌شود؟",
+      "stem": {
+        "num": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "شروع ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1351",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36",
+        "vn:37"
+      ],
+      "promptFa": "شماره آیات را به آغازشان وصل کن.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "36"
+        },
+        {
+          "id": "l2",
+          "ar": "37"
+        },
+        {
+          "id": "l3",
+          "ar": "35"
+        },
+        {
+          "id": "l4",
+          "ar": "38"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فَلَمَّا جَآءَهُم مُّوسَىٰ"
+        },
+        {
+          "id": "r2",
+          "fa": "وَقَالَ مُوسَىٰ رَبِّىٓ"
+        },
+        {
+          "id": "r3",
+          "fa": "قَالَ سَنَشُدُّ عَضُدَكَ"
+        },
+        {
+          "id": "r4",
+          "fa": "وَقَالَ فِرْعَوْنُ يَـٰٓأَيُّهَا"
+        },
+        {
+          "id": "r5",
+          "fa": "وَمَا سَمِعْنَا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "تطبیق شماره با آغاز آیات."
+    },
+    {
+      "id": "q_u_p390a_C_1352",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:36",
+        "vn:37"
+      ],
+      "promptFa": "شماره آیات را وصل کن.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "35"
+        },
+        {
+          "id": "l2",
+          "ar": "36"
+        },
+        {
+          "id": "l3",
+          "ar": "37"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قَالَ سَنَشُدُّ"
+        },
+        {
+          "id": "r2",
+          "fa": "فَلَمَّا جَآءَهُم"
+        },
+        {
+          "id": "r3",
+          "fa": "وَقَالَ مُوسَىٰ"
+        },
+        {
+          "id": "r4",
+          "fa": "وَقَالَ فِرْعَوْنُ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "دقت در آغاز آیات همجوار."
+    },
+    {
+      "id": "q_u_p390a_C_1353",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36",
+        "vn:37"
+      ],
+      "promptFa": "دقیقاً متصل کن.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "36"
+        },
+        {
+          "id": "l2",
+          "ar": "37"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فَلَمَّا جَآءَهُم"
+        },
+        {
+          "id": "r2",
+          "fa": "وَقَالَ مُوسَىٰ"
+        },
+        {
+          "id": "r3",
+          "fa": "قَالَ سَنَشُدُّ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "آیات ۳۶ و ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1354",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 37,
+      "targets": [
+        "vn:36",
+        "vn:37"
+      ],
+      "promptFa": "شماره و عبارت ابتدایی؟",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "36"
+        },
+        {
+          "id": "l2",
+          "ar": "37"
+        },
+        {
+          "id": "l3",
+          "ar": "38"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا"
+        },
+        {
+          "id": "r2",
+          "fa": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ"
+        },
+        {
+          "id": "r3",
+          "fa": "وَقَالَ فِرْعَوْنُ يَـٰٓأَيُّهَا ٱلْمَلَأُ"
+        },
+        {
+          "id": "r4",
+          "fa": "إِلَّا سِحْرٌۭ مُّفْتَرًۭى"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "ارتباط شماره با عبارت."
+    },
+    {
+      "id": "q_u_p390a_C_1355",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 36,
+      "targets": [
+        "vn:36"
+      ],
+      "promptFa": "متصل کن.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "35"
+        },
+        {
+          "id": "l2",
+          "ar": "36"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "قَالَ سَنَشُدُّ"
+        },
+        {
+          "id": "r2",
+          "fa": "فَلَمَّا جَآءَهُم"
+        },
+        {
+          "id": "r3",
+          "fa": "وَقَالَ مُوسَىٰ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ]
+      ],
+      "answer": "",
+      "distractorTags": {},
+      "explanationFa": "دو آیه پیاپی."
+    },
+    {
+      "id": "q_u_p390a_C_1356",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 35,
+      "targets": [
+        "sq:36"
+      ],
+      "promptFa": "آیه بعد از «...وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ» چیست؟",
+      "stem": {
+        "verse": 35
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "پس از ۳۵، آیه ۳۶ فلما جاءهم است."
+    },
+    {
+      "id": "q_u_p390a_C_1357",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه بعد از «...فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ» چیست؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "پس از ۳۶، آیه ۳۷ وقال موسی است."
+    },
+    {
+      "id": "q_u_p390a_C_1358",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 37,
+      "targets": [
+        "sq:38"
+      ],
+      "promptFa": "آیه بعد از «...لَا يُفْلِحُ ٱلظَّـٰلِمُونَ» چیست؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "پس از ۳۷، آیه ۳۸ وقال فرعون است."
+    },
+    {
+      "id": "q_u_p390a_C_1359",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "sq:36"
+      ],
+      "promptFa": "آیه قبل از «فَلَمَّا جَآءَهُم مُّوسَىٰ...» چیست؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 13,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 14,
+            "to": 18
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 24,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "قبل از ۳۶، آیه ۳۵ است."
+    },
+    {
+      "id": "q_u_p390a_C_1360",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 37,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه قبل از «وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ...» چیست؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 13,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 14,
+            "to": 18
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 24,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "قبل از ۳۷، آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1361",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 38,
+      "targets": [
+        "sq:38"
+      ],
+      "promptFa": "آیه قبل از «وَقَالَ فِرْعَوْنُ...» چیست؟",
+      "stem": {
+        "verse": 38
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 14,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 13,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 24,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "قبل از ۳۸، آیه ۳۷ است."
+    },
+    {
+      "id": "q_u_p390a_C_1362",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 35,
+      "targets": [
+        "sq:36"
+      ],
+      "promptFa": "آیه ۳۶ (بعد از ۳۵) را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ قَالُوا۟",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ",
+          "decoy": true,
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۳۶ بعد از ۳۵ قرار دارد."
+    },
+    {
+      "id": "q_u_p390a_C_1363",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه ۳۷ (بعد از ۳۶) را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَقَالَ فِرْعَوْنُ يَـٰٓأَيُّهَا ٱلْمَلَأُ",
+          "decoy": true,
+          "wordIdx": [
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۳۷ پس از ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1364",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 37,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه ۳۶ (قبل از ۳۷) را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "قبل از ۳۷، آیه ۳۶ است."
+    },
+    {
+      "id": "q_u_p390a_C_1365",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "pg:u_p390a"
+      ],
+      "promptFa": "آیات ۳۵ تا ۳۸ را مرتب کن.",
+      "stem": {
+        "verses": [
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "35: قَالَ سَنَشُدُّ...",
+          "wordIdx": [
+            35
+          ],
+          "verse": 35
+        },
+        {
+          "id": "b2",
+          "ar": "36: فَلَمَّا جَآءَهُم...",
+          "wordIdx": [
+            36
+          ],
+          "verse": 36
+        },
+        {
+          "id": "b3",
+          "ar": "37: وَقَالَ مُوسَىٰ...",
+          "wordIdx": [
+            37
+          ],
+          "verse": 37
+        },
+        {
+          "id": "b4",
+          "ar": "38: وَقَالَ فِرْعَوْنُ...",
+          "wordIdx": [
+            38
+          ],
+          "verse": 38
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب آیات این مقطع."
+    },
+    {
+      "id": "q_u_p390a_C_1366",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "pg:u_p390a"
+      ],
+      "promptFa": "آیات ۳۶ تا ۳۸ را مرتب کن.",
+      "stem": {
+        "verses": [
+          36,
+          37,
+          38
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "36: فَلَمَّا جَآءَهُم...",
+          "wordIdx": [
+            36
+          ],
+          "verse": 36
+        },
+        {
+          "id": "b2",
+          "ar": "37: وَقَالَ مُوسَىٰ...",
+          "wordIdx": [
+            37
+          ],
+          "verse": 37
+        },
+        {
+          "id": "b3",
+          "ar": "38: وَقَالَ فِرْعَوْنُ...",
+          "wordIdx": [
+            38
+          ],
+          "verse": 38
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب ۳۶، ۳۷، ۳۸."
+    },
+    {
+      "id": "q_u_p390a_C_1367",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه ۳۷ (بعد از ۳۶) کدام است؟",
+      "stem": {
+        "verse": 36
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 38,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 36,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "وقال موسی ربی اعلم."
+    },
+    {
+      "id": "q_u_p390a_C_1368",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 37,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه قبل از ۳۷ (یعنی ۳۶)؟",
+      "stem": {
+        "verse": 37
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 12,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 35,
+            "from": 10,
+            "to": 15
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 37,
+            "from": 12,
+            "to": 18
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 20,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "پایان ۳۶: فی آبائنا الاولین."
+    },
+    {
+      "id": "q_u_p390a_C_1369",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 36,
+      "targets": [
+        "sq:37"
+      ],
+      "promptFa": "آیه ۳۷ را کامل بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترکیب دو نیمه آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1370",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "sequence",
+      "verse": 35,
+      "targets": [
+        "pg:u_p390a"
+      ],
+      "promptFa": "۳۵ تا ۳۷ را بچین.",
+      "stem": {
+        "verses": [
+          35,
+          36,
+          37
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "35: قَالَ سَنَشُدُّ...",
+          "wordIdx": [
+            35
+          ],
+          "verse": 35
+        },
+        {
+          "id": "b2",
+          "ar": "36: فَلَمَّا جَآءَهُم...",
+          "wordIdx": [
+            36
+          ],
+          "verse": 36
+        },
+        {
+          "id": "b3",
+          "ar": "37: وَقَالَ مُوسَىٰ...",
+          "wordIdx": [
+            37
+          ],
+          "verse": 37
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب دقیق آیات."
+    },
+    {
+      "id": "q_u_p390a_C_1371",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "پایان آیه ۳۶ چیست؟",
+      "stem": {
+        "verse": 36,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 15,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 16,
+            "to": 18
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 25,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "فی آبائنا الاولین."
+    },
+    {
+      "id": "q_u_p390a_C_1372",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "پایان آیه ۳۷ چیست؟",
+      "stem": {
+        "verse": 37,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 16,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 15,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 13,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 25,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "لا یفلح الظالمون."
+    },
+    {
+      "id": "q_u_p390a_C_1373",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "پنج کلمه آخر آیه ۳۶؟",
+      "stem": {
+        "verse": 36,
+        "hideLastWords": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 13,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 14,
+            "to": 18
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 11,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 23,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "سمعنا بهذا فی آبائنا الاولین."
+    },
+    {
+      "id": "q_u_p390a_C_1374",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "پنج کلمه آخر آیه ۳۷؟",
+      "stem": {
+        "verse": 37,
+        "hideLastWords": 5
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 37,
+            "from": 14,
+            "to": 18
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 36,
+            "from": 13,
+            "to": 17
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 11,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 23,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "الدار انه لا یفلح الظالمون."
+    },
+    {
+      "id": "q_u_p390a_C_1375",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "پایان ۳۶ کدام است؟ (سخت)",
+      "stem": {
+        "verse": 36,
+        "hideLastWords": 4
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 36,
+            "from": 14,
+            "to": 17
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 37,
+            "from": 15,
+            "to": 18
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 35,
+            "from": 12,
+            "to": 15
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 38,
+            "from": 24,
+            "to": 27
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "بهذا فی آبائنا الاولین."
+    },
+    {
+      "id": "q_u_p390a_C_1376",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "آیه ۳۶ را طبق ترجمه بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چیدمان آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1377",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "آیه ۳۷ را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "چیدمان آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1378",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "کلمات پایانی ۳۶ را مرتب کن.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَا هَـٰذَآ",
+          "wordIdx": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلظَّـٰلِمُونَ",
+          "decoy": true,
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کلمات ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1379",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "کلمات پایانی ۳۷ را مرتب کن.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَن تَكُونُ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا يُفْلِحُ",
+          "wordIdx": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْأَوَّلِينَ",
+          "decoy": true,
+          "wordIdx": [
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کلمات ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1380",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "بخش اول ۳۶ را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "جَآءَهُم",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مُّوسَىٰ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "شروع ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1381",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "آیه ۳۶ را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1382",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "آیه ۳۷ را بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1383",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "آیه ۳۶ را دقیق بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَقَالَ مُوسَىٰ",
+          "decoy": true,
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "حضور انحرافی در ساختن ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1384",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "آیه ۳۷ را دقیق بساز.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ مُوسَىٰ رَبِّىٓ أَعْلَمُ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْغَـٰلِبُونَ",
+          "decoy": true,
+          "wordIdx": [
+            19
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "دقت در کلمات ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1385",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "۳۶ را بچین.",
+      "stem": {},
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَلَمَّا جَآءَهُم مُّوسَىٰ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1386",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "جای خالی آیه ۳۶؟",
+      "stem": {
+        "verse": 36,
+        "hiddenIdx": [
+          4,
+          5,
+          10,
+          11
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِـَٔايَـٰتِنَا",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "سِحْرٌۭ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مُّفْتَرًۭى",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سُلْطَـٰنًۭا",
+          "decoy": true,
+          "wordIdx": [
+            12
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "5": "b2",
+        "10": "b3",
+        "11": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل کلمات کلیدی ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1387",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "جای خالی آیه ۳۷؟",
+      "stem": {
+        "verse": 37,
+        "hiddenIdx": [
+          4,
+          7,
+          13,
+          18
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أَعْلَمُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِٱلْهُدَىٰ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عَـٰقِبَةُ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            18
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْغَـٰلِبُونَ",
+          "decoy": true,
+          "wordIdx": [
+            19
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "7": "b2",
+        "13": "b3",
+        "18": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1388",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "جاهای خالی ۳۶ را پر کن.",
+      "stem": {
+        "verse": 36,
+        "hiddenIdx": [
+          2,
+          8,
+          13,
+          16,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "جَآءَهُم",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "هَـٰذَآ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "سَمِعْنَا",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ءَابَآئِنَا",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "أَبْنَآءَهُمْ",
+          "decoy": true,
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "8": "b2",
+        "13": "b3",
+        "16": "b4",
+        "17": "b5"
+      },
+      "distractorTags": {},
+      "explanationFa": "کلمات متعدد از ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1389",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "کلمات جا افتاده ۳۷؟",
+      "stem": {
+        "verse": 37,
+        "hiddenIdx": [
+          2,
+          5,
+          9,
+          14,
+          17
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مُوسَىٰ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَن",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "عِندِهِۦ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ٱلدَّارِ ۖ",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُفْلِحُ",
+          "wordIdx": [
+            17
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يَصِلُونَ",
+          "decoy": true,
+          "wordIdx": [
+            18
+          ]
+        }
+      ],
+      "answer": {
+        "2": "b1",
+        "5": "b2",
+        "9": "b3",
+        "14": "b4",
+        "17": "b5"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل کلمات سخت ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1390",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "آیه ۳۶ کلمات ناقص؟",
+      "stem": {
+        "verse": 36,
+        "hiddenIdx": [
+          6,
+          9,
+          14,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالُوا۟",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِلَّا",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِهَـٰذَا",
+          "wordIdx": [
+            14
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "فِىٓ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "عَلَى",
+          "decoy": true,
+          "wordIdx": [
+            16
+          ]
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "9": "b2",
+        "14": "b3",
+        "15": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "ادوات در آیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1391",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "آیه ۳۷ کلمات ناقص؟",
+      "stem": {
+        "verse": 37,
+        "hiddenIdx": [
+          1,
+          3,
+          10,
+          16
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَقَالَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبِّىٓ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَن",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لَا",
+          "wordIdx": [
+            16
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّ",
+          "decoy": true,
+          "wordIdx": [
+            17
+          ]
+        }
+      ],
+      "answer": {
+        "1": "b1",
+        "3": "b2",
+        "10": "b3",
+        "16": "b4"
+      },
+      "distractorTags": {},
+      "explanationFa": "شروع و ادوات در ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1392",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "تکمیل ۳۶؟",
+      "stem": {
+        "verse": 36,
+        "hiddenIdx": [
+          3,
+          7,
+          12
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مُّوسَىٰ",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَا",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِلَّا",
+          "decoy": true,
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "7": "b2",
+        "12": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "کلمات ساده ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1393",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "تکمیل ۳۷؟",
+      "stem": {
+        "verse": 37,
+        "hiddenIdx": [
+          6,
+          11,
+          15
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "جَآءَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَكُونُ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "كَانَ",
+          "decoy": true,
+          "wordIdx": [
+            16
+          ]
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "11": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "افعال ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1394",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "بقیه آیه ۳۶ را کامل کن.",
+      "stem": {
+        "verse": 36,
+        "givenCount": 5,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": {
+        "6": "b1",
+        "12": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل بقیه ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1395",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "بقیه آیه ۳۷ را کامل کن.",
+      "stem": {
+        "verse": 37,
+        "givenCount": 4,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِمَن جَآءَ بِٱلْهُدَىٰ مِنْ عِندِهِۦ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "10": "b2",
+        "15": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل بقیه ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1396",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "پس از «...سِحْرٌۭ مُّفْتَرًۭى» چه می‌آید؟",
+      "stem": {
+        "verse": 36,
+        "givenCount": 11,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا",
+          "wordIdx": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "decoy": true,
+          "wordIdx": [
+            16
+          ]
+        }
+      ],
+      "answer": {
+        "12": "b1",
+        "15": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل پایان ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1397",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "پس از «...مِنْ عِندِهِۦ» چه می‌آید؟",
+      "stem": {
+        "verse": 37,
+        "givenCount": 9,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَمَن تَكُونُ لَهُۥ عَـٰقِبَةُ ٱلدَّارِ ۖ",
+          "wordIdx": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا",
+          "decoy": true,
+          "wordIdx": [
+            16
+          ]
+        }
+      ],
+      "answer": {
+        "10": "b1",
+        "15": "b2"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل پایان ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1398",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "کلمات نهایی ۳۶؟",
+      "stem": {
+        "verse": 36,
+        "givenCount": 14,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": {
+        "15": "b1"
+      },
+      "distractorTags": {},
+      "explanationFa": "فقط بخش آخر ۳۶."
+    },
+    {
+      "id": "q_u_p390a_C_1399",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 37,
+      "targets": [
+        "vr:37"
+      ],
+      "promptFa": "کلمات نهایی ۳۷؟",
+      "stem": {
+        "verse": 37,
+        "givenCount": 14,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّهُۥ لَا يُفْلِحُ ٱلظَّـٰلِمُونَ",
+          "wordIdx": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "answer": {
+        "15": "b1"
+      },
+      "distractorTags": {},
+      "explanationFa": "فقط بخش آخر ۳۷."
+    },
+    {
+      "id": "q_u_p390a_C_1400",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 8,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 36,
+      "targets": [
+        "vr:36"
+      ],
+      "promptFa": "آیه ۳۶ از ابتدا چطور کامل می‌شود؟",
+      "stem": {
+        "verse": 36,
+        "givenCount": 3,
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوا۟ مَا هَـٰذَآ إِلَّا سِحْرٌۭ مُّفْتَرًۭى",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+          "wordIdx": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "6": "b2",
+        "12": "b3"
+      },
+      "distractorTags": {},
+      "explanationFa": "کامل کردن ۳۶ از کلمه چهارم."
+    }
+  ]
+}

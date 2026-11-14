@@ -1,0 +1,1333 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "A3",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_A_0301",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "معنای «وَٱسْتَكْبَرَ» چیست؟",
+      "stem": {
+        "wordId": "w28_039_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پنداشت"
+        },
+        {
+          "id": "o2",
+          "fa": "سرکشی و بزرگ‌بینی کرد"
+        },
+        {
+          "id": "o3",
+          "fa": "و بزرگ‌تر شد"
+        },
+        {
+          "id": "o4",
+          "fa": "و در زمین گشت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ک ب ر» است و استکبر یعنی خود را بزرگ دانستن و سرکشی کردن."
+    },
+    {
+      "id": "q_u_p390b_A_0302",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "«وَٱسْتَكْبَرَ» در کدام گزینه درست معنا شده است؟",
+      "stem": {
+        "wordId": "w28_039_001",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "o2",
+          "fa": "و بازگردانده شد"
+        },
+        {
+          "id": "o3",
+          "fa": "و تکبّر کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "و کبیر را پیروی کرد"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "same_root"
+      },
+      "explanationFa": "استکبر با «کبیر/اکبر» هم‌ریشه است: خود را بزرگ دانستن."
+    },
+    {
+      "id": "q_u_p390b_A_0303",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "در این آیه «وَٱسْتَكْبَرَ» چه معنایی دارد؟",
+      "stem": {
+        "wordId": "w28_039_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و تکبّر کرد"
+        },
+        {
+          "id": "o2",
+          "fa": "و گمان کردند"
+        },
+        {
+          "id": "o3",
+          "fa": "و به ناحق بازگشت"
+        },
+        {
+          "id": "o4",
+          "fa": "و در زمین ماند"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فاعل آن «هُوَ» است و در سیاق آیه یعنی تکبّر و سرکشی کرد."
+    },
+    {
+      "id": "q_u_p390b_A_0304",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "با توجه به آیه، «وَٱسْتَكْبَرَ» یعنی:",
+      "stem": {
+        "wordId": "w28_039_001",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "بزرگ‌تر از دیگران شد"
+        },
+        {
+          "id": "o2",
+          "fa": "لشکریان و سپاهیان او"
+        },
+        {
+          "id": "o3",
+          "fa": "گمان کردند"
+        },
+        {
+          "id": "o4",
+          "fa": "سرکشی و بزرگ‌بینی کرد"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "same_root",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "استکبار یعنی خود را بزرگ‌بین دانستن، نه صرفاً بزرگ شدن."
+    },
+    {
+      "id": "q_u_p390b_A_0305",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "معنای «وَجُنُودُهُۥ» چیست؟",
+      "stem": {
+        "wordId": "w28_039_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و زمینش"
+        },
+        {
+          "id": "o2",
+          "fa": "و دیوانگانش"
+        },
+        {
+          "id": "o3",
+          "fa": "و بزرگانش"
+        },
+        {
+          "id": "o4",
+          "fa": "و سپاهیانش"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "false_friend",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«جنود» جمع «جند» به معنای سپاه است و با «جنون» ارتباطی ندارد."
+    },
+    {
+      "id": "q_u_p390b_A_0306",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "کدام گزینه معنای «وَجُنُودُهُۥ» است؟",
+      "stem": {
+        "wordId": "w28_039_003",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و پنداشتند"
+        },
+        {
+          "id": "o2",
+          "fa": "لشکریان و سپاهیان او"
+        },
+        {
+          "id": "o3",
+          "fa": "و او سرکشی کرد"
+        },
+        {
+          "id": "o4",
+          "fa": "و حق او"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ج ن د»؛ «جندی» در فارسی همین ریشه را دارد. «ـهُ» ضمیر «او» است."
+    },
+    {
+      "id": "q_u_p390b_A_0307",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "در این آیه «وَجُنُودُهُۥ» به چه کسانی اشاره دارد؟",
+      "stem": {
+        "wordId": "w28_039_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "o2",
+          "fa": "و زمینیانش"
+        },
+        {
+          "id": "o3",
+          "fa": "و سرکشی‌اش"
+        },
+        {
+          "id": "o4",
+          "fa": "و بازگشتشان"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«او و سپاهیانش» در ترجمه‌ی آیه از همین کلمه می‌آید."
+    },
+    {
+      "id": "q_u_p390b_A_0308",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "با توجه به آیه، معنای «وَجُنُودُهُۥ» کدام است؟",
+      "stem": {
+        "wordId": "w28_039_003",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و جنون او"
+        },
+        {
+          "id": "o2",
+          "fa": "و او و حق"
+        },
+        {
+          "id": "o3",
+          "fa": "لشکریان و سپاهیان او"
+        },
+        {
+          "id": "o4",
+          "fa": "و گمان‌های او"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«جنود» با «جنون» شبیه است اما از ریشه‌ی «ج ن د» و به معنای سپاهیان است."
+    },
+    {
+      "id": "q_u_p390b_A_0309",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "معنای «وَظَنُّوٓا۟» چیست؟",
+      "stem": {
+        "wordId": "w28_039_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و بازگشتند"
+        },
+        {
+          "id": "o2",
+          "fa": "و دانستند"
+        },
+        {
+          "id": "o3",
+          "fa": "و تکبّر کردند"
+        },
+        {
+          "id": "o4",
+          "fa": "و پنداشتند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ظنّ» یعنی گمان؛ «ظنّوا» یعنی گمان بردند و پنداشتند، نه «یقین کردند»."
+    },
+    {
+      "id": "q_u_p390b_A_0310",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "کدام گزینه معنای «وَظَنُّوٓا۟» است؟",
+      "stem": {
+        "wordId": "w28_039_008",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و به سوی ما"
+        },
+        {
+          "id": "o2",
+          "fa": "و ستم کردند"
+        },
+        {
+          "id": "o3",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "o4",
+          "fa": "گمان کردند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "near_miss",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ظ ن ن» است و «ظنّوا» یعنی گمان بردند."
+    },
+    {
+      "id": "q_u_p390b_A_0311",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "در این آیه «وَظَنُّوٓا۟» یعنی:",
+      "stem": {
+        "wordId": "w28_039_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و یقین کردند"
+        },
+        {
+          "id": "o2",
+          "fa": "و پنداشتند"
+        },
+        {
+          "id": "o3",
+          "fa": "و بازگشتند"
+        },
+        {
+          "id": "o4",
+          "fa": "و سرکشی کردند"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "بعد از آن «أَنَّهُمْ إِلَيْنَا لَا يُرْجَعُونَ» می‌آید و یعنی پنداشتند که بازنمی‌گردند."
+    },
+    {
+      "id": "q_u_p390b_A_0312",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "با توجه به آیه، معنای «وَظَنُّوٓا۟» کدام است؟",
+      "stem": {
+        "wordId": "w28_039_008",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "و ظلم کردند"
+        },
+        {
+          "id": "o2",
+          "fa": "و سپاهیان او"
+        },
+        {
+          "id": "o3",
+          "fa": "و حق را شناختند"
+        },
+        {
+          "id": "o4",
+          "fa": "گمان کردند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o3": "near_miss"
+      },
+      "explanationFa": "«ظنّ» گمان است و اینجا پنداری نادرست از سوی آنان را بیان می‌کند."
+    },
+    {
+      "id": "q_u_p390b_A_0313",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «و تکبّر کرد»؟",
+      "stem": {
+        "fa": "و تکبّر کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "o4",
+          "ar": "يُرْجَعُونَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "استکبر از ریشه‌ی «ک ب ر» است."
+    },
+    {
+      "id": "q_u_p390b_A_0314",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "کدام کلمه یعنی «سرکشی و بزرگ‌بینی کرد»؟",
+      "stem": {
+        "fa": "سرکشی و بزرگ‌بینی کرد"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنَّهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بِغَيْرِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "random",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل ماضی با «و» در آغاز آیه که فاعل آن «هُوَ» است."
+    },
+    {
+      "id": "q_u_p390b_A_0315",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001"
+      ],
+      "promptFa": "کدام کلمه با ریشه‌ی «ک ب ر» و معنای «خود را بزرگ دانستن» می‌آید؟",
+      "stem": {
+        "fa": "خود را بزرگ دانستن (و تکبّر کرد)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَيْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "هُوَ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱسْتَكْبَرَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "از میان این گزینه‌ها فقط «وَٱسْتَكْبَرَ» از ریشه‌ی «ک ب ر» است."
+    },
+    {
+      "id": "q_u_p390b_A_0316",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «و سپاهیانش»؟",
+      "stem": {
+        "fa": "و سپاهیانش"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْأَرْضِ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَجُنُودُهُۥ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«جنود» جمع «جند» و «ـهُ» ضمیر «او» است."
+    },
+    {
+      "id": "q_u_p390b_A_0317",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "کدام کلمه یعنی «لشکریان و سپاهیان او»؟",
+      "stem": {
+        "fa": "لشکریان و سپاهیان او"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هُوَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْحَقِّ"
+        },
+        {
+          "id": "o4",
+          "ar": "يُرْجَعُونَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "«هُوَ» ضمیر منفصل «او» است، اما «سپاهیانش» همان «وَجُنُودُهُۥ» است."
+    },
+    {
+      "id": "q_u_p390b_A_0318",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_003"
+      ],
+      "promptFa": "کدام کلمه جمعِ «جُند» (سپاه) به‌همراه ضمیر «او» است؟",
+      "stem": {
+        "fa": "جمعِ سپاه + ضمیر «او» (و سپاهیانش)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِلَيْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "بِغَيْرِ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَجُنُودُهُۥ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "random",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "ریشه‌ی «ج ن د» و شکل جمعِ «جنود» مشخص‌کننده‌ی پاسخ است."
+    },
+    {
+      "id": "q_u_p390b_A_0319",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «و پنداشتند»؟",
+      "stem": {
+        "fa": "و پنداشتند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "o2",
+          "ar": "يُرْجَعُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَٱسْتَكْبَرَ"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ظنّوا» از ریشه‌ی «ظ ن ن» به معنای گمان بردند است."
+    },
+    {
+      "id": "q_u_p390b_A_0320",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "کدام کلمه یعنی «گمان کردند»؟",
+      "stem": {
+        "fa": "گمان کردند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَنَّهُمْ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْحَقِّ"
+        },
+        {
+          "id": "o4",
+          "ar": "وَظَنُّوٓا۟"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "random"
+      },
+      "explanationFa": "فعل «ظنّوا» پیش از «أَنَّهُمْ» آمده است و مفعول آن جمله‌ی بعدی است."
+    },
+    {
+      "id": "q_u_p390b_A_0321",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_008"
+      ],
+      "promptFa": "کدام کلمه یعنی «گمان بردند» (از «ظنّ»)؟",
+      "stem": {
+        "fa": "گمان بردند («ظنّ» یعنی گمان)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هُوَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "o3",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "o4",
+          "ar": "إِلَيْنَا"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "random",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "فعل جمعِ ماضی با واو جمع و الف پایانی نوشته شده است."
+    },
+    {
+      "id": "q_u_p390b_A_0322",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001",
+        "w:w28_039_003",
+        "w:w28_039_008"
+      ],
+      "promptFa": "هر کلمه را با معنایش جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "هُوَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْأَرْضِ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "زمین"
+        },
+        {
+          "id": "r2",
+          "fa": "و پنداشتند"
+        },
+        {
+          "id": "r3",
+          "fa": "او"
+        },
+        {
+          "id": "r4",
+          "fa": "و تکبّر کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "و سپاهیانش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r3"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {},
+      "explanationFa": "سه کلمه‌ی سخت: تکبّر کرد (ک ب ر)، سپاهیانش (ج ن د)، پنداشتند (ظ ن ن)."
+    },
+    {
+      "id": "q_u_p390b_A_0323",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001",
+        "w:w28_039_003",
+        "w:w28_039_008"
+      ],
+      "promptFa": "کلمات عربی را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "l4",
+          "ar": "فِى"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْحَقِّ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "سرکشی و بزرگ‌بینی کرد"
+        },
+        {
+          "id": "r2",
+          "fa": "حق"
+        },
+        {
+          "id": "r3",
+          "fa": "گمان کردند"
+        },
+        {
+          "id": "r4",
+          "fa": "در"
+        },
+        {
+          "id": "r5",
+          "fa": "لشکریان و سپاهیان او"
+        },
+        {
+          "id": "r6",
+          "fa": "و دانستند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {},
+      "explanationFa": "«و دانستند» گزینه‌ی اضافی است؛ «ظنّ» گمان است نه علم."
+    },
+    {
+      "id": "q_u_p390b_A_0324",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001",
+        "w:w28_039_003",
+        "w:w28_039_008"
+      ],
+      "promptFa": "هر کلمه را به معنای درستش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "l2",
+          "ar": "بِغَيْرِ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "l4",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَا"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "r2",
+          "fa": "نه"
+        },
+        {
+          "id": "r3",
+          "fa": "و تکبّر کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "بدون"
+        },
+        {
+          "id": "r5",
+          "fa": "و پنداشتند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r4"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {},
+      "explanationFa": "«بِغَيْرِ» یعنی بدون، و «لَا» حرف نفی است."
+    },
+    {
+      "id": "q_u_p390b_A_0325",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001",
+        "w:w28_039_003",
+        "w:w28_039_008"
+      ],
+      "promptFa": "کلمات را با معنای دقیق‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَٱسْتَكْبَرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "أَنَّهُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "l4",
+          "ar": "إِلَيْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "وَظَنُّوٓا۟"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "به سوی ما"
+        },
+        {
+          "id": "r2",
+          "fa": "گمان کردند"
+        },
+        {
+          "id": "r3",
+          "fa": "که آنان"
+        },
+        {
+          "id": "r4",
+          "fa": "سرکشی و بزرگ‌بینی کرد"
+        },
+        {
+          "id": "r5",
+          "fa": "لشکریان و سپاهیان او"
+        },
+        {
+          "id": "r6",
+          "fa": "و دیوانگانش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {},
+      "explanationFa": "«و دیوانگانش» انحرافی دوست‌فریبنده برای «جنود» (شبیه جنون) است."
+    },
+    {
+      "id": "q_u_p390b_A_0326",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 39,
+      "targets": [
+        "w:w28_039_001",
+        "w:w28_039_003",
+        "w:w28_039_008"
+      ],
+      "promptFa": "جفت‌های درست را پیدا کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "وَجُنُودُهُۥ"
+        },
+        {
+          "id": "l2",
+          "ar": "يُرْجَعُونَ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَظَنُّوٓا۟"
+        },
+        {
+          "id": "l4",
+          "ar": "هُوَ"
+        },
+        {
+          "id": "l5",
+          "ar": "وَٱسْتَكْبَرَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "و پنداشتند"
+        },
+        {
+          "id": "r2",
+          "fa": "بازگردانده می‌شوند"
+        },
+        {
+          "id": "r3",
+          "fa": "و تکبّر کرد"
+        },
+        {
+          "id": "r4",
+          "fa": "او"
+        },
+        {
+          "id": "r5",
+          "fa": "و سپاهیانش"
+        },
+        {
+          "id": "r6",
+          "fa": "و بازگشتند"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r5"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r1"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r3"
+        ]
+      ],
+      "answer": null,
+      "distractorTags": {},
+      "explanationFa": "«يُرْجَعُونَ» مضارع مجهول است؛ «و بازگشتند» انحرافی است."
+    }
+  ],
+  "issues": [
+    "ورودی فقط آیه ۳۹ را داشت؛ گزینه‌های عربی انحرافی از کلمات همین آیه گرفته شد.",
+    "معنای کلمات غیرسخت (مثل فِى، هُوَ، لَا) در ورودی نبود و به‌صورت کوتاه افزوده شد.",
+    "earlierHardWords در ورودی نبود و کلمه‌ی مرور در جفت‌سازی‌ها نیامد."
+  ]
+}

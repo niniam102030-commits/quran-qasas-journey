@@ -1,0 +1,24 @@
+[#1 q_u_p396a_A_1543 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#1 q_u_p396a_A_1543 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: مَعَادٍۢ ۚ
+[#1 q_u_p396a_A_1543 MATCH_PHRASES] قطعه‌ی فارسی r3 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#2 q_u_p396a_A_1544 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#2 q_u_p396a_A_1544 MATCH_PHRASES] قطعه‌ی فارسی r2 زیررشته‌ی ترجمه‌ی انصاریان نیست.
+[#5 q_u_p396a_A_1547 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p396a_A_1549 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p396a_A_1550 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#9 q_u_p396a_A_1551 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 85 برابر نیست.
+[#10 q_u_p396a_A_1552 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 85 برابر نیست.
+[#11 q_u_p396a_A_1553 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p396a_A_1554 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#13 q_u_p396a_A_1555 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#13 q_u_p396a_A_1555 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: ۖ
+[#14 q_u_p396a_A_1556 MATCH_PHRASES] تعداد جفت‌ها باید ۴ تا ۶ باشد (الان 3).
+[#16 q_u_p396a_A_1558 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#17 q_u_p396a_A_1559 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#19 q_u_p396a_A_1561 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#20 q_u_p396a_A_1562 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#21 q_u_p396a_A_1563 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 86 برابر نیست.
+[#22 q_u_p396a_A_1564 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#22 q_u_p396a_A_1564 ORDER_TRANSLATION_CHUNKS] اتصال قطعات پاسخ با ترجمه‌ی آیه‌ی 86 برابر نیست.
+[#23 q_u_p396a_A_1565 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#24 q_u_p396a_A_1566 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.

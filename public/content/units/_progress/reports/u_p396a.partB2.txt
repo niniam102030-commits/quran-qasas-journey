@@ -1,0 +1,7 @@
+[#2 q_u_p396a_B_0502 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 85 را نمی‌پوشاند.
+[#3 q_u_p396a_B_0503 BUILD_FROM_TRANSLATION] stage باید در بازه‌ی 3 تا 4 باشد.
+[#3 q_u_p396a_B_0503 BUILD_FROM_TRANSLATION] پاسخ کل آیه‌ی 85 را نمی‌پوشاند.
+[#5 q_u_p396a_B_0505 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#6 q_u_p396a_B_0506 BUILD_FROM_NUMBER] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p396a_B_0508 ENDING_CHOICE] stage باید در بازه‌ی 3 تا 4 باشد.
+[#8 q_u_p396a_B_0508 ENDING_CHOICE] برچسب نامعتبر ''.

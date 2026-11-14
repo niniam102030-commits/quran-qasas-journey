@@ -1,0 +1,104 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p395b",
+  "part": "B",
+  "generatedBy": "Antigravity Automated Generator",
+  "questions": [
+    {
+      "id": "q_u_p395b_B_0001",
+      "type": "BUILD_FROM_TRANSLATION",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vr:81"
+      ],
+      "promptFa": "بر اساس ترجمه انصاریان: «پس او و خانه اش را در زمین فرو بردیم، و هیچ گروهی غیر از خدا برای او ن...»، آیه 81 را مرتب کن:",
+      "stem": {
+        "verse": 81
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فَخَسَفْنَا بِهِۦ وَبِدَارِهِ ٱلْأَرْضَ فَمَا كَانَ",
+          "wordIdx": [
+            1,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ٱللَّهِ وَمَا كَانَ مِنَ ٱلْمُنتَصِرِينَ",
+          "wordIdx": [
+            13,
+            17
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "لَهُۥ مِن فِئَةٍۢ يَنصُرُونَهُۥ مِن دُونِ",
+          "wordIdx": [
+            7,
+            12
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "آیه 81 سوره قصص با موفقیت بازسازی شد."
+    },
+    {
+      "id": "q_u_p395b_B_0002",
+      "type": "CLOZE_AR",
+      "shape": "cloze",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 81,
+      "targets": [
+        "vr:81"
+      ],
+      "promptFa": "کلمه جاافتاده در آیه 81 سوره قصص را جایگذاری کنید:",
+      "stem": {
+        "verse": 81,
+        "hiddenIdx": [
+          9
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "فِئَةٍۢ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فِي ٱلْأَرْضِ",
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُۥ",
+          "decoy": true
+        }
+      ],
+      "answer": {
+        "9": "b1"
+      },
+      "distractorTags": {
+        "b2": "neighbor_word",
+        "b3": "random"
+      },
+      "explanationFa": "کلمه صحیح «فِئَةٍۢ» در آیه 81 است."
+    }
+  ],
+  "issues": []
+}

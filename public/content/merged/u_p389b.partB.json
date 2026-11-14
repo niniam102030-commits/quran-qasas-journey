@@ -1,0 +1,4774 @@
+{
+ "schema": "qasas.content.v1",
+ "unitId": "u_p389b",
+ "part": "B",
+ "generatedBy": "Gemini-2.5-Pro,Gemini",
+ "questions": [
+  {
+   "id": "q_u_p389b_B_0401",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "translation",
+   "verse": 32,
+   "targets": [
+    "vt:32",
+    "vr:32"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید.",
+   "stem": {
+    "fa": "دستت را در گریبانت ببر تا بدون هیچ عیبی سفید و درخشان بیرون آید"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2"
+   ],
+   "distractorTags": {},
+   "explanationFa": "این بخش ابتدایی آیه است که به معجزه ید بیضا اشاره دارد.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0402",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 32,
+   "targets": [
+    "vt:32",
+    "vr:32"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید.",
+   "stem": {
+    "fa": "و برای [از بین رفتن] ترسی که دچارش شده ای دو دستت را بر سینه بگذار"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَٱضْمُمْ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِلَيْكَ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "جَنَاحَكَ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مِنَ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      14
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترکیب «وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ» به معنای جمع کردن و گذاشتن دست بر سینه برای رفع ترس است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0403",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 32,
+   "targets": [
+    "vt:32",
+    "vr:32"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید. (با گزینه‌های انحرافی)",
+   "stem": {
+    "fa": "پس این دو معجزه از ناحیه پروردگار توست"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَذَٰنِكَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "بُرْهَـٰنَانِ",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مِن",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "رَّبِّكَ",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "عَلَيْكَ",
+     "decoy": true
+    },
+    {
+     "id": "b6",
+     "ar": "أَئِمَّةًۭ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_word",
+    "b6": "random"
+   },
+   "explanationFa": "اشاره به دو معجزه عصا و ید بیضا با عبارت «بُرْهَـٰنَانِ» (دو برهان) است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0404",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vn:32",
+    "vr:32"
+   ],
+   "promptFa": "آیه ۳۲ را از قطعات زیر بسازید.",
+   "stem": {
+    "verseNum": 32
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ",
+     "wordIdx": [
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَـٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ ۖ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "آیه ۳۲ فرمان‌های خداوند به حضرت موسی (ع) را پس از معجزه عصا بیان می‌کند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0406",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vn:32",
+    "vr:32"
+   ],
+   "promptFa": "آیه ۳۲ را از قطعات زیر بسازید.",
+   "stem": {
+    "verseNum": 32
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ",
+     "wordIdx": [
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "قَالَ رَبِّ إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "distractorTags": {
+    "b6": "neighbor_verse"
+   },
+   "explanationFa": "دقت کنید که انتهای آیه با «فَـٰسِقِينَ» ختم می‌شود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0407",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 32,
+    "hiddenIdx": [
+     4,
+     9,
+     14,
+     20
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "جَيْبِكَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "سُوٓءٍۢ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فِرْعَوْنَ",
+     "wordIdx": [
+      20
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "ٱلْيَمِّ",
+     "decoy": true
+    },
+    {
+     "id": "b6",
+     "ar": "وَهَـٰمَـٰنَ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "4": "b1",
+    "9": "b2",
+    "14": "b3",
+    "20": "b4"
+   },
+   "distractorTags": {
+    "b5": "similar_verse",
+    "b6": "neighbor_word"
+   },
+   "explanationFa": "«جيب» به معنای گریبان و «رهب» به معنای ترس است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0408",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 32,
+    "hiddenIdx": [
+     2,
+     6,
+     12,
+     16,
+     21,
+     24
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "يَدَكَ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "بَيْضَآءَ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "جَنَاحَكَ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "بُرْهَـٰنَانِ",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      21
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "قَوْمًۭا",
+     "wordIdx": [
+      24
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "عَصَاكَ ۖ",
+     "decoy": true
+    },
+    {
+     "id": "b8",
+     "ar": "لِقَوْمٍۢ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "6": "b2",
+    "12": "b3",
+    "16": "b4",
+    "21": "b5",
+    "24": "b6"
+   },
+   "distractorTags": {
+    "b7": "neighbor_word",
+    "b8": "same_root"
+   },
+   "explanationFa": "دو معجزه (برهانان) به سوی فرعون و ملأ (اشراف) او فرستاده شدند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0409",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 32,
+    "hiddenIdx": [
+     1,
+     3,
+     5,
+     7,
+     8,
+     10,
+     11,
+     13,
+     15,
+     17,
+     18,
+     19,
+     22,
+     23,
+     25
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "ٱسْلُكْ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "فِى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "تَخْرُجْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مِنْ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "غَيْرِ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "وَٱضْمُمْ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "إِلَيْكَ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "مِنَ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "فَذَٰنِكَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "مِن",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "رَّبِّكَ",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "إِلَىٰ",
+     "wordIdx": [
+      19
+     ]
+    },
+    {
+     "id": "b13",
+     "ar": "إِنَّهُمْ",
+     "wordIdx": [
+      22
+     ]
+    },
+    {
+     "id": "b14",
+     "ar": "كَانُوا۟",
+     "wordIdx": [
+      23
+     ]
+    },
+    {
+     "id": "b15",
+     "ar": "فَـٰسِقِينَ",
+     "wordIdx": [
+      25
+     ]
+    },
+    {
+     "id": "b16",
+     "ar": "ٱلْمُفْسِدِينَ",
+     "decoy": true
+    },
+    {
+     "id": "b17",
+     "ar": "عَلَى",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "3": "b2",
+    "5": "b3",
+    "7": "b4",
+    "8": "b5",
+    "10": "b6",
+    "11": "b7",
+    "13": "b8",
+    "15": "b9",
+    "17": "b10",
+    "18": "b11",
+    "19": "b12",
+    "22": "b13",
+    "23": "b14",
+    "25": "b15"
+   },
+   "distractorTags": {
+    "b16": "similar_verse",
+    "b17": "false_friend"
+   },
+   "explanationFa": "دقت کنید که حروف جاره (فی، من، إلی) در جای درست خود قرار گیرند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0410",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 32,
+    "hiddenIdx": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     23,
+     24
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "يَدَكَ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "فِى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "جَيْبِكَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "تَخْرُجْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "بَيْضَآءَ",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "مِنْ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "غَيْرِ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "سُوٓءٍۢ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "إِلَيْكَ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "جَنَاحَكَ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "مِنَ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b13",
+     "ar": "بُرْهَـٰنَانِ",
+     "wordIdx": [
+      16
+     ]
+    },
+    {
+     "id": "b14",
+     "ar": "مِن",
+     "wordIdx": [
+      17
+     ]
+    },
+    {
+     "id": "b15",
+     "ar": "رَّبِّكَ",
+     "wordIdx": [
+      18
+     ]
+    },
+    {
+     "id": "b16",
+     "ar": "إِلَىٰ",
+     "wordIdx": [
+      19
+     ]
+    },
+    {
+     "id": "b17",
+     "ar": "فِرْعَوْنَ",
+     "wordIdx": [
+      20
+     ]
+    },
+    {
+     "id": "b18",
+     "ar": "وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      21
+     ]
+    },
+    {
+     "id": "b19",
+     "ar": "كَانُوا۟",
+     "wordIdx": [
+      23
+     ]
+    },
+    {
+     "id": "b20",
+     "ar": "قَوْمًۭا",
+     "wordIdx": [
+      24
+     ]
+    },
+    {
+     "id": "b21",
+     "ar": "عَصَاكَ ۖ",
+     "decoy": true
+    },
+    {
+     "id": "b22",
+     "ar": "أَهْلَهَا",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "3": "b2",
+    "4": "b3",
+    "5": "b4",
+    "6": "b5",
+    "7": "b6",
+    "8": "b7",
+    "9": "b8",
+    "11": "b9",
+    "12": "b10",
+    "13": "b11",
+    "14": "b12",
+    "16": "b13",
+    "17": "b14",
+    "18": "b15",
+    "19": "b16",
+    "20": "b17",
+    "21": "b18",
+    "23": "b19",
+    "24": "b20"
+   },
+   "distractorTags": {
+    "b21": "neighbor_word",
+    "b22": "random"
+   },
+   "explanationFa": "بخش اعظم آیه پنهان شده است؛ بر توالی صحیح وقایع معجزه تمرکز کنید.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0411",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 32,
+    "givenCount": 6,
+    "hiddenIdx": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "مِنْ غَيْرِ سُوٓءٍۢ",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ",
+     "wordIdx": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ",
+     "wordIdx": [
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى لِسَانًۭا",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "7": "b1",
+    "10": "b2",
+    "15": "b3",
+    "22": "b4"
+   },
+   "distractorTags": {
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "پس از بیرون آوردن دست، توصیف رفع ترس و سپس تاکید بر اینکه این دو نشانه الهی هستند می‌آید.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0412",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 32,
+    "givenCount": 14,
+    "hiddenIdx": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ",
+     "wordIdx": [
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      19,
+      20,
+      21
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ",
+     "wordIdx": [
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "15": "b1",
+    "19": "b2",
+    "22": "b3"
+   },
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "دقت کنید که برهان‌ها به سوی فرعون و اشراف او فرستاده شدند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0413",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 32,
+    "givenCount": 20,
+    "hiddenIdx": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَمَلَإِي۟هِۦٓ ۚ",
+     "wordIdx": [
+      21
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنَّهُمْ",
+     "wordIdx": [
+      22
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "كَانُوا۟",
+     "wordIdx": [
+      23
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "قَوْمًۭا",
+     "wordIdx": [
+      24
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَـٰسِقِينَ",
+     "wordIdx": [
+      25
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱلْمُفْسِدِينَ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "21": "b1",
+    "22": "b2",
+    "23": "b3",
+    "24": "b4",
+    "25": "b5"
+   },
+   "distractorTags": {
+    "b6": "similar_verse"
+   },
+   "explanationFa": "پایان آیه صفت فرعونیان را بیان می‌کند: قوم فاسق.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0414",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 32,
+   "targets": [
+    "vr:32",
+    "sq:32"
+   ],
+   "promptFa": "پایان آیه را انتخاب کنید.",
+   "stem": {
+    "verse": 32,
+    "hideLastWords": 3
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 32,
+      "from": 23,
+      "to": 25
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "كَانُوا۟ قَوْمًۭا مُّجْرِمِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "هُمُ ٱلْوَٰرِثِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "كَانُوا۟ قَوْمًۭا خَـٰطِـِٔينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "similar_verse",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "فرعونیان در این آیه به عنوان «قوم فاسق» معرفی شده‌اند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0415",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "sequence",
+   "verse": 32,
+   "targets": [
+    "vr:32",
+    "sq:32"
+   ],
+   "promptFa": "پایان آیه را انتخاب کنید.",
+   "stem": {
+    "verse": 32,
+    "hideLastWords": 5
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 32,
+      "from": 21,
+      "to": 25
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "وَهَـٰمَـٰنَ ۚ إِنَّهُمْ كَانُوا۟ خَـٰطِـِٔينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَمَلَإِي۟هِۦٓ ۚ إِنَّهُمْ كَانُوا۟ ٱلْمُفْسِدِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَجُنُودَهُمَا ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "similar_verse",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "آیه با عبارت «وَمَلَإِي۟هِۦٓ ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ» خاتمه می‌یابد.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0416",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 32,
+   "targets": [
+    "vr:32"
+   ],
+   "promptFa": "کدام نسخه از آیه ۳۲ کاملاً صحیح است؟",
+   "stem": {
+    "verseNum": 32
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 32,
+      "from": 1,
+      "to": 25
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ وَٱضْمُمْ إِلَيْكَ يَدَكَ مِنَ ٱلرَّهْبِ ۖ فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ"
+    },
+    {
+     "id": "o3",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَهَـٰمَـٰنَ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍۢ وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ ۖ فَذَٰنِكَ بُرْهَـٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_word",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "در آیه دقیقاً از کلمه «جَنَاحَكَ» (بال/بازو)، «وَمَلَإِي۟هِۦٓ» و «فَـٰسِقِينَ» استفاده شده است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0418",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 1,
+   "skill": "translation",
+   "verse": 33,
+   "targets": [
+    "vt:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید.",
+   "stem": {
+    "fa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ رَبِّ",
+     "wordIdx": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنِّى قَتَلْتُ",
+     "wordIdx": [
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مِنْهُمْ نَفْسًۭا",
+     "wordIdx": [
+      5,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "این بخش اعتراف حضرت موسی به کشتن فردی از قبطیان است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0419",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 33,
+   "targets": [
+    "vt:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید.",
+   "stem": {
+    "fa": "می ترسم مرا بکشند"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {},
+   "explanationFa": "ترس از قصاص با عبارت «فَأَخَافُ أَن يَقْتُلُونِ» بیان می‌شود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0420",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 33,
+   "targets": [
+    "vt:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید. (با گزینه‌های انحرافی)",
+   "stem": {
+    "fa": "گفت: پروردگارا! من یک نفر از آنان را کشته ام، می ترسم مرا بکشند"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "رَبِّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِنِّى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "مِنْهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "رَجُلَيْنِ",
+     "decoy": true
+    },
+    {
+     "id": "b11",
+     "ar": "يُكَذِّبُونِ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9"
+   ],
+   "distractorTags": {
+    "b10": "neighbor_word",
+    "b11": "neighbor_verse"
+   },
+   "explanationFa": "واژه «نَفْسًۭا» به یک شخص اشاره دارد و ترس موسی از کشته شدن («يَقْتُلُونِ») بود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0421",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 1,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vn:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه ۳۳ را از قطعات زیر بسازید.",
+   "stem": {
+    "verseNum": 33
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ رَبِّ إِنِّى قَتَلْتُ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مِنْهُمْ نَفْسًۭا فَأَخَافُ أَن يَقْتُلُونِ",
+     "wordIdx": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2"
+   ],
+   "distractorTags": {
+    "b3": "neighbor_verse"
+   },
+   "explanationFa": "این آیه مناجات کوتاه و بیان نگرانی موسی (ع) پیش از رفتن نزد فرعون است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0422",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vn:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه ۳۳ را از قطعات زیر بسازید.",
+   "stem": {
+    "verseNum": 33
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ رَبِّ إِنِّى",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "قَتَلْتُ مِنْهُمْ نَفْسًۭا",
+     "wordIdx": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَخَافُ أَن يَقْتُلُونِ",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "در آیه ۳۳ ترس از کشته شدن (یقتلون) و در آیه بعد ترس از تکذیب شدن (یکذبون) بیان شده است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0423",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vn:33",
+    "vr:33"
+   ],
+   "promptFa": "آیه ۳۳ را از کلمات زیر بسازید.",
+   "stem": {
+    "verseNum": 33
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "رَبِّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِنِّى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "مِنْهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "ظَلَمْتُ",
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9"
+   ],
+   "distractorTags": {
+    "b10": "similar_verse"
+   },
+   "explanationFa": "در این آیه فعل «قَتَلْتُ» (کشتم) آمده است، برخلاف آیه ۱۶ که می‌فرماید «ظَلَمْتُ نَفْسِی».",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0424",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 33,
+    "hiddenIdx": [
+     4,
+     9
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ظَلَمْتُ",
+     "decoy": true
+    },
+    {
+     "id": "b4",
+     "ar": "يُكَذِّبُونِ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "4": "b1",
+    "9": "b2"
+   },
+   "distractorTags": {
+    "b3": "similar_verse",
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "هر دو جای خالی از ریشه «قتل» هستند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0425",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 33,
+    "hiddenIdx": [
+     2,
+     5,
+     7,
+     8
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "رَبِّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مِنْهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَـٰرَبِّ",
+     "decoy": true
+    },
+    {
+     "id": "b6",
+     "ar": "إِنِّىٓ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "5": "b2",
+    "7": "b3",
+    "8": "b4"
+   },
+   "distractorTags": {
+    "b5": "near_miss",
+    "b6": "neighbor_verse"
+   },
+   "explanationFa": "به حروف اضافه و پیوند در جملات دقت کنید.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0426",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 33,
+    "hiddenIdx": [
+     1,
+     3,
+     4,
+     6,
+     7
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنِّى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "عَدُوًّۭا",
+     "decoy": true
+    },
+    {
+     "id": "b7",
+     "ar": "أَخَافُ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "3": "b2",
+    "4": "b3",
+    "6": "b4",
+    "7": "b5"
+   },
+   "distractorTags": {
+    "b6": "same_root",
+    "b7": "neighbor_verse"
+   },
+   "explanationFa": "واژه «فأخاف» با فاء نتیجه‌گیری آمده است، به معنای «پس می‌ترسم».",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0427",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "کلمات جاافتاده آیه را در جای مناسب قرار دهید.",
+   "stem": {
+    "verse": 33,
+    "hiddenIdx": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "رَبِّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنِّى",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مِنْهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "يُكَذِّبُونِ",
+     "decoy": true
+    },
+    {
+     "id": "b9",
+     "ar": "ظَلَمْتُ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "3": "b2",
+    "4": "b3",
+    "5": "b4",
+    "6": "b5",
+    "8": "b6",
+    "9": "b7"
+   },
+   "distractorTags": {
+    "b8": "neighbor_verse",
+    "b9": "similar_verse"
+   },
+   "explanationFa": "جمله کامل مناجات و ابراز نگرانی موسی (ع) را در نظر داشته باشید.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0428",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 33,
+    "givenCount": 2,
+    "hiddenIdx": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "إِنِّى قَتَلْتُ",
+     "wordIdx": [
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مِنْهُمْ نَفْسًۭا",
+     "wordIdx": [
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَخَافُ أَن يَقْتُلُونِ",
+     "wordIdx": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "5": "b2",
+    "7": "b3"
+   },
+   "distractorTags": {
+    "b4": "neighbor_verse"
+   },
+   "explanationFa": "پس از خطاب پروردگار، عمل گذشته (کشتن فردی از آنان) و ترس از قصاص بیان می‌شود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0429",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 33,
+    "givenCount": 4,
+    "hiddenIdx": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "مِنْهُمْ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "رَجُلَيْنِ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "6": "b2",
+    "7": "b3",
+    "8": "b4",
+    "9": "b5"
+   },
+   "distractorTags": {
+    "b6": "neighbor_word"
+   },
+   "explanationFa": "مفعول کشته شدن در اینجا «نفساً» است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0430",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید.",
+   "stem": {
+    "verse": 33,
+    "givenCount": 6,
+    "hiddenIdx": [
+     7,
+     8,
+     9
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَخَافُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "أَن",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "إِنِّىٓ",
+     "decoy": true
+    },
+    {
+     "id": "b5",
+     "ar": "يُكَذِّبُونِ",
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "7": "b1",
+    "8": "b2",
+    "9": "b3"
+   },
+   "distractorTags": {
+    "b4": "neighbor_verse",
+    "b5": "neighbor_verse"
+   },
+   "explanationFa": "ترس از کشته شدن (یقتلون) نتیجه طبیعی آن واقعه بود که با حرف «فاء» آغاز می‌شود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0431",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "sequence",
+   "verse": 33,
+   "targets": [
+    "vr:33",
+    "sq:33"
+   ],
+   "promptFa": "پایان آیه را انتخاب کنید.",
+   "stem": {
+    "verse": 33,
+    "hideLastWords": 2
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 33,
+      "from": 8,
+      "to": 9
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "أَن يُكَذِّبُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "أَن يَفْعَلُونِ"
+    },
+    {
+     "id": "o4",
+     "ar": "أَن يَنفَعَنَآ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "random",
+    "o4": "similar_verse"
+   },
+   "explanationFa": "پایان این آیه به ترس از کشته شدن (يَقْتُلُونِ) اشاره دارد، نه تکذیب شدن.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0432",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "sequence",
+   "verse": 33,
+   "targets": [
+    "vr:33",
+    "sq:33"
+   ],
+   "promptFa": "پایان آیه را انتخاب کنید.",
+   "stem": {
+    "verse": 33,
+    "hideLastWords": 3
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 33,
+      "from": 7,
+      "to": 9
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَلَا تَخَافِى وَلَا تَحْزَنِىٓ ۖ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "similar_verse"
+   },
+   "explanationFa": "عبارت «فَأَخَافُ أَن يَقْتُلُونِ» نتیجه منطقی جمله قبل است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0433",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 33,
+   "targets": [
+    "vr:33"
+   ],
+   "promptFa": "کدام نسخه از آیه ۳۳ کاملاً صحیح است؟",
+   "stem": {
+    "verseNum": 33
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 33,
+      "from": 1,
+      "to": 9
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "قَالَ رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَأَخَافُ أَن يَقْتُلُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَالَ رَبِّ إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا فَأَخَافُ أَن يُكَذِّبُونِ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَالَ رَبِّ إِنِّى قَتَلْتُ مِنْهُمْ رَجُلًۭا فَأَخَافُ أَن يَقْتُلُونِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "similar_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_word"
+   },
+   "explanationFa": "آیه دقیقاً شامل فعل «قَتَلْتُ»، کلمه «نَفْسًۭا»، و فعل «يَقْتُلُونِ» است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0501",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 1,
+   "skill": "translation",
+   "verse": 34,
+   "targets": [
+    "vt:34"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «و برادرم هارون زبانش از من گویاتر است،»",
+   "stem": {
+    "fa": "و برادرم هارون زبانش از من گویاتر است،"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مِنِّى لِسَانًۭا",
+     "wordIdx": [
+      5,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2"
+   ],
+   "explanationFa": "ترجمه بخش آغازین آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0502",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 34,
+   "targets": [
+    "vt:34"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «پس او را همراه من بفرست که یاور و دستیارم باشد»",
+   "stem": {
+    "fa": "پس او را همراه من بفرست که یاور و دستیارم باشد"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَرْسِلْهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَعِىَ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "رِدْءًۭا",
+     "wordIdx": [
+      9
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "explanationFa": "«رِدْءً» به معنای یاور و دستیار است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0503",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 34,
+   "targets": [
+    "vt:34"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند.»",
+   "stem": {
+    "fa": "تا [در همه امور] مرا تصدیق کند؛ زیرا می ترسم [فرعون و فرعونیان] تکذیبم کنند."
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنِّىٓ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "أَخَافُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَن",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b7",
+     "ar": "سِحْرٌۭ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b8",
+     "ar": "ءَايَـٰتُ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "explanationFa": "پایان آیه ۳۴ با «أَن يُكَذِّبُونِ» است نه «يَقْتُلُونِ» که مربوط به آیه قبل است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0504",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 2,
+   "difficulty": 1,
+   "skill": "translation",
+   "verse": 35,
+   "targets": [
+    "vt:35"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،»",
+   "stem": {
+    "fa": "[خدا] گفت: به زودی قدرت و نیرویت را به وسیله برادرت افزون کنم،"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ سَنَشُدُّ عَضُدَكَ",
+     "wordIdx": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "بِأَخِيكَ",
+     "wordIdx": [
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2"
+   ],
+   "explanationFa": "ترجمه بخش آغازین آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0505",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "translation",
+   "verse": 35,
+   "targets": [
+    "vt:35"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم»",
+   "stem": {
+    "fa": "و برای هر دوی شما به خاطر معجزات ما قدرتی قرار می دهم"
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَنَجْعَلُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "لَكُمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "سُلْطَـٰنًۭا",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "بِـَٔايَـٰتِنَآ",
+     "wordIdx": [
+      11
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "explanationFa": "«سُلْطَـٰنًۭا» به معنای قدرت و تسلط است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0506",
+   "type": "BUILD_FROM_TRANSLATION",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "translation",
+   "verse": 35,
+   "targets": [
+    "vt:35"
+   ],
+   "promptFa": "آیه را بر اساس ترجمه بسازید: «که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید.»",
+   "stem": {
+    "fa": "که آنان به شما دست نیابند، شما و آنان که از شما پیروی کنند، پیروزید."
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَلَا",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "يَصِلُونَ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "ٱلْمُفْسِدِينَ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b9",
+     "ar": "ءَابَآئِنَا",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "explanationFa": "«ٱلْغَـٰلِبُونَ» یعنی پیروزمندان.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0507",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "ترتیب قطعات آیه ۳۴ را مشخص کنید:",
+   "stem": {
+    "verse": 34
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى لِسَانًۭا",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ",
+     "wordIdx": [
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَأَخَافُ أَن يَقْتُلُونِ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "explanationFa": "تشخیص آیه ۳۴ از آیه مشابه قبلی",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0508",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات بخش آغازین آیه ۳۴ را بچینید:",
+   "stem": {
+    "verse": 34
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَأَخِى",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "هَـٰرُونُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "هُوَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَفْصَحُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "مِنِّى",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "لِسَانًۭا",
+     "wordIdx": [
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "explanationFa": "یادآوری کلمات آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0509",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات بخش پایانی آیه ۳۴ را بچینید:",
+   "stem": {
+    "verse": 34
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "فَأَرْسِلْهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَعِىَ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "رِدْءًۭا",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِنِّىٓ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "أَخَافُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "أَن",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "يَصِلُونَ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b10",
+     "ar": "قَتَلْتُ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "explanationFa": "کلمات انحرافی از آیات قبل و بعد هستند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0510",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "ترتیب قطعات آیه ۳۵ را مشخص کنید:",
+   "stem": {
+    "verse": 35
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ",
+     "wordIdx": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا",
+     "wordIdx": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَلَا يَصِلُونَ إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+   ],
+   "explanationFa": "یادآوری ساختار آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0511",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات نیمه اول آیه ۳۵ را بچینید:",
+   "stem": {
+    "verse": 35
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "سَنَشُدُّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "عَضُدَكَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "بِأَخِيكَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَنَجْعَلُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "لَكُمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "سُلْطَـٰنًۭا",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "فَلَا",
+     "wordIdx": [
+      8
+     ]
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "explanationFa": "یادآوری کلمات آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0512",
+   "type": "BUILD_FROM_NUMBER",
+   "shape": "order",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات نیمه دوم آیه ۳۵ را بچینید:",
+   "stem": {
+    "verse": 35
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "يَصِلُونَ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "بِـَٔايَـٰتِنَآ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "ٱلْأَوَّلِينَ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b9",
+     "ar": "بَيِّنَـٰتٍۢ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+   ],
+   "explanationFa": "کلمات انحرافی متعلق به آیه ۳۶ هستند.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0513",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۱)",
+   "stem": {
+    "verse": 34,
+    "hiddenIdx": [
+     2,
+     6,
+     9,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "هَـٰرُونُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "لِسَانًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "رِدْءًۭا",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "مُّوسَىٰ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b6",
+     "ar": "سِحْرٌۭ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "6": "b2",
+    "9": "b3",
+    "14": "b4"
+   },
+   "explanationFa": "یادآوری کلمات کلیدی آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0514",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۲)",
+   "stem": {
+    "verse": 34,
+    "hiddenIdx": [
+     1,
+     4,
+     7,
+     10,
+     12
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَأَخِى",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "أَفْصَحُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "فَأَرْسِلْهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "أَخَافُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "وَمَا",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b7",
+     "ar": "يَقْتُلُونِ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "4": "b2",
+    "7": "b3",
+    "10": "b4",
+    "12": "b5"
+   },
+   "explanationFa": "دقت به تفاوت «أَخَافُ» در این آیه با «يَقْتُلُونِ» در آیه قبلی.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0515",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۳)",
+   "stem": {
+    "verse": 34,
+    "hiddenIdx": [
+     3,
+     5,
+     8,
+     9,
+     11,
+     13,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "هُوَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مِنِّى",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "مَعِىَ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "رِدْءًۭا",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِنِّىٓ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "أَن",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "فِىٓ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b9",
+     "ar": "هَـٰذَآ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b10",
+     "ar": "مِّنْهُمْ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "5": "b2",
+    "8": "b3",
+    "9": "b4",
+    "11": "b5",
+    "13": "b6",
+    "14": "b7"
+   },
+   "explanationFa": "یادآوری ضمایر و ادوات ربط در آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0516",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۴)",
+   "stem": {
+    "verse": 34,
+    "hiddenIdx": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَأَخِى",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "هَـٰرُونُ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "أَفْصَحُ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "مِنِّى",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "لِسَانًۭا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "فَأَرْسِلْهُ",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "مَعِىَ",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "إِنِّىٓ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "أَخَافُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "قَالُوا۟",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b13",
+     "ar": "رَبِّ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "2": "b2",
+    "4": "b3",
+    "5": "b4",
+    "6": "b5",
+    "7": "b6",
+    "8": "b7",
+    "10": "b8",
+    "11": "b9",
+    "12": "b10",
+    "14": "b11"
+   },
+   "explanationFa": "مرور کامل و دشوار آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0517",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 2,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۱)",
+   "stem": {
+    "verse": 35,
+    "hiddenIdx": [
+     3,
+     7,
+     12,
+     15
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "عَضُدَكَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "سُلْطَـٰنًۭا",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "بَيِّنَـٰتٍۢ",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b6",
+     "ar": "ٱلْمُفْسِدِينَ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "3": "b1",
+    "7": "b2",
+    "12": "b3",
+    "15": "b4"
+   },
+   "explanationFa": "یادآوری کلمات کلیدی آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0518",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 3,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۲)",
+   "stem": {
+    "verse": 35,
+    "hiddenIdx": [
+     2,
+     5,
+     9,
+     11,
+     13,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "سَنَشُدُّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَنَجْعَلُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "يَصِلُونَ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "بِـَٔايَـٰتِنَآ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "فَلَمَّا",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b8",
+     "ar": "جَآءَهُم",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "5": "b2",
+    "9": "b3",
+    "11": "b4",
+    "13": "b5",
+    "14": "b6"
+   },
+   "explanationFa": "دقت در افعال و ضمایر متصل در آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0519",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۳)",
+   "stem": {
+    "verse": 35,
+    "hiddenIdx": [
+     1,
+     4,
+     6,
+     8,
+     10,
+     12,
+     13,
+     14,
+     15
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "قَالَ",
+     "wordIdx": [
+      1
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "بِأَخِيكَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "لَكُمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "فَلَا",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      15
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "إِلَّا",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b11",
+     "ar": "سَمِعْنَا",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b12",
+     "ar": "نَفْسًۭا",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "1": "b1",
+    "4": "b2",
+    "6": "b3",
+    "8": "b4",
+    "10": "b5",
+    "12": "b6",
+    "13": "b7",
+    "14": "b8",
+    "15": "b9"
+   },
+   "explanationFa": "تسلط بر حفظ ساختار آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0520",
+   "type": "CLOZE_AR",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کلمات پنهان آیه را جای‌گذاری کنید (سطح ۴)",
+   "stem": {
+    "verse": 35,
+    "hiddenIdx": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ],
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "سَنَشُدُّ",
+     "wordIdx": [
+      2
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "عَضُدَكَ",
+     "wordIdx": [
+      3
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "بِأَخِيكَ",
+     "wordIdx": [
+      4
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَنَجْعَلُ",
+     "wordIdx": [
+      5
+     ]
+    },
+    {
+     "id": "b5",
+     "ar": "لَكُمَا",
+     "wordIdx": [
+      6
+     ]
+    },
+    {
+     "id": "b6",
+     "ar": "سُلْطَـٰنًۭا",
+     "wordIdx": [
+      7
+     ]
+    },
+    {
+     "id": "b7",
+     "ar": "فَلَا",
+     "wordIdx": [
+      8
+     ]
+    },
+    {
+     "id": "b8",
+     "ar": "يَصِلُونَ",
+     "wordIdx": [
+      9
+     ]
+    },
+    {
+     "id": "b9",
+     "ar": "إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      10
+     ]
+    },
+    {
+     "id": "b10",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b11",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b12",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b13",
+     "ar": "ءَابَآئِنَا",
+     "wordIdx": [],
+     "decoy": true
+    },
+    {
+     "id": "b14",
+     "ar": "ٱلْأَوَّلِينَ",
+     "wordIdx": [],
+     "decoy": true
+    }
+   ],
+   "answer": {
+    "2": "b1",
+    "3": "b2",
+    "4": "b3",
+    "5": "b4",
+    "6": "b5",
+    "7": "b6",
+    "8": "b7",
+    "9": "b8",
+    "10": "b9",
+    "12": "b10",
+    "13": "b11",
+    "14": "b12"
+   },
+   "explanationFa": "مرور کامل و دشوار کلمات میانی آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0521",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 34,
+    "givenCount": 4,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "مِنِّى لِسَانًۭا فَأَرْسِلْهُ",
+     "wordIdx": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "إِنِّىٓ أَخَافُ",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "أَن يُكَذِّبُونِ",
+     "wordIdx": [
+      13,
+      14
+     ]
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "8": "b2",
+    "11": "b3",
+    "13": "b4"
+   },
+   "explanationFa": "یادآوری بخش میانی و پایانی آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0522",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 34,
+    "givenCount": 7,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "إِنِّىٓ أَخَافُ",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "أَن يُكَذِّبُونِ",
+     "wordIdx": [
+      13,
+      14
+     ]
+    }
+   ],
+   "answer": {
+    "8": "b1",
+    "11": "b2",
+    "13": "b3"
+   },
+   "explanationFa": "یادآوری بخش پایانی آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0523",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 34,
+    "givenCount": 10,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "إِنِّىٓ",
+     "wordIdx": [
+      11
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "أَخَافُ",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "أَن",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "يُكَذِّبُونِ",
+     "wordIdx": [
+      14
+     ]
+    }
+   ],
+   "answer": {
+    "11": "b1",
+    "12": "b2",
+    "13": "b3",
+    "14": "b4"
+   },
+   "explanationFa": "یادآوری کلمات پایانی آیه ۳۴",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0524",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 4,
+   "difficulty": 3,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 35,
+    "givenCount": 4,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا",
+     "wordIdx": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "فَلَا يَصِلُونَ إِلَيْكُمَا ۚ",
+     "wordIdx": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "بِـَٔايَـٰتِنَآ أَنتُمَا",
+     "wordIdx": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      13,
+      14,
+      15
+     ]
+    }
+   ],
+   "answer": {
+    "5": "b1",
+    "8": "b2",
+    "11": "b3",
+    "13": "b4"
+   },
+   "explanationFa": "یادآوری بخش عمده آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0525",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 35,
+    "givenCount": 8,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "يَصِلُونَ إِلَيْكُمَا ۚ بِـَٔايَـٰتِنَآ",
+     "wordIdx": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "أَنتُمَا وَمَنِ",
+     "wordIdx": [
+      12,
+      13
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      14,
+      15
+     ]
+    }
+   ],
+   "answer": {
+    "9": "b1",
+    "12": "b2",
+    "14": "b3"
+   },
+   "explanationFa": "یادآوری نیمه دوم آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0526",
+   "type": "CLOZE_COMPLETE_REST",
+   "shape": "cloze",
+   "stage": 6,
+   "difficulty": 5,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "ادامه آیه را کامل کنید",
+   "stem": {
+    "verse": 35,
+    "givenCount": 11,
+    "showFa": false
+   },
+   "bank": [
+    {
+     "id": "b1",
+     "ar": "أَنتُمَا",
+     "wordIdx": [
+      12
+     ]
+    },
+    {
+     "id": "b2",
+     "ar": "وَمَنِ",
+     "wordIdx": [
+      13
+     ]
+    },
+    {
+     "id": "b3",
+     "ar": "ٱتَّبَعَكُمَا",
+     "wordIdx": [
+      14
+     ]
+    },
+    {
+     "id": "b4",
+     "ar": "ٱلْغَـٰلِبُونَ",
+     "wordIdx": [
+      15
+     ]
+    }
+   ],
+   "answer": {
+    "12": "b1",
+    "13": "b2",
+    "14": "b3",
+    "15": "b4"
+   },
+   "explanationFa": "یادآوری کلمات پایانی آیه ۳۵",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0527",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "پایان آیه ۳۴ کدام است؟",
+   "stem": {
+    "verse": 34,
+    "hideLastWords": 2
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 34,
+      "from": 13,
+      "to": 14
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "أَن يَقْتُلُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "مِنْهُمْ نَفْسًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "مِّنَ ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "random"
+   },
+   "explanationFa": "آیه ۳۴ با «أَن يُكَذِّبُونِ» تمام می‌شود و «أَن يَقْتُلُونِ» پایان آیه ۳۳ است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0528",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34",
+    "sq:34"
+   ],
+   "promptFa": "چهار کلمه پایانی آیه ۳۴ کدام است؟",
+   "stem": {
+    "verse": 34,
+    "hideLastWords": 4
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 34,
+      "from": 11,
+      "to": 14
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "فَأَخَافُ أَن يَقْتُلُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "إِنِّى قَتَلْتُ مِنْهُمْ نَفْسًۭا"
+    },
+    {
+     "id": "o4",
+     "ar": "وَمَا سَمِعْنَا بِهَـٰذَا فِىٓ ءَابَآئِنَا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "پایان آیه ۳۴: إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0529",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 3,
+   "difficulty": 2,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "پایان آیه ۳۵ کدام است؟",
+   "stem": {
+    "verse": 35,
+    "hideLastWords": 3
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 35,
+      "from": 13,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "وَمَا سَمِعْنَا بِهَـٰذَا"
+    },
+    {
+     "id": "o3",
+     "ar": "مِنَ ٱلْأَوَّلِينَ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَمَنِ ٱتَّبَعَكُمَا ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "آیه ۳۵ با پیروزی مومنان و عبارت «ٱلْغَـٰلِبُونَ» ختم می‌شود.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0530",
+   "type": "ENDING_CHOICE",
+   "shape": "choice",
+   "stage": 4,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35",
+    "sq:35"
+   ],
+   "promptFa": "پنج کلمه پایانی آیه ۳۵ کدام است؟",
+   "stem": {
+    "verse": 35,
+    "hideLastWords": 5
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 35,
+      "from": 11,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ قَالُوا۟ مَا هَـٰذَآ"
+    },
+    {
+     "id": "o3",
+     "ar": "فَأَخَافُ أَن يَقْتُلُونِ"
+    },
+    {
+     "id": "o4",
+     "ar": "بَيِّنَـٰتٍۢ مَّا سَمِعْنَا بِهَـٰذَا"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "neighbor_verse",
+    "o4": "neighbor_verse"
+   },
+   "explanationFa": "پایان آیه ۳۵: بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0531",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 34,
+   "targets": [
+    "vr:34"
+   ],
+   "promptFa": "کدام نسخه از آیه ۳۴ کاملاً صحیح است؟",
+   "stem": {
+    "verseNum": 34
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 34,
+      "from": 1,
+      "to": 14
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى لِسَانًۭا فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ فَأَخَافُ أَن يَقْتُلُونِ"
+    },
+    {
+     "id": "o3",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ لَهُمْ لِسَانًۭا فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ"
+    },
+    {
+     "id": "o4",
+     "ar": "وَأَخِى هَـٰرُونُ هُوَ أَفْصَحُ مِنِّى قَوْلًا فَأَرْسِلْهُ مَعِىَ رِدْءًۭا يُصَدِّقُنِىٓ ۖ إِنِّىٓ أَخَافُ أَن يُكَذِّبُونِ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "neighbor_verse",
+    "o3": "near_miss",
+    "o4": "near_miss"
+   },
+   "explanationFa": "پایان آیه با «أَن يُكَذِّبُونِ» است نه «يَقْتُلُونِ». و کلمه بعد از مِنِّى، «لِسَانًۭا» است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  },
+  {
+   "id": "q_u_p389b_B_0533",
+   "type": "MUTASHABIH_SPOT",
+   "shape": "choice",
+   "stage": 5,
+   "difficulty": 4,
+   "skill": "recall",
+   "verse": 35,
+   "targets": [
+    "vr:35"
+   ],
+   "promptFa": "کدام نسخه از آیه ۳۵ کاملاً صحیح است؟",
+   "stem": {
+    "verseNum": 35
+   },
+   "options": [
+    {
+     "id": "o1",
+     "wordRange": {
+      "verse": 35,
+      "from": 1,
+      "to": 15
+     }
+    },
+    {
+     "id": "o2",
+     "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ وَنَجْعَلُ لَهُمَا سُلْطَـٰنًۭا فَلَا يَصِلُونَ إِلَيْكُمَا ۚ بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ"
+    },
+    {
+     "id": "o3",
+     "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ وَنَجْعَلُ لَكُمَا سُلْطَـٰنًۭا فَلَا يَصِلُونَ إِلَيْكُمَا ۚ بِـَٔايَـٰتِنَا بَيِّنَـٰتٍۢ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ"
+    },
+    {
+     "id": "o4",
+     "ar": "قَالَ سَنَشُدُّ عَضُدَكَ بِأَخِيكَ فَلَا يَصِلُونَ إِلَيْكُمَا ۚ بِـَٔايَـٰتِنَآ أَنتُمَا وَمَنِ ٱتَّبَعَكُمَا ٱلْغَـٰلِبُونَ"
+    }
+   ],
+   "answer": "o1",
+   "distractorTags": {
+    "o2": "near_miss",
+    "o3": "neighbor_verse",
+    "o4": "near_miss"
+   },
+   "explanationFa": "ضمیر صحیح «لَكُمَا» است نه «لَهُمَا». و «بَيِّنَـٰتٍۢ» در آیه ۳۶ است.",
+   "unitId": "u_p389b",
+   "part": "B"
+  }
+ ],
+ "issues": [],
+ "sourceFiles": [
+  "u_p389b.partB.json",
+  "u_p389b.partB2.json"
+ ],
+ "mergeInfo": {
+  "droppedDupId": 0,
+  "droppedDupSig": 5,
+  "files": 2
+ }
+}

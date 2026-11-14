@@ -1,0 +1,1247 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p390b",
+  "part": "A7",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p390b_A_0901",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "معنای «ٱلْقُرُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_043_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "صد سال‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "اقوام"
+        },
+        {
+          "id": "o3",
+          "fa": "پیشین"
+        },
+        {
+          "id": "o4",
+          "fa": "هلاک کردیم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«القرون» یعنی نسل‌ها و اقوام گذشته. «قرن» به معنای صد سال در اینجا دوست فریبنده است."
+    },
+    {
+      "id": "q_u_p390b_A_0902",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "«ٱلْقُرُونَ» (ریشه‌ی ق ر ن) به کدام معنا است؟",
+      "stem": {
+        "wordId": "w28_043_009",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "کتاب‌ها"
+        },
+        {
+          "id": "o2",
+          "fa": "مردم"
+        },
+        {
+          "id": "o3",
+          "fa": "سده‌ها و قرن‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "نسل‌ها و اقوامی که در یک دوره می‌زیستند"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "false_friend"
+      },
+      "explanationFa": "«القرون» یعنی نسل‌ها و امت‌های گذشته، نه سده‌ها."
+    },
+    {
+      "id": "q_u_p390b_A_0903",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "در این آیه معنای «ٱلْقُرُونَ» چیست؟",
+      "stem": {
+        "wordId": "w28_043_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "اقوام"
+        },
+        {
+          "id": "o2",
+          "fa": "صد سال‌ها"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت‌ها"
+        },
+        {
+          "id": "o4",
+          "fa": "پیشین"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "در «أَهْلَكْنَا ٱلْقُرُونَ ٱلْأُولَىٰ» مقصود اقوام پیشین است. «قرن» به معنای سده در اینجا درست نیست."
+    },
+    {
+      "id": "q_u_p390b_A_0904",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "با توجه به آیه، «ٱلْقُرُونَ» که هلاک شدند کدام است؟",
+      "stem": {
+        "wordId": "w28_043_009",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "سده‌های گذشته"
+        },
+        {
+          "id": "o2",
+          "fa": "کتاب‌های آسمانی"
+        },
+        {
+          "id": "o3",
+          "fa": "اقوام و امت‌های گذشته"
+        },
+        {
+          "id": "o4",
+          "fa": "پیامبران"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "random"
+      },
+      "explanationFa": "فاعل هلاکت اقوام‌اند، نه زمان. مفعول «أَهْلَكْنَا» همان «ٱلْقُرُونَ» است."
+    },
+    {
+      "id": "q_u_p390b_A_0905",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی به معنای «اقوام» است؟",
+      "stem": {
+        "fa": "اقوام"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْأُولَىٰ"
+        },
+        {
+          "id": "o2",
+          "ar": "أَهْلَكْنَا"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْكِتَـٰبَ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْقُرُونَ» یعنی اقوام و نسل‌ها. «ٱلْأُولَىٰ» صفت آن (پیشین) است."
+    },
+    {
+      "id": "q_u_p390b_A_0906",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "کدام کلمه یعنی «نسل‌ها و اقوامی که در یک دوره می‌زیستند»؟",
+      "stem": {
+        "fa": "نسل‌ها و اقوامی که در یک دوره می‌زیستند"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِلنَّاسِ"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "o4",
+          "ar": "بَصَآئِرَ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این معنا برای «ٱلْقُرُونَ» از ریشه‌ی ق ر ن است. «لِلنَّاسِ» به معنای «برای مردم» است."
+    },
+    {
+      "id": "q_u_p390b_A_0907",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009"
+      ],
+      "promptFa": "برای «اقوام پیشین» (نه سده‌ها) کدام واژه‌ی عربی در آیه آمده است؟",
+      "stem": {
+        "fa": "اقوام (نه سده‌ها)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "o2",
+          "ar": "وَرَحْمَةًۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "ٱلْأُولَىٰ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْقُرُونَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«ٱلْقُرُونَ» اقوام است و «ٱلْأُولَىٰ» فقط صفت «پیشین»."
+    },
+    {
+      "id": "q_u_p390b_A_0908",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "معنای «بَصَآئِرَ» چیست؟",
+      "stem": {
+        "wordId": "w28_043_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o2",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "o3",
+          "fa": "دیدن با چشم"
+        },
+        {
+          "id": "o4",
+          "fa": "رحمت"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "same_root",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بصائر» هم‌ریشه با «بصر» و به معنای بینش‌ها و وسیله بینایی دل است."
+    },
+    {
+      "id": "q_u_p390b_A_0909",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "«بَصَآئِرَ» (ریشه‌ی ب ص ر) یعنی:",
+      "stem": {
+        "wordId": "w28_043_011",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "هوشمندی عمومی"
+        },
+        {
+          "id": "o2",
+          "fa": "مردم"
+        },
+        {
+          "id": "o3",
+          "fa": "اقوام"
+        },
+        {
+          "id": "o4",
+          "fa": "بینش‌ها و دیده‌های دل"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "بصائر چیزهایی هستند که دل را بینا می‌کنند، نه صرفاً هوشمندی."
+    },
+    {
+      "id": "q_u_p390b_A_0910",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "در این آیه، کتابی که به موسی داده شد برای مردم چه بود؟ معنای «بَصَآئِرَ»:",
+      "stem": {
+        "wordId": "w28_043_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "o2",
+          "fa": "رحمتی"
+        },
+        {
+          "id": "o3",
+          "fa": "هدایت"
+        },
+        {
+          "id": "o4",
+          "fa": "هوشیار"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«بَصَآئِرَ» حال کتاب است و «وَهُدًى وَرَحْمَةً» پس از آن می‌آید و جدا هستند."
+    },
+    {
+      "id": "q_u_p390b_A_0911",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "در این آیه «بَصَآئِرَ» به کدام معنا نزدیک‌تر است؟",
+      "stem": {
+        "wordId": "w28_043_011",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "دیدن چشم سر"
+        },
+        {
+          "id": "o2",
+          "fa": "بینش‌های دل، وسیله بینایی"
+        },
+        {
+          "id": "o3",
+          "fa": "هوش و ذکاوت"
+        },
+        {
+          "id": "o4",
+          "fa": "عبرت‌های تاریخی"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "same_root",
+        "o3": "false_friend",
+        "o4": "random"
+      },
+      "explanationFa": "از ریشه‌ی «بصر» است، اما مقصود بینایی دل است."
+    },
+    {
+      "id": "q_u_p390b_A_0912",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی یعنی «وسیله بینایی»؟",
+      "stem": {
+        "fa": "وسیله بینایی"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَهُدًۭى"
+        },
+        {
+          "id": "o2",
+          "ar": "وَرَحْمَةًۭ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَصَآئِرَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«بَصَآئِرَ» وسیله بینایی است؛ «وَهُدًى» هدایت و «وَرَحْمَةً» رحمت."
+    },
+    {
+      "id": "q_u_p390b_A_0913",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "کدام واژه یعنی «بینش‌ها و دیده‌های دل»؟",
+      "stem": {
+        "fa": "بینش‌ها و دیده‌های دل"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "ٱلْكِتَـٰبَ"
+        },
+        {
+          "id": "o2",
+          "ar": "بَصَآئِرَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لِلنَّاسِ"
+        },
+        {
+          "id": "o4",
+          "ar": "ٱلْأُولَىٰ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "این معنای «بَصَآئِرَ» از ریشه‌ی ب ص ر است."
+    },
+    {
+      "id": "q_u_p390b_A_0914",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_011"
+      ],
+      "promptFa": "برای «وسیله بینایی» در آیه کدام کلمه آمده است؟",
+      "stem": {
+        "fa": "وسیله بینایی (برای مردم)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أَهْلَكْنَا"
+        },
+        {
+          "id": "o2",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "o3",
+          "ar": "لَّعَلَّهُمْ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَصَآئِرَ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«بَصَآئِرَ لِلنَّاسِ» یعنی وسیله بینایی برای مردم."
+    },
+    {
+      "id": "q_u_p390b_A_0915",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "در ترجمه‌ی انصاریان این آیه، «لَّعَلَّهُمْ» چگونه ترجمه شده است؟",
+      "stem": {
+        "wordId": "w28_043_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شاید"
+        },
+        {
+          "id": "o2",
+          "fa": "زیرا"
+        },
+        {
+          "id": "o3",
+          "fa": "تا"
+        },
+        {
+          "id": "o4",
+          "fa": "پس از آنکه"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لعلّ» معمولاً «شاید» ترجمه می‌شود، اما اینجا انصاریان آن را «تا» ترجمه کرده است."
+    },
+    {
+      "id": "q_u_p390b_A_0916",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 1,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "معنای «لَّعَلَّهُمْ» در ترجمه‌ی انصاریان این آیه کدام است؟",
+      "stem": {
+        "wordId": "w28_043_015",
+        "showVerse": false
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شاید آنان"
+        },
+        {
+          "id": "o2",
+          "fa": "برای مردم"
+        },
+        {
+          "id": "o3",
+          "fa": "و رحمتی"
+        },
+        {
+          "id": "o4",
+          "fa": "تا، برای اینکه (بیان امید به نتیجه)"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لَعَلَّ» اینجا بیان امید به نتیجه است و «هُمْ» ضمیر آنان. انصاریان آن را «تا» آورده است."
+    },
+    {
+      "id": "q_u_p390b_A_0917",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "در این آیه «لَّعَلَّهُمْ يَتَذَكَّرُونَ» با کدام آغاز معنایی ترجمه شده است؟",
+      "stem": {
+        "wordId": "w28_043_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "تا"
+        },
+        {
+          "id": "o2",
+          "fa": "شاید"
+        },
+        {
+          "id": "o3",
+          "fa": "زیرا"
+        },
+        {
+          "id": "o4",
+          "fa": "هرگاه"
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "false_friend",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "در ترجمه‌ی انصاریان: «تا متذکّر و هوشیار شوند»؛ «لعلّ» اینجا «تا» است."
+    },
+    {
+      "id": "q_u_p390b_A_0918",
+      "type": "WORD_AR_TO_FA",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "در آیه، «لَّعَلَّهُمْ» پیش از «يَتَذَكَّرُونَ» در ترجمه‌ی انصاریان چه می‌شود؟",
+      "stem": {
+        "wordId": "w28_043_015",
+        "showVerse": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "fa": "شاید"
+        },
+        {
+          "id": "o2",
+          "fa": "تا (برای اینکه)"
+        },
+        {
+          "id": "o3",
+          "fa": "و"
+        },
+        {
+          "id": "o4",
+          "fa": "برای مردم"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "false_friend",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَّعَلَّهُمْ» یعنی «تا آنان». «شاید» معنای رایج است، اما در این ترجمه نیامده است."
+    },
+    {
+      "id": "q_u_p390b_A_0919",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "کدام کلمه‌ی عربی در این آیه معادل «تا» در ترجمه‌ی انصاریان است؟",
+      "stem": {
+        "fa": "تا"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَلَقَدْ"
+        },
+        {
+          "id": "o2",
+          "ar": "مِنۢ"
+        },
+        {
+          "id": "o3",
+          "ar": "مَآ"
+        },
+        {
+          "id": "o4",
+          "ar": "لَّعَلَّهُمْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لَّعَلَّهُمْ» اینجا «تا آنان» ترجمه شده است."
+    },
+    {
+      "id": "q_u_p390b_A_0920",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "کدام کلمه یعنی «تا، برای اینکه (بیان امید به نتیجه)»؟",
+      "stem": {
+        "fa": "تا، برای اینکه (بیان امید به نتیجه)"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "لِلنَّاسِ"
+        },
+        {
+          "id": "o2",
+          "ar": "لَّعَلَّهُمْ"
+        },
+        {
+          "id": "o3",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "o4",
+          "ar": "بَعْدِ"
+        }
+      ],
+      "answer": "o2",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "«لَّعَلَّهُمْ» پیش از «يَتَذَكَّرُونَ» آمده و بیان امید به نتیجه است."
+    },
+    {
+      "id": "q_u_p390b_A_0921",
+      "type": "WORD_FA_TO_AR",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_015"
+      ],
+      "promptFa": "کدام واژه در این آیه «تا آنان» را می‌رساند؟",
+      "stem": {
+        "fa": "تا آنان"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "وَهُدًۭى"
+        },
+        {
+          "id": "o2",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "o3",
+          "ar": "ءَاتَيْنَا"
+        },
+        {
+          "id": "o4",
+          "ar": "لَّعَلَّهُمْ"
+        }
+      ],
+      "answer": "o4",
+      "distractorTags": {
+        "o1": "neighbor_word",
+        "o2": "neighbor_word",
+        "o3": "neighbor_word"
+      },
+      "explanationFa": "«لَعَلَّ» به‌اضافه‌ی ضمیر «هُمْ» می‌شود «تا آنان»."
+    },
+    {
+      "id": "q_u_p390b_A_0922",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009",
+        "w:w28_043_011",
+        "w:w28_043_015"
+      ],
+      "promptFa": "هر کلمه را به معنایش وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "بَصَآئِرَ"
+        },
+        {
+          "id": "l3",
+          "ar": "لَّعَلَّهُمْ"
+        },
+        {
+          "id": "l4",
+          "ar": "أَهْلَكْنَا"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْكِتَـٰبَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "کتاب"
+        },
+        {
+          "id": "r2",
+          "fa": "تا"
+        },
+        {
+          "id": "r3",
+          "fa": "اقوام"
+        },
+        {
+          "id": "r4",
+          "fa": "هلاک کردیم"
+        },
+        {
+          "id": "r5",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "r6",
+          "fa": "سده‌ها"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r3"
+        ],
+        [
+          "l2",
+          "r5"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r4"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "false_friend"
+      },
+      "explanationFa": "«ٱلْقُرُونَ» اقوام (نه سده‌ها)، «بَصَآئِرَ» وسیله بینایی و «لَّعَلَّهُمْ» اینجا «تا» است."
+    },
+    {
+      "id": "q_u_p390b_A_0923",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009",
+        "w:w28_043_011",
+        "w:w28_043_015"
+      ],
+      "promptFa": "کلمه‌های عربی را با معنای فارسی‌شان جفت کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "يَتَذَكَّرُونَ"
+        },
+        {
+          "id": "l2",
+          "ar": "لَّعَلَّهُمْ"
+        },
+        {
+          "id": "l3",
+          "ar": "وَرَحْمَةًۭ"
+        },
+        {
+          "id": "l4",
+          "ar": "بَصَآئِرَ"
+        },
+        {
+          "id": "l5",
+          "ar": "ٱلْقُرُونَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "اقوام"
+        },
+        {
+          "id": "r2",
+          "fa": "و رحمتی"
+        },
+        {
+          "id": "r3",
+          "fa": "شاید"
+        },
+        {
+          "id": "r4",
+          "fa": "متذکّر و هوشیار شوند"
+        },
+        {
+          "id": "r5",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "r6",
+          "fa": "تا"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r6"
+        ],
+        [
+          "l3",
+          "r2"
+        ],
+        [
+          "l4",
+          "r5"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {
+        "r3": "false_friend"
+      },
+      "explanationFa": "«لَّعَلَّهُمْ» در ترجمه‌ی انصاریان «تا» است نه «شاید»؛ «يَتَذَكَّرُونَ» یعنی متذکّر و هوشیار شوند."
+    },
+    {
+      "id": "q_u_p390b_A_0924",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009",
+        "w:w28_043_011",
+        "w:w28_043_015"
+      ],
+      "promptFa": "هر واژه را به معنای آن در آیه وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "بَصَآئِرَ"
+        },
+        {
+          "id": "l2",
+          "ar": "وَهُدًۭى"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "لِلنَّاسِ"
+        },
+        {
+          "id": "l5",
+          "ar": "لَّعَلَّهُمْ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "تا"
+        },
+        {
+          "id": "r2",
+          "fa": "برای مردم"
+        },
+        {
+          "id": "r3",
+          "fa": "و هدایت"
+        },
+        {
+          "id": "r4",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "r5",
+          "fa": "اقوام"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r2"
+        ],
+        [
+          "l5",
+          "r1"
+        ]
+      ],
+      "distractorTags": {},
+      "explanationFa": "«بَصَآئِرَ» وسیله بینایی، «وَهُدًى» و هدایت، «لِلنَّاسِ» برای مردم است."
+    },
+    {
+      "id": "q_u_p390b_A_0925",
+      "type": "MATCH_WORDS",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "word",
+      "verse": 43,
+      "targets": [
+        "w:w28_043_009",
+        "w:w28_043_011",
+        "w:w28_043_015"
+      ],
+      "promptFa": "کلمه‌ها را به معنایشان وصل کنید.",
+      "stem": {
+        "mode": "WORD_AR_FA"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "ar": "لَّعَلَّهُمْ"
+        },
+        {
+          "id": "l2",
+          "ar": "ٱلْأُولَىٰ"
+        },
+        {
+          "id": "l3",
+          "ar": "ٱلْقُرُونَ"
+        },
+        {
+          "id": "l4",
+          "ar": "مُوسَى"
+        },
+        {
+          "id": "l5",
+          "ar": "بَصَآئِرَ"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "fa": "موسی"
+        },
+        {
+          "id": "r2",
+          "fa": "وسیله بینایی"
+        },
+        {
+          "id": "r3",
+          "fa": "پیشین"
+        },
+        {
+          "id": "r4",
+          "fa": "تا"
+        },
+        {
+          "id": "r5",
+          "fa": "اقوام"
+        },
+        {
+          "id": "r6",
+          "fa": "بینش"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r4"
+        ],
+        [
+          "l2",
+          "r3"
+        ],
+        [
+          "l3",
+          "r5"
+        ],
+        [
+          "l4",
+          "r1"
+        ],
+        [
+          "l5",
+          "r2"
+        ]
+      ],
+      "distractorTags": {
+        "r6": "near_miss"
+      },
+      "explanationFa": "«ٱلْقُرُونَ ٱلْأُولَىٰ» یعنی اقوام پیشین؛ «بَصَآئِرَ» وسیله بینایی است."
+    }
+  ],
+  "issues": [
+    "earlierHardWords در ورودی نبود؛ کلمه‌ی مرور در جفت‌سازی نیامد.",
+    "سهمیه‌ی ۳ جفت‌سازی برای هر کلمه با ۴ سوال و هر سه کلمه در همه‌ی آن‌ها رعایت شد."
+  ]
+}

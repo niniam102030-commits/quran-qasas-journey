@@ -1,0 +1,477 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p387a",
+  "part": "B4",
+  "generatedBy": "claude",
+  "questions": [
+    {
+      "id": "q_u_p387a_B_0449",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 1,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 16,
+      "targets": [
+        "vr:16",
+        "vn:16"
+      ],
+      "promptFa": "آیه‌ی ۱۶ را از روی قطعه‌ها به ترتیب درست بچین.",
+      "stem": {
+        "verseNum": 16
+      },
+      "bank": [
+        {
+          "id": "b4",
+          "ar": "فَغَفَرَ لَهُۥٓ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "قَالَ رَبِّ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "فَلَنْ أَكُونَ",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْغَفُورُ ٱلرَّحِيمُ",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "فَٱغْفِرْ لِى",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "إِنِّى ظَلَمْتُ نَفْسِى",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّهُۥ هُوَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه با «قَالَ رَبِّ» شروع می‌شود و با «ٱلْغَفُورُ ٱلرَّحِيمُ» پایان می‌یابد. «فَلَنْ أَكُونَ» از آیه‌ی بعد است."
+    },
+    {
+      "id": "q_u_p387a_B_0450",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 16,
+      "targets": [
+        "vr:16",
+        "vn:16"
+      ],
+      "promptFa": "آیه‌ی ۱۶ را کلمه‌به‌کلمه از بانک بچین.",
+      "stem": {
+        "verseNum": 16
+      },
+      "bank": [
+        {
+          "id": "b9",
+          "ar": "فَغَفَرَ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "ظَلَمْتُ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b14",
+          "ar": "إِنَّا",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b12",
+          "ar": "ٱلْغَفُورُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "قَالَ",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لِى",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b10",
+          "ar": "لَهُۥٓ ۚ",
+          "wordIdx": [
+            9
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنِّى",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b13",
+          "ar": "ٱلرَّحِيمُ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "رَبِّ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b15",
+          "ar": "فَلَنْ",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "فَٱغْفِرْ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b11",
+          "ar": "إِنَّهُۥ",
+          "wordIdx": [
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "نَفْسِى",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "هُوَ",
+          "wordIdx": [
+            11
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b9",
+        "b10",
+        "b11",
+        "b8",
+        "b12",
+        "b13"
+      ],
+      "distractorTags": {
+        "b14": "neighbor_word",
+        "b15": "neighbor_verse"
+      },
+      "explanationFa": "«إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ» پایان آیه است. «إِنَّا» و «فَلَنْ» جزو این آیه نیستند."
+    },
+    {
+      "id": "q_u_p387a_B_0451",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 16,
+      "targets": [
+        "vr:16"
+      ],
+      "promptFa": "سه کلمه‌ی اول آیه‌ی ۱۶ داده شده است؛ بقیه را کامل کن.",
+      "stem": {
+        "verse": 16,
+        "givenCount": 3,
+        "hiddenIdx": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b3",
+          "ar": "فَغَفَرَ لَهُۥٓ ۚ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ٱلْغَفُورُ ٱلرَّحِيمُ",
+          "wordIdx": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "ظَلَمْتُ نَفْسِى",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّهُۥ هُوَ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "فَٱغْفِرْ لِى",
+          "wordIdx": [
+            6,
+            7
+          ]
+        }
+      ],
+      "answer": {
+        "4": "b1",
+        "6": "b2",
+        "8": "b3",
+        "10": "b4",
+        "12": "b5"
+      },
+      "distractorTags": {},
+      "explanationFa": "پس از «قَالَ رَبِّ إِنِّى» می‌آید «ظَلَمْتُ نَفْسِى» و سپس درخواست آمرزش."
+    },
+    {
+      "id": "q_u_p387a_B_0452",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 16,
+      "targets": [
+        "vr:16"
+      ],
+      "promptFa": "ده کلمه‌ی اول آیه‌ی ۱۶ داده شده است؛ بقیه را کامل کن.",
+      "stem": {
+        "verse": 16,
+        "givenCount": 10,
+        "hiddenIdx": [
+          11,
+          12,
+          13
+        ],
+        "showFa": false
+      },
+      "bank": [
+        {
+          "id": "b4",
+          "ar": "ٱلْوَٰرِثِينَ",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلْغَفُورُ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b1",
+          "ar": "هُوَ",
+          "wordIdx": [
+            11
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "ظَهِيرًۭا",
+          "wordIdx": [],
+          "decoy": true
+        },
+        {
+          "id": "b3",
+          "ar": "ٱلرَّحِيمُ",
+          "wordIdx": [
+            13
+          ]
+        }
+      ],
+      "answer": {
+        "11": "b1",
+        "12": "b2",
+        "13": "b3"
+      },
+      "distractorTags": {
+        "b4": "neighbor_word",
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "پایان آیه «إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ» است."
+    },
+    {
+      "id": "q_u_p387a_B_0453",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 16,
+      "targets": [
+        "vr:16"
+      ],
+      "promptFa": "پایان آیه‌ی ۱۶ کدام است؟",
+      "stem": {
+        "verse": 16,
+        "hideLastWords": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "هُوَ ٱلرَّحِيمُ ٱلْغَفُورُ"
+        },
+        {
+          "id": "o2",
+          "ar": "إِنَّا ٱلْغَفُورُ ٱلرَّحِيمُ"
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 16,
+            "from": 11,
+            "to": 13
+          }
+        },
+        {
+          "id": "o4",
+          "ar": "هُوَ ٱلْغَفُورُ ٱلْمُبِينِ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "ترتیب درست «هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ» است؛ «غفور» پیش از «رحیم» می‌آید."
+    },
+    {
+      "id": "q_u_p387a_B_0454",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 16,
+      "targets": [
+        "vr:16"
+      ],
+      "promptFa": "کدام نسخه، آیه‌ی ۱۶ را دقیق و بدون تغییر نشان می‌دهد؟",
+      "stem": {
+        "verseNum": 16
+      },
+      "options": [
+        {
+          "id": "o1",
+          "ar": "قَالَ رَبِّ إِنِّى نَفْسِى ظَلَمْتُ فَٱغْفِرْ لِى فَغَفَرَ لَهُۥٓ ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+        },
+        {
+          "id": "o2",
+          "ar": "قَالَ رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَٱغْفِرْ لِى فَوَجَدَ لَهُۥٓ ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 16,
+            "from": 1,
+            "to": 13
+          }
+        },
+        {
+          "id": "o4",
+          "ar": "قَالَ رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَٱغْفِرْ لِى فَغَفَرَ لَهُۥٓ ۚ إِنَّهُۥ ٱلْغَفُورُ ٱلرَّحِيمُ"
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "near_miss",
+        "o2": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "نسخه‌ی درست «ظَلَمْتُ نَفْسِى» و «فَغَفَرَ لَهُۥٓ» و «إِنَّهُۥ هُوَ» را کامل دارد. بقیه جابجایی، تعویض یا حذف کلمه دارند."
+    }
+  ],
+  "issues": []
+}

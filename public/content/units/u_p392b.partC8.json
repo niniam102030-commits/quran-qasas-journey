@@ -1,0 +1,67 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392b",
+  "part": "C8",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p392b_C_1421",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 58,
+      "targets": [
+        "sq:57",
+        "vr:57"
+      ],
+      "promptFa": "کدام عبارت پایان آیه‌ی قبل از آیه‌ی ۵۸ است؟",
+      "stem": {
+        "verse": 58
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_059_018",
+            "w28_059_019",
+            "w28_059_020"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_057_019",
+            "w28_057_020",
+            "w28_057_021"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 57,
+            "from": 22,
+            "to": 25
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_058_015",
+            "w28_058_016",
+            "w28_058_017"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۵۷ با «ولکن اکثرهم لا یعلمون» پایان می‌یابد و پس از آن آیه‌ی ۵۸ با «وَكَمْ أَهْلَكْنَا» آغاز می‌شود. گزینه‌ی «رزقاً من لدنا» میانه‌ی آیه‌ی ۵۷ است، نه پایان آن."
+    }
+  ],
+  "issues": []
+}

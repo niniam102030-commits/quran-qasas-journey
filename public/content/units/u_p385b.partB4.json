@@ -1,0 +1,469 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p385b",
+  "part": "B4",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p385b_B_0456",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "آیه‌ی ۳ سوره قصص را از کلمات داده‌شده به‌ترتیب بچینید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "نَتْلُوا۟",
+          "wordIdx": [
+            1
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْكَ",
+          "wordIdx": [
+            2
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مِن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "نَّبَإِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مُوسَىٰ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَفِرْعَوْنَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "بِٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b8",
+          "ar": "لِقَوْمٍۢ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b9",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            9
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کلمات در آیه‌ی ۳ سوره قصص."
+    },
+    {
+      "id": "q_u_p385b_B_0457",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 4,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "آیه‌ی ۳ را با استفاده از چانک‌ها و کلمات انحرافی مرتب کنید.",
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "نَتْلُوا۟ عَلَيْكَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مِن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "نَّبَإِ مُوسَىٰ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَفِرْعَوْنَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "تِلْكَ",
+          "wordIdx": [
+            0
+          ],
+          "decoy": true
+        },
+        {
+          "id": "b6",
+          "ar": "بِٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "لِقَوْمٍۢ يُؤْمِنُونَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b6",
+        "b7"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "چیدمان بخش‌به‌بخش آیه‌ی ۳ با حذف گزینه‌ی انحرافی."
+    },
+    {
+      "id": "q_u_p385b_B_0458",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "۲۵٪ اول آیه داده شده؛ بقیه را از بانک کامل کنید.",
+      "stem": {
+        "verse": 3,
+        "hiddenIdx": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "showFa": false,
+        "givenCount": 2
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مِن",
+          "wordIdx": [
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "نَّبَإِ",
+          "wordIdx": [
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "مُوسَىٰ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَفِرْعَوْنَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "بِٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لِقَوْمٍۢ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            9
+          ]
+        }
+      ],
+      "answer": {
+        "3": "b1",
+        "4": "b2",
+        "5": "b3",
+        "6": "b4",
+        "7": "b5",
+        "8": "b6",
+        "9": "b7"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل باقی‌مانده‌ی آیه‌ی ۳ پس از دو کلمه‌ی اول."
+    },
+    {
+      "id": "q_u_p385b_B_0459",
+      "type": "CLOZE_COMPLETE_REST",
+      "shape": "cloze",
+      "stage": 3,
+      "difficulty": 3,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "۵۰٪ اول آیه داده شده؛ نیمه‌ی دوم را کامل کنید.",
+      "stem": {
+        "verse": 3,
+        "hiddenIdx": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "showFa": false,
+        "givenCount": 4
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "مُوسَىٰ",
+          "wordIdx": [
+            5
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "وَفِرْعَوْنَ",
+          "wordIdx": [
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "بِٱلْحَقِّ",
+          "wordIdx": [
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "لِقَوْمٍۢ",
+          "wordIdx": [
+            8
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "يُؤْمِنُونَ",
+          "wordIdx": [
+            9
+          ]
+        }
+      ],
+      "answer": {
+        "5": "b1",
+        "6": "b2",
+        "7": "b3",
+        "8": "b4",
+        "9": "b5"
+      },
+      "distractorTags": {},
+      "explanationFa": "تکمیل انتهای آیه‌ی ۳."
+    },
+    {
+      "id": "q_u_p385b_B_0460",
+      "type": "ENDING_CHOICE",
+      "shape": "choice",
+      "stage": 2,
+      "difficulty": 2,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "کلمات پایانی آیه‌ی ۳ کدام است؟",
+      "stem": {
+        "verse": 3,
+        "hideLastWords": 2
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_003_008",
+            "w28_003_009"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_003_007",
+            "w28_003_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_003_006",
+            "w28_003_007"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_003_005",
+            "w28_003_006"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "neighbor_word",
+        "o4": "neighbor_word"
+      },
+      "explanationFa": "پایان آیه‌ی ۳ با عبارت «لِقَوْمٍۢ يُؤْمِنُونَ» ختم می‌شود."
+    },
+    {
+      "id": "q_u_p385b_B_0461",
+      "type": "MUTASHABIH_SPOT",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "recall",
+      "verse": 3,
+      "targets": [
+        "vr:3"
+      ],
+      "promptFa": "کدام نسخه‌ی آیه‌ی ۳ از نظر متن و کلمات سوره کاملاً درست است؟",
+      "stem": {
+        "verseNum": 3
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 3,
+            "from": 1,
+            "to": 9
+          }
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004",
+            "w28_003_005",
+            "w28_003_006",
+            "w28_003_007",
+            "w28_003_008",
+            "w28_004_001"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004",
+            "w28_003_005",
+            "w28_003_006",
+            "w28_003_007",
+            "w28_002_003",
+            "w28_003_009"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_003_001",
+            "w28_003_002",
+            "w28_003_003",
+            "w28_003_004",
+            "w28_003_005",
+            "w28_003_006",
+            "w28_003_007",
+            "w28_003_008",
+            "w28_002_004"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "گزینه‌ی اول متن دقیق و بدون خطای آیه‌ی ۳ است."
+    }
+  ],
+  "issues": []
+}

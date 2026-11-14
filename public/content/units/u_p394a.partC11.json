@@ -1,0 +1,67 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p394a",
+  "part": "C11",
+  "generatedBy": "Claude",
+  "questions": [
+    {
+      "id": "q_u_p394a_C_2661",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 73,
+      "targets": [
+        "sq:72",
+        "vr:72"
+      ],
+      "promptFa": "کدام گزینه پایان آیه‌ی قبل از این آیه است؟",
+      "stem": {
+        "verse": 73
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_073_012",
+            "w28_073_013"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_072_016",
+            "w28_072_017",
+            "w28_072_018",
+            "w28_072_019"
+          ]
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 72,
+            "from": 17,
+            "to": 21
+          }
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_073_007",
+            "w28_073_008",
+            "w28_073_009"
+          ]
+        }
+      ],
+      "answer": "o3",
+      "distractorTags": {
+        "o1": "neighbor_verse",
+        "o2": "near_miss",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه‌ی ۷۲ با «بِلَيْلٍ تَسْكُنُونَ فِيهِ أَفَلَا تُبْصِرُونَ» پایان می‌یابد و پس از آن آیه‌ی ۷۳ می‌آید. «أَفَلَا تُبْصِرُونَ» یعنی «پس آیا [آثار قدرت او را] نمی‌بینید؟»."
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,2409 @@
+{
+  "schema": "qasas.content.v1",
+  "unitId": "u_p392a",
+  "part": "C2",
+  "generatedBy": "Gemini",
+  "questions": [
+    {
+      "id": "q_u_p392a_C_0421",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:54",
+        "vr:55"
+      ],
+      "promptFa": "آیه بعد از «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...» کدام است؟",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_055_001",
+            "w28_055_002",
+            "w28_055_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_057_001",
+            "w28_057_002",
+            "w28_057_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از پاداش صابران (آیه ۵۴)، برخوردشان با سخن لغو (آیه ۵۵) می‌آید."
+    },
+    {
+      "id": "q_u_p392a_C_0422",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:54",
+        "vr:55"
+      ],
+      "promptFa": "آیه ۵۵ (بعد از «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...») را بسازید.",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۵: وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ..."
+    },
+    {
+      "id": "q_u_p392a_C_0423",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:54",
+        "vr:55"
+      ],
+      "promptFa": "ادامه آیات را پس از «...وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ» (پایان آیه ۵۴) مرتب کنید.",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَقَالُوا۟ لَنَآ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَإِذَا يُتْلَىٰ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "پس از آیه ۵۴، آیه ۵۵ با «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0424",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:53",
+        "vr:53"
+      ],
+      "promptFa": "آیه قبل از «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم...» (آیه ۵۴) با کدام عبارت پایان می‌یابد؟",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_053_013",
+            "w28_053_014",
+            "w28_053_015"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_052_006",
+            "w28_052_007",
+            "w28_052_008"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_050_021",
+            "w28_050_022",
+            "w28_050_023"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_051_004",
+            "w28_051_005",
+            "w28_051_006"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۳ با «...مِن قَبْلِهِۦ مُسْلِمِينَ» پایان می‌یابد."
+    },
+    {
+      "id": "q_u_p392a_C_0425",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:53",
+        "vr:53"
+      ],
+      "promptFa": "آیه ۵۳ (قبل از «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم...») را بسازید.",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "قَالُوٓا۟ ءَامَنَّا بِهِۦٓ",
+          "wordIdx": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّهُ ٱلْحَقُّ مِن رَّبِّنَآ",
+          "wordIdx": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "إِنَّا كُنَّا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "مِن قَبْلِهِۦ مُسْلِمِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۳: وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ..."
+    },
+    {
+      "id": "q_u_p392a_C_0426",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 54,
+      "targets": [
+        "sq:53",
+        "vr:53"
+      ],
+      "promptFa": "قطعات آیه ۵۳ را که پیش از آیه ۵۴ قرار دارد به ترتیب بچینید.",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا يُتْلَىٰ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "عَلَيْهِمْ قَالُوٓا۟",
+          "wordIdx": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "ءَامَنَّا بِهِۦٓ إِنَّهُ ٱلْحَقُّ",
+          "wordIdx": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مِن رَّبِّنَآ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "إِنَّا كُنَّا",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "مِن قَبْلِهِۦ مُسْلِمِينَ",
+          "wordIdx": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَإِذَا سَمِعُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب صحیح کلمات آیه ۵۳."
+    },
+    {
+      "id": "q_u_p392a_C_0427",
+      "type": "NEXT_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 2,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:55",
+        "vr:56"
+      ],
+      "promptFa": "کدام آیه پس از «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ...» می‌آید؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_057_001",
+            "w28_057_002",
+            "w28_057_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "پس از آیه ۵۵، خطاب به پیامبر در آیه ۵۶ (إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ) می‌آید."
+    },
+    {
+      "id": "q_u_p392a_C_0428",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:55",
+        "vr:56"
+      ],
+      "promptFa": "آیه ۵۶ (بعد از «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ...») را مرتب کنید.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ يَهْدِى",
+          "wordIdx": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "distractorTags": {
+        "b6": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۶: إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ ٱللَّهَ..."
+    },
+    {
+      "id": "q_u_p392a_C_0429",
+      "type": "BUILD_NEXT_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:55",
+        "vr:56"
+      ],
+      "promptFa": "قطعات آیه بعد از پایان آیه ۵۵ («...لَا نَبْتَغِى ٱلْجَـٰهِلِينَ») را بچینید.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "تَهْدِى مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "يَهْدِى مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَهُوَ أَعْلَمُ",
+          "wordIdx": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            13
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۶ که پس از آیه ۵۵ آمده است."
+    },
+    {
+      "id": "q_u_p392a_C_0430",
+      "type": "PREV_VERSE_CHOICE",
+      "shape": "choice",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54",
+        "vr:54"
+      ],
+      "promptFa": "آیه قبل از «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ...» با چه کلماتی آغاز می‌شود؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "words": [
+            "w28_054_001",
+            "w28_054_002",
+            "w28_054_003"
+          ]
+        },
+        {
+          "id": "o2",
+          "words": [
+            "w28_053_001",
+            "w28_053_002",
+            "w28_053_003"
+          ]
+        },
+        {
+          "id": "o3",
+          "words": [
+            "w28_056_001",
+            "w28_056_002",
+            "w28_056_003"
+          ]
+        },
+        {
+          "id": "o4",
+          "words": [
+            "w28_052_001",
+            "w28_052_002",
+            "w28_052_003"
+          ]
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "neighbor_verse",
+        "o3": "neighbor_verse",
+        "o4": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۴ با «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم...» آغاز می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0431",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54",
+        "vr:54"
+      ],
+      "promptFa": "آیه ۵۴ را که پیش از «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ...» آمده، بسازید.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ",
+          "wordIdx": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "بِمَا صَبَرُوا۟",
+          "wordIdx": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَدْرَءُونَ بِٱلْحَسَنَةِ ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {
+        "b5": "neighbor_verse"
+      },
+      "explanationFa": "ترتیب قطعات آیه ۵۴."
+    },
+    {
+      "id": "q_u_p392a_C_0432",
+      "type": "BUILD_PREV_VERSE",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "sequence",
+      "verse": 55,
+      "targets": [
+        "sq:54",
+        "vr:54"
+      ],
+      "promptFa": "کلمات آیه ۵۴ (قبل از آیه ۵۵) را به ترتیب بچینید.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَجْرَهُم مَّرَّتَيْنِ بِمَا",
+          "wordIdx": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "صَبَرُوا۟ وَيَدْرَءُونَ",
+          "wordIdx": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "بِٱلْحَسَنَةِ ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b5",
+          "ar": "وَمِمَّا رَزَقْنَـٰهُمْ",
+          "wordIdx": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "b6",
+          "ar": "يُنفِقُونَ",
+          "wordIdx": [
+            12
+          ]
+        },
+        {
+          "id": "b7",
+          "ar": "وَإِذَا سَمِعُوا۟",
+          "decoy": true
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {
+        "b7": "neighbor_verse"
+      },
+      "explanationFa": "آیه ۵۴: أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ بِمَا صَبَرُوا۟..."
+    },
+    {
+      "id": "q_u_p392a_C_0433",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 1,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "شماره آیه «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...» چیست؟",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 54
+        },
+        {
+          "id": "o2",
+          "num": 51
+        },
+        {
+          "id": "o3",
+          "num": 58
+        },
+        {
+          "id": "o4",
+          "num": 45
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۵۴ سوره قصص."
+    },
+    {
+      "id": "q_u_p392a_C_0434",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "شماره آیه «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم...» را مشخص کنید.",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 54
+        },
+        {
+          "id": "o2",
+          "num": 53
+        },
+        {
+          "id": "o3",
+          "num": 55
+        },
+        {
+          "id": "o4",
+          "num": 56
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "این آیه ۵۴ است که بین دو آیه با شروع «وَإِذَا» قرار دارد."
+    },
+    {
+      "id": "q_u_p392a_C_0435",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "آیه «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ بِمَا صَبَرُوا۟...» کدام است؟",
+      "stem": {
+        "verse": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 54
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 55
+        },
+        {
+          "id": "o4",
+          "num": 57
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۴."
+    },
+    {
+      "id": "q_u_p392a_C_0436",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "آیه ۵۴ با کدام عبارت آغاز می‌شود؟",
+      "stem": {
+        "num": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 51,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۴ با «أُو۟لَـٰٓئِكَ يُؤْتَوْنَ» شروع می‌شود."
+    },
+    {
+      "id": "q_u_p392a_C_0437",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "آغاز آیه ۵۴ کدام است؟",
+      "stem": {
+        "num": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "near_miss"
+      },
+      "explanationFa": "شروع آیه ۵۴."
+    },
+    {
+      "id": "q_u_p392a_C_0438",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "کدام کلمات ابتدای آیه ۵۴ را تشکیل می‌دهند؟",
+      "stem": {
+        "num": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۴."
+    },
+    {
+      "id": "q_u_p392a_C_0439",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 54,
+      "targets": [
+        "vr:54",
+        "vn:54"
+      ],
+      "promptFa": "آیه ۵۴ را کامل بسازید.",
+      "stem": {
+        "verse": 54
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ",
+          "wordIdx": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَجْرَهُم مَّرَّتَيْنِ بِمَا صَبَرُوا۟",
+          "wordIdx": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَيَدْرَءُونَ بِٱلْحَسَنَةِ ٱلسَّيِّئَةَ",
+          "wordIdx": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ",
+          "wordIdx": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کامل آیه ۵۴."
+    },
+    {
+      "id": "q_u_p392a_C_0440",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 54,
+      "targets": [
+        "vn:54"
+      ],
+      "promptFa": "آیه ۵۴ با کدام کلمات شروع می‌شود؟",
+      "stem": {
+        "num": 54
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number",
+        "o5": "near_miss"
+      },
+      "explanationFa": "آیه ۵۴: أُو۟لَـٰٓئِكَ يُؤْتَوْنَ..."
+    },
+    {
+      "id": "q_u_p392a_C_0441",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "آیه «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ...» آیه چندم است؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 55
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 65
+        },
+        {
+          "id": "o4",
+          "num": 45
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0442",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "شماره آیه «وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...» چیست؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 55
+        },
+        {
+          "id": "o2",
+          "num": 54
+        },
+        {
+          "id": "o3",
+          "num": 56
+        },
+        {
+          "id": "o4",
+          "num": 57
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0443",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "«وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...» شماره کدام آیه است؟",
+      "stem": {
+        "verse": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 55
+        },
+        {
+          "id": "o2",
+          "num": 53
+        },
+        {
+          "id": "o3",
+          "num": 54
+        },
+        {
+          "id": "o4",
+          "num": 56
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0444",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "آیه ۵۵ با چه عبارتی آغاز می‌شود؟",
+      "stem": {
+        "num": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0445",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "شروع آیه ۵۵ کدام است؟",
+      "stem": {
+        "num": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0446",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "آیه ۵۵ را با کدام کلمات شروع می‌کنیم؟",
+      "stem": {
+        "num": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0447",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 55,
+      "targets": [
+        "vr:55",
+        "vn:55"
+      ],
+      "promptFa": "آیه ۵۵ را کامل مرتب کنید.",
+      "stem": {
+        "verse": 55
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "أَعْرَضُوا۟ عَنْهُ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَقَالُوا۟ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "سَلَـٰمٌ عَلَيْكُمْ لَا نَبْتَغِى ٱلْجَـٰهِلِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کامل آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0448",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 55,
+      "targets": [
+        "vn:55"
+      ],
+      "promptFa": "ابتدای آیه ۵۵ کدام است؟",
+      "stem": {
+        "num": 55
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0449",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "آیه «إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...» چه شماره‌ای دارد؟",
+      "stem": {
+        "verse": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 56
+        },
+        {
+          "id": "o2",
+          "num": 52
+        },
+        {
+          "id": "o3",
+          "num": 66
+        },
+        {
+          "id": "o4",
+          "num": 46
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "random",
+        "o4": "random"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0450",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "شماره آیه «إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَـٰكِنَّ...» چیست؟",
+      "stem": {
+        "verse": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 56
+        },
+        {
+          "id": "o2",
+          "num": 55
+        },
+        {
+          "id": "o3",
+          "num": 57
+        },
+        {
+          "id": "o4",
+          "num": 54
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0451",
+      "type": "VERSE_TO_NUMBER",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "«إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...» آیه چندم است؟",
+      "stem": {
+        "verse": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "num": 56
+        },
+        {
+          "id": "o2",
+          "num": 53
+        },
+        {
+          "id": "o3",
+          "num": 54
+        },
+        {
+          "id": "o4",
+          "num": 55
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0452",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 2,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "شروع آیه ۵۶ کدام است؟",
+      "stem": {
+        "num": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 52,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "adjacent_number",
+        "o3": "adjacent_number",
+        "o4": "near_miss"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0453",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "آیه ۵۶ با چه عبارتی شروع می‌شود؟",
+      "stem": {
+        "num": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 4
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0454",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 6,
+      "difficulty": 4,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "ابتدای آیه ۵۶ کدام است؟",
+      "stem": {
+        "num": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 5
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "adjacent_number",
+        "o4": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0455",
+      "type": "BUILD_FROM_NUMBER",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "recall",
+      "verse": 56,
+      "targets": [
+        "vr:56",
+        "vn:56"
+      ],
+      "promptFa": "کلمات آیه ۵۶ را از ابتدا تا انتها بچینید.",
+      "stem": {
+        "verse": 56
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "إِنَّكَ لَا تَهْدِى",
+          "wordIdx": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "b2",
+          "ar": "مَنْ أَحْبَبْتَ",
+          "wordIdx": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "b3",
+          "ar": "وَلَـٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ ۚ",
+          "wordIdx": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "b4",
+          "ar": "وَهُوَ أَعْلَمُ بِٱلْمُهْتَدِينَ",
+          "wordIdx": [
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "ترتیب کامل آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0456",
+      "type": "NUMBER_TO_VERSE_START",
+      "shape": "choice",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "number",
+      "verse": 56,
+      "targets": [
+        "vn:56"
+      ],
+      "promptFa": "شروع آیه ۵۶ کدام است؟",
+      "stem": {
+        "num": 56
+      },
+      "options": [
+        {
+          "id": "o1",
+          "wordRange": {
+            "verse": 56,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o2",
+          "wordRange": {
+            "verse": 53,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o3",
+          "wordRange": {
+            "verse": 54,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o4",
+          "wordRange": {
+            "verse": 55,
+            "from": 1,
+            "to": 3
+          }
+        },
+        {
+          "id": "o5",
+          "wordRange": {
+            "verse": 57,
+            "from": 1,
+            "to": 3
+          }
+        }
+      ],
+      "answer": "o1",
+      "distractorTags": {
+        "o2": "near_miss",
+        "o3": "near_miss",
+        "o4": "adjacent_number",
+        "o5": "adjacent_number"
+      },
+      "explanationFa": "آیه ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0457",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 3,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "این آیات را به ترتیب قرارگیری در سوره مرتب کنید.",
+      "stem": {
+        "verses": [
+          53,
+          54,
+          55
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا...",
+          "verse": 53
+        },
+        {
+          "id": "b2",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...",
+          "verse": 54
+        },
+        {
+          "id": "b3",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...",
+          "verse": 55
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "distractorTags": {},
+      "explanationFa": "توالی صحیح آیات ۵۳ تا ۵۵."
+    },
+    {
+      "id": "q_u_p392a_C_0458",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 5,
+      "difficulty": 4,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "آیات زیر را بر اساس ترتیبشان در سوره بچینید.",
+      "stem": {
+        "verses": [
+          54,
+          55,
+          56,
+          57
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...",
+          "verse": 54
+        },
+        {
+          "id": "b2",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...",
+          "verse": 55
+        },
+        {
+          "id": "b3",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...",
+          "verse": 56
+        },
+        {
+          "id": "b4",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ ٱلْهُدَىٰ مَعَكَ...",
+          "verse": 57
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "distractorTags": {},
+      "explanationFa": "توالی صحیح آیات ۵۴ تا ۵۷."
+    },
+    {
+      "id": "q_u_p392a_C_0459",
+      "type": "ORDER_VERSES",
+      "shape": "order",
+      "stage": 7,
+      "difficulty": 5,
+      "skill": "page",
+      "targets": [
+        "pg:u_p392a"
+      ],
+      "promptFa": "همه آیات این واحد را به ترتیب صحیح بچینید.",
+      "stem": {
+        "verses": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "bank": [
+        {
+          "id": "b1",
+          "ar": "وَلَقَدْ وَصَّلْنَا لَهُمُ ٱلْقَوْلَ...",
+          "verse": 51
+        },
+        {
+          "id": "b2",
+          "ar": "ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ مِن قَبْلِهِۦ...",
+          "verse": 52
+        },
+        {
+          "id": "b3",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ قَالُوٓا۟ ءَامَنَّا بِهِۦٓ...",
+          "verse": 53
+        },
+        {
+          "id": "b4",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ أَجْرَهُم مَّرَّتَيْنِ...",
+          "verse": 54
+        },
+        {
+          "id": "b5",
+          "ar": "وَإِذَا سَمِعُوا۟ ٱللَّغْوَ أَعْرَضُوا۟ عَنْهُ...",
+          "verse": 55
+        },
+        {
+          "id": "b6",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ...",
+          "verse": 56
+        }
+      ],
+      "answer": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "distractorTags": {},
+      "explanationFa": "توالی کامل آیات ۵۱ تا ۵۶."
+    },
+    {
+      "id": "q_u_p392a_C_0460",
+      "type": "MATCH_NUMBER_OPENING",
+      "shape": "match",
+      "stage": 6,
+      "difficulty": 3,
+      "skill": "number",
+      "targets": [
+        "vn:53",
+        "vn:54",
+        "vn:55",
+        "vn:56"
+      ],
+      "promptFa": "شماره هر آیه را به ابتدای آن متصل کنید.",
+      "stem": {
+        "mode": "NUMBER_OPENING"
+      },
+      "left": [
+        {
+          "id": "l1",
+          "num": 53
+        },
+        {
+          "id": "l2",
+          "num": 54
+        },
+        {
+          "id": "l3",
+          "num": 55
+        },
+        {
+          "id": "l4",
+          "num": 56
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "ar": "وَإِذَا يُتْلَىٰ عَلَيْهِمْ"
+        },
+        {
+          "id": "r2",
+          "ar": "أُو۟لَـٰٓئِكَ يُؤْتَوْنَ"
+        },
+        {
+          "id": "r3",
+          "ar": "وَإِذَا سَمِعُوا۟"
+        },
+        {
+          "id": "r4",
+          "ar": "إِنَّكَ لَا تَهْدِى"
+        },
+        {
+          "id": "r5",
+          "ar": "وَقَالُوٓا۟ إِن نَّتَّبِعِ"
+        }
+      ],
+      "pairs": [
+        [
+          "l1",
+          "r1"
+        ],
+        [
+          "l2",
+          "r2"
+        ],
+        [
+          "l3",
+          "r3"
+        ],
+        [
+          "l4",
+          "r4"
+        ]
+      ],
+      "distractorTags": {
+        "r5": "neighbor_verse"
+      },
+      "explanationFa": "شروع آیات ۵۳ تا ۵۶."
+    }
+  ],
+  "issues": []
+}

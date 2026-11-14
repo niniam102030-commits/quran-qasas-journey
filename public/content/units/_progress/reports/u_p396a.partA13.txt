@@ -1,0 +1,13 @@
+[#1 q_u_p396a_A_2948 MATCH_PHRASES] l1: کلمه(های) عربی خارج از متن سوره/بانک: ءَاخَرَ ۘ
+[#1 q_u_p396a_A_2948 MATCH_PHRASES] l2: کلمه(های) عربی خارج از متن سوره/بانک: وَجْهَهُۥ ۚ
+[#2 q_u_p396a_A_2949 MATCH_PHRASES] stage باید در بازه‌ی 1 تا 2 باشد.
+[#2 q_u_p396a_A_2949 MATCH_PHRASES] l3: کلمه(های) عربی خارج از متن سوره/بانک: وَجْهَهُۥ
+[#4 q_u_p396a_A_2951 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#5 q_u_p396a_A_2952 VERSE_TO_TRANSLATION] stage باید در بازه‌ی 1 تا 2 باشد.
+[#6 q_u_p396a_A_2953 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#7 q_u_p396a_A_2954 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p396a_A_2955 TRANSLATION_TO_VERSE] stage باید در بازه‌ی 1 تا 2 باشد.
+[#8 q_u_p396a_A_2955 TRANSLATION_TO_VERSE] sq غیرمجاز 'sq:88'.
+[#10 q_u_p396a_A_2957 ORDER_TRANSLATION_CHUNKS] stage باید در بازه‌ی 1 تا 2 باشد.
+[#11 q_u_p396a_A_2958 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
+[#12 q_u_p396a_A_2959 CLOZE_FA] stage باید در بازه‌ی 1 تا 2 باشد.
