@@ -42,11 +42,20 @@ describe("cardScheduler", () => {
 });
 
 describe("mastery", () => {
-  it("پاس مرحله: ≥۸۵٪ و دو درست آخر", () => {
-    const ok = Array.from({ length: 10 }, () => ({ stage: 3, correct: true, usedHint: false }));
-    expect(stagePassed(ok, 3)).toBe(true);
-    const bad = ok.slice(0, 8).concat([{ stage: 3, correct: false, usedHint: false }, { stage: 3, correct: true, usedHint: false }]);
-    expect(stagePassed(bad, 3)).toBe(false);
+  it("پاس درس: مراحل ۱–۲ ≥۷۵٪، مراحل ۳–۷ ≥۸۰٪ (بدون شرط ۲ سوال آخر)", () => {
+    const ok8 = Array.from({ length: 8 }, () => ({ stage: 3, correct: true, usedHint: false }))
+      .concat([
+        { stage: 3, correct: false, usedHint: false },
+        { stage: 3, correct: false, usedHint: false },
+      ]);
+    expect(stagePassed(ok8, 3)).toBe(true); // 80% even if last 2 are wrong
+
+    const bad7 = Array.from({ length: 7 }, () => ({ stage: 3, correct: true, usedHint: false }))
+      .concat(Array.from({ length: 3 }, () => ({ stage: 3, correct: false, usedHint: false })));
+    expect(stagePassed(bad7, 3)).toBe(false); // 70% < 80%
+
+    const introOk = Array.from({ length: 8 }, (_, i) => ({ stage: 1, correct: i < 6, usedHint: false }));
+    expect(stagePassed(introOk, 1)).toBe(true); // 75% passes stage 1
   });
   it("مرحله ۸ با راهنما پاس نمی‌شود", () => {
     const a = Array.from({ length: 10 }, () => ({ stage: 8, correct: true, usedHint: true }));

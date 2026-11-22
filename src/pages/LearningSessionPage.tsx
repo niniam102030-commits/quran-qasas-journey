@@ -4,6 +4,7 @@ import confetti from "canvas-confetti";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
+import AqeeqIcon from "../components/common/AqeeqIcon";
 import { useLearningStore } from "../store/useLearningStore";
 import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
 import { ldb } from "../db/learningDb";
@@ -12,6 +13,7 @@ interface Props {
   unitId: string;
   stage: number;
   remedialTag?: string | null;
+  onStartNext?: (unitId: string, stage: number) => void;
   onExit: () => void;
 }
 
@@ -20,7 +22,7 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function LearningSessionPage({ unitId, stage, remedialTag = null, onExit }: Props) {
+export default function LearningSessionPage({ unitId, stage, remedialTag = null, onStartNext, onExit }: Props) {
   const s = useLearningStore();
   const startReview = useLearningStore((state) => state.startReview);
   const startStage = useLearningStore((state) => state.startStage);
@@ -178,15 +180,23 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                 : stage === 0
                 ? "جلسه مرور روزانه به پایان رسید"
                 : isPassed
-                ? `مرحله ${toFarsiNum(stage)} با موفقیت گذرانده شد 🎉`
+                ? m?.stageCompleted
+                  ? `مرحله ${toFarsiNum(stage)} با موفقیت کامل شد 🎉`
+                  : m?.lessonNumber && m?.lessonsRequired
+                  ? `درس ${toFarsiNum(m.lessonNumber)} از ${toFarsiNum(m.lessonsRequired)} مرحله ${toFarsiNum(stage)} انجام شد 🎉`
+                  : `مرحله ${toFarsiNum(stage)} با موفقیت گذرانده شد 🎉`
                 : `نیاز به تمرین بیشتر در مرحله ${toFarsiNum(stage)}`}
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
               {isEmpty
                 ? "می‌توانید بعداً دوباره بررسی کنید یا به نقشه برگردید."
                 : isPassed
-                ? "تسلط بر این مقطع ارتقا یافت و کارت‌های حافظه به‌روزرسانی شدند."
-                : "برای تثبیت کامل حافظه، تکرار دوباره این مرحله توصیه می‌شود."}
+                ? m?.stageCompleted
+                  ? "تسلط بر این مرحله تکمیل شد و مرحله بعدی برای شما باز شد."
+                  : "عالی بود! یک درس کوتاه دیگر باقی مانده تا این مرحله کامل شود."
+                : m?.requiredRatio
+                ? `برای قبولی در این درس حداقل ${toFarsiNum(Math.round(m.requiredRatio * 100))}٪ پاسخ درست در تلاش اول لازم است${stage === 8 ? " (بدون راهنما)" : ""}.`
+                : "برای تثبیت کامل حافظه، تکرار دوباره این درس توصیه می‌شود."}
             </p>
           </div>
 
@@ -208,7 +218,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
               {Boolean(m.xpEarned || m.gemsEarned) && (
                 <div className="col-span-2 pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-center gap-4 text-xs font-bold">
                   {!!m.xpEarned && <span className="text-amber-600 dark:text-amber-400">+{toFarsiNum(m.xpEarned)} نور ✨</span>}
-                  {!!m.gemsEarned && <span className="text-sky-600 dark:text-sky-400">+{toFarsiNum(m.gemsEarned)} عقیق 💎</span>}
+                  {!!m.gemsEarned && (
+                    <span className="text-rose-700 dark:text-rose-400 inline-flex items-center gap-1">
+                      +{toFarsiNum(m.gemsEarned)} عقیق <AqeeqIcon className="w-3.5 h-3.5" />
+                    </span>
+                  )}
                 </div>
               )}
             </div>
@@ -228,13 +242,31 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           )}
 
           <div className="space-y-2.5">
+            {isPassed && !isEmpty && stage > 0 && !m?.stageCompleted && (
+              <button
+                onClick={() => void startStage(unitId, stage)}
+                className="w-full py-3.5 px-6 rounded-2xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-900/15 active:scale-[0.98] transition-all"
+              >
+                {m?.lessonNumber && m?.lessonsRequired
+                  ? `شروع درس ${toFarsiNum(m.lessonNumber + 1)} از ${toFarsiNum(m.lessonsRequired)}`
+                  : "شروع درس بعدی این مرحله"}
+              </button>
+            )}
+            {isPassed && !isEmpty && m?.stageCompleted && stage > 0 && stage < 8 && onStartNext && (
+              <button
+                onClick={() => onStartNext(unitId, stage + 1)}
+                className="w-full py-3.5 px-6 rounded-2xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-900/15 active:scale-[0.98] transition-all"
+              >
+                شروع مرحله {toFarsiNum(stage + 1)}
+              </button>
+            )}
             {!isPassed && !isEmpty && stage > 0 && (
               <button
                 onClick={() => void startStage(unitId, stage)}
                 className="w-full py-3.5 px-6 rounded-2xl font-bold text-amber-900 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 border border-amber-300 dark:border-amber-800 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
               >
                 <RotateCcw className="w-4 h-4" />
-                <span>تلاش مجدد این مرحله</span>
+                <span>تلاش مجدد این درس</span>
               </button>
             )}
             <button
@@ -394,7 +426,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                   : "bg-rose-600 hover:bg-rose-700 shadow-rose-900/20"
               }`}
             >
-              ادامه (Enter)
+              ادامه
             </button>
           </div>
         </div>

@@ -72,37 +72,62 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
     expect(state2.wrongCounts["q_test_1"]).toBe(2);
     // Requeued at min(queue.length, 4 + 1 + 7 = 12)
     expect(state2.queue[state2.queue.length - 1].id).toBe("q_test_1");
+
+    // Third wrong answer does NOT requeue infinitely (capped at 2)
+    const lenBefore3 = state2.queue.length;
+    useLearningStore.setState({ index: lenBefore3 - 1 });
+    await useLearningStore.getState().submit("o2", { responseMs: 2000 });
+    const state3 = useLearningStore.getState();
+    expect(state3.queue.length).toBe(lenBefore3);
   });
 
-  it("stage completion updates unitProgress and unlocks currentStage + 1", async () => {
+  it("stage completion requires 2 short lessons and then unlocks currentStage + 1", async () => {
     await ldb.unitProgress.put({
       unitId: "u_p385a",
       unlocked: true,
       stagePassed: {},
+      stageLessons: {},
       currentStage: 1,
       mastered: false,
       updatedAt: Date.now(),
     });
 
-    // Setup finished firstAttempts passing stage 1 (all correct, length >= 4)
+    const fourCorrect = [
+      { stage: 1, correct: true, usedHint: false },
+      { stage: 1, correct: true, usedHint: false },
+      { stage: 1, correct: true, usedHint: false },
+      { stage: 1, correct: true, usedHint: false },
+    ];
+
+    // Lesson 1 of 2
     useLearningStore.setState({
       status: "running",
       unitId: "u_p385a",
       stage: 1,
       queue: [{ id: "q1", unitId: "u_p385a", stage: 1, skill: "word", type: "WORD_AR_TO_FA", shape: "choice", difficulty: 1, targets: [] }],
       index: 0,
-      firstAttempts: [
-        { stage: 1, correct: true, usedHint: false },
-        { stage: 1, correct: true, usedHint: false },
-        { stage: 1, correct: true, usedHint: false },
-        { stage: 1, correct: true, usedHint: false },
-      ],
+      firstAttempts: fourCorrect,
     });
-
-    // Advance past end
     await useLearningStore.getState().next();
 
-    const prog = await ldb.unitProgress.get("u_p385a");
+    let prog = await ldb.unitProgress.get("u_p385a");
+    expect(prog?.stageLessons?.[1]).toBe(1);
+    expect(prog?.stagePassed[1]).toBeFalsy();
+    expect(prog?.currentStage).toBe(1);
+
+    // Lesson 2 of 2 -> completes stage 1
+    useLearningStore.setState({
+      status: "running",
+      unitId: "u_p385a",
+      stage: 1,
+      queue: [{ id: "q2", unitId: "u_p385a", stage: 1, skill: "word", type: "WORD_AR_TO_FA", shape: "choice", difficulty: 1, targets: [] }],
+      index: 0,
+      firstAttempts: fourCorrect,
+    });
+    await useLearningStore.getState().next();
+
+    prog = await ldb.unitProgress.get("u_p385a");
+    expect(prog?.stageLessons?.[1]).toBe(2);
     expect(prog?.stagePassed[1]).toBe(true);
     expect(prog?.currentStage).toBe(2);
   });
@@ -112,6 +137,7 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
       unitId: "u_p385a",
       unlocked: true,
       stagePassed: { 1: true, 2: true, 3: true, 4: true, 5: true, 6: true, 7: true },
+      stageLessons: { 8: 1 }, // already completed 1 of 2 lessons
       currentStage: 8,
       mastered: false,
       updatedAt: Date.now(),

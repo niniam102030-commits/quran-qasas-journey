@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare } from "lucide-react";
 import { ldb, type UnitProgressRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
-import { skillLevel } from "../learning/mastery";
+import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
 
 interface UnitInfo extends UnitProgressRow {
@@ -281,6 +281,8 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                 <div className="flex flex-wrap gap-2 pt-1">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => {
                     const passed = !!u.stagePassed[s];
+                    const lessonsDone = passed ? LESSONS_PER_STAGE : (u.stageLessons?.[s] ?? 0);
+                    const inProgress = !passed && lessonsDone > 0;
                     const open = u.unlocked && (s === 1 || !!u.stagePassed[s - 1] || passed);
 
                     return (
@@ -288,9 +290,11 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                         key={s}
                         disabled={!open}
                         onClick={() => onStartStage(u.unitId, s)}
-                        className={`w-10 h-10 rounded-2xl font-black text-xs transition-all flex items-center justify-center active:scale-95 ${
+                        className={`relative w-11 h-11 rounded-2xl font-black text-xs transition-all flex flex-col items-center justify-center active:scale-95 ${
                           passed
                             ? "bg-emerald-500 text-white shadow-sm shadow-emerald-900/10"
+                            : inProgress
+                            ? "bg-amber-50 dark:bg-amber-950/50 border-2 border-emerald-500 text-emerald-700 dark:text-emerald-300 shadow-sm"
                             : open
                             ? "bg-white dark:bg-slate-800 border-2 border-amber-500 text-amber-700 dark:text-amber-400 shadow-sm"
                             : "bg-slate-100 dark:bg-slate-850 text-slate-300 dark:text-slate-600 border border-transparent cursor-not-allowed"
@@ -311,9 +315,20 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                             : s === 7
                             ? "یادآوری کل"
                             : "آزمون تسلط"
-                        }`}
+                        }${inProgress ? ` (درس ${lessonsDone} از ${LESSONS_PER_STAGE})` : ""}`}
                       >
-                        {passed ? <Check className="w-4 h-4 stroke-[3]" /> : toFarsiNum(s)}
+                        {passed ? (
+                          <Check className="w-4 h-4 stroke-[3]" />
+                        ) : (
+                          <>
+                            <span className="leading-none">{toFarsiNum(s)}</span>
+                            {inProgress && (
+                              <span className="text-[9px] font-bold leading-none mt-0.5 text-emerald-600 dark:text-emerald-400">
+                                {toFarsiNum(lessonsDone)}/{toFarsiNum(LESSONS_PER_STAGE)}
+                              </span>
+                            )}
+                          </>
+                        )}
                       </button>
                     );
                   })}

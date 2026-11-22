@@ -43,6 +43,8 @@ export interface UnitProgressRow {
   unitId: string;
   unlocked: boolean;
   stagePassed: Record<number, boolean>;
+  /** تعداد درس‌های کوتاهِ گذرانده‌شده در هر مرحله (مثلاً ۰، ۱ یا ۲ از ۲) */
+  stageLessons?: Record<number, number>;
   currentStage: number;
   mastered: boolean;
   updatedAt: number;

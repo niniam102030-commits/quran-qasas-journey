@@ -14,6 +14,7 @@ import {
   prefetchVersesAudio,
 } from "../services/menshawiAudio";
 import { usePreferencesStore } from "../store/usePreferencesStore";
+import AqeeqIcon from "../components/common/AqeeqIcon";
 
 interface VocabularyMasteryStats {
   totalWordsCount: number;
@@ -199,7 +200,9 @@ export const ChillehProfilePage: React.FC = () => {
               <p className="text-xs text-slate-500 dark:text-slate-300 mt-0.5">
                 هدف فعلی: <strong>{toFarsi(currentStage)} روزه</strong> | بهترین رکورد:{" "}
                 <strong>{toFarsi(bestStreak)} روز</strong> | عقیق:{" "}
-                <strong>{toFarsi(profile.aqeeqGems)} 💎</strong>
+                <strong className="inline-flex items-center gap-1">
+                  {toFarsi(profile.aqeeqGems)} <AqeeqIcon className="w-3.5 h-3.5" />
+                </strong>
               </p>
             </div>
           </div>
@@ -284,8 +287,8 @@ export const ChillehProfilePage: React.FC = () => {
           <div className="space-y-1">
             <div className="font-extrabold text-sm text-slate-800 dark:text-white flex items-center gap-1.5">
               <span>🛡️ محافظ چله (سپر عقیق)</span>
-              <span className="text-xs font-bold text-amber-700 dark:text-amber-400">
-                ({toFarsi(SHIELD_COST_GEMS)} عقیق 💎)
+              <span className="text-xs font-bold text-rose-700 dark:text-rose-400 inline-flex items-center gap-1">
+                ({toFarsi(SHIELD_COST_GEMS)} عقیق <AqeeqIcon className="w-3.5 h-3.5" />)
               </span>
             </div>
             <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -295,13 +298,21 @@ export const ChillehProfilePage: React.FC = () => {
           <button
             onClick={() => void handleBuyChillehShield()}
             disabled={profile.chillehShieldActive}
-            className={`shrink-0 text-xs py-2.5 px-4 rounded-2xl font-bold transition-all ${
+            className={`shrink-0 text-xs py-2.5 px-4 rounded-2xl font-bold transition-all inline-flex items-center gap-1.5 ${
               profile.chillehShieldActive
                 ? "bg-emerald-600 text-white cursor-default"
                 : "bg-amber-600 hover:bg-amber-700 text-white active:scale-95"
             }`}
           >
-            {profile.chillehShieldActive ? "✓ محافظ فعال است" : `خرید محافظ (${toFarsi(SHIELD_COST_GEMS)} 💎)`}
+            {profile.chillehShieldActive ? (
+              "✓ محافظ فعال است"
+            ) : (
+              <>
+                <span>خرید محافظ ({toFarsi(SHIELD_COST_GEMS)}</span>
+                <AqeeqIcon className="w-3.5 h-3.5" />
+                <span>)</span>
+              </>
+            )}
           </button>
         </div>
       </section>
@@ -313,7 +324,7 @@ export const ChillehProfilePage: React.FC = () => {
             گالری تسلط واژگان سوره قصص
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            بر اساس مرورهای هوشمند FSRS و جلسات تکمیل‌شده شما
+            بر اساس مرورهای هوشمند و جلسات تکمیل‌شده شما
           </p>
         </div>
 
@@ -351,8 +362,12 @@ export const ChillehProfilePage: React.FC = () => {
           </div>
           <div className="rounded-2xl border border-[#e6dbc5] dark:border-slate-800 p-3">
             <div className="text-xs text-slate-500">موجودی عقیق و نور</div>
-            <strong className="block text-amber-700 dark:text-amber-400">
-              {toFarsi(profile.aqeeqGems)} عقیق 💎 • {toFarsi(profile.noorXp)} نور ✨
+            <strong className="flex items-center gap-1.5 text-amber-700 dark:text-amber-400">
+              <span className="inline-flex items-center gap-1 text-rose-700 dark:text-rose-400">
+                {toFarsi(profile.aqeeqGems)} عقیق <AqeeqIcon className="w-3.5 h-3.5" />
+              </span>
+              <span>•</span>
+              <span>{toFarsi(profile.noorXp)} نور ✨</span>
             </strong>
           </div>
         </div>

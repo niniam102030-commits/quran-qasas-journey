@@ -8,19 +8,27 @@ export interface StageAttempt {
   usedHint: boolean;
 }
 
-export const STAGE_PASS_RATIO = 0.85;
-export const STAGE8_PASS_RATIO = 0.9;
+export const STAGE_INTRO_PASS_RATIO = 0.75; // مراحل ۱ و ۲ (آشنایی اولیه)
+export const STAGE_PASS_RATIO = 0.8;        // مراحل ۳ تا ۷
+export const STAGE8_PASS_RATIO = 0.85;      // مرحله ۸ (آزمون تسلط بدون راهنما)
 export const UNLOCK_DEBT_LIMIT = 40;
+export const LESSONS_PER_STAGE = 2;         // هر مرحله شامل ۲ درس کوتاه ۱۰ سوالی
+export const LESSON_SIZE = 10;              // تعداد سوال در هر درس کوتاه
+export const MAX_REQUEUE_PER_QUESTION = 2;  // حداکثر ۲ بار بازگشت سوال غلط به صف
 
-/** آیا مرحله پاس شد؟ ≥۸۵٪ (مرحله ۸: ≥۹۰٪ بدون راهنما) و دو پاسخ درست متوالی در انتها. */
+export function passRatioForStage(stage: number): number {
+  if (stage === 8) return STAGE8_PASS_RATIO;
+  if (stage <= 2) return STAGE_INTRO_PASS_RATIO;
+  return STAGE_PASS_RATIO;
+}
+
+/** آیا درس/مرحله پاس شد؟ مراحل ۱–۲: ≥۷۵٪، مراحل ۳–۷: ≥۸۰٪، مرحله ۸: ≥۸۵٪ بدون راهنما. */
 export function stagePassed(attempts: StageAttempt[], stage: number): boolean {
   const a = attempts.filter((x) => x.stage === stage);
   if (a.length < 4) return false;
   const ok = a.filter((x) => x.correct && (stage !== 8 || !x.usedHint)).length;
   const ratio = ok / a.length;
-  if (ratio < (stage === 8 ? STAGE8_PASS_RATIO : STAGE_PASS_RATIO)) return false;
-  const last2 = a.slice(-2);
-  return last2.length === 2 && last2.every((x) => x.correct && (stage !== 8 || !x.usedHint));
+  return ratio >= passRatioForStage(stage);
 }
 
 /** سطح مهارت کارت: 0 ندیده، 1 دیده، 2 پایدار شروع، 3 تسلط (stability ≥ 7 روز و streak ≥ 2) */

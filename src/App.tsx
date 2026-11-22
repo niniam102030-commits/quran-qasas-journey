@@ -74,6 +74,7 @@ export default function App() {
         unitId={session.unitId}
         stage={session.stage}
         remedialTag={session.remedialTag ?? null}
+        onStartNext={handleStartStage}
         onExit={handleExitSession}
       />
     );

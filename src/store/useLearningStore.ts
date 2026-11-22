@@ -5,7 +5,15 @@ import { ldb, type QuestionRow } from "../db/learningDb";
 import { gradeQuestion } from "../services/grading";
 import { newCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
-import { stagePassed, canUnlockNext, type StageAttempt } from "../learning/mastery";
+import {
+  stagePassed,
+  canUnlockNext,
+  passRatioForStage,
+  LESSONS_PER_STAGE,
+  LESSON_SIZE,
+  MAX_REQUEUE_PER_QUESTION,
+  type StageAttempt,
+} from "../learning/mastery";
 import { recordLearningReward } from "../services/profileService";
 import type { Question, GradeResult } from "../types/learning";
 
@@ -24,6 +32,10 @@ export interface SessionSummary {
   debt: number;
   xpEarned?: number;
   gemsEarned?: number;
+  lessonNumber?: number;
+  lessonsRequired?: number;
+  stageCompleted?: boolean;
+  requiredRatio?: number;
 }
 
 interface LearningState {
@@ -72,7 +84,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
   current: () => get().queue[get().index] ?? null,
 
-  startStage: async (unitId, stage, size = 20) => {
+  startStage: async (unitId, stage, size = LESSON_SIZE) => {
     set({ status: "loading", summary: null, lastResult: null });
     const stageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
     // مرور درهم: سوال‌های مرحله ۸ و ۷ واحدهای قبلی
@@ -233,10 +245,13 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const seen = new Set(s.seen).add(q.id);
     const wrongCounts = { ...s.wrongCounts };
     let queue = s.queue;
-    // در مرحله ۸ سوال غلط به صف بازنمی‌گردد
+    // در مرحله ۸ سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
     if (!res.correct && s.stage !== 8) {
-      wrongCounts[q.id] = (wrongCounts[q.id] ?? 0) + 1;
-      queue = requeue(s.queue, s.index, q, wrongCounts[q.id]);
+      const prevWrong = wrongCounts[q.id] ?? 0;
+      if (prevWrong < MAX_REQUEUE_PER_QUESTION) {
+        wrongCounts[q.id] = prevWrong + 1;
+        queue = requeue(s.queue, s.index, q, wrongCounts[q.id]);
+      }
     }
     set({
       lastResult: res, seen, wrongCounts, queue,
@@ -260,16 +275,30 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         ? correct / Math.max(1, attempts.length) >= 0.8
         : stagePassed(attempts, s.stage);
     let unlockedNext = false;
+    let lessonNumber: number | undefined;
+    let lessonsRequired: number | undefined;
+    let stageCompleted = false;
+    const requiredRatio = s.sessionType === "STAGE" ? passRatioForStage(s.stage) : 0.8;
     const allCards = await ldb.cards.toArray();
     const debt = reviewDebt(allCards);
     if (s.unitId) {
       const p = await ldb.unitProgress.get(s.unitId);
       if (p) {
-        if (passed) p.stagePassed[s.stage] = true;
-        p.currentStage = passed ? Math.min(8, s.stage + 1) : s.stage;
+        lessonsRequired = LESSONS_PER_STAGE;
+        const stageLessons = { ...(p.stageLessons ?? {}) };
+        const prevDone = p.stagePassed[s.stage] ? LESSONS_PER_STAGE : (stageLessons[s.stage] ?? 0);
+        const nextDone = passed ? Math.min(LESSONS_PER_STAGE, prevDone + 1) : prevDone;
+        lessonNumber = nextDone;
+        stageLessons[s.stage] = nextDone;
+        p.stageLessons = stageLessons;
+        stageCompleted = passed && nextDone >= LESSONS_PER_STAGE;
+        if (stageCompleted) {
+          p.stagePassed[s.stage] = true;
+          p.currentStage = Math.max(p.currentStage, Math.min(8, s.stage + 1));
+        }
         p.updatedAt = Date.now();
         await ldb.unitProgress.put(p);
-        if (passed && s.stage === 8 && canUnlockNext(true, debt)) {
+        if (stageCompleted && s.stage === 8 && canUnlockNext(true, debt)) {
           let orderedIds: string[] = [];
           try {
             const manifestUrl = typeof window !== "undefined"
@@ -299,7 +328,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
     // ثبت پاداش یکپارچه در پروفایل (چله انس + امتیاز نور + عقیق)
     const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) : 0;
-    const gemsEarned = passed ? (s.stage === 8 ? 15 : 5) : 0;
+    const gemsEarned = passed ? (stageCompleted && s.stage === 8 ? 15 : 5) : 0;
     if (attempts.length > 0) {
       try {
         await recordLearningReward({
@@ -315,7 +344,20 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     set({
       status: "finished",
       lastResult: null,
-      summary: { total: attempts.length, correct, ratio: attempts.length ? correct / attempts.length : 0, passed, unlockedNext, debt, xpEarned, gemsEarned },
+      summary: {
+        total: attempts.length,
+        correct,
+        ratio: attempts.length ? correct / attempts.length : 0,
+        passed,
+        unlockedNext,
+        debt,
+        xpEarned,
+        gemsEarned,
+        lessonNumber,
+        lessonsRequired,
+        stageCompleted,
+        requiredRatio,
+      },
     });
   },
 }));

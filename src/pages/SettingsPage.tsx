@@ -109,6 +109,7 @@ export default function SettingsPage({ onBack }: Props) {
           u.unlocked = u.unitId === unlockId;
           u.currentStage = 1;
           u.stagePassed = {};
+          u.stageLessons = {};
           u.mastered = false;
           u.updatedAt = Date.now();
         }
@@ -187,7 +188,7 @@ export default function SettingsPage({ onBack }: Props) {
             <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
               <div className="flex items-center gap-2.5">
                 {isDark ? <Moon className="w-5 h-5 text-amber-400" /> : <Sun className="w-5 h-5 text-amber-600" />}
-                <span className="text-xs font-semibold">حالت تاریک (Dark Mode)</span>
+                <span className="text-xs font-semibold">حالت تاریک</span>
               </div>
               <button
                 onClick={handleToggleTheme}
@@ -225,7 +226,7 @@ export default function SettingsPage({ onBack }: Props) {
             <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
               <div className="flex items-center gap-2.5">
                 <Vibrate className="w-5 h-5 text-blue-600" />
-                <span className="text-xs font-semibold">لرزش لمسی (Haptic Feedback)</span>
+                <span className="text-xs font-semibold">لرزش لمسی</span>
               </div>
               <button
                 onClick={handleToggleHaptics}
@@ -249,7 +250,7 @@ export default function SettingsPage({ onBack }: Props) {
             پشتیبان‌گیری و انتقال داده‌ها
           </h2>
           <p className="text-xs text-slate-500">
-            می‌توانید پیشرفت و کارت‌های خود را در قالب یک فایل JSON خروجی بگیرید یا در دستگاه دیگری بازیابی کنید:
+            می‌توانید پیشرفت و کارت‌های خود را در قالب یک فایل پشتیبان خروجی بگیرید یا در دستگاه دیگری بازیابی کنید:
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 pt-1">
@@ -258,7 +259,7 @@ export default function SettingsPage({ onBack }: Props) {
               className="flex-1 py-3 px-4 rounded-2xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-800 font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95"
             >
               <Download className="w-4 h-4" />
-              <span>خروجی فایل پشتیبان (JSON)</span>
+              <span>خروجی فایل پشتیبان</span>
             </button>
 
             <label className="flex-1 py-3 px-4 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-95">
@@ -279,7 +280,7 @@ export default function SettingsPage({ onBack }: Props) {
         {/* Reset Progress */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-rose-200 dark:border-rose-950/60 shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-rose-700 dark:text-rose-400">
-            شروع دوباره (Reset Progress)
+            شروع دوباره
           </h2>
           <p className="text-xs text-slate-500">
             با ریست کردن، تمام کارت‌ها و پاسخ‌های قبلی پاک شده و فقط واحد ۱ باز خواهد ماند:

@@ -92,7 +92,7 @@ export default function SelfReciteRecorder() {
       }, 1000);
     } catch {
       cleanupRecording();
-      setError("دسترسی به میکروفون داده نشد. برای تسمیع آفلاین، اجازه میکروفون را فعال کنید.");
+      setError("دسترسی به میکروفون داده نشد. برای ضبط آفلاین، اجازه میکروفون را فعال کنید.");
     }
   };
 
@@ -142,7 +142,7 @@ export default function SelfReciteRecorder() {
               className="py-1.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all"
             >
               <Mic className="w-3.5 h-3.5" />
-              <span>{audioUrl ? "ضبط مجدد تلاوت خود" : "ضبط صدای خود (تسمیع آفلاین)"}</span>
+              <span>{audioUrl ? "ضبط مجدد تلاوت خود" : "ضبط صدای خود (آفلاین)"}</span>
             </button>
           ) : (
             <button

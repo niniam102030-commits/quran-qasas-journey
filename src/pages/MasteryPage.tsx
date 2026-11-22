@@ -332,7 +332,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 font-bold text-sm text-slate-700 dark:text-slate-200">
               <CalendarDays className="w-4 h-4 text-amber-600" />
-              <span>پیش‌بینی مرورهای ۷ روز آینده (FSRS)</span>
+              <span>پیش‌بینی مرورهای ۷ روز آینده</span>
             </div>
             <span className="text-[11px] text-slate-500">
               مجموع: {toFarsiNum(forecast.reduce((a, b) => a + b.dueCount, 0))} کارت
