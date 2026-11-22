@@ -2,7 +2,7 @@
 // پخش‌کننده تلاوت استاد منشاوی با پشتیبانی آفلاین (IndexedDB)، حلقه حفظ (تکرار هر آیه + وقفه تکرار + ربط بازه) و سرعت پخش
 import { useEffect, useRef, useState } from "react";
 import { Play, Pause, Repeat, Loader2, Volume2, WifiOff, CheckCircle2, SlidersHorizontal, Timer } from "lucide-react";
-import { fetchAndCacheVerseAudio, isVerseAudioCached } from "../../services/menshawiAudio";
+import { fetchAndCacheVerseAudio, getMenshawiUrls, isVerseAudioCached } from "../../services/menshawiAudio";
 
 interface Props {
   /** آیه فعلی یا فهرست آیات برای پخش پیاپی */
@@ -140,19 +140,26 @@ export default function VerseAudioPlayer({ verses, compact = false, onActiveVers
   };
 
   const playSingleVerseOnce = async (verse: number): Promise<number> => {
-    const blob = await fetchAndCacheVerseAudio(verse);
-    if (cancelledRef.current) return 0;
+    let playUrl: string;
+    try {
+      const blob = await fetchAndCacheVerseAudio(verse);
+      if (cancelledRef.current) return 0;
 
-    if (objectUrlRef.current) {
-      URL.revokeObjectURL(objectUrlRef.current);
-      objectUrlRef.current = null;
+      if (objectUrlRef.current) {
+        URL.revokeObjectURL(objectUrlRef.current);
+        objectUrlRef.current = null;
+      }
+      playUrl = URL.createObjectURL(blob);
+      objectUrlRef.current = playUrl;
+      setCached(true);
+    } catch {
+      // Fallback پخش مستقیم در صورت خطای کش/CORS روی شبکه محدود
+      if (cancelledRef.current) return 0;
+      playUrl = getMenshawiUrls(verse)[0];
     }
-    const url = URL.createObjectURL(blob);
-    objectUrlRef.current = url;
-    setCached(true);
 
     return new Promise<number>((resolve, reject) => {
-      const audio = new Audio(url);
+      const audio = new Audio(playUrl);
       audio.playbackRate = speedRef.current;
       audioRef.current = audio;
 

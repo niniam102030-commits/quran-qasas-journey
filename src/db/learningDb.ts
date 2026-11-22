@@ -51,7 +51,8 @@ export interface MetaRow { key: string; value: unknown }
 
 export interface AudioCacheRow {
   verse: number; // 1..88
-  blob: Blob;
+  blob?: Blob;
+  data?: ArrayBuffer;
   size: number;
   cachedAt: number;
 }
