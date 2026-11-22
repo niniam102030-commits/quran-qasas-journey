@@ -36,14 +36,14 @@
 @layer base {
   html {
     direction: rtl;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: "Vazirmatn", "KFGQPC-Hafs", sans-serif;
     font-feature-settings: "ss01"; /* فعال‌سازی اعداد فارسی */
     -webkit-tap-highlight-color: transparent;
     user-select: none;
   }
 
   .quran-text {
-    font-family: "UthmanTaha", serif;
+    font-family: "KFGQPC-Hafs", "UthmanTaha", serif;
     font-feature-settings: normal;
     line-height: 2.2;
   }

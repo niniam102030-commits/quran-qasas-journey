@@ -61,6 +61,23 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
+const hasQuranicMarks = (s: string) => /[\u064B-\u065F\u0670\u0671\u06D6-\u06ED]/.test(s);
+
+function renderRichFa(text: string | undefined) {
+  if (!text) return null;
+  const parts = text.split(/(«[^»]+»)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith("«") && part.endsWith("»") && hasQuranicMarks(part)) {
+      return (
+        <span key={idx} className="quran-text font-normal text-[1.18em] mx-0.5">
+          {part}
+        </span>
+      );
+    }
+    return <span key={idx}>{part}</span>;
+  });
+}
+
 const isArabicItem = (o: Item, rangeLabels: Record<string, string>) =>
   Boolean(o.ar?.trim() || o.wordsAr?.length || o.wordRange || (o.words?.length && rangeLabels[o.id]));
 
@@ -155,7 +172,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
       {/* Prompt */}
       <div className="space-y-2">
         <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug">
-          {q.promptFa}
+          {renderRichFa(q.promptFa)}
         </h2>
 
         {/* Stem Arabic or Persian Text */}

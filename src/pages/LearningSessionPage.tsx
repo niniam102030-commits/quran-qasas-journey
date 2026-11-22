@@ -22,6 +22,20 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
+const hasQuranicMarks = (s: string) => /[\u064B-\u065F\u0670\u0671\u06D6-\u06ED]/.test(s);
+function renderRichFa(text: string | undefined) {
+  if (!text) return null;
+  return text.split(/(«[^»]+»)/g).map((part, idx) =>
+    part.startsWith("«") && part.endsWith("»") && hasQuranicMarks(part) ? (
+      <span key={idx} className="quran-text font-normal text-[1.15em] mx-0.5">
+        {part}
+      </span>
+    ) : (
+      <span key={idx}>{part}</span>
+    ),
+  );
+}
+
 export default function LearningSessionPage({ unitId, stage, remedialTag = null, onStartNext, onExit }: Props) {
   const s = useLearningStore();
   const startReview = useLearningStore((state) => state.startReview);
@@ -414,7 +428,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
               {q.explanationFa && (
                 <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed pt-0.5">
-                  {q.explanationFa}
+                  {renderRichFa(q.explanationFa)}
                 </p>
               )}
             </div>
