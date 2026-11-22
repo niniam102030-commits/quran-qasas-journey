@@ -6,8 +6,6 @@ import { ldb, type UnitProgressRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel } from "../learning/mastery";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
-import MasteryPage from "./MasteryPage";
-import SettingsPage from "./SettingsPage";
 
 interface UnitInfo extends UnitProgressRow {
   verseFrom?: number;
@@ -18,6 +16,7 @@ interface UnitInfo extends UnitProgressRow {
 
 interface Props {
   onStartStage: (unitId: string, stage: number) => void;
+  onNavigateTab?: (tab: "mastery" | "settings") => void;
   onBack?: () => void;
   syncVersion?: number;
 }
@@ -27,17 +26,15 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) {
+export default function UnitsPage({ onStartStage, onNavigateTab, onBack, syncVersion }: Props) {
   const [units, setUnits] = useState<UnitInfo[]>([]);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Sub-views
+  // Sub-view: Mushaf
   const [mushafUnitId, setMushafUnitId] = useState<string | null>(null);
-  const [showMastery, setShowMastery] = useState(false);
-  const [showSettings, setShowSettings] = useState(false);
 
   const loadData = async () => {
     setLoading(true);
@@ -81,22 +78,6 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
     );
   }
 
-  if (showMastery) {
-    return (
-      <MasteryPage
-        onBack={() => setShowMastery(false)}
-        onSelectUnit={(uid) => {
-          setShowMastery(false);
-          setMushafUnitId(uid);
-        }}
-      />
-    );
-  }
-
-  if (showSettings) {
-    return <SettingsPage onBack={() => { setShowSettings(false); loadData(); }} />;
-  }
-
   return (
     <div dir="rtl" className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 pb-20 select-none">
       {/* Top App Bar */}
@@ -121,25 +102,29 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
           </div>
         </div>
 
-        {/* Action icons */}
+        {/* Action icons — wired to unified App tabs */}
         <div className="flex items-center gap-1.5">
-          <button
-            onClick={() => setShowMastery(true)}
-            className="p-2 rounded-2xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-900 dark:text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all"
-            title="جدول تسلط بر ۸۸ آیه"
-          >
-            <Award className="w-4 h-4 text-amber-600" />
-            <span className="hidden sm:inline">تسلط ({toFarsiNum(masteryCount.level3)})</span>
-            <span className="sm:hidden text-[10px]">{toFarsiNum(masteryCount.level3)}</span>
-          </button>
+          {onNavigateTab && (
+            <>
+              <button
+                onClick={() => onNavigateTab("mastery")}
+                className="p-2 rounded-2xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-900 dark:text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all"
+                title="جدول تسلط بر ۸۸ آیه"
+              >
+                <Award className="w-4 h-4 text-amber-600" />
+                <span className="hidden sm:inline">تسلط ({toFarsiNum(masteryCount.level3)})</span>
+                <span className="sm:hidden text-[10px]">{toFarsiNum(masteryCount.level3)}</span>
+              </button>
 
-          <button
-            onClick={() => setShowSettings(true)}
-            className="p-2 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all"
-            title="تنظیمات"
-          >
-            <Settings className="w-4 h-4" />
-          </button>
+              <button
+                onClick={() => onNavigateTab("settings")}
+                className="p-2 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all"
+                title="تنظیمات"
+              >
+                <Settings className="w-4 h-4" />
+              </button>
+            </>
+          )}
         </div>
       </header>
 

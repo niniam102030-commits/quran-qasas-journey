@@ -1,77 +1,47 @@
 // src/pages/SettingsPage.tsx
 import { useState } from "react";
 import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle } from "lucide-react";
-import { ldb } from "../db/learningDb";
+import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
+import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
   onBack: () => void;
 }
 
 export default function SettingsPage({ onBack }: Props) {
-  const [fontSize, setFontSize] = useState<number>(() => {
-    return Number(localStorage.getItem("quran_font_size") || 28);
-  });
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    return document.documentElement.classList.contains("dark");
-  });
-  const [soundEnabled, setSoundEnabled] = useState<boolean>(() => {
-    return localStorage.getItem("sound_enabled") !== "false";
-  });
-  const [hapticsEnabled, setHapticsEnabled] = useState<boolean>(() => {
-    return localStorage.getItem("haptics_enabled") !== "false";
-  });
+  const fontSize = usePreferencesStore((s) => s.arabicFontSize);
+  const isDark = usePreferencesStore((s) => s.darkMode);
+  const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
+  const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
+  const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
+  const handleToggleTheme = usePreferencesStore((s) => s.toggleDarkMode);
+  const handleToggleSound = usePreferencesStore((s) => s.toggleSoundEnabled);
+  const handleToggleHaptics = usePreferencesStore((s) => s.toggleHapticsEnabled);
 
   const [showResetConfirm, setShowResetConfirm] = useState<boolean>(false);
   const [resetSuccess, setResetSuccess] = useState<boolean>(false);
   const [importStatus, setImportStatus] = useState<string | null>(null);
 
-  const handleFontSizeChange = (size: number) => {
-    setFontSize(size);
-    localStorage.setItem("quran_font_size", String(size));
-  };
-
-  const handleToggleTheme = () => {
-    const next = !isDark;
-    setIsDark(next);
-    if (next) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  };
-
-  const handleToggleSound = () => {
-    const next = !soundEnabled;
-    setSoundEnabled(next);
-    localStorage.setItem("sound_enabled", String(next));
-  };
-
-  const handleToggleHaptics = () => {
-    const next = !hapticsEnabled;
-    setHapticsEnabled(next);
-    localStorage.setItem("haptics_enabled", String(next));
-  };
-
   // Export JSON backup of user progress
   const handleExportBackup = async () => {
     try {
-      const [cards, attempts, confusions, unitProgress] = await Promise.all([
+      const [cards, attempts, confusions, unitProgress, profile] = await Promise.all([
         ldb.cards.toArray(),
         ldb.attempts.toArray(),
         ldb.confusions.toArray(),
         ldb.unitProgress.toArray(),
+        ldb.profile.get("main"),
       ]);
 
       const backupData = {
         app: "quran-qasas-journey",
-        schemaVersion: 1,
+        schemaVersion: 2,
         exportedAt: new Date().toISOString(),
         cards,
         attempts,
         confusions,
         unitProgress,
+        profile: profile ?? DEFAULT_USER_PROFILE,
       };
 
       const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: "application/json" });
@@ -98,11 +68,12 @@ export default function SettingsPage({ onBack }: Props) {
         throw new Error("قالب فایل پشتیبان نامعتبر است.");
       }
 
-      await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, async () => {
+      await ldb.transaction("rw", [ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, ldb.profile], async () => {
         if (data.cards?.length) await ldb.cards.bulkPut(data.cards);
         if (data.attempts?.length) await ldb.attempts.bulkPut(data.attempts);
         if (data.confusions?.length) await ldb.confusions.bulkPut(data.confusions);
         if (data.unitProgress?.length) await ldb.unitProgress.bulkPut(data.unitProgress);
+        if (data.profile && data.profile.id === "main") await ldb.profile.put(data.profile);
       });
 
       setImportStatus("پشتیبان با موفقیت بازیابی شد!");
@@ -126,10 +97,11 @@ export default function SettingsPage({ onBack }: Props) {
         // fallback below
       }
 
-      await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, async () => {
+      await ldb.transaction("rw", [ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, ldb.profile], async () => {
         await ldb.cards.clear();
         await ldb.attempts.clear();
         await ldb.confusions.clear();
+        await ldb.profile.put({ ...DEFAULT_USER_PROFILE, updatedAt: Date.now() });
         // Reset all units, unlock only unit 1
         const units = (await ldb.unitProgress.toArray()).sort((a, b) => a.unitId.localeCompare(b.unitId));
         const unlockId = firstUnitId ?? units[0]?.unitId;

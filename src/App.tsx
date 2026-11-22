@@ -1,6 +1,6 @@
 // src/App.tsx
 import { useState, useEffect } from "react";
-import { useAppStore } from "./store/useAppStore";
+import { usePreferencesStore } from "./store/usePreferencesStore";
 import { BottomNav, type NavTab } from "./components/layout/BottomNav";
 import { syncContent } from "./services/contentLoader";
 import UnitsPage from "./pages/UnitsPage";
@@ -13,7 +13,7 @@ export type AppView = "units" | "mastery" | "profile" | "settings" | "session";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>("units");
-  const [session, setSession] = useState<{ unitId: string; stage: number } | null>(null);
+  const [session, setSession] = useState<{ unitId: string; stage: number; remedialTag?: string | null } | null>(null);
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncProgress, setSyncProgress] = useState<{ done: number; total: number } | null>(null);
   const [syncVersion, setSyncVersion] = useState<number>(0);
@@ -39,14 +39,19 @@ export default function App() {
     void runContentSync();
   }, []);
 
-  const initApp = useAppStore((s) => s.initApp);
+  const initPreferences = usePreferencesStore((s) => s.initPreferences);
 
   useEffect(() => {
-    initApp();
-  }, [initApp]);
+    initPreferences();
+  }, [initPreferences]);
 
   const handleStartStage = (unitId: string, stage: number) => {
-    setSession({ unitId, stage });
+    setSession({ unitId, stage, remedialTag: null });
+    setCurrentView("session");
+  };
+
+  const handleStartRemedial = (tag: string | null = null) => {
+    setSession({ unitId: "", stage: -1, remedialTag: tag });
     setCurrentView("session");
   };
 
@@ -65,6 +70,7 @@ export default function App() {
       <LearningSessionPage
         unitId={session.unitId}
         stage={session.stage}
+        remedialTag={session.remedialTag ?? null}
         onExit={handleExitSession}
       />
     );
@@ -104,6 +110,7 @@ export default function App() {
         <UnitsPage
           key={syncVersion}
           syncVersion={syncVersion}
+          onNavigateTab={(tab) => setCurrentView(tab)}
           onStartStage={handleStartStage}
         />
       )}
@@ -112,6 +119,7 @@ export default function App() {
         <MasteryPage
           onBack={() => setCurrentView("units")}
           onSelectUnit={(uid) => handleStartStage(uid, 1)}
+          onStartRemedial={handleStartRemedial}
         />
       )}
 

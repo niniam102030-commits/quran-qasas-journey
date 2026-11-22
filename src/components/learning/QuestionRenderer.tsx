@@ -1,8 +1,10 @@
 // src/components/learning/QuestionRenderer.tsx
 // نمایش و جمع‌آوری پاسخ برای چهار شکل سوال. پاسخ بر پایه‌ی شناسه‌هاست، نه متن عربی.
 import { useMemo, useRef, useState, useEffect } from "react";
-import { HelpCircle, Check, RotateCcw } from "lucide-react";
+import { HelpCircle, Check, RotateCcw, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { ldb, type QuestionRow } from "../../db/learningDb";
+import { usePreferencesStore } from "../../store/usePreferencesStore";
+import { useHapticsAndSfx } from "../../hooks/useHapticsAndSfx";
 import { labelOption } from "./questionOptionLabel";
 import { shuffleItems, shuffleMatchRight, shuffleOrderBank } from "./questionShuffle";
 
@@ -42,13 +44,6 @@ interface Props {
   onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number }) => void;
 }
 
-function getArabicFontSize(): number {
-  if (typeof window === "undefined") return 28;
-  const raw = Number(localStorage.getItem("quran_font_size") || 28);
-  if (!Number.isFinite(raw)) return 28;
-  return Math.min(40, Math.max(22, raw));
-}
-
 function makeArStyle(fontSizePx: number): React.CSSProperties {
   return {
     fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif",
@@ -82,11 +77,19 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [resolvedLabels, setResolvedLabels] = useState<Record<string, string>>({});
   const [shuffleSalt] = useState(() => Math.floor(Math.random() * 0xffff));
-  const arStyle = useMemo(() => makeArStyle(getArabicFontSize()), []);
+  const arabicFontSize = usePreferencesStore((s) => s.arabicFontSize);
+  const { playSfx } = useHapticsAndSfx();
+  const arStyle = useMemo(() => makeArStyle(arabicFontSize), [arabicFontSize]);
   const shuffledOptions = useMemo(
     () => shuffleItems(q.options ?? [], `choice:${q.id}:${shuffleSalt}`),
     [q.id, q.options, shuffleSalt],
   );
+  // راهنمای هوشمند بدون لو دادن پاسخ: در سوالات چهارگزینه‌ای یک گزینه نادرست حذف می‌شود
+  const eliminatedChoiceId = useMemo(() => {
+    if (!hint || q.shape !== "choice") return null;
+    const wrong = shuffledOptions.find((o) => o.id !== q.answer);
+    return wrong?.id ?? null;
+  }, [hint, q.shape, q.answer, shuffledOptions]);
 
   useEffect(() => {
     let active = true;
@@ -172,16 +175,22 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <div className="grid grid-cols-1 gap-2.5">
           {shuffledOptions.map((o) => {
             const isSelected = selectedChoice === o.id;
+            const isEliminated = eliminatedChoiceId === o.id;
             return (
               <button
                 key={o.id}
-                disabled={locked}
-                onClick={() => handleChoiceSelect(o.id)}
+                disabled={locked || isEliminated}
+                onClick={() => {
+                  playSfx("snap-click");
+                  handleChoiceSelect(o.id);
+                }}
                 className={`w-full rounded-2xl p-4 text-right transition-all border-2 active:scale-[0.99] flex items-center justify-between min-h-[3.75rem] ${
-                  isSelected
+                  isEliminated
+                    ? "opacity-35 line-through border-dashed border-slate-300 dark:border-slate-700 bg-slate-100/50 dark:bg-slate-900/40 cursor-not-allowed"
+                    : isSelected
                     ? "bg-amber-100/70 border-amber-500 dark:bg-amber-950/40 dark:border-amber-500 shadow-sm"
                     : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700/80 hover:border-amber-400 hover:bg-amber-50/30"
-                } ${locked ? "cursor-default" : "cursor-pointer"}`}
+                } ${locked ? "cursor-default" : isEliminated ? "" : "cursor-pointer"}`}
               >
                 <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels, arStyle)}</div>
                 <div
@@ -203,6 +212,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <MatchView
           q={q}
           locked={locked}
+          hintActive={hint}
           rangeLabels={resolvedLabels}
           arStyle={arStyle}
           shuffleSalt={shuffleSalt}
@@ -215,6 +225,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <OrderView
           q={q}
           locked={locked}
+          hintActive={hint}
           rangeLabels={resolvedLabels}
           arStyle={arStyle}
           shuffleSalt={shuffleSalt}
@@ -227,6 +238,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <ClozeView
           q={q}
           locked={locked}
+          hintActive={hint}
           rangeLabels={resolvedLabels}
           arStyle={arStyle}
           shuffleSalt={shuffleSalt}
@@ -235,24 +247,41 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         />
       )}
 
-      {!locked && (
+      {!locked && q.stage !== 8 && (
         <div className="space-y-2 pt-2">
           <div className="flex items-center justify-end">
             <button
-              onClick={() => setHint(true)}
+              onClick={() => {
+                playSfx("snap-click");
+                setHint(true);
+              }}
               disabled={hint}
               aria-expanded={hint}
-              className="text-xs flex items-center gap-1.5 py-1.5 px-2 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+              className="text-xs flex items-center gap-1.5 py-1.5 px-3 rounded-xl text-amber-800 dark:text-amber-300 bg-amber-50/80 dark:bg-amber-950/30 hover:bg-amber-100/80 dark:hover:bg-amber-950/50 disabled:opacity-60 transition-colors"
             >
               <HelpCircle className="w-4 h-4" />
-              <span>{hint ? "راهنما" : "نمایش راهنما"}</span>
+              <span>{hint ? "راهنما فعال شد" : "راهنمای هوشمند"}</span>
             </button>
           </div>
           {hint && (
-            <div role="note" className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm leading-relaxed text-amber-950 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100">
-              {q.explanationFa || "به متن سؤال و نشانه‌های زبانی آن توجه کنید؛ پاسخ را خودتان انتخاب کنید."}
+            <div role="note" className="rounded-2xl border border-amber-300 bg-amber-50 p-3 text-xs sm:text-sm leading-relaxed text-amber-950 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100 flex items-start gap-2">
+              <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+              <span>
+                {q.shape === "choice"
+                  ? `یک گزینه نادرست حذف شد.${q.stem?.verse ? ` (مربوط به آیه ${toFarsiNum(q.stem.verse)} سوره قصص)` : ""}`
+                  : q.shape === "order"
+                  ? "قطعه بعدی صحیح در کادر پایین با حاشیه طلایی مشخص شد."
+                  : q.shape === "match"
+                  ? "همتای صحیح مورد انتخاب‌شده (یا اولین مورد) با حاشیه طلایی مشخص شد."
+                  : "دو گزینه محتمل‌تر برای جای خالی فعال با حاشیه طلایی مشخص شدند."}
+              </span>
             </div>
           )}
+        </div>
+      )}
+      {!locked && q.stage === 8 && (
+        <div className="pt-2 text-left">
+          <span className="text-[11px] text-slate-400">آزمون تسلط مرحله ۸ (بدون راهنما)</span>
         </div>
       )}
     </div>
@@ -262,6 +291,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
 function MatchView({
   q,
   locked,
+  hintActive,
   onDone,
   markChanged,
   rangeLabels,
@@ -270,6 +300,7 @@ function MatchView({
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  hintActive: boolean;
   rangeLabels: Record<string, string>;
   arStyle: React.CSSProperties;
   shuffleSalt: number;
@@ -278,6 +309,7 @@ function MatchView({
 }) {
   const [pairs, setPairs] = useState<[string, string][]>([]);
   const [leftSel, setLeftSel] = useState<string | null>(null);
+  const { playSfx } = useHapticsAndSfx();
 
   const leftItems = useMemo(() => q.left ?? [], [q.left]);
   const rightItems = useMemo(
@@ -290,12 +322,24 @@ function MatchView({
     setLeftSel(null);
   }, [q.id]);
 
-  const usedL = new Set(pairs.map((p) => p[0]));
-  const usedR = new Set(pairs.map((p) => p[1]));
+  const usedL = useMemo(() => new Set(pairs.map((p) => p[0])), [pairs]);
+  const usedR = useMemo(() => new Set(pairs.map((p) => p[1])), [pairs]);
   const need = leftItems.length;
+
+  // راهنمای هوشمند تطبیق: مشخص کردن همتای یک موردِ هنوز جفت‌نشده
+  const hintPair = useMemo(() => {
+    if (!hintActive || !q.pairs?.length) return null;
+    const focusLeft = leftSel && !usedL.has(leftSel)
+      ? leftSel
+      : leftItems.find((l) => !usedL.has(l.id))?.id;
+    if (!focusLeft) return null;
+    const match = q.pairs.find(([l]) => l === focusLeft);
+    return match ? { leftId: match[0], rightId: match[1] } : null;
+  }, [hintActive, q.pairs, leftSel, leftItems, usedL]);
 
   const pickRight = (rid: string) => {
     if (!leftSel) return;
+    playSfx("snap-click");
     const np: [string, string][] = [...pairs, [leftSel, rid]];
     setPairs(np);
     setLeftSel(null);
@@ -310,16 +354,22 @@ function MatchView({
           {leftItems.map((l) => {
             const isUsed = usedL.has(l.id);
             const isSelected = leftSel === l.id;
+            const isHinted = hintPair?.leftId === l.id;
             return (
               <button
                 key={l.id}
                 disabled={locked || isUsed}
-                onClick={() => setLeftSel(l.id)}
+                onClick={() => {
+                  playSfx("snap-click");
+                  setLeftSel(l.id);
+                }}
                 className={`w-full p-3 rounded-2xl border-2 text-center transition-all ${
                   isUsed
                     ? "opacity-30 border-dashed border-slate-300 dark:border-slate-700 bg-transparent"
                     : isSelected
                     ? "border-amber-500 bg-amber-100/70 dark:bg-amber-950/40 text-amber-900 shadow-sm"
+                    : isHinted
+                    ? "border-amber-400 ring-2 ring-amber-300 dark:ring-amber-700 bg-amber-50/70 dark:bg-amber-950/30"
                     : "border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1e2738] hover:border-amber-300"
                 }`}
               >
@@ -333,6 +383,7 @@ function MatchView({
         <div className="space-y-2">
           {rightItems.map((r) => {
             const isUsed = usedR.has(r.id);
+            const isHinted = hintPair?.rightId === r.id;
             return (
               <button
                 key={r.id}
@@ -341,6 +392,8 @@ function MatchView({
                 className={`w-full p-3 rounded-2xl border-2 text-center transition-all ${
                   isUsed
                     ? "opacity-30 border-dashed border-slate-300 dark:border-slate-700 bg-transparent"
+                    : isHinted
+                    ? "border-amber-400 ring-2 ring-amber-300 dark:ring-amber-700 bg-amber-50/70 dark:bg-amber-950/30 cursor-pointer"
                     : leftSel
                     ? "border-amber-300 dark:border-amber-700/60 bg-white dark:bg-[#1e2738] hover:bg-amber-50/50 cursor-pointer"
                     : "border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-[#1e2738]/70"
@@ -375,6 +428,7 @@ function MatchView({
 function OrderView({
   q,
   locked,
+  hintActive,
   onDone,
   markChanged,
   rangeLabels,
@@ -383,6 +437,7 @@ function OrderView({
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  hintActive: boolean;
   rangeLabels: Record<string, string>;
   arStyle: React.CSSProperties;
   shuffleSalt: number;
@@ -390,10 +445,12 @@ function OrderView({
   markChanged: () => void;
 }) {
   const [picked, setPicked] = useState<string[]>([]);
-  const expectedCount = Array.isArray(q.answer) ? (q.answer as string[]).length : (q.bank?.length ?? 0);
+  const { playSfx } = useHapticsAndSfx();
+  const answerArr = useMemo(() => (Array.isArray(q.answer) ? (q.answer as string[]) : []), [q.answer]);
+  const expectedCount = answerArr.length || (q.bank?.length ?? 0);
   const bank = useMemo(
-    () => shuffleOrderBank(q.bank ?? [], Array.isArray(q.answer) ? (q.answer as string[]) : undefined, `order:${q.id}:${shuffleSalt}`),
-    [q.bank, q.answer, q.id, shuffleSalt],
+    () => shuffleOrderBank(q.bank ?? [], answerArr.length ? answerArr : undefined, `order:${q.id}:${shuffleSalt}`),
+    [q.bank, answerArr, q.id, shuffleSalt],
   );
   const byId = useMemo(() => new Map(bank.map((b) => [b.id, b])), [bank]);
 
@@ -401,15 +458,36 @@ function OrderView({
     setPicked([]);
   }, [q.id]);
 
+  // راهنمای هوشمند: فقط قطعه بعدی درست را (اگر در بانک باقی مانده باشد) هایلایت می‌کند
+  const hintedNextId = useMemo(() => {
+    if (!hintActive || !answerArr.length) return null;
+    const nextId = answerArr[picked.length];
+    if (!nextId || picked.includes(nextId)) return null;
+    return nextId;
+  }, [hintActive, answerArr, picked]);
+
   const removePicked = (id: string) => {
     if (locked) return;
+    playSfx("snap-click");
     setPicked(picked.filter((x) => x !== id));
     markChanged();
   };
 
   const addPicked = (id: string) => {
     if (locked) return;
+    playSfx("snap-click");
     setPicked([...picked, id]);
+  };
+
+  const movePicked = (index: number, delta: -1 | 1) => {
+    if (locked) return;
+    const target = index + delta;
+    if (target < 0 || target >= picked.length) return;
+    playSfx("snap-click");
+    const next = picked.slice();
+    [next[index], next[target]] = [next[target], next[index]];
+    setPicked(next);
+    markChanged();
   };
 
   const canSubmit = !locked && picked.length > 0 && (expectedCount === 0 || picked.length >= expectedCount);
@@ -423,18 +501,44 @@ function OrderView({
             قطعات را به ترتیب درست از کادر پایین لمس کنید ({toFarsiNum(expectedCount)} قطعه)
           </span>
         ) : (
-          picked.map((id) => {
+          picked.map((id, idx) => {
             const item = byId.get(id);
             if (!item) return null;
             return (
-              <button
+              <div
                 key={id}
-                disabled={locked}
-                onClick={() => removePicked(id)}
-                className="py-2 px-3 rounded-2xl bg-white dark:bg-slate-800 border-2 border-amber-300 dark:border-amber-700 shadow-sm active:scale-95 transition-transform"
+                className="inline-flex items-center gap-1 py-1.5 px-2 rounded-2xl bg-white dark:bg-slate-800 border-2 border-amber-300 dark:border-amber-700 shadow-sm"
               >
-                {label(item, rangeLabels, arStyle)}
-              </button>
+                {!locked && idx > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => movePicked(idx, -1)}
+                    title="جابه‌جایی به قبل"
+                    className="p-0.5 rounded-lg text-slate-400 hover:text-amber-700 hover:bg-amber-50 dark:hover:bg-slate-700"
+                  >
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                )}
+                <button
+                  type="button"
+                  disabled={locked}
+                  onClick={() => removePicked(id)}
+                  title="حذف از ترتیب"
+                  className="px-1 active:scale-95 transition-transform"
+                >
+                  {label(item, rangeLabels, arStyle)}
+                </button>
+                {!locked && idx < picked.length - 1 && (
+                  <button
+                    type="button"
+                    onClick={() => movePicked(idx, 1)}
+                    title="جابه‌جایی به بعد"
+                    className="p-0.5 rounded-lg text-slate-400 hover:text-amber-700 hover:bg-amber-50 dark:hover:bg-slate-700"
+                  >
+                    <ChevronLeft className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
             );
           })
         )}
@@ -444,16 +548,23 @@ function OrderView({
       <div className="flex flex-wrap gap-2 justify-center pt-1">
         {bank
           .filter((b) => !picked.includes(b.id))
-          .map((b) => (
-            <button
-              key={b.id}
-              disabled={locked}
-              onClick={() => addPicked(b.id)}
-              className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
-            >
-              {label(b, rangeLabels, arStyle)}
-            </button>
-          ))}
+          .map((b) => {
+            const isHinted = hintedNextId === b.id;
+            return (
+              <button
+                key={b.id}
+                disabled={locked}
+                onClick={() => addPicked(b.id)}
+                className={`py-2.5 px-3.5 rounded-2xl border-2 shadow-sm active:scale-95 transition-all ${
+                  isHinted
+                    ? "bg-amber-50 dark:bg-amber-950/50 border-amber-500 ring-2 ring-amber-300 dark:ring-amber-700"
+                    : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700 hover:border-amber-400"
+                }`}
+              >
+                {label(b, rangeLabels, arStyle)}
+              </button>
+            );
+          })}
       </div>
 
       {picked.length > 0 && !locked && (
@@ -488,6 +599,7 @@ function OrderView({
 function ClozeView({
   q,
   locked,
+  hintActive,
   onDone,
   markChanged,
   rangeLabels,
@@ -496,16 +608,19 @@ function ClozeView({
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  hintActive: boolean;
   rangeLabels: Record<string, string>;
   arStyle: React.CSSProperties;
   shuffleSalt: number;
   onDone: (m: Record<string, string>) => void;
   markChanged: () => void;
 }) {
-  const gaps = useMemo(() => Object.keys((q.answer as Record<string, string>) ?? {}), [q.answer]);
+  const answerMap = useMemo(() => (q.answer as Record<string, string>) ?? {}, [q.answer]);
+  const gaps = useMemo(() => Object.keys(answerMap), [answerMap]);
   const [filled, setFilled] = useState<Record<string, string>>({});
   const [activeGap, setActiveGap] = useState<string | null>(gaps[0] ?? null);
   const [verseWords, setVerseWords] = useState<{ i: number; ar: string }[]>([]);
+  const { playSfx } = useHapticsAndSfx();
   const shuffledBank = useMemo(
     () => shuffleItems(q.bank ?? [], `cloze:${q.id}:${shuffleSalt}`),
     [q.bank, q.id, shuffleSalt],
@@ -534,10 +649,22 @@ function ClozeView({
     return () => { active = false; };
   }, [q.id, q.stem?.verse, q.type]);
 
-  const used = new Set(Object.values(filled));
+  const used = useMemo(() => new Set(Object.values(filled)), [filled]);
+
+  // راهنمای هوشمند جای‌خالی: دو کاندیدا (یکی درست + یکی غلط) برای جای خالی فعال هایلایت می‌شوند
+  const hintedCandidateIds = useMemo(() => {
+    const set = new Set<string>();
+    if (!hintActive || !activeGap) return set;
+    const correctId = answerMap[activeGap];
+    if (correctId) set.add(correctId);
+    const distractor = shuffledBank.find((b) => b.id !== correctId && !used.has(b.id));
+    if (distractor) set.add(distractor.id);
+    return set;
+  }, [hintActive, activeGap, answerMap, shuffledBank, used]);
 
   const place = (bid: string) => {
     if (!activeGap || locked) return;
+    playSfx("snap-click");
     const nextFilled = { ...filled, [activeGap]: bid };
     setFilled(nextFilled);
     const nextGap = gaps.find((g) => !nextFilled[g]);
@@ -549,6 +676,7 @@ function ClozeView({
 
   const clearGap = (g: string) => {
     if (locked) return;
+    playSfx("snap-click");
     const nextFilled = { ...filled };
     delete nextFilled[g];
     setFilled(nextFilled);
@@ -634,16 +762,23 @@ function ClozeView({
       <div className="flex flex-wrap gap-2 justify-center pt-1">
         {shuffledBank
           .filter((b) => !used.has(b.id))
-          .map((b) => (
-            <button
-              key={b.id}
-              disabled={locked || !activeGap}
-              onClick={() => place(b.id)}
-              className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
-            >
-              {label(b, rangeLabels, arStyle)}
-            </button>
-          ))}
+          .map((b) => {
+            const isHinted = hintedCandidateIds.has(b.id);
+            return (
+              <button
+                key={b.id}
+                disabled={locked || !activeGap}
+                onClick={() => place(b.id)}
+                className={`py-2.5 px-3.5 rounded-2xl border-2 shadow-sm active:scale-95 transition-all ${
+                  isHinted
+                    ? "bg-amber-50 dark:bg-amber-950/50 border-amber-500 ring-2 ring-amber-300 dark:ring-amber-700"
+                    : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700 hover:border-amber-400"
+                }`}
+              >
+                {label(b, rangeLabels, arStyle)}
+              </button>
+            );
+          })}
       </div>
     </div>
   );

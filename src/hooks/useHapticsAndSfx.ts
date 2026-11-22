@@ -1,6 +1,6 @@
 // src/hooks/useHapticsAndSfx.ts
 import { useCallback } from "react";
-import { useAppStore } from "../store/useAppStore";
+import { usePreferencesStore } from "../store/usePreferencesStore";
 
 export type SfxType =
     | "snap-click"
@@ -9,24 +9,20 @@ export type SfxType =
     | "error-thud"
     | "stage-fanfare";
 
-const SFX_PATHS: Record<SfxType, string> = {
-    "snap-click": "/sfx/snap-click.mp3",
-    "correct-chime": "/sfx/correct-chime.mp3",
-    "trap-shield": "/sfx/trap-shield.mp3",
-    "error-thud": "/sfx/error-thud.mp3",
-    "stage-fanfare": "/sfx/stage-fanfare.mp3",
+const getSfxUrl = (type: SfxType) => {
+    const base = import.meta.env.BASE_URL || "/";
+    return `${base}sfx/${type}.mp3`;
 };
 
 const sfxAudioPool: Partial<Record<SfxType, HTMLAudioElement>> = {};
 
 export function useHapticsAndSfx() {
-    const soundEnabled = useAppStore(
-        (s) => s.userStats?.soundEffectsEnabled ?? true
-    );
+    const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
+    const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
 
     const triggerHaptic = useCallback(
         (pattern: "light" | "success" | "warning" | "error") => {
-            if (typeof navigator === "undefined" || !navigator.vibrate) return;
+            if (!hapticsEnabled || typeof navigator === "undefined" || !navigator.vibrate) return;
             try {
                 switch (pattern) {
                     case "light":
@@ -46,7 +42,7 @@ export function useHapticsAndSfx() {
                 // در مرورگرهای دسکتاپ بدون پشتیبانی ویبره نادیده گرفته می‌شود
             }
         },
-        []
+        [hapticsEnabled]
     );
 
     const playSfx = useCallback(
@@ -62,7 +58,7 @@ export function useHapticsAndSfx() {
             try {
                 let audio = sfxAudioPool[type];
                 if (!audio) {
-                    audio = new Audio(SFX_PATHS[type]);
+                    audio = new Audio(getSfxUrl(type));
                     audio.volume = 0.65;
                     sfxAudioPool[type] = audio;
                 }

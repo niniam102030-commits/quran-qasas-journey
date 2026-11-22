@@ -1,13 +1,17 @@
 // src/pages/LearningSessionPage.tsx
 import { useEffect, useState } from "react";
+import confetti from "canvas-confetti";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
+import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
 import { useLearningStore } from "../store/useLearningStore";
+import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
 import { ldb } from "../db/learningDb";
 
 interface Props {
   unitId: string;
   stage: number;
+  remedialTag?: string | null;
   onExit: () => void;
 }
 
@@ -16,22 +20,44 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
+export default function LearningSessionPage({ unitId, stage, remedialTag = null, onExit }: Props) {
   const s = useLearningStore();
   const startReview = useLearningStore((state) => state.startReview);
   const startStage = useLearningStore((state) => state.startStage);
+  const startRemedial = useLearningStore((state) => state.startRemedial);
+  const { playSfx } = useHapticsAndSfx();
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [correctAnswerText, setCorrectAnswerText] = useState("");
 
   useEffect(() => {
     const state = useLearningStore.getState();
-    if (stage === 0) {
+    if (stage === -1) {
+      if (state.status === "idle" || state.sessionType !== "REMEDIAL" || state.remedialTag !== remedialTag || state.status === "finished") {
+        void startRemedial(remedialTag);
+      }
+    } else if (stage === 0) {
       if (state.status === "idle" || state.sessionType !== "REVIEW" || state.status === "finished") void startReview();
     } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
       void startStage(unitId, stage);
     }
-  }, [unitId, stage, startReview, startStage]);
+  }, [unitId, stage, remedialTag, startReview, startStage, startRemedial]);
+
+  // جشن پایان مرحله موفق با افکت صوتی و Confetti
+  useEffect(() => {
+    if (s.status === "finished" && s.summary && s.summary.total > 0 && s.summary.passed) {
+      playSfx("stage-fanfare");
+      try {
+        confetti({
+          particleCount: stage === 8 || s.summary.unlockedNext ? 90 : 45,
+          spread: 70,
+          origin: { y: 0.65 },
+        });
+      } catch {
+        // در محیط تست بدون canvas نادیده گرفته می‌شود
+      }
+    }
+  }, [s.status, s.summary, stage, playSfx]);
 
   // Enter key advances only when feedback drawer is visible (locked) and ignores key repeat.
   useEffect(() => {
@@ -140,7 +166,13 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
           <div className="space-y-1.5">
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
               {isEmpty
-                ? stage === 0 ? "فعلاً کارتی برای مرور سررسید نشده است" : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                ? stage === -1
+                  ? "خطایی برای تمرین ترمیمی ثبت نشده است"
+                  : stage === 0
+                  ? "فعلاً کارتی برای مرور سررسید نشده است"
+                  : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                : stage === -1
+                ? "تمرین ترمیمی هوشمند به پایان رسید"
                 : stage === 0
                 ? "جلسه مرور روزانه به پایان رسید"
                 : isPassed
@@ -171,6 +203,12 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
                   {toFarsiNum(m.debt)} کارت
                 </div>
               </div>
+              {Boolean(m.xpEarned || m.gemsEarned) && (
+                <div className="col-span-2 pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-center gap-4 text-xs font-bold">
+                  {!!m.xpEarned && <span className="text-amber-600 dark:text-amber-400">+{toFarsiNum(m.xpEarned)} نور ✨</span>}
+                  {!!m.gemsEarned && <span className="text-sky-600 dark:text-sky-400">+{toFarsiNum(m.gemsEarned)} عقیق 💎</span>}
+                </div>
+              )}
             </div>
           )}
 
@@ -263,12 +301,22 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
       </header>
 
       {/* Main Question Body */}
-      <main className="flex-1 max-w-2xl w-full mx-auto p-4 flex flex-col justify-center">
+      <main className="flex-1 max-w-2xl w-full mx-auto p-4 flex flex-col justify-center space-y-3">
+        {q.stem?.verse && (locked || q.shape !== "cloze" || q.type === "CLOZE_FA") && (
+          <div className="w-full max-w-xl mx-auto px-3">
+            <VerseAudioPlayer verses={[q.stem.verse]} compact />
+          </div>
+        )}
         <QuestionRenderer
           key={q.id + ":" + s.index}
           q={q}
           locked={locked}
-          onSubmit={(r, m) => void s.submit(r, m)}
+          onSubmit={(r, m) => {
+            void s.submit(r, m).then((res) => {
+              if (!res) return;
+              playSfx(res.correct ? "correct-chime" : "error-thud");
+            });
+          }}
         />
       </main>
 

@@ -1,12 +1,14 @@
 // src/pages/MasteryPage.tsx
-import { useState, useEffect } from "react";
-import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2 } from "lucide-react";
+import { useState, useEffect, useMemo } from "react";
+import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench } from "lucide-react";
 import { ldb, type StoredCard, type UnitProgressRow } from "../db/learningDb";
 import { isGoldenVerse, skillLevel } from "../learning/mastery";
+import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast";
 
 interface Props {
   onBack: () => void;
   onSelectUnit?: (unitId: string) => void;
+  onStartRemedial?: (tag?: string | null) => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -31,8 +33,9 @@ interface UnitDisplayRow extends UnitProgressRow {
   verseTo?: number;
 }
 
-export default function MasteryPage({ onBack, onSelectUnit }: Props) {
+export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial }: Props) {
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
+  const [allCardsList, setAllCardsList] = useState<StoredCard[]>([]);
   const [unitProgress, setUnitProgress] = useState<UnitDisplayRow[]>([]);
   const [confusions, setConfusions] = useState<{ tag: string; count: number }[]>([]);
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
@@ -51,6 +54,7 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
         const map = new Map<string, StoredCard>();
         allCards.forEach((c) => map.set(c.key, c));
         setCardsMap(map);
+        setAllCardsList(allCards);
 
         let orderById = new Map<string, number>();
         let infoById = new Map<string, { page: number; half: string; verseFrom: number; verseTo: number }>();
@@ -100,6 +104,9 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
   const totalGoldenVerses = Array.from({ length: 88 }, (_, i) => i + 1).filter((v) =>
     isGoldenVerse(v, cardsMap)
   ).length;
+  const forecast = useMemo(() => buildReviewForecast(allCardsList), [allCardsList]);
+  const maxForecast = Math.max(1, ...forecast.map((d) => d.dueCount));
+  const nearGolden = useMemo(() => findNearGoldenVerses(cardsMap), [cardsMap]);
 
   if (loading) {
     return (
@@ -307,28 +314,106 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
           </div>
         </section>
 
-        {/* Most Frequent Confusions & Traps */}
+        {/* 7-Day FSRS Forecast & Near-Golden Verses */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 font-bold text-sm text-slate-700 dark:text-slate-200">
+              <CalendarDays className="w-4 h-4 text-amber-600" />
+              <span>پیش‌بینی مرورهای ۷ روز آینده (FSRS)</span>
+            </div>
+            <span className="text-[11px] text-slate-500">
+              مجموع: {toFarsiNum(forecast.reduce((a, b) => a + b.dueCount, 0))} کارت
+            </span>
+          </div>
+
+          <div className="grid grid-cols-7 gap-1.5 items-end h-28 pt-2">
+            {forecast.map((day) => {
+              const heightPct = day.dueCount === 0 ? 6 : Math.max(18, Math.round((day.dueCount / maxForecast) * 100));
+              return (
+                <div key={day.dayOffset} className="flex flex-col items-center gap-1.5 h-full justify-end">
+                  <span className="text-[10px] font-bold text-slate-600 dark:text-slate-300">
+                    {toFarsiNum(day.dueCount)}
+                  </span>
+                  <div className="w-full max-w-[2.2rem] bg-slate-100 dark:bg-slate-800 rounded-t-xl h-16 flex items-end overflow-hidden">
+                    <div
+                      className={`w-full rounded-t-xl transition-all ${
+                        day.dayOffset === 0 ? "bg-amber-500" : "bg-amber-400/75 dark:bg-amber-600/75"
+                      }`}
+                      style={{ height: `${heightPct}%` }}
+                    />
+                  </div>
+                  <span className="text-[10px] text-slate-500 truncate max-w-full">{day.label}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          {nearGolden.length > 0 && (
+            <div className="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2">
+              <div className="text-xs font-bold text-amber-800 dark:text-amber-300">
+                آیات نزدیک به طلایی‌شدن ({toFarsiNum(nearGolden.length)} آیه):
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {nearGolden.slice(0, 12).map((ng) => (
+                  <button
+                    key={ng.verse}
+                    type="button"
+                    onClick={() => setSelectedVerse(ng.verse)}
+                    className="px-2.5 py-1 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-200 dark:border-amber-800 text-[11px] font-bold text-amber-900 dark:text-amber-200 hover:bg-amber-100 transition-colors"
+                  >
+                    آیه {toFarsiNum(ng.verse)} ({toFarsiNum(ng.level3Count)}/۴)
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+
+        {/* Most Frequent Confusions & Traps + Smart Remedial Mode */}
         {confusions.length > 0 && (
           <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
-            <div className="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-bold text-sm">
-              <AlertTriangle className="w-4 h-4" />
-              <span>تحلیل تله‌ها و خطاهای پرتکرار شما</span>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-bold text-sm">
+                <AlertTriangle className="w-4 h-4" />
+                <span>تحلیل تله‌ها و خطاهای پرتکرار شما</span>
+              </div>
+              {onStartRemedial && (
+                <button
+                  type="button"
+                  onClick={() => onStartRemedial(null)}
+                  className="py-1.5 px-3 rounded-xl bg-rose-600 hover:bg-rose-700 active:scale-95 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all"
+                >
+                  <Wrench className="w-3.5 h-3.5" />
+                  <span>تمرین ترمیمی هوشمند</span>
+                </button>
+              )}
             </div>
             <p className="text-xs text-slate-500">
-              سیستم به طور خودکار بر اساس این الگوها، سوالات تمرینی ترمیمی برای شما طراحی می‌کند:
+              سیستم بر اساس این خطاها، جلسه تمرین ترمیمی هدفمند برای رفع اشکال شما می‌سازد:
             </p>
             <div className="space-y-2 pt-1">
               {confusions.map((c) => (
                 <div
                   key={c.tag}
-                  className="flex items-center justify-between p-3 rounded-2xl bg-rose-50/50 dark:bg-rose-950/20 border border-rose-100 dark:border-rose-900/40 text-xs"
+                  className="flex items-center justify-between gap-2 p-3 rounded-2xl bg-rose-50/50 dark:bg-rose-950/20 border border-rose-100 dark:border-rose-900/40 text-xs"
                 >
                   <span className="font-medium text-slate-700 dark:text-slate-300">
                     {CONFUSION_LABELS[c.tag] || c.tag}
                   </span>
-                  <span className="font-bold text-rose-600 dark:text-rose-400">
-                    {toFarsiNum(c.count)} خطا
-                  </span>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className="font-bold text-rose-600 dark:text-rose-400">
+                      {toFarsiNum(c.count)} خطا
+                    </span>
+                    {onStartRemedial && (
+                      <button
+                        type="button"
+                        onClick={() => onStartRemedial(c.tag)}
+                        className="px-2.5 py-1 rounded-xl bg-white dark:bg-slate-800 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-300 font-bold hover:bg-rose-100/60 transition-colors"
+                      >
+                        تمرین
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

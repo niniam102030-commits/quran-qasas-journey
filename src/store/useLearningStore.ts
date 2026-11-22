@@ -4,8 +4,9 @@ import { create } from "zustand";
 import { ldb, type QuestionRow } from "../db/learningDb";
 import { gradeQuestion } from "../services/grading";
 import { newCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
-import { planStage, requeue, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
+import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
 import { stagePassed, canUnlockNext, type StageAttempt } from "../learning/mastery";
+import { recordLearningReward } from "../services/profileService";
 import type { Question, GradeResult } from "../types/learning";
 
 export interface SubmitMeta {
@@ -21,6 +22,8 @@ export interface SessionSummary {
   passed: boolean;
   unlockedNext: boolean;
   debt: number;
+  xpEarned?: number;
+  gemsEarned?: number;
 }
 
 interface LearningState {
@@ -28,6 +31,7 @@ interface LearningState {
   sessionType: SessionType;
   unitId: string | null;
   stage: number;
+  remedialTag: string | null;
   queue: QuestionRow[];
   index: number;
   wrongCounts: Record<string, number>;
@@ -37,6 +41,7 @@ interface LearningState {
   summary: SessionSummary | null;
   startStage: (unitId: string, stage: number, size?: number) => Promise<void>;
   startReview: (size?: number) => Promise<void>;
+  startRemedial: (tag?: string | null, size?: number) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
   next: () => Promise<void>;
   current: () => QuestionRow | null;
@@ -56,6 +61,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   sessionType: "STAGE",
   unitId: null,
   stage: 1,
+  remedialTag: null,
   queue: [],
   index: 0,
   wrongCounts: {},
@@ -110,8 +116,62 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       if (q) picked.set(q.id, q);
     }
     const queue = [...picked.values()];
-    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, queue, index: 0, wrongCounts: {}, firstAttempts: [], seen: new Set(),
+    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, queue, index: 0, wrongCounts: {}, firstAttempts: [], seen: new Set(),
       summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 } });
+  },
+
+  startRemedial: async (tag = null, size = 15) => {
+    set({ status: "loading", summary: null, lastResult: null });
+    const allConfusions = await ldb.confusions.toArray();
+    const filtered = tag
+      ? allConfusions.filter((c) => (c.chosenTag || "random") === tag)
+      : allConfusions;
+
+    // اولویت‌بندی بر اساس بیشترین تکرار اشتباه روی هر هدف و سوال
+    const qidCounts = new Map<string, number>();
+    const targetCounts = new Map<string, number>();
+    for (const c of filtered) {
+      qidCounts.set(c.qid, (qidCounts.get(c.qid) ?? 0) + 1);
+      targetCounts.set(c.target, (targetCounts.get(c.target) ?? 0) + 1);
+    }
+
+    const picked = new Map<string, QuestionRow>();
+    const topQids = [...qidCounts.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => id);
+    if (topQids.length) {
+      const directQs = await ldb.questions.bulkGet(topQids.slice(0, size * 2));
+      for (const q of directQs) {
+        if (q && picked.size < size) picked.set(q.id, q);
+      }
+    }
+
+    if (picked.size < size) {
+      const topTargets = [...targetCounts.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
+      for (const t of topTargets) {
+        if (picked.size >= size) break;
+        const qs = await ldb.questions.where("targets").equals(t).toArray();
+        for (const q of shuffle(qs, rng(Date.now() & 0xffff))) {
+          if (!picked.has(q.id)) {
+            picked.set(q.id, q);
+            break;
+          }
+        }
+      }
+    }
+
+    const queue = shuffle([...picked.values()], rng(Date.now() & 0xffff)).slice(0, size);
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "REMEDIAL",
+      unitId: null,
+      stage: -1,
+      remedialTag: tag,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      seen: new Set(),
+      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 },
+    });
   },
 
   submit: async (response, meta) => {
@@ -180,7 +240,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     }
     set({
       lastResult: res, seen, wrongCounts, queue,
-      firstAttempts: firstTime && (s.sessionType === "REVIEW" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
+      firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;
   },
@@ -195,7 +255,10 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     // پایان جلسه
     const attempts = s.firstAttempts;
     const correct = attempts.filter((a) => a.correct).length;
-    const passed = s.sessionType === "REVIEW" ? correct / Math.max(1, attempts.length) >= 0.8 : stagePassed(attempts, s.stage);
+    const passed =
+      s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL"
+        ? correct / Math.max(1, attempts.length) >= 0.8
+        : stagePassed(attempts, s.stage);
     let unlockedNext = false;
     const allCards = await ldb.cards.toArray();
     const debt = reviewDebt(allCards);
@@ -233,10 +296,26 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         }
       }
     }
+
+    // ثبت پاداش یکپارچه در پروفایل (چله انس + امتیاز نور + عقیق)
+    const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) : 0;
+    const gemsEarned = passed ? (s.stage === 8 ? 15 : 5) : 0;
+    if (attempts.length > 0) {
+      try {
+        await recordLearningReward({
+          xpDelta: xpEarned,
+          gemsDelta: gemsEarned,
+          markDailyActivity: true,
+        });
+      } catch {
+        // عدم مسدودسازی پایان جلسه در صورت خطای ذخیره پروفایل
+      }
+    }
+
     set({
       status: "finished",
       lastResult: null,
-      summary: { total: attempts.length, correct, ratio: attempts.length ? correct / attempts.length : 0, passed, unlockedNext, debt },
+      summary: { total: attempts.length, correct, ratio: attempts.length ? correct / attempts.length : 0, passed, unlockedNext, debt, xpEarned, gemsEarned },
     });
   },
 }));

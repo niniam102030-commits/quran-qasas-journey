@@ -49,6 +49,37 @@ export interface UnitProgressRow {
 }
 export interface MetaRow { key: string; value: unknown }
 
+export interface AudioCacheRow {
+  verse: number; // 1..88
+  blob: Blob;
+  size: number;
+  cachedAt: number;
+}
+
+export interface UserProfileRow {
+  id: "main";
+  chillehCurrentDays: number;
+  chillehBestDays: number;
+  chillehStage: 7 | 14 | 40;
+  lastActivityDate: string | null; // YYYY-MM-DD (local)
+  chillehShieldActive: boolean;
+  noorXp: number;
+  aqeeqGems: number;
+  updatedAt: number;
+}
+
+export const DEFAULT_USER_PROFILE: UserProfileRow = {
+  id: "main",
+  chillehCurrentDays: 0,
+  chillehBestDays: 0,
+  chillehStage: 7,
+  lastActivityDate: null,
+  chillehShieldActive: false,
+  noorXp: 0,
+  aqeeqGems: 0,
+  updatedAt: 0,
+};
+
 export class LearningDB extends Dexie {
   questions!: Table<QuestionRow, string>;
   lexicon!: Table<LexiconRow, string>;
@@ -59,6 +90,8 @@ export class LearningDB extends Dexie {
   confusions!: Table<ConfusionRow, number>;
   unitProgress!: Table<UnitProgressRow, string>;
   meta!: Table<MetaRow, string>;
+  audioCache!: Table<AudioCacheRow, number>;
+  profile!: Table<UserProfileRow, string>;
 
   constructor() {
     super("QasasLearningDB");
@@ -72,6 +105,19 @@ export class LearningDB extends Dexie {
       confusions: "++id, qid, target, at",
       unitProgress: "unitId",
       meta: "key",
+    });
+    this.version(2).stores({
+      questions: "id, unitId, [unitId+stage], stage, type, *targets",
+      lexicon: "wordId, unitId",
+      chunks: "id, unitId, verse",
+      baseVerses: "n",
+      cards: "key, kind, due, state",
+      attempts: "++id, qid, unitId, [unitId+stage], at",
+      confusions: "++id, qid, target, at",
+      unitProgress: "unitId",
+      meta: "key",
+      audioCache: "verse",
+      profile: "id",
     });
   }
 }

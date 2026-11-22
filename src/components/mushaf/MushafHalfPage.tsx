@@ -1,7 +1,9 @@
 // src/components/mushaf/MushafHalfPage.tsx
-import { useState, useEffect } from "react";
-import { Eye, BookOpen, Sparkles, ChevronRight } from "lucide-react";
+import { useState, useEffect, useMemo } from "react";
+import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints } from "lucide-react";
 import { ldb } from "../../db/learningDb";
+import { usePreferencesStore } from "../../store/usePreferencesStore";
+import VerseAudioPlayer from "../audio/VerseAudioPlayer";
 
 interface Word {
   id: string;
@@ -30,14 +32,16 @@ function toFarsiNum(n: number | string): string {
 export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Props) {
   const [verses, setVerses] = useState<Verse[]>([]);
   const [loading, setLoading] = useState(true);
-  const [mode, setMode] = useState<"reading" | "partial" | "hidden">("reading");
+  const [mode, setMode] = useState<"reading" | "partial" | "hidden" | "step">("reading");
   const [revealedWords, setRevealedWords] = useState<Set<string>>(new Set());
+  const [stepCursor, setStepCursor] = useState<number>(0);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
-  const [fontSize] = useState<number>(() => {
-    if (typeof window === "undefined") return 28;
-    const raw = Number(localStorage.getItem("quran_font_size") || 28);
-    return Number.isFinite(raw) ? Math.min(40, Math.max(22, raw)) : 28;
-  });
+  const [activeAudioVerse, setActiveAudioVerse] = useState<number | null>(null);
+  const [focusMode, setFocusMode] = useState<boolean>(false);
+  const fontSize = usePreferencesStore((s) => s.arabicFontSize);
+
+  const allWordIds = useMemo(() => verses.flatMap((v) => v.words.map((w) => w.id)), [verses]);
+  const verseNumsList = useMemo(() => verses.map((v) => v.n), [verses]);
 
   useEffect(() => {
     async function loadVerses() {
@@ -72,9 +76,33 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
     });
   };
 
+  const handleChangeMode = (nextMode: "reading" | "partial" | "hidden" | "step") => {
+    setMode(nextMode);
+    setRevealedWords(new Set());
+    setStepCursor(0);
+  };
+
+  const revealAllWords = () => {
+    setRevealedWords(new Set(allWordIds));
+    setStepCursor(allWordIds.length);
+  };
+
+  const hideAllWords = () => {
+    setRevealedWords(new Set());
+    setStepCursor(0);
+  };
+
+  const revealNextStepWord = () => {
+    if (stepCursor >= allWordIds.length) return;
+    const nextId = allWordIds[stepCursor];
+    setRevealedWords((prev) => new Set(prev).add(nextId));
+    setStepCursor((c) => c + 1);
+  };
+
   const isWordHidden = (word: Word): boolean => {
     if (mode === "reading") return false;
     if (revealedWords.has(word.id)) return false;
+    if (mode === "step") return true;
     if (mode === "hidden") {
       // In hidden mode, hide every 2nd and 3rd word
       return word.i % 2 === 0 || word.i % 3 === 0;
@@ -87,9 +115,9 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   };
 
   return (
-    <div className="flex flex-col h-full bg-[#fcf9f2] dark:bg-[#151c28] text-slate-900 dark:text-slate-100 select-none overflow-y-auto">
+    <div dir="rtl" className={`flex flex-col min-h-screen bg-[#fcf9f2] dark:bg-[#151c28] text-slate-900 dark:text-slate-100 select-none overflow-y-auto ${focusMode ? "fixed inset-0 z-50" : ""}`}>
       {/* Header */}
-      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
+      <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
         <div className="flex items-center gap-2">
           {onClose && (
             <button
@@ -101,8 +129,8 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             </button>
           )}
           <div>
-            <h1 className="text-base font-bold text-[#8a5b29] dark:text-amber-400">
-              نیم‌صفحه مصحف — {unitId}
+            <h1 className="text-sm sm:text-base font-bold text-[#8a5b29] dark:text-amber-400">
+              نیم‌صفحه مصحف
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               سوره قصص (آیات {verses[0] ? toFarsiNum(verses[0].n) : "..."} تا {verses.length ? toFarsiNum(verses[verses.length - 1].n) : "..."})
@@ -110,43 +138,85 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
           </div>
         </div>
 
-        {/* Practice Mode Selector */}
-        <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5">
+        <div className="flex items-center gap-1.5">
+          {/* Practice Mode Selector */}
+          <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5">
+            {(
+              [
+                { id: "reading", label: "روخوانی" },
+                { id: "partial", label: "شروع آیه" },
+                { id: "hidden", label: "حفظ" },
+                { id: "step", label: "کلمه‌به‌کلمه" },
+              ] as const
+            ).map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleChangeMode(tab.id)}
+                className={`px-2 py-1 text-[11px] sm:text-xs font-semibold rounded-xl transition-all ${
+                  mode === tab.id
+                    ? "bg-white dark:bg-slate-700 text-[#8a5b29] dark:text-amber-300 shadow-sm"
+                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
           <button
-            onClick={() => setMode("reading")}
-            className={`px-2.5 py-1 text-xs font-semibold rounded-xl transition-all ${
-              mode === "reading"
-                ? "bg-white dark:bg-slate-700 text-[#8a5b29] dark:text-amber-300 shadow-sm"
-                : "text-slate-600 dark:text-slate-400 hover:text-slate-900"
-            }`}
+            type="button"
+            onClick={() => setFocusMode((f) => !f)}
+            title={focusMode ? "خروج از حالت تمرکز" : "حالت تمرکز تمام‌صفحه"}
+            className="p-2 rounded-xl bg-black/5 dark:bg-white/5 text-slate-600 dark:text-slate-300 hover:bg-black/10 transition-colors"
           >
-            روخوانی
-          </button>
-          <button
-            onClick={() => setMode("partial")}
-            className={`px-2.5 py-1 text-xs font-semibold rounded-xl transition-all ${
-              mode === "partial"
-                ? "bg-white dark:bg-slate-700 text-[#8a5b29] dark:text-amber-300 shadow-sm"
-                : "text-slate-600 dark:text-slate-400 hover:text-slate-900"
-            }`}
-          >
-            شروع آیه
-          </button>
-          <button
-            onClick={() => setMode("hidden")}
-            className={`px-2.5 py-1 text-xs font-semibold rounded-xl transition-all ${
-              mode === "hidden"
-                ? "bg-white dark:bg-slate-700 text-[#8a5b29] dark:text-amber-300 shadow-sm"
-                : "text-slate-600 dark:text-slate-400 hover:text-slate-900"
-            }`}
-          >
-            حفظ
+            {focusMode ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
           </button>
         </div>
       </header>
 
       {/* Main Quran Mushaf Content */}
-      <main className="flex-1 max-w-2xl w-full mx-auto p-4 sm:p-6 pb-24">
+      <main className="flex-1 max-w-2xl w-full mx-auto p-4 sm:p-6 pb-28 space-y-4">
+        {!loading && verseNumsList.length > 0 && (
+          <VerseAudioPlayer verses={verseNumsList} onActiveVerseChange={setActiveAudioVerse} />
+        )}
+
+        {!loading && mode !== "reading" && (
+          <div className="flex flex-wrap items-center justify-between gap-2 px-1">
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={revealAllWords}
+                className="py-1.5 px-3 rounded-xl text-xs font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-900 dark:text-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1.5"
+              >
+                <Eye className="w-3.5 h-3.5" />
+                <span>نمایش همه</span>
+              </button>
+              <button
+                type="button"
+                onClick={hideAllWords}
+                className="py-1.5 px-3 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition-colors flex items-center gap-1.5"
+              >
+                <EyeOff className="w-3.5 h-3.5" />
+                <span>پنهان همه</span>
+              </button>
+            </div>
+
+            {mode === "step" && (
+              <button
+                type="button"
+                onClick={revealNextStepWord}
+                disabled={stepCursor >= allWordIds.length}
+                className="py-1.5 px-4 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 disabled:opacity-40 text-white shadow-sm active:scale-95 transition-all flex items-center gap-1.5"
+              >
+                <Footprints className="w-3.5 h-3.5" />
+                <span>
+                  کلمه بعدی ({toFarsiNum(stepCursor)} / {toFarsiNum(allWordIds.length)})
+                </span>
+              </button>
+            )}
+          </div>
+        )}
+
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20 gap-3 text-slate-400">
             <BookOpen className="w-8 h-8 animate-pulse text-amber-500" />
@@ -167,7 +237,12 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
               style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: `${fontSize}px` }}
             >
               {verses.map((v) => (
-                <span key={v.n} className="inline">
+                <span
+                  key={v.n}
+                  className={`inline rounded-xl transition-colors ${
+                    activeAudioVerse === v.n ? "bg-amber-200/45 dark:bg-amber-900/35" : ""
+                  }`}
+                >
                   {v.words.map((w) => {
                     const hidden = isWordHidden(w);
                     return (
