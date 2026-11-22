@@ -3,7 +3,9 @@ export interface DisplayOption {
   ar?: string;
   fa?: string;
   num?: number;
+  n?: number;
   words?: string[];
+  wordsAr?: string[];
   wordRange?: { verse: number; from: number; to: number };
 }
 
@@ -13,7 +15,16 @@ function toFarsiNum(value: number): string {
 }
 
 export function labelOption(option: DisplayOption, resolved: Record<string, string> = {}): string {
-  return option.ar ?? option.fa ?? (option.num !== undefined ? toFarsiNum(option.num) : undefined) ??
-    (option.words?.length ? resolved[option.id] || option.words.join(" ") : undefined) ??
-    (option.wordRange ? resolved[option.id] || `آیه ${toFarsiNum(option.wordRange.verse)}، واژه‌های ${toFarsiNum(option.wordRange.from)} تا ${toFarsiNum(option.wordRange.to)}` : "");
+  const ar = option.ar?.trim();
+  if (ar) return ar;
+  const fa = option.fa?.trim();
+  if (fa) return fa;
+  const num = option.num ?? option.n;
+  if (num !== undefined) return toFarsiNum(num);
+  if (option.wordsAr?.length) return option.wordsAr.join(" ");
+  if (option.words?.length) return resolved[option.id] || option.words.join(" ");
+  if (option.wordRange) {
+    return resolved[option.id] || `آیه ${toFarsiNum(option.wordRange.verse)}، واژه‌های ${toFarsiNum(option.wordRange.from)} تا ${toFarsiNum(option.wordRange.to)}`;
+  }
+  return "";
 }

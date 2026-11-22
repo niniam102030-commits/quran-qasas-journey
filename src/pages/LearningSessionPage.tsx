@@ -76,12 +76,14 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   useEffect(() => {
     let active = true;
     const resolveItem = async (
-      item: { ar?: string; fa?: string; num?: number; words?: string[]; wordRange?: { verse: number; from: number; to: number } } | undefined,
+      item: { ar?: string; fa?: string; num?: number; n?: number; words?: string[]; wordsAr?: string[]; wordRange?: { verse: number; from: number; to: number } } | undefined,
     ): Promise<string> => {
       if (!item) return "";
-      if (item.ar) return item.ar;
-      if (item.fa) return item.fa;
-      if (item.num !== undefined) return toFarsiNum(item.num);
+      if (item.ar?.trim()) return item.ar.trim();
+      if (item.fa?.trim()) return item.fa.trim();
+      const numVal = item.num ?? item.n;
+      if (numVal !== undefined) return toFarsiNum(numVal);
+      if (item.wordsAr?.length) return item.wordsAr.join(" ");
       if (item.wordRange) {
         const verse = await ldb.baseVerses.get(item.wordRange.verse);
         const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
@@ -257,7 +259,8 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     if (correctAnswerText) return correctAnswerText;
     if (q.shape === "choice") {
       const opt = q.options?.find((o) => o.id === q.answer);
-      return opt?.ar || opt?.fa || (opt?.num !== undefined ? toFarsiNum(opt.num) : "") || opt?.words?.join(" ") || (opt?.wordRange ? `آیه ${toFarsiNum(opt.wordRange.verse)}، واژه‌های ${toFarsiNum(opt.wordRange.from)} تا ${toFarsiNum(opt.wordRange.to)}` : "");
+      const numVal = opt?.num ?? opt?.n;
+      return opt?.ar?.trim() || opt?.fa?.trim() || (numVal !== undefined ? toFarsiNum(numVal) : "") || opt?.wordsAr?.join(" ") || opt?.words?.join(" ") || (opt?.wordRange ? `آیه ${toFarsiNum(opt.wordRange.verse)}، واژه‌های ${toFarsiNum(opt.wordRange.from)} تا ${toFarsiNum(opt.wordRange.to)}` : "");
     }
     if (q.shape === "order" && Array.isArray(q.answer)) {
       const byId = new Map((q.bank || []).map((b) => [b.id, b]));

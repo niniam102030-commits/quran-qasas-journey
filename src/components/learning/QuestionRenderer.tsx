@@ -13,7 +13,9 @@ interface Item {
   ar?: string;
   fa?: string;
   num?: number;
+  n?: number;
   words?: string[];
+  wordsAr?: string[];
   wordRange?: { verse: number; from: number; to: number };
 }
 
@@ -59,7 +61,7 @@ function toFarsiNum(n: number | string): string {
 }
 
 const isArabicItem = (o: Item, rangeLabels: Record<string, string>) =>
-  Boolean(o.ar || o.wordRange || (o.words?.length && rangeLabels[o.id]));
+  Boolean(o.ar?.trim() || o.wordsAr?.length || o.wordRange || (o.words?.length && rangeLabels[o.id]));
 
 const label = (o: Item, rangeLabels: Record<string, string>, arStyle: React.CSSProperties) => {
   const text = labelOption(o, rangeLabels);
