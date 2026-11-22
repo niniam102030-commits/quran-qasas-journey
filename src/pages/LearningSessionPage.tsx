@@ -1,6 +1,6 @@
 // src/pages/LearningSessionPage.tsx
 import { useEffect, useState } from "react";
-import { CheckCircle2, XCircle, ArrowLeft, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
+import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import { useLearningStore } from "../store/useLearningStore";
 import { ldb } from "../db/learningDb";
@@ -33,28 +33,82 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
     }
   }, [unitId, stage, startReview, startStage]);
 
-  // Keep keyboard advancement on the explicit button to prevent duplicate submits.
+  // Enter key advances only when feedback drawer is visible (locked) and ignores key repeat.
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "Enter" || e.repeat) return;
+      const state = useLearningStore.getState();
+      if (state.status === "running" && state.lastResult !== null) {
+        e.preventDefault();
+        void state.next();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
   useEffect(() => {
     let active = true;
+    const resolveItem = async (
+      item: { ar?: string; fa?: string; num?: number; words?: string[]; wordRange?: { verse: number; from: number; to: number } } | undefined,
+    ): Promise<string> => {
+      if (!item) return "";
+      if (item.ar) return item.ar;
+      if (item.fa) return item.fa;
+      if (item.num !== undefined) return toFarsiNum(item.num);
+      if (item.wordRange) {
+        const verse = await ldb.baseVerses.get(item.wordRange.verse);
+        const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
+        return words
+          .filter((word) => word.i >= item.wordRange!.from && word.i <= item.wordRange!.to)
+          .map((word) => word.ar)
+          .join(" ");
+      }
+      if (item.words?.length && item.words.every((id) => /^w\d+_\d+_\d+$/.test(id))) {
+        const parsed = item.words.map((id) => {
+          const match = /^w\d+_(\d+)_(\d+)$/.exec(id)!;
+          return { verse: Number(match[1]), index: Number(match[2]) };
+        });
+        const verses = await Promise.all([...new Set(parsed.map((p) => p.verse))].map((n) => ldb.baseVerses.get(n)));
+        const byVerse = new Map(
+          verses
+            .filter((verse): verse is NonNullable<typeof verse> => !!verse)
+            .map((verse) => [verse.n, (verse.words as { i: number; ar: string }[] | undefined) ?? []]),
+        );
+        return parsed
+          .map((p) => byVerse.get(p.verse)?.find((word) => word.i === p.index)?.ar ?? "")
+          .filter(Boolean)
+          .join(" ");
+      }
+      return item.words?.join(" ") || "";
+    };
+
     const resolve = async () => {
-      if (!q || s.lastResult?.correct) return "";
+      if (!q || !s.lastResult || s.lastResult.correct) return "";
       if (q.shape === "choice") {
         const opt = q.options?.find((item) => item.id === q.answer);
-        if (opt?.wordRange) {
-          const verse = await ldb.baseVerses.get(opt.wordRange.verse);
-          const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
-          return words.filter((word) => word.i >= opt.wordRange!.from && word.i <= opt.wordRange!.to).map((word) => word.ar).join(" ");
-        }
-        if (opt?.words?.length && opt.words.every((id) => /^w\d+_\d+_\d+$/.test(id))) {
-          const parsed = opt.words.map((id) => {
-            const match = /^w\d+_(\d+)_(\d+)$/.exec(id)!;
-            return { verse: Number(match[1]), index: Number(match[2]) };
-          });
-          const verses = await Promise.all([...new Set(parsed.map((item) => item.verse))].map((n) => ldb.baseVerses.get(n)));
-          const byVerse = new Map(verses.filter((verse): verse is NonNullable<typeof verse> => !!verse).map((verse) => [verse.n, (verse.words as { i: number; ar: string }[] | undefined) ?? []]));
-          return parsed.map((item) => byVerse.get(item.verse)?.find((word) => word.i === item.index)?.ar ?? "").filter(Boolean).join(" ");
-        }
-        return opt?.ar || opt?.fa || (opt?.num !== undefined ? String(opt.num) : "") || opt?.words?.join(" ") || "";
+        return resolveItem(opt);
+      }
+      if (q.shape === "order" && Array.isArray(q.answer)) {
+        const byId = new Map((q.bank ?? []).map((b) => [b.id, b]));
+        const parts = await Promise.all((q.answer as string[]).map((id) => resolveItem(byId.get(id))));
+        return parts.filter(Boolean).join(" ◄ ");
+      }
+      if (q.shape === "cloze" && typeof q.answer === "object" && q.answer !== null) {
+        const byId = new Map((q.bank ?? []).map((b) => [b.id, b]));
+        const entries = Object.entries(q.answer as Record<string, string>);
+        const parts = await Promise.all(
+          entries.map(async ([k, id]) => `[${toFarsiNum(k)}: ${await resolveItem(byId.get(id))}]`),
+        );
+        return parts.join(" ");
+      }
+      if (q.shape === "match" && Array.isArray(q.pairs)) {
+        const leftById = new Map((q.left ?? []).map((l) => [l.id, l]));
+        const rightById = new Map((q.right ?? []).map((r) => [r.id, r]));
+        const parts = await Promise.all(
+          q.pairs.map(async ([lId, rId]) => `${await resolveItem(leftById.get(lId))} ← ${await resolveItem(rightById.get(rId))}`),
+        );
+        return parts.filter(Boolean).join("  |  ");
       }
       return "";
     };
@@ -133,12 +187,23 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
             </div>
           )}
 
-          <button
-            onClick={onExit}
-            className="w-full py-3.5 px-6 rounded-2xl font-bold text-white bg-[#b37e3d] hover:bg-[#9d6b2f] shadow-lg shadow-amber-900/10 active:scale-[0.98] transition-all"
-          >
-            ادامه و بازگشت به نقشه
-          </button>
+          <div className="space-y-2.5">
+            {!isPassed && !isEmpty && stage > 0 && (
+              <button
+                onClick={() => void startStage(unitId, stage)}
+                className="w-full py-3.5 px-6 rounded-2xl font-bold text-amber-900 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 border border-amber-300 dark:border-amber-800 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+              >
+                <RotateCcw className="w-4 h-4" />
+                <span>تلاش مجدد این مرحله</span>
+              </button>
+            )}
+            <button
+              onClick={onExit}
+              className="w-full py-3.5 px-6 rounded-2xl font-bold text-white bg-[#b37e3d] hover:bg-[#9d6b2f] shadow-lg shadow-amber-900/10 active:scale-[0.98] transition-all"
+            >
+              ادامه و بازگشت به نقشه
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -151,9 +216,10 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
 
   // Determine correct answer text for feedback drawer
   const getFormattedCorrectAnswer = (): string => {
+    if (correctAnswerText) return correctAnswerText;
     if (q.shape === "choice") {
       const opt = q.options?.find((o) => o.id === q.answer);
-      return correctAnswerText || opt?.ar || opt?.fa || (opt?.num !== undefined ? String(opt.num) : "") || opt?.words?.join(" ") || (opt?.wordRange ? `آیه ${toFarsiNum(opt.wordRange.verse)}، واژه‌های ${toFarsiNum(opt.wordRange.from)} تا ${toFarsiNum(opt.wordRange.to)}` : "");
+      return opt?.ar || opt?.fa || (opt?.num !== undefined ? toFarsiNum(opt.num) : "") || opt?.words?.join(" ") || (opt?.wordRange ? `آیه ${toFarsiNum(opt.wordRange.verse)}، واژه‌های ${toFarsiNum(opt.wordRange.from)} تا ${toFarsiNum(opt.wordRange.to)}` : "");
     }
     if (q.shape === "order" && Array.isArray(q.answer)) {
       const byId = new Map((q.bank || []).map((b) => [b.id, b]));
@@ -180,7 +246,7 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
           className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 active:scale-95 transition-transform text-slate-500"
           title="خروج از جلسه"
         >
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowRight className="w-5 h-5" />
         </button>
 
         {/* Linear Progress Bar */}

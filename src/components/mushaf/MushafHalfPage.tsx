@@ -33,13 +33,19 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [mode, setMode] = useState<"reading" | "partial" | "hidden">("reading");
   const [revealedWords, setRevealedWords] = useState<Set<string>>(new Set());
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
+  const [fontSize] = useState<number>(() => {
+    if (typeof window === "undefined") return 28;
+    const raw = Number(localStorage.getItem("quran_font_size") || 28);
+    return Number.isFinite(raw) ? Math.min(40, Math.max(22, raw)) : 28;
+  });
 
   useEffect(() => {
     async function loadVerses() {
       setLoading(true);
       try {
         // Find verses belonging to this unit from unit plan
-        const planRes = await fetch("/content/base/units-plan.json");
+        const base = import.meta.env.BASE_URL || "/";
+        const planRes = await fetch(`${base}content/base/units-plan.json`);
         const plan = await planRes.json();
         const unit = plan.find((u: { id: string }) => u.id === unitId);
         if (unit && unit.verses) {
@@ -157,8 +163,8 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
 
             {/* Verses Flow (Continuous Quranic Layout) */}
             <div
-              className="text-right leading-[2.6] sm:leading-[3.0] tracking-wide text-2xl sm:text-3xl text-slate-800 dark:text-slate-100"
-              style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif" }}
+              className="text-right leading-[2.6] sm:leading-[3.0] tracking-wide text-slate-800 dark:text-slate-100"
+              style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: `${fontSize}px` }}
             >
               {verses.map((v) => (
                 <span key={v.n} className="inline">

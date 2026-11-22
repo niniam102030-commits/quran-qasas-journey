@@ -84,19 +84,19 @@ export default function App() {
         <div role="status" aria-live="polite" dir="rtl" className="min-h-[55vh] flex flex-col items-center justify-center gap-3 p-6 text-center">
           <span className="h-8 w-8 animate-spin rounded-full border-4 border-amber-600 border-t-transparent" />
           <p className="font-bold">در حال آماده‌سازی محتوای آموزشی…</p>
-          {syncProgress && syncProgress.total > 0 && <p className="text-sm text-slate-600">{syncProgress.done} از {syncProgress.total} فایل</p>}
-        </div>
-      )}
-
-      {syncProgress && syncProgress.total > 0 && (
-        <div dir="rtl" className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2.5 text-xs font-bold shadow-md flex items-center justify-between gap-3 sticky top-0 z-50 animate-pulse">
-          <div className="flex items-center gap-2">
-            <span className="inline-block w-2.5 h-2.5 rounded-full bg-amber-300 animate-ping" />
-            <span>در حال آماده‌سازی و بارگذاری آفلاین ۶۶ فایل دانشنامه‌ای سوره قصص... ({syncProgress.done} از {syncProgress.total})</span>
-          </div>
-          <span className="font-mono text-amber-200">
-            {Math.round((syncProgress.done / syncProgress.total) * 100)}%
-          </span>
+          {syncProgress && syncProgress.total > 0 && (
+            <div className="w-full max-w-xs space-y-1.5">
+              <div className="h-2 w-full rounded-full bg-amber-100 dark:bg-slate-800 overflow-hidden">
+                <div
+                  className="h-full bg-amber-600 transition-all duration-150"
+                  style={{ width: `${Math.round((syncProgress.done / syncProgress.total) * 100)}%` }}
+                />
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                {syncProgress.done} از {syncProgress.total} فایل ({Math.round((syncProgress.done / syncProgress.total) * 100)}٪)
+              </p>
+            </div>
+          )}
         </div>
       )}
 
@@ -104,7 +104,6 @@ export default function App() {
         <UnitsPage
           key={syncVersion}
           syncVersion={syncVersion}
-          onBack={() => {}}
           onStartStage={handleStartStage}
         />
       )}

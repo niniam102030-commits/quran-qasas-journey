@@ -18,7 +18,7 @@ interface UnitInfo extends UnitProgressRow {
 
 interface Props {
   onStartStage: (unitId: string, stage: number) => void;
-  onBack: () => void;
+  onBack?: () => void;
   syncVersion?: number;
 }
 
@@ -102,13 +102,15 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
       {/* Top App Bar */}
       <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
         <div className="flex items-center gap-2">
-          <button
-            onClick={onBack}
-            className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 active:scale-95 transition-transform"
-            title="بازگشت"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+          {onBack && (
+            <button
+              onClick={onBack}
+              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 active:scale-95 transition-transform"
+              title="بازگشت"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+          )}
           <div>
             <h1 className="text-base font-extrabold text-[#8a5b29] dark:text-amber-400">
               واحدهای سوره قصص

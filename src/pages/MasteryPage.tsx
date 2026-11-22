@@ -24,9 +24,16 @@ const CONFUSION_LABELS: Record<string, string> = {
   random: "سایر اشتباهات گزینه‌ای",
 };
 
+interface UnitDisplayRow extends UnitProgressRow {
+  page?: number;
+  half?: string;
+  verseFrom?: number;
+  verseTo?: number;
+}
+
 export default function MasteryPage({ onBack, onSelectUnit }: Props) {
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
-  const [unitProgress, setUnitProgress] = useState<UnitProgressRow[]>([]);
+  const [unitProgress, setUnitProgress] = useState<UnitDisplayRow[]>([]);
   const [confusions, setConfusions] = useState<{ tag: string; count: number }[]>([]);
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
@@ -44,7 +51,32 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
         const map = new Map<string, StoredCard>();
         allCards.forEach((c) => map.set(c.key, c));
         setCardsMap(map);
-        setUnitProgress(prog.sort((a, b) => a.unitId.localeCompare(b.unitId)));
+
+        let orderById = new Map<string, number>();
+        let infoById = new Map<string, { page: number; half: string; verseFrom: number; verseTo: number }>();
+        try {
+          const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+          if (manifestRes.ok) {
+            const manifest = (await manifestRes.json()) as {
+              units: { id: string; order: number; page: number; half: string; verseFrom: number; verseTo: number }[];
+            };
+            orderById = new Map(manifest.units.map((u) => [u.id, u.order]));
+            infoById = new Map(manifest.units.map((u) => [u.id, u]));
+          }
+        } catch {
+          // fallback to unitId ordering
+        }
+
+        const sortedProg: UnitDisplayRow[] = prog
+          .slice()
+          .sort(
+            (a, b) =>
+              (orderById.get(a.unitId) ?? Number.MAX_SAFE_INTEGER) -
+                (orderById.get(b.unitId) ?? Number.MAX_SAFE_INTEGER) ||
+              a.unitId.localeCompare(b.unitId),
+          )
+          .map((u) => ({ ...u, ...infoById.get(u.unitId) }));
+        setUnitProgress(sortedProg);
 
         // Aggregate top confusions
         const counts = new Map<string, number>();
@@ -230,11 +262,13 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
               return (
                 <div
                   key={u.unitId}
-                  onClick={() => onSelectUnit?.(u.unitId)}
+                  onClick={() => {
+                    if (u.unlocked) onSelectUnit?.(u.unitId);
+                  }}
                   className={`flex items-center justify-between p-3 rounded-2xl border transition-all ${
                     u.unlocked
                       ? "bg-slate-50 dark:bg-slate-850 hover:bg-amber-50/50 cursor-pointer border-slate-200 dark:border-slate-700"
-                      : "opacity-60 bg-slate-100/50 dark:bg-slate-900/50 border-dashed border-slate-200 dark:border-slate-800"
+                      : "opacity-60 bg-slate-100/50 dark:bg-slate-900/50 border-dashed border-slate-200 dark:border-slate-800 cursor-not-allowed"
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
@@ -251,7 +285,9 @@ export default function MasteryPage({ onBack, onSelectUnit }: Props) {
                     </div>
                     <div>
                       <div className="text-xs font-bold text-slate-800 dark:text-slate-200">
-                        واحد {toFarsiNum(idx + 1)} ({u.unitId})
+                        {u.page
+                          ? `صفحه ${toFarsiNum(u.page)} (${u.half === "a" ? "نیمه اول" : "نیمه دوم"}) — آیات ${toFarsiNum(u.verseFrom ?? 1)} تا ${toFarsiNum(u.verseTo ?? 1)}`
+                          : `واحد ${toFarsiNum(idx + 1)} (${u.unitId})`}
                       </div>
                       <div className="text-[11px] text-slate-500">
                         {u.unlocked ? `مرحله جاری: ${toFarsiNum(u.currentStage)} از ۸` : "قفل"}

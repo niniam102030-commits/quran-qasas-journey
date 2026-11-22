@@ -57,9 +57,10 @@ export default function SettingsPage({ onBack }: Props) {
   // Export JSON backup of user progress
   const handleExportBackup = async () => {
     try {
-      const [cards, attempts, unitProgress] = await Promise.all([
+      const [cards, attempts, confusions, unitProgress] = await Promise.all([
         ldb.cards.toArray(),
         ldb.attempts.toArray(),
+        ldb.confusions.toArray(),
         ldb.unitProgress.toArray(),
       ]);
 
@@ -69,6 +70,7 @@ export default function SettingsPage({ onBack }: Props) {
         exportedAt: new Date().toISOString(),
         cards,
         attempts,
+        confusions,
         unitProgress,
       };
 
@@ -96,9 +98,10 @@ export default function SettingsPage({ onBack }: Props) {
         throw new Error("قالب فایل پشتیبان نامعتبر است.");
       }
 
-      await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.unitProgress, async () => {
+      await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, async () => {
         if (data.cards?.length) await ldb.cards.bulkPut(data.cards);
         if (data.attempts?.length) await ldb.attempts.bulkPut(data.attempts);
+        if (data.confusions?.length) await ldb.confusions.bulkPut(data.confusions);
         if (data.unitProgress?.length) await ldb.unitProgress.bulkPut(data.unitProgress);
       });
 
@@ -112,18 +115,30 @@ export default function SettingsPage({ onBack }: Props) {
   // Full progress reset with double confirmation
   const handleResetProgress = async () => {
     try {
+      let firstUnitId: string | null = null;
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+        if (res.ok) {
+          const manifest = (await res.json()) as { units: { id: string; order: number }[] };
+          firstUnitId = manifest.units.slice().sort((a, b) => a.order - b.order)[0]?.id ?? null;
+        }
+      } catch {
+        // fallback below
+      }
+
       await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, async () => {
         await ldb.cards.clear();
         await ldb.attempts.clear();
         await ldb.confusions.clear();
         // Reset all units, unlock only unit 1
-        const units = await ldb.unitProgress.toArray();
-        for (let i = 0; i < units.length; i++) {
-          units[i].unlocked = i === 0;
-          units[i].currentStage = 1;
-          units[i].stagePassed = {};
-          units[i].mastered = false;
-          units[i].updatedAt = Date.now();
+        const units = (await ldb.unitProgress.toArray()).sort((a, b) => a.unitId.localeCompare(b.unitId));
+        const unlockId = firstUnitId ?? units[0]?.unitId;
+        for (const u of units) {
+          u.unlocked = u.unitId === unlockId;
+          u.currentStage = 1;
+          u.stagePassed = {};
+          u.mastered = false;
+          u.updatedAt = Date.now();
         }
         await ldb.unitProgress.bulkPut(units);
       });

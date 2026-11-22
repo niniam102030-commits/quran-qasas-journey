@@ -4,6 +4,7 @@ import { useMemo, useRef, useState, useEffect } from "react";
 import { HelpCircle, Check, RotateCcw } from "lucide-react";
 import { ldb, type QuestionRow } from "../../db/learningDb";
 import { labelOption } from "./questionOptionLabel";
+import { shuffleItems, shuffleMatchRight, shuffleOrderBank } from "./questionShuffle";
 
 interface Item {
   id: string;
@@ -18,7 +19,9 @@ export type RenderableQuestion = QuestionRow & {
   promptFa?: string;
   stem?: {
     ar?: string;
+    arText?: string;
     fa?: string;
+    faTemplate?: string;
     verse?: number;
     num?: number;
     hiddenIdx?: number[];
@@ -27,6 +30,7 @@ export type RenderableQuestion = QuestionRow & {
   options?: Item[];
   left?: Item[];
   right?: Item[];
+  pairs?: [string, string][];
   bank?: Item[];
   answer?: unknown;
   explanationFa?: string;
@@ -38,21 +42,33 @@ interface Props {
   onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number }) => void;
 }
 
-const arStyle: React.CSSProperties = {
-  fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif",
-  direction: "rtl",
-  fontSize: "1.75rem",
-  lineHeight: 2.4,
-};
+function getArabicFontSize(): number {
+  if (typeof window === "undefined") return 28;
+  const raw = Number(localStorage.getItem("quran_font_size") || 28);
+  if (!Number.isFinite(raw)) return 28;
+  return Math.min(40, Math.max(22, raw));
+}
+
+function makeArStyle(fontSizePx: number): React.CSSProperties {
+  return {
+    fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif",
+    direction: "rtl",
+    fontSize: `${fontSizePx}px`,
+    lineHeight: 2.3,
+  };
+}
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-const label = (o: Item, rangeLabels: Record<string, string>) => {
+const isArabicItem = (o: Item, rangeLabels: Record<string, string>) =>
+  Boolean(o.ar || o.wordRange || (o.words?.length && rangeLabels[o.id]));
+
+const label = (o: Item, rangeLabels: Record<string, string>, arStyle: React.CSSProperties) => {
   const text = labelOption(o, rangeLabels);
-  return o.ar ? (
+  return isArabicItem(o, rangeLabels) ? (
     <span style={arStyle} className="text-slate-900 dark:text-slate-100">{text}</span>
   ) : (
     <span className="text-sm font-semibold">{text}</span>
@@ -65,6 +81,12 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
   const [hint, setHint] = useState(false);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [resolvedLabels, setResolvedLabels] = useState<Record<string, string>>({});
+  const [shuffleSalt] = useState(() => Math.floor(Math.random() * 0xffff));
+  const arStyle = useMemo(() => makeArStyle(getArabicFontSize()), []);
+  const shuffledOptions = useMemo(
+    () => shuffleItems(q.options ?? [], `choice:${q.id}:${shuffleSalt}`),
+    [q.id, q.options, shuffleSalt],
+  );
 
   useEffect(() => {
     let active = true;
@@ -148,7 +170,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
       {/* Shapes */}
       {q.shape === "choice" && (
         <div className="grid grid-cols-1 gap-2.5">
-          {q.options?.map((o) => {
+          {shuffledOptions.map((o) => {
             const isSelected = selectedChoice === o.id;
             return (
               <button
@@ -161,7 +183,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
                     : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700/80 hover:border-amber-400 hover:bg-amber-50/30"
                 } ${locked ? "cursor-default" : "cursor-pointer"}`}
               >
-                <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels)}</div>
+                <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels, arStyle)}</div>
                 <div
                   className={`w-5 h-5 rounded-full border-2 ml-2 flex items-center justify-center shrink-0 ${
                     isSelected
@@ -182,6 +204,8 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
           q={q}
           locked={locked}
           rangeLabels={resolvedLabels}
+          arStyle={arStyle}
+          shuffleSalt={shuffleSalt}
           onDone={(p) => onSubmit(p, meta())}
           markChanged={() => (changed.current = true)}
         />
@@ -192,6 +216,8 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
           q={q}
           locked={locked}
           rangeLabels={resolvedLabels}
+          arStyle={arStyle}
+          shuffleSalt={shuffleSalt}
           onDone={(a) => onSubmit(a, meta())}
           markChanged={() => (changed.current = true)}
         />
@@ -202,6 +228,8 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
           q={q}
           locked={locked}
           rangeLabels={resolvedLabels}
+          arStyle={arStyle}
+          shuffleSalt={shuffleSalt}
           onDone={(m) => onSubmit(m, meta())}
           markChanged={() => (changed.current = true)}
         />
@@ -237,15 +265,25 @@ function MatchView({
   onDone,
   markChanged,
   rangeLabels,
+  arStyle,
+  shuffleSalt,
 }: {
   q: RenderableQuestion;
   locked: boolean;
   rangeLabels: Record<string, string>;
+  arStyle: React.CSSProperties;
+  shuffleSalt: number;
   onDone: (p: [string, string][]) => void;
   markChanged: () => void;
 }) {
   const [pairs, setPairs] = useState<[string, string][]>([]);
   const [leftSel, setLeftSel] = useState<string | null>(null);
+
+  const leftItems = useMemo(() => q.left ?? [], [q.left]);
+  const rightItems = useMemo(
+    () => shuffleMatchRight(leftItems, q.right ?? [], q.pairs, `match:${q.id}:${shuffleSalt}`),
+    [leftItems, q.right, q.pairs, q.id, shuffleSalt],
+  );
 
   useEffect(() => {
     setPairs([]);
@@ -254,7 +292,7 @@ function MatchView({
 
   const usedL = new Set(pairs.map((p) => p[0]));
   const usedR = new Set(pairs.map((p) => p[1]));
-  const need = q.left?.length ?? 0;
+  const need = leftItems.length;
 
   const pickRight = (rid: string) => {
     if (!leftSel) return;
@@ -269,7 +307,7 @@ function MatchView({
       <div className="grid grid-cols-2 gap-2.5">
         {/* Left column */}
         <div className="space-y-2">
-          {q.left?.map((l) => {
+          {leftItems.map((l) => {
             const isUsed = usedL.has(l.id);
             const isSelected = leftSel === l.id;
             return (
@@ -285,7 +323,7 @@ function MatchView({
                     : "border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1e2738] hover:border-amber-300"
                 }`}
               >
-                {label(l, rangeLabels)}
+                {label(l, rangeLabels, arStyle)}
               </button>
             );
           })}
@@ -293,7 +331,7 @@ function MatchView({
 
         {/* Right column */}
         <div className="space-y-2">
-          {q.right?.map((r) => {
+          {rightItems.map((r) => {
             const isUsed = usedR.has(r.id);
             return (
               <button
@@ -308,7 +346,7 @@ function MatchView({
                     : "border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-[#1e2738]/70"
                 }`}
               >
-                {label(r, rangeLabels)}
+                {label(r, rangeLabels, arStyle)}
               </button>
             );
           })}
@@ -340,15 +378,23 @@ function OrderView({
   onDone,
   markChanged,
   rangeLabels,
+  arStyle,
+  shuffleSalt,
 }: {
   q: RenderableQuestion;
   locked: boolean;
   rangeLabels: Record<string, string>;
+  arStyle: React.CSSProperties;
+  shuffleSalt: number;
   onDone: (a: string[]) => void;
   markChanged: () => void;
 }) {
   const [picked, setPicked] = useState<string[]>([]);
-  const bank = useMemo(() => q.bank ?? [], [q]);
+  const expectedCount = Array.isArray(q.answer) ? (q.answer as string[]).length : (q.bank?.length ?? 0);
+  const bank = useMemo(
+    () => shuffleOrderBank(q.bank ?? [], Array.isArray(q.answer) ? (q.answer as string[]) : undefined, `order:${q.id}:${shuffleSalt}`),
+    [q.bank, q.answer, q.id, shuffleSalt],
+  );
   const byId = useMemo(() => new Map(bank.map((b) => [b.id, b])), [bank]);
 
   useEffect(() => {
@@ -366,13 +412,15 @@ function OrderView({
     setPicked([...picked, id]);
   };
 
+  const canSubmit = !locked && picked.length > 0 && (expectedCount === 0 || picked.length >= expectedCount);
+
   return (
     <div className="space-y-4">
       {/* Answer Slots Box */}
       <div className="min-h-[5.5rem] p-3 rounded-3xl bg-[#f7f2e4]/70 dark:bg-slate-900/60 border-2 border-dashed border-[#d9ccb2] dark:border-slate-700 flex flex-wrap gap-2 items-center justify-start">
         {picked.length === 0 ? (
           <span className="text-xs text-slate-400 mx-auto">
-            قطعات را به ترتیب درست از کادر پایین لمس کنید
+            قطعات را به ترتیب درست از کادر پایین لمس کنید ({toFarsiNum(expectedCount)} قطعه)
           </span>
         ) : (
           picked.map((id) => {
@@ -385,7 +433,7 @@ function OrderView({
                 onClick={() => removePicked(id)}
                 className="py-2 px-3 rounded-2xl bg-white dark:bg-slate-800 border-2 border-amber-300 dark:border-amber-700 shadow-sm active:scale-95 transition-transform"
               >
-                {label(item, rangeLabels)}
+                {label(item, rangeLabels, arStyle)}
               </button>
             );
           })
@@ -403,18 +451,35 @@ function OrderView({
               onClick={() => addPicked(b.id)}
               className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
             >
-              {label(b, rangeLabels)}
+              {label(b, rangeLabels, arStyle)}
             </button>
           ))}
       </div>
 
+      {picked.length > 0 && !locked && (
+        <div className="flex justify-center">
+          <button
+            onClick={() => {
+              setPicked([]);
+              markChanged();
+            }}
+            className="text-xs text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 flex items-center gap-1 py-1 px-3 rounded-lg hover:bg-black/5"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>پاک‌کردن و چیدن دوباره</span>
+          </button>
+        </div>
+      )}
+
       {/* Action Check button for order */}
       <button
-        disabled={locked || picked.length === 0}
+        disabled={!canSubmit}
         onClick={() => onDone(picked)}
         className="w-full py-3.5 px-6 rounded-2xl font-bold text-white bg-[#b37e3d] hover:bg-[#9d6b2f] disabled:opacity-40 disabled:cursor-not-allowed shadow-md shadow-amber-900/10 active:scale-[0.99] transition-all"
       >
-        بررسی ترتیب
+        {expectedCount > 0 && picked.length < expectedCount
+          ? `بررسی ترتیب (${toFarsiNum(picked.length)} از ${toFarsiNum(expectedCount)} قطعه)`
+          : "بررسی ترتیب"}
       </button>
     </div>
   );
@@ -426,22 +491,48 @@ function ClozeView({
   onDone,
   markChanged,
   rangeLabels,
+  arStyle,
+  shuffleSalt,
 }: {
   q: RenderableQuestion;
   locked: boolean;
   rangeLabels: Record<string, string>;
+  arStyle: React.CSSProperties;
+  shuffleSalt: number;
   onDone: (m: Record<string, string>) => void;
   markChanged: () => void;
 }) {
   const gaps = useMemo(() => Object.keys((q.answer as Record<string, string>) ?? {}), [q.answer]);
   const [filled, setFilled] = useState<Record<string, string>>({});
   const [activeGap, setActiveGap] = useState<string | null>(gaps[0] ?? null);
+  const [verseWords, setVerseWords] = useState<{ i: number; ar: string }[]>([]);
+  const shuffledBank = useMemo(
+    () => shuffleItems(q.bank ?? [], `cloze:${q.id}:${shuffleSalt}`),
+    [q.bank, q.id, shuffleSalt],
+  );
   const byId = useMemo(() => new Map((q.bank ?? []).map((b) => [b.id, b])), [q.bank]);
 
   useEffect(() => {
     setFilled({});
     setActiveGap(gaps[0] ?? null);
   }, [q.id, gaps]);
+
+  useEffect(() => {
+    let active = true;
+    const verseNum = q.stem?.verse;
+    if (!verseNum || q.type === "CLOZE_FA") {
+      setVerseWords([]);
+      return () => { active = false; };
+    }
+    ldb.baseVerses.get(verseNum).then((verse) => {
+      if (!active) return;
+      const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
+      setVerseWords(words);
+    }).catch(() => {
+      if (active) setVerseWords([]);
+    });
+    return () => { active = false; };
+  }, [q.id, q.stem?.verse, q.type]);
 
   const used = new Set(Object.values(filled));
 
@@ -465,48 +556,83 @@ function ClozeView({
     markChanged();
   };
 
+  const renderGapButton = (g: string, idx: number, inline = false) => {
+    const filledId = filled[g];
+    const item = filledId ? byId.get(filledId) : null;
+    const isActive = activeGap === g;
+    return (
+      <button
+        key={g}
+        disabled={locked}
+        onClick={() => (filledId ? clearGap(g) : setActiveGap(g))}
+        className={`${inline ? "inline-flex mx-1 align-middle" : "flex"} min-w-[4.5rem] py-1.5 px-3 rounded-2xl border-2 transition-all items-center justify-center ${
+          item
+            ? "bg-amber-100 border-amber-400 text-amber-900 dark:bg-amber-950 dark:border-amber-700 dark:text-amber-200"
+            : isActive
+            ? "border-amber-500 bg-white dark:bg-slate-800 ring-2 ring-amber-300 dark:ring-amber-900"
+            : "border-dashed border-slate-300 dark:border-slate-700 bg-white/70 dark:bg-slate-800/50"
+        }`}
+      >
+        {item ? (
+          label(item, rangeLabels, arStyle)
+        ) : (
+          <span className="text-xs font-sans text-slate-400">
+            جای خالی {toFarsiNum(idx + 1)}
+          </span>
+        )}
+      </button>
+    );
+  };
+
+  const canRenderInlineArabic =
+    verseWords.length > 0 &&
+    gaps.length > 0 &&
+    gaps.every((g) => verseWords.some((w) => String(w.i) === g));
+
+  const faParts = q.stem?.faTemplate ? q.stem.faTemplate.split("___") : null;
+  const canRenderInlineFa = Boolean(faParts && faParts.length - 1 === gaps.length);
+
   return (
     <div className="space-y-4">
       {/* Gap Fillers View */}
       <div className="p-4 rounded-3xl bg-[#fcf9f2] dark:bg-slate-900 border border-[#e8dfcd] dark:border-slate-800 space-y-3">
         <div className="text-xs font-semibold text-slate-500">
-          جاهای خالی آیه را با لمس گزینه‌های زیر پر کنید:
+          جاهای خالی را با لمس گزینه‌های زیر پر کنید:
         </div>
-        <div className="flex flex-wrap gap-2.5 items-center justify-center">
-          {gaps.map((g, idx) => {
-            const filledId = filled[g];
-            const item = filledId ? byId.get(filledId) : null;
-            const isActive = activeGap === g;
 
-            return (
-              <button
-                key={g}
-                disabled={locked}
-                onClick={() => (filledId ? clearGap(g) : setActiveGap(g))}
-                className={`min-w-[4.5rem] py-2 px-3 rounded-2xl border-2 transition-all flex items-center justify-center ${
-                  item
-                    ? "bg-amber-100 border-amber-400 text-amber-900 dark:bg-amber-950 dark:border-amber-700 dark:text-amber-200"
-                    : isActive
-                    ? "border-amber-500 bg-white dark:bg-slate-800 ring-2 ring-amber-300 dark:ring-amber-900"
-                    : "border-dashed border-slate-300 dark:border-slate-700 bg-white/70 dark:bg-slate-800/50"
-                }`}
-              >
-                {item ? (
-                  label(item, rangeLabels)
-                ) : (
-                  <span className="text-xs text-slate-400">
-                    جای خالی {toFarsiNum(idx + 1)}
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
+        {canRenderInlineArabic ? (
+          <div style={arStyle} className="text-right text-slate-900 dark:text-slate-100 leading-[2.6]">
+            {verseWords.map((w) => {
+              const gapIdx = gaps.indexOf(String(w.i));
+              if (gapIdx !== -1) {
+                return renderGapButton(String(w.i), gapIdx, true);
+              }
+              return (
+                <span key={w.i} className="inline-block mx-1">
+                  {w.ar}
+                </span>
+              );
+            })}
+          </div>
+        ) : canRenderInlineFa && faParts ? (
+          <div className="text-sm sm:text-base leading-loose text-slate-800 dark:text-slate-100 font-medium">
+            {faParts.map((part, idx) => (
+              <span key={idx}>
+                {part}
+                {idx < gaps.length && renderGapButton(gaps[idx], idx, true)}
+              </span>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap gap-2.5 items-center justify-center">
+            {gaps.map((g, idx) => renderGapButton(g, idx, false))}
+          </div>
+        )}
       </div>
 
       {/* Word Bank */}
       <div className="flex flex-wrap gap-2 justify-center pt-1">
-        {(q.bank ?? [])
+        {shuffledBank
           .filter((b) => !used.has(b.id))
           .map((b) => (
             <button
@@ -515,7 +641,7 @@ function ClozeView({
               onClick={() => place(b.id)}
               className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
             >
-              {label(b, rangeLabels)}
+              {label(b, rangeLabels, arStyle)}
             </button>
           ))}
       </div>
