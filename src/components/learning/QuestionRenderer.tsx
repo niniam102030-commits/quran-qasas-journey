@@ -49,6 +49,7 @@ interface Props {
 function makeArStyle(fontSizePx: number): React.CSSProperties {
   return {
     fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif",
+    fontFeatureSettings: "normal",
     direction: "rtl",
     fontSize: `${fontSizePx}px`,
     lineHeight: 2.3,
@@ -186,12 +187,12 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
                   playSfx("snap-click");
                   handleChoiceSelect(o.id);
                 }}
-                className={`w-full rounded-2xl p-4 text-right transition-all border-2 active:scale-[0.99] flex items-center justify-between min-h-[3.75rem] ${
+                className={`w-full rounded-2xl p-4 text-right transition-all border-2 border-b-4 active:border-b-2 active:translate-y-[2px] flex items-center justify-between min-h-[3.75rem] ${
                   isEliminated
-                    ? "opacity-35 line-through border-dashed border-slate-300 dark:border-slate-700 bg-slate-100/50 dark:bg-slate-900/40 cursor-not-allowed"
+                    ? "opacity-35 line-through border-dashed border-b-2 border-slate-300 dark:border-slate-700 bg-slate-100/50 dark:bg-slate-900/40 cursor-not-allowed"
                     : isSelected
-                    ? "bg-amber-100/70 border-amber-500 dark:bg-amber-950/40 dark:border-amber-500 shadow-sm"
-                    : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700/80 hover:border-amber-400 hover:bg-amber-50/30"
+                    ? "bg-teal-50/90 border-[#00A896] border-b-[#028090] dark:bg-teal-950/40 dark:border-teal-500 shadow-sm"
+                    : "bg-white dark:bg-[#1C2541] border-[#E5DEC9] dark:border-[#3A506B] hover:border-[#00A896] hover:bg-teal-50/30"
                 } ${locked ? "cursor-default" : isEliminated ? "" : "cursor-pointer"}`}
               >
                 <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels, arStyle)}</div>

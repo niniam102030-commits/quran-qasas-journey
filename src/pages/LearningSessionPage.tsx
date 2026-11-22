@@ -322,12 +322,14 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           <ArrowRight className="w-5 h-5" />
         </button>
 
-        {/* Linear Progress Bar */}
-        <div className="flex-1 h-3 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+        {/* Linear Progress Bar (Duolingo glossy chunky style) */}
+        <div className="flex-1 h-4 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden p-0.5">
           <div
-            className="h-full bg-amber-500 rounded-full transition-all duration-300 ease-out"
+            className="h-full bg-gradient-to-l from-[#10B981] to-[#00A896] rounded-full transition-all duration-300 ease-out relative"
             style={{ width: `${progressPercent}%` }}
-          />
+          >
+            <div className="absolute inset-x-2 top-0.5 h-1 rounded-full bg-white/35" />
+          </div>
         </div>
 
         <div className="text-xs font-bold text-slate-500 dark:text-slate-400 shrink-0">
@@ -420,10 +422,10 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
             <button
               disabled={s.status !== "running" || s.lastResult === null}
               onClick={() => void s.next()}
-              className={`w-full sm:w-auto min-w-[7rem] py-3.5 px-6 rounded-2xl font-bold text-white shadow-md active:scale-95 transition-all text-sm shrink-0 ${
+              className={`w-full sm:w-auto min-w-[8rem] py-3.5 px-6 rounded-2xl font-black text-white border-b-4 active:border-b-0 active:translate-y-1 transition-all text-sm shrink-0 ${
                 s.lastResult.correct
-                  ? "bg-emerald-600 hover:bg-emerald-700 shadow-emerald-900/20"
-                  : "bg-rose-600 hover:bg-rose-700 shadow-rose-900/20"
+                  ? "bg-[#10B981] hover:brightness-105 border-[#047857]"
+                  : "bg-[#EF4444] hover:brightness-105 border-[#B91C1C]"
               }`}
             >
               ادامه

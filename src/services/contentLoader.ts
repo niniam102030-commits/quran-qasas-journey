@@ -20,7 +20,7 @@ async function getJson<T>(rel: string): Promise<T> {
 }
 
 export interface SyncResult { updated: boolean; contentHash: string; units: number }
-const CONTENT_SYNC_VERSION = 2;
+const CONTENT_SYNC_VERSION = 3;
 
 export async function syncContent(onProgress?: (done: number, total: number) => void): Promise<SyncResult> {
   const manifest = await getJson<Manifest>("manifest.json");
