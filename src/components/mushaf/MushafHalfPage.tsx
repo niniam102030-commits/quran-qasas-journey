@@ -92,7 +92,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
       });
       setPinnedMistakes((prev) => new Set(prev).add(wordId));
       await loadStudyOverlay();
-      setPinNotice("نقطه خطای تلاوت ثبت شد و به صف مرور هوشمند FSRS اضافه گردید.");
+      setPinNotice("نقطه خطای تلاوت ثبت شد و به صف مرور هوشمند اضافه گردید.");
       setTimeout(() => setPinNotice(null), 3000);
     } catch {
       setPinNotice("خطا در ثبت نقطه خطا.");
@@ -411,7 +411,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                       className="py-1 px-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 text-[11px] font-bold flex items-center gap-1 transition-colors"
                     >
                       <AlertCircle className="w-3.5 h-3.5" />
-                      <span>ثبت خطا در تلاوت (مرور FSRS)</span>
+                      <span>ثبت خطا در تلاوت (مرور هوشمند)</span>
                     </button>
                   </div>
 
