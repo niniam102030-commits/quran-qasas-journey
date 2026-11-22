@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Android build artifacts
+android/.gradle
+android/build
+android/app/build
+android/local.properties
+release-apk
+
 # Editor directories and files
 .acl-recovery
 .vscode/*

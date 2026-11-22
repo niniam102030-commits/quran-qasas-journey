@@ -1,9 +1,12 @@
 // src/components/mushaf/MushafHalfPage.tsx
-import { useState, useEffect, useMemo } from "react";
-import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints } from "lucide-react";
-import { ldb } from "../../db/learningDb";
+import { useState, useEffect, useMemo, useCallback } from "react";
+import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints, Flame, AlertCircle } from "lucide-react";
+import { ldb, type LexiconRow, type StoredCard } from "../../db/learningDb";
+import { newCard, review } from "../../learning/cardScheduler";
+import { skillLevel } from "../../learning/mastery";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
 import VerseAudioPlayer from "../audio/VerseAudioPlayer";
+import SelfReciteRecorder from "../audio/SelfReciteRecorder";
 
 interface Word {
   id: string;
@@ -38,10 +41,78 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [activeAudioVerse, setActiveAudioVerse] = useState<number | null>(null);
   const [focusMode, setFocusMode] = useState<boolean>(false);
+  const [showHeatmap, setShowHeatmap] = useState<boolean>(true);
+  const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
+  const [lexiconMap, setLexiconMap] = useState<Map<string, LexiconRow>>(new Map());
+  const [pinnedMistakes, setPinnedMistakes] = useState<Set<string>>(new Set());
+  const [pinNotice, setPinNotice] = useState<string | null>(null);
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
 
   const allWordIds = useMemo(() => verses.flatMap((v) => v.words.map((w) => w.id)), [verses]);
   const verseNumsList = useMemo(() => verses.map((v) => v.n), [verses]);
+
+  const loadStudyOverlay = useCallback(async () => {
+    try {
+      const [allCards, unitLex, allConfusions] = await Promise.all([
+        ldb.cards.toArray(),
+        ldb.lexicon.where("unitId").equals(unitId).toArray(),
+        ldb.confusions.toArray(),
+      ]);
+      setCardsMap(new Map(allCards.map((c) => [c.key, c])));
+      setLexiconMap(new Map(unitLex.map((l) => [l.wordId, l])));
+      setPinnedMistakes(
+        new Set(allConfusions.filter((c) => c.target.startsWith("w:")).map((c) => c.target.slice(2))),
+      );
+    } catch {
+      // ignore overlay load error
+    }
+  }, [unitId]);
+
+  useEffect(() => {
+    void loadStudyOverlay();
+  }, [loadStudyOverlay]);
+
+  const handlePinRecitationMistake = async (wordId: string, verseNum: number) => {
+    try {
+      const now = new Date();
+      const wKey = `w:${wordId}`;
+      const vrKey = `vr:${verseNum}`;
+      const [wCard, vrCard] = await Promise.all([ldb.cards.get(wKey), ldb.cards.get(vrKey)]);
+      await ldb.transaction("rw", [ldb.cards, ldb.confusions], async () => {
+        await ldb.cards.bulkPut([
+          review(wCard ?? newCard(wKey, now), "again", now),
+          review(vrCard ?? newCard(vrKey, now), "again", now),
+        ]);
+        await ldb.confusions.add({
+          qid: `mushaf_pin:${wordId}`,
+          target: wKey,
+          chosenTag: "neighbor_word",
+          at: now.getTime(),
+        });
+      });
+      setPinnedMistakes((prev) => new Set(prev).add(wordId));
+      await loadStudyOverlay();
+      setPinNotice("نقطه خطای تلاوت ثبت شد و به صف مرور هوشمند FSRS اضافه گردید.");
+      setTimeout(() => setPinNotice(null), 3000);
+    } catch {
+      setPinNotice("خطا در ثبت نقطه خطا.");
+    }
+  };
+
+  const getWordHeatClass = (wordId: string): string => {
+    if (!showHeatmap) return "";
+    const card = cardsMap.get(`w:${wordId}`);
+    if (pinnedMistakes.has(wordId) || (card && card.state > 0 && (card.lapses > 0 || card.stability < 2))) {
+      return "underline decoration-rose-500 decoration-2 underline-offset-8";
+    }
+    if (card && skillLevel(card) >= 3) {
+      return "underline decoration-emerald-500/70 decoration-2 underline-offset-8";
+    }
+    if (card && card.state > 0) {
+      return "underline decoration-amber-400/80 decoration-2 underline-offset-8";
+    }
+    return "";
+  };
 
   useEffect(() => {
     async function loadVerses() {
@@ -165,6 +236,19 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
 
           <button
             type="button"
+            onClick={() => setShowHeatmap((h) => !h)}
+            title={showHeatmap ? "مخفی‌کردن نقشه حرارتی تسلط" : "نمایش نقشه حرارتی تسلط (سبز/زرد/قرمز)"}
+            className={`p-2 rounded-xl transition-colors ${
+              showHeatmap
+                ? "bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300"
+                : "bg-black/5 dark:bg-white/5 text-slate-500"
+            }`}
+          >
+            <Flame className="w-4 h-4" />
+          </button>
+
+          <button
+            type="button"
             onClick={() => setFocusMode((f) => !f)}
             title={focusMode ? "خروج از حالت تمرکز" : "حالت تمرکز تمام‌صفحه"}
             className="p-2 rounded-xl bg-black/5 dark:bg-white/5 text-slate-600 dark:text-slate-300 hover:bg-black/10 transition-colors"
@@ -177,7 +261,10 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
       {/* Main Quran Mushaf Content */}
       <main className="flex-1 max-w-2xl w-full mx-auto p-4 sm:p-6 pb-28 space-y-4">
         {!loading && verseNumsList.length > 0 && (
-          <VerseAudioPlayer verses={verseNumsList} onActiveVerseChange={setActiveAudioVerse} />
+          <div className="space-y-2">
+            <VerseAudioPlayer verses={verseNumsList} onActiveVerseChange={setActiveAudioVerse} />
+            <SelfReciteRecorder />
+          </div>
         )}
 
         {!loading && mode !== "reading" && (
@@ -256,8 +343,8 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                           hidden
                             ? "bg-[#e2d5bd] dark:bg-slate-700 text-transparent min-w-[3rem] text-center border-b-2 border-dashed border-[#bfa57a] dark:border-slate-500"
                             : selectedWord === w.id
-                            ? "bg-amber-200/70 dark:bg-amber-900/40"
-                            : "hover:bg-amber-100/50 dark:hover:bg-white/5"
+                            ? `bg-amber-200/70 dark:bg-amber-900/40 ${getWordHeatClass(w.id)}`
+                            : `hover:bg-amber-100/50 dark:hover:bg-white/5 ${getWordHeatClass(w.id)}`
                         }`}
                       >
                         {w.ar}
@@ -285,11 +372,11 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
           </div>
         )}
 
-        {/* Translation Drawer for Selected Word/Verse */}
+        {/* Translation + Word Lexicon + Mistake Pin Drawer */}
         {selectedWord && (
-          <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-[#e6dbc5] dark:border-slate-700 shadow-sm animate-in fade-in slide-in-from-bottom-2">
-            <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100 dark:border-slate-700 text-xs font-bold text-amber-700 dark:text-amber-400">
-              <span>ترجمه استاد انصاریان</span>
+          <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-[#e6dbc5] dark:border-slate-700 shadow-sm space-y-3">
+            <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-700 text-xs font-bold text-amber-700 dark:text-amber-400">
+              <span>جزئیات واژه و ترجمه استاد انصاریان</span>
               <button
                 onClick={() => setSelectedWord(null)}
                 className="text-slate-400 hover:text-slate-600 text-xs"
@@ -299,14 +386,49 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             </div>
             {(() => {
               const currentV = verses.find((v) => v.words.some((w) => w.id === selectedWord));
-              return currentV ? (
-                <div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400 mb-1">
-                    آیه {toFarsiNum(currentV.n)}:
+              const currentW = currentV?.words.find((w) => w.id === selectedWord);
+              const lex = lexiconMap.get(selectedWord);
+              const meaningFa = (lex?.fa || lex?.meaningFa || lex?.glossFa) as string | undefined;
+              return currentV && currentW ? (
+                <div className="space-y-2.5">
+                  <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 rounded-xl bg-amber-50/70 dark:bg-slate-900/70 border border-amber-200/60 dark:border-slate-700">
+                    <div className="flex items-center gap-2">
+                      <span
+                        style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: "1.4rem" }}
+                        className="text-slate-900 dark:text-white"
+                      >
+                        {currentW.ar}
+                      </span>
+                      {meaningFa && (
+                        <span className="text-xs font-bold text-amber-900 dark:text-amber-300">
+                          ← {meaningFa}
+                        </span>
+                      )}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => void handlePinRecitationMistake(currentW.id, currentV.n)}
+                      className="py-1 px-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 text-[11px] font-bold flex items-center gap-1 transition-colors"
+                    >
+                      <AlertCircle className="w-3.5 h-3.5" />
+                      <span>ثبت خطا در تلاوت (مرور FSRS)</span>
+                    </button>
                   </div>
-                  <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-200">
-                    {currentV.fa}
-                  </p>
+
+                  {pinNotice && (
+                    <div className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
+                      {pinNotice}
+                    </div>
+                  )}
+
+                  <div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400 mb-1">
+                      آیه {toFarsiNum(currentV.n)}:
+                    </div>
+                    <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-200">
+                      {currentV.fa}
+                    </p>
+                  </div>
                 </div>
               ) : null;
             })()}

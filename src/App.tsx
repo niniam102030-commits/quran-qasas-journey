@@ -5,15 +5,18 @@ import { BottomNav, type NavTab } from "./components/layout/BottomNav";
 import { syncContent } from "./services/contentLoader";
 import UnitsPage from "./pages/UnitsPage";
 import LearningSessionPage from "./pages/LearningSessionPage";
+import AudioQuizPage from "./pages/AudioQuizPage";
 import MasteryPage from "./pages/MasteryPage";
 import SettingsPage from "./pages/SettingsPage";
 import { ChillehProfilePage } from "./pages/ChillehProfilePage";
+import MutashabihatModal from "./components/mushaf/MutashabihatModal";
 
-export type AppView = "units" | "mastery" | "profile" | "settings" | "session";
+export type AppView = "units" | "mastery" | "profile" | "settings" | "session" | "audioQuiz";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>("units");
   const [session, setSession] = useState<{ unitId: string; stage: number; remedialTag?: string | null } | null>(null);
+  const [mutashabihatVerse, setMutashabihatVerse] = useState<number | null | false>(false);
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncProgress, setSyncProgress] = useState<{ done: number; total: number } | null>(null);
   const [syncVersion, setSyncVersion] = useState<number>(0);
@@ -76,6 +79,10 @@ export default function App() {
     );
   }
 
+  if (currentView === "audioQuiz") {
+    return <AudioQuizPage onExit={() => setCurrentView("units")} />;
+  }
+
   return (
     <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 transition-colors">
       {syncError && (
@@ -111,6 +118,8 @@ export default function App() {
           key={syncVersion}
           syncVersion={syncVersion}
           onNavigateTab={(tab) => setCurrentView(tab)}
+          onStartAudioQuiz={() => setCurrentView("audioQuiz")}
+          onOpenMutashabihat={() => setMutashabihatVerse(null)}
           onStartStage={handleStartStage}
         />
       )}
@@ -120,6 +129,14 @@ export default function App() {
           onBack={() => setCurrentView("units")}
           onSelectUnit={(uid) => handleStartStage(uid, 1)}
           onStartRemedial={handleStartRemedial}
+          onOpenMutashabihat={(v) => setMutashabihatVerse(v ?? null)}
+        />
+      )}
+
+      {mutashabihatVerse !== false && (
+        <MutashabihatModal
+          initialVerse={mutashabihatVerse}
+          onClose={() => setMutashabihatVerse(false)}
         />
       )}
 

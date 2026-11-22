@@ -1,6 +1,6 @@
 // src/pages/MasteryPage.tsx
 import { useState, useEffect, useMemo } from "react";
-import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench } from "lucide-react";
+import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench, GitCompare } from "lucide-react";
 import { ldb, type StoredCard, type UnitProgressRow } from "../db/learningDb";
 import { isGoldenVerse, skillLevel } from "../learning/mastery";
 import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast";
@@ -9,6 +9,7 @@ interface Props {
   onBack: () => void;
   onSelectUnit?: (unitId: string) => void;
   onStartRemedial?: (tag?: string | null) => void;
+  onOpenMutashabihat?: (verse?: number | null) => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -33,7 +34,7 @@ interface UnitDisplayRow extends UnitProgressRow {
   verseTo?: number;
 }
 
-export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial }: Props) {
+export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onOpenMutashabihat }: Props) {
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
   const [allCardsList, setAllCardsList] = useState<StoredCard[]>([]);
   const [unitProgress, setUnitProgress] = useState<UnitDisplayRow[]>([]);
@@ -217,12 +218,24 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial }: P
             <div className="mt-4 p-4 rounded-2xl bg-amber-50/80 dark:bg-slate-800/80 border border-amber-200 dark:border-slate-700 text-xs space-y-2 animate-in fade-in">
               <div className="flex items-center justify-between font-bold text-amber-900 dark:text-amber-300">
                 <span>وضعیت مهارت‌های آیه {toFarsiNum(selectedVerse)}:</span>
-                <button
-                  onClick={() => setSelectedVerse(null)}
-                  className="text-slate-400 hover:text-slate-600"
-                >
-                  بستن
-                </button>
+                <div className="flex items-center gap-2">
+                  {onOpenMutashabihat && (
+                    <button
+                      type="button"
+                      onClick={() => onOpenMutashabihat(selectedVerse)}
+                      className="px-2 py-0.5 rounded-lg bg-amber-200/70 dark:bg-amber-900/50 text-amber-900 dark:text-amber-200 flex items-center gap-1 hover:bg-amber-200"
+                    >
+                      <GitCompare className="w-3 h-3" />
+                      <span>متشابهات این آیه</span>
+                    </button>
+                  )}
+                  <button
+                    onClick={() => setSelectedVerse(null)}
+                    className="text-slate-400 hover:text-slate-600"
+                  >
+                    بستن
+                  </button>
+                </div>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
                 {[

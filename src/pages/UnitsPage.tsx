@@ -1,7 +1,7 @@
 // src/pages/UnitsPage.tsx
 // فهرست ۲۲ واحد (نیم‌صفحه)، پیشرفت مراحل ۱ تا ۸، چراغ‌های غیرمسدودکننده، دسترسی به مصحف، تسلط و تنظیمات.
 import { useEffect, useState } from "react";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare } from "lucide-react";
 import { ldb, type UnitProgressRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel } from "../learning/mastery";
@@ -17,6 +17,8 @@ interface UnitInfo extends UnitProgressRow {
 interface Props {
   onStartStage: (unitId: string, stage: number) => void;
   onNavigateTab?: (tab: "mastery" | "settings") => void;
+  onStartAudioQuiz?: () => void;
+  onOpenMutashabihat?: () => void;
   onBack?: () => void;
   syncVersion?: number;
 }
@@ -26,7 +28,7 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function UnitsPage({ onStartStage, onNavigateTab, onBack, syncVersion }: Props) {
+export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQuiz, onOpenMutashabihat, onBack, syncVersion }: Props) {
   const [units, setUnits] = useState<UnitInfo[]>([]);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
@@ -134,6 +136,42 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onBack, syncVer
             <p className="font-bold">خطا در بارگذاری داده‌ها: {error}</p>
             <button type="button" onClick={() => void loadData()} className="mt-2 rounded-md bg-rose-700 px-3 py-2 text-white">تلاش دوباره</button>
           </div>
+        )}
+
+        {/* Quick Hifz Tools: Audio Quiz & Mutashabihat */}
+        {(onStartAudioQuiz || onOpenMutashabihat) && (
+          <section className="grid grid-cols-2 gap-2.5">
+            {onStartAudioQuiz && (
+              <button
+                type="button"
+                onClick={onStartAudioQuiz}
+                className="p-3.5 rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 hover:border-amber-400 active:scale-[0.99] shadow-sm flex items-center gap-2.5 text-right transition-all"
+              >
+                <div className="w-10 h-10 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 flex items-center justify-center shrink-0">
+                  <Headphones className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-xs font-extrabold text-slate-800 dark:text-slate-100 truncate">آزمون صوتی حفظ</div>
+                  <div className="text-[10px] text-slate-500 truncate">آیه بعدی و شماره آیه</div>
+                </div>
+              </button>
+            )}
+            {onOpenMutashabihat && (
+              <button
+                type="button"
+                onClick={onOpenMutashabihat}
+                className="p-3.5 rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 hover:border-amber-400 active:scale-[0.99] shadow-sm flex items-center gap-2.5 text-right transition-all"
+              >
+                <div className="w-10 h-10 rounded-2xl bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 flex items-center justify-center shrink-0">
+                  <GitCompare className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-xs font-extrabold text-slate-800 dark:text-slate-100 truncate">مقایسه متشابهات</div>
+                  <div className="text-[10px] text-slate-500 truncate">تفاوت آیات مشابه قصص</div>
+                </div>
+              </button>
+            )}
+          </section>
         )}
 
         {/* Non-blocking Lamps: Daily Review & Debt Warning */}
