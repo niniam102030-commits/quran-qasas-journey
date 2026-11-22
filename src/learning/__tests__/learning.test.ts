@@ -61,10 +61,26 @@ describe("mastery", () => {
 describe("sessionPlanner", () => {
   const pool = Array.from({ length: 30 }, (_, i) => q(i));
   const rev = Array.from({ length: 10 }, (_, i) => ({ ...q(100 + i), unitId: "u_p384b", stage: 8 }));
+  it("empty question pool returns an empty plan", () => {
+    expect(planStage([], [], new Map(), { size: 20 })).toEqual([]);
+  });
   it("اندازه و سهم مرور", () => {
     const plan = planStage(pool, rev, new Map(), { size: 20, seed: 7 });
     expect(plan.length).toBe(20);
     expect(plan.filter((x) => x.unitId === "u_p384b").length).toBe(4);
+  });
+  it("recent questions are avoided but used as fallback for a tiny pool", () => {
+    const tiny = [q(1), q(2), q(3), q(4)];
+    const allRecent = new Set(tiny.map((item) => item.id));
+    const plan = planStage(tiny, [], new Map(), { size: 20, recentIds: allRecent, seed: 11 });
+    expect(plan).toHaveLength(4);
+    expect(new Set(plan.map((item) => item.id))).toEqual(allRecent);
+  });
+  it("prefers unseen questions when a tiny pool contains both", () => {
+    const tiny = [q(1), q(2), q(3), q(4)];
+    const recent = new Set([tiny[0].id, tiny[1].id, tiny[2].id]);
+    const plan = planStage(tiny, [], new Map(), { size: 20, recentIds: recent, seed: 11 });
+    expect(plan.map((item) => item.id)).toEqual([tiny[3].id]);
   });
   it("قطعی با seed یکسان", () => {
     const a = planStage(pool, rev, new Map(), { seed: 3 }).map((x) => x.id);

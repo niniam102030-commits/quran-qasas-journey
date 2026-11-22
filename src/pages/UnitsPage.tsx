@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye } from "lucide-react";
 import { ldb, type UnitProgressRow } from "../db/learningDb";
-import { useLearningStore } from "../store/useLearningStore";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel } from "../learning/mastery";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
@@ -29,11 +28,11 @@ function toFarsiNum(n: number | string): string {
 }
 
 export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) {
-  const startReview = useLearningStore((state) => state.startReview);
   const [units, setUnits] = useState<UnitInfo[]>([]);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   // Sub-views
   const [mushafUnitId, setMushafUnitId] = useState<string | null>(null);
@@ -41,14 +40,18 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
   const [showSettings, setShowSettings] = useState(false);
 
   const loadData = async () => {
+    setLoading(true);
+    setError(null);
     try {
       const [prog, cards] = await Promise.all([ldb.unitProgress.toArray(), ldb.cards.toArray()]);
-      const manifestRes = await fetch("/content/manifest.json");
+      const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+      if (!manifestRes.ok) throw new Error(`فهرست محتوا: ${manifestRes.status}`);
       const manifest = await manifestRes.json();
       const info = new Map<string, { verseFrom: number; verseTo: number; page: number; half: string }>(
         manifest.units.map((u: { id: string; verseFrom: number; verseTo: number; page: number; half: string }) => [u.id, u])
       );
-      setUnits(prog.sort((a, b) => a.unitId.localeCompare(b.unitId)).map((p) => ({ ...p, ...info.get(p.unitId) })));
+      const orderById = new Map<string, number>(manifest.units.map((u: { id: string; order: number }) => [u.id, u.order] as [string, number]));
+      setUnits(prog.slice().sort((a, b) => (orderById.get(a.unitId) ?? Number.MAX_SAFE_INTEGER) - (orderById.get(b.unitId) ?? Number.MAX_SAFE_INTEGER)).map((p) => ({ ...p, ...info.get(p.unitId) })));
       setDebt(reviewDebt(cards));
       setMasteryCount({
         total: cards.length,
@@ -56,6 +59,8 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
       });
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -138,8 +143,9 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
 
       <main className="max-w-2xl mx-auto p-4 sm:p-5 space-y-4">
         {error && (
-          <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 text-rose-800 dark:text-rose-200 text-xs font-bold">
-            خطا در بارگذاری داده‌ها: {error}
+          <div role="alert" className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 text-rose-800 dark:text-rose-200 text-sm">
+            <p className="font-bold">خطا در بارگذاری داده‌ها: {error}</p>
+            <button type="button" onClick={() => void loadData()} className="mt-2 rounded-md bg-rose-700 px-3 py-2 text-white">تلاش دوباره</button>
           </div>
         )}
 
@@ -162,7 +168,7 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
               </div>
 
               <button
-                onClick={() => { void startReview(); onStartStage("", 0); }}
+                onClick={() => onStartStage("", 0)}
                 className="py-2.5 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold text-xs shadow-md shadow-amber-900/10 shrink-0 transition-all flex items-center gap-1.5"
               >
                 <Play className="w-3.5 h-3.5 fill-white" />
@@ -186,11 +192,14 @@ export default function UnitsPage({ onStartStage, onBack, syncVersion }: Props) 
 
         {/* 22 Learning Units Cards */}
         <section className="space-y-3">
-          {units.length === 0 && !error && (
+          {units.length === 0 && !error && loading && (
             <div className="p-8 text-center bg-white dark:bg-[#1a2332] rounded-3xl border border-[#e6dbc5] dark:border-slate-800 space-y-3 shadow-sm">
               <div className="w-8 h-8 mx-auto border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
               <p className="text-sm font-bold text-slate-700 dark:text-slate-300">در حال دریافت و نمایش واحدهای آموزشی سوره قصص...</p>
             </div>
+          )}
+          {!loading && !error && units.length === 0 && (
+            <div role="status" className="p-6 text-center text-sm text-slate-600">هیچ واحدی در محتوای محلی پیدا نشد. همگام‌سازی محتوا را دوباره اجرا کنید.</div>
           )}
           {units.map((u, idx) => {
             const passedCount = Object.values(u.stagePassed || {}).filter(Boolean).length;

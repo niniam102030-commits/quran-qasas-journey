@@ -80,6 +80,7 @@ export function planStage(
   const now = opts.now ?? new Date();
   const rand = rng(opts.seed ?? 1);
   const recent = opts.recentIds ?? new Set<string>();
+  if (stageQuestions.length === 0) return [];
 
   // Recent questions are a preference, not a hard exclusion: small stages must remain playable.
   const fresh = stageQuestions.filter((q) => !recent.has(q.id));

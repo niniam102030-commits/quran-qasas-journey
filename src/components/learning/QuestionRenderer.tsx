@@ -2,7 +2,8 @@
 // نمایش و جمع‌آوری پاسخ برای چهار شکل سوال. پاسخ بر پایه‌ی شناسه‌هاست، نه متن عربی.
 import { useMemo, useRef, useState, useEffect } from "react";
 import { HelpCircle, Check, RotateCcw } from "lucide-react";
-import type { QuestionRow } from "../../db/learningDb";
+import { ldb, type QuestionRow } from "../../db/learningDb";
+import { labelOption } from "./questionOptionLabel";
 
 interface Item {
   id: string;
@@ -49,10 +50,8 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-const label = (o: Item) => {
-  const text = o.ar ?? o.fa ?? (o.num !== undefined ? toFarsiNum(o.num) : undefined) ??
-    (o.words?.length ? o.words.join(" ") : undefined) ??
-    (o.wordRange ? `آیه ${toFarsiNum(o.wordRange.verse)}، واژه‌های ${toFarsiNum(o.wordRange.from)} تا ${toFarsiNum(o.wordRange.to)}` : "");
+const label = (o: Item, rangeLabels: Record<string, string>) => {
+  const text = labelOption(o, rangeLabels);
   return o.ar ? (
     <span style={arStyle} className="text-slate-900 dark:text-slate-100">{text}</span>
   ) : (
@@ -65,6 +64,41 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
   const changed = useRef(false);
   const [hint, setHint] = useState(false);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
+  const [resolvedLabels, setResolvedLabels] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    let active = true;
+    const items = [...(q.options ?? []), ...(q.left ?? []), ...(q.right ?? []), ...(q.bank ?? [])];
+    const verses = new Map<number, Promise<{ i: number; ar: string }[]>>();
+    const getWords = (verseNumber: number) => {
+      if (!verses.has(verseNumber)) {
+        verses.set(verseNumber, ldb.baseVerses.get(verseNumber).then((verse) => (verse?.words as { i: number; ar: string }[] | undefined) ?? []));
+      }
+      return verses.get(verseNumber)!;
+    };
+    Promise.all(items.map(async (item) => {
+      if (item.wordRange) {
+        const range = item.wordRange;
+        const words = await getWords(range.verse);
+        return [item.id, words.filter((word) => word.i >= range.from && word.i <= range.to).map((word) => word.ar).join(" ")] as const;
+      }
+      if (item.words?.length && item.words.every((id) => /^w\d+_\d+_\d+$/.test(id))) {
+        const parsed = item.words.map((id) => {
+          const match = /^w\d+_(\d+)_(\d+)$/.exec(id)!;
+          return { id, verse: Number(match[1]), index: Number(match[2]) };
+        });
+        const verseWords = new Map(await Promise.all([...new Set(parsed.map((word) => word.verse))].map(async (n) => [n, await getWords(n)] as const)));
+        const text = parsed.map((word) => verseWords.get(word.verse)?.find((entry) => entry.i === word.index)?.ar ?? "").filter(Boolean).join(" ");
+        return [item.id, text] as const;
+      }
+      return [item.id, ""] as const;
+    })).then((entries) => {
+      if (active) setResolvedLabels(Object.fromEntries(entries));
+    }).catch(() => {
+      if (active) setResolvedLabels({});
+    });
+    return () => { active = false; };
+  }, [q.id, q.options, q.left, q.right, q.bank]);
 
   useEffect(() => {
     t0.current = Date.now();
@@ -127,7 +161,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
                     : "bg-white dark:bg-[#1e2738] border-slate-200 dark:border-slate-700/80 hover:border-amber-400 hover:bg-amber-50/30"
                 } ${locked ? "cursor-default" : "cursor-pointer"}`}
               >
-                <div className="flex-1 min-w-0 pr-1">{label(o)}</div>
+                <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels)}</div>
                 <div
                   className={`w-5 h-5 rounded-full border-2 ml-2 flex items-center justify-center shrink-0 ${
                     isSelected
@@ -147,6 +181,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <MatchView
           q={q}
           locked={locked}
+          rangeLabels={resolvedLabels}
           onDone={(p) => onSubmit(p, meta())}
           markChanged={() => (changed.current = true)}
         />
@@ -156,6 +191,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <OrderView
           q={q}
           locked={locked}
+          rangeLabels={resolvedLabels}
           onDone={(a) => onSubmit(a, meta())}
           markChanged={() => (changed.current = true)}
         />
@@ -165,26 +201,30 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         <ClozeView
           q={q}
           locked={locked}
+          rangeLabels={resolvedLabels}
           onDone={(m) => onSubmit(m, meta())}
           markChanged={() => (changed.current = true)}
         />
       )}
 
-      {/* Hint trigger */}
       {!locked && (
-        <div className="flex items-center justify-end pt-2">
-          <button
-            onClick={() => setHint(true)}
-            disabled={hint}
-            className={`text-xs flex items-center gap-1.5 py-1.5 px-3 rounded-xl transition-all ${
-              hint
-                ? "bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 font-bold"
-                : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
-            }`}
-          >
-            <HelpCircle className="w-4 h-4" />
-            <span>{hint ? "راهنما فعال شد (امتیاز سخت)" : "راهنما می‌خواهم"}</span>
-          </button>
+        <div className="space-y-2 pt-2">
+          <div className="flex items-center justify-end">
+            <button
+              onClick={() => setHint(true)}
+              disabled={hint}
+              aria-expanded={hint}
+              className="text-xs flex items-center gap-1.5 py-1.5 px-2 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+            >
+              <HelpCircle className="w-4 h-4" />
+              <span>{hint ? "راهنما" : "نمایش راهنما"}</span>
+            </button>
+          </div>
+          {hint && (
+            <div role="note" className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm leading-relaxed text-amber-950 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100">
+              {q.explanationFa || "به متن سؤال و نشانه‌های زبانی آن توجه کنید؛ پاسخ را خودتان انتخاب کنید."}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -196,9 +236,11 @@ function MatchView({
   locked,
   onDone,
   markChanged,
+  rangeLabels,
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  rangeLabels: Record<string, string>;
   onDone: (p: [string, string][]) => void;
   markChanged: () => void;
 }) {
@@ -243,7 +285,7 @@ function MatchView({
                     : "border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1e2738] hover:border-amber-300"
                 }`}
               >
-                {label(l)}
+                {label(l, rangeLabels)}
               </button>
             );
           })}
@@ -266,7 +308,7 @@ function MatchView({
                     : "border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-[#1e2738]/70"
                 }`}
               >
-                {label(r)}
+                {label(r, rangeLabels)}
               </button>
             );
           })}
@@ -297,9 +339,11 @@ function OrderView({
   locked,
   onDone,
   markChanged,
+  rangeLabels,
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  rangeLabels: Record<string, string>;
   onDone: (a: string[]) => void;
   markChanged: () => void;
 }) {
@@ -341,7 +385,7 @@ function OrderView({
                 onClick={() => removePicked(id)}
                 className="py-2 px-3 rounded-2xl bg-white dark:bg-slate-800 border-2 border-amber-300 dark:border-amber-700 shadow-sm active:scale-95 transition-transform"
               >
-                {label(item)}
+                {label(item, rangeLabels)}
               </button>
             );
           })
@@ -359,7 +403,7 @@ function OrderView({
               onClick={() => addPicked(b.id)}
               className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
             >
-              {label(b)}
+              {label(b, rangeLabels)}
             </button>
           ))}
       </div>
@@ -381,9 +425,11 @@ function ClozeView({
   locked,
   onDone,
   markChanged,
+  rangeLabels,
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  rangeLabels: Record<string, string>;
   onDone: (m: Record<string, string>) => void;
   markChanged: () => void;
 }) {
@@ -446,7 +492,7 @@ function ClozeView({
                 }`}
               >
                 {item ? (
-                  label(item)
+                  label(item, rangeLabels)
                 ) : (
                   <span className="text-xs text-slate-400">
                     جای خالی {toFarsiNum(idx + 1)}
@@ -469,7 +515,7 @@ function ClozeView({
               onClick={() => place(b.id)}
               className="py-2.5 px-3.5 rounded-2xl bg-white dark:bg-[#1e2738] border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:border-amber-400 active:scale-95 transition-all"
             >
-              {label(b)}
+              {label(b, rangeLabels)}
             </button>
           ))}
       </div>

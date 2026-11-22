@@ -122,12 +122,28 @@ describe("contentLoader - syncContent preserves user data", () => {
     const confusionCount = await ldb.confusions.count();
     expect(confusionCount).toBe(1);
 
-    // 4. Second sync with same content hash -> no redundant update
-    const res2 = await syncContent();
-    expect(res2.updated).toBe(false);
+    await ldb.unitProgress.put({ unitId: "u_p385a", unlocked: true, stagePassed: { 1: true }, currentStage: 2, mastered: false, updatedAt: Date.now() });
+    await ldb.meta.put({ key: "contentSyncVersion", value: 1 });
 
-    // Data still preserved!
+    // 4. Same content hash still forces one rebuild for legacy sync versions.
+    const res2 = await syncContent();
+    expect(res2.updated).toBe(true);
+
+    // Data and stage progress still preserved!
+    expect((await ldb.unitProgress.get("u_p385a"))?.currentStage).toBe(2);
     expect(await ldb.cards.count()).toBe(1);
     expect(await ldb.attempts.count()).toBe(1);
+
+    const noOp = await syncContent();
+    expect(noOp.updated).toBe(false);
+
+    mockManifest.contentHash = "hash-v2";
+    mockManifest.units[0].files[0].hash = "partA-h2";
+    mockPartA.questions = [];
+    const res3 = await syncContent();
+    expect(res3.updated).toBe(true);
+    expect(await ldb.questions.count()).toBe(0);
+    expect(await ldb.cards.count()).toBe(1);
+    expect((await ldb.unitProgress.get("u_p385a"))?.currentStage).toBe(2);
   });
 });

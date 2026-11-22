@@ -11,7 +11,7 @@ interface Manifest {
   units: ManifestUnit[];
 }
 
-const baseUrl = () => (import.meta.env.BASE_URL || "/") + "content/";
+const baseUrl = () => `${import.meta.env.BASE_URL || "/"}content/`;
 
 async function getJson<T>(rel: string): Promise<T> {
   const r = await fetch(baseUrl() + rel);
@@ -20,55 +20,54 @@ async function getJson<T>(rel: string): Promise<T> {
 }
 
 export interface SyncResult { updated: boolean; contentHash: string; units: number }
+const CONTENT_SYNC_VERSION = 2;
 
 export async function syncContent(onProgress?: (done: number, total: number) => void): Promise<SyncResult> {
   const manifest = await getJson<Manifest>("manifest.json");
   const stored = await ldb.meta.get("contentHash");
-  if (stored?.value === manifest.contentHash) return { updated: false, contentHash: manifest.contentHash, units: manifest.units.length };
+  const storedVersion = await ldb.meta.get("contentSyncVersion");
+  if (stored?.value === manifest.contentHash && storedVersion?.value === CONTENT_SYNC_VERSION) return { updated: false, contentHash: manifest.contentHash, units: manifest.units.length };
 
   const hashes = ((await ldb.meta.get("fileHashes"))?.value ?? {}) as Record<string, string>;
   const nextHashes: Record<string, string> = { ...hashes };
+  const questionRows: QuestionRow[] = [];
+  const lexiconRows: LexiconRow[] = [];
+  const chunkRows: ChunkRow[] = [];
 
-  // آیات پایه
-  if (hashes[manifest.base.file] !== manifest.base.hash) {
-    const base = await getJson<unknown>(manifest.base.file);
-    const verses = (Array.isArray(base) ? base : (base as { verses: unknown[] }).verses) as { n: number }[];
-    await ldb.baseVerses.bulkPut(verses);
-    nextHashes[manifest.base.file] = manifest.base.hash;
-  }
+  const base = await getJson<unknown>(manifest.base.file);
+  const verses = (Array.isArray(base) ? base : (base as { verses: unknown[] }).verses) as { n: number }[];
+  nextHashes[manifest.base.file] = manifest.base.hash;
 
   const total = manifest.units.reduce((a, u) => a + u.files.length, 0);
   let done = 0;
   for (const u of manifest.units) {
     for (const f of u.files) {
-      if (hashes[f.file] !== f.hash) {
-        const data = await getJson<{ unitId: string; lexicon?: Record<string, unknown>[]; chunks?: Record<string, unknown>[]; questions?: Record<string, unknown>[] }>(f.file);
-        await ldb.transaction("rw", ldb.questions, ldb.lexicon, ldb.chunks, async () => {
-          if (data.questions?.length) {
-            await ldb.questions.bulkPut(data.questions.map((q) => ({ ...q, unitId: data.unitId })) as unknown as QuestionRow[]);
-          }
-          if (data.lexicon?.length) {
-            await ldb.lexicon.bulkPut(data.lexicon.map((l) => ({ ...l, unitId: data.unitId })) as unknown as LexiconRow[]);
-          }
-          if (data.chunks?.length) {
-            await ldb.chunks.bulkPut(
-              data.chunks.map((c) => ({ ...c, id: `${data.unitId}:${(c as { verse: number }).verse}`, unitId: data.unitId })) as unknown as ChunkRow[],
-            );
-          }
-        });
-        nextHashes[f.file] = f.hash;
-      }
+      const data = await getJson<{ unitId: string; lexicon?: Record<string, unknown>[]; chunks?: Record<string, unknown>[]; questions?: Record<string, unknown>[] }>(f.file);
+      questionRows.push(...((data.questions ?? []).map((q) => ({ ...q, unitId: data.unitId })) as unknown as QuestionRow[]));
+      lexiconRows.push(...((data.lexicon ?? []).map((l) => ({ ...l, unitId: data.unitId })) as unknown as LexiconRow[]));
+      chunkRows.push(...((data.chunks ?? []).map((c) => ({ ...c, id: `${data.unitId}:${(c as { verse: number }).verse}`, unitId: data.unitId })) as unknown as ChunkRow[]));
+      nextHashes[f.file] = f.hash;
       onProgress?.(++done, total);
     }
-    // واحد اول همیشه باز است
-    const existing = await ldb.unitProgress.get(u.id);
-    if (!existing) {
-      await ldb.unitProgress.put({ unitId: u.id, unlocked: u.order === 1, stagePassed: {}, currentStage: 1, mastered: false, updatedAt: Date.now() });
-    }
   }
-  await ldb.meta.bulkPut([
-    { key: "fileHashes", value: nextHashes },
-    { key: "contentHash", value: manifest.contentHash },
-  ]);
+  await ldb.transaction("rw", [ldb.questions, ldb.lexicon, ldb.chunks, ldb.baseVerses, ldb.unitProgress, ldb.meta], async () => {
+    await ldb.questions.clear();
+    await ldb.lexicon.clear();
+    await ldb.chunks.clear();
+    await ldb.baseVerses.clear();
+    if (questionRows.length) await ldb.questions.bulkPut(questionRows);
+    if (lexiconRows.length) await ldb.lexicon.bulkPut(lexiconRows);
+    if (chunkRows.length) await ldb.chunks.bulkPut(chunkRows);
+    if (verses.length) await ldb.baseVerses.bulkPut(verses);
+    for (const unit of manifest.units) {
+      const existing = await ldb.unitProgress.get(unit.id);
+      if (!existing) await ldb.unitProgress.put({ unitId: unit.id, unlocked: unit.order === 1, stagePassed: {}, currentStage: 1, mastered: false, updatedAt: Date.now() });
+    }
+    await ldb.meta.bulkPut([
+      { key: "fileHashes", value: nextHashes },
+      { key: "contentHash", value: manifest.contentHash },
+      { key: "contentSyncVersion", value: CONTENT_SYNC_VERSION },
+    ]);
+  });
   return { updated: true, contentHash: manifest.contentHash, units: manifest.units.length };
 }

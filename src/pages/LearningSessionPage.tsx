@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { CheckCircle2, XCircle, ArrowLeft, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import { useLearningStore } from "../store/useLearningStore";
+import { ldb } from "../db/learningDb";
 
 interface Props {
   unitId: string;
@@ -21,13 +22,45 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
   const startStage = useLearningStore((state) => state.startStage);
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+  const [correctAnswerText, setCorrectAnswerText] = useState("");
 
   useEffect(() => {
-    if (stage === 0) void startReview();
-    else void startStage(unitId, stage);
+    const state = useLearningStore.getState();
+    if (stage === 0) {
+      if (state.status === "idle" || state.sessionType !== "REVIEW" || state.status === "finished") void startReview();
+    } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
+      void startStage(unitId, stage);
+    }
   }, [unitId, stage, startReview, startStage]);
 
   // Keep keyboard advancement on the explicit button to prevent duplicate submits.
+  useEffect(() => {
+    let active = true;
+    const resolve = async () => {
+      if (!q || s.lastResult?.correct) return "";
+      if (q.shape === "choice") {
+        const opt = q.options?.find((item) => item.id === q.answer);
+        if (opt?.wordRange) {
+          const verse = await ldb.baseVerses.get(opt.wordRange.verse);
+          const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
+          return words.filter((word) => word.i >= opt.wordRange!.from && word.i <= opt.wordRange!.to).map((word) => word.ar).join(" ");
+        }
+        if (opt?.words?.length && opt.words.every((id) => /^w\d+_\d+_\d+$/.test(id))) {
+          const parsed = opt.words.map((id) => {
+            const match = /^w\d+_(\d+)_(\d+)$/.exec(id)!;
+            return { verse: Number(match[1]), index: Number(match[2]) };
+          });
+          const verses = await Promise.all([...new Set(parsed.map((item) => item.verse))].map((n) => ldb.baseVerses.get(n)));
+          const byVerse = new Map(verses.filter((verse): verse is NonNullable<typeof verse> => !!verse).map((verse) => [verse.n, (verse.words as { i: number; ar: string }[] | undefined) ?? []]));
+          return parsed.map((item) => byVerse.get(item.verse)?.find((word) => word.i === item.index)?.ar ?? "").filter(Boolean).join(" ");
+        }
+        return opt?.ar || opt?.fa || (opt?.num !== undefined ? String(opt.num) : "") || opt?.words?.join(" ") || "";
+      }
+      return "";
+    };
+    void resolve().then((text) => { if (active) setCorrectAnswerText(text); });
+    return () => { active = false; };
+  }, [q, s.lastResult]);
 
   if (s.status === "loading" || s.status === "idle") {
     return (
@@ -41,6 +74,7 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
   // Finished Session Screen
   if (s.status === "finished") {
     const m = s.summary;
+    const isEmpty = m?.total === 0;
     const isPassed = !!m?.passed;
     return (
       <div dir="rtl" className="min-h-screen flex flex-col items-center justify-center p-6 bg-[#fcf9f2] dark:bg-[#121824] text-slate-800 dark:text-slate-100 select-none">
@@ -51,21 +85,25 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
 
           <div className="space-y-1.5">
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-              {stage === 0
+              {isEmpty
+                ? stage === 0 ? "فعلاً کارتی برای مرور سررسید نشده است" : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                : stage === 0
                 ? "جلسه مرور روزانه به پایان رسید"
                 : isPassed
                 ? `مرحله ${toFarsiNum(stage)} با موفقیت گذرانده شد 🎉`
                 : `نیاز به تمرین بیشتر در مرحله ${toFarsiNum(stage)}`}
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              {isPassed
+              {isEmpty
+                ? "می‌توانید بعداً دوباره بررسی کنید یا به نقشه برگردید."
+                : isPassed
                 ? "تسلط بر این مقطع ارتقا یافت و کارت‌های حافظه به‌روزرسانی شدند."
                 : "برای تثبیت کامل حافظه، تکرار دوباره این مرحله توصیه می‌شود."}
             </p>
           </div>
 
           {/* Stats Box */}
-          {m && (
+          {m && !isEmpty && (
             <div className="grid grid-cols-2 gap-3 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 text-xs">
               <div className="space-y-0.5">
                 <span className="text-slate-400">پاسخ‌های درست:</span>
@@ -89,7 +127,7 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
             </div>
           )}
 
-          {m && !m.passed && m.debt >= 40 && (
+          {m && !isEmpty && !m.passed && m.debt >= 40 && (
             <div className="p-3 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-200 text-xs">
               بدهی مرور کارت‌های شما به {toFarsiNum(m.debt)} رسیده است. واحد بعدی تا کاهش این بدهی بسته می‌ماند.
             </div>
@@ -115,7 +153,7 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
   const getFormattedCorrectAnswer = (): string => {
     if (q.shape === "choice") {
       const opt = q.options?.find((o) => o.id === q.answer);
-      return opt?.ar || opt?.fa || (opt?.num !== undefined ? String(opt.num) : "");
+      return correctAnswerText || opt?.ar || opt?.fa || (opt?.num !== undefined ? String(opt.num) : "") || opt?.words?.join(" ") || (opt?.wordRange ? `آیه ${toFarsiNum(opt.wordRange.verse)}، واژه‌های ${toFarsiNum(opt.wordRange.from)} تا ${toFarsiNum(opt.wordRange.to)}` : "");
     }
     if (q.shape === "order" && Array.isArray(q.answer)) {
       const byId = new Map((q.bank || []).map((b) => [b.id, b]));
@@ -231,6 +269,7 @@ export default function LearningSessionPage({ unitId, stage, onExit }: Props) {
             </div>
 
             <button
+              disabled={s.status !== "running" || s.lastResult === null}
               onClick={() => void s.next()}
               className={`w-full sm:w-auto min-w-[7rem] py-3.5 px-6 rounded-2xl font-bold text-white shadow-md active:scale-95 transition-all text-sm shrink-0 ${
                 s.lastResult.correct

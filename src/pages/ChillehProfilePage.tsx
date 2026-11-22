@@ -1,21 +1,19 @@
 // src/pages/ChillehProfilePage.tsx
 import React, { useEffect, useState, useCallback } from "react";
 import { db } from "../db/database";
+import { ldb } from "../db/learningDb";
 import { useAppStore } from "../store/useAppStore";
 import { AdaptivePlacementModal } from "../components/challenges/AdaptivePlacementModal";
-import type { CityNode, WordCategory } from "../types/schema";
+import type { CityNode } from "../types/schema";
 
 interface VocabularyMasteryStats {
   totalWordsCount: number;
   learnedWordsCount: number;
-  frequentTotal: number;
-  frequentLearned: number;
-  frequentPercentage: number;
+  hardTotal: number;
+  hardLearned: number;
+  hardPercentage: number;
   overallPercentage: number;
-  byCategory: Record<
-    WordCategory,
-    { total: number; learned: number; percentage: number }
-  >;
+  practicedWordsCount: number;
 }
 
 interface CityCacheSummary {
@@ -39,15 +37,11 @@ export const ChillehProfilePage: React.FC = () => {
   const [masteryStats, setMasteryStats] = useState<VocabularyMasteryStats>({
     totalWordsCount: 0,
     learnedWordsCount: 0,
-    frequentTotal: 0,
-    frequentLearned: 0,
-    frequentPercentage: 0,
+    hardTotal: 0,
+    hardLearned: 0,
+    hardPercentage: 0,
     overallPercentage: 0,
-    byCategory: {
-      cognate: { total: 0, learned: 0, percentage: 0 },
-      frequent: { total: 0, learned: 0, percentage: 0 },
-      false_friend: { total: 0, learned: 0, percentage: 0 },
-    },
+    practicedWordsCount: 0,
   });
 
   const [cityCaches, setCityCaches] = useState<CityCacheSummary[]>([]);
@@ -58,83 +52,29 @@ export const ChillehProfilePage: React.FC = () => {
   const [isPlacementModalOpen, setIsPlacementModalOpen] = useState<boolean>(false);
   const [isBusyCachingCityId, setIsBusyCachingCityId] = useState<string | null>(null);
 
-  // بارگذاری آمار تسلط بر واژگان از جداول words، lessons و fsrsCards در IndexedDB
+  // واژگان و کارت‌های یادگیری از DB فعال می‌آیند؛ چله و کش شهرها از DB قدیمی می‌مانند.
   const loadProfileData = useCallback(async () => {
-    const [allWords, allFsrsCards, allLessons, allCities, allAudioCache, stats] =
-      await Promise.all([
-        db.words.toArray(),
-        db.fsrsCards.toArray(),
-        db.lessons.toArray(),
-        db.cities.orderBy("order").toArray(),
-        db.audioCache.toArray(),
-        db.userStats.get("singleton_user"),
-      ]);
-
-    // کلماتی که کارت FSRS فعال دارند یا در دروس تکمیل‌شده کاربر قرار گرفته‌اند
-    const learnedIds = new Set<string>();
-    allFsrsCards.forEach((card) => {
-      if (card.state >= 1 || card.reps > 0) {
-        learnedIds.add(card.wordId);
-      }
-    });
-
-    if (stats) {
-      const completedLessonSet = new Set(stats.completedLessonIds);
-      allLessons.forEach((lesson) => {
-        if (completedLessonSet.has(lesson.id)) {
-          lesson.wordIds.forEach((wId) => learnedIds.add(wId));
-        }
-      });
-    }
-
-    const categoryCounters: Record<
-      WordCategory,
-      { total: number; learned: number; percentage: number }
-    > = {
-      cognate: { total: 0, learned: 0, percentage: 0 },
-      frequent: { total: 0, learned: 0, percentage: 0 },
-      false_friend: { total: 0, learned: 0, percentage: 0 },
-    };
-
-    allWords.forEach((word) => {
-      const cat = word.category;
-      if (categoryCounters[cat]) {
-        categoryCounters[cat].total += 1;
-        if (learnedIds.has(word.id)) {
-          categoryCounters[cat].learned += 1;
-        }
-      }
-    });
-
-    (Object.keys(categoryCounters) as WordCategory[]).forEach((cat) => {
-      const item = categoryCounters[cat];
-      item.percentage =
-        item.total > 0 ? Math.round((item.learned / item.total) * 100) : 0;
-    });
-
-    const totalWordsCount = allWords.length;
-    const learnedWordsCount = allWords.filter((w) => learnedIds.has(w.id)).length;
-    const overallPercentage =
-      totalWordsCount > 0 ? Math.round((learnedWordsCount / totalWordsCount) * 100) : 0;
-
-    // محاسبه درصد کلمات پرتکرار و هم‌ریشه آموخته‌شده
-    const frequentAndCognateTotal =
-      categoryCounters.frequent.total + categoryCounters.cognate.total;
-    const frequentAndCognateLearned =
-      categoryCounters.frequent.learned + categoryCounters.cognate.learned;
-    const frequentPercentage =
-      frequentAndCognateTotal > 0
-        ? Math.round((frequentAndCognateLearned / frequentAndCognateTotal) * 100)
-        : overallPercentage;
-
+    const [lexicon, cards, attempts, allCities, allAudioCache] = await Promise.all([
+      ldb.lexicon.toArray(),
+      ldb.cards.toArray(),
+      ldb.attempts.toArray(),
+      db.cities.orderBy("order").toArray(),
+      db.audioCache.toArray(),
+    ]);
+    const wordCards = new Map(cards.filter((card) => card.key.startsWith("w:")).map((card) => [card.key.slice(2), card]));
+    const practiced = new Set(attempts.flatMap((attempt) => Object.keys(attempt.perTarget || {}).filter((key) => key.startsWith("w:")).map((key) => key.slice(2))));
+    const totalWordsCount = lexicon.length;
+    const learnedWordsCount = lexicon.filter((word) => (wordCards.get(word.wordId)?.state ?? 0) > 0).length;
+    const hardWords = lexicon.filter((word) => word.hard);
+    const hardLearned = hardWords.filter((word) => (wordCards.get(word.wordId)?.state ?? 0) > 0).length;
     setMasteryStats({
       totalWordsCount,
       learnedWordsCount,
-      frequentTotal: frequentAndCognateTotal,
-      frequentLearned: frequentAndCognateLearned,
-      frequentPercentage,
-      overallPercentage,
-      byCategory: categoryCounters,
+      hardTotal: hardWords.length,
+      hardLearned,
+      hardPercentage: hardWords.length ? Math.round((hardLearned / hardWords.length) * 100) : 0,
+      overallPercentage: totalWordsCount ? Math.round((learnedWordsCount / totalWordsCount) * 100) : 0,
+      practicedWordsCount: lexicon.filter((word) => practiced.has(word.wordId)).length,
     });
 
     // خلاصه وضعیت کش صوتی هر شهر
@@ -435,92 +375,39 @@ export const ChillehProfilePage: React.FC = () => {
         <div className="p-4 rounded-2xl bg-gradient-to-l from-brand-primary to-brand-primaryDark text-white space-y-2.5 shadow-md">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold text-white/90">
-              پیشرفت در درک مستقیم آیات
+              تسلط بر واژگان این بسته
             </span>
             <span className="text-2xl font-black">
-              {masteryStats.frequentPercentage}٪
+              {masteryStats.overallPercentage}٪
             </span>
           </div>
           <p className="text-sm font-extrabold leading-relaxed">
-            شما تاکنون {masteryStats.frequentPercentage}٪ از کل کلمات پرتکرار قرآن را در این بسته آموزشی آموخته‌اید!
+            {masteryStats.learnedWordsCount} واژه از {masteryStats.totalWordsCount} واژه این بسته کارت یادگیری فعال دارند.
           </p>
           <div className="w-full h-2.5 bg-black/25 rounded-full overflow-hidden">
             <div
               className="h-full bg-brand-amber rounded-full transition-all duration-500"
-              style={{ width: `${masteryStats.frequentPercentage}%` }}
+              style={{ width: `${masteryStats.overallPercentage}%` }}
             />
           </div>
           <div className="flex items-center justify-between text-[11px] text-white/85 pt-0.5">
             <span>
-              واژگان تثبیت‌شده: {masteryStats.learnedWordsCount} از{" "}
+              واژگان تمرین‌شده: {masteryStats.practicedWordsCount} از{" "}
               {masteryStats.totalWordsCount} کلمه
             </span>
             <span>امتیاز کل نور: {userStats.noorXp} ✨</span>
           </div>
         </div>
 
-        {/* تفکیک تسلط بر اساس ۳ لایه واژگانی استاندارد پروژه */}
-        <div className="space-y-3">
-          {/* لایه ۱: هم‌ریشه‌های فارسی */}
-          <div className="p-3.5 rounded-2xl bg-termeh-bg dark:bg-lapis-bg border border-termeh-border dark:border-lapis-border space-y-2">
-            <div className="flex items-center justify-between text-xs font-extrabold">
-              <span className="text-morph-prefix">
-                📘 لایه ۱: هم‌ریشه‌های شفاف با فارسی (Cognates)
-              </span>
-              <span className="text-slate-700 dark:text-slate-200">
-                {masteryStats.byCategory.cognate.learned} /{" "}
-                {masteryStats.byCategory.cognate.total} (
-                {masteryStats.byCategory.cognate.percentage}٪)
-              </span>
-            </div>
-            <div className="w-full h-2 bg-morph-prefixBg rounded-full overflow-hidden">
-              <div
-                className="h-full bg-morph-prefix rounded-full transition-all duration-500"
-                style={{ width: `${masteryStats.byCategory.cognate.percentage}%` }}
-              />
-            </div>
+        <div className="grid grid-cols-2 gap-3 text-sm">
+          <div className="rounded-xl border border-termeh-border dark:border-lapis-border p-3">
+            <div className="text-xs text-slate-500">واژگان دشوارِ تثبیت‌شده</div>
+            <strong>{masteryStats.hardLearned} از {masteryStats.hardTotal}</strong>
+            <div className="mt-2 h-2 rounded-full bg-slate-200 dark:bg-slate-700"><div className="h-full rounded-full bg-amber-500" style={{ width: `${masteryStats.hardPercentage}%` }} /></div>
           </div>
-
-          {/* لایه ۲: کلمات و ادوات پرتکرار */}
-          <div className="p-3.5 rounded-2xl bg-termeh-bg dark:bg-lapis-bg border border-termeh-border dark:border-lapis-border space-y-2">
-            <div className="flex items-center justify-between text-xs font-extrabold">
-              <span className="text-morph-root">
-                📗 لایه ۲: واژگان و ساختارهای پرتکرار (Frequent)
-              </span>
-              <span className="text-slate-700 dark:text-slate-200">
-                {masteryStats.byCategory.frequent.learned} /{" "}
-                {masteryStats.byCategory.frequent.total} (
-                {masteryStats.byCategory.frequent.percentage}٪)
-              </span>
-            </div>
-            <div className="w-full h-2 bg-morph-rootBg rounded-full overflow-hidden">
-              <div
-                className="h-full bg-morph-root rounded-full transition-all duration-500"
-                style={{ width: `${masteryStats.byCategory.frequent.percentage}%` }}
-              />
-            </div>
-          </div>
-
-          {/* لایه ۳: کلمات فریبنده (مشترکات لفظی) */}
-          <div className="p-3.5 rounded-2xl bg-termeh-bg dark:bg-lapis-bg border border-termeh-border dark:border-lapis-border space-y-2">
-            <div className="flex items-center justify-between text-xs font-extrabold">
-              <span className="text-morph-pronoun">
-                📙 لایه ۳: شکار کلمات فریبنده (False Friends)
-              </span>
-              <span className="text-slate-700 dark:text-slate-200">
-                {masteryStats.byCategory.false_friend.learned} /{" "}
-                {masteryStats.byCategory.false_friend.total} (
-                {masteryStats.byCategory.false_friend.percentage}٪)
-              </span>
-            </div>
-            <div className="w-full h-2 bg-morph-pronounBg rounded-full overflow-hidden">
-              <div
-                className="h-full bg-morph-pronoun rounded-full transition-all duration-500"
-                style={{
-                  width: `${masteryStats.byCategory.false_friend.percentage}%`,
-                }}
-              />
-            </div>
+          <div className="rounded-xl border border-termeh-border dark:border-lapis-border p-3">
+            <div className="text-xs text-slate-500">واژگان تمرین‌شده</div>
+            <strong>{masteryStats.practicedWordsCount} از {masteryStats.totalWordsCount}</strong>
           </div>
         </div>
       </section>
