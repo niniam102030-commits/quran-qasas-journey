@@ -47,6 +47,22 @@
     font-feature-settings: normal;
     line-height: 2.2;
   }
+
+  /* نقش هندسی اسلیمی و شمسه ایرانی-اسلامی در پس‌زمینه */
+  .islamic-bg {
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(0, 168, 150, 0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(217, 119, 6, 0.08) 0%, transparent 45%),
+      url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23b37e3d' stroke-width='0.75' stroke-opacity='0.13'%3E%3Cpolygon points='32,4 39,19 55,13 47,28 60,32 47,36 55,51 39,45 32,60 25,45 9,51 17,36 4,32 17,28 9,13 25,19'/%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* قاب تذهیب ایرانی-اسلامی با حاشیه زرین و فیروزه‌ای */
+  .tazhib-frame {
+    box-shadow:
+      inset 0 0 0 2px rgba(212, 175, 55, 0.35),
+      inset 0 0 28px rgba(0, 168, 150, 0.06),
+      0 8px 24px -6px rgba(138, 91, 41, 0.12);
+  }
 }
 
 @layer components {

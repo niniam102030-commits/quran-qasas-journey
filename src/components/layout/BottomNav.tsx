@@ -21,33 +21,41 @@ export const BottomNav: React.FC<BottomNavProps> = ({
     onSelectTab(tab);
   };
 
-  const navItems: { id: NavTab; label: string; icon: React.ReactNode }[] = [
+  const navItems: { id: NavTab; label: string; icon: React.ReactNode; activeClass: string; dotClass: string }[] = [
     {
       id: "units",
       label: "واحدهای قرآن",
       icon: <BookOpen className="w-5 h-5" />,
+      activeClass: "bg-gradient-to-b from-teal-500/15 to-emerald-500/20 text-[#028090] dark:text-teal-300 border border-teal-400/40",
+      dotClass: "bg-[#00A896]",
     },
     {
       id: "mastery",
       label: "تسلط ۸۸ آیه",
       icon: <Award className="w-5 h-5" />,
+      activeClass: "bg-gradient-to-b from-amber-500/15 to-yellow-500/20 text-amber-800 dark:text-amber-300 border border-amber-400/40",
+      dotClass: "bg-amber-500",
     },
     {
       id: "profile",
       label: "چله و انس",
       icon: <Flame className="w-5 h-5" />,
+      activeClass: "bg-gradient-to-b from-rose-500/15 to-orange-500/20 text-rose-700 dark:text-rose-300 border border-rose-400/40",
+      dotClass: "bg-rose-500",
     },
     {
       id: "settings",
       label: "تنظیمات",
       icon: <Settings className="w-5 h-5" />,
+      activeClass: "bg-gradient-to-b from-indigo-500/15 to-sky-500/20 text-indigo-700 dark:text-sky-300 border border-indigo-400/40",
+      dotClass: "bg-indigo-500",
     },
   ];
 
   return (
     <nav
       aria-label="منوی ناوبری اصلی"
-      className="fixed bottom-0 left-0 right-0 z-40 bg-white/90 dark:bg-lapis-card/90 backdrop-blur-lg border-t-2 border-termeh-border dark:border-lapis-border shadow-[0_-4px_20px_rgba(0,0,0,0.08)] py-2 px-4 transition-colors"
+      className="fixed bottom-0 left-0 right-0 z-40 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur-lg border-t-2 border-[#d4af37]/50 dark:border-teal-800/60 shadow-[0_-6px_24px_rgba(2,128,144,0.12)] py-2 px-4 transition-colors"
     >
       <div className="max-w-md mx-auto flex items-center justify-around gap-2">
         {navItems.map((item) => {
@@ -58,7 +66,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
               onClick={() => handleTabClick(item.id)}
               className={`flex-1 py-1.5 px-3 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95 ${
                 isActive
-                  ? "bg-brand-primary/10 dark:bg-brand-primary/20 text-brand-primary dark:text-brand-primary font-bold shadow-sm"
+                  ? `${item.activeClass} font-extrabold shadow-sm`
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100/50 dark:hover:bg-slate-800/40"
               }`}
             >
@@ -73,7 +81,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
                 {item.label}
               </span>
               {isActive && (
-                <div className="w-1.5 h-1.5 rounded-full bg-brand-primary mt-0.5 animate-pulse" />
+                <div className={`w-1.5 h-1.5 rounded-full ${item.dotClass} mt-0.5 animate-pulse`} />
               )}
             </button>
           );

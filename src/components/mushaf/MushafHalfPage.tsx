@@ -310,18 +310,18 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             <span className="text-sm">در حال بارگذاری نیم‌صفحه مصحف...</span>
           </div>
         ) : (
-          <div className="bg-[#fffdf7] dark:bg-[#1b2230] border-2 border-[#e6dbc5] dark:border-slate-800 rounded-3xl p-5 sm:p-8 shadow-sm">
-            {/* Mushaf Decorative Border Top */}
-            <div className="text-center pb-4 mb-4 border-b border-[#e9dfcb] dark:border-slate-800 flex items-center justify-center gap-2 text-xs font-medium text-[#9a6e38] dark:text-amber-400">
-              <Sparkles className="w-4 h-4" />
-              <span>مصحف مدینه منوره — رسم‌الخط عثمان طه</span>
-              <Sparkles className="w-4 h-4" />
+          <div className="bg-[#fffdf7] dark:bg-[#162032] border-2 border-[#d4af37]/65 dark:border-teal-700/70 rounded-3xl p-5 sm:p-8 tazhib-frame">
+            {/* Mushaf Decorative Iranian-Islamic Tazhib Banner Top */}
+            <div className="text-center pb-3.5 mb-5 border-b-2 border-[#d4af37]/40 dark:border-teal-800/60 flex items-center justify-center gap-2 text-xs font-extrabold text-[#028090] dark:text-amber-300">
+              <Sparkles className="w-4 h-4 text-amber-500" />
+              <span>مصحف شریف سوره قصص — رسم‌الخط عثمانی</span>
+              <Sparkles className="w-4 h-4 text-amber-500" />
             </div>
 
             {/* Verses Flow (Continuous Quranic Layout) */}
             <div
               className="text-right leading-[2.6] sm:leading-[3.0] tracking-wide text-slate-800 dark:text-slate-100"
-              style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: `${fontSize}px` }}
+              style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontFeatureSettings: "normal", fontSize: `${fontSize}px` }}
             >
               {verses.map((v) => (
                 <span
@@ -375,8 +375,8 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
         {/* Translation + Word Lexicon + Mistake Pin Drawer */}
         {selectedWord && (
           <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-[#e6dbc5] dark:border-slate-700 shadow-sm space-y-3">
-            <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-700 text-xs font-bold text-amber-700 dark:text-amber-400">
-              <span>جزئیات واژه و ترجمه استاد انصاریان</span>
+            <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-700 text-xs font-bold text-[#028090] dark:text-amber-400">
+              <span>جزئیات واژه و ترجمه دقیق</span>
               <button
                 onClick={() => setSelectedWord(null)}
                 className="text-slate-400 hover:text-slate-600 text-xs"

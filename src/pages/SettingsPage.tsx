@@ -102,11 +102,11 @@ export default function SettingsPage({ onBack }: Props) {
         await ldb.attempts.clear();
         await ldb.confusions.clear();
         await ldb.profile.put({ ...DEFAULT_USER_PROFILE, updatedAt: Date.now() });
-        // Reset all units, unlock only unit 1
+        // Reset all units, keep all 22 half-pages unlocked for free choice
         const units = (await ldb.unitProgress.toArray()).sort((a, b) => a.unitId.localeCompare(b.unitId));
-        const unlockId = firstUnitId ?? units[0]?.unitId;
+        void firstUnitId;
         for (const u of units) {
-          u.unlocked = u.unitId === unlockId;
+          u.unlocked = true;
           u.currentStage = 1;
           u.stagePassed = {};
           u.stageLessons = {};

@@ -20,7 +20,7 @@ async function getJson<T>(rel: string): Promise<T> {
 }
 
 export interface SyncResult { updated: boolean; contentHash: string; units: number }
-const CONTENT_SYNC_VERSION = 4;
+const CONTENT_SYNC_VERSION = 5;
 
 export async function syncContent(onProgress?: (done: number, total: number) => void): Promise<SyncResult> {
   const manifest = await getJson<Manifest>("manifest.json");
@@ -61,7 +61,11 @@ export async function syncContent(onProgress?: (done: number, total: number) => 
     if (verses.length) await ldb.baseVerses.bulkPut(verses);
     for (const unit of manifest.units) {
       const existing = await ldb.unitProgress.get(unit.id);
-      if (!existing) await ldb.unitProgress.put({ unitId: unit.id, unlocked: unit.order === 1, stagePassed: {}, currentStage: 1, mastered: false, updatedAt: Date.now() });
+      if (!existing) {
+        await ldb.unitProgress.put({ unitId: unit.id, unlocked: true, stagePassed: {}, stageLessons: {}, currentStage: 1, mastered: false, updatedAt: Date.now() });
+      } else if (!existing.unlocked) {
+        await ldb.unitProgress.put({ ...existing, unlocked: true, updatedAt: Date.now() });
+      }
     }
     await ldb.meta.bulkPut([
       { key: "fileHashes", value: nextHashes },

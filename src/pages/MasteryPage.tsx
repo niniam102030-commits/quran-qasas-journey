@@ -119,9 +119,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   }
 
   return (
-    <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 pb-20 select-none">
+    <div className="min-h-screen islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-20 select-none">
       {/* Top Header */}
-      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
+      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur border-b-2 border-[#d4af37]/50 dark:border-teal-800/60">
         <div className="flex items-center gap-2">
           <button
             onClick={onBack}
@@ -147,8 +147,8 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
       </header>
 
       <main className="max-w-3xl mx-auto p-4 sm:p-6 space-y-6">
-        {/* Golden Verses Info Card */}
-        <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-lg shadow-amber-900/10 flex items-center justify-between">
+        {/* Golden Verses Info Card (Iranian-Islamic Turquoise-Gold Tazhib) */}
+        <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-l from-[#0F766E] via-[#028090] to-amber-600 text-white shadow-lg border-2 border-[#d4af37]/60 border-b-4 border-b-black/25 flex items-center justify-between">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-amber-200" />

@@ -175,9 +175,9 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
           {renderRichFa(q.promptFa)}
         </h2>
 
-        {/* Stem Arabic or Persian Text */}
+        {/* Stem Arabic or Persian Text (Iranian-Islamic Tazhib Frame) */}
         {q.stem?.ar && (
-          <div className="p-4 sm:p-5 rounded-3xl bg-[#fcf9f2] dark:bg-[#1a2332] border border-[#e8dfcd] dark:border-slate-800 shadow-sm text-center">
+          <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-b from-[#fffdf7] to-[#f8f2e4] dark:from-[#162032] dark:to-[#1a2639] border-2 border-[#d4af37]/65 dark:border-teal-700/70 tazhib-frame text-center">
             <p style={arStyle}>{q.stem.ar}</p>
           </div>
         )}

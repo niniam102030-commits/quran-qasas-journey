@@ -325,9 +325,9 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   };
 
   return (
-    <div dir="rtl" className="min-h-screen flex flex-col bg-[#fcf9f2] dark:bg-[#121824] text-slate-800 dark:text-slate-100 select-none pb-32">
+    <div dir="rtl" className="min-h-screen flex flex-col islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-800 dark:text-slate-100 select-none pb-32">
       {/* Top Navigation & Progress Bar */}
-      <header className="sticky top-0 z-20 flex items-center gap-3 px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
+      <header className="sticky top-0 z-20 flex items-center gap-3 px-4 py-3 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur border-b-2 border-[#d4af37]/50 dark:border-teal-800/60">
         <button
           onClick={() => setShowExitConfirm(true)}
           className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 active:scale-95 transition-transform text-slate-500"

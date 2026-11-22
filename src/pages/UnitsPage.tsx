@@ -115,6 +115,7 @@ function toFarsiNum(n: number | string): string {
 
 export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQuiz, onOpenMutashabihat, onBack, syncVersion }: Props) {
   const [units, setUnits] = useState<UnitInfo[]>([]);
+  const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [profile, setProfile] = useState<UserProfileRow>(DEFAULT_USER_PROFILE);
@@ -141,7 +142,16 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
         manifest.units.map((u: { id: string; verseFrom: number; verseTo: number; page: number; half: string }) => [u.id, u])
       );
       const orderById = new Map<string, number>(manifest.units.map((u: { id: string; order: number }) => [u.id, u.order] as [string, number]));
-      setUnits(prog.slice().sort((a, b) => (orderById.get(a.unitId) ?? Number.MAX_SAFE_INTEGER) - (orderById.get(b.unitId) ?? Number.MAX_SAFE_INTEGER)).map((p) => ({ ...p, ...info.get(p.unitId) })));
+      const sorted = prog
+        .slice()
+        .sort((a, b) => (orderById.get(a.unitId) ?? Number.MAX_SAFE_INTEGER) - (orderById.get(b.unitId) ?? Number.MAX_SAFE_INTEGER))
+        .map((p) => ({ ...p, unlocked: true, ...info.get(p.unitId) }));
+      setUnits(sorted);
+      setSelectedUnitId((prev) => {
+        if (prev && sorted.some((u) => u.unitId === prev)) return prev;
+        const firstIncomplete = sorted.find((u) => Object.values(u.stagePassed || {}).filter(Boolean).length < 8);
+        return firstIncomplete?.unitId ?? sorted[0]?.unitId ?? null;
+      });
       setDebt(reviewDebt(cards));
       setMasteryCount({
         total: cards.length,
@@ -174,9 +184,9 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
   let lastStationId = "";
 
   return (
-    <div dir="rtl" className="min-h-screen bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-24 select-none">
-      {/* Top Duolingo-style Stats & Navigation Bar */}
-      <header className="sticky top-0 z-20 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur-md border-b-2 border-[#E5DEC9] dark:border-[#1E293B]">
+    <div dir="rtl" className="min-h-screen islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-24 select-none">
+      {/* Top Iranian-Islamic Stats & Navigation Bar */}
+      <header className="sticky top-0 z-20 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur-md border-b-2 border-[#d4af37]/50 dark:border-teal-800/60 shadow-sm">
         <div className="max-w-2xl mx-auto px-3 sm:px-4 py-2.5 flex items-center justify-between gap-2">
           <div className="flex items-center gap-1.5">
             {onBack && (
@@ -340,27 +350,26 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
             const station = stationForVerse(u.verseFrom);
             const showStationBanner = station.id !== lastStationId;
             if (showStationBanner) lastStationId = station.id;
+            const isExpanded = selectedUnitId === u.unitId;
 
-            // اولین مرحله باز و هنوز کامل‌نشده در این واحد
-            const activeStage = u.unlocked
-              ? [1, 2, 3, 4, 5, 6, 7, 8].find((s) => !u.stagePassed[s] && (s === 1 || !!u.stagePassed[s - 1]))
-              : undefined;
+            // مرحله پیشنهادی بعدی در این نیم‌صفحه (همه نیم‌صفحه‌ها و مراحل برای انتخاب آزادند)
+            const activeStage = [1, 2, 3, 4, 5, 6, 7, 8].find((s) => !u.stagePassed[s]) ?? 1;
 
             return (
               <div key={u.unitId} className="space-y-4">
                 {showStationBanner && (
-                  <div className={`p-4 sm:p-5 rounded-3xl bg-gradient-to-l ${station.gradient} text-white shadow-lg border-b-4 border-black/25 relative overflow-hidden`}>
+                  <div className={`p-4 sm:p-5 rounded-3xl bg-gradient-to-l ${station.gradient} text-white shadow-lg border-2 border-[#d4af37]/55 border-b-4 border-b-black/30 relative overflow-hidden`}>
                     <div className="relative z-10 flex items-center justify-between gap-3">
                       <div className="space-y-1">
-                        <div className="inline-flex items-center gap-1.5 text-[11px] font-bold bg-white/15 px-2.5 py-0.5 rounded-full">
+                        <div className="inline-flex items-center gap-1.5 text-[11px] font-bold bg-white/15 px-2.5 py-0.5 rounded-full border border-white/20">
                           <span>ایستگاه {toFarsiNum(station.order)}</span>
                           <span>•</span>
                           <span>آیات {toFarsiNum(station.fromVerse)} تا {toFarsiNum(station.toVerse)}</span>
                         </div>
                         <h2 className="text-base sm:text-lg font-black tracking-tight">{station.title}</h2>
-                        <p className="text-xs text-white/85">{station.subtitle}</p>
+                        <p className="text-xs text-white/90">{station.subtitle}</p>
                       </div>
-                      <div className="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 border border-white/20">
+                      <div className="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 border border-[#d4af37]/60 shadow-inner">
                         <Crown className="w-6 h-6 text-amber-300" />
                       </div>
                     </div>
@@ -369,21 +378,25 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
 
                 <div
                   className={`p-4 sm:p-5 rounded-3xl border-2 transition-all space-y-4 ${
-                    u.unlocked
-                      ? "bg-white dark:bg-[#1C2541] border-[#E5DEC9] dark:border-[#3A506B] shadow-sm"
-                      : "opacity-65 bg-slate-50/70 dark:bg-slate-900/50 border-dashed border-slate-300 dark:border-slate-800"
+                    isExpanded
+                      ? "bg-white dark:bg-[#1C2541] border-[#00A896] dark:border-teal-500 tazhib-frame"
+                      : "bg-white/95 dark:bg-[#1C2541]/90 border-[#d4af37]/45 dark:border-[#3A506B] hover:border-[#00A896]/70 shadow-sm"
                   }`}
                 >
                   {/* Unit Header */}
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedUnitId(u.unitId)}
+                      className="flex items-center gap-3 text-right"
+                    >
                       <div
                         className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-sm border-b-4 ${
                           isComplete
                             ? "bg-amber-400 border-amber-600 text-amber-950"
-                            : u.unlocked
+                            : isExpanded
                             ? "bg-[#00A896] border-[#028090] text-white"
-                            : "bg-slate-200 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-400"
+                            : "bg-gradient-to-br from-amber-500 to-[#b37e3d] border-amber-800 text-white"
                         }`}
                       >
                         {isComplete ? <Crown className="w-5 h-5" /> : toFarsiNum(idx + 1)}
@@ -393,33 +406,41 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                           <span>
                             صفحه {toFarsiNum(u.page || "")} ({u.half === "a" ? "نیمه اول" : "نیمه دوم"})
                           </span>
-                          {!u.unlocked && <Lock className="w-3.5 h-3.5 text-slate-400" />}
                         </h3>
                         <p className="text-xs text-slate-500 dark:text-slate-400">
                           آیات {toFarsiNum(u.verseFrom || 1)} تا {toFarsiNum(u.verseTo || 1)} • {toFarsiNum(passedCount)} از ۸ مرحله
                         </p>
                       </div>
-                    </div>
+                    </button>
 
-                    {u.unlocked && (
+                    <div className="flex items-center gap-1.5">
+                      {!isExpanded && (
+                        <button
+                          type="button"
+                          onClick={() => setSelectedUnitId(u.unitId)}
+                          className="py-2 px-3 rounded-2xl bg-teal-50 hover:bg-teal-100 dark:bg-teal-950/50 dark:hover:bg-teal-900/50 border-2 border-b-4 border-teal-200 dark:border-teal-800 active:border-b-2 active:translate-y-[2px] text-[#028090] dark:text-teal-300 text-xs font-extrabold transition-all"
+                        >
+                          مسیر کامل
+                        </button>
+                      )}
                       <button
+                        type="button"
                         onClick={() => setMushafUnitId(u.unitId)}
                         className="py-2 px-3 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/40 border-2 border-b-4 border-amber-200 dark:border-amber-800 active:border-b-2 active:translate-y-[2px] text-amber-900 dark:text-amber-300 text-xs font-extrabold flex items-center gap-1.5 transition-all"
                       >
                         <Eye className="w-3.5 h-3.5" />
                         <span>مصحف</span>
                       </button>
-                    )}
+                    </div>
                   </div>
 
-                  {/* Duolingo Winding Path of 3D Stage Nodes (for unlocked units) / Compact locked preview */}
-                  {u.unlocked ? (
+                  {/* Duolingo Winding Path for the selected half-page, OR direct 1-tap clickable 3D stage pills for all other half-pages */}
+                  {isExpanded ? (
                     <div className="relative py-3 flex flex-col items-center gap-4">
                       {[1, 2, 3, 4, 5, 6, 7, 8].map((s, sIdx) => {
                         const passed = !!u.stagePassed[s];
                         const lessonsDone = passed ? LESSONS_PER_STAGE : (u.stageLessons?.[s] ?? 0);
                         const inProgress = !passed && lessonsDone > 0;
-                        const open = s === 1 || !!u.stagePassed[s - 1] || passed;
                         const isActive = activeStage === s;
                         const offsetX = NODE_OFFSETS[sIdx] ?? 0;
 
@@ -435,29 +456,25 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                               </div>
                             )}
                             <button
-                              disabled={!open}
+                              type="button"
                               onClick={() => onStartStage(u.unitId, s)}
                               className={`relative w-16 h-16 rounded-full font-black transition-all flex flex-col items-center justify-center ${
                                 passed
                                   ? "bg-[#10B981] border-b-[6px] border-[#047857] text-white shadow-md hover:brightness-105 active:border-b-0 active:translate-y-1.5"
                                   : isActive
                                   ? "bg-[#00A896] border-b-[6px] border-[#028090] text-white shadow-lg ring-4 ring-teal-400/35 hover:brightness-105 active:border-b-0 active:translate-y-1.5"
-                                  : open
-                                  ? "bg-amber-500 border-b-[6px] border-amber-700 text-white shadow-md hover:brightness-105 active:border-b-0 active:translate-y-1.5"
-                                  : "bg-slate-200 dark:bg-slate-800 border-b-[5px] border-slate-300 dark:border-slate-900 text-slate-400 dark:text-slate-600 cursor-not-allowed"
+                                  : "bg-gradient-to-b from-amber-400 to-amber-500 border-b-[6px] border-amber-700 text-white shadow-md hover:brightness-105 active:border-b-0 active:translate-y-1.5"
                               }`}
                             >
                               {passed ? (
                                 <Check className="w-7 h-7 stroke-[3]" />
                               ) : s === 8 ? (
                                 <Crown className="w-6 h-6" />
-                              ) : open ? (
-                                <Star className="w-6 h-6 fill-white/90" />
                               ) : (
-                                <Lock className="w-5 h-5" />
+                                <Star className="w-6 h-6 fill-white/90" />
                               )}
                               {inProgress && (
-                                <span className="absolute -bottom-1.5 px-1.5 py-0.5 rounded-full bg-amber-400 text-amber-950 text-[10px] font-black border border-white dark:border-slate-900 shadow">
+                                <span className="absolute -bottom-1.5 px-1.5 py-0.5 rounded-full bg-amber-300 text-amber-950 text-[10px] font-black border border-white dark:border-slate-900 shadow">
                                   {toFarsiNum(lessonsDone)}/{toFarsiNum(LESSONS_PER_STAGE)}
                                 </span>
                               )}
@@ -468,9 +485,7 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                                   ? "text-emerald-700 dark:text-emerald-400"
                                   : isActive
                                   ? "text-[#028090] dark:text-teal-300"
-                                  : open
-                                  ? "text-slate-700 dark:text-slate-200"
-                                  : "text-slate-400 dark:text-slate-500"
+                                  : "text-slate-700 dark:text-slate-200"
                               }`}
                             >
                               {toFarsiNum(s)}. {STAGE_SHORT_LABELS[s]}
@@ -481,14 +496,34 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                     </div>
                   ) : (
                     <div className="flex flex-wrap gap-2 pt-1">
-                      {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => (
-                        <div
-                          key={s}
-                          className="w-9 h-9 rounded-2xl bg-slate-100 dark:bg-slate-800/80 text-slate-400 dark:text-slate-600 flex items-center justify-center text-xs font-bold"
-                        >
-                          {toFarsiNum(s)}
-                        </div>
-                      ))}
+                      {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => {
+                        const passed = !!u.stagePassed[s];
+                        const lessonsDone = passed ? LESSONS_PER_STAGE : (u.stageLessons?.[s] ?? 0);
+                        const inProgress = !passed && lessonsDone > 0;
+                        return (
+                          <button
+                            key={s}
+                            type="button"
+                            onClick={() => onStartStage(u.unitId, s)}
+                            title={`شروع مرحله ${s}: ${STAGE_SHORT_LABELS[s]}`}
+                            className={`py-1.5 px-2.5 rounded-2xl text-xs font-extrabold border-2 border-b-4 active:border-b-2 active:translate-y-[2px] transition-all flex items-center gap-1 ${
+                              passed
+                                ? "bg-emerald-500 border-emerald-700 text-white"
+                                : inProgress
+                                ? "bg-teal-50 dark:bg-teal-950/60 border-[#00A896] text-[#028090] dark:text-teal-300"
+                                : "bg-[#FAF7F2] dark:bg-slate-800 border-[#d4af37]/55 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-[#00A896]"
+                            }`}
+                          >
+                            {passed ? <Check className="w-3.5 h-3.5 stroke-[3]" /> : <span>{toFarsiNum(s)}.</span>}
+                            <span>{STAGE_SHORT_LABELS[s]}</span>
+                            {inProgress && (
+                              <span className="text-[10px] text-emerald-600 dark:text-emerald-400">
+                                ({toFarsiNum(lessonsDone)}/{toFarsiNum(LESSONS_PER_STAGE)})
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
