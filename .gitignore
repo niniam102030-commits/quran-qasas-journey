@@ -17,6 +17,9 @@ android/.gradle
 android/build
 android/app/build
 android/local.properties
+android/keystore.properties
+*.jks
+*.keystore
 release-apk
 
 # Editor directories and files

@@ -1,5 +1,20 @@
 apply plugin: 'com.android.application'
 
+def keystoreProps = new Properties()
+def keystorePropsFile = rootProject.file('keystore.properties')
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
+def resolvedKeystorePath = System.getenv('KEYSTORE_PATH') ?: keystoreProps.getProperty('storeFile')
+def resolvedKeystorePassword = System.getenv('KEYSTORE_PASSWORD') ?: keystoreProps.getProperty('storePassword')
+def resolvedKeyAlias = System.getenv('KEY_ALIAS') ?: keystoreProps.getProperty('keyAlias')
+def resolvedKeyPassword = System.getenv('KEY_PASSWORD') ?: keystoreProps.getProperty('keyPassword')
+def hasReleaseSigning = resolvedKeystorePath && resolvedKeystorePassword && resolvedKeyAlias && resolvedKeyPassword
+
+def resolvedVersionCode = (System.getenv('ANDROID_VERSION_CODE') ?: project.findProperty('versionCode') ?: '2').toInteger()
+def resolvedVersionName = (System.getenv('ANDROID_VERSION_NAME') ?: project.findProperty('versionName') ?: '1.0.1').toString()
+
 android {
     namespace = "com.quran.qasas"
     compileSdk = rootProject.ext.compileSdkVersion
@@ -7,8 +22,8 @@ android {
         applicationId "com.quran.qasas"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode resolvedVersionCode
+        versionName resolvedVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -16,8 +31,23 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        if (hasReleaseSigning) {
+            release {
+                storeFile file(resolvedKeystorePath)
+                storePassword resolvedKeystorePassword
+                keyAlias resolvedKeyAlias
+                keyPassword resolvedKeyPassword
+                enableV1Signing true
+                enableV2Signing true
+            }
+        }
+    }
     buildTypes {
         release {
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
