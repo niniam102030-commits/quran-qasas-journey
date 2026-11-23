@@ -1,15 +1,21 @@
 // src/services/menshawiAudio.ts
-// سرویس پخش و کش آفلاین تلاوت استاد محمد صدیق منشاوی (مرتل) برای ۸۸ آیه سوره قصص
+// سرویس پخش و کش آفلاین تلاوت استاد محمد صدیق منشاوی (مرتل) — پارامتریک برای هر سوره
 import { ldb, type AudioCacheRow } from "../db/learningDb";
+import { ACTIVE_SURAH } from "../config/surahConfig";
 
 const PER_MIRROR_TIMEOUT_MS = 12000;
 
-export function getMenshawiUrls(verse: number): string[] {
-  const padded = String(verse).padStart(3, "0");
+export function getMenshawiUrls(
+  verse: number,
+  surahNumber: number = ACTIVE_SURAH.number,
+): string[] {
+  const paddedSurah = String(surahNumber).padStart(3, "0");
+  const paddedVerse = String(verse).padStart(3, "0");
+  const code = `${paddedSurah}${paddedVerse}`;
   return [
-    `https://verses.quran.com/Minshawi/Murattal/mp3/028${padded}.mp3`,
-    `https://audio.qurancdn.com/Minshawi/Murattal/mp3/028${padded}.mp3`,
-    `https://everyayah.com/data/Minshawy_Murattal_128kbps/028${padded}.mp3`,
+    `https://verses.quran.com/Minshawi/Murattal/mp3/${code}.mp3`,
+    `https://audio.qurancdn.com/Minshawi/Murattal/mp3/${code}.mp3`,
+    `https://everyayah.com/data/Minshawy_Murattal_128kbps/${code}.mp3`,
   ];
 }
 
@@ -112,11 +118,12 @@ export async function prefetchVersesAudio(
   verses: number[],
   onProgress?: (done: number, total: number, currentVerse: number) => void,
   signal?: AbortSignal,
+  maxVerse: number = ACTIVE_SURAH.verseCount,
 ): Promise<{ downloaded: number; failed: number }> {
   let downloaded = 0;
   let failed = 0;
   let doneCount = 0;
-  const unique = [...new Set(verses)].filter((v) => v >= 1 && v <= 88).sort((a, b) => a - b);
+  const unique = [...new Set(verses)].filter((v) => v >= 1 && v <= maxVerse).sort((a, b) => a - b);
   let cursor = 0;
 
   const worker = async () => {

@@ -14,6 +14,7 @@ import {
   prefetchVersesAudio,
 } from "../services/menshawiAudio";
 import { usePreferencesStore } from "../store/usePreferencesStore";
+import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 
 interface VocabularyMasteryStats {
@@ -26,7 +27,7 @@ interface VocabularyMasteryStats {
   practicedWordsCount: number;
 }
 
-const ALL_QASAS_VERSES = Array.from({ length: 88 }, (_, i) => i + 1);
+const ALL_SURAH_VERSES = getAllVerseNumbers();
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) => String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 
@@ -118,11 +119,11 @@ export const ChillehProfilePage: React.FC = () => {
     const controller = new AbortController();
     abortRef.current = controller;
     setStatusBanner(null);
-    setDownloadProgress({ done: 0, total: 88, verse: 1 });
+    setDownloadProgress({ done: 0, total: ACTIVE_SURAH.verseCount, verse: 1 });
 
     try {
       const res = await prefetchVersesAudio(
-        ALL_QASAS_VERSES,
+        ALL_SURAH_VERSES,
         (done, total, currentVerse) => setDownloadProgress({ done, total, verse: currentVerse }),
         controller.signal,
       );
@@ -385,9 +386,9 @@ export const ChillehProfilePage: React.FC = () => {
         <div className="p-4 rounded-2xl bg-[#fcf9f2] dark:bg-slate-900 border border-[#e6dbc5] dark:border-slate-800 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <span className="font-bold text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
-              {audioStats.count === 88 && <CheckCircle2 className="w-4 h-4 text-emerald-600" />}
+              {audioStats.count === ACTIVE_SURAH.verseCount && <CheckCircle2 className="w-4 h-4 text-emerald-600" />}
               <span>
-                وضعیت کش آفلاین: {toFarsi(audioStats.count)} از ۸۸ آیه ({toFarsi(audioStats.totalMb)} مگابایت)
+                وضعیت کش آفلاین: {toFarsi(audioStats.count)} از {toFarsi(ACTIVE_SURAH.verseCount)} آیه ({toFarsi(audioStats.totalMb)} مگابایت)
               </span>
             </span>
           </div>
@@ -417,7 +418,7 @@ export const ChillehProfilePage: React.FC = () => {
                 className="flex-1 py-2.5 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all"
               >
                 <Download className="w-4 h-4" />
-                <span>{audioStats.count === 88 ? "بررسی مجدد ۸۸ آیه" : "دانلود آفلاین کل ۸۸ آیه (منشاوی)"}</span>
+                <span>{audioStats.count === ACTIVE_SURAH.verseCount ? `بررسی مجدد ${toFarsi(ACTIVE_SURAH.verseCount)} آیه` : `دانلود آفلاین کل ${toFarsi(ACTIVE_SURAH.verseCount)} آیه (منشاوی)`}</span>
               </button>
             ) : (
               <button

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
+import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
@@ -25,24 +26,7 @@ export default function SettingsPage({ onBack }: Props) {
   // Export JSON backup of user progress
   const handleExportBackup = async () => {
     try {
-      const [cards, attempts, confusions, unitProgress, profile] = await Promise.all([
-        ldb.cards.toArray(),
-        ldb.attempts.toArray(),
-        ldb.confusions.toArray(),
-        ldb.unitProgress.toArray(),
-        ldb.profile.get("main"),
-      ]);
-
-      const backupData = {
-        app: "quran-qasas-journey",
-        schemaVersion: 2,
-        exportedAt: new Date().toISOString(),
-        cards,
-        attempts,
-        confusions,
-        unitProgress,
-        profile: profile ?? DEFAULT_USER_PROFILE,
-      };
+      const backupData = await createBackupPayload();
 
       const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
@@ -56,30 +40,22 @@ export default function SettingsPage({ onBack }: Props) {
     }
   };
 
-  // Import JSON backup
+  // Import JSON backup with strict schema validation
   const handleImportBackup = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
     try {
       const text = await file.text();
-      const data = JSON.parse(text);
-      if (data.app !== "quran-qasas-journey" || !Array.isArray(data.cards)) {
-        throw new Error("قالب فایل پشتیبان نامعتبر است.");
-      }
+      const validated = parseAndValidateBackup(text);
+      await restoreValidatedBackup(validated);
 
-      await ldb.transaction("rw", [ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, ldb.profile], async () => {
-        if (data.cards?.length) await ldb.cards.bulkPut(data.cards);
-        if (data.attempts?.length) await ldb.attempts.bulkPut(data.attempts);
-        if (data.confusions?.length) await ldb.confusions.bulkPut(data.confusions);
-        if (data.unitProgress?.length) await ldb.unitProgress.bulkPut(data.unitProgress);
-        if (data.profile && data.profile.id === "main") await ldb.profile.put(data.profile);
-      });
-
-      setImportStatus("پشتیبان با موفقیت بازیابی شد!");
+      setImportStatus("پشتیبان با موفقیت اعتبارسنجی و بازیابی شد!");
       setTimeout(() => setImportStatus(null), 3000);
     } catch (err) {
       alert("خطا در بارگذاری پشتیبان: " + (err instanceof Error ? err.message : String(err)));
+    } finally {
+      e.target.value = "";
     }
   };
 

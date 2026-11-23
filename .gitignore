@@ -33,3 +33,21 @@ release-apk
 *.njsproj
 *.sln
 *.sw?
+
+# Knowledge graph & AI export packs (generated locally)
+graphify-out/
+pack/
+
+# Python artifacts & local content-generation pipelines (contain personal browser profile paths)
+__pycache__/
+*.py[cod]
+raw_responses/
+تولید محتوا سلنیوم/
+تولید محتوا ای پی آی/
+تولید محتوای سابق/
+باز_کردن_اکانت_*.bat
+منوی_انتخاب_اکانت.bat
+تولید محتوا.bat
+**/config.json
+.env
+.env.*

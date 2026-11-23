@@ -4,6 +4,7 @@ import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays
 import { ldb, type StoredCard, type UnitProgressRow } from "../db/learningDb";
 import { isGoldenVerse, skillLevel } from "../learning/mastery";
 import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast";
+import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
 
 interface Props {
   onBack: () => void;
@@ -102,7 +103,8 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
     loadData();
   }, []);
 
-  const totalGoldenVerses = Array.from({ length: 88 }, (_, i) => i + 1).filter((v) =>
+  const allVerses = useMemo(() => getAllVerseNumbers(), []);
+  const totalGoldenVerses = allVerses.filter((v) =>
     isGoldenVerse(v, cardsMap)
   ).length;
   const forecast = useMemo(() => buildReviewForecast(allCardsList), [allCardsList]);
@@ -159,12 +161,12 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
             </p>
           </div>
           <div className="text-center bg-white/20 backdrop-blur-md rounded-2xl p-3 min-w-[5rem]">
-            <div className="text-2xl font-black">{toFarsiNum(Math.round((totalGoldenVerses / 88) * 100))}%</div>
+            <div className="text-2xl font-black">{toFarsiNum(Math.round((totalGoldenVerses / ACTIVE_SURAH.verseCount) * 100))}%</div>
             <div className="text-[10px] text-amber-100 font-medium">تسلط کل سوره</div>
           </div>
         </div>
 
-        {/* 88 Verses Grid */}
+        {/* Verses Grid */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200">
@@ -184,7 +186,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           </div>
 
           <div className="grid grid-cols-8 sm:grid-cols-11 gap-2 pt-2">
-            {Array.from({ length: 88 }, (_, i) => i + 1).map((vNum) => {
+            {allVerses.map((vNum) => {
               const golden = isGoldenVerse(vNum, cardsMap);
               const vrLvl = skillLevel(cardsMap.get(`vr:${vNum}`));
               const vtLvl = skillLevel(cardsMap.get(`vt:${vNum}`));

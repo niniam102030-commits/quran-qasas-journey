@@ -2,6 +2,7 @@
 // پیش‌بینی ۷ روز آینده مرورهای FSRS و شناسایی آیات نزدیک به طلایی شدن
 import type { StoredCard } from "./cardScheduler";
 import { isGoldenVerse, skillLevel } from "./mastery";
+import { ACTIVE_SURAH } from "../config/surahConfig";
 
 export interface ForecastDay {
   dayOffset: number; // 0 = امروز، 1 = فردا، ...
@@ -43,11 +44,14 @@ export function buildReviewForecast(cards: StoredCard[], now: Date = new Date())
   }));
 }
 
-export function findNearGoldenVerses(cardsMap: Map<string, StoredCard>): NearGoldenVerse[] {
+export function findNearGoldenVerses(
+  cardsMap: Map<string, StoredCard>,
+  verseCount: number = ACTIVE_SURAH.verseCount,
+): NearGoldenVerse[] {
   const skills: ("vr" | "vt" | "vn" | "sq")[] = ["vr", "vt", "vn", "sq"];
   const result: NearGoldenVerse[] = [];
 
-  for (let v = 1; v <= 88; v++) {
+  for (let v = 1; v <= verseCount; v++) {
     if (isGoldenVerse(v, cardsMap)) continue;
     const missing = skills.filter((s) => skillLevel(cardsMap.get(`${s}:${v}`)) < 3);
     const level3Count = 4 - missing.length;

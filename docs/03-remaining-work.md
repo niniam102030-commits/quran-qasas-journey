@@ -1,56 +1,28 @@
 # وضعیت پروژه و کارهای باقی‌مانده تا محصول نهایی
 
-تاریخ بررسی: ۱۳ نوامبر ۲۰۲۶ (۱۴۰۵/۰۸/۲۲)
+آخرین به‌روزرسانی: نسخه `1.2.0`
 
-> توجه: در زمان این بررسی محیط اجرای دستور (Node) در دسترس نبود، پس `validate:content` اجرا نشد. وضعیت‌ها از روی ساختار فایل‌ها و کد استخراج شده‌اند. اولین کار فهرست زیر، اجرای اعتبارسنج است.
-
-## ۱) آنچه تمام شده است
+## ۱) آنچه تمام شده است (نسخه 1.2.0)
 
 | بخش | وضعیت |
 |---|---|
-| فاز ۱: داده‌ی پایه (`qasas.base.json`، `units-plan.json`، `similarity.json`) و `input/` برای ۲۲ واحد | انجام شده |
-| اسکریپت‌های `fetch:base`، `build:inputs`، `validate:content` | وجود دارند |
-| فاز ۲: اعتبارسنج محتوا (`validate-content.mjs`) | وجود دارد، بدون تست واحد |
-| تولید محتوا: برای هر ۲۲ واحد (u_p385b تا u_p396a) فایل‌های A و B و C وجود دارد | انجام شده |
-| فاز ۳ (بخشی): `src/types/learning.ts` و `src/services/grading.ts` | نوشته شده، تست ندارد |
+| فاز ۱ و ۲: داده‌ی پایه، ادغام ۲۲ واحد (`public/content/merged/`)، مانیفست با هش و اعتبارسنجی عمیق (`npm run content:all`: ۶٬۸۲۳ سؤال، ۰ خطای ساختاری) | ✅ انجام شده |
+| زیرساخت داده: Dexie نسخه ۲ (`QasasLearningDB`) با جداول `questions`, `lexicon`, `chunks`, `baseVerses`, `cards`, `attempts`, `confusions`, `unitProgress`, `meta`, `audioCache`, `profile` | ✅ انجام شده |
+| پشتیبان‌گیری و بازیابی: خروجی/ورودی JSON با اعتبارسنجی سخت‌گیرانه اسکیما (`src/services/backupService.ts`) | ✅ انجام شده |
+| قلم‌های مصحف: `KFGQPC-Hafs.woff2`، `UthmanTahaNaskh-Regular.woff2`، `Vazirmatn` | ✅ انجام شده |
+| موتور یادگیری: FSRS روی ۶ نوع کلید (`w/vr/vt/vn/sq/pg`)، `sessionPlanner.ts`، `mastery.ts`، `forecast.ts`، `mutashabihat.ts` | ✅ انجام شده |
+| رابط کاربری: `MushafHalfPage`، `QuestionRenderer` (چهار قالب)، `UnitsPage`، `LearningSessionPage`، `MasteryPage`، `ChillehProfilePage`، `AudioQuizPage`، `SettingsPage` | ✅ انجام شده |
+| صوت منشاوی و کش آفلاین IndexedDB با پیکربندی پارامتریک سوره (`src/config/surahConfig.ts`) | ✅ انجام شده |
+| امنیت و بهداشت مخزن: سخت‌سازی `capacitor.config.ts`، حذف فایل‌های محلی تولید محتوا و `graphify-out` از ردیابی گیت، یکسان‌سازی lockfile، افزودن `lint` و `content:all` و امضای Release به CI | ✅ انجام شده |
+| تست‌های واحد با Vitest (`npm test`) و لینتر `oxlint` (`npm run lint`) | ✅ انجام شده |
 
-## ۲) آنچه مانده (به ترتیب اولویت)
+## ۲) آنچه واقعاً باقی مانده (اولویت‌بندی‌شده)
 
-### گام ۰ — پاک‌سازی و تأیید محتوا (قبل از هر کد جدید)
-
-1. **ادغام قطعه‌ها.** پوشه‌ی `public/content/units/` پر از `partA2..A13`، `partB2..B10`، `partC2..C13` است (حدود ۳۰۰ فایل). مشخصات فقط `partA|B|C` را پیش‌بینی کرده بود. یک اسکریپت باید قطعه‌های هر PART را به یک فایل واحد ادغام کند (با حذف `id` تکراری و آزمون یکتایی) و قطعه‌ها را به `_parts/` منتقل کند. بدون این کار manifest و loader تکلیفشان معلوم نیست.
-2. **اجرای `npm run validate:content -- --strict`** روی خروجی ادغام‌شده و خواندن گزارش. معیارها: حداقل سهمیه‌ی هر stage، کارت‌های با کمتر از ۸ سوال خواهر (۶ برای `w:`)، پاسخ‌های غیریکتا، `sq:` غیرمجاز.
-3. **بازتولید فقط خطاها** (طبق راهنمای اجرا: «فقط همین‌ها را اصلاح کن») تا اعتبارسنج بدون خطا شود.
-4. **تعیین تکلیف پوشه‌های قدیمی:** `_backup_synthetic`، `_rejected`، `_progress`، `qasas_full_seed.json`، `generate-qasas-content.mjs`، `compile-content-pack.mjs` و سه پوشه‌ی «تولید محتوا…». این‌ها به خط تولید قبلی (دیتای ساختگی/ایستگاه‌های شهری) تعلق دارند. پیشنهاد: به `archive/` منتقل شوند تا ایجنت و خود شما با مسیر قدیمی اشتباه نگیرید.
-5. **بازبینی نمونه‌ای انسانی:** دست‌کم یک واحد را کامل بازی کنید (یا ۴۰ سوال تصادفی را بخوانید): انحرافی‌ها، توضیح‌ها، درستی معنای کلمات سخت. اعتبارسنج درستی ساختاری را می‌سنجد، نه درستی معنایی.
-
-### گام ۱ — زیرساخت داده و بارگذاری (باقی‌مانده‌ی فاز ۳ و ۶)
-
-6. `scripts/build-manifest.mjs` (با `contentHash`) و افزودن `prebuild` با حالت strict.
-7. Dexie نسخه‌ی ۲ با جدول‌های `questions, lexicon, chunks, cards, attempts, confusions, unitProgress, baseVerses, memUnits, meta`. هم‌اکنون `database.ts` فقط `version(1)` دارد.
-8. `contentLoader.ts` (sync مبتنی بر hash) و حذف seed قدیمی از `initApp`.
-9. **فونت KFGQPC Hafs**: پوشه‌ی `public/fonts/` فقط `.gitkeep` دارد. بدون فونت، نمایش مصحف و شماره‌ی خط‌ها معنا ندارد. دانلود، `@font-face` و ثبت مجوز در `DECISIONS.md`.
-
-### گام ۲ — موتور یادگیری (فاز ۴)
-
-10. تعمیم `fsrsScheduler.ts` به همه‌ی کلیدها (`w/vr/vt/vn/sq/pg`) با retention های ۰٫۹۳ و ۰٫۹۰ و نگاشت رتبه از روی زمان و راهنما.
-11. `sessionPlanner.ts` (STAGE / REVIEW / REMEDIAL / CUMULATIVE).
-12. `mastery.ts` (قفل stage و واحد، آیه‌ی طلایی، بدهی مرور).
-13. بازنویسی `useAppStore.ts` (صف جلسه، ثبت attempts و confusions، چراغ بدون قفل‌کردن جلسه).
-14. تست‌های vitest (در `package.json` اصلاً vitest نیست): grading، planner، fsrs، mastery، validator، units-plan.
-
-### گام ۳ — رابط کاربری (فاز ۵)
-
-15. `MushafHalfPage` (سه حالت reading / hidden / partial، لمس کلمه).
-16. چهار کامپوننت سوال و `QuestionRenderer`: Choice، MatchTwoRows، WordBankOrder (شامل ORDER_VERSES با drag)، Cloze؛ همراه راهنما و بازخورد.
-17. صفحات: UnitPage، LessonSessionPage (بازنویسی)، ReviewPage، MasteryPage (شبکه‌ی ۸۸ آیه)، تنظیمات. `App.tsx` هنوز نمای قدیمی (`lesson_u_p385b`، صفحه‌ی خوش‌آمد با متن «PROJECT_CONTRACT») را دارد.
-18. انتقال `FalseFriendHunter`، `AudioCloze` و … به `legacy/`، و ساده‌سازی نقشه به ۵ بخش تزئینی.
-
-### گام ۴ — تحویل
-
-19. `README.md` را بازنویسی کنید (هنوز «موتور ۴ لایه» و ادعای ایستگاه‌ها را دارد).
-20. آزمون پذیرش دستی بخش «Definition of Done» (آفلاین، دو روز شبیه‌سازی‌شده، ۳ صفحه‌ی مقایسه با مصحف چاپی، نبود متن قرآن در `src/`).
-21. بیلد Android با Capacitor (`cap:build`) و آزمون روی یک دستگاه واقعی.
+1. **بازبینی انسانیِ صحت معنایی واژگان قرآنی**: اعتبارسنج خودکار (`validate-content.mjs` و `validate-deep.mjs`) صحت ساختاری و ارجاعات را تضمین می‌کند، نه صحت فقهی/لغوی معنای هر واژه. نکته: خطاهای `missing fa/ar` در `docs/review-flags.md` ناشی از نام‌گذاری قدیمی اسکریپت نمونه بود (فیلدهای واقعی `gloss` و `meaningFa` هستند)، اما بازبینی انسانی واژگان سخت همچنان بالاترین اولویت کیفی محتواست.
+2. **پاک‌سازی تاریخچه عمومی گیت (Git History Purge)**: فایل‌های `config.json` قدیمی از ردیابی گیت و `.gitignore` حذف شدند، اما برای پاک شدن کامل از کامیت‌های قبلی در مخزن عمومی GitHub، اجرای `git filter-repo` و force-push لازم است.
+3. **تنظیم Secrets امضای اندروید در GitHub**: ثبت `KEYSTORE_BASE64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS`, `KEY_PASSWORD` در تنظیمات مخزن برای تولید خودکار Release APK امضاشده روی تگ‌ها.
+4. **ثبت نهایی مجوزها برای انتشار در فروشگاه‌ها**: تکمیل مستندات مجوز فونت و ترجمه استاد انصاریان در `docs/DECISIONS.md`.
+5. **توسعه به پک‌های چندسوره‌ای و قابلیت‌های نسل بعد** (در صورت تصمیم محصولی): یکپارچه‌سازی داده مرجع QUL، هایلایت کلمه‌به‌کلمه هم‌گام با صوت، بهینه‌سازی پارامترهای FSRS و ارزیابی تلاوت آفلاین.
 
 ## ۳) ترتیب سوال‌ها، مراحل و تکرارها (طراحی نهایی)
 

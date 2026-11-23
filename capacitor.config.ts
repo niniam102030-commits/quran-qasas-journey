@@ -6,19 +6,15 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   server: {
     androidScheme: 'https',
-    cleartext: true,
+    cleartext: false,
     allowNavigation: [
-      '*.everyayah.com',
-      'everyayah.com',
-      '*.qurancdn.com',
+      'verses.quran.com',
       'audio.qurancdn.com',
-      '*.quranwbw.com',
-      'quranwbw.com',
-      '*'
+      'everyayah.com'
     ]
   },
   android: {
-    allowMixedContent: true,
+    allowMixedContent: false,
     captureInput: true,
     webContentsDebuggingEnabled: false
   }

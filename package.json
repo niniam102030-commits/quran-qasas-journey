@@ -2,7 +2,7 @@
   "name": "quran-qasas-journey",
   "description": "سامانه تعاملی یادگیری واژگان سخت، ریشه‌شناسی و تله‌های معنایی سوره قصص برای فارسی‌زبانان",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,10 +14,10 @@
     "merge:content": "node scripts/merge-parts.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "validate:deep": "node scripts/validate-deep.mjs",
+    "validate:all": "node scripts/validate-content.mjs --merged --strict",
     "build:manifest": "node scripts/build-manifest.mjs",
     "content:all": "node scripts/merge-parts.mjs && node scripts/validate-content.mjs --merged --strict && node scripts/validate-deep.mjs --strict && node scripts/build-manifest.mjs",
     "test": "vitest run",
-    "compile:content": "node scripts/compile-content-pack.mjs",
     "cap:sync": "cap sync",
     "cap:open": "cap open android",
     "cap:build": "npm run build && cap sync"
