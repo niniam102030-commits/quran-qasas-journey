@@ -94,6 +94,10 @@ jobs:
           mkdir -p release-apk
           cp "$APK_PATH" release-apk/quran-qasas-android.apk
 
+      - name: Print APK signing certificate SHA-256 fingerprint
+        run: |
+          keytool -printcert -jarfile release-apk/quran-qasas-android.apk | grep -E "Owner:|Issuer:|Valid|SHA256:" || true
+
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
