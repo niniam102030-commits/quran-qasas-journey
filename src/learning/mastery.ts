@@ -15,11 +15,22 @@ export const UNLOCK_DEBT_LIMIT = 40;
 export const LESSONS_PER_STAGE = 2;         // هر مرحله شامل ۲ درس کوتاه ۱۰ سوالی
 export const LESSON_SIZE = 10;              // تعداد سوال در هر درس کوتاه
 export const MAX_REQUEUE_PER_QUESTION = 2;  // حداکثر ۲ بار بازگشت سوال غلط به صف
+export const FLAWLESS_MIN_ATTEMPTS = 8;     // حداقل تلاش اول برای حذف مشروط درس دوم
 
 export function passRatioForStage(stage: number): number {
   if (stage === 8) return STAGE8_PASS_RATIO;
   if (stage <= 2) return STAGE_INTRO_PASS_RATIO;
   return STAGE_PASS_RATIO;
+}
+
+/** آیا درس کاملاً بی‌نقص انجام شده؟ (حداقل ۸ تلاش اول، همگی درست، بدون راهنما و بدون بازگشت به صف) */
+export function isFlawlessLesson(
+  attempts: StageAttempt[],
+  opts: { anyHint: boolean; anyRequeue: boolean },
+): boolean {
+  if (attempts.length < FLAWLESS_MIN_ATTEMPTS) return false;
+  if (opts.anyHint || opts.anyRequeue) return false;
+  return attempts.every((a) => a.correct && !a.usedHint);
 }
 
 /** آیا درس/مرحله پاس شد؟ مراحل ۱–۲: ≥۷۵٪، مراحل ۳–۷: ≥۸۰٪، مرحله ۸: ≥۸۵٪ بدون راهنما. */

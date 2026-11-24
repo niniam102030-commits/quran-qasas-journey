@@ -242,6 +242,13 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
             </div>
           )}
 
+          {m?.waivedLesson && (
+            <div className="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200 text-xs font-bold flex items-center justify-center gap-2">
+              <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+              <span>عملکرد بی‌نقص — درس دوم این مرحله حذف شد 🎉</span>
+            </div>
+          )}
+
           {m?.unlockedNext && (
             <div className="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs font-bold flex items-center justify-center gap-2">
               <Sparkles className="w-4 h-4 text-amber-600" />

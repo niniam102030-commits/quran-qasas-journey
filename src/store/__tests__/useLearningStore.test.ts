@@ -19,6 +19,8 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
       index: 0,
       wrongCounts: {},
       firstAttempts: [],
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
       seen: new Set(),
       lastResult: null,
       summary: null,
@@ -199,5 +201,56 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
 
     u2 = await ldb.unitProgress.get("u_p385b");
     expect(u2?.unlocked).toBe(false);
+  });
+
+  it("F3: flawless lesson (10/10 no hint, no requeue) waives lesson 2 on stages 1..7, but not stage 8", async () => {
+    await ldb.unitProgress.put({
+      unitId: "u_p385a",
+      unlocked: true,
+      stagePassed: {},
+      stageLessons: {},
+      currentStage: 1,
+      mastered: false,
+      updatedAt: Date.now(),
+    });
+
+    // Stage 3 flawless lesson 1 -> waives lesson 2
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "STAGE",
+      unitId: "u_p385a",
+      stage: 3,
+      queue: [{ id: "q1", unitId: "u_p385a", stage: 3, skill: "verse", type: "VERSE_ORDER", shape: "order", difficulty: 2, targets: [] }],
+      index: 0,
+      firstAttempts: Array.from({ length: 10 }, () => ({ stage: 3, correct: true, usedHint: false })),
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+    });
+    await useLearningStore.getState().next();
+
+    let prog = await ldb.unitProgress.get("u_p385a");
+    expect(prog?.stageLessons?.[3]).toBe(2);
+    expect(prog?.stagePassed[3]).toBe(true);
+    expect(useLearningStore.getState().summary?.waivedLesson).toBe(true);
+    expect(useLearningStore.getState().summary?.stageCompleted).toBe(true);
+
+    // Stage 8 flawless lesson 1 -> NOT waived
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "STAGE",
+      unitId: "u_p385a",
+      stage: 8,
+      queue: [{ id: "q8", unitId: "u_p385a", stage: 8, skill: "verse", type: "VERSE_ORDER", shape: "order", difficulty: 4, targets: [] }],
+      index: 0,
+      firstAttempts: Array.from({ length: 10 }, () => ({ stage: 8, correct: true, usedHint: false })),
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+    });
+    await useLearningStore.getState().next();
+
+    prog = await ldb.unitProgress.get("u_p385a");
+    expect(prog?.stageLessons?.[8]).toBe(1);
+    expect(prog?.stagePassed[8]).toBeFalsy();
+    expect(useLearningStore.getState().summary?.waivedLesson).toBeUndefined();
   });
 });

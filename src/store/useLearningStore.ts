@@ -9,6 +9,7 @@ import {
   stagePassed,
   canUnlockNext,
   passRatioForStage,
+  isFlawlessLesson,
   LESSONS_PER_STAGE,
   LESSON_SIZE,
   MAX_REQUEUE_PER_QUESTION,
@@ -36,6 +37,7 @@ export interface SessionSummary {
   lessonsRequired?: number;
   stageCompleted?: boolean;
   requiredRatio?: number;
+  waivedLesson?: boolean;
 }
 
 interface LearningState {
@@ -48,6 +50,8 @@ interface LearningState {
   index: number;
   wrongCounts: Record<string, number>;
   firstAttempts: StageAttempt[]; // فقط اولین تلاش هر سوال (برای پاس‌شدن مرحله)
+  sessionAnyHint: boolean;
+  sessionAnyRequeue: boolean;
   seen: Set<string>;
   lastResult: GradeResult | null;
   summary: SessionSummary | null;
@@ -78,6 +82,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   index: 0,
   wrongCounts: {},
   firstAttempts: [],
+  sessionAnyHint: false,
+  sessionAnyRequeue: false,
   seen: new Set(),
   lastResult: null,
   summary: null,
@@ -96,7 +102,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(stageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
-      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
+      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
       return;
     }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
@@ -109,6 +115,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       index: 0,
       wrongCounts: {},
       firstAttempts: [],
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
       seen: new Set(),
     });
   },
@@ -128,7 +136,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       if (q) picked.set(q.id, q);
     }
     const queue = [...picked.values()];
-    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, queue, index: 0, wrongCounts: {}, firstAttempts: [], seen: new Set(),
+    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, queue, index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(),
       summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 } });
   },
 
@@ -181,6 +189,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       index: 0,
       wrongCounts: {},
       firstAttempts: [],
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
       seen: new Set(),
       summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 },
     });
@@ -245,16 +255,19 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const seen = new Set(s.seen).add(q.id);
     const wrongCounts = { ...s.wrongCounts };
     let queue = s.queue;
+    const sessionAnyHint = s.sessionAnyHint || !!meta.usedHint;
+    let sessionAnyRequeue = s.sessionAnyRequeue;
     // در مرحله ۸ سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
     if (!res.correct && s.stage !== 8) {
       const prevWrong = wrongCounts[q.id] ?? 0;
       if (prevWrong < MAX_REQUEUE_PER_QUESTION) {
         wrongCounts[q.id] = prevWrong + 1;
         queue = requeue(s.queue, s.index, q, wrongCounts[q.id]);
+        sessionAnyRequeue = true;
       }
     }
     set({
-      lastResult: res, seen, wrongCounts, queue,
+      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue,
       firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;
@@ -278,6 +291,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     let lessonNumber: number | undefined;
     let lessonsRequired: number | undefined;
     let stageCompleted = false;
+    let waivedLesson = false;
     const requiredRatio = s.sessionType === "STAGE" ? passRatioForStage(s.stage) : 0.8;
     const allCards = await ldb.cards.toArray();
     const debt = reviewDebt(allCards);
@@ -287,7 +301,18 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         lessonsRequired = LESSONS_PER_STAGE;
         const stageLessons = { ...(p.stageLessons ?? {}) };
         const prevDone = p.stagePassed[s.stage] ? LESSONS_PER_STAGE : (stageLessons[s.stage] ?? 0);
-        const nextDone = passed ? Math.min(LESSONS_PER_STAGE, prevDone + 1) : prevDone;
+        const stageAttempts = attempts.filter((a) => a.stage === s.stage);
+        const flawless =
+          s.sessionType === "STAGE" &&
+          s.stage !== 8 &&
+          passed &&
+          isFlawlessLesson(stageAttempts, { anyHint: s.sessionAnyHint, anyRequeue: s.sessionAnyRequeue });
+        const nextDone = passed
+          ? flawless
+            ? LESSONS_PER_STAGE
+            : Math.min(LESSONS_PER_STAGE, prevDone + 1)
+          : prevDone;
+        waivedLesson = flawless && prevDone < LESSONS_PER_STAGE - 1;
         lessonNumber = nextDone;
         stageLessons[s.stage] = nextDone;
         p.stageLessons = stageLessons;
@@ -357,6 +382,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         lessonsRequired,
         stageCompleted,
         requiredRatio,
+        ...(waivedLesson ? { waivedLesson: true } : {}),
       },
     });
   },

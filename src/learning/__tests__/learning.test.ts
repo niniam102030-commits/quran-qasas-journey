@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { newCard, ratingFor, review, kindOfKey, reviewDebt } from "../cardScheduler";
-import { stagePassed, canUnlockNext } from "../mastery";
+import { stagePassed, canUnlockNext, isFlawlessLesson } from "../mastery";
 import { planStage, requeue, type PlannerQuestion } from "../sessionPlanner";
 
 const q = (i: number, type = "t" + (i % 3), difficulty = 1 + (i % 3)): PlannerQuestion => ({
@@ -64,6 +64,28 @@ describe("mastery", () => {
   it("گشایش با بدهی", () => {
     expect(canUnlockNext(true, 39)).toBe(true);
     expect(canUnlockNext(true, 40)).toBe(false);
+  });
+  it("isFlawlessLesson: ۱۰/۱۰ بدون راهنما و بدون برگشتی ⇒ true", () => {
+    const perfect = Array.from({ length: 10 }, () => ({ stage: 3, correct: true, usedHint: false }));
+    expect(isFlawlessLesson(perfect, { anyHint: false, anyRequeue: false })).toBe(true);
+  });
+  it("isFlawlessLesson: ۹/۱۰ ⇒ false", () => {
+    const nineOfTen = Array.from({ length: 9 }, () => ({ stage: 3, correct: true, usedHint: false }))
+      .concat([{ stage: 3, correct: false, usedHint: false }]);
+    expect(isFlawlessLesson(nineOfTen, { anyHint: false, anyRequeue: false })).toBe(false);
+  });
+  it("isFlawlessLesson: ۱۰/۱۰ با یک راهنما ⇒ false", () => {
+    const withHint = Array.from({ length: 10 }, (_, i) => ({ stage: 3, correct: true, usedHint: i === 0 }));
+    expect(isFlawlessLesson(withHint, { anyHint: true, anyRequeue: false })).toBe(false);
+    expect(isFlawlessLesson(withHint, { anyHint: false, anyRequeue: false })).toBe(false);
+  });
+  it("isFlawlessLesson: ۱۰/۱۰ با یک سؤال برگشتی ⇒ false", () => {
+    const perfectAttempts = Array.from({ length: 10 }, () => ({ stage: 3, correct: true, usedHint: false }));
+    expect(isFlawlessLesson(perfectAttempts, { anyHint: false, anyRequeue: true })).toBe(false);
+  });
+  it("isFlawlessLesson: کمتر از ۸ تلاش ⇒ false", () => {
+    const seven = Array.from({ length: 7 }, () => ({ stage: 3, correct: true, usedHint: false }));
+    expect(isFlawlessLesson(seven, { anyHint: false, anyRequeue: false })).toBe(false);
   });
 });
 
