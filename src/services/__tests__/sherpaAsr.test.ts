@@ -1,6 +1,13 @@
 // src/services/__tests__/sherpaAsr.test.ts
+import "fake-indexeddb/auto";
 import { describe, expect, it, vi } from "vitest";
+import { ldb } from "../../db/learningDb";
 import { verifyVerseRecitation } from "../recitationVerifier";
+import {
+  loadRecitationCalibration,
+  META_RECITATION_CALIBRATION,
+  recordUserConfirmedRecitationWord,
+} from "../recitationCalibrationService";
 import {
   MODEL_SHA256,
   MODEL_SIZE_MB,
@@ -62,7 +69,14 @@ describe("sherpaAsr bridge & helpers (B1)", () => {
     fakeBridge.addListener("partial", (e) => {
       lastTranscript = e.text;
     });
-    await fakeBridge.start({ sampleRate: 16000 });
+    await fakeBridge.start({
+      sampleRate: 16000,
+      hotwords: ["تِلْكَ", "ءَايَٰتُ", "ٱلْكِتَٰبِ", "ٱلْمُبِينِ"],
+    });
+    expect(fakeBridge.start).toHaveBeenCalledWith({
+      sampleRate: 16000,
+      hotwords: ["تِلْكَ", "ءَايَٰتُ", "ٱلْكِتَٰبِ", "ٱلْمُبِينِ"],
+    });
     await fakeBridge.feed(pcmFloat32ToInt16Base64(new Float32Array([0.1, -0.1, 0.2]), 16000, 16000));
     expect(lastTranscript).toBe("تلك آيات الكتاب");
 
@@ -76,5 +90,18 @@ describe("sherpaAsr bridge & helpers (B1)", () => {
     const check = verifyVerseRecitation(expectedWords, final.text);
     expect(check.accuracyPercent).toBe(100);
     expect(check.correctCount).toBe(4);
+  });
+
+  it("persists and increments recitationCalibration in ldb.meta when user confirms words", async () => {
+    await ldb.open();
+    await ldb.meta.delete(META_RECITATION_CALIBRATION);
+
+    await recordUserConfirmedRecitationWord("ٱلْكِتَٰبِ");
+    const after1 = await recordUserConfirmedRecitationWord("الكتاب");
+    expect(after1.map.get("الكتاب")).toBe(2);
+
+    const loaded = await loadRecitationCalibration();
+    expect(loaded.data.confirmed["الكتاب"]).toBe(2);
+    expect(loaded.map.get("الكتاب")).toBe(2);
   });
 });

@@ -10,7 +10,7 @@ export const MODEL_SIZE_MB = 247;
 
 export interface SherpaAsr {
   isAvailable(): Promise<boolean>;
-  start(opts: { sampleRate: 16000 }): Promise<void>;
+  start(opts: { sampleRate: 16000; hotwords?: string[] }): Promise<void>;
   feed(samplesBase64: string): Promise<void>;
   stop(): Promise<{ text: string }>;
   addListener(event: "partial", cb: (e: { text: string }) => void): void;
@@ -27,7 +27,7 @@ interface NativeSherpaPlugin {
   getModelStatus(): Promise<SherpaModelStatus>;
   downloadModel(opts: { url: string; sha256: string }): Promise<{ installed: boolean; sha256: string }>;
   deleteModel(): Promise<{ deleted: boolean }>;
-  start(opts: { sampleRate: number }): Promise<void>;
+  start(opts: { sampleRate: number; hotwords?: string[] }): Promise<void>;
   feed(opts: { samplesBase64: string }): Promise<void>;
   stop(): Promise<{ text: string }>;
   addListener(
@@ -52,7 +52,7 @@ export const sherpaAsr: SherpaAsr = {
       return false;
     }
   },
-  async start(opts: { sampleRate: 16000 }): Promise<void> {
+  async start(opts: { sampleRate: 16000; hotwords?: string[] }): Promise<void> {
     if (!nativePlugin) throw new Error("افزونه بومی sherpa-onnx فقط در نسخه اندروید در دسترس است.");
     await nativePlugin.start(opts);
   },
@@ -162,6 +162,7 @@ export interface SherpaMicSessionHandle {
  */
 export async function startSherpaMicrophoneSession(opts: {
   engine?: SherpaAsr;
+  hotwords?: string[];
   onTranscript: (transcript: string, isFinal: boolean) => void;
   onError: (messageFa: string) => void;
   onEnd: () => void;
@@ -190,7 +191,10 @@ export async function startSherpaMicrophoneSession(opts: {
       }
     });
 
-    await engine.start({ sampleRate: 16000 });
+    await engine.start({
+      sampleRate: 16000,
+      ...(opts.hotwords && opts.hotwords.length > 0 ? { hotwords: opts.hotwords } : {}),
+    });
     stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     audioCtx = new AudioContext();
     const source = audioCtx.createMediaStreamSource(stream);

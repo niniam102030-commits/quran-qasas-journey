@@ -20,7 +20,7 @@ interface SpeechRecognitionLike {
   lang: string;
   continuous: boolean;
   interimResults: boolean;
-  onresult: ((ev: { results: ArrayLike<ArrayLike<{ transcript: string }> & { isFinal?: boolean }> }) => void) | null;
+  onresult: ((ev: { results: ArrayLike<ArrayLike<{ transcript: string; confidence?: number }> & { isFinal?: boolean }> }) => void) | null;
   onerror: ((ev: { error?: string }) => void) | null;
   onend: (() => void) | null;
   start: () => void;
@@ -32,7 +32,7 @@ interface SpeechRecognitionLike {
  * در Android WebView (داخل APK) معمولاً این API در دسترس نیست و کاربر به ضبط صدای آفلاین هدایت می‌شود.
  */
 export function startLiveArabicRecognition(callbacks: {
-  onTranscript: (transcript: string, isFinal: boolean) => void;
+  onTranscript: (transcript: string, isFinal: boolean, tokenConfidences?: number[]) => void;
   onError: (messageFa: string) => void;
   onEnd: () => void;
 }): LiveRecognitionHandle | null {
@@ -55,14 +55,30 @@ export function startLiveArabicRecognition(callbacks: {
   recognition.onresult = (event) => {
     let fullText = "";
     let hasFinal = false;
+    const tokenConfidences: number[] = [];
     for (let i = 0; i < event.results.length; i++) {
       const res = event.results[i];
-      if (res && res[0]?.transcript) {
-        fullText += " " + res[0].transcript;
+      const alt = res?.[0];
+      if (alt?.transcript) {
+        const piece = alt.transcript.trim();
+        if (piece) {
+          fullText += " " + piece;
+          const wordsCount = piece.split(/\s+/).filter(Boolean).length;
+          const conf = typeof alt.confidence === "number" && Number.isFinite(alt.confidence) && alt.confidence > 0
+            ? alt.confidence
+            : 1;
+          for (let k = 0; k < wordsCount; k++) {
+            tokenConfidences.push(conf);
+          }
+        }
       }
       if (res?.isFinal) hasFinal = true;
     }
-    callbacks.onTranscript(fullText.trim(), hasFinal);
+    callbacks.onTranscript(
+      fullText.trim(),
+      hasFinal,
+      tokenConfidences.length > 0 ? tokenConfidences : undefined,
+    );
   };
 
   recognition.onerror = (ev) => {

@@ -263,6 +263,9 @@ class SherpaAsrPlugin : Plugin() {
     @PluginMethod
     fun start(call: PluginCall) {
         val sampleRate = call.getInt("sampleRate") ?: 16000
+        // دریافت اختیاری hotwords (بخش ۴): مدل چندزبانهٔ فعلی بدون فایل BPE vocab روی greedy_search اجرا می‌شود؛
+        // بنابراین آرایهٔ hotwords دریافت ولی بی‌سروصدا نادیده گرفته می‌شود تا خطایی در ایجاد استریم رخ ندهد.
+        val _hotwords = call.getArray("hotwords")
         executor.execute {
             try {
                 val rec = ensureRecognizer(sampleRate)
