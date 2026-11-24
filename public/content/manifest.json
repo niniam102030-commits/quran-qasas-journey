@@ -1,7 +1,7 @@
 {
  "schema": "qasas.manifest.v1",
- "contentHash": "3c5c20e3050ff76d",
- "generatedAt": "2026-11-22T23:31:36.359Z",
+ "contentHash": "3a6235ff60b75a88",
+ "generatedAt": "2026-11-24T01:36:37.448Z",
  "base": {
   "file": "base/qasas.base.json",
   "hash": "ee6d85e1872e863c"
@@ -25,20 +25,20 @@
     {
      "file": "merged/u_p385b.partA.json",
      "part": "A",
-     "hash": "ae51551ec2f3effd",
-     "bytes": 296151
+     "hash": "9e73c0504588b6f2",
+     "bytes": 295451
     },
     {
      "file": "merged/u_p385b.partB.json",
      "part": "B",
-     "hash": "069c4ebe58cf35db",
-     "bytes": 165653
+     "hash": "64dd00d8ec70d74f",
+     "bytes": 172110
     },
     {
      "file": "merged/u_p385b.partC.json",
      "part": "C",
-     "hash": "b8d78de8ca6c7b3f",
-     "bytes": 242146
+     "hash": "f5f0deca7b2a4a81",
+     "bytes": 242127
     }
    ]
   },
@@ -59,20 +59,20 @@
     {
      "file": "merged/u_p386a.partA.json",
      "part": "A",
-     "hash": "73f8f906186eb48f",
-     "bytes": 361201
+     "hash": "d5c1fb994cca4491",
+     "bytes": 360710
     },
     {
      "file": "merged/u_p386a.partB.json",
      "part": "B",
-     "hash": "324361562a00f11f",
-     "bytes": 162496
+     "hash": "15f2209ff4544f1c",
+     "bytes": 168568
     },
     {
      "file": "merged/u_p386a.partC.json",
      "part": "C",
-     "hash": "a3c0c61b8d567c84",
-     "bytes": 287087
+     "hash": "1882f66ea926baf9",
+     "bytes": 286853
     }
    ]
   },
@@ -93,20 +93,20 @@
     {
      "file": "merged/u_p386b.partA.json",
      "part": "A",
-     "hash": "312d42e447c03f48",
-     "bytes": 353162
+     "hash": "49cfdc2dc1e3a817",
+     "bytes": 351991
     },
     {
      "file": "merged/u_p386b.partB.json",
      "part": "B",
-     "hash": "360d7910525100d4",
-     "bytes": 162505
+     "hash": "c39535dd5183a91d",
+     "bytes": 168681
     },
     {
      "file": "merged/u_p386b.partC.json",
      "part": "C",
-     "hash": "0855774cc8d7da46",
-     "bytes": 296536
+     "hash": "78f1f2f59c176ba0",
+     "bytes": 296300
     }
    ]
   },
@@ -127,20 +127,20 @@
     {
      "file": "merged/u_p387a.partA.json",
      "part": "A",
-     "hash": "6bf165c78ddacd35",
-     "bytes": 245169
+     "hash": "91447b858172efab",
+     "bytes": 244879
     },
     {
      "file": "merged/u_p387a.partB.json",
      "part": "B",
-     "hash": "b6229418972e7fef",
-     "bytes": 161546
+     "hash": "7b06ca7ec2befb17",
+     "bytes": 168177
     },
     {
      "file": "merged/u_p387a.partC.json",
      "part": "C",
-     "hash": "7c7d2867dcfb652a",
-     "bytes": 223374
+     "hash": "288dc8a29666e64e",
+     "bytes": 223343
     }
    ]
   },
@@ -161,20 +161,20 @@
     {
      "file": "merged/u_p387b.partA.json",
      "part": "A",
-     "hash": "66a8eb729a8e41a1",
-     "bytes": 276416
+     "hash": "b9b4da4d3ebac3c3",
+     "bytes": 275186
     },
     {
      "file": "merged/u_p387b.partB.json",
      "part": "B",
-     "hash": "df6b237a72825216",
-     "bytes": 169606
+     "hash": "3e3e0a23c8c5561f",
+     "bytes": 176100
     },
     {
      "file": "merged/u_p387b.partC.json",
      "part": "C",
-     "hash": "bde96b7797a1854f",
-     "bytes": 197469
+     "hash": "9439173172b6d0b3",
+     "bytes": 197392
     }
    ]
   },
@@ -194,19 +194,19 @@
     {
      "file": "merged/u_p388a.partA.json",
      "part": "A",
-     "hash": "20184c9e76792cd1",
-     "bytes": 261305
+     "hash": "52f8935ba55ff851",
+     "bytes": 260868
     },
     {
      "file": "merged/u_p388a.partB.json",
      "part": "B",
-     "hash": "8c9027fd6c09ca7d",
-     "bytes": 95108
+     "hash": "fda67166cef70911",
+     "bytes": 99479
     },
     {
      "file": "merged/u_p388a.partC.json",
      "part": "C",
-     "hash": "6f9ba39252dfd036",
+     "hash": "3ed8df7fc36c0437",
      "bytes": 192311
     }
    ]
@@ -228,20 +228,20 @@
     {
      "file": "merged/u_p388b.partA.json",
      "part": "A",
-     "hash": "96ce85de9baff663",
-     "bytes": 213651
+     "hash": "a7256cad59ff3678",
+     "bytes": 213949
     },
     {
      "file": "merged/u_p388b.partB.json",
      "part": "B",
-     "hash": "ce04a502c7209b0d",
-     "bytes": 121584
+     "hash": "91c0ed18a516d172",
+     "bytes": 126841
     },
     {
      "file": "merged/u_p388b.partC.json",
      "part": "C",
-     "hash": "11af4c04b300b5ad",
-     "bytes": 175087
+     "hash": "4261ef202a80f29e",
+     "bytes": 175019
     }
    ]
   },
@@ -261,20 +261,20 @@
     {
      "file": "merged/u_p389a.partA.json",
      "part": "A",
-     "hash": "b9a712c6b8a26d7a",
-     "bytes": 248029
+     "hash": "ad0ce261685fa6a7",
+     "bytes": 248702
     },
     {
      "file": "merged/u_p389a.partB.json",
      "part": "B",
-     "hash": "f83d2a21458be7ca",
-     "bytes": 91716
+     "hash": "df44a56239f87de0",
+     "bytes": 95832
     },
     {
      "file": "merged/u_p389a.partC.json",
      "part": "C",
-     "hash": "c748bd86967e7258",
-     "bytes": 150334
+     "hash": "819aa31fa2efe9be",
+     "bytes": 150193
     }
    ]
   },
@@ -295,20 +295,20 @@
     {
      "file": "merged/u_p389b.partA.json",
      "part": "A",
-     "hash": "6b4cc5841faf6d12",
-     "bytes": 264161
+     "hash": "78b71d188adb8747",
+     "bytes": 264458
     },
     {
      "file": "merged/u_p389b.partB.json",
      "part": "B",
-     "hash": "23c12181aad00a29",
-     "bytes": 108382
+     "hash": "dd289a15686c866f",
+     "bytes": 113156
     },
     {
      "file": "merged/u_p389b.partC.json",
      "part": "C",
-     "hash": "435236a454678660",
-     "bytes": 191218
+     "hash": "57c768c4cd639560",
+     "bytes": 191046
     }
    ]
   },
@@ -328,20 +328,20 @@
     {
      "file": "merged/u_p390a.partA.json",
      "part": "A",
-     "hash": "ca5593039aedafa8",
-     "bytes": 169900
+     "hash": "24fada2765a6b63d",
+     "bytes": 170042
     },
     {
      "file": "merged/u_p390a.partB.json",
      "part": "B",
-     "hash": "bfe7cb5e4e326dc1",
-     "bytes": 89794
+     "hash": "722fefb9857ccf98",
+     "bytes": 93702
     },
     {
      "file": "merged/u_p390a.partC.json",
      "part": "C",
-     "hash": "49fa4deb025e3c14",
-     "bytes": 195660
+     "hash": "3738fa817e850654",
+     "bytes": 194957
     }
    ]
   },
@@ -363,20 +363,20 @@
     {
      "file": "merged/u_p390b.partA.json",
      "part": "A",
-     "hash": "016afae702f739a9",
-     "bytes": 225705
+     "hash": "2c226c042df84fbf",
+     "bytes": 225598
     },
     {
      "file": "merged/u_p390b.partB.json",
      "part": "B",
-     "hash": "43b922a97f35082c",
-     "bytes": 176633
+     "hash": "c5b33d2bdbfe1b7b",
+     "bytes": 184269
     },
     {
      "file": "merged/u_p390b.partC.json",
      "part": "C",
-     "hash": "a5d65cad344e58ab",
-     "bytes": 191415
+     "hash": "afe20987545d0114",
+     "bytes": 191370
     }
    ]
   },
@@ -396,20 +396,20 @@
     {
      "file": "merged/u_p391a.partA.json",
      "part": "A",
-     "hash": "10e251aad5d7d131",
-     "bytes": 162952
+     "hash": "175dc17e24186148",
+     "bytes": 162370
     },
     {
      "file": "merged/u_p391a.partB.json",
      "part": "B",
-     "hash": "662c4746ecbf1fef",
-     "bytes": 120661
+     "hash": "335f08b7287d01dc",
+     "bytes": 125855
     },
     {
      "file": "merged/u_p391a.partC.json",
      "part": "C",
-     "hash": "768a905b16914d00",
-     "bytes": 150641
+     "hash": "fdcf381f4118f28b",
+     "bytes": 150622
     }
    ]
   },
@@ -430,20 +430,20 @@
     {
      "file": "merged/u_p391b.partA.json",
      "part": "A",
-     "hash": "8c6ef1ee6ec9eaf3",
-     "bytes": 145574
+     "hash": "98a5dda2ca49a482",
+     "bytes": 146023
     },
     {
      "file": "merged/u_p391b.partB.json",
      "part": "B",
-     "hash": "3b9ab75606ba0bc3",
-     "bytes": 121599
+     "hash": "c649a4b0f627f16c",
+     "bytes": 127355
     },
     {
      "file": "merged/u_p391b.partC.json",
      "part": "C",
-     "hash": "9521ad3d4e74316e",
-     "bytes": 123018
+     "hash": "281e6888b76da595",
+     "bytes": 123021
     }
    ]
   },
@@ -466,20 +466,20 @@
     {
      "file": "merged/u_p392a.partA.json",
      "part": "A",
-     "hash": "449d7a0eecc116b6",
-     "bytes": 174097
+     "hash": "173b9fd0b5365d2f",
+     "bytes": 172984
     },
     {
      "file": "merged/u_p392a.partB.json",
      "part": "B",
-     "hash": "0e0665734846bc8a",
-     "bytes": 145097
+     "hash": "ae6b8d0c0c62351d",
+     "bytes": 151629
     },
     {
      "file": "merged/u_p392a.partC.json",
      "part": "C",
-     "hash": "773c386d593162bb",
-     "bytes": 196153
+     "hash": "240efb683e4868c8",
+     "bytes": 196057
     }
    ]
   },
@@ -499,20 +499,20 @@
     {
      "file": "merged/u_p392b.partA.json",
      "part": "A",
-     "hash": "57cf6eb8ff8b9568",
-     "bytes": 151498
+     "hash": "4a78956fafb3cbe6",
+     "bytes": 150669
     },
     {
      "file": "merged/u_p392b.partB.json",
      "part": "B",
-     "hash": "9325fc12faeebe2d",
-     "bytes": 85191
+     "hash": "0c2b7e839f017a82",
+     "bytes": 89270
     },
     {
      "file": "merged/u_p392b.partC.json",
      "part": "C",
-     "hash": "0c4bf81aefa5d325",
-     "bytes": 118427
+     "hash": "aa353ffffc121351",
+     "bytes": 118169
     }
    ]
   },
@@ -534,20 +534,20 @@
     {
      "file": "merged/u_p393a.partA.json",
      "part": "A",
-     "hash": "5274969536e7d912",
-     "bytes": 176803
+     "hash": "7aadeec6832a7cd1",
+     "bytes": 176875
     },
     {
      "file": "merged/u_p393a.partB.json",
      "part": "B",
-     "hash": "6ce3b36126c8b4b6",
-     "bytes": 136174
+     "hash": "92606836b3a0993b",
+     "bytes": 142355
     },
     {
      "file": "merged/u_p393a.partC.json",
      "part": "C",
-     "hash": "ce9079ca4a4abf92",
-     "bytes": 143415
+     "hash": "ddaf46279f93d4f1",
+     "bytes": 143345
     }
    ]
   },
@@ -570,20 +570,20 @@
     {
      "file": "merged/u_p393b.partA.json",
      "part": "A",
-     "hash": "67f0e053b9ca0cc3",
-     "bytes": 133663
+     "hash": "e9a5a6973b536264",
+     "bytes": 133121
     },
     {
      "file": "merged/u_p393b.partB.json",
      "part": "B",
-     "hash": "760494547668316d",
-     "bytes": 140069
+     "hash": "f46c8b86e1a6855b",
+     "bytes": 146534
     },
     {
      "file": "merged/u_p393b.partC.json",
      "part": "C",
-     "hash": "5bc0ae3277d886dd",
-     "bytes": 140793
+     "hash": "a3b9836e6e93b862",
+     "bytes": 140691
     }
    ]
   },
@@ -604,20 +604,20 @@
     {
      "file": "merged/u_p394a.partA.json",
      "part": "A",
-     "hash": "13081fc15b2fcf4b",
-     "bytes": 220894
+     "hash": "f2f23adb1ca2bc11",
+     "bytes": 220431
     },
     {
      "file": "merged/u_p394a.partB.json",
      "part": "B",
-     "hash": "3d814a195e90ac5a",
-     "bytes": 109272
+     "hash": "ef0f6ed567c29692",
+     "bytes": 114207
     },
     {
      "file": "merged/u_p394a.partC.json",
      "part": "C",
-     "hash": "0b91235418d90a95",
-     "bytes": 156338
+     "hash": "652a9aec8491dce5",
+     "bytes": 156263
     }
    ]
   },
@@ -637,20 +637,20 @@
     {
      "file": "merged/u_p394b.partA.json",
      "part": "A",
-     "hash": "2c010cbd6b668e01",
-     "bytes": 184088
+     "hash": "b55e290fb19db35e",
+     "bytes": 184165
     },
     {
      "file": "merged/u_p394b.partB.json",
      "part": "B",
-     "hash": "254ada94c1a11820",
-     "bytes": 95207
+     "hash": "d5dd07525bb4fc59",
+     "bytes": 99365
     },
     {
      "file": "merged/u_p394b.partC.json",
      "part": "C",
-     "hash": "8fbde7b0f9338d2d",
-     "bytes": 118175
+     "hash": "911c1d6547198740",
+     "bytes": 118162
     }
    ]
   },
@@ -670,20 +670,20 @@
     {
      "file": "merged/u_p395a.partA.json",
      "part": "A",
-     "hash": "733a24e6e47850e5",
-     "bytes": 149654
+     "hash": "9d0388e7a8cb62de",
+     "bytes": 150434
     },
     {
      "file": "merged/u_p395a.partB.json",
      "part": "B",
-     "hash": "758dfcb9ef8b8fe3",
-     "bytes": 88105
+     "hash": "d7f0cb204f6868c7",
+     "bytes": 92208
     },
     {
      "file": "merged/u_p395a.partC.json",
      "part": "C",
-     "hash": "63af3d978d3ef2b6",
-     "bytes": 115480
+     "hash": "8ae48d6b09b424b6",
+     "bytes": 115544
     }
    ]
   },
@@ -704,20 +704,20 @@
     {
      "file": "merged/u_p395b.partA.json",
      "part": "A",
-     "hash": "afdb988e5b5cf790",
-     "bytes": 223662
+     "hash": "d3b9d605dcd57dc3",
+     "bytes": 223665
     },
     {
      "file": "merged/u_p395b.partB.json",
      "part": "B",
-     "hash": "b7e2122fd586317b",
-     "bytes": 118215
+     "hash": "9c7bc2fc8591116b",
+     "bytes": 118199
     },
     {
      "file": "merged/u_p395b.partC.json",
      "part": "C",
-     "hash": "ab9c24ecedb8838e",
-     "bytes": 166756
+     "hash": "c81f10d8923606b0",
+     "bytes": 166572
     }
    ]
   },
@@ -738,20 +738,20 @@
     {
      "file": "merged/u_p396a.partA.json",
      "part": "A",
-     "hash": "01997c55928bf176",
-     "bytes": 250780
+     "hash": "362b04980eb7ce0a",
+     "bytes": 250698
     },
     {
      "file": "merged/u_p396a.partB.json",
      "part": "B",
-     "hash": "7b73f306f1415fca",
-     "bytes": 177842
+     "hash": "606072604fce70b5",
+     "bytes": 185841
     },
     {
      "file": "merged/u_p396a.partC.json",
      "part": "C",
-     "hash": "6cb44a98c50ffa38",
-     "bytes": 164989
+     "hash": "6f1cbf83544c6ac3",
+     "bytes": 164928
     }
    ]
   }

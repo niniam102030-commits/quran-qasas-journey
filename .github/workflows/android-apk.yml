@@ -38,12 +38,8 @@ jobs:
       - name: Lint code
         run: npm run lint
 
-      - name: Validate content integrity (strict structural check)
+      - name: Validate content integrity (strict structural + deep check)
         run: npm run validate:all
-
-      - name: Deep content drift report (informational until v1.2.0 translation sync)
-        continue-on-error: true
-        run: npm run validate:deep
 
       - name: Run tests
         run: npm test

@@ -15,7 +15,7 @@
     "merge:content": "node scripts/merge-parts.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "validate:deep": "node scripts/validate-deep.mjs",
-    "validate:all": "node scripts/validate-content.mjs --merged --strict",
+    "validate:all": "node scripts/validate-content.mjs --merged --strict && node scripts/validate-deep.mjs --strict",
     "build:manifest": "node scripts/build-manifest.mjs",
     "content:all": "node scripts/merge-parts.mjs && node scripts/validate-content.mjs --merged --strict && node scripts/validate-deep.mjs --strict && node scripts/build-manifest.mjs",
     "test": "vitest run",
