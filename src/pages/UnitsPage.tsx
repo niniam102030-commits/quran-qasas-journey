@@ -1,12 +1,13 @@
 // src/pages/UnitsPage.tsx
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۵ ایستگاه داستانی به سبک دولینگو، با دکمه‌های سه‌بعدی و نوار آمار زنده.
 import { useEffect, useState } from "react";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
+import TasmiModal from "../components/mushaf/TasmiModal";
 import VocabPrescreenModal from "../components/learning/VocabPrescreenModal";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 
@@ -121,6 +122,7 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
   const [unitQuestionCounts, setUnitQuestionCounts] = useState<Record<string, number>>({});
   const [testOutModalUnitId, setTestOutModalUnitId] = useState<string | null>(null);
   const [prescreenUnitId, setPrescreenUnitId] = useState<string | null>(null);
+  const [tasmiUnit, setTasmiUnit] = useState<UnitInfo | null>(null);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
@@ -464,6 +466,15 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
                       )}
                       <button
                         type="button"
+                        onClick={() => setTasmiUnit(u)}
+                        title="تسمیع از حفظ و خودارزیابی آیات این نیم‌صفحه"
+                        className="py-2 px-3 rounded-2xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/50 dark:hover:bg-sky-900/50 border-2 border-b-4 border-sky-200 dark:border-sky-800 active:border-b-2 active:translate-y-[2px] text-sky-800 dark:text-sky-300 text-xs font-extrabold flex items-center gap-1 transition-all"
+                      >
+                        <Mic className="w-3.5 h-3.5" />
+                        <span>تسمیع</span>
+                      </button>
+                      <button
+                        type="button"
                         onClick={() => setMushafUnitId(u.unitId)}
                         className="py-2 px-3 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/40 border-2 border-b-4 border-amber-200 dark:border-amber-800 active:border-b-2 active:translate-y-[2px] text-amber-900 dark:text-amber-300 text-xs font-extrabold flex items-center gap-1.5 transition-all"
                       >
@@ -571,6 +582,22 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
           })}
         </section>
       </main>
+
+      {/* Half-Page Tasmi Modal (F2) */}
+      {tasmiUnit && (
+        <TasmiModal
+          unitId={tasmiUnit.unitId}
+          page={tasmiUnit.page}
+          half={tasmiUnit.half}
+          verseFrom={tasmiUnit.verseFrom}
+          verseTo={tasmiUnit.verseTo}
+          onClose={() => {
+            setTasmiUnit(null);
+            void loadData();
+          }}
+          onStartReview={() => onStartStage("", 0)}
+        />
+      )}
 
       {/* Vocab Pre-Screen Modal (F4) */}
       {prescreenUnitId && (
