@@ -1,9 +1,10 @@
 // src/pages/MasteryPage.tsx
 import { useState, useEffect, useMemo } from "react";
 import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench, GitCompare } from "lucide-react";
-import { ldb, type StoredCard, type UnitProgressRow } from "../db/learningDb";
+import { ldb, type StoredCard, type UnitProgressRow, type AttemptRow } from "../db/learningDb";
 import { isGoldenVerse, skillLevel } from "../learning/mastery";
 import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast";
+import { buildReviewHeatmap } from "../learning/heatmap";
 import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
 
 interface Props {
@@ -38,6 +39,7 @@ interface UnitDisplayRow extends UnitProgressRow {
 export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onOpenMutashabihat }: Props) {
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
   const [allCardsList, setAllCardsList] = useState<StoredCard[]>([]);
+  const [allAttempts, setAllAttempts] = useState<AttemptRow[]>([]);
   const [unitProgress, setUnitProgress] = useState<UnitDisplayRow[]>([]);
   const [confusions, setConfusions] = useState<{ tag: string; count: number }[]>([]);
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
@@ -47,16 +49,18 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
     async function loadData() {
       setLoading(true);
       try {
-        const [allCards, prog, allConfusions] = await Promise.all([
+        const [allCards, prog, allConfusions, attemptsList] = await Promise.all([
           ldb.cards.toArray(),
           ldb.unitProgress.toArray(),
           ldb.confusions.toArray(),
+          ldb.attempts.toArray(),
         ]);
 
         const map = new Map<string, StoredCard>();
         allCards.forEach((c) => map.set(c.key, c));
         setCardsMap(map);
         setAllCardsList(allCards);
+        setAllAttempts(attemptsList);
 
         let orderById = new Map<string, number>();
         let infoById = new Map<string, { page: number; half: string; verseFrom: number; verseTo: number }>();
@@ -110,6 +114,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   const forecast = useMemo(() => buildReviewForecast(allCardsList), [allCardsList]);
   const maxForecast = Math.max(1, ...forecast.map((d) => d.dueCount));
   const nearGolden = useMemo(() => findNearGoldenVerses(cardsMap), [cardsMap]);
+  const heatmap = useMemo(() => buildReviewHeatmap(allAttempts, 84), [allAttempts]);
 
   if (loading) {
     return (
@@ -271,6 +276,52 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
               </div>
             </div>
           )}
+        </section>
+
+        {/* Review Activity Heatmap (84 days / 12 weeks) */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
+                <CalendarDays className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                <span>نقشه حرارتی مرور روزانه (۱۲ هفته اخیر)</span>
+              </h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                {toFarsiNum(heatmap.activeDays)} روز فعال • {toFarsiNum(heatmap.totalAttempts)} پاسخ ثبت‌شده • بهترین پیوستگی: {toFarsiNum(heatmap.longestStreak)} روز
+              </p>
+            </div>
+            <div className="flex items-center gap-1 text-[10px] text-slate-500">
+              <span>کم</span>
+              <span className="w-3 h-3 rounded-sm bg-slate-100 dark:bg-slate-800" />
+              <span className="w-3 h-3 rounded-sm bg-emerald-200 dark:bg-emerald-900/70" />
+              <span className="w-3 h-3 rounded-sm bg-emerald-400 dark:bg-emerald-700" />
+              <span className="w-3 h-3 rounded-sm bg-emerald-500 dark:bg-emerald-500" />
+              <span className="w-3 h-3 rounded-sm bg-emerald-700 dark:bg-emerald-400" />
+              <span>زیاد</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-12 gap-1.5 pt-1" dir="ltr">
+            {heatmap.cells.map((cell) => {
+              const color =
+                cell.level === 0
+                  ? "bg-slate-100 dark:bg-slate-800/80"
+                  : cell.level === 1
+                  ? "bg-emerald-200 dark:bg-emerald-900/70"
+                  : cell.level === 2
+                  ? "bg-emerald-400 dark:bg-emerald-700"
+                  : cell.level === 3
+                  ? "bg-emerald-500 dark:bg-emerald-500"
+                  : "bg-emerald-700 dark:bg-emerald-400";
+              return (
+                <div
+                  key={cell.date}
+                  title={`${cell.date}: ${toFarsiNum(cell.count)} تمرین${cell.count > 0 ? ` (دقت ${toFarsiNum(cell.accuracy)}٪)` : ""}`}
+                  className={`aspect-square rounded-[4px] ${color} transition-transform hover:scale-110`}
+                />
+              );
+            })}
+          </div>
         </section>
 
         {/* Units Progress Breakdown */}

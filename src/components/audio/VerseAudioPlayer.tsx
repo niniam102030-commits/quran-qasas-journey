@@ -9,6 +9,8 @@ interface Props {
   verses: number[];
   compact?: boolean;
   onActiveVerseChange?: (verse: number | null) => void;
+  /** گزارش لحظه‌ای زمان پخش (میلی‌ثانیه) برای هایلایت کلمه‌به‌کلمه هم‌گام با صوت */
+  onPlaybackProgress?: (verse: number, currentTimeMs: number) => void;
 }
 
 const SPEEDS = [0.75, 1, 1.25] as const;
@@ -18,7 +20,12 @@ type PauseMode = "none" | "auto" | "3s" | "5s";
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) => String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 
-export default function VerseAudioPlayer({ verses, compact = false, onActiveVerseChange }: Props) {
+export default function VerseAudioPlayer({
+  verses,
+  compact = false,
+  onActiveVerseChange,
+  onPlaybackProgress,
+}: Props) {
   const [playing, setPlaying] = useState(false);
   const [loading, setLoading] = useState(false);
   const [repeatRange, setRepeatRange] = useState(false);
@@ -163,13 +170,42 @@ export default function VerseAudioPlayer({ verses, compact = false, onActiveVers
       audio.playbackRate = speedRef.current;
       audioRef.current = audio;
 
+      let progressTimer: number | null = null;
+      const stopProgress = () => {
+        if (progressTimer !== null) {
+          window.clearInterval(progressTimer);
+          progressTimer = null;
+        }
+      };
+
+      const emitProgress = () => {
+        if (!cancelledRef.current && onPlaybackProgress && Number.isFinite(audio.currentTime)) {
+          onPlaybackProgress(verse, audio.currentTime * 1000);
+        }
+      };
+
+      audio.ontimeupdate = emitProgress;
+      audio.onplay = () => {
+        stopProgress();
+        if (onPlaybackProgress) {
+          progressTimer = window.setInterval(emitProgress, 65);
+        }
+      };
+
       audio.onended = () => {
+        stopProgress();
         const dur = Number.isFinite(audio.duration) ? audio.duration / speedRef.current : 4;
         resolve(dur);
       };
-      audio.onerror = () => reject(new Error(`خطا در پخش صوت آیه ${verse}`));
+      audio.onerror = () => {
+        stopProgress();
+        reject(new Error(`خطا در پخش صوت آیه ${verse}`));
+      };
 
-      audio.play().catch(reject);
+      audio.play().catch((err) => {
+        stopProgress();
+        reject(err);
+      });
     });
   };
 

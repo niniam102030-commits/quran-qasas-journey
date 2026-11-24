@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
+import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
@@ -217,6 +218,33 @@ export default function SettingsPage({ onBack }: Props) {
                 />
               </button>
             </div>
+          </div>
+        </section>
+
+        {/* Installed Surah Packs (Multi-Surah Architecture) */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+            پک‌های سوره‌ای نصب‌شده (معماری چندسوره‌ای)
+          </h2>
+          <div className="space-y-2">
+            {SURAH_PACK_REGISTRY.map((pack) => (
+              <div
+                key={pack.number}
+                className="flex items-center justify-between p-3 rounded-2xl bg-teal-50/70 dark:bg-teal-950/30 border border-teal-200/70 dark:border-teal-800/60 text-xs"
+              >
+                <div>
+                  <div className="font-bold text-teal-900 dark:text-teal-200">
+                    سوره مبارکه {pack.nameFa} ({pack.nameAr}) — سوره {pack.number}
+                  </div>
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    {pack.verseCount} آیه • {pack.unitCount} واحد نیم‌صفحه‌ای • همگام با داده مرجع QUL (صرف + تایم‌استمپ صوتی)
+                  </div>
+                </div>
+                <span className="px-2.5 py-1 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-bold text-[11px]">
+                  فعال
+                </span>
+              </div>
+            ))}
           </div>
         </section>
 

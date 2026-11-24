@@ -52,11 +52,21 @@ export interface UnitProgressRow {
 export interface MetaRow { key: string; value: unknown }
 
 export interface AudioCacheRow {
-  verse: number; // 1..88
+  verse: number; // 1..verseCount
+  surah?: number; // شماره سوره (پیش‌فرض ۲۸ برای سازگاری با نسخه‌های قبلی)
   blob?: Blob;
   data?: ArrayBuffer;
   size: number;
   cachedAt: number;
+}
+
+export interface SurahPackRow {
+  surahNumber: number;
+  slug: string;
+  nameFa: string;
+  installed: boolean;
+  contentHash?: string;
+  updatedAt: number;
 }
 
 export interface UserProfileRow {
@@ -95,6 +105,7 @@ export class LearningDB extends Dexie {
   meta!: Table<MetaRow, string>;
   audioCache!: Table<AudioCacheRow, number>;
   profile!: Table<UserProfileRow, string>;
+  surahPacks!: Table<SurahPackRow, number>;
 
   constructor() {
     super("QasasLearningDB");
@@ -122,6 +133,34 @@ export class LearningDB extends Dexie {
       audioCache: "verse",
       profile: "id",
     });
+    this.version(3)
+      .stores({
+        questions: "id, unitId, [unitId+stage], stage, type, *targets",
+        lexicon: "wordId, unitId",
+        chunks: "id, unitId, verse",
+        baseVerses: "n",
+        cards: "key, kind, due, state",
+        attempts: "++id, qid, unitId, [unitId+stage], at",
+        confusions: "++id, qid, target, at",
+        unitProgress: "unitId",
+        meta: "key",
+        audioCache: "verse, surah",
+        profile: "id",
+        surahPacks: "surahNumber, slug",
+      })
+      .upgrade(async (tx) => {
+        // مهاجرت امن: برچسب‌گذاری کش صوتی قبلی با سوره ۲۸ بدون حذف داده‌های کاربر
+        await tx.table("audioCache").toCollection().modify((row: AudioCacheRow) => {
+          if (row.surah === undefined) row.surah = 28;
+        });
+        await tx.table("surahPacks").put({
+          surahNumber: 28,
+          slug: "qasas",
+          nameFa: "قصص",
+          installed: true,
+          updatedAt: Date.now(),
+        });
+      });
   }
 }
 

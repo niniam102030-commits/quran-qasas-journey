@@ -10,6 +10,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "fetch:base": "node scripts/fetch-base-data.mjs",
+    "sync:qul": "node scripts/sync-qul-data.mjs",
     "build:inputs": "node scripts/build-ai-inputs.mjs",
     "merge:content": "node scripts/merge-parts.mjs",
     "validate:content": "node scripts/validate-content.mjs",

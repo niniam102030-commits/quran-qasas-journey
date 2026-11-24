@@ -1,7 +1,31 @@
 // src/components/audio/SelfReciteRecorder.tsx
-// ضبط صدای خود به‌صورت ۱۰۰٪ آفلاین (MediaRecorder) برای تسمیع و مقایسه با تلاوت استاد منشاوی
+// ضبط صدای خود به‌صورت ۱۰۰٪ آفلاین (MediaRecorder) + تصحیح کلمه‌به‌کلمه تلاوت و آشکارسازی خودکار در مصحف
 import { useEffect, useRef, useState } from "react";
-import { Mic, Square, Play, Pause, Trash2, AlertCircle } from "lucide-react";
+import { Mic, Square, Play, Pause, Trash2, AlertCircle, Sparkles, CheckCircle2, Download, Cpu } from "lucide-react";
+import {
+  verifyVerseRecitation,
+  type ExpectedReciteWord,
+  type RecitationCheckResult,
+} from "../../services/recitationVerifier";
+import {
+  clearOptionalOnnxModel,
+  getDeviceAsrCapability,
+  getOfflineModelStatus,
+  prepareOptionalOnnxModel,
+  startLiveArabicRecognition,
+  type LiveRecognitionHandle,
+  type OfflineModelStatus,
+} from "../../services/offlineAsrService";
+
+export interface ReciteVerseOption {
+  n: number;
+  words: ExpectedReciteWord[];
+}
+
+interface Props {
+  verses?: ReciteVerseOption[];
+  onWordsRecitedCorrectly?: (wordIds: string[]) => void;
+}
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) => String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
@@ -12,12 +36,25 @@ function formatSeconds(sec: number): string {
   return `${toFarsi(String(m).padStart(2, "0"))}:${toFarsi(String(s).padStart(2, "0"))}`;
 }
 
-export default function SelfReciteRecorder() {
+export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: Props = {}) {
   const [recording, setRecording] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // تصحیح کلمه‌به‌کلمه تلاوت (اختیاری)
+  const [showVerifier, setShowVerifier] = useState(false);
+  const [targetVerseNum, setTargetVerseNum] = useState<number>(verses?.[0]?.n ?? 1);
+  const [listeningAsr, setListeningAsr] = useState(false);
+  const [spokenText, setSpokenText] = useState("");
+  const [checkResult, setCheckResult] = useState<RecitationCheckResult | null>(null);
+  const [asrError, setAsrError] = useState<string | null>(null);
+  const [modelStatus, setModelStatus] = useState<OfflineModelStatus>(() => getOfflineModelStatus());
+  const [modelProgress, setModelProgress] = useState<number | null>(null);
+
+  const capability = getDeviceAsrCapability();
+  const recognitionRef = useRef<LiveRecognitionHandle | null>(null);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -47,13 +84,77 @@ export default function SelfReciteRecorder() {
   };
 
   useEffect(() => {
+    if (verses && verses.length > 0 && !verses.some((v) => v.n === targetVerseNum)) {
+      setTargetVerseNum(verses[0].n);
+    }
+  }, [verses, targetVerseNum]);
+
+  useEffect(() => {
     return () => {
       cleanupRecording();
       cleanupPlayback();
+      recognitionRef.current?.stop();
       if (audioUrl) URL.revokeObjectURL(audioUrl);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const selectedVerse = verses?.find((v) => v.n === targetVerseNum) ?? verses?.[0];
+
+  const handleToggleAsr = () => {
+    if (listeningAsr) {
+      recognitionRef.current?.stop();
+      recognitionRef.current = null;
+      setListeningAsr(false);
+      return;
+    }
+    if (!selectedVerse) return;
+    setAsrError(null);
+    setSpokenText("");
+    setCheckResult(null);
+
+    const handle = startLiveArabicRecognition({
+      onTranscript: (transcript) => {
+        setSpokenText(transcript);
+        const res = verifyVerseRecitation(selectedVerse.words, transcript);
+        setCheckResult(res);
+        if (res.matchedWordIds.length > 0) {
+          onWordsRecitedCorrectly?.(res.matchedWordIds);
+        }
+      },
+      onError: (msg) => {
+        setAsrError(msg);
+        setListeningAsr(false);
+      },
+      onEnd: () => {
+        setListeningAsr(false);
+      },
+    });
+
+    if (handle) {
+      recognitionRef.current = handle;
+      setListeningAsr(true);
+    }
+  };
+
+  const handlePrepareOnnx = async () => {
+    if (modelProgress !== null) return;
+    setAsrError(null);
+    setModelProgress(5);
+    try {
+      const st = await prepareOptionalOnnxModel((p) => setModelProgress(p));
+      setModelStatus(st);
+    } catch (err) {
+      setAsrError(err instanceof Error ? err.message : "خطا در آماده‌سازی مدل قرآنی آفلاین");
+    } finally {
+      setModelProgress(null);
+    }
+  };
+
+  const handleClearOnnx = async () => {
+    await clearOptionalOnnxModel();
+    setModelStatus(getOfflineModelStatus());
+  };
 
   const startRecording = async () => {
     setError(null);
@@ -134,7 +235,7 @@ export default function SelfReciteRecorder() {
   return (
     <div dir="rtl" className="rounded-2xl border border-emerald-200/80 dark:border-slate-700 bg-emerald-50/60 dark:bg-slate-800/70 px-3.5 py-2.5 space-y-2">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           {!recording ? (
             <button
               type="button"
@@ -152,6 +253,21 @@ export default function SelfReciteRecorder() {
             >
               <Square className="w-3.5 h-3.5 fill-white" />
               <span>توقف ضبط ({formatSeconds(elapsed)})</span>
+            </button>
+          )}
+
+          {verses && verses.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setShowVerifier((s) => !s)}
+              className={`py-1.5 px-3 rounded-xl text-xs font-bold border flex items-center gap-1.5 transition-colors ${
+                showVerifier
+                  ? "bg-amber-600 text-white border-amber-600"
+                  : "bg-white dark:bg-slate-900 border-amber-300 dark:border-slate-600 text-amber-800 dark:text-amber-300 hover:bg-amber-50"
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>تصحیح کلمه‌به‌کلمه تلاوت</span>
             </button>
           )}
         </div>
@@ -182,6 +298,140 @@ export default function SelfReciteRecorder() {
         <div className="text-[11px] text-rose-700 dark:text-rose-300 flex items-center gap-1">
           <AlertCircle className="w-3.5 h-3.5 shrink-0" />
           <span>{error}</span>
+        </div>
+      )}
+
+      {showVerifier && selectedVerse && (
+        <div className="pt-2.5 mt-1 border-t border-emerald-200/70 dark:border-slate-700 space-y-2.5 text-xs">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <label className="text-[11px] font-bold text-slate-600 dark:text-slate-300">
+                آیه هدف:
+              </label>
+              <select
+                value={selectedVerse.n}
+                onChange={(e) => {
+                  setTargetVerseNum(Number(e.target.value));
+                  setCheckResult(null);
+                  setSpokenText("");
+                }}
+                className="rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-2 py-1 text-xs font-bold"
+              >
+                {verses?.map((v) => (
+                  <option key={v.n} value={v.n}>
+                    آیه {toFarsi(v.n)} ({toFarsi(v.words.length)} کلمه)
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleToggleAsr}
+              disabled={!capability.hasWebSpeech && !listeningAsr}
+              className={`py-1.5 px-3 rounded-xl font-bold text-xs flex items-center gap-1.5 transition-all ${
+                listeningAsr
+                  ? "bg-rose-600 text-white animate-pulse"
+                  : "bg-teal-600 hover:bg-teal-700 disabled:opacity-40 text-white"
+              }`}
+            >
+              {listeningAsr ? <Square className="w-3.5 h-3.5 fill-white" /> : <Mic className="w-3.5 h-3.5" />}
+              <span>{listeningAsr ? "توقف ارزیابی" : "شروع تلاوت و بررسی زنده"}</span>
+            </button>
+          </div>
+
+          {spokenText && (
+            <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700 text-[11px] text-slate-600 dark:text-slate-300">
+              <span className="font-bold text-slate-500">متن شنیده‌شده: </span>
+              <span dir="rtl">{spokenText}</span>
+            </div>
+          )}
+
+          {checkResult && (
+            <div className="space-y-2 p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-emerald-200 dark:border-slate-700">
+              <div className="flex items-center justify-between text-[11px] font-bold">
+                <span className="text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  دقت کلمه‌ای: {toFarsi(checkResult.accuracyPercent)}٪ ({toFarsi(checkResult.correctCount)} از {toFarsi(checkResult.totalCount)} کلمه)
+                </span>
+                {checkResult.extraWords.length > 0 && (
+                  <span className="text-amber-600">
+                    کلمات اضافه: {toFarsi(checkResult.extraWords.length)}
+                  </span>
+                )}
+              </div>
+              <div
+                className="flex flex-wrap gap-1.5 leading-loose"
+                style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: "1.15rem" }}
+              >
+                {checkResult.wordResults.map((w) => (
+                  <span
+                    key={w.wordId}
+                    title={
+                      w.status === "correct"
+                        ? "درست خوانده شد"
+                        : w.status === "missing"
+                        ? "جا افتاده"
+                        : `جایگزین‌شده با: ${w.spoken ?? ""}`
+                    }
+                    className={`px-1.5 py-0.5 rounded-lg border ${
+                      w.status === "correct"
+                        ? "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700"
+                        : w.status === "missing"
+                        ? "bg-rose-100 dark:bg-rose-950/50 text-rose-800 dark:text-rose-200 border-rose-300 dark:border-rose-700 line-through"
+                        : "bg-amber-100 dark:bg-amber-950/50 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700"
+                    }`}
+                  >
+                    {w.expectedAr}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {asrError && (
+            <div className="text-[11px] text-rose-700 dark:text-rose-300 flex items-center gap-1">
+              <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+              <span>{asrError}</span>
+            </div>
+          )}
+
+          {/* Optional On-Demand Offline Model Status + RAM Safety Check */}
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-1.5 border-t border-slate-200/70 dark:border-slate-700/70 text-[11px] text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-1.5">
+              <Cpu className="w-3.5 h-3.5 text-teal-600 shrink-0" />
+              <span>
+                مدل آفلاین Tarteel ONNX (~۷۶MB، خارج از APK):{" "}
+                <strong className={modelStatus.installed ? "text-emerald-600" : "text-slate-600 dark:text-slate-300"}>
+                  {modelStatus.installed ? "آماده‌سازی شده" : "نصب نشده (اختیاری)"}
+                </strong>
+                {capability.lowMemoryWarning && " • هشدار: رم دستگاه کمتر از ۴ گیگابایت است"}
+              </span>
+            </div>
+            {!modelStatus.installed ? (
+              <button
+                type="button"
+                onClick={() => void handlePrepareOnnx()}
+                disabled={modelProgress !== null}
+                className="py-1 px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold flex items-center gap-1"
+              >
+                <Download className="w-3 h-3" />
+                <span>{modelProgress !== null ? `${toFarsi(modelProgress)}٪...` : "آماده‌سازی اختیاری"}</span>
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => void handleClearOnnx()}
+                className="py-1 px-2.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 text-rose-600 font-bold"
+              >
+                پاک‌سازی کش مدل
+              </button>
+            )}
+          </div>
+
+          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            توجه: این ابزار برای کمک به تثبیت حفظ و کشف حذف/اضافه/جابه‌جایی کلمات است و جایگزین ارزیابی دقیق احکام تجوید و مخارج حروف توسط استاد نیست.
+          </p>
         </div>
       )}
     </div>

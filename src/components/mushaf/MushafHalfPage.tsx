@@ -5,6 +5,13 @@ import { ldb, type LexiconRow, type StoredCard } from "../../db/learningDb";
 import { newCard, review } from "../../learning/cardScheduler";
 import { skillLevel } from "../../learning/mastery";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
+import {
+  findActiveWordAtMs,
+  loadQulAudioTimings,
+  loadQulMorphology,
+  type QulMorphologyEntry,
+  type WordAudioSegment,
+} from "../../services/qulReferenceService";
 import VerseAudioPlayer from "../audio/VerseAudioPlayer";
 import SelfReciteRecorder from "../audio/SelfReciteRecorder";
 
@@ -40,6 +47,9 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [stepCursor, setStepCursor] = useState<number>(0);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [activeAudioVerse, setActiveAudioVerse] = useState<number | null>(null);
+  const [activeAudioWord, setActiveAudioWord] = useState<{ verse: number; wordIndex: number } | null>(null);
+  const [audioTimings, setAudioTimings] = useState<Record<string, WordAudioSegment[]>>({});
+  const [qulMorphMap, setQulMorphMap] = useState<Record<string, QulMorphologyEntry>>({});
   const [focusMode, setFocusMode] = useState<boolean>(false);
   const [showHeatmap, setShowHeatmap] = useState<boolean>(true);
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
@@ -71,6 +81,44 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   useEffect(() => {
     void loadStudyOverlay();
   }, [loadStudyOverlay]);
+
+  useEffect(() => {
+    let active = true;
+    Promise.all([loadQulAudioTimings(), loadQulMorphology()]).then(([timings, morph]) => {
+      if (!active) return;
+      setAudioTimings(timings);
+      setQulMorphMap(morph);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const handlePlaybackProgress = useCallback(
+    (verse: number, currentTimeMs: number) => {
+      const segs = audioTimings[String(verse)];
+      const wordIdx = findActiveWordAtMs(segs, currentTimeMs);
+      setActiveAudioWord((prev) => {
+        if (wordIdx === null) return prev === null ? null : null;
+        if (prev && prev.verse === verse && prev.wordIndex === wordIdx) return prev;
+        return { verse, wordIndex: wordIdx };
+      });
+    },
+    [audioTimings],
+  );
+
+  const handleActiveVerseChange = useCallback((verse: number | null) => {
+    setActiveAudioVerse(verse);
+    if (verse === null) setActiveAudioWord(null);
+  }, []);
+
+  const handleWordsRecitedCorrectly = useCallback((wordIds: string[]) => {
+    setRevealedWords((prev) => {
+      const next = new Set(prev);
+      for (const id of wordIds) next.add(id);
+      return next;
+    });
+  }, []);
 
   const handlePinRecitationMistake = async (wordId: string, verseNum: number) => {
     try {
@@ -262,8 +310,15 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
       <main className="flex-1 max-w-2xl w-full mx-auto p-4 sm:p-6 pb-28 space-y-4">
         {!loading && verseNumsList.length > 0 && (
           <div className="space-y-2">
-            <VerseAudioPlayer verses={verseNumsList} onActiveVerseChange={setActiveAudioVerse} />
-            <SelfReciteRecorder />
+            <VerseAudioPlayer
+              verses={verseNumsList}
+              onActiveVerseChange={handleActiveVerseChange}
+              onPlaybackProgress={handlePlaybackProgress}
+            />
+            <SelfReciteRecorder
+              verses={verses}
+              onWordsRecitedCorrectly={handleWordsRecitedCorrectly}
+            />
           </div>
         )}
 
@@ -332,6 +387,10 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                 >
                   {v.words.map((w) => {
                     const hidden = isWordHidden(w);
+                    const isAudioHighlighted =
+                      activeAudioWord !== null &&
+                      activeAudioWord.verse === v.n &&
+                      activeAudioWord.wordIndex === w.i;
                     return (
                       <span
                         key={w.id}
@@ -339,9 +398,11 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                           if (mode !== "reading") toggleRevealWord(w.id);
                           setSelectedWord(selectedWord === w.id ? null : w.id);
                         }}
-                        className={`inline-block mx-1 px-1 rounded-lg transition-colors cursor-pointer ${
-                          hidden
+                        className={`inline-block mx-1 px-1 rounded-lg transition-all cursor-pointer ${
+                          hidden && !isAudioHighlighted
                             ? "bg-[#e2d5bd] dark:bg-slate-700 text-transparent min-w-[3rem] text-center border-b-2 border-dashed border-[#bfa57a] dark:border-slate-500"
+                            : isAudioHighlighted
+                            ? "bg-emerald-400/35 dark:bg-emerald-500/35 ring-2 ring-emerald-500/70 text-emerald-950 dark:text-emerald-100 scale-[1.04]"
                             : selectedWord === w.id
                             ? `bg-amber-200/70 dark:bg-amber-900/40 ${getWordHeatClass(w.id)}`
                             : `hover:bg-amber-100/50 dark:hover:bg-white/5 ${getWordHeatClass(w.id)}`
@@ -388,11 +449,12 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
               const currentV = verses.find((v) => v.words.some((w) => w.id === selectedWord));
               const currentW = currentV?.words.find((w) => w.id === selectedWord);
               const lex = lexiconMap.get(selectedWord);
-              const meaningFa = (lex?.fa || lex?.meaningFa || lex?.glossFa) as string | undefined;
+              const qulMorph = qulMorphMap[selectedWord];
+              const meaningFa = (lex?.fa || lex?.meaningFa || lex?.gloss || lex?.glossFa) as string | undefined;
               return currentV && currentW ? (
                 <div className="space-y-2.5">
                   <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 rounded-xl bg-amber-50/70 dark:bg-slate-900/70 border border-amber-200/60 dark:border-slate-700">
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span
                         style={{ fontFamily: "'KFGQPC-Hafs', 'UthmanTaha', serif", fontSize: "1.4rem" }}
                         className="text-slate-900 dark:text-white"
@@ -414,6 +476,27 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                       <span>ثبت خطا در تلاوت (مرور هوشمند)</span>
                     </button>
                   </div>
+
+                  {qulMorph && (
+                    <div className="flex flex-wrap items-center gap-2 text-[11px] px-2.5 py-1.5 rounded-xl bg-teal-50/70 dark:bg-teal-950/30 border border-teal-200/60 dark:border-teal-800/60 text-teal-900 dark:text-teal-200">
+                      <span className="font-extrabold">پیکره مرجع (QUL):</span>
+                      {qulMorph.posFa && (
+                        <span className="px-2 py-0.5 rounded-md bg-white/80 dark:bg-slate-900/70 font-bold">
+                          نقش: {qulMorph.posFa}
+                        </span>
+                      )}
+                      {qulMorph.rootAr && qulMorph.rootAr !== "-" && (
+                        <span className="px-2 py-0.5 rounded-md bg-white/80 dark:bg-slate-900/70 font-bold">
+                          ریشه: {qulMorph.rootAr}
+                        </span>
+                      )}
+                      {qulMorph.lemmaAr && (
+                        <span className="px-2 py-0.5 rounded-md bg-white/80 dark:bg-slate-900/70 font-bold">
+                          لِما: {qulMorph.lemmaAr}
+                        </span>
+                      )}
+                    </div>
+                  )}
 
                   {pinNotice && (
                     <div className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
