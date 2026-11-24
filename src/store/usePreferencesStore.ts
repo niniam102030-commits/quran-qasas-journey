@@ -3,11 +3,13 @@
 import { create } from "zustand";
 import { isPaceMode, type PaceMode } from "../learning/pace";
 
+export type AppTheme = "default" | "rose";
 export type MushafTheme = "default" | "gold" | "night";
 export type SoundPack = "default" | "soft";
 
 interface PreferencesState {
   darkMode: boolean;
+  appTheme: AppTheme;
   soundEnabled: boolean;
   hapticsEnabled: boolean;
   arabicFontSize: number;
@@ -24,6 +26,7 @@ interface PreferencesState {
   initPreferences: () => void;
   setDarkMode: (dark: boolean) => void;
   toggleDarkMode: () => void;
+  setAppTheme: (theme: AppTheme) => void;
   setSoundEnabled: (enabled: boolean) => void;
   toggleSoundEnabled: () => void;
   setHapticsEnabled: (enabled: boolean) => void;
@@ -80,6 +83,12 @@ function readInitialPaceMode(): PaceMode {
   return isPaceMode(saved) ? saved : "standard";
 }
 
+function readInitialAppTheme(): AppTheme {
+  if (typeof window === "undefined") return "default";
+  const saved = localStorage.getItem("app_theme");
+  return saved === "rose" ? "rose" : "default";
+}
+
 function readInitialMushafTheme(): MushafTheme {
   if (typeof window === "undefined") return "default";
   const saved = localStorage.getItem("mushaf_theme");
@@ -103,8 +112,18 @@ function applyDarkClass(dark: boolean) {
   document.documentElement.classList.toggle("dark", dark);
 }
 
+function applyAppTheme(theme: AppTheme) {
+  if (typeof document === "undefined") return;
+  if (theme === "rose") {
+    document.documentElement.setAttribute("data-app-theme", "rose");
+  } else {
+    document.documentElement.removeAttribute("data-app-theme");
+  }
+}
+
 export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   darkMode: readInitialDark(),
+  appTheme: readInitialAppTheme(),
   soundEnabled: readBool("sound_enabled", true),
   hapticsEnabled: readBool("haptics_enabled", true),
   arabicFontSize: readInitialFontSize(),
@@ -121,9 +140,12 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
 
   initPreferences: () => {
     const dark = readInitialDark();
+    const appTheme = readInitialAppTheme();
     applyDarkClass(dark);
+    applyAppTheme(appTheme);
     set({
       darkMode: dark,
+      appTheme,
       soundEnabled: readBool("sound_enabled", true),
       hapticsEnabled: readBool("haptics_enabled", true),
       arabicFontSize: readInitialFontSize(),
@@ -150,6 +172,14 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
 
   toggleDarkMode: () => {
     get().setDarkMode(!get().darkMode);
+  },
+
+  setAppTheme: (theme) => {
+    applyAppTheme(theme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("app_theme", theme);
+    }
+    set({ appTheme: theme });
   },
 
   setSoundEnabled: (enabled) => {

@@ -204,7 +204,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     const isPassed = !!m?.passed;
     return (
       <div dir="rtl" className="min-h-screen flex flex-col items-center justify-center p-6 bg-[#fcf9f2] dark:bg-[#121824] text-slate-800 dark:text-slate-100 select-none">
-        <div className="w-full max-w-md bg-white dark:bg-[#1a2332] p-6 sm:p-8 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-xl text-center space-y-5">
+        <div className="w-full max-w-md bg-termeh-card dark:bg-lapis-card p-6 sm:p-8 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-xl text-center space-y-5">
           <div className="w-16 h-16 mx-auto rounded-3xl flex items-center justify-center shadow-lg bg-gradient-to-br from-amber-400 to-amber-600 text-white">
             {isPassed ? <Award className="w-8 h-8" /> : <RotateCcw className="w-8 h-8" />}
           </div>
@@ -391,9 +391,9 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   };
 
   return (
-    <div dir="rtl" className="min-h-screen flex flex-col islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-800 dark:text-slate-100 select-none pb-32">
+    <div dir="rtl" className="min-h-screen flex flex-col islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-800 dark:text-slate-100 select-none pb-32">
       {/* Top Navigation & Progress Bar */}
-      <header className="sticky top-0 z-20 flex items-center gap-3 px-4 py-3 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur border-b-2 border-[#d4af37]/50 dark:border-teal-800/60">
+      <header className="sticky top-0 z-20 flex items-center gap-3 px-4 py-3 bg-termeh-bg/95 dark:bg-lapis-bg/95 backdrop-blur border-b-2 border-brand-amber/40 dark:border-lapis-border">
         <button
           onClick={() => setShowExitConfirm(true)}
           className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 active:scale-95 transition-transform text-slate-500"
@@ -447,7 +447,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
       {/* Exit Confirmation Modal */}
       {showExitConfirm && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white dark:bg-[#1a2332] p-5 sm:p-6 rounded-3xl max-w-xs w-full shadow-2xl text-center space-y-4">
+          <div className="bg-termeh-card dark:bg-lapis-card p-5 sm:p-6 rounded-3xl max-w-xs w-full shadow-2xl text-center space-y-4">
             <h3 className="font-bold text-sm sm:text-base">خروج از جلسه یادگیری؟</h3>
             <p className="text-xs text-slate-500">
               پیشرفت این جلسه تا این نقطه ذخیره شده و بعداً می‌توانید ادامه دهید.

@@ -212,7 +212,7 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
                     ? "opacity-35 line-through border-dashed border-b-2 border-slate-300 dark:border-slate-700 bg-slate-100/50 dark:bg-slate-900/40 cursor-not-allowed"
                     : isSelected
                     ? "bg-teal-50/90 border-[#00A896] border-b-[#028090] dark:bg-teal-950/40 dark:border-teal-500 shadow-sm"
-                    : "bg-white dark:bg-[#1C2541] border-[#E5DEC9] dark:border-[#3A506B] hover:border-[#00A896] hover:bg-teal-50/30"
+                    : "bg-termeh-card dark:bg-lapis-card border-termeh-border dark:border-lapis-border hover:border-brand-primary hover:bg-brand-primary/5"
                 } ${locked ? "cursor-default" : isEliminated ? "" : "cursor-pointer"}`}
               >
                 <div className="flex-1 min-w-0 pr-1">{label(o, resolvedLabels, arStyle)}</div>

@@ -426,9 +426,9 @@ export default function UnitsPage({
   }));
 
   return (
-    <div dir="rtl" className="min-h-screen islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-24 select-none">
+    <div dir="rtl" className="min-h-screen islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 pb-24 select-none">
       {/* Top Iranian-Islamic Stats & Navigation Bar */}
-      <header className="sticky top-0 z-20 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur-md border-b-2 border-[#d4af37]/50 dark:border-teal-800/60 shadow-sm">
+      <header className="sticky top-0 z-20 bg-termeh-bg/95 dark:bg-lapis-bg/95 rose-header-motif backdrop-blur-md border-b-2 border-brand-amber/40 dark:border-lapis-border shadow-sm">
         <div className="max-w-2xl mx-auto px-3 sm:px-4 py-2.5 flex items-center justify-between gap-2">
           <div className="flex items-center gap-1.5">
             {onBack && (
@@ -508,7 +508,7 @@ export default function UnitsPage({
               <>
                 <button
                   onClick={() => onNavigateTab("mastery")}
-                  className="py-1.5 px-2.5 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] active:border-b-2 active:translate-y-[2px] text-amber-800 dark:text-amber-300 font-extrabold text-xs flex items-center gap-1 transition-all"
+                  className="py-1.5 px-2.5 rounded-2xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border active:border-b-2 active:translate-y-[2px] text-amber-800 dark:text-amber-300 font-extrabold text-xs flex items-center gap-1 transition-all"
                   title="جدول تسلط بر ۸۸ آیه"
                 >
                   <Award className="w-4 h-4 text-amber-500" />
@@ -518,7 +518,7 @@ export default function UnitsPage({
 
                 <button
                   onClick={() => onNavigateTab("settings")}
-                  className="p-2 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] active:border-b-2 active:translate-y-[2px] text-slate-600 dark:text-slate-200 transition-all"
+                  className="p-2 rounded-2xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border active:border-b-2 active:translate-y-[2px] text-slate-600 dark:text-slate-200 transition-all"
                   title="تنظیمات"
                 >
                   <Settings className="w-4 h-4" />
@@ -544,7 +544,7 @@ export default function UnitsPage({
               <button
                 type="button"
                 onClick={onStartAudioQuiz}
-                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-amber-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-amber-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
               >
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center shrink-0 shadow-sm">
                   <Headphones className="w-5 h-5" />
@@ -559,7 +559,7 @@ export default function UnitsPage({
               <button
                 type="button"
                 onClick={onOpenMutashabihat}
-                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-teal-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-teal-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
               >
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 text-white flex items-center justify-center shrink-0 shadow-sm">
                   <GitCompare className="w-5 h-5" />
@@ -574,7 +574,7 @@ export default function UnitsPage({
               <button
                 type="button"
                 onClick={() => onStartExam(null)}
-                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-indigo-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-indigo-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
               >
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white flex items-center justify-center shrink-0 shadow-sm">
                   <ShieldCheck className="w-5 h-5" />
@@ -589,7 +589,7 @@ export default function UnitsPage({
               <button
                 type="button"
                 onClick={onOpenTajweedLessons}
-                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-orange-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-orange-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
               >
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-orange-500 to-rose-600 text-white flex items-center justify-center shrink-0 shadow-sm">
                   <Palette className="w-5 h-5" />
@@ -648,7 +648,7 @@ export default function UnitsPage({
             const load = summarizeForecastLoad(forecastDays, paceMode);
             const maxBar = Math.max(load.cap, load.peakDay?.dueCount ?? 0, 1);
             return (
-              <div className="p-4 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-[#E5DEC9] dark:border-[#3A506B] shadow-sm space-y-3">
+              <div className="p-4 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
                     <Gauge className="w-4 h-4 text-[#00A896]" />
@@ -869,7 +869,7 @@ export default function UnitsPage({
           </div>
 
           {/* L2: چرخهٔ مراجعهٔ امروز (سبق / سبقی / منزل) */}
-          <div className="p-4 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-[#E5DEC9] dark:border-[#3A506B] shadow-sm space-y-2.5">
+          <div className="p-4 rounded-2xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border shadow-sm space-y-2.5">
             <div className="flex items-center gap-2">
               <RefreshCw className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
               <h3 className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">

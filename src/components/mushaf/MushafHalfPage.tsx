@@ -329,7 +329,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice, onOpe
   return (
     <div dir="rtl" className={`flex flex-col min-h-screen ${rootThemeClass} select-none overflow-y-auto ${focusMode ? "fixed inset-0 z-50" : ""}`}>
       {/* Header */}
-      <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
+      <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 px-4 py-3 bg-termeh-bg/95 dark:bg-lapis-card/95 backdrop-blur border-b border-termeh-border dark:border-lapis-border">
         <div className="flex items-center gap-2">
           {onClose && (
             <button
@@ -794,7 +794,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice, onOpe
 
       {/* Bottom Sticky Action Bar */}
       {onStartPractice && (
-        <div className="fixed bottom-0 inset-x-0 p-3 sm:p-4 bg-white/95 dark:bg-[#1a2332]/95 backdrop-blur border-t border-[#e6dbc5] dark:border-slate-800 flex items-center justify-center">
+        <div className="fixed bottom-0 inset-x-0 p-3 sm:p-4 bg-termeh-card/95 dark:bg-lapis-card/95 backdrop-blur border-t border-termeh-border dark:border-lapis-border flex items-center justify-center">
           <button
             onClick={onStartPractice}
             className="w-full max-w-md py-3.5 px-6 rounded-2xl font-bold text-white bg-[#b37e3d] hover:bg-[#9d6b2f] active:scale-[0.98] shadow-lg shadow-amber-800/20 transition-all flex items-center justify-center gap-2"

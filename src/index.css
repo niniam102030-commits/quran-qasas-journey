@@ -34,12 +34,75 @@
 }
 
 @layer base {
+  :root {
+    --termeh-bg: 250 247 242; /* #FAF7F2 */
+    --termeh-card: 255 255 255; /* #FFFFFF */
+    --termeh-border: 229 222 201; /* #E5DEC9 */
+
+    --lapis-bg: 11 19 43; /* #0B132B */
+    --lapis-card: 28 37 65; /* #1C2541 */
+    --lapis-border: 58 80 107; /* #3A506B */
+
+    --brand-primary: 0 168 150; /* #00A896 */
+    --brand-primary-dark: 2 128 144; /* #028090 */
+    --brand-success: 16 185 129; /* #10B981 */
+    --brand-success-dark: 4 120 87; /* #047857 */
+    --brand-amber: 245 158 11; /* #F59E0B */
+    --brand-amber-dark: 180 83 9; /* #B45309 */
+    --brand-ruby: 239 68 68; /* #EF4444 */
+    --brand-ruby-dark: 185 28 28; /* #B91C1C */
+
+    --app-card-radius: 1.5rem;
+  }
+
+  html[data-app-theme="rose"] {
+    --termeh-bg: 251 244 241; /* #FBF4F1 سفید گلاب‌فام */
+    --termeh-card: 255 251 252; /* #FFFBFC سفید با ته‌مایهٔ صورتی بسیار ملایم */
+    --termeh-border: 240 215 211; /* #F0D7D3 */
+
+    --lapis-bg: 38 22 32; /* #261620 آلویی عمیق */
+    --lapis-card: 56 32 47; /* #38202F */
+    --lapis-border: 90 53 76; /* #5A354C */
+
+    --brand-primary: 201 80 107; /* #C9506B گل‌سرخی عمیق */
+    --brand-primary-dark: 168 58 86; /* #A83A56 */
+    --brand-success: 62 155 127; /* #3E9B7F سبز مریم‌گلی ملایم */
+    --brand-success-dark: 46 121 99; /* #2E7963 */
+    --brand-amber: 201 154 60; /* #C99A3C طلایی اسلامی */
+    --brand-amber-dark: 168 124 40; /* #A87C28 */
+    --brand-ruby: 212 87 107; /* #D4576B قرمز خطای ملایم */
+    --brand-ruby-dark: 176 56 78; /* #B0384E */
+
+    --app-card-radius: 1.75rem;
+    color: #331d2c;
+  }
+
+  html[data-app-theme="rose"].dark {
+    --brand-primary: 229 140 160; /* #E58CA0 */
+    --brand-primary-dark: 201 107 132; /* #C96B84 */
+    --brand-success: 78 190 158; /* #4EBE9E */
+    --brand-success-dark: 62 155 127; /* #3E9B7F */
+    --brand-amber: 217 174 95; /* #D9AE5F */
+    --brand-amber-dark: 184 143 68; /* #B88F44 */
+    --brand-ruby: 226 115 133; /* #E27385 */
+    --brand-ruby-dark: 201 80 107; /* #C9506B */
+    color: #fbf4f1;
+  }
+
   html {
     direction: rtl;
     font-family: "Vazirmatn", "KFGQPC-Hafs", sans-serif;
     font-feature-settings: "ss01"; /* فعال‌سازی اعداد فارسی */
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+  }
+
+  html[data-app-theme="rose"] body {
+    color: #331d2c;
+  }
+
+  html[data-app-theme="rose"].dark body {
+    color: #fbf4f1;
   }
 
   .quran-text {
@@ -56,12 +119,78 @@
       url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23b37e3d' stroke-width='0.75' stroke-opacity='0.13'%3E%3Cpolygon points='32,4 39,19 55,13 47,28 60,32 47,36 55,51 39,45 32,60 25,45 9,51 17,36 4,32 17,28 9,13 25,19'/%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3C/g%3E%3C/svg%3E");
   }
 
+  html[data-app-theme="rose"] .islamic-bg {
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(201, 80, 107, 0.07) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(201, 154, 60, 0.07) 0%, transparent 45%),
+      url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C9506B' stroke-width='0.75' stroke-opacity='0.07'%3E%3Cpolygon points='32,4 39,19 55,13 47,28 60,32 47,36 55,51 39,45 32,60 25,45 9,51 17,36 4,32 17,28 9,13 25,19'/%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  html[data-app-theme="rose"].dark .islamic-bg {
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(229, 140, 160, 0.06) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(217, 174, 95, 0.05) 0%, transparent 45%),
+      url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23E58CA0' stroke-width='0.75' stroke-opacity='0.07'%3E%3Cpolygon points='32,4 39,19 55,13 47,28 60,32 47,36 55,51 39,45 32,60 25,45 9,51 17,36 4,32 17,28 9,13 25,19'/%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* نقش اسلیمی / گل‌ومرغ خطی بسیار محو برای هدر صفحات اصلی در تم رز (opacity حداکثر ۸٪) */
+  html[data-app-theme="rose"] .rose-header-motif {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='64' viewBox='0 0 120 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C9506B' stroke-width='1' stroke-opacity='0.075' stroke-linecap='round'%3E%3Cpath d='M0 32 C20 12, 40 12, 60 32 C80 52, 100 52, 120 32'/%3E%3Cpath d='M0 32 C20 52, 40 52, 60 32 C80 12, 100 12, 120 32'/%3E%3Cpath d='M30 22 C35 14, 42 14, 44 22 C39 24, 34 24, 30 22 Z'/%3E%3Cpath d='M90 42 C85 50, 78 50, 76 42 C81 40, 86 40, 90 42 Z'/%3E%3Ccircle cx='60' cy='32' r='5'/%3E%3Ccircle cx='60' cy='32' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  html[data-app-theme="rose"].dark .rose-header-motif {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='64' viewBox='0 0 120 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23E58CA0' stroke-width='1' stroke-opacity='0.075' stroke-linecap='round'%3E%3Cpath d='M0 32 C20 12, 40 12, 60 32 C80 52, 100 52, 120 32'/%3E%3Cpath d='M0 32 C20 52, 40 52, 60 32 C80 12, 100 12, 120 32'/%3E%3Cpath d='M30 22 C35 14, 42 14, 44 22 C39 24, 34 24, 30 22 Z'/%3E%3Cpath d='M90 42 C85 50, 78 50, 76 42 C81 40, 86 40, 90 42 Z'/%3E%3Ccircle cx='60' cy='32' r='5'/%3E%3Ccircle cx='60' cy='32' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
   /* قاب تذهیب ایرانی-اسلامی با حاشیه زرین و فیروزه‌ای */
   .tazhib-frame {
     box-shadow:
       inset 0 0 0 2px rgba(212, 175, 55, 0.35),
       inset 0 0 28px rgba(0, 168, 150, 0.06),
       0 8px 24px -6px rgba(138, 91, 41, 0.12);
+  }
+
+  html[data-app-theme="rose"] .tazhib-frame {
+    box-shadow:
+      inset 0 0 0 2px rgba(201, 154, 60, 0.38),
+      inset 0 0 28px rgba(201, 80, 107, 0.07),
+      0 8px 24px -6px rgba(201, 80, 107, 0.14);
+  }
+
+  /* گردی بیشتر کارت‌ها و سایه‌های نرم و صورتی‌فام در تم رز */
+  html[data-app-theme="rose"] .rounded-3xl {
+    border-radius: var(--app-card-radius);
+  }
+
+  html[data-app-theme="rose"] .shadow-sm {
+    box-shadow: 0 4px 16px -3px rgba(201, 80, 107, 0.09), 0 1px 3px 0 rgba(201, 80, 107, 0.05);
+  }
+
+  html[data-app-theme="rose"] .shadow-md,
+  html[data-app-theme="rose"] .shadow-lg {
+    box-shadow: 0 10px 26px -6px rgba(201, 80, 107, 0.14), 0 3px 8px -2px rgba(201, 80, 107, 0.06);
+  }
+
+  html[data-app-theme="rose"].dark .shadow-sm {
+    box-shadow: 0 4px 16px -3px rgba(0, 0, 0, 0.42), 0 1px 4px 0 rgba(229, 140, 160, 0.06);
+  }
+
+  html[data-app-theme="rose"].dark .shadow-md,
+  html[data-app-theme="rose"].dark .shadow-lg {
+    box-shadow: 0 10px 26px -6px rgba(0, 0, 0, 0.58), 0 3px 8px -2px rgba(229, 140, 160, 0.08);
+  }
+
+  /* حلقه و تأکید رنگی صورتی برای باغ حفظ در تم رز (بدون تغییر آیکون یا منطق) */
+  html[data-app-theme="rose"] .garden-plant-active {
+    box-shadow: 0 0 0 2px rgba(201, 80, 107, 0.32);
+  }
+
+  html[data-app-theme="rose"].dark .garden-plant-active {
+    box-shadow: 0 0 0 2px rgba(229, 140, 160, 0.36);
   }
 }
 

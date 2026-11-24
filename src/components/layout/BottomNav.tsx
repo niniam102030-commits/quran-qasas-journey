@@ -26,8 +26,8 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       id: "units",
       label: "واحدهای قرآن",
       icon: <BookOpen className="w-5 h-5" />,
-      activeClass: "bg-gradient-to-b from-teal-500/15 to-emerald-500/20 text-[#028090] dark:text-teal-300 border border-teal-400/40",
-      dotClass: "bg-[#00A896]",
+      activeClass: "bg-brand-primary/15 text-brand-primaryDark dark:text-brand-primary border border-brand-primary/40",
+      dotClass: "bg-brand-primary",
     },
     {
       id: "mastery",
@@ -55,7 +55,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
   return (
     <nav
       aria-label="منوی ناوبری اصلی"
-      className="fixed bottom-0 left-0 right-0 z-40 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur-lg border-t-2 border-[#d4af37]/50 dark:border-teal-800/60 shadow-[0_-6px_24px_rgba(2,128,144,0.12)] py-2 px-4 transition-colors"
+      className="fixed bottom-0 left-0 right-0 z-40 bg-termeh-bg/95 dark:bg-lapis-bg/95 backdrop-blur-lg border-t-2 border-brand-amber/40 dark:border-lapis-border shadow-[0_-6px_24px_rgba(2,128,144,0.12)] py-2 px-4 transition-colors"
     >
       <div className="max-w-md mx-auto flex items-center justify-around gap-2">
         {navItems.map((item) => {

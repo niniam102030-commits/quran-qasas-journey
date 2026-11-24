@@ -181,7 +181,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 transition-colors">
+    <div className="min-h-screen bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 transition-colors">
       {syncError && (
         <div role="alert" dir="rtl" className="bg-rose-50 text-rose-900 border-b border-rose-200 p-3 text-center text-sm">
           <p className="font-bold">بارگذاری محتوای آموزشی انجام نشد: {syncError}</p>

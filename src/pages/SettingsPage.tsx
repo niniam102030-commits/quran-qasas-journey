@@ -34,6 +34,7 @@ const toFarsi = (n: number | string) =>
 export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onOpenDevTools }: Props) {
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
   const isDark = usePreferencesStore((s) => s.darkMode);
+  const appTheme = usePreferencesStore((s) => s.appTheme);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
@@ -47,6 +48,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
   const reminderHourOverride = usePreferencesStore((s) => s.reminderHourOverride);
   const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
   const handleToggleTheme = usePreferencesStore((s) => s.toggleDarkMode);
+  const handleAppThemeChange = usePreferencesStore((s) => s.setAppTheme);
   const handleToggleSound = usePreferencesStore((s) => s.toggleSoundEnabled);
   const handleToggleHaptics = usePreferencesStore((s) => s.toggleHapticsEnabled);
   const handlePaceModeChange = usePreferencesStore((s) => s.setPaceMode);
@@ -170,9 +172,9 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
   };
 
   return (
-    <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] text-slate-900 dark:text-slate-100 pb-20 select-none">
+    <div className="min-h-screen bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 pb-20 select-none">
       {/* Header */}
-      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
+      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-termeh-bg/95 dark:bg-lapis-card/95 backdrop-blur border-b border-termeh-border dark:border-lapis-border">
         <div className="flex items-center gap-2">
           <button
             onClick={onBack}
@@ -182,7 +184,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
             <ChevronRight className="w-6 h-6" />
           </button>
           <div>
-            <h1 className="text-base font-bold text-[#8a5b29] dark:text-amber-400">
+            <h1 className="text-base font-bold text-brand-amberDark dark:text-brand-amber">
               تنظیمات برنامه
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -193,9 +195,129 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
       </header>
 
       <main className="max-w-2xl mx-auto p-4 sm:p-6 space-y-6">
+        {/* ظاهر برنامه: پیش‌فرض / رز / وضعیت تیره جداگانه */}
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
+          <div>
+            <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+              ظاهر برنامه
+            </h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              پالت رنگی دلخواه خود را انتخاب کنید؛ حالت روشن و تاریک به‌صورت مستقل روی هر دو پوسته اعمال می‌شود.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            {/* کارت ۱: پیش‌فرض */}
+            <button
+              type="button"
+              onClick={() => handleAppThemeChange("default")}
+              className={`p-3 rounded-2xl border-2 text-right transition-all flex flex-col justify-between gap-2.5 ${
+                appTheme === "default"
+                  ? "border-brand-primary bg-brand-primary/10 shadow-sm"
+                  : "border-termeh-border dark:border-lapis-border bg-termeh-bg/60 dark:bg-lapis-bg/60 hover:border-brand-primary/60"
+              }`}
+              aria-pressed={appTheme === "default"}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-black text-slate-800 dark:text-slate-100">
+                  پیش‌فرض (ترمه)
+                </span>
+                {appTheme === "default" && (
+                  <span className="w-5 h-5 rounded-full bg-brand-primary text-white flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5" />
+                  </span>
+                )}
+              </div>
+              <div className="flex items-center gap-1.5" aria-hidden="true">
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#FAF7F2" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#00A896" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#F59E0B" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#0B132B" }} />
+              </div>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                فیروزه‌ای و لاجورد کلاسیک
+              </span>
+            </button>
+
+            {/* کارت ۲: رز */}
+            <button
+              type="button"
+              onClick={() => handleAppThemeChange("rose")}
+              className={`p-3 rounded-2xl border-2 text-right transition-all flex flex-col justify-between gap-2.5 ${
+                appTheme === "rose"
+                  ? "border-brand-primary bg-brand-primary/10 shadow-sm"
+                  : "border-termeh-border dark:border-lapis-border bg-termeh-bg/60 dark:bg-lapis-bg/60 hover:border-brand-primary/60"
+              }`}
+              aria-pressed={appTheme === "rose"}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-black text-slate-800 dark:text-slate-100">
+                  رز (دخترانه)
+                </span>
+                {appTheme === "rose" && (
+                  <span className="w-5 h-5 rounded-full bg-brand-primary text-white flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5" />
+                  </span>
+                )}
+              </div>
+              <div className="flex items-center gap-1.5" aria-hidden="true">
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#FBF4F1" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#C9506B" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#C99A3C" }} />
+                <span className="w-5 h-5 rounded-full border border-black/15" style={{ backgroundColor: "#261620" }} />
+              </div>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                گلاب، گل‌سرخی و طلایی اسلامی
+              </span>
+            </button>
+
+            {/* کارت ۳: وضعیت تیره جداگانه */}
+            <button
+              type="button"
+              onClick={handleToggleTheme}
+              className={`p-3 rounded-2xl border-2 text-right transition-all flex flex-col justify-between gap-2.5 ${
+                isDark
+                  ? "border-brand-amber bg-brand-amber/10 shadow-sm"
+                  : "border-termeh-border dark:border-lapis-border bg-termeh-bg/60 dark:bg-lapis-bg/60 hover:border-brand-amber/60"
+              }`}
+              aria-pressed={isDark}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-black text-slate-800 dark:text-slate-100 flex items-center gap-1.5">
+                  {isDark ? <Moon className="w-4 h-4 text-brand-amber" /> : <Sun className="w-4 h-4 text-brand-amber" />}
+                  <span>حالت تاریک</span>
+                </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-black/5 dark:bg-white/10 text-slate-700 dark:text-slate-200">
+                  {isDark ? "روشن" : "خاموش"}
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5" aria-hidden="true">
+                <span
+                  className="w-5 h-5 rounded-full border border-black/15"
+                  style={{ backgroundColor: appTheme === "rose" ? "#261620" : "#0B132B" }}
+                />
+                <span
+                  className="w-5 h-5 rounded-full border border-black/15"
+                  style={{ backgroundColor: appTheme === "rose" ? "#38202F" : "#1C2541" }}
+                />
+                <span
+                  className="w-5 h-5 rounded-full border border-black/15"
+                  style={{ backgroundColor: appTheme === "rose" ? "#E58CA0" : "#00A896" }}
+                />
+                <span
+                  className="w-5 h-5 rounded-full border border-black/15"
+                  style={{ backgroundColor: appTheme === "rose" ? "#D9AE5F" : "#F59E0B" }}
+                />
+              </div>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                {appTheme === "rose" ? "آلویی عمیق برای مطالعه شب" : "لاجورد شب برای مطالعه آرام"}
+              </span>
+            </button>
+          </div>
+        </section>
         {/* Multi-Profile Manager (C2) */}
         {onOpenProfiles && (
-          <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm flex items-center justify-between gap-3">
+          <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 min-w-0">
               <div className="w-10 h-10 rounded-2xl bg-teal-600 text-white font-black flex items-center justify-center shrink-0">
                 {profileAvatarLetter(getActiveProfile().name)}
@@ -222,7 +344,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
 
         {/* Multi-Surah Pack Manager (D) */}
         {onOpenSurahs && (
-          <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm flex items-center justify-between gap-3">
+          <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 min-w-0">
               <div className="w-10 h-10 rounded-2xl bg-amber-600 text-white font-black flex items-center justify-center shrink-0">
                 <BookOpen className="w-5 h-5" />
@@ -248,7 +370,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         )}
 
         {/* Developer Test Mode */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-violet-200 dark:border-violet-900/60 shadow-sm flex flex-wrap items-center justify-between gap-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-violet-200 dark:border-violet-900/60 shadow-sm flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-2xl bg-violet-600 text-white font-black flex items-center justify-center shrink-0">
               <Wrench className="w-5 h-5" />
@@ -286,7 +408,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Pace Mode & Daily Review Cap (F5) */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div>
             <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
               حالت سرعت و سقف مرور روزانه
@@ -323,7 +445,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Arabic Font Size Setting */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
             اندازه قلم متن عربی آیات ({fontSize} پیکسل)
           </h2>
@@ -354,7 +476,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Display & Sound Toggles */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
             پوسته و بازخورد حسی
           </h2>
@@ -463,7 +585,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* یادآور روزانه (U3) */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200 flex items-center gap-2">
             <Bell className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>یادآور روزانه</span>
@@ -524,7 +646,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* FSRS Personal Tuning */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
             شخصی‌سازی الگوریتم مرور (FSRS)
           </h2>
@@ -553,7 +675,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Active Surah & Reference Data */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
               <Mic className="w-4 h-4 text-teal-600" />
@@ -662,7 +784,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Active Surah & Reference Data */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
             سوره فعال و داده‌های مرجع
           </h2>
@@ -689,7 +811,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Backup and Restore */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
             پشتیبان‌گیری و انتقال داده‌ها
           </h2>
@@ -722,7 +844,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
         </section>
 
         {/* Reset Progress */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-rose-200 dark:border-rose-950/60 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-rose-200 dark:border-rose-950/60 shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-rose-700 dark:text-rose-400">
             شروع دوباره
           </h2>

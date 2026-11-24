@@ -199,7 +199,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#fcfaf5] dark:bg-[#121824] flex flex-col items-center justify-center gap-3 text-amber-600 dark:text-amber-400">
+      <div className="min-h-screen bg-termeh-bg dark:bg-lapis-bg flex flex-col items-center justify-center gap-3 text-brand-amber">
         <Sparkles className="w-8 h-8 animate-pulse" />
         <span className="text-sm font-medium">در حال تحلیل وضعیت تسلط...</span>
       </div>
@@ -207,9 +207,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   }
 
   return (
-    <div className="min-h-screen islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-20 select-none">
+    <div className="min-h-screen islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 pb-20 select-none">
       {/* Top Header */}
-      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-[#FAF7F2]/95 dark:bg-[#0B132B]/95 backdrop-blur border-b-2 border-[#d4af37]/50 dark:border-teal-800/60">
+      <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-termeh-bg/95 dark:bg-lapis-bg/95 rose-header-motif backdrop-blur border-b-2 border-brand-amber/40 dark:border-lapis-border">
         <div className="flex items-center gap-2">
           <button
             onClick={onBack}
@@ -253,7 +253,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         </div>
 
         {/* Verses Grid */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200">
               جدول پیشرفت آیات (برای جزئیات روی آیه بزنید)
@@ -360,7 +360,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         </section>
 
         {/* Review Activity Heatmap (84 days / 12 weeks) */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
               <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
@@ -406,7 +406,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         </section>
 
         {/* شاخص دقت لفظی (L4) */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div className="flex items-center justify-between gap-2">
             <div>
               <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
@@ -526,7 +526,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           const wiltedCount = plants.filter((p) => p.wilted).length;
 
           return (
-            <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+            <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
                   <TreeDeciduous className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
@@ -568,7 +568,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
                       key={plant.unitId}
                       type="button"
                       onClick={() => onSelectUnit?.(plant.unitId)}
-                      className={`p-2 rounded-2xl border flex flex-col items-center justify-center gap-1 transition-all hover:scale-105 ${stageStyle}`}
+                      className={`p-2 rounded-2xl border flex flex-col items-center justify-center gap-1 transition-all hover:scale-105 ${stageStyle} ${
+                        !plant.wilted && plant.stage >= 1 ? "garden-plant-active" : ""
+                      }`}
                       title={`نیم‌صفحه ${toFarsiNum(idx + 1)} — مرحله رشد ${toFarsiNum(plant.stage)}${plant.wilted ? " (تشنهٔ مرور)" : ""}`}
                     >
                       <IconComp className="w-5 h-5" />
@@ -584,7 +586,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         })()}
 
         {/* Units Progress Breakdown */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200">
             پیشرفت واحدهای یادگیری ({toFarsiNum(unitProgress.length)} واحد)
           </h3>
@@ -640,7 +642,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         </section>
 
         {/* 7-Day FSRS Forecast & Near-Golden Verses */}
-        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-4">
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 font-bold text-sm text-slate-700 dark:text-slate-200">
               <CalendarDays className="w-4 h-4 text-amber-600" />
@@ -696,7 +698,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
 
         {/* Most Frequent Confusions & Traps + Smart Remedial Mode */}
         {confusions.length > 0 && (
-          <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-bold text-sm">
                 <AlertTriangle className="w-4 h-4" />

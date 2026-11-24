@@ -234,7 +234,7 @@ export const ChillehProfilePage: React.FC = () => {
       )}
 
       {/* ۱. کارت اصلی «چله انس با قرآن» */}
-      <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-5">
+      <section className="rounded-3xl bg-termeh-card dark:bg-lapis-card rose-header-motif border-2 border-termeh-border dark:border-lapis-border p-5 shadow-sm space-y-5">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex flex-col items-center justify-center shadow-md">
@@ -373,7 +373,7 @@ export const ChillehProfilePage: React.FC = () => {
       </section>
 
       {/* فروشگاه عقیق (G2) */}
-      <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">
+      <section className="rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border p-5 shadow-sm space-y-4">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <ShoppingBag className="w-5 h-5 text-rose-600 dark:text-rose-400" />
@@ -527,7 +527,7 @@ export const ChillehProfilePage: React.FC = () => {
         };
 
         return (
-          <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-3">
+          <section className="rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border p-5 shadow-sm space-y-3">
             <div className="flex items-center gap-2">
               <CalendarClock className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
               <h2 className="text-base font-black text-slate-800 dark:text-white">
@@ -576,7 +576,7 @@ export const ChillehProfilePage: React.FC = () => {
       })()}
 
       {/* ۲. آمار تسلط واژگان */}
-      <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">
+      <section className="rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border p-5 shadow-sm space-y-4">
         <div>
           <h2 className="text-base font-black text-slate-800 dark:text-white">
             گالری تسلط واژگان {surahMeta.nameFa}
@@ -632,7 +632,7 @@ export const ChillehProfilePage: React.FC = () => {
       </section>
 
       {/* ۳. مدیریت آفلاین صوت استاد منشاوی (۸۸ آیه) + کلیدهای سریع */}
-      <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">
+      <section className="rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border p-5 shadow-sm space-y-4">
         <div className="flex items-center gap-2">
           <Volume2 className="w-5 h-5 text-amber-600" />
           <h2 className="text-base font-black text-slate-800 dark:text-white">
