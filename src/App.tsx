@@ -19,6 +19,9 @@ import SurahsPage from "./pages/SurahsPage";
 import MasteryPage from "./pages/MasteryPage";
 import SettingsPage from "./pages/SettingsPage";
 import { ChillehProfilePage } from "./pages/ChillehProfilePage";
+import PracticeHubPage from "./pages/PracticeHubPage";
+import VocabBookPage from "./pages/VocabBookPage";
+import AudioLessonPage from "./pages/AudioLessonPage";
 import MutashabihatModal from "./components/mushaf/MutashabihatModal";
 import OnboardingFlow from "./components/onboarding/OnboardingFlow";
 import DevModeModal from "./components/dev/DevModeModal";
@@ -26,6 +29,7 @@ import DevModeModal from "./components/dev/DevModeModal";
 export type AppView =
   | "units"
   | "mastery"
+  | "practice"
   | "profile"
   | "settings"
   | "session"
@@ -33,7 +37,9 @@ export type AppView =
   | "exam"
   | "tajweed"
   | "profiles"
-  | "surahs";
+  | "surahs"
+  | "vocabBook"
+  | "audioLesson";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>("units");
@@ -227,6 +233,7 @@ export default function App() {
           onNavigateTab={(tab) => setCurrentView(tab)}
           onStartAudioQuiz={() => setCurrentView("audioQuiz")}
           onOpenMutashabihat={() => setMutashabihatVerse(null)}
+          onOpenPracticeHub={() => setCurrentView("practice")}
           onStartStage={handleStartStage}
           onStartTestOut={handleStartTestOut}
           onStartBlindSpots={handleStartBlindSpots}
@@ -249,6 +256,29 @@ export default function App() {
           onStartRemedial={handleStartRemedial}
           onOpenMutashabihat={(v) => setMutashabihatVerse(v ?? null)}
         />
+      )}
+
+      {!syncing && !syncError && currentView === "practice" && (
+        <PracticeHubPage
+          onBack={() => setCurrentView("units")}
+          onStartBlindSpots={handleStartBlindSpots}
+          onStartCycleReview={handleStartCycleReview}
+          onStartDrill={handleStartDrill}
+          onStartExam={handleStartExam}
+          onStartAudioQuiz={() => setCurrentView("audioQuiz")}
+          onOpenTajweedLessons={() => setCurrentView("tajweed")}
+          onOpenMutashabihat={() => setMutashabihatVerse(null)}
+          onOpenVocabBook={() => setCurrentView("vocabBook")}
+          onOpenAudioLesson={() => setCurrentView("audioLesson")}
+        />
+      )}
+
+      {!syncing && !syncError && currentView === "vocabBook" && (
+        <VocabBookPage onBack={() => setCurrentView("practice")} />
+      )}
+
+      {!syncing && !syncError && currentView === "audioLesson" && (
+        <AudioLessonPage onExit={() => setCurrentView("practice")} />
       )}
 
       {mutashabihatVerse !== false && (
@@ -297,7 +327,13 @@ export default function App() {
 
       {/* منوی دسترسی سریع پایین */}
       {!syncing && !syncError && !needsOnboarding && <BottomNav
-        activeTab={currentView === "session" ? "units" : currentView}
+        activeTab={
+          currentView === "session"
+            ? "units"
+            : currentView === "vocabBook" || currentView === "audioLesson"
+            ? "practice"
+            : currentView
+        }
         onSelectTab={handleSelectNavTab}
       />}
     </div>

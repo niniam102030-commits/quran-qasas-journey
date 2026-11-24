@@ -28,6 +28,7 @@ import java.util.concurrent.Executors
 @CapacitorPlugin(name = "SherpaAsr")
 class SherpaAsrPlugin : Plugin() {
     private val executor = Executors.newSingleThreadExecutor()
+    private val downloadExecutor = Executors.newSingleThreadExecutor()
     private var recognizer: OnlineRecognizer? = null
     private var activeStream: OnlineStream? = null
     private var activeSampleRate: Int = 16000
@@ -91,7 +92,7 @@ class SherpaAsrPlugin : Plugin() {
             return
         }
 
-        executor.execute {
+        downloadExecutor.execute {
             val baseDir = rootDir()
             baseDir.mkdirs()
             val archiveFile = File(baseDir, "download.tmp.tar.bz2")
@@ -202,7 +203,7 @@ class SherpaAsrPlugin : Plugin() {
 
     @PluginMethod
     fun deleteModel(call: PluginCall) {
-        executor.execute {
+        downloadExecutor.execute {
             try {
                 releaseRecognizer()
                 val dir = rootDir()

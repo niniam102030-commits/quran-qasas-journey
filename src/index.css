@@ -215,3 +215,11 @@
     @apply btn-3d bg-white dark:bg-lapis-card border-termeh-border dark:border-lapis-border text-slate-700 dark:text-slate-100 hover:bg-slate-50;
   }
 }
+
+/* جلوگیری از اسکرول و لرزش افقی در وب‌ویو اندروید */
+html,
+body,
+#root {
+  overflow-x: clip;
+  max-width: 100vw;
+}

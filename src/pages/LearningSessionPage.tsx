@@ -1,7 +1,8 @@
 // src/pages/LearningSessionPage.tsx
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
-import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen } from "lucide-react";
+import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen, Volume2, VolumeX } from "lucide-react";
+import { isNoAudioToday, setNoAudioToday } from "../services/noAudioService";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
 import AqeeqIcon from "../components/common/AqeeqIcon";
@@ -52,6 +53,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [correctAnswerText, setCorrectAnswerText] = useState("");
+  const [noAudio, setNoAudio] = useState<boolean>(() => isNoAudioToday());
 
   useEffect(() => {
     const state = useLearningStore.getState();
@@ -168,7 +170,10 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
       }
       if (q.shape === "cloze" && typeof q.answer === "object" && q.answer !== null) {
         const byId = new Map((q.bank ?? []).map((b) => [b.id, b]));
-        const entries = Object.entries(q.answer as Record<string, string>);
+        const wrongKeys = new Set((s.lastResult.wrongOptionIds ?? []).map((w) => w.split(":")[0]));
+        const entries = Object.entries(q.answer as Record<string, string>).filter(
+          ([k]) => wrongKeys.size === 0 || wrongKeys.has(k),
+        );
         const parts = await Promise.all(
           entries.map(async ([k, id]) => `[${toFarsiNum(k)}: ${await resolveItem(byId.get(id))}]`),
         );
@@ -177,8 +182,10 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
       if (q.shape === "match" && Array.isArray(q.pairs)) {
         const leftById = new Map((q.left ?? []).map((l) => [l.id, l]));
         const rightById = new Map((q.right ?? []).map((r) => [r.id, r]));
+        const wrongLeftIds = new Set((s.lastResult.wrongOptionIds ?? []).map((w) => w.split(">")[0]));
+        const pairsToShow = wrongLeftIds.size > 0 ? q.pairs.filter(([lId]) => wrongLeftIds.has(lId)) : q.pairs;
         const parts = await Promise.all(
-          q.pairs.map(async ([lId, rId]) => `${await resolveItem(leftById.get(lId))} ← ${await resolveItem(rightById.get(rId))}`),
+          pairsToShow.map(async ([lId, rId]) => `${await resolveItem(leftById.get(lId))} ← ${await resolveItem(rightById.get(rId))}`),
         );
         return parts.filter(Boolean).join("  |  ");
       }
@@ -227,6 +234,8 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                 ? isPassed
                   ? "آزمون میانبر با موفقیت گذرانده شد 🎉"
                   : "آزمون میانبر به نصاب قبولی نرسید"
+                : s.practiceOnly
+                ? "دور مرور اشتباه‌ها به پایان رسید"
                 : stage === -1
                 ? "تمرین ترمیمی هوشمند به پایان رسید"
                 : stage === 0
@@ -287,6 +296,16 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                 </div>
               )}
             </div>
+          )}
+
+          {s.sessionType === "STAGE" && s.wrongQids.length > 0 && (
+            <button
+              type="button"
+              onClick={() => void s.startMistakeReview()}
+              className="w-full py-3.5 px-5 rounded-2xl bg-amber-500 hover:bg-amber-600 border-b-4 border-amber-700 active:border-b-0 active:translate-y-1 text-white font-black text-sm transition-all"
+            >
+              مرور اشتباه‌های همین جلسه ({toFarsiNum(s.wrongQids.length)} سؤال) — بدون جریمه
+            </button>
           )}
 
           {stage === -2 && m?.testOut && !isPassed && m.testOut.weakestStage !== null && (
@@ -418,6 +437,24 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           </div>
         )}
 
+        <button
+          type="button"
+          onClick={() => {
+            const nextVal = !noAudio;
+            setNoAudioToday(nextVal);
+            setNoAudio(nextVal);
+          }}
+          title={noAudio ? "حالت بدون صوت روشن است" : "الان نمی‌توانم گوش بدهم"}
+          className={`py-1.5 px-2.5 rounded-xl border-2 font-extrabold text-[11px] flex items-center gap-1 transition-all shrink-0 ${
+            noAudio
+              ? "bg-amber-500 border-amber-700 text-white"
+              : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-300"
+          }`}
+        >
+          {noAudio ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+          <span>{noAudio ? "بدون صوت" : "با صوت"}</span>
+        </button>
+
         <div className="text-xs font-bold text-slate-500 dark:text-slate-400 shrink-0">
           {toFarsiNum(s.index + 1)} / {toFarsiNum(s.queue.length)}
         </div>
@@ -425,7 +462,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
       {/* Main Question Body */}
       <main className="flex-1 max-w-2xl w-full mx-auto p-4 flex flex-col justify-center space-y-3">
-        {q.stem?.verse && (locked || q.shape !== "cloze" || q.type === "CLOZE_FA") && (
+        {q.stem?.verse && !noAudio && (locked || q.shape !== "cloze" || q.type === "CLOZE_FA") && (
           <div className="w-full max-w-xl mx-auto px-3">
             <VerseAudioPlayer verses={[q.stem.verse]} compact />
           </div>
@@ -434,6 +471,14 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           key={q.id + ":" + s.index}
           q={q}
           locked={locked}
+          feedback={
+            s.lastResult && !s.lastResult.correct
+              ? {
+                  wrongIds: s.lastResult.wrongOptionIds,
+                  correctId: typeof q.answer === "string" ? q.answer : undefined,
+                }
+              : null
+          }
           disableHint={s.sessionType === "TESTOUT"}
           onSubmit={(r, m) => {
             void s.submit(r, m).then((res) => {

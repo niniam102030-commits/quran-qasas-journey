@@ -2,6 +2,7 @@
 // منبع واحد تنظیمات کاربر: حالت تاریک، افکت‌های صوتی، لرزش لمسی، اندازه قلم عربی و حالت سرعت مرور
 import { create } from "zustand";
 import { isPaceMode, type PaceMode } from "../learning/pace";
+import { isLearningTrack, type LearningTrack } from "../learning/tracks";
 
 export type AppTheme = "default" | "rose";
 export type MushafTheme = "default" | "gold" | "night";
@@ -14,6 +15,7 @@ interface PreferencesState {
   hapticsEnabled: boolean;
   arabicFontSize: number;
   paceMode: PaceMode;
+  learningTrack: LearningTrack;
   mushafTheme: MushafTheme;
   soundPack: SoundPack;
   reminderEnabled: boolean;
@@ -33,6 +35,7 @@ interface PreferencesState {
   toggleHapticsEnabled: () => void;
   setArabicFontSize: (size: number) => void;
   setPaceMode: (mode: PaceMode) => void;
+  setLearningTrack: (track: LearningTrack) => void;
   setMushafTheme: (theme: MushafTheme) => void;
   setSoundPack: (pack: SoundPack) => void;
   setReminderEnabled: (enabled: boolean) => void;
@@ -83,6 +86,12 @@ function readInitialPaceMode(): PaceMode {
   return isPaceMode(saved) ? saved : "standard";
 }
 
+function readInitialLearningTrack(): LearningTrack {
+  if (typeof window === "undefined") return "full";
+  const saved = localStorage.getItem("learning_track");
+  return isLearningTrack(saved) ? saved : "full";
+}
+
 function readInitialAppTheme(): AppTheme {
   if (typeof window === "undefined") return "default";
   const saved = localStorage.getItem("app_theme");
@@ -128,6 +137,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   hapticsEnabled: readBool("haptics_enabled", true),
   arabicFontSize: readInitialFontSize(),
   paceMode: readInitialPaceMode(),
+  learningTrack: readInitialLearningTrack(),
   mushafTheme: readInitialMushafTheme(),
   soundPack: readInitialSoundPack(),
   reminderEnabled: readBool("reminder_enabled", false),
@@ -150,6 +160,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       hapticsEnabled: readBool("haptics_enabled", true),
       arabicFontSize: readInitialFontSize(),
       paceMode: readInitialPaceMode(),
+      learningTrack: readInitialLearningTrack(),
       mushafTheme: readInitialMushafTheme(),
       soundPack: readInitialSoundPack(),
       reminderEnabled: readBool("reminder_enabled", false),
@@ -217,6 +228,13 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       localStorage.setItem("pace_mode", mode);
     }
     set({ paceMode: mode });
+  },
+
+  setLearningTrack: (track) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("learning_track", track);
+    }
+    set({ learningTrack: track });
   },
 
   setMushafTheme: (theme) => {

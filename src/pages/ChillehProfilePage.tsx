@@ -13,6 +13,7 @@ import { getMeta } from "../services/metaStore";
 import { countEligibleDebtFreezeCards, purchaseShopItem } from "../services/debtFreeze";
 import { SHOP_ITEMS, type ShopItem } from "../learning/shop";
 import { estimateCompletion, PACE_MODES, type PaceMode } from "../learning/pace";
+import { trackWorkRatio } from "../learning/tracks";
 import {
   clearAudioCache,
   getAudioCacheStats,
@@ -41,6 +42,7 @@ export const ChillehProfilePage: React.FC = () => {
   const darkMode = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
+  const learningTrack = usePreferencesStore((s) => s.learningTrack);
   const mushafTheme = usePreferencesStore((s) => s.mushafTheme);
   const soundPack = usePreferencesStore((s) => s.soundPack);
   const toggleDarkMode = usePreferencesStore((s) => s.toggleDarkMode);
@@ -514,6 +516,7 @@ export const ChillehProfilePage: React.FC = () => {
           unitsCompletedLast14Days: unitCompletionStats.unitsCompletedLast14Days,
           paceMode,
           todayIso: getLocalDateIso(),
+          workRatio: trackWorkRatio(learningTrack),
         });
         const formatShamsi = (iso: string | null) => {
           if (!iso) return "—";
@@ -661,7 +664,7 @@ export const ChillehProfilePage: React.FC = () => {
               <div className="flex items-center justify-between text-[11px] text-slate-500">
                 <span>در حال دریافت آیه {toFarsi(downloadProgress.verse)}...</span>
                 <span>
-                  {toFarsi(downloadProgress.done)} / {toFarsi(downloadProgress.total)}
+                  {toFarsi(Math.round((downloadProgress.done / Math.max(1, downloadProgress.total)) * 100))}٪ — {toFarsi(downloadProgress.done)} / {toFarsi(downloadProgress.total)}
                 </span>
               </div>
             </div>

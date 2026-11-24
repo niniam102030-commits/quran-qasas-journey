@@ -93,6 +93,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const [targetVerseNum, setTargetVerseNum] = useState<number>(verses?.[0]?.n ?? 1);
   const [listeningAsr, setListeningAsr] = useState(false);
   const [spokenText, setSpokenText] = useState("");
+  const [liveStates, setLiveStates] = useState<Record<number, "matched">>({});
   const [wordStates, setWordStates] = useState<ReciteWordUiState[]>([]);
   const [activeSegIdx, setActiveSegIdx] = useState(0);
   const [sessionCompleted, setSessionCompleted] = useState(false);
@@ -290,11 +291,31 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     await stopActiveListening();
     setAsrError(null);
     setSpokenText("");
+    setLiveStates({});
 
     const verseNumAtStart = selectedVerse.n;
     const hotwords = [...new Set(selectedVerse.words.map((w) => w.ar))];
 
-    const onTranscript = (transcript: string, _isFinal?: boolean, tokenConfidences?: number[]) => {
+    const onTranscript = (transcript: string, isFinal?: boolean, tokenConfidences?: number[]) => {
+      if (!isFinal) {
+        // رنگی‌شدن زنده: فقط تطابق‌های موقتِ همین تکه، بدون اثر روی ارزیابی نهایی
+        if (!selectedVerse) return;
+        const seg = segments[segIdx];
+        if (!seg) return;
+        const segSlice = selectedVerse.words.slice(seg.start, seg.end + 1);
+        const aligned = alignTranscriptToVerse(
+          segSlice.map((w) => w.ar),
+          transcript.split(/\s+/).filter(Boolean),
+          { calibration: calibrationMapRef.current },
+        );
+        const live: Record<number, "matched"> = {};
+        aligned.words.forEach((w, localIdx) => {
+          if (w.state === "matched") live[seg.start + localIdx] = "matched";
+        });
+        setLiveStates(live);
+        return;
+      }
+      setLiveStates({});
       applySegmentTranscript(segIdx, transcript, tokenConfidences);
     };
 
@@ -345,6 +366,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const handleToggleAsr = async () => {
     if (listeningAsr) {
       await stopActiveListening();
+      setLiveStates({});
       if (selectedVerse && activeSegIdx === segments.length - 1) {
         setSessionCompleted(true);
         reportFinalPrecisionNow(selectedVerse.n, wordStatesRef.current);
@@ -700,10 +722,13 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                 const inFutureSeg = !sessionCompleted && idx > currentSegment.end;
                 const isMatched = w.state === "matched" || Boolean(w.userConfirmed);
                 const isSubstituted = w.state === "substituted" && !w.userConfirmed;
+                const isLive = listeningAsr && liveStates[idx] === "matched" && !isMatched;
                 const canConfirm = !isMatched && !inFutureSeg;
 
                 const colorClass = inFutureSeg
                   ? "bg-slate-100/60 dark:bg-slate-800/40 text-slate-400 dark:text-slate-500 border-dashed border-slate-200 dark:border-slate-700 opacity-40 blur-[0.6px]"
+                  : isLive
+                  ? "bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-200 border-emerald-200 dark:border-emerald-800 animate-pulse"
                   : isMatched
                   ? "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700"
                   : isSubstituted

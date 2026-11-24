@@ -5,7 +5,8 @@ import { ldb, verseKey, type QuestionRow } from "../db/learningDb";
 import { getActiveSurahNumber } from "../config/surahConfig";
 import { gradeQuestion } from "../services/grading";
 import { hasRealFsrsHistory, newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
-import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
+import { planStage, requeue, shuffle, rng, adaptRemainingQueue, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
+import { questionAllowedInTrack } from "../learning/tracks";
 import {
   buildTestOutPlan,
   testOutResult,
@@ -51,12 +52,16 @@ import {
   type StageAttempt,
 } from "../learning/mastery";
 import { recordLearningReward } from "../services/profileService";
-import type { Question, GradeResult, BaseVerse, UnitPlan } from "../types/learning";
+import type { Question, GradeResult, MatchQuestion, BaseVerse, UnitPlan } from "../types/learning";
 
 export interface SubmitMeta {
   usedHint?: boolean;
   changedAnswer?: boolean;
   responseMs: number;
+  /** تعداد تلاش‌های غلط در سؤال تطبیقِ فوری (مورد ۸): اگر > ۰ باشد سؤال غلط محسوب می‌شود */
+  matchMistakes?: number;
+  /** جفت‌های غلط تلاش‌شده با قالب `leftId>rightId` برای نمایش در کشوی بازخورد */
+  matchWrongPairs?: string[];
 }
 
 export interface SessionSummary {
@@ -119,6 +124,12 @@ interface LearningState {
   sessionAnyRequeue: boolean;
   seen: Set<string>;
   lastResult: GradeResult | null;
+  /** شناسهٔ سؤال‌های غلطِ تلاش اولِ جلسهٔ مرحله‌ای جاری (مورد ۱۰) */
+  wrongQids: string[];
+  /** جلسهٔ صرفاً تمرینی (دور مرور اشتباه‌ها): بدون اثر روی FSRS و confusions */
+  practiceOnly: boolean;
+  /** سه نتیجهٔ اخیر تلاش اول برای سختی تطبیقی داخل جلسه (مورد ۱۵) */
+  recentOutcomes: boolean[];
   summary: SessionSummary | null;
   examState: ExamRuntimeState | null;
   startStage: (unitId: string, stage: number, size?: number) => Promise<void>;
@@ -128,6 +139,7 @@ interface LearningState {
   startBlindSpots: (size?: number) => Promise<void>;
   startCycleReview: (kind: CycleKind, size?: number) => Promise<void>;
   startDrill: (unitId?: string | null, size?: number) => Promise<void>;
+  startMistakeReview: () => Promise<void>;
   startExam: (scope: ExamScope) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
   next: () => Promise<void>;
@@ -163,23 +175,40 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   lastResult: null,
   summary: null,
   examState: null,
+  wrongQids: [],
+  practiceOnly: false,
+  recentOutcomes: [],
 
   current: () => get().queue[get().index] ?? null,
 
   startStage: async (unitId, stage, size = LESSON_SIZE) => {
     set({ status: "loading", summary: null, lastResult: null });
-    const stageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
+    const track = usePreferencesStore.getState().learningTrack;
+    const rawStageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
+    const stageQs = track === "full" ? rawStageQs : rawStageQs.filter((q) => questionAllowedInTrack(q.type, track));
     // مرور درهم: سوال‌های مرحله ۸ و ۷ واحدهای قبلی
     const prog = await ldb.unitProgress.toArray();
     const done = new Set(prog.filter((p) => p.stagePassed[8]).map((p) => p.unitId));
-    const reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter((q) => done.has(q.unitId) && q.unitId !== unitId);
+    const reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter(
+      (q) => done.has(q.unitId) && q.unitId !== unitId && questionAllowedInTrack(q.type, track),
+    );
     const allTargets = [...stageQs, ...reviewQs].flatMap((q) => q.targets);
     const cards = await loadCards(allTargets);
     const effectiveStageQs = stage === 1 ? filterPrescreenedStage1Questions(stageQs, cards) : stageQs;
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(effectiveStageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
-      set({ status: "finished", sessionType: "STAGE", unitId, stage, cycleKind: null, combo: 0, maxCombo: 0, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 } });
+      if (track !== "full" && rawStageQs.length > 0) {
+        const p = await ldb.unitProgress.get(unitId);
+        if (p && !p.stagePassed[stage]) {
+          p.stagePassed = { ...p.stagePassed, [stage]: true };
+          p.stageLessons = { ...p.stageLessons, [stage]: LESSONS_PER_STAGE };
+          if (p.currentStage === stage && stage < 8) p.currentStage = stage + 1;
+          p.updatedAt = Date.now();
+          await ldb.unitProgress.put(p);
+        }
+      }
+      set({ status: "finished", sessionType: "STAGE", unitId, stage, cycleKind: null, combo: 0, maxCombo: 0, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), wrongQids: [], practiceOnly: false, recentOutcomes: [], summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 } });
       return;
     }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
@@ -238,12 +267,17 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       sessionAnyHint: false,
       sessionAnyRequeue: false,
       seen: new Set(),
+      wrongQids: [],
+      practiceOnly: false,
+      recentOutcomes: [],
     });
   },
 
   startTestOut: async (unitId) => {
     set({ status: "loading", summary: null, lastResult: null });
-    const unitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
+    const track = usePreferencesStore.getState().learningTrack;
+    const rawUnitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
+    const unitQs = track === "full" ? rawUnitQs : rawUnitQs.filter((q) => questionAllowedInTrack(q.type, track));
     const weekAgo = Date.now() - 7 * 86400_000;
     const recentAttempts = await ldb.attempts.where("unitId").equals(unitId).toArray();
     const recentIds = new Set(recentAttempts.filter((a) => a.at >= weekAgo).map((a) => a.qid));
@@ -547,6 +581,39 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     });
   },
 
+  startMistakeReview: async () => {
+    const ids = get().wrongQids;
+    if (!ids.length) return;
+    set({ status: "loading", summary: null, lastResult: null });
+    const rows = await ldb.questions.bulkGet(ids);
+    const queue = rows.filter((q): q is NonNullable<typeof q> => !!q);
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "REMEDIAL",
+      remedialTag: "mistake-review",
+      practiceOnly: true,
+      wrongQids: [],
+      recentOutcomes: [],
+      unitId: null,
+      stage: 0,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      firstTargetOutcomes: {},
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      lastResult: null,
+      summary: queue.length
+        ? null
+        : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
   startExam: async (scope) => {
     set({ status: "loading", summary: null, lastResult: null, examState: null });
     const surah = getActiveSurahNumber();
@@ -642,7 +709,17 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const s = get();
     const q = s.queue[s.index];
     if (!q) return null;
-    const res = gradeQuestion(q as unknown as Question, response);
+    const res0 = gradeQuestion(q as unknown as Question, response);
+    // تطبیق فوری: همهٔ جفت‌های نهایی درست‌اند، اما هر تلاش غلط یعنی سؤال در تلاش اول غلط بوده است
+    const res: GradeResult =
+      q.shape === "match" && (meta.matchMistakes ?? 0) > 0
+        ? {
+            correct: false,
+            score: Math.max(0, 1 - (meta.matchMistakes ?? 0) / Math.max(1, (q as unknown as MatchQuestion).pairs?.length ?? 1)),
+            perTarget: Object.fromEntries(Object.keys(res0.perTarget).map((k) => [k, false])) as GradeResult["perTarget"],
+            wrongOptionIds: meta.matchWrongPairs ?? [],
+          }
+        : res0;
     const now = new Date();
     const keys = Object.keys(res.perTarget);
     const cards = await loadCards(keys);
@@ -677,7 +754,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
     const isDrill = s.sessionType === "DRILL";
     const isExam = s.sessionType === "EXAM";
-    const skipFsrsMutation = isDrill || isExam;
+    const skipFsrsMutation = isDrill || isExam || s.practiceOnly;
     const updated: StoredCard[] = skipFsrsMutation
       ? []
       : keys.map((k) => {
@@ -698,7 +775,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         qid: q.id, unitId: q.unitId, stage: q.stage, at: now.getTime(), correct: res.correct, usedHint: !!meta.usedHint,
         responseMs: meta.responseMs, chosen: response, perTarget: res.perTarget, sessionType: recordedSessionType,
       });
-      if (!res.correct && !isDrill) {
+      if (!res.correct && !isDrill && !s.practiceOnly) {
         const tags = (q.distractorTags ?? {}) as Record<string, string>;
         const wrongTag = isExam && examErrorType
           ? examConfusionTagFor(examErrorType)
@@ -767,8 +844,23 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       };
     }
 
+    const wrongQids =
+      s.sessionType === "STAGE"
+        ? (() => {
+            const base = s.index === 0 && firstTime ? [] : s.wrongQids;
+            return firstTime && !res.correct && !base.includes(q.id) ? [...base, q.id] : base;
+          })()
+        : s.wrongQids;
+    const recentOutcomes = firstTime ? [...s.recentOutcomes, res.correct].slice(-3) : s.recentOutcomes;
+    let finalQueue = queue;
+    if (s.sessionType === "STAGE" && firstTime) {
+      const head = queue.slice(0, s.index + 1);
+      const tail = adaptRemainingQueue(queue.slice(s.index + 1), recentOutcomes);
+      finalQueue = [...head, ...tail];
+    }
+
     set({
-      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes, combo, maxCombo, examState: nextExamState,
+      lastResult: res, seen, wrongCounts, queue: finalQueue, wrongQids, recentOutcomes, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes, combo, maxCombo, examState: nextExamState,
       firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || s.sessionType === "TESTOUT" || s.sessionType === "DRILL" || isExam || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;

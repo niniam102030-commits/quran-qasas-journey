@@ -10,6 +10,7 @@ import { newCard, review } from "../learning/cardScheduler";
 import { recordLearningReward } from "../services/profileService";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
+import { isNoAudioToday, setNoAudioToday, addDeferredAudio } from "../services/noAudioService";
 import { shuffle, rng } from "../learning/sessionPlanner";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
 
@@ -55,6 +56,7 @@ function buildQuestions(verses: VerseEntry[], mode: QuizMode): AudioQuestion[] {
 
 export default function AudioQuizPage({ onExit }: Props) {
   const [mode, setMode] = useState<QuizMode>("next_ayah");
+  const [noAudio, setNoAudio] = useState<boolean>(() => isNoAudioToday());
   const [verses, setVerses] = useState<VerseEntry[]>([]);
   const [questions, setQuestions] = useState<AudioQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -150,6 +152,43 @@ export default function AudioQuizPage({ onExit }: Props) {
     if (verses.length) startNewQuiz(verses, nextMode);
   };
 
+  useEffect(() => {
+    if (noAudio) void addDeferredAudio("audioQuiz");
+  }, [noAudio]);
+
+  if (noAudio) {
+    return (
+      <div dir="rtl" className="min-h-screen flex flex-col items-center justify-center p-6 bg-[#fcf9f2] dark:bg-[#121824] text-slate-800 dark:text-slate-100">
+        <div className="w-full max-w-md bg-termeh-card dark:bg-lapis-card p-6 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-xl text-center space-y-4">
+          <Headphones className="w-10 h-10 mx-auto text-amber-600" />
+          <h2 className="font-black text-lg">حالت «بدون صوت» فعال است</h2>
+          <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            آزمون صوتی نیاز به شنیدن تلاوت دارد. این فعالیت در فهرست «فعالیت‌های معوق» هاب تمرین من ذخیره شد تا وقتی توانستید گوش بدهید انجامش دهید — هیچ جریمه‌ای ندارد و گم نمی‌شود.
+          </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setNoAudioToday(false);
+                setNoAudio(false);
+              }}
+              className="flex-1 py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white font-black text-sm"
+            >
+              الان می‌توانم گوش بدهم — شروع آزمون
+            </button>
+            <button
+              type="button"
+              onClick={onExit}
+              className="flex-1 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 font-black text-sm"
+            >
+              بازگشت
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div dir="rtl" className="min-h-screen flex items-center justify-center bg-[#fcf9f2] dark:bg-[#121824] text-slate-500">
@@ -216,7 +255,19 @@ export default function AudioQuizPage({ onExit }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-xl text-[11px] font-bold">
+        <div className="flex items-center gap-1.5 flex-wrap justify-end">
+          <button
+            type="button"
+            onClick={() => {
+              setNoAudioToday(true);
+              void addDeferredAudio("audioQuiz");
+              onExit();
+            }}
+            className="px-2.5 py-1 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-800 text-amber-800 dark:text-amber-300 text-[11px] font-bold"
+          >
+            الان نمی‌توانم گوش بدهم
+          </button>
+          <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-xl text-[11px] font-bold">
           <button
             type="button"
             onClick={() => handleModeSwitch("next_ayah")}
@@ -235,6 +286,7 @@ export default function AudioQuizPage({ onExit }: Props) {
           >
             شماره آیه
           </button>
+          </div>
         </div>
       </header>
 

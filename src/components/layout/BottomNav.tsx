@@ -1,9 +1,9 @@
 // src/components/layout/BottomNav.tsx
 import React from "react";
-import { BookOpen, Award, Flame, Settings } from "lucide-react";
+import { BookOpen, Award, Flame, Settings, Dumbbell } from "lucide-react";
 import { useHapticsAndSfx } from "../../hooks/useHapticsAndSfx";
 
-export type NavTab = "units" | "mastery" | "profile" | "settings";
+export type NavTab = "units" | "mastery" | "practice" | "profile" | "settings";
 
 export interface BottomNavProps {
   activeTab: NavTab;
@@ -37,6 +37,13 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       dotClass: "bg-amber-500",
     },
     {
+      id: "practice",
+      label: "تمرین من",
+      icon: <Dumbbell className="w-5 h-5" />,
+      activeClass: "bg-gradient-to-b from-teal-500/15 to-emerald-500/20 text-teal-800 dark:text-teal-300 border border-teal-400/40",
+      dotClass: "bg-teal-500",
+    },
+    {
       id: "profile",
       label: "چله و انس",
       icon: <Flame className="w-5 h-5" />,
@@ -57,14 +64,14 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       aria-label="منوی ناوبری اصلی"
       className="fixed bottom-0 left-0 right-0 z-40 bg-termeh-bg/95 dark:bg-lapis-bg/95 backdrop-blur-lg border-t-2 border-brand-amber/40 dark:border-lapis-border shadow-[0_-6px_24px_rgba(2,128,144,0.12)] py-2 px-4 transition-colors"
     >
-      <div className="max-w-md mx-auto flex items-center justify-around gap-2">
+      <div className="max-w-md mx-auto flex items-center justify-around gap-1.5">
         {navItems.map((item) => {
           const isActive = activeTab === item.id;
           return (
             <button
               key={item.id}
               onClick={() => handleTabClick(item.id)}
-              className={`flex-1 py-1.5 px-3 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95 ${
+              className={`flex-1 min-w-0 py-1.5 px-2 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95 ${
                 isActive
                   ? `${item.activeClass} font-extrabold shadow-sm`
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100/50 dark:hover:bg-slate-800/40"
@@ -77,7 +84,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
               >
                 {item.icon}
               </div>
-              <span className="text-[11px] leading-none tracking-tight">
+              <span className="text-[11px] leading-none tracking-tight whitespace-nowrap">
                 {item.label}
               </span>
               {isActive && (

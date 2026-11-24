@@ -46,7 +46,9 @@ interface Props {
   locked: boolean;
   disableHint?: boolean;
   noHintNoticeFa?: string;
-  onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number }) => void;
+  /** بازخورد پس از تصحیح: شناسه‌های گزینه‌های غلط کاربر و (در سؤال انتخابی) شناسهٔ پاسخ درست */
+  feedback?: { wrongIds: string[]; correctId?: string } | null;
+  onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number; matchMistakes?: number; matchWrongPairs?: string[] }) => void;
 }
 
 function makeArStyle(fontSizePx: number): React.CSSProperties {
@@ -93,7 +95,7 @@ const label = (o: Item, rangeLabels: Record<string, string>, arStyle: React.CSSP
   );
 };
 
-export default function QuestionRenderer({ q, locked, disableHint = false, noHintNoticeFa, onSubmit }: Props) {
+export default function QuestionRenderer({ q, locked, disableHint = false, noHintNoticeFa, feedback = null, onSubmit }: Props) {
   const t0 = useRef(Date.now());
   const changed = useRef(false);
   const [hint, setHint] = useState(false);
@@ -203,6 +205,13 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
               <button
                 key={o.id}
                 disabled={locked || isEliminated}
+                style={
+                  locked && feedback?.wrongIds.includes(o.id)
+                    ? { borderColor: "#f43f5e", boxShadow: "0 0 0 2px rgba(244,63,94,0.35)" }
+                    : locked && feedback && feedback.wrongIds.length > 0 && feedback.correctId === o.id
+                    ? { borderColor: "#10b981", boxShadow: "0 0 0 2px rgba(16,185,129,0.30)" }
+                    : undefined
+                }
                 onClick={() => {
                   playSfx("snap-click");
                   handleChoiceSelect(o.id);
@@ -235,11 +244,12 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
         <MatchView
           q={q}
           locked={locked}
+          feedback={feedback}
           hintActive={hint}
           rangeLabels={resolvedLabels}
           arStyle={arStyle}
           shuffleSalt={shuffleSalt}
-          onDone={(p) => onSubmit(p, meta())}
+          onDone={(p, matchMistakes, matchWrongPairs) => onSubmit(p, { ...meta(), matchMistakes, matchWrongPairs })}
           markChanged={() => (changed.current = true)}
         />
       )}
@@ -316,6 +326,7 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
 function MatchView({
   q,
   locked,
+  feedback = null,
   hintActive,
   onDone,
   markChanged,
@@ -325,15 +336,21 @@ function MatchView({
 }: {
   q: RenderableQuestion;
   locked: boolean;
+  feedback?: { wrongIds: string[]; correctId?: string } | null;
   hintActive: boolean;
   rangeLabels: Record<string, string>;
   arStyle: React.CSSProperties;
   shuffleSalt: number;
-  onDone: (p: [string, string][]) => void;
+  onDone: (p: [string, string][], matchMistakes: number, matchWrongPairs: string[]) => void;
   markChanged: () => void;
 }) {
   const [pairs, setPairs] = useState<[string, string][]>([]);
   const [leftSel, setLeftSel] = useState<string | null>(null);
+  const [wrongFlash, setWrongFlash] = useState<{ leftId: string; rightId: string } | null>(null);
+  const [rightFlash, setRightFlash] = useState<string | null>(null);
+  const mistakesRef = useRef(0);
+  const wrongPairsRef = useRef<string[]>([]);
+  const flashTimerRef = useRef<number | null>(null);
   const { playSfx } = useHapticsAndSfx();
 
   const leftItems = useMemo(() => q.left ?? [], [q.left]);
@@ -345,6 +362,11 @@ function MatchView({
   useEffect(() => {
     setPairs([]);
     setLeftSel(null);
+    setWrongFlash(null);
+    setRightFlash(null);
+    mistakesRef.current = 0;
+    wrongPairsRef.current = [];
+    if (flashTimerRef.current) window.clearTimeout(flashTimerRef.current);
   }, [q.id]);
 
   const usedL = useMemo(() => new Set(pairs.map((p) => p[0])), [pairs]);
@@ -363,23 +385,41 @@ function MatchView({
   }, [hintActive, q.pairs, leftSel, leftItems, usedL]);
 
   const pickRight = (rid: string) => {
-    if (!leftSel) return;
+    if (!leftSel || locked) return;
+    const expected = q.pairs?.find(([l]) => l === leftSel)?.[1];
+    if (expected !== undefined && expected !== rid) {
+      // جفت غلط: بازخورد فوری، بدون ثبت جفت؛ کلمهٔ انتخاب‌شده فعال می‌ماند
+      mistakesRef.current += 1;
+      wrongPairsRef.current.push(`${leftSel}>${rid}`);
+      markChanged();
+      playSfx("error-thud");
+      setWrongFlash({ leftId: leftSel, rightId: rid });
+      if (flashTimerRef.current) window.clearTimeout(flashTimerRef.current);
+      flashTimerRef.current = window.setTimeout(() => setWrongFlash(null), 900);
+      return;
+    }
     playSfx("snap-click");
     const np: [string, string][] = [...pairs, [leftSel, rid]];
     setPairs(np);
     setLeftSel(null);
-    if (np.length === need) onDone(np);
+    setRightFlash(rid);
+    window.setTimeout(() => setRightFlash(null), 450);
+    if (np.length === need) onDone(np, mistakesRef.current, [...wrongPairsRef.current]);
   };
 
   return (
-    <div className="space-y-3">
-      <div className="grid grid-cols-2 gap-2.5">
+    <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-2 gap-2.5 items-stretch min-h-[44vh]">
         {/* Left column */}
-        <div className="space-y-2">
+        <div className="grid gap-2 h-full" style={{ gridTemplateRows: `repeat(${Math.max(need, 1)}, minmax(0, 1fr))` }}>
           {leftItems.map((l) => {
             const isUsed = usedL.has(l.id);
             const isSelected = leftSel === l.id;
             const isHinted = hintPair?.leftId === l.id;
+            const myPair = pairs.find((p) => p[0] === l.id);
+            const pairWrong = locked && !!feedback && !!myPair && feedback.wrongIds.includes(`${myPair[0]}>${myPair[1]}`);
+            const pairRight = locked && !!feedback && !!myPair && !pairWrong;
+            const isWrongFlashL = wrongFlash?.leftId === l.id;
             return (
               <button
                 key={l.id}
@@ -388,8 +428,14 @@ function MatchView({
                   playSfx("snap-click");
                   setLeftSel(l.id);
                 }}
-                className={`w-full p-3 rounded-2xl border-2 text-center transition-all ${
-                  isUsed
+                className={`w-full h-full flex items-center justify-center p-3 rounded-2xl border-2 text-center transition-all ${
+                  isWrongFlashL
+                    ? "border-rose-500 bg-rose-100 dark:bg-rose-950/50 ring-2 ring-rose-400 animate-pulse"
+                    : isUsed && pairWrong
+                    ? "border-rose-500 bg-rose-50 dark:bg-rose-950/40 ring-2 ring-rose-300 dark:ring-rose-800"
+                    : isUsed && pairRight
+                    ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40"
+                    : isUsed
                     ? "opacity-30 border-dashed border-slate-300 dark:border-slate-700 bg-transparent"
                     : isSelected
                     ? "border-amber-500 bg-amber-100/70 dark:bg-amber-950/40 text-amber-900 shadow-sm"
@@ -405,17 +451,30 @@ function MatchView({
         </div>
 
         {/* Right column */}
-        <div className="space-y-2">
+        <div className="grid gap-2 h-full" style={{ gridTemplateRows: `repeat(${Math.max(need, 1)}, minmax(0, 1fr))` }}>
           {rightItems.map((r) => {
             const isUsed = usedR.has(r.id);
             const isHinted = hintPair?.rightId === r.id;
+            const myPairR = pairs.find((p) => p[1] === r.id);
+            const pairWrongR = locked && !!feedback && !!myPairR && feedback.wrongIds.includes(`${myPairR[0]}>${myPairR[1]}`);
+            const pairRightR = locked && !!feedback && !!myPairR && !pairWrongR;
+            const isWrongFlashR = wrongFlash?.rightId === r.id;
+            const isRightFlashR = rightFlash === r.id;
             return (
               <button
                 key={r.id}
                 disabled={locked || isUsed || !leftSel}
                 onClick={() => pickRight(r.id)}
-                className={`w-full p-3 rounded-2xl border-2 text-center transition-all ${
-                  isUsed
+                className={`w-full h-full flex items-center justify-center p-3 rounded-2xl border-2 text-center transition-all ${
+                  isWrongFlashR
+                    ? "border-rose-500 bg-rose-100 dark:bg-rose-950/50 ring-2 ring-rose-400 animate-pulse"
+                    : isRightFlashR
+                    ? "border-emerald-500 bg-emerald-100 dark:bg-emerald-950/50"
+                    : isUsed && pairWrongR
+                    ? "border-rose-500 bg-rose-50 dark:bg-rose-950/40 ring-2 ring-rose-300 dark:ring-rose-800"
+                    : isUsed && pairRightR
+                    ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40"
+                    : isUsed
                     ? "opacity-30 border-dashed border-slate-300 dark:border-slate-700 bg-transparent"
                     : isHinted
                     ? "border-amber-400 ring-2 ring-amber-300 dark:ring-amber-700 bg-amber-50/70 dark:bg-amber-950/30 cursor-pointer"

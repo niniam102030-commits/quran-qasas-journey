@@ -200,3 +200,25 @@ export function sessionTypeFor(opts: { hasDebt: boolean; hasWeak: boolean; unitD
   if (opts.unitDone) return "CUMULATIVE";
   return "STAGE";
 }
+
+/**
+ * سختی تطبیقی داخل جلسه (مورد ۱۵): بر اساس سه نتیجهٔ اخیر تلاش اول،
+ * ترتیب سؤال‌های باقی‌مانده را تنظیم می‌کند. تابع خالص است و آرایهٔ ورودی را تغییر نمی‌دهد.
+ */
+export function adaptRemainingQueue<T extends { difficulty: number }>(remaining: T[], recent: boolean[]): T[] {
+  if (remaining.length < 2 || recent.length === 0) return remaining;
+  const lastTwoWrong = recent.length >= 2 && recent[recent.length - 1] === false && recent[recent.length - 2] === false;
+  const lastThreeRight = recent.length >= 3 && recent.slice(-3).every(Boolean);
+  if (!lastTwoWrong && !lastThreeRight) return remaining;
+  let idx = 0;
+  for (let i = 1; i < remaining.length; i++) {
+    if (lastTwoWrong ? remaining[i].difficulty < remaining[idx].difficulty : remaining[i].difficulty > remaining[idx].difficulty) {
+      idx = i;
+    }
+  }
+  if (idx === 0) return remaining;
+  const copy = [...remaining];
+  const [picked] = copy.splice(idx, 1);
+  copy.unshift(picked);
+  return copy;
+}

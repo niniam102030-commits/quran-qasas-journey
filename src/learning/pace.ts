@@ -91,6 +91,8 @@ export function estimateCompletion(input: {
   unitsCompletedLast14Days: number;
   paceMode: PaceMode;
   todayIso: string;
+  /** سهم حجم کار مسیر انتخابی از مسیر کامل (مورد ۱۷)؛ پیش‌فرض ۱ */
+  workRatio?: number;
 }): { etaIso: string | null; perWeek: number; scenarios: Record<PaceMode, string | null> } {
   const basePerWeek = input.unitsCompletedLast14Days / 2;
   if (basePerWeek <= 0) {
@@ -101,7 +103,7 @@ export function estimateCompletion(input: {
     };
   }
 
-  const remaining = Math.max(0, input.totalUnits - input.completedUnits);
+  const remaining = Math.max(0, input.totalUnits - input.completedUnits) * (input.workRatio ?? 1);
   const baseDays = Math.ceil((remaining / basePerWeek) * 7);
   const etaIso = addDaysUtcIso(input.todayIso, baseDays);
   const currentCap = dailyReviewCapFor(input.paceMode);

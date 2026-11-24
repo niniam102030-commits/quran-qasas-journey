@@ -102,14 +102,24 @@ export async function downloadSherpaModel(
   if (!nativePlugin) {
     throw new Error("دانلود مدل آفلاین فقط در نسخه اندروید پشتیبانی می‌شود.");
   }
-  const handle = onProgress
-    ? await nativePlugin.addListener("downloadProgress", (ev) => {
-        onProgress(Number(ev?.loaded ?? 0), Number(ev?.total ?? 0));
-      })
-    : null;
+  let lastProgressAt = Date.now();
+  const handle = await nativePlugin.addListener("downloadProgress", (ev) => {
+    lastProgressAt = Date.now();
+    onProgress?.(Number(ev?.loaded ?? 0), Number(ev?.total ?? 0));
+  });
+  // دیده‌بان: اگر دانلود در صف ماند یا شبکه بی‌صدا قطع شد، کاربر نباید منتظر بی‌نهایت بماند
+  let watchdogId: number | null = null;
+  const watchdog = new Promise<never>((_, reject) => {
+    watchdogId = window.setInterval(() => {
+      if (Date.now() - lastProgressAt > 20000) {
+        reject(new Error("دانلود مدل آغاز نشد یا متوقف ماند. اتصال اینترنت را بررسی کنید و دوباره تلاش کنید. (اگر دانلود در پس‌زمینه کامل شود، وضعیت در همین صفحه به‌روز می‌شود.)"));
+      }
+    }, 2000);
+  });
   try {
-    return await nativePlugin.downloadModel({ url: MODEL_URL, sha256: MODEL_SHA256 });
+    return await Promise.race([nativePlugin.downloadModel({ url: MODEL_URL, sha256: MODEL_SHA256 }), watchdog]);
   } finally {
+    if (watchdogId !== null) window.clearInterval(watchdogId);
     await handle?.remove();
   }
 }

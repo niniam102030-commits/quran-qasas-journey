@@ -2,23 +2,23 @@
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۱۰ فصل داستانی سوره قصص با داشبورد برنامه امروز، مأموریت‌ها، چرخه مراجعه و نقاط کور.
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X, ShieldCheck, Palette, Wrench } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, ArrowRight, Play, Eye, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, CheckCircle2, BookOpen, X, ShieldCheck, Wrench } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
-import { buildReviewForecast, type ForecastDay } from "../learning/forecast";
-import { PACE_MODE_LIST, dailyReviewCapFor, summarizeForecastLoad } from "../learning/pace";
+import { dailyReviewCapFor } from "../learning/pace";
 import { buildTodayPlan, type TodayTask } from "../learning/todayPlan";
-import { missionsForDate, missionProgress, type DailyMission, type MissionFacts } from "../learning/missions";
-import { planMuraja, type MurajaPlan } from "../learning/muraja";
+import { type MissionFacts } from "../learning/missions";
+import { planMuraja } from "../learning/muraja";
 import { buildBlindSpotPack, getLocalSaturdayWeekIso, MIN_BLINDSPOT_QUESTIONS, type BlindSpotPack } from "../learning/blindSpots";
 import { STORY_CHAPTERS, chapterOfUnit, chapterProgress, type StoryChapter } from "../learning/chapters";
 import type { ExamScope } from "../learning/examEngine";
 import { getMeta, setMeta } from "../services/metaStore";
 import { getActiveProfile, profileAvatarLetter } from "../services/profileManager";
 import type { SurahPackMeta } from "../services/surahPackService";
-import { getLocalDateIso, recordLearningReward } from "../services/profileService";
+import { getLocalDateIso } from "../services/profileService";
+import { updateHomeWidget } from "../services/widgetBridge";
 import type { CycleKind } from "../store/useLearningStore";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
@@ -76,6 +76,7 @@ interface Props {
   onNavigateTab?: (tab: "mastery" | "settings") => void;
   onStartAudioQuiz?: () => void;
   onOpenMutashabihat?: () => void;
+  onOpenPracticeHub?: () => void;
   onBack?: () => void;
   syncVersion?: number;
 }
@@ -83,19 +84,6 @@ interface Props {
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
-}
-
-function formatTargetLabel(target: string): string {
-  const parts = target.split(":");
-  const kind = parts[0];
-  const verse = parts[1];
-  if (!verse) return target;
-  if (kind === "vr" || kind === "vt" || kind === "vn" || kind === "sq") {
-    return `آیهٔ ${toFarsiNum(verse)}`;
-  }
-  if (kind === "w") return `واژهٔ آیهٔ ${toFarsiNum(verse)}`;
-  if (kind === "c") return `عبارت آیهٔ ${toFarsiNum(verse)}`;
-  return target;
 }
 
 export default function UnitsPage({
@@ -112,8 +100,9 @@ export default function UnitsPage({
   requestedMushafUnitId,
   onConsumeRequestedMushaf,
   onNavigateTab,
-  onStartAudioQuiz,
-  onOpenMutashabihat,
+  onStartAudioQuiz: _onStartAudioQuiz,
+  onOpenMutashabihat: _onOpenMutashabihat,
+  onOpenPracticeHub,
   onBack,
   syncVersion,
 }: Props) {
@@ -127,18 +116,7 @@ export default function UnitsPage({
   const [chapterMedals, setChapterMedals] = useState<string[]>([]);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
-  const [forecastDays, setForecastDays] = useState<ForecastDay[]>([]);
-  const [murajaPlan, setMurajaPlan] = useState<MurajaPlan>({
-    sabq: [],
-    sabqi: [],
-    manzil: [],
-    manzilBucket: 0,
-    bucketCount: 0,
-  });
-  const [blindSpotPack, setBlindSpotPack] = useState<BlindSpotPack | null>(null);
   const [todayTasks, setTodayTasks] = useState<TodayTask[]>([]);
-  const [dailyMissions, setDailyMissions] = useState<{ mission: DailyMission; done: number; complete: boolean }[]>([]);
-  const [claimedMissions, setClaimedMissions] = useState<string[]>([]);
   const [todayFacts, setTodayFacts] = useState<MissionFacts>({
     reviewAnswers: 0,
     lessonsCompleted: 0,
@@ -148,7 +126,6 @@ export default function UnitsPage({
     cycleSessions: 0,
   });
   const paceMode = usePreferencesStore((s) => s.paceMode);
-  const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
   const activeSurah = usePreferencesStore((s) => s.activeSurah);
   const devMode = usePreferencesStore((s) => s.devMode);
   const [activeSurahName, setActiveSurahName] = useState<string>("سوره قصص");
@@ -237,7 +214,6 @@ export default function UnitsPage({
 
       const currentDebt = reviewDebt(cards, now);
       setDebt(currentDebt);
-      setForecastDays(buildReviewForecast(cards));
       setMasteryCount({
         total: cards.length,
         level3: cards.filter((c: StoredCard) => skillLevel(c) >= 3).length,
@@ -252,7 +228,6 @@ export default function UnitsPage({
         })),
         now,
       );
-      setMurajaPlan(muraja);
 
       // L3: بسته هفتگی نقاط کور
       let pack = savedPack;
@@ -260,9 +235,8 @@ export default function UnitsPage({
         pack = buildBlindSpotPack({ confusions: allConfusions, attempts: allAttempts, now });
         await setMeta("blindSpotPack", pack);
       }
-      setBlindSpotPack(pack);
 
-      // G3: آمار مأموریت‌های روزانه
+      // G3: آمار روزانه برای برنامه امروز
       const todayAttempts = allAttempts.filter((a) => getLocalDateIso(new Date(a.at)) === todayIso);
       const facts: MissionFacts = {
         reviewAnswers: todayAttempts.filter(
@@ -292,9 +266,7 @@ export default function UnitsPage({
         ? [1, 2, 3, 4, 5, 6, 7, 8].find((s) => !firstIncomplete.stagePassed[s]) ?? 1
         : 1;
 
-      const missions = missionsForDate(todayIso, passedUnits.length > 0);
-      setDailyMissions(missionProgress(missions, facts));
-      setClaimedMissions(savedClaimed);
+      void savedClaimed;
 
       // U1: برنامه امروز
       const tasks = buildTodayPlan({
@@ -348,15 +320,15 @@ export default function UnitsPage({
     onConsumeRequestedMushaf?.();
   }, [requestedMushafUnitId, units, onConsumeRequestedMushaf]);
 
-  const handleClaimMission = async (mission: DailyMission) => {
-    const todayIso = getLocalDateIso(new Date());
-    if (claimedMissions.includes(mission.kind)) return;
-    await recordLearningReward({ gemsDelta: mission.rewardGems, markDailyActivity: true });
-    const nextClaimed = [...claimedMissions, mission.kind];
-    await setMeta(`missionClaimed:${todayIso}`, nextClaimed);
-    setClaimedMissions(nextClaimed);
-    setProfile((prev) => ({ ...prev, aqeeqGems: prev.aqeeqGems + mission.rewardGems }));
-  };
+  useEffect(() => {
+    const first = todayTasks[0];
+    void updateHomeWidget({
+      todayTitle: first ? first.titleFa : "برنامهٔ امروز کامل شد",
+      todayDetail: first ? first.detailFa : "آفرین! وظیفهٔ تازه‌ای برای امروز نیست",
+      chillehDays: profile.chillehCurrentDays,
+      dueCount: debt,
+    });
+  }, [todayTasks, profile.chillehCurrentDays, debt]);
 
   const isTaskDone = (task: TodayTask): boolean => {
     switch (task.kind) {
@@ -426,11 +398,11 @@ export default function UnitsPage({
   }));
 
   return (
-    <div dir="rtl" className="min-h-screen islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 pb-24 select-none">
+    <div dir="rtl" className="min-h-screen islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-900 dark:text-slate-100 pb-24 select-none overflow-x-clip max-w-[100vw]">
       {/* Top Iranian-Islamic Stats & Navigation Bar */}
       <header className="sticky top-0 z-20 bg-termeh-bg/95 dark:bg-lapis-bg/95 rose-header-motif backdrop-blur-md border-b-2 border-brand-amber/40 dark:border-lapis-border shadow-sm">
         <div className="max-w-2xl mx-auto px-3 sm:px-4 py-2.5 flex items-center justify-between gap-2">
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 min-w-0 flex-wrap">
             {onBack && (
               <button
                 onClick={onBack}
@@ -464,7 +436,7 @@ export default function UnitsPage({
           </div>
 
           {/* Action icons */}
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 min-w-0 flex-wrap justify-end">
             {onOpenDevTools && (
               <button
                 type="button"
@@ -537,69 +509,23 @@ export default function UnitsPage({
           </div>
         )}
 
-        {/* Quick Hifz Tools: 3D Duolingo Cards */}
-        {(onStartAudioQuiz || onOpenMutashabihat || onStartExam || onOpenTajweedLessons) && (
-          <section className="grid grid-cols-2 gap-3">
-            {onStartAudioQuiz && (
-              <button
-                type="button"
-                onClick={onStartAudioQuiz}
-                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-amber-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Headphones className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">آزمون صوتی حفظ</div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">آیه بعدی و شماره آیه</div>
-                </div>
-              </button>
-            )}
-            {onOpenMutashabihat && (
-              <button
-                type="button"
-                onClick={onOpenMutashabihat}
-                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-teal-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <GitCompare className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">مقایسه متشابهات</div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">تفاوت آیات مشابه قصص</div>
-                </div>
-              </button>
-            )}
-            {onStartExam && (
-              <button
-                type="button"
-                onClick={() => onStartExam(null)}
-                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-indigo-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <ShieldCheck className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">آزمون تخصصی</div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">سطح رسمی و کارنامه</div>
-                </div>
-              </button>
-            )}
-            {onOpenTajweedLessons && (
-              <button
-                type="button"
-                onClick={onOpenTajweedLessons}
-                className="p-3.5 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-b-4 border-termeh-border dark:border-lapis-border hover:border-orange-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
-              >
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-orange-500 to-rose-600 text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Palette className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">مینی‌درس تجوید</div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">احکام رنگی و صوت منشاوی</div>
-                </div>
-              </button>
-            )}
+        {/* ورودی هاب تمرین من (مورد ۹+۱۲) */}
+        {onOpenPracticeHub && (
+          <section>
+            <button
+              type="button"
+              onClick={onOpenPracticeHub}
+              className="w-full p-4 rounded-3xl bg-gradient-to-l from-teal-600 to-emerald-600 text-white shadow-md border-b-4 border-emerald-800 active:border-b-2 active:translate-y-[2px] flex items-center justify-between transition-all"
+            >
+              <span className="flex items-center gap-2.5">
+                <Sparkles className="w-5 h-5" />
+                <span className="text-right">
+                  <span className="block text-sm font-black">تمرین من</span>
+                  <span className="block text-[11px] opacity-90">مراجعه، نقاط کور، مأموریت‌ها، واژگان، شنیداری و همهٔ تمرین‌های شخصی</span>
+                </span>
+              </span>
+              <ArrowRight className="w-5 h-5 rotate-180" />
+            </button>
           </section>
         )}
 
@@ -642,82 +568,6 @@ export default function UnitsPage({
               </div>
             </div>
           )}
-
-          {/* Pace Mode & 7-Day Review Forecast (F5) */}
-          {(() => {
-            const load = summarizeForecastLoad(forecastDays, paceMode);
-            const maxBar = Math.max(load.cap, load.peakDay?.dueCount ?? 0, 1);
-            return (
-              <div className="p-4 rounded-3xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <Gauge className="w-4 h-4 text-[#00A896]" />
-                    <span className="text-xs font-black text-slate-800 dark:text-slate-100">
-                      پیش‌بینی مرور ۷ روز آینده
-                    </span>
-                    <span className="text-[11px] text-slate-500 dark:text-slate-400">
-                      ({toFarsiNum(load.total7Days)} کارت)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    {PACE_MODE_LIST.map((m) => (
-                      <button
-                        key={m.id}
-                        type="button"
-                        onClick={() => setPaceMode(m.id)}
-                        className={`px-2.5 py-1 rounded-xl text-[11px] font-extrabold transition-all ${
-                          paceMode === m.id
-                            ? "bg-[#00A896] text-white shadow-sm"
-                            : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
-                        }`}
-                      >
-                        {m.labelFa} ({toFarsiNum(m.dailyReviewCap)})
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {forecastDays.length > 0 && (
-                  <div className="grid grid-cols-7 gap-1.5 items-end pt-1">
-                    {forecastDays.map((d) => {
-                      const over = d.dueCount > load.cap;
-                      const heightPct = Math.max(10, Math.round((d.dueCount / maxBar) * 100));
-                      return (
-                        <div key={d.dayOffset} className="flex flex-col items-center gap-1">
-                          <span
-                            className={`text-[10px] font-black ${
-                              over
-                                ? "text-rose-600 dark:text-rose-400"
-                                : "text-slate-600 dark:text-slate-300"
-                            }`}
-                          >
-                            {toFarsiNum(d.dueCount)}
-                          </span>
-                          <div className="w-full h-12 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-end overflow-hidden p-0.5">
-                            <div
-                              className={`w-full rounded-md transition-all ${
-                                over ? "bg-rose-500" : d.dueCount > 0 ? "bg-[#00A896]" : "bg-slate-300 dark:bg-slate-700"
-                              }`}
-                              style={{ height: `${heightPct}%` }}
-                            />
-                          </div>
-                          <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 truncate max-w-full">
-                            {d.dayOffset === 0 ? "امروز" : d.dayOffset === 1 ? "فردا" : `+${toFarsiNum(d.dayOffset)}`}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {load.overCapDays > 0 && (
-                  <p className="text-[11px] font-bold text-rose-700 dark:text-rose-300">
-                    در {toFarsiNum(load.overCapDays)} روز آینده بار مرور از سقف روزانهٔ {toFarsiNum(load.cap)} سؤال بیشتر است؛ پیشنهاد می‌شود پیشروی جدید را کمی آهسته‌تر کنید.
-                  </p>
-                )}
-              </div>
-            );
-          })()}
 
           {/* G1: بنر جشن یک‌بارهٔ تکمیل فصل */}
           {celebratedChapter && (
@@ -819,134 +669,7 @@ export default function UnitsPage({
                 })}
               </div>
             )}
-
-            {/* G3: مأموریت‌های روزانه */}
-            {dailyMissions.length > 0 && (
-              <div className="pt-2 border-t border-slate-200/80 dark:border-slate-700/70 space-y-2">
-                <div className="flex items-center gap-1.5 text-xs font-black text-slate-700 dark:text-slate-200">
-                  <Gift className="w-4 h-4 text-rose-500" />
-                  <span>مأموریت‌های امروز</span>
-                </div>
-                <div className="space-y-1.5">
-                  {dailyMissions.map(({ mission, done, complete }) => {
-                    const claimed = claimedMissions.includes(mission.kind);
-                    return (
-                      <div
-                        key={mission.kind}
-                        className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-xs"
-                      >
-                        <div className="min-w-0">
-                          <div className="font-bold text-slate-800 dark:text-slate-100 truncate">
-                            {mission.titleFa}
-                          </div>
-                          <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                            پیشرفت: {toFarsiNum(done)} از {toFarsiNum(mission.target)} • پاداش {toFarsiNum(mission.rewardGems)} عقیق
-                          </div>
-                        </div>
-                        {claimed ? (
-                          <span className="px-2.5 py-1 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold text-[11px] shrink-0">
-                            دریافت شد
-                          </span>
-                        ) : complete ? (
-                          <button
-                            type="button"
-                            onClick={() => void handleClaimMission(mission)}
-                            className="px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-black text-[11px] shrink-0 transition-colors"
-                          >
-                            دریافت (+{toFarsiNum(mission.rewardGems)})
-                          </button>
-                        ) : (
-                          <span className="px-2.5 py-1 rounded-xl bg-slate-200/70 dark:bg-slate-700 text-slate-500 dark:text-slate-300 font-bold text-[11px] shrink-0">
-                            {toFarsiNum(done)}/{toFarsiNum(mission.target)}
-                          </span>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
           </div>
-
-          {/* L2: چرخهٔ مراجعهٔ امروز (سبق / سبقی / منزل) */}
-          <div className="p-4 rounded-2xl bg-termeh-card dark:bg-lapis-card border-2 border-termeh-border dark:border-lapis-border shadow-sm space-y-2.5">
-            <div className="flex items-center gap-2">
-              <RefreshCw className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <h3 className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">
-                چرخهٔ مراجعهٔ امروز
-              </h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-              {(
-                [
-                  { kind: "SABQ" as const, label: "سبق (۷ روز اخیر)", items: murajaPlan.sabq },
-                  { kind: "SABQI" as const, label: "سبقی (۸ تا ۳۰ روز)", items: murajaPlan.sabqi },
-                  {
-                    kind: "MANZIL" as const,
-                    label:
-                      murajaPlan.bucketCount > 0
-                        ? `منزل (بخش ${toFarsiNum(murajaPlan.manzilBucket + 1)} از ${toFarsiNum(murajaPlan.bucketCount)})`
-                        : "منزل (چرخشی)",
-                    items: murajaPlan.manzil,
-                  },
-                ]
-              ).map((row) => {
-                const empty = row.items.length === 0;
-                return (
-                  <div
-                    key={row.kind}
-                    className={`p-3 rounded-2xl border flex items-center justify-between sm:flex-col sm:items-stretch gap-2 ${
-                      empty
-                        ? "bg-slate-50/70 dark:bg-slate-800/40 border-slate-200/70 dark:border-slate-800 text-slate-400"
-                        : "bg-emerald-50/60 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800"
-                    }`}
-                  >
-                    <div>
-                      <div className={`text-xs font-black ${empty ? "text-slate-500 dark:text-slate-400" : "text-slate-800 dark:text-slate-100"}`}>
-                        {row.label}
-                      </div>
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                        {empty ? "فعلاً موردی نیست" : `${toFarsiNum(row.items.length)} نیم‌صفحه`}
-                      </div>
-                    </div>
-                    {(!empty || devMode) && onStartCycleReview && (
-                      <button
-                        type="button"
-                        onClick={() => onStartCycleReview(row.kind)}
-                        className="py-1.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors"
-                      >
-                        مرور
-                      </button>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* L3: بستهٔ هفتگی نقاط کور من */}
-          {blindSpotPack && blindSpotPack.questionIds.length >= MIN_BLINDSPOT_QUESTIONS && onStartBlindSpots && (
-            <div className="p-4 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-amber-200 dark:border-amber-800/70 shadow-sm flex flex-wrap items-center justify-between gap-3">
-              <div className="space-y-1 min-w-0">
-                <div className="flex items-center gap-1.5 text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">
-                  <Target className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-                  <span>نقاط کور این هفته ({toFarsiNum(blindSpotPack.questionIds.length)} سؤال)</span>
-                </div>
-                {blindSpotPack.topTargets.length > 0 && (
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                    پرتکرارترین لغزش‌ها: {blindSpotPack.topTargets.map(formatTargetLabel).join("، ")}
-                  </p>
-                )}
-              </div>
-              <button
-                type="button"
-                onClick={onStartBlindSpots}
-                className="py-2 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 text-white font-black text-xs shrink-0 transition-colors"
-              >
-                شروع تمرین
-              </button>
-            </div>
-          )}
         </section>
 
         {/* 22 Learning Units grouped by 10 Story Chapters (G1) */}

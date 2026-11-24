@@ -18,6 +18,7 @@ import {
 } from "../services/sherpaAsr";
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { PACE_MODE_LIST } from "../learning/pace";
+import { TRACK_LIST } from "../learning/tracks";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 import { Capacitor } from "@capacitor/core";
 import { App as CapApp } from "@capacitor/app";
@@ -40,6 +41,8 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
+  const learningTrack = usePreferencesStore((s) => s.learningTrack);
+  const setLearningTrack = usePreferencesStore((s) => s.setLearningTrack);
   const autoFollowMushaf = usePreferencesStore((s) => s.autoFollowMushaf);
   const tajweedColorsEnabled = usePreferencesStore((s) => s.tajweedColorsEnabled);
   const offlineAsrEnabled = usePreferencesStore((s) => s.offlineAsrEnabled);
@@ -463,6 +466,40 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
           </p>
         </section>
 
+        {/* Learning Track (مورد ۱۷) */}
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
+          <div>
+            <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+              مسیر یادگیری من
+            </h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              فقط تمرین‌های متناسب با هدفت را ببین. پیشرفتت حفظ می‌شود و هر وقت خواستی مسیر را عوض کن. آزمون تخصصی همیشه جامع می‌ماند.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-2.5">
+            {TRACK_LIST.map((t) => {
+              const active = learningTrack === t.id;
+              return (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setLearningTrack(t.id)}
+                  className={`p-3 rounded-2xl border-2 text-center transition-all space-y-1 ${
+                    active
+                      ? "bg-teal-50 dark:bg-teal-950/50 border-[#00A896] text-[#028090] dark:text-teal-300 shadow-sm"
+                      : "bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-teal-400"
+                  }`}
+                >
+                  <div className="font-black text-sm">{t.labelFa}</div>
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-slate-500 dark:text-slate-400">
+            {TRACK_LIST.find((t) => t.id === learningTrack)?.descriptionFa}
+          </p>
+        </section>
+
         {/* Arabic Font Size Setting */}
         <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
@@ -748,7 +785,10 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
                     />
                   </div>
                   <div className="text-[11px] text-slate-500">
-                    در حال دانلود و راستی‌آزمایی SHA-256 ({toFarsi(Math.round(sherpaProgress.loaded / 1048576))} مگابایت)...
+                    در حال دانلود و راستی‌آزمایی SHA-256 —{" "}
+                    {sherpaProgress.total > 0
+                      ? `${toFarsi(Math.min(100, Math.round((sherpaProgress.loaded / sherpaProgress.total) * 100)))}٪ (${toFarsi(Math.round(sherpaProgress.loaded / 1048576))} از ${toFarsi(Math.round(sherpaProgress.total / 1048576))} مگابایت)`
+                      : `${toFarsi(Math.round(sherpaProgress.loaded / 1048576))} مگابایت`}
                   </div>
                 </div>
               )}
@@ -766,7 +806,13 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
                         setSherpaInstalled(true);
                         setSherpaNotice("مدل تصحیح آفلاین با موفقیت دانلود و با SHA-256 راستی‌آزمایی شد.");
                       } catch (err) {
-                        setSherpaNotice(err instanceof Error ? err.message : "خطا در دانلود مدل آفلاین.");
+                        const st = await getSherpaModelStatus();
+                        if (st.installed) {
+                          setSherpaInstalled(true);
+                          setSherpaNotice("مدل در پس‌زمینه کامل شد و اکنون نصب است.");
+                        } else {
+                          setSherpaNotice(err instanceof Error ? err.message : "خطا در دانلود مدل آفلاین.");
+                        }
                       } finally {
                         setSherpaDownloading(false);
                         setSherpaProgress(null);
