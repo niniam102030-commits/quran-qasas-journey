@@ -1,9 +1,11 @@
 // src/components/mushaf/MushafHalfPage.tsx
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints, Flame, AlertCircle } from "lucide-react";
+import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints, Flame, AlertCircle, VolumeX, Mic } from "lucide-react";
 import { ldb, type LexiconRow, type StoredCard } from "../../db/learningDb";
 import { newCard, review } from "../../learning/cardScheduler";
 import { skillLevel } from "../../learning/mastery";
+import { planMutedSession } from "../../learning/mutedAudio";
+import { getMeta, setMeta } from "../../services/metaStore";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
 import {
   findActiveWordAtMs,
@@ -14,6 +16,8 @@ import {
 } from "../../services/qulReferenceService";
 import VerseAudioPlayer from "../audio/VerseAudioPlayer";
 import SelfReciteRecorder from "../audio/SelfReciteRecorder";
+import MutedAudioQuiz from "../audio/MutedAudioQuiz";
+import TasmiModal from "./TasmiModal";
 
 interface Word {
   id: string;
@@ -56,10 +60,30 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [lexiconMap, setLexiconMap] = useState<Map<string, LexiconRow>>(new Map());
   const [pinnedMistakes, setPinnedMistakes] = useState<Set<string>>(new Set());
   const [pinNotice, setPinNotice] = useState<string | null>(null);
+  const [showMutedQuiz, setShowMutedQuiz] = useState<boolean>(false);
+  const [showTasmi, setShowTasmi] = useState<boolean>(false);
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
+  const mushafTheme = usePreferencesStore((s) => s.mushafTheme);
 
   const allWordIds = useMemo(() => verses.flatMap((v) => v.words.map((w) => w.id)), [verses]);
   const verseNumsList = useMemo(() => verses.map((v) => v.n), [verses]);
+  const mutedWordsInput = useMemo(
+    () => verses.map((v) => ({ n: v.n, words: v.words.map((w) => w.ar) })),
+    [verses],
+  );
+  const hasMutedTiming = useMemo(
+    () => planMutedSession(mutedWordsInput, audioTimings, { count: 1 }).length > 0,
+    [mutedWordsInput, audioTimings],
+  );
+
+  const handleSavePrecisionLog = useCallback(async (entry: { at: number; verse: number; accuracy: number }) => {
+    try {
+      const prev = await getMeta<{ at: number; verse: number; accuracy: number }[]>("precisionLog", []);
+      await setMeta("precisionLog", [...prev, entry].slice(-100));
+    } catch {
+      // ignore
+    }
+  }, []);
 
   const loadStudyOverlay = useCallback(async () => {
     try {
@@ -233,8 +257,15 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
     return false;
   };
 
+  const rootThemeClass =
+    mushafTheme === "gold"
+      ? "bg-gradient-to-b from-amber-50 via-[#fbf2db] to-amber-100/80 text-slate-900"
+      : mushafTheme === "night"
+      ? "bg-slate-900 text-[#f5ebd6]"
+      : "bg-[#fcf9f2] dark:bg-[#151c28] text-slate-900 dark:text-slate-100";
+
   return (
-    <div dir="rtl" className={`flex flex-col min-h-screen bg-[#fcf9f2] dark:bg-[#151c28] text-slate-900 dark:text-slate-100 select-none overflow-y-auto ${focusMode ? "fixed inset-0 z-50" : ""}`}>
+    <div dir="rtl" className={`flex flex-col min-h-screen ${rootThemeClass} select-none overflow-y-auto ${focusMode ? "fixed inset-0 z-50" : ""}`}>
       {/* Header */}
       <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 px-4 py-3 bg-[#f7f2e4]/95 dark:bg-[#1a2332]/95 backdrop-blur border-b border-[#e6dbc5] dark:border-slate-800">
         <div className="flex items-center gap-2">
@@ -318,7 +349,32 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             <SelfReciteRecorder
               verses={verses}
               onWordsRecitedCorrectly={handleWordsRecitedCorrectly}
+              onFinalPrecision={(entry) => void handleSavePrecisionLog(entry)}
             />
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setShowTasmi(true)}
+                className="py-2 px-3.5 rounded-2xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/50 border border-sky-200 dark:border-sky-800 text-sky-800 dark:text-sky-300 text-xs font-extrabold flex items-center gap-1.5 transition-all"
+              >
+                <Mic className="w-3.5 h-3.5" />
+                <span>تسمیع نیم‌صفحه</span>
+              </button>
+              <button
+                type="button"
+                disabled={!hasMutedTiming}
+                onClick={() => setShowMutedQuiz(true)}
+                title={
+                  hasMutedTiming
+                    ? "پخش تلاوت با سکوت روی کلمهٔ هدف"
+                    : "دادهٔ زمان‌بندی این نیم‌صفحه موجود نیست"
+                }
+                className="py-2 px-3.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-extrabold flex items-center gap-1.5 transition-all disabled:opacity-45 disabled:cursor-not-allowed"
+              >
+                <VolumeX className="w-3.5 h-3.5" />
+                <span>تمرین صوت ناقص</span>
+              </button>
+            </div>
           </div>
         )}
 
@@ -518,6 +574,34 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
           </div>
         )}
       </main>
+
+      {showMutedQuiz && (
+        <MutedAudioQuiz
+          unitId={unitId}
+          verses={mutedWordsInput}
+          timings={audioTimings}
+          onClose={() => {
+            setShowMutedQuiz(false);
+            void loadStudyOverlay();
+          }}
+        />
+      )}
+
+      {showTasmi && (
+        <TasmiModal
+          unitId={unitId}
+          verseFrom={verses[0]?.n}
+          verseTo={verses[verses.length - 1]?.n}
+          onClose={() => {
+            setShowTasmi(false);
+            void loadStudyOverlay();
+          }}
+          onStartReview={() => {
+            setShowTasmi(false);
+            onStartPractice?.();
+          }}
+        />
+      )}
 
       {/* Bottom Sticky Action Bar */}
       {onStartPractice && (

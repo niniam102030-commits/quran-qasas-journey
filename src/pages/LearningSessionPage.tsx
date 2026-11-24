@@ -5,14 +5,16 @@ import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
 import AqeeqIcon from "../components/common/AqeeqIcon";
-import { useLearningStore } from "../store/useLearningStore";
+import { useLearningStore, type CycleKind } from "../store/useLearningStore";
 import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
+import { syncDailyReminder } from "../services/reminderService";
 import { ldb } from "../db/learningDb";
 
 interface Props {
   unitId: string;
   stage: number;
   remedialTag?: string | null;
+  cycleKind?: CycleKind | null;
   onStartNext?: (unitId: string, stage: number) => void;
   onExit: () => void;
 }
@@ -36,12 +38,14 @@ function renderRichFa(text: string | undefined) {
   );
 }
 
-export default function LearningSessionPage({ unitId, stage, remedialTag = null, onStartNext, onExit }: Props) {
+export default function LearningSessionPage({ unitId, stage, remedialTag = null, cycleKind = null, onStartNext, onExit }: Props) {
   const s = useLearningStore();
   const startReview = useLearningStore((state) => state.startReview);
   const startStage = useLearningStore((state) => state.startStage);
   const startRemedial = useLearningStore((state) => state.startRemedial);
   const startTestOut = useLearningStore((state) => state.startTestOut);
+  const startBlindSpots = useLearningStore((state) => state.startBlindSpots);
+  const startCycleReview = useLearningStore((state) => state.startCycleReview);
   const { playSfx } = useHapticsAndSfx();
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
@@ -49,7 +53,15 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
   useEffect(() => {
     const state = useLearningStore.getState();
-    if (stage === -2) {
+    if (stage === -4 && cycleKind) {
+      if (state.status === "idle" || state.sessionType !== "REVIEW" || state.cycleKind !== cycleKind || state.status === "finished") {
+        void startCycleReview(cycleKind);
+      }
+    } else if (stage === -3) {
+      if (state.status === "idle" || state.sessionType !== "REMEDIAL" || state.remedialTag !== "blindspots" || state.status === "finished") {
+        void startBlindSpots();
+      }
+    } else if (stage === -2) {
       if (state.status === "idle" || state.sessionType !== "TESTOUT" || state.unitId !== unitId || state.status === "finished") {
         void startTestOut(unitId);
       }
@@ -58,14 +70,17 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
         void startRemedial(remedialTag);
       }
     } else if (stage === 0) {
-      if (state.status === "idle" || state.sessionType !== "REVIEW" || state.status === "finished") void startReview();
+      if (state.status === "idle" || state.sessionType !== "REVIEW" || state.cycleKind !== null || state.status === "finished") void startReview();
     } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
       void startStage(unitId, stage);
     }
-  }, [unitId, stage, remedialTag, startReview, startStage, startRemedial, startTestOut]);
+  }, [unitId, stage, remedialTag, cycleKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview]);
 
-  // جشن پایان مرحله موفق با افکت صوتی و Confetti
+  // جشن پایان مرحله موفق با افکت صوتی و Confetti + زمان‌بندی مجدد یادآور روزانه (بدون درخواست مجوز)
   useEffect(() => {
+    if (s.status === "finished") {
+      void syncDailyReminder({ requestPermission: false });
+    }
     if (s.status === "finished" && s.summary && s.summary.total > 0 && s.summary.passed) {
       playSfx("stage-fanfare");
       try {
@@ -254,6 +269,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                   )}
                 </div>
               )}
+              {(m.maxCombo ?? 0) >= 5 && (
+                <div className="col-span-2 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs font-extrabold text-emerald-700 dark:text-emerald-300">
+                  بهترین زنجیرهٔ پاسخ درست: {toFarsiNum(m.maxCombo!)}
+                </div>
+              )}
             </div>
           )}
 
@@ -379,6 +399,12 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
             <div className="absolute inset-x-2 top-0.5 h-1 rounded-full bg-white/35" />
           </div>
         </div>
+
+        {s.combo >= 3 && (
+          <div className="px-2.5 py-1 rounded-xl bg-amber-100 dark:bg-amber-950/70 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-xs font-black shrink-0">
+            🔥 ×{toFarsiNum(s.combo)}
+          </div>
+        )}
 
         <div className="text-xs font-bold text-slate-500 dark:text-slate-400 shrink-0">
           {toFarsiNum(s.index + 1)} / {toFarsiNum(s.queue.length)}

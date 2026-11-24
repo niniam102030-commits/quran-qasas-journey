@@ -1,10 +1,14 @@
 // src/pages/MasteryPage.tsx
 import { useState, useEffect, useMemo } from "react";
-import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench, GitCompare } from "lucide-react";
-import { ldb, type StoredCard, type UnitProgressRow, type AttemptRow } from "../db/learningDb";
+import { Star, ChevronRight, AlertTriangle, Sparkles, CheckCircle2, CalendarDays, Wrench, GitCompare, Sprout, Leaf, TreeDeciduous, Apple, Target } from "lucide-react";
+import { ldb, type StoredCard, type UnitProgressRow, type AttemptRow, type LexiconRow } from "../db/learningDb";
 import { isGoldenVerse, skillLevel } from "../learning/mastery";
+import { isDue } from "../learning/cardScheduler";
 import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast";
 import { buildReviewHeatmap } from "../learning/heatmap";
+import { gardenState } from "../learning/garden";
+import { precisionIndex } from "../learning/precision";
+import { getMeta } from "../services/metaStore";
 import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
 
 interface Props {
@@ -40,8 +44,11 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
   const [allCardsList, setAllCardsList] = useState<StoredCard[]>([]);
   const [allAttempts, setAllAttempts] = useState<AttemptRow[]>([]);
+  const [allLexicon, setAllLexicon] = useState<LexiconRow[]>([]);
   const [unitProgress, setUnitProgress] = useState<UnitDisplayRow[]>([]);
   const [confusions, setConfusions] = useState<{ tag: string; count: number }[]>([]);
+  const [tasmiLog, setTasmiLog] = useState<{ slipped: number; total: number; at: number }[]>([]);
+  const [verifierLog, setVerifierLog] = useState<{ accuracy: number; at: number }[]>([]);
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -49,11 +56,14 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
     async function loadData() {
       setLoading(true);
       try {
-        const [allCards, prog, allConfusions, attemptsList] = await Promise.all([
+        const [allCards, prog, allConfusions, attemptsList, lexRows, savedTasmi, savedVerifier] = await Promise.all([
           ldb.cards.toArray(),
           ldb.unitProgress.toArray(),
           ldb.confusions.toArray(),
           ldb.attempts.toArray(),
+          ldb.lexicon.toArray(),
+          getMeta<{ slipped: number; total: number; at: number }[]>("tasmiiLog", []),
+          getMeta<{ accuracy: number; at: number }[]>("precisionLog", []),
         ]);
 
         const map = new Map<string, StoredCard>();
@@ -61,6 +71,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         setCardsMap(map);
         setAllCardsList(allCards);
         setAllAttempts(attemptsList);
+        setAllLexicon(lexRows);
+        setTasmiLog(savedTasmi);
+        setVerifierLog(savedVerifier);
 
         let orderById = new Map<string, number>();
         let infoById = new Map<string, { page: number; half: string; verseFrom: number; verseTo: number }>();
@@ -115,6 +128,20 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   const maxForecast = Math.max(1, ...forecast.map((d) => d.dueCount));
   const nearGolden = useMemo(() => findNearGoldenVerses(cardsMap), [cardsMap]);
   const heatmap = useMemo(() => buildReviewHeatmap(allAttempts, 84), [allAttempts]);
+  const precision = useMemo(() => {
+    const testOutAttempts = allAttempts
+      .filter((a) => a.sessionType === "TESTOUT")
+      .slice(-50);
+    const testOutRatios =
+      testOutAttempts.length > 0
+        ? [testOutAttempts.filter((a) => a.correct).length / testOutAttempts.length]
+        : [];
+    return precisionIndex({
+      tasmi: tasmiLog,
+      testOutRatios,
+      verifier: verifierLog,
+    });
+  }, [allAttempts, tasmiLog, verifierLog]);
 
   if (loading) {
     return (
@@ -323,6 +350,181 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
             })}
           </div>
         </section>
+
+        {/* شاخص دقت لفظی (L4) */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <div className="flex items-center justify-between gap-2">
+            <div>
+              <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
+                <Target className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                <span>شاخص دقت لفظی</span>
+              </h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                میانگین وزن‌دار تسمیع، آزمون میانبر و بررسی تلاوت
+              </p>
+            </div>
+            <div className="px-3.5 py-2 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-center">
+              <div className="text-xl font-black text-emerald-700 dark:text-emerald-300">
+                {precision.score !== null ? `${toFarsiNum(precision.score)}٪` : "—"}
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-2 text-center text-xs">
+            <div className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700">
+              <div className="text-[10px] text-slate-500 dark:text-slate-400">تسمیع (۵۰٪)</div>
+              <div className="font-black text-slate-800 dark:text-slate-100 mt-0.5">
+                {precision.tasmiAvg !== null ? `${toFarsiNum(precision.tasmiAvg)}٪` : "ثبت نشده"}
+              </div>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700">
+              <div className="text-[10px] text-slate-500 dark:text-slate-400">آزمون میانبر (۳۰٪)</div>
+              <div className="font-black text-slate-800 dark:text-slate-100 mt-0.5">
+                {precision.testOutAvg !== null ? `${toFarsiNum(precision.testOutAvg)}٪` : "ثبت نشده"}
+              </div>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700">
+              <div className="text-[10px] text-slate-500 dark:text-slate-400">بررسی تلاوت (۲۰٪)</div>
+              <div className="font-black text-slate-800 dark:text-slate-100 mt-0.5">
+                {precision.verifierAvg !== null ? `${toFarsiNum(precision.verifierAvg)}٪` : "ثبت نشده"}
+              </div>
+            </div>
+          </div>
+
+          {precision.trend.length >= 2 && (
+            <div className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+              <div className="text-[10px] text-slate-500 dark:text-slate-400 mb-1">روند تغییرات اخیر</div>
+              <svg viewBox="0 0 240 60" className="w-full h-14 overflow-visible" aria-label="نمودار روند دقت لفظی">
+                <polyline
+                  fill="none"
+                  stroke="#059669"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  points={precision.trend
+                    .map((val, idx) => {
+                      const x = (idx / (precision.trend.length - 1)) * 224 + 8;
+                      const y = 52 - (val / 100) * 44;
+                      return `${x.toFixed(1)},${y.toFixed(1)}`;
+                    })
+                    .join(" ")}
+                />
+                {precision.trend.map((val, idx) => {
+                  const x = (idx / (precision.trend.length - 1)) * 224 + 8;
+                  const y = 52 - (val / 100) * 44;
+                  return (
+                    <circle key={idx} cx={x} cy={y} r="3" fill="#10b981" />
+                  );
+                })}
+              </svg>
+            </div>
+          )}
+
+          <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            این شاخص از تسمیع، آزمون میانبر و بررسی تلاوت ساخته می‌شود و برآورد آمادگی است، نه نمرهٔ رسمی آزمون حفظ.
+          </p>
+        </section>
+
+        {/* باغ حفظ من (G4) */}
+        {(() => {
+          const now = new Date();
+          const lexByUnit = new Map<string, string[]>();
+          for (const l of allLexicon) {
+            const arr = lexByUnit.get(l.unitId) ?? [];
+            arr.push(l.wordId);
+            lexByUnit.set(l.unitId, arr);
+          }
+
+          const plantInputs = unitProgress.map((u) => {
+            const passedCount = Object.values(u.stagePassed || {}).filter(Boolean).length;
+            const unitKeys: string[] = [`pg:${u.unitId}`];
+            for (const wId of lexByUnit.get(u.unitId) ?? []) {
+              unitKeys.push(`w:${wId}`);
+            }
+            if (u.verseFrom && u.verseTo) {
+              for (let v = u.verseFrom; v <= u.verseTo; v++) {
+                unitKeys.push(`vr:${v}`, `vt:${v}`, `vn:${v}`, `sq:${v}`);
+              }
+            }
+            let totalCards = 0;
+            let dueCards = 0;
+            for (const k of unitKeys) {
+              const c = cardsMap.get(k);
+              if (c && c.state !== 0) {
+                totalCards++;
+                if (isDue(c, now)) dueCards++;
+              }
+            }
+            return {
+              unitId: u.unitId,
+              stagePassedCount: passedCount,
+              mastered: Boolean(u.mastered),
+              dueCards,
+              totalCards,
+            };
+          });
+
+          const plants = gardenState(plantInputs);
+          const masteredCount = plants.filter((p) => p.stage === 4).length;
+          const wiltedCount = plants.filter((p) => p.wilted).length;
+
+          return (
+            <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
+                  <TreeDeciduous className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <span>باغ حفظ من</span>
+                </h3>
+                <div className="text-[11px] font-bold text-slate-600 dark:text-slate-300 flex items-center gap-2">
+                  <span>{toFarsiNum(masteredCount)} درخت بارور از ۲۲</span>
+                  {wiltedCount > 0 && (
+                    <span className="text-amber-700 dark:text-amber-400">
+                      • {toFarsiNum(wiltedCount)} گیاه تشنهٔ مرور است
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-5 sm:grid-cols-6 gap-2 pt-1">
+                {plants.map((plant, idx) => {
+                  const u = unitProgress[idx];
+                  const IconComp =
+                    plant.stage === 4
+                      ? Apple
+                      : plant.stage === 3
+                      ? TreeDeciduous
+                      : plant.stage === 2
+                      ? Leaf
+                      : Sprout;
+                  const stageStyle = plant.wilted
+                    ? "opacity-60 bg-stone-100 dark:bg-stone-900/60 border-stone-300 dark:border-stone-700 text-amber-800 dark:text-stone-400"
+                    : plant.stage === 4
+                    ? "bg-emerald-50 dark:bg-emerald-950/50 border-emerald-400 text-emerald-600 dark:text-emerald-400"
+                    : plant.stage === 3
+                    ? "bg-teal-50 dark:bg-teal-950/40 border-teal-300 text-teal-600 dark:text-teal-400"
+                    : plant.stage >= 1
+                    ? "bg-lime-50 dark:bg-lime-950/30 border-lime-300 text-lime-600 dark:text-lime-400"
+                    : "bg-slate-50 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 text-slate-400";
+
+                  return (
+                    <button
+                      key={plant.unitId}
+                      type="button"
+                      onClick={() => onSelectUnit?.(plant.unitId)}
+                      className={`p-2 rounded-2xl border flex flex-col items-center justify-center gap-1 transition-all hover:scale-105 ${stageStyle}`}
+                      title={`نیم‌صفحه ${toFarsiNum(idx + 1)} — مرحله رشد ${toFarsiNum(plant.stage)}${plant.wilted ? " (تشنهٔ مرور)" : ""}`}
+                    >
+                      <IconComp className="w-5 h-5" />
+                      <span className="text-[10px] font-bold">
+                        {u?.page ? `${toFarsiNum(u.page)}${u.half === "a" ? "الف" : "ب"}` : toFarsiNum(idx + 1)}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })()}
 
         {/* Units Progress Breakdown */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">

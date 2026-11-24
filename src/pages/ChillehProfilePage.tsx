@@ -1,13 +1,18 @@
 // src/pages/ChillehProfilePage.tsx
 import React, { useEffect, useState, useCallback, useRef } from "react";
-import { Download, Trash2, Volume2, XCircle, CheckCircle2 } from "lucide-react";
+import { Download, Trash2, Volume2, XCircle, CheckCircle2, ShoppingBag, CalendarClock, Snowflake } from "lucide-react";
 import { ldb, type UserProfileRow } from "../db/learningDb";
 import {
   buyChillehShield,
+  getLocalDateIso,
   getUserProfile,
   recordLearningReward,
   SHIELD_COST_GEMS,
 } from "../services/profileService";
+import { getMeta } from "../services/metaStore";
+import { countEligibleDebtFreezeCards, purchaseShopItem } from "../services/debtFreeze";
+import { SHOP_ITEMS, type ShopItem } from "../learning/shop";
+import { estimateCompletion, PACE_MODES, type PaceMode } from "../learning/pace";
 import {
   clearAudioCache,
   getAudioCacheStats,
@@ -34,10 +39,23 @@ const toFarsi = (n: number | string) => String(n).replace(/[0-9]/g, (d) => farsi
 export const ChillehProfilePage: React.FC = () => {
   const darkMode = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
+  const paceMode = usePreferencesStore((s) => s.paceMode);
+  const mushafTheme = usePreferencesStore((s) => s.mushafTheme);
+  const soundPack = usePreferencesStore((s) => s.soundPack);
   const toggleDarkMode = usePreferencesStore((s) => s.toggleDarkMode);
   const toggleSoundEnabled = usePreferencesStore((s) => s.toggleSoundEnabled);
+  const setMushafTheme = usePreferencesStore((s) => s.setMushafTheme);
+  const setSoundPack = usePreferencesStore((s) => s.setSoundPack);
 
   const [profile, setProfile] = useState<UserProfileRow | null>(null);
+  const [ownedItems, setOwnedItems] = useState<string[]>([]);
+  const [freezeEligibleCount, setFreezeEligibleCount] = useState<number>(0);
+  const [confirmFreeze, setConfirmFreeze] = useState<boolean>(false);
+  const [unitCompletionStats, setUnitCompletionStats] = useState<{
+    completedUnits: number;
+    totalUnits: number;
+    unitsCompletedLast14Days: number;
+  }>({ completedUnits: 0, totalUnits: 22, unitsCompletedLast14Days: 0 });
   const [masteryStats, setMasteryStats] = useState<VocabularyMasteryStats>({
     totalWordsCount: 0,
     learnedWordsCount: 0,
@@ -56,15 +74,29 @@ export const ChillehProfilePage: React.FC = () => {
   const abortRef = useRef<AbortController | null>(null);
 
   const loadProfileData = useCallback(async () => {
-    const [prof, lexicon, cards, attempts, cacheStats] = await Promise.all([
+    const [prof, lexicon, cards, attempts, cacheStats, owned, eligibleCount, unitProg] = await Promise.all([
       getUserProfile(),
       ldb.lexicon.toArray(),
       ldb.cards.toArray(),
       ldb.attempts.toArray(),
       getAudioCacheStats(),
+      getMeta<string[]>("ownedItems", []),
+      countEligibleDebtFreezeCards(),
+      ldb.unitProgress.toArray(),
     ]);
 
     setProfile(prof);
+    setOwnedItems(owned);
+    setFreezeEligibleCount(eligibleCount);
+    // تقریب واحدهای پاس‌شده در ۱۴ روز اخیر از روی unitProgress.updatedAt واحدهایی که stagePassed[8] دارند
+    const cutoff14d = Date.now() - 14 * 86400_000;
+    const completed = unitProg.filter((u) => Boolean(u.stagePassed?.[8]));
+    const recent14 = completed.filter((u) => (u.updatedAt ?? 0) >= cutoff14d);
+    setUnitCompletionStats({
+      completedUnits: completed.length,
+      totalUnits: unitProg.length || 22,
+      unitsCompletedLast14Days: recent14.length,
+    });
     const wordCards = new Map(
       cards.filter((card) => card.key.startsWith("w:")).map((card) => [card.key.slice(2), card]),
     );
@@ -317,6 +349,209 @@ export const ChillehProfilePage: React.FC = () => {
           </button>
         </div>
       </section>
+
+      {/* فروشگاه عقیق (G2) */}
+      <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <ShoppingBag className="w-5 h-5 text-rose-600 dark:text-rose-400" />
+            <h2 className="text-base font-black text-slate-800 dark:text-white">فروشگاه عقیق</h2>
+          </div>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-800 text-xs font-black text-rose-800 dark:text-rose-300">
+            <span>موجودی: {toFarsi(profile.aqeeqGems)}</span>
+            <AqeeqIcon className="w-3.5 h-3.5" />
+          </span>
+        </div>
+
+        <div className="space-y-2.5">
+          {SHOP_ITEMS.map((item: ShopItem) => {
+            const isOwned =
+              item.kind === "shield"
+                ? profile.chillehShieldActive
+                : item.kind === "debtFreeze"
+                ? false
+                : ownedItems.includes(item.id);
+            const isActive =
+              item.id === "shield"
+                ? profile.chillehShieldActive
+                : item.id === "theme_gold"
+                ? mushafTheme === "gold"
+                : item.id === "theme_night"
+                ? mushafTheme === "night"
+                : item.id === "sound_soft"
+                ? soundPack === "soft"
+                : false;
+
+            const handleItemAction = async () => {
+              if (item.kind === "debtFreeze") {
+                setConfirmFreeze(true);
+                return;
+              }
+              if (isOwned) {
+                if (item.id === "theme_gold") {
+                  setMushafTheme(mushafTheme === "gold" ? "default" : "gold");
+                } else if (item.id === "theme_night") {
+                  setMushafTheme(mushafTheme === "night" ? "default" : "night");
+                } else if (item.id === "sound_soft") {
+                  setSoundPack(soundPack === "soft" ? "default" : "soft");
+                }
+                return;
+              }
+              const res = await purchaseShopItem(item.id);
+              setStatusBanner(res.message);
+              if (res.ok) {
+                if (item.id === "theme_gold") setMushafTheme("gold");
+                if (item.id === "theme_night") setMushafTheme("night");
+                if (item.id === "sound_soft") setSoundPack("soft");
+                await loadProfileData();
+              }
+            };
+
+            return (
+              <div
+                key={item.id}
+                className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+              >
+                <div className="space-y-0.5">
+                  <div className="font-extrabold text-xs sm:text-sm text-slate-800 dark:text-slate-100 flex items-center gap-2">
+                    <span>{item.titleFa}</span>
+                    {!isOwned && (
+                      <span className="inline-flex items-center gap-1 text-[11px] text-rose-700 dark:text-rose-300 font-bold">
+                        ({toFarsi(item.price)} <AqeeqIcon className="w-3 h-3" />)
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {item.descFa}
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => void handleItemAction()}
+                  disabled={item.id === "shield" && profile.chillehShieldActive}
+                  className={`shrink-0 py-2 px-3.5 rounded-2xl text-xs font-extrabold transition-all ${
+                    isActive
+                      ? "bg-emerald-600 text-white"
+                      : isOwned
+                      ? "bg-teal-100 dark:bg-teal-950/70 text-teal-800 dark:text-teal-200 border border-teal-300 dark:border-teal-800"
+                      : "bg-amber-600 hover:bg-amber-700 text-white active:scale-95"
+                  }`}
+                >
+                  {item.id === "shield" && profile.chillehShieldActive
+                    ? "فعال‌شده"
+                    : isActive
+                    ? "فعال‌شده (بازگشت به پیش‌فرض)"
+                    : isOwned
+                    ? "فعال‌سازی"
+                    : `خرید (${toFarsi(item.price)} عقیق)`}
+                </button>
+              </div>
+            );
+          })}
+        </div>
+
+        {confirmFreeze && (
+          <div className="p-4 rounded-2xl bg-sky-50 dark:bg-sky-950/50 border border-sky-200 dark:border-sky-800 text-xs space-y-3">
+            <div className="flex items-center gap-2 font-bold text-sky-900 dark:text-sky-200">
+              <Snowflake className="w-4 h-4 text-sky-600 shrink-0" />
+              <span>
+                هم‌اکنون {toFarsi(freezeEligibleCount)} کارت مشمول تعویق ۱ روزه هستند. آیا ۴۰ عقیق پرداخت و یخبندان اعمال شود؟
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={async () => {
+                  setConfirmFreeze(false);
+                  const res = await purchaseShopItem("debt_freeze");
+                  setStatusBanner(res.message);
+                  await loadProfileData();
+                }}
+                className="flex-1 py-2 px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold"
+              >
+                تأیید و اعمال یخبندان
+              </button>
+              <button
+                type="button"
+                onClick={() => setConfirmFreeze(false)}
+                className="flex-1 py-2 px-3 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold"
+              >
+                انصراف
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
+
+      {/* پیش‌بینی پایان سوره قصص (U4) */}
+      {(() => {
+        const est = estimateCompletion({
+          completedUnits: unitCompletionStats.completedUnits,
+          totalUnits: unitCompletionStats.totalUnits,
+          unitsCompletedLast14Days: unitCompletionStats.unitsCompletedLast14Days,
+          paceMode,
+          todayIso: getLocalDateIso(),
+        });
+        const formatShamsi = (iso: string | null) => {
+          if (!iso) return "—";
+          const [y, m, d] = iso.split("-").map(Number);
+          const dt = new Date(Date.UTC(y, m - 1, d, 12, 0, 0));
+          return new Intl.DateTimeFormat("fa-IR", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          }).format(dt);
+        };
+
+        return (
+          <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-3">
+            <div className="flex items-center gap-2">
+              <CalendarClock className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+              <h2 className="text-base font-black text-slate-800 dark:text-white">
+                پیش‌بینی پایان سوره قصص
+              </h2>
+            </div>
+
+            {unitCompletionStats.completedUnits >= unitCompletionStats.totalUnits ? (
+              <p className="text-xs font-bold text-emerald-700 dark:text-emerald-300">
+                تبریک! همهٔ {toFarsi(unitCompletionStats.totalUnits)} واحد سوره مبارکه قصص تکمیل شده است.
+              </p>
+            ) : !est.etaIso ? (
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                با چند روز پیشروی منظم، پیش‌بینی فعال می‌شود.
+              </p>
+            ) : (
+              <div className="space-y-3">
+                <div className="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 flex items-center justify-between">
+                  <span className="text-xs font-bold text-slate-700 dark:text-slate-200">
+                    تاریخ تخمینی پایان (با سرعت فعلی):
+                  </span>
+                  <span className="text-sm font-black text-emerald-800 dark:text-emerald-300">
+                    {formatShamsi(est.etaIso)}
+                  </span>
+                </div>
+
+                <div className="space-y-1.5 text-xs">
+                  {(["calm", "standard", "intensive"] as PaceMode[]).map((m) => (
+                    <div
+                      key={m}
+                      className={`flex items-center justify-between px-3 py-2 rounded-xl border ${
+                        m === paceMode
+                          ? "bg-teal-50/80 dark:bg-teal-950/40 border-teal-300 dark:border-teal-700 font-bold"
+                          : "bg-slate-50 dark:bg-slate-800/60 border-slate-200/70 dark:border-slate-700"
+                      }`}
+                    >
+                      <span>حالت {PACE_MODES[m].labelFa}</span>
+                      <span className="text-slate-700 dark:text-slate-200">{formatShamsi(est.scenarios[m])}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        );
+      })()}
 
       {/* ۲. آمار تسلط واژگان */}
       <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">

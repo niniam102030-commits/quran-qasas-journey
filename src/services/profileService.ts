@@ -1,8 +1,16 @@
 // src/services/profileService.ts
 // مدیریت یکپارچه پروفایل کاربر در QasasLearningDB: چله انس (Streak)، امتیاز نور (XP)، عقیق و سپر محافظ چله
 import { ldb, DEFAULT_USER_PROFILE, type UserProfileRow } from "../db/learningDb";
+import { getMeta, setMeta } from "./metaStore";
 
 export const SHIELD_COST_GEMS = 30;
+const MAX_GEM_LEDGER = 100;
+
+export interface GemLedgerEntry {
+  at: number;
+  amount: number;
+  reason: string;
+}
 
 export function getLocalDateIso(date: Date = new Date()): string {
   const y = date.getFullYear();
@@ -82,6 +90,44 @@ export async function recordLearningReward(opts: {
   return next;
 }
 
+export async function spendGems(
+  amount: number,
+  reason: string,
+): Promise<{ ok: boolean; message: string; profile: UserProfileRow }> {
+  const profile = await getUserProfile();
+  if (!Number.isFinite(amount) || amount <= 0) {
+    return {
+      ok: false,
+      message: "مقدار عقیق باید عددی بزرگ‌تر از صفر باشد.",
+      profile,
+    };
+  }
+  if (profile.aqeeqGems < amount) {
+    return {
+      ok: false,
+      message: `موجودی عقیق کافی نیست (نیاز: ${amount}، موجودی فعلی: ${profile.aqeeqGems} عقیق).`,
+      profile,
+    };
+  }
+  const now = Date.now();
+  const updated: UserProfileRow = {
+    ...profile,
+    aqeeqGems: profile.aqeeqGems - amount,
+    updatedAt: now,
+  };
+  await ldb.profile.put(updated);
+
+  const ledger = await getMeta<GemLedgerEntry[]>("gemLedger", []);
+  const nextLedger = [...ledger, { at: now, amount: -amount, reason }].slice(-MAX_GEM_LEDGER);
+  await setMeta("gemLedger", nextLedger);
+
+  return {
+    ok: true,
+    message: `${amount} عقیق با موفقیت کسر شد.`,
+    profile: updated,
+  };
+}
+
 export async function buyChillehShield(): Promise<{ ok: boolean; message: string; profile: UserProfileRow }> {
   const profile = await getUserProfile();
   if (profile.chillehShieldActive) {
@@ -98,9 +144,12 @@ export async function buyChillehShield(): Promise<{ ok: boolean; message: string
       profile,
     };
   }
+  const spent = await spendGems(SHIELD_COST_GEMS, "shield");
+  if (!spent.ok) {
+    return spent;
+  }
   const updated: UserProfileRow = {
-    ...profile,
-    aqeeqGems: profile.aqeeqGems - SHIELD_COST_GEMS,
+    ...spent.profile,
     chillehShieldActive: true,
     updatedAt: Date.now(),
   };

@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { usePreferencesStore } from "./store/usePreferencesStore";
 import { BottomNav, type NavTab } from "./components/layout/BottomNav";
 import { syncContent } from "./services/contentLoader";
+import { getMeta } from "./services/metaStore";
+import { syncDailyReminder } from "./services/reminderService";
+import type { CycleKind } from "./store/useLearningStore";
 import UnitsPage from "./pages/UnitsPage";
 import LearningSessionPage from "./pages/LearningSessionPage";
 import AudioQuizPage from "./pages/AudioQuizPage";
@@ -10,26 +13,36 @@ import MasteryPage from "./pages/MasteryPage";
 import SettingsPage from "./pages/SettingsPage";
 import { ChillehProfilePage } from "./pages/ChillehProfilePage";
 import MutashabihatModal from "./components/mushaf/MutashabihatModal";
+import OnboardingFlow from "./components/onboarding/OnboardingFlow";
 
 export type AppView = "units" | "mastery" | "profile" | "settings" | "session" | "audioQuiz";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>("units");
-  const [session, setSession] = useState<{ unitId: string; stage: number; remedialTag?: string | null } | null>(null);
+  const [session, setSession] = useState<{
+    unitId: string;
+    stage: number;
+    remedialTag?: string | null;
+    cycleKind?: CycleKind | null;
+  } | null>(null);
   const [mutashabihatVerse, setMutashabihatVerse] = useState<number | null | false>(false);
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncProgress, setSyncProgress] = useState<{ done: number; total: number } | null>(null);
   const [syncVersion, setSyncVersion] = useState<number>(0);
   const [syncing, setSyncing] = useState(true);
+  const [needsOnboarding, setNeedsOnboarding] = useState<boolean | null>(null);
 
   const runContentSync = () => {
     setSyncing(true);
     setSyncError(null);
     setSyncProgress(null);
     return syncContent((done, total) => setSyncProgress({ done, total }))
-      .then(() => {
+      .then(async () => {
+        const done = await getMeta<boolean>("onboardingDone", false);
+        setNeedsOnboarding(!done);
         setSyncVersion((v) => v + 1);
         setSyncError(null);
+        void syncDailyReminder({ requestPermission: false });
       })
       .catch((e) => setSyncError(e instanceof Error ? e.message : String(e)))
       .finally(() => {
@@ -59,7 +72,17 @@ export default function App() {
   };
 
   const handleStartRemedial = (tag: string | null = null) => {
-    setSession({ unitId: "", stage: -1, remedialTag: tag });
+    setSession({ unitId: "", stage: -1, remedialTag: tag, cycleKind: null });
+    setCurrentView("session");
+  };
+
+  const handleStartBlindSpots = () => {
+    setSession({ unitId: "", stage: -3, remedialTag: "blindspots", cycleKind: null });
+    setCurrentView("session");
+  };
+
+  const handleStartCycleReview = (kind: CycleKind) => {
+    setSession({ unitId: "", stage: -4, remedialTag: null, cycleKind: kind });
     setCurrentView("session");
   };
 
@@ -79,6 +102,7 @@ export default function App() {
         unitId={session.unitId}
         stage={session.stage}
         remedialTag={session.remedialTag ?? null}
+        cycleKind={session.cycleKind ?? null}
         onStartNext={handleStartStage}
         onExit={handleExitSession}
       />
@@ -119,7 +143,17 @@ export default function App() {
         </div>
       )}
 
-      {!syncing && !syncError && currentView === "units" && (
+      {!syncing && !syncError && needsOnboarding && (
+        <OnboardingFlow
+          onFinished={() => {
+            setNeedsOnboarding(false);
+            setCurrentView("units");
+            setSyncVersion((v) => v + 1);
+          }}
+        />
+      )}
+
+      {!syncing && !syncError && !needsOnboarding && currentView === "units" && (
         <UnitsPage
           key={syncVersion}
           syncVersion={syncVersion}
@@ -128,6 +162,8 @@ export default function App() {
           onOpenMutashabihat={() => setMutashabihatVerse(null)}
           onStartStage={handleStartStage}
           onStartTestOut={handleStartTestOut}
+          onStartBlindSpots={handleStartBlindSpots}
+          onStartCycleReview={handleStartCycleReview}
         />
       )}
 
@@ -158,7 +194,7 @@ export default function App() {
       )}
 
       {/* منوی دسترسی سریع پایین */}
-      {!syncing && !syncError && <BottomNav
+      {!syncing && !syncError && !needsOnboarding && <BottomNav
         activeTab={currentView === "session" ? "units" : currentView}
         onSelectTab={handleSelectNavTab}
       />}

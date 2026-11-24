@@ -14,7 +14,15 @@ import {
   type TestOutQuestion,
 } from "../learning/testOut";
 import { filterPrescreenedStage1Questions } from "../learning/vocabPrescreen";
+import {
+  buildReverseVocabQuestions,
+  mergeReverseIntoStage2Queue,
+  MAX_REVERSE_PER_LESSON,
+} from "../learning/reverseVocab";
 import { dailyReviewCapFor } from "../learning/pace";
+import { buildBlindSpotPack, getLocalSaturdayWeekIso, type BlindSpotPack } from "../learning/blindSpots";
+import { planMuraja } from "../learning/muraja";
+import { getMeta, setMeta } from "../services/metaStore";
 import { usePreferencesStore } from "./usePreferencesStore";
 import {
   stagePassed,
@@ -50,7 +58,10 @@ export interface SessionSummary {
   requiredRatio?: number;
   waivedLesson?: boolean;
   testOut?: TestOutEvaluation;
+  maxCombo?: number;
 }
+
+export type CycleKind = "SABQ" | "SABQI" | "MANZIL";
 
 interface LearningState {
   status: "idle" | "loading" | "running" | "finished";
@@ -58,6 +69,9 @@ interface LearningState {
   unitId: string | null;
   stage: number;
   remedialTag: string | null;
+  cycleKind: CycleKind | null;
+  combo: number;
+  maxCombo: number;
   queue: QuestionRow[];
   index: number;
   wrongCounts: Record<string, number>;
@@ -72,6 +86,8 @@ interface LearningState {
   startTestOut: (unitId: string) => Promise<void>;
   startReview: (size?: number) => Promise<void>;
   startRemedial: (tag?: string | null, size?: number) => Promise<void>;
+  startBlindSpots: (size?: number) => Promise<void>;
+  startCycleReview: (kind: CycleKind, size?: number) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
   next: () => Promise<void>;
   current: () => QuestionRow | null;
@@ -92,6 +108,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   unitId: null,
   stage: 1,
   remedialTag: null,
+  cycleKind: null,
+  combo: 0,
+  maxCombo: 0,
   queue: [],
   index: 0,
   wrongCounts: {},
@@ -118,16 +137,57 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(effectiveStageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
-      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
+      set({ status: "finished", sessionType: "STAGE", unitId, stage, cycleKind: null, combo: 0, maxCombo: 0, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 } });
       return;
     }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
+    let finalQueue = plan.map((p) => byId.get(p.id)!).filter(Boolean);
+
+    // L6: افزودن حداکثر ۳ فلش‌کارت معکوس معنا (فارسی ← عربی) فقط در مرحلهٔ ۲ (در حافظه، بدون ذخیره در questions)
+    if (stage === 2) {
+      const unitLex = await ldb.lexicon.where("unitId").equals(unitId).toArray();
+      if (unitLex.length >= 4) {
+        const verseNums = [
+          ...new Set(
+            unitLex.map((l) => {
+              const m = /^w\d+_(\d+)_/.exec(l.wordId);
+              return m ? Number(m[1]) : 0;
+            }).filter((n) => n > 0),
+          ),
+        ];
+        const baseRows = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(n)));
+        const wordArById = new Map<string, string>();
+        for (const bv of baseRows) {
+          if (!bv) continue;
+          const ws = (bv.words as { id: string; ar: string }[] | undefined) ?? [];
+          for (const w of ws) wordArById.set(w.id, w.ar);
+        }
+        const lexInputs = unitLex.map((l) => ({
+          wordId: l.wordId,
+          unitId: l.unitId,
+          ar: wordArById.get(l.wordId) || String(l.ar ?? ""),
+          meaningFa: String(l.meaningFa ?? l.gloss ?? ""),
+          rootAr: typeof l.rootAr === "string" ? l.rootAr : undefined,
+        }));
+        const revQs = buildReverseVocabQuestions(
+          lexInputs,
+          unitId,
+          MAX_REVERSE_PER_LESSON,
+          Date.now() & 0xffff,
+        );
+        finalQueue = mergeReverseIntoStage2Queue(finalQueue, revQs, size);
+      }
+    }
+
     set({
-      status: plan.length ? "running" : "finished",
+      status: finalQueue.length ? "running" : "finished",
       sessionType: "STAGE",
       unitId,
       stage,
-      queue: plan.map((p) => byId.get(p.id)!).filter(Boolean),
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue: finalQueue,
       index: 0,
       wrongCounts: {},
       firstAttempts: [],
@@ -159,6 +219,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       unitId,
       stage: -2,
       remedialTag: null,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
       queue,
       index: 0,
       wrongCounts: {},
@@ -167,7 +230,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       sessionAnyHint: false,
       sessionAnyRequeue: false,
       seen: new Set(),
-      summary: queue.length ? null : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 },
+      summary: queue.length ? null : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 },
     });
   },
 
@@ -187,8 +250,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       if (q) picked.set(q.id, q);
     }
     const queue = [...picked.values()];
-    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, queue, index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(),
-      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 } });
+    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, cycleKind: null, combo: 0, maxCombo: 0, queue, index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(),
+      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 } });
   },
 
   startRemedial: async (tag = null, size = 15) => {
@@ -236,6 +299,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       unitId: null,
       stage: -1,
       remedialTag: tag,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
       queue,
       index: 0,
       wrongCounts: {},
@@ -243,7 +309,119 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       sessionAnyHint: false,
       sessionAnyRequeue: false,
       seen: new Set(),
-      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0 },
+      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
+  startBlindSpots: async (size = 15) => {
+    set({ status: "loading", summary: null, lastResult: null });
+    const now = new Date();
+    const weekIso = getLocalSaturdayWeekIso(now);
+    let pack = await getMeta<BlindSpotPack | null>("blindSpotPack", null);
+    if (!pack || pack.weekIso !== weekIso) {
+      const [confusions, attempts] = await Promise.all([
+        ldb.confusions.toArray(),
+        ldb.attempts.toArray(),
+      ]);
+      pack = buildBlindSpotPack({ confusions, attempts, now, size });
+      await setMeta("blindSpotPack", pack);
+    }
+    const rawQs = pack.questionIds.length
+      ? await ldb.questions.bulkGet(pack.questionIds.slice(0, size))
+      : [];
+    const queue = rawQs.filter((q): q is QuestionRow => Boolean(q));
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "REMEDIAL",
+      unitId: null,
+      stage: -3,
+      remedialTag: "blindspots",
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      summary: queue.length
+        ? null
+        : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
+  startCycleReview: async (kind, size) => {
+    const reviewLimit = size ?? dailyReviewCapFor(usePreferencesStore.getState().paceMode);
+    set({ status: "loading", summary: null, lastResult: null });
+    const now = new Date();
+    const [progressRows, allCards] = await Promise.all([
+      ldb.unitProgress.toArray(),
+      ldb.cards.toArray(),
+    ]);
+    let manifestOrder = new Map<string, number>();
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}content/manifest.json`);
+      if (res.ok) {
+        const m = (await res.json()) as { units?: { id: string; order: number }[] };
+        manifestOrder = new Map((m.units ?? []).map((u) => [u.id, u.order]));
+      }
+    } catch {
+      // fallback به ترتیب الفبایی
+    }
+    const plan = planMuraja(
+      progressRows.map((p, idx) => ({
+        unitId: p.unitId,
+        order: manifestOrder.get(p.unitId) ?? idx + 1,
+        stage8PassedAt: p.stagePassed[8] ? p.updatedAt : null,
+      })),
+      now,
+    );
+    const targetUnitIds =
+      kind === "SABQ" ? plan.sabq : kind === "SABQI" ? plan.sabqi : plan.manzil;
+
+    const dueSet = new Set(
+      allCards.filter((c) => c.state !== 0 && new Date(c.due) <= now).map((c) => c.key),
+    );
+    const candidates: QuestionRow[] = [];
+    for (const uid of targetUnitIds) {
+      const uQs = await ldb.questions.where("unitId").equals(uid).toArray();
+      for (const q of uQs) {
+        if (q.stage >= 5 && q.stage <= 8) {
+          candidates.push(q);
+        }
+      }
+    }
+    const dueCandidates = shuffle(
+      candidates.filter((q) => q.targets.some((t) => dueSet.has(t))),
+      rng(Date.now() & 0xffff),
+    );
+    const otherCandidates = shuffle(
+      candidates.filter((q) => !q.targets.some((t) => dueSet.has(t))),
+      rng((Date.now() + 17) & 0xffff),
+    );
+    const queue = [...dueCandidates, ...otherCandidates].slice(0, reviewLimit);
+
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "REVIEW",
+      unitId: null,
+      stage: -4,
+      remedialTag: null,
+      cycleKind: kind,
+      combo: 0,
+      maxCombo: 0,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      summary: queue.length
+        ? null
+        : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 },
     });
   },
 
@@ -289,11 +467,12 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       const rating = ratingFor({ correct: res.perTarget[k], usedHint: !!meta.usedHint, changedAnswer: meta.changedAnswer, responseMs: meta.responseMs, medianMs: median });
       return review(c, rating, now);
     });
+    const recordedSessionType = s.cycleKind ? `CYCLE:${s.cycleKind}` : s.sessionType;
     await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, async () => {
       await ldb.cards.bulkPut(updated);
       await ldb.attempts.add({
         qid: q.id, unitId: q.unitId, stage: q.stage, at: now.getTime(), correct: res.correct, usedHint: !!meta.usedHint,
-        responseMs: meta.responseMs, chosen: response, perTarget: res.perTarget, sessionType: s.sessionType,
+        responseMs: meta.responseMs, chosen: response, perTarget: res.perTarget, sessionType: recordedSessionType,
       });
       if (!res.correct) {
         const tags = (q.distractorTags ?? {}) as Record<string, string>;
@@ -327,8 +506,19 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         firstTargetOutcomes[k] = firstTargetOutcomes[k] === false ? false : effOk;
       }
     }
+    // کمبو (G3): فقط در اولین تلاش هر سوال؛ پاسخ غلط صفر می‌کند، راهنما کمبو را نمی‌شکند ولی افزایش هم نمی‌دهد
+    let combo = s.combo;
+    let maxCombo = s.maxCombo;
+    if (firstTime) {
+      if (!res.correct) {
+        combo = 0;
+      } else if (!meta.usedHint) {
+        combo = s.combo + 1;
+        if (combo > maxCombo) maxCombo = combo;
+      }
+    }
     set({
-      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes,
+      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes, combo, maxCombo,
       firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || s.sessionType === "TESTOUT" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;
@@ -411,7 +601,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
       const allCards = await ldb.cards.toArray();
       const debt = reviewDebt(allCards, now);
-      const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) : 0;
+      const comboBonusXp = Math.min(25, Math.floor(s.maxCombo / 5) * 5);
+      const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) + comboBonusXp : 0;
       const gemsEarned = passed ? 15 : 0;
       if (attempts.length > 0) {
         try {
@@ -440,6 +631,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
           stageCompleted: passed,
           requiredRatio: 0.9,
           testOut: evalRes,
+          maxCombo: s.maxCombo,
         },
       });
       return;
@@ -513,8 +705,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       }
     }
 
-    // ثبت پاداش یکپارچه در پروفایل (چله انس + امتیاز نور + عقیق)
-    const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) : 0;
+    // ثبت پاداش یکپارچه در پروفایل (چله انس + امتیاز نور + عقیق + پاداش کمبو)
+    const comboBonusXp = Math.min(25, Math.floor(s.maxCombo / 5) * 5);
+    const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) + comboBonusXp : 0;
     const gemsEarned = passed ? (stageCompleted && s.stage === 8 ? 15 : 5) : 0;
     if (attempts.length > 0) {
       try {
@@ -544,6 +737,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         lessonsRequired,
         stageCompleted,
         requiredRatio,
+        maxCombo: s.maxCombo,
         ...(waivedLesson ? { waivedLesson: true } : {}),
       },
     });

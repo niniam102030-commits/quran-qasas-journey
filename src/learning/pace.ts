@@ -72,3 +72,54 @@ export function summarizeForecastLoad(
 
   return { total7Days, peakDay, overCapDays, cap };
 }
+
+function addDaysUtcIso(todayIso: string, daysToAdd: number): string {
+  const [y, m, d] = todayIso.split("-").map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d) + daysToAdd * 86400_000);
+  const yy = utc.getUTCFullYear();
+  const mm = String(utc.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(utc.getUTCDate()).padStart(2, "0");
+  return `${yy}-${mm}-${dd}`;
+}
+
+/**
+ * پیش‌بینی تاریخ پایان سوره (U4) بر اساس نرخ پیشروی ۱۴ روز اخیر و حالت سرعت انتخاب‌شده
+ */
+export function estimateCompletion(input: {
+  completedUnits: number;
+  totalUnits: number;
+  unitsCompletedLast14Days: number;
+  paceMode: PaceMode;
+  todayIso: string;
+}): { etaIso: string | null; perWeek: number; scenarios: Record<PaceMode, string | null> } {
+  const basePerWeek = input.unitsCompletedLast14Days / 2;
+  if (basePerWeek <= 0) {
+    return {
+      etaIso: null,
+      perWeek: 0,
+      scenarios: { calm: null, standard: null, intensive: null },
+    };
+  }
+
+  const remaining = Math.max(0, input.totalUnits - input.completedUnits);
+  const baseDays = Math.ceil((remaining / basePerWeek) * 7);
+  const etaIso = addDaysUtcIso(input.todayIso, baseDays);
+  const currentCap = dailyReviewCapFor(input.paceMode);
+
+  const scenarios = {} as Record<PaceMode, string | null>;
+  for (const mode of ["calm", "standard", "intensive"] as const) {
+    if (mode === input.paceMode) {
+      scenarios[mode] = etaIso;
+    } else {
+      const rate = basePerWeek * (dailyReviewCapFor(mode) / currentCap);
+      const days = Math.ceil((remaining / rate) * 7);
+      scenarios[mode] = addDaysUtcIso(input.todayIso, days);
+    }
+  }
+
+  return {
+    etaIso,
+    perWeek: basePerWeek,
+    scenarios,
+  };
+}

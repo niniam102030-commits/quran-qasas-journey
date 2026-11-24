@@ -1,17 +1,27 @@
 // src/pages/UnitsPage.tsx
-// فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۵ ایستگاه داستانی به سبک دولینگو، با دکمه‌های سه‌بعدی و نوار آمار زنده.
+// فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۱۰ فصل داستانی سوره قصص با داشبورد برنامه امروز، مأموریت‌ها، چرخه مراجعه و نقاط کور.
 import { useEffect, useState } from "react";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge } from "lucide-react";
+import confetti from "canvas-confetti";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
 import { buildReviewForecast, type ForecastDay } from "../learning/forecast";
-import { PACE_MODE_LIST, summarizeForecastLoad } from "../learning/pace";
+import { PACE_MODE_LIST, dailyReviewCapFor, summarizeForecastLoad } from "../learning/pace";
+import { buildTodayPlan, type TodayTask } from "../learning/todayPlan";
+import { missionsForDate, missionProgress, type DailyMission, type MissionFacts } from "../learning/missions";
+import { planMuraja, type MurajaPlan } from "../learning/muraja";
+import { buildBlindSpotPack, getLocalSaturdayWeekIso, MIN_BLINDSPOT_QUESTIONS, type BlindSpotPack } from "../learning/blindSpots";
+import { STORY_CHAPTERS, chapterOfUnit, chapterProgress, type StoryChapter } from "../learning/chapters";
+import { getMeta, setMeta } from "../services/metaStore";
+import { getLocalDateIso, recordLearningReward } from "../services/profileService";
+import type { CycleKind } from "../store/useLearningStore";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
 import TasmiModal from "../components/mushaf/TasmiModal";
 import VocabPrescreenModal from "../components/learning/VocabPrescreenModal";
+import StoryOrderGame from "../components/learning/StoryOrderGame";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 
 interface UnitInfo extends UnitProgressRow {
@@ -21,68 +31,17 @@ interface UnitInfo extends UnitProgressRow {
   half?: string;
 }
 
-interface StoryStation {
-  id: string;
-  order: number;
-  title: string;
-  subtitle: string;
-  fromVerse: number;
-  toVerse: number;
-  gradient: string;
-  accentBg: string;
-}
-
-const STORY_STATIONS: StoryStation[] = [
-  {
-    id: "nile",
-    order: 1,
-    title: "قصر فرعون و کرانه نیل",
-    subtitle: "تولد موسی (ع)، افکندن به نیل و آرامش دل مادر",
-    fromVerse: 1,
-    toVerse: 13,
-    gradient: "from-[#0F766E] to-[#115E59]",
-    accentBg: "bg-teal-500",
-  },
-  {
-    id: "city",
-    order: 2,
-    title: "دروازه شهر و گریز در تاریکی",
-    subtitle: "استغاثه مظلوم، خروج بیم‌ناک و پناه به پروردگار",
-    fromVerse: 14,
-    toVerse: 21,
-    gradient: "from-[#B45309] to-[#78350F]",
-    accentBg: "bg-amber-500",
-  },
-  {
-    id: "madyan",
-    order: 3,
-    title: "چاه آب مَدین و سایه‌سار نخل‌ها",
-    subtitle: "جوانمردی موسی (ع)، وقار دختران شعیب و پیمان امانت",
-    fromVerse: 22,
-    toVerse: 28,
-    gradient: "from-[#059669] to-[#065F46]",
-    accentBg: "bg-emerald-500",
-  },
-  {
-    id: "tur",
-    order: 4,
-    title: "کوه طور و کرانه وادی مقدس",
-    subtitle: "ندای شجره، رسالت، مبارزه با طغیان و هدایت قرآن",
-    fromVerse: 29,
-    toVerse: 75,
-    gradient: "from-[#6D28D9] to-[#4C1D95]",
-    accentBg: "bg-violet-500",
-  },
-  {
-    id: "qarun",
-    order: 5,
-    title: "کاخ قارون و عاقبت پرهیزگاران",
-    subtitle: "گنج‌های سنگین، فرو رفتن در زمین و وعده بازگشت",
-    fromVerse: 76,
-    toVerse: 88,
-    gradient: "from-[#1E293B] to-[#0F172A]",
-    accentBg: "bg-amber-600",
-  },
+const CHAPTER_GRADIENTS = [
+  "from-[#0F766E] to-[#115E59]",
+  "from-[#0D9488] to-[#0F766E]",
+  "from-[#B45309] to-[#78350F]",
+  "from-[#059669] to-[#065F46]",
+  "from-[#6D28D9] to-[#4C1D95]",
+  "from-[#0369A1] to-[#0C4A6E]",
+  "from-[#047857] to-[#064E3B]",
+  "from-[#4338CA] to-[#312E81]",
+  "from-[#92400E] to-[#451A03]",
+  "from-[#1E293B] to-[#0F172A]",
 ];
 
 const STAGE_SHORT_LABELS: Record<number, string> = {
@@ -98,16 +57,11 @@ const STAGE_SHORT_LABELS: Record<number, string> = {
 
 const NODE_OFFSETS = [0, 26, 42, 26, 0, -26, -42, -26];
 
-function stationForVerse(verseFrom = 1): StoryStation {
-  return (
-    STORY_STATIONS.find((st) => verseFrom >= st.fromVerse && verseFrom <= st.toVerse) ??
-    STORY_STATIONS[0]
-  );
-}
-
 interface Props {
   onStartStage: (unitId: string, stage: number) => void;
   onStartTestOut?: (unitId: string) => void;
+  onStartBlindSpots?: () => void;
+  onStartCycleReview?: (kind: CycleKind) => void;
   onNavigateTab?: (tab: "mastery" | "settings") => void;
   onStartAudioQuiz?: () => void;
   onOpenMutashabihat?: () => void;
@@ -120,15 +74,59 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab, onStartAudioQuiz, onOpenMutashabihat, onBack, syncVersion }: Props) {
+function formatTargetLabel(target: string): string {
+  const parts = target.split(":");
+  const kind = parts[0];
+  const verse = parts[1];
+  if (!verse) return target;
+  if (kind === "vr" || kind === "vt" || kind === "vn" || kind === "sq") {
+    return `آیهٔ ${toFarsiNum(verse)}`;
+  }
+  if (kind === "w") return `واژهٔ آیهٔ ${toFarsiNum(verse)}`;
+  if (kind === "c") return `عبارت آیهٔ ${toFarsiNum(verse)}`;
+  return target;
+}
+
+export default function UnitsPage({
+  onStartStage,
+  onStartTestOut,
+  onStartBlindSpots,
+  onStartCycleReview,
+  onNavigateTab,
+  onStartAudioQuiz,
+  onOpenMutashabihat,
+  onBack,
+  syncVersion,
+}: Props) {
   const [units, setUnits] = useState<UnitInfo[]>([]);
   const [unitQuestionCounts, setUnitQuestionCounts] = useState<Record<string, number>>({});
   const [testOutModalUnitId, setTestOutModalUnitId] = useState<string | null>(null);
   const [prescreenUnitId, setPrescreenUnitId] = useState<string | null>(null);
   const [tasmiUnit, setTasmiUnit] = useState<UnitInfo | null>(null);
+  const [storyGameChapter, setStoryGameChapter] = useState<StoryChapter | null>(null);
+  const [celebratedChapter, setCelebratedChapter] = useState<StoryChapter | null>(null);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
   const [forecastDays, setForecastDays] = useState<ForecastDay[]>([]);
+  const [murajaPlan, setMurajaPlan] = useState<MurajaPlan>({
+    sabq: [],
+    sabqi: [],
+    manzil: [],
+    manzilBucket: 0,
+    bucketCount: 0,
+  });
+  const [blindSpotPack, setBlindSpotPack] = useState<BlindSpotPack | null>(null);
+  const [todayTasks, setTodayTasks] = useState<TodayTask[]>([]);
+  const [dailyMissions, setDailyMissions] = useState<{ mission: DailyMission; done: number; complete: boolean }[]>([]);
+  const [claimedMissions, setClaimedMissions] = useState<string[]>([]);
+  const [todayFacts, setTodayFacts] = useState<MissionFacts>({
+    reviewAnswers: 0,
+    lessonsCompleted: 0,
+    tasmiCount: 0,
+    precisionCorrect: 0,
+    testOutAttempts: 0,
+    cycleSessions: 0,
+  });
   const paceMode = usePreferencesStore((s) => s.paceMode);
   const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
@@ -143,12 +141,34 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
     setLoading(true);
     setError(null);
     try {
-      const [prog, cards, prof, allQs] = await Promise.all([
+      const now = new Date();
+      const todayIso = getLocalDateIso(now);
+      const weekIso = getLocalSaturdayWeekIso(now);
+
+      const [
+        prog,
+        cards,
+        prof,
+        allQs,
+        allAttempts,
+        allConfusions,
+        tasmiLog,
+        savedClaimed,
+        savedPack,
+        savedCelebrated,
+      ] = await Promise.all([
         ldb.unitProgress.toArray(),
         ldb.cards.toArray(),
         ldb.profile.get("main"),
         ldb.questions.toArray(),
+        ldb.attempts.toArray(),
+        ldb.confusions.toArray(),
+        getMeta<{ dateIso: string; at: number; unitId: string }[]>("tasmiiLog", []),
+        getMeta<string[]>(`missionClaimed:${todayIso}`, []),
+        getMeta<BlindSpotPack | null>("blindSpotPack", null),
+        getMeta<string[]>("chapterCelebrated", []),
       ]);
+
       const qCounts: Record<string, number> = {};
       for (const q of allQs) {
         qCounts[q.unitId] = (qCounts[q.unitId] ?? 0) + 1;
@@ -172,12 +192,100 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
         const firstIncomplete = sorted.find((u) => Object.values(u.stagePassed || {}).filter(Boolean).length < 8);
         return firstIncomplete?.unitId ?? sorted[0]?.unitId ?? null;
       });
-      setDebt(reviewDebt(cards));
+
+      const currentDebt = reviewDebt(cards, now);
+      setDebt(currentDebt);
       setForecastDays(buildReviewForecast(cards));
       setMasteryCount({
         total: cards.length,
         level3: cards.filter((c: StoredCard) => skillLevel(c) >= 3).length,
       });
+
+      // L2: چرخه مراجعه
+      const muraja = planMuraja(
+        sorted.map((u, idx) => ({
+          unitId: u.unitId,
+          order: idx + 1,
+          stage8PassedAt: u.stagePassed[8] ? u.updatedAt : null,
+        })),
+        now,
+      );
+      setMurajaPlan(muraja);
+
+      // L3: بسته هفتگی نقاط کور
+      let pack = savedPack;
+      if (!pack || pack.weekIso !== weekIso) {
+        pack = buildBlindSpotPack({ confusions: allConfusions, attempts: allAttempts, now });
+        await setMeta("blindSpotPack", pack);
+      }
+      setBlindSpotPack(pack);
+
+      // G3: آمار مأموریت‌های روزانه
+      const todayAttempts = allAttempts.filter((a) => getLocalDateIso(new Date(a.at)) === todayIso);
+      const facts: MissionFacts = {
+        reviewAnswers: todayAttempts.filter(
+          (a) => a.sessionType === "REVIEW" || a.sessionType.startsWith("CYCLE:"),
+        ).length,
+        lessonsCompleted: Math.floor(
+          todayAttempts.filter((a) => a.sessionType === "STAGE").length / 10,
+        ),
+        tasmiCount: tasmiLog.filter((t) => t.dateIso === todayIso).length,
+        precisionCorrect: todayAttempts.filter(
+          (a) => a.correct && a.stage >= 4 && a.stage <= 8,
+        ).length,
+        testOutAttempts: todayAttempts.some((a) => a.sessionType === "TESTOUT") ? 1 : 0,
+        cycleSessions: todayAttempts.some(
+          (a) => a.sessionType === "CYCLE:MANZIL" || a.sessionType === "CYCLE:SABQI",
+        )
+          ? 1
+          : 0,
+      };
+      setTodayFacts(facts);
+
+      const passedUnits = sorted.filter((u) => !!u.stagePassed[8]);
+      const firstIncomplete = sorted.find(
+        (u) => Object.values(u.stagePassed || {}).filter(Boolean).length < 8,
+      );
+      const nextStage = firstIncomplete
+        ? [1, 2, 3, 4, 5, 6, 7, 8].find((s) => !firstIncomplete.stagePassed[s]) ?? 1
+        : 1;
+
+      const missions = missionsForDate(todayIso, passedUnits.length > 0);
+      setDailyMissions(missionProgress(missions, facts));
+      setClaimedMissions(savedClaimed);
+
+      // U1: برنامه امروز
+      const tasks = buildTodayPlan({
+        dueCount: currentDebt,
+        reviewCap: dailyReviewCapFor(usePreferencesStore.getState().paceMode),
+        currentUnitId: firstIncomplete?.unitId ?? null,
+        currentStage: nextStage,
+        allUnitsPassed: sorted.length > 0 && !firstIncomplete,
+        tasmiDoneToday: facts.tasmiCount > 0,
+        manzilUnitIds: muraja.manzil,
+        blindSpotAvailable: pack.questionIds.length >= MIN_BLINDSPOT_QUESTIONS,
+        lastPassedUnitId: passedUnits[passedUnits.length - 1]?.unitId ?? null,
+        hasPassedUnit: passedUnits.length > 0,
+      });
+      setTodayTasks(tasks);
+
+      // G1: جشن یک‌بارهٔ تکمیل فصل
+      const chapterInputs = sorted.map((u) => ({
+        verseFrom: u.verseFrom ?? 1,
+        stage8Passed: !!u.stagePassed[8],
+      }));
+      const newlyCompleted = STORY_CHAPTERS.find(
+        (ch) => chapterProgress(ch, chapterInputs).complete && !savedCelebrated.includes(ch.id),
+      );
+      if (newlyCompleted) {
+        setCelebratedChapter(newlyCompleted);
+        await setMeta("chapterCelebrated", [...savedCelebrated, newlyCompleted.id]);
+        try {
+          confetti({ particleCount: 70, spread: 60, origin: { y: 0.65 } });
+        } catch {
+          // محیط تست بدون canvas
+        }
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -186,8 +294,62 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
   };
 
   useEffect(() => {
-    loadData();
-  }, [syncVersion]);
+    void loadData();
+  }, [syncVersion, paceMode]);
+
+  const handleClaimMission = async (mission: DailyMission) => {
+    const todayIso = getLocalDateIso(new Date());
+    if (claimedMissions.includes(mission.kind)) return;
+    await recordLearningReward({ gemsDelta: mission.rewardGems, markDailyActivity: true });
+    const nextClaimed = [...claimedMissions, mission.kind];
+    await setMeta(`missionClaimed:${todayIso}`, nextClaimed);
+    setClaimedMissions(nextClaimed);
+    setProfile((prev) => ({ ...prev, aqeeqGems: prev.aqeeqGems + mission.rewardGems }));
+  };
+
+  const isTaskDone = (task: TodayTask): boolean => {
+    switch (task.kind) {
+      case "REVIEW":
+        return debt === 0;
+      case "LESSON":
+        return todayFacts.lessonsCompleted > 0;
+      case "MANZIL":
+        return todayFacts.cycleSessions > 0;
+      case "BLINDSPOTS":
+        return false;
+      case "TASMI":
+        return todayFacts.tasmiCount > 0;
+      default:
+        return false;
+    }
+  };
+
+  const launchTodayTask = (task: TodayTask) => {
+    switch (task.kind) {
+      case "REVIEW":
+        onStartStage("", 0);
+        break;
+      case "LESSON":
+        if (task.unitId) onStartStage(task.unitId, task.stage ?? 1);
+        break;
+      case "MANZIL":
+        onStartCycleReview?.("MANZIL");
+        break;
+      case "BLINDSPOTS":
+        onStartBlindSpots?.();
+        break;
+      case "TASMI": {
+        const target =
+          units.find((u) => u.unitId === task.unitId) ??
+          units.filter((u) => !!u.stagePassed[8]).slice(-1)[0];
+        if (target) setTasmiUnit(target);
+        break;
+      }
+      case "TESTOUT_SUGGEST":
+        if (task.unitId) setTestOutModalUnitId(task.unitId);
+        break;
+    }
+  };
 
   if (mushafUnitId) {
     return (
@@ -202,7 +364,11 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
     );
   }
 
-  let lastStationId = "";
+  let lastChapterId = "";
+  const chapterProgressInput = units.map((u) => ({
+    verseFrom: u.verseFrom ?? 1,
+    stage8Passed: !!u.stagePassed[8],
+  }));
 
   return (
     <div dir="rtl" className="min-h-screen islamic-bg bg-[#FAF7F2] dark:bg-[#0B132B] text-slate-900 dark:text-slate-100 pb-24 select-none">
@@ -428,9 +594,223 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
               </div>
             );
           })()}
+
+          {/* G1: بنر جشن یک‌بارهٔ تکمیل فصل */}
+          {celebratedChapter && (
+            <div className="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border-2 border-emerald-400 dark:border-emerald-700 flex items-center justify-between gap-3 shadow-sm">
+              <div className="text-sm font-black text-emerald-900 dark:text-emerald-200">
+                فصل «{celebratedChapter.titleFa}» کامل شد 📖
+              </div>
+              <button
+                type="button"
+                onClick={() => setCelebratedChapter(null)}
+                className="p-1 rounded-xl text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/50"
+                aria-label="بستن اعلان"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          )}
+
+          {/* U1: کارت برنامهٔ امروز + G3: مأموریت‌های روزانه */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-emerald-200 dark:border-teal-800/70 shadow-sm space-y-3">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                <h3 className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">
+                  برنامهٔ امروز
+                </h3>
+              </div>
+              {todayTasks.length > 0 && (() => {
+                const nextTask = todayTasks.find((t) => !isTaskDone(t)) ?? todayTasks[0];
+                return (
+                  <button
+                    type="button"
+                    onClick={() => launchTodayTask(nextTask)}
+                    className="py-1.5 px-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs flex items-center gap-1 transition-colors"
+                  >
+                    <Play className="w-3.5 h-3.5 fill-white" />
+                    <span>شروع</span>
+                  </button>
+                );
+              })()}
+            </div>
+
+            {todayTasks.length === 0 ? (
+              <p className="text-xs text-emerald-700 dark:text-emerald-300 font-bold bg-emerald-50 dark:bg-emerald-950/40 p-3 rounded-2xl">
+                همهٔ وظایف امروز انجام شده است. آفرین به استمرار شما!
+              </p>
+            ) : (
+              <div className="space-y-1.5">
+                {todayTasks.map((task, idx) => {
+                  const done = isTaskDone(task);
+                  return (
+                    <button
+                      key={`${task.kind}-${idx}`}
+                      type="button"
+                      onClick={() => launchTodayTask(task)}
+                      className={`w-full text-right p-2.5 rounded-2xl border flex items-center justify-between gap-2 transition-colors ${
+                        done
+                          ? "bg-emerald-50/70 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300"
+                          : "bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 hover:border-emerald-400"
+                      }`}
+                    >
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span
+                          className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${
+                            done
+                              ? "bg-emerald-600 text-white"
+                              : "border-2 border-slate-300 dark:border-slate-600"
+                          }`}
+                        >
+                          {done && <Check className="w-3 h-3 stroke-[3]" />}
+                        </span>
+                        <div className="min-w-0">
+                          <div className={`text-xs font-extrabold truncate ${done ? "line-through opacity-75" : ""}`}>
+                            {task.titleFa}
+                          </div>
+                          <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+                            {task.detailFa}
+                          </div>
+                        </div>
+                      </div>
+                      <ChevronRight className="w-4 h-4 text-slate-400 rotate-180 shrink-0" />
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* G3: مأموریت‌های روزانه */}
+            {dailyMissions.length > 0 && (
+              <div className="pt-2 border-t border-slate-200/80 dark:border-slate-700/70 space-y-2">
+                <div className="flex items-center gap-1.5 text-xs font-black text-slate-700 dark:text-slate-200">
+                  <Gift className="w-4 h-4 text-rose-500" />
+                  <span>مأموریت‌های امروز</span>
+                </div>
+                <div className="space-y-1.5">
+                  {dailyMissions.map(({ mission, done, complete }) => {
+                    const claimed = claimedMissions.includes(mission.kind);
+                    return (
+                      <div
+                        key={mission.kind}
+                        className="p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-xs"
+                      >
+                        <div className="min-w-0">
+                          <div className="font-bold text-slate-800 dark:text-slate-100 truncate">
+                            {mission.titleFa}
+                          </div>
+                          <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                            پیشرفت: {toFarsiNum(done)} از {toFarsiNum(mission.target)} • پاداش {toFarsiNum(mission.rewardGems)} عقیق
+                          </div>
+                        </div>
+                        {claimed ? (
+                          <span className="px-2.5 py-1 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold text-[11px] shrink-0">
+                            دریافت شد
+                          </span>
+                        ) : complete ? (
+                          <button
+                            type="button"
+                            onClick={() => void handleClaimMission(mission)}
+                            className="px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-black text-[11px] shrink-0 transition-colors"
+                          >
+                            دریافت (+{toFarsiNum(mission.rewardGems)})
+                          </button>
+                        ) : (
+                          <span className="px-2.5 py-1 rounded-xl bg-slate-200/70 dark:bg-slate-700 text-slate-500 dark:text-slate-300 font-bold text-[11px] shrink-0">
+                            {toFarsiNum(done)}/{toFarsiNum(mission.target)}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* L2: چرخهٔ مراجعهٔ امروز (سبق / سبقی / منزل) */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-[#E5DEC9] dark:border-[#3A506B] shadow-sm space-y-2.5">
+            <div className="flex items-center gap-2">
+              <RefreshCw className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+              <h3 className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">
+                چرخهٔ مراجعهٔ امروز
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              {(
+                [
+                  { kind: "SABQ" as const, label: "سبق (۷ روز اخیر)", items: murajaPlan.sabq },
+                  { kind: "SABQI" as const, label: "سبقی (۸ تا ۳۰ روز)", items: murajaPlan.sabqi },
+                  {
+                    kind: "MANZIL" as const,
+                    label:
+                      murajaPlan.bucketCount > 0
+                        ? `منزل (بخش ${toFarsiNum(murajaPlan.manzilBucket + 1)} از ${toFarsiNum(murajaPlan.bucketCount)})`
+                        : "منزل (چرخشی)",
+                    items: murajaPlan.manzil,
+                  },
+                ]
+              ).map((row) => {
+                const empty = row.items.length === 0;
+                return (
+                  <div
+                    key={row.kind}
+                    className={`p-3 rounded-2xl border flex items-center justify-between sm:flex-col sm:items-stretch gap-2 ${
+                      empty
+                        ? "bg-slate-50/70 dark:bg-slate-800/40 border-slate-200/70 dark:border-slate-800 text-slate-400"
+                        : "bg-emerald-50/60 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800"
+                    }`}
+                  >
+                    <div>
+                      <div className={`text-xs font-black ${empty ? "text-slate-500 dark:text-slate-400" : "text-slate-800 dark:text-slate-100"}`}>
+                        {row.label}
+                      </div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                        {empty ? "فعلاً موردی نیست" : `${toFarsiNum(row.items.length)} نیم‌صفحه`}
+                      </div>
+                    </div>
+                    {!empty && onStartCycleReview && (
+                      <button
+                        type="button"
+                        onClick={() => onStartCycleReview(row.kind)}
+                        className="py-1.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors"
+                      >
+                        مرور
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* L3: بستهٔ هفتگی نقاط کور من */}
+          {blindSpotPack && blindSpotPack.questionIds.length >= MIN_BLINDSPOT_QUESTIONS && onStartBlindSpots && (
+            <div className="p-4 rounded-2xl bg-white dark:bg-[#1C2541] border-2 border-amber-200 dark:border-amber-800/70 shadow-sm flex flex-wrap items-center justify-between gap-3">
+              <div className="space-y-1 min-w-0">
+                <div className="flex items-center gap-1.5 text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100">
+                  <Target className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                  <span>نقاط کور این هفته ({toFarsiNum(blindSpotPack.questionIds.length)} سؤال)</span>
+                </div>
+                {blindSpotPack.topTargets.length > 0 && (
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                    پرتکرارترین لغزش‌ها: {blindSpotPack.topTargets.map(formatTargetLabel).join("، ")}
+                  </p>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={onStartBlindSpots}
+                className="py-2 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 text-white font-black text-xs shrink-0 transition-colors"
+              >
+                شروع تمرین
+              </button>
+            </div>
+          )}
         </section>
 
-        {/* 22 Learning Units grouped by 5 Story Stations (Duolingo Journey Path) */}
+        {/* 22 Learning Units grouped by 10 Story Chapters (G1) */}
         <section className="space-y-5">
           {units.length === 0 && !error && loading && (
             <div className="p-8 text-center bg-white dark:bg-[#1C2541] rounded-3xl border-2 border-[#E5DEC9] dark:border-[#3A506B] space-y-3 shadow-sm">
@@ -444,9 +824,11 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
           {units.map((u, idx) => {
             const passedCount = Object.values(u.stagePassed || {}).filter(Boolean).length;
             const isComplete = passedCount === 8;
-            const station = stationForVerse(u.verseFrom);
-            const showStationBanner = station.id !== lastStationId;
-            if (showStationBanner) lastStationId = station.id;
+            const chapter = chapterOfUnit(u.verseFrom ?? 1);
+            const showChapterBanner = chapter.id !== lastChapterId;
+            if (showChapterBanner) lastChapterId = chapter.id;
+            const chProg = showChapterBanner ? chapterProgress(chapter, chapterProgressInput) : null;
+            const chGradient = CHAPTER_GRADIENTS[(chapter.order - 1) % CHAPTER_GRADIENTS.length];
             const isExpanded = selectedUnitId === u.unitId;
 
             // مرحله پیشنهادی بعدی در این نیم‌صفحه (همه نیم‌صفحه‌ها و مراحل برای انتخاب آزادند)
@@ -454,20 +836,34 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
 
             return (
               <div key={u.unitId} className="space-y-4">
-                {showStationBanner && (
-                  <div className={`p-4 sm:p-5 rounded-3xl bg-gradient-to-l ${station.gradient} text-white shadow-lg border-2 border-[#d4af37]/55 border-b-4 border-b-black/30 relative overflow-hidden`}>
-                    <div className="relative z-10 flex items-center justify-between gap-3">
+                {showChapterBanner && chProg && (
+                  <div className={`p-4 sm:p-5 rounded-3xl bg-gradient-to-l ${chGradient} text-white shadow-lg border-2 border-[#d4af37]/55 border-b-4 border-b-black/30 relative overflow-hidden`}>
+                    <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
                       <div className="space-y-1">
                         <div className="inline-flex items-center gap-1.5 text-[11px] font-bold bg-white/15 px-2.5 py-0.5 rounded-full border border-white/20">
-                          <span>ایستگاه {toFarsiNum(station.order)}</span>
+                          <span>فصل {toFarsiNum(chapter.order)}</span>
                           <span>•</span>
-                          <span>آیات {toFarsiNum(station.fromVerse)} تا {toFarsiNum(station.toVerse)}</span>
+                          <span>آیات {toFarsiNum(chapter.verseFrom)} تا {toFarsiNum(chapter.verseTo)}</span>
+                          <span>•</span>
+                          <span>{toFarsiNum(chProg.done)} از {toFarsiNum(chProg.total)} نیم‌صفحه</span>
                         </div>
-                        <h2 className="text-base sm:text-lg font-black tracking-tight">{station.title}</h2>
-                        <p className="text-xs text-white/90">{station.subtitle}</p>
+                        <h2 className="text-base sm:text-lg font-black tracking-tight">{chapter.titleFa}</h2>
+                        <p className="text-xs text-white/90">{chapter.teaserFa}</p>
                       </div>
-                      <div className="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 border border-[#d4af37]/60 shadow-inner">
-                        <Crown className="w-6 h-6 text-amber-300" />
+                      <div className="flex items-center gap-2 shrink-0">
+                        {chProg.complete && (
+                          <button
+                            type="button"
+                            onClick={() => setStoryGameChapter(chapter)}
+                            className="py-2 px-3 rounded-2xl bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-xs flex items-center gap-1.5 shadow transition-colors"
+                          >
+                            <BookOpen className="w-4 h-4" />
+                            <span>بازی ترتیب وقایع</span>
+                          </button>
+                        )}
+                        <div className="w-11 h-11 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-[#d4af37]/60 shadow-inner">
+                          <Crown className="w-5 h-5 text-amber-300" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -691,6 +1087,17 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
             void loadData();
           }}
           onStartStage1={(uid) => onStartStage(uid, 1)}
+        />
+      )}
+
+      {/* Story Order Game Modal (L5) */}
+      {storyGameChapter && (
+        <StoryOrderGame
+          chapter={storyGameChapter}
+          onClose={() => {
+            setStoryGameChapter(null);
+            void loadData();
+          }}
         />
       )}
 

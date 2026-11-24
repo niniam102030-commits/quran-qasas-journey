@@ -325,4 +325,65 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
     const tomorrow = new Date(Date.now() + 86400_000);
     expect(reviewDebt(cards, tomorrow)).toBeLessThan(10);
   });
+
+  it("G3: tracks combo on first attempts, resets on wrong, ignores hint without breaking, and awards combo bonus XP", async () => {
+    const makeQ = (i: number): QuestionRow => ({
+      id: `qc_${i}`,
+      unitId: "u_p385a",
+      stage: 1,
+      skill: "word",
+      type: "WORD_AR_TO_FA",
+      shape: "choice",
+      difficulty: 1,
+      targets: [`w:w28_001_00${i}`],
+      options: [{ id: "o1", fa: "درست" }, { id: "o2", fa: "غلط" }],
+      answer: "o1",
+    });
+    const qs = [1, 2, 3, 4, 5, 6, 7].map(makeQ);
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "STAGE",
+      unitId: "u_p385a",
+      stage: 1,
+      combo: 0,
+      maxCombo: 0,
+      queue: qs,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      seen: new Set(),
+    });
+
+    // 5 consecutive correct answers -> combo=5, maxCombo=5
+    for (let i = 0; i < 5; i++) {
+      await useLearningStore.getState().submit("o1", { responseMs: 1500 });
+      await useLearningStore.getState().next();
+    }
+    expect(useLearningStore.getState().combo).toBe(5);
+    expect(useLearningStore.getState().maxCombo).toBe(5);
+
+    // Hint on 6th question does not increment and does not break combo
+    await useLearningStore.getState().submit("o1", { responseMs: 1500, usedHint: true });
+    expect(useLearningStore.getState().combo).toBe(5);
+    await useLearningStore.getState().next();
+
+    // Wrong on 7th question resets combo to 0 while keeping maxCombo=5
+    await useLearningStore.getState().submit("o2", { responseMs: 1500 });
+    expect(useLearningStore.getState().combo).toBe(0);
+    expect(useLearningStore.getState().maxCombo).toBe(5);
+
+    // Advance past requeued item to finish session
+    while (useLearningStore.getState().status === "running") {
+      const st = useLearningStore.getState();
+      if (st.lastResult === null) {
+        await st.submit("o1", { responseMs: 1500 });
+      }
+      await useLearningStore.getState().next();
+    }
+
+    const summary = useLearningStore.getState().summary!;
+    expect(summary.maxCombo).toBe(5);
+    // 6 correct * 10 + 20 (passed: 6/7 >= 0.85) + 5 (combo bonus for maxCombo=5) = 85 XP
+    expect(summary.xpEarned).toBe(85);
+  });
 });

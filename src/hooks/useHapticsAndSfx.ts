@@ -55,9 +55,33 @@ function playTone(
     osc.stop(end + 0.01);
 }
 
-function playSynthesizedSfx(type: SfxType) {
+function playSynthesizedSfx(type: SfxType, soft = false) {
     const ctx = getAudioContext();
     if (!ctx) return;
+
+    if (soft) {
+        switch (type) {
+            case "snap-click":
+                playTone(ctx, { freq: 380, endFreq: 260, duration: 0.045, volume: 0.05, type: "sine" });
+                break;
+            case "correct-chime":
+                playTone(ctx, { freq: 392.0, duration: 0.16, volume: 0.12, type: "sine" }); // G4
+                playTone(ctx, { freq: 493.88, startOffset: 0.09, duration: 0.22, volume: 0.13, type: "sine" }); // B4
+                break;
+            case "error-thud":
+                playTone(ctx, { freq: 185, endFreq: 155, duration: 0.16, volume: 0.11, type: "sine" });
+                break;
+            case "trap-shield":
+                playTone(ctx, { freq: 587.33, duration: 0.14, volume: 0.11, type: "sine" });
+                break;
+            case "stage-fanfare":
+                playTone(ctx, { freq: 392.0, duration: 0.15, volume: 0.13, type: "sine" });
+                playTone(ctx, { freq: 493.88, startOffset: 0.12, duration: 0.16, volume: 0.13, type: "sine" });
+                playTone(ctx, { freq: 587.33, startOffset: 0.24, duration: 0.28, volume: 0.14, type: "sine" });
+                break;
+        }
+        return;
+    }
 
     switch (type) {
         case "snap-click":
@@ -87,6 +111,7 @@ function playSynthesizedSfx(type: SfxType) {
 
 export function useHapticsAndSfx() {
     const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
+    const soundPack = usePreferencesStore((s) => s.soundPack);
     const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
 
     const triggerHaptic = useCallback(
@@ -125,12 +150,12 @@ export function useHapticsAndSfx() {
             if (!soundEnabled || typeof window === "undefined") return;
 
             try {
-                playSynthesizedSfx(type);
+                playSynthesizedSfx(type, soundPack === "soft");
             } catch {
                 // نادیده گرفتن خطا در محیط‌های بدون Web Audio (مثل تست)
             }
         },
-        [soundEnabled, triggerHaptic]
+        [soundEnabled, soundPack, triggerHaptic]
     );
 
     return {

@@ -21,6 +21,8 @@ export interface ReciteVerseOption {
 interface Props {
   verses?: ReciteVerseOption[];
   onWordsRecitedCorrectly?: (wordIds: string[]) => void;
+  /** گزارش نتیجه نهایی بررسی تلاوت در پایان شنیدن (برای شاخص دقت لفظی L4) */
+  onFinalPrecision?: (entry: { at: number; verse: number; accuracy: number }) => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -32,7 +34,7 @@ function formatSeconds(sec: number): string {
   return `${toFarsi(String(m).padStart(2, "0"))}:${toFarsi(String(s).padStart(2, "0"))}`;
 }
 
-export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: Props = {}) {
+export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, onFinalPrecision }: Props = {}) {
   const [recording, setRecording] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -49,6 +51,8 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
 
   const capability = getDeviceAsrCapability();
   const recognitionRef = useRef<LiveRecognitionHandle | null>(null);
+  const latestCheckRef = useRef<RecitationCheckResult | null>(null);
+  const reportedSessionRef = useRef<boolean>(false);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -95,22 +99,37 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
 
   const selectedVerse = verses?.find((v) => v.n === targetVerseNum) ?? verses?.[0];
 
+  const flushFinalPrecision = (verseN: number) => {
+    if (reportedSessionRef.current || !latestCheckRef.current) return;
+    reportedSessionRef.current = true;
+    onFinalPrecision?.({
+      at: Date.now(),
+      verse: verseN,
+      accuracy: latestCheckRef.current.accuracyPercent,
+    });
+  };
+
   const handleToggleAsr = () => {
     if (listeningAsr) {
       recognitionRef.current?.stop();
       recognitionRef.current = null;
       setListeningAsr(false);
+      if (selectedVerse) flushFinalPrecision(selectedVerse.n);
       return;
     }
     if (!selectedVerse) return;
     setAsrError(null);
     setSpokenText("");
     setCheckResult(null);
+    latestCheckRef.current = null;
+    reportedSessionRef.current = false;
 
+    const verseNumAtStart = selectedVerse.n;
     const handle = startLiveArabicRecognition({
       onTranscript: (transcript) => {
         setSpokenText(transcript);
         const res = verifyVerseRecitation(selectedVerse.words, transcript);
+        latestCheckRef.current = res;
         setCheckResult(res);
         if (res.matchedWordIds.length > 0) {
           onWordsRecitedCorrectly?.(res.matchedWordIds);
@@ -122,6 +141,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
       },
       onEnd: () => {
         setListeningAsr(false);
+        flushFinalPrecision(verseNumAtStart);
       },
     });
 

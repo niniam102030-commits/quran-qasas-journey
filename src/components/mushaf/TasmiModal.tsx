@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { X, Eye, EyeOff, Mic, CheckCircle2, AlertTriangle, Info, Play } from "lucide-react";
 import { ldb } from "../../db/learningDb";
 import { planTasmiCards } from "../../learning/tasmi";
+import { getMeta, setMeta } from "../../services/metaStore";
+import { getLocalDateIso } from "../../services/profileService";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
 import SelfReciteRecorder from "../audio/SelfReciteRecorder";
 
@@ -90,16 +92,33 @@ export default function TasmiModal({
     const existingCards = new Map(
       existingRows.filter((c): c is NonNullable<typeof c> => !!c).map((c) => [c.key, c]),
     );
+    const now = new Date();
     const toSave = planTasmiCards({
       verses: verseNums,
       slippedVerses: slipped,
       existingCards,
       unitId,
-      now: new Date(),
+      now,
     });
     if (toSave.length > 0) {
       await ldb.cards.bulkPut(toSave);
     }
+    // ثبت در tasmiiLog برای برنامه امروز (U1)، مأموریت روزانه (G3) و شاخص دقت لفظی (L4)
+    const prevLog = await getMeta<
+      { at: number; dateIso: string; unitId: string; total: number; slipped: number }[]
+    >("tasmiiLog", []);
+    const nextLog = [
+      ...prevLog,
+      {
+        at: now.getTime(),
+        dateIso: getLocalDateIso(now),
+        unitId,
+        total: verseNums.length,
+        slipped: slipped.size,
+      },
+    ].slice(-200);
+    await setMeta("tasmiiLog", nextLog);
+
     setSavedCounts({ clean: verseNums.length - slipped.size, slipped: slipped.size });
     setStep("done");
   };

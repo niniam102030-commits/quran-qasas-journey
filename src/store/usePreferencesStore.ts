@@ -3,12 +3,19 @@
 import { create } from "zustand";
 import { isPaceMode, type PaceMode } from "../learning/pace";
 
+export type MushafTheme = "default" | "gold" | "night";
+export type SoundPack = "default" | "soft";
+
 interface PreferencesState {
   darkMode: boolean;
   soundEnabled: boolean;
   hapticsEnabled: boolean;
   arabicFontSize: number;
   paceMode: PaceMode;
+  mushafTheme: MushafTheme;
+  soundPack: SoundPack;
+  reminderEnabled: boolean;
+  reminderHourOverride: number | null;
   initPreferences: () => void;
   setDarkMode: (dark: boolean) => void;
   toggleDarkMode: () => void;
@@ -18,6 +25,10 @@ interface PreferencesState {
   toggleHapticsEnabled: () => void;
   setArabicFontSize: (size: number) => void;
   setPaceMode: (mode: PaceMode) => void;
+  setMushafTheme: (theme: MushafTheme) => void;
+  setSoundPack: (pack: SoundPack) => void;
+  setReminderEnabled: (enabled: boolean) => void;
+  setReminderHourOverride: (hour: number | null) => void;
 }
 
 function readBool(key: string, fallback: boolean): boolean {
@@ -25,6 +36,14 @@ function readBool(key: string, fallback: boolean): boolean {
   const val = localStorage.getItem(key);
   if (val === null) return fallback;
   return val === "true";
+}
+
+function readInitialReminderHour(): number | null {
+  if (typeof window === "undefined") return null;
+  const raw = localStorage.getItem("reminder_hour");
+  if (raw === null || raw === "auto" || raw === "") return null;
+  const n = Number(raw);
+  return Number.isInteger(n) && n >= 0 && n <= 23 ? n : null;
 }
 
 function readInitialDark(): boolean {
@@ -47,6 +66,18 @@ function readInitialPaceMode(): PaceMode {
   return isPaceMode(saved) ? saved : "standard";
 }
 
+function readInitialMushafTheme(): MushafTheme {
+  if (typeof window === "undefined") return "default";
+  const saved = localStorage.getItem("mushaf_theme");
+  return saved === "gold" || saved === "night" ? saved : "default";
+}
+
+function readInitialSoundPack(): SoundPack {
+  if (typeof window === "undefined") return "default";
+  const saved = localStorage.getItem("sound_pack");
+  return saved === "soft" ? "soft" : "default";
+}
+
 function applyDarkClass(dark: boolean) {
   if (typeof document === "undefined") return;
   document.documentElement.classList.toggle("dark", dark);
@@ -58,6 +89,10 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   hapticsEnabled: readBool("haptics_enabled", true),
   arabicFontSize: readInitialFontSize(),
   paceMode: readInitialPaceMode(),
+  mushafTheme: readInitialMushafTheme(),
+  soundPack: readInitialSoundPack(),
+  reminderEnabled: readBool("reminder_enabled", false),
+  reminderHourOverride: readInitialReminderHour(),
 
   initPreferences: () => {
     const dark = readInitialDark();
@@ -68,6 +103,10 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       hapticsEnabled: readBool("haptics_enabled", true),
       arabicFontSize: readInitialFontSize(),
       paceMode: readInitialPaceMode(),
+      mushafTheme: readInitialMushafTheme(),
+      soundPack: readInitialSoundPack(),
+      reminderEnabled: readBool("reminder_enabled", false),
+      reminderHourOverride: readInitialReminderHour(),
     });
   },
 
@@ -118,5 +157,37 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       localStorage.setItem("pace_mode", mode);
     }
     set({ paceMode: mode });
+  },
+
+  setMushafTheme: (theme) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("mushaf_theme", theme);
+    }
+    set({ mushafTheme: theme });
+  },
+
+  setSoundPack: (pack) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("sound_pack", pack);
+    }
+    set({ soundPack: pack });
+  },
+
+  setReminderEnabled: (enabled) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("reminder_enabled", String(enabled));
+    }
+    set({ reminderEnabled: enabled });
+  },
+
+  setReminderHourOverride: (hour) => {
+    if (typeof window !== "undefined") {
+      if (hour === null) {
+        localStorage.removeItem("reminder_hour");
+      } else {
+        localStorage.setItem("reminder_hour", String(hour));
+      }
+    }
+    set({ reminderHourOverride: hour });
   },
 }));

@@ -1,8 +1,9 @@
 // src/pages/SettingsPage.tsx
-import { useState } from "react";
-import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
+import { bestReminderHour, syncDailyReminder } from "../services/reminderService";
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { PACE_MODE_LIST } from "../learning/pace";
 import { usePreferencesStore } from "../store/usePreferencesStore";
@@ -11,17 +12,37 @@ interface Props {
   onBack: () => void;
 }
 
+const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
+const toFarsi = (n: number | string) =>
+  String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
+
 export default function SettingsPage({ onBack }: Props) {
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
   const isDark = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
+  const reminderEnabled = usePreferencesStore((s) => s.reminderEnabled);
+  const reminderHourOverride = usePreferencesStore((s) => s.reminderHourOverride);
   const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
   const handleToggleTheme = usePreferencesStore((s) => s.toggleDarkMode);
   const handleToggleSound = usePreferencesStore((s) => s.toggleSoundEnabled);
   const handleToggleHaptics = usePreferencesStore((s) => s.toggleHapticsEnabled);
   const handlePaceModeChange = usePreferencesStore((s) => s.setPaceMode);
+  const setReminderEnabled = usePreferencesStore((s) => s.setReminderEnabled);
+  const setReminderHourOverride = usePreferencesStore((s) => s.setReminderHourOverride);
+
+  const [autoReminderHour, setAutoReminderHour] = useState<number>(20);
+
+  useEffect(() => {
+    let active = true;
+    ldb.attempts.toArray().then((rows) => {
+      if (active) setAutoReminderHour(bestReminderHour(rows));
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const [showResetConfirm, setShowResetConfirm] = useState<boolean>(false);
   const [resetSuccess, setResetSuccess] = useState<boolean>(false);
@@ -257,6 +278,67 @@ export default function SettingsPage({ onBack }: Props) {
                   }`}
                 />
               </button>
+            </div>
+          </div>
+        </section>
+
+        {/* یادآور روزانه (U3) */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200 flex items-center gap-2">
+            <Bell className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+            <span>یادآور روزانه</span>
+          </h2>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
+              <div className="space-y-0.5">
+                <span className="text-xs font-semibold block">فعال‌سازی اعلان روزانه</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                  ساعت فعلی یادآور: {toFarsi(reminderHourOverride ?? autoReminderHour)}:۰۰{" "}
+                  {reminderHourOverride === null ? "(خودکار بر اساس عادت تمرین)" : "(دستی)"}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  const next = !reminderEnabled;
+                  setReminderEnabled(next);
+                  void syncDailyReminder({ requestPermission: next });
+                }}
+                className={`w-12 h-6 rounded-full transition-colors relative shrink-0 ${
+                  reminderEnabled ? "bg-emerald-600" : "bg-slate-300"
+                }`}
+              >
+                <span
+                  className={`w-5 h-5 rounded-full bg-white shadow-sm absolute top-0.5 transition-transform ${
+                    reminderEnabled ? "left-1" : "right-1"
+                  }`}
+                />
+              </button>
+            </div>
+
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700 text-xs">
+              <label className="font-semibold" htmlFor="reminder-hour-select">
+                انتخاب ساعت یادآور:
+              </label>
+              <select
+                id="reminder-hour-select"
+                value={reminderHourOverride === null ? "auto" : String(reminderHourOverride)}
+                onChange={(e) => {
+                  const val = e.target.value === "auto" ? null : Number(e.target.value);
+                  setReminderHourOverride(val);
+                  if (reminderEnabled) {
+                    void syncDailyReminder({ requestPermission: false });
+                  }
+                }}
+                className="rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-1.5 font-bold text-xs"
+              >
+                <option value="auto">خودکار ({toFarsi(autoReminderHour)}:۰۰)</option>
+                {Array.from({ length: 19 }, (_, i) => i + 5).map((h) => (
+                  <option key={h} value={h}>
+                    ساعت {toFarsi(String(h).padStart(2, "0"))}:۰۰
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </section>
