@@ -47,18 +47,40 @@ export function newCard(key: string, now: Date = new Date()): StoredCard {
 export interface SeedOpts {
   now?: Date;
   intervalDays: number;
-  stability: number;
+  /** در صورت عدم تعیین، دقیقاً از روی منحنی فراموشی FSRS و retention نوع کارت مشتق می‌شود */
+  stability?: number;
+}
+
+const FSRS_FACTOR = 19 / 81;
+const FSRS_DECAY = 0.5;
+
+/**
+ * محاسبهٔ stability سازگار با منحنی FSRS برای فاصلهٔ هدف (intervalDays) و retention هر نوع کارت:
+ * R(t, S) = (1 + F * t / S)^(-C)  ==>  S = (F * t) / (R^(-1/C) - 1)
+ */
+export function stabilityForInterval(kind: CardKind, intervalDays: number): number {
+  const r = RETENTION[kind];
+  const denom = Math.pow(r, -1 / FSRS_DECAY) - 1;
+  if (denom <= 0 || intervalDays <= 0) return Math.max(0.5, intervalDays);
+  return Number(((FSRS_FACTOR * intervalDays) / denom).toFixed(2));
+}
+
+/** آیا کارت دارای سابقهٔ واقعی مرور FSRS است؟ (قاعده: کارت با state !== 0 و reps > 0 هرگز نباید با بذر بازنویسی شود) */
+export function hasRealFsrsHistory(card: StoredCard | undefined): boolean {
+  return !!card && card.state !== 0 && card.reps > 0;
 }
 
 /** بذرپاشی کارت برای اهداف ازپیش‌بلدشده (مثلاً در آزمون میانبر، پیش‌غربال یا تسمیع) */
 export function seedKnownCard(key: string, opts: SeedOpts): StoredCard {
   const now = opts.now ?? new Date();
+  const kind = kindOfKey(key);
   const due = new Date(now.getTime() + opts.intervalDays * 86400_000);
+  const stability = opts.stability ?? stabilityForInterval(kind, opts.intervalDays);
   return {
     key,
-    kind: kindOfKey(key),
+    kind,
     due: due.toISOString(),
-    stability: opts.stability,
+    stability,
     difficulty: 5,
     elapsedDays: 0,
     scheduledDays: opts.intervalDays,

@@ -1,6 +1,6 @@
 // src/services/menshawiAudio.ts
 // سرویس پخش و کش آفلاین تلاوت استاد محمد صدیق منشاوی (مرتل) — پارامتریک برای هر سوره
-import { ldb, type AudioCacheRow } from "../db/learningDb";
+import { ldb, type SurahAudioCacheRow } from "../db/learningDb";
 import { ACTIVE_SURAH } from "../config/surahConfig";
 
 const PER_MIRROR_TIMEOUT_MS = 12000;
@@ -19,7 +19,7 @@ export function getMenshawiUrls(
   ];
 }
 
-function rowToBlob(row: AudioCacheRow | undefined): Blob | null {
+function rowToBlob(row: SurahAudioCacheRow | undefined): Blob | null {
   if (!row) return null;
   if (row.data && row.data.byteLength > 1024) {
     return new Blob([row.data], { type: "audio/mpeg" });
@@ -30,17 +30,22 @@ function rowToBlob(row: AudioCacheRow | undefined): Blob | null {
   return null;
 }
 
-export async function isVerseAudioCached(verse: number): Promise<boolean> {
-  const row = await ldb.audioCache.get(verse);
+export async function isVerseAudioCached(
+  verse: number,
+  surahNumber: number = ACTIVE_SURAH.number,
+): Promise<boolean> {
+  const row = await ldb.surahAudioCache.get([surahNumber, verse]);
   return rowToBlob(row) !== null;
 }
 
-export async function getAudioCacheStats(): Promise<{
+export async function getAudioCacheStats(
+  surahNumber: number = ACTIVE_SURAH.number,
+): Promise<{
   cachedVerses: number[];
   totalBytes: number;
   totalMb: number;
 }> {
-  const rows = await ldb.audioCache.toArray();
+  const rows = await ldb.surahAudioCache.where("surah").equals(surahNumber).toArray();
   const valid = rows.filter((r) => rowToBlob(r) !== null);
   const totalBytes = valid.reduce((acc, r) => acc + (r.size || r.data?.byteLength || r.blob?.size || 0), 0);
   return {
@@ -80,17 +85,19 @@ async function fetchWithTimeout(url: string, outerSignal?: AbortSignal): Promise
 export async function fetchAndCacheVerseAudio(
   verse: number,
   signal?: AbortSignal,
+  surahNumber: number = ACTIVE_SURAH.number,
 ): Promise<Blob> {
-  const existing = rowToBlob(await ldb.audioCache.get(verse));
+  const existing = rowToBlob(await ldb.surahAudioCache.get([surahNumber, verse]));
   if (existing) return existing;
 
   let lastError: unknown = null;
-  for (const url of getMenshawiUrls(verse)) {
+  for (const url of getMenshawiUrls(verse, surahNumber)) {
     if (signal?.aborted) throw new DOMException("Aborted", "AbortError");
     try {
       const data = await fetchWithTimeout(url, signal);
       try {
-        await ldb.audioCache.put({
+        await ldb.surahAudioCache.put({
+          surah: surahNumber,
           verse,
           data,
           size: data.byteLength,
@@ -150,10 +157,13 @@ export async function prefetchVersesAudio(
   return { downloaded, failed };
 }
 
-export async function clearAudioCache(verses?: number[]): Promise<void> {
+export async function clearAudioCache(
+  verses?: number[],
+  surahNumber: number = ACTIVE_SURAH.number,
+): Promise<void> {
   if (!verses || verses.length === 0) {
-    await ldb.audioCache.clear();
+    await ldb.surahAudioCache.where("surah").equals(surahNumber).delete();
     return;
   }
-  await ldb.audioCache.bulkDelete(verses);
+  await ldb.surahAudioCache.bulkDelete(verses.map((v) => [surahNumber, v] as [number, number]));
 }

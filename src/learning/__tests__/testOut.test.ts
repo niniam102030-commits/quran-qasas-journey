@@ -121,6 +121,22 @@ describe("testOutResult", () => {
     expect(res.passed).toBe(false);
     expect(res.weakestStage).toBe(6);
   });
+
+  it("fails and reports missingStages when a required stage was never tested", () => {
+    // All attempts correct, but stage 7 is missing completely
+    const attempts = [
+      ...Array.from({ length: 5 }, () => ({ stage: 1, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 2, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 3, correct: true, usedHint: false })),
+      ...Array.from({ length: 5 }, () => ({ stage: 4, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 5, correct: true, usedHint: false })),
+      ...Array.from({ length: 3 }, () => ({ stage: 6, correct: true, usedHint: false })),
+      { stage: 8, correct: true, usedHint: false },
+    ];
+    const res = testOutResult(attempts);
+    expect(res.passed).toBe(false);
+    expect(res.missingStages).toEqual([7]);
+  });
 });
 
 describe("planUnitSeeding", () => {
@@ -137,8 +153,11 @@ describe("planUnitSeeding", () => {
       ["vr:2", false],
     ]);
     const plan = planUnitSeeding(targets, outcomes, 99);
-    expect(plan.find((p) => p.key === "vr:1")).toEqual({ key: "vr:1", intervalDays: 17, stability: 14 });
-    expect(plan.find((p) => p.key === "w:w28_001_001")).toEqual({ key: "w:w28_001_001", intervalDays: 14, stability: 14 });
+    const vr1 = plan.find((p) => p.key === "vr:1");
+    const w1 = plan.find((p) => p.key === "w:w28_001_001");
+    expect(vr1?.intervalDays).toBe(17);
+    expect(vr1?.stability).toBeGreaterThan(20); // FSRS-consistent for 17d @ 0.93 retention (~25.53)
+    expect(w1).toEqual({ key: "w:w28_001_001", intervalDays: 14, stability: 14 }); // 14d @ 0.90 retention == 14
     expect(plan.find((p) => p.key === "vr:2")).toBeUndefined();
 
     const now = new Date("2026-05-01T00:00:00.000Z");

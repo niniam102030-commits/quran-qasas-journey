@@ -1,6 +1,6 @@
 // src/services/recitationVerifier.ts
-// موتور هم‌ترازی و خطایابی کلمه‌به‌کلمه تلاوت قرآنی (مستقل از موتور ASR)
-// نکته علمی: این ماژول صحت کلمات (حذف، اضافه، جابه‌جایی) را می‌سنجد و جایگزین ارزیابی احکام تجوید نیست.
+// موتور هم‌ترازی و خطایابی دقیق کلمه‌به‌کلمه تلاوت قرآنی (بدون تلورانس آزاد تک‌حرفی)
+// نکته علمی: این ماژول صحت لفظی کلمات (حذف، اضافه، جابه‌جایی) را می‌سنجد و جایگزین ارزیابی احکام تجوید نیست.
 
 export interface ExpectedReciteWord {
   id: string;
@@ -26,10 +26,49 @@ export interface RecitationCheckResult {
 }
 
 /**
- * نرمال‌سازی رسم‌الخط عثمانی و متن گفتاری عربی برای تطبیق منصفانه کلمه‌به‌کلمه
+ * نگاشت محدود و صریح تفاوت‌های املاییِ صرفاً رسم‌الخط عثمانی با املای معیار عربی (بدون تلورانس عمومی)
+ */
+const UTHMANI_ORTHOGRAPHY_MAP: Record<string, string> = {
+  الصلوه: "الصلاه",
+  الصلواه: "الصلاه",
+  صلوه: "صلاه",
+  صلواه: "صلاه",
+  الحيوه: "الحياه",
+  الحيواه: "الحياه",
+  حيوه: "حياه",
+  حيواه: "حياه",
+  الزكوه: "الزكاه",
+  الزكواه: "الزكاه",
+  زكوه: "زكاه",
+  زكواه: "زكاه",
+  مشكوه: "مشكاه",
+  مشكواه: "مشكاه",
+  النجوه: "النجاه",
+  النجواه: "النجاه",
+  نجوه: "نجاه",
+  الغدوه: "الغداه",
+  الغدواه: "الغداه",
+  الربوا: "الربا",
+  الرحمن: "الرحمان",
+  سموات: "سماوات",
+  السموات: "السماوات",
+  اولو: "اولوا",
+  اولي: "اولي",
+  هولاء: "هاولاء",
+  هاولاء: "هولاء",
+  ذلك: "ذالك",
+  لكن: "لاكن",
+};
+
+function canonicalizeOrthography(token: string): string {
+  return UTHMANI_ORTHOGRAPHY_MAP[token] ?? token;
+}
+
+/**
+ * نرمال‌سازی رسم‌الخط عثمانی و متن گفتاری عربی برای تطبیق دقیق کلمه‌به‌کلمه
  */
 export function normalizeArabicForRecitation(text: string): string {
-  return text
+  const cleaned = text
     .normalize("NFKC")
     // الف خنجری (ـٰ) در قرائت به‌صورت «ا» تلفظ می‌شود (مثل الكتـٰب → الكتاب، ءايـٰت → ايات)
     .replace(/\u0640?\u0670/g, "ا")
@@ -46,44 +85,24 @@ export function normalizeArabicForRecitation(text: string): string {
     .replace(/ة/g, "ه")
     .replace(/ک/g, "ك")
     .replace(/ی/g, "ي")
-    // ادغام الف‌های تکراری احتمالی
+    // ادغام الف‌های تکراری حاصل از الف خنجری کنار الف
     .replace(/اا+/g, "ا")
     .replace(/\s+/g, " ")
     .trim();
-}
 
-function charEditDistance(a: string, b: string): number {
-  const m = a.length;
-  const n = b.length;
-  if (m === 0) return n;
-  if (n === 0) return m;
-  const dp = new Array<number>(n + 1);
-  for (let j = 0; j <= n; j++) dp[j] = j;
-  for (let i = 1; i <= m; i++) {
-    let prev = dp[0];
-    dp[0] = i;
-    for (let j = 1; j <= n; j++) {
-      const temp = dp[j];
-      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-      dp[j] = Math.min(dp[j] + 1, dp[j - 1] + 1, prev + cost);
-      prev = temp;
-    }
-  }
-  return dp[n];
+  if (!cleaned) return "";
+  return cleaned
+    .split(" ")
+    .map(canonicalizeOrthography)
+    .join(" ");
 }
 
 /**
- * تطابق تقریبی دو کلمه نرمال‌شده (برای پوشش تفاوت‌های جزئی رسم‌الخط عثمانی با املای معیار ASR مثل الصلاه/الصلوه)
+ * تطابق دقیق کلمات پس از نرمال‌سازی عثمانی (بدون فاصله ویرایشی آزاد تا حذف «وَ» یا تغییر ضمیر «هم/کم» هرگز رد نشود)
  */
 function isWordMatch(expectedNorm: string, spokenNorm: string): boolean {
   if (!expectedNorm || !spokenNorm) return false;
-  if (expectedNorm === spokenNorm) return true;
-  // برای کلمات بلندتر از ۴ حرف، حداکثر ۱ تفاوت حرفی (مثلاً الف خنجری جاافتاده در رسم‌الخط عثمانی مثل الرحمن/الرحمان) مجاز است
-  const maxLen = Math.max(expectedNorm.length, spokenNorm.length);
-  if (maxLen >= 4 && charEditDistance(expectedNorm, spokenNorm) <= 1) {
-    return true;
-  }
-  return false;
+  return expectedNorm === spokenNorm;
 }
 
 /**
@@ -101,7 +120,6 @@ export function verifyVerseRecitation(
   const m = expNorm.length;
   const n = spokenTokens.length;
 
-  // ماتریس برنامه‌نویسی پویا برای کمینه‌سازی فاصله هم‌ترازی
   const dp: number[][] = Array.from({ length: m + 1 }, () => new Array<number>(n + 1).fill(0));
   for (let i = 0; i <= m; i++) dp[i][0] = i;
   for (let j = 0; j <= n; j++) dp[0][j] = j;
@@ -109,16 +127,15 @@ export function verifyVerseRecitation(
   for (let i = 1; i <= m; i++) {
     for (let j = 1; j <= n; j++) {
       const matched = isWordMatch(expNorm[i - 1], spokenTokens[j - 1]);
-      const subCost = matched ? 0 : 1.1; // ترجیح اندک به تطبیق دقیق‌تر
+      const subCost = matched ? 0 : 1.1;
       dp[i][j] = Math.min(
         dp[i - 1][j - 1] + subCost,
-        dp[i - 1][j] + 1, // کلمه از آیه جا افتاده (missing)
-        dp[i][j - 1] + 1, // کلمه اضافه خوانده شده (extra)
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
       );
     }
   }
 
-  // بازگردانی مسیر هم‌ترازی
   const wordResults: ReciteWordResult[] = [];
   const extraWords: string[] = [];
   let i = m;
@@ -159,7 +176,9 @@ export function verifyVerseRecitation(
   const matchedWordIds = wordResults.filter((r) => r.status === "correct").map((r) => r.wordId);
   const correctCount = matchedWordIds.length;
   const totalCount = expectedWords.length;
-  const accuracyPercent = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+  // جریمه کلمات اضافه در دقت نهایی: تنها زمانی ۱۰۰٪ است که همه کلمات درست و بدون کلمه اضافه باشند
+  const denominator = totalCount + extraWords.length;
+  const accuracyPercent = denominator > 0 ? Math.round((correctCount / denominator) * 100) : 0;
 
   return {
     wordResults,

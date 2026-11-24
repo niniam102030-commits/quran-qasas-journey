@@ -1,20 +1,16 @@
 // src/components/audio/SelfReciteRecorder.tsx
 // ضبط صدای خود به‌صورت ۱۰۰٪ آفلاین (MediaRecorder) + تصحیح کلمه‌به‌کلمه تلاوت و آشکارسازی خودکار در مصحف
 import { useEffect, useRef, useState } from "react";
-import { Mic, Square, Play, Pause, Trash2, AlertCircle, Sparkles, CheckCircle2, Download, Cpu } from "lucide-react";
+import { Mic, Square, Play, Pause, Trash2, AlertCircle, Sparkles, CheckCircle2, Info } from "lucide-react";
 import {
   verifyVerseRecitation,
   type ExpectedReciteWord,
   type RecitationCheckResult,
 } from "../../services/recitationVerifier";
 import {
-  clearOptionalOnnxModel,
   getDeviceAsrCapability,
-  getOfflineModelStatus,
-  prepareOptionalOnnxModel,
   startLiveArabicRecognition,
   type LiveRecognitionHandle,
-  type OfflineModelStatus,
 } from "../../services/offlineAsrService";
 
 export interface ReciteVerseOption {
@@ -50,8 +46,6 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
   const [spokenText, setSpokenText] = useState("");
   const [checkResult, setCheckResult] = useState<RecitationCheckResult | null>(null);
   const [asrError, setAsrError] = useState<string | null>(null);
-  const [modelStatus, setModelStatus] = useState<OfflineModelStatus>(() => getOfflineModelStatus());
-  const [modelProgress, setModelProgress] = useState<number | null>(null);
 
   const capability = getDeviceAsrCapability();
   const recognitionRef = useRef<LiveRecognitionHandle | null>(null);
@@ -135,25 +129,6 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
       recognitionRef.current = handle;
       setListeningAsr(true);
     }
-  };
-
-  const handlePrepareOnnx = async () => {
-    if (modelProgress !== null) return;
-    setAsrError(null);
-    setModelProgress(5);
-    try {
-      const st = await prepareOptionalOnnxModel((p) => setModelProgress(p));
-      setModelStatus(st);
-    } catch (err) {
-      setAsrError(err instanceof Error ? err.message : "خطا در آماده‌سازی مدل قرآنی آفلاین");
-    } finally {
-      setModelProgress(null);
-    }
-  };
-
-  const handleClearOnnx = async () => {
-    await clearOptionalOnnxModel();
-    setModelStatus(getOfflineModelStatus());
   };
 
   const startRecording = async () => {
@@ -396,37 +371,14 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly }: 
             </div>
           )}
 
-          {/* Optional On-Demand Offline Model Status + RAM Safety Check */}
-          <div className="flex flex-wrap items-center justify-between gap-2 pt-1.5 border-t border-slate-200/70 dark:border-slate-700/70 text-[11px] text-slate-500 dark:text-slate-400">
-            <div className="flex items-center gap-1.5">
-              <Cpu className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-              <span>
-                مدل آفلاین Tarteel ONNX (~۷۶MB، خارج از APK):{" "}
-                <strong className={modelStatus.installed ? "text-emerald-600" : "text-slate-600 dark:text-slate-300"}>
-                  {modelStatus.installed ? "آماده‌سازی شده" : "نصب نشده (اختیاری)"}
-                </strong>
-                {capability.lowMemoryWarning && " • هشدار: رم دستگاه کمتر از ۴ گیگابایت است"}
-              </span>
-            </div>
-            {!modelStatus.installed ? (
-              <button
-                type="button"
-                onClick={() => void handlePrepareOnnx()}
-                disabled={modelProgress !== null}
-                className="py-1 px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold flex items-center gap-1"
-              >
-                <Download className="w-3 h-3" />
-                <span>{modelProgress !== null ? `${toFarsi(modelProgress)}٪...` : "آماده‌سازی اختیاری"}</span>
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={() => void handleClearOnnx()}
-                className="py-1 px-2.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 text-rose-600 font-bold"
-              >
-                پاک‌سازی کش مدل
-              </button>
-            )}
+          {/* Transparent ASR Engine Notice */}
+          <div className="flex items-start gap-1.5 pt-1.5 border-t border-slate-200/70 dark:border-slate-700/70 text-[11px] text-slate-600 dark:text-slate-400">
+            <Info className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
+            <span>
+              {capability.hasWebSpeech
+                ? "تشخیص گفتار زنده با موتور مرورگر (Web Speech API) انجام می‌شود و معمولاً نیازمند اتصال اینترنت است. ضبط صدای بالا کاملاً آفلاین است."
+                : "موتور تشخیص گفتار مرورگر (Web Speech API) در این محیط (مانند WebView اندروید) در دسترس نیست؛ برای تمرین و تسمیع آفلاین از دکمه «ضبط صدای خود (آفلاین)» استفاده کنید."}
+            </span>
           </div>
 
           <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">

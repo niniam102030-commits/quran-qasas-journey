@@ -20,7 +20,7 @@ const makeWord = (i: number, hard = false): PrescreenWord => ({
 
 describe("vocabPrescreen", () => {
   it("caps screened words at PRESCREEN_MAX_WORDS and prioritizes hard words", () => {
-    const words = Array.from({ length: 20 }, (_, i) => makeWord(i + 1, i >= 15));
+    const words = Array.from({ length: 30 }, (_, i) => makeWord(i + 1, i >= 25));
     const selected = selectPrescreenWords(words, new Map());
     expect(selected).toHaveLength(PRESCREEN_MAX_WORDS);
     // All 5 hard words must be included first
@@ -55,7 +55,8 @@ describe("vocabPrescreen", () => {
     const wrongCard = updated.find((c) => c.key === `w:${wrongId}`);
     expect(knownCard?.state).toBe(2);
     expect(knownCard?.scheduledDays).toBe(PRESCREEN_KNOWN_INTERVAL_DAYS);
-    expect(wrongCard?.state).toBe(0);
+    // Unknown word must NOT create an empty newCard (does not inflate mastery denominator)
+    expect(wrongCard).toBeUndefined();
 
     const cardsMap = new Map(updated.map((c) => [c.key, c]));
     const stage1Qs = [

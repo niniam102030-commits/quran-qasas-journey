@@ -60,6 +60,15 @@ export interface AudioCacheRow {
   cachedAt: number;
 }
 
+export interface SurahAudioCacheRow {
+  surah: number; // 1..114
+  verse: number; // 1..verseCount
+  blob?: Blob;
+  data?: ArrayBuffer;
+  size: number;
+  cachedAt: number;
+}
+
 export interface SurahPackRow {
   surahNumber: number;
   slug: string;
@@ -104,6 +113,7 @@ export class LearningDB extends Dexie {
   unitProgress!: Table<UnitProgressRow, string>;
   meta!: Table<MetaRow, string>;
   audioCache!: Table<AudioCacheRow, number>;
+  surahAudioCache!: Table<SurahAudioCacheRow, [number, number]>;
   profile!: Table<UserProfileRow, string>;
   surahPacks!: Table<SurahPackRow, number>;
 
@@ -160,6 +170,38 @@ export class LearningDB extends Dexie {
           installed: true,
           updatedAt: Date.now(),
         });
+      });
+    this.version(4)
+      .stores({
+        questions: "id, unitId, [unitId+stage], stage, type, *targets",
+        lexicon: "wordId, unitId",
+        chunks: "id, unitId, verse",
+        baseVerses: "n",
+        cards: "key, kind, due, state",
+        attempts: "++id, qid, unitId, [unitId+stage], at",
+        confusions: "++id, qid, target, at",
+        unitProgress: "unitId",
+        meta: "key",
+        audioCache: "verse, surah",
+        surahAudioCache: "[surah+verse], surah",
+        profile: "id",
+        surahPacks: "surahNumber, slug",
+      })
+      .upgrade(async (tx) => {
+        // انتقال امن کش صوتی قدیمی به جدول با کلید مرکب [surah+verse] جهت جلوگیری از تداخل بین سوره‌ها
+        const oldRows = (await tx.table("audioCache").toArray()) as AudioCacheRow[];
+        if (oldRows.length > 0) {
+          await tx.table("surahAudioCache").bulkPut(
+            oldRows.map((r) => ({
+              surah: r.surah ?? 28,
+              verse: r.verse,
+              blob: r.blob,
+              data: r.data,
+              size: r.size,
+              cachedAt: r.cachedAt,
+            })),
+          );
+        }
       });
   }
 }

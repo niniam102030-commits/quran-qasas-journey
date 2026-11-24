@@ -261,10 +261,10 @@ export default function SettingsPage({ onBack }: Props) {
           </div>
         </section>
 
-        {/* Installed Surah Packs (Multi-Surah Architecture) */}
+        {/* Active Surah & Reference Data */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
-            پک‌های سوره‌ای نصب‌شده (معماری چندسوره‌ای)
+            سوره فعال و داده‌های مرجع
           </h2>
           <div className="space-y-2">
             {SURAH_PACK_REGISTRY.map((pack) => (

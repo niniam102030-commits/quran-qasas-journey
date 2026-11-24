@@ -477,9 +477,9 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                     </button>
                   </div>
 
-                  {qulMorph && (
+                  {qulMorph && (qulMorph.posFa || (qulMorph.rootAr && qulMorph.rootAr !== "-") || qulMorph.lemmaAr) && (
                     <div className="flex flex-wrap items-center gap-2 text-[11px] px-2.5 py-1.5 rounded-xl bg-teal-50/70 dark:bg-teal-950/30 border border-teal-200/60 dark:border-teal-800/60 text-teal-900 dark:text-teal-200">
-                      <span className="font-extrabold">پیکره مرجع (QUL):</span>
+                      <span className="font-extrabold">تحلیل صرفی خودکار (QUL — آزمایشی):</span>
                       {qulMorph.posFa && (
                         <span className="px-2 py-0.5 rounded-md bg-white/80 dark:bg-slate-900/70 font-bold">
                           نقش: {qulMorph.posFa}

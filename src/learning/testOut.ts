@@ -1,6 +1,7 @@
 // src/learning/testOut.ts
 // منطق خالص آزمون میانبر واحد (Test-Out) و بذرپاشی کارت‌های FSRS — بدون وابستگی به UI/DB.
-import { kindOfKey, type CardKind } from "./cardScheduler";
+import { formatSurahCardKey } from "../config/surahConfig";
+import { kindOfKey, stabilityForInterval, type CardKind } from "./cardScheduler";
 import type { StageAttempt } from "./mastery";
 import { rng, shuffle, spreadByType, type PlannerQuestion } from "./sessionPlanner";
 
@@ -54,6 +55,8 @@ export interface TestOutEvaluation {
   ratio: number;
   perStage: Record<number, StageScore>;
   weakestStage: number | null;
+  /** مراحلی که هیچ سؤالی از آن‌ها در آزمون نیامده است */
+  missingStages: number[];
 }
 
 export interface SeedPlanEntry {
@@ -217,9 +220,18 @@ export function buildTestOutPlan(
  * ارزیابی نتیجهٔ آزمون میانبر:
  * قبولی = نسبت کلی ≥ ۰٫۹۰، هر گروه مرحلهای ≥ ۰٫۷۰، تجمیعی مراحل ۴+۷ ≥ ۰٫۸۵، بدون راهنما.
  */
-export function testOutResult(attempts: StageAttempt[]): TestOutEvaluation {
+export function testOutResult(
+  attempts: StageAttempt[],
+  requiredStages: readonly number[] = TESTOUT_QUOTAS.map((q) => q.stage),
+): TestOutEvaluation {
   if (attempts.length === 0) {
-    return { passed: false, ratio: 0, perStage: {}, weakestStage: null };
+    return {
+      passed: false,
+      ratio: 0,
+      perStage: {},
+      weakestStage: null,
+      missingStages: [...requiredStages],
+    };
   }
 
   const perStage: Record<number, StageScore> = {};
@@ -260,15 +272,22 @@ export function testOutResult(attempts: StageAttempt[]): TestOutEvaluation {
     }
   }
 
+  const missingStages = requiredStages.filter((st) => !perStage[st] || perStage[st].total === 0);
   const ratio = totalCorrect / attempts.length;
-  const recallOk = recallTotal === 0 || recallCorrect / recallTotal >= TESTOUT_RECALL_FLOOR;
-  const passed = !anyHint && ratio >= TESTOUT_PASS_RATIO && allStagesMeetFloor && recallOk;
+  const recallOk = recallTotal > 0 && recallCorrect / recallTotal >= TESTOUT_RECALL_FLOOR;
+  const passed =
+    !anyHint &&
+    missingStages.length === 0 &&
+    ratio >= TESTOUT_PASS_RATIO &&
+    allStagesMeetFloor &&
+    recallOk;
 
   return {
     passed,
     ratio,
     perStage,
     weakestStage,
+    missingStages,
   };
 }
 
@@ -278,7 +297,9 @@ export function collectUnitTargets(opts: {
   questions: { targets: string[] }[];
   verses: number[];
   lexiconWordIds: string[];
+  surahNumber?: number;
 }): string[] {
+  const surah = opts.surahNumber ?? 28;
   const keys = new Set<string>();
   const tryAdd = (k: string) => {
     try {
@@ -293,25 +314,24 @@ export function collectUnitTargets(opts: {
     for (const t of q.targets) tryAdd(t);
   }
   for (const v of opts.verses) {
-    tryAdd(`vr:${v}`);
-    tryAdd(`vt:${v}`);
-    tryAdd(`vn:${v}`);
-    tryAdd(`sq:${v}`);
+    tryAdd(formatSurahCardKey("vr", v, surah));
+    tryAdd(formatSurahCardKey("vt", v, surah));
+    tryAdd(formatSurahCardKey("vn", v, surah));
+    tryAdd(formatSurahCardKey("sq", v, surah));
   }
   for (const wId of opts.lexiconWordIds) {
-    tryAdd(`w:${wId}`);
+    tryAdd(formatSurahCardKey("w", wId, surah));
   }
-  tryAdd(`pg:${opts.unitId}`);
+  tryAdd(formatSurahCardKey("pg", opts.unitId, surah));
 
   return [...keys];
 }
 
 /**
  * برنامه‌ریزی بذرپاشی کارت‌های واحد پس از قبولی در آزمون میانبر:
- * - مستقیم آزموده‌شده و درست: stability=14 و فاصله بر اساس نوع کارت (14/17/21 روز)
- * - مستقیم آزموده‌شده و غلط: بذر نمی‌زند (در استور کارت عادی newCard ساخته می‌شود)
- * - آزموده‌نشده: stability=7 و فاصلهٔ پایه ۵ روز + پخش یکنواخت در ۱۴ روز آینده (۵ تا ۱۸ روز)
- *   تا بدهی مرور فردا و روزهای بعد هرگز کاربر را خفه نکند.
+ * - مستقیم آزموده‌شده و درست: فاصله بر اساس نوع کارت (14/17/21 روز) با stability سازگار با منحنی FSRS
+ * - مستقیم آزموده‌شده و غلط: بذر نمی‌زند
+ * - آزموده‌نشده: فاصلهٔ ۵ تا ۱۸ روز (پخش یکنواخت در ۱۴ روز آینده) با stability سازگار با FSRS
  */
 export function planUnitSeeding(
   allTargets: string[],
@@ -331,26 +351,26 @@ export function planUnitSeeding(
 
     if (testedOutcomes.has(key)) {
       if (testedOutcomes.get(key) === true) {
+        const intervalDays = TESTED_OK_INTERVAL[kind];
         plan.push({
           key,
-          intervalDays: TESTED_OK_INTERVAL[kind],
-          stability: 14,
+          intervalDays,
+          stability: stabilityForInterval(kind, intervalDays),
         });
       }
-      // اگر غلط بود، بذر نمی‌زنیم
     } else {
       untested.push(key);
     }
   }
 
-  // پخش یکنواخت اهداف آزموده‌نشده در بازهٔ ۵ تا ۱۸ روز (۱۴ روز)
   const spreadUntested = shuffle(untested, rng(seed));
   spreadUntested.forEach((key, idx) => {
-    const staggerDays = idx % 14;
+    const kind = kindOfKey(key);
+    const intervalDays = 5 + (idx % 14);
     plan.push({
       key,
-      intervalDays: 5 + staggerDays,
-      stability: 7,
+      intervalDays,
+      stability: stabilityForInterval(kind, intervalDays),
     });
   });
 

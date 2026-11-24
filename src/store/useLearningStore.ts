@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import { ldb, type QuestionRow } from "../db/learningDb";
 import { gradeQuestion } from "../services/grading";
-import { newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
+import { hasRealFsrsHistory, newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
 import {
   buildTestOutPlan,
@@ -306,7 +306,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const seen = new Set(s.seen).add(q.id);
     const wrongCounts = { ...s.wrongCounts };
     let queue = s.queue;
-    const sessionAnyHint = s.sessionAnyHint || !!meta.usedHint;
+    const isCurrentStageQ = s.sessionType !== "STAGE" || q.stage === s.stage;
+    const sessionAnyHint = s.sessionAnyHint || (isCurrentStageQ && !!meta.usedHint);
     let sessionAnyRequeue = s.sessionAnyRequeue;
     // در مرحله ۸ و آزمون میانبر سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
     if (!res.correct && s.stage !== 8 && s.sessionType !== "TESTOUT") {
@@ -314,7 +315,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       if (prevWrong < MAX_REQUEUE_PER_QUESTION) {
         wrongCounts[q.id] = prevWrong + 1;
         queue = requeue(s.queue, s.index, q, wrongCounts[q.id]);
-        sessionAnyRequeue = true;
+        if (isCurrentStageQ) {
+          sessionAnyRequeue = true;
+        }
       }
     }
     const firstTargetOutcomes = { ...s.firstTargetOutcomes };
@@ -385,8 +388,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
         for (const entry of seedPlan) {
           const prev = existingCards.get(entry.key);
-          // اگر کارت فعلی از قبل در حالت مرور با ثبات مساوی یا بالاتر است، تضعیفش نکن
-          if (prev && prev.state === 2 && prev.stability >= entry.stability) continue;
+          // قاعدهٔ حفاظت: کارت موجود با سابقهٔ واقعی FSRS (از جمله کارت‌هایی که در همین آزمون با submit() مرور شده‌اند) هرگز با بذر بازنویسی نمی‌شود
+          if (hasRealFsrsHistory(prev)) continue;
           toSave.push(
             seedKnownCard(entry.key, {
               now,

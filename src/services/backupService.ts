@@ -379,15 +379,29 @@ export async function createBackupPayload(): Promise<ValidatedBackup> {
 }
 
 export async function restoreValidatedBackup(backup: ValidatedBackup): Promise<void> {
+  // حذف شناسه خودکار دستگاه مبدأ از attempts و confusions برای جلوگیری از تداخل شناسه بین دستگاه‌ها
+  const cleanAttempts: AttemptRow[] = backup.attempts.map(({ id: _id, ...rest }) => rest);
+  const cleanConfusions: ConfusionRow[] = backup.confusions.map(({ id: _id, ...rest }) => rest);
+
   await ldb.transaction(
     "rw",
     [ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, ldb.profile],
     async () => {
+      // جایگزینی کامل (Replace) به جای ادغام (Merge) تا وضعیت دقیق پشتیبان بازیابی شود
+      await ldb.cards.clear();
+      await ldb.attempts.clear();
+      await ldb.confusions.clear();
+      await ldb.unitProgress.clear();
+
       if (backup.cards.length) await ldb.cards.bulkPut(backup.cards);
-      if (backup.attempts.length) await ldb.attempts.bulkPut(backup.attempts);
-      if (backup.confusions.length) await ldb.confusions.bulkPut(backup.confusions);
+      if (cleanAttempts.length) await ldb.attempts.bulkAdd(cleanAttempts);
+      if (cleanConfusions.length) await ldb.confusions.bulkAdd(cleanConfusions);
       if (backup.unitProgress.length) await ldb.unitProgress.bulkPut(backup.unitProgress);
-      if (backup.profile) await ldb.profile.put(backup.profile);
+      if (backup.profile) {
+        await ldb.profile.put(backup.profile);
+      } else {
+        await ldb.profile.put({ ...DEFAULT_USER_PROFILE, updatedAt: Date.now() });
+      }
     },
   );
 }

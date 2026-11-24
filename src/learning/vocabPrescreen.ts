@@ -1,10 +1,10 @@
 // src/learning/vocabPrescreen.ts
 // منطق خالص پیش‌غربال واژگان (فلش‌کارت تأیید دومرحله‌ای) — بدون وابستگی به UI/DB.
-import { newCard, seedKnownCard, type StoredCard } from "./cardScheduler";
+import { formatSurahCardKey } from "../config/surahConfig";
+import { hasRealFsrsHistory, seedKnownCard, type StoredCard } from "./cardScheduler";
 
-export const PRESCREEN_MAX_WORDS = 12;
+export const PRESCREEN_MAX_WORDS = 24;
 export const PRESCREEN_KNOWN_INTERVAL_DAYS = 10;
-export const PRESCREEN_KNOWN_STABILITY = 10;
 
 export interface PrescreenWord {
   wordId: string;
@@ -21,17 +21,17 @@ export interface PrescreenOutcome {
 }
 
 /**
- * انتخاب واژگان واجد شرایط پیش‌غربال یک واحد با سقف PRESCREEN_MAX_WORDS
- * تا پیش‌غربال از خود درس مرحله ۱ طولانی‌تر نشود.
+ * انتخاب واژگان واجد شرایط پیش‌غربال یک واحد با سقف PRESCREEN_MAX_WORDS.
  * واژگانی که از قبل کارت مرور پایدار دارند حذف می‌شوند و واژگان سخت در اولویت‌اند.
  */
 export function selectPrescreenWords(
   words: PrescreenWord[],
   cards: Map<string, StoredCard>,
   maxWords: number = PRESCREEN_MAX_WORDS,
+  surahNumber = 28,
 ): PrescreenWord[] {
   const eligible = words.filter((w) => {
-    const c = cards.get(`w:${w.wordId}`);
+    const c = cards.get(formatSurahCardKey("w", w.wordId, surahNumber));
     return !(c && c.state === 2 && c.stability >= 7);
   });
 
@@ -47,30 +47,27 @@ export function selectPrescreenWords(
 
 /**
  * تبدیل نتایج پیش‌غربال به کارت‌های FSRS:
- * - «بلدم + درست گفتم»: کارت مرور با فاصلهٔ ۱۰ روز و stability=10
- * - «بلد نیستم» یا «اشتباه گفتم»: اگر کارتی ندارد، کارت تازه (newCard)
+ * - «بلدم + درست گفتم»: کارت مرور با فاصلهٔ ۱۰ روز و stability سازگار با FSRS (مگر اینکه کارت از قبل سابقه واقعی FSRS داشته باشد).
+ * - «بلد نیستم» یا «اشتباه گفتم»: هیچ کاری نکن (کارت خالی ساخته نمی‌شود تا مخرج آمار تسلط باد نکند).
  */
 export function applyPrescreenOutcomes(
   outcomes: PrescreenOutcome[],
   existingCards: Map<string, StoredCard>,
   now: Date = new Date(),
+  surahNumber = 28,
 ): StoredCard[] {
   const out: StoredCard[] = [];
   for (const item of outcomes) {
-    const key = `w:${item.wordId}`;
+    if (!item.confirmedKnown) continue;
+    const key = formatSurahCardKey("w", item.wordId, surahNumber);
     const prev = existingCards.get(key);
-    if (item.confirmedKnown) {
-      if (prev && prev.state === 2 && prev.stability >= PRESCREEN_KNOWN_STABILITY) continue;
-      out.push(
-        seedKnownCard(key, {
-          now,
-          intervalDays: PRESCREEN_KNOWN_INTERVAL_DAYS,
-          stability: PRESCREEN_KNOWN_STABILITY,
-        }),
-      );
-    } else if (!prev) {
-      out.push(newCard(key, now));
-    }
+    if (hasRealFsrsHistory(prev)) continue;
+    out.push(
+      seedKnownCard(key, {
+        now,
+        intervalDays: PRESCREEN_KNOWN_INTERVAL_DAYS,
+      }),
+    );
   }
   return out;
 }
