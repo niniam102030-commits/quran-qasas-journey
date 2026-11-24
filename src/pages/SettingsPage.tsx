@@ -19,7 +19,9 @@ import {
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { PACE_MODE_LIST } from "../learning/pace";
 import { usePreferencesStore } from "../store/usePreferencesStore";
-
+import { Capacitor } from "@capacitor/core";
+import { App as CapApp } from "@capacitor/app";
+import { APP_VERSION } from "../appVersion";
 interface Props {
   onBack: () => void;
   onOpenProfiles?: () => void;
@@ -59,6 +61,20 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
   const setReminderHourOverride = usePreferencesStore((s) => s.setReminderHourOverride);
 
   const [autoReminderHour, setAutoReminderHour] = useState<number>(20);
+  const [versionCode, setVersionCode] = useState<string>("—");
+
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    let active = true;
+    CapApp.getInfo()
+      .then((info) => {
+        if (active && info.build) setVersionCode(info.build);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, []);
   const [fsrsPersonalized, setFsrsPersonalized] = useState<boolean>(false);
   const [fsrsResetNotice, setFsrsResetNotice] = useState<string | null>(null);
   const [sherpaAvailable, setSherpaAvailable] = useState<boolean>(false);
@@ -189,6 +205,9 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               سفارشی‌سازی ظاهر و پشتیبان‌گیری
+            </p>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400" dir="rtl">
+              نسخهٔ {toFarsi(APP_VERSION.replace(/\./g, "٫"))} (کد {versionCode === "—" ? "—" : toFarsi(versionCode)})
             </p>
           </div>
         </div>

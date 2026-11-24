@@ -54,11 +54,7 @@ jobs:
         id: version
         run: |
           VERSION_CODE=$((100 + ${{ github.run_number }}))
-          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
-            VERSION_NAME="${GITHUB_REF_NAME#v}"
-          else
-            VERSION_NAME="1.2.${{ github.run_number }}"
-          fi
+          VERSION_NAME="$(jq -r .version package.json)"
           echo "code=$VERSION_CODE" >> "$GITHUB_OUTPUT"
           echo "name=$VERSION_NAME" >> "$GITHUB_OUTPUT"
           echo "Building Android versionName=$VERSION_NAME (versionCode=$VERSION_CODE)"
@@ -92,21 +88,23 @@ jobs:
       - name: Copy & rename APK
         run: |
           mkdir -p release-apk
-          cp "$APK_PATH" release-apk/quran-qasas-android.apk
+          APK_NAME="quran-qasas-${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}.apk"
+          cp "$APK_PATH" "release-apk/$APK_NAME"
+          echo "APK_NAME=$APK_NAME" >> "$GITHUB_ENV"
 
       - name: Print APK signing certificate SHA-256 fingerprint
         run: |
-          keytool -printcert -jarfile release-apk/quran-qasas-android.apk | grep -E "Owner:|Issuer:|Valid|SHA256:" || true
+          keytool -printcert -jarfile "release-apk/$APK_NAME" | grep -E "Owner:|Issuer:|Valid|SHA256:" || true
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: quran-qasas-android-apk
-          path: release-apk/quran-qasas-android.apk
+          name: quran-qasas-${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}
+          path: release-apk/${{ env.APK_NAME }}
           retention-days: 30
 
       - name: Attach APK to GitHub Release (on tags)
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: release-apk/quran-qasas-android.apk
+          files: release-apk/${{ env.APK_NAME }}
