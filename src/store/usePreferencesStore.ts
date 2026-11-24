@@ -1,12 +1,14 @@
 // src/store/usePreferencesStore.ts
-// منبع واحد تنظیمات کاربر: حالت تاریک، افکت‌های صوتی، لرزش لمسی و اندازه قلم عربی
+// منبع واحد تنظیمات کاربر: حالت تاریک، افکت‌های صوتی، لرزش لمسی، اندازه قلم عربی و حالت سرعت مرور
 import { create } from "zustand";
+import { isPaceMode, type PaceMode } from "../learning/pace";
 
 interface PreferencesState {
   darkMode: boolean;
   soundEnabled: boolean;
   hapticsEnabled: boolean;
   arabicFontSize: number;
+  paceMode: PaceMode;
   initPreferences: () => void;
   setDarkMode: (dark: boolean) => void;
   toggleDarkMode: () => void;
@@ -15,6 +17,7 @@ interface PreferencesState {
   setHapticsEnabled: (enabled: boolean) => void;
   toggleHapticsEnabled: () => void;
   setArabicFontSize: (size: number) => void;
+  setPaceMode: (mode: PaceMode) => void;
 }
 
 function readBool(key: string, fallback: boolean): boolean {
@@ -38,6 +41,12 @@ function readInitialFontSize(): number {
   return Number.isFinite(raw) ? Math.min(40, Math.max(22, raw)) : 28;
 }
 
+function readInitialPaceMode(): PaceMode {
+  if (typeof window === "undefined") return "standard";
+  const saved = localStorage.getItem("pace_mode");
+  return isPaceMode(saved) ? saved : "standard";
+}
+
 function applyDarkClass(dark: boolean) {
   if (typeof document === "undefined") return;
   document.documentElement.classList.toggle("dark", dark);
@@ -48,6 +57,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   soundEnabled: readBool("sound_enabled", true),
   hapticsEnabled: readBool("haptics_enabled", true),
   arabicFontSize: readInitialFontSize(),
+  paceMode: readInitialPaceMode(),
 
   initPreferences: () => {
     const dark = readInitialDark();
@@ -57,6 +67,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       soundEnabled: readBool("sound_enabled", true),
       hapticsEnabled: readBool("haptics_enabled", true),
       arabicFontSize: readInitialFontSize(),
+      paceMode: readInitialPaceMode(),
     });
   },
 
@@ -100,5 +111,12 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       localStorage.setItem("quran_font_size", String(clamped));
     }
     set({ arabicFontSize: clamped });
+  },
+
+  setPaceMode: (mode) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("pace_mode", mode);
+    }
+    set({ paceMode: mode });
   },
 }));

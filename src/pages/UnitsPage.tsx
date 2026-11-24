@@ -1,11 +1,14 @@
 // src/pages/UnitsPage.tsx
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۵ ایستگاه داستانی به سبک دولینگو، با دکمه‌های سه‌بعدی و نوار آمار زنده.
 import { useEffect, useState } from "react";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
+import { buildReviewForecast, type ForecastDay } from "../learning/forecast";
+import { PACE_MODE_LIST, summarizeForecastLoad } from "../learning/pace";
+import { usePreferencesStore } from "../store/usePreferencesStore";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
 import TasmiModal from "../components/mushaf/TasmiModal";
 import VocabPrescreenModal from "../components/learning/VocabPrescreenModal";
@@ -125,6 +128,9 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
   const [tasmiUnit, setTasmiUnit] = useState<UnitInfo | null>(null);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
+  const [forecastDays, setForecastDays] = useState<ForecastDay[]>([]);
+  const paceMode = usePreferencesStore((s) => s.paceMode);
+  const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [profile, setProfile] = useState<UserProfileRow>(DEFAULT_USER_PROFILE);
   const [error, setError] = useState<string | null>(null);
@@ -167,6 +173,7 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
         return firstIncomplete?.unitId ?? sorted[0]?.unitId ?? null;
       });
       setDebt(reviewDebt(cards));
+      setForecastDays(buildReviewForecast(cards));
       setMasteryCount({
         total: cards.length,
         level3: cards.filter((c: StoredCard) => skillLevel(c) >= 3).length,
@@ -345,6 +352,82 @@ export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab,
               </div>
             </div>
           )}
+
+          {/* Pace Mode & 7-Day Review Forecast (F5) */}
+          {(() => {
+            const load = summarizeForecastLoad(forecastDays, paceMode);
+            const maxBar = Math.max(load.cap, load.peakDay?.dueCount ?? 0, 1);
+            return (
+              <div className="p-4 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-[#E5DEC9] dark:border-[#3A506B] shadow-sm space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <Gauge className="w-4 h-4 text-[#00A896]" />
+                    <span className="text-xs font-black text-slate-800 dark:text-slate-100">
+                      پیش‌بینی مرور ۷ روز آینده
+                    </span>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                      ({toFarsiNum(load.total7Days)} کارت)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    {PACE_MODE_LIST.map((m) => (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => setPaceMode(m.id)}
+                        className={`px-2.5 py-1 rounded-xl text-[11px] font-extrabold transition-all ${
+                          paceMode === m.id
+                            ? "bg-[#00A896] text-white shadow-sm"
+                            : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+                        }`}
+                      >
+                        {m.labelFa} ({toFarsiNum(m.dailyReviewCap)})
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {forecastDays.length > 0 && (
+                  <div className="grid grid-cols-7 gap-1.5 items-end pt-1">
+                    {forecastDays.map((d) => {
+                      const over = d.dueCount > load.cap;
+                      const heightPct = Math.max(10, Math.round((d.dueCount / maxBar) * 100));
+                      return (
+                        <div key={d.dayOffset} className="flex flex-col items-center gap-1">
+                          <span
+                            className={`text-[10px] font-black ${
+                              over
+                                ? "text-rose-600 dark:text-rose-400"
+                                : "text-slate-600 dark:text-slate-300"
+                            }`}
+                          >
+                            {toFarsiNum(d.dueCount)}
+                          </span>
+                          <div className="w-full h-12 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-end overflow-hidden p-0.5">
+                            <div
+                              className={`w-full rounded-md transition-all ${
+                                over ? "bg-rose-500" : d.dueCount > 0 ? "bg-[#00A896]" : "bg-slate-300 dark:bg-slate-700"
+                              }`}
+                              style={{ height: `${heightPct}%` }}
+                            />
+                          </div>
+                          <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 truncate max-w-full">
+                            {d.dayOffset === 0 ? "امروز" : d.dayOffset === 1 ? "فردا" : `+${toFarsiNum(d.dayOffset)}`}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {load.overCapDays > 0 && (
+                  <p className="text-[11px] font-bold text-rose-700 dark:text-rose-300">
+                    در {toFarsiNum(load.overCapDays)} روز آینده بار مرور از سقف روزانهٔ {toFarsiNum(load.cap)} سؤال بیشتر است؛ پیشنهاد می‌شود پیشروی جدید را کمی آهسته‌تر کنید.
+                  </p>
+                )}
+              </div>
+            );
+          })()}
         </section>
 
         {/* 22 Learning Units grouped by 5 Story Stations (Duolingo Journey Path) */}

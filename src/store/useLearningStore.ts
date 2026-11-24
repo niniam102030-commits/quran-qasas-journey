@@ -14,6 +14,8 @@ import {
   type TestOutQuestion,
 } from "../learning/testOut";
 import { filterPrescreenedStage1Questions } from "../learning/vocabPrescreen";
+import { dailyReviewCapFor } from "../learning/pace";
+import { usePreferencesStore } from "./usePreferencesStore";
 import {
   stagePassed,
   canUnlockNext,
@@ -169,14 +171,15 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     });
   },
 
-  startReview: async (size = 20) => {
+  startReview: async (size) => {
+    const reviewLimit = size ?? dailyReviewCapFor(usePreferencesStore.getState().paceMode);
     set({ status: "loading", summary: null, lastResult: null });
     const now = new Date();
     const cards = await ldb.cards.toArray();
     const dueKeys = cards.filter((c) => c.state !== 0 && new Date(c.due) <= now).sort((a, b) => a.due.localeCompare(b.due)).map((c) => c.key);
     const picked = new Map<string, QuestionRow>();
     for (const k of dueKeys) {
-      if (picked.size >= size) break;
+      if (picked.size >= reviewLimit) break;
       const qs = await ldb.questions.where("targets").equals(k).toArray();
       // سوال تک‌هدفه و در سطح پایدار کارت را ترجیح بده
       const cand = qs.filter((q) => q.stage >= 5 || q.targets.length === 1).sort((a, b) => a.targets.length - b.targets.length);

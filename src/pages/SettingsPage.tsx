@@ -4,6 +4,7 @@ import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, Chev
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
+import { PACE_MODE_LIST } from "../learning/pace";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
@@ -15,10 +16,12 @@ export default function SettingsPage({ onBack }: Props) {
   const isDark = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
+  const paceMode = usePreferencesStore((s) => s.paceMode);
   const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
   const handleToggleTheme = usePreferencesStore((s) => s.toggleDarkMode);
   const handleToggleSound = usePreferencesStore((s) => s.toggleSoundEnabled);
   const handleToggleHaptics = usePreferencesStore((s) => s.toggleHapticsEnabled);
+  const handlePaceModeChange = usePreferencesStore((s) => s.setPaceMode);
 
   const [showResetConfirm, setShowResetConfirm] = useState<boolean>(false);
   const [resetSuccess, setResetSuccess] = useState<boolean>(false);
@@ -125,6 +128,43 @@ export default function SettingsPage({ onBack }: Props) {
       </header>
 
       <main className="max-w-2xl mx-auto p-4 sm:p-6 space-y-6">
+        {/* Pace Mode & Daily Review Cap (F5) */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <div>
+            <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+              حالت سرعت و سقف مرور روزانه
+            </h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              سقف تعداد سؤال‌های جلسهٔ مرور روزانه را متناسب با وقت و سرعت پیشروی خود تنظیم کنید.
+            </p>
+          </div>
+          <div className="grid grid-cols-3 gap-2.5">
+            {PACE_MODE_LIST.map((mode) => {
+              const active = paceMode === mode.id;
+              return (
+                <button
+                  key={mode.id}
+                  type="button"
+                  onClick={() => handlePaceModeChange(mode.id)}
+                  className={`p-3 rounded-2xl border-2 text-center transition-all space-y-1 ${
+                    active
+                      ? "bg-teal-50 dark:bg-teal-950/50 border-[#00A896] text-[#028090] dark:text-teal-300 shadow-sm"
+                      : "bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-teal-400"
+                  }`}
+                >
+                  <div className="font-black text-sm">{mode.labelFa}</div>
+                  <div className="text-[11px] font-bold opacity-85">
+                    {mode.dailyReviewCap.toLocaleString("fa-IR")} سؤال/روز
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-slate-500 dark:text-slate-400">
+            {PACE_MODE_LIST.find((m) => m.id === paceMode)?.descriptionFa}
+          </p>
+        </section>
+
         {/* Arabic Font Size Setting */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
           <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
