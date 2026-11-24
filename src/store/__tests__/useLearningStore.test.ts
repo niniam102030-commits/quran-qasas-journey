@@ -386,4 +386,59 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
     // 6 correct * 10 + 20 (passed: 6/7 >= 0.85) + 5 (combo bonus for maxCombo=5) = 85 XP
     expect(summary.xpEarned).toBe(85);
   });
+
+  it("A3: DRILL session records attempts with sessionType='DRILL' and does not modify FSRS cards or unitProgress", async () => {
+    const existingCard = newCard("sq:5");
+    await ldb.cards.put(existingCard);
+    await ldb.unitProgress.put({
+      unitId: "u_p385b",
+      unlocked: true,
+      stagePassed: {},
+      stageLessons: {},
+      currentStage: 1,
+      mastered: false,
+      updatedAt: 1000,
+    });
+
+    const drillQ: QuestionRow = {
+      id: "exam:link:28:u_p385b:u_p386a",
+      unitId: "u_p386a",
+      stage: 5,
+      skill: "sequence",
+      type: "NEXT_VERSE_CHOICE",
+      shape: "choice",
+      difficulty: 4,
+      targets: ["sq:5"],
+      options: [{ id: "v:6", ar: "آیه ۶" }, { id: "v:10", ar: "آیه ۱۰" }],
+      answer: "v:6",
+    };
+
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "DRILL",
+      unitId: null,
+      stage: -5,
+      queue: [drillQ],
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      seen: new Set(),
+    });
+
+    await useLearningStore.getState().submit("v:10", { responseMs: 2500 });
+    await useLearningStore.getState().next();
+
+    const attempts = await ldb.attempts.toArray();
+    expect(attempts).toHaveLength(1);
+    expect(attempts[0].sessionType).toBe("DRILL");
+    expect(attempts[0].correct).toBe(false);
+
+    // کارت‌های FSRS نباید تغییر کنند
+    const afterCard = await ldb.cards.get("sq:5");
+    expect(afterCard).toEqual(existingCard);
+
+    // پیشرفت واحد نباید تغییر کند
+    const prog = await ldb.unitProgress.get("u_p385b");
+    expect(prog?.updatedAt).toBe(1000);
+  });
 });

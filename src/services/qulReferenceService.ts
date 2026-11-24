@@ -1,7 +1,9 @@
 // src/services/qulReferenceService.ts
 // بارگذاری و کوئری داده‌های مرجع قرآنی (QUL / Quran.com API v4 + Quranic Arabic Corpus)
 // شامل تایم‌استمپ کلمه‌به‌کلمه تلاوت استاد منشاوی و صرف/ریشه‌شناسی رسمی واژگان
-import { ACTIVE_SURAH } from "../config/surahConfig";
+import { ACTIVE_SURAH, getActiveSurahNumber } from "../config/surahConfig";
+import { ldb } from "../db/learningDb";
+import type { SurahTajweedData } from "../learning/tajweed";
 
 /** [wordIndex1Based, startMs, endMs] */
 export type WordAudioSegment = [number, number, number];
@@ -41,23 +43,42 @@ export interface QulMorphologyFile {
 
 const timingCache = new Map<string, Record<string, WordAudioSegment[]>>();
 const morphCache = new Map<string, Record<string, QulMorphologyEntry>>();
+const tajweedCache = new Map<string, SurahTajweedData | null>();
 
 function basePrefix(): string {
   const b = (import.meta as unknown as { env?: { BASE_URL?: string } }).env?.BASE_URL;
   return b || "/";
 }
 
+export function clearQulReferenceCache(): void {
+  timingCache.clear();
+  morphCache.clear();
+  tajweedCache.clear();
+}
+
 export async function loadQulAudioTimings(
   slug: string = ACTIVE_SURAH.slug,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<Record<string, WordAudioSegment[]>> {
-  const cached = timingCache.get(slug);
+  const cacheKey = `${slug}:${surahNumber}`;
+  const cached = timingCache.get(cacheKey);
   if (cached) return cached;
+  if (surahNumber !== 28) {
+    try {
+      const row = await ldb.meta.get(`surahTimings:${surahNumber}`);
+      const verses = (row?.value as Record<string, WordAudioSegment[]> | undefined) ?? {};
+      timingCache.set(cacheKey, verses);
+      return verses;
+    } catch {
+      return {};
+    }
+  }
   try {
     const res = await fetch(`${basePrefix()}content/base/${slug}.audio-timing.json`);
     if (!res.ok) return {};
     const data = (await res.json()) as QulAudioTimingFile;
     const verses = data.verses ?? {};
-    timingCache.set(slug, verses);
+    timingCache.set(cacheKey, verses);
     return verses;
   } catch {
     return {};
@@ -66,18 +87,48 @@ export async function loadQulAudioTimings(
 
 export async function loadQulMorphology(
   slug: string = ACTIVE_SURAH.slug,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<Record<string, QulMorphologyEntry>> {
-  const cached = morphCache.get(slug);
+  const cacheKey = `${slug}:${surahNumber}`;
+  const cached = morphCache.get(cacheKey);
   if (cached) return cached;
+  if (surahNumber !== 28) {
+    try {
+      const row = await ldb.meta.get(`surahMorph:${surahNumber}`);
+      const words = (row?.value as Record<string, QulMorphologyEntry> | undefined) ?? {};
+      morphCache.set(cacheKey, words);
+      return words;
+    } catch {
+      return {};
+    }
+  }
   try {
     const res = await fetch(`${basePrefix()}content/base/${slug}.morphology.json`);
     if (!res.ok) return {};
     const data = (await res.json()) as QulMorphologyFile;
     const words = data.words ?? {};
-    morphCache.set(slug, words);
+    morphCache.set(cacheKey, words);
     return words;
   } catch {
     return {};
+  }
+}
+
+export async function loadTajweedData(
+  slug: string = ACTIVE_SURAH.slug,
+): Promise<SurahTajweedData | null> {
+  if (tajweedCache.has(slug)) return tajweedCache.get(slug) ?? null;
+  try {
+    const res = await fetch(`${basePrefix()}content/base/${slug}.tajweed.json`);
+    if (!res.ok) {
+      tajweedCache.set(slug, null);
+      return null;
+    }
+    const data = (await res.json()) as SurahTajweedData;
+    tajweedCache.set(slug, data);
+    return data;
+  } catch {
+    return null;
   }
 }
 

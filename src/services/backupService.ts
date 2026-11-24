@@ -9,6 +9,7 @@ import {
   type UserProfileRow,
 } from "../db/learningDb";
 import type { CardKind, StoredCard } from "../learning/cardScheduler";
+import { getActiveProfile } from "./profileManager";
 
 export const BACKUP_APP_ID = "quran-qasas-journey";
 export const BACKUP_SCHEMA_VERSION = 2;
@@ -23,6 +24,7 @@ export interface ValidatedBackup {
   app: typeof BACKUP_APP_ID;
   schemaVersion: number;
   exportedAt: string;
+  sourceProfileName?: string;
   cards: StoredCard[];
   attempts: AttemptRow[];
   confusions: ConfusionRow[];
@@ -335,6 +337,9 @@ export function parseAndValidateBackup(rawText: string): ValidatedBackup {
   const exportedAt = isValidIsoDate(parsed.exportedAt)
     ? parsed.exportedAt
     : new Date().toISOString();
+  const sourceProfileName = isNonEmptyString(parsed.sourceProfileName, 128)
+    ? parsed.sourceProfileName.trim()
+    : undefined;
 
   const cards = validateArray(parsed.cards, "cards", true, validateCard);
   const attempts = validateArray(parsed.attempts, "attempts", false, validateAttempt);
@@ -349,6 +354,7 @@ export function parseAndValidateBackup(rawText: string): ValidatedBackup {
     app: BACKUP_APP_ID,
     schemaVersion,
     exportedAt,
+    ...(sourceProfileName ? { sourceProfileName } : {}),
     cards,
     attempts,
     confusions,
@@ -366,10 +372,18 @@ export async function createBackupPayload(): Promise<ValidatedBackup> {
     ldb.profile.get("main"),
   ]);
 
+  let sourceProfileName = "اصلی";
+  try {
+    sourceProfileName = getActiveProfile().name;
+  } catch {
+    // ignore
+  }
+
   return {
     app: BACKUP_APP_ID,
     schemaVersion: BACKUP_SCHEMA_VERSION,
     exportedAt: new Date().toISOString(),
+    sourceProfileName,
     cards,
     attempts,
     confusions,

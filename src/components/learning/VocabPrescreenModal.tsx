@@ -2,7 +2,8 @@
 // فلش‌کارت پیش‌غربال واژگان با تأیید دومرحله‌ای (بلدم ← نمایش معنی ← درست گفتم / اشتباه گفتم)
 import { useEffect, useState } from "react";
 import { X, CheckCircle2, XCircle, Sparkles, BookOpen } from "lucide-react";
-import { ldb } from "../../db/learningDb";
+import { ldb, verseKey } from "../../db/learningDb";
+import { getActiveSurahNumber } from "../../config/surahConfig";
 import {
   selectPrescreenWords,
   applyPrescreenOutcomes,
@@ -46,7 +47,8 @@ export default function VocabPrescreenModal({ unitId, onClose, onStartStage1 }: 
         };
       });
       const verseNums = [...new Set(parsedMeta.map((p) => p.verse))];
-      const verses = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(n)));
+      const surah = getActiveSurahNumber();
+      const verses = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(verseKey(surah, n))));
       const wordsByVerse = new Map<number, { i: number; ar: string }[]>();
       for (const v of verses) {
         if (v) {

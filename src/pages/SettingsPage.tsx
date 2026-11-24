@@ -1,27 +1,45 @@
 // src/pages/SettingsPage.tsx
 import { useEffect, useState } from "react";
-import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell } from "lucide-react";
+import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell, Mic, Trash2, Users, BookOpen } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
 import { bestReminderHour, syncDailyReminder } from "../services/reminderService";
+import { loadFsrsTuningFromMeta, resetFsrsTuning } from "../services/fsrsTuningService";
+import { getActiveProfile, profileAvatarLetter } from "../services/profileManager";
+import { getMeta } from "../services/metaStore";
+import type { SurahPackMeta } from "../services/surahPackService";
+import {
+  deleteSherpaModel,
+  downloadSherpaModel,
+  getSherpaModelStatus,
+  MODEL_SIZE_MB,
+  sherpaAsr,
+  SHERPA_ONNX_VERSION,
+} from "../services/sherpaAsr";
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { PACE_MODE_LIST } from "../learning/pace";
 import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
   onBack: () => void;
+  onOpenProfiles?: () => void;
+  onOpenSurahs?: () => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) =>
   String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 
-export default function SettingsPage({ onBack }: Props) {
+export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs }: Props) {
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
   const isDark = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const hapticsEnabled = usePreferencesStore((s) => s.hapticsEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
+  const autoFollowMushaf = usePreferencesStore((s) => s.autoFollowMushaf);
+  const tajweedColorsEnabled = usePreferencesStore((s) => s.tajweedColorsEnabled);
+  const offlineAsrEnabled = usePreferencesStore((s) => s.offlineAsrEnabled);
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
   const reminderEnabled = usePreferencesStore((s) => s.reminderEnabled);
   const reminderHourOverride = usePreferencesStore((s) => s.reminderHourOverride);
   const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
@@ -29,15 +47,33 @@ export default function SettingsPage({ onBack }: Props) {
   const handleToggleSound = usePreferencesStore((s) => s.toggleSoundEnabled);
   const handleToggleHaptics = usePreferencesStore((s) => s.toggleHapticsEnabled);
   const handlePaceModeChange = usePreferencesStore((s) => s.setPaceMode);
+  const toggleAutoFollowMushaf = usePreferencesStore((s) => s.toggleAutoFollowMushaf);
+  const toggleTajweedColorsEnabled = usePreferencesStore((s) => s.toggleTajweedColorsEnabled);
+  const toggleOfflineAsrEnabled = usePreferencesStore((s) => s.toggleOfflineAsrEnabled);
   const setReminderEnabled = usePreferencesStore((s) => s.setReminderEnabled);
   const setReminderHourOverride = usePreferencesStore((s) => s.setReminderHourOverride);
 
   const [autoReminderHour, setAutoReminderHour] = useState<number>(20);
+  const [fsrsPersonalized, setFsrsPersonalized] = useState<boolean>(false);
+  const [fsrsResetNotice, setFsrsResetNotice] = useState<string | null>(null);
+  const [sherpaAvailable, setSherpaAvailable] = useState<boolean>(false);
+  const [sherpaInstalled, setSherpaInstalled] = useState<boolean>(false);
+  const [sherpaDownloading, setSherpaDownloading] = useState<boolean>(false);
+  const [sherpaProgress, setSherpaProgress] = useState<{ loaded: number; total: number } | null>(null);
+  const [sherpaNotice, setSherpaNotice] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
     ldb.attempts.toArray().then((rows) => {
       if (active) setAutoReminderHour(bestReminderHour(rows));
+    });
+    loadFsrsTuningFromMeta().then((res) => {
+      if (active) setFsrsPersonalized(res.personalized);
+    });
+    void Promise.all([sherpaAsr.isAvailable(), getSherpaModelStatus()]).then(([avail, st]) => {
+      if (!active) return;
+      setSherpaAvailable(avail);
+      setSherpaInstalled(st.installed);
     });
     return () => {
       active = false;
@@ -88,14 +124,19 @@ export default function SettingsPage({ onBack }: Props) {
   const handleResetProgress = async () => {
     try {
       let firstUnitId: string | null = null;
-      try {
-        const res = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
-        if (res.ok) {
-          const manifest = (await res.json()) as { units: { id: string; order: number }[] };
-          firstUnitId = manifest.units.slice().sort((a, b) => a.order - b.order)[0]?.id ?? null;
+      if (activeSurah === 28) {
+        try {
+          const res = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+          if (res.ok) {
+            const manifest = (await res.json()) as { units: { id: string; order: number }[] };
+            firstUnitId = manifest.units.slice().sort((a, b) => a.order - b.order)[0]?.id ?? null;
+          }
+        } catch {
+          // fallback below
         }
-      } catch {
-        // fallback below
+      } else {
+        const packMeta = await getMeta<SurahPackMeta | null>(`surahPackMeta:${activeSurah}`, null);
+        firstUnitId = packMeta?.units?.[0]?.id ?? null;
       }
 
       await ldb.transaction("rw", [ldb.cards, ldb.attempts, ldb.confusions, ldb.unitProgress, ldb.profile], async () => {
@@ -149,6 +190,60 @@ export default function SettingsPage({ onBack }: Props) {
       </header>
 
       <main className="max-w-2xl mx-auto p-4 sm:p-6 space-y-6">
+        {/* Multi-Profile Manager (C2) */}
+        {onOpenProfiles && (
+          <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="w-10 h-10 rounded-2xl bg-teal-600 text-white font-black flex items-center justify-center shrink-0">
+                {profileAvatarLetter(getActiveProfile().name)}
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">
+                  پروفایل فعال: {getActiveProfile().name}
+                </div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                  مدیریت چند کاربر با داده‌های کاملاً جداگانه روی این دستگاه
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={onOpenProfiles}
+              className="py-2 px-3.5 rounded-2xl bg-teal-50 hover:bg-teal-100 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-[#028090] dark:text-teal-300 font-bold text-xs flex items-center gap-1.5 shrink-0"
+            >
+              <Users className="w-4 h-4" />
+              <span>تغییر پروفایل</span>
+            </button>
+          </section>
+        )}
+
+        {/* Multi-Surah Pack Manager (D) */}
+        {onOpenSurahs && (
+          <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="w-10 h-10 rounded-2xl bg-amber-600 text-white font-black flex items-center justify-center shrink-0">
+                <BookOpen className="w-5 h-5" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">
+                  سورهٔ فعال: {activeSurah === 28 ? "سوره قصص" : `سوره شماره ${toFarsi(activeSurah)}`}
+                </div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                  نصب پک‌های سورهٔ تازه با بررسی SHA-256 و جابه‌جایی بدون حذف داده‌ها
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={onOpenSurahs}
+              className="py-2 px-3.5 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-300 font-bold text-xs flex items-center gap-1.5 shrink-0"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>مدیریت سوره‌ها</span>
+            </button>
+          </section>
+        )}
+
         {/* Pace Mode & Daily Review Cap (F5) */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
           <div>
@@ -279,6 +374,50 @@ export default function SettingsPage({ onBack }: Props) {
                 />
               </button>
             </div>
+
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
+              <div className="space-y-0.5">
+                <span className="text-xs font-semibold block">دنبال‌کردن خودکار مصحف هنگام پخش پیوسته</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                  در زمان پخش پیوسته، آیه فعال به‌طور خودکار در مرکز صفحه نگه داشته می‌شود.
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={toggleAutoFollowMushaf}
+                className={`w-12 h-6 rounded-full transition-colors relative shrink-0 ${
+                  autoFollowMushaf ? "bg-teal-600" : "bg-slate-300"
+                }`}
+              >
+                <span
+                  className={`w-5 h-5 rounded-full bg-white shadow-sm absolute top-0.5 transition-transform ${
+                    autoFollowMushaf ? "left-1" : "right-1"
+                  }`}
+                />
+              </button>
+            </div>
+
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
+              <div className="space-y-0.5">
+                <span className="text-xs font-semibold block">رنگ‌های تجوید در مصحف</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                  نمایش رنگی کلمات دارای احکام تجوید (غنه، اخفا، ادغام، اقلاب، مد، قلقله)
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={toggleTajweedColorsEnabled}
+                className={`w-12 h-6 rounded-full transition-colors relative shrink-0 ${
+                  tajweedColorsEnabled ? "bg-amber-600" : "bg-slate-300"
+                }`}
+              >
+                <span
+                  className={`w-5 h-5 rounded-full bg-white shadow-sm absolute top-0.5 transition-transform ${
+                    tajweedColorsEnabled ? "left-1" : "right-1"
+                  }`}
+                />
+              </button>
+            </div>
           </div>
         </section>
 
@@ -341,6 +480,144 @@ export default function SettingsPage({ onBack }: Props) {
               </select>
             </div>
           </div>
+        </section>
+
+        {/* FSRS Personal Tuning */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+            شخصی‌سازی الگوریتم مرور (FSRS)
+          </h2>
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            وضعیت فعلی: {fsrsPersonalized ? "زمان‌بندی شخصی‌سازی‌شده فعال است" : "پیش‌فرض استاندارد"}
+          </p>
+          <button
+            type="button"
+            onClick={async () => {
+              await resetFsrsTuning();
+              setFsrsPersonalized(false);
+              setFsrsResetNotice("شخصی‌سازی FSRS به مقادیر پیش‌فرض بازنشانی شد.");
+              setTimeout(() => setFsrsResetNotice(null), 3000);
+            }}
+            className="w-full py-2.5 px-4 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-bold text-xs flex items-center justify-center gap-2 transition-all"
+          >
+            <RotateCcw className="w-4 h-4" />
+            <span>بازنشانی شخصی‌سازی FSRS</span>
+          </button>
+          {fsrsResetNotice && (
+            <div className="p-2.5 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center gap-2">
+              <Check className="w-4 h-4 text-emerald-600" />
+              <span>{fsrsResetNotice}</span>
+            </div>
+          )}
+        </section>
+
+        {/* Active Surah & Reference Data */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+              <Mic className="w-4 h-4 text-teal-600" />
+              <span>تشخیص گفتار آفلاین تلاوت (sherpa-onnx {SHERPA_ONNX_VERSION})</span>
+            </h2>
+            <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-[10px] font-black">
+              آزمایشی — در حال ارزیابی روی دستگاه
+            </span>
+          </div>
+
+          {!sherpaAvailable ? (
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              موتور آفلاین sherpa-onnx فقط در برنامه بومی اندروید فعال است. در مرورگر وب در صورت پشتیبانی، تشخیص گفتار زنده از طریق Web Speech API (آنلاین) انجام می‌شود.
+            </p>
+          ) : (
+            <div className="space-y-3 text-xs">
+              <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700">
+                <div>
+                  <span className="font-semibold block">استفاده از مدل آفلاین sherpa-onnx</span>
+                  <span className="text-[11px] text-amber-700 dark:text-amber-300">
+                    آزمایشی — در حال ارزیابی روی دستگاه
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  disabled={!sherpaInstalled}
+                  onClick={toggleOfflineAsrEnabled}
+                  className={`w-12 h-6 rounded-full transition-colors relative shrink-0 disabled:opacity-45 ${
+                    offlineAsrEnabled && sherpaInstalled ? "bg-teal-600" : "bg-slate-300"
+                  }`}
+                >
+                  <span
+                    className={`w-5 h-5 rounded-full bg-white shadow-sm absolute top-0.5 transition-transform ${
+                      offlineAsrEnabled && sherpaInstalled ? "left-1" : "right-1"
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {sherpaProgress && sherpaDownloading && (
+                <div className="space-y-1">
+                  <div className="h-2 w-full rounded-full bg-teal-100 dark:bg-slate-800 overflow-hidden">
+                    <div
+                      className="h-full bg-teal-600 transition-all"
+                      style={{
+                        width:
+                          sherpaProgress.total > 0
+                            ? `${Math.min(100, Math.round((sherpaProgress.loaded / sherpaProgress.total) * 100))}%`
+                            : "35%",
+                      }}
+                    />
+                  </div>
+                  <div className="text-[11px] text-slate-500">
+                    در حال دانلود و راستی‌آزمایی SHA-256 ({toFarsi(Math.round(sherpaProgress.loaded / 1048576))} مگابایت)...
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-wrap gap-2">
+                {!sherpaInstalled ? (
+                  <button
+                    type="button"
+                    disabled={sherpaDownloading}
+                    onClick={async () => {
+                      setSherpaDownloading(true);
+                      setSherpaNotice(null);
+                      try {
+                        await downloadSherpaModel((loaded, total) => setSherpaProgress({ loaded, total }));
+                        setSherpaInstalled(true);
+                        setSherpaNotice("مدل تصحیح آفلاین با موفقیت دانلود و با SHA-256 راستی‌آزمایی شد.");
+                      } catch (err) {
+                        setSherpaNotice(err instanceof Error ? err.message : "خطا در دانلود مدل آفلاین.");
+                      } finally {
+                        setSherpaDownloading(false);
+                        setSherpaProgress(null);
+                      }
+                    }}
+                    className="flex-1 py-2.5 px-4 rounded-2xl bg-teal-600 hover:bg-teal-700 disabled:opacity-50 text-white font-bold flex items-center justify-center gap-2"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span>دانلود مدل تصحیح آفلاین — حدود {toFarsi(MODEL_SIZE_MB)} مگابایت</span>
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      await deleteSherpaModel();
+                      setSherpaInstalled(false);
+                      setSherpaNotice("مدل تصحیح آفلاین از حافظه برنامه حذف شد.");
+                    }}
+                    className="flex-1 py-2.5 px-4 rounded-2xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 font-bold flex items-center justify-center gap-2"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                    <span>حذف مدل آفلاین</span>
+                  </button>
+                )}
+              </div>
+
+              {sherpaNotice && (
+                <div className="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-[11px] font-bold">
+                  {sherpaNotice}
+                </div>
+              )}
+            </div>
+          )}
         </section>
 
         {/* Active Surah & Reference Data */}

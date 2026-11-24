@@ -1,0 +1,13 @@
+[
+  {
+    "surah": 1,
+    "slug": "s001",
+    "nameAr": "الفاتحة",
+    "nameFa": "سوره حمد (فاتحه)",
+    "verses": 7,
+    "sizeKb": 22,
+    "url": "https://github.com/niniam102030-commits/quran-qasas-journey/releases/latest/download/surah-1.pack.json",
+    "contentHash": "b9bd6d0a009f5f38feae21c6c4d009e430042c7c36d3b3ac99167c5c5f1be2e3",
+    "hasMergedContent": false
+  }
+]

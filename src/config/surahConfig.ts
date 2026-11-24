@@ -36,6 +36,18 @@ export const SURAH_PACK_REGISTRY: readonly SurahConfig[] = [
 
 export const ACTIVE_SURAH: SurahConfig = SURAH_PACK_REGISTRY[0];
 
+export function getActiveSurahNumber(): number {
+  try {
+    if (typeof globalThis !== "undefined" && "localStorage" in globalThis && globalThis.localStorage) {
+      const n = Number(globalThis.localStorage.getItem("active_surah") || 28);
+      if (Number.isInteger(n) && n >= 1 && n <= 114) return n;
+    }
+  } catch {
+    // ignore
+  }
+  return 28;
+}
+
 export function getSurahByNumber(surahNumber: number): SurahConfig | undefined {
   return SURAH_PACK_REGISTRY.find((s) => s.number === surahNumber);
 }

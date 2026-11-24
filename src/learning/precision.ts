@@ -6,6 +6,7 @@ export interface PrecisionIndex {
   tasmiAvg: number | null;
   testOutAvg: number | null;
   verifierAvg: number | null;
+  examAvg?: number | null;
   trend: number[];
 }
 
@@ -13,6 +14,7 @@ export interface PrecisionInput {
   tasmi: { slipped: number; total: number; at: number }[];
   testOutRatios: number[];
   verifier: { accuracy: number; at: number }[];
+  examScores?: { score: number; at: number }[];
 }
 
 function clampPct(v: number): number {
@@ -30,6 +32,7 @@ function weightedScore(
   tasmiAvg: number | null,
   testOutAvg: number | null,
   verifierAvg: number | null,
+  examAvg: number | null = null,
 ): number | null {
   let num = 0;
   let den = 0;
@@ -44,6 +47,10 @@ function weightedScore(
   if (verifierAvg !== null) {
     num += verifierAvg * 0.2;
     den += 0.2;
+  }
+  if (examAvg !== null) {
+    num += examAvg * 0.25;
+    den += 0.25;
   }
   if (den === 0) return null;
   return num / den;
@@ -75,13 +82,24 @@ export function precisionIndex(input: PrecisionInput): PrecisionIndex {
       pct: clampPct(v.accuracy),
     }));
 
+  const validExams = (input.examScores ?? [])
+    .filter((e) => Number.isFinite(e.score))
+    .slice()
+    .sort((a, b) => a.at - b.at)
+    .slice(-5)
+    .map((e) => ({
+      at: e.at,
+      pct: clampPct(e.score),
+    }));
+
   const tasmiRaw = avg(validTasmi.map((x) => x.pct));
   const testOutRaw = avg(validTestOut);
   const verifierRaw = avg(validVerifier.map((x) => x.pct));
-  const scoreRaw = weightedScore(tasmiRaw, testOutRaw, verifierRaw);
+  const examRaw = avg(validExams.map((x) => x.pct));
+  const scoreRaw = weightedScore(tasmiRaw, testOutRaw, verifierRaw, examRaw);
 
   // ساخت روند تجمعی (حداکثر ۸ نقطهٔ آخر)
-  type Event = { at: number; kind: "tasmi" | "testOut" | "verifier"; pct: number; seq: number };
+  type Event = { at: number; kind: "tasmi" | "testOut" | "verifier" | "exam"; pct: number; seq: number };
   const events: Event[] = [];
   let seq = 0;
   for (const t of validTasmi) {
@@ -89,6 +107,9 @@ export function precisionIndex(input: PrecisionInput): PrecisionIndex {
   }
   for (const v of validVerifier) {
     events.push({ at: v.at, kind: "verifier", pct: v.pct, seq: seq++ });
+  }
+  for (const ex of validExams) {
+    events.push({ at: ex.at, kind: "exam", pct: ex.pct, seq: seq++ });
   }
   const maxTimedAt = events.reduce((m, e) => Math.max(m, e.at), 0);
   validTestOut.forEach((pct, i) => {
@@ -99,14 +120,16 @@ export function precisionIndex(input: PrecisionInput): PrecisionIndex {
   const runTasmi: number[] = [];
   const runTestOut: number[] = [];
   const runVerifier: number[] = [];
+  const runExams: number[] = [];
   const trend: number[] = [];
 
   for (const ev of events) {
     if (ev.kind === "tasmi") runTasmi.push(ev.pct);
     else if (ev.kind === "testOut") runTestOut.push(ev.pct);
+    else if (ev.kind === "exam") runExams.push(ev.pct);
     else runVerifier.push(ev.pct);
 
-    const s = weightedScore(avg(runTasmi), avg(runTestOut), avg(runVerifier));
+    const s = weightedScore(avg(runTasmi), avg(runTestOut), avg(runVerifier), avg(runExams));
     if (s !== null) {
       trend.push(Math.round(s));
     }
@@ -117,6 +140,7 @@ export function precisionIndex(input: PrecisionInput): PrecisionIndex {
     tasmiAvg: tasmiRaw === null ? null : Math.round(tasmiRaw),
     testOutAvg: testOutRaw === null ? null : Math.round(testOutRaw),
     verifierAvg: verifierRaw === null ? null : Math.round(verifierRaw),
+    ...(examRaw !== null ? { examAvg: Math.round(examRaw) } : {}),
     trend: trend.slice(-8),
   };
 }

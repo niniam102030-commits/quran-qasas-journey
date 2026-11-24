@@ -2,7 +2,8 @@
 // جریان آنبوردینگ تعیین سطح (U2) — فقط اجرای اول (وقتی meta.onboardingDone وجود ندارد)
 import { useEffect, useState } from "react";
 import { BookOpen, CheckCircle2, Sparkles, XCircle, Zap, Gauge } from "lucide-react";
-import { ldb } from "../../db/learningDb";
+import { ldb, verseKey } from "../../db/learningDb";
+import { getActiveSurahNumber } from "../../config/surahConfig";
 import {
   applyPrescreenOutcomes,
   selectPrescreenWords,
@@ -79,7 +80,8 @@ export default function OnboardingFlow({ onFinished }: Props) {
         };
       });
       const verseNums = [...new Set(parsedMeta.map((p) => p.verse))];
-      const verses = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(n)));
+      const surah = getActiveSurahNumber();
+      const verses = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(verseKey(surah, n))));
       const wordsByVerse = new Map<number, { i: number; ar: string }[]>();
       for (const v of verses) {
         if (v) wordsByVerse.set(v.n, (v.words as { i: number; ar: string }[] | undefined) ?? []);

@@ -1,13 +1,13 @@
 // src/services/menshawiAudio.ts
 // سرویس پخش و کش آفلاین تلاوت استاد محمد صدیق منشاوی (مرتل) — پارامتریک برای هر سوره
 import { ldb, type SurahAudioCacheRow } from "../db/learningDb";
-import { ACTIVE_SURAH } from "../config/surahConfig";
+import { ACTIVE_SURAH, getActiveSurahNumber } from "../config/surahConfig";
 
 const PER_MIRROR_TIMEOUT_MS = 12000;
 
 export function getMenshawiUrls(
   verse: number,
-  surahNumber: number = ACTIVE_SURAH.number,
+  surahNumber: number = getActiveSurahNumber(),
 ): string[] {
   const paddedSurah = String(surahNumber).padStart(3, "0");
   const paddedVerse = String(verse).padStart(3, "0");
@@ -32,14 +32,14 @@ function rowToBlob(row: SurahAudioCacheRow | undefined): Blob | null {
 
 export async function isVerseAudioCached(
   verse: number,
-  surahNumber: number = ACTIVE_SURAH.number,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<boolean> {
   const row = await ldb.surahAudioCache.get([surahNumber, verse]);
   return rowToBlob(row) !== null;
 }
 
 export async function getAudioCacheStats(
-  surahNumber: number = ACTIVE_SURAH.number,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<{
   cachedVerses: number[];
   totalBytes: number;
@@ -85,7 +85,7 @@ async function fetchWithTimeout(url: string, outerSignal?: AbortSignal): Promise
 export async function fetchAndCacheVerseAudio(
   verse: number,
   signal?: AbortSignal,
-  surahNumber: number = ACTIVE_SURAH.number,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<Blob> {
   const existing = rowToBlob(await ldb.surahAudioCache.get([surahNumber, verse]));
   if (existing) return existing;
@@ -126,6 +126,7 @@ export async function prefetchVersesAudio(
   onProgress?: (done: number, total: number, currentVerse: number) => void,
   signal?: AbortSignal,
   maxVerse: number = ACTIVE_SURAH.verseCount,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<{ downloaded: number; failed: number }> {
   let downloaded = 0;
   let failed = 0;
@@ -139,7 +140,7 @@ export async function prefetchVersesAudio(
       let ok = false;
       for (let attempt = 0; attempt < 2 && !ok && !signal?.aborted; attempt++) {
         try {
-          await fetchAndCacheVerseAudio(v, signal);
+          await fetchAndCacheVerseAudio(v, signal, surahNumber);
           ok = true;
         } catch {
           if (signal?.aborted) return;
@@ -159,7 +160,7 @@ export async function prefetchVersesAudio(
 
 export async function clearAudioCache(
   verses?: number[],
-  surahNumber: number = ACTIVE_SURAH.number,
+  surahNumber: number = getActiveSurahNumber(),
 ): Promise<void> {
   if (!verses || verses.length === 0) {
     await ldb.surahAudioCache.where("surah").equals(surahNumber).delete();

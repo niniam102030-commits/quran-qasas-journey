@@ -5,20 +5,38 @@ import { BottomNav, type NavTab } from "./components/layout/BottomNav";
 import { syncContent } from "./services/contentLoader";
 import { getMeta } from "./services/metaStore";
 import { syncDailyReminder } from "./services/reminderService";
+import { loadFsrsTuningFromMeta, runDailyFsrsTuningIfNeeded } from "./services/fsrsTuningService";
+import { initProfileRegistry } from "./services/profileManager";
 import type { CycleKind } from "./store/useLearningStore";
+import type { ExamScope } from "./learning/examEngine";
 import UnitsPage from "./pages/UnitsPage";
 import LearningSessionPage from "./pages/LearningSessionPage";
 import AudioQuizPage from "./pages/AudioQuizPage";
+import ExamPage from "./pages/ExamPage";
+import TajweedLessonsPage from "./pages/TajweedLessonsPage";
+import ProfilesPage from "./pages/ProfilesPage";
+import SurahsPage from "./pages/SurahsPage";
 import MasteryPage from "./pages/MasteryPage";
 import SettingsPage from "./pages/SettingsPage";
 import { ChillehProfilePage } from "./pages/ChillehProfilePage";
 import MutashabihatModal from "./components/mushaf/MutashabihatModal";
 import OnboardingFlow from "./components/onboarding/OnboardingFlow";
 
-export type AppView = "units" | "mastery" | "profile" | "settings" | "session" | "audioQuiz";
+export type AppView =
+  | "units"
+  | "mastery"
+  | "profile"
+  | "settings"
+  | "session"
+  | "audioQuiz"
+  | "exam"
+  | "tajweed"
+  | "profiles"
+  | "surahs";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>("units");
+  const [examInitialScope, setExamInitialScope] = useState<ExamScope | null>(null);
   const [session, setSession] = useState<{
     unitId: string;
     stage: number;
@@ -33,11 +51,14 @@ export default function App() {
   const [needsOnboarding, setNeedsOnboarding] = useState<boolean | null>(null);
 
   const runContentSync = () => {
+    initProfileRegistry();
     setSyncing(true);
     setSyncError(null);
     setSyncProgress(null);
     return syncContent((done, total) => setSyncProgress({ done, total }))
       .then(async () => {
+        await loadFsrsTuningFromMeta();
+        void runDailyFsrsTuningIfNeeded();
         const done = await getMeta<boolean>("onboardingDone", false);
         setNeedsOnboarding(!done);
         setSyncVersion((v) => v + 1);
@@ -86,6 +107,16 @@ export default function App() {
     setCurrentView("session");
   };
 
+  const handleStartDrill = (unitId: string | null = null) => {
+    setSession({ unitId: unitId ?? "", stage: -5, remedialTag: null, cycleKind: null });
+    setCurrentView("session");
+  };
+
+  const handleStartExam = (scope: ExamScope | null = null) => {
+    setExamInitialScope(scope);
+    setCurrentView("exam");
+  };
+
   const handleExitSession = () => {
     setSession(null);
     setCurrentView("units");
@@ -111,6 +142,34 @@ export default function App() {
 
   if (currentView === "audioQuiz") {
     return <AudioQuizPage onExit={() => setCurrentView("units")} />;
+  }
+
+  if (currentView === "tajweed") {
+    return <TajweedLessonsPage onBack={() => setCurrentView("units")} />;
+  }
+
+  if (currentView === "profiles") {
+    return <ProfilesPage onBack={() => setCurrentView("units")} />;
+  }
+
+  if (currentView === "surahs") {
+    return <SurahsPage onBack={() => setCurrentView("units")} />;
+  }
+
+  if (currentView === "exam") {
+    return (
+      <ExamPage
+        initialScope={examInitialScope}
+        onExit={() => {
+          setExamInitialScope(null);
+          setCurrentView("units");
+        }}
+        onStartRemedial={(tag) => {
+          setExamInitialScope(null);
+          handleStartRemedial(tag);
+        }}
+      />
+    );
   }
 
   return (
@@ -164,6 +223,11 @@ export default function App() {
           onStartTestOut={handleStartTestOut}
           onStartBlindSpots={handleStartBlindSpots}
           onStartCycleReview={handleStartCycleReview}
+          onStartDrill={handleStartDrill}
+          onStartExam={handleStartExam}
+          onOpenTajweedLessons={() => setCurrentView("tajweed")}
+          onOpenProfiles={() => setCurrentView("profiles")}
+          onOpenSurahs={() => setCurrentView("surahs")}
         />
       )}
 
@@ -190,7 +254,11 @@ export default function App() {
       )}
 
       {!syncing && !syncError && currentView === "settings" && (
-        <SettingsPage onBack={() => setCurrentView("units")} />
+        <SettingsPage
+          onBack={() => setCurrentView("units")}
+          onOpenProfiles={() => setCurrentView("profiles")}
+          onOpenSurahs={() => setCurrentView("surahs")}
+        />
       )}
 
       {/* منوی دسترسی سریع پایین */}

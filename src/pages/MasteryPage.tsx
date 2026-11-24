@@ -8,8 +8,12 @@ import { buildReviewForecast, findNearGoldenVerses } from "../learning/forecast"
 import { buildReviewHeatmap } from "../learning/heatmap";
 import { gardenState } from "../learning/garden";
 import { precisionIndex } from "../learning/precision";
+import type { ExamLogEntry } from "../learning/examEngine";
+import { loadFsrsTuningFromMeta } from "../services/fsrsTuningService";
 import { getMeta } from "../services/metaStore";
-import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
+import type { SurahPackMeta } from "../services/surahPackService";
+import { ACTIVE_SURAH, formatSurahCardKey } from "../config/surahConfig";
+import { usePreferencesStore } from "../store/usePreferencesStore";
 
 interface Props {
   onBack: () => void;
@@ -30,6 +34,9 @@ const CONFUSION_LABELS: Record<string, string> = {
   adjacent_number: "خطا در تشخیص شماره آیات مجاور",
   similar_verse: "متشابهات لفظی و آیات مشابه در سوره",
   same_root: "اشتباه در هم‌ریشه‌ها و ساختار اشتقاق",
+  exam_conj: "خطاهای حرف عطف در آزمون رسمی",
+  exam_irab_waqf: "خطاهای اعراب و وقف در آزمون رسمی",
+  exam_lafz_mana: "خطاهای لفظ و معنا در آزمون رسمی",
   random: "سایر اشتباهات گزینه‌ای",
 };
 
@@ -41,6 +48,11 @@ interface UnitDisplayRow extends UnitProgressRow {
 }
 
 export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onOpenMutashabihat }: Props) {
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
+  const [surahMeta, setSurahMeta] = useState<{ nameFa: string; verseCount: number }>({
+    nameFa: "سوره قصص",
+    verseCount: ACTIVE_SURAH.verseCount,
+  });
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
   const [allCardsList, setAllCardsList] = useState<StoredCard[]>([]);
   const [allAttempts, setAllAttempts] = useState<AttemptRow[]>([]);
@@ -49,6 +61,8 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
   const [confusions, setConfusions] = useState<{ tag: string; count: number }[]>([]);
   const [tasmiLog, setTasmiLog] = useState<{ slipped: number; total: number; at: number }[]>([]);
   const [verifierLog, setVerifierLog] = useState<{ accuracy: number; at: number }[]>([]);
+  const [examLog, setExamLog] = useState<ExamLogEntry[]>([]);
+  const [fsrsPersonalized, setFsrsPersonalized] = useState<boolean>(false);
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -56,7 +70,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
     async function loadData() {
       setLoading(true);
       try {
-        const [allCards, prog, allConfusions, attemptsList, lexRows, savedTasmi, savedVerifier] = await Promise.all([
+        const [allCards, prog, allConfusions, attemptsList, lexRows, savedTasmi, savedVerifier, savedExams, fsrsRes] = await Promise.all([
           ldb.cards.toArray(),
           ldb.unitProgress.toArray(),
           ldb.confusions.toArray(),
@@ -64,6 +78,8 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           ldb.lexicon.toArray(),
           getMeta<{ slipped: number; total: number; at: number }[]>("tasmiiLog", []),
           getMeta<{ accuracy: number; at: number }[]>("precisionLog", []),
+          getMeta<ExamLogEntry[]>("examLog", []),
+          loadFsrsTuningFromMeta(),
         ]);
 
         const map = new Map<string, StoredCard>();
@@ -74,23 +90,42 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         setAllLexicon(lexRows);
         setTasmiLog(savedTasmi);
         setVerifierLog(savedVerifier);
+        setExamLog(savedExams);
+        setFsrsPersonalized(fsrsRes.personalized);
 
         let orderById = new Map<string, number>();
         let infoById = new Map<string, { page: number; half: string; verseFrom: number; verseTo: number }>();
-        try {
-          const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
-          if (manifestRes.ok) {
-            const manifest = (await manifestRes.json()) as {
-              units: { id: string; order: number; page: number; half: string; verseFrom: number; verseTo: number }[];
-            };
-            orderById = new Map(manifest.units.map((u) => [u.id, u.order]));
-            infoById = new Map(manifest.units.map((u) => [u.id, u]));
+        if (activeSurah === 28) {
+          setSurahMeta({ nameFa: "سوره قصص", verseCount: ACTIVE_SURAH.verseCount });
+          try {
+            const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+            if (manifestRes.ok) {
+              const manifest = (await manifestRes.json()) as {
+                units: { id: string; order: number; page: number; half: string; verseFrom: number; verseTo: number }[];
+              };
+              orderById = new Map(manifest.units.map((u) => [u.id, u.order]));
+              infoById = new Map(manifest.units.map((u) => [u.id, u]));
+            }
+          } catch {
+            // fallback to unitId ordering
           }
-        } catch {
-          // fallback to unitId ordering
+        } else {
+          const packMeta = await getMeta<SurahPackMeta | null>(`surahPackMeta:${activeSurah}`, null);
+          setSurahMeta({
+            nameFa: packMeta?.nameFa || `سوره ${toFarsiNum(activeSurah)}`,
+            verseCount: packMeta?.verses ?? 0,
+          });
+          const packUnits = packMeta?.units ?? [];
+          orderById = new Map(packUnits.map((u, idx) => [u.id, u.order ?? idx + 1]));
+          infoById = new Map(packUnits.map((u) => [u.id, u]));
         }
 
-        const sortedProg: UnitDisplayRow[] = prog
+        const scopedProg =
+          infoById.size > 0
+            ? prog.filter((u) => infoById.has(u.unitId))
+            : prog.filter((u) => (activeSurah === 28 ? !/^s\d+_/.test(u.unitId) : u.unitId.startsWith(`s${activeSurah}_`)));
+
+        const sortedProg: UnitDisplayRow[] = scopedProg
           .slice()
           .sort(
             (a, b) =>
@@ -118,15 +153,33 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
       }
     }
     loadData();
-  }, []);
+  }, [activeSurah]);
 
-  const allVerses = useMemo(() => getAllVerseNumbers(), []);
-  const totalGoldenVerses = allVerses.filter((v) =>
-    isGoldenVerse(v, cardsMap)
-  ).length;
+  const allVerses = useMemo(
+    () => Array.from({ length: surahMeta.verseCount }, (_, i) => i + 1),
+    [surahMeta.verseCount],
+  );
+  const isVerseGoldenForActive = (vNum: number) =>
+    activeSurah === 28
+      ? isGoldenVerse(vNum, cardsMap)
+      : (["vr", "vt", "vn", "sq"] as const).every(
+          (k) => skillLevel(cardsMap.get(formatSurahCardKey(k, vNum, activeSurah))) >= 3,
+        );
+  const totalGoldenVerses = allVerses.filter((v) => isVerseGoldenForActive(v)).length;
   const forecast = useMemo(() => buildReviewForecast(allCardsList), [allCardsList]);
   const maxForecast = Math.max(1, ...forecast.map((d) => d.dueCount));
-  const nearGolden = useMemo(() => findNearGoldenVerses(cardsMap), [cardsMap]);
+  const nearGolden = useMemo(() => {
+    if (activeSurah === 28) return findNearGoldenVerses(cardsMap, surahMeta.verseCount);
+    const skills = ["vr", "vt", "vn", "sq"] as const;
+    return allVerses
+      .map((v) => {
+        const missing = skills.filter((s) => skillLevel(cardsMap.get(formatSurahCardKey(s, v, activeSurah))) < 3);
+        const level3Count = 4 - missing.length;
+        return { verse: v, level3Count, missingSkills: [...missing] };
+      })
+      .filter((x) => x.level3Count >= 2 && x.level3Count < 4)
+      .sort((a, b) => b.level3Count - a.level3Count || a.verse - b.verse);
+  }, [activeSurah, allVerses, cardsMap, surahMeta.verseCount]);
   const heatmap = useMemo(() => buildReviewHeatmap(allAttempts, 84), [allAttempts]);
   const precision = useMemo(() => {
     const testOutAttempts = allAttempts
@@ -140,8 +193,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
       tasmi: tasmiLog,
       testOutRatios,
       verifier: verifierLog,
+      examScores: examLog.map((e) => ({ score: e.score, at: e.at })),
     });
-  }, [allAttempts, tasmiLog, verifierLog]);
+  }, [allAttempts, tasmiLog, verifierLog, examLog]);
 
   if (loading) {
     return (
@@ -166,7 +220,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           </button>
           <div>
             <h1 className="text-base font-bold text-[#8a5b29] dark:text-amber-400">
-              تسلط بر ۸۸ آیه سوره قصص
+              تسلط بر {toFarsiNum(surahMeta.verseCount)} آیه {surahMeta.nameFa}
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               آیات طلایی و تحلیل یادگیری
@@ -176,7 +230,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
 
         <div className="flex items-center gap-1.5 bg-amber-100 dark:bg-amber-950/60 px-3 py-1.5 rounded-2xl border border-amber-300 dark:border-amber-800/60 text-amber-900 dark:text-amber-300 font-bold text-xs">
           <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
-          <span>{toFarsiNum(totalGoldenVerses)} / ۸۸ طلایی</span>
+          <span>{toFarsiNum(totalGoldenVerses)} / {toFarsiNum(surahMeta.verseCount)} طلایی</span>
         </div>
       </header>
 
@@ -186,14 +240,14 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-amber-200" />
-              <h2 className="font-extrabold text-base sm:text-lg">شبکه تسلط بر آیات (۸۸ آیه)</h2>
+              <h2 className="font-extrabold text-base sm:text-lg">شبکه تسلط بر آیات ({toFarsiNum(surahMeta.verseCount)} آیه)</h2>
             </div>
             <p className="text-xs sm:text-sm text-amber-100 max-w-md">
               آیه‌ای طلایی است که هر ۴ مهارت (بازیابی متن، ترجمه، شماره آیه و تسلسل بعد) در سطح ۳ پایدار باشند.
             </p>
           </div>
           <div className="text-center bg-white/20 backdrop-blur-md rounded-2xl p-3 min-w-[5rem]">
-            <div className="text-2xl font-black">{toFarsiNum(Math.round((totalGoldenVerses / ACTIVE_SURAH.verseCount) * 100))}%</div>
+            <div className="text-2xl font-black">{toFarsiNum(Math.round((totalGoldenVerses / Math.max(1, surahMeta.verseCount)) * 100))}%</div>
             <div className="text-[10px] text-amber-100 font-medium">تسلط کل سوره</div>
           </div>
         </div>
@@ -219,9 +273,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
 
           <div className="grid grid-cols-8 sm:grid-cols-11 gap-2 pt-2">
             {allVerses.map((vNum) => {
-              const golden = isGoldenVerse(vNum, cardsMap);
-              const vrLvl = skillLevel(cardsMap.get(`vr:${vNum}`));
-              const vtLvl = skillLevel(cardsMap.get(`vt:${vNum}`));
+              const golden = isVerseGoldenForActive(vNum);
+              const vrLvl = skillLevel(cardsMap.get(formatSurahCardKey("vr", vNum, activeSurah)));
+              const vtLvl = skillLevel(cardsMap.get(formatSurahCardKey("vt", vNum, activeSurah)));
               const avgLvl = (vrLvl + vtLvl) / 2;
 
               return (
@@ -273,10 +327,10 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
                 {[
-                  { key: `vr:${selectedVerse}`, label: "بازیابی متن (vr)" },
-                  { key: `vt:${selectedVerse}`, label: "ترجمه (vt)" },
-                  { key: `vn:${selectedVerse}`, label: "شماره آیه (vn)" },
-                  { key: `sq:${selectedVerse}`, label: "تسلسل بعد (sq)" },
+                  { key: formatSurahCardKey("vr", selectedVerse, activeSurah), label: "بازیابی متن (vr)" },
+                  { key: formatSurahCardKey("vt", selectedVerse, activeSurah), label: "ترجمه (vt)" },
+                  { key: formatSurahCardKey("vn", selectedVerse, activeSurah), label: "شماره آیه (vn)" },
+                  { key: formatSurahCardKey("sq", selectedVerse, activeSurah), label: "تسلسل بعد (sq)" },
                 ].map((item) => {
                   const card = cardsMap.get(item.key);
                   const lvl = skillLevel(card);
@@ -423,6 +477,9 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
           <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
             این شاخص از تسمیع، آزمون میانبر و بررسی تلاوت ساخته می‌شود و برآورد آمادگی است، نه نمرهٔ رسمی آزمون حفظ.
           </p>
+          <div className="pt-2 border-t border-slate-100 dark:border-slate-800 text-xs font-bold text-teal-700 dark:text-teal-300">
+            {fsrsPersonalized ? "زمان‌بندی شخصی‌سازی‌شده فعال است" : "پیش‌فرض"}
+          </div>
         </section>
 
         {/* باغ حفظ من (G4) */}
@@ -529,7 +586,7 @@ export default function MasteryPage({ onBack, onSelectUnit, onStartRemedial, onO
         {/* Units Progress Breakdown */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">
           <h3 className="font-bold text-sm text-slate-700 dark:text-slate-200">
-            پیشرفت واحدهای یادگیری (۲۲ واحد)
+            پیشرفت واحدهای یادگیری ({toFarsiNum(unitProgress.length)} واحد)
           </h3>
           <div className="space-y-2">
             {unitProgress.map((u, idx) => {

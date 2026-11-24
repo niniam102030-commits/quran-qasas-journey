@@ -21,13 +21,55 @@ export interface StoredCard {
   streak: number;
 }
 
-const RETENTION: Record<CardKind, number> = { w: 0.9, vt: 0.9, vr: 0.93, vn: 0.93, sq: 0.93, pg: 0.93 };
+const DEFAULT_RETENTION: Record<CardKind, number> = { w: 0.9, vt: 0.9, vr: 0.93, vn: 0.93, sq: 0.93, pg: 0.93 };
+let activeRetention: Record<CardKind, number> = { ...DEFAULT_RETENTION };
+let activeWeights: number[] | null = null;
 
 const engines = new Map<CardKind, ReturnType<typeof fsrs>>();
+
+/**
+ * اعمال تنظیمات شخصی‌سازی‌شدهٔ FSRS (در زمان اجرا بدون وابستگی به Dexie)
+ */
+export function configureFsrsTuning(opts: {
+  retention?: Partial<Record<CardKind, number>> | null;
+  weights?: number[] | null;
+}) {
+  const nextRetention: Record<CardKind, number> = { ...DEFAULT_RETENTION };
+  if (opts.retention) {
+    for (const k of Object.keys(DEFAULT_RETENTION) as CardKind[]) {
+      const val = opts.retention[k];
+      if (typeof val === "number" && Number.isFinite(val)) {
+        nextRetention[k] = Math.max(0.85, Math.min(0.97, val));
+      }
+    }
+  }
+  activeRetention = nextRetention;
+  activeWeights =
+    Array.isArray(opts.weights) && opts.weights.length === 21 && opts.weights.every((v) => typeof v === "number" && Number.isFinite(v))
+      ? [...opts.weights]
+      : null;
+  engines.clear();
+}
+
+export function getActiveFsrsTuning(): { retention: Record<CardKind, number>; weights: number[] | null } {
+  return {
+    retention: { ...activeRetention },
+    weights: activeWeights ? [...activeWeights] : null,
+  };
+}
+
 function engine(kind: CardKind) {
   let e = engines.get(kind);
   if (!e) {
-    e = fsrs(generatorParameters({ request_retention: RETENTION[kind], maximum_interval: 120, enable_fuzz: false, enable_short_term: true }));
+    e = fsrs(
+      generatorParameters({
+        request_retention: activeRetention[kind],
+        maximum_interval: 120,
+        enable_fuzz: false,
+        enable_short_term: true,
+        ...(activeWeights ? { w: activeWeights } : {}),
+      }),
+    );
     engines.set(kind, e);
   }
   return e;
@@ -59,7 +101,7 @@ const FSRS_DECAY = 0.5;
  * R(t, S) = (1 + F * t / S)^(-C)  ==>  S = (F * t) / (R^(-1/C) - 1)
  */
 export function stabilityForInterval(kind: CardKind, intervalDays: number): number {
-  const r = RETENTION[kind];
+  const r = activeRetention[kind];
   const denom = Math.pow(r, -1 / FSRS_DECAY) - 1;
   if (denom <= 0 || intervalDays <= 0) return Math.max(0.5, intervalDays);
   return Number(((FSRS_FACTOR * intervalDays) / denom).toFixed(2));

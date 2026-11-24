@@ -1,7 +1,8 @@
 // src/store/useLearningStore.ts
 // موتور جلسه‌ی یادگیری: صف سوال → تصحیح → ثبت FSRS برای هر هدف → تلاش/اشتباه → صف مجدد → تسلط/گشایش.
 import { create } from "zustand";
-import { ldb, type QuestionRow } from "../db/learningDb";
+import { ldb, verseKey, type QuestionRow } from "../db/learningDb";
+import { getActiveSurahNumber } from "../config/surahConfig";
 import { gradeQuestion } from "../services/grading";
 import { hasRealFsrsHistory, newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
@@ -22,6 +23,21 @@ import {
 import { dailyReviewCapFor } from "../learning/pace";
 import { buildBlindSpotPack, getLocalSaturdayWeekIso, type BlindSpotPack } from "../learning/blindSpots";
 import { planMuraja } from "../learning/muraja";
+import { buildConnectionDrillQueue, dailyDrillSeed } from "../learning/connectionDrills";
+import {
+  appendExamLog,
+  assembleExamQueue,
+  CHAPTER_BOSS_GEMS,
+  CHAPTER_BOSS_PASS_SCORE,
+  classifyExamQuestion,
+  examConfusionTagFor,
+  scoreExam,
+  type ExamErrorType,
+  type ExamLogEntry,
+  type ExamScope,
+  type ExamScoreResult,
+} from "../learning/examEngine";
+import { loadQulMorphology } from "../services/qulReferenceService";
 import { getMeta, setMeta } from "../services/metaStore";
 import { usePreferencesStore } from "./usePreferencesStore";
 import {
@@ -35,7 +51,7 @@ import {
   type StageAttempt,
 } from "../learning/mastery";
 import { recordLearningReward } from "../services/profileService";
-import type { Question, GradeResult } from "../types/learning";
+import type { Question, GradeResult, BaseVerse, UnitPlan } from "../types/learning";
 
 export interface SubmitMeta {
   usedHint?: boolean;
@@ -63,6 +79,28 @@ export interface SessionSummary {
 
 export type CycleKind = "SABQ" | "SABQI" | "MANZIL";
 
+export interface ExamAnswerRecord {
+  qid: string;
+  promptFa: string;
+  stemAr?: string;
+  errorType: ExamErrorType;
+  correct: boolean;
+  chosen: unknown;
+  expectedLabel?: string;
+  explanationFa?: string;
+}
+
+export interface ExamRuntimeState {
+  scope: ExamScope;
+  startedAt: number;
+  shortfallNotes: string[];
+  answers: ExamAnswerRecord[];
+  result: ExamScoreResult | null;
+  logEntry: ExamLogEntry | null;
+  bossAwarded: boolean;
+  bossGemsAwarded: number;
+}
+
 interface LearningState {
   status: "idle" | "loading" | "running" | "finished";
   sessionType: SessionType;
@@ -82,12 +120,15 @@ interface LearningState {
   seen: Set<string>;
   lastResult: GradeResult | null;
   summary: SessionSummary | null;
+  examState: ExamRuntimeState | null;
   startStage: (unitId: string, stage: number, size?: number) => Promise<void>;
   startTestOut: (unitId: string) => Promise<void>;
   startReview: (size?: number) => Promise<void>;
   startRemedial: (tag?: string | null, size?: number) => Promise<void>;
   startBlindSpots: (size?: number) => Promise<void>;
   startCycleReview: (kind: CycleKind, size?: number) => Promise<void>;
+  startDrill: (unitId?: string | null, size?: number) => Promise<void>;
+  startExam: (scope: ExamScope) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
   next: () => Promise<void>;
   current: () => QuestionRow | null;
@@ -121,6 +162,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   seen: new Set(),
   lastResult: null,
   summary: null,
+  examState: null,
 
   current: () => get().queue[get().index] ?? null,
 
@@ -155,7 +197,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
             }).filter((n) => n > 0),
           ),
         ];
-        const baseRows = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(n)));
+        const surah = getActiveSurahNumber();
+        const baseRows = await Promise.all(verseNums.map((n) => ldb.baseVerses.get(verseKey(surah, n))));
         const wordArById = new Map<string, string>();
         for (const bv of baseRows) {
           if (!bv) continue;
@@ -257,8 +300,16 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   startRemedial: async (tag = null, size = 15) => {
     set({ status: "loading", summary: null, lastResult: null });
     const allConfusions = await ldb.confusions.toArray();
-    const filtered = tag
-      ? allConfusions.filter((c) => (c.chosenTag || "random") === tag)
+    const tagSet = tag
+      ? new Set(
+          tag
+            .split(",")
+            .map((t) => t.trim())
+            .filter(Boolean),
+        )
+      : null;
+    const filtered = tagSet && tagSet.size > 0
+      ? allConfusions.filter((c) => tagSet.has(c.chosenTag || "random"))
       : allConfusions;
 
     // اولویت‌بندی بر اساس بیشترین تکرار اشتباه روی هر هدف و سوال
@@ -361,17 +412,30 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       ldb.cards.toArray(),
     ]);
     let manifestOrder = new Map<string, number>();
-    try {
-      const res = await fetch(`${import.meta.env.BASE_URL}content/manifest.json`);
-      if (res.ok) {
-        const m = (await res.json()) as { units?: { id: string; order: number }[] };
-        manifestOrder = new Map((m.units ?? []).map((u) => [u.id, u.order]));
+    const activeSurah = getActiveSurahNumber();
+    if (activeSurah === 28) {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}content/manifest.json`);
+        if (res.ok) {
+          const m = (await res.json()) as { units?: { id: string; order: number }[] };
+          manifestOrder = new Map((m.units ?? []).map((u) => [u.id, u.order]));
+        }
+      } catch {
+        // fallback به ترتیب الفبایی
       }
-    } catch {
-      // fallback به ترتیب الفبایی
+    } else {
+      const packMeta = await getMeta<{ units?: { id: string; order?: number }[] } | null>(
+        `surahPackMeta:${activeSurah}`,
+        null,
+      );
+      manifestOrder = new Map((packMeta?.units ?? []).map((u, i) => [u.id, u.order ?? i + 1]));
     }
+    const scopedProgress =
+      manifestOrder.size > 0
+        ? progressRows.filter((p) => manifestOrder.has(p.unitId))
+        : progressRows;
     const plan = planMuraja(
-      progressRows.map((p, idx) => ({
+      scopedProgress.map((p, idx) => ({
         unitId: p.unitId,
         order: manifestOrder.get(p.unitId) ?? idx + 1,
         stage8PassedAt: p.stagePassed[8] ? p.updatedAt : null,
@@ -425,6 +489,148 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     });
   },
 
+  startDrill: async (unitId = null, size = 12) => {
+    set({ status: "loading", summary: null, lastResult: null });
+    const surah = getActiveSurahNumber();
+    const baseVersesRaw = await ldb.baseVerses.where("surah").equals(surah).toArray();
+    const verses = baseVersesRaw as unknown as (BaseVerse & { surah?: number })[];
+    let units: UnitPlan[] = [];
+    if (surah === 28) {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL || "/"}content/base/units-plan.json`);
+        if (res.ok) units = (await res.json()) as UnitPlan[];
+      } catch {
+        // fallback از unitProgress
+      }
+    } else {
+      const packMeta = await getMeta<{ units?: UnitPlan[] } | null>(`surahPackMeta:${surah}`, null);
+      units = packMeta?.units ?? [];
+    }
+
+    const drillQs = buildConnectionDrillQueue({
+      units,
+      verses,
+      scopeUnitId: unitId,
+      seed: dailyDrillSeed(),
+      surah,
+      size,
+    });
+    const queue = drillQs as unknown as QuestionRow[];
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "DRILL",
+      unitId: unitId ?? null,
+      stage: -5,
+      remedialTag: null,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      firstTargetOutcomes: {},
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      examState: null,
+      summary: queue.length
+        ? null
+        : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
+  startExam: async (scope) => {
+    set({ status: "loading", summary: null, lastResult: null, examState: null });
+    const surah = getActiveSurahNumber();
+    const [versesRaw, allQuestions, allLexRows] = await Promise.all([
+      ldb.baseVerses.where("surah").equals(surah).toArray(),
+      ldb.questions.toArray(),
+      ldb.lexicon.toArray(),
+    ]);
+    const verses = versesRaw as unknown as (BaseVerse & { surah?: number })[];
+    let units: UnitPlan[] = [];
+    if (surah === 28) {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL || "/"}content/base/units-plan.json`);
+        if (res.ok) units = (await res.json()) as UnitPlan[];
+      } catch {
+        // ignore
+      }
+    } else {
+      const packMeta = await getMeta<{ units?: UnitPlan[] } | null>(`surahPackMeta:${surah}`, null);
+      units = packMeta?.units ?? [];
+    }
+    const unitIdSet = new Set(units.map((u) => u.id));
+    const bankQuestions = unitIdSet.size > 0 ? allQuestions.filter((q) => unitIdSet.has(q.unitId)) : allQuestions;
+    const lexRows = unitIdSet.size > 0 ? allLexRows.filter((l) => unitIdSet.has(l.unitId)) : allLexRows;
+
+    let morphologyMap: Record<string, { segments?: { text: string; type: string; pos: string }[] }> = {};
+    if (surah === 28) {
+      try {
+        morphologyMap = await loadQulMorphology("qasas");
+      } catch {
+        // ignore
+      }
+    } else {
+      morphologyMap =
+        (await getMeta<Record<string, { segments?: { text: string; type: string; pos: string }[] }>>(
+          `surahMorph:${surah}`,
+          {},
+        )) ?? {};
+    }
+
+    const lexiconSet = new Set(
+      lexRows
+        .map((l) => String(l.ar ?? l.wordId ?? "").replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\s]/g, ""))
+        .filter(Boolean),
+    );
+
+    const assembled = assembleExamQueue({
+      scope,
+      units,
+      verses,
+      bankQuestions,
+      lexiconSet,
+      morphologyMap,
+      seed: Date.now() & 0xffff,
+      surah,
+    });
+
+    const startedAt = Date.now();
+    set({
+      status: assembled.queue.length ? "running" : "finished",
+      sessionType: "EXAM",
+      unitId: scope.type === "unit" ? scope.id : null,
+      stage: -6,
+      remedialTag: null,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue: assembled.queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      firstTargetOutcomes: {},
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      examState: {
+        scope,
+        startedAt,
+        shortfallNotes: assembled.shortfallNotes,
+        answers: [],
+        result: null,
+        logEntry: null,
+        bossAwarded: false,
+        bossGemsAwarded: 0,
+      },
+      summary: assembled.queue.length
+        ? null
+        : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
   submit: async (response, meta) => {
     const s = get();
     const q = s.queue[s.index];
@@ -462,21 +668,36 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       // در صورت بروز خطا در کوئری، مقدار پیش‌فرض استفاده می‌شود
     }
 
-    const updated: StoredCard[] = keys.map((k) => {
-      const c = cards.get(k) ?? newCard(k, now);
-      const rating = ratingFor({ correct: res.perTarget[k], usedHint: !!meta.usedHint, changedAnswer: meta.changedAnswer, responseMs: meta.responseMs, medianMs: median });
-      return review(c, rating, now);
-    });
+    const isDrill = s.sessionType === "DRILL";
+    const isExam = s.sessionType === "EXAM";
+    const skipFsrsMutation = isDrill || isExam;
+    const updated: StoredCard[] = skipFsrsMutation
+      ? []
+      : keys.map((k) => {
+          const c = cards.get(k) ?? newCard(k, now);
+          const rating = ratingFor({ correct: res.perTarget[k], usedHint: !!meta.usedHint, changedAnswer: meta.changedAnswer, responseMs: meta.responseMs, medianMs: median });
+          return review(c, rating, now);
+        });
     const recordedSessionType = s.cycleKind ? `CYCLE:${s.cycleKind}` : s.sessionType;
+    const examErrorType = isExam
+      ? classifyExamQuestion(q as unknown as QuestionRow & { kind?: string; distractorTags?: Record<string, string> })
+      : null;
+
     await ldb.transaction("rw", ldb.cards, ldb.attempts, ldb.confusions, async () => {
-      await ldb.cards.bulkPut(updated);
+      if (!skipFsrsMutation && updated.length > 0) {
+        await ldb.cards.bulkPut(updated);
+      }
       await ldb.attempts.add({
         qid: q.id, unitId: q.unitId, stage: q.stage, at: now.getTime(), correct: res.correct, usedHint: !!meta.usedHint,
         responseMs: meta.responseMs, chosen: response, perTarget: res.perTarget, sessionType: recordedSessionType,
       });
-      if (!res.correct) {
+      if (!res.correct && !isDrill) {
         const tags = (q.distractorTags ?? {}) as Record<string, string>;
-        const wrongTag = res.wrongOptionIds[0] ? tags[res.wrongOptionIds[0]] : undefined;
+        const wrongTag = isExam && examErrorType
+          ? examConfusionTagFor(examErrorType)
+          : res.wrongOptionIds[0]
+          ? tags[res.wrongOptionIds[0]]
+          : undefined;
         await ldb.confusions.bulkAdd(keys.map((t) => ({ qid: q.id, target: t, chosenTag: wrongTag, at: now.getTime() })));
       }
     });
@@ -488,8 +709,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const isCurrentStageQ = s.sessionType !== "STAGE" || q.stage === s.stage;
     const sessionAnyHint = s.sessionAnyHint || (isCurrentStageQ && !!meta.usedHint);
     let sessionAnyRequeue = s.sessionAnyRequeue;
-    // در مرحله ۸ و آزمون میانبر سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
-    if (!res.correct && s.stage !== 8 && s.sessionType !== "TESTOUT") {
+    // در مرحله ۸، آزمون میانبر، دریل و آزمون رسمی سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار
+    if (!res.correct && s.stage !== 8 && s.sessionType !== "TESTOUT" && !isDrill && !isExam) {
       const prevWrong = wrongCounts[q.id] ?? 0;
       if (prevWrong < MAX_REQUEUE_PER_QUESTION) {
         wrongCounts[q.id] = prevWrong + 1;
@@ -517,9 +738,31 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         if (combo > maxCombo) maxCombo = combo;
       }
     }
+    let nextExamState = s.examState;
+    if (isExam && s.examState && examErrorType) {
+      const rq = q as unknown as { promptFa?: string; stem?: { ar?: string }; options?: { id: string; ar?: string; fa?: string }[]; answer?: unknown; explanationFa?: string };
+      const expectedOpt = Array.isArray(rq.options) ? rq.options.find((o) => o.id === rq.answer) : undefined;
+      nextExamState = {
+        ...s.examState,
+        answers: [
+          ...s.examState.answers,
+          {
+            qid: q.id,
+            promptFa: String(rq.promptFa ?? ""),
+            stemAr: rq.stem?.ar,
+            errorType: examErrorType,
+            correct: res.correct,
+            chosen: response,
+            expectedLabel: expectedOpt?.ar || expectedOpt?.fa || (typeof rq.answer === "string" ? rq.answer : ""),
+            explanationFa: rq.explanationFa,
+          },
+        ],
+      };
+    }
+
     set({
-      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes, combo, maxCombo,
-      firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || s.sessionType === "TESTOUT" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
+      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes, combo, maxCombo, examState: nextExamState,
+      firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || s.sessionType === "TESTOUT" || s.sessionType === "DRILL" || isExam || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;
   },
@@ -534,6 +777,117 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     // پایان جلسه
     const attempts = s.firstAttempts;
     const correct = attempts.filter((a) => a.correct).length;
+
+    // مسیر ویژه پایان آزمون تخصصی (EXAM) — بدون اثر روی مراحل و FSRS، با ثبت کارنامه و باس فصل
+    if (s.sessionType === "EXAM" && s.examState) {
+      const scoreRes = scoreExam(s.examState.answers);
+      const nowMs = Date.now();
+      const entry: ExamLogEntry = {
+        id: `ex_${nowMs}`,
+        at: nowMs,
+        scope: {
+          type: s.examState.scope.type,
+          id: s.examState.scope.id,
+          ...(s.examState.scope.labelFa ? { label: s.examState.scope.labelFa } : {}),
+        },
+        total: scoreRes.total,
+        score: scoreRes.score,
+        level: scoreRes.level,
+        byType: scoreRes.byType,
+        ...(s.examState.shortfallNotes.length ? { shortfallNotes: s.examState.shortfallNotes } : {}),
+      };
+
+      const prevLog = await getMeta<ExamLogEntry[]>("examLog", []);
+      await setMeta("examLog", appendExamLog(prevLog, entry));
+
+      let bossAwarded = false;
+      let bossGemsAwarded = 0;
+      if (s.examState.scope.type === "chapter" && scoreRes.score >= CHAPTER_BOSS_PASS_SCORE) {
+        const chapterId = s.examState.scope.id;
+        const medals = await getMeta<string[]>("chapterMedals", []);
+        if (!medals.includes(chapterId)) {
+          await setMeta("chapterMedals", [...medals, chapterId]);
+        }
+        const rewardedKey = `chapterBossRewarded:${chapterId}`;
+        const alreadyRewarded = await getMeta<boolean>(rewardedKey, false);
+        if (!alreadyRewarded) {
+          await setMeta(rewardedKey, true);
+          bossAwarded = true;
+          bossGemsAwarded = CHAPTER_BOSS_GEMS;
+        }
+      }
+
+      if (scoreRes.xpEarned > 0 || bossGemsAwarded > 0) {
+        try {
+          await recordLearningReward({
+            xpDelta: scoreRes.xpEarned,
+            gemsDelta: bossGemsAwarded,
+            markDailyActivity: true,
+          });
+        } catch {
+          // ignore
+        }
+      }
+
+      const allCards = await ldb.cards.toArray();
+      const debt = reviewDebt(allCards);
+
+      set({
+        status: "finished",
+        lastResult: null,
+        examState: {
+          ...s.examState,
+          result: scoreRes,
+          logEntry: entry,
+          bossAwarded,
+          bossGemsAwarded,
+        },
+        summary: {
+          total: scoreRes.total,
+          correct: scoreRes.correctCount,
+          ratio: scoreRes.total ? scoreRes.correctCount / scoreRes.total : 0,
+          passed: scoreRes.score >= CHAPTER_BOSS_PASS_SCORE,
+          unlockedNext: false,
+          debt,
+          xpEarned: scoreRes.xpEarned,
+          gemsEarned: bossGemsAwarded,
+          maxCombo: s.maxCombo,
+        },
+      });
+      return;
+    }
+
+    // مسیر ویژه پایان دریل اتصال و شروع از وسط (بدون تغییر FSRS و unitProgress)
+    if (s.sessionType === "DRILL") {
+      const allCards = await ldb.cards.toArray();
+      const debt = reviewDebt(allCards);
+      const ratio = attempts.length ? correct / attempts.length : 0;
+      const passed = ratio >= 0.7;
+      const xpEarned = correct * 5;
+      if (xpEarned > 0) {
+        try {
+          await recordLearningReward({ xpDelta: xpEarned, gemsDelta: 0, markDailyActivity: true });
+        } catch {
+          // ignore
+        }
+      }
+      set({
+        status: "finished",
+        lastResult: null,
+        summary: {
+          total: attempts.length,
+          correct,
+          ratio,
+          passed,
+          unlockedNext: false,
+          debt,
+          xpEarned,
+          gemsEarned: 0,
+          maxCombo: s.maxCombo,
+        },
+      });
+      return;
+    }
 
     // مسیر ویژه پایان آزمون میانبر (Test-Out)
     if (s.sessionType === "TESTOUT") {
@@ -679,17 +1033,29 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         await ldb.unitProgress.put(p);
         if (stageCompleted && s.stage === 8 && canUnlockNext(true, debt)) {
           let orderedIds: string[] = [];
-          try {
-            const manifestUrl = typeof window !== "undefined"
-              ? `${import.meta.env.BASE_URL || "/"}content/manifest.json`
-              : "http://localhost/content/manifest.json";
-            const manifestResponse = await fetch(manifestUrl);
-            if (manifestResponse.ok) {
-              const manifest = await manifestResponse.json() as { units: { id: string; order: number }[] };
-              orderedIds = manifest.units.slice().sort((a, b) => a.order - b.order).map((u) => u.id);
+          const activeSurah = getActiveSurahNumber();
+          if (activeSurah === 28) {
+            try {
+              const manifestUrl = typeof window !== "undefined"
+                ? `${import.meta.env.BASE_URL || "/"}content/manifest.json`
+                : "http://localhost/content/manifest.json";
+              const manifestResponse = await fetch(manifestUrl);
+              if (manifestResponse.ok) {
+                const manifest = await manifestResponse.json() as { units: { id: string; order: number }[] };
+                orderedIds = manifest.units.slice().sort((a, b) => a.order - b.order).map((u) => u.id);
+              }
+            } catch {
+              // fallback
             }
-          } catch {
-            // fallback
+          } else {
+            const packMeta = await getMeta<{ units?: { id: string; order?: number }[] } | null>(
+              `surahPackMeta:${activeSurah}`,
+              null,
+            );
+            orderedIds = (packMeta?.units ?? [])
+              .slice()
+              .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+              .map((u) => u.id);
           }
           if (!orderedIds.length) {
             const units = await ldb.unitProgress.toArray();

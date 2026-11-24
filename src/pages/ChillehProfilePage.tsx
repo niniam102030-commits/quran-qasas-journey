@@ -19,7 +19,8 @@ import {
   prefetchVersesAudio,
 } from "../services/menshawiAudio";
 import { usePreferencesStore } from "../store/usePreferencesStore";
-import { ACTIVE_SURAH, getAllVerseNumbers } from "../config/surahConfig";
+import { ACTIVE_SURAH } from "../config/surahConfig";
+import type { SurahPackMeta } from "../services/surahPackService";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 
 interface VocabularyMasteryStats {
@@ -32,11 +33,11 @@ interface VocabularyMasteryStats {
   practicedWordsCount: number;
 }
 
-const ALL_SURAH_VERSES = getAllVerseNumbers();
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) => String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 
 export const ChillehProfilePage: React.FC = () => {
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
   const darkMode = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
   const paceMode = usePreferencesStore((s) => s.paceMode);
@@ -71,30 +72,48 @@ export const ChillehProfilePage: React.FC = () => {
   });
   const [downloadProgress, setDownloadProgress] = useState<{ done: number; total: number; verse: number } | null>(null);
   const [statusBanner, setStatusBanner] = useState<string | null>(null);
+  const [surahMeta, setSurahMeta] = useState<{ nameFa: string; verseCount: number }>({
+    nameFa: "سوره قصص",
+    verseCount: ACTIVE_SURAH.verseCount,
+  });
   const abortRef = useRef<AbortController | null>(null);
 
   const loadProfileData = useCallback(async () => {
-    const [prof, lexicon, cards, attempts, cacheStats, owned, eligibleCount, unitProg] = await Promise.all([
+    const [prof, lexicon, cards, attempts, cacheStats, owned, eligibleCount, unitProg, packMeta] = await Promise.all([
       getUserProfile(),
       ldb.lexicon.toArray(),
       ldb.cards.toArray(),
       ldb.attempts.toArray(),
-      getAudioCacheStats(),
+      getAudioCacheStats(activeSurah),
       getMeta<string[]>("ownedItems", []),
       countEligibleDebtFreezeCards(),
       ldb.unitProgress.toArray(),
+      activeSurah !== 28
+        ? getMeta<SurahPackMeta | null>(`surahPackMeta:${activeSurah}`, null)
+        : Promise.resolve(null),
     ]);
+
+    const verseCount = activeSurah === 28 ? ACTIVE_SURAH.verseCount : (packMeta?.verses ?? 0);
+    const nameFa = activeSurah === 28 ? "سوره قصص" : (packMeta?.nameFa || `سوره ${toFarsi(activeSurah)}`);
+    setSurahMeta({ nameFa, verseCount });
+
+    const scopedUnits = activeSurah === 28
+      ? unitProg.filter((u) => !/^s\d+_/.test(u.unitId))
+      : (() => {
+          const ids = new Set((packMeta?.units ?? []).map((u) => u.id));
+          return ids.size > 0 ? unitProg.filter((u) => ids.has(u.unitId)) : unitProg.filter((u) => u.unitId.startsWith(`s${activeSurah}_`));
+        })();
 
     setProfile(prof);
     setOwnedItems(owned);
     setFreezeEligibleCount(eligibleCount);
     // تقریب واحدهای پاس‌شده در ۱۴ روز اخیر از روی unitProgress.updatedAt واحدهایی که stagePassed[8] دارند
     const cutoff14d = Date.now() - 14 * 86400_000;
-    const completed = unitProg.filter((u) => Boolean(u.stagePassed?.[8]));
+    const completed = scopedUnits.filter((u) => Boolean(u.stagePassed?.[8]));
     const recent14 = completed.filter((u) => (u.updatedAt ?? 0) >= cutoff14d);
     setUnitCompletionStats({
       completedUnits: completed.length,
-      totalUnits: unitProg.length || 22,
+      totalUnits: scopedUnits.length || (activeSurah === 28 ? 22 : 1),
       unitsCompletedLast14Days: recent14.length,
     });
     const wordCards = new Map(
@@ -125,7 +144,7 @@ export const ChillehProfilePage: React.FC = () => {
       count: cacheStats.cachedVerses.length,
       totalMb: cacheStats.totalMb,
     });
-  }, []);
+  }, [activeSurah]);
 
   useEffect(() => {
     void loadProfileData();
@@ -147,23 +166,26 @@ export const ChillehProfilePage: React.FC = () => {
   };
 
   const handleDownloadAllMenshawi = async () => {
-    if (downloadProgress) return;
+    if (downloadProgress || surahMeta.verseCount <= 0) return;
     const controller = new AbortController();
     abortRef.current = controller;
     setStatusBanner(null);
-    setDownloadProgress({ done: 0, total: ACTIVE_SURAH.verseCount, verse: 1 });
+    const versesList = Array.from({ length: surahMeta.verseCount }, (_, i) => i + 1);
+    setDownloadProgress({ done: 0, total: surahMeta.verseCount, verse: 1 });
 
     try {
       const res = await prefetchVersesAudio(
-        ALL_SURAH_VERSES,
+        versesList,
         (done, total, currentVerse) => setDownloadProgress({ done, total, verse: currentVerse }),
         controller.signal,
+        surahMeta.verseCount,
+        activeSurah,
       );
       await loadProfileData();
       if (controller.signal.aborted) {
         setStatusBanner("دانلود آفلاین متوقف شد؛ آیات دریافت‌شده ذخیره ماندند.");
       } else if (res.failed === 0) {
-        setStatusBanner("✅ تمام ۸۸ آیه سوره قصص با تلاوت استاد منشاوی برای پخش کاملاً آفلاین ذخیره شد.");
+        setStatusBanner(`✅ تمام ${toFarsi(surahMeta.verseCount)} آیه ${surahMeta.nameFa} با تلاوت استاد منشاوی برای پخش کاملاً آفلاین ذخیره شد.`);
       } else {
         setStatusBanner(
           `${toFarsi(res.downloaded)} آیه ذخیره شد و ${toFarsi(res.failed)} آیه ناموفق بود. با اتصال اینترنت دوباره تلاش کنید.`,
@@ -180,7 +202,7 @@ export const ChillehProfilePage: React.FC = () => {
   };
 
   const handleClearAudioCache = async () => {
-    await clearAudioCache();
+    await clearAudioCache(undefined, activeSurah);
     await loadProfileData();
     setStatusBanner("حافظه آفلاین صوت تلاوت استاد منشاوی پاکسازی شد.");
   };
@@ -509,13 +531,13 @@ export const ChillehProfilePage: React.FC = () => {
             <div className="flex items-center gap-2">
               <CalendarClock className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
               <h2 className="text-base font-black text-slate-800 dark:text-white">
-                پیش‌بینی پایان سوره قصص
+                پیش‌بینی پایان {surahMeta.nameFa}
               </h2>
             </div>
 
             {unitCompletionStats.completedUnits >= unitCompletionStats.totalUnits ? (
               <p className="text-xs font-bold text-emerald-700 dark:text-emerald-300">
-                تبریک! همهٔ {toFarsi(unitCompletionStats.totalUnits)} واحد سوره مبارکه قصص تکمیل شده است.
+                تبریک! همهٔ {toFarsi(unitCompletionStats.totalUnits)} واحد {surahMeta.nameFa} تکمیل شده است.
               </p>
             ) : !est.etaIso ? (
               <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -557,7 +579,7 @@ export const ChillehProfilePage: React.FC = () => {
       <section className="rounded-3xl bg-white dark:bg-[#1a2332] border-2 border-[#e6dbc5] dark:border-slate-800 p-5 shadow-sm space-y-4">
         <div>
           <h2 className="text-base font-black text-slate-800 dark:text-white">
-            گالری تسلط واژگان سوره قصص
+            گالری تسلط واژگان {surahMeta.nameFa}
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400">
             بر اساس مرورهای هوشمند و جلسات تکمیل‌شده شما
@@ -614,16 +636,16 @@ export const ChillehProfilePage: React.FC = () => {
         <div className="flex items-center gap-2">
           <Volume2 className="w-5 h-5 text-amber-600" />
           <h2 className="text-base font-black text-slate-800 dark:text-white">
-            تلاوت آفلاین استاد منشاوی (سوره قصص)
+            تلاوت آفلاین استاد منشاوی ({surahMeta.nameFa})
           </h2>
         </div>
 
         <div className="p-4 rounded-2xl bg-[#fcf9f2] dark:bg-slate-900 border border-[#e6dbc5] dark:border-slate-800 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <span className="font-bold text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
-              {audioStats.count === ACTIVE_SURAH.verseCount && <CheckCircle2 className="w-4 h-4 text-emerald-600" />}
+              {audioStats.count === surahMeta.verseCount && surahMeta.verseCount > 0 && <CheckCircle2 className="w-4 h-4 text-emerald-600" />}
               <span>
-                وضعیت کش آفلاین: {toFarsi(audioStats.count)} از {toFarsi(ACTIVE_SURAH.verseCount)} آیه ({toFarsi(audioStats.totalMb)} مگابایت)
+                وضعیت کش آفلاین: {toFarsi(audioStats.count)} از {toFarsi(surahMeta.verseCount)} آیه ({toFarsi(audioStats.totalMb)} مگابایت)
               </span>
             </span>
           </div>
@@ -653,7 +675,7 @@ export const ChillehProfilePage: React.FC = () => {
                 className="flex-1 py-2.5 px-4 rounded-2xl bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all"
               >
                 <Download className="w-4 h-4" />
-                <span>{audioStats.count === ACTIVE_SURAH.verseCount ? `بررسی مجدد ${toFarsi(ACTIVE_SURAH.verseCount)} آیه` : `دانلود آفلاین کل ${toFarsi(ACTIVE_SURAH.verseCount)} آیه (منشاوی)`}</span>
+                <span>{audioStats.count === surahMeta.verseCount && surahMeta.verseCount > 0 ? `بررسی مجدد ${toFarsi(surahMeta.verseCount)} آیه` : `دانلود آفلاین کل ${toFarsi(surahMeta.verseCount)} آیه (منشاوی)`}</span>
               </button>
             ) : (
               <button

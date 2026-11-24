@@ -16,6 +16,10 @@ interface PreferencesState {
   soundPack: SoundPack;
   reminderEnabled: boolean;
   reminderHourOverride: number | null;
+  autoFollowMushaf: boolean;
+  tajweedColorsEnabled: boolean;
+  offlineAsrEnabled: boolean;
+  activeSurah: number;
   initPreferences: () => void;
   setDarkMode: (dark: boolean) => void;
   toggleDarkMode: () => void;
@@ -29,6 +33,13 @@ interface PreferencesState {
   setSoundPack: (pack: SoundPack) => void;
   setReminderEnabled: (enabled: boolean) => void;
   setReminderHourOverride: (hour: number | null) => void;
+  setAutoFollowMushaf: (enabled: boolean) => void;
+  toggleAutoFollowMushaf: () => void;
+  setTajweedColorsEnabled: (enabled: boolean) => void;
+  toggleTajweedColorsEnabled: () => void;
+  setOfflineAsrEnabled: (enabled: boolean) => void;
+  toggleOfflineAsrEnabled: () => void;
+  setActiveSurah: (surah: number) => void;
 }
 
 function readBool(key: string, fallback: boolean): boolean {
@@ -78,6 +89,12 @@ function readInitialSoundPack(): SoundPack {
   return saved === "soft" ? "soft" : "default";
 }
 
+function readInitialActiveSurah(): number {
+  if (typeof window === "undefined") return 28;
+  const raw = Number(localStorage.getItem("active_surah") || 28);
+  return Number.isInteger(raw) && raw >= 1 && raw <= 114 ? raw : 28;
+}
+
 function applyDarkClass(dark: boolean) {
   if (typeof document === "undefined") return;
   document.documentElement.classList.toggle("dark", dark);
@@ -93,6 +110,10 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   soundPack: readInitialSoundPack(),
   reminderEnabled: readBool("reminder_enabled", false),
   reminderHourOverride: readInitialReminderHour(),
+  autoFollowMushaf: readBool("auto_follow_mushaf", true),
+  tajweedColorsEnabled: readBool("tajweed_colors_enabled", false),
+  offlineAsrEnabled: readBool("offline_asr_enabled", true),
+  activeSurah: readInitialActiveSurah(),
 
   initPreferences: () => {
     const dark = readInitialDark();
@@ -107,6 +128,10 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       soundPack: readInitialSoundPack(),
       reminderEnabled: readBool("reminder_enabled", false),
       reminderHourOverride: readInitialReminderHour(),
+      autoFollowMushaf: readBool("auto_follow_mushaf", true),
+      tajweedColorsEnabled: readBool("tajweed_colors_enabled", false),
+      offlineAsrEnabled: readBool("offline_asr_enabled", true),
+      activeSurah: readInitialActiveSurah(),
     });
   },
 
@@ -189,5 +214,46 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       }
     }
     set({ reminderHourOverride: hour });
+  },
+
+  setAutoFollowMushaf: (enabled) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("auto_follow_mushaf", String(enabled));
+    }
+    set({ autoFollowMushaf: enabled });
+  },
+
+  toggleAutoFollowMushaf: () => {
+    get().setAutoFollowMushaf(!get().autoFollowMushaf);
+  },
+
+  setTajweedColorsEnabled: (enabled) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("tajweed_colors_enabled", String(enabled));
+    }
+    set({ tajweedColorsEnabled: enabled });
+  },
+
+  toggleTajweedColorsEnabled: () => {
+    get().setTajweedColorsEnabled(!get().tajweedColorsEnabled);
+  },
+
+  setOfflineAsrEnabled: (enabled) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("offline_asr_enabled", String(enabled));
+    }
+    set({ offlineAsrEnabled: enabled });
+  },
+
+  toggleOfflineAsrEnabled: () => {
+    get().setOfflineAsrEnabled(!get().offlineAsrEnabled);
+  },
+
+  setActiveSurah: (surah) => {
+    const valid = Number.isInteger(surah) && surah >= 1 && surah <= 114 ? surah : 28;
+    if (typeof window !== "undefined") {
+      localStorage.setItem("active_surah", String(valid));
+    }
+    set({ activeSurah: valid });
   },
 }));

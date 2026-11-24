@@ -2,7 +2,8 @@
 // تسمیع نیم‌صفحه: متن پنهان ← تلاوت از حفظ با ضبط‌کننده موجود ← نمایش متن و علامت‌زدن آیه‌های لغزیده
 import { useEffect, useState } from "react";
 import { X, Eye, EyeOff, Mic, CheckCircle2, AlertTriangle, Info, Play } from "lucide-react";
-import { ldb } from "../../db/learningDb";
+import { ldb, verseKey } from "../../db/learningDb";
+import { formatSurahCardKey, getActiveSurahNumber } from "../../config/surahConfig";
 import { planTasmiCards } from "../../learning/tasmi";
 import { getMeta, setMeta } from "../../services/metaStore";
 import { getLocalDateIso } from "../../services/profileService";
@@ -52,7 +53,8 @@ export default function TasmiModal({
       if (nums.length === 0 && verseFrom && verseTo) {
         nums = Array.from({ length: verseTo - verseFrom + 1 }, (_, i) => verseFrom + i);
       }
-      const rows = await Promise.all(nums.map((n) => ldb.baseVerses.get(n)));
+      const surah = getActiveSurahNumber();
+      const rows = await Promise.all(nums.map((n) => ldb.baseVerses.get(verseKey(surah, n))));
       const loaded: VerseEntry[] = rows
         .filter((r): r is NonNullable<typeof r> => !!r)
         .map((r) => {
@@ -83,10 +85,16 @@ export default function TasmiModal({
   };
 
   const handleSave = async () => {
+    const surah = getActiveSurahNumber();
     const verseNums = verses.map((v) => v.n);
     const allKeys = [
-      ...verseNums.flatMap((v) => [`vr:${v}`, `sq:${v}`, `vt:${v}`, `vn:${v}`]),
-      `pg:${unitId}`,
+      ...verseNums.flatMap((v) => [
+        formatSurahCardKey("vr", v, surah),
+        formatSurahCardKey("sq", v, surah),
+        formatSurahCardKey("vt", v, surah),
+        formatSurahCardKey("vn", v, surah),
+      ]),
+      formatSurahCardKey("pg", unitId, surah),
     ];
     const existingRows = await ldb.cards.bulkGet(allKeys);
     const existingCards = new Map(
@@ -98,6 +106,7 @@ export default function TasmiModal({
       slippedVerses: slipped,
       existingCards,
       unitId,
+      surahNumber: surah,
       now,
     });
     if (toSave.length > 0) {

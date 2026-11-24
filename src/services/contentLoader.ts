@@ -1,7 +1,7 @@
 // src/services/contentLoader.ts
 // همگام‌سازی محتوای public/content/manifest.json → IndexedDB (بدون پاک‌کردن cards/attempts).
 // متن قرآن فقط از فایل‌های JSON محتوا خوانده می‌شود، نه از کد.
-import { ldb, type QuestionRow, type LexiconRow, type ChunkRow } from "../db/learningDb";
+import { ldb, verseKey, type BaseVerseRow, type QuestionRow, type LexiconRow, type ChunkRow } from "../db/learningDb";
 
 interface ManifestUnit { id: string; order: number; verses: string[]; files: { file: string; part: string; hash: string }[] }
 interface Manifest {
@@ -35,7 +35,18 @@ export async function syncContent(onProgress?: (done: number, total: number) => 
   const chunkRows: ChunkRow[] = [];
 
   const base = await getJson<unknown>(manifest.base.file);
-  const verses = (Array.isArray(base) ? base : (base as { verses: unknown[] }).verses) as { n: number }[];
+  const rawVerses = (Array.isArray(base) ? base : (base as { verses: unknown[] }).verses) as Record<string, unknown>[];
+  const verses: BaseVerseRow[] = rawVerses.map((v) => {
+    const n = Number(v.n);
+    const prevId = typeof v.id === "string" ? v.id : undefined;
+    return {
+      ...v,
+      n,
+      surah: 28,
+      ...(prevId ? { verseId: prevId } : {}),
+      id: verseKey(28, n),
+    };
+  });
   nextHashes[manifest.base.file] = manifest.base.hash;
 
   const total = manifest.units.reduce((a, u) => a + u.files.length, 0);
@@ -50,15 +61,24 @@ export async function syncContent(onProgress?: (done: number, total: number) => 
       onProgress?.(++done, total);
     }
   }
-  await ldb.transaction("rw", [ldb.questions, ldb.lexicon, ldb.chunks, ldb.baseVerses, ldb.unitProgress, ldb.meta], async () => {
-    await ldb.questions.clear();
-    await ldb.lexicon.clear();
-    await ldb.chunks.clear();
-    await ldb.baseVerses.clear();
+  await ldb.transaction("rw", [ldb.questions, ldb.lexicon, ldb.chunks, ldb.baseVerses, ldb.unitProgress, ldb.meta, ldb.surahPacks], async () => {
+    // فقط ردیف‌های سوره ۲۸ بازسازی می‌شوند تا پک‌های سایر سوره‌های نصب‌شده حفظ بمانند
+    await ldb.questions.filter((q) => !/^s\d+_/.test(q.unitId)).delete();
+    await ldb.lexicon.filter((l) => !/^s\d+_/.test(l.unitId)).delete();
+    await ldb.chunks.filter((c) => !/^s\d+_/.test(c.unitId)).delete();
+    await ldb.baseVerses.where("surah").equals(28).delete();
     if (questionRows.length) await ldb.questions.bulkPut(questionRows);
     if (lexiconRows.length) await ldb.lexicon.bulkPut(lexiconRows);
     if (chunkRows.length) await ldb.chunks.bulkPut(chunkRows);
     if (verses.length) await ldb.baseVerses.bulkPut(verses);
+    await ldb.surahPacks.put({
+      surahNumber: 28,
+      slug: "qasas",
+      nameFa: "قصص",
+      installed: true,
+      contentHash: manifest.contentHash,
+      updatedAt: Date.now(),
+    });
     for (const unit of manifest.units) {
       const existing = await ldb.unitProgress.get(unit.id);
       if (!existing) {

@@ -3,19 +3,27 @@
 // ۱) تایم‌استمپ کلمه‌به‌کلمه تلاوت استاد منشاوی (دقیقاً هم‌تراز با MP3های Minshawi/Murattal)
 // ۲) صرف، ریشه (ROOT)، لِما (LEM) و نقش دستوری هر کلمه + گزارش تطبیق با واژه‌نامه فعلی
 //
-// اجرا: node scripts/sync-qul-data.mjs [--surah 28]
+// اجرا: node scripts/sync-qul-data.mjs [--surah=28] [--out-dir=...]
 import fs from "node:fs/promises";
 import path from "node:path";
-
-const args = process.argv.slice(2);
-const surahIdx = args.indexOf("--surah");
-const SURAH = surahIdx >= 0 ? Number(args[surahIdx + 1]) || 28 : 28;
-const SURAH_SLUG = SURAH === 28 ? "qasas" : `s${String(SURAH).padStart(3, "0")}`;
+import { fileURLToPath } from "node:url";
 
 const ROOT_DIR = process.cwd();
-const BASE_DIR = path.join(ROOT_DIR, "public", "content", "base");
 const MERGED_DIR = path.join(ROOT_DIR, "public", "content", "merged");
 const DOCS_DIR = path.join(ROOT_DIR, "docs");
+
+function parseCliArgs(argv) {
+  let surah = 28;
+  let outDir = "";
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a.startsWith("--surah=")) surah = Number(a.slice("--surah=".length)) || 28;
+    else if (a === "--surah" && argv[i + 1]) surah = Number(argv[++i]) || 28;
+    else if (a.startsWith("--out-dir=")) outDir = a.slice("--out-dir=".length);
+    else if (a === "--out-dir" && argv[i + 1]) outDir = argv[++i];
+  }
+  return { surah, outDir };
+}
 
 const POS_FA = {
   N: "اسم",
@@ -221,17 +229,24 @@ async function crossCheckWithMergedLexicon(morphology) {
   return { totalLex, matchedRoots, missingInLex, mismatchCount: mismatches.length };
 }
 
-async function main() {
-  console.log(`🔄 Syncing QUL/Quran.com reference data for Surah ${SURAH}...`);
-  await fs.mkdir(BASE_DIR, { recursive: true });
+export async function syncQulForSurah({ surah = 28, outDir } = {}) {
+  const slug = surah === 28 ? "qasas" : `s${String(surah).padStart(3, "0")}`;
+  const baseDir =
+    outDir ||
+    (surah === 28
+      ? path.join(ROOT_DIR, "public", "content", "base")
+      : path.join(ROOT_DIR, "release", "packs", "work", slug));
+
+  console.log(`🔄 Syncing QUL/Quran.com reference data for Surah ${surah}...`);
+  await fs.mkdir(baseDir, { recursive: true });
 
   const [audioTiming, morphology] = await Promise.all([
-    fetchAudioTimings(SURAH),
-    fetchMorphology(SURAH),
+    fetchAudioTimings(surah),
+    fetchMorphology(surah),
   ]);
 
-  const timingPath = path.join(BASE_DIR, `${SURAH_SLUG}.audio-timing.json`);
-  const morphPath = path.join(BASE_DIR, `${SURAH_SLUG}.morphology.json`);
+  const timingPath = path.join(baseDir, `${slug}.audio-timing.json`);
+  const morphPath = path.join(baseDir, `${slug}.morphology.json`);
 
   await fs.writeFile(timingPath, JSON.stringify(audioTiming), "utf8");
   await fs.writeFile(morphPath, JSON.stringify(morphology), "utf8");
@@ -239,7 +254,7 @@ async function main() {
   console.log(`✅ Audio timings saved: ${timingPath} (${audioTiming.verseCount} verses)`);
   console.log(`✅ Morphology saved: ${morphPath} (${morphology.wordCount} words)`);
 
-  if (SURAH === 28) {
+  if (surah === 28 && !outDir) {
     const report = await crossCheckWithMergedLexicon(morphology);
     if (report) {
       console.log(
@@ -247,9 +262,15 @@ async function main() {
       );
     }
   }
+
+  return { audioTiming, morphology, timingPath, morphPath, outDir: baseDir };
 }
 
-main().catch((err) => {
-  console.error("❌ sync-qul-data failed:", err);
-  process.exit(1);
-});
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) {
+  const { surah, outDir } = parseCliArgs(process.argv.slice(2));
+  syncQulForSurah({ surah, outDir }).catch((err) => {
+    console.error("❌ sync-qul-data failed:", err);
+    process.exit(1);
+  });
+}

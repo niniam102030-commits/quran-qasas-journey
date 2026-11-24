@@ -8,7 +8,8 @@ import AqeeqIcon from "../components/common/AqeeqIcon";
 import { useLearningStore, type CycleKind } from "../store/useLearningStore";
 import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
 import { syncDailyReminder } from "../services/reminderService";
-import { ldb } from "../db/learningDb";
+import { ldb, verseKey } from "../db/learningDb";
+import { getActiveSurahNumber } from "../config/surahConfig";
 
 interface Props {
   unitId: string;
@@ -46,6 +47,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   const startTestOut = useLearningStore((state) => state.startTestOut);
   const startBlindSpots = useLearningStore((state) => state.startBlindSpots);
   const startCycleReview = useLearningStore((state) => state.startCycleReview);
+  const startDrill = useLearningStore((state) => state.startDrill);
   const { playSfx } = useHapticsAndSfx();
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
@@ -53,7 +55,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
   useEffect(() => {
     const state = useLearningStore.getState();
-    if (stage === -4 && cycleKind) {
+    if (stage === -5) {
+      if (state.status === "idle" || state.sessionType !== "DRILL" || state.unitId !== (unitId || null) || state.status === "finished") {
+        void startDrill(unitId || null);
+      }
+    } else if (stage === -4 && cycleKind) {
       if (state.status === "idle" || state.sessionType !== "REVIEW" || state.cycleKind !== cycleKind || state.status === "finished") {
         void startCycleReview(cycleKind);
       }
@@ -74,7 +80,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
       void startStage(unitId, stage);
     }
-  }, [unitId, stage, remedialTag, cycleKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview]);
+  }, [unitId, stage, remedialTag, cycleKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview, startDrill]);
 
   // جشن پایان مرحله موفق با افکت صوتی و Confetti + زمان‌بندی مجدد یادآور روزانه (بدون درخواست مجوز)
   useEffect(() => {
@@ -121,7 +127,8 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
       if (numVal !== undefined) return toFarsiNum(numVal);
       if (item.wordsAr?.length) return item.wordsAr.join(" ");
       if (item.wordRange) {
-        const verse = await ldb.baseVerses.get(item.wordRange.verse);
+        const surah = getActiveSurahNumber();
+        const verse = await ldb.baseVerses.get(verseKey(surah, item.wordRange.verse));
         const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
         return words
           .filter((word) => word.i >= item.wordRange!.from && word.i <= item.wordRange!.to)
@@ -129,11 +136,12 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           .join(" ");
       }
       if (item.words?.length && item.words.every((id) => /^w\d+_\d+_\d+$/.test(id))) {
+        const surah = getActiveSurahNumber();
         const parsed = item.words.map((id) => {
           const match = /^w\d+_(\d+)_(\d+)$/.exec(id)!;
           return { verse: Number(match[1]), index: Number(match[2]) };
         });
-        const verses = await Promise.all([...new Set(parsed.map((p) => p.verse))].map((n) => ldb.baseVerses.get(n)));
+        const verses = await Promise.all([...new Set(parsed.map((p) => p.verse))].map((n) => ldb.baseVerses.get(verseKey(surah, n))));
         const byVerse = new Map(
           verses
             .filter((verse): verse is NonNullable<typeof verse> => !!verse)
@@ -204,13 +212,17 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           <div className="space-y-1.5">
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
               {isEmpty
-                ? stage === -2
+                ? stage === -5
+                  ? "سؤال کافی برای دریل اتصال و شروع از وسط موجود نیست"
+                  : stage === -2
                   ? "سؤال کافی برای آزمون میانبر این واحد موجود نیست"
                   : stage === -1
                   ? "خطایی برای تمرین ترمیمی ثبت نشده است"
                   : stage === 0
                   ? "فعلاً کارتی برای مرور سررسید نشده است"
                   : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                : stage === -5
+                ? "دریل اتصال و شروع از وسط به پایان رسید"
                 : stage === -2
                 ? isPassed
                   ? "آزمون میانبر با موفقیت گذرانده شد 🎉"

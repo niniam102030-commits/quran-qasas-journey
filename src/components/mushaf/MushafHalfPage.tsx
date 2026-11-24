@@ -1,16 +1,19 @@
 // src/components/mushaf/MushafHalfPage.tsx
-import { useState, useEffect, useMemo, useCallback } from "react";
-import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints, Flame, AlertCircle, VolumeX, Mic } from "lucide-react";
-import { ldb, type LexiconRow, type StoredCard } from "../../db/learningDb";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import { Eye, EyeOff, BookOpen, Sparkles, ChevronRight, Maximize2, Minimize2, Footprints, Flame, AlertCircle, VolumeX, Mic, Play, Pause, X, Loader2, Palette } from "lucide-react";
+import { ldb, verseKey, type LexiconRow, type StoredCard } from "../../db/learningDb";
 import { newCard, review } from "../../learning/cardScheduler";
 import { skillLevel } from "../../learning/mastery";
 import { planMutedSession } from "../../learning/mutedAudio";
+import { TAJWEED_RULES, getWordTajweedStyle, type SurahTajweedData, type TajweedRuleId } from "../../learning/tajweed";
 import { getMeta, setMeta } from "../../services/metaStore";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
+import { useContinuousPlay } from "../../hooks/useContinuousPlay";
 import {
   findActiveWordAtMs,
   loadQulAudioTimings,
   loadQulMorphology,
+  loadTajweedData,
   type QulMorphologyEntry,
   type WordAudioSegment,
 } from "../../services/qulReferenceService";
@@ -36,6 +39,7 @@ interface Props {
   unitId: string;
   onClose?: () => void;
   onStartPractice?: () => void;
+  onOpenTajweedLessons?: () => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -43,7 +47,7 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Props) {
+export default function MushafHalfPage({ unitId, onClose, onStartPractice, onOpenTajweedLessons }: Props) {
   const [verses, setVerses] = useState<Verse[]>([]);
   const [loading, setLoading] = useState(true);
   const [mode, setMode] = useState<"reading" | "partial" | "hidden" | "step">("reading");
@@ -54,6 +58,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [activeAudioWord, setActiveAudioWord] = useState<{ verse: number; wordIndex: number } | null>(null);
   const [audioTimings, setAudioTimings] = useState<Record<string, WordAudioSegment[]>>({});
   const [qulMorphMap, setQulMorphMap] = useState<Record<string, QulMorphologyEntry>>({});
+  const [tajweedData, setTajweedData] = useState<SurahTajweedData | null>(null);
   const [focusMode, setFocusMode] = useState<boolean>(false);
   const [showHeatmap, setShowHeatmap] = useState<boolean>(true);
   const [cardsMap, setCardsMap] = useState<Map<string, StoredCard>>(new Map());
@@ -62,11 +67,32 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
   const [pinNotice, setPinNotice] = useState<string | null>(null);
   const [showMutedQuiz, setShowMutedQuiz] = useState<boolean>(false);
   const [showTasmi, setShowTasmi] = useState<boolean>(false);
+  const [surahNameFa, setSurahNameFa] = useState<string>("سوره قصص");
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
   const mushafTheme = usePreferencesStore((s) => s.mushafTheme);
+  const autoFollowMushaf = usePreferencesStore((s) => s.autoFollowMushaf);
+  const toggleAutoFollowMushaf = usePreferencesStore((s) => s.toggleAutoFollowMushaf);
+  const tajweedColorsEnabled = usePreferencesStore((s) => s.tajweedColorsEnabled);
+  const toggleTajweedColorsEnabled = usePreferencesStore((s) => s.toggleTajweedColorsEnabled);
+  const verseSpanRefs = useRef<Map<number, HTMLSpanElement>>(new Map());
 
   const allWordIds = useMemo(() => verses.flatMap((v) => v.words.map((w) => w.id)), [verses]);
   const verseNumsList = useMemo(() => verses.map((v) => v.n), [verses]);
+  const continuous = useContinuousPlay({
+    verses: verseNumsList,
+    surahNumber: activeSurah,
+    audioTimings,
+    autoFollow: autoFollowMushaf,
+    onScrollToVerse: (verseNum) => {
+      const el = verseSpanRefs.current.get(verseNum);
+      if (el && typeof el.scrollIntoView === "function") {
+        el.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+    },
+  });
+  const effectiveActiveVerse = continuous.status !== "idle" ? continuous.activeVerse : activeAudioVerse;
+  const effectiveActiveWord = continuous.status !== "idle" ? continuous.activeWord : activeAudioWord;
   const mutedWordsInput = useMemo(
     () => verses.map((v) => ({ n: v.n, words: v.words.map((w) => w.ar) })),
     [verses],
@@ -108,15 +134,31 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
 
   useEffect(() => {
     let active = true;
-    Promise.all([loadQulAudioTimings(), loadQulMorphology()]).then(([timings, morph]) => {
+    Promise.all([
+      loadQulAudioTimings("qasas", activeSurah),
+      loadQulMorphology("qasas", activeSurah),
+      activeSurah === 28 ? loadTajweedData("qasas") : Promise.resolve(null),
+    ]).then(([timings, morph, tajweed]) => {
       if (!active) return;
       setAudioTimings(timings);
       setQulMorphMap(morph);
+      setTajweedData(tajweed);
     });
     return () => {
       active = false;
     };
-  }, []);
+  }, [activeSurah]);
+
+  const tajweedByVerseWord = useMemo(() => {
+    const map = new Map<string, TajweedRuleId[]>();
+    if (!tajweedData?.verses) return map;
+    for (const [vKey, list] of Object.entries(tajweedData.verses)) {
+      for (const entry of list) {
+        map.set(`${vKey}:${entry.w}`, entry.rules);
+      }
+    }
+    return map;
+  }, [tajweedData]);
 
   const handlePlaybackProgress = useCallback(
     (verse: number, currentTimeMs: number) => {
@@ -190,14 +232,34 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
     async function loadVerses() {
       setLoading(true);
       try {
-        // Find verses belonging to this unit from unit plan
-        const base = import.meta.env.BASE_URL || "/";
-        const planRes = await fetch(`${base}content/base/units-plan.json`);
-        const plan = await planRes.json();
-        const unit = plan.find((u: { id: string }) => u.id === unitId);
-        if (unit && unit.verses) {
-          const verseNums = unit.verses.map((v: string) => Number(v.slice(4)));
-          const baseRows = await ldb.baseVerses.where("n").anyOf(verseNums).toArray();
+        let unit: { id: string; verses?: string[]; verseFrom?: number; verseTo?: number } | undefined;
+        if (activeSurah === 28) {
+          setSurahNameFa("سوره قصص");
+          const base = import.meta.env.BASE_URL || "/";
+          const planRes = await fetch(`${base}content/base/units-plan.json`);
+          const plan = await planRes.json();
+          unit = plan.find((u: { id: string }) => u.id === unitId);
+        } else {
+          const packMeta = await getMeta<{
+            nameFa?: string;
+            units?: { id: string; verses?: string[]; verseFrom?: number; verseTo?: number }[];
+          } | null>(`surahPackMeta:${activeSurah}`, null);
+          if (packMeta?.nameFa) setSurahNameFa(packMeta.nameFa);
+          unit = packMeta?.units?.find((u) => u.id === unitId);
+        }
+        if (unit) {
+          const verseNums: number[] = unit.verses?.length
+            ? unit.verses
+                .map((v: string) => {
+                  const m = /(\d+)$/.exec(v);
+                  return m ? Number(m[1]) : Number(v.slice(4));
+                })
+                .filter((n) => Number.isFinite(n) && n > 0)
+            : unit.verseFrom && unit.verseTo
+            ? Array.from({ length: unit.verseTo - unit.verseFrom + 1 }, (_, i) => unit!.verseFrom! + i)
+            : [];
+          const rawRows = await ldb.baseVerses.bulkGet(verseNums.map((n) => verseKey(activeSurah, n)));
+          const baseRows = rawRows.filter((r): r is NonNullable<typeof r> => !!r);
           baseRows.sort((a, b) => a.n - b.n);
           setVerses(baseRows as unknown as Verse[]);
         }
@@ -208,7 +270,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
       }
     }
     loadVerses();
-  }, [unitId]);
+  }, [unitId, activeSurah]);
 
   const toggleRevealWord = (wordId: string) => {
     setRevealedWords((prev) => {
@@ -289,6 +351,34 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
         </div>
 
         <div className="flex items-center gap-1.5">
+          {!loading && verseNumsList.length > 0 && (
+            <button
+              type="button"
+              onClick={() => {
+                if (continuous.status === "idle") {
+                  continuous.start(0);
+                } else {
+                  void continuous.togglePause();
+                }
+              }}
+              title={continuous.status === "idle" ? "پخش پیوستهٔ واحد" : "توقف/ادامه پخش پیوسته"}
+              className={`py-1.5 px-2.5 rounded-xl text-xs font-extrabold flex items-center gap-1 transition-all ${
+                continuous.status !== "idle"
+                  ? "bg-emerald-600 text-white shadow-sm"
+                  : "bg-amber-600 hover:bg-amber-700 text-white shadow-sm"
+              }`}
+            >
+              {continuous.status === "loading" ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : continuous.status === "playing" ? (
+                <Pause className="w-3.5 h-3.5 fill-white" />
+              ) : (
+                <Play className="w-3.5 h-3.5 fill-white" />
+              )}
+              <span className="hidden sm:inline">پخش پیوسته</span>
+            </button>
+          )}
+
           {/* Practice Mode Selector */}
           <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5">
             {(
@@ -312,6 +402,20 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
               </button>
             ))}
           </div>
+
+          <button
+            type="button"
+            onClick={toggleTajweedColorsEnabled}
+            title={tajweedColorsEnabled ? "خاموش‌کردن رنگ‌های تجوید" : "نمایش رنگ‌های تجوید"}
+            className={`px-2.5 py-1.5 rounded-xl text-[11px] font-extrabold flex items-center gap-1 transition-colors ${
+              tajweedColorsEnabled
+                ? "bg-teal-600 text-white shadow-sm"
+                : "bg-black/5 dark:bg-white/5 text-slate-600 dark:text-slate-300"
+            }`}
+          >
+            <Palette className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">رنگ‌های تجوید</span>
+          </button>
 
           <button
             type="button"
@@ -425,7 +529,7 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             {/* Mushaf Decorative Iranian-Islamic Tazhib Banner Top */}
             <div className="text-center pb-3.5 mb-5 border-b-2 border-[#d4af37]/40 dark:border-teal-800/60 flex items-center justify-center gap-2 text-xs font-extrabold text-[#028090] dark:text-amber-300">
               <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>مصحف شریف سوره قصص — رسم‌الخط عثمانی</span>
+              <span>مصحف شریف {surahNameFa} — رسم‌الخط عثمانی</span>
               <Sparkles className="w-4 h-4 text-amber-500" />
             </div>
 
@@ -437,16 +541,25 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
               {verses.map((v) => (
                 <span
                   key={v.n}
+                  ref={(el) => {
+                    if (el) verseSpanRefs.current.set(v.n, el);
+                    else verseSpanRefs.current.delete(v.n);
+                  }}
                   className={`inline rounded-xl transition-colors ${
-                    activeAudioVerse === v.n ? "bg-amber-200/45 dark:bg-amber-900/35" : ""
+                    effectiveActiveVerse === v.n ? "bg-amber-200/45 dark:bg-amber-900/35" : ""
                   }`}
                 >
-                  {v.words.map((w) => {
+                  {v.words.map((w, wIdx) => {
                     const hidden = isWordHidden(w);
                     const isAudioHighlighted =
-                      activeAudioWord !== null &&
-                      activeAudioWord.verse === v.n &&
-                      activeAudioWord.wordIndex === w.i;
+                      effectiveActiveWord !== null &&
+                      effectiveActiveWord.verse === v.n &&
+                      effectiveActiveWord.wordIndex === w.i;
+                    const tajweedRules = tajweedColorsEnabled ? tajweedByVerseWord.get(`${v.n}:${wIdx}`) : undefined;
+                    const tajweedStyle = tajweedRules ? getWordTajweedStyle(tajweedRules) : null;
+                    const wordColorOrHeat = tajweedStyle?.className
+                      ? `${tajweedStyle.className} ${tajweedStyle.hasMultiple ? "" : getWordHeatClass(w.id)}`
+                      : getWordHeatClass(w.id);
                     return (
                       <span
                         key={w.id}
@@ -460,8 +573,8 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
                             : isAudioHighlighted
                             ? "bg-emerald-400/35 dark:bg-emerald-500/35 ring-2 ring-emerald-500/70 text-emerald-950 dark:text-emerald-100 scale-[1.04]"
                             : selectedWord === w.id
-                            ? `bg-amber-200/70 dark:bg-amber-900/40 ${getWordHeatClass(w.id)}`
-                            : `hover:bg-amber-100/50 dark:hover:bg-white/5 ${getWordHeatClass(w.id)}`
+                            ? `bg-amber-200/70 dark:bg-amber-900/40 ${wordColorOrHeat}`
+                            : `hover:bg-amber-100/50 dark:hover:bg-white/5 ${wordColorOrHeat}`
                         }`}
                       >
                         {w.ar}
@@ -484,6 +597,38 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
               <div className="mt-6 pt-4 border-t border-[#e9dfcb] dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center gap-1.5">
                 <Eye className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
                 <span>برای نمایش یا پنهان‌سازی هر کلمه، روی آن ضربه بزنید.</span>
+              </div>
+            )}
+
+            {/* راهنمای رنگ‌های تجوید (B2) */}
+            {tajweedColorsEnabled && (
+              <div className="mt-6 pt-4 border-t border-[#e9dfcb] dark:border-slate-800 space-y-2.5 text-xs">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="font-bold text-slate-700 dark:text-slate-200">
+                    راهنمای رنگ‌های تجوید (خط چین = چند حکم هم‌زمان)
+                  </span>
+                  {onOpenTajweedLessons && (
+                    <button
+                      type="button"
+                      onClick={onOpenTajweedLessons}
+                      className="px-3 py-1 rounded-xl bg-teal-50 hover:bg-teal-100 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-[#028090] dark:text-teal-300 font-bold text-[11px]"
+                    >
+                      مینی‌درس‌های تجوید
+                    </button>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {TAJWEED_RULES.map((rule) => (
+                    <span
+                      key={rule.id}
+                      title={rule.shortDescFa}
+                      className="inline-flex items-center gap-1.5 px-2 py-1 rounded-xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700 text-[11px]"
+                    >
+                      <span className={`w-2.5 h-2.5 rounded-full ${rule.swatchClass}`} />
+                      <span className={`font-bold ${rule.colorClass}`}>{rule.nameFa}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -601,6 +746,50 @@ export default function MushafHalfPage({ unitId, onClose, onStartPractice }: Pro
             onStartPractice?.();
           }}
         />
+      )}
+
+      {/* Floating Continuous Play Control Pill (B3) */}
+      {continuous.status !== "idle" && (
+        <div className="fixed bottom-20 inset-x-0 z-30 flex justify-center px-4 pointer-events-none">
+          <div className="pointer-events-auto flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/95 dark:bg-slate-800/95 text-white shadow-xl border border-amber-400/50 text-xs">
+            <button
+              type="button"
+              onClick={() => void continuous.togglePause()}
+              className="w-8 h-8 rounded-xl bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center shrink-0"
+              aria-label={continuous.status === "playing" ? "توقف پخش پیوسته" : "ادامه پخش پیوسته"}
+            >
+              {continuous.status === "loading" ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : continuous.status === "playing" ? (
+                <Pause className="w-4 h-4 fill-white" />
+              ) : (
+                <Play className="w-4 h-4 fill-white" />
+              )}
+            </button>
+            <span className="font-bold">
+              {continuous.activeVerse ? `آیه ${toFarsiNum(continuous.activeVerse)}` : "در حال پخش..."}
+            </span>
+            <button
+              type="button"
+              onClick={toggleAutoFollowMushaf}
+              className={`px-2 py-1 rounded-lg text-[11px] font-bold border ${
+                autoFollowMushaf
+                  ? "bg-teal-600 border-teal-400 text-white"
+                  : "bg-slate-700 border-slate-600 text-slate-300"
+              }`}
+            >
+              دنبال‌کردن {autoFollowMushaf ? "روشن" : "خاموش"}
+            </button>
+            <button
+              type="button"
+              onClick={continuous.stop}
+              aria-label="بستن پخش پیوسته"
+              className="p-1.5 rounded-lg hover:bg-white/10 text-slate-300"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
       )}
 
       {/* Bottom Sticky Action Bar */}

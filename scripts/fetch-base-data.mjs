@@ -6,44 +6,87 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, "..");
 
-async function fetchQuranComVerses() {
-  console.log("⏳ Fetching Surah 28 verses from Quran.com API v4...");
+const SURAH_NAMES_FA = {
+  1: "سوره حمد (فاتحه)",
+  18: "سوره کهف",
+  28: "سوره قصص",
+  36: "سوره یس",
+  55: "سوره الرحمن",
+  56: "سوره واقعه",
+  67: "سوره ملک",
+  78: "سوره نبأ",
+  112: "سوره اخلاص",
+  113: "سوره فلق",
+  114: "سوره ناس",
+};
+
+function parseCliArgs(argv) {
+  let surah = 28;
+  let outDir = "";
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a.startsWith("--surah=")) surah = Number(a.slice("--surah=".length)) || 28;
+    else if (a === "--surah" && argv[i + 1]) surah = Number(argv[++i]) || 28;
+    else if (a.startsWith("--out-dir=")) outDir = a.slice("--out-dir=".length);
+    else if (a === "--out-dir" && argv[i + 1]) outDir = argv[++i];
+  }
+  return { surah, outDir };
+}
+
+async function fetchChapterMeta(surah) {
+  const res = await fetch(`https://api.quran.com/api/v4/chapters/${surah}?language=fa`);
+  if (!res.ok) throw new Error(`Failed to fetch chapter ${surah} metadata: ${res.statusText}`);
+  const data = await res.json();
+  const ch = data.chapter || {};
+  const versesCount = Number(ch.verses_count || (surah === 28 ? 88 : 0));
+  const nameAr = String(ch.name_arabic || "");
+  const nameFa = SURAH_NAMES_FA[surah] || (ch.translated_name?.name ? `سوره ${ch.translated_name.name}` : `سوره ${nameAr}`);
+  return { versesCount, nameAr, nameFa };
+}
+
+async function fetchQuranComVerses(surah, expectedCount) {
+  console.log(`⏳ Fetching Surah ${surah} verses from Quran.com API v4...`);
   const verses = [];
-  for (let page = 1; page <= 2; page++) {
-    const url = `https://api.quran.com/api/v4/verses/by_chapter/28?words=true&word_fields=text_uthmani,page_number,line_number&per_page=50&page=${page}`;
+  let page = 1;
+  let totalPages = 1;
+  while (page <= totalPages) {
+    const url = `https://api.quran.com/api/v4/verses/by_chapter/${surah}?words=true&word_fields=text_uthmani,page_number,line_number&per_page=50&page=${page}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed to fetch page ${page}: ${res.statusText}`);
     const data = await res.json();
-    verses.push(...data.verses);
+    totalPages = Number(data.pagination?.total_pages ?? 1);
+    verses.push(...(data.verses ?? []));
+    page++;
   }
-  if (verses.length !== 88) {
-    throw new Error(`Expected 88 verses, got ${verses.length}`);
+  if (expectedCount > 0 && verses.length !== expectedCount) {
+    throw new Error(`Expected ${expectedCount} verses for Surah ${surah}, got ${verses.length}`);
   }
-  console.log(`✅ Successfully fetched 88 verses with words & line metadata.`);
+  console.log(`✅ Successfully fetched ${verses.length} verses with words & line metadata.`);
   return verses;
 }
 
-async function fetchAnsarianTranslation() {
-  console.log("⏳ Fetching Ansarian translation from Tanzil...");
+async function fetchAnsarianTranslation(surah, expectedCount) {
+  console.log(`⏳ Fetching Ansarian translation for Surah ${surah} from Tanzil...`);
   const res = await fetch("https://tanzil.net/trans/fa.ansarian");
   if (!res.ok) throw new Error(`Failed to fetch Tanzil Ansarian: ${res.statusText}`);
   const text = await res.text();
   const lines = text.split("\n");
   const translationMap = new Map();
+  const surahStr = String(surah);
 
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed || trimmed.startsWith("#")) continue;
     const [s, a, fa] = trimmed.split("|");
-    if (s === "28") {
+    if (s === surahStr) {
       translationMap.set(Number(a), fa.trim());
     }
   }
 
-  if (translationMap.size !== 88) {
-    throw new Error(`Expected 88 Ansarian verses for Surah 28, found ${translationMap.size}`);
+  if (expectedCount > 0 && translationMap.size !== expectedCount) {
+    throw new Error(`Expected ${expectedCount} Ansarian verses for Surah ${surah}, found ${translationMap.size}`);
   }
-  console.log(`✅ Successfully parsed 88 verses of Ansarian translation.`);
+  console.log(`✅ Successfully parsed ${translationMap.size} verses of Ansarian translation.`);
   return translationMap;
 }
 
@@ -126,25 +169,20 @@ function buildSimilarityMap(baseVerses) {
   return similarity;
 }
 
-function buildUnitsPlan(baseVerses) {
-  console.log("⏳ Building half-page units plan...");
-  // Group verses by their ending page & half
-  // Page 385 starts at line 10 -> u_p385b
-  // Other pages: endLine <= 8 -> 'a', endLine >= 9 -> 'b'
-  // Page 396 ends at line 7 -> u_p396a
+function buildUnitsPlan(baseVerses, surah = 28) {
+  console.log(`⏳ Building half-page units plan for Surah ${surah}...`);
   const rawUnits = [];
   let currentUnit = null;
 
   for (const v of baseVerses) {
     const page = v.endPage;
     let half = v.endLine <= 8 ? "a" : "b";
-    if (page === 385) {
-      // On page 385, Surah Al-Qasas starts at line 10, so all verses on p385 are on half 'b'
-      // To keep standard unit naming, we can call it u_p385b
+    if (surah === 28 && page === 385) {
       half = "b";
     }
 
-    const unitId = `u_p${page}${half}`;
+    const baseId = `u_p${page}${half}`;
+    const unitId = surah === 28 ? baseId : `s${surah}_${baseId}`;
 
     if (!currentUnit || currentUnit.id !== unitId) {
       currentUnit = {
@@ -169,80 +207,93 @@ function buildUnitsPlan(baseVerses) {
     u.order = idx + 1;
   });
 
-  console.log(`✅ Generated ${rawUnits.length} half-page units across pages 385-396.`);
+  console.log(`✅ Generated ${rawUnits.length} half-page units for Surah ${surah}.`);
   return rawUnits;
 }
 
-async function main() {
-  try {
-    const rawVerses = await fetchQuranComVerses();
-    const ansarianMap = await fetchAnsarianTranslation();
+export async function fetchBaseDataForSurah({ surah = 28, outDir } = {}) {
+  const slug = surah === 28 ? "qasas" : `s${String(surah).padStart(3, "0")}`;
+  const meta = await fetchChapterMeta(surah);
+  const rawVerses = await fetchQuranComVerses(surah, meta.versesCount);
+  const ansarianMap = await fetchAnsarianTranslation(surah, meta.versesCount);
+  const wordPrefix = surah === 28 ? "28" : String(surah).padStart(2, "0");
 
-    const baseVerses = rawVerses.map((v) => {
-      const n = v.verse_number;
-      const id = `v28_${String(n).padStart(3, "0")}`;
-      
-      // Filter out ayah-marker word if present at the end
-      const actualWords = v.words
-        .filter((w) => w.char_type_name === "word")
-        .map((w, idx) => ({
-          id: `w28_${String(n).padStart(3, "0")}_${String(idx + 1).padStart(3, "0")}`,
-          i: idx + 1,
-          ar: w.text_uthmani,
-          page: w.page_number,
-          line: w.line_number,
-        }));
+  const baseVerses = rawVerses.map((v) => {
+    const n = v.verse_number;
+    const id = `v${surah}_${String(n).padStart(3, "0")}`;
 
-      const arText = actualWords.map((w) => w.ar).join(" ");
-      const fa = ansarianMap.get(n);
-      const startWord = actualWords[0] || { page: v.page_number, line: 1 };
-      const endWord = actualWords[actualWords.length - 1] || startWord;
+    // Filter out ayah-marker word if present at the end
+    const actualWords = v.words
+      .filter((w) => w.char_type_name === "word")
+      .map((w, idx) => ({
+        id: `w${wordPrefix}_${String(n).padStart(3, "0")}_${String(idx + 1).padStart(3, "0")}`,
+        i: idx + 1,
+        ar: w.text_uthmani,
+        page: w.page_number,
+        line: w.line_number,
+      }));
 
-      return {
-        id,
-        n,
-        page: startWord.page,
-        words: actualWords,
-        arText,
-        fa,
-        endPage: endWord.page,
-        endLine: endWord.line,
-      };
-    });
+    const arText = actualWords.map((w) => w.ar).join(" ");
+    const fa = ansarianMap.get(n) || "";
+    const startWord = actualWords[0] || { page: v.page_number, line: 1 };
+    const endWord = actualWords[actualWords.length - 1] || startWord;
 
-    const similarity = buildSimilarityMap(baseVerses);
-    const unitsPlan = buildUnitsPlan(baseVerses);
+    return {
+      id,
+      n,
+      page: startWord.page,
+      words: actualWords,
+      arText,
+      fa,
+      endPage: endWord.page,
+      endLine: endWord.line,
+    };
+  });
 
-    // Save outputs
-    const baseDir = path.join(ROOT_DIR, "public", "content", "base");
-    await fs.mkdir(baseDir, { recursive: true });
+  const similarity = buildSimilarityMap(baseVerses);
+  const unitsPlan = buildUnitsPlan(baseVerses, surah);
 
-    await fs.writeFile(
-      path.join(baseDir, "qasas.base.json"),
-      JSON.stringify(baseVerses, null, 2),
-      "utf8"
-    );
-    console.log(`💾 Saved ${path.join(baseDir, "qasas.base.json")}`);
+  const baseDir =
+    outDir ||
+    (surah === 28
+      ? path.join(ROOT_DIR, "public", "content", "base")
+      : path.join(ROOT_DIR, "release", "packs", "work", slug));
+  await fs.mkdir(baseDir, { recursive: true });
 
-    await fs.writeFile(
-      path.join(baseDir, "units-plan.json"),
-      JSON.stringify(unitsPlan, null, 2),
-      "utf8"
-    );
-    console.log(`💾 Saved ${path.join(baseDir, "units-plan.json")}`);
+  const baseFile = path.join(baseDir, `${slug}.base.json`);
+  const unitsFile = path.join(baseDir, "units-plan.json");
+  const simFile = path.join(baseDir, "similarity.json");
 
-    await fs.writeFile(
-      path.join(baseDir, "similarity.json"),
-      JSON.stringify(similarity, null, 2),
-      "utf8"
-    );
-    console.log(`💾 Saved ${path.join(baseDir, "similarity.json")}`);
+  await fs.writeFile(baseFile, JSON.stringify(baseVerses, null, 2), "utf8");
+  console.log(`💾 Saved ${baseFile}`);
 
-    console.log("\n🎉 Phase 1 Base Data generation completed successfully!");
-  } catch (err) {
-    console.error("❌ Error in fetch-base-data:", err);
-    process.exit(1);
-  }
+  await fs.writeFile(unitsFile, JSON.stringify(unitsPlan, null, 2), "utf8");
+  console.log(`💾 Saved ${unitsFile}`);
+
+  await fs.writeFile(simFile, JSON.stringify(similarity, null, 2), "utf8");
+  console.log(`💾 Saved ${simFile}`);
+
+  return {
+    surah,
+    slug,
+    nameAr: meta.nameAr,
+    nameFa: meta.nameFa,
+    verses: baseVerses.length,
+    baseVerses,
+    unitsPlan,
+    similarity,
+    outDir: baseDir,
+  };
 }
 
-main();
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) {
+  const { surah, outDir } = parseCliArgs(process.argv.slice(2));
+  fetchBaseDataForSurah({ surah, outDir }).then(
+    () => console.log("\n🎉 Phase 1 Base Data generation completed successfully!"),
+    (err) => {
+      console.error("❌ Error in fetch-base-data:", err);
+      process.exit(1);
+    },
+  );
+}

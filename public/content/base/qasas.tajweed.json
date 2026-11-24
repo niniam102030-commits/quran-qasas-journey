@@ -1,0 +1,4674 @@
+{
+  "schema": "qasas.tajweed.v1",
+  "surah": 28,
+  "source": "Quran.com API v4 / QUL (word_fields=text_uthmani_tajweed)",
+  "verses": {
+    "1": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "w": 2,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "w": 1,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ghunnah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "w": 4,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham",
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa",
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "w": 0,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham",
+          "madd",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "w": 4,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 30,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 33,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 34,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 35,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 36,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 37,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham",
+          "qalqalah",
+          "madd"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "w": 3,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "idgham",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 28,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 29,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 31,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "w": 2,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 26,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "w": 1,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 28,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "29": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 26,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "w": 3,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "qalqalah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "w": 4,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham",
+          "qalqalah",
+          "madd"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "35": [
+      {
+        "w": 4,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 26,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "39": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "ghunnah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      }
+    ],
+    "43": [
+      {
+        "w": 0,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "44": [
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "45": [
+      {
+        "w": 0,
+        "rules": [
+          "madd",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "46": [
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "idgham",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ikhfa",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa",
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham",
+          "iqlab"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "48": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "ikhfa",
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "w": 2,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "50": [
+      {
+        "w": 0,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "51": [
+      {
+        "w": 0,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "52": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "53": [
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "qalqalah",
+          "idgham"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "56": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "idgham",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "madd",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "58": [
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa",
+          "iqlab"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham",
+          "iqlab"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "iqlab"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "59": [
+      {
+        "w": 6,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "60": [
+      {
+        "w": 0,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "idgham",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "61": [
+      {
+        "w": 0,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "62": [
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "63": [
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "64": [
+      {
+        "w": 1,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "65": [
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "66": [
+      {
+        "w": 2,
+        "rules": [
+          "iqlab",
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "67": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "68": [
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "69": [
+      {
+        "w": 3,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "70": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "71": [
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "72": [
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      }
+    ],
+    "73": [
+      {
+        "w": 0,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "74": [
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "75": [
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ghunnah",
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "76": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 24,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 28,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "77": [
+      {
+        "w": 0,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "78": [
+      {
+        "w": 1,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ikhfa",
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 20,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 21,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 23,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 26,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 27,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      }
+    ],
+    "79": [
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 19,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "80": [
+      {
+        "w": 7,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "81": [
+      {
+        "w": 1,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa",
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham",
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      }
+    ],
+    "82": [
+      {
+        "w": 2,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 16,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "idgham",
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 22,
+        "rules": [
+          "ghunnah",
+          "madd"
+        ]
+      },
+      {
+        "w": 25,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "83": [
+      {
+        "w": 3,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "84": [
+      {
+        "w": 0,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "85": [
+      {
+        "w": 0,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 5,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "ikhfa",
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 11,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ikhfa",
+          "madd"
+        ]
+      },
+      {
+        "w": 17,
+        "rules": [
+          "madd",
+          "idgham"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "86": [
+      {
+        "w": 1,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 2,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 8,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 10,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 12,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "idgham"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "idgham",
+          "madd"
+        ]
+      }
+    ],
+    "87": [
+      {
+        "w": 1,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 3,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "ikhfa"
+        ]
+      },
+      {
+        "w": 9,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 13,
+        "rules": [
+          "ghunnah"
+        ]
+      },
+      {
+        "w": 15,
+        "rules": [
+          "madd"
+        ]
+      }
+    ],
+    "88": [
+      {
+        "w": 1,
+        "rules": [
+          "qalqalah"
+        ]
+      },
+      {
+        "w": 4,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 6,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 7,
+        "rules": [
+          "madd"
+        ]
+      },
+      {
+        "w": 14,
+        "rules": [
+          "qalqalah",
+          "madd"
+        ]
+      },
+      {
+        "w": 18,
+        "rules": [
+          "madd"
+        ]
+      }
+    ]
+  }
+}

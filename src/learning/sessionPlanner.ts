@@ -11,7 +11,7 @@ export interface PlannerQuestion {
   targets: string[];
 }
 
-export type SessionType = "STAGE" | "REVIEW" | "REMEDIAL" | "CUMULATIVE" | "TESTOUT";
+export type SessionType = "STAGE" | "REVIEW" | "REMEDIAL" | "CUMULATIVE" | "TESTOUT" | "DRILL" | "EXAM";
 
 export interface PlanOptions {
   size?: number; // پیش‌فرض ۲۰ برای مرحله

@@ -2,7 +2,7 @@
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۱۰ فصل داستانی سوره قصص با داشبورد برنامه امروز، مأموریت‌ها، چرخه مراجعه و نقاط کور.
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X, ShieldCheck, Palette } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
@@ -14,7 +14,10 @@ import { missionsForDate, missionProgress, type DailyMission, type MissionFacts 
 import { planMuraja, type MurajaPlan } from "../learning/muraja";
 import { buildBlindSpotPack, getLocalSaturdayWeekIso, MIN_BLINDSPOT_QUESTIONS, type BlindSpotPack } from "../learning/blindSpots";
 import { STORY_CHAPTERS, chapterOfUnit, chapterProgress, type StoryChapter } from "../learning/chapters";
+import type { ExamScope } from "../learning/examEngine";
 import { getMeta, setMeta } from "../services/metaStore";
+import { getActiveProfile, profileAvatarLetter } from "../services/profileManager";
+import type { SurahPackMeta } from "../services/surahPackService";
 import { getLocalDateIso, recordLearningReward } from "../services/profileService";
 import type { CycleKind } from "../store/useLearningStore";
 import { usePreferencesStore } from "../store/usePreferencesStore";
@@ -62,6 +65,11 @@ interface Props {
   onStartTestOut?: (unitId: string) => void;
   onStartBlindSpots?: () => void;
   onStartCycleReview?: (kind: CycleKind) => void;
+  onStartDrill?: (unitId?: string | null) => void;
+  onStartExam?: (scope?: ExamScope | null) => void;
+  onOpenTajweedLessons?: () => void;
+  onOpenProfiles?: () => void;
+  onOpenSurahs?: () => void;
   onNavigateTab?: (tab: "mastery" | "settings") => void;
   onStartAudioQuiz?: () => void;
   onOpenMutashabihat?: () => void;
@@ -92,6 +100,11 @@ export default function UnitsPage({
   onStartTestOut,
   onStartBlindSpots,
   onStartCycleReview,
+  onStartDrill,
+  onStartExam,
+  onOpenTajweedLessons,
+  onOpenProfiles,
+  onOpenSurahs,
   onNavigateTab,
   onStartAudioQuiz,
   onOpenMutashabihat,
@@ -105,6 +118,7 @@ export default function UnitsPage({
   const [tasmiUnit, setTasmiUnit] = useState<UnitInfo | null>(null);
   const [storyGameChapter, setStoryGameChapter] = useState<StoryChapter | null>(null);
   const [celebratedChapter, setCelebratedChapter] = useState<StoryChapter | null>(null);
+  const [chapterMedals, setChapterMedals] = useState<string[]>([]);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
   const [forecastDays, setForecastDays] = useState<ForecastDay[]>([]);
@@ -129,6 +143,8 @@ export default function UnitsPage({
   });
   const paceMode = usePreferencesStore((s) => s.paceMode);
   const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
+  const [activeSurahName, setActiveSurahName] = useState<string>("سوره قصص");
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [profile, setProfile] = useState<UserProfileRow>(DEFAULT_USER_PROFILE);
   const [error, setError] = useState<string | null>(null);
@@ -156,6 +172,7 @@ export default function UnitsPage({
         savedClaimed,
         savedPack,
         savedCelebrated,
+        savedMedals,
       ] = await Promise.all([
         ldb.unitProgress.toArray(),
         ldb.cards.toArray(),
@@ -167,7 +184,9 @@ export default function UnitsPage({
         getMeta<string[]>(`missionClaimed:${todayIso}`, []),
         getMeta<BlindSpotPack | null>("blindSpotPack", null),
         getMeta<string[]>("chapterCelebrated", []),
+        getMeta<string[]>("chapterMedals", []),
       ]);
+      setChapterMedals(savedMedals);
 
       const qCounts: Record<string, number> = {};
       for (const q of allQs) {
@@ -175,14 +194,30 @@ export default function UnitsPage({
       }
       setUnitQuestionCounts(qCounts);
       if (prof) setProfile(prof);
-      const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
-      if (!manifestRes.ok) throw new Error(`فهرست محتوا: ${manifestRes.status}`);
-      const manifest = await manifestRes.json();
-      const info = new Map<string, { verseFrom: number; verseTo: number; page: number; half: string }>(
-        manifest.units.map((u: { id: string; verseFrom: number; verseTo: number; page: number; half: string }) => [u.id, u])
-      );
-      const orderById = new Map<string, number>(manifest.units.map((u: { id: string; order: number }) => [u.id, u.order] as [string, number]));
+
+      let info = new Map<string, { verseFrom: number; verseTo: number; page: number; half: string }>();
+      let orderById = new Map<string, number>();
+      if (activeSurah === 28) {
+        setActiveSurahName("سوره قصص");
+        const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
+        if (!manifestRes.ok) throw new Error(`فهرست محتوا: ${manifestRes.status}`);
+        const manifest = await manifestRes.json();
+        info = new Map<string, { verseFrom: number; verseTo: number; page: number; half: string }>(
+          manifest.units.map((u: { id: string; verseFrom: number; verseTo: number; page: number; half: string }) => [u.id, u])
+        );
+        orderById = new Map<string, number>(
+          manifest.units.map((u: { id: string; order: number }) => [u.id, u.order] as [string, number])
+        );
+      } else {
+        const packMeta = await getMeta<SurahPackMeta | null>(`surahPackMeta:${activeSurah}`, null);
+        setActiveSurahName(packMeta?.nameFa || `سوره ${toFarsiNum(activeSurah)}`);
+        const packUnits = packMeta?.units ?? [];
+        info = new Map(packUnits.map((u) => [u.id, u]));
+        orderById = new Map(packUnits.map((u, idx) => [u.id, u.order ?? idx + 1]));
+      }
+
       const sorted = prog
+        .filter((p) => info.has(p.unitId))
         .slice()
         .sort((a, b) => (orderById.get(a.unitId) ?? Number.MAX_SAFE_INTEGER) - (orderById.get(b.unitId) ?? Number.MAX_SAFE_INTEGER))
         .map((p) => ({ ...p, unlocked: true, ...info.get(p.unitId) }));
@@ -269,21 +304,23 @@ export default function UnitsPage({
       });
       setTodayTasks(tasks);
 
-      // G1: جشن یک‌بارهٔ تکمیل فصل
-      const chapterInputs = sorted.map((u) => ({
-        verseFrom: u.verseFrom ?? 1,
-        stage8Passed: !!u.stagePassed[8],
-      }));
-      const newlyCompleted = STORY_CHAPTERS.find(
-        (ch) => chapterProgress(ch, chapterInputs).complete && !savedCelebrated.includes(ch.id),
-      );
-      if (newlyCompleted) {
-        setCelebratedChapter(newlyCompleted);
-        await setMeta("chapterCelebrated", [...savedCelebrated, newlyCompleted.id]);
-        try {
-          confetti({ particleCount: 70, spread: 60, origin: { y: 0.65 } });
-        } catch {
-          // محیط تست بدون canvas
+      // G1: جشن یک‌بارهٔ تکمیل فصل (فقط برای سوره قصص)
+      if (activeSurah === 28) {
+        const chapterInputs = sorted.map((u) => ({
+          verseFrom: u.verseFrom ?? 1,
+          stage8Passed: !!u.stagePassed[8],
+        }));
+        const newlyCompleted = STORY_CHAPTERS.find(
+          (ch) => chapterProgress(ch, chapterInputs).complete && !savedCelebrated.includes(ch.id),
+        );
+        if (newlyCompleted) {
+          setCelebratedChapter(newlyCompleted);
+          await setMeta("chapterCelebrated", [...savedCelebrated, newlyCompleted.id]);
+          try {
+            confetti({ particleCount: 70, spread: 60, origin: { y: 0.65 } });
+          } catch {
+            // محیط تست بدون canvas
+          }
         }
       }
     } catch (e) {
@@ -295,7 +332,7 @@ export default function UnitsPage({
 
   useEffect(() => {
     void loadData();
-  }, [syncVersion, paceMode]);
+  }, [syncVersion, paceMode, activeSurah]);
 
   const handleClaimMission = async (mission: DailyMission) => {
     const todayIso = getLocalDateIso(new Date());
@@ -356,6 +393,10 @@ export default function UnitsPage({
       <MushafHalfPage
         unitId={mushafUnitId}
         onClose={() => setMushafUnitId(null)}
+        onOpenTajweedLessons={() => {
+          setMushafUnitId(null);
+          onOpenTajweedLessons?.();
+        }}
         onStartPractice={() => {
           const u = units.find((x) => x.unitId === mushafUnitId);
           onStartStage(mushafUnitId, u?.currentStage || 1);
@@ -410,6 +451,30 @@ export default function UnitsPage({
 
           {/* Action icons */}
           <div className="flex items-center gap-1.5">
+            {onOpenSurahs && (
+              <button
+                type="button"
+                onClick={onOpenSurahs}
+                title="تغییر سوره یا مدیریت پک‌های سوره"
+                className="py-1.5 px-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 border-2 border-b-4 border-amber-200 dark:border-amber-800 active:border-b-2 active:translate-y-[2px] text-amber-900 dark:text-amber-200 font-extrabold text-[11px] flex items-center gap-1 transition-all"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                <span className="max-w-[5.5rem] truncate">{activeSurahName}</span>
+              </button>
+            )}
+            {onOpenProfiles && (() => {
+              const activeProf = getActiveProfile();
+              return (
+                <button
+                  type="button"
+                  onClick={onOpenProfiles}
+                  title={`پروفایل فعال: ${activeProf.name}`}
+                  className="w-8 h-8 rounded-2xl bg-teal-600 text-white font-black text-xs flex items-center justify-center shadow-sm hover:brightness-105 transition-all"
+                >
+                  {profileAvatarLetter(activeProf.name)}
+                </button>
+              );
+            })()}
             {onNavigateTab && (
               <>
                 <button
@@ -444,7 +509,7 @@ export default function UnitsPage({
         )}
 
         {/* Quick Hifz Tools: 3D Duolingo Cards */}
-        {(onStartAudioQuiz || onOpenMutashabihat) && (
+        {(onStartAudioQuiz || onOpenMutashabihat || onStartExam || onOpenTajweedLessons) && (
           <section className="grid grid-cols-2 gap-3">
             {onStartAudioQuiz && (
               <button
@@ -473,6 +538,36 @@ export default function UnitsPage({
                 <div className="min-w-0">
                   <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">مقایسه متشابهات</div>
                   <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">تفاوت آیات مشابه قصص</div>
+                </div>
+              </button>
+            )}
+            {onStartExam && (
+              <button
+                type="button"
+                onClick={() => onStartExam(null)}
+                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-indigo-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+              >
+                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">آزمون تخصصی</div>
+                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">سطح رسمی و کارنامه</div>
+                </div>
+              </button>
+            )}
+            {onOpenTajweedLessons && (
+              <button
+                type="button"
+                onClick={onOpenTajweedLessons}
+                className="p-3.5 rounded-3xl bg-white dark:bg-[#1C2541] border-2 border-b-4 border-[#E5DEC9] dark:border-[#3A506B] hover:border-orange-400 active:border-b-2 active:translate-y-[2px] flex items-center gap-2.5 text-right transition-all"
+              >
+                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-orange-500 to-rose-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                  <Palette className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate">مینی‌درس تجوید</div>
+                  <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">احکام رنگی و صوت منشاوی</div>
                 </div>
               </button>
             )}
@@ -645,37 +740,52 @@ export default function UnitsPage({
                 {todayTasks.map((task, idx) => {
                   const done = isTaskDone(task);
                   return (
-                    <button
+                    <div
                       key={`${task.kind}-${idx}`}
-                      type="button"
-                      onClick={() => launchTodayTask(task)}
-                      className={`w-full text-right p-2.5 rounded-2xl border flex items-center justify-between gap-2 transition-colors ${
+                      className={`w-full rounded-2xl border transition-colors ${
                         done
                           ? "bg-emerald-50/70 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300"
                           : "bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 hover:border-emerald-400"
                       }`}
                     >
-                      <div className="flex items-center gap-2 min-w-0">
-                        <span
-                          className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${
-                            done
-                              ? "bg-emerald-600 text-white"
-                              : "border-2 border-slate-300 dark:border-slate-600"
-                          }`}
-                        >
-                          {done && <Check className="w-3 h-3 stroke-[3]" />}
-                        </span>
-                        <div className="min-w-0">
-                          <div className={`text-xs font-extrabold truncate ${done ? "line-through opacity-75" : ""}`}>
-                            {task.titleFa}
-                          </div>
-                          <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
-                            {task.detailFa}
+                      <button
+                        type="button"
+                        onClick={() => launchTodayTask(task)}
+                        className="w-full text-right p-2.5 flex items-center justify-between gap-2"
+                      >
+                        <div className="flex items-center gap-2 min-w-0">
+                          <span
+                            className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${
+                              done
+                                ? "bg-emerald-600 text-white"
+                                : "border-2 border-slate-300 dark:border-slate-600"
+                            }`}
+                          >
+                            {done && <Check className="w-3 h-3 stroke-[3]" />}
+                          </span>
+                          <div className="min-w-0">
+                            <div className={`text-xs font-extrabold truncate ${done ? "line-through opacity-75" : ""}`}>
+                              {task.titleFa}
+                            </div>
+                            <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+                              {task.detailFa}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <ChevronRight className="w-4 h-4 text-slate-400 rotate-180 shrink-0" />
-                    </button>
+                        <ChevronRight className="w-4 h-4 text-slate-400 rotate-180 shrink-0" />
+                      </button>
+                      {task.kind === "REVIEW" && onStartDrill && (
+                        <div className="px-2.5 pb-2.5 pt-0.5 flex items-center justify-end">
+                          <button
+                            type="button"
+                            onClick={() => onStartDrill(null)}
+                            className="py-1 px-2.5 rounded-xl bg-teal-50 hover:bg-teal-100 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-[#028090] dark:text-teal-300 text-[11px] font-bold transition-colors"
+                          >
+                            اتصال و شروع از وسط
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   );
                 })}
               </div>
@@ -812,10 +922,10 @@ export default function UnitsPage({
 
         {/* 22 Learning Units grouped by 10 Story Chapters (G1) */}
         <section className="space-y-5">
-          {units.length === 0 && !error && loading && (
+            {units.length === 0 && !error && loading && (
             <div className="p-8 text-center bg-white dark:bg-[#1C2541] rounded-3xl border-2 border-[#E5DEC9] dark:border-[#3A506B] space-y-3 shadow-sm">
               <div className="w-8 h-8 mx-auto border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
-              <p className="text-sm font-bold text-slate-700 dark:text-slate-300">در حال آماده‌سازی نقشه سفر سوره قصص...</p>
+              <p className="text-sm font-bold text-slate-700 dark:text-slate-300">در حال آماده‌سازی نقشه سفر {activeSurahName}...</p>
             </div>
           )}
           {!loading && !error && units.length === 0 && (
@@ -824,11 +934,12 @@ export default function UnitsPage({
           {units.map((u, idx) => {
             const passedCount = Object.values(u.stagePassed || {}).filter(Boolean).length;
             const isComplete = passedCount === 8;
-            const chapter = chapterOfUnit(u.verseFrom ?? 1);
-            const showChapterBanner = chapter.id !== lastChapterId;
-            if (showChapterBanner) lastChapterId = chapter.id;
-            const chProg = showChapterBanner ? chapterProgress(chapter, chapterProgressInput) : null;
-            const chGradient = CHAPTER_GRADIENTS[(chapter.order - 1) % CHAPTER_GRADIENTS.length];
+            const hasUnitQuestions = (unitQuestionCounts[u.unitId] ?? 0) > 0;
+            const chapter = activeSurah === 28 ? chapterOfUnit(u.verseFrom ?? 1) : null;
+            const showChapterBanner = Boolean(chapter && chapter.id !== lastChapterId);
+            if (chapter && showChapterBanner) lastChapterId = chapter.id;
+            const chProg = chapter && showChapterBanner ? chapterProgress(chapter, chapterProgressInput) : null;
+            const chGradient = chapter ? CHAPTER_GRADIENTS[(chapter.order - 1) % CHAPTER_GRADIENTS.length] : CHAPTER_GRADIENTS[0];
             const isExpanded = selectedUnitId === u.unitId;
 
             // مرحله پیشنهادی بعدی در این نیم‌صفحه (همه نیم‌صفحه‌ها و مراحل برای انتخاب آزادند)
@@ -836,7 +947,7 @@ export default function UnitsPage({
 
             return (
               <div key={u.unitId} className="space-y-4">
-                {showChapterBanner && chProg && (
+                {chapter && showChapterBanner && chProg && (
                   <div className={`p-4 sm:p-5 rounded-3xl bg-gradient-to-l ${chGradient} text-white shadow-lg border-2 border-[#d4af37]/55 border-b-4 border-b-black/30 relative overflow-hidden`}>
                     <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
                       <div className="space-y-1">
@@ -847,10 +958,31 @@ export default function UnitsPage({
                           <span>•</span>
                           <span>{toFarsiNum(chProg.done)} از {toFarsiNum(chProg.total)} نیم‌صفحه</span>
                         </div>
-                        <h2 className="text-base sm:text-lg font-black tracking-tight">{chapter.titleFa}</h2>
+                        <h2 className="text-base sm:text-lg font-black tracking-tight flex items-center gap-1.5">
+                          <span>{chapter.titleFa}</span>
+                          {chapterMedals.includes(chapter.id) && (
+                            <span title="مدال قبولی آزمون باس فصل" aria-label="مدال فصل">🏅</span>
+                          )}
+                        </h2>
                         <p className="text-xs text-white/90">{chapter.teaserFa}</p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
+                        {onStartExam && (
+                          <button
+                            type="button"
+                            onClick={() =>
+                              onStartExam({
+                                type: "chapter",
+                                id: chapter.id,
+                                labelFa: `فصل ${toFarsiNum(chapter.order)}: ${chapter.titleFa}`,
+                              })
+                            }
+                            className="py-2 px-3 rounded-2xl bg-white/20 hover:bg-white/30 text-white font-black text-xs flex items-center gap-1.5 border border-white/25 transition-colors"
+                          >
+                            <ShieldCheck className="w-4 h-4" />
+                            <span>باس فصل</span>
+                          </button>
+                        )}
                         {chProg.complete && (
                           <button
                             type="button"
@@ -901,13 +1033,13 @@ export default function UnitsPage({
                           </span>
                         </h3>
                         <p className="text-xs text-slate-500 dark:text-slate-400">
-                          آیات {toFarsiNum(u.verseFrom || 1)} تا {toFarsiNum(u.verseTo || 1)} • {toFarsiNum(passedCount)} از ۸ مرحله
+                          آیات {toFarsiNum(u.verseFrom || 1)} تا {toFarsiNum(u.verseTo || 1)} {hasUnitQuestions ? `• ${toFarsiNum(passedCount)} از ۸ مرحله` : "• مصحف و آزمون A1/A3"}
                         </p>
                       </div>
                     </button>
 
                     <div className="flex flex-wrap items-center gap-1.5">
-                      {!u.stagePassed[1] && (
+                      {hasUnitQuestions && !u.stagePassed[1] && (
                         <button
                           type="button"
                           onClick={() => setPrescreenUnitId(u.unitId)}
@@ -918,7 +1050,7 @@ export default function UnitsPage({
                           <span>پیش‌غربال واژگان</span>
                         </button>
                       )}
-                      {!isComplete && onStartTestOut && (
+                      {hasUnitQuestions && !isComplete && onStartTestOut && (
                         <button
                           type="button"
                           disabled={(unitQuestionCounts[u.unitId] ?? 0) < TESTOUT_MIN_QUESTIONS}
@@ -934,7 +1066,7 @@ export default function UnitsPage({
                           <span>آزمون میانبر</span>
                         </button>
                       )}
-                      {!isExpanded && (
+                      {hasUnitQuestions && !isExpanded && (
                         <button
                           type="button"
                           onClick={() => setSelectedUnitId(u.unitId)}
@@ -952,6 +1084,17 @@ export default function UnitsPage({
                         <Mic className="w-3.5 h-3.5" />
                         <span>تسمیع</span>
                       </button>
+                      {onStartDrill && (
+                        <button
+                          type="button"
+                          onClick={() => onStartDrill(u.unitId)}
+                          title="دریل اتصال واحدبه‌واحد و شروع از وسط آیه"
+                          className="py-2 px-3 rounded-2xl bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/50 dark:hover:bg-indigo-900/50 border-2 border-b-4 border-indigo-200 dark:border-indigo-800 active:border-b-2 active:translate-y-[2px] text-indigo-800 dark:text-indigo-300 text-xs font-extrabold flex items-center gap-1 transition-all"
+                        >
+                          <GitCompare className="w-3.5 h-3.5" />
+                          <span>اتصال و شروع از وسط</span>
+                        </button>
+                      )}
                       <button
                         type="button"
                         onClick={() => setMushafUnitId(u.unitId)}
@@ -964,7 +1107,11 @@ export default function UnitsPage({
                   </div>
 
                   {/* Duolingo Winding Path for the selected half-page, OR direct 1-tap clickable 3D stage pills for all other half-pages */}
-                  {isExpanded ? (
+                  {!hasUnitQuestions ? (
+                    <div className="p-3.5 rounded-2xl bg-amber-50/80 dark:bg-slate-800/70 border border-amber-200 dark:border-slate-700 text-xs font-bold text-amber-900 dark:text-amber-300 text-center">
+                      محتوای تمرینی این سوره هنوز منتشر نشده — مصحف، صوت، تسمیع، دریل اتصال و آزمون تخصصی A1/A3 آماده است.
+                    </div>
+                  ) : isExpanded ? (
                     <div className="relative py-3 flex flex-col items-center gap-4">
                       {[1, 2, 3, 4, 5, 6, 7, 8].map((s, sIdx) => {
                         const passed = !!u.stagePassed[s];

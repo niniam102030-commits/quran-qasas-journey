@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { X, GitCompare, Sparkles, Search } from "lucide-react";
 import { ldb } from "../../db/learningDb";
+import { getActiveSurahNumber } from "../../config/surahConfig";
 import { diffVersePair, findMutashabihatPairs, type SimpleVerse } from "../../learning/mutashabihat";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
 import VerseAudioPlayer from "../audio/VerseAudioPlayer";
@@ -23,7 +24,8 @@ export default function MutashabihatModal({ onClose, initialVerse = null }: Prop
 
   useEffect(() => {
     let active = true;
-    ldb.baseVerses.orderBy("n").toArray().then((rows) => {
+    const surah = getActiveSurahNumber();
+    ldb.baseVerses.where("surah").equals(surah).sortBy("n").then((rows) => {
       if (!active) return;
       setVerses(rows as unknown as SimpleVerse[]);
       setLoading(false);

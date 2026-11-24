@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { ArrowRight, Headphones, CheckCircle2, XCircle, Eye, Award, RotateCcw } from "lucide-react";
 import { ldb } from "../db/learningDb";
+import { formatSurahCardKey, getActiveSurahNumber } from "../config/surahConfig";
+import { getMeta } from "../services/metaStore";
 import { newCard, review } from "../learning/cardScheduler";
 import { recordLearningReward } from "../services/profileService";
 import { usePreferencesStore } from "../store/usePreferencesStore";
@@ -61,8 +63,10 @@ export default function AudioQuizPage({ onExit }: Props) {
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [surahNameFa, setSurahNameFa] = useState("سوره قصص");
 
   const arabicFontSize = usePreferencesStore((s) => s.arabicFontSize);
+  const activeSurah = usePreferencesStore((s) => s.activeSurah);
   const { playSfx } = useHapticsAndSfx();
 
   const startNewQuiz = (allVerses: VerseEntry[], targetMode: QuizMode) => {
@@ -76,8 +80,13 @@ export default function AudioQuizPage({ onExit }: Props) {
 
   useEffect(() => {
     let active = true;
-    ldb.baseVerses.orderBy("n").toArray().then((rows) => {
+    const surah = getActiveSurahNumber();
+    Promise.all([
+      ldb.baseVerses.where("surah").equals(surah).sortBy("n"),
+      surah !== 28 ? getMeta<{ nameFa?: string } | null>(`surahPackMeta:${surah}`, null) : Promise.resolve(null),
+    ]).then(([rows, packMeta]) => {
       if (!active) return;
+      if (packMeta?.nameFa) setSurahNameFa(packMeta.nameFa);
       const list = rows as unknown as VerseEntry[];
       setVerses(list);
       startNewQuiz(list, "next_ayah");
@@ -86,7 +95,7 @@ export default function AudioQuizPage({ onExit }: Props) {
       if (active) setLoading(false);
     });
     return () => { active = false; };
-  }, []);
+  }, [activeSurah]);
 
   const current = questions[index] ?? null;
 
@@ -98,7 +107,7 @@ export default function AudioQuizPage({ onExit }: Props) {
     if (isCorrect) setCorrectCount((c) => c + 1);
 
     // به‌روزرسانی مستقیم کارت FSRS مهارت تسلسل (sq) یا شماره آیه (vn)
-    const cardKey = `${mode === "next_ayah" ? "sq" : "vn"}:${current.verse.n}`;
+    const cardKey = formatSurahCardKey(mode === "next_ayah" ? "sq" : "vn", current.verse.n, getActiveSurahNumber());
     try {
       const existing = await ldb.cards.get(cardKey);
       const updated = review(existing ?? newCard(cardKey), isCorrect ? "good" : "again");
@@ -239,7 +248,7 @@ export default function AudioQuizPage({ onExit }: Props) {
           <h2 className="text-sm sm:text-base font-extrabold text-slate-800 dark:text-slate-100">
             {mode === "next_ayah"
               ? "به تلاوت استاد منشاوی گوش دهید؛ کدام آیه دقیقاً بعد از این آیه می‌آید؟"
-              : "به تلاوت استاد منشاوی گوش دهید؛ این تلاوت مربوط به کدام شماره آیه در سوره قصص است؟"}
+              : `به تلاوت استاد منشاوی گوش دهید؛ این تلاوت مربوط به کدام شماره آیه در ${surahNameFa} است؟`}
           </h2>
 
           <VerseAudioPlayer key={`${current.verse.n}:${index}`} verses={[current.verse.n]} compact />

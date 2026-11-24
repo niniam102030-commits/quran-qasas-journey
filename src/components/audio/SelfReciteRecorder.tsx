@@ -12,6 +12,13 @@ import {
   startLiveArabicRecognition,
   type LiveRecognitionHandle,
 } from "../../services/offlineAsrService";
+import {
+  getSherpaModelStatus,
+  sherpaAsr,
+  startSherpaMicrophoneSession,
+  type SherpaMicSessionHandle,
+} from "../../services/sherpaAsr";
+import { usePreferencesStore } from "../../store/usePreferencesStore";
 
 export interface ReciteVerseOption {
   n: number;
@@ -50,7 +57,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const [asrError, setAsrError] = useState<string | null>(null);
 
   const capability = getDeviceAsrCapability();
-  const recognitionRef = useRef<LiveRecognitionHandle | null>(null);
+  const offlineAsrEnabled = usePreferencesStore((s) => s.offlineAsrEnabled);
+  const [sherpaReady, setSherpaReady] = useState(false);
+  const recognitionRef = useRef<LiveRecognitionHandle | SherpaMicSessionHandle | null>(null);
   const latestCheckRef = useRef<RecitationCheckResult | null>(null);
   const reportedSessionRef = useRef<boolean>(false);
 
@@ -88,10 +97,20 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   }, [verses, targetVerseNum]);
 
   useEffect(() => {
+    let active = true;
+    void Promise.all([sherpaAsr.isAvailable(), getSherpaModelStatus()]).then(([avail, status]) => {
+      if (active) setSherpaReady(avail && status.installed && offlineAsrEnabled);
+    });
+    return () => {
+      active = false;
+    };
+  }, [offlineAsrEnabled]);
+
+  useEffect(() => {
     return () => {
       cleanupRecording();
       cleanupPlayback();
-      recognitionRef.current?.stop();
+      void recognitionRef.current?.stop();
       if (audioUrl) URL.revokeObjectURL(audioUrl);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -109,9 +128,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     });
   };
 
-  const handleToggleAsr = () => {
+  const handleToggleAsr = async () => {
     if (listeningAsr) {
-      recognitionRef.current?.stop();
+      await recognitionRef.current?.stop();
       recognitionRef.current = null;
       setListeningAsr(false);
       if (selectedVerse) flushFinalPrecision(selectedVerse.n);
@@ -125,16 +144,37 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     reportedSessionRef.current = false;
 
     const verseNumAtStart = selectedVerse.n;
+    const onTranscript = (transcript: string) => {
+      setSpokenText(transcript);
+      const res = verifyVerseRecitation(selectedVerse.words, transcript);
+      latestCheckRef.current = res;
+      setCheckResult(res);
+      if (res.matchedWordIds.length > 0) {
+        onWordsRecitedCorrectly?.(res.matchedWordIds);
+      }
+    };
+
+    if (sherpaReady) {
+      const handle = await startSherpaMicrophoneSession({
+        onTranscript,
+        onError: (msg) => {
+          setAsrError(msg);
+          setListeningAsr(false);
+        },
+        onEnd: () => {
+          setListeningAsr(false);
+          flushFinalPrecision(verseNumAtStart);
+        },
+      });
+      if (handle) {
+        recognitionRef.current = handle;
+        setListeningAsr(true);
+      }
+      return;
+    }
+
     const handle = startLiveArabicRecognition({
-      onTranscript: (transcript) => {
-        setSpokenText(transcript);
-        const res = verifyVerseRecitation(selectedVerse.words, transcript);
-        latestCheckRef.current = res;
-        setCheckResult(res);
-        if (res.matchedWordIds.length > 0) {
-          onWordsRecitedCorrectly?.(res.matchedWordIds);
-        }
-      },
+      onTranscript,
       onError: (msg) => {
         setAsrError(msg);
         setListeningAsr(false);
@@ -322,8 +362,8 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
 
             <button
               type="button"
-              onClick={handleToggleAsr}
-              disabled={!capability.hasWebSpeech && !listeningAsr}
+              onClick={() => void handleToggleAsr()}
+              disabled={!sherpaReady && !capability.hasWebSpeech && !listeningAsr}
               className={`py-1.5 px-3 rounded-xl font-bold text-xs flex items-center gap-1.5 transition-all ${
                 listeningAsr
                   ? "bg-rose-600 text-white animate-pulse"
@@ -395,9 +435,11 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
           <div className="flex items-start gap-1.5 pt-1.5 border-t border-slate-200/70 dark:border-slate-700/70 text-[11px] text-slate-600 dark:text-slate-400">
             <Info className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
             <span>
-              {capability.hasWebSpeech
-                ? "تشخیص گفتار زنده با موتور مرورگر (Web Speech API) انجام می‌شود و معمولاً نیازمند اتصال اینترنت است. ضبط صدای بالا کاملاً آفلاین است."
-                : "موتور تشخیص گفتار مرورگر (Web Speech API) در این محیط (مانند WebView اندروید) در دسترس نیست؛ برای تمرین و تسمیع آفلاین از دکمه «ضبط صدای خود (آفلاین)» استفاده کنید."}
+              {sherpaReady
+                ? "موتور آفلاین sherpa-onnx فعال است (آزمایشی — در حال ارزیابی روی دستگاه). خروجی مستقیماً توسط وریفایر سخت‌گیر بررسی می‌شود."
+                : capability.hasWebSpeech
+                ? "تشخیص گفتار زنده با موتور مرورگر (Web Speech API — آزمایشی) انجام می‌شود و معمولاً نیازمند اتصال اینترنت است. ضبط صدای بالا کاملاً آفلاین است."
+                : "موتور تشخیص گفتار زنده در این محیط در دسترس نیست (در اندروید می‌توانید مدل آفلاین آزمایشی sherpa-onnx را از تنظیمات دریافت کنید). ضبط صدای بالا کاملاً آفلاین است."}
             </span>
           </div>
 

@@ -2,7 +2,8 @@
 // نمایش و جمع‌آوری پاسخ برای چهار شکل سوال. پاسخ بر پایه‌ی شناسه‌هاست، نه متن عربی.
 import { useMemo, useRef, useState, useEffect } from "react";
 import { HelpCircle, Check, RotateCcw, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
-import { ldb, type QuestionRow } from "../../db/learningDb";
+import { ldb, verseKey, type QuestionRow } from "../../db/learningDb";
+import { getActiveSurahNumber } from "../../config/surahConfig";
 import { usePreferencesStore } from "../../store/usePreferencesStore";
 import { useHapticsAndSfx } from "../../hooks/useHapticsAndSfx";
 import { labelOption } from "./questionOptionLabel";
@@ -44,6 +45,7 @@ interface Props {
   q: RenderableQuestion;
   locked: boolean;
   disableHint?: boolean;
+  noHintNoticeFa?: string;
   onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number }) => void;
 }
 
@@ -91,7 +93,7 @@ const label = (o: Item, rangeLabels: Record<string, string>, arStyle: React.CSSP
   );
 };
 
-export default function QuestionRenderer({ q, locked, disableHint = false, onSubmit }: Props) {
+export default function QuestionRenderer({ q, locked, disableHint = false, noHintNoticeFa, onSubmit }: Props) {
   const t0 = useRef(Date.now());
   const changed = useRef(false);
   const [hint, setHint] = useState(false);
@@ -118,7 +120,7 @@ export default function QuestionRenderer({ q, locked, disableHint = false, onSub
     const verses = new Map<number, Promise<{ i: number; ar: string }[]>>();
     const getWords = (verseNumber: number) => {
       if (!verses.has(verseNumber)) {
-        verses.set(verseNumber, ldb.baseVerses.get(verseNumber).then((verse) => (verse?.words as { i: number; ar: string }[] | undefined) ?? []));
+        verses.set(verseNumber, ldb.baseVerses.get(verseKey(getActiveSurahNumber(), verseNumber)).then((verse) => (verse?.words as { i: number; ar: string }[] | undefined) ?? []));
       }
       return verses.get(verseNumber)!;
     };
@@ -303,7 +305,7 @@ export default function QuestionRenderer({ q, locked, disableHint = false, onSub
       {!locked && (disableHint || q.stage === 8) && (
         <div className="pt-2 text-left">
           <span className="text-[11px] text-slate-400">
-            {disableHint ? "آزمون میانبر واحد (بدون راهنما)" : "آزمون تسلط مرحله ۸ (بدون راهنما)"}
+            {disableHint ? (noHintNoticeFa || "آزمون میانبر واحد (بدون راهنما)") : "آزمون تسلط مرحله ۸ (بدون راهنما)"}
           </span>
         </div>
       )}
@@ -662,7 +664,7 @@ function ClozeView({
       setVerseWords([]);
       return () => { active = false; };
     }
-    ldb.baseVerses.get(verseNum).then((verse) => {
+    ldb.baseVerses.get(verseKey(getActiveSurahNumber(), verseNum)).then((verse) => {
       if (!active) return;
       const words = (verse?.words as { i: number; ar: string }[] | undefined) ?? [];
       setVerseWords(words);
