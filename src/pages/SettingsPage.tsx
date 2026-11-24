@@ -1,6 +1,6 @@
 // src/pages/SettingsPage.tsx
 import { useEffect, useState } from "react";
-import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell, Mic, Trash2, Users, BookOpen } from "lucide-react";
+import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell, Mic, Trash2, Users, BookOpen, Wrench } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
 import { bestReminderHour, syncDailyReminder } from "../services/reminderService";
@@ -24,13 +24,14 @@ interface Props {
   onBack: () => void;
   onOpenProfiles?: () => void;
   onOpenSurahs?: () => void;
+  onOpenDevTools?: () => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
 const toFarsi = (n: number | string) =>
   String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 
-export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs }: Props) {
+export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onOpenDevTools }: Props) {
   const fontSize = usePreferencesStore((s) => s.arabicFontSize);
   const isDark = usePreferencesStore((s) => s.darkMode);
   const soundEnabled = usePreferencesStore((s) => s.soundEnabled);
@@ -40,6 +41,8 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs }: P
   const tajweedColorsEnabled = usePreferencesStore((s) => s.tajweedColorsEnabled);
   const offlineAsrEnabled = usePreferencesStore((s) => s.offlineAsrEnabled);
   const activeSurah = usePreferencesStore((s) => s.activeSurah);
+  const devMode = usePreferencesStore((s) => s.devMode);
+  const toggleDevMode = usePreferencesStore((s) => s.toggleDevMode);
   const reminderEnabled = usePreferencesStore((s) => s.reminderEnabled);
   const reminderHourOverride = usePreferencesStore((s) => s.reminderHourOverride);
   const handleFontSizeChange = usePreferencesStore((s) => s.setArabicFontSize);
@@ -243,6 +246,44 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs }: P
             </button>
           </section>
         )}
+
+        {/* Developer Test Mode */}
+        <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-violet-200 dark:border-violet-900/60 shadow-sm flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 rounded-2xl bg-violet-600 text-white font-black flex items-center justify-center shrink-0">
+              <Wrench className="w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <div className="text-xs font-black text-slate-800 dark:text-slate-100">
+                حالت توسعه‌دهنده و تست سریع ({devMode ? "روشن" : "خاموش"})
+              </div>
+              <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                باز کردن همهٔ مراحل، بازی‌های فصل، تزریق ۱۰۰۰ عقیق و دسترسی مستقیم به همهٔ ابزارها
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={toggleDevMode}
+              className={`w-12 h-7 rounded-full transition-colors flex items-center px-1 ${
+                devMode ? "bg-violet-600 justify-start" : "bg-slate-300 dark:bg-slate-600 justify-end"
+              }`}
+              aria-label="تغییر حالت توسعه‌دهنده"
+            >
+              <span className="w-5 h-5 rounded-full bg-white shadow" />
+            </button>
+            {onOpenDevTools && (
+              <button
+                type="button"
+                onClick={onOpenDevTools}
+                className="py-2 px-3 rounded-2xl bg-violet-50 hover:bg-violet-100 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800 text-violet-800 dark:text-violet-300 font-bold text-xs"
+              >
+                پنل تست
+              </button>
+            )}
+          </div>
+        </section>
 
         {/* Pace Mode & Daily Review Cap (F5) */}
         <section className="bg-white dark:bg-[#1a2332] p-4 sm:p-5 rounded-3xl border border-[#e6dbc5] dark:border-slate-800 shadow-sm space-y-3">

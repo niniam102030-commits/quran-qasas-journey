@@ -122,6 +122,12 @@ export default function OnboardingFlow({ onFinished }: Props) {
     setStep(5);
   };
 
+  const handleDevQuickEnter = async () => {
+    usePreferencesStore.getState().setDevMode(true);
+    await completeOnboarding();
+    onFinished();
+  };
+
   const handleRecordPrescreen = async (confirmedKnown: boolean) => {
     const cur = words[wordIdx];
     if (!cur) {
@@ -210,6 +216,13 @@ export default function OnboardingFlow({ onFinished }: Props) {
                 className="w-full py-3 px-5 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs transition-all"
               >
                 رد کردن — از صفر شروع می‌کنم
+              </button>
+              <button
+                type="button"
+                onClick={() => void handleDevQuickEnter()}
+                className="w-full py-2.5 px-5 rounded-2xl bg-violet-50 hover:bg-violet-100 dark:bg-violet-950/50 dark:hover:bg-violet-900/50 border border-violet-200 dark:border-violet-800 text-violet-800 dark:text-violet-300 font-extrabold text-xs transition-all"
+              >
+                ورود سریع (حالت توسعه‌دهنده و تست)
               </button>
             </div>
           </div>

@@ -380,7 +380,11 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const rawQs = pack.questionIds.length
       ? await ldb.questions.bulkGet(pack.questionIds.slice(0, size))
       : [];
-    const queue = rawQs.filter((q): q is QuestionRow => Boolean(q));
+    let queue = rawQs.filter((q): q is QuestionRow => Boolean(q));
+    if (queue.length === 0 && usePreferencesStore.getState().devMode) {
+      const allQs = await ldb.questions.toArray();
+      queue = shuffle(allQs, rng(Date.now() & 0xffff)).slice(0, size);
+    }
     set({
       status: queue.length ? "running" : "finished",
       sessionType: "REMEDIAL",
@@ -442,8 +446,11 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       })),
       now,
     );
-    const targetUnitIds =
+    let targetUnitIds =
       kind === "SABQ" ? plan.sabq : kind === "SABQI" ? plan.sabqi : plan.manzil;
+    if (targetUnitIds.length === 0 && usePreferencesStore.getState().devMode) {
+      targetUnitIds = scopedProgress.slice(0, 3).map((p) => p.unitId);
+    }
 
     const dueSet = new Set(
       allCards.filter((c) => c.state !== 0 && new Date(c.due) <= now).map((c) => c.key),

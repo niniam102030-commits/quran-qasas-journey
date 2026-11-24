@@ -20,6 +20,7 @@ interface PreferencesState {
   tajweedColorsEnabled: boolean;
   offlineAsrEnabled: boolean;
   activeSurah: number;
+  devMode: boolean;
   initPreferences: () => void;
   setDarkMode: (dark: boolean) => void;
   toggleDarkMode: () => void;
@@ -40,6 +41,8 @@ interface PreferencesState {
   setOfflineAsrEnabled: (enabled: boolean) => void;
   toggleOfflineAsrEnabled: () => void;
   setActiveSurah: (surah: number) => void;
+  setDevMode: (enabled: boolean) => void;
+  toggleDevMode: () => void;
 }
 
 function readBool(key: string, fallback: boolean): boolean {
@@ -114,6 +117,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   tajweedColorsEnabled: readBool("tajweed_colors_enabled", false),
   offlineAsrEnabled: readBool("offline_asr_enabled", true),
   activeSurah: readInitialActiveSurah(),
+  devMode: readBool("dev_mode", false),
 
   initPreferences: () => {
     const dark = readInitialDark();
@@ -132,6 +136,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       tajweedColorsEnabled: readBool("tajweed_colors_enabled", false),
       offlineAsrEnabled: readBool("offline_asr_enabled", true),
       activeSurah: readInitialActiveSurah(),
+      devMode: readBool("dev_mode", false),
     });
   },
 
@@ -255,5 +260,16 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       localStorage.setItem("active_surah", String(valid));
     }
     set({ activeSurah: valid });
+  },
+
+  setDevMode: (enabled) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("dev_mode", String(enabled));
+    }
+    set({ devMode: enabled });
+  },
+
+  toggleDevMode: () => {
+    get().setDevMode(!get().devMode);
   },
 }));

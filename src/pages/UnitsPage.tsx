@@ -2,7 +2,7 @@
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۱۰ فصل داستانی سوره قصص با داشبورد برنامه امروز، مأموریت‌ها، چرخه مراجعه و نقاط کور.
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X, ShieldCheck, Palette } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, Gauge, CheckCircle2, RefreshCw, Target, BookOpen, Gift, X, ShieldCheck, Palette, Wrench } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
@@ -70,6 +70,9 @@ interface Props {
   onOpenTajweedLessons?: () => void;
   onOpenProfiles?: () => void;
   onOpenSurahs?: () => void;
+  onOpenDevTools?: () => void;
+  requestedMushafUnitId?: string | null;
+  onConsumeRequestedMushaf?: () => void;
   onNavigateTab?: (tab: "mastery" | "settings") => void;
   onStartAudioQuiz?: () => void;
   onOpenMutashabihat?: () => void;
@@ -105,6 +108,9 @@ export default function UnitsPage({
   onOpenTajweedLessons,
   onOpenProfiles,
   onOpenSurahs,
+  onOpenDevTools,
+  requestedMushafUnitId,
+  onConsumeRequestedMushaf,
   onNavigateTab,
   onStartAudioQuiz,
   onOpenMutashabihat,
@@ -144,6 +150,7 @@ export default function UnitsPage({
   const paceMode = usePreferencesStore((s) => s.paceMode);
   const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
   const activeSurah = usePreferencesStore((s) => s.activeSurah);
+  const devMode = usePreferencesStore((s) => s.devMode);
   const [activeSurahName, setActiveSurahName] = useState<string>("سوره قصص");
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
   const [profile, setProfile] = useState<UserProfileRow>(DEFAULT_USER_PROFILE);
@@ -334,6 +341,13 @@ export default function UnitsPage({
     void loadData();
   }, [syncVersion, paceMode, activeSurah]);
 
+  useEffect(() => {
+    if (!requestedMushafUnitId || units.length === 0) return;
+    const target = requestedMushafUnitId === "__FIRST__" ? units[0]?.unitId : requestedMushafUnitId;
+    if (target) setMushafUnitId(target);
+    onConsumeRequestedMushaf?.();
+  }, [requestedMushafUnitId, units, onConsumeRequestedMushaf]);
+
   const handleClaimMission = async (mission: DailyMission) => {
     const todayIso = getLocalDateIso(new Date());
     if (claimedMissions.includes(mission.kind)) return;
@@ -451,6 +465,21 @@ export default function UnitsPage({
 
           {/* Action icons */}
           <div className="flex items-center gap-1.5">
+            {onOpenDevTools && (
+              <button
+                type="button"
+                onClick={onOpenDevTools}
+                title="حالت توسعه‌دهنده و تست سریع"
+                className={`py-1.5 px-2.5 rounded-2xl border-2 border-b-4 active:border-b-2 active:translate-y-[2px] font-extrabold text-[11px] flex items-center gap-1 transition-all ${
+                  devMode
+                    ? "bg-violet-600 border-violet-800 text-white"
+                    : "bg-white dark:bg-[#1C2541] border-[#E5DEC9] dark:border-[#3A506B] text-slate-600 dark:text-slate-300"
+                }`}
+              >
+                <Wrench className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">تست</span>
+              </button>
+            )}
             {onOpenSurahs && (
               <button
                 type="button"
@@ -880,7 +909,7 @@ export default function UnitsPage({
                         {empty ? "فعلاً موردی نیست" : `${toFarsiNum(row.items.length)} نیم‌صفحه`}
                       </div>
                     </div>
-                    {!empty && onStartCycleReview && (
+                    {(!empty || devMode) && onStartCycleReview && (
                       <button
                         type="button"
                         onClick={() => onStartCycleReview(row.kind)}
@@ -983,7 +1012,7 @@ export default function UnitsPage({
                             <span>باس فصل</span>
                           </button>
                         )}
-                        {chProg.complete && (
+                        {(chProg.complete || devMode) && (
                           <button
                             type="button"
                             onClick={() => setStoryGameChapter(chapter)}
@@ -1039,7 +1068,7 @@ export default function UnitsPage({
                     </button>
 
                     <div className="flex flex-wrap items-center gap-1.5">
-                      {hasUnitQuestions && !u.stagePassed[1] && (
+                      {hasUnitQuestions && (!u.stagePassed[1] || devMode) && (
                         <button
                           type="button"
                           onClick={() => setPrescreenUnitId(u.unitId)}
@@ -1050,7 +1079,7 @@ export default function UnitsPage({
                           <span>پیش‌غربال واژگان</span>
                         </button>
                       )}
-                      {hasUnitQuestions && !isComplete && onStartTestOut && (
+                      {hasUnitQuestions && (!isComplete || devMode) && onStartTestOut && (
                         <button
                           type="button"
                           disabled={(unitQuestionCounts[u.unitId] ?? 0) < TESTOUT_MIN_QUESTIONS}

@@ -21,6 +21,7 @@ import SettingsPage from "./pages/SettingsPage";
 import { ChillehProfilePage } from "./pages/ChillehProfilePage";
 import MutashabihatModal from "./components/mushaf/MutashabihatModal";
 import OnboardingFlow from "./components/onboarding/OnboardingFlow";
+import DevModeModal from "./components/dev/DevModeModal";
 
 export type AppView =
   | "units"
@@ -44,6 +45,8 @@ export default function App() {
     cycleKind?: CycleKind | null;
   } | null>(null);
   const [mutashabihatVerse, setMutashabihatVerse] = useState<number | null | false>(false);
+  const [showDevModal, setShowDevModal] = useState(false);
+  const [requestedMushafUnitId, setRequestedMushafUnitId] = useState<string | null>(null);
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncProgress, setSyncProgress] = useState<{ done: number; total: number } | null>(null);
   const [syncVersion, setSyncVersion] = useState<number>(0);
@@ -89,6 +92,11 @@ export default function App() {
 
   const handleStartTestOut = (unitId: string) => {
     setSession({ unitId, stage: -2, remedialTag: null });
+    setCurrentView("session");
+  };
+
+  const handleStartDailyReview = () => {
+    setSession({ unitId: "", stage: 0, remedialTag: null, cycleKind: null });
     setCurrentView("session");
   };
 
@@ -228,6 +236,9 @@ export default function App() {
           onOpenTajweedLessons={() => setCurrentView("tajweed")}
           onOpenProfiles={() => setCurrentView("profiles")}
           onOpenSurahs={() => setCurrentView("surahs")}
+          onOpenDevTools={() => setShowDevModal(true)}
+          requestedMushafUnitId={requestedMushafUnitId}
+          onConsumeRequestedMushaf={() => setRequestedMushafUnitId(null)}
         />
       )}
 
@@ -258,6 +269,29 @@ export default function App() {
           onBack={() => setCurrentView("units")}
           onOpenProfiles={() => setCurrentView("profiles")}
           onOpenSurahs={() => setCurrentView("surahs")}
+          onOpenDevTools={() => setShowDevModal(true)}
+        />
+      )}
+
+      {showDevModal && (
+        <DevModeModal
+          onClose={() => setShowDevModal(false)}
+          onRefresh={() => setSyncVersion((v) => v + 1)}
+          onReopenOnboarding={() => {
+            setNeedsOnboarding(true);
+            setCurrentView("units");
+          }}
+          onNavigateView={(view) => setCurrentView(view)}
+          onStartDailyReview={handleStartDailyReview}
+          onStartRemedial={() => handleStartRemedial(null)}
+          onStartBlindSpots={handleStartBlindSpots}
+          onStartDrill={() => handleStartDrill(null)}
+          onStartExam={() => handleStartExam(null)}
+          onOpenMutashabihat={() => setMutashabihatVerse(null)}
+          onOpenMushafUnit1={() => {
+            setCurrentView("units");
+            setRequestedMushafUnitId("__FIRST__");
+          }}
         />
       )}
 
