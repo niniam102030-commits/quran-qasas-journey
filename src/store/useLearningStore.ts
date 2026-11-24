@@ -13,6 +13,7 @@ import {
   type TestOutEvaluation,
   type TestOutQuestion,
 } from "../learning/testOut";
+import { filterPrescreenedStage1Questions } from "../learning/vocabPrescreen";
 import {
   stagePassed,
   canUnlockNext,
@@ -111,8 +112,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter((q) => done.has(q.unitId) && q.unitId !== unitId);
     const allTargets = [...stageQs, ...reviewQs].flatMap((q) => q.targets);
     const cards = await loadCards(allTargets);
+    const effectiveStageQs = stage === 1 ? filterPrescreenedStage1Questions(stageQs, cards) : stageQs;
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
-    const plan = planStage(stageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
+    const plan = planStage(effectiveStageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
       set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
       return;
