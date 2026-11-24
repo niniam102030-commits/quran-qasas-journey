@@ -1,10 +1,11 @@
 // src/pages/UnitsPage.tsx
 // فهرست ۲۲ واحد (نیم‌صفحه) در قالب ۵ ایستگاه داستانی به سبک دولینگو، با دکمه‌های سه‌بعدی و نوار آمار زنده.
 import { useEffect, useState } from "react";
-import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star } from "lucide-react";
+import { Award, Settings, Bell, Lock, Check, ChevronRight, Play, Eye, Headphones, GitCompare, Flame, Sparkles, Crown, Star, Zap } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
 import { reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
+import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
 import MushafHalfPage from "../components/mushaf/MushafHalfPage";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 
@@ -101,6 +102,7 @@ function stationForVerse(verseFrom = 1): StoryStation {
 
 interface Props {
   onStartStage: (unitId: string, stage: number) => void;
+  onStartTestOut?: (unitId: string) => void;
   onNavigateTab?: (tab: "mastery" | "settings") => void;
   onStartAudioQuiz?: () => void;
   onOpenMutashabihat?: () => void;
@@ -113,8 +115,10 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQuiz, onOpenMutashabihat, onBack, syncVersion }: Props) {
+export default function UnitsPage({ onStartStage, onStartTestOut, onNavigateTab, onStartAudioQuiz, onOpenMutashabihat, onBack, syncVersion }: Props) {
   const [units, setUnits] = useState<UnitInfo[]>([]);
+  const [unitQuestionCounts, setUnitQuestionCounts] = useState<Record<string, number>>({});
+  const [testOutModalUnitId, setTestOutModalUnitId] = useState<string | null>(null);
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [debt, setDebt] = useState(0);
   const [masteryCount, setMasteryCount] = useState({ total: 0, level3: 0 });
@@ -129,11 +133,17 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
     setLoading(true);
     setError(null);
     try {
-      const [prog, cards, prof] = await Promise.all([
+      const [prog, cards, prof, allQs] = await Promise.all([
         ldb.unitProgress.toArray(),
         ldb.cards.toArray(),
         ldb.profile.get("main"),
+        ldb.questions.toArray(),
       ]);
+      const qCounts: Record<string, number> = {};
+      for (const q of allQs) {
+        qCounts[q.unitId] = (qCounts[q.unitId] ?? 0) + 1;
+      }
+      setUnitQuestionCounts(qCounts);
       if (prof) setProfile(prof);
       const manifestRes = await fetch(`${import.meta.env.BASE_URL || "/"}content/manifest.json`);
       if (!manifestRes.ok) throw new Error(`فهرست محتوا: ${manifestRes.status}`);
@@ -413,7 +423,23 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
                       </div>
                     </button>
 
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {!isComplete && onStartTestOut && (
+                        <button
+                          type="button"
+                          disabled={(unitQuestionCounts[u.unitId] ?? 0) < TESTOUT_MIN_QUESTIONS}
+                          onClick={() => setTestOutModalUnitId(u.unitId)}
+                          title={
+                            (unitQuestionCounts[u.unitId] ?? 0) < TESTOUT_MIN_QUESTIONS
+                              ? "تعداد سؤال‌های این واحد برای آزمون میانبر کافی نیست"
+                              : "آزمون میانبر ۲۸ سؤالی برای عبور یکجا از این نیم‌صفحه"
+                          }
+                          className="py-2 px-3 rounded-2xl bg-violet-50 hover:bg-violet-100 dark:bg-violet-950/50 dark:hover:bg-violet-900/50 border-2 border-b-4 border-violet-200 dark:border-violet-800 active:border-b-2 active:translate-y-[2px] text-violet-800 dark:text-violet-300 text-xs font-extrabold flex items-center gap-1 transition-all disabled:opacity-45 disabled:cursor-not-allowed"
+                        >
+                          <Zap className="w-3.5 h-3.5" />
+                          <span>آزمون میانبر</span>
+                        </button>
+                      )}
                       {!isExpanded && (
                         <button
                           type="button"
@@ -532,6 +558,43 @@ export default function UnitsPage({ onStartStage, onNavigateTab, onStartAudioQui
           })}
         </section>
       </main>
+
+      {/* Test-Out Confirmation Modal */}
+      {testOutModalUnitId && onStartTestOut && (
+        <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-[#1a2332] p-5 sm:p-6 rounded-3xl max-w-sm w-full shadow-2xl border-2 border-violet-200 dark:border-violet-900 space-y-4 text-right">
+            <div className="flex items-center gap-2.5">
+              <div className="w-10 h-10 rounded-2xl bg-violet-100 dark:bg-violet-950/70 text-violet-700 dark:text-violet-300 flex items-center justify-center shrink-0">
+                <Zap className="w-5 h-5" />
+              </div>
+              <h3 className="font-black text-base text-slate-900 dark:text-white">آزمون میانبر واحد</h3>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              اگر این نیم‌صفحه را از قبل بلدی، با یک آزمون ۲۸ سؤالی می‌توانی همهٔ مراحلش را یکجا پاس کنی. قبولی: حداقل ۹۰٪ و بدون راهنما. اگر قبول نشوی، هیچ مرحله‌ای ثبت نمی‌شود ولی پاسخ‌هایت برای مرور هوشمند ذخیره می‌شوند.
+            </p>
+            <div className="flex gap-2 pt-1">
+              <button
+                type="button"
+                onClick={() => {
+                  const uid = testOutModalUnitId;
+                  setTestOutModalUnitId(null);
+                  onStartTestOut(uid);
+                }}
+                className="flex-1 py-2.5 px-3 rounded-2xl bg-violet-600 hover:bg-violet-700 border-b-4 border-violet-800 active:border-b-0 active:translate-y-0.5 text-white font-black text-xs transition-all"
+              >
+                شروع آزمون میانبر
+              </button>
+              <button
+                type="button"
+                onClick={() => setTestOutModalUnitId(null)}
+                className="flex-1 py-2.5 px-3 rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs"
+              >
+                انصراف
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import "fake-indexeddb/auto";
 import { describe, expect, it, beforeEach } from "vitest";
 import { ldb, type QuestionRow } from "../../db/learningDb";
 import { useLearningStore } from "../useLearningStore";
-import { newCard } from "../../learning/cardScheduler";
+import { newCard, reviewDebt } from "../../learning/cardScheduler";
 
 describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
   beforeEach(async () => {
@@ -252,5 +252,77 @@ describe("useLearningStore - Requeue, unitProgress, and Unit Unlocking", () => {
     expect(prog?.stageLessons?.[8]).toBe(1);
     expect(prog?.stagePassed[8]).toBeFalsy();
     expect(useLearningStore.getState().summary?.waivedLesson).toBeUndefined();
+  });
+
+  it("F1: passing Test-Out passes all 8 stages, seeds FSRS cards with tomorrow debt < 10, and keeps mastered=false; failing records no stage", async () => {
+    await ldb.unitProgress.put({
+      unitId: "u_p385a",
+      unlocked: true,
+      stagePassed: {},
+      stageLessons: {},
+      currentStage: 1,
+      mastered: false,
+      updatedAt: Date.now(),
+    });
+    await ldb.chunks.bulkPut([
+      { id: "c1", unitId: "u_p385a", verse: 1 },
+      { id: "c2", unitId: "u_p385a", verse: 2 },
+      { id: "c3", unitId: "u_p385a", verse: 3 },
+    ]);
+    await ldb.lexicon.bulkPut([
+      { wordId: "w28_001_001", unitId: "u_p385a", ar: "طسم", meaningFa: "حروف مقطعه" },
+      { wordId: "w28_002_001", unitId: "u_p385a", ar: "تلك", meaningFa: "این" },
+    ]);
+
+    // Fail at 85% -> no stage recorded
+    const failAttempts = Array.from({ length: 20 }, (_, i) => ({
+      stage: 1 + (i % 4),
+      correct: i < 17,
+      usedHint: false,
+    }));
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "TESTOUT",
+      unitId: "u_p385a",
+      stage: -2,
+      queue: [{ id: "qt1", unitId: "u_p385a", stage: 1, skill: "word", type: "WORD_AR_TO_FA", shape: "choice", difficulty: 3, targets: ["w:w28_001_001"] }],
+      index: 0,
+      firstAttempts: failAttempts,
+      firstTargetOutcomes: { "w:w28_001_001": false },
+    });
+    await useLearningStore.getState().next();
+    let prog = await ldb.unitProgress.get("u_p385a");
+    expect(Object.values(prog?.stagePassed ?? {}).filter(Boolean)).toHaveLength(0);
+    expect(useLearningStore.getState().summary?.passed).toBe(false);
+
+    // Pass at 100% -> all 8 stages passed, seeded cards created, tomorrow debt < 10
+    const passAttempts = [
+      ...Array.from({ length: 5 }, () => ({ stage: 1, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 2, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 3, correct: true, usedHint: false })),
+      ...Array.from({ length: 5 }, () => ({ stage: 4, correct: true, usedHint: false })),
+      ...Array.from({ length: 4 }, () => ({ stage: 5, correct: true, usedHint: false })),
+      ...Array.from({ length: 3 }, () => ({ stage: 6, correct: true, usedHint: false })),
+      ...Array.from({ length: 2 }, () => ({ stage: 7, correct: true, usedHint: false })),
+      { stage: 8, correct: true, usedHint: false },
+    ];
+    useLearningStore.setState({
+      status: "running",
+      sessionType: "TESTOUT",
+      unitId: "u_p385a",
+      stage: -2,
+      queue: [{ id: "qt2", unitId: "u_p385a", stage: 1, skill: "word", type: "WORD_AR_TO_FA", shape: "choice", difficulty: 3, targets: ["w:w28_001_001"] }],
+      index: 0,
+      firstAttempts: passAttempts,
+      firstTargetOutcomes: { "w:w28_001_001": true, "vr:1": true },
+    });
+    await useLearningStore.getState().next();
+    prog = await ldb.unitProgress.get("u_p385a");
+    expect(Object.values(prog?.stagePassed ?? {}).filter(Boolean)).toHaveLength(8);
+    expect(prog?.mastered).toBe(false);
+    const cards = await ldb.cards.toArray();
+    expect(cards.length).toBeGreaterThanOrEqual(15);
+    const tomorrow = new Date(Date.now() + 86400_000);
+    expect(reviewDebt(cards, tomorrow)).toBeLessThan(10);
   });
 });

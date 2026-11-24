@@ -53,6 +53,11 @@ export default function App() {
     setCurrentView("session");
   };
 
+  const handleStartTestOut = (unitId: string) => {
+    setSession({ unitId, stage: -2, remedialTag: null });
+    setCurrentView("session");
+  };
+
   const handleStartRemedial = (tag: string | null = null) => {
     setSession({ unitId: "", stage: -1, remedialTag: tag });
     setCurrentView("session");
@@ -122,6 +127,7 @@ export default function App() {
           onStartAudioQuiz={() => setCurrentView("audioQuiz")}
           onOpenMutashabihat={() => setMutashabihatVerse(null)}
           onStartStage={handleStartStage}
+          onStartTestOut={handleStartTestOut}
         />
       )}
 

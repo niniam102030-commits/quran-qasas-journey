@@ -43,6 +43,7 @@ export type RenderableQuestion = QuestionRow & {
 interface Props {
   q: RenderableQuestion;
   locked: boolean;
+  disableHint?: boolean;
   onSubmit: (response: unknown, meta: { usedHint: boolean; changedAnswer: boolean; responseMs: number }) => void;
 }
 
@@ -90,7 +91,7 @@ const label = (o: Item, rangeLabels: Record<string, string>, arStyle: React.CSSP
   );
 };
 
-export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
+export default function QuestionRenderer({ q, locked, disableHint = false, onSubmit }: Props) {
   const t0 = useRef(Date.now());
   const changed = useRef(false);
   const [hint, setHint] = useState(false);
@@ -267,7 +268,7 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
         />
       )}
 
-      {!locked && q.stage !== 8 && (
+      {!locked && !disableHint && q.stage !== 8 && (
         <div className="space-y-2 pt-2">
           <div className="flex items-center justify-end">
             <button
@@ -299,9 +300,11 @@ export default function QuestionRenderer({ q, locked, onSubmit }: Props) {
           )}
         </div>
       )}
-      {!locked && q.stage === 8 && (
+      {!locked && (disableHint || q.stage === 8) && (
         <div className="pt-2 text-left">
-          <span className="text-[11px] text-slate-400">آزمون تسلط مرحله ۸ (بدون راهنما)</span>
+          <span className="text-[11px] text-slate-400">
+            {disableHint ? "آزمون میانبر واحد (بدون راهنما)" : "آزمون تسلط مرحله ۸ (بدون راهنما)"}
+          </span>
         </div>
       )}
     </div>

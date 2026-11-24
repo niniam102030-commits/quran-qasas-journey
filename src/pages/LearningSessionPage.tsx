@@ -41,6 +41,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   const startReview = useLearningStore((state) => state.startReview);
   const startStage = useLearningStore((state) => state.startStage);
   const startRemedial = useLearningStore((state) => state.startRemedial);
+  const startTestOut = useLearningStore((state) => state.startTestOut);
   const { playSfx } = useHapticsAndSfx();
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
@@ -48,7 +49,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
   useEffect(() => {
     const state = useLearningStore.getState();
-    if (stage === -1) {
+    if (stage === -2) {
+      if (state.status === "idle" || state.sessionType !== "TESTOUT" || state.unitId !== unitId || state.status === "finished") {
+        void startTestOut(unitId);
+      }
+    } else if (stage === -1) {
       if (state.status === "idle" || state.sessionType !== "REMEDIAL" || state.remedialTag !== remedialTag || state.status === "finished") {
         void startRemedial(remedialTag);
       }
@@ -57,7 +62,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
       void startStage(unitId, stage);
     }
-  }, [unitId, stage, remedialTag, startReview, startStage, startRemedial]);
+  }, [unitId, stage, remedialTag, startReview, startStage, startRemedial, startTestOut]);
 
   // جشن پایان مرحله موفق با افکت صوتی و Confetti
   useEffect(() => {
@@ -184,11 +189,17 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           <div className="space-y-1.5">
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
               {isEmpty
-                ? stage === -1
+                ? stage === -2
+                  ? "سؤال کافی برای آزمون میانبر این واحد موجود نیست"
+                  : stage === -1
                   ? "خطایی برای تمرین ترمیمی ثبت نشده است"
                   : stage === 0
                   ? "فعلاً کارتی برای مرور سررسید نشده است"
                   : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                : stage === -2
+                ? isPassed
+                  ? "آزمون میانبر با موفقیت گذرانده شد 🎉"
+                  : "آزمون میانبر به نصاب قبولی نرسید"
                 : stage === -1
                 ? "تمرین ترمیمی هوشمند به پایان رسید"
                 : stage === 0
@@ -204,6 +215,10 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
               {isEmpty
                 ? "می‌توانید بعداً دوباره بررسی کنید یا به نقشه برگردید."
+                : stage === -2
+                ? isPassed
+                  ? "همهٔ ۸ مرحلهٔ این نیم‌صفحه ثبت شدند و کارت‌های مرور هوشمند با سررسید پخش‌شده آماده شدند. (توجّه: آزمون میانبر عبور از مراحل را ثبت می‌کند، نه تسلط حرف‌به‌حرف تلاوت را.)"
+                  : "هیچ مرحله‌ای ثبت نشد، ولی پاسخ‌های شما برای مرور هوشمند ذخیره شدند."
                 : isPassed
                 ? m?.stageCompleted
                   ? "تسلط بر این مرحله تکمیل شد و مرحله بعدی برای شما باز شد."
@@ -239,6 +254,18 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                   )}
                 </div>
               )}
+            </div>
+          )}
+
+          {stage === -2 && m?.testOut && !isPassed && m.testOut.weakestStage !== null && (
+            <div className="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs font-bold space-y-1">
+              <div>
+                ضعیف‌ترین بخش شما: مرحلهٔ {toFarsiNum(m.testOut.weakestStage)} (
+                {toFarsiNum(Math.round((m.testOut.perStage[m.testOut.weakestStage]?.ratio ?? 0) * 100))}٪)
+              </div>
+              <div className="font-normal text-[11px] opacity-90">
+                برای قبولی در آزمون میانبر: حداقل ۹۰٪ کل، ۷۰٪ هر مرحله و ۸۵٪ بخش‌های حفظی (۴ و ۷) لازم است.
+              </div>
             </div>
           )}
 
@@ -369,6 +396,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           key={q.id + ":" + s.index}
           q={q}
           locked={locked}
+          disableHint={s.sessionType === "TESTOUT"}
           onSubmit={(r, m) => {
             void s.submit(r, m).then((res) => {
               if (!res) return;

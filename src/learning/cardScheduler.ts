@@ -44,6 +44,32 @@ export function newCard(key: string, now: Date = new Date()): StoredCard {
   return toStored(key, createEmptyCard(now), 0);
 }
 
+export interface SeedOpts {
+  now?: Date;
+  intervalDays: number;
+  stability: number;
+}
+
+/** بذرپاشی کارت برای اهداف ازپیش‌بلدشده (مثلاً در آزمون میانبر، پیش‌غربال یا تسمیع) */
+export function seedKnownCard(key: string, opts: SeedOpts): StoredCard {
+  const now = opts.now ?? new Date();
+  const due = new Date(now.getTime() + opts.intervalDays * 86400_000);
+  return {
+    key,
+    kind: kindOfKey(key),
+    due: due.toISOString(),
+    stability: opts.stability,
+    difficulty: 5,
+    elapsedDays: 0,
+    scheduledDays: opts.intervalDays,
+    reps: 2,
+    lapses: 0,
+    state: 2,
+    lastReview: now.toISOString(),
+    streak: 2,
+  };
+}
+
 function toStored(key: string, c: Card, streak: number): StoredCard {
   return {
     key,

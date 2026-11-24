@@ -3,8 +3,16 @@
 import { create } from "zustand";
 import { ldb, type QuestionRow } from "../db/learningDb";
 import { gradeQuestion } from "../services/grading";
-import { newCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
+import { newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { planStage, requeue, shuffle, rng, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
+import {
+  buildTestOutPlan,
+  testOutResult,
+  collectUnitTargets,
+  planUnitSeeding,
+  type TestOutEvaluation,
+  type TestOutQuestion,
+} from "../learning/testOut";
 import {
   stagePassed,
   canUnlockNext,
@@ -38,6 +46,7 @@ export interface SessionSummary {
   stageCompleted?: boolean;
   requiredRatio?: number;
   waivedLesson?: boolean;
+  testOut?: TestOutEvaluation;
 }
 
 interface LearningState {
@@ -50,12 +59,14 @@ interface LearningState {
   index: number;
   wrongCounts: Record<string, number>;
   firstAttempts: StageAttempt[]; // فقط اولین تلاش هر سوال (برای پاس‌شدن مرحله)
+  firstTargetOutcomes: Record<string, boolean>; // نتیجه اولین تلاش هر هدف (برای بذرپاشی آزمون میانبر)
   sessionAnyHint: boolean;
   sessionAnyRequeue: boolean;
   seen: Set<string>;
   lastResult: GradeResult | null;
   summary: SessionSummary | null;
   startStage: (unitId: string, stage: number, size?: number) => Promise<void>;
+  startTestOut: (unitId: string) => Promise<void>;
   startReview: (size?: number) => Promise<void>;
   startRemedial: (tag?: string | null, size?: number) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
@@ -82,6 +93,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   index: 0,
   wrongCounts: {},
   firstAttempts: [],
+  firstTargetOutcomes: {},
   sessionAnyHint: false,
   sessionAnyRequeue: false,
   seen: new Set(),
@@ -102,7 +114,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(stageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
-      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
+      set({ status: "finished", sessionType: "STAGE", unitId, stage, queue: [], index: 0, wrongCounts: {}, firstAttempts: [], firstTargetOutcomes: {}, sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(), summary: { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 } });
       return;
     }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
@@ -115,9 +127,43 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       index: 0,
       wrongCounts: {},
       firstAttempts: [],
+      firstTargetOutcomes: {},
       sessionAnyHint: false,
       sessionAnyRequeue: false,
       seen: new Set(),
+    });
+  },
+
+  startTestOut: async (unitId) => {
+    set({ status: "loading", summary: null, lastResult: null });
+    const unitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
+    const weekAgo = Date.now() - 7 * 86400_000;
+    const recentAttempts = await ldb.attempts.where("unitId").equals(unitId).toArray();
+    const recentIds = new Set(recentAttempts.filter((a) => a.at >= weekAgo).map((a) => a.qid));
+
+    const testQs: TestOutQuestion[] = unitQs.map((q) => ({
+      ...asPlanner(q),
+      shape: q.shape,
+    }));
+    const plan = buildTestOutPlan(testQs, Date.now() & 0xffff, recentIds);
+    const byId = new Map(unitQs.map((q) => [q.id, q]));
+    const queue = plan.map((p) => byId.get(p.id)!).filter(Boolean);
+
+    set({
+      status: queue.length ? "running" : "finished",
+      sessionType: "TESTOUT",
+      unitId,
+      stage: -2,
+      remedialTag: null,
+      queue,
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      firstTargetOutcomes: {},
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      seen: new Set(),
+      summary: queue.length ? null : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0 },
     });
   },
 
@@ -257,8 +303,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     let queue = s.queue;
     const sessionAnyHint = s.sessionAnyHint || !!meta.usedHint;
     let sessionAnyRequeue = s.sessionAnyRequeue;
-    // در مرحله ۸ سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
-    if (!res.correct && s.stage !== 8) {
+    // در مرحله ۸ و آزمون میانبر سوال غلط به صف بازنمی‌گردد؛ در مراحل ۱ تا ۷ حداکثر ۲ بار برای هر سوال
+    if (!res.correct && s.stage !== 8 && s.sessionType !== "TESTOUT") {
       const prevWrong = wrongCounts[q.id] ?? 0;
       if (prevWrong < MAX_REQUEUE_PER_QUESTION) {
         wrongCounts[q.id] = prevWrong + 1;
@@ -266,9 +312,16 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         sessionAnyRequeue = true;
       }
     }
+    const firstTargetOutcomes = { ...s.firstTargetOutcomes };
+    if (firstTime && s.sessionType === "TESTOUT") {
+      for (const [k, ok] of Object.entries(res.perTarget)) {
+        const effOk = ok && !meta.usedHint;
+        firstTargetOutcomes[k] = firstTargetOutcomes[k] === false ? false : effOk;
+      }
+    }
     set({
-      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue,
-      firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
+      lastResult: res, seen, wrongCounts, queue, sessionAnyHint, sessionAnyRequeue, firstTargetOutcomes,
+      firstAttempts: firstTime && (s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL" || s.sessionType === "TESTOUT" || q.stage === s.stage) ? [...s.firstAttempts, { stage: q.stage, correct: res.correct, usedHint: !!meta.usedHint }] : s.firstAttempts,
     });
     return res;
   },
@@ -283,6 +336,107 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     // پایان جلسه
     const attempts = s.firstAttempts;
     const correct = attempts.filter((a) => a.correct).length;
+
+    // مسیر ویژه پایان آزمون میانبر (Test-Out)
+    if (s.sessionType === "TESTOUT") {
+      const evalRes = testOutResult(attempts);
+      const passed = evalRes.passed;
+      const now = new Date();
+
+      if (passed && s.unitId) {
+        const p = await ldb.unitProgress.get(s.unitId);
+        if (p) {
+          const allPassed: Record<number, boolean> = {};
+          const allLessons: Record<number, number> = {};
+          for (let st = 1; st <= 8; st++) {
+            allPassed[st] = true;
+            allLessons[st] = LESSONS_PER_STAGE;
+          }
+          p.stagePassed = allPassed;
+          p.stageLessons = allLessons;
+          p.currentStage = 8;
+          p.updatedAt = Date.now();
+          await ldb.unitProgress.put(p);
+        }
+
+        // بذرپاشی کارت‌های FSRS برای کل اهداف واحد
+        const [unitQs, unitChunks, unitLex] = await Promise.all([
+          ldb.questions.where("unitId").equals(s.unitId).toArray(),
+          ldb.chunks.where("unitId").equals(s.unitId).toArray(),
+          ldb.lexicon.where("unitId").equals(s.unitId).toArray(),
+        ]);
+        const verses = [...new Set(unitChunks.map((c) => c.verse))];
+        const lexiconWordIds = unitLex.map((l) => l.wordId);
+        const allTargets = collectUnitTargets({
+          unitId: s.unitId,
+          questions: unitQs,
+          verses,
+          lexiconWordIds,
+        });
+        const testedMap = new Map<string, boolean>(Object.entries(s.firstTargetOutcomes));
+        const seedPlan = planUnitSeeding(allTargets, testedMap, Date.now() & 0xffff);
+        const existingCards = await loadCards(allTargets);
+        const toSave: StoredCard[] = [];
+
+        for (const entry of seedPlan) {
+          const prev = existingCards.get(entry.key);
+          // اگر کارت فعلی از قبل در حالت مرور با ثبات مساوی یا بالاتر است، تضعیفش نکن
+          if (prev && prev.state === 2 && prev.stability >= entry.stability) continue;
+          toSave.push(
+            seedKnownCard(entry.key, {
+              now,
+              intervalDays: entry.intervalDays,
+              stability: entry.stability,
+            }),
+          );
+        }
+        // برای اهداف مستقیمِ غلط که هنوز کارتی ندارند، کارت تازه معمولی بساز
+        for (const [key, ok] of testedMap.entries()) {
+          if (!ok && !existingCards.has(key)) {
+            toSave.push(newCard(key, now));
+          }
+        }
+        if (toSave.length > 0) {
+          await ldb.cards.bulkPut(toSave);
+        }
+      }
+
+      const allCards = await ldb.cards.toArray();
+      const debt = reviewDebt(allCards, now);
+      const xpEarned = attempts.length > 0 ? correct * 10 + (passed ? 20 : 0) : 0;
+      const gemsEarned = passed ? 15 : 0;
+      if (attempts.length > 0) {
+        try {
+          await recordLearningReward({
+            xpDelta: xpEarned,
+            gemsDelta: gemsEarned,
+            markDailyActivity: true,
+          });
+        } catch {
+          // عدم مسدودسازی پایان جلسه در صورت خطای ذخیره پروفایل
+        }
+      }
+
+      set({
+        status: "finished",
+        lastResult: null,
+        summary: {
+          total: attempts.length,
+          correct,
+          ratio: evalRes.ratio,
+          passed,
+          unlockedNext: false,
+          debt,
+          xpEarned,
+          gemsEarned,
+          stageCompleted: passed,
+          requiredRatio: 0.9,
+          testOut: evalRes,
+        },
+      });
+      return;
+    }
+
     const passed =
       s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL"
         ? correct / Math.max(1, attempts.length) >= 0.8
