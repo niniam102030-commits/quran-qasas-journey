@@ -4,6 +4,7 @@ import confetti from "canvas-confetti";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen, Volume2, VolumeX } from "lucide-react";
 import { isNoAudioToday, setNoAudioToday } from "../services/noAudioService";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
+import { ReciteBlockRunner } from "../components/learning/ReciteItemView";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
 import { prefetchVersesAudio } from "../services/menshawiAudio";
 import AqeeqIcon from "../components/common/AqeeqIcon";
@@ -18,6 +19,8 @@ interface Props {
   stage: number;
   remedialTag?: string | null;
   cycleKind?: CycleKind | null;
+  /** فقط برای stage=-۶: نوع دریل تلاوت مستقل */
+  reciteKind?: "hunt" | "exam" | "witness" | null;
   onStartNext?: (unitId: string, stage: number) => void;
   onExit: () => void;
 }
@@ -68,7 +71,7 @@ const AUDIO_REVEALS_ANSWER = new Set([
   "CLOZE_COMPLETE_REST",
 ]);
 
-export default function LearningSessionPage({ unitId, stage, remedialTag = null, cycleKind = null, onStartNext, onExit }: Props) {
+export default function LearningSessionPage({ unitId, stage, remedialTag = null, cycleKind = null, reciteKind = null, onStartNext, onExit }: Props) {
   const s = useLearningStore();
   const startReview = useLearningStore((state) => state.startReview);
   const startStage = useLearningStore((state) => state.startStage);
@@ -77,6 +80,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
   const startBlindSpots = useLearningStore((state) => state.startBlindSpots);
   const startCycleReview = useLearningStore((state) => state.startCycleReview);
   const startDrill = useLearningStore((state) => state.startDrill);
+  const startReciteDrill = useLearningStore((state) => state.startReciteDrill);
   const { playSfx } = useHapticsAndSfx();
   const q = s.current() as RenderableQuestion | null;
   const [showExitConfirm, setShowExitConfirm] = useState(false);
@@ -85,7 +89,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
   useEffect(() => {
     const state = useLearningStore.getState();
-    if (stage === -5) {
+    if (stage === -6 && reciteKind) {
+      if (state.status === "idle" || state.reciteSession?.purpose !== reciteKind || state.status === "finished") {
+        void startReciteDrill(reciteKind);
+      }
+    } else if (stage === -5) {
       if (state.status === "idle" || state.sessionType !== "DRILL" || state.unitId !== (unitId || null) || state.status === "finished") {
         void startDrill(unitId || null);
       }
@@ -110,7 +118,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     } else if (state.status === "idle" || state.unitId !== unitId || state.stage !== stage || state.status === "finished") {
       void startStage(unitId, stage);
     }
-  }, [unitId, stage, remedialTag, cycleKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview, startDrill]);
+  }, [unitId, stage, remedialTag, cycleKind, reciteKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview, startDrill, startReciteDrill]);
 
   // پیش‌دانلود پس‌زمینه‌ی صوت همه‌ی آیات این جلسه تا نخستین پخشِ هر آیه
   // معطل دانلود نماند (دانلود کامل و کش‌شده در menshawiAudio انجام می‌شود).
@@ -276,7 +284,9 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
           <div className="space-y-1.5">
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
               {isEmpty
-                ? stage === -5
+                ? stage === -6
+                  ? "فعلاً آیتم تلاوتی آماده نیست — یا مدل آفلاین نصب نشده یا هنوز دادهٔ کافی نداریم"
+                : stage === -5
                   ? "سؤال کافی برای دریل اتصال و شروع از وسط موجود نیست"
                   : stage === -2
                   ? "سؤال کافی برای آزمون میانبر این واحد موجود نیست"
@@ -285,6 +295,12 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                   : stage === 0
                   ? "فعلاً کارتی برای مرور سررسید نشده است"
                   : "برای این مرحله هنوز سؤالی بارگذاری نشده است"
+                : stage === -6
+                ? reciteKind === "hunt"
+                  ? "شکار خطای تلاوت به پایان رسید"
+                  : reciteKind === "exam"
+                    ? "آزمون تلاوت به پایان رسید"
+                    : "همراهی آزاد به پایان رسید"
                 : stage === -5
                 ? "دریل اتصال و شروع از وسط به پایان رسید"
                 : stage === -2
@@ -354,6 +370,11 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                   بهترین زنجیرهٔ پاسخ درست: {toFarsiNum(m.maxCombo!)}
                 </div>
               )}
+              {(m.reciteTotal ?? 0) > 0 && (
+                <div className="col-span-2 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs font-extrabold text-rose-700 dark:text-rose-300">
+                  بخش تلاوت: {toFarsiNum(m.recitePassedCount ?? 0)} از {toFarsiNum(m.reciteTotal!)} آیتم قبول شد
+                </div>
+              )}
             </div>
           )}
 
@@ -376,6 +397,12 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
               <div className="font-normal text-[11px] opacity-90">
                 برای قبولی در آزمون میانبر: حداقل ۹۰٪ کل، ۷۰٪ هر مرحله و ۸۵٪ بخش‌های حفظی (۴ و ۷) لازم است.
               </div>
+            </div>
+          )}
+
+          {m?.reciteGateFailed && (
+            <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-800 text-rose-900 dark:text-rose-200 text-xs font-bold">
+              گیت تلاوت نابینا قبول نشد، پس این مرحله پاس نشد. برای قبولی: تلاوت کاملِ از حفظ، بدون خطای قطعی و با دقت دست‌کم ۹۰٪. درس را دوباره تکرار کنید.
             </div>
           )}
 
@@ -434,6 +461,37 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
               ادامه و بازگشت به نقشه
             </button>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  // بلوک تلاوت فعال: پیوست مرحله (در پایان صف)، مرور صوتی (در آغاز مرور)
+  // یا دریل تلاوت مستقل — به‌جای نمای سؤال نشان داده می‌شود.
+  if (s.status === "running" && s.reciteSession?.active) {
+    return (
+      <div dir="rtl" className="min-h-screen islamic-bg bg-termeh-bg dark:bg-lapis-bg text-slate-800 dark:text-slate-100 p-4 select-none">
+        <div className="max-w-md mx-auto space-y-4 pt-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-base font-black text-slate-800 dark:text-slate-100">
+              {stage === -6
+                ? reciteKind === "hunt"
+                  ? "شکار خطای تلاوت"
+                  : reciteKind === "exam"
+                    ? "آزمون تلاوت"
+                    : "همراهی آزاد"
+                : s.sessionType === "REVIEW"
+                  ? "مرور صوتی امروز"
+                  : "بخش تلاوت این درس"}
+            </h2>
+            <button
+              onClick={onExit}
+              className="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-500 hover:bg-black/5 dark:hover:bg-white/5"
+            >
+              خروج
+            </button>
+          </div>
+          <ReciteBlockRunner />
         </div>
       </div>
     );

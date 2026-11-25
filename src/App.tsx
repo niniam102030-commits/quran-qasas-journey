@@ -49,6 +49,7 @@ export default function App() {
     stage: number;
     remedialTag?: string | null;
     cycleKind?: CycleKind | null;
+    reciteKind?: "hunt" | "exam" | "witness" | null;
   } | null>(null);
   const [mutashabihatVerse, setMutashabihatVerse] = useState<number | null | false>(false);
   const [showDevModal, setShowDevModal] = useState(false);
@@ -126,6 +127,11 @@ export default function App() {
     setCurrentView("session");
   };
 
+  const handleStartReciteDrill = (kind: "hunt" | "exam" | "witness") => {
+    setSession({ unitId: "", stage: -6, remedialTag: null, cycleKind: null, reciteKind: kind });
+    setCurrentView("session");
+  };
+
   const handleStartExam = (scope: ExamScope | null = null) => {
     setExamInitialScope(scope);
     setCurrentView("exam");
@@ -148,6 +154,7 @@ export default function App() {
         stage={session.stage}
         remedialTag={session.remedialTag ?? null}
         cycleKind={session.cycleKind ?? null}
+        reciteKind={session.reciteKind ?? null}
         onStartNext={handleStartStage}
         onExit={handleExitSession}
       />
@@ -264,6 +271,7 @@ export default function App() {
           onStartBlindSpots={handleStartBlindSpots}
           onStartCycleReview={handleStartCycleReview}
           onStartDrill={handleStartDrill}
+          onStartReciteDrill={handleStartReciteDrill}
           onStartExam={handleStartExam}
           onStartAudioQuiz={() => setCurrentView("audioQuiz")}
           onOpenTajweedLessons={() => setCurrentView("tajweed")}

@@ -35,6 +35,7 @@ interface Props {
   onStartBlindSpots?: () => void;
   onStartCycleReview?: (kind: CycleKind) => void;
   onStartDrill?: (unitId?: string | null) => void;
+  onStartReciteDrill?: (kind: "hunt" | "exam" | "witness") => void;
   onStartExam?: (scope?: ExamScope | null) => void;
   onStartAudioQuiz?: () => void;
   onOpenTajweedLessons?: () => void;
@@ -67,6 +68,7 @@ export default function PracticeHubPage({
   onStartBlindSpots,
   onStartCycleReview,
   onStartDrill,
+  onStartReciteDrill,
   onStartExam,
   onStartAudioQuiz,
   onOpenTajweedLessons,
@@ -485,6 +487,35 @@ export default function PracticeHubPage({
                 </div>
               </div>
             </button>
+          )}
+
+          {onStartReciteDrill && (
+            <div className="grid grid-cols-3 gap-2">
+              <button
+                type="button"
+                onClick={() => onStartReciteDrill("hunt")}
+                className="p-3 rounded-3xl bg-rose-50 dark:bg-rose-950/40 border-2 border-b-4 border-rose-200 dark:border-rose-900 hover:border-rose-400 active:border-b-2 active:translate-y-[2px] text-right transition-all"
+              >
+                <div className="text-[11px] font-black text-rose-900 dark:text-rose-100">شکار خطای تلاوت</div>
+                <div className="text-[10px] text-rose-700/80 dark:text-rose-300/80 mt-0.5">آیاتی که لغزیدی، تمیز از نو</div>
+              </button>
+              <button
+                type="button"
+                onClick={() => onStartReciteDrill("exam")}
+                className="p-3 rounded-3xl bg-rose-50 dark:bg-rose-950/40 border-2 border-b-4 border-rose-200 dark:border-rose-900 hover:border-rose-400 active:border-b-2 active:translate-y-[2px] text-right transition-all"
+              >
+                <div className="text-[11px] font-black text-rose-900 dark:text-rose-100">آزمون تلاوت</div>
+                <div className="text-[10px] text-rose-700/80 dark:text-rose-300/80 mt-0.5">سه آیه: همراهی، اتصال، نابینا</div>
+              </button>
+              <button
+                type="button"
+                onClick={() => onStartReciteDrill("witness")}
+                className="p-3 rounded-3xl bg-rose-50 dark:bg-rose-950/40 border-2 border-b-4 border-rose-200 dark:border-rose-900 hover:border-rose-400 active:border-b-2 active:translate-y-[2px] text-right transition-all"
+              >
+                <div className="text-[11px] font-black text-rose-900 dark:text-rose-100">همراهی آزاد</div>
+                <div className="text-[10px] text-rose-700/80 dark:text-rose-300/80 mt-0.5">فقط بخوان؛ خطا ثبت نمی‌شود</div>
+              </button>
+            </div>
           )}
 
           <button

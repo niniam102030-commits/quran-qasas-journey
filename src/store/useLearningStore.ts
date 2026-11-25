@@ -54,6 +54,28 @@ import {
 } from "../learning/mastery";
 import { recordLearningReward } from "../services/profileService";
 import type { Question, GradeResult, MatchQuestion, BaseVerse, UnitPlan } from "../types/learning";
+import type { ReciteItemResult, RecitePurpose } from "../learning/recitationItems";
+import {
+  applyVoiceReviewResults,
+  buildExamItems,
+  buildHuntItems,
+  buildStageReciteItems,
+  buildVoiceReviewItems,
+  buildWitnessItems,
+  recitationAvailable,
+  recordReciteFadeOutcome,
+  type ReciteSessionItem,
+} from "../services/recitationSessionService";
+
+/** بلوک آیتم‌های تلاوتِ پیوستِ یک جلسه (ساخته‌شده از آیات همان واحد؛ سؤال بانکی نیست) */
+export interface ReciteSessionState {
+  items: ReciteSessionItem[];
+  idx: number;
+  results: ReciteItemResult[];
+  purpose: RecitePurpose;
+  active: boolean;
+  done: boolean;
+}
 
 export interface SubmitMeta {
   usedHint?: boolean;
@@ -82,6 +104,11 @@ export interface SessionSummary {
   waivedLesson?: boolean;
   testOut?: TestOutEvaluation;
   maxCombo?: number;
+  /** نتیجهٔ بلوک تلاوت پیوست جلسه */
+  recitePassedCount?: number;
+  reciteTotal?: number;
+  /** گیت تلاوت نابینا قبول نشد و مرحله به همین دلیل پاس نشد */
+  reciteGateFailed?: boolean;
 }
 
 export type CycleKind = "SABQ" | "SABQI" | "MANZIL";
@@ -137,6 +164,7 @@ interface LearningState {
   recentOutcomes: boolean[];
   summary: SessionSummary | null;
   examState: ExamRuntimeState | null;
+  reciteSession: ReciteSessionState | null;
   startStage: (unitId: string, stage: number, size?: number) => Promise<void>;
   startTestOut: (unitId: string) => Promise<void>;
   startReview: (size?: number) => Promise<void>;
@@ -146,6 +174,8 @@ interface LearningState {
   startDrill: (unitId?: string | null, size?: number) => Promise<void>;
   startMistakeReview: () => Promise<void>;
   startExam: (scope: ExamScope) => Promise<void>;
+  startReciteDrill: (kind: "hunt" | "exam" | "witness") => Promise<void>;
+  submitReciteResult: (result: ReciteItemResult) => Promise<void>;
   submit: (response: unknown, meta: SubmitMeta) => Promise<GradeResult | null>;
   next: () => Promise<void>;
   current: () => QuestionRow | null;
@@ -210,6 +240,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   lastResult: null,
   summary: null,
   examState: null,
+  reciteSession: null,
   wrongQids: [],
   practiceOnly: false,
   recentOutcomes: [],
@@ -217,7 +248,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   current: () => get().queue[get().index] ?? null,
 
   startStage: async (unitId, stage, size = LESSON_SIZE) => {
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const goals = usePreferencesStore.getState().goals;
     const rawStageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
     let stageQs = rawStageQs.filter((q) => questionAllowedByGoals(q.type, goals));
@@ -323,11 +354,37 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       wrongQids: [],
       practiceOnly: false,
       recentOutcomes: [],
+      reciteSession: null,
     });
+
+    // بلوک تلاوت پیوست درس: از آیات همین واحد، با قالبِ مخصوص این مرحله.
+    // اگر موتور آفلاین آماده نباشد یا حالت «بدون صدا» فعال باشد، هیچ آیتمی
+    // ساخته نمی‌شود و درس دقیقاً مثل قبل با معادل‌های لمسی پیش می‌رود.
+    if (finalQueue.length > 0) {
+      try {
+        if (await recitationAvailable()) {
+          const items = await buildStageReciteItems(unitId, stage);
+          if (items.length > 0) {
+            set({
+              reciteSession: {
+                items,
+                idx: 0,
+                results: [],
+                purpose: stage >= 7 ? "gate" : "stage",
+                active: false,
+                done: false,
+              },
+            });
+          }
+        }
+      } catch {
+        // خرابی مسیر تلاوت نباید جلسهٔ اصلی را متوقف کند
+      }
+    }
   },
 
   startTestOut: async (unitId) => {
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const goals = usePreferencesStore.getState().goals;
     const rawUnitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
     const goalFilteredQs = rawUnitQs.filter((q) => questionAllowedByGoals(q.type, goals));
@@ -367,7 +424,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
   startReview: async (size) => {
     const reviewLimit = size ?? dailyReviewCapFor(usePreferencesStore.getState().paceMode);
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const now = new Date();
     const cards = await ldb.cards.toArray();
     const goals = usePreferencesStore.getState().goals;
@@ -390,12 +447,27 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       if (q) picked.set(q.id, q);
     }
     const queue = [...picked.values()];
-    set({ status: queue.length ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, cycleKind: null, combo: 0, maxCombo: 0, queue, index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(),
-      summary: queue.length ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 } });
+    // مرور صوتی: تا سقف روزانه، چند کارت «یادآوری آیه» به‌صورت تلاوت از حفظ
+    // سرو می‌شوند و نمرهٔ داور مستقیم روی همان کارت‌های FSRS می‌نشیند.
+    let voiceSession: ReciteSessionState | null = null;
+    try {
+      if (await recitationAvailable()) {
+        const items = await buildVoiceReviewItems();
+        if (items.length > 0) {
+          voiceSession = { items, idx: 0, results: [], purpose: "review", active: true, done: false };
+        }
+      }
+    } catch {
+      // مرور لمسی بدون وقفه ادامه پیدا می‌کند
+    }
+    const running = queue.length > 0 || voiceSession !== null;
+    set({ status: running ? "running" : "finished", sessionType: "REVIEW", unitId: null, stage: 0, remedialTag: null, cycleKind: null, combo: 0, maxCombo: 0, queue, index: 0, wrongCounts: {}, firstAttempts: [], sessionAnyHint: false, sessionAnyRequeue: false, seen: new Set(),
+      reciteSession: voiceSession,
+      summary: running ? null : { total: 0, correct: 0, ratio: 1, passed: true, unlockedNext: false, debt: 0, maxCombo: 0 } });
   },
 
   startRemedial: async (tag = null, size = 15) => {
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const allConfusions = await ldb.confusions.toArray();
     const tagSet = tag
       ? new Set(
@@ -462,7 +534,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   },
 
   startBlindSpots: async (size = 15) => {
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const now = new Date();
     const weekIso = getLocalSaturdayWeekIso(now);
     let pack = await getMeta<BlindSpotPack | null>("blindSpotPack", null);
@@ -506,7 +578,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
   startCycleReview: async (kind, size) => {
     const reviewLimit = size ?? dailyReviewCapFor(usePreferencesStore.getState().paceMode);
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const now = new Date();
     const [progressRows, allCards] = await Promise.all([
       ldb.unitProgress.toArray(),
@@ -594,7 +666,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   },
 
   startDrill: async (unitId = null, size = 12) => {
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const surah = getActiveSurahNumber();
     const baseVersesRaw = await ldb.baseVerses.where("surah").equals(surah).toArray();
     const verses = baseVersesRaw as unknown as (BaseVerse & { surah?: number })[];
@@ -647,7 +719,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   startMistakeReview: async () => {
     const ids = get().wrongQids;
     if (!ids.length) return;
-    set({ status: "loading", summary: null, lastResult: null });
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
     const rows = await ldb.questions.bulkGet(ids);
     const queue = rows.filter((q): q is NonNullable<typeof q> => !!q);
     set({
@@ -678,7 +750,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   },
 
   startExam: async (scope) => {
-    set({ status: "loading", summary: null, lastResult: null, examState: null });
+    set({ status: "loading", summary: null, lastResult: null, examState: null, reciteSession: null });
     const surah = getActiveSurahNumber();
     const [versesRaw, allQuestions, allLexRows] = await Promise.all([
       ldb.baseVerses.where("surah").equals(surah).toArray(),
@@ -773,6 +845,80 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         ? null
         : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 },
     });
+  },
+
+  startReciteDrill: async (kind) => {
+    set({ status: "loading", summary: null, lastResult: null, reciteSession: null });
+    let items: ReciteSessionItem[] = [];
+    try {
+      if (await recitationAvailable()) {
+        items =
+          kind === "hunt"
+            ? await buildHuntItems()
+            : kind === "exam"
+              ? await buildExamItems()
+              : await buildWitnessItems();
+      }
+    } catch {
+      items = [];
+    }
+    set({
+      status: items.length ? "running" : "finished",
+      sessionType: "DRILL",
+      unitId: null,
+      stage: -6,
+      remedialTag: null,
+      cycleKind: null,
+      combo: 0,
+      maxCombo: 0,
+      queue: [],
+      index: 0,
+      wrongCounts: {},
+      firstAttempts: [],
+      firstTargetOutcomes: {},
+      sessionAnyHint: false,
+      sessionAnyRequeue: false,
+      passMinAttempts: 4,
+      seen: new Set(),
+      wrongQids: [],
+      practiceOnly: false,
+      recentOutcomes: [],
+      examState: null,
+      reciteSession: items.length
+        ? { items, idx: 0, results: [], purpose: kind, active: true, done: false }
+        : null,
+      summary: items.length
+        ? null
+        : { total: 0, correct: 0, ratio: 0, passed: false, unlockedNext: false, debt: 0, maxCombo: 0 },
+    });
+  },
+
+  submitReciteResult: async (result) => {
+    const s = get();
+    const rs = s.reciteSession;
+    if (!rs || rs.done) return;
+    void recordReciteFadeOutcome(result).catch(() => {});
+    const results = [...rs.results, result];
+    const nextIdx = rs.idx + 1;
+    if (nextIdx < rs.items.length) {
+      set({ reciteSession: { ...rs, results, idx: nextIdx } });
+      return;
+    }
+    const finishedRs: ReciteSessionState = { ...rs, results, idx: nextIdx, active: false, done: true };
+    if (rs.purpose === "review") {
+      // مرور صوتی اول جلسه اجرا شده؛ نمره‌ها روی کارت‌ها می‌نشینند و بعد
+      // صف لمسی مرور از سؤال اول ادامه پیدا می‌کند.
+      try {
+        await applyVoiceReviewResults(results);
+      } catch {
+        // ignore
+      }
+      set({ reciteSession: finishedRs });
+      if (s.queue.length === 0) await get().next();
+      return;
+    }
+    set({ reciteSession: finishedRs });
+    await get().next();
   },
 
   submit: async (response, meta) => {
@@ -948,6 +1094,13 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       set({ index: idx, lastResult: null });
       return;
     }
+    // صف سؤال تمام شد ولی بلوک تلاوت پیوست هنوز اجرا نشده: اول بلوک فعال
+    // می‌شود و پایان جلسه به بعد از آخرین آیتم تلاوت می‌افتد.
+    const rs = s.reciteSession;
+    if (rs && !rs.done && !rs.active && rs.items.length > 0) {
+      set({ reciteSession: { ...rs, active: true }, lastResult: null });
+      return;
+    }
     // پایان جلسه
     const attempts = s.firstAttempts;
     const correct = attempts.filter((a) => a.correct).length;
@@ -1026,6 +1179,48 @@ export const useLearningStore = create<LearningState>((set, get) => ({
           xpEarned: scoreRes.xpEarned,
           gemsEarned: bossGemsAwarded,
           maxCombo: s.maxCombo,
+        },
+      });
+      return;
+    }
+
+    // مسیر ویژه پایان دریل‌های تلاوت (شکار خطا / آزمون تلاوت / همراهی آزاد):
+    // نمره از خود آیتم‌های تلاوت می‌آید، نه از تلاش‌های بانکی.
+    if (
+      s.sessionType === "DRILL" &&
+      s.reciteSession &&
+      (s.reciteSession.purpose === "hunt" || s.reciteSession.purpose === "exam" || s.reciteSession.purpose === "witness")
+    ) {
+      const results = s.reciteSession.results;
+      const total = results.length;
+      const correct = results.filter((r) => r.status === "passed").length;
+      const ratio = total ? correct / total : 0;
+      const passed = s.reciteSession.purpose === "witness" ? total > 0 : ratio >= 0.7;
+      const xpEarned = correct * 5;
+      if (xpEarned > 0) {
+        try {
+          await recordLearningReward({ xpDelta: xpEarned, gemsDelta: 0, markDailyActivity: true });
+        } catch {
+          // ignore
+        }
+      }
+      const allCards = await ldb.cards.toArray();
+      const debt = reviewDebt(allCards);
+      set({
+        status: "finished",
+        lastResult: null,
+        summary: {
+          total,
+          correct,
+          ratio,
+          passed,
+          unlockedNext: false,
+          debt,
+          xpEarned,
+          gemsEarned: 0,
+          maxCombo: s.maxCombo,
+          recitePassedCount: correct,
+          reciteTotal: total,
         },
       });
       return;
@@ -1165,10 +1360,22 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       return;
     }
 
-    const passed =
+    let passed =
       s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL"
         ? correct / Math.max(1, attempts.length) >= 0.8
         : stagePassed(attempts, s.stage, s.sessionType === "STAGE" ? (s.passMinAttempts ?? 4) : 4);
+    // گیت تلاوت نابینا (مراحل ۷ و ۸): حتی با نسبت بانکی کافی، بدون قبولی
+    // تلاوتِ از حفظِ بدون خطای قطعی و با دقت ≥۹۰٪ مرحله پاس نمی‌شود.
+    let reciteGateFailed = false;
+    if (s.sessionType === "STAGE" && s.reciteSession?.purpose === "gate") {
+      const gateOk =
+        s.reciteSession.results.length > 0 &&
+        s.reciteSession.results.every((r) => r.status === "passed");
+      if (!gateOk) {
+        passed = false;
+        reciteGateFailed = true;
+      }
+    }
     let unlockedNext = false;
     let lessonNumber: number | undefined;
     let lessonsRequired: number | undefined;
@@ -1280,6 +1487,13 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         passMinAttempts: s.passMinAttempts ?? 4,
         maxCombo: s.maxCombo,
         ...(waivedLesson ? { waivedLesson: true } : {}),
+        ...(s.reciteSession
+          ? {
+              recitePassedCount: s.reciteSession.results.filter((r) => r.status === "passed").length,
+              reciteTotal: s.reciteSession.results.length,
+            }
+          : {}),
+        ...(reciteGateFailed ? { reciteGateFailed: true } : {}),
       },
     });
   },
