@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { Award, Settings, Bell, Lock, Check, ChevronRight, ArrowRight, Play, Eye, GitCompare, Flame, Sparkles, Crown, Star, Zap, Layers, Mic, CheckCircle2, BookOpen, X, ShieldCheck, Wrench } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE, type UnitProgressRow, type UserProfileRow } from "../db/learningDb";
-import { reviewDebt, dailyReviewDebt, type StoredCard } from "../learning/cardScheduler";
+import { dailyReviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { skillLevel, LESSONS_PER_STAGE } from "../learning/mastery";
 import { TESTOUT_MIN_QUESTIONS } from "../learning/testOut";
 import { dailyReviewCapFor } from "../learning/pace";
