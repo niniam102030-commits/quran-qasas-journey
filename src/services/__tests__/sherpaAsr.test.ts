@@ -9,9 +9,8 @@ import {
   recordUserConfirmedRecitationWord,
 } from "../recitationCalibrationService";
 import {
-  MODEL_SHA256,
+  MODEL_FILES,
   MODEL_SIZE_MB,
-  MODEL_URL,
   pcmFloat32ToInt16Base64,
   sha256Hex,
   sherpaAsr,
@@ -25,9 +24,11 @@ describe("sherpaAsr bridge & helpers (B1)", () => {
     await expect(sherpaAsr.isAvailable()).resolves.toBe(false);
     await expect(sherpaAsr.stop()).resolves.toEqual({ text: "" });
     expect(SHERPA_ONNX_VERSION).toBe("v2.0.3");
-    expect(MODEL_SIZE_MB).toBe(247);
-    expect(MODEL_SHA256).toHaveLength(64);
-    expect(MODEL_URL).toContain("sherpa-onnx");
+    expect(MODEL_SIZE_MB).toBe(36);
+    expect(MODEL_FILES).toHaveLength(2);
+    expect(MODEL_FILES[0].name).toBe("model.int8.onnx");
+    expect(MODEL_FILES[0].sha256).toHaveLength(64);
+    expect(MODEL_FILES[0].url).toContain("huggingface.co/Abdou/quran-asr-small");
   });
 
   it("verifies SHA-256 digest accurately (valid vs tampered bytes)", async () => {

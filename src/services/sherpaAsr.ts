@@ -3,10 +3,34 @@
 import { Capacitor, registerPlugin, type PluginListenerHandle } from "@capacitor/core";
 
 export const SHERPA_ONNX_VERSION = "v2.0.3";
-export const MODEL_URL =
-  "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-ar_en_id_ja_ru_th_vi_zh-2025-02-10.tar.bz2";
-export const MODEL_SHA256 = "b2365f521a4e68cef277d37add05e05688e087ebfd93435d53740125a96b24b0";
-export const MODEL_SIZE_MB = 247;
+// مدل قرآنی Abdou/quran-asr-small (مجوز MIT) — Conformer-CTC حروفی، بومی
+// sherpa-onnx (Zipformer-CTC آفلاین)، آموزشدیده روی تلاوت قرآن. فایلها
+// مستقیم از مخزن رسمی هاگینگفیس گرفته میشوند و sha256 هر فایل همان هش
+// رسمی LFS مخزن است؛ افزونهی بومی هر فایل را پیش از نصب با همین هش
+// راستیآزمایی میکند و «نصب شد» را فقط بعد از لود آزمایشی موفق مدل
+// اعلام میکند.
+export interface SherpaModelFile {
+  name: string;
+  url: string;
+  sha256: string;
+  sizeBytes: number;
+}
+
+export const MODEL_FILES: SherpaModelFile[] = [
+  {
+    name: "model.int8.onnx",
+    url: "https://huggingface.co/Abdou/quran-asr-small/resolve/main/model.int8.onnx",
+    sha256: "88f9df290d57b8890275d79187b77515aeeb12626a42bc76cbd0f8bfcaff00f0",
+    sizeBytes: 36081762,
+  },
+  {
+    name: "tokens.txt",
+    url: "https://huggingface.co/Abdou/quran-asr-small/resolve/main/tokens.txt",
+    sha256: "75b53814499cee84a07c7b7a318524d30bcaf84273c0f8b28a04176023e8c74f",
+    sizeBytes: 180,
+  },
+];
+export const MODEL_SIZE_MB = 36;
 
 export interface SherpaAsr {
   isAvailable(): Promise<boolean>;
@@ -25,7 +49,7 @@ export interface SherpaModelStatus {
 interface NativeSherpaPlugin {
   isAvailable(): Promise<{ available: boolean }>;
   getModelStatus(): Promise<SherpaModelStatus>;
-  downloadModel(opts: { url: string; sha256: string }): Promise<{ installed: boolean; sha256: string }>;
+  downloadModel(opts: { files: SherpaModelFile[]; totalBytes: number }): Promise<{ installed: boolean; sha256: string }>;
   deleteModel(): Promise<{ deleted: boolean }>;
   start(opts: { sampleRate: number; hotwords?: string[] }): Promise<void>;
   feed(opts: { samplesBase64: string }): Promise<void>;
@@ -117,7 +141,8 @@ export async function downloadSherpaModel(
     }, 2000);
   });
   try {
-    return await Promise.race([nativePlugin.downloadModel({ url: MODEL_URL, sha256: MODEL_SHA256 }), watchdog]);
+    const totalBytes = MODEL_FILES.reduce((sum, f) => sum + f.sizeBytes, 0);
+    return await Promise.race([nativePlugin.downloadModel({ files: MODEL_FILES, totalBytes }), watchdog]);
   } finally {
     if (watchdogId !== null) window.clearInterval(watchdogId);
     await handle?.remove();

@@ -7,16 +7,12 @@ import com.getcapacitor.PluginCall
 import com.getcapacitor.PluginMethod
 import com.getcapacitor.annotation.CapacitorPlugin
 import com.k2fsa.sherpa.onnx.FeatureConfig
-import com.k2fsa.sherpa.onnx.OnlineModelConfig
-import com.k2fsa.sherpa.onnx.OnlineRecognizer
-import com.k2fsa.sherpa.onnx.OnlineRecognizerConfig
-import com.k2fsa.sherpa.onnx.OnlineStream
-import com.k2fsa.sherpa.onnx.OnlineTransducerModelConfig
-import org.apache.commons.compress.archivers.tar.TarArchiveInputStream
-import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
-import java.io.BufferedInputStream
+import com.k2fsa.sherpa.onnx.OfflineModelConfig
+import com.k2fsa.sherpa.onnx.OfflineRecognizer
+import com.k2fsa.sherpa.onnx.OfflineRecognizerConfig
+import com.k2fsa.sherpa.onnx.OfflineStream
+import com.k2fsa.sherpa.onnx.OfflineZipformerCtcModelConfig
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.net.HttpURLConnection
 import java.net.URL
@@ -29,10 +25,12 @@ import java.util.concurrent.Executors
 class SherpaAsrPlugin : Plugin() {
     private val executor = Executors.newSingleThreadExecutor()
     private val downloadExecutor = Executors.newSingleThreadExecutor()
-    private var recognizer: OnlineRecognizer? = null
-    private var activeStream: OnlineStream? = null
+    private var recognizer: OfflineRecognizer? = null
+    private var activeStream: OfflineStream? = null
     private var activeSampleRate: Int = 16000
-    private var lastPartialText: String = ""
+    // مدل قرآنی جدید CTC آفلاین است (نه جریانی): نمونههای هر تکه در حافظه
+    // جمع میشوند و در stop() یکجا دیکود میشوند؛ رویداد partial وجود ندارد.
+    private val pendingSamples = mutableListOf<Float>()
 
     private fun rootDir(): File = File(context.filesDir, "sherpa-asr")
     private fun modelDir(): File = File(rootDir(), "model")
@@ -42,19 +40,11 @@ class SherpaAsrPlugin : Plugin() {
         if (!dir.exists() || !dir.isDirectory) return null
         val files = dir.walkTopDown().filter { it.isFile }.toList()
         val tokens = files.firstOrNull { it.name == "tokens.txt" } ?: return null
-        val encoder = files.firstOrNull { it.name.contains("encoder") && it.name.endsWith(".int8.onnx") }
-            ?: files.firstOrNull { it.name.contains("encoder") && it.name.endsWith(".onnx") }
-            ?: return null
-        val decoder = files.firstOrNull { it.name.contains("decoder") && it.name.endsWith(".onnx") }
-            ?: return null
-        val joiner = files.firstOrNull { it.name.contains("joiner") && it.name.endsWith(".int8.onnx") }
-            ?: files.firstOrNull { it.name.contains("joiner") && it.name.endsWith(".onnx") }
-            ?: return null
+        // مدل قرآنی Abdou/quran-asr-small: یک فایل CTC واحد + فایل توکنها
+        val model = files.firstOrNull { it.name == "model.int8.onnx" } ?: return null
         return mapOf(
             "tokens" to tokens,
-            "encoder" to encoder,
-            "decoder" to decoder,
-            "joiner" to joiner,
+            "model" to model,
         )
     }
 
@@ -85,98 +75,86 @@ class SherpaAsrPlugin : Plugin() {
 
     @PluginMethod
     fun downloadModel(call: PluginCall) {
-        val urlStr = call.getString("url")
-        val expectedSha = call.getString("sha256")?.lowercase()?.trim()
-        if (urlStr.isNullOrBlank() || expectedSha.isNullOrBlank()) {
-            call.reject("Missing url or sha256")
+        // دانلود چندفایلی با راستیآزمایی تکتک فایلها: جاوااسکریپت برای هر
+        // فایل {name, url, sha256} میفرستد و هش هر فایل همان SHA-256 رسمی
+        // مخزن است. هر فایل جدا دانلود و هنگام نوشتن هش میشود؛ کوچکترین
+        // عدم تطابق کل نصب را لغو میکند. نصب اتمیک است: اول در staging
+        // کامل میشود، بعد یکجا جایگزین میشود و در پایان لود آزمایشی
+        // تشخیصدهنده انجام میشود؛ installed فقط وقتی true است که مدل با
+        // همین فایلها واقعاً لود شده باشد.
+        val filesArr = call.getArray("files")
+        val totalBytes = call.getDouble("totalBytes")?.toLong() ?: -1L
+        if (filesArr == null || filesArr.length() == 0) {
+            call.reject("Missing files manifest")
             return
+        }
+        data class ModelFileSpec(val name: String, val url: String, val sha256: String)
+        val specs = mutableListOf<ModelFileSpec>()
+        for (i in 0 until filesArr.length()) {
+            val obj = filesArr.getJSObject(i)
+            val name = obj?.getString("name")
+            val fileUrl = obj?.getString("url")
+            val sha = obj?.getString("sha256")?.lowercase()?.trim()
+            if (name.isNullOrBlank() || fileUrl.isNullOrBlank() || sha.isNullOrBlank()) {
+                call.reject("Invalid file entry in manifest")
+                return
+            }
+            specs.add(ModelFileSpec(name, fileUrl, sha))
         }
 
         downloadExecutor.execute {
             val baseDir = rootDir()
             baseDir.mkdirs()
-            val archiveFile = File(baseDir, "download.tmp.tar.bz2")
             val stagingDir = File(baseDir, "staging")
-
             try {
-                if (archiveFile.exists()) archiveFile.delete()
                 if (stagingDir.exists()) stagingDir.deleteRecursively()
                 stagingDir.mkdirs()
 
-                val conn = (URL(urlStr).openConnection() as HttpURLConnection).apply {
-                    connectTimeout = 20000
-                    readTimeout = 60000
-                    instanceFollowRedirects = true
-                }
-                conn.connect()
-                if (conn.responseCode !in 200..299) {
-                    throw RuntimeException("HTTP ${conn.responseCode}")
-                }
-                val totalBytes = conn.contentLengthLong
-                val digest = MessageDigest.getInstance("SHA-256")
-                var loadedBytes = 0L
+                var completedBytes = 0L
                 var lastEmitAt = 0L
-
-                conn.inputStream.use { input ->
-                    FileOutputStream(archiveFile).use { output ->
-                        val buffer = ByteArray(32768)
-                        while (true) {
-                            val n = input.read(buffer)
-                            if (n <= 0) break
-                            output.write(buffer, 0, n)
-                            digest.update(buffer, 0, n)
-                            loadedBytes += n
-                            val now = System.currentTimeMillis()
-                            if (now - lastEmitAt >= 300) {
-                                lastEmitAt = now
-                                notifyListeners(
-                                    "downloadProgress",
-                                    JSObject().put("loaded", loadedBytes).put("total", totalBytes),
-                                )
-                            }
-                        }
+                var modelSha = ""
+                for (spec in specs) {
+                    val target = File(stagingDir, spec.name)
+                    target.parentFile?.mkdirs()
+                    val conn = (URL(spec.url).openConnection() as HttpURLConnection).apply {
+                        connectTimeout = 20000
+                        readTimeout = 60000
+                        instanceFollowRedirects = true
                     }
-                }
-
-                val actualSha = digest.digest().joinToString("") { "%02x".format(it) }
-                if (actualSha != expectedSha) {
-                    archiveFile.delete()
-                    stagingDir.deleteRecursively()
-                    call.reject("SHA-256 mismatch: expected $expectedSha, got $actualSha")
-                    return@execute
-                }
-
-                // استخراج امن آرشیو tar.bz2 با بررسی مسیر (جلوگیری از ZipSlip)
-                val stagingCanonical = stagingDir.canonicalPath
-                FileInputStream(archiveFile).use { fis ->
-                    BufferedInputStream(fis).use { bis ->
-                        BZip2CompressorInputStream(bis).use { bzis ->
-                            TarArchiveInputStream(bzis).use { tais ->
-                                while (true) {
-                                    val entry = tais.nextEntry ?: break
-                                    val target = File(stagingDir, entry.name)
-                                    if (!target.canonicalPath.startsWith(stagingCanonical + File.separator)) {
-                                        throw SecurityException("Invalid tar entry path: ${entry.name}")
-                                    }
-                                    if (entry.isDirectory) {
-                                        target.mkdirs()
-                                    } else {
-                                        target.parentFile?.mkdirs()
-                                        FileOutputStream(target).use { out ->
-                                            tais.copyTo(out)
-                                        }
-                                    }
+                    conn.connect()
+                    if (conn.responseCode !in 200..299) {
+                        throw RuntimeException("HTTP ${conn.responseCode} for ${spec.name}")
+                    }
+                    val digest = MessageDigest.getInstance("SHA-256")
+                    conn.inputStream.use { input ->
+                        FileOutputStream(target).use { output ->
+                            val buffer = ByteArray(32768)
+                            while (true) {
+                                val n = input.read(buffer)
+                                if (n <= 0) break
+                                output.write(buffer, 0, n)
+                                digest.update(buffer, 0, n)
+                                completedBytes += n
+                                val now = System.currentTimeMillis()
+                                if (now - lastEmitAt >= 300) {
+                                    lastEmitAt = now
+                                    notifyListeners(
+                                        "downloadProgress",
+                                        JSObject().put("loaded", completedBytes).put("total", totalBytes),
+                                    )
                                 }
                             }
                         }
                     }
+                    val actualSha = digest.digest().joinToString("") { "%02x".format(it) }
+                    if (actualSha != spec.sha256) {
+                        throw RuntimeException("SHA-256 mismatch for ${spec.name}: expected ${spec.sha256}, got $actualSha")
+                    }
+                    if (spec.name.endsWith(".onnx")) modelSha = actualSha
                 }
-                archiveFile.delete()
 
                 if (findModelFiles(stagingDir) == null) {
-                    stagingDir.deleteRecursively()
-                    call.reject("Extracted archive does not contain required ONNX transducer files")
-                    return@execute
+                    throw RuntimeException("Downloaded files do not contain the required model files")
                 }
 
                 releaseRecognizer()
@@ -186,16 +164,25 @@ class SherpaAsrPlugin : Plugin() {
                     stagingDir.copyRecursively(dest, overwrite = true)
                     stagingDir.deleteRecursively()
                 }
-                markerFile().writeText(actualSha)
+                markerFile().writeText(modelSha)
+
+                // لود آزمایشی: «نصب شد» فقط وقتی اعلام میشود که تشخیصدهنده
+                // با همین فایلها واقعاً ساخته شود.
+                try {
+                    ensureRecognizer(16000)
+                } catch (e: Exception) {
+                    if (dest.exists()) dest.deleteRecursively()
+                    if (markerFile().exists()) markerFile().delete()
+                    throw RuntimeException("Model files verified but recognizer failed to load: ${e.message}")
+                }
 
                 notifyListeners(
                     "downloadProgress",
-                    JSObject().put("loaded", loadedBytes).put("total", totalBytes),
+                    JSObject().put("loaded", completedBytes).put("total", totalBytes),
                 )
-                call.resolve(JSObject().put("installed", true).put("sha256", actualSha))
+                call.resolve(JSObject().put("installed", true).put("sha256", modelSha))
             } catch (e: Exception) {
-                archiveFile.delete()
-                stagingDir.deleteRecursively()
+                if (stagingDir.exists()) stagingDir.deleteRecursively()
                 call.reject("Model download failed: ${e.message}", e)
             }
         }
@@ -216,7 +203,7 @@ class SherpaAsrPlugin : Plugin() {
     }
 
     @Synchronized
-    private fun ensureRecognizer(sampleRate: Int): OnlineRecognizer {
+    private fun ensureRecognizer(sampleRate: Int): OfflineRecognizer {
         recognizer?.let { return it }
         if (!isModelVerified()) {
             throw IllegalStateException("Offline ASR model is not installed or verified")
@@ -224,25 +211,20 @@ class SherpaAsrPlugin : Plugin() {
         val files = findModelFiles(modelDir())
             ?: throw IllegalStateException("Offline ASR model files missing")
 
-        val transducer = OnlineTransducerModelConfig(
-            encoder = files.getValue("encoder").absolutePath,
-            decoder = files.getValue("decoder").absolutePath,
-            joiner = files.getValue("joiner").absolutePath,
-        )
-        val modelConfig = OnlineModelConfig(
-            transducer = transducer,
+        val modelConfig = OfflineModelConfig(
+            zipformerCtc = OfflineZipformerCtcModelConfig(
+                model = files.getValue("model").absolutePath,
+            ),
             tokens = files.getValue("tokens").absolutePath,
             numThreads = 2,
             provider = "cpu",
-            modelType = "zipformer2",
         )
-        val config = OnlineRecognizerConfig(
+        val config = OfflineRecognizerConfig(
             featConfig = FeatureConfig(sampleRate = sampleRate, featureDim = 80),
             modelConfig = modelConfig,
-            enableEndpoint = true,
             decodingMethod = "greedy_search",
         )
-        val rec = OnlineRecognizer(assetManager = null, config = config)
+        val rec = OfflineRecognizer(assetManager = null, config = config)
         recognizer = rec
         return rec
     }
@@ -264,8 +246,9 @@ class SherpaAsrPlugin : Plugin() {
     @PluginMethod
     fun start(call: PluginCall) {
         val sampleRate = call.getInt("sampleRate") ?: 16000
-        // دریافت اختیاری hotwords (بخش ۴): مدل چندزبانهٔ فعلی بدون فایل BPE vocab روی greedy_search اجرا می‌شود؛
-        // بنابراین آرایهٔ hotwords دریافت ولی بی‌سروصدا نادیده گرفته می‌شود تا خطایی در ایجاد استریم رخ ندهد.
+        // دریافت اختیاری hotwords: مدل CTC از hotwords پشتیبانی نمی‌کند؛
+        // آرایه دریافت ولی نادیده گرفته می‌شود، چون تطبیق با آیهٔ هدف در
+        // لایهٔ همترازی (سمت جاوااسکریپت) انجام می‌شود، نه داخل دیکودر.
         call.getArray("hotwords")
         executor.execute {
             try {
@@ -273,7 +256,7 @@ class SherpaAsrPlugin : Plugin() {
                 activeStream?.release()
                 activeStream = rec.createStream()
                 activeSampleRate = sampleRate
-                lastPartialText = ""
+                synchronized(pendingSamples) { pendingSamples.clear() }
                 call.resolve()
             } catch (e: Exception) {
                 call.reject("Failed to start Sherpa ASR: ${e.message}", e)
@@ -300,15 +283,10 @@ class SherpaAsrPlugin : Plugin() {
                     for (i in 0 until shortCount) {
                         floats[i] = bb.short.toFloat() / 32768.0f
                     }
-                    stream.acceptWaveform(floats, activeSampleRate)
-                    while (rec.isReady(stream)) {
-                        rec.decode(stream)
-                    }
-                    val text = rec.getResult(stream).text.trim()
-                    if (text.isNotEmpty() && text != lastPartialText) {
-                        lastPartialText = text
-                        notifyListeners("partial", JSObject().put("text", text))
-                    }
+                    // مدل آفلاین است: نمونهها فقط در بافر جمع میشوند و در
+                    // stop() یکجا دیکود میشوند؛ دیکود جریانی و رویداد
+                    // partial برای این مدل وجود ندارد.
+                    synchronized(pendingSamples) { pendingSamples.addAll(floats.toList()) }
                 }
                 call.resolve()
             } catch (e: Exception) {
@@ -323,17 +301,24 @@ class SherpaAsrPlugin : Plugin() {
             try {
                 val rec = recognizer
                 val stream = activeStream
-                var text = lastPartialText
+                var text = ""
                 if (rec != null && stream != null) {
-                    stream.inputFinished()
-                    while (rec.isReady(stream)) {
-                        rec.decode(stream)
+                    val samples = synchronized(pendingSamples) {
+                        val arr = FloatArray(pendingSamples.size) { pendingSamples[it] }
+                        pendingSamples.clear()
+                        arr
                     }
-                    text = rec.getResult(stream).text.trim().ifEmpty { lastPartialText }
+                    if (samples.isNotEmpty()) {
+                        stream.acceptWaveform(samples, activeSampleRate)
+                        rec.decode(stream)
+                        // خروجی مدل، حروف عربی با جداکنندهی «▁» بین کلمههاست؛
+                        // به فاصله تبدیل میشود تا متنِ کلمهبهکلمه به لایهی
+                        // همترازی برسد.
+                        text = rec.getResult(stream).text.replace("▁", " ").trim()
+                    }
                     stream.release()
                 }
                 activeStream = null
-                lastPartialText = ""
                 call.resolve(JSObject().put("text", text))
             } catch (e: Exception) {
                 activeStream = null
