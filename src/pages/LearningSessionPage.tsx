@@ -316,6 +316,8 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
                 ? m?.stageCompleted
                   ? "تسلط بر این مرحله تکمیل شد و مرحله بعدی برای شما باز شد."
                   : "عالی بود! یک درس کوتاه دیگر باقی مانده تا این مرحله کامل شود."
+                : m?.passMinAttempts && m.total < m.passMinAttempts
+                ? `این درس فقط ${toFarsiNum(m.total)} سؤال داشت؛ برای قبولی دست‌کم ${toFarsiNum(m.passMinAttempts)} پاسخِ تلاش اول لازم است و سؤال‌های این مرحله فعلاً کمتر از این‌اند.`
                 : m?.requiredRatio
                 ? `برای قبولی در این درس حداقل ${toFarsiNum(Math.round(m.requiredRatio * 100))}٪ پاسخ درست در تلاش اول لازم است${stage === 8 ? " (بدون راهنما)" : ""}.`
                 : "برای تثبیت کامل حافظه، تکرار دوباره این درس توصیه می‌شود."}

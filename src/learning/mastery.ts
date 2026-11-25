@@ -33,10 +33,13 @@ export function isFlawlessLesson(
   return attempts.every((a) => a.correct && !a.usedHint);
 }
 
-/** آیا درس/مرحله پاس شد؟ مراحل ۱–۲: ≥۷۵٪، مراحل ۳–۷: ≥۸۰٪، مرحله ۸: ≥۸۵٪ بدون راهنما. */
-export function stagePassed(attempts: StageAttempt[], stage: number): boolean {
+/** آیا درس/مرحله پاس شد؟ مراحل ۱–۲: ≥۷۵٪، مراحل ۳–۷: ≥۸۰٪، مرحله ۸: ≥۸۵٪ بدون راهنما.
+ * حداقل تلاش اول پیش‌فرض ۴ است؛ وقتی صفِ واقعیِ درس (پس از همه‌ی فیلترها)
+ * کوتاه‌تر از ۴ سؤال است، سازنده‌ی جلسه همان طول صف را به‌عنوان حداقل
+ * می‌دهد تا درسی که ذاتاً سؤال بیشتری ندارد برای همیشه ناپاس نماند. */
+export function stagePassed(attempts: StageAttempt[], stage: number, minAttempts = 4): boolean {
   const a = attempts.filter((x) => x.stage === stage);
-  if (a.length < 4) return false;
+  if (a.length < Math.max(1, minAttempts)) return false;
   const ok = a.filter((x) => x.correct && (stage !== 8 || !x.usedHint)).length;
   const ratio = ok / a.length;
   return ratio >= passRatioForStage(stage);

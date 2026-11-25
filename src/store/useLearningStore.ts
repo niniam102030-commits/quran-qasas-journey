@@ -16,6 +16,7 @@ import {
   type TestOutQuestion,
 } from "../learning/testOut";
 import { filterPrescreenedStage1Questions } from "../learning/vocabPrescreen";
+import { faClozeServable, type FaClozeQuestion } from "../learning/faCloze";
 import {
   buildReverseVocabQuestions,
   mergeReverseIntoStage2Queue,
@@ -77,6 +78,7 @@ export interface SessionSummary {
   lessonsRequired?: number;
   stageCompleted?: boolean;
   requiredRatio?: number;
+  passMinAttempts?: number;
   waivedLesson?: boolean;
   testOut?: TestOutEvaluation;
   maxCombo?: number;
@@ -122,6 +124,9 @@ interface LearningState {
   firstTargetOutcomes: Record<string, boolean>; // نتیجه اولین تلاش هر هدف (برای بذرپاشی آزمون میانبر)
   sessionAnyHint: boolean;
   sessionAnyRequeue: boolean;
+  /** حداقل تلاش اول برای پاس‌شدن این جلسه‌ی مرحله؛ startStage آن را برابر
+   * min(۴، طول صف واقعی) می‌گذارد تا درس ذاتاً کوتاه ناپاس نماند. */
+  passMinAttempts: number;
   seen: Set<string>;
   lastResult: GradeResult | null;
   /** شناسهٔ سؤال‌های غلطِ تلاش اولِ جلسهٔ مرحله‌ای جاری (مورد ۱۰) */
@@ -155,6 +160,35 @@ async function loadCards(keys: string[]): Promise<Map<string, StoredCard>> {
   return m;
 }
 
+type VerseRef = { verse?: number; stem?: { verse?: number }; [k: string]: unknown };
+const verseOf = (q: VerseRef): number | undefined => {
+  const n = q.verse ?? q.stem?.verse;
+  return typeof n === "number" ? n : undefined;
+};
+
+/** نگاشت شماره‌ی آیه ← ترجمه‌ی پایه، فقط برای آیه‌هایی که سؤال‌ها ارجاع می‌دهند. */
+async function loadBaseFaMap(qs: VerseRef[]): Promise<Map<number, string>> {
+  const surah = getActiveSurahNumber();
+  const nums = [...new Set(qs.map(verseOf).filter((n): n is number => typeof n === "number" && n > 0))];
+  const rows = await Promise.all(nums.map((n) => ldb.baseVerses.get(verseKey(surah, n))));
+  const m = new Map<number, string>();
+  rows.forEach((r, i) => {
+    const fa = (r as { fa?: string } | undefined)?.fa;
+    if (fa) m.set(nums[i], fa);
+  });
+  return m;
+}
+
+/** حذف CLOZE_FAهایی که هیچ قالب جای‌خالی‌ای برایشان ساخته نمی‌شود؛ سرو
+ * آن‌ها کاربر را با دکمه‌های لختِ بدون متن ترجمه روبه‌رو می‌کند. */
+function dropUnservableClozeFa<T extends VerseRef & { type: string }>(qs: T[], baseFa: Map<number, string>): T[] {
+  return qs.filter((q) => {
+    if (q.type !== "CLOZE_FA") return true;
+    const v = verseOf(q);
+    return faClozeServable(q as unknown as FaClozeQuestion, (v !== undefined && baseFa.get(v)) || null);
+  });
+}
+
 export const useLearningStore = create<LearningState>((set, get) => ({
   status: "idle",
   sessionType: "STAGE",
@@ -171,6 +205,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
   firstTargetOutcomes: {},
   sessionAnyHint: false,
   sessionAnyRequeue: false,
+  passMinAttempts: 4,
   seen: new Set(),
   lastResult: null,
   summary: null,
@@ -185,13 +220,17 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     set({ status: "loading", summary: null, lastResult: null });
     const goals = usePreferencesStore.getState().goals;
     const rawStageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
-    const stageQs = rawStageQs.filter((q) => questionAllowedByGoals(q.type, goals));
+    let stageQs = rawStageQs.filter((q) => questionAllowedByGoals(q.type, goals));
     // مرور درهم: سوال‌های مرحله ۸ و ۷ واحدهای قبلی
     const prog = await ldb.unitProgress.toArray();
     const done = new Set(prog.filter((p) => p.stagePassed[8]).map((p) => p.unitId));
-    const reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter(
+    let reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter(
       (q) => done.has(q.unitId) && q.unitId !== unitId && questionAllowedByGoals(q.type, goals),
     );
+    // CLOZE_FAهای بدون قالبِ قابل‌ساخت در هیچ درسی سرو نمی‌شوند
+    const baseFa = await loadBaseFaMap([...stageQs, ...reviewQs]);
+    stageQs = dropUnservableClozeFa(stageQs, baseFa);
+    reviewQs = dropUnservableClozeFa(reviewQs, baseFa);
     const allTargets = [...stageQs, ...reviewQs].flatMap((q) => q.targets);
     const cards = await loadCards(allTargets);
     const effectiveStageQs = stage === 1 ? filterPrescreenedStage1Questions(stageQs, cards) : stageQs;
@@ -213,6 +252,19 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     }
     const byId = new Map([...stageQs, ...reviewQs].map((q) => [q.id, q]));
     let finalQueue = plan.map((p) => byId.get(p.id)!).filter(Boolean);
+
+    // درس نباید از حداقلِ لازم برای پاس‌شدن (۴ سؤال) کوتاه‌تر شود: اگر
+    // فیلترها (پیش‌غربال واژگان/تازگی) صف را لاغر کرده‌اند، اول بدون
+    // ترجیحِ تازگی و بعد بدون فیلتر پیش‌غربال دوباره برنامه‌ریزی کن.
+    if (finalQueue.length < 4 && stageQs.length >= 4) {
+      const replan = (pool: QuestionRow[], recentIds: Set<string>) =>
+        planStage(pool.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds })
+          .map((p) => byId.get(p.id)!)
+          .filter(Boolean);
+      let retry = replan(effectiveStageQs, new Set());
+      if (retry.length < 4) retry = replan(stageQs, new Set());
+      if (retry.length > finalQueue.length) finalQueue = retry;
+    }
 
     // L6: افزودن حداکثر ۳ فلش‌کارت معکوس معنا (فارسی ← عربی) فقط در مرحلهٔ ۲ (در حافظه، بدون ذخیره در questions)
     if (stage === 2) {
@@ -266,6 +318,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       firstTargetOutcomes: {},
       sessionAnyHint: false,
       sessionAnyRequeue: false,
+      passMinAttempts: Math.min(4, Math.max(1, finalQueue.length)),
       seen: new Set(),
       wrongQids: [],
       practiceOnly: false,
@@ -277,7 +330,8 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     set({ status: "loading", summary: null, lastResult: null });
     const goals = usePreferencesStore.getState().goals;
     const rawUnitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
-    const unitQs = rawUnitQs.filter((q) => questionAllowedByGoals(q.type, goals));
+    const goalFilteredQs = rawUnitQs.filter((q) => questionAllowedByGoals(q.type, goals));
+    const unitQs = dropUnservableClozeFa(goalFilteredQs, await loadBaseFaMap(goalFilteredQs));
     const weekAgo = Date.now() - 7 * 86400_000;
     const recentAttempts = await ldb.attempts.where("unitId").equals(unitId).toArray();
     const recentIds = new Set(recentAttempts.filter((a) => a.at >= weekAgo).map((a) => a.qid));
@@ -322,8 +376,16 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     for (const k of dueKeys) {
       if (picked.size >= reviewLimit) break;
       const qs = await ldb.questions.where("targets").equals(k).toArray();
+      const goalQs = dropUnservableClozeFa(
+        qs.filter((q) => questionAllowedByGoals(q.type, goals)),
+        await loadBaseFaMap(qs),
+      );
       // سوال تک‌هدفه و در سطح پایدار کارت را ترجیح بده
-      const cand = qs.filter((q) => questionAllowedByGoals(q.type, goals) && (q.stage >= 5 || q.targets.length === 1)).sort((a, b) => a.targets.length - b.targets.length);
+      let cand = goalQs.filter((q) => q.stage >= 5 || q.targets.length === 1).sort((a, b) => a.targets.length - b.targets.length);
+      // کارت یتیم: اگر هیچ سؤال «ترجیحی»ای ندارد (مثلاً تنها سؤالش تطبیقِ
+      // چندهدفه‌ی مراحل پایین است)، از هر سؤالِ خودِ کارت استفاده کن تا
+      // کارت برای همیشه از چرخه‌ی مرور بیرون نماند و بدهی صفرشدنی بماند.
+      if (!cand.length) cand = [...goalQs].sort((a, b) => a.targets.length - b.targets.length || a.stage - b.stage);
       const q = cand[Math.floor(Math.random() * Math.min(3, cand.length))];
       if (q) picked.set(q.id, q);
     }
@@ -637,7 +699,14 @@ export const useLearningStore = create<LearningState>((set, get) => ({
       units = packMeta?.units ?? [];
     }
     const unitIdSet = new Set(units.map((u) => u.id));
-    const bankQuestions = unitIdSet.size > 0 ? allQuestions.filter((q) => unitIdSet.has(q.unitId)) : allQuestions;
+    const examBaseFa = new Map<number, string>();
+    verses.forEach((v) => {
+      if (v.fa) examBaseFa.set(v.n, v.fa);
+    });
+    const bankQuestions = dropUnservableClozeFa(
+      unitIdSet.size > 0 ? allQuestions.filter((q) => unitIdSet.has(q.unitId)) : allQuestions,
+      examBaseFa,
+    );
     const lexRows = unitIdSet.size > 0 ? allLexRows.filter((l) => unitIdSet.has(l.unitId)) : allLexRows;
 
     let morphologyMap: Record<string, { segments?: { text: string; type: string; pos: string }[] }> = {};
@@ -1099,7 +1168,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const passed =
       s.sessionType === "REVIEW" || s.sessionType === "REMEDIAL"
         ? correct / Math.max(1, attempts.length) >= 0.8
-        : stagePassed(attempts, s.stage);
+        : stagePassed(attempts, s.stage, s.sessionType === "STAGE" ? (s.passMinAttempts ?? 4) : 4);
     let unlockedNext = false;
     let lessonNumber: number | undefined;
     let lessonsRequired: number | undefined;
@@ -1208,6 +1277,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         lessonsRequired,
         stageCompleted,
         requiredRatio,
+        passMinAttempts: s.passMinAttempts ?? 4,
         maxCombo: s.maxCombo,
         ...(waivedLesson ? { waivedLesson: true } : {}),
       },
