@@ -103,8 +103,27 @@ jobs:
           path: release-apk/${{ env.APK_NAME }}
           retention-days: 30
 
-      - name: Attach APK to GitHub Release (on tags)
-        if: startsWith(github.ref, 'refs/tags/v')
+      # انتشار خودکار: روی پوشِ شاخه، اگر برای نسخهٔ فعلی (package.json) هنوز ریلیزی ساخته نشده،
+      # همین اجرا تگ v<version> و ریلیز را میسازد و APK را ضمیمه میکند؛ دفعات بعد رد میشود.
+      - name: Check whether this version already has a GitHub Release
+        id: relcheck
+        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "v${{ steps.version.outputs.name }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Release v${{ steps.version.outputs.name }} already exists; skipping auto-release."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "No release for v${{ steps.version.outputs.name }} yet; this run will create it."
+          fi
+
+      - name: Attach APK to GitHub Release (tags, or first branch build of a version)
+        if: startsWith(github.ref, 'refs/tags/v') || steps.relcheck.outputs.exists == 'false'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('v{0}', steps.version.outputs.name) }}
+          name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('v{0}', steps.version.outputs.name) }}
+          body: انتشار خودکار نسخهٔ ${{ steps.version.outputs.name }} از شاخهٔ master (ساخت CI).
           files: release-apk/${{ env.APK_NAME }}
