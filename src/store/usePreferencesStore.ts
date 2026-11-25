@@ -2,7 +2,7 @@
 // منبع واحد تنظیمات کاربر: حالت تاریک، افکت‌های صوتی، لرزش لمسی، اندازه قلم عربی و حالت سرعت مرور
 import { create } from "zustand";
 import { isPaceMode, type PaceMode } from "../learning/pace";
-import { isLearningTrack, type LearningTrack } from "../learning/tracks";
+import { isLearningTrack, goalsFromTrack, deriveTrackForGoals, type LearningTrack, type GoalFlags } from "../learning/tracks";
 
 export type AppTheme = "default" | "rose";
 export type MushafTheme = "default" | "gold" | "night";
@@ -16,6 +16,7 @@ interface PreferencesState {
   arabicFontSize: number;
   paceMode: PaceMode;
   learningTrack: LearningTrack;
+  goals: GoalFlags;
   mushafTheme: MushafTheme;
   soundPack: SoundPack;
   reminderEnabled: boolean;
@@ -36,6 +37,7 @@ interface PreferencesState {
   setArabicFontSize: (size: number) => void;
   setPaceMode: (mode: PaceMode) => void;
   setLearningTrack: (track: LearningTrack) => void;
+  setGoals: (goals: GoalFlags) => void;
   setMushafTheme: (theme: MushafTheme) => void;
   setSoundPack: (pack: SoundPack) => void;
   setReminderEnabled: (enabled: boolean) => void;
@@ -92,6 +94,27 @@ function readInitialLearningTrack(): LearningTrack {
   return isLearningTrack(saved) ? saved : "full";
 }
 
+function readInitialGoals(): GoalFlags {
+  if (typeof window !== "undefined") {
+    try {
+      const saved = localStorage.getItem("learning_goals");
+      if (saved) {
+        const parsed = JSON.parse(saved) as Partial<GoalFlags>;
+        return {
+          hifz: parsed.hifz !== false,
+          vocab: parsed.vocab !== false,
+          translation: parsed.translation !== false,
+          verseNumber: parsed.verseNumber !== false,
+          pageNumber: parsed.pageNumber !== false,
+        };
+      }
+    } catch {
+      // ignore
+    }
+  }
+  return goalsFromTrack(readInitialLearningTrack());
+}
+
 function readInitialAppTheme(): AppTheme {
   if (typeof window === "undefined") return "default";
   const saved = localStorage.getItem("app_theme");
@@ -138,6 +161,7 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
   arabicFontSize: readInitialFontSize(),
   paceMode: readInitialPaceMode(),
   learningTrack: readInitialLearningTrack(),
+  goals: readInitialGoals(),
   mushafTheme: readInitialMushafTheme(),
   soundPack: readInitialSoundPack(),
   reminderEnabled: readBool("reminder_enabled", false),
@@ -235,6 +259,15 @@ export const usePreferencesStore = create<PreferencesState>((set, get) => ({
       localStorage.setItem("learning_track", track);
     }
     set({ learningTrack: track });
+  },
+
+  setGoals: (goals) => {
+    const track = deriveTrackForGoals(goals);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("learning_goals", JSON.stringify(goals));
+      localStorage.setItem("learning_track", track);
+    }
+    set({ goals, learningTrack: track });
   },
 
   setMushafTheme: (theme) => {

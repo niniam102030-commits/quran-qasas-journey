@@ -201,6 +201,28 @@ export function reviewDebt(cards: StoredCard[], now: Date = new Date()): number 
   return cards.filter((c) => c.state !== 0 && isDue(c, now)).length;
 }
 
+/** آیا کارت امروز (به وقت محلی) مرور شده است؟ */
+export function reviewedToday(card: StoredCard, now: Date = new Date()): boolean {
+  if (!card.lastReview) return false;
+  const d = new Date(card.lastReview);
+  return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth() && d.getDate() === now.getDate();
+}
+
+/**
+ * سهمیه‌ی «مرور روزانه» فقط کارت‌هایی است که سررسید شده‌اند و امروز هنوز مرور
+ * نشده‌اند. بدون شرطِ دوم، سقف روزانه در عمل سقفِ هر جلسه می‌شود و کارت‌هایی
+ * که پاسخ «دوباره» گرفته‌اند (سررسیدِ چند دقیقه بعد در همان روز) بی‌نهایت به
+ * صف برمی‌گردند و مرور روزانه هیچ‌وقت تمام نمی‌شود.
+ */
+export function isDueForDailyReview(card: StoredCard, now: Date = new Date()): boolean {
+  return card.state !== 0 && isDue(card, now) && !reviewedToday(card, now);
+}
+
+/** شمارنده‌ی بنر و برنامه‌ی امروز: باقی‌مانده‌ی واقعیِ مرور امروز */
+export function dailyReviewDebt(cards: StoredCard[], now: Date = new Date()): number {
+  return cards.filter((c) => isDueForDailyReview(c, now)).length;
+}
+
 /** سطح ثبات برای نردبان سختی: 1 تازه … 5 بسیار پایدار */
 export function stabilityLevel(card: StoredCard | undefined): 1 | 2 | 3 | 4 | 5 {
   if (!card || card.state === 0) return 1;

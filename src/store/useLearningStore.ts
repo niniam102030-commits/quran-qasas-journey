@@ -4,9 +4,9 @@ import { create } from "zustand";
 import { ldb, verseKey, type QuestionRow } from "../db/learningDb";
 import { getActiveSurahNumber } from "../config/surahConfig";
 import { gradeQuestion } from "../services/grading";
-import { hasRealFsrsHistory, newCard, seedKnownCard, review, ratingFor, reviewDebt, type StoredCard } from "../learning/cardScheduler";
+import { hasRealFsrsHistory, newCard, seedKnownCard, review, ratingFor, reviewDebt, isDueForDailyReview, dailyReviewDebt, type StoredCard } from "../learning/cardScheduler";
 import { planStage, requeue, shuffle, rng, adaptRemainingQueue, type PlannerQuestion, type SessionType } from "../learning/sessionPlanner";
-import { questionAllowedInTrack } from "../learning/tracks";
+import { questionAllowedByGoals, targetAllowedByGoals } from "../learning/tracks";
 import {
   buildTestOutPlan,
   testOutResult,
@@ -183,14 +183,14 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
   startStage: async (unitId, stage, size = LESSON_SIZE) => {
     set({ status: "loading", summary: null, lastResult: null });
-    const track = usePreferencesStore.getState().learningTrack;
+    const goals = usePreferencesStore.getState().goals;
     const rawStageQs = await ldb.questions.where("[unitId+stage]").equals([unitId, stage]).toArray();
-    const stageQs = track === "full" ? rawStageQs : rawStageQs.filter((q) => questionAllowedInTrack(q.type, track));
+    const stageQs = rawStageQs.filter((q) => questionAllowedByGoals(q.type, goals));
     // مرور درهم: سوال‌های مرحله ۸ و ۷ واحدهای قبلی
     const prog = await ldb.unitProgress.toArray();
     const done = new Set(prog.filter((p) => p.stagePassed[8]).map((p) => p.unitId));
     const reviewQs = (await ldb.questions.where("stage").anyOf(7, 8).toArray()).filter(
-      (q) => done.has(q.unitId) && q.unitId !== unitId && questionAllowedInTrack(q.type, track),
+      (q) => done.has(q.unitId) && q.unitId !== unitId && questionAllowedByGoals(q.type, goals),
     );
     const allTargets = [...stageQs, ...reviewQs].flatMap((q) => q.targets);
     const cards = await loadCards(allTargets);
@@ -198,7 +198,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const recent = new Set((await ldb.attempts.where("unitId").equals(unitId).reverse().limit(30).toArray()).map((a) => a.qid));
     const plan = planStage(effectiveStageQs.map(asPlanner), reviewQs.map(asPlanner), cards, { size, seed: Date.now() & 0xffff, recentIds: recent });
     if (!stageQs.length) {
-      if (track !== "full" && rawStageQs.length > 0) {
+      if (rawStageQs.length > 0) {
         const p = await ldb.unitProgress.get(unitId);
         if (p && !p.stagePassed[stage]) {
           p.stagePassed = { ...p.stagePassed, [stage]: true };
@@ -275,9 +275,9 @@ export const useLearningStore = create<LearningState>((set, get) => ({
 
   startTestOut: async (unitId) => {
     set({ status: "loading", summary: null, lastResult: null });
-    const track = usePreferencesStore.getState().learningTrack;
+    const goals = usePreferencesStore.getState().goals;
     const rawUnitQs = await ldb.questions.where("unitId").equals(unitId).toArray();
-    const unitQs = track === "full" ? rawUnitQs : rawUnitQs.filter((q) => questionAllowedInTrack(q.type, track));
+    const unitQs = rawUnitQs.filter((q) => questionAllowedByGoals(q.type, goals));
     const weekAgo = Date.now() - 7 * 86400_000;
     const recentAttempts = await ldb.attempts.where("unitId").equals(unitId).toArray();
     const recentIds = new Set(recentAttempts.filter((a) => a.at >= weekAgo).map((a) => a.qid));
@@ -316,13 +316,14 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     set({ status: "loading", summary: null, lastResult: null });
     const now = new Date();
     const cards = await ldb.cards.toArray();
-    const dueKeys = cards.filter((c) => c.state !== 0 && new Date(c.due) <= now).sort((a, b) => a.due.localeCompare(b.due)).map((c) => c.key);
+    const goals = usePreferencesStore.getState().goals;
+    const dueKeys = cards.filter((c) => isDueForDailyReview(c, now) && targetAllowedByGoals(c.key, goals)).sort((a, b) => a.due.localeCompare(b.due)).map((c) => c.key);
     const picked = new Map<string, QuestionRow>();
     for (const k of dueKeys) {
       if (picked.size >= reviewLimit) break;
       const qs = await ldb.questions.where("targets").equals(k).toArray();
       // سوال تک‌هدفه و در سطح پایدار کارت را ترجیح بده
-      const cand = qs.filter((q) => q.stage >= 5 || q.targets.length === 1).sort((a, b) => a.targets.length - b.targets.length);
+      const cand = qs.filter((q) => questionAllowedByGoals(q.type, goals) && (q.stage >= 5 || q.targets.length === 1)).sort((a, b) => a.targets.length - b.targets.length);
       const q = cand[Math.floor(Math.random() * Math.min(3, cand.length))];
       if (q) picked.set(q.id, q);
     }
@@ -722,7 +723,12 @@ export const useLearningStore = create<LearningState>((set, get) => ({
         : res0;
     const now = new Date();
     const keys = Object.keys(res.perTarget);
-    const cards = await loadCards(keys);
+    // کارتِ دسته‌ای که در هدف‌ها خاموش است تمرین داده نمی‌شود (مثلاً کارت
+    // شماره‌ی صفحه وقتی «شماره‌ی صفحه» تیک نخورده)؛ پس نه ساخته می‌شود و
+    // نه در مرور روزانه برمی‌گردد.
+    const goals = usePreferencesStore.getState().goals;
+    const cardKeys = keys.filter((k) => targetAllowedByGoals(k, goals));
+    const cards = await loadCards(cardKeys);
 
     // محاسبه میانه‌ی واقعی زمان پاسخ از روی جدول attempts (با fallback منطقی بر اساس شکل سوال)
     const defaultMedians: Record<string, number> = {
@@ -757,7 +763,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     const skipFsrsMutation = isDrill || isExam || s.practiceOnly;
     const updated: StoredCard[] = skipFsrsMutation
       ? []
-      : keys.map((k) => {
+      : cardKeys.map((k) => {
           const c = cards.get(k) ?? newCard(k, now);
           const rating = ratingFor({ correct: res.perTarget[k], usedHint: !!meta.usedHint, changedAnswer: meta.changedAnswer, responseMs: meta.responseMs, medianMs: median });
           return review(c, rating, now);
@@ -1101,7 +1107,7 @@ export const useLearningStore = create<LearningState>((set, get) => ({
     let waivedLesson = false;
     const requiredRatio = s.sessionType === "STAGE" ? passRatioForStage(s.stage) : 0.8;
     const allCards = await ldb.cards.toArray();
-    const debt = reviewDebt(allCards);
+    const debt = dailyReviewDebt(allCards);
     if (s.unitId) {
       const p = await ldb.unitProgress.get(s.unitId);
       if (p) {

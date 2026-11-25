@@ -17,6 +17,7 @@ interface Item {
   n?: number;
   words?: string[];
   wordsAr?: string[];
+  wordIdx?: number[];
   wordRange?: { verse: number; from: number; to: number };
 }
 
@@ -30,7 +31,11 @@ export type RenderableQuestion = QuestionRow & {
     verse?: number;
     num?: number;
     hiddenIdx?: number[];
-    faHidden?: { text: string }[];
+    faHidden?: { start: number; text: string }[];
+    faSegments?: string[];
+    showFa?: boolean;
+    showVerse?: boolean;
+    showAr?: boolean;
   };
   options?: Item[];
   left?: Item[];
@@ -66,7 +71,40 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-const hasQuranicMarks = (s: string) => /[\u064B-\u065F\u0670\u0671\u06D6-\u06ED]/.test(s);
+// تشخیص «عبارت قرآنی» برای فونت مصحف: صرفِ داشتن یک اعراب (مثل شدّه در «شرّ»)
+// کافی نیست؛ عبارت فارسیِ داخل «...» اگر با فونت قرآنی رندر شود، حروف فارسیِ
+// گ/چ/پ/ژ در آن فونت نیست و به‌صورت دایره (●) می‌افتد. عبارت قرآنیِ واقعی هم
+// حرف فارسی ندارد و هم تقریباً همه‌ی حروفش اعراب دارند.
+const hasQuranicMarks = (s: string) => {
+  if (/[گچپژ]/.test(s)) return false;
+  const letters = (s.match(/[\u0621-\u064A\u066E-\u06D3]/g) ?? []).length;
+  if (letters === 0) return false;
+  const marks = (s.match(/[\u064B-\u0652\u0670\u06D6-\u06ED]/g) ?? []).length;
+  return marks / letters >= 0.15;
+};
+
+// اگر متن کامل آیه هم داخل متن سؤال (داخل «...») آمده و هم در کادر ساقه
+// نمایش داده می‌شود، نقل‌قولِ داخل متن سؤال حذف می‌شود تا آیه فقط یک بار و
+// در کادر دیده شود. برابری بعد از نرمال‌سازی فاصله‌ها سنجیده می‌شود و
+// نقل‌قول‌های جزئی (مثل سؤال‌های واژه که آیه را برای بافت می‌آورند ولی کادر
+// فقط کلمه‌ی هدف است) دست نمی‌خورند.
+function stripFramedDuplicate(prompt: string, framed: string | undefined): string {
+  if (!prompt || !framed) return prompt;
+  const norm = (s: string) => s.replace(/\s+/g, " ").trim();
+  const target = norm(framed);
+  if (!target) return prompt;
+  const stripped = prompt.replace(/«([^»]+)»/g, (m, inner: string) => (norm(inner) === target ? "" : m));
+  return stripped.replace(/\s{2,}/g, " ").replace(/\s+([؟?،.:؛])/g, "$1").trim();
+}
+
+// در سؤال‌های «ترجمه → آیه»، ترجمه‌ی مورد سؤال هم داخل متن سؤال داخل «...»
+// آمده و هم در کادر ساقه نمایش داده می‌شود (دو ترجمه‌ی متفاوت از یک آیه).
+// وقتی کادر ساقه هست، نقل‌قولِ فارسی از متن سؤال حذف می‌شود تا ترجمه فقط
+// یک بار و در کادر دیده شود؛ قطعه‌های قرآنی دست نمی‌خورند.
+function stripAskedTranslation(prompt: string): string {
+  const stripped = prompt.replace(/«([^»]+)»/g, (m, inner: string) => (hasQuranicMarks(inner) ? m : ""));
+  return stripped.replace(/\s{2,}/g, " ").replace(/\s+([؟?،.:؛])/g, "$1").trim();
+}
 
 function renderRichFa(text: string | undefined) {
   if (!text) return null;
@@ -101,6 +139,7 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
   const [hint, setHint] = useState(false);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [resolvedLabels, setResolvedLabels] = useState<Record<string, string>>({});
+  const [resolvedStem, setResolvedStem] = useState<{ arText?: string; fa?: string }>({});
   const [shuffleSalt] = useState(() => Math.floor(Math.random() * 0xffff));
   const arabicFontSize = usePreferencesStore((s) => s.arabicFontSize);
   const { playSfx } = useHapticsAndSfx();
@@ -109,6 +148,15 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
     () => shuffleItems(q.options ?? [], `choice:${q.id}:${shuffleSalt}`),
     [q.id, q.options, shuffleSalt],
   );
+  const displayPrompt = useMemo(() => {
+    let p = stripFramedDuplicate(q.promptFa ?? "", q.stem?.ar ?? q.stem?.arText);
+    // ترجمه‌ی مورد سؤال در کادر ساقه هم نمایش داده می‌شود؛ نقل‌قولش در متن
+    // سؤال تکرار است و حذف می‌شود (فقط وقتی کادر ساقه واقعاً هست).
+    if (q.type === "TRANSLATION_TO_VERSE" && (q.stem?.fa || q.stem?.showFa)) {
+      p = stripAskedTranslation(p);
+    }
+    return p;
+  }, [q.promptFa, q.stem?.ar, q.stem?.arText, q.stem?.fa, q.stem?.showFa, q.type]);
   // راهنمای هوشمند بدون لو دادن پاسخ: در سوالات چهارگزینه‌ای یک گزینه نادرست حذف می‌شود
   const eliminatedChoiceId = useMemo(() => {
     if (!hint || q.shape !== "choice") return null;
@@ -150,6 +198,33 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
     return () => { active = false; };
   }, [q.id, q.options, q.left, q.right, q.bank]);
 
+  // بعضی سؤال‌ها متن ساقه را ندارند و فقط پرچم دارند (showFa/showVerse/showAr)؛
+  // متن باید از ردیف پایه‌ی همان آیه خوانده شود، وگرنه مثلاً در «این ترجمه
+  // مربوط به کدام آیه است؟» خودِ ترجمه هیچ‌جا نمایش داده نمی‌شود.
+  useEffect(() => {
+    let active = true;
+    const stem = q.stem;
+    const verseNum = stem?.verse ?? (typeof q.verse === "number" ? q.verse : undefined);
+    const needFa = Boolean(stem?.showFa && !stem?.fa);
+    // VERSE_TO_NUMBER استثناست: ساقه‌اش فقط شماره‌ی آیه را دارد و متن آیه
+    // موضوع سؤال است (گزینه‌ها شماره‌اند)، پس متن باید از داده‌ی پایه بیاید.
+    const needAr = Boolean((stem?.showVerse || stem?.showAr || q.type === "VERSE_TO_NUMBER") && !stem?.ar && !stem?.arText);
+    if (!verseNum || (!needFa && !needAr)) {
+      setResolvedStem({});
+      return () => { active = false; };
+    }
+    ldb.baseVerses.get(verseKey(getActiveSurahNumber(), verseNum)).then((verse) => {
+      if (!active) return;
+      setResolvedStem({
+        arText: needAr ? (verse?.arText as string | undefined) : undefined,
+        fa: needFa ? (verse?.fa as string | undefined) : undefined,
+      });
+    }).catch(() => {
+      if (active) setResolvedStem({});
+    });
+    return () => { active = false; };
+  }, [q.id, q.stem]);
+
   useEffect(() => {
     t0.current = Date.now();
     changed.current = false;
@@ -177,19 +252,19 @@ export default function QuestionRenderer({ q, locked, disableHint = false, noHin
       {/* Prompt */}
       <div className="space-y-2">
         <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug">
-          {renderRichFa(q.promptFa)}
+          {renderRichFa(displayPrompt)}
         </h2>
 
         {/* Stem Arabic or Persian Text (Iranian-Islamic Tazhib Frame) */}
-        {q.stem?.ar && (
+        {(q.stem?.ar || q.stem?.arText || resolvedStem.arText) && (
           <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-b from-[#fffdf7] to-[#f8f2e4] dark:from-[#162032] dark:to-[#1a2639] border-2 border-[#d4af37]/65 dark:border-teal-700/70 tazhib-frame text-center">
-            <p style={arStyle}>{q.stem.ar}</p>
+            <p style={arStyle}>{q.stem?.ar ?? q.stem?.arText ?? resolvedStem.arText}</p>
           </div>
         )}
-        {q.stem?.fa && !q.stem.ar && (
+        {q.type !== "CLOZE_FA" && ((q.stem?.fa && !q.stem.ar) || resolvedStem.fa) && (
           <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700">
             <p className="text-sm text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
-              «{q.stem.fa}»
+              «{q.stem?.fa ?? resolvedStem.fa}»
             </p>
           </div>
         )}
@@ -680,6 +755,142 @@ function OrderView({
   );
 }
 
+interface FaClozeModel {
+  parts: string[];
+  keys: string[];
+}
+
+// ساخت قالبِ جای‌خالی‌دارِ ترجمه برای CLOZE_FA از هر شکلی از داده که سؤال
+// دارد؛ خروجی parts (متن‌های بین جاهای خالی) و keys (کلید هر جای خالی، به
+// ترتیب ظاهرشدن در متن) است. اگر هیچ مدلی با اطمینان ساخته نشود null
+// برمی‌گردد و رندر به حالت جایگزینِ فعلی (فقط دکمه‌ها) می‌افتد.
+// شکل‌ها: ۱) faTemplate با ___  ۲) faTemplate با نشان‌های {n} یا {{n}}
+// ۳) faSegments با hiddenIdx  ۴) faHidden با آفست کاراکتری روی ترجمه‌ی پایه
+// (آفست‌ها روی همه‌ی این سؤال‌ها با ترجمه‌ی پایه راستی‌آزمایی می‌شوند)
+// ۵) یافتن متنِ پاسخ‌ها در ترجمه‌ی کامل (stem.fa یا ترجمه‌ی پایه).
+function buildFaClozeModel(q: RenderableQuestion, baseFa: string | null): FaClozeModel | null {
+  const answer = (q.answer as Record<string, string>) ?? {};
+  const keys = Object.keys(answer);
+  if (!keys.length) return null;
+  const stem = q.stem ?? {};
+  const byId = new Map((q.bank ?? []).map((b) => [b.id, b]));
+  const answerText = (k: string): string | null => byId.get(answer[k])?.fa ?? null;
+
+  const tpl = stem.faTemplate;
+  if (tpl) {
+    if (tpl.includes("___")) {
+      const parts = tpl.split("___");
+      if (parts.length - 1 === keys.length) return { parts, keys };
+    }
+    const markers = [...tpl.matchAll(/\{\{?(\d+)\}\}?/g)];
+    if (markers.length === keys.length && markers.every((m) => keys.includes(m[1]))) {
+      return { parts: tpl.split(/\{\{?\d+\}\}?/), keys: markers.map((m) => m[1]) };
+    }
+  }
+
+  if (stem.faSegments?.length && stem.hiddenIdx?.length) {
+    const hidden = new Set(stem.hiddenIdx.map(String));
+    if (hidden.size === keys.length && keys.every((k) => hidden.has(k))) {
+      const parts: string[] = [];
+      const orderedKeys: string[] = [];
+      let buf = "";
+      stem.faSegments.forEach((seg, i) => {
+        if (hidden.has(String(i + 1))) {
+          parts.push(buf);
+          orderedKeys.push(String(i + 1));
+          buf = "";
+        } else {
+          buf = buf ? `${buf} ${seg}` : seg;
+        }
+      });
+      parts.push(buf);
+      if (parts.length === orderedKeys.length + 1) return { parts, keys: orderedKeys };
+    }
+  }
+
+  if (stem.faHidden?.length && baseFa && stem.faHidden.length === keys.length) {
+    const spans = [...stem.faHidden].sort((a, b) => a.start - b.start);
+    if (spans.every((sp) => baseFa.slice(sp.start, sp.start + sp.text.length) === sp.text)) {
+      const remaining = [...spans];
+      const assigned = new Map<string, { start: number; text: string }>();
+      let ok = true;
+      for (const k of keys) {
+        const t = answerText(k);
+        if (!t) {
+          ok = false;
+          break;
+        }
+        const hit =
+          remaining.find((sp) => sp.text === t) ??
+          remaining.find((sp) => t.startsWith(sp.text) || sp.text.startsWith(t));
+        if (!hit) {
+          ok = false;
+          break;
+        }
+        assigned.set(k, hit);
+        remaining.splice(remaining.indexOf(hit), 1);
+      }
+      if (ok) {
+        const ordered = [...assigned.entries()].sort((a, b) => a[1].start - b[1].start);
+        const parts: string[] = [];
+        let pos = 0;
+        for (const [, sp] of ordered) {
+          parts.push(baseFa.slice(pos, sp.start));
+          pos = sp.start + sp.text.length;
+        }
+        parts.push(baseFa.slice(pos));
+        return { parts, keys: ordered.map(([k]) => k) };
+      }
+    }
+  }
+
+  const full = stem.fa ?? baseFa;
+  if (full) {
+    const spans: { key: string; start: number; len: number }[] = [];
+    const used: [number, number][] = [];
+    let ok = true;
+    const byLen = [...keys].sort((a, b) => (answerText(b)?.length ?? 0) - (answerText(a)?.length ?? 0));
+    for (const k of byLen) {
+      const t = answerText(k);
+      if (!t) {
+        ok = false;
+        break;
+      }
+      let found = -1;
+      let from = 0;
+      while (true) {
+        const i = full.indexOf(t, from);
+        if (i === -1) break;
+        if (used.some(([a, b]) => i < b && i + t.length > a)) {
+          from = i + 1;
+          continue;
+        }
+        found = i;
+        break;
+      }
+      if (found === -1) {
+        ok = false;
+        break;
+      }
+      used.push([found, found + t.length]);
+      spans.push({ key: k, start: found, len: t.length });
+    }
+    if (ok) {
+      spans.sort((a, b) => a.start - b.start);
+      const parts: string[] = [];
+      let pos = 0;
+      for (const sp of spans) {
+        parts.push(full.slice(pos, sp.start));
+        pos = sp.start + sp.len;
+      }
+      parts.push(full.slice(pos));
+      return { parts, keys: spans.map((sp) => sp.key) };
+    }
+  }
+
+  return null;
+}
+
 function ClozeView({
   q,
   locked,
@@ -704,12 +915,38 @@ function ClozeView({
   const [filled, setFilled] = useState<Record<string, string>>({});
   const [activeGap, setActiveGap] = useState<string | null>(gaps[0] ?? null);
   const [verseWords, setVerseWords] = useState<{ i: number; ar: string }[]>([]);
+  const [baseFa, setBaseFa] = useState<string | null>(null);
   const { playSfx } = useHapticsAndSfx();
   const shuffledBank = useMemo(
     () => shuffleItems(q.bank ?? [], `cloze:${q.id}:${shuffleSalt}`),
     [q.bank, q.id, shuffleSalt],
   );
   const byId = useMemo(() => new Map((q.bank ?? []).map((b) => [b.id, b])), [q.bank]);
+
+  // در داده‌های جاخالی، هر آیتم بانک می‌تواند یک «تکه»ی چندکلمه‌ای باشد
+  // (wordIdx آن چند کلمه از آیه را پوشش می‌دهد) و کلید پاسخ برای هر کلمه از
+  // تکه جدا ثبت شده، ولی مقدار همه‌شان همان یک آیتم است. پس جای خالی واقعی
+  // «تکه» است، نه تک‌کلمه: کلمه‌های زیر پوشش تکه باید در متن آیه پنهان شوند
+  // و پر/خالی‌کردن هم در سطح تکه انجام شود تا نگاشت پاسخ برای نمره‌دهی
+  // (که کلیدبه‌کلید مقایسه می‌کند) دست‌نخورده بماند.
+  const gapOfWord = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const g of gaps) {
+      const item = byId.get(answerMap[g]);
+      const idxs = item?.wordIdx?.length ? item.wordIdx : [Number(g)];
+      const start = String(Math.min(...idxs));
+      for (const wi of idxs) {
+        const key = String(wi);
+        if (!map.has(key)) map.set(key, start);
+      }
+    }
+    return map;
+  }, [gaps, byId, answerMap]);
+
+  const canonicalGaps = useMemo(
+    () => gaps.filter((g) => gapOfWord.get(g) === g),
+    [gaps, gapOfWord],
+  );
 
   useEffect(() => {
     setFilled({});
@@ -719,8 +956,18 @@ function ClozeView({
   useEffect(() => {
     let active = true;
     const verseNum = q.stem?.verse;
-    if (!verseNum || q.type === "CLOZE_FA") {
+    if (!verseNum) {
       setVerseWords([]);
+      setBaseFa(null);
+      return () => { active = false; };
+    }
+    if (q.type === "CLOZE_FA") {
+      // برای ساخت قالبِ جای‌خالی‌دارِ ترجمه، متن پایه‌ی آیه لازم است.
+      ldb.baseVerses.get(verseKey(getActiveSurahNumber(), verseNum)).then((verse) => {
+        if (active) setBaseFa((verse?.fa as string | undefined) ?? null);
+      }).catch(() => {
+        if (active) setBaseFa(null);
+      });
       return () => { active = false; };
     }
     ldb.baseVerses.get(verseKey(getActiveSurahNumber(), verseNum)).then((verse) => {
@@ -749,7 +996,12 @@ function ClozeView({
   const place = (bid: string) => {
     if (!activeGap || locked) return;
     playSfx("snap-click");
-    const nextFilled = { ...filled, [activeGap]: bid };
+    // پر کردن در سطح تکه: همه‌ی کلیدهای زیر پوشش این تکه همان آیتم را می‌گیرند.
+    const start = gapOfWord.get(activeGap) ?? activeGap;
+    const nextFilled = { ...filled };
+    for (const g of gaps) {
+      if (gapOfWord.get(g) === start) nextFilled[g] = bid;
+    }
     setFilled(nextFilled);
     const nextGap = gaps.find((g) => !nextFilled[g]);
     setActiveGap(nextGap ?? null);
@@ -761,10 +1013,13 @@ function ClozeView({
   const clearGap = (g: string) => {
     if (locked) return;
     playSfx("snap-click");
+    const start = gapOfWord.get(g) ?? g;
     const nextFilled = { ...filled };
-    delete nextFilled[g];
+    for (const k of gaps) {
+      if (gapOfWord.get(k) === start) delete nextFilled[k];
+    }
     setFilled(nextFilled);
-    setActiveGap(g);
+    setActiveGap(start);
     markChanged();
   };
 
@@ -801,8 +1056,10 @@ function ClozeView({
     gaps.length > 0 &&
     gaps.every((g) => verseWords.some((w) => String(w.i) === g));
 
-  const faParts = q.stem?.faTemplate ? q.stem.faTemplate.split("___") : null;
-  const canRenderInlineFa = Boolean(faParts && faParts.length - 1 === gaps.length);
+  const faModel = useMemo(() => buildFaClozeModel(q, baseFa), [q, baseFa]);
+  const faParts = faModel?.parts ?? null;
+  const faKeys = faModel?.keys ?? gaps;
+  const canRenderInlineFa = Boolean(faModel);
 
   return (
     <div className="space-y-4">
@@ -815,9 +1072,15 @@ function ClozeView({
         {canRenderInlineArabic ? (
           <div style={arStyle} className="text-right text-slate-900 dark:text-slate-100 leading-[2.6]">
             {verseWords.map((w) => {
-              const gapIdx = gaps.indexOf(String(w.i));
+              const key = String(w.i);
+              const gapIdx = canonicalGaps.indexOf(key);
               if (gapIdx !== -1) {
-                return renderGapButton(String(w.i), gapIdx, true);
+                return renderGapButton(key, gapIdx, true);
+              }
+              // کلمه زیر پوشش یک تکه است و دکمه‌اش در ابتدای تکه رندر شده؛
+              // خودش نباید دوباره در متن دیده شود (علت آیه‌های تکراری/ساختگی).
+              if (gapOfWord.has(key)) {
+                return null;
               }
               return (
                 <span key={w.i} className="inline-block mx-1">
@@ -831,13 +1094,13 @@ function ClozeView({
             {faParts.map((part, idx) => (
               <span key={idx}>
                 {part}
-                {idx < gaps.length && renderGapButton(gaps[idx], idx, true)}
+                {idx < faKeys.length && renderGapButton(faKeys[idx], idx, true)}
               </span>
             ))}
           </div>
         ) : (
           <div className="flex flex-wrap gap-2.5 items-center justify-center">
-            {gaps.map((g, idx) => renderGapButton(g, idx, false))}
+            {canonicalGaps.map((g, idx) => renderGapButton(g, idx, false))}
           </div>
         )}
       </div>

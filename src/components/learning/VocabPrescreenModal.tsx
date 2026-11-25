@@ -75,7 +75,11 @@ export default function VocabPrescreenModal({ unitId, onClose, onStartStage1 }: 
         .filter((w) => w.ar.trim().length > 0 && w.meaningFa.trim().length > 0);
 
       const cardsMap = new Map(allCards.map((c) => [c.key, c]));
-      const selected = selectPrescreenWords(prescreenCandidates, cardsMap);
+      // سقف پیش‌فرض تابع ۲۴ کلمه است، ولی واژگان هر واحد ۴۵ تا ۷۵ کلمه‌اند و
+      // با همان سقف، بخشی از کلمه‌های هدفِ مرحله‌ی ۱ اصلاً غربال نمی‌شدند و
+      // سؤال‌هایشان در درس می‌ماند. اینجا همه‌ی واژگان واجد شرایط واحد
+      // پیش‌غربال می‌شوند (ترتیب «سخت‌ها اول» داخل خود تابع حفظ می‌شود).
+      const selected = selectPrescreenWords(prescreenCandidates, cardsMap, 200);
       if (active) {
         setWords(selected);
         setLoading(false);

@@ -5,6 +5,7 @@ import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Award, Sparkles, BookOpen
 import { isNoAudioToday, setNoAudioToday } from "../services/noAudioService";
 import QuestionRenderer, { type RenderableQuestion } from "../components/learning/QuestionRenderer";
 import VerseAudioPlayer from "../components/audio/VerseAudioPlayer";
+import { prefetchVersesAudio } from "../services/menshawiAudio";
 import AqeeqIcon from "../components/common/AqeeqIcon";
 import { useLearningStore, type CycleKind } from "../store/useLearningStore";
 import { useHapticsAndSfx } from "../hooks/useHapticsAndSfx";
@@ -26,7 +27,17 @@ function toFarsiNum(n: number | string): string {
   return String(n).replace(/[0-9]/g, (d) => farsiDigits[Number(d)]);
 }
 
-const hasQuranicMarks = (s: string) => /[\u064B-\u065F\u0670\u0671\u06D6-\u06ED]/.test(s);
+// تشخیص «عبارت قرآنی» برای فونت مصحف: صرفِ داشتن یک اعراب (مثل شدّه در «شرّ»)
+// کافی نیست؛ عبارت فارسیِ داخل «...» اگر با فونت قرآنی رندر شود، حروف فارسیِ
+// گ/چ/پ/ژ در آن فونت نیست و به‌صورت دایره (●) می‌افتد. عبارت قرآنیِ واقعی هم
+// حرف فارسی ندارد و هم تقریباً همه‌ی حروفش اعراب دارند.
+const hasQuranicMarks = (s: string) => {
+  if (/[گچپژ]/.test(s)) return false;
+  const letters = (s.match(/[\u0621-\u064A\u066E-\u06D3]/g) ?? []).length;
+  if (letters === 0) return false;
+  const marks = (s.match(/[\u064B-\u0652\u0670\u06D6-\u06ED]/g) ?? []).length;
+  return marks / letters >= 0.15;
+};
 function renderRichFa(text: string | undefined) {
   if (!text) return null;
   return text.split(/(«[^»]+»)/g).map((part, idx) =>
@@ -39,6 +50,23 @@ function renderRichFa(text: string | undefined) {
     ),
   );
 }
+
+// نوع‌هایی که شنیدنِ تلاوتِ آیه‌ی ساقه پیش از پاسخ‌گویی، جواب را لو می‌دهد:
+// کاربر باید آیه را از روی ترجمه یا شماره‌اش تشخیص دهد، پایان یا آغازش را
+// بگوید، متنش را بسازد یا جاهای خالی‌اش را پر کند. در VERSE_TO_NUMBER حتی
+// برچسبِ پخش‌کننده (شماره‌ی آیه) خودِ جواب است. در این نوع‌ها پخش‌کننده
+// فقط بعد از ثبت پاسخ نمایش داده می‌شود.
+const AUDIO_REVEALS_ANSWER = new Set([
+  "TRANSLATION_TO_VERSE",
+  "NUMBER_TO_VERSE_START",
+  "ENDING_CHOICE",
+  "MUTASHABIH_SPOT",
+  "BUILD_FROM_NUMBER",
+  "BUILD_FROM_TRANSLATION",
+  "VERSE_TO_NUMBER",
+  "CLOZE_AR",
+  "CLOZE_COMPLETE_REST",
+]);
 
 export default function LearningSessionPage({ unitId, stage, remedialTag = null, cycleKind = null, onStartNext, onExit }: Props) {
   const s = useLearningStore();
@@ -84,6 +112,25 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
     }
   }, [unitId, stage, remedialTag, cycleKind, startReview, startStage, startRemedial, startTestOut, startBlindSpots, startCycleReview, startDrill]);
 
+  // پیش‌دانلود پس‌زمینه‌ی صوت همه‌ی آیات این جلسه تا نخستین پخشِ هر آیه
+  // معطل دانلود نماند (دانلود کامل و کش‌شده در menshawiAudio انجام می‌شود).
+  const queueVersesKey = [
+    ...new Set(
+      s.queue
+        .map((item) => (item as RenderableQuestion).stem?.verse)
+        .filter((v): v is number => typeof v === "number"),
+    ),
+  ].join(",");
+  useEffect(() => {
+    if (!queueVersesKey) return;
+    const controller = new AbortController();
+    const verses = queueVersesKey.split(",").map(Number);
+    void prefetchVersesAudio(verses, undefined, controller.signal).catch(() => {
+      // خطای پیش‌دانلود نباید جلسه را متوقف کند؛ پخش تکی سر جای خودش تلاش می‌کند.
+    });
+    return () => controller.abort();
+  }, [queueVersesKey]);
+
   // جشن پایان مرحله موفق با افکت صوتی و Confetti + زمان‌بندی مجدد یادآور روزانه (بدون درخواست مجوز)
   useEffect(() => {
     if (s.status === "finished") {
@@ -102,6 +149,16 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
       }
     }
   }, [s.status, s.summary, stage, playSfx]);
+
+  // با عوض‌شدن سؤال، صفحه از بالا شروع شود تا صورت سؤال دیده شود؛ وگرنه اگر
+  // کاربر برای دیدن گزینه‌های پایین اسکرول کرده باشد، سؤال بعدی هم از وسط
+  // صفحه باز می‌شود و باید دستی به بالا برگردد. (اسکرول این صفحه روی
+  // window است، نه روی یک ظرف داخلی.)
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [s.index, q?.id]);
 
   // Enter key advances only when feedback drawer is visible (locked) and ignores key repeat.
   useEffect(() => {
@@ -462,7 +519,7 @@ export default function LearningSessionPage({ unitId, stage, remedialTag = null,
 
       {/* Main Question Body */}
       <main className="flex-1 max-w-2xl w-full mx-auto p-4 flex flex-col justify-center space-y-3">
-        {q.stem?.verse && !noAudio && (locked || q.shape !== "cloze" || q.type === "CLOZE_FA") && (
+        {q.stem?.verse && !noAudio && (locked || !AUDIO_REVEALS_ANSWER.has(q.type)) && (
           <div className="w-full max-w-xl mx-auto px-3">
             <VerseAudioPlayer verses={[q.stem.verse]} compact />
           </div>
