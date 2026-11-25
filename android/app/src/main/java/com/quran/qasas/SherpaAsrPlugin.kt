@@ -91,10 +91,10 @@ class SherpaAsrPlugin : Plugin() {
         data class ModelFileSpec(val name: String, val url: String, val sha256: String)
         val specs = mutableListOf<ModelFileSpec>()
         for (i in 0 until filesArr.length()) {
-            val obj = filesArr.getJSObject(i)
-            val name = obj?.getString("name")
-            val fileUrl = obj?.getString("url")
-            val sha = obj?.getString("sha256")?.lowercase()?.trim()
+            val obj = filesArr.optJSONObject(i)
+            val name = obj?.optString("name")
+            val fileUrl = obj?.optString("url")
+            val sha = obj?.optString("sha256")?.lowercase()?.trim()
             if (name.isNullOrBlank() || fileUrl.isNullOrBlank() || sha.isNullOrBlank()) {
                 call.reject("Invalid file entry in manifest")
                 return
