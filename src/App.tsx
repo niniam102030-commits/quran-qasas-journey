@@ -270,6 +270,10 @@ export default function App() {
           onOpenMutashabihat={() => setMutashabihatVerse(null)}
           onOpenVocabBook={() => setCurrentView("vocabBook")}
           onOpenAudioLesson={() => setCurrentView("audioLesson")}
+          onOpenRecitation={() => {
+            setRequestedMushafUnitId("__FIRST__");
+            setCurrentView("units");
+          }}
         />
       )}
 

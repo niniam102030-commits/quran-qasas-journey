@@ -8,6 +8,7 @@ import {
   Gift,
   GitCompare,
   Headphones,
+  Mic,
   Palette,
   RefreshCw,
   ShieldCheck,
@@ -40,6 +41,7 @@ interface Props {
   onOpenMutashabihat?: () => void;
   onOpenVocabBook: () => void;
   onOpenAudioLesson: () => void;
+  onOpenRecitation?: () => void;
 }
 
 const farsiDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -71,6 +73,7 @@ export default function PracticeHubPage({
   onOpenMutashabihat,
   onOpenVocabBook,
   onOpenAudioLesson,
+  onOpenRecitation,
 }: Props) {
   const paceMode = usePreferencesStore((s) => s.paceMode);
   const setPaceMode = usePreferencesStore((s) => s.setPaceMode);
@@ -463,6 +466,27 @@ export default function PracticeHubPage({
 
         {/* شبکهٔ کارت‌های ورودی ابزارهای تمرین */}
         <section className="space-y-2.5">
+          {onOpenRecitation && (
+            <button
+              type="button"
+              onClick={onOpenRecitation}
+              className="relative w-full p-3.5 rounded-3xl bg-rose-50 dark:bg-rose-950/40 border-2 border-b-4 border-rose-300 dark:border-rose-800 hover:border-rose-500 active:border-b-2 active:translate-y-[2px] flex items-center gap-3 text-right transition-all"
+            >
+              <span className="absolute -top-2 right-4 px-2 py-0.5 rounded-full bg-rose-600 text-white text-[10px] font-black shadow">
+                جدید — برای تست
+              </span>
+              <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-rose-500 to-red-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <Mic className="w-5 h-5" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black text-rose-900 dark:text-rose-100">تمرین‌های تلاوت — همراهی و تصحیح</div>
+                <div className="text-[11px] text-rose-700/80 dark:text-rose-300/80">
+                  تلاوت تکه‌به‌تکه با داوری زنده و رنگی‌شدن خودکار؛ برای تست قابلیت جدید فقط از این‌جا وارد شوید
+                </div>
+              </div>
+            </button>
+          )}
+
           <button
             type="button"
             onClick={onOpenVocabBook}

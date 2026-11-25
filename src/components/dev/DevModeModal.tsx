@@ -27,6 +27,7 @@ import {
   seedDevTestData,
 } from "../../services/devModeService";
 import type { AppView } from "../../App";
+import RecitationJudgePanel from "./RecitationJudgePanel";
 
 interface Props {
   onClose: () => void;
@@ -165,6 +166,9 @@ export default function DevModeModal({
           <div className="p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/70 text-[11px] text-amber-900 dark:text-amber-200 leading-relaxed">
             <strong>نکته:</strong> اگر می‌خواهید پیشرفت شخصی فعلی‌تان دست‌نخورده بماند، ابتدا از بخش «پروفایل‌ها» یک پروفایل تازه (مثلاً «تست») بسازید و دکمه‌های تزریق داده را روی آن بزنید.
           </div>
+
+          {/* پنل آزمایش داور تلاوت */}
+          <RecitationJudgePanel />
 
           {/* دکمه‌های عملیات ساخت داده */}
           <div className="space-y-2">

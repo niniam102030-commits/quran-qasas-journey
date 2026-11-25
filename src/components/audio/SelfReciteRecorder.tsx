@@ -19,10 +19,19 @@ import {
   alignTranscriptToVerse,
   buildVerifierTranscriptFromAlignment,
   computePrecisionAccuracy,
+  computeHeardRatio,
+  isBlindRecitationPassed,
+  judgeRecitationAttempt,
   segmentVerse,
   type WordAlignment,
   type WordAlignState,
 } from "../../learning/recitationAlign";
+import {
+  appendAttemptLog,
+  effectiveJudgeParams,
+  loadJudgeSettings,
+  type RecitationJudgeSettings,
+} from "../../services/recitationJudgeService";
 import {
   loadRecitationCalibration,
   recordUserConfirmedRecitationWord,
@@ -100,6 +109,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const [extraWordsBySeg, setExtraWordsBySeg] = useState<Record<number, number>>({});
   const [checkResult, setCheckResult] = useState<RecitationCheckResult | null>(null);
   const [asrError, setAsrError] = useState<string | null>(null);
+  const [attemptNotice, setAttemptNotice] = useState<string | null>(null);
+  const [audioLevel, setAudioLevel] = useState(0);
+  const [speakingNow, setSpeakingNow] = useState(false);
 
   const capability = getDeviceAsrCapability();
   const offlineAsrEnabled = usePreferencesStore((s) => s.offlineAsrEnabled);
@@ -108,6 +120,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const wordStatesRef = useRef<ReciteWordUiState[]>([]);
   const calibrationMapRef = useRef<Map<string, number>>(new Map());
   const reportedSessionRef = useRef<boolean>(false);
+  const judgeSettingsRef = useRef<RecitationJudgeSettings | null>(null);
+  const segIdxRef = useRef(0);
+  const chunkedCompleteRef = useRef(false);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -147,6 +162,20 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     }
     setPlaying(false);
   };
+
+  useEffect(() => {
+    let active = true;
+    void loadJudgeSettings().then((settings) => {
+      if (active) judgeSettingsRef.current = settings;
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    segIdxRef.current = activeSegIdx;
+  }, [activeSegIdx]);
 
   useEffect(() => {
     let active = true;
@@ -252,14 +281,54 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     const refTexts = segSlice.map((w) => w.ar);
     const transTokens = transcript.split(/\s+/).filter(Boolean);
 
-    const aligned = alignTranscriptToVerse(refTexts, transTokens, {
+    const settings = judgeSettingsRef.current;
+    const judged = judgeRecitationAttempt(refTexts, transTokens, {
       tokenConfidences,
       calibration: calibrationMapRef.current,
+      bypassCalibration: settings?.bypassCalibration ?? false,
+      judge: settings ? effectiveJudgeParams(settings) : undefined,
     });
+
+    // ثبت ساخت‌یافتهٔ تلاش (پایهٔ بانک خطا و خروجی پنل آزمایش داور)
+    void appendAttemptLog({
+      at: Date.now(),
+      verse: selectedVerse.n,
+      segmentIndex: segIdx,
+      outcome: judged.outcome,
+      coverage: judged.coverage,
+      heardRatio: judged.heardRatio,
+      matched: judged.words.filter((w) => w.state === "matched").length,
+      substituted: judged.words.filter((w) => w.state === "substituted").length,
+      missed: judged.missedCount,
+      uncertain: judged.words.filter((w) => w.state === "uncertain").length,
+      extraWords: judged.extraWords,
+      transcript,
+      profile: settings?.useCustom ? "custom" : settings?.profile ?? "balanced",
+      bypassCalibration: settings?.bypassCalibration ?? false,
+      words: judged.words.map((w) => ({
+        ref: w.ref,
+        state: w.state,
+        heard: w.heard,
+        sim: w.sim,
+        reason: w.reason,
+        userConfirmed: w.userConfirmed,
+      })),
+    }).catch(() => {});
+
+    if (judged.outcome === "no_speech") {
+      // سکوت یا صدای نامفهوم: هیچ کلمه‌ای ارزیابی نمی‌شود و خطا هم ثبت نمی‌شود
+      setAttemptNotice("چیزی شنیده نشد؛ این تکه را دوباره بخوانید. (این تلاش خطا حساب نشد)");
+      return;
+    }
+    if (judged.outcome === "not_this_text") {
+      setAttemptNotice("این تلاوت با متن این تکه همخوانی نداشت؛ کلمات این تکه خطا ثبت شدند. اگر درست خوانده بودید، از دکمهٔ «تکرار همین تکه» استفاده کنید.");
+    } else {
+      setAttemptNotice(null);
+    }
 
     const nextStates = wordStatesRef.current.map((prev, idx) => {
       if (idx < seg.start || idx > seg.end) return prev;
-      const local = aligned.words[idx - seg.start];
+      const local = judged.words[idx - seg.start];
       if (!local) return prev;
       // اگر کاربر قبلاً در همین تکه کلمه‌ای را با لمس تأیید کرده، تأییدش حفظ می‌شود
       if (prev.userConfirmed) {
@@ -282,7 +351,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
 
     wordStatesRef.current = nextStates;
     setWordStates(nextStates);
-    setExtraWordsBySeg((prev) => ({ ...prev, [segIdx]: aligned.extraWords }));
+    setExtraWordsBySeg((prev) => ({ ...prev, [segIdx]: judged.extraWords }));
     syncWithDownstreamVerifier(nextStates);
   };
 
@@ -363,14 +432,73 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     }
   };
 
+  /**
+   * حالت تکه‌ای زنده (A+B) با موتور آفلاین: یک جلسهٔ پیوسته برای کل آیه؛
+   * هر تکه با مکث وقفی (~۷۰۰ms) خودکار دیکود و رنگی می‌شود و تکهٔ بعد فعال می‌شود.
+   */
+  const startChunkedListening = async (fromSeg: number) => {
+    if (!selectedVerse) return;
+    await stopActiveListening();
+    setAsrError(null);
+    setAttemptNotice(null);
+    setSpokenText("");
+    setLiveStates({});
+    chunkedCompleteRef.current = false;
+    segIdxRef.current = fromSeg;
+    setActiveSegIdx(fromSeg);
+
+    const verseNumAtStart = selectedVerse.n;
+    const hotwords = [...new Set(selectedVerse.words.map((w) => w.ar))];
+    const totalSegs = segments.length;
+
+    const handle = await startSherpaMicrophoneSession({
+      hotwords,
+      onTranscript: () => {
+        // در حالت تکه‌ای، متن‌ها از مسیر onChunk می‌آیند
+      },
+      onError: (msg) => {
+        setAsrError(msg);
+        setListeningAsr(false);
+      },
+      onEnd: () => {
+        setListeningAsr(false);
+        setAudioLevel(0);
+        setSpeakingNow(false);
+        if (chunkedCompleteRef.current) {
+          setSessionCompleted(true);
+          reportFinalPrecisionNow(verseNumAtStart, wordStatesRef.current);
+        }
+      },
+      chunked: {
+        silenceMs: 700,
+        onChunk: (text) => {
+          const segIdx = segIdxRef.current;
+          applySegmentTranscript(segIdx, text);
+          if (segIdx + 1 < totalSegs) {
+            segIdxRef.current = segIdx + 1;
+            setActiveSegIdx(segIdx + 1);
+          } else {
+            chunkedCompleteRef.current = true;
+            void stopActiveListening();
+          }
+        },
+        onLevel: (rms) => setAudioLevel(rms),
+        onSpeechChange: (speaking) => setSpeakingNow(speaking),
+      },
+    });
+
+    if (handle) {
+      recognitionRef.current = handle;
+      setListeningAsr(true);
+    }
+  };
+
   const handleToggleAsr = async () => {
     if (listeningAsr) {
       await stopActiveListening();
       setLiveStates({});
-      if (selectedVerse && activeSegIdx === segments.length - 1) {
-        setSessionCompleted(true);
-        reportFinalPrecisionNow(selectedVerse.n, wordStatesRef.current);
-      }
+      setAudioLevel(0);
+      setSpeakingNow(false);
       return;
     }
     if (sessionCompleted) {
@@ -383,11 +511,19 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
         setSessionCompleted(false);
         setActiveSegIdx(0);
         reportedSessionRef.current = false;
-        await startListeningForSegment(0);
+        if (sherpaReady) {
+          await startChunkedListening(0);
+        } else {
+          await startListeningForSegment(0);
+        }
       }
       return;
     }
-    await startListeningForSegment(activeSegIdx);
+    if (sherpaReady) {
+      await startChunkedListening(activeSegIdx);
+    } else {
+      await startListeningForSegment(activeSegIdx);
+    }
   };
 
   /** تکرار همین تکه بدون هیچ جریمه‌ای */
@@ -540,7 +676,11 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   // محاسبهٔ آمار سهگانهٔ جلسه (شنیده‌شده، خطای قطعی، نامشخص)
   const totalWordsCount = wordStates.length;
   const matchedOrConfirmedCount = wordStates.filter((w) => w.state === "matched" || w.userConfirmed).length;
-  const confirmedErrorCount = wordStates.filter((w) => w.state === "substituted" && !w.userConfirmed).length;
+  const confirmedErrorCount = wordStates.filter(
+    (w) => (w.state === "substituted" || w.state === "missed") && !w.userConfirmed,
+  ).length;
+  const heardRatioNow = computeHeardRatio(wordStates);
+  const blindPassed = isBlindRecitationPassed(wordStates);
   const uncertainCount = wordStates.filter((w) => w.state === "uncertain" && !w.userConfirmed).length;
   const heardCoveragePercent = totalWordsCount > 0 ? Math.round((matchedOrConfirmedCount / totalWordsCount) * 100) : 0;
   const effectiveAccuracyPercent = computePrecisionAccuracy(wordStates);
@@ -691,7 +831,33 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
             </div>
           </div>
 
-          {/* نمایش تکه‌به‌تکه کلمات آیه با ۳ رنگ و امکان اصلاح با لمس */}
+          {/* نشانگر زندهٔ حین تلاوت (بخش B): بدون داوری، فقط حضور و سطح صدا */}
+          {listeningAsr && (
+            <div className="flex items-center gap-2 px-1">
+              <span
+                className={`w-2.5 h-2.5 rounded-full shrink-0 ${
+                  speakingNow ? "bg-rose-500 animate-ping" : "bg-teal-500 animate-pulse"
+                }`}
+              />
+              <span className="text-[11px] font-bold text-slate-600 dark:text-slate-300">
+                {speakingNow ? "در حال شنیدن…" : "منتظر تلاوت شما (با مکث وقفی، تکه خودکار ثبت می‌شود)"}
+              </span>
+              <div className="flex-1 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                <div
+                  className="h-full bg-teal-500 transition-all duration-100"
+                  style={{ width: `${Math.round(Math.min(1, audioLevel) * 100)}%` }}
+                />
+              </div>
+            </div>
+          )}
+
+          {attemptNotice && (
+            <div className="p-2 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-800 text-[11px] font-bold text-amber-800 dark:text-amber-200">
+              {attemptNotice}
+            </div>
+          )}
+
+          {/* نمایش تکه‌به‌تکه کلمات آیه با رنگ‌های داوری و امکان اصلاح با لمس */}
           <div className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-emerald-200 dark:border-slate-700 space-y-2.5">
             <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500 dark:text-slate-400">
               <div className="flex flex-wrap items-center gap-2">
@@ -702,6 +868,10 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                 <span className="inline-flex items-center gap-1">
                   <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
                   <span>قرمز ملایم = خطای محتمل</span>
+                </span>
+                <span className="inline-flex items-center gap-1">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-600" />
+                  <span>قرمز پررنگ = خطا (خوانده نشد)</span>
                 </span>
                 <span className="inline-flex items-center gap-1">
                   <span className="w-2.5 h-2.5 rounded-full bg-slate-400" />
@@ -722,6 +892,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                 const inFutureSeg = !sessionCompleted && idx > currentSegment.end;
                 const isMatched = w.state === "matched" || Boolean(w.userConfirmed);
                 const isSubstituted = w.state === "substituted" && !w.userConfirmed;
+                const isMissed = w.state === "missed" && !w.userConfirmed;
                 const isLive = listeningAsr && liveStates[idx] === "matched" && !isMatched;
                 const canConfirm = !isMatched && !inFutureSeg;
 
@@ -733,6 +904,8 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                   ? "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700"
                   : isSubstituted
                   ? "bg-rose-100/90 dark:bg-rose-950/50 text-rose-800 dark:text-rose-200 border-rose-300 dark:border-rose-700"
+                  : isMissed
+                  ? "bg-rose-200 dark:bg-rose-900/70 text-rose-900 dark:text-rose-100 border-rose-500 dark:border-rose-500 font-bold"
                   : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-700";
 
                 const ringClass = inCurrentSeg ? "ring-2 ring-teal-500/40 dark:ring-teal-400/40" : "";
@@ -752,6 +925,8 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                           : "شنیده شد"
                         : isSubstituted
                         ? `خطای محتمل (شنیده‌شده: ${w.heard ?? "—"}) — اگر درست خواندید بزنید: درست خواندم`
+                        : isMissed
+                        ? "خطا — این کلمه خوانده نشد یا آن ناحیه با متن همخوانی نداشت — اگر درست خواندید بزنید: درست خواندم"
                         : "نامشخص — اگر درست خواندید بزنید: درست خواندم"
                     }
                     className={`px-2 py-0.5 rounded-xl border transition-all inline-flex items-center gap-1 ${colorClass} ${ringClass} ${
@@ -801,7 +976,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                     خطای قطعی: {toFarsi(confirmedErrorCount)} کلمه
                   </div>
                   <div className="text-[10px] text-rose-700/80 dark:text-rose-400/80">
-                    جایگزینی تأییدنشده
+                    جایگزینی یا ناحیهٔ خطای تأییدنشده
                   </div>
                 </div>
 
@@ -825,6 +1000,18 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
                     تکرار/اضافه‌خوانی بدون جریمه: {toFarsi(totalExtraWords)} کلمه
                   </span>
                 )}
+              </div>
+
+              <div
+                className={`p-2.5 rounded-xl border text-[11px] font-bold leading-relaxed ${
+                  blindPassed
+                    ? "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200"
+                    : "bg-slate-50 dark:bg-slate-800/80 border-slate-200/80 dark:border-slate-700 text-slate-600 dark:text-slate-300"
+                }`}
+              >
+                {blindPassed
+                  ? "تلاوت کور: قبول شد — همهٔ کلمات شنیده شدند."
+                  : `تلاوت کور: هنوز قبول نیست (شنیده‌شده: ${toFarsi(Math.round(heardRatioNow * 100))}٪). در تلاوت کور و آزمون، «نامشخص» جریمه نیست ولی قبول هم حساب نمی‌شود؛ برای قبولی همهٔ کلمات باید سبز شوند.`}
               </div>
 
               <p className="text-[11px] text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800/80 p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-700 leading-relaxed">
