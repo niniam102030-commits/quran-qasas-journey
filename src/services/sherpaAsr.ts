@@ -195,12 +195,27 @@ export interface SherpaMicSessionHandle {
 /**
  * اجرای جلسه استریم میکروفون از طریق WebAudio → chunks 16kHz PCM → SherpaAsr.feed()
  */
+export interface SherpaChunkedOptions {
+  /** سکوت لازم (میلی‌ثانیه) برای بستن تکهٔ جاری و دیکود آن — پیش‌فرض ۷۰۰ */
+  silenceMs?: number;
+  /** آستانهٔ RMS برای تشخیص وجود گفتار — پیش‌فرض ۰٫۰۱۵ */
+  speechRms?: number;
+  /** تحویل متن دیکودشدهٔ هر تکه بلافاصله پس از مکث وقفی (بدون پایان جلسه) */
+  onChunk: (text: string) => void;
+  /** سطح لحظه‌ای صدا (۰ تا ۱) برای نشانگر زندهٔ حین تلاوت */
+  onLevel?: (rms: number) => void;
+  /** تغییر وضعیت گفتار/سکوت برای نشانگر حین تلاوت */
+  onSpeechChange?: (speaking: boolean) => void;
+}
+
 export async function startSherpaMicrophoneSession(opts: {
   engine?: SherpaAsr;
   hotwords?: string[];
   onTranscript: (transcript: string, isFinal: boolean) => void;
   onError: (messageFa: string) => void;
   onEnd: () => void;
+  /** حالت تکه‌ای (A+B): دیکود خودکار هر تکه با مکث‌یابی، بدون نیاز به دکمهٔ توقف */
+  chunked?: SherpaChunkedOptions;
 }): Promise<SherpaMicSessionHandle | null> {
   const engine = opts.engine ?? sherpaAsr;
   const available = await engine.isAvailable();
@@ -218,6 +233,41 @@ export async function startSherpaMicrophoneSession(opts: {
   let stream: MediaStream | null = null;
   let audioCtx: AudioContext | null = null;
   let processor: ScriptProcessorNode | null = null;
+
+  // وضعیت مکث‌یابی حالت تکه‌ای
+  const chunked = opts.chunked;
+  const silenceMs = chunked?.silenceMs ?? 700;
+  const speechRms = chunked?.speechRms ?? 0.015;
+  let speechSeenInChunk = false;
+  let lastSpeechAt = 0;
+  let flushing = false;
+  let speakingNow = false;
+  let lastLevelAt = 0;
+
+  const flushChunk = async () => {
+    if (!chunked || flushing || stopped) return;
+    flushing = true;
+    try {
+      const res = await engine.stop();
+      if (!stopped && res?.text) {
+        chunked.onChunk(res.text);
+      }
+    } catch {
+      // خطای دیکود یک تکه نباید کل جلسه را ببندد
+    }
+    speechSeenInChunk = false;
+    if (!stopped) {
+      try {
+        await engine.start({
+          sampleRate: 16000,
+          ...(opts.hotwords && opts.hotwords.length > 0 ? { hotwords: opts.hotwords } : {}),
+        });
+      } catch {
+        // اگر راه‌اندازی دوبارهٔ موتور ناموفق بود، توقف نهایی خطا را گزارش می‌کند
+      }
+    }
+    flushing = false;
+  };
 
   try {
     engine.addListener("partial", (ev) => {
@@ -239,6 +289,32 @@ export async function startSherpaMicrophoneSession(opts: {
     processor.onaudioprocess = (ev) => {
       if (stopped) return;
       const input = ev.inputBuffer.getChannelData(0);
+
+      if (chunked) {
+        // RMS همین بافر برای مکث‌یابی و نشانگر زنده
+        let sum = 0;
+        for (let k = 0; k < input.length; k++) sum += input[k] * input[k];
+        const rms = Math.sqrt(sum / Math.max(1, input.length));
+        const now = performance.now();
+        if (now - lastLevelAt > 100) {
+          lastLevelAt = now;
+          chunked.onLevel?.(Math.min(1, rms * 3));
+        }
+        const speaking = rms >= speechRms;
+        if (speaking) {
+          speechSeenInChunk = true;
+          lastSpeechAt = now;
+        }
+        if (speaking !== speakingNow) {
+          speakingNow = speaking;
+          chunked.onSpeechChange?.(speaking);
+        }
+        if (speechSeenInChunk && !flushing && now - lastSpeechAt >= silenceMs) {
+          void flushChunk();
+        }
+        if (flushing) return; // نمونه‌های فاصلهٔ راه‌اندازی دوباره (سکوت وقف) دور ریخته می‌شوند
+      }
+
       const b64 = pcmFloat32ToInt16Base64(input, inputRate, 16000);
       if (b64) {
         void engine.feed(b64).catch(() => {});
@@ -271,7 +347,11 @@ export async function startSherpaMicrophoneSession(opts: {
       try {
         const res = await engine.stop();
         if (res?.text) {
-          opts.onTranscript(res.text, true);
+          if (chunked) {
+            chunked.onChunk(res.text);
+          } else {
+            opts.onTranscript(res.text, true);
+          }
         }
       } catch (e) {
         opts.onError(e instanceof Error ? e.message : "خطا در پایان تشخیص آفلاین");

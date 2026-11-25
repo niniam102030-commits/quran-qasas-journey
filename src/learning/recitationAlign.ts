@@ -9,14 +9,41 @@ export const MIN_CONFIDENCE_FOR_SUBSTITUTION = 0.5;
 export const CALIBRATION_IMMUNITY_THRESHOLD = 2;
 export const MAX_CALIBRATION_ENTRIES = 500;
 
-export type WordAlignState = "matched" | "substituted" | "uncertain";
+export type WordAlignState = "matched" | "substituted" | "uncertain" | "missed";
 
 export interface WordAlignment {
   ref: string;
   state: WordAlignState;
   heard?: string;
   userConfirmed?: boolean;
+  /** نمرهٔ شباهت کلمهٔ جفت‌شده (۰ تا ۱) برای نمایش تشخیصی در پنل آزمایش داور */
+  sim?: number;
+  /** دلیل صدور حکم برای این کلمه (کد کوتاه لاتین، برای خروجی تست) */
+  reason?: string;
 }
+
+/** پارامترهای قابل تنظیم داور تلاوت (پنل آزمایش) */
+export interface JudgeParams {
+  /** حداقل شباهت برای «شنیده‌شده» (matched) */
+  matchSim: number;
+  /** دروازهٔ پوشش سراسری: حداقل سهم کلمات matched از کل تکه تا تلاش «تلاوت همین تکه» حساب شود */
+  coverageGate: number;
+  /** سقف جزیرهٔ نامشخص: حداکثر طول مجاز رشتهٔ متوالی کلمات نامشخصِ محصور بین دو لنگر */
+  islandCap: number;
+  /** فعال‌بودن دروازهٔ پوشش */
+  gateEnabled: boolean;
+}
+
+export type JudgeProfileName = "lenient" | "balanced" | "strict" | "very_strict";
+
+export const JUDGE_PROFILES: Record<JudgeProfileName, JudgeParams> = {
+  lenient: { matchSim: 0.75, coverageGate: 0.3, islandCap: 3, gateEnabled: true },
+  balanced: { matchSim: 0.8, coverageGate: 0.4, islandCap: 2, gateEnabled: true },
+  strict: { matchSim: 0.85, coverageGate: 0.5, islandCap: 2, gateEnabled: true },
+  very_strict: { matchSim: 0.9, coverageGate: 0.6, islandCap: 1, gateEnabled: true },
+};
+
+export const DEFAULT_JUDGE_PROFILE: JudgeProfileName = "balanced";
 
 export interface VerseAlignmentResult {
   words: WordAlignment[];
@@ -26,11 +53,17 @@ export interface VerseAlignmentResult {
   confirmedErrors: number;
   /** تعداد کلمات اضافهٔ شنیده‌شده (تکرار/لکنت) که جای کلمهٔ مرجع را نگرفته‌اند */
   extraWords: number;
+  /** تعداد کلمات دارای وضعیت missed (ناحیهٔ خطا) — فقط در خروجی داور (judgeRecitationAttempt) پر می‌شود */
+  missedCount?: number;
 }
 
 export interface AlignOptions {
   tokenConfidences?: number[];
   calibration?: Map<string, number>;
+  /** پارامترهای داور (پنل آزمایش)؛ هر فیلدِ داده‌شده جای پیش‌فرض را می‌گیرد */
+  judge?: Partial<JudgeParams>;
+  /** در تست داور: نادیده‌گرفتن کامل کالیبراسیون شخصی تا مصونیت‌های قبلی نتیجه را آلوده نکنند */
+  bypassCalibration?: boolean;
 }
 
 export interface RecitationCalibrationData {
@@ -111,6 +144,8 @@ export function alignTranscriptToVerse(
 
   const tokenConfidences = opts.tokenConfidences;
   const calibration = opts.calibration ?? calibrationArg;
+  const matchSim = Math.min(0.99, Math.max(0.5, opts.judge?.matchSim ?? MATCH_SIM));
+  const effCalibration = opts.bypassCalibration ? undefined : calibration;
 
   const m = referenceWords.length;
   if (m === 0) {
@@ -160,9 +195,9 @@ export function alignTranscriptToVerse(
   const insertionCostAt = (i: number, j: number): number => {
     const tokNorm = spokenList[j - 1].norm;
     const prevSpokenSame =
-      j >= 2 && wordSimilarity(tokNorm, spokenList[j - 2].norm) >= MATCH_SIM;
+      j >= 2 && wordSimilarity(tokNorm, spokenList[j - 2].norm) >= matchSim;
     const prevRefSame =
-      i >= 1 && wordSimilarity(tokNorm, refNorm[i - 1]) >= MATCH_SIM;
+      i >= 1 && wordSimilarity(tokNorm, refNorm[i - 1]) >= matchSim;
     return prevSpokenSame || prevRefSame ? 0.35 : 0.85;
   };
 
@@ -172,7 +207,7 @@ export function alignTranscriptToVerse(
 
   const pairCostForSim = (sim: number): number => {
     const dist = 1 - sim;
-    if (sim >= MATCH_SIM) {
+    if (sim >= matchSim) {
       return dist * 0.5; // 0 .. 0.1
     }
     return 0.75 + dist * 0.6; // 0.87 .. 1.35 (کمتر از DEL + INS = 1.85 برای جایگزینی تک‌کلمه)
@@ -205,7 +240,7 @@ export function alignTranscriptToVerse(
       const canInsert = Math.abs(dp[i][j] - (dp[i][j - 1] + insCost)) < 1e-6;
       const canPair = Math.abs(dp[i][j] - (dp[i - 1][j - 1] + pCost)) < 1e-6;
 
-      if (canPair && !(canInsert && sim < MATCH_SIM)) {
+      if (canPair && !(canInsert && sim < matchSim)) {
         pairedTransIdx[i - 1] = j - 1;
         i--;
         j--;
@@ -233,7 +268,7 @@ export function alignTranscriptToVerse(
     tIdx >= 0 ? simMatrix[rIdx][tIdx] : -1,
   );
   const isAnchorMatch = (rIdx: number): boolean =>
-    rIdx >= 0 && rIdx < m && pairSims[rIdx] >= MATCH_SIM;
+    rIdx >= 0 && rIdx < m && pairSims[rIdx] >= matchSim;
   const isSevereFailure = (rIdx: number): boolean =>
     rIdx >= 0 && rIdx < m && (pairedTransIdx[rIdx] === -1 || pairSims[rIdx] < SUBSTITUTED_MAX_SIM);
 
@@ -245,22 +280,22 @@ export function alignTranscriptToVerse(
     const ref = referenceWords[rIdx];
     const tIdx = pairedTransIdx[rIdx];
     if (tIdx < 0) {
-      words.push({ ref, state: "uncertain" });
+      words.push({ ref, state: "uncertain", reason: "not_heard" });
       continue;
     }
 
     const spoken = spokenList[tIdx];
     const sim = pairSims[rIdx];
 
-    if (sim >= MATCH_SIM) {
-      words.push({ ref, state: "matched", heard: spoken.raw });
+    if (sim >= matchSim) {
+      words.push({ ref, state: "matched", heard: spoken.raw, sim, reason: "matched" });
       matchedCount++;
       continue;
     }
 
     // بازهٔ خاکستری [0.5, 0.8) همیشه uncertain است
     if (sim >= SUBSTITUTED_MAX_SIM) {
-      words.push({ ref, state: "uncertain", heard: spoken.raw });
+      words.push({ ref, state: "uncertain", heard: spoken.raw, sim, reason: "gray_zone" });
       continue;
     }
 
@@ -268,7 +303,7 @@ export function alignTranscriptToVerse(
     const lowConfidence =
       spoken.conf !== undefined && Number.isFinite(spoken.conf) && spoken.conf < MIN_CONFIDENCE_FOR_SUBSTITUTION;
     const calibratedImmune =
-      (calibration?.get(refNorm[rIdx]) ?? 0) >= CALIBRATION_IMMUNITY_THRESHOLD;
+      (effCalibration?.get(refNorm[rIdx]) ?? 0) >= CALIBRATION_IMMUNITY_THRESHOLD;
     const matchesNeighborRef =
       (rIdx > 0 && wordSimilarity(refNorm[rIdx - 1], spoken.norm) >= SUBSTITUTED_MAX_SIM) ||
       (rIdx + 1 < m && wordSimilarity(refNorm[rIdx + 1], spoken.norm) >= SUBSTITUTED_MAX_SIM);
@@ -287,10 +322,17 @@ export function alignTranscriptToVerse(
         : (prevAnchored || nextAnchored) && !neighborSevere;
 
     if (!lowConfidence && !calibratedImmune && !matchesNeighborRef && regionStable) {
-      words.push({ ref, state: "substituted", heard: spoken.raw });
+      words.push({ ref, state: "substituted", heard: spoken.raw, sim, reason: "substituted_clear" });
       confirmedErrors++;
     } else {
-      words.push({ ref, state: "uncertain", heard: spoken.raw });
+      const blockReason = lowConfidence
+        ? "low_confidence"
+        : calibratedImmune
+        ? "calibration_immune"
+        : matchesNeighborRef
+        ? "neighbor_match"
+        : "noisy_region";
+      words.push({ ref, state: "uncertain", heard: spoken.raw, sim, reason: blockReason });
     }
   }
 
@@ -300,6 +342,146 @@ export function alignTranscriptToVerse(
     confirmedErrors,
     extraWords,
   };
+}
+
+
+export type RecitationAttemptOutcome = "no_speech" | "not_this_text" | "judged";
+
+export interface RecitationJudgeResult extends VerseAlignmentResult {
+  outcome: RecitationAttemptOutcome;
+  missedCount: number;
+  /** سهم کلمات شنیده‌شده (matched یا تأییدشده با لمس) از کل کلمات مرجع */
+  heardRatio: number;
+  /** پارامترهای مؤثر داور در این تلاش */
+  params: JudgeParams;
+}
+
+export function resolveJudgeParams(profile?: JudgeProfileName, overrides?: Partial<JudgeParams>): JudgeParams {
+  const base = JUDGE_PROFILES[profile ?? DEFAULT_JUDGE_PROFILE] ?? JUDGE_PROFILES[DEFAULT_JUDGE_PROFILE];
+  return { ...base, ...(overrides ?? {}) };
+}
+
+/**
+ * داور تلاوت (نسخهٔ ۱٫۵): سه خروجی سطحِ تلاش پیش از داوری کلمه‌ای + سقف جزیرهٔ نامشخص.
+ *
+ * ۱) اگر هیچ توکنی شنیده نشده باشد، خروجی «no_speech» است (سکوت یا صدای نامفهوم) و هیچ کلمه‌ای
+ *    ارزیابی نمی‌شود؛ پیش‌تر در این حالت همهٔ کلمات «uncertain» می‌شدند و سکوت هم خطا نمی‌خورد.
+ * ۲) اگر پوشش سراسری (سهم matched) از دروازهٔ پوشش کمتر باشد، کل تلاش «not_this_text» است:
+ *    تلاوت نامربوط، زبان دیگر یا آیهٔ دیگر نباید کلمه‌به‌کلمه «نامشخص» شود؛ همهٔ کلمات missed می‌شوند.
+ * ۳) در داوری عادی، «نامشخص» فقط جزیره‌های کوتاهِ محصور بین دو لنگر (کلمهٔ matched) مجاز است؛
+ *    رشتهٔ نامشخصِ بلندتر از سقف جزیره، ناحیهٔ خطاست و کلماتش missed می‌شوند (حذف یا خواندن چیز دیگر).
+ *    حکم substituted همچنان فقط با شاهد مثبت (۵ شرط سخت‌گیرانهٔ alignTranscriptToVerse) صادر می‌شود.
+ */
+export function judgeRecitationAttempt(
+  referenceWords: readonly string[],
+  transcriptWords: readonly string[],
+  opts?: AlignOptions & { profile?: JudgeProfileName },
+): RecitationJudgeResult {
+  const params = resolveJudgeParams(opts?.profile, opts?.judge);
+  const tokens = transcriptWords.filter((t) => String(t ?? "").trim().length > 0);
+
+  if (referenceWords.length === 0) {
+    return {
+      outcome: "judged",
+      words: [],
+      coverage: 1,
+      confirmedErrors: 0,
+      extraWords: tokens.length,
+      missedCount: 0,
+      heardRatio: 1,
+      params,
+    };
+  }
+
+  if (tokens.length === 0) {
+    return {
+      outcome: "no_speech",
+      words: referenceWords.map((ref) => ({ ref, state: "uncertain" as const, reason: "no_speech" })),
+      coverage: 0,
+      confirmedErrors: 0,
+      extraWords: 0,
+      missedCount: 0,
+      heardRatio: 0,
+      params,
+    };
+  }
+
+  const aligned = alignTranscriptToVerse(referenceWords, tokens, {
+    tokenConfidences: opts?.tokenConfidences,
+    calibration: opts?.calibration,
+    bypassCalibration: opts?.bypassCalibration,
+    judge: { matchSim: params.matchSim },
+  });
+
+  // دروازهٔ پوشش سراسری
+  if (params.gateEnabled && aligned.coverage < params.coverageGate) {
+    const words = aligned.words.map((w) => ({
+      ...w,
+      state: "missed" as const,
+      reason: "below_coverage_gate",
+    }));
+    return {
+      outcome: "not_this_text",
+      words,
+      coverage: aligned.coverage,
+      confirmedErrors: aligned.confirmedErrors,
+      extraWords: aligned.extraWords,
+      missedCount: words.length,
+      heardRatio: aligned.coverage,
+      params,
+    };
+  }
+
+  // سقف جزیرهٔ نامشخص: رشته‌های uncertain بلندتر از سقف → missed
+  const words = aligned.words.map((w) => ({ ...w }));
+  let runStart = -1;
+  const flushRun = (runEndExclusive: number) => {
+    if (runStart < 0) return;
+    const runLen = runEndExclusive - runStart;
+    if (runLen > params.islandCap) {
+      for (let k = runStart; k < runEndExclusive; k++) {
+        words[k] = { ...words[k], state: "missed", reason: "uncertain_run_too_long" };
+      }
+    }
+    runStart = -1;
+  };
+  for (let idx = 0; idx <= words.length; idx++) {
+    const isUncertain = idx < words.length && words[idx].state === "uncertain" && !words[idx].userConfirmed;
+    if (isUncertain && runStart < 0) runStart = idx;
+    if (!isUncertain) flushRun(idx);
+  }
+
+  const missedCount = words.filter((w) => w.state === "missed").length;
+  const heard = words.filter((w) => w.state === "matched" || w.userConfirmed).length;
+  return {
+    outcome: "judged",
+    words,
+    coverage: aligned.coverage,
+    confirmedErrors: aligned.confirmedErrors,
+    extraWords: aligned.extraWords,
+    missedCount,
+    heardRatio: words.length > 0 ? heard / words.length : 1,
+    params,
+  };
+}
+
+/** سهم کلمات شنیده‌شده (matched یا تأییدشده با لمس) از کل — مبنای قبولی در تلاوت کور و آزمون */
+export function computeHeardRatio(
+  words: readonly { state: WordAlignState; userConfirmed?: boolean }[],
+): number {
+  if (words.length === 0) return 1;
+  const heard = words.filter((w) => w.state === "matched" || w.userConfirmed).length;
+  return heard / words.length;
+}
+
+/**
+ * قبولی تلاوت کور/آزمون: فقط وقتی همهٔ کلمات شنیده شده باشند (یا با لمس تأیید شده باشند).
+ * «نامشخص» در این حالت‌ها قبول نیست (جریمه هم نیست؛ یعنی تلاش باید دوباره انجام شود).
+ */
+export function isBlindRecitationPassed(
+  words: readonly { state: WordAlignState; userConfirmed?: boolean }[],
+): boolean {
+  return words.length > 0 && computeHeardRatio(words) === 1;
 }
 
 /**
@@ -428,7 +610,7 @@ export function computePrecisionAccuracy(
   for (const w of words) {
     if (w.state === "matched" || w.userConfirmed) {
       correct++;
-    } else if (w.state === "substituted") {
+    } else if (w.state === "substituted" || w.state === "missed") {
       substitutedUnconfirmed++;
     }
   }
@@ -450,6 +632,7 @@ export function buildVerifierTranscriptFromAlignment(
       if (w.state === "matched" || w.userConfirmed || w.state === "uncertain") {
         return w.ref;
       }
+      if (w.state === "missed") return "خطا";
       return w.heard && normalizeForAlign(w.heard) !== normalizeForAlign(w.ref)
         ? w.heard
         : "خطا";

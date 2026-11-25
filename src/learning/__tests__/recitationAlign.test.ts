@@ -222,3 +222,79 @@ describe("recitationAlign — personal calibration & precision neutrality (secti
     expect(errorWords[0].expectedAr).toBe(v2Words[2]);
   });
 });
+
+describe("recitationAlign — judgeRecitationAttempt (v1.5 attempt-level gates)", () => {
+  const ref = ["قال", "رجل", "من", "المؤمنين", "صدقوا", "ما", "عاهدوا", "الله", "عليه"];
+
+  it("silence (empty transcript) is no_speech, never uncertain-per-word judgement", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    const res = judgeRecitationAttempt(ref, []);
+    expect(res.outcome).toBe("no_speech");
+    expect(res.missedCount).toBe(0);
+    expect(res.confirmedErrors).toBe(0);
+  });
+
+  it("completely unrelated speech is not_this_text with all words missed (coverage gate)", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    const res = judgeRecitationAttempt(ref, ["سلام", "دوستان", "امروز", "هوا", "خوب", "است", "برویم", "بیرون", "بازی"]);
+    expect(res.outcome).toBe("not_this_text");
+    expect(res.missedCount).toBe(ref.length);
+    expect(res.words.every((w) => w.state === "missed")).toBe(true);
+  });
+
+  it("a different verse is rejected by the coverage gate", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    const other = getVerse(3).words.map((w) => w.ar);
+    const res = judgeRecitationAttempt(ref, other);
+    expect(res.outcome).toBe("not_this_text");
+  });
+
+  it("perfect recitation is judged with full coverage and no missed", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    const res = judgeRecitationAttempt(ref, [...ref]);
+    expect(res.outcome).toBe("judged");
+    expect(res.coverage).toBe(1);
+    expect(res.missedCount).toBe(0);
+    expect(res.heardRatio).toBe(1);
+  });
+
+  it("a long omitted run becomes missed (island cap), a short gap stays uncertain", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    // omit 4 consecutive words in the middle (run of 4 > balanced cap of 2)
+    const partial = [ref[0], ref[1], ref[6], ref[7], ref[8]];
+    const res = judgeRecitationAttempt(ref, partial);
+    expect(res.outcome).toBe("judged");
+    expect(res.missedCount).toBeGreaterThanOrEqual(4);
+    // omit a single word: stays uncertain, not missed
+    const oneGap = ref.filter((_, i) => i !== 4);
+    const res2 = judgeRecitationAttempt(ref, oneGap);
+    expect(res2.words[4].state).toBe("uncertain");
+    expect(res2.missedCount).toBe(0);
+  });
+
+  it("stricter profile rejects what the lenient profile tolerates", async () => {
+    const { judgeRecitationAttempt } = await import("../recitationAlign");
+    const half = ref.slice(0, 4);
+    const lenient = judgeRecitationAttempt(ref, half, { profile: "lenient" });
+    const strict = judgeRecitationAttempt(ref, half, { profile: "very_strict" });
+    expect(strict.outcome).toBe("not_this_text");
+    expect(lenient.coverage).toBeLessThan(0.5);
+  });
+
+  it("blind pass requires every word heard; uncertain never passes", async () => {
+    const { isBlindRecitationPassed } = await import("../recitationAlign");
+    expect(isBlindRecitationPassed([{ state: "matched" }, { state: "matched" }])).toBe(true);
+    expect(isBlindRecitationPassed([{ state: "matched" }, { state: "uncertain" }])).toBe(false);
+    expect(isBlindRecitationPassed([{ state: "matched" }, { state: "missed" }])).toBe(false);
+  });
+
+  it("missed counts as an error in precision accuracy and verifier transcript", async () => {
+    const { computePrecisionAccuracy, buildVerifierTranscriptFromAlignment } = await import("../recitationAlign");
+    const words = [
+      { ref: "قال", state: "matched" as const },
+      { ref: "رجل", state: "missed" as const },
+    ];
+    expect(computePrecisionAccuracy(words)).toBe(50);
+    expect(buildVerifierTranscriptFromAlignment(words)).toBe("قال خطا");
+  });
+});
