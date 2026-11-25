@@ -1,19 +1,21 @@
 // src/components/dev/RecitationJudgePanel.tsx
 // پنل آزمایش داور تلاوت (نسخهٔ ۱٫۵): تنظیم دستی سخت‌گیری + تشخیص هر تلاش + خروجی جلسهٔ تست
-// ابزار تست است، نه قابلیت کاربر نهایی؛ در نسخهٔ انتشار سطح برنده قفل می‌شود.
+// ابزار تست است؛ سطح سخت‌گیری برای کاربر نهایی هم انتخابی می‌ماند و کالیبراسیون با لاگ‌های میدانی انجام می‌شود.
 import { useEffect, useState } from "react";
-import { ClipboardCopy, Download, Gauge, Trash2 } from "lucide-react";
+import { ClipboardCopy, Download, Gauge, Share2, Trash2 } from "lucide-react";
 import {
   JUDGE_PROFILES,
   type JudgeProfileName,
 } from "../../learning/recitationAlign";
 import {
   clearAttemptLog,
+  clearEventLog,
   defaultJudgeSettings,
   exportAttemptLogJson,
   loadAttemptLog,
   loadJudgeSettings,
   saveJudgeSettings,
+  shareAttemptLogJson,
   type RecitationAttemptLog,
   type RecitationJudgeSettings,
 } from "../../services/recitationJudgeService";
@@ -86,8 +88,22 @@ export default function RecitationJudgePanel() {
     setStatus("فایل خروجی جلسهٔ تست دانلود شد.");
   };
 
+  const handleExportShare = async () => {
+    try {
+      const result = await shareAttemptLogJson();
+      setStatus(
+        result === "shared"
+          ? "پنجرهٔ ارسال باز شد؛ فایل لاگ را برای توسعه‌دهنده بفرستید."
+          : "ارسال مستقیم در این دستگاه پشتیبانی نمی‌شود؛ از دکمهٔ دانلود استفاده کنید.",
+      );
+    } catch {
+      // لغو پنجرهٔ اشتراک‌گذاری توسط کاربر خطا نیست
+    }
+  };
+
   const handleClear = async () => {
     await clearAttemptLog();
+    await clearEventLog();
     setAttempts([]);
     setStatus("دفتر تلاش‌های تلاوت پاک شد.");
   };
@@ -240,7 +256,7 @@ export default function RecitationJudgePanel() {
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-1.5">
+      <div className="grid grid-cols-2 gap-1.5">
         <button
           type="button"
           onClick={() => void handleExportCopy()}
@@ -256,6 +272,14 @@ export default function RecitationJudgePanel() {
         >
           <Download className="w-3.5 h-3.5" />
           <span>دانلود فایل تست</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => void handleExportShare()}
+          className="py-2 px-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-black text-[11px] flex items-center justify-center gap-1"
+        >
+          <Share2 className="w-3.5 h-3.5" />
+          <span>ارسال فایل تست</span>
         </button>
         <button
           type="button"

@@ -28,6 +28,7 @@ import {
 } from "../../learning/recitationAlign";
 import {
   appendAttemptLog,
+  appendEventLog,
   effectiveJudgeParams,
   loadJudgeSettings,
   type RecitationJudgeSettings,
@@ -122,6 +123,11 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
   const reportedSessionRef = useRef<boolean>(false);
   const judgeSettingsRef = useRef<RecitationJudgeSettings | null>(null);
   const segIdxRef = useRef(0);
+  /** فرادادهٔ جلسهٔ جاری برای لاگ میدانی داور: کدام موتور و آیا تکه‌ای است */
+  const sessionMetaRef = useRef<{ engine: "sherpa" | "weblive"; chunked: boolean }>({
+    engine: "weblive",
+    chunked: false,
+  });
   const chunkedCompleteRef = useRef(false);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
@@ -271,6 +277,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     segIdx: number,
     transcript: string,
     tokenConfidences?: number[],
+    decodeMs?: number,
   ) => {
     if (!selectedVerse) return;
     const seg = segments[segIdx];
@@ -305,6 +312,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
       transcript,
       profile: settings?.useCustom ? "custom" : settings?.profile ?? "balanced",
       bypassCalibration: settings?.bypassCalibration ?? false,
+      engine: sessionMetaRef.current.engine,
+      chunked: sessionMetaRef.current.chunked,
+      ...(decodeMs !== undefined ? { decodeMs } : {}),
       words: judged.words.map((w) => ({
         ref: w.ref,
         state: w.state,
@@ -389,10 +399,12 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     };
 
     if (sherpaReady) {
+      sessionMetaRef.current = { engine: "sherpa", chunked: false };
       const handle = await startSherpaMicrophoneSession({
         hotwords,
         onTranscript: (text, isFinal) => onTranscript(text, isFinal),
         onError: (msg) => {
+          void appendEventLog("asr_error", msg);
           setAsrError(msg);
           setListeningAsr(false);
         },
@@ -411,9 +423,11 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
       return;
     }
 
+    sessionMetaRef.current = { engine: "weblive", chunked: false };
     const handle = startLiveArabicRecognition({
       onTranscript,
       onError: (msg) => {
+        void appendEventLog("asr_error", msg);
         setAsrError(msg);
         setListeningAsr(false);
       },
@@ -450,6 +464,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     const verseNumAtStart = selectedVerse.n;
     const hotwords = [...new Set(selectedVerse.words.map((w) => w.ar))];
     const totalSegs = segments.length;
+    sessionMetaRef.current = { engine: "sherpa", chunked: true };
 
     const handle = await startSherpaMicrophoneSession({
       hotwords,
@@ -457,6 +472,7 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
         // در حالت تکه‌ای، متن‌ها از مسیر onChunk می‌آیند
       },
       onError: (msg) => {
+        void appendEventLog("asr_error", msg);
         setAsrError(msg);
         setListeningAsr(false);
       },
@@ -471,9 +487,9 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
       },
       chunked: {
         silenceMs: 700,
-        onChunk: (text) => {
+        onChunk: (text, decodeMs) => {
           const segIdx = segIdxRef.current;
-          applySegmentTranscript(segIdx, text);
+          applySegmentTranscript(segIdx, text, undefined, decodeMs);
           if (segIdx + 1 < totalSegs) {
             segIdxRef.current = segIdx + 1;
             setActiveSegIdx(segIdx + 1);
@@ -481,6 +497,12 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
             chunkedCompleteRef.current = true;
             void stopActiveListening();
           }
+        },
+        onChunkIssue: (kind, decodeMs) => {
+          void appendEventLog(
+            kind === "empty" ? "asr_empty_decode" : "asr_decode_error",
+            `verse ${verseNumAtStart} seg ${segIdxRef.current}${decodeMs !== undefined ? ` decodeMs ${decodeMs}` : ""}`,
+          );
         },
         onLevel: (rms) => setAudioLevel(rms),
         onSpeechChange: (speaking) => setSpeakingNow(speaking),
@@ -584,6 +606,12 @@ export default function SelfReciteRecorder({ verses, onWordsRecitedCorrectly, on
     wordStatesRef.current = nextStates;
     setWordStates(nextStates);
     syncWithDownstreamVerifier(nextStates);
+
+    // اصلاح با لمس، دادهٔ طلایی کالیبراسیون است؛ در لاگ رویدادها هم ثبت می‌شود
+    void appendEventLog(
+      "tap_correct",
+      `verse ${selectedVerse?.n ?? "?"} ref ${target.ref} heard ${target.heard ?? ""} was ${target.state}`,
+    );
 
     try {
       const { map } = await recordUserConfirmedRecitationWord(target.ref);

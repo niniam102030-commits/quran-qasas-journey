@@ -200,8 +200,10 @@ export interface SherpaChunkedOptions {
   silenceMs?: number;
   /** آستانهٔ RMS برای تشخیص وجود گفتار — پیش‌فرض ۰٫۰۱۵ */
   speechRms?: number;
-  /** تحویل متن دیکودشدهٔ هر تکه بلافاصله پس از مکث وقفی (بدون پایان جلسه) */
-  onChunk: (text: string) => void;
+  /** تحویل متن دیکودشدهٔ هر تکه بلافاصله پس از مکث وقفی (بدون پایان جلسه)؛ decodeMs زمان دیکود همان تکه است */
+  onChunk: (text: string, decodeMs?: number) => void;
+  /** گزارش تکه‌ای که گفتار داشت ولی دیکودش خالی ماند یا خطا داد (برای لاگ میدانی داور) */
+  onChunkIssue?: (kind: "empty" | "error", decodeMs?: number) => void;
   /** سطح لحظه‌ای صدا (۰ تا ۱) برای نشانگر زندهٔ حین تلاوت */
   onLevel?: (rms: number) => void;
   /** تغییر وضعیت گفتار/سکوت برای نشانگر حین تلاوت */
@@ -247,13 +249,21 @@ export async function startSherpaMicrophoneSession(opts: {
   const flushChunk = async () => {
     if (!chunked || flushing || stopped) return;
     flushing = true;
+    const hadSpeech = speechSeenInChunk;
+    const decodeStartedAt = performance.now();
     try {
       const res = await engine.stop();
+      const decodeMs = Math.round(performance.now() - decodeStartedAt);
       if (!stopped && res?.text) {
-        chunked.onChunk(res.text);
+        chunked.onChunk(res.text, decodeMs);
+      } else if (!stopped && hadSpeech) {
+        chunked.onChunkIssue?.("empty", decodeMs);
       }
     } catch {
       // خطای دیکود یک تکه نباید کل جلسه را ببندد
+      if (hadSpeech) {
+        chunked.onChunkIssue?.("error", Math.round(performance.now() - decodeStartedAt));
+      }
     }
     speechSeenInChunk = false;
     if (!stopped) {
@@ -345,10 +355,12 @@ export async function startSherpaMicrophoneSession(opts: {
         // ignore cleanup errors
       }
       try {
+        const decodeStartedAt = performance.now();
         const res = await engine.stop();
+        const decodeMs = Math.round(performance.now() - decodeStartedAt);
         if (res?.text) {
           if (chunked) {
-            chunked.onChunk(res.text);
+            chunked.onChunk(res.text, decodeMs);
           } else {
             opts.onTranscript(res.text, true);
           }

@@ -1,6 +1,6 @@
 // src/pages/SettingsPage.tsx
 import { useEffect, useState } from "react";
-import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell, Mic, Trash2, Users, BookOpen, Wrench } from "lucide-react";
+import { Moon, Sun, Volume2, VolumeX, Vibrate, RotateCcw, Download, Upload, ChevronRight, Check, AlertCircle, Bell, Mic, Trash2, Users, BookOpen, Wrench, ClipboardCopy, Share2 } from "lucide-react";
 import { ldb, DEFAULT_USER_PROFILE } from "../db/learningDb";
 import { createBackupPayload, parseAndValidateBackup, restoreValidatedBackup } from "../services/backupService";
 import { bestReminderHour, syncDailyReminder } from "../services/reminderService";
@@ -16,6 +16,12 @@ import {
   sherpaAsr,
   SHERPA_ONNX_VERSION,
 } from "../services/sherpaAsr";
+import {
+  appendEventLog,
+  exportAttemptLogJson,
+  loadAttemptLog,
+  shareAttemptLogJson,
+} from "../services/recitationJudgeService";
 import { SURAH_PACK_REGISTRY } from "../config/surahConfig";
 import { PACE_MODE_LIST } from "../learning/pace";
 import { GOAL_DEFS } from "../learning/tracks";
@@ -85,6 +91,56 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
   const [sherpaDownloading, setSherpaDownloading] = useState<boolean>(false);
   const [sherpaProgress, setSherpaProgress] = useState<{ loaded: number; total: number } | null>(null);
   const [sherpaNotice, setSherpaNotice] = useState<string | null>(null);
+  const [judgeLogCount, setJudgeLogCount] = useState<number>(0);
+  const [judgeLogStatus, setJudgeLogStatus] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    void loadAttemptLog()
+      .then((log) => {
+        if (active) setJudgeLogCount(log.length);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const handleJudgeLogCopy = async () => {
+    try {
+      const json = await exportAttemptLogJson();
+      await navigator.clipboard.writeText(json);
+      setJudgeLogStatus(`لاگ ${toFarsi(judgeLogCount)} تلاش تلاوت کپی شد؛ آن را برای توسعه‌دهنده بفرستید.`);
+    } catch {
+      setJudgeLogStatus("کپی لاگ ناموفق بود؛ از دکمهٔ دانلود یا ارسال استفاده کنید.");
+    }
+  };
+
+  const handleJudgeLogDownload = async () => {
+    const json = await exportAttemptLogJson();
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "recitation-judge-log.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    setJudgeLogStatus("فایل لاگ داور دانلود شد؛ آن را برای توسعه‌دهنده بفرستید.");
+  };
+
+  const handleJudgeLogShare = async () => {
+    try {
+      const result = await shareAttemptLogJson();
+      setJudgeLogStatus(
+        result === "shared"
+          ? "پنجرهٔ ارسال باز شد؛ لاگ را برای توسعه‌دهنده بفرستید."
+          : "ارسال مستقیم در این دستگاه پشتیبانی نمی‌شود؛ از دکمهٔ دانلود استفاده کنید و فایل را دستی بفرستید.",
+      );
+    } catch {
+      // لغو پنجرهٔ اشتراک‌گذاری توسط کاربر خطا نیست
+      setJudgeLogStatus(null);
+    }
+  };
 
   useEffect(() => {
     let active = true;
@@ -744,6 +800,52 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
           )}
         </section>
 
+        {/* Recitation judge field log */}
+        <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
+          <h2 className="font-bold text-sm text-slate-800 dark:text-slate-200">
+            لاگ داور تلاوت (کمک به دقیق‌ترشدن تصحیح)
+          </h2>
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-6">
+            هنگام استفاده از «همراهی و تصحیح تلاوت»، نتیجهٔ هر تلاش (متن شنیده‌شده، نمرهٔ کلمات و
+            حکم داور) فقط روی همین گوشی ذخیره می‌شود و هیچ ارسال خودکاری ندارد. اگر لاگ را برای
+            توسعه‌دهنده بفرستید، داور تلاوت برای همه دقیق‌تر می‌شود.
+            {judgeLogCount > 0
+              ? ` تا کنون ${toFarsi(judgeLogCount)} تلاش ثبت شده است.`
+              : " هنوز تلاشی ثبت نشده است."}
+          </p>
+          <div className="grid grid-cols-3 gap-2">
+            <button
+              type="button"
+              onClick={() => void handleJudgeLogCopy()}
+              className="py-2.5 px-2 rounded-2xl bg-violet-600 hover:bg-violet-700 text-white font-bold text-xs flex items-center justify-center gap-1.5"
+            >
+              <ClipboardCopy className="w-4 h-4" />
+              <span>کپی لاگ</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => void handleJudgeLogDownload()}
+              className="py-2.5 px-2 rounded-2xl bg-slate-700 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5"
+            >
+              <Download className="w-4 h-4" />
+              <span>دانلود لاگ</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => void handleJudgeLogShare()}
+              className="py-2.5 px-2 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs flex items-center justify-center gap-1.5"
+            >
+              <Share2 className="w-4 h-4" />
+              <span>ارسال لاگ</span>
+            </button>
+          </div>
+          {judgeLogStatus && (
+            <div className="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-[11px] font-bold">
+              {judgeLogStatus}
+            </div>
+          )}
+        </section>
+
         {/* Active Surah & Reference Data */}
         <section className="bg-termeh-card dark:bg-lapis-card p-4 sm:p-5 rounded-3xl border border-termeh-border dark:border-lapis-border shadow-sm space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
@@ -818,13 +920,19 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
                       try {
                         await downloadSherpaModel((loaded, total) => setSherpaProgress({ loaded, total }));
                         setSherpaInstalled(true);
+                        void appendEventLog("model_installed");
                         setSherpaNotice("مدل تصحیح آفلاین با موفقیت دانلود و با SHA-256 راستی‌آزمایی شد.");
                       } catch (err) {
                         const st = await getSherpaModelStatus();
                         if (st.installed) {
                           setSherpaInstalled(true);
+                          void appendEventLog("model_installed", "completed_in_background");
                           setSherpaNotice("مدل در پس‌زمینه کامل شد و اکنون نصب است.");
                         } else {
+                          void appendEventLog(
+                            "model_error",
+                            err instanceof Error ? err.message : "unknown download error",
+                          );
                           setSherpaNotice(err instanceof Error ? err.message : "خطا در دانلود مدل آفلاین.");
                         }
                       } finally {
@@ -843,6 +951,7 @@ export default function SettingsPage({ onBack, onOpenProfiles, onOpenSurahs, onO
                     onClick={async () => {
                       await deleteSherpaModel();
                       setSherpaInstalled(false);
+                      void appendEventLog("model_deleted");
                       setSherpaNotice("مدل تصحیح آفلاین از حافظه برنامه حذف شد.");
                     }}
                     className="flex-1 py-2.5 px-4 rounded-2xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 font-bold flex items-center justify-center gap-2"

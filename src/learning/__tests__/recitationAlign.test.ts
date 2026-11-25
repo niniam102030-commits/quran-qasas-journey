@@ -258,6 +258,16 @@ describe("recitationAlign — judgeRecitationAttempt (v1.5 attempt-level gates)"
     expect(res.heardRatio).toBe(1);
   });
 
+  it("field case (2026-11-25 log): correct Qasas 28:2 as ASR hears it is fully matched at balanced", async () => {
+    const { judgeRecitationAttempt, JUDGE_PROFILES } = await import("../recitationAlign");
+    // کالیبراسیون میدانی: آستانهٔ متعادل ۰٫۷۵ قفل است؛ «ءايت» مدل برای «ءَايَٰتُ» دقیقاً ۰٫۷۵ می‌گیرد
+    expect(JUDGE_PROFILES.balanced.matchSim).toBe(0.75);
+    const verse2 = getVerse(2).words.map((w) => w.ar);
+    const res = judgeRecitationAttempt(verse2, ["تلك", "ءايت", "الكتب", "المبين"]);
+    expect(res.outcome).toBe("judged");
+    expect(res.words.every((w) => w.state === "matched")).toBe(true);
+  });
+
   it("a long omitted run becomes missed (island cap), a short gap stays uncertain", async () => {
     const { judgeRecitationAttempt } = await import("../recitationAlign");
     // omit 4 consecutive words in the middle (run of 4 > balanced cap of 2)

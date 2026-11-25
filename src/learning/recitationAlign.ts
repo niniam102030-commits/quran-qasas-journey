@@ -38,7 +38,7 @@ export type JudgeProfileName = "lenient" | "balanced" | "strict" | "very_strict"
 
 export const JUDGE_PROFILES: Record<JudgeProfileName, JudgeParams> = {
   lenient: { matchSim: 0.75, coverageGate: 0.3, islandCap: 3, gateEnabled: true },
-  balanced: { matchSim: 0.8, coverageGate: 0.4, islandCap: 2, gateEnabled: true },
+  balanced: { matchSim: 0.75, coverageGate: 0.4, islandCap: 2, gateEnabled: true },
   strict: { matchSim: 0.85, coverageGate: 0.5, islandCap: 2, gateEnabled: true },
   very_strict: { matchSim: 0.9, coverageGate: 0.6, islandCap: 1, gateEnabled: true },
 };
